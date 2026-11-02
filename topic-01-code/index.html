@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>运行代码下载</title>
+<style>
+  :root{
+    --bg:#f5f7fb; --card:#ffffff; --line:#dde3ee; --text:#1d2433;
+    --text-dim:#5b6678; --accent:#1f6feb; --accent-soft:#eaf1ff;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;padding:32px 18px 56px;background:var(--bg);color:var(--text);
+    font-family:"Microsoft YaHei","PingFang SC","Hiragino Sans GB","Source Han Sans SC",sans-serif;
+    line-height:1.8;-webkit-text-size-adjust:100%;
+  }
+  .wrap{max-width:860px;margin:0 auto;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px 28px;margin-bottom:18px;}
+  h1{font-size:23px;margin:0 0 6px;line-height:1.5;}
+  h2{font-size:16px;margin:22px 0 10px;padding-left:9px;border-left:3px solid var(--accent);line-height:1.5;}
+  .sub{color:var(--text-dim);font-size:13px;margin:0 0 4px;}
+  p{margin:10px 0;font-size:14px;}
+  ul,ol{margin:10px 0;padding-left:22px;font-size:14px;}
+  li{margin:5px 0;}
+  .btns{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0 6px;}
+  .btn{
+    display:inline-block;padding:11px 20px;border-radius:10px;background:var(--accent);color:#fff;
+    text-decoration:none;font-size:14.5px;font-weight:600;border:1px solid var(--accent);
+  }
+  .btn.ghost{background:var(--card);color:var(--accent);}
+  .btn:hover{filter:brightness(1.06);}
+  code{
+    font-family:Consolas,"Courier New",monospace;background:var(--accent-soft);
+    padding:1px 6px;border-radius:5px;font-size:13px;word-break:break-all;
+  }
+  pre{
+    background:#111827;color:#e5e7eb;padding:14px 16px;border-radius:10px;overflow-x:auto;
+    font-family:Consolas,"Courier New",monospace;font-size:12.5px;line-height:1.75;margin:10px 0;
+  }
+  pre code{background:none;padding:0;color:inherit;}
+  .note{
+    background:var(--accent-soft);border:1px solid #cfe0ff;border-radius:10px;
+    padding:12px 14px;font-size:13.5px;color:#2c4a7c;margin:14px 0;
+  }
+  table{width:100%;border-collapse:collapse;margin:10px 0;font-size:13.5px;}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top;}
+  th{background:#f0f3f9;font-weight:600;}
+  .foot{color:var(--text-dim);font-size:12.5px;text-align:center;margin-top:26px;}
+  .back{display:inline-block;margin-top:8px;font-size:13.5px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="card">
+    <h1>CT增强检查护理风险 · 运行代码</h1>
+    <p class="sub">本页提供可运行的构建包：图谱数据 + 构建脚本 + 使用说明。</p>
+    <p>本构建包是《CT增强检查护理风险》的完整可运行交付：图谱页面、图谱数据、构建脚本与说明文档都在里面，解压后双击 index.html 即可浏览，重新生成图谱数据用 build.py 即可。（碘对比剂相关不良反应 · 静脉外渗 · 肾功能保护的护理知识图谱）</p>
+
+    <div class="btns">
+      <a class="btn" href="./topic-01-kg.zip" download>下载完整构建包（topic-01-kg.zip）</a>
+      <a class="btn ghost" href="./topic-01-neo4j.zip" download>下载 Neo4j 导入包（可选）</a>
+      <a class="btn ghost" href="../topic-01-kg/index.html">查看图谱页面</a>
+    </div>
+    <p class="sub">压缩包为纯静态资源，解压后无需安装依赖即可浏览；重新生成图谱需要 Python 3.8+（标准库即可，无第三方包）。</p>
+  </div>
+
+  <div class="card">
+    <h2>包里有什么</h2>
+    <table>
+      <tr><th>路径</th><th>是什么</th></tr>
+      <tr><td><code>index.html</code></td><td>图谱页面（单页 · 力导向图 + 检索 + 节点详情）</td></tr>
+      <tr><td><code>lib/echarts.min.js</code></td><td>图形库（本地内置 · 断网也能打开）</td></tr>
+      <tr><td><code>data/topic-01-graph.json</code></td><td>图谱数据（自包含：类型定义 + 节点 + 边 + 文献出处）</td></tr>
+      <tr><td><code>data/topic-01-graph.js</code></td><td>同一份数据的 JS 副本（供页面直接读取，避免本地打开时的跨域限制）</td></tr>
+      <tr><td><code>data/topic-01-triples.csv</code></td><td>5 列表原件（类型 · 名称 · 关系 · 目标类型 · 目标名称）—— 可直接重新生成图谱数据</td></tr>
+      <tr><td><code>data/search-terms.json</code></td><td>检索词清单（校验规则第 5 条的测试夹具）</td></tr>
+      <tr><td><code>build.py</code></td><td>构建脚本（校验 + 生成页面与数据）</td></tr>
+      <tr><td><code>README.md</code></td><td>使用说明</td></tr>
+      <tr><td><code>neo4j/</code></td><td>Neo4j 导入包（可选 · 仅供自行入库，非运行依赖）</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>怎么用</h2>
+    <h2 style="margin-top:6px;">1 · 直接看图谱</h2>
+    <p>解压后双击 <code>index.html</code> 即可打开（全部资源相对路径 · 零后端 · 不联网）。</p>
+    <p>也可以把整个目录原样放进任意静态托管（对象存储 / CDN / 静态站点托管），无需任何服务端配置。</p>
+
+    <h2>2 · 重新生成图谱</h2>
+    <p>在解压后的目录里执行（Python 3.8+，只用标准库）：</p>
+<pre><code>python build.py --input data/topic-01-graph.json --out .</code></pre>
+    <p>脚本会先跑一遍数据校验（节点 id 唯一 / 边两端存在 / 无重复边 / 节点 (类型, 名称) 唯一 / 检索词覆盖 / 文献完整性与四要素 / 不混题），<b>任何一项不通过就非零退出并打印明细</b>；全部通过才会重新生成页面与数据文件。</p>
+
+    <h2>3 · 从 5 列表生成图谱数据</h2>
+    <p>手里只有扁平的三元组表（<code>类型, 名称, 关系, 目标类型, 目标名称</code> 五列）时，先转成图谱数据文件：</p>
+<pre><code>python build.py --from-triples 我的三元组.csv --out-graph 我的图谱数据.json</code></pre>
+    <p>包里已经带了一份现成的 5 列表（<code>data/topic-01-triples.csv</code>），可以先拿它试跑一遍：</p>
+<pre><code>python build.py --from-triples data/topic-01-triples.csv --out-graph 我的图谱数据.json</code></pre>
+    <p>生成的 JSON 是<b>骨架</b>：节点与关系齐了，但别名、简介与文献出处需要补齐后再跑第 2 步的校验（校验不通过会逐条列出缺什么）。</p>
+    <div class="note">⛔ 不编文献：没有真实出处的节点不要写进图谱 —— 校验脚本会按缺失项报出来。</div>
+  </div>
+
+  <div class="card">
+    <h2>数据与校验</h2>
+    <p>构建包里的 <code>build.py</code> 会按同一套判据校验数据（两个题目各跑一遍，判据完全相同）；<code>data/search-terms.json</code> 是检索词覆盖检查的对照清单，随包提供，可自行重跑核对。</p>
+    <p class="sub">校验不通过的输出示例：</p>
+<pre><code>[FAIL] 5 客户检索词覆盖（数据名）
+        未覆盖 2 条：荨麻疹 → 期望类型 SymptomSign; Meta分析 → evidence.type 缺「Meta分析」</code></pre>
+  </div>
+
+  <p class="foot">CT增强检查护理风险 · 运行代码下载页</p>
+</div>
+</body>
+</html>

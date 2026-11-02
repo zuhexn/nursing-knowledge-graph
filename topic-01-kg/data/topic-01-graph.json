@@ -1,0 +1,5956 @@
+{
+  "meta": {
+    "topicKey": "topic-01",
+    "topicName": "CT增强检查护理风险",
+    "subtitle": "碘对比剂相关不良反应 · 静脉外渗 · 肾功能保护的护理知识图谱",
+    "generatedAt": "2026-11-02"
+  },
+  "nodeTypes": [
+    {
+      "key": "DiseaseCategory",
+      "label": "疾病分类",
+      "color": "#5B7C99",
+      "shape": "round",
+      "size": 22,
+      "desc": "疾病大类"
+    },
+    {
+      "key": "SymptomSign",
+      "label": "症状体征",
+      "color": "#C0563F",
+      "shape": "diamond",
+      "size": 18,
+      "desc": "可观察到的体征"
+    },
+    {
+      "key": "Exam",
+      "label": "检查项目",
+      "color": "#2F855A",
+      "shape": "round",
+      "size": 20,
+      "desc": "检查 / 检验 / 用药"
+    },
+    {
+      "key": "ManagementPrinciple",
+      "label": "处置原则",
+      "color": "#6B46C1",
+      "shape": "round",
+      "size": 18,
+      "desc": "护理处置原则"
+    },
+    {
+      "key": "NursingTheory",
+      "label": "护理理论",
+      "color": "#975A16",
+      "shape": "triangle",
+      "size": 20,
+      "desc": "护理理论框架"
+    },
+    {
+      "key": "DiseaseEducation",
+      "label": "疾病教育",
+      "color": "#2B6CB0",
+      "shape": "round",
+      "size": 18,
+      "desc": "健康宣教内容"
+    },
+    {
+      "key": "SymptomExperience",
+      "label": "症状体验",
+      "color": "#B83280",
+      "shape": "diamond",
+      "size": 18,
+      "desc": "患者主观症状体验"
+    },
+    {
+      "key": "ManagementStrategy",
+      "label": "管理策略",
+      "color": "#2C7A7B",
+      "shape": "round",
+      "size": 18,
+      "desc": "症状管理策略"
+    },
+    {
+      "key": "ManagementOutcome",
+      "label": "管理效果",
+      "color": "#38A169",
+      "shape": "round",
+      "size": 18,
+      "desc": "症状管理结果"
+    },
+    {
+      "key": "SymptomCategory",
+      "label": "症状分类",
+      "color": "#B7791F",
+      "shape": "triangle",
+      "size": 20,
+      "desc": "症状大类"
+    },
+    {
+      "key": "AssessmentTool",
+      "label": "评估工具",
+      "color": "#4A5568",
+      "shape": "round",
+      "size": 18,
+      "desc": "评估量表 / 工具"
+    },
+    {
+      "key": "RiskFactor",
+      "label": "危险因素",
+      "color": "#9B2C2C",
+      "shape": "triangle",
+      "size": 20,
+      "desc": "风险因素"
+    },
+    {
+      "key": "PharmacologicalManagement",
+      "label": "药物治疗",
+      "color": "#276749",
+      "shape": "round",
+      "size": 18,
+      "desc": "用药处置"
+    },
+    {
+      "key": "NonPharmacologicalManagement",
+      "label": "非药物管理",
+      "color": "#285E61",
+      "shape": "round",
+      "size": 18,
+      "desc": "非药物处置"
+    },
+    {
+      "key": "SymptomStatus",
+      "label": "症状状态",
+      "color": "#5A67D8",
+      "shape": "round",
+      "size": 16,
+      "desc": "症状当前状态"
+    },
+    {
+      "key": "FunctionalStatus",
+      "label": "功能状态",
+      "color": "#6B46C1",
+      "shape": "round",
+      "size": 16,
+      "desc": "功能受影响程度"
+    },
+    {
+      "key": "Reference",
+      "label": "文献",
+      "color": "#718096",
+      "shape": "round",
+      "size": 16,
+      "desc": "文献出处节点"
+    },
+    {
+      "key": "CaseReport",
+      "label": "个案",
+      "color": "#A0AEC0",
+      "shape": "round",
+      "size": 16,
+      "desc": "个案（本期零节点）"
+    }
+  ],
+  "relationTypes": [
+    {
+      "key": "BELONGS_TO",
+      "label": "属于",
+      "desc": "属于"
+    },
+    {
+      "key": "HAS_SYMPTOM",
+      "label": "存在症状",
+      "desc": "存在症状"
+    },
+    {
+      "key": "DETECTED_BY",
+      "label": "通过检查发现",
+      "desc": "通过检查发现"
+    },
+    {
+      "key": "MANAGED_BY",
+      "label": "由……处置",
+      "desc": "由……处置"
+    },
+    {
+      "key": "EDUCATED_BY",
+      "label": "由……教育",
+      "desc": "由……教育"
+    },
+    {
+      "key": "EXPERIENCED_AS",
+      "label": "表现为",
+      "desc": "表现为"
+    },
+    {
+      "key": "ASSESSED_BY",
+      "label": "由……评估",
+      "desc": "由……评估"
+    },
+    {
+      "key": "AT_RISK_BY",
+      "label": "风险来自",
+      "desc": "风险来自"
+    },
+    {
+      "key": "TREATED_BY",
+      "label": "由……治疗",
+      "desc": "由……治疗"
+    },
+    {
+      "key": "EFFECT_ON",
+      "label": "影响",
+      "desc": "影响"
+    },
+    {
+      "key": "PART_OF_CASE",
+      "label": "属于个案",
+      "desc": "属于个案"
+    },
+    {
+      "key": "SUPPORTED_BY",
+      "label": "有文献支持",
+      "desc": "有文献支持"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "DC_CTEnhancedRisk",
+      "name": "CT增强检查护理风险",
+      "type": "DiseaseCategory",
+      "tags": [
+        "题目",
+        "CT增强"
+      ],
+      "aliases": [
+        "CT增强检查护理风险",
+        "增强CT护理风险",
+        "CT增强检查风险"
+      ],
+      "summary": "做增强CT时可能遇到的各类护理风险的总称。",
+      "attrs": [
+        {
+          "k": "覆盖范围",
+          "v": "碘对比剂不良反应 · 静脉外渗 · 肾功能保护"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "American College of Radiology, Committee on Drugs and Contrast Media",
+          "title": "ACR Manual on Contrast Media",
+          "journal": "American College of Radiology",
+          "year": 2024,
+          "cite": "American College of Radiology, Committee on Drugs and Contrast Media / ACR Manual on Contrast Media / American College of Radiology / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "E_CTEnhancedScan",
+      "name": "CT增强扫描",
+      "type": "Exam",
+      "tags": [
+        "辅助检查"
+      ],
+      "aliases": [
+        "CT enhanced scan",
+        "增强CT",
+        "CT增强"
+      ],
+      "summary": "打药以后再做断层成像的检查方法，图像更清楚，但要用药就有风险。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "American College of Radiology, Committee on Drugs and Contrast Media",
+          "title": "ACR Manual on Contrast Media",
+          "journal": "American College of Radiology",
+          "year": 2024,
+          "cite": "American College of Radiology, Committee on Drugs and Contrast Media / ACR Manual on Contrast Media / American College of Radiology / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "E_ContrastInjection",
+      "name": "碘对比剂静脉输注",
+      "type": "Exam",
+      "tags": [
+        "辅助检查",
+        "对比剂"
+      ],
+      "aliases": [
+        "iodine contrast agent",
+        "碘对比剂",
+        "含碘造影剂",
+        "造影剂"
+      ],
+      "summary": "增强检查里打进血管的含碘药水，本图谱所有风险的源头。",
+      "attrs": [
+        {
+          "k": "给药方式",
+          "v": "经静脉注射（高压注射器）"
+        },
+        {
+          "k": "检查前皮试",
+          "v": "常规不需要做碘对比剂过敏试验"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "American College of Radiology, Committee on Drugs and Contrast Media",
+          "title": "ACR Manual on Contrast Media",
+          "journal": "American College of Radiology",
+          "year": 2024,
+          "cite": "American College of Radiology, Committee on Drugs and Contrast Media / ACR Manual on Contrast Media / American College of Radiology / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        },
+        {
+          "type": "推荐",
+          "author": "de Laforcade L, Bobot M, Bellin MF, et al.",
+          "title": "ESUR recommendations on the use of contrast media: Practice survey, review and commentary by CJN, FIRN and SFNDT",
+          "journal": "Nephrologie & Therapeutique",
+          "year": 2021,
+          "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / ESUR recommendations on the use of contrast media: Practice survey, review and commentary by CJN, FIRN and SFNDT / Nephrologie & Therapeutique / 2021",
+          "grade": "推荐意见",
+          "ref": "R15"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "E_RenalFunction",
+      "name": "肾功能检查",
+      "type": "Exam",
+      "tags": [
+        "辅助检查"
+      ],
+      "aliases": [
+        "renal function test",
+        "eGFR",
+        "血清肌酐",
+        "肾功能"
+      ],
+      "summary": "抽血查肾脏过滤能力，用来判断这次造影安不安全。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
+          "title": "肾病患者静脉注射碘对比剂应用专家共识",
+          "journal": "中华放射学杂志",
+          "year": 2021,
+          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
+          "grade": "指南与共识",
+          "ref": "R05"
+        },
+        {
+          "type": "声明",
+          "author": "Davenport MS, Perazella MA, Yee J, et al.",
+          "title": "Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation",
+          "journal": "Radiology",
+          "year": 2020,
+          "cite": "Davenport MS, Perazella MA, Yee J, et al. / Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation / Radiology / 2020",
+          "grade": "学会声明",
+          "ref": "R11"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "E_ThyroidFunction",
+      "name": "甲状腺功能检查",
+      "type": "Exam",
+      "tags": [
+        "辅助检查"
+      ],
+      "aliases": [
+        "thyroid function test",
+        "甲功",
+        "TSH"
+      ],
+      "summary": "抽血查甲状腺功能，甲亢没控制住的人不适合打造影剂。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
+          "title": "肾病患者静脉注射碘对比剂应用专家共识",
+          "journal": "中华放射学杂志",
+          "year": 2021,
+          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
+          "grade": "指南与共识",
+          "ref": "R05"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "S_AdverseReaction",
+      "name": "不良反应",
+      "type": "SymptomSign",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "adverse reaction",
+        "对比剂不良反应",
+        "药物不良反应"
+      ],
+      "summary": "使用碘对比剂后出现的非预期身体反应。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "American College of Radiology, Committee on Drugs and Contrast Media",
+          "title": "ACR Manual on Contrast Media",
+          "journal": "American College of Radiology",
+          "year": 2024,
+          "cite": "American College of Radiology, Committee on Drugs and Contrast Media / ACR Manual on Contrast Media / American College of Radiology / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
+          "journal": "Radiology",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al.",
+          "title": "CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity",
+          "journal": "Canadian Association of Radiologists Journal",
+          "year": 2025,
+          "cite": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al. / CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity / Canadian Association of Radiologists Journal / 2025",
+          "grade": "推荐意见",
+          "ref": "R14"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "S_Rash",
+      "name": "皮疹",
+      "type": "SymptomSign",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "rash",
+        "皮肤",
+        "皮肤反应",
+        "皮疹"
+      ],
+      "summary": "身上出现的红斑或丘疹样皮损。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
+          "journal": "Radiology",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
+          "journal": "Allergy",
+          "year": 2024,
+          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "S_AllergicReaction",
+      "name": "过敏反应",
+      "type": "SymptomSign",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "allergic reaction",
+        "碘过敏反应"
+      ],
+      "summary": "对碘对比剂发生的变态反应，可以累及呼吸道、循环系统和全身。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
+          "journal": "Radiology",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
+          "journal": "Allergy",
+          "year": 2024,
+          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        },
+        {
+          "type": "建议",
+          "author": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al.",
+          "title": "CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity",
+          "journal": "Canadian Association of Radiologists Journal",
+          "year": 2025,
+          "cite": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al. / CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity / Canadian Association of Radiologists Journal / 2025",
+          "grade": "推荐意见",
+          "ref": "R14"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "S_Urticaria",
+      "name": "荨麻疹",
+      "type": "SymptomSign",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "寻麻疹",
+        "urticaria",
+        "风团",
+        "hives"
+      ],
+      "summary": "接触碘对比剂后成片出现的红色风团样皮损。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
+          "journal": "Radiology",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
+          "journal": "Allergy",
+          "year": 2024,
+          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "Anaphylaxis: A 2023 practice parameter update",
+          "journal": "Annals of Allergy, Asthma & Immunology",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / Anaphylaxis: A 2023 practice parameter update / Annals of Allergy, Asthma & Immunology / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "S_Pruritus",
+      "name": "瘙痒",
+      "type": "SymptomSign",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "pruritus",
+        "皮肤瘙痒"
+      ],
+      "summary": "主观上难以忍受的痒感。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
+          "journal": "Radiology",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "Anaphylaxis: A 2023 practice parameter update",
+          "journal": "Annals of Allergy, Asthma & Immunology",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / Anaphylaxis: A 2023 practice parameter update / Annals of Allergy, Asthma & Immunology / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "S_FacialEdema",
+      "name": "颜面部水肿",
+      "type": "SymptomSign",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "facial edema",
+        "面部水肿",
+        "颜面水肿"
+      ],
+      "summary": "面部和眼睑肿起来，提示反应正在加重。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
+          "journal": "Radiology",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
+          "journal": "Allergy",
+          "year": 2024,
+          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "S_ThroatDiscomfort",
+      "name": "咽喉部不适",
+      "type": "SymptomSign",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "throat discomfort",
+        "咽部不适",
+        "咽喉不适"
+      ],
+      "summary": "嗓子发紧、像有东西卡住，是需要立刻处理的危险信号。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
+          "journal": "Radiology",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "Anaphylaxis: A 2023 practice parameter update",
+          "journal": "Annals of Allergy, Asthma & Immunology",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / Anaphylaxis: A 2023 practice parameter update / Annals of Allergy, Asthma & Immunology / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "S_ChestTightness",
+      "name": "胸闷",
+      "type": "SymptomSign",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "chest tightness",
+        "胸部闷"
+      ],
+      "summary": "胸口发闷、觉得透不过气的主诉。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
+          "journal": "Radiology",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
+          "journal": "Allergy",
+          "year": 2024,
+          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "S_GeneralizedWeakness",
+      "name": "全身无力",
+      "type": "SymptomSign",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "generalized weakness",
+        "乏力",
+        "全身乏力"
+      ],
+      "summary": "浑身没劲、站不稳的感觉。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
+          "journal": "Radiology",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "Anaphylaxis: A 2023 practice parameter update",
+          "journal": "Annals of Allergy, Asthma & Immunology",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / Anaphylaxis: A 2023 practice parameter update / Annals of Allergy, Asthma & Immunology / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "S_AnaphylacticShock",
+      "name": "过敏性休克",
+      "type": "SymptomSign",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "anaphylactic shock",
+        "过敏性休克表现",
+        "休克"
+      ],
+      "summary": "最重的一类过敏反应，会危及生命，必须马上抢救。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "Anaphylaxis: A 2023 practice parameter update",
+          "journal": "Annals of Allergy, Asthma & Immunology",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / Anaphylaxis: A 2023 practice parameter update / Annals of Allergy, Asthma & Immunology / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        },
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
+          "journal": "Radiology",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
+          "journal": "Allergy",
+          "year": 2024,
+          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "S_Extravasation",
+      "name": "碘对比剂外渗",
+      "type": "SymptomSign",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "extravasation of iodine contrast agent",
+        "对比剂外渗",
+        "静脉外渗",
+        "外渗"
+      ],
+      "summary": "造影剂没进血管、漏到皮下，轻则肿痛，重则组织坏死。",
+      "attrs": [
+        {
+          "k": "发生率",
+          "v": "文献报道约 0.1%～0.9%"
+        },
+        {
+          "k": "处置要点",
+          "v": "停止注射 · 保留留置针 · 禁止揉搓 · 抬高患肢"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "系统评价",
+          "author": "姚金秀、杨丽娜、梅申聪、董芳辉",
+          "title": "放射科碘对比剂外渗影响因素的系统评价",
+          "journal": "上海护理",
+          "year": 2023,
+          "cite": "姚金秀、杨丽娜、梅申聪、董芳辉 / 放射科碘对比剂外渗影响因素的系统评价 / 上海护理 / 2023",
+          "grade": "汇总证据",
+          "ref": "R17"
+        },
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "S_ContrastAKI",
+      "name": "对比剂相关急性肾损伤",
+      "type": "SymptomSign",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "contrast induced acute kidney injury",
+        "对比剂相关性急性肾损伤",
+        "造影剂肾病",
+        "CI-AKI"
+      ],
+      "summary": "打完造影剂后短时间内出现的肾脏功能损伤。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
+          "title": "肾病患者静脉注射碘对比剂应用专家共识",
+          "journal": "中华放射学杂志",
+          "year": 2021,
+          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
+          "grade": "指南与共识",
+          "ref": "R05"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会",
+          "title": "碘对比剂诱导的急性肾损伤防治的专家共识",
+          "journal": "中华肾脏病杂志",
+          "year": 2022,
+          "cite": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会 / 碘对比剂诱导的急性肾损伤防治的专家共识 / 中华肾脏病杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R06"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Navarese EP, Gurbel PA, Andreotti F, et al.",
+          "title": "Prevention of contrast-induced acute kidney injury in patients undergoing cardiovascular procedures—a systematic review and network meta-analysis",
+          "journal": "PLOS ONE",
+          "year": 2017,
+          "cite": "Navarese EP, Gurbel PA, Andreotti F, et al. / Prevention of contrast-induced acute kidney injury in patients undergoing cardiovascular procedures—a systematic review and network meta-analysis / PLOS ONE / 2017",
+          "grade": "汇总证据",
+          "ref": "R18"
+        },
+        {
+          "type": "声明",
+          "author": "Davenport MS, Perazella MA, Yee J, et al.",
+          "title": "Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation",
+          "journal": "Radiology",
+          "year": 2020,
+          "cite": "Davenport MS, Perazella MA, Yee J, et al. / Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation / Radiology / 2020",
+          "grade": "学会声明",
+          "ref": "R11"
+        },
+        {
+          "type": "推荐",
+          "author": "de Laforcade L, Bobot M, Bellin MF, et al.",
+          "title": "ESUR recommendations on the use of contrast media: Practice survey, review and commentary by CJN, FIRN and SFNDT",
+          "journal": "Nephrologie & Therapeutique",
+          "year": 2021,
+          "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / ESUR recommendations on the use of contrast media: Practice survey, review and commentary by CJN, FIRN and SFNDT / Nephrologie & Therapeutique / 2021",
+          "grade": "推荐意见",
+          "ref": "R15"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "SC_AdverseSpectrum",
+      "name": "碘对比剂不良反应谱",
+      "type": "SymptomCategory",
+      "tags": [
+        "症状分类"
+      ],
+      "aliases": [
+        "不良反应谱",
+        "不良反应谱系"
+      ],
+      "summary": "把打造影剂之后可能出的各类反应归到一起的分类。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "American College of Radiology, Committee on Drugs and Contrast Media",
+          "title": "ACR Manual on Contrast Media",
+          "journal": "American College of Radiology",
+          "year": 2024,
+          "cite": "American College of Radiology, Committee on Drugs and Contrast Media / ACR Manual on Contrast Media / American College of Radiology / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "SC_Hypersensitivity",
+      "name": "过敏反应谱",
+      "type": "SymptomCategory",
+      "tags": [
+        "症状分类"
+      ],
+      "aliases": [
+        "过敏反应谱"
+      ],
+      "summary": "过敏这一类反应从轻到重的分层。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
+          "journal": "Radiology",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "SC_ExtravasationSpectrum",
+      "name": "静脉外渗反应谱",
+      "type": "SymptomCategory",
+      "tags": [
+        "症状分类"
+      ],
+      "aliases": [
+        "外渗反应谱"
+      ],
+      "summary": "外渗发生后从轻到重的表现分层。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "SC_RenalSpectrum",
+      "name": "肾功能损害谱",
+      "type": "SymptomCategory",
+      "tags": [
+        "症状分类"
+      ],
+      "aliases": [
+        "肾功能损害谱"
+      ],
+      "summary": "造影后肾功能从轻微波动到明显损伤的分层。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
+          "title": "肾病患者静脉注射碘对比剂应用专家共识",
+          "journal": "中华放射学杂志",
+          "year": 2021,
+          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
+          "grade": "指南与共识",
+          "ref": "R05"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "AT_AllergyHistory",
+      "name": "过敏史询问",
+      "type": "AssessmentTool",
+      "tags": [
+        "评估工具"
+      ],
+      "aliases": [
+        "allergy history inquiry",
+        "既往过敏史询问",
+        "过敏史筛查"
+      ],
+      "summary": "检查前一项一项问清楚以前有没有过敏反应的评估动作。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        },
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
+          "journal": "Radiology",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "AT_RenalAssessment",
+      "name": "肾功能风险评估",
+      "type": "AssessmentTool",
+      "tags": [
+        "评估工具"
+      ],
+      "aliases": [
+        "renal risk assessment",
+        "eGFR 评估",
+        "肾功能评估"
+      ],
+      "summary": "结合 eGFR 与正在吃的药，判断这次造影风险有多大的评估方法。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
+          "title": "肾病患者静脉注射碘对比剂应用专家共识",
+          "journal": "中华放射学杂志",
+          "year": 2021,
+          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
+          "grade": "指南与共识",
+          "ref": "R05"
+        },
+        {
+          "type": "声明",
+          "author": "Davenport MS, Perazella MA, Yee J, et al.",
+          "title": "Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation",
+          "journal": "Radiology",
+          "year": 2020,
+          "cite": "Davenport MS, Perazella MA, Yee J, et al. / Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation / Radiology / 2020",
+          "grade": "学会声明",
+          "ref": "R11"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "AT_ExtravasationAssessment",
+      "name": "外渗风险评估",
+      "type": "AssessmentTool",
+      "tags": [
+        "评估工具"
+      ],
+      "aliases": [
+        "extravasation risk assessment",
+        "外渗风险评估表"
+      ],
+      "summary": "检查前先把外渗高危的人挑出来的评估方法。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "系统评价",
+          "author": "姚金秀、杨丽娜、梅申聪、董芳辉",
+          "title": "放射科碘对比剂外渗影响因素的系统评价",
+          "journal": "上海护理",
+          "year": 2023,
+          "cite": "姚金秀、杨丽娜、梅申聪、董芳辉 / 放射科碘对比剂外渗影响因素的系统评价 / 上海护理 / 2023",
+          "grade": "汇总证据",
+          "ref": "R17"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "AT_VascularAssessment",
+      "name": "血管条件评估",
+      "type": "AssessmentTool",
+      "tags": [
+        "评估工具"
+      ],
+      "aliases": [
+        "vascular assessment",
+        "静脉条件评估",
+        "血管可视化评估"
+      ],
+      "summary": "扎针之前评估血管粗细、弹性和位置的方法。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "标准",
+          "author": "国家卫生健康委员会",
+          "title": "WS/T 433—2023 静脉治疗护理技术操作标准",
+          "journal": "国家卫生健康委员会（卫生行业标准）",
+          "year": 2023,
+          "cite": "国家卫生健康委员会 / WS/T 433—2023 静脉治疗护理技术操作标准 / 国家卫生健康委员会（卫生行业标准） / 2023",
+          "grade": "标准与规范",
+          "ref": "R08"
+        },
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "RF_ContrastAllergyHistory",
+      "name": "既往碘对比剂过敏史",
+      "type": "RiskFactor",
+      "tags": [
+        "高危因素"
+      ],
+      "aliases": [
+        "contrast allergy history",
+        "碘对比剂过敏史",
+        "既往过敏反应史"
+      ],
+      "summary": "以前打造影剂出过事，是最重要的一条风险提示。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
+          "journal": "Radiology",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
+          "journal": "Allergy",
+          "year": 2024,
+          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "RF_RenalImpairment",
+      "name": "肾功能不全",
+      "type": "RiskFactor",
+      "tags": [
+        "高危因素"
+      ],
+      "aliases": [
+        "renal impairment",
+        "肾功能损害",
+        "eGFR 偏低"
+      ],
+      "summary": "肾脏过滤功能本来就不好，造影后更容易受损。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
+          "title": "肾病患者静脉注射碘对比剂应用专家共识",
+          "journal": "中华放射学杂志",
+          "year": 2021,
+          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
+          "grade": "指南与共识",
+          "ref": "R05"
+        },
+        {
+          "type": "声明",
+          "author": "Davenport MS, Perazella MA, Yee J, et al.",
+          "title": "Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation",
+          "journal": "Radiology",
+          "year": 2020,
+          "cite": "Davenport MS, Perazella MA, Yee J, et al. / Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation / Radiology / 2020",
+          "grade": "学会声明",
+          "ref": "R11"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "RF_Dehydration",
+      "name": "脱水",
+      "type": "RiskFactor",
+      "tags": [
+        "高危因素"
+      ],
+      "aliases": [
+        "dehydration",
+        "容量不足"
+      ],
+      "summary": "身体缺水时血管更脆、肾脏也更容易受损。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
+          "title": "肾病患者静脉注射碘对比剂应用专家共识",
+          "journal": "中华放射学杂志",
+          "year": 2021,
+          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
+          "grade": "指南与共识",
+          "ref": "R05"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会",
+          "title": "碘对比剂诱导的急性肾损伤防治的专家共识",
+          "journal": "中华肾脏病杂志",
+          "year": 2022,
+          "cite": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会 / 碘对比剂诱导的急性肾损伤防治的专家共识 / 中华肾脏病杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R06"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "RF_UncontrolledAsthma",
+      "name": "未控制的哮喘",
+      "type": "RiskFactor",
+      "tags": [
+        "高危因素"
+      ],
+      "aliases": [
+        "uncontrolled asthma",
+        "哮喘未控制"
+      ],
+      "summary": "哮喘没控制好时，造影剂诱发反应的风险更高。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
+          "journal": "Radiology",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
+          "journal": "Allergy",
+          "year": 2024,
+          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "RF_DiabetesMetformin",
+      "name": "糖尿病服用二甲双胍",
+      "type": "RiskFactor",
+      "tags": [
+        "高危因素"
+      ],
+      "aliases": [
+        "metformin use",
+        "二甲双胍用药"
+      ],
+      "summary": "正在吃二甲双胍的糖尿病患者，造影前后要按医嘱停药。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
+          "title": "肾病患者静脉注射碘对比剂应用专家共识",
+          "journal": "中华放射学杂志",
+          "year": 2021,
+          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
+          "grade": "指南与共识",
+          "ref": "R05"
+        },
+        {
+          "type": "声明",
+          "author": "Davenport MS, Perazella MA, Yee J, et al.",
+          "title": "Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation",
+          "journal": "Radiology",
+          "year": 2020,
+          "cite": "Davenport MS, Perazella MA, Yee J, et al. / Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation / Radiology / 2020",
+          "grade": "学会声明",
+          "ref": "R11"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "RF_Hyperthyroidism",
+      "name": "甲亢未控制",
+      "type": "RiskFactor",
+      "tags": [
+        "高危因素"
+      ],
+      "aliases": [
+        "hyperthyroidism",
+        "甲状腺功能亢进"
+      ],
+      "summary": "甲亢没治好的人打造影剂，可能诱发甲状腺危象。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
+          "title": "肾病患者静脉注射碘对比剂应用专家共识",
+          "journal": "中华放射学杂志",
+          "year": 2021,
+          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
+          "grade": "指南与共识",
+          "ref": "R05"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "RF_CardiacDisease",
+      "name": "心功能不全",
+      "type": "RiskFactor",
+      "tags": [
+        "高危因素"
+      ],
+      "aliases": [
+        "heart failure",
+        "充血性心力衰竭",
+        "心功能不全"
+      ],
+      "summary": "心脏泵血功能差的人，补液要格外谨慎。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
+          "title": "肾病患者静脉注射碘对比剂应用专家共识",
+          "journal": "中华放射学杂志",
+          "year": 2021,
+          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
+          "grade": "指南与共识",
+          "ref": "R05"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会",
+          "title": "碘对比剂诱导的急性肾损伤防治的专家共识",
+          "journal": "中华肾脏病杂志",
+          "year": 2022,
+          "cite": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会 / 碘对比剂诱导的急性肾损伤防治的专家共识 / 中华肾脏病杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R06"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "RF_AgeExtremes",
+      "name": "高龄或低龄",
+      "type": "RiskFactor",
+      "tags": [
+        "高危因素"
+      ],
+      "aliases": [
+        "extremes of age",
+        "高龄",
+        "婴幼儿"
+      ],
+      "summary": "年纪特别大或者特别小的患者，血管条件通常更差。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "系统评价",
+          "author": "姚金秀、杨丽娜、梅申聪、董芳辉",
+          "title": "放射科碘对比剂外渗影响因素的系统评价",
+          "journal": "上海护理",
+          "year": 2023,
+          "cite": "姚金秀、杨丽娜、梅申聪、董芳辉 / 放射科碘对比剂外渗影响因素的系统评价 / 上海护理 / 2023",
+          "grade": "汇总证据",
+          "ref": "R17"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "RF_Pregnancy",
+      "name": "妊娠",
+      "type": "RiskFactor",
+      "tags": [
+        "高危因素"
+      ],
+      "aliases": [
+        "pregnancy",
+        "妊娠期"
+      ],
+      "summary": "怀孕期间要先评估辐射与对比剂的必要性。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "RF_FragileVein",
+      "name": "静脉条件差",
+      "type": "RiskFactor",
+      "tags": [
+        "高危因素"
+      ],
+      "aliases": [
+        "fragile vein",
+        "外周静脉硬化",
+        "血管脆弱"
+      ],
+      "summary": "血管细、脆、硬化，容易发生外渗。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "系统评价",
+          "author": "姚金秀、杨丽娜、梅申聪、董芳辉",
+          "title": "放射科碘对比剂外渗影响因素的系统评价",
+          "journal": "上海护理",
+          "year": 2023,
+          "cite": "姚金秀、杨丽娜、梅申聪、董芳辉 / 放射科碘对比剂外渗影响因素的系统评价 / 上海护理 / 2023",
+          "grade": "汇总证据",
+          "ref": "R17"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "RF_HighPressureInjection",
+      "name": "高压注射",
+      "type": "RiskFactor",
+      "tags": [
+        "高危因素"
+      ],
+      "aliases": [
+        "high pressure injection",
+        "高压注射器推注"
+      ],
+      "summary": "用高压注射器快速推药，会明显增加外渗风险。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "系统评价",
+          "author": "姚金秀、杨丽娜、梅申聪、董芳辉",
+          "title": "放射科碘对比剂外渗影响因素的系统评价",
+          "journal": "上海护理",
+          "year": 2023,
+          "cite": "姚金秀、杨丽娜、梅申聪、董芳辉 / 放射科碘对比剂外渗影响因素的系统评价 / 上海护理 / 2023",
+          "grade": "汇总证据",
+          "ref": "R17"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "RF_NoSalineFlush",
+      "name": "未做生理盐水试推",
+      "type": "RiskFactor",
+      "tags": [
+        "高危因素"
+      ],
+      "aliases": [
+        "no saline flush check",
+        "未试推生理盐水"
+      ],
+      "summary": "推药之前不先试推生理盐水，就难发现血管通不通。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "PM_AdrenalineIM",
+      "name": "肌内注射肾上腺素",
+      "type": "PharmacologicalManagement",
+      "tags": [
+        "药物治疗"
+      ],
+      "aliases": [
+        "intramuscular adrenaline",
+        "IM adrenaline",
+        "肾上腺素肌注"
+      ],
+      "summary": "抢救过敏性休克的第一线用药，打在大腿外侧中部。",
+      "attrs": [
+        {
+          "k": "给药部位",
+          "v": "大腿外侧中部肌内注射"
+        },
+        {
+          "k": "重复给药",
+          "v": "必要时每 5～15 分钟重复"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "Anaphylaxis: A 2023 practice parameter update",
+          "journal": "Annals of Allergy, Asthma & Immunology",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / Anaphylaxis: A 2023 practice parameter update / Annals of Allergy, Asthma & Immunology / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        },
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
+          "journal": "Radiology",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "PM_Corticosteroid",
+      "name": "糖皮质激素",
+      "type": "PharmacologicalManagement",
+      "tags": [
+        "药物治疗"
+      ],
+      "aliases": [
+        "corticosteroid",
+        "激素治疗",
+        "地塞米松"
+      ],
+      "summary": "配合抗组胺药控制过敏反应的辅助用药。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
+          "journal": "Radiology",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
+          "journal": "Allergy",
+          "year": 2024,
+          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "PM_Antihistamine",
+      "name": "抗组胺药",
+      "type": "PharmacologicalManagement",
+      "tags": [
+        "药物治疗"
+      ],
+      "aliases": [
+        "antihistamine",
+        "苯海拉明",
+        "异丙嗪"
+      ],
+      "summary": "止痒、减轻风团样皮损的常用药。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
+          "journal": "Radiology",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
+          "journal": "Allergy",
+          "year": 2024,
+          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "PM_SalineHydration",
+      "name": "生理盐水水化",
+      "type": "PharmacologicalManagement",
+      "tags": [
+        "药物治疗"
+      ],
+      "aliases": [
+        "saline hydration",
+        "静脉水化",
+        "生理盐水补液"
+      ],
+      "summary": "用生理盐水把血容量补足，是保护肾脏最有效的常规办法。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
+          "title": "肾病患者静脉注射碘对比剂应用专家共识",
+          "journal": "中华放射学杂志",
+          "year": 2021,
+          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
+          "grade": "指南与共识",
+          "ref": "R05"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会",
+          "title": "碘对比剂诱导的急性肾损伤防治的专家共识",
+          "journal": "中华肾脏病杂志",
+          "year": 2022,
+          "cite": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会 / 碘对比剂诱导的急性肾损伤防治的专家共识 / 中华肾脏病杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R06"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Navarese EP, Gurbel PA, Andreotti F, et al.",
+          "title": "Prevention of contrast-induced acute kidney injury in patients undergoing cardiovascular procedures—a systematic review and network meta-analysis",
+          "journal": "PLOS ONE",
+          "year": 2017,
+          "cite": "Navarese EP, Gurbel PA, Andreotti F, et al. / Prevention of contrast-induced acute kidney injury in patients undergoing cardiovascular procedures—a systematic review and network meta-analysis / PLOS ONE / 2017",
+          "grade": "汇总证据",
+          "ref": "R18"
+        },
+        {
+          "type": "最佳证据",
+          "author": "Weisbord SD, Gallagher M, Jneid H, et al.",
+          "title": "Outcomes after Angiography with Sodium Bicarbonate and Acetylcysteine",
+          "journal": "New England Journal of Medicine",
+          "year": 2018,
+          "cite": "Weisbord SD, Gallagher M, Jneid H, et al. / Outcomes after Angiography with Sodium Bicarbonate and Acetylcysteine / New England Journal of Medicine / 2018",
+          "grade": "汇总证据",
+          "ref": "R19"
+        },
+        {
+          "type": "推荐",
+          "author": "de Laforcade L, Bobot M, Bellin MF, et al.",
+          "title": "ESUR recommendations on the use of contrast media: Practice survey, review and commentary by CJN, FIRN and SFNDT",
+          "journal": "Nephrologie & Therapeutique",
+          "year": 2021,
+          "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / ESUR recommendations on the use of contrast media: Practice survey, review and commentary by CJN, FIRN and SFNDT / Nephrologie & Therapeutique / 2021",
+          "grade": "推荐意见",
+          "ref": "R15"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "PM_MagnesiumSulfate",
+      "name": "50%硫酸镁湿敷",
+      "type": "PharmacologicalManagement",
+      "tags": [
+        "药物治疗"
+      ],
+      "aliases": [
+        "magnesium sulfate wet compress",
+        "硫酸镁湿敷"
+      ],
+      "summary": "外渗后局部湿敷用的药，可以减轻肿胀和疼痛。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "PM_DexamethasoneWetCompress",
+      "name": "0.05%地塞米松湿敷",
+      "type": "PharmacologicalManagement",
+      "tags": [
+        "药物治疗"
+      ],
+      "aliases": [
+        "dexamethasone wet compress",
+        "地塞米松湿敷"
+      ],
+      "summary": "外渗后局部湿敷的另一种选择。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "PM_MetforminHold",
+      "name": "暂停二甲双胍",
+      "type": "PharmacologicalManagement",
+      "tags": [
+        "药物治疗"
+      ],
+      "aliases": [
+        "metformin hold",
+        "停用二甲双胍"
+      ],
+      "summary": "肾功能明显下降时，按医嘱停用二甲双胍并复查肾功能。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
+          "title": "肾病患者静脉注射碘对比剂应用专家共识",
+          "journal": "中华放射学杂志",
+          "year": 2021,
+          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
+          "grade": "指南与共识",
+          "ref": "R05"
+        },
+        {
+          "type": "声明",
+          "author": "Davenport MS, Perazella MA, Yee J, et al.",
+          "title": "Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation",
+          "journal": "Radiology",
+          "year": 2020,
+          "cite": "Davenport MS, Perazella MA, Yee J, et al. / Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation / Radiology / 2020",
+          "grade": "学会声明",
+          "ref": "R11"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "NPM_StopInjection",
+      "name": "立即停止注射",
+      "type": "NonPharmacologicalManagement",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "stop injection",
+        "停止输注",
+        "停止推注"
+      ],
+      "summary": "怀疑外渗时，第一时间停下推药。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "NPM_KeepCatheter",
+      "name": "保留静脉留置针",
+      "type": "NonPharmacologicalManagement",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "keep catheter",
+        "保留留置针",
+        "回抽外渗药液"
+      ],
+      "summary": "先不拔针，尽量回抽漏出来的药液，再按规范处理。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "NPM_LimbElevation",
+      "name": "患肢抬高",
+      "type": "NonPharmacologicalManagement",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "limb elevation",
+        "抬高患肢",
+        "患肢高于心脏水平"
+      ],
+      "summary": "把患肢抬到比心脏高的位置，帮助消肿。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "NPM_ColdCompress",
+      "name": "局部冷敷",
+      "type": "NonPharmacologicalManagement",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "cold compress",
+        "冷敷"
+      ],
+      "summary": "外渗早期冷敷能减轻肿胀和疼痛。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "NPM_CloseObservation",
+      "name": "密切观察",
+      "type": "NonPharmacologicalManagement",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "close observation",
+        "观察30分钟",
+        "严密观察"
+      ],
+      "summary": "处置或用药之后至少观察一段时间，确认安全再离开。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        },
+        {
+          "type": "指南",
+          "author": "American College of Radiology, Committee on Drugs and Contrast Media",
+          "title": "ACR Manual on Contrast Media",
+          "journal": "American College of Radiology",
+          "year": 2024,
+          "cite": "American College of Radiology, Committee on Drugs and Contrast Media / ACR Manual on Contrast Media / American College of Radiology / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "NPM_OralHydration",
+      "name": "口服补液",
+      "type": "NonPharmacologicalManagement",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "oral hydration",
+        "饮水",
+        "多喝水"
+      ],
+      "summary": "检查以后适量喝水，帮助肾脏把造影剂排出去。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "American College of Radiology, Committee on Drugs and Contrast Media",
+          "title": "ACR Manual on Contrast Media",
+          "journal": "American College of Radiology",
+          "year": 2024,
+          "cite": "American College of Radiology, Committee on Drugs and Contrast Media / ACR Manual on Contrast Media / American College of Radiology / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "NPM_ContrastPreparation",
+      "name": "对比剂预处理",
+      "type": "NonPharmacologicalManagement",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "contrast preparation",
+        "对比剂加温",
+        "预热对比剂"
+      ],
+      "summary": "把对比剂加温到 37℃ 左右再用，可减少不适和外渗。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        },
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "NPM_VascularVisualization",
+      "name": "血管可视化",
+      "type": "NonPharmacologicalManagement",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "vascular visualization",
+        "血管可视化技术",
+        "超声引导穿刺"
+      ],
+      "summary": "看不清血管时，用超声等设备辅助定位再扎针。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "标准",
+          "author": "国家卫生健康委员会",
+          "title": "WS/T 433—2023 静脉治疗护理技术操作标准",
+          "journal": "国家卫生健康委员会（卫生行业标准）",
+          "year": 2023,
+          "cite": "国家卫生健康委员会 / WS/T 433—2023 静脉治疗护理技术操作标准 / 国家卫生健康委员会（卫生行业标准） / 2023",
+          "grade": "标准与规范",
+          "ref": "R08"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "NPM_PsychologicalSupport",
+      "name": "心理疏导",
+      "type": "NonPharmacologicalManagement",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "psychological support",
+        "心理护理",
+        "安抚患者"
+      ],
+      "summary": "检查前后安抚情绪，减少紧张带来的不适。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "书籍",
+          "author": "秦月兰、郑淑梅、刘雪莲",
+          "title": "影像护理学",
+          "journal": "人民卫生出版社",
+          "year": 2020,
+          "cite": "秦月兰、郑淑梅、刘雪莲 / 影像护理学 / 人民卫生出版社 / 2020",
+          "grade": "教材",
+          "ref": "R20"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "MP_NursingMeasures",
+      "name": "护理措施",
+      "type": "ManagementPrinciple",
+      "tags": [
+        "处置原则"
+      ],
+      "aliases": [
+        "nursing measures",
+        "护理处置措施"
+      ],
+      "summary": "本图谱中针对各类风险采取的护理动作总称。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        },
+        {
+          "type": "指南",
+          "author": "American College of Radiology, Committee on Drugs and Contrast Media",
+          "title": "ACR Manual on Contrast Media",
+          "journal": "American College of Radiology",
+          "year": 2024,
+          "cite": "American College of Radiology, Committee on Drugs and Contrast Media / ACR Manual on Contrast Media / American College of Radiology / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "MP_NursingPrevention",
+      "name": "护理预防",
+      "type": "ManagementPrinciple",
+      "tags": [
+        "预防性护理"
+      ],
+      "aliases": [
+        "nursing prevention",
+        "预防性护理"
+      ],
+      "summary": "在问题发生之前把风险挡掉的护理原则。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "MP_NursingIntervention",
+      "name": "护理干预",
+      "type": "ManagementPrinciple",
+      "tags": [
+        "应急干预"
+      ],
+      "aliases": [
+        "nursing intervention",
+        "干预性护理"
+      ],
+      "summary": "反应已经发生之后的现场护理干预原则。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "Anaphylaxis: A 2023 practice parameter update",
+          "journal": "Annals of Allergy, Asthma & Immunology",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / Anaphylaxis: A 2023 practice parameter update / Annals of Allergy, Asthma & Immunology / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "MP_ExtravasationPrinciple",
+      "name": "外渗处置原则",
+      "type": "ManagementPrinciple",
+      "tags": [
+        "外渗处置"
+      ],
+      "aliases": [
+        "extravasation management principle",
+        "外渗处理原则"
+      ],
+      "summary": "外渗之后的处理顺序与操作边界。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "MP_AdverseReactionTriage",
+      "name": "不良反应分级处置原则",
+      "type": "ManagementPrinciple",
+      "tags": [
+        "分级处置"
+      ],
+      "aliases": [
+        "adverse reaction triage",
+        "不良反应分级处置"
+      ],
+      "summary": "按轻重分级决定用药、监护与是否转诊的处置原则。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
+          "journal": "Radiology",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
+          "journal": "Allergy",
+          "year": 2024,
+          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        },
+        {
+          "type": "指南",
+          "author": "American College of Radiology, Committee on Drugs and Contrast Media",
+          "title": "ACR Manual on Contrast Media",
+          "journal": "American College of Radiology",
+          "year": 2024,
+          "cite": "American College of Radiology, Committee on Drugs and Contrast Media / ACR Manual on Contrast Media / American College of Radiology / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "MP_RenalProtectionPrinciple",
+      "name": "肾保护原则",
+      "type": "ManagementPrinciple",
+      "tags": [
+        "肾保护"
+      ],
+      "aliases": [
+        "renal protection principle",
+        "肾功能保护原则"
+      ],
+      "summary": "以保护肾功能为目标的用药与补液原则。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
+          "title": "肾病患者静脉注射碘对比剂应用专家共识",
+          "journal": "中华放射学杂志",
+          "year": 2021,
+          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
+          "grade": "指南与共识",
+          "ref": "R05"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会",
+          "title": "碘对比剂诱导的急性肾损伤防治的专家共识",
+          "journal": "中华肾脏病杂志",
+          "year": 2022,
+          "cite": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会 / 碘对比剂诱导的急性肾损伤防治的专家共识 / 中华肾脏病杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R06"
+        },
+        {
+          "type": "声明",
+          "author": "Davenport MS, Perazella MA, Yee J, et al.",
+          "title": "Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation",
+          "journal": "Radiology",
+          "year": 2020,
+          "cite": "Davenport MS, Perazella MA, Yee J, et al. / Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation / Radiology / 2020",
+          "grade": "学会声明",
+          "ref": "R11"
+        },
+        {
+          "type": "最佳证据",
+          "author": "Weisbord SD, Gallagher M, Jneid H, et al.",
+          "title": "Outcomes after Angiography with Sodium Bicarbonate and Acetylcysteine",
+          "journal": "New England Journal of Medicine",
+          "year": 2018,
+          "cite": "Weisbord SD, Gallagher M, Jneid H, et al. / Outcomes after Angiography with Sodium Bicarbonate and Acetylcysteine / New England Journal of Medicine / 2018",
+          "grade": "汇总证据",
+          "ref": "R19"
+        },
+        {
+          "type": "推荐",
+          "author": "de Laforcade L, Bobot M, Bellin MF, et al.",
+          "title": "ESUR recommendations on the use of contrast media: Practice survey, review and commentary by CJN, FIRN and SFNDT",
+          "journal": "Nephrologie & Therapeutique",
+          "year": 2021,
+          "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / ESUR recommendations on the use of contrast media: Practice survey, review and commentary by CJN, FIRN and SFNDT / Nephrologie & Therapeutique / 2021",
+          "grade": "推荐意见",
+          "ref": "R15"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "NT_RiskAssessment",
+      "name": "护理风险评估理论",
+      "type": "NursingTheory",
+      "tags": [
+        "护理理论"
+      ],
+      "aliases": [
+        "nursing risk assessment theory",
+        "风险评估理论"
+      ],
+      "summary": "用系统化方法识别并分级风险的护理思路。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "系统评价",
+          "author": "姚金秀、杨丽娜、梅申聪、董芳辉",
+          "title": "放射科碘对比剂外渗影响因素的系统评价",
+          "journal": "上海护理",
+          "year": 2023,
+          "cite": "姚金秀、杨丽娜、梅申聪、董芳辉 / 放射科碘对比剂外渗影响因素的系统评价 / 上海护理 / 2023",
+          "grade": "汇总证据",
+          "ref": "R17"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "NT_EvidenceBasedNursing",
+      "name": "循证护理",
+      "type": "NursingTheory",
+      "tags": [
+        "护理理论"
+      ],
+      "aliases": [
+        "evidence based nursing",
+        "循证护理实践"
+      ],
+      "summary": "每一项护理动作都以最新、最可靠的证据为依据。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
+          "journal": "Radiology",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "NT_EarlyWarning",
+      "name": "早期预警",
+      "type": "NursingTheory",
+      "tags": [
+        "护理理论"
+      ],
+      "aliases": [
+        "early warning",
+        "早期识别与预警"
+      ],
+      "summary": "在情况变坏之前先看出苗头、及时升级处理。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
+          "journal": "Allergy",
+          "year": 2024,
+          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "Anaphylaxis: A 2023 practice parameter update",
+          "journal": "Annals of Allergy, Asthma & Immunology",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / Anaphylaxis: A 2023 practice parameter update / Annals of Allergy, Asthma & Immunology / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "NT_StandardizedProcess",
+      "name": "标准化护理流程",
+      "type": "NursingTheory",
+      "tags": [
+        "护理理论"
+      ],
+      "aliases": [
+        "standardized nursing process",
+        "流程化管理"
+      ],
+      "summary": "用统一流程把每一步做对，减少个人之间的差异。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "标准",
+          "author": "国家卫生健康委员会",
+          "title": "WS/T 433—2023 静脉治疗护理技术操作标准",
+          "journal": "国家卫生健康委员会（卫生行业标准）",
+          "year": 2023,
+          "cite": "国家卫生健康委员会 / WS/T 433—2023 静脉治疗护理技术操作标准 / 国家卫生健康委员会（卫生行业标准） / 2023",
+          "grade": "标准与规范",
+          "ref": "R08"
+        },
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "DE_PreExamNotice",
+      "name": "检查前注意事项科普",
+      "type": "DiseaseEducation",
+      "tags": [
+        "疾病科普"
+      ],
+      "aliases": [
+        "pre-examination notice",
+        "检查前宣教",
+        "增强CT检查前须知",
+        "iodine contrast agent",
+        "碘对比剂"
+      ],
+      "summary": "告诉患者检查前该做什么、该跟医生说什么。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        },
+        {
+          "type": "书籍",
+          "author": "秦月兰、郑淑梅、刘雪莲",
+          "title": "影像护理学",
+          "journal": "人民卫生出版社",
+          "year": 2020,
+          "cite": "秦月兰、郑淑梅、刘雪莲 / 影像护理学 / 人民卫生出版社 / 2020",
+          "grade": "教材",
+          "ref": "R20"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "DE_AfterExamCare",
+      "name": "检查后观察与护理科普",
+      "type": "DiseaseEducation",
+      "tags": [
+        "疾病科普"
+      ],
+      "aliases": [
+        "after examination care",
+        "检查后宣教",
+        "增强CT检查后须知"
+      ],
+      "summary": "告诉患者检查以后怎么观察、多久能回家、怎么补水。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "American College of Radiology, Committee on Drugs and Contrast Media",
+          "title": "ACR Manual on Contrast Media",
+          "journal": "American College of Radiology",
+          "year": 2024,
+          "cite": "American College of Radiology, Committee on Drugs and Contrast Media / ACR Manual on Contrast Media / American College of Radiology / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        },
+        {
+          "type": "书籍",
+          "author": "秦月兰、郑淑梅、刘雪莲",
+          "title": "影像护理学",
+          "journal": "人民卫生出版社",
+          "year": 2020,
+          "cite": "秦月兰、郑淑梅、刘雪莲 / 影像护理学 / 人民卫生出版社 / 2020",
+          "grade": "教材",
+          "ref": "R20"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "DE_AllergyDisclosure",
+      "name": "过敏史告知科普",
+      "type": "DiseaseEducation",
+      "tags": [
+        "疾病科普"
+      ],
+      "aliases": [
+        "allergy disclosure",
+        "过敏史告知",
+        "过敏史说明"
+      ],
+      "summary": "告诉患者为什么一定要如实说自己的过敏史。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
+          "journal": "Radiology",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "DE_ExtravasationHomeCare",
+      "name": "外渗居家护理科普",
+      "type": "DiseaseEducation",
+      "tags": [
+        "疾病科普"
+      ],
+      "aliases": [
+        "extravasation home care",
+        "外渗后居家护理"
+      ],
+      "summary": "告诉患者回家以后怎么观察患肢、什么时候必须回医院。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "DE_EmergencyKnowledge",
+      "name": "急救知识科普",
+      "type": "DiseaseEducation",
+      "tags": [
+        "疾病科普"
+      ],
+      "aliases": [
+        "emergency knowledge",
+        "急救知识",
+        "自救与呼救"
+      ],
+      "summary": "告诉患者出现严重反应时立刻该做什么、怎么呼救。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "Anaphylaxis: A 2023 practice parameter update",
+          "journal": "Annals of Allergy, Asthma & Immunology",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / Anaphylaxis: A 2023 practice parameter update / Annals of Allergy, Asthma & Immunology / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
+          "journal": "Allergy",
+          "year": 2024,
+          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "SS_MildResolved",
+      "name": "轻度反应已缓解",
+      "type": "SymptomStatus",
+      "tags": [
+        "症状状态"
+      ],
+      "aliases": [
+        "mild reaction resolved",
+        "轻度已缓解"
+      ],
+      "summary": "轻度反应经过处理以后症状消退。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
+          "journal": "Radiology",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "SS_SevereRecovered",
+      "name": "重度反应已恢复",
+      "type": "SymptomStatus",
+      "tags": [
+        "症状状态"
+      ],
+      "aliases": [
+        "severe reaction recovered",
+        "重度已恢复"
+      ],
+      "summary": "重度反应经抢救以后生命体征恢复稳定。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "Anaphylaxis: A 2023 practice parameter update",
+          "journal": "Annals of Allergy, Asthma & Immunology",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / Anaphylaxis: A 2023 practice parameter update / Annals of Allergy, Asthma & Immunology / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
+          "journal": "Allergy",
+          "year": 2024,
+          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "SS_RenalStable",
+      "name": "肾功能稳定",
+      "type": "SymptomStatus",
+      "tags": [
+        "症状状态"
+      ],
+      "aliases": [
+        "stable renal function",
+        "肾功能平稳"
+      ],
+      "summary": "复查显示肾功能回到了原有水平。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
+          "title": "肾病患者静脉注射碘对比剂应用专家共识",
+          "journal": "中华放射学杂志",
+          "year": 2021,
+          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
+          "grade": "指南与共识",
+          "ref": "R05"
+        },
+        {
+          "type": "声明",
+          "author": "Davenport MS, Perazella MA, Yee J, et al.",
+          "title": "Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation",
+          "journal": "Radiology",
+          "year": 2020,
+          "cite": "Davenport MS, Perazella MA, Yee J, et al. / Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation / Radiology / 2020",
+          "grade": "学会声明",
+          "ref": "R11"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "FS_LimbFunction",
+      "name": "患肢功能状态",
+      "type": "FunctionalStatus",
+      "tags": [
+        "功能状态"
+      ],
+      "aliases": [
+        "limb function",
+        "患肢功能",
+        "肢体功能状况"
+      ],
+      "summary": "外渗处理以后患肢能不能正常活动、感觉有没有恢复。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R01",
+      "name": "ACR Manual on Contrast Media",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "指南"
+      ],
+      "aliases": [
+        "ACR Manual on Contrast Media",
+        "ACR 对比剂手册",
+        "美国放射学会对比剂手册",
+        "指南",
+        "guideline",
+        "guidelines"
+      ],
+      "summary": "美国放射学会每年更新的对比剂使用手册，是这份图谱里对比剂安全使用的主干依据。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "指南"
+        },
+        {
+          "k": "年份",
+          "v": "2024"
+        },
+        {
+          "k": "核验标识",
+          "v": "https://www.acr.org/clinical-resources/contrast-manual（官方在线版 · 2024 年版）"
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "American College of Radiology, Committee on Drugs and Contrast Media",
+          "title": "ACR Manual on Contrast Media",
+          "journal": "American College of Radiology",
+          "year": 2024,
+          "cite": "American College of Radiology, Committee on Drugs and Contrast Media / ACR Manual on Contrast Media / American College of Radiology / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R02",
+      "name": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "指南"
+      ],
+      "aliases": [
+        "ESUR 对比剂外渗指南",
+        "欧洲泌尿放射学会外渗指南",
+        "指南",
+        "guideline",
+        "guidelines"
+      ],
+      "summary": "欧洲泌尿放射学会对比剂安全委员会关于静脉外渗的系统评价与处理指南。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "指南"
+        },
+        {
+          "k": "年份",
+          "v": "2022"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.1007/s00330-021-08433-4 · PMID 35175378 · 2022;32(5):3056-3066"
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R03",
+      "name": "碘对比剂使用指南（第2版）",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "指南"
+      ],
+      "aliases": [
+        "碘对比剂使用指南",
+        "碘对比剂使用指南第2版",
+        "对比剂使用指南第2版",
+        "指南",
+        "guideline",
+        "guidelines"
+      ],
+      "summary": "我国放射学界关于碘对比剂怎么选、怎么用、怎么防反应的基础文件。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "指南"
+        },
+        {
+          "k": "年份",
+          "v": "2013"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.3760/cma.j.issn.1005-1201.2013.10.001 · 中华医学期刊全文数据库 rs.yiigle.com/cmaid/733764"
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R04",
+      "name": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "指南"
+      ],
+      "aliases": [
+        "含碘对比剂静脉外渗护理管理实践指南",
+        "外渗护理管理实践指南 2026",
+        "指南",
+        "guideline",
+        "guidelines"
+      ],
+      "summary": "中华护理学会最新一版外渗护理实践指南，是外渗预防与处理的操作蓝本。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "指南"
+        },
+        {
+          "k": "年份",
+          "v": "2026"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.3761/j.issn.0254-1769.2026.15.006 · 2026;61(15):2054-2060"
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R05",
+      "name": "肾病患者静脉注射碘对比剂应用专家共识",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "共识"
+      ],
+      "aliases": [
+        "肾病患者静脉注射碘对比剂应用专家共识",
+        "肾病与碘对比剂共识",
+        "共识",
+        "consensus"
+      ],
+      "summary": "专门给肾功能不好的人定规矩：哪些指标要看、哪些药要停、怎么补液。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "共识"
+        },
+        {
+          "k": "年份",
+          "v": "2021"
+        },
+        {
+          "k": "核验标识",
+          "v": "rs.yiigle.com/cmaid/1323652 · 2021;55(6):580-590"
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
+          "title": "肾病患者静脉注射碘对比剂应用专家共识",
+          "journal": "中华放射学杂志",
+          "year": 2021,
+          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
+          "grade": "指南与共识",
+          "ref": "R05"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R06",
+      "name": "碘对比剂诱导的急性肾损伤防治的专家共识",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "共识"
+      ],
+      "aliases": [
+        "碘对比剂诱导的急性肾损伤防治的专家共识",
+        "CI-AKI 防治专家共识",
+        "共识",
+        "consensus"
+      ],
+      "summary": "从用药角度讲清楚造影后肾损伤怎么定义、怎么防、怎么治。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "共识"
+        },
+        {
+          "k": "年份",
+          "v": "2022"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.3760/cma.j.cn441217-20210909-00041 · 2022;38(3):265-288"
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会",
+          "title": "碘对比剂诱导的急性肾损伤防治的专家共识",
+          "journal": "中华肾脏病杂志",
+          "year": 2022,
+          "cite": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会 / 碘对比剂诱导的急性肾损伤防治的专家共识 / 中华肾脏病杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R06"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R07",
+      "name": "影像科碘对比剂输注安全专家共识",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "共识"
+      ],
+      "aliases": [
+        "影像科碘对比剂输注安全专家共识",
+        "输注安全专家共识",
+        "共识",
+        "consensus"
+      ],
+      "summary": "讲输药前后每一步怎么做、出了事怎么处理的第一份护理共识。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "共识"
+        },
+        {
+          "k": "年份",
+          "v": "2018"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.3969/j.issn.1008-794X.2018.08.001 · 2018;27(8):707-712"
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R08",
+      "name": "WS/T 433—2023 静脉治疗护理技术操作标准",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "标准"
+      ],
+      "aliases": [
+        "静脉治疗护理技术操作标准",
+        "WS/T 433-2023",
+        "静脉治疗护理技术操作标准 2023",
+        "标准",
+        "standard"
+      ],
+      "summary": "全国静脉治疗的操作标准：怎么选管、怎么穿刺、怎么管并发症。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "标准"
+        },
+        {
+          "k": "年份",
+          "v": "2023"
+        },
+        {
+          "k": "核验标识",
+          "v": "国卫通〔2023〕9号 · nhc.gov.cn/wjw/pjl/202309/d09188781db944f8936728280cba4759.shtml"
+        },
+        {
+          "k": "证据等级",
+          "v": "标准与规范"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "标准",
+          "author": "国家卫生健康委员会",
+          "title": "WS/T 433—2023 静脉治疗护理技术操作标准",
+          "journal": "国家卫生健康委员会（卫生行业标准）",
+          "year": 2023,
+          "cite": "国家卫生健康委员会 / WS/T 433—2023 静脉治疗护理技术操作标准 / 国家卫生健康委员会（卫生行业标准） / 2023",
+          "grade": "标准与规范",
+          "ref": "R08"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R09",
+      "name": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "规范"
+      ],
+      "aliases": [
+        "含碘对比剂静脉外渗预防与护理规范",
+        "DB36/T 2299-2026",
+        "规范",
+        "specification"
+      ],
+      "summary": "把外渗预防与护理写成地方标准的地方文件，步骤写得很细。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "规范"
+        },
+        {
+          "k": "年份",
+          "v": "2026"
+        },
+        {
+          "k": "核验标识",
+          "v": "全国标准信息公共服务平台 std.samr.gov.cn · 备案号 131428-2026 · 2026-09-12 发布 / 2027-04-01 实施"
+        },
+        {
+          "k": "证据等级",
+          "v": "标准与规范"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R10",
+      "name": "DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "规范"
+      ],
+      "aliases": [
+        "CT增强扫描碘对比剂外渗预防与护理规范",
+        "DB45/T 2935-2024",
+        "规范",
+        "specification"
+      ],
+      "summary": "专门针对 CT 增强场景的外渗预防与护理地方规范。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "规范"
+        },
+        {
+          "k": "年份",
+          "v": "2024"
+        },
+        {
+          "k": "核验标识",
+          "v": "全国标准信息公共服务平台 dbba.sacinfo.org.cn · 2024-11-14 发布 / 2025-02-01 实施"
+        },
+        {
+          "k": "证据等级",
+          "v": "标准与规范"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "规范",
+          "author": "广西壮族自治区市场监督管理局",
+          "title": "DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范",
+          "journal": "广西壮族自治区市场监督管理局（地方标准）",
+          "year": 2024,
+          "cite": "广西壮族自治区市场监督管理局 / DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范 / 广西壮族自治区市场监督管理局（地方标准） / 2024",
+          "grade": "标准与规范",
+          "ref": "R10"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R11",
+      "name": "Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "声明"
+      ],
+      "aliases": [
+        "ACR 与 NKF 肾脏病患者使用碘对比剂声明",
+        "ACR-NKF consensus statement",
+        "声明",
+        "statement"
+      ],
+      "summary": "美国放射学会和肾脏病基金会的联合声明，给肾功能不好的人定了用药底线。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "声明"
+        },
+        {
+          "k": "年份",
+          "v": "2020"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.1148/radiol.2019192094 · PMID 31961246 · 2020;294(3):660-668"
+        },
+        {
+          "k": "证据等级",
+          "v": "学会声明"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Davenport MS, Perazella MA, Yee J, et al.",
+          "title": "Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation",
+          "journal": "Radiology",
+          "year": 2020,
+          "cite": "Davenport MS, Perazella MA, Yee J, et al. / Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation / Radiology / 2020",
+          "grade": "学会声明",
+          "ref": "R11"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R12",
+      "name": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "声明"
+      ],
+      "aliases": [
+        "ACR-AAAAI 对比剂过敏反应声明",
+        "对比剂过敏反应学会声明",
+        "声明",
+        "statement"
+      ],
+      "summary": "两个学会联合发布的过敏反应防治声明，是国际上最新的对比剂过敏处理口径。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "声明"
+        },
+        {
+          "k": "年份",
+          "v": "2025"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.1148/radiol.240100 · PMID 40326871 · 2025;315(2):e240100"
+        },
+        {
+          "k": "证据等级",
+          "v": "学会声明"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
+          "journal": "Radiology",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R13",
+      "name": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "建议"
+      ],
+      "aliases": [
+        "对比剂过敏反应管理算法 2024",
+        "radiocontrast hypersensitivity algorithm",
+        "建议",
+        "advice"
+      ],
+      "summary": "把对比剂过敏反应分成轻中重、并给出逐级处理路径的算法文件。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "建议"
+        },
+        {
+          "k": "年份",
+          "v": "2024"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.1111/all.16191 · PMID 38887890 · 2024;79(9):2570-2572"
+        },
+        {
+          "k": "证据等级",
+          "v": "推荐意见"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
+          "journal": "Allergy",
+          "year": 2024,
+          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R14",
+      "name": "CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "建议"
+      ],
+      "aliases": [
+        "CAR-CSACI 对比剂过敏实践指导",
+        "对比剂过敏实践指导",
+        "建议",
+        "advice"
+      ],
+      "summary": "加拿大放射学会与变态反应学会给出的对比剂过敏实践指导。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "建议"
+        },
+        {
+          "k": "年份",
+          "v": "2025"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.1177/08465371241311253 · PMID 39797723 · 2025;76(3):400-416"
+        },
+        {
+          "k": "证据等级",
+          "v": "推荐意见"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "建议",
+          "author": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al.",
+          "title": "CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity",
+          "journal": "Canadian Association of Radiologists Journal",
+          "year": 2025,
+          "cite": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al. / CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity / Canadian Association of Radiologists Journal / 2025",
+          "grade": "推荐意见",
+          "ref": "R14"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R15",
+      "name": "ESUR recommendations on the use of contrast media: Practice survey, review and commentary by CJN, FIRN and SFNDT",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "推荐"
+      ],
+      "aliases": [
+        "ESUR 对比剂使用推荐",
+        "ESUR recommendations on contrast media",
+        "推荐",
+        "recommendation"
+      ],
+      "summary": "欧洲泌尿放射学会对比剂使用推荐意见，护理侧的用药建议多出自此。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "推荐"
+        },
+        {
+          "k": "年份",
+          "v": "2021"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.1016/j.nephro.2020.10.011 · PMID 33551369 · 2021;17(2):80-91"
+        },
+        {
+          "k": "证据等级",
+          "v": "推荐意见"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "推荐",
+          "author": "de Laforcade L, Bobot M, Bellin MF, et al.",
+          "title": "ESUR recommendations on the use of contrast media: Practice survey, review and commentary by CJN, FIRN and SFNDT",
+          "journal": "Nephrologie & Therapeutique",
+          "year": 2021,
+          "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / ESUR recommendations on the use of contrast media: Practice survey, review and commentary by CJN, FIRN and SFNDT / Nephrologie & Therapeutique / 2021",
+          "grade": "推荐意见",
+          "ref": "R15"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R16",
+      "name": "Anaphylaxis: A 2023 practice parameter update",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "推荐实践"
+      ],
+      "aliases": [
+        "2023 过敏性休克实践参数更新",
+        "anaphylaxis practice parameter",
+        "推荐实践",
+        "practice parameter"
+      ],
+      "summary": "国际公认的过敏性休克抢救实践参数，肾上腺素怎么打写得很清楚。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "推荐实践"
+        },
+        {
+          "k": "年份",
+          "v": "2024"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.1016/j.anai.2023.09.015 · PMID 38108678 · 2024;132(2):124-176"
+        },
+        {
+          "k": "证据等级",
+          "v": "推荐意见"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "Anaphylaxis: A 2023 practice parameter update",
+          "journal": "Annals of Allergy, Asthma & Immunology",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / Anaphylaxis: A 2023 practice parameter update / Annals of Allergy, Asthma & Immunology / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R17",
+      "name": "放射科碘对比剂外渗影响因素的系统评价",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "系统评价"
+      ],
+      "aliases": [
+        "放射科碘对比剂外渗影响因素的系统评价",
+        "外渗影响因素系统评价",
+        "系统评价",
+        "systematic review",
+        "systematic reviews"
+      ],
+      "summary": "汇总 19 项研究、2063 例外渗案例，归纳出外渗的常见危险因素。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "系统评价"
+        },
+        {
+          "k": "年份",
+          "v": "2023"
+        },
+        {
+          "k": "核验标识",
+          "v": "上海护理 2023;23(5):45-49 · 官网摘要页 sh-nj.com/shhl/ch/reader/view_abstract.aspx?file_no=20221220（该文 DOI 未在数据库核到，故不列）"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "系统评价",
+          "author": "姚金秀、杨丽娜、梅申聪、董芳辉",
+          "title": "放射科碘对比剂外渗影响因素的系统评价",
+          "journal": "上海护理",
+          "year": 2023,
+          "cite": "姚金秀、杨丽娜、梅申聪、董芳辉 / 放射科碘对比剂外渗影响因素的系统评价 / 上海护理 / 2023",
+          "grade": "汇总证据",
+          "ref": "R17"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R18",
+      "name": "Prevention of contrast-induced acute kidney injury in patients undergoing cardiovascular procedures—a systematic review and network meta-analysis",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "Meta分析"
+      ],
+      "aliases": [
+        "对比剂急性肾损伤预防网络 Meta 分析",
+        "CI-AKI prevention network meta-analysis",
+        "Meta分析",
+        "meta analysis"
+      ],
+      "summary": "比较各种防造影肾损伤办法的网络 Meta 分析，补液方案排序的证据来源。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "Meta分析"
+        },
+        {
+          "k": "年份",
+          "v": "2017"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.1371/journal.pone.0168726 · PMID 28151965 · 2017;12(2):e0168726"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "Meta分析",
+          "author": "Navarese EP, Gurbel PA, Andreotti F, et al.",
+          "title": "Prevention of contrast-induced acute kidney injury in patients undergoing cardiovascular procedures—a systematic review and network meta-analysis",
+          "journal": "PLOS ONE",
+          "year": 2017,
+          "cite": "Navarese EP, Gurbel PA, Andreotti F, et al. / Prevention of contrast-induced acute kidney injury in patients undergoing cardiovascular procedures—a systematic review and network meta-analysis / PLOS ONE / 2017",
+          "grade": "汇总证据",
+          "ref": "R18"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R19",
+      "name": "Outcomes after Angiography with Sodium Bicarbonate and Acetylcysteine",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "最佳证据"
+      ],
+      "aliases": [
+        "PRESERVE 试验",
+        "造影后碳酸氢钠与乙酰半胱氨酸研究",
+        "最佳证据",
+        "best evidence"
+      ],
+      "summary": "大规模随机对照试验，证明碳酸氢钠加乙酰半胱氨酸并不比生理盐水更好。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "最佳证据"
+        },
+        {
+          "k": "年份",
+          "v": "2018"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.1056/NEJMoa1710933 · PMID 29130810 · 2018;378(7):603-614 · NCT01467466"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "最佳证据",
+          "author": "Weisbord SD, Gallagher M, Jneid H, et al.",
+          "title": "Outcomes after Angiography with Sodium Bicarbonate and Acetylcysteine",
+          "journal": "New England Journal of Medicine",
+          "year": 2018,
+          "cite": "Weisbord SD, Gallagher M, Jneid H, et al. / Outcomes after Angiography with Sodium Bicarbonate and Acetylcysteine / New England Journal of Medicine / 2018",
+          "grade": "汇总证据",
+          "ref": "R19"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R20",
+      "name": "影像护理学",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "书籍"
+      ],
+      "aliases": [
+        "影像护理学",
+        "imaging nursing",
+        "影像护理学教材",
+        "书籍",
+        "book"
+      ],
+      "summary": "系统讲影像科护理的教材，护理常规与患者宣教的通识来源。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "书籍"
+        },
+        {
+          "k": "年份",
+          "v": "2020"
+        },
+        {
+          "k": "核验标识",
+          "v": "ISBN 978-7-117-30161-9（人民卫生出版社第 1 版）"
+        },
+        {
+          "k": "证据等级",
+          "v": "教材"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "书籍",
+          "author": "秦月兰、郑淑梅、刘雪莲",
+          "title": "影像护理学",
+          "journal": "人民卫生出版社",
+          "year": 2020,
+          "cite": "秦月兰、郑淑梅、刘雪莲 / 影像护理学 / 人民卫生出版社 / 2020",
+          "grade": "教材",
+          "ref": "R20"
+        }
+      ],
+      "graph": "topic-01"
+    }
+  ],
+  "edges": [
+    {
+      "source": "S_Urticaria",
+      "target": "S_Rash",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_Rash",
+      "target": "SC_Hypersensitivity",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "SC_Hypersensitivity",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "SC_Hypersensitivity",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_FacialEdema",
+      "target": "SC_Hypersensitivity",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_ThroatDiscomfort",
+      "target": "SC_Hypersensitivity",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_ChestTightness",
+      "target": "SC_Hypersensitivity",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_GeneralizedWeakness",
+      "target": "SC_Hypersensitivity",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_Pruritus",
+      "target": "SC_Hypersensitivity",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "SC_ExtravasationSpectrum",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_ContrastAKI",
+      "target": "SC_RenalSpectrum",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "SC_AdverseSpectrum",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "SC_Hypersensitivity",
+      "target": "SC_AdverseSpectrum",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "SC_ExtravasationSpectrum",
+      "target": "SC_AdverseSpectrum",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "SC_RenalSpectrum",
+      "target": "SC_AdverseSpectrum",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "MP_NursingMeasures",
+      "target": "NT_EvidenceBasedNursing",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "MP_NursingPrevention",
+      "target": "NT_StandardizedProcess",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "MP_NursingIntervention",
+      "target": "NT_EarlyWarning",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "MP_ExtravasationPrinciple",
+      "target": "MP_NursingMeasures",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "MP_AdverseReactionTriage",
+      "target": "MP_NursingMeasures",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "MP_RenalProtectionPrinciple",
+      "target": "MP_NursingMeasures",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "S_AdverseReaction",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "S_AllergicReaction",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "S_Extravasation",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "S_ContrastAKI",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "E_CTEnhancedScan",
+      "target": "S_AdverseReaction",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "E_CTEnhancedScan",
+      "target": "S_Extravasation",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "E_CTEnhancedScan",
+      "target": "S_ContrastAKI",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "S_AllergicReaction",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "S_Extravasation",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "S_AdverseReaction",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "S_AnaphylacticShock",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "S_Urticaria",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "S_FacialEdema",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "S_ThroatDiscomfort",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "S_ChestTightness",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "S_GeneralizedWeakness",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "S_Urticaria",
+      "target": "S_Pruritus",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "S_Urticaria",
+      "target": "S_Rash",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "S_Rash",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "E_CTEnhancedScan",
+      "type": "DETECTED_BY",
+      "label": "通过检查发现"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "E_RenalFunction",
+      "type": "DETECTED_BY",
+      "label": "通过检查发现"
+    },
+    {
+      "source": "S_ContrastAKI",
+      "target": "E_RenalFunction",
+      "type": "DETECTED_BY",
+      "label": "通过检查发现"
+    },
+    {
+      "source": "RF_Hyperthyroidism",
+      "target": "E_ThyroidFunction",
+      "type": "DETECTED_BY",
+      "label": "通过检查发现"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "MP_NursingMeasures",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "MP_NursingPrevention",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "NT_StandardizedProcess",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "NT_RiskAssessment",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "MP_NursingMeasures",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "MP_AdverseReactionTriage",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "MP_NursingMeasures",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "MP_NursingIntervention",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "MP_AdverseReactionTriage",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "NT_EarlyWarning",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "NT_EvidenceBasedNursing",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "MP_NursingIntervention",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "MP_AdverseReactionTriage",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_Urticaria",
+      "target": "MP_NursingIntervention",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_Pruritus",
+      "target": "MP_NursingMeasures",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_Rash",
+      "target": "MP_NursingMeasures",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_FacialEdema",
+      "target": "MP_NursingIntervention",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_ThroatDiscomfort",
+      "target": "MP_NursingIntervention",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_ChestTightness",
+      "target": "MP_NursingIntervention",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_GeneralizedWeakness",
+      "target": "MP_NursingIntervention",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "MP_NursingIntervention",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "MP_ExtravasationPrinciple",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "NT_RiskAssessment",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_ContrastAKI",
+      "target": "MP_RenalProtectionPrinciple",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_ContrastAKI",
+      "target": "NT_RiskAssessment",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "E_CTEnhancedScan",
+      "target": "MP_NursingPrevention",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "MP_NursingPrevention",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "DE_PreExamNotice",
+      "type": "EDUCATED_BY",
+      "label": "由……教育"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "DE_AfterExamCare",
+      "type": "EDUCATED_BY",
+      "label": "由……教育"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "DE_AllergyDisclosure",
+      "type": "EDUCATED_BY",
+      "label": "由……教育"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "DE_ExtravasationHomeCare",
+      "type": "EDUCATED_BY",
+      "label": "由……教育"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "DE_EmergencyKnowledge",
+      "type": "EDUCATED_BY",
+      "label": "由……教育"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "DE_PreExamNotice",
+      "type": "EDUCATED_BY",
+      "label": "由……教育"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "DE_ExtravasationHomeCare",
+      "type": "EDUCATED_BY",
+      "label": "由……教育"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "DE_EmergencyKnowledge",
+      "type": "EDUCATED_BY",
+      "label": "由……教育"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "AT_AllergyHistory",
+      "type": "ASSESSED_BY",
+      "label": "由……评估"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "AT_AllergyHistory",
+      "type": "ASSESSED_BY",
+      "label": "由……评估"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "AT_AllergyHistory",
+      "type": "ASSESSED_BY",
+      "label": "由……评估"
+    },
+    {
+      "source": "S_Urticaria",
+      "target": "AT_AllergyHistory",
+      "type": "ASSESSED_BY",
+      "label": "由……评估"
+    },
+    {
+      "source": "S_ContrastAKI",
+      "target": "AT_RenalAssessment",
+      "type": "ASSESSED_BY",
+      "label": "由……评估"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "AT_ExtravasationAssessment",
+      "type": "ASSESSED_BY",
+      "label": "由……评估"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "AT_VascularAssessment",
+      "type": "ASSESSED_BY",
+      "label": "由……评估"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "RF_ContrastAllergyHistory",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "RF_UncontrolledAsthma",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "RF_Hyperthyroidism",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "RF_ContrastAllergyHistory",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "RF_UncontrolledAsthma",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "RF_AgeExtremes",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "RF_FragileVein",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "RF_HighPressureInjection",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "RF_NoSalineFlush",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "RF_AgeExtremes",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "RF_Dehydration",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_ContrastAKI",
+      "target": "RF_RenalImpairment",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_ContrastAKI",
+      "target": "RF_Dehydration",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_ContrastAKI",
+      "target": "RF_DiabetesMetformin",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_ContrastAKI",
+      "target": "RF_CardiacDisease",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_ContrastAKI",
+      "target": "RF_AgeExtremes",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "RF_ContrastAllergyHistory",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "RF_RenalImpairment",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "RF_Pregnancy",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_Rash",
+      "target": "RF_ContrastAllergyHistory",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_Urticaria",
+      "target": "RF_ContrastAllergyHistory",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_Pruritus",
+      "target": "RF_ContrastAllergyHistory",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_FacialEdema",
+      "target": "RF_ContrastAllergyHistory",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_ThroatDiscomfort",
+      "target": "RF_ContrastAllergyHistory",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_ChestTightness",
+      "target": "RF_CardiacDisease",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_GeneralizedWeakness",
+      "target": "RF_Dehydration",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "PM_AdrenalineIM",
+      "type": "TREATED_BY",
+      "label": "由……治疗",
+      "note": "大腿外侧中部肌内注射，必要时每 5～15 分钟重复"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "PM_Corticosteroid",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "PM_Antihistamine",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "PM_Corticosteroid",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_Urticaria",
+      "target": "PM_Antihistamine",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_Rash",
+      "target": "PM_Antihistamine",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_Pruritus",
+      "target": "PM_Antihistamine",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_FacialEdema",
+      "target": "PM_Corticosteroid",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "PM_MagnesiumSulfate",
+      "type": "TREATED_BY",
+      "label": "由……治疗",
+      "note": "早期冷敷使用"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "PM_DexamethasoneWetCompress",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_ContrastAKI",
+      "target": "PM_SalineHydration",
+      "type": "TREATED_BY",
+      "label": "由……治疗",
+      "note": "eGFR＜30 且未透析者按医嘱静脉水化"
+    },
+    {
+      "source": "S_ContrastAKI",
+      "target": "PM_MetforminHold",
+      "type": "TREATED_BY",
+      "label": "由……治疗",
+      "note": "eGFR＜30 者注射时停用，48 小时后复查再定"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "NPM_StopInjection",
+      "type": "TREATED_BY",
+      "label": "由……治疗",
+      "note": "第一步：立即停止推注"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "NPM_KeepCatheter",
+      "type": "TREATED_BY",
+      "label": "由……治疗",
+      "note": "第二步：保留留置针并尽量回抽"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "NPM_LimbElevation",
+      "type": "TREATED_BY",
+      "label": "由……治疗",
+      "note": "禁止局部按压揉搓"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "NPM_ColdCompress",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "NPM_VascularVisualization",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "NPM_CloseObservation",
+      "type": "TREATED_BY",
+      "label": "由……治疗",
+      "note": "轻度反应观察 30 分钟"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "NPM_CloseObservation",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "NPM_CloseObservation",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_ContrastAKI",
+      "target": "NPM_CloseObservation",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_ContrastAKI",
+      "target": "NPM_OralHydration",
+      "type": "TREATED_BY",
+      "label": "由……治疗",
+      "note": "肾功能正常者口服补液即可"
+    },
+    {
+      "source": "E_CTEnhancedScan",
+      "target": "NPM_ContrastPreparation",
+      "type": "TREATED_BY",
+      "label": "由……治疗",
+      "note": "对比剂加温至 37℃ 左右"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "NPM_ContrastPreparation",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "NPM_VascularVisualization",
+      "type": "TREATED_BY",
+      "label": "由……治疗",
+      "note": "使用耐高压型留置针，优先肘正中静脉"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "NPM_PsychologicalSupport",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "NPM_PsychologicalSupport",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "MP_NursingIntervention",
+      "target": "SS_SevereRecovered",
+      "type": "EFFECT_ON",
+      "label": "影响"
+    },
+    {
+      "source": "MP_NursingMeasures",
+      "target": "SS_MildResolved",
+      "type": "EFFECT_ON",
+      "label": "影响"
+    },
+    {
+      "source": "MP_ExtravasationPrinciple",
+      "target": "SS_MildResolved",
+      "type": "EFFECT_ON",
+      "label": "影响"
+    },
+    {
+      "source": "MP_AdverseReactionTriage",
+      "target": "SS_MildResolved",
+      "type": "EFFECT_ON",
+      "label": "影响"
+    },
+    {
+      "source": "MP_RenalProtectionPrinciple",
+      "target": "SS_RenalStable",
+      "type": "EFFECT_ON",
+      "label": "影响"
+    },
+    {
+      "source": "MP_NursingIntervention",
+      "target": "FS_LimbFunction",
+      "type": "EFFECT_ON",
+      "label": "影响"
+    },
+    {
+      "source": "MP_ExtravasationPrinciple",
+      "target": "FS_LimbFunction",
+      "type": "EFFECT_ON",
+      "label": "影响"
+    },
+    {
+      "source": "SS_MildResolved",
+      "target": "FS_LimbFunction",
+      "type": "EFFECT_ON",
+      "label": "影响"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "E_CTEnhancedScan",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "E_CTEnhancedScan",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "R15",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "E_RenalFunction",
+      "target": "R05",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "E_RenalFunction",
+      "target": "R11",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "E_ThyroidFunction",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "E_ThyroidFunction",
+      "target": "R05",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "R14",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Rash",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Rash",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "R14",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Urticaria",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Urticaria",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Urticaria",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Pruritus",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Pruritus",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_FacialEdema",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_FacialEdema",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ThroatDiscomfort",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ThroatDiscomfort",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ChestTightness",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ChestTightness",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_GeneralizedWeakness",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_GeneralizedWeakness",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "R17",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ContrastAKI",
+      "target": "R05",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ContrastAKI",
+      "target": "R06",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ContrastAKI",
+      "target": "R18",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ContrastAKI",
+      "target": "R11",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ContrastAKI",
+      "target": "R15",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_AdverseSpectrum",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_Hypersensitivity",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_ExtravasationSpectrum",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_RenalSpectrum",
+      "target": "R05",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_AllergyHistory",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_AllergyHistory",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_RenalAssessment",
+      "target": "R05",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_RenalAssessment",
+      "target": "R11",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_ExtravasationAssessment",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_ExtravasationAssessment",
+      "target": "R17",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_VascularAssessment",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_VascularAssessment",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_ContrastAllergyHistory",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_ContrastAllergyHistory",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_RenalImpairment",
+      "target": "R05",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_RenalImpairment",
+      "target": "R11",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_Dehydration",
+      "target": "R05",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_Dehydration",
+      "target": "R06",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_UncontrolledAsthma",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_UncontrolledAsthma",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_DiabetesMetformin",
+      "target": "R05",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_DiabetesMetformin",
+      "target": "R11",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_Hyperthyroidism",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_Hyperthyroidism",
+      "target": "R05",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_CardiacDisease",
+      "target": "R05",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_CardiacDisease",
+      "target": "R06",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_AgeExtremes",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_AgeExtremes",
+      "target": "R17",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_Pregnancy",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_FragileVein",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_FragileVein",
+      "target": "R17",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_HighPressureInjection",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_HighPressureInjection",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_HighPressureInjection",
+      "target": "R17",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_NoSalineFlush",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_NoSalineFlush",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_AdrenalineIM",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_AdrenalineIM",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_Corticosteroid",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_Corticosteroid",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_Antihistamine",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_Antihistamine",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_SalineHydration",
+      "target": "R05",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_SalineHydration",
+      "target": "R06",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_SalineHydration",
+      "target": "R18",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_SalineHydration",
+      "target": "R19",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_SalineHydration",
+      "target": "R15",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_MagnesiumSulfate",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_DexamethasoneWetCompress",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_MetforminHold",
+      "target": "R05",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_MetforminHold",
+      "target": "R11",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_StopInjection",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_StopInjection",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_KeepCatheter",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_KeepCatheter",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_LimbElevation",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_LimbElevation",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_LimbElevation",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ColdCompress",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ColdCompress",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_CloseObservation",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_CloseObservation",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_OralHydration",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_OralHydration",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ContrastPreparation",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ContrastPreparation",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_VascularVisualization",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_VascularVisualization",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_PsychologicalSupport",
+      "target": "R20",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_NursingMeasures",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_NursingMeasures",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_NursingMeasures",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_NursingPrevention",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_NursingPrevention",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_NursingPrevention",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_NursingIntervention",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_NursingIntervention",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_NursingIntervention",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_ExtravasationPrinciple",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_ExtravasationPrinciple",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_ExtravasationPrinciple",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_AdverseReactionTriage",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_AdverseReactionTriage",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_AdverseReactionTriage",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_RenalProtectionPrinciple",
+      "target": "R05",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_RenalProtectionPrinciple",
+      "target": "R06",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_RenalProtectionPrinciple",
+      "target": "R11",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_RenalProtectionPrinciple",
+      "target": "R19",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_RenalProtectionPrinciple",
+      "target": "R15",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NT_RiskAssessment",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NT_RiskAssessment",
+      "target": "R17",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NT_EvidenceBasedNursing",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NT_EvidenceBasedNursing",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NT_EarlyWarning",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NT_EarlyWarning",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NT_StandardizedProcess",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NT_StandardizedProcess",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NT_StandardizedProcess",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_PreExamNotice",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_PreExamNotice",
+      "target": "R20",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_AfterExamCare",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_AfterExamCare",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_AfterExamCare",
+      "target": "R20",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_AllergyDisclosure",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_AllergyDisclosure",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_ExtravasationHomeCare",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_ExtravasationHomeCare",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_EmergencyKnowledge",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_EmergencyKnowledge",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SS_MildResolved",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SS_MildResolved",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SS_SevereRecovered",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SS_SevereRecovered",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SS_RenalStable",
+      "target": "R05",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SS_RenalStable",
+      "target": "R11",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FS_LimbFunction",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FS_LimbFunction",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    }
+  ]
+}

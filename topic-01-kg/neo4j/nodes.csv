@@ -1,0 +1,93 @@
+id,label,name,summary,tags,evidence_count
+DC_CTEnhancedRisk,DiseaseCategory,CT增强检查护理风险,做增强CT时可能遇到的各类护理风险的总称。,题目 CT增强,2
+E_CTEnhancedScan,Exam,CT增强扫描,打药以后再做断层成像的检查方法，图像更清楚，但要用药就有风险。,辅助检查,2
+E_ContrastInjection,Exam,碘对比剂静脉输注,增强检查里打进血管的含碘药水，本图谱所有风险的源头。,辅助检查 对比剂,4
+E_RenalFunction,Exam,肾功能检查,抽血查肾脏过滤能力，用来判断这次造影安不安全。,辅助检查,2
+E_ThyroidFunction,Exam,甲状腺功能检查,抽血查甲状腺功能，甲亢没控制住的人不适合打造影剂。,辅助检查,2
+S_AdverseReaction,SymptomSign,不良反应,使用碘对比剂后出现的非预期身体反应。,症状体征,3
+S_Rash,SymptomSign,皮疹,身上出现的红斑或丘疹样皮损。,症状体征,2
+S_AllergicReaction,SymptomSign,过敏反应,对碘对比剂发生的变态反应，可以累及呼吸道、循环系统和全身。,症状体征,3
+S_Urticaria,SymptomSign,荨麻疹,接触碘对比剂后成片出现的红色风团样皮损。,症状体征,3
+S_Pruritus,SymptomSign,瘙痒,主观上难以忍受的痒感。,症状体征,2
+S_FacialEdema,SymptomSign,颜面部水肿,面部和眼睑肿起来，提示反应正在加重。,症状体征,2
+S_ThroatDiscomfort,SymptomSign,咽喉部不适,嗓子发紧、像有东西卡住，是需要立刻处理的危险信号。,症状体征,2
+S_ChestTightness,SymptomSign,胸闷,胸口发闷、觉得透不过气的主诉。,症状体征,2
+S_GeneralizedWeakness,SymptomSign,全身无力,浑身没劲、站不稳的感觉。,症状体征,2
+S_AnaphylacticShock,SymptomSign,过敏性休克,最重的一类过敏反应，会危及生命，必须马上抢救。,症状体征,3
+S_Extravasation,SymptomSign,碘对比剂外渗,造影剂没进血管、漏到皮下，轻则肿痛，重则组织坏死。,症状体征,4
+S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,打完造影剂后短时间内出现的肾脏功能损伤。,症状体征,5
+SC_AdverseSpectrum,SymptomCategory,碘对比剂不良反应谱,把打造影剂之后可能出的各类反应归到一起的分类。,症状分类,1
+SC_Hypersensitivity,SymptomCategory,过敏反应谱,过敏这一类反应从轻到重的分层。,症状分类,1
+SC_ExtravasationSpectrum,SymptomCategory,静脉外渗反应谱,外渗发生后从轻到重的表现分层。,症状分类,1
+SC_RenalSpectrum,SymptomCategory,肾功能损害谱,造影后肾功能从轻微波动到明显损伤的分层。,症状分类,1
+AT_AllergyHistory,AssessmentTool,过敏史询问,检查前一项一项问清楚以前有没有过敏反应的评估动作。,评估工具,2
+AT_RenalAssessment,AssessmentTool,肾功能风险评估,结合 eGFR 与正在吃的药，判断这次造影风险有多大的评估方法。,评估工具,2
+AT_ExtravasationAssessment,AssessmentTool,外渗风险评估,检查前先把外渗高危的人挑出来的评估方法。,评估工具,2
+AT_VascularAssessment,AssessmentTool,血管条件评估,扎针之前评估血管粗细、弹性和位置的方法。,评估工具,2
+RF_ContrastAllergyHistory,RiskFactor,既往碘对比剂过敏史,以前打造影剂出过事，是最重要的一条风险提示。,高危因素,2
+RF_RenalImpairment,RiskFactor,肾功能不全,肾脏过滤功能本来就不好，造影后更容易受损。,高危因素,2
+RF_Dehydration,RiskFactor,脱水,身体缺水时血管更脆、肾脏也更容易受损。,高危因素,2
+RF_UncontrolledAsthma,RiskFactor,未控制的哮喘,哮喘没控制好时，造影剂诱发反应的风险更高。,高危因素,2
+RF_DiabetesMetformin,RiskFactor,糖尿病服用二甲双胍,正在吃二甲双胍的糖尿病患者，造影前后要按医嘱停药。,高危因素,2
+RF_Hyperthyroidism,RiskFactor,甲亢未控制,甲亢没治好的人打造影剂，可能诱发甲状腺危象。,高危因素,2
+RF_CardiacDisease,RiskFactor,心功能不全,心脏泵血功能差的人，补液要格外谨慎。,高危因素,2
+RF_AgeExtremes,RiskFactor,高龄或低龄,年纪特别大或者特别小的患者，血管条件通常更差。,高危因素,2
+RF_Pregnancy,RiskFactor,妊娠,怀孕期间要先评估辐射与对比剂的必要性。,高危因素,1
+RF_FragileVein,RiskFactor,静脉条件差,血管细、脆、硬化，容易发生外渗。,高危因素,2
+RF_HighPressureInjection,RiskFactor,高压注射,用高压注射器快速推药，会明显增加外渗风险。,高危因素,3
+RF_NoSalineFlush,RiskFactor,未做生理盐水试推,推药之前不先试推生理盐水，就难发现血管通不通。,高危因素,2
+PM_AdrenalineIM,PharmacologicalManagement,肌内注射肾上腺素,抢救过敏性休克的第一线用药，打在大腿外侧中部。,药物治疗,2
+PM_Corticosteroid,PharmacologicalManagement,糖皮质激素,配合抗组胺药控制过敏反应的辅助用药。,药物治疗,2
+PM_Antihistamine,PharmacologicalManagement,抗组胺药,止痒、减轻风团样皮损的常用药。,药物治疗,2
+PM_SalineHydration,PharmacologicalManagement,生理盐水水化,用生理盐水把血容量补足，是保护肾脏最有效的常规办法。,药物治疗,5
+PM_MagnesiumSulfate,PharmacologicalManagement,50%硫酸镁湿敷,外渗后局部湿敷用的药，可以减轻肿胀和疼痛。,药物治疗,1
+PM_DexamethasoneWetCompress,PharmacologicalManagement,0.05%地塞米松湿敷,外渗后局部湿敷的另一种选择。,药物治疗,1
+PM_MetforminHold,PharmacologicalManagement,暂停二甲双胍,肾功能明显下降时，按医嘱停用二甲双胍并复查肾功能。,药物治疗,2
+NPM_StopInjection,NonPharmacologicalManagement,立即停止注射,怀疑外渗时，第一时间停下推药。,非药物管理,2
+NPM_KeepCatheter,NonPharmacologicalManagement,保留静脉留置针,先不拔针，尽量回抽漏出来的药液，再按规范处理。,非药物管理,2
+NPM_LimbElevation,NonPharmacologicalManagement,患肢抬高,把患肢抬到比心脏高的位置，帮助消肿。,非药物管理,3
+NPM_ColdCompress,NonPharmacologicalManagement,局部冷敷,外渗早期冷敷能减轻肿胀和疼痛。,非药物管理,2
+NPM_CloseObservation,NonPharmacologicalManagement,密切观察,处置或用药之后至少观察一段时间，确认安全再离开。,非药物管理,2
+NPM_OralHydration,NonPharmacologicalManagement,口服补液,检查以后适量喝水，帮助肾脏把造影剂排出去。,非药物管理,2
+NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理,把对比剂加温到 37℃ 左右再用，可减少不适和外渗。,非药物管理,2
+NPM_VascularVisualization,NonPharmacologicalManagement,血管可视化,看不清血管时，用超声等设备辅助定位再扎针。,非药物管理,2
+NPM_PsychologicalSupport,NonPharmacologicalManagement,心理疏导,检查前后安抚情绪，减少紧张带来的不适。,非药物管理,1
+MP_NursingMeasures,ManagementPrinciple,护理措施,本图谱中针对各类风险采取的护理动作总称。,处置原则,3
+MP_NursingPrevention,ManagementPrinciple,护理预防,在问题发生之前把风险挡掉的护理原则。,预防性护理,3
+MP_NursingIntervention,ManagementPrinciple,护理干预,反应已经发生之后的现场护理干预原则。,应急干预,3
+MP_ExtravasationPrinciple,ManagementPrinciple,外渗处置原则,外渗之后的处理顺序与操作边界。,外渗处置,3
+MP_AdverseReactionTriage,ManagementPrinciple,不良反应分级处置原则,按轻重分级决定用药、监护与是否转诊的处置原则。,分级处置,3
+MP_RenalProtectionPrinciple,ManagementPrinciple,肾保护原则,以保护肾功能为目标的用药与补液原则。,肾保护,5
+NT_RiskAssessment,NursingTheory,护理风险评估理论,用系统化方法识别并分级风险的护理思路。,护理理论,2
+NT_EvidenceBasedNursing,NursingTheory,循证护理,每一项护理动作都以最新、最可靠的证据为依据。,护理理论,2
+NT_EarlyWarning,NursingTheory,早期预警,在情况变坏之前先看出苗头、及时升级处理。,护理理论,2
+NT_StandardizedProcess,NursingTheory,标准化护理流程,用统一流程把每一步做对，减少个人之间的差异。,护理理论,3
+DE_PreExamNotice,DiseaseEducation,检查前注意事项科普,告诉患者检查前该做什么、该跟医生说什么。,疾病科普,2
+DE_AfterExamCare,DiseaseEducation,检查后观察与护理科普,告诉患者检查以后怎么观察、多久能回家、怎么补水。,疾病科普,3
+DE_AllergyDisclosure,DiseaseEducation,过敏史告知科普,告诉患者为什么一定要如实说自己的过敏史。,疾病科普,2
+DE_ExtravasationHomeCare,DiseaseEducation,外渗居家护理科普,告诉患者回家以后怎么观察患肢、什么时候必须回医院。,疾病科普,2
+DE_EmergencyKnowledge,DiseaseEducation,急救知识科普,告诉患者出现严重反应时立刻该做什么、怎么呼救。,疾病科普,2
+SS_MildResolved,SymptomStatus,轻度反应已缓解,轻度反应经过处理以后症状消退。,症状状态,2
+SS_SevereRecovered,SymptomStatus,重度反应已恢复,重度反应经抢救以后生命体征恢复稳定。,症状状态,2
+SS_RenalStable,SymptomStatus,肾功能稳定,复查显示肾功能回到了原有水平。,症状状态,2
+FS_LimbFunction,FunctionalStatus,患肢功能状态,外渗处理以后患肢能不能正常活动、感觉有没有恢复。,功能状态,2
+R01,Reference,ACR Manual on Contrast Media,美国放射学会每年更新的对比剂使用手册，是这份图谱里对比剂安全使用的主干依据。,文献 指南,1
+R02,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines,欧洲泌尿放射学会对比剂安全委员会关于静脉外渗的系统评价与处理指南。,文献 指南,1
+R03,Reference,碘对比剂使用指南（第2版）,我国放射学界关于碘对比剂怎么选、怎么用、怎么防反应的基础文件。,文献 指南,1
+R04,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）,中华护理学会最新一版外渗护理实践指南，是外渗预防与处理的操作蓝本。,文献 指南,1
+R05,Reference,肾病患者静脉注射碘对比剂应用专家共识,专门给肾功能不好的人定规矩：哪些指标要看、哪些药要停、怎么补液。,文献 共识,1
+R06,Reference,碘对比剂诱导的急性肾损伤防治的专家共识,从用药角度讲清楚造影后肾损伤怎么定义、怎么防、怎么治。,文献 共识,1
+R07,Reference,影像科碘对比剂输注安全专家共识,讲输药前后每一步怎么做、出了事怎么处理的第一份护理共识。,文献 共识,1
+R08,Reference,WS/T 433—2023 静脉治疗护理技术操作标准,全国静脉治疗的操作标准：怎么选管、怎么穿刺、怎么管并发症。,文献 标准,1
+R09,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范,把外渗预防与护理写成地方标准的地方文件，步骤写得很细。,文献 规范,1
+R10,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范,专门针对 CT 增强场景的外渗预防与护理地方规范。,文献 规范,1
+R11,Reference,Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation,美国放射学会和肾脏病基金会的联合声明，给肾功能不好的人定了用药底线。,文献 声明,1
+R12,Reference,"Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",两个学会联合发布的过敏反应防治声明，是国际上最新的对比剂过敏处理口径。,文献 声明,1
+R13,Reference,"An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",把对比剂过敏反应分成轻中重、并给出逐级处理路径的算法文件。,文献 建议,1
+R14,Reference,CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity,加拿大放射学会与变态反应学会给出的对比剂过敏实践指导。,文献 建议,1
+R15,Reference,"ESUR recommendations on the use of contrast media: Practice survey, review and commentary by CJN, FIRN and SFNDT",欧洲泌尿放射学会对比剂使用推荐意见，护理侧的用药建议多出自此。,文献 推荐,1
+R16,Reference,Anaphylaxis: A 2023 practice parameter update,国际公认的过敏性休克抢救实践参数，肾上腺素怎么打写得很清楚。,文献 推荐实践,1
+R17,Reference,放射科碘对比剂外渗影响因素的系统评价,汇总 19 项研究、2063 例外渗案例，归纳出外渗的常见危险因素。,文献 系统评价,1
+R18,Reference,Prevention of contrast-induced acute kidney injury in patients undergoing cardiovascular procedures—a systematic review and network meta-analysis,比较各种防造影肾损伤办法的网络 Meta 分析，补液方案排序的证据来源。,文献 Meta分析,1
+R19,Reference,Outcomes after Angiography with Sodium Bicarbonate and Acetylcysteine,大规模随机对照试验，证明碳酸氢钠加乙酰半胱氨酸并不比生理盐水更好。,文献 最佳证据,1
+R20,Reference,影像护理学,系统讲影像科护理的教材，护理常规与患者宣教的通识来源。,文献 书籍,1

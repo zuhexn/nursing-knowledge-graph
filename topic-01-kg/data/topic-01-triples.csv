@@ -1,0 +1,310 @@
+sub_type,sub_name,rel_name,obj_type,obj_name
+SymptomSign,荨麻疹,属于,SymptomSign,皮疹
+SymptomSign,皮疹,属于,SymptomCategory,过敏反应谱
+SymptomSign,过敏反应,属于,SymptomCategory,过敏反应谱
+SymptomSign,过敏性休克,属于,SymptomCategory,过敏反应谱
+SymptomSign,颜面部水肿,属于,SymptomCategory,过敏反应谱
+SymptomSign,咽喉部不适,属于,SymptomCategory,过敏反应谱
+SymptomSign,胸闷,属于,SymptomCategory,过敏反应谱
+SymptomSign,全身无力,属于,SymptomCategory,过敏反应谱
+SymptomSign,瘙痒,属于,SymptomCategory,过敏反应谱
+SymptomSign,碘对比剂外渗,属于,SymptomCategory,静脉外渗反应谱
+SymptomSign,对比剂相关急性肾损伤,属于,SymptomCategory,肾功能损害谱
+SymptomSign,不良反应,属于,SymptomCategory,碘对比剂不良反应谱
+SymptomCategory,过敏反应谱,属于,SymptomCategory,碘对比剂不良反应谱
+SymptomCategory,静脉外渗反应谱,属于,SymptomCategory,碘对比剂不良反应谱
+SymptomCategory,肾功能损害谱,属于,SymptomCategory,碘对比剂不良反应谱
+ManagementPrinciple,护理措施,属于,NursingTheory,循证护理
+ManagementPrinciple,护理预防,属于,NursingTheory,标准化护理流程
+ManagementPrinciple,护理干预,属于,NursingTheory,早期预警
+ManagementPrinciple,外渗处置原则,属于,ManagementPrinciple,护理措施
+ManagementPrinciple,不良反应分级处置原则,属于,ManagementPrinciple,护理措施
+ManagementPrinciple,肾保护原则,属于,ManagementPrinciple,护理措施
+DiseaseCategory,CT增强检查护理风险,存在症状,SymptomSign,不良反应
+DiseaseCategory,CT增强检查护理风险,存在症状,SymptomSign,过敏反应
+DiseaseCategory,CT增强检查护理风险,存在症状,SymptomSign,碘对比剂外渗
+DiseaseCategory,CT增强检查护理风险,存在症状,SymptomSign,对比剂相关急性肾损伤
+Exam,CT增强扫描,存在症状,SymptomSign,不良反应
+Exam,CT增强扫描,存在症状,SymptomSign,碘对比剂外渗
+Exam,CT增强扫描,存在症状,SymptomSign,对比剂相关急性肾损伤
+Exam,碘对比剂静脉输注,存在症状,SymptomSign,过敏反应
+Exam,碘对比剂静脉输注,存在症状,SymptomSign,碘对比剂外渗
+Exam,碘对比剂静脉输注,存在症状,SymptomSign,不良反应
+SymptomSign,过敏反应,存在症状,SymptomSign,过敏性休克
+SymptomSign,过敏反应,存在症状,SymptomSign,荨麻疹
+SymptomSign,过敏反应,存在症状,SymptomSign,颜面部水肿
+SymptomSign,过敏反应,存在症状,SymptomSign,咽喉部不适
+SymptomSign,过敏反应,存在症状,SymptomSign,胸闷
+SymptomSign,过敏反应,存在症状,SymptomSign,全身无力
+SymptomSign,荨麻疹,存在症状,SymptomSign,瘙痒
+SymptomSign,荨麻疹,存在症状,SymptomSign,皮疹
+SymptomSign,碘对比剂外渗,存在症状,SymptomSign,皮疹
+DiseaseCategory,CT增强检查护理风险,通过检查发现,Exam,CT增强扫描
+DiseaseCategory,CT增强检查护理风险,通过检查发现,Exam,肾功能检查
+SymptomSign,对比剂相关急性肾损伤,通过检查发现,Exam,肾功能检查
+RiskFactor,甲亢未控制,通过检查发现,Exam,甲状腺功能检查
+DiseaseCategory,CT增强检查护理风险,由……处置,ManagementPrinciple,护理措施
+DiseaseCategory,CT增强检查护理风险,由……处置,ManagementPrinciple,护理预防
+DiseaseCategory,CT增强检查护理风险,由……处置,NursingTheory,标准化护理流程
+DiseaseCategory,CT增强检查护理风险,由……处置,NursingTheory,护理风险评估理论
+SymptomSign,不良反应,由……处置,ManagementPrinciple,护理措施
+SymptomSign,不良反应,由……处置,ManagementPrinciple,不良反应分级处置原则
+SymptomSign,过敏反应,由……处置,ManagementPrinciple,护理措施
+SymptomSign,过敏反应,由……处置,ManagementPrinciple,护理干预
+SymptomSign,过敏反应,由……处置,ManagementPrinciple,不良反应分级处置原则
+SymptomSign,过敏反应,由……处置,NursingTheory,早期预警
+SymptomSign,过敏反应,由……处置,NursingTheory,循证护理
+SymptomSign,过敏性休克,由……处置,ManagementPrinciple,护理干预
+SymptomSign,过敏性休克,由……处置,ManagementPrinciple,不良反应分级处置原则
+SymptomSign,荨麻疹,由……处置,ManagementPrinciple,护理干预
+SymptomSign,瘙痒,由……处置,ManagementPrinciple,护理措施
+SymptomSign,皮疹,由……处置,ManagementPrinciple,护理措施
+SymptomSign,颜面部水肿,由……处置,ManagementPrinciple,护理干预
+SymptomSign,咽喉部不适,由……处置,ManagementPrinciple,护理干预
+SymptomSign,胸闷,由……处置,ManagementPrinciple,护理干预
+SymptomSign,全身无力,由……处置,ManagementPrinciple,护理干预
+SymptomSign,碘对比剂外渗,由……处置,ManagementPrinciple,护理干预
+SymptomSign,碘对比剂外渗,由……处置,ManagementPrinciple,外渗处置原则
+SymptomSign,碘对比剂外渗,由……处置,NursingTheory,护理风险评估理论
+SymptomSign,对比剂相关急性肾损伤,由……处置,ManagementPrinciple,肾保护原则
+SymptomSign,对比剂相关急性肾损伤,由……处置,NursingTheory,护理风险评估理论
+Exam,CT增强扫描,由……处置,ManagementPrinciple,护理预防
+Exam,碘对比剂静脉输注,由……处置,ManagementPrinciple,护理预防
+DiseaseCategory,CT增强检查护理风险,由……教育,DiseaseEducation,检查前注意事项科普
+DiseaseCategory,CT增强检查护理风险,由……教育,DiseaseEducation,检查后观察与护理科普
+DiseaseCategory,CT增强检查护理风险,由……教育,DiseaseEducation,过敏史告知科普
+DiseaseCategory,CT增强检查护理风险,由……教育,DiseaseEducation,外渗居家护理科普
+DiseaseCategory,CT增强检查护理风险,由……教育,DiseaseEducation,急救知识科普
+Exam,碘对比剂静脉输注,由……教育,DiseaseEducation,检查前注意事项科普
+SymptomSign,碘对比剂外渗,由……教育,DiseaseEducation,外渗居家护理科普
+SymptomSign,过敏性休克,由……教育,DiseaseEducation,急救知识科普
+SymptomSign,过敏反应,由……评估,AssessmentTool,过敏史询问
+SymptomSign,过敏性休克,由……评估,AssessmentTool,过敏史询问
+SymptomSign,不良反应,由……评估,AssessmentTool,过敏史询问
+SymptomSign,荨麻疹,由……评估,AssessmentTool,过敏史询问
+SymptomSign,对比剂相关急性肾损伤,由……评估,AssessmentTool,肾功能风险评估
+SymptomSign,碘对比剂外渗,由……评估,AssessmentTool,外渗风险评估
+SymptomSign,碘对比剂外渗,由……评估,AssessmentTool,血管条件评估
+SymptomSign,过敏反应,风险来自,RiskFactor,既往碘对比剂过敏史
+SymptomSign,过敏反应,风险来自,RiskFactor,未控制的哮喘
+SymptomSign,过敏反应,风险来自,RiskFactor,甲亢未控制
+SymptomSign,过敏性休克,风险来自,RiskFactor,既往碘对比剂过敏史
+SymptomSign,过敏性休克,风险来自,RiskFactor,未控制的哮喘
+SymptomSign,过敏性休克,风险来自,RiskFactor,高龄或低龄
+SymptomSign,碘对比剂外渗,风险来自,RiskFactor,静脉条件差
+SymptomSign,碘对比剂外渗,风险来自,RiskFactor,高压注射
+SymptomSign,碘对比剂外渗,风险来自,RiskFactor,未做生理盐水试推
+SymptomSign,碘对比剂外渗,风险来自,RiskFactor,高龄或低龄
+SymptomSign,碘对比剂外渗,风险来自,RiskFactor,脱水
+SymptomSign,对比剂相关急性肾损伤,风险来自,RiskFactor,肾功能不全
+SymptomSign,对比剂相关急性肾损伤,风险来自,RiskFactor,脱水
+SymptomSign,对比剂相关急性肾损伤,风险来自,RiskFactor,糖尿病服用二甲双胍
+SymptomSign,对比剂相关急性肾损伤,风险来自,RiskFactor,心功能不全
+SymptomSign,对比剂相关急性肾损伤,风险来自,RiskFactor,高龄或低龄
+SymptomSign,不良反应,风险来自,RiskFactor,既往碘对比剂过敏史
+SymptomSign,不良反应,风险来自,RiskFactor,肾功能不全
+SymptomSign,不良反应,风险来自,RiskFactor,妊娠
+SymptomSign,皮疹,风险来自,RiskFactor,既往碘对比剂过敏史
+SymptomSign,荨麻疹,风险来自,RiskFactor,既往碘对比剂过敏史
+SymptomSign,瘙痒,风险来自,RiskFactor,既往碘对比剂过敏史
+SymptomSign,颜面部水肿,风险来自,RiskFactor,既往碘对比剂过敏史
+SymptomSign,咽喉部不适,风险来自,RiskFactor,既往碘对比剂过敏史
+SymptomSign,胸闷,风险来自,RiskFactor,心功能不全
+SymptomSign,全身无力,风险来自,RiskFactor,脱水
+SymptomSign,过敏性休克,由……治疗,PharmacologicalManagement,肌内注射肾上腺素
+SymptomSign,过敏性休克,由……治疗,PharmacologicalManagement,糖皮质激素
+SymptomSign,过敏反应,由……治疗,PharmacologicalManagement,抗组胺药
+SymptomSign,过敏反应,由……治疗,PharmacologicalManagement,糖皮质激素
+SymptomSign,荨麻疹,由……治疗,PharmacologicalManagement,抗组胺药
+SymptomSign,皮疹,由……治疗,PharmacologicalManagement,抗组胺药
+SymptomSign,瘙痒,由……治疗,PharmacologicalManagement,抗组胺药
+SymptomSign,颜面部水肿,由……治疗,PharmacologicalManagement,糖皮质激素
+SymptomSign,碘对比剂外渗,由……治疗,PharmacologicalManagement,50%硫酸镁湿敷
+SymptomSign,碘对比剂外渗,由……治疗,PharmacologicalManagement,0.05%地塞米松湿敷
+SymptomSign,对比剂相关急性肾损伤,由……治疗,PharmacologicalManagement,生理盐水水化
+SymptomSign,对比剂相关急性肾损伤,由……治疗,PharmacologicalManagement,暂停二甲双胍
+SymptomSign,碘对比剂外渗,由……治疗,NonPharmacologicalManagement,立即停止注射
+SymptomSign,碘对比剂外渗,由……治疗,NonPharmacologicalManagement,保留静脉留置针
+SymptomSign,碘对比剂外渗,由……治疗,NonPharmacologicalManagement,患肢抬高
+SymptomSign,碘对比剂外渗,由……治疗,NonPharmacologicalManagement,局部冷敷
+SymptomSign,碘对比剂外渗,由……治疗,NonPharmacologicalManagement,血管可视化
+SymptomSign,不良反应,由……治疗,NonPharmacologicalManagement,密切观察
+SymptomSign,过敏性休克,由……治疗,NonPharmacologicalManagement,密切观察
+SymptomSign,过敏反应,由……治疗,NonPharmacologicalManagement,密切观察
+SymptomSign,对比剂相关急性肾损伤,由……治疗,NonPharmacologicalManagement,密切观察
+SymptomSign,对比剂相关急性肾损伤,由……治疗,NonPharmacologicalManagement,口服补液
+Exam,CT增强扫描,由……治疗,NonPharmacologicalManagement,对比剂预处理
+Exam,碘对比剂静脉输注,由……治疗,NonPharmacologicalManagement,对比剂预处理
+Exam,碘对比剂静脉输注,由……治疗,NonPharmacologicalManagement,血管可视化
+SymptomSign,不良反应,由……治疗,NonPharmacologicalManagement,心理疏导
+SymptomSign,碘对比剂外渗,由……治疗,NonPharmacologicalManagement,心理疏导
+ManagementPrinciple,护理干预,影响,SymptomStatus,重度反应已恢复
+ManagementPrinciple,护理措施,影响,SymptomStatus,轻度反应已缓解
+ManagementPrinciple,外渗处置原则,影响,SymptomStatus,轻度反应已缓解
+ManagementPrinciple,不良反应分级处置原则,影响,SymptomStatus,轻度反应已缓解
+ManagementPrinciple,肾保护原则,影响,SymptomStatus,肾功能稳定
+ManagementPrinciple,护理干预,影响,FunctionalStatus,患肢功能状态
+ManagementPrinciple,外渗处置原则,影响,FunctionalStatus,患肢功能状态
+SymptomStatus,轻度反应已缓解,影响,FunctionalStatus,患肢功能状态
+DiseaseCategory,CT增强检查护理风险,有文献支持,Reference,ACR Manual on Contrast Media
+DiseaseCategory,CT增强检查护理风险,有文献支持,Reference,碘对比剂使用指南（第2版）
+Exam,CT增强扫描,有文献支持,Reference,ACR Manual on Contrast Media
+Exam,CT增强扫描,有文献支持,Reference,碘对比剂使用指南（第2版）
+Exam,碘对比剂静脉输注,有文献支持,Reference,ACR Manual on Contrast Media
+Exam,碘对比剂静脉输注,有文献支持,Reference,碘对比剂使用指南（第2版）
+Exam,碘对比剂静脉输注,有文献支持,Reference,影像科碘对比剂输注安全专家共识
+Exam,碘对比剂静脉输注,有文献支持,Reference,"ESUR recommendations on the use of contrast media: Practice survey, review and commentary by CJN, FIRN and SFNDT"
+Exam,肾功能检查,有文献支持,Reference,肾病患者静脉注射碘对比剂应用专家共识
+Exam,肾功能检查,有文献支持,Reference,Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation
+Exam,甲状腺功能检查,有文献支持,Reference,碘对比剂使用指南（第2版）
+Exam,甲状腺功能检查,有文献支持,Reference,肾病患者静脉注射碘对比剂应用专家共识
+SymptomSign,不良反应,有文献支持,Reference,ACR Manual on Contrast Media
+SymptomSign,不良反应,有文献支持,Reference,"Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology"
+SymptomSign,不良反应,有文献支持,Reference,CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity
+SymptomSign,皮疹,有文献支持,Reference,"Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology"
+SymptomSign,皮疹,有文献支持,Reference,"An algorithm for the management of radiocontrast media hypersensitivity, 2024 update"
+SymptomSign,过敏反应,有文献支持,Reference,"Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology"
+SymptomSign,过敏反应,有文献支持,Reference,"An algorithm for the management of radiocontrast media hypersensitivity, 2024 update"
+SymptomSign,过敏反应,有文献支持,Reference,CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity
+SymptomSign,荨麻疹,有文献支持,Reference,"Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology"
+SymptomSign,荨麻疹,有文献支持,Reference,"An algorithm for the management of radiocontrast media hypersensitivity, 2024 update"
+SymptomSign,荨麻疹,有文献支持,Reference,Anaphylaxis: A 2023 practice parameter update
+SymptomSign,瘙痒,有文献支持,Reference,"Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology"
+SymptomSign,瘙痒,有文献支持,Reference,Anaphylaxis: A 2023 practice parameter update
+SymptomSign,颜面部水肿,有文献支持,Reference,"Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology"
+SymptomSign,颜面部水肿,有文献支持,Reference,"An algorithm for the management of radiocontrast media hypersensitivity, 2024 update"
+SymptomSign,咽喉部不适,有文献支持,Reference,"Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology"
+SymptomSign,咽喉部不适,有文献支持,Reference,Anaphylaxis: A 2023 practice parameter update
+SymptomSign,胸闷,有文献支持,Reference,"Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology"
+SymptomSign,胸闷,有文献支持,Reference,"An algorithm for the management of radiocontrast media hypersensitivity, 2024 update"
+SymptomSign,全身无力,有文献支持,Reference,"Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology"
+SymptomSign,全身无力,有文献支持,Reference,Anaphylaxis: A 2023 practice parameter update
+SymptomSign,过敏性休克,有文献支持,Reference,Anaphylaxis: A 2023 practice parameter update
+SymptomSign,过敏性休克,有文献支持,Reference,"Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology"
+SymptomSign,过敏性休克,有文献支持,Reference,"An algorithm for the management of radiocontrast media hypersensitivity, 2024 update"
+SymptomSign,碘对比剂外渗,有文献支持,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+SymptomSign,碘对比剂外渗,有文献支持,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+SymptomSign,碘对比剂外渗,有文献支持,Reference,放射科碘对比剂外渗影响因素的系统评价
+SymptomSign,碘对比剂外渗,有文献支持,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
+SymptomSign,对比剂相关急性肾损伤,有文献支持,Reference,肾病患者静脉注射碘对比剂应用专家共识
+SymptomSign,对比剂相关急性肾损伤,有文献支持,Reference,碘对比剂诱导的急性肾损伤防治的专家共识
+SymptomSign,对比剂相关急性肾损伤,有文献支持,Reference,Prevention of contrast-induced acute kidney injury in patients undergoing cardiovascular procedures—a systematic review and network meta-analysis
+SymptomSign,对比剂相关急性肾损伤,有文献支持,Reference,Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation
+SymptomSign,对比剂相关急性肾损伤,有文献支持,Reference,"ESUR recommendations on the use of contrast media: Practice survey, review and commentary by CJN, FIRN and SFNDT"
+SymptomCategory,碘对比剂不良反应谱,有文献支持,Reference,ACR Manual on Contrast Media
+SymptomCategory,过敏反应谱,有文献支持,Reference,"Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology"
+SymptomCategory,静脉外渗反应谱,有文献支持,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+SymptomCategory,肾功能损害谱,有文献支持,Reference,肾病患者静脉注射碘对比剂应用专家共识
+AssessmentTool,过敏史询问,有文献支持,Reference,碘对比剂使用指南（第2版）
+AssessmentTool,过敏史询问,有文献支持,Reference,"Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology"
+AssessmentTool,肾功能风险评估,有文献支持,Reference,肾病患者静脉注射碘对比剂应用专家共识
+AssessmentTool,肾功能风险评估,有文献支持,Reference,Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation
+AssessmentTool,外渗风险评估,有文献支持,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+AssessmentTool,外渗风险评估,有文献支持,Reference,放射科碘对比剂外渗影响因素的系统评价
+AssessmentTool,血管条件评估,有文献支持,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
+AssessmentTool,血管条件评估,有文献支持,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
+RiskFactor,既往碘对比剂过敏史,有文献支持,Reference,"Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology"
+RiskFactor,既往碘对比剂过敏史,有文献支持,Reference,"An algorithm for the management of radiocontrast media hypersensitivity, 2024 update"
+RiskFactor,肾功能不全,有文献支持,Reference,肾病患者静脉注射碘对比剂应用专家共识
+RiskFactor,肾功能不全,有文献支持,Reference,Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation
+RiskFactor,脱水,有文献支持,Reference,肾病患者静脉注射碘对比剂应用专家共识
+RiskFactor,脱水,有文献支持,Reference,碘对比剂诱导的急性肾损伤防治的专家共识
+RiskFactor,未控制的哮喘,有文献支持,Reference,"Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology"
+RiskFactor,未控制的哮喘,有文献支持,Reference,"An algorithm for the management of radiocontrast media hypersensitivity, 2024 update"
+RiskFactor,糖尿病服用二甲双胍,有文献支持,Reference,肾病患者静脉注射碘对比剂应用专家共识
+RiskFactor,糖尿病服用二甲双胍,有文献支持,Reference,Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation
+RiskFactor,甲亢未控制,有文献支持,Reference,碘对比剂使用指南（第2版）
+RiskFactor,甲亢未控制,有文献支持,Reference,肾病患者静脉注射碘对比剂应用专家共识
+RiskFactor,心功能不全,有文献支持,Reference,肾病患者静脉注射碘对比剂应用专家共识
+RiskFactor,心功能不全,有文献支持,Reference,碘对比剂诱导的急性肾损伤防治的专家共识
+RiskFactor,高龄或低龄,有文献支持,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+RiskFactor,高龄或低龄,有文献支持,Reference,放射科碘对比剂外渗影响因素的系统评价
+RiskFactor,妊娠,有文献支持,Reference,碘对比剂使用指南（第2版）
+RiskFactor,静脉条件差,有文献支持,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+RiskFactor,静脉条件差,有文献支持,Reference,放射科碘对比剂外渗影响因素的系统评价
+RiskFactor,高压注射,有文献支持,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+RiskFactor,高压注射,有文献支持,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+RiskFactor,高压注射,有文献支持,Reference,放射科碘对比剂外渗影响因素的系统评价
+RiskFactor,未做生理盐水试推,有文献支持,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+RiskFactor,未做生理盐水试推,有文献支持,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
+PharmacologicalManagement,肌内注射肾上腺素,有文献支持,Reference,Anaphylaxis: A 2023 practice parameter update
+PharmacologicalManagement,肌内注射肾上腺素,有文献支持,Reference,"Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology"
+PharmacologicalManagement,糖皮质激素,有文献支持,Reference,"Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology"
+PharmacologicalManagement,糖皮质激素,有文献支持,Reference,"An algorithm for the management of radiocontrast media hypersensitivity, 2024 update"
+PharmacologicalManagement,抗组胺药,有文献支持,Reference,"Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology"
+PharmacologicalManagement,抗组胺药,有文献支持,Reference,"An algorithm for the management of radiocontrast media hypersensitivity, 2024 update"
+PharmacologicalManagement,生理盐水水化,有文献支持,Reference,肾病患者静脉注射碘对比剂应用专家共识
+PharmacologicalManagement,生理盐水水化,有文献支持,Reference,碘对比剂诱导的急性肾损伤防治的专家共识
+PharmacologicalManagement,生理盐水水化,有文献支持,Reference,Prevention of contrast-induced acute kidney injury in patients undergoing cardiovascular procedures—a systematic review and network meta-analysis
+PharmacologicalManagement,生理盐水水化,有文献支持,Reference,Outcomes after Angiography with Sodium Bicarbonate and Acetylcysteine
+PharmacologicalManagement,生理盐水水化,有文献支持,Reference,"ESUR recommendations on the use of contrast media: Practice survey, review and commentary by CJN, FIRN and SFNDT"
+PharmacologicalManagement,50%硫酸镁湿敷,有文献支持,Reference,影像科碘对比剂输注安全专家共识
+PharmacologicalManagement,0.05%地塞米松湿敷,有文献支持,Reference,影像科碘对比剂输注安全专家共识
+PharmacologicalManagement,暂停二甲双胍,有文献支持,Reference,肾病患者静脉注射碘对比剂应用专家共识
+PharmacologicalManagement,暂停二甲双胍,有文献支持,Reference,Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation
+NonPharmacologicalManagement,立即停止注射,有文献支持,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+NonPharmacologicalManagement,立即停止注射,有文献支持,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+NonPharmacologicalManagement,保留静脉留置针,有文献支持,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+NonPharmacologicalManagement,保留静脉留置针,有文献支持,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+NonPharmacologicalManagement,患肢抬高,有文献支持,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+NonPharmacologicalManagement,患肢抬高,有文献支持,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+NonPharmacologicalManagement,患肢抬高,有文献支持,Reference,影像科碘对比剂输注安全专家共识
+NonPharmacologicalManagement,局部冷敷,有文献支持,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+NonPharmacologicalManagement,局部冷敷,有文献支持,Reference,影像科碘对比剂输注安全专家共识
+NonPharmacologicalManagement,密切观察,有文献支持,Reference,影像科碘对比剂输注安全专家共识
+NonPharmacologicalManagement,密切观察,有文献支持,Reference,ACR Manual on Contrast Media
+NonPharmacologicalManagement,口服补液,有文献支持,Reference,ACR Manual on Contrast Media
+NonPharmacologicalManagement,口服补液,有文献支持,Reference,碘对比剂使用指南（第2版）
+NonPharmacologicalManagement,对比剂预处理,有文献支持,Reference,碘对比剂使用指南（第2版）
+NonPharmacologicalManagement,对比剂预处理,有文献支持,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
+NonPharmacologicalManagement,血管可视化,有文献支持,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
+NonPharmacologicalManagement,血管可视化,有文献支持,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+NonPharmacologicalManagement,心理疏导,有文献支持,Reference,影像护理学
+ManagementPrinciple,护理措施,有文献支持,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+ManagementPrinciple,护理措施,有文献支持,Reference,影像科碘对比剂输注安全专家共识
+ManagementPrinciple,护理措施,有文献支持,Reference,ACR Manual on Contrast Media
+ManagementPrinciple,护理预防,有文献支持,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+ManagementPrinciple,护理预防,有文献支持,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
+ManagementPrinciple,护理预防,有文献支持,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+ManagementPrinciple,护理干预,有文献支持,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+ManagementPrinciple,护理干预,有文献支持,Reference,Anaphylaxis: A 2023 practice parameter update
+ManagementPrinciple,护理干预,有文献支持,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+ManagementPrinciple,外渗处置原则,有文献支持,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+ManagementPrinciple,外渗处置原则,有文献支持,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+ManagementPrinciple,外渗处置原则,有文献支持,Reference,影像科碘对比剂输注安全专家共识
+ManagementPrinciple,不良反应分级处置原则,有文献支持,Reference,"Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology"
+ManagementPrinciple,不良反应分级处置原则,有文献支持,Reference,"An algorithm for the management of radiocontrast media hypersensitivity, 2024 update"
+ManagementPrinciple,不良反应分级处置原则,有文献支持,Reference,ACR Manual on Contrast Media
+ManagementPrinciple,肾保护原则,有文献支持,Reference,肾病患者静脉注射碘对比剂应用专家共识
+ManagementPrinciple,肾保护原则,有文献支持,Reference,碘对比剂诱导的急性肾损伤防治的专家共识
+ManagementPrinciple,肾保护原则,有文献支持,Reference,Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation
+ManagementPrinciple,肾保护原则,有文献支持,Reference,Outcomes after Angiography with Sodium Bicarbonate and Acetylcysteine
+ManagementPrinciple,肾保护原则,有文献支持,Reference,"ESUR recommendations on the use of contrast media: Practice survey, review and commentary by CJN, FIRN and SFNDT"
+NursingTheory,护理风险评估理论,有文献支持,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+NursingTheory,护理风险评估理论,有文献支持,Reference,放射科碘对比剂外渗影响因素的系统评价
+NursingTheory,循证护理,有文献支持,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+NursingTheory,循证护理,有文献支持,Reference,"Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology"
+NursingTheory,早期预警,有文献支持,Reference,"An algorithm for the management of radiocontrast media hypersensitivity, 2024 update"
+NursingTheory,早期预警,有文献支持,Reference,Anaphylaxis: A 2023 practice parameter update
+NursingTheory,标准化护理流程,有文献支持,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
+NursingTheory,标准化护理流程,有文献支持,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
+NursingTheory,标准化护理流程,有文献支持,Reference,影像科碘对比剂输注安全专家共识
+DiseaseEducation,检查前注意事项科普,有文献支持,Reference,碘对比剂使用指南（第2版）
+DiseaseEducation,检查前注意事项科普,有文献支持,Reference,影像护理学
+DiseaseEducation,检查后观察与护理科普,有文献支持,Reference,ACR Manual on Contrast Media
+DiseaseEducation,检查后观察与护理科普,有文献支持,Reference,影像科碘对比剂输注安全专家共识
+DiseaseEducation,检查后观察与护理科普,有文献支持,Reference,影像护理学
+DiseaseEducation,过敏史告知科普,有文献支持,Reference,"Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology"
+DiseaseEducation,过敏史告知科普,有文献支持,Reference,碘对比剂使用指南（第2版）
+DiseaseEducation,外渗居家护理科普,有文献支持,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+DiseaseEducation,外渗居家护理科普,有文献支持,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+DiseaseEducation,急救知识科普,有文献支持,Reference,Anaphylaxis: A 2023 practice parameter update
+DiseaseEducation,急救知识科普,有文献支持,Reference,"An algorithm for the management of radiocontrast media hypersensitivity, 2024 update"
+SymptomStatus,轻度反应已缓解,有文献支持,Reference,"Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology"
+SymptomStatus,轻度反应已缓解,有文献支持,Reference,影像科碘对比剂输注安全专家共识
+SymptomStatus,重度反应已恢复,有文献支持,Reference,Anaphylaxis: A 2023 practice parameter update
+SymptomStatus,重度反应已恢复,有文献支持,Reference,"An algorithm for the management of radiocontrast media hypersensitivity, 2024 update"
+SymptomStatus,肾功能稳定,有文献支持,Reference,肾病患者静脉注射碘对比剂应用专家共识
+SymptomStatus,肾功能稳定,有文献支持,Reference,Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation
+FunctionalStatus,患肢功能状态,有文献支持,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+FunctionalStatus,患肢功能状态,有文献支持,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines

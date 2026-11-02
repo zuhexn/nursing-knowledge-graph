@@ -1,0 +1,93 @@
+id,label,name,summary,tags,evidence_count
+t02-exp-nausea,SymptomExperience,恶心,恶心是一种想吐、咽部或上腹部不适的感觉，常伴出汗、乏力、流口水。它常常先于呕吐出现，也可以只恶心不呕吐。英文 nausea。,症状 恶心呕吐 核心症状,3
+t02-exp-vomiting,SymptomExperience,呕吐,呕吐是胃内容物经口强烈排出的动作，可分为呕吐前（恶心、流涎）、呕吐中（内容物排出）、呕吐后（乏力、面色苍白）。英文 vomiting。,症状 恶心呕吐 核心症状,3
+t02-cat-cinv,SymptomCategory,化疗相关恶心呕吐,抗肿瘤药物治疗引起的恶心呕吐。按发作时间分为急性（给药后24小时内）、延迟性（24小时后，最常见）、预期性（化疗前就出现）和爆发性（预防用药后仍发生）。,症状分类 化疗 肿瘤,5
+t02-cat-rinv,SymptomCategory,放疗相关恶心呕吐,放射治疗引起的恶心呕吐，分为急性（治疗开始24小时内）与延迟性（治疗开始24小时后，多见于上腹部照射）。,症状分类 放疗 肿瘤,2
+t02-cat-nvp,SymptomCategory,妊娠期恶心呕吐,妊娠早期最常见的症状，见于约 70%–90% 的孕妇。按严重程度分为轻度、中度和重度，重度即妊娠剧吐。,症状分类 妊娠 妇产科,3
+t02-cat-hg,SymptomCategory,妊娠剧吐,妊娠期恶心呕吐的严重类型：持续呕吐导致进食饮水困难、体重下降超过 5%、脱水、电解质紊乱和酮症，需要住院静脉补液与药物治疗。,症状分类 妊娠 重症,3
+t02-cat-ponv,SymptomCategory,术后恶心呕吐,手术后24小时内发生的恶心呕吐，与麻醉药、阿片类镇痛、手术类型和患者自身风险因素相关，整体发生率约 30%，高危患者可达 80%。,症状分类 外科 麻醉,2
+t02-cat-acute,SymptomCategory,急性恶心呕吐,症状出现后数小时内达到高峰的类型。化疗相关恶心呕吐中，给药后 24 小时内出现的即属急性型。,症状分类 时间分型,3
+t02-cat-delayed,SymptomCategory,延迟性恶心呕吐,急性期之后才出现的类型，常在化疗开始后 24 小时至第 5 天发生，是化疗相关恶心呕吐中最常见、也最难控制的一型。,症状分类 时间分型,3
+t02-cat-anticipatory,SymptomCategory,预期性恶心呕吐,在化疗开始前、看到输液架或一闻到化疗室气味就出现的恶心呕吐，与以往化疗时的强烈体验和焦虑有关，主要靠心理支持与行为干预处理。,症状分类 时间分型 心理,3
+t02-cat-breakthrough,SymptomCategory,爆发性恶心呕吐,已经按预防方案用药仍然发生的恶心呕吐。处理原则是换用与预防用药作用机制不同的药物，同时重新评估风险与支持治疗。,症状分类 处理分型,3
+t02-tool-ctca,AssessmentTool,CTCAE 不良反应评价标准 v5.0,美国国家癌症研究所的不良反应评价标准，把恶心、呕吐按严重程度分为 1–5 级：1 级轻微、2 级需要干预、3 级严重影响自理、4 级危及生命、5 级死亡。国际多中心抗肿瘤药物临床试验通用。,评估工具 量表 通用,1
+t02-tool-eortc-qlq-c30,AssessmentTool,EORTC QLQ-C30 肿瘤生活质量问卷,欧洲癌症研究与治疗组织开发的核心生活质量问卷（30 项），含恶心、呕吐、食欲下降、整体健康状况等 15 个分量表，0–100 分，用于评估症状对生活质量的影响。,评估工具 量表 生活质量,2
+t02-tool-mascc-mat,AssessmentTool,MASCC 止吐自评工具,8 项患者自评量表，分急性期（0–24 小时）和延迟期（24–120 小时）分别记录呕吐次数、恶心程度和补救止吐药使用情况，是目前应用最广的化疗相关恶心呕吐疗效评价工具之一。,评估工具 量表 化疗,2
+t02-tool-apfel,AssessmentTool,Apfel 简化风险评分,术后恶心呕吐风险的四因素简化评分：女性、非吸烟、晕动病史、术后阿片类镇痛各计 1 分。0 分为低危（发生率约 10%），1–2 分为中危（20%–40%），3–4 分为高危（60%–80%）。,评估工具 风险评分 围术期,2
+t02-tool-puqe,AssessmentTool,PUQE 妊娠剧吐严重程度评分,用妊娠指数、呕吐次数和进食受限程度三项评估妊娠剧吐严重度（0–13 分，≥7 分提示需要治疗），是国际通用的妊娠剧吐严重度分级工具。,评估工具 评分 妊娠,2
+t02-risk-female,RiskFactor,女性,女性是化疗相关恶心呕吐和术后恶心呕吐最一致的高危因素之一，可能与激素波动、焦虑概率较高有关。,高危因素 人口学,3
+t02-risk-young-age,RiskFactor,年龄较轻,在化疗相关恶心呕吐中，年龄小于 50 岁者风险更高；而在术后恶心呕吐中，年龄较大者风险更高，需按具体场景分别判断。,高危因素 人口学,3
+t02-risk-non-smoker,RiskFactor,非吸烟者,有吸烟史的人发生术后恶心呕吐的概率低于不吸烟者，因此非吸烟者属于术后恶心呕吐的高危人群。,高危因素 生活方式,2
+t02-risk-motion-sickness,RiskFactor,晕动病史,以往乘车、乘船时出现恶心呕吐的病史，提示前庭系统对运动刺激敏感，是术后恶心呕吐的独立高危因素。,高危因素 病史,2
+t02-risk-prior-nv,RiskFactor,既往恶心呕吐史,以往化疗或手术中曾发生严重恶心呕吐的经历，会明显提高再次发生的概率，并常伴随预期性恶心呕吐。,高危因素 病史,3
+t02-risk-anxiety,RiskFactor,焦虑,焦虑状态与预期性恶心呕吐的发生和加重密切相关，需要在治疗前给予心理支持与行为干预。,高危因素 心理,3
+t02-risk-opioid,RiskFactor,术后阿片类镇痛,术后使用阿片类镇痛药物是术后恶心呕吐的独立高危因素，因此必须纳入预防方案，并配合多模式镇痛减少用量。,高危因素 用药,2
+t02-risk-sleep-disturbance,RiskFactor,睡眠障碍,睡眠不足与情绪焦虑会降低机体对化疗不良反应的耐受力，与恶心呕吐的发生及主观严重程度相关。,高危因素 生活方式,2
+t02-risk-low-alcohol,RiskFactor,无饮酒史,既往有较多饮酒史的人发生术后恶心呕吐的概率更低，无饮酒史者属于风险更高的一组。,高危因素 生活方式,2
+t02-risk-no-prior-meal,RiskFactor,化疗前进食不足,化疗前进食过少或空腹进行化疗，与化疗后恶心呕吐发生率升高相关，因此建议按医嘱在化疗前适量进食。,高危因素 饮食,2
+t02-pharm-5ht3-ra,PharmacologicalManagement,5-HT3 受体拮抗剂,作用于 5-羟色胺 3 受体的止吐药，是各类恶心呕吐预防方案的基础用药；与地塞米松联合可明显提高完全缓解率。,药物管理 止吐药 一线,3
+t02-pharm-dexamethasone,PharmacologicalManagement,地塞米松,糖皮质激素类止吐药，与 5-HT3 受体拮抗剂联用是各指南中预防急性与延迟性恶心呕吐的标准组合；静脉用药宜在化疗前给予。,药物管理 止吐药 辅助,3
+t02-pharm-nk1-ra,PharmacologicalManagement,NK-1 受体拮抗剂,阻断 substance P 与 NK-1 受体结合的止吐药，是高致吐风险方案中与 5-HT3 受体拮抗剂、地塞米松、奥氮平并列的标准组成。,药物管理 止吐药 高致吐风险,4
+t02-pharm-olanzapine,PharmacologicalManagement,奥氮平,在化疗相关恶心呕吐的多模式预防中被纳入标准方案的药物，可与其他止吐药联合改善延迟期恶心控制；起始剂量需由医师评估镇静风险后确定。,药物管理 止吐药 多模式,3
+t02-pharm-metoclopramide,PharmacologicalManagement,甲氧氯普胺,多巴胺受体拮抗剂兼促胃动力药，常用于妊娠期恶心呕吐和爆发性恶心呕吐的救援治疗；可能引起锥体外系反应，用药需遵医嘱。,药物管理 止吐药 妊娠可用,3
+t02-pharm-dopamine-antagonist,PharmacologicalManagement,多巴胺受体拮抗剂,阻断中枢多巴胺受体的止吐药，包括丙氯芬嗪、氟哌利多等，多用于预防方案无效时的爆发性呕吐处理。,药物管理 止吐药 救援,3
+t02-pharm-antihistamine,PharmacologicalManagement,抗组胺药,H1 受体拮抗剂。苯海拉明与维生素 B6 的复方是妊娠早期恶心呕吐的经典一线用药；多西拉敏与维生素 B6 联用也是国际指南推荐的妊娠期方案之一。,药物管理 止吐药 妊娠可用,3
+t02-pharm-vitamin-b6,PharmacologicalManagement,维生素 B6,维生素 B6 单独使用或与抗组胺药联用，是妊娠期恶心呕吐的首选药物方案；WHO 与 RCOG 指南均将其列入推荐用药。,药物管理 止吐药 妊娠一线,3
+t02-pharm-enteral-nutrition,PharmacologicalManagement,肠内营养支持,经口摄入不足、营养风险高时，按中华护理学会团体标准实施肠内营养支持（基本要求、操作要点、并发症护理与健康教育），改善因恶心呕吐导致的营养不良。,药物管理 营养支持 护理,3
+t02-pharm-thiamine,PharmacologicalManagement,硫胺素（维生素 B1）,妊娠剧吐患者因长期进食不足可能出现硫胺素缺乏，需及时补充以预防 Wernicke 脑病；与葡萄糖同时补液时尤其要注意给药顺序。,药物管理 营养支持 妊娠剧吐,1
+t02-nonpharm-lifestyle,NonPharmacologicalManagement,起居护理,通过调整生活起居与饮食环境减轻恶心：保持空气流通、无强烈气味、少量多餐、清淡饮食，进食后取半卧位休息，避免过冷过热与油腻食物。,非药物管理 护理措施,3
+t02-nonpharm-acupoint,NonPharmacologicalManagement,穴位刺激,在特定穴位（最常用内关/PC6、耳穴）施加按压、贴敷或电刺激以减轻恶心呕吐的护理技术，可作为药物预防的辅助手段。,非药物管理 中医护理 辅助,4
+t02-nonpharm-fluid,NonPharmacologicalManagement,液体疗法,呕吐导致摄入不足时按医嘱补充水分与电解质，维持水电解质平衡。轻症以口服补液为先；重症（如妊娠剧吐伴脱水）需静脉补液并补充硫胺素。,非药物管理 补液 护理措施,3
+t02-nonpharm-aromatherapy,NonPharmacologicalManagement,芳香疗法（精油疗法）,经鼻吸入薄荷、柠檬等精油以缓解恶心的非药物方法，可作为药物预防的辅助措施，不替代规范止吐方案。,非药物管理 辅助,3
+t02-nonpharm-ginger,NonPharmacologicalManagement,生姜疗法,口服生姜或生姜粉缓解恶心，WHO 产前保健建议 D.1 明确推荐生姜用于孕早期恶心缓解；系统评价显示对恶心的改善证据为低至中等确定性。,非药物管理 辅助 妊娠可用,3
+t02-nonpharm-health-education,NonPharmacologicalManagement,健康教育,面向患者和家属的宣教与自我照护指导：讲清恶心呕吐的原因、预防方案、用药要点、饮食起居调整、什么时候必须求助，以及如何记录症状日记（何时、多久、吃了什么药、程度几分）。这是患者扫码后最直接看到的内容。,非药物管理 护理措施 患者教育,3
+t02-nonpharm-oral-care,NonPharmacologicalManagement,口腔护理,呕吐后及时清洁口腔、去除残留气味，可减轻恶心与口渴不适、预防口腔黏膜损伤，同时提高随后进食的接受度。,非药物管理 基础护理,3
+t02-nonpharm-behavioral,NonPharmacologicalManagement,行为干预,针对预期性恶心呕吐的放松训练、音乐疗法与意象引导等行为干预，配合心理支持，可减轻化疗前后的焦虑与预期性症状。,非药物管理 心理 预期性,3
+t02-strategy-cinv,ManagementStrategy,化疗相关恶心呕吐管理策略,按致吐风险分级（高度 >90%、中度 30%–90%、轻度 10%–30%、极低 <10%）选择多模式预防方案：以 5-HT3 受体拮抗剂为基础联合地塞米松，高风险再加 NK-1 受体拮抗剂与奥氮平；同时配合穴位刺激、芳香疗法、健康教育与起居护理，并按急性/延迟/预期性/爆发性分别处理。,管理策略 化疗 总策略,6
+t02-strategy-nvp,ManagementStrategy,妊娠期恶心呕吐管理策略,以营养支持为核心：少食多餐、避免空腹与油腻食物；症状明显者用维生素 B6 加抗组胺药或甲氧氯普胺；重症（妊娠剧吐）需静脉补液、补充硫胺素并按病情收住院。WHO 与 RCOG 均强调非药物措施优先。,管理策略 妊娠 总策略,3
+t02-strategy-ponv,ManagementStrategy,术后恶心呕吐管理策略,术前用 Apfel 简化评分分层风险；因多数患者至少有一个危险因素，第五版共识支持广泛的多模式预防（5-HT3 受体拮抗剂 + 地塞米松，必要时加 NK-1 受体拮抗剂）；配合多模式镇痛、避免一氧化二氮与术中低血压、术后早期活动与阿片节约。,管理策略 围术期 总策略,3
+t02-strategy-integrated,ManagementStrategy,整合症状管理策略,把评估、药物、非药物措施、健康教育与随访整合成一条路径：治疗前评估 → 制定个体化预防方案 → 治疗中动态评估 → 记录症状日记 → 爆发时换机制救援 → 复盘并调整方案。,管理策略 整合 流程,3
+t02-outcome-incidence,ManagementOutcome,恶心呕吐发生率下降,规范预防方案后，化疗相关恶心呕吐的发生率从不预防时的约 70%–80% 明显下降；多模式联合方案的完全缓解比例显著提高。,管理效果 发生率,3
+t02-outcome-complete-response,ManagementOutcome,完全缓解,抗肿瘤止吐试验中最常用的疗效终点：观察期内无呕吐、无需使用补救止吐药；完全控制还要求恶心不超过轻度。,管理效果 疗效终点,3
+t02-outcome-severity,ManagementOutcome,症状严重程度减轻,恶心与呕吐的强度、频率和困扰程度下降，患者的主观感受改善。,管理效果 症状,3
+t02-outcome-eating,ManagementOutcome,进食情况改善,能正常进食、进水量足够，营养摄入改善，减少因进食不足而加重恶心呕吐的恶性循环。,管理效果 营养,3
+t02-outcome-weight,ManagementOutcome,体重维持,治疗期间体重下降减缓或维持稳定，对妊娠剧吐与长期化疗患者意义重大。,管理效果 营养,2
+t02-outcome-qol,ManagementOutcome,生活质量提升,恶心呕吐对进食、体力、情绪与日常活动的影响减轻，整体生活质量评分（EORTC QLQ-C30）改善。,管理效果 生活质量,3
+t02-outcome-adherence,ManagementOutcome,用药依从性提升,患者能按时按量完成预防用药与自我记录，用药依从性提高，方案效果才得以实现。,管理效果 依从性,3
+t02-outcome-hospitalization,ManagementOutcome,住院与急诊减少,因严重脱水、电解质紊乱或营养不良导致的住院、急诊就诊与延长住院天数减少。,管理效果 医疗资源,3
+t02-status-cinv-incidence,SymptomStatus,化疗相关恶心呕吐发生率,未做规范预防时，约 70%–80% 的化疗患者会出现恶心呕吐；规范的多模式预防可显著降低该比例。,症状现状 发生率 化疗,3
+t02-status-ponv-incidence,SymptomStatus,术后恶心呕吐发生率,总体发生率约 30%；按 Apfel 简化评分分层，低危约 10%、中危约 20%–40%、高危约 60%–80%。,症状现状 发生率 围术期,2
+t02-status-nvp-incidence,SymptomStatus,妊娠期恶心呕吐发生率,妊娠期恶心呕吐见于约 70%–90% 的孕妇，其中约 0.3%–3% 进展为妊娠剧吐需要治疗。,症状现状 发生率 妊娠,2
+t02-status-hg-incidence,SymptomStatus,妊娠剧吐发生率,妊娠期恶心呕吐中约 0.3%–3% 进展为妊娠剧吐，需要住院静脉补液与药物治疗。,症状现状 发生率 妊娠,2
+t02-status-anticipatory-incidence,SymptomStatus,预期性恶心呕吐发生率,预期性恶心呕吐在反复接受化疗的患者中并不少见，与既往化疗体验的强烈程度和焦虑水平直接相关。,症状现状 发生率 心理,2
+t02-status-control-rate,SymptomStatus,症状控制率,用药后恶心呕吐完全缓解（无呕吐、无需补救止吐药）的比例，是评价止吐方案效果的核心指标。,症状现状 控制率,2
+t02-status-dehydration,SymptomStatus,脱水,呕吐导致液体丢失与摄入不足，出现口渴、尿量减少、口唇干燥、皮肤弹性下降等表现，重者可出现休克。,症状现状 伴随状态 并发症,2
+t02-status-electrolyte,SymptomStatus,电解质紊乱,呕吐丢失氢离子、氯离子与钾离子，可出现低钾、低钠与代谢性碱中毒，严重时引起心律失常与肌无力。,症状现状 伴随状态 并发症,2
+t02-status-retching,SymptomStatus,干呕,强烈恶心但无胃内容物排出，频繁干呕仍会带来体力消耗与口腔黏膜损伤。,症状现状 伴随表现,2
+t02-func-eating,FunctionalStatus,进食受影响,恶心导致食欲减退、进食量下降，甚至看到食物就产生恶心反射。,功能状况 营养,3
+t02-func-weight,FunctionalStatus,体重下降,因呕吐与进食不足导致体重下降；妊娠剧吐者体重下降超过 5% 是判断严重程度的重要指标。,功能状况 营养,2
+t02-func-qol,FunctionalStatus,生活质量下降,症状影响体力、睡眠、情绪与社交活动，EORTC QLQ-C30 的恶心、呕吐与整体健康状况评分下降。,功能状况 生活质量,2
+t02-func-self-care,FunctionalStatus,自我照护能力下降,反复呕吐与进食不足使患者在洗漱、进食、服药与活动等日常自理环节能力下降，需要家人和护士协助。,功能状况 日常,3
+t02-func-activity,FunctionalStatus,活动耐力下降,反复呕吐导致的体液与营养消耗使患者体力下降、活动耐量降低，术后与化疗期间影响早期康复。,功能状况 活动,3
+t02-func-aspiration-risk,FunctionalStatus,误吸风险,呕吐伴意识障碍、饱腹或胃排空延迟时，呕吐物可被吸入气道，引发吸入性肺炎甚至窒息，是围术期与重症患者的重要安全风险。,功能状况 安全,2
+t02-ref-01,Reference,Antiemetics: ASCO Guideline Update,Antiemetics: ASCO Guideline Update（Journal of Clinical Oncology，指南，2020）—— 本图谱的一条文献出处。核验标识：PMID 32658626 · DOI 10.1200/JCO.20.01296。,文献 出处 指南,1
+t02-ref-02,Reference,2023 MASCC and ESMO guideline update for the prevention of chemotherapy- and radiotherapy-induced nausea and vomiting,2023 MASCC and ESMO guideline update for the prevention of chemotherapy- and radiotherapy-induced nausea and vomiting（ESMO Open，指南，2024）—— 本图谱的一条文献出处。核验标识：PMID 38458657 · DOI 10.1016/j.esmoop.2023.102195。,文献 出处 指南,1
+t02-ref-03,Reference,"NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines): Antiemesis, Version 2.2025","NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines): Antiemesis, Version 2.2025（National Comprehensive Cancer Network，指南，2025）—— 本图谱的一条文献出处。核验标识：https://www.nccn.org/guidelines/guidelines-detail?category=3&id=1415。",文献 出处 指南,1
+t02-ref-04,Reference,The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69),The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69)（BJOG，指南，2024）—— 本图谱的一条文献出处。核验标识：PMID 38311315。,文献 出处 指南,1
+t02-ref-05,Reference,Fifth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting: Executive Summary,Fifth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting: Executive Summary（Anesthesia & Analgesia，共识，2025）—— 本图谱的一条文献出处。核验标识：PMID 41237407 · DOI 10.1213/ANE.0000000000007816。,文献 出处 共识,1
+t02-ref-06,Reference,中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）,中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）（中华医学杂志，共识，2022）—— 本图谱的一条文献出处。核验标识：DOI 10.3760/cma.j.cn112137-20220810-01724。,文献 出处 共识,1
+t02-ref-07,Reference,四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版,四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版（中国循证医学杂志，共识，2024）—— 本图谱的一条文献出处。核验标识：DOI 10.7507/1672-2531.202407066。,文献 出处 共识,1
+t02-ref-08,Reference,Common Terminology Criteria for Adverse Events (CTCAE) Version 5.0,Common Terminology Criteria for Adverse Events (CTCAE) Version 5.0（National Cancer Institute，标准，2017）—— 本图谱的一条文献出处。核验标识：https://ctep.cancer.gov/protocoldevelopment/electronic_applications/ctc.htm。,文献 出处 标准,1
+t02-ref-09,Reference,EORTC QLQ-C30 Scoring Manual (3rd Edition),EORTC QLQ-C30 Scoring Manual (3rd Edition)（European Organisation for Research and Treatment of Cancer，标准，2001）—— 本图谱的一条文献出处。核验标识：ISBN 2-930064-22-6。,文献 出处 标准,1
+t02-ref-10,Reference,Validation and psychometric assessment of a short clinical scale to measure chemotherapy-induced nausea and vomiting: the MASCC antiemesis tool,Validation and psychometric assessment of a short clinical scale to measure chemotherapy-induced nausea and vomiting: the MASCC antiemesis tool（Journal of Pain and Symptom Management，标准，2007）—— 本图谱的一条文献出处。核验标识：PMID 17509816 · DOI 10.1016/j.jpainsymman.2006.10.018。,文献 出处 标准,1
+t02-ref-11,Reference,WHO recommendations on antenatal care for a positive pregnancy experience,WHO recommendations on antenatal care for a positive pregnancy experience（World Health Organization，建议，2016）—— 本图谱的一条文献出处。核验标识：ISBN 9789241549912 · 推荐条目 D.1。,文献 出处 建议,1
+t02-ref-12,Reference,2023 updated MASCC-ESMO consensus recommendations: prevention of nausea and vomiting following high-emetic-risk antineoplastic agents,2023 updated MASCC-ESMO consensus recommendations: prevention of nausea and vomiting following high-emetic-risk antineoplastic agents（Supportive Care in Cancer，推荐，2023）—— 本图谱的一条文献出处。核验标识：PMID 38127246 · DOI 10.1007/s00520-023-08221-4。,文献 出处 推荐,1
+t02-ref-13,Reference,Evidence-based management of chemotherapy-induced nausea and vomiting: a position statement from a European cancer nursing forum,Evidence-based management of chemotherapy-induced nausea and vomiting: a position statement from a European cancer nursing forum（ecancermedicalscience，声明，2011）—— 本图谱的一条文献出处。核验标识：PMID 22276054 · DOI 10.3332/ecancer.2011.211。,文献 出处 声明,1
+t02-ref-14,Reference,成人肠内营养支持的护理,成人肠内营养支持的护理（中华护理学会，规范，2021）—— 本图谱的一条文献出处。核验标识：T/CNAS 19—2020（编号年 2020 · 发布 2021-02-01 · 实施 2021-05-01）· https://www.ttbz.org.cn/standardDetail.html?id=s6s3qhpso8xyf3jot0eth1xlyxizyls。,文献 出处 规范,1
+t02-ref-15,Reference,基础护理学（第7版）,基础护理学（第7版）（人民卫生出版社，书籍，2022）—— 本图谱的一条文献出处。核验标识：ISBN 9787117333511。,文献 出处 书籍,1
+t02-ref-16,Reference,Summary of the Best Evidence for the Evaluation and Management of Chemotherapy-Related Nausea and Vomiting in Cancer Patients,Summary of the Best Evidence for the Evaluation and Management of Chemotherapy-Related Nausea and Vomiting in Cancer Patients（Yangtze Medicine，最佳证据，2023）—— 本图谱的一条文献出处。核验标识：DOI 10.4236/ym.2023.71004。,文献 出处 最佳证据,1
+t02-ref-17,Reference,Nurse-led non-pharmacological interventions for prevention and management of postoperative nausea and vomiting in adults undergoing laparoscopic surgery: an evidence summary,Nurse-led non-pharmacological interventions for prevention and management of postoperative nausea and vomiting in adults undergoing laparoscopic surgery: an evidence summary（BMC Nursing，推荐实践，2026）—— 本图谱的一条文献出处。核验标识：DOI 10.1186/s12912-026-05029-5。,文献 出处 推荐实践,1
+t02-ref-18,Reference,Interventions for nausea and vomiting in early pregnancy,Interventions for nausea and vomiting in early pregnancy（Cochrane Database of Systematic Reviews，系统评价，2015）—— 本图谱的一条文献出处。核验标识：DOI 10.1002/14651858.CD007575.pub4。,文献 出处 系统评价,1
+t02-ref-19,Reference,Effects of PC6 acupressure on acute and delayed nausea and vomiting induced by chemotherapy in patients with malignant neoplasm: a meta-analysis,Effects of PC6 acupressure on acute and delayed nausea and vomiting induced by chemotherapy in patients with malignant neoplasm: a meta-analysis（Supportive Care in Cancer，Meta分析，2023）—— 本图谱的一条文献出处。核验标识：PMID 37548707 · DOI 10.1007/s00520-023-07976-0。,文献 出处 Meta分析,1
+t02-ref-20,Reference,Inhaling Peppermint Essential Oil as a Promising Complementary Therapy in the Treatment of Nausea and Vomiting,Inhaling Peppermint Essential Oil as a Promising Complementary Therapy in the Treatment of Nausea and Vomiting（Journal of Clinical Medicine，Meta分析，2025）—— 本图谱的一条文献出处。核验标识：PMID 40725767 · DOI 10.3390/jcm14145069。,文献 出处 Meta分析,1
+t02-ref-21,Reference,非药物干预对癌症化疗致恶心呕吐影响的网状Meta分析,非药物干预对癌症化疗致恶心呕吐影响的网状Meta分析（循证护理，Meta分析，2024）—— 本图谱的一条文献出处。核验标识：DOI 10.12102/j.issn.2095-8668.2024.10.001。,文献 出处 Meta分析,1
