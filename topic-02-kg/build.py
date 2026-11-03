@@ -17,11 +17,13 @@
 
 产出目录结构（每个题目一个，互不相干，单独拷走也能跑）
     <out>/<topicKey>-kg/
-        index.html                     单页图谱（力导向图 + 检索 + 节点详情）
+        index.html                     单页图谱（卡片流 + 全景图 + 检索 + 节点详情）
         lib/echarts.min.js             图形库（本地内置 · 断网可开）
         data/<topicKey>-graph.json     图谱数据（自包含）
         data/<topicKey>-graph.js       同一份数据的 JS 副本（避免 file:// 跨域）
         data/<topicKey>-triples.csv    5 列表原件（输入形态）
+        data/<topicKey>-patient.json   患者层数据（可选：导语 + 免责 + 就医警示）
+        data/<topicKey>-patient.js     同一份数据的 JS 副本（页面直接读它）
         data/search-terms.json         检索词清单（校验规则第 5 条的对照夹具）
         build.py                       本脚本（客户可自行重跑校验）
         README.md                      使用说明
@@ -31,6 +33,14 @@
 ----
     9 条校验规则（与客户部自检脚本同一套判据、两份独立实现，互为交叉验证）
     + 附加检查（类型取值域 / 声明覆盖 / 5 列表对照）
+    + 患者层检查（P 系列：就医警示必须挂在图谱里带文献出处的节点上）
+
+结构闸门（写盘前 + 写盘后各跑一次）
+----
+    S · 静态结构（标签配平 / 裸标签字面量 / 必备锚点 / 占位符全替换）
+    J · JS 语法（node --check 内联脚本）
+    R · 首屏渲染（playwright 1440×900 真跑一次）
+    M · 移动端列表视图（playwright 390×844 真跑一次）
 
 纪律
 ----
@@ -590,11 +600,13 @@ README_TMPL = """# {topic_name} · 知识图谱（静态交付包）
 
 ```
 {topic_key}-kg/
-├── index.html                     单页图谱（力导向图 + 图例 + 检索 + 节点详情）
+├── index.html                     单页图谱（卡片流 + 全景图 + 检索 + 节点详情）
 ├── lib/echarts.min.js             图形库（本地内置 · 断网也能打开）
 ├── data/{topic_key}-graph.json     图谱数据（自包含：类型定义 + 节点 + 边 + 文献出处）
 ├── data/{topic_key}-graph.js       同一份数据的 JS 副本（页面直接读它）
 ├── data/{topic_key}-triples.csv    5 列表原件（输入形态 · 可直接重新生成图谱数据）
+├── data/{topic_key}-patient.json   患者层数据（可选：一句导语 + 免责声明 + 就医警示）
+├── data/{topic_key}-patient.js     同一份数据的 JS 副本（页面直接读它）
 ├── data/search-terms.json         检索词清单（校验规则第 5 条的对照夹具）
 ├── build.py                       构建脚本（校验 + 重新生成）
 ├── README.md                      本文件
@@ -604,7 +616,19 @@ README_TMPL = """# {topic_name} · 知识图谱（静态交付包）
     └── import.cypher
 ```
 
-## 三、怎么用 build.py
+## 三、页面两种形态（默认按屏幕宽度选）
+
+| 形态 | 什么时候是它 | 里面有什么 |
+|---|---|---|
+| **知识浏览**（卡片流）| **手机默认** · 桌面也可用 | 一句导语 + 免责声明 → **就医警示**（什么时候该找医生）→ 分类卡流 → 词条卡 → 节点详情 |
+| **全景图**（力导向画布）| 桌面默认 · 手机点右上角切过去 | 整张关系图 + 图例 + 检索高亮 + 关联节点 |
+
+⛔ **为什么不把桌面画布缩小放到手机上**：节点一多，屏宽摊不开、字放不下 ——
+那是结构问题，不是样式问题（缩小解决不了）。所以手机默认走卡片流，画布保留成「全景图」那一层。
+⛔ **就医警示的每一条都挂在图谱里带文献出处的节点上** —— 构建时会逐条校验
+（挂错节点 / 节点没出处 ⇒ 构建直接中止）。
+
+## 四、怎么用 build.py
 
 ```bash
 # 重新校验 + 重建（Python 3.8+，只用标准库）
@@ -629,7 +653,7 @@ python build.py --from-triples 三元组.csv --out-graph 图谱数据.json
 8. 多份数据走同一套判据（类型词汇表一致）
 9. 不混题（一份数据只有一个 `graph` 取值）
 
-## 四、检索怎么用
+## 五、检索怎么用
 
 | 输入 | 命中通道 |
 |---|---|
@@ -639,7 +663,7 @@ python build.py --from-triples 三元组.csv --out-graph 图谱数据.json
 英文文献类型词（`guidelines` / `systematic reviews` / `meta analysis`）与中文类型词命中**同一批节点**。
 ⛔ 节点级同义词（英文写法 / 旧称 / 错字写法）一律写在数据文件的 `aliases` 里，不写死在代码里。
 
-## 五、数据说明
+## 六、数据说明
 
 - 数据文件自包含：`meta`（题目元数据）· `nodeTypes`（类型定义，**样式随数据走**）·
   `relationTypes`（关系定义）· `nodes` · `edges`。
@@ -647,7 +671,7 @@ python build.py --from-triples 三元组.csv --out-graph 图谱数据.json
 - 文献出处挂在节点的 `evidence` 上，页面详情面板里逐条显示作者 / 标题 / 期刊 / 年份。
 - ⛔ **没有真实出处的节点不要写进图谱** —— 校验脚本会按缺失项报出来。
 
-## 六、Neo4j 导入包（可选）
+## 七、Neo4j 导入包（可选）
 
 `neo4j/` 里是给**想自己入库**的人准备的：把两个 csv 放进 Neo4j 的 import 目录，
 在 Browser 里执行 `import.cypher`。它是**可选件**，页面本身不需要数据库。
@@ -665,6 +689,72 @@ def copy_if_different(src, dst):
         return False
     shutil.copyfile(src, dst)
     return True
+
+
+# --------------------------------------------------------------------------
+# 患者层（给患者看的那一层：一句导语 + 免责声明 + 就医警示）
+# --------------------------------------------------------------------------
+# ⛔ 为什么单独一个文件，不塞进图谱 JSON：
+#    图谱 JSON 是**给专业读者**的（节点 / 边 / 文献出处），客户部的验收判据与
+#    数据自检脚本都对着它 ⇒ 动它会牵动一整套校验；患者层是**给患者看的**
+#    （通俗表达 + 什么时候该找医生）—— 两者受众不同、判据也不同。
+# ⭐ 核心判据 P4：就医警示的每一条都必须挂在**图谱里已存在、且带文献出处**的节点上
+#    —— 这一条从机制上保证「患者层不会出现没有出处的医学断言」。
+
+PATIENT_REQUIRED_FIELDS = ("intro", "disclaimer")
+
+
+def check_patient_data(pdata, data, topic_key):
+    """校验患者层数据 —— 返回问题清单（空 = 通过）"""
+    problems = []
+    if not isinstance(pdata, dict):
+        return ["P0 患者层文件不是一个 JSON 对象"]
+    tk = pdata.get("topicKey")
+    if tk != topic_key:
+        problems.append("P1 topicKey 不一致：文件写的是 %r，本题是 %r" % (tk, topic_key))
+    for f in PATIENT_REQUIRED_FIELDS:
+        if not str(pdata.get(f) or "").strip():
+            problems.append("P2 必填字段 %s 为空" % f)
+    urgent = pdata.get("urgent")
+    if urgent is None:
+        urgent = []
+    if not isinstance(urgent, list):
+        problems.append("P3 urgent 不是一个数组")
+        urgent = []
+    nodes = {}
+    for n in (data.get("nodes") or []):
+        nodes[n.get("id")] = n
+    for i, u in enumerate(urgent, 1):
+        if not isinstance(u, dict):
+            problems.append("P3 urgent 第 %d 条不是一个对象" % i)
+            continue
+        nid = u.get("nodeId")
+        if not str(nid or "").strip():
+            problems.append("P5 urgent 第 %d 条缺 nodeId" % i)
+            continue
+        if nid not in nodes:
+            problems.append("P3 urgent 第 %d 条的 nodeId %r 不在图谱里 —— "
+                            "患者层不能引用图谱里没有的节点" % (i, nid))
+            continue
+        if not str(u.get("plain") or "").strip():
+            problems.append("P5 urgent 第 %d 条（%s）缺 plain" % (i, nid))
+        if not str(u.get("action") or "").strip():
+            problems.append("P5 urgent 第 %d 条（%s）缺 action" % (i, nid))
+        if not (nodes[nid].get("evidence") or []):
+            problems.append("P4 urgent 第 %d 条（%s）对应的节点没有文献出处 —— "
+                            "没有出处的医学断言不许出现在患者层" % (i, nid))
+    return problems
+
+
+def find_patient_source(src_path, topic_key):
+    """患者层数据文件的位置 —— **图谱 JSON 旁边**的 <topicKey>-patient.json
+
+    放在旁边而不是另设参数：交付包里 data/<key>-graph.json 与 data/<key>-patient.json
+    并排 ⇒ 客户拿到包自己重跑 build.py 时，患者层也会被一起带上（不用记额外参数）。
+    """
+    cand = os.path.join(os.path.dirname(os.path.abspath(src_path)),
+                        "%s-patient.json" % topic_key)
+    return cand if os.path.exists(cand) else None
 
 
 def build_one(topic_key, data, src_path, out_root, rep, terms_source):
@@ -714,6 +804,35 @@ def build_one(topic_key, data, src_path, out_root, rep, terms_source):
     if groups_src:
         copy_if_different(groups_src, os.path.join(data_dir, "type-groups.json"))
 
+    # 3d · 患者层（可选件：图谱 JSON 旁边的 <topicKey>-patient.json）
+    #       —— 有就校验 + 随包带上；没有就这一层不出现（页面自动退回通用免责口径）
+    patient_src = find_patient_source(src_path, topic_key)
+    patient_script = ""
+    if patient_src:
+        try:
+            with open(patient_src, "r", encoding="utf-8") as f:
+                pdata = json.load(f)
+        except Exception as e:
+            raise StructureGateError("患者层文件解析失败：%s（%s）" % (patient_src, e))
+        pproblems = check_patient_data(pdata, data, topic_key)
+        if pproblems:
+            raise StructureGateError(
+                "患者层校验不通过 —— **已中止构建**\n"
+                "文件：%s\n%s"
+                % (patient_src, "\n".join("   · " + x for x in pproblems)))
+        copy_if_different(patient_src, os.path.join(data_dir, "%s-patient.json" % topic_key))
+        with open(os.path.join(data_dir, "%s-patient.js" % topic_key),
+                  "w", encoding="utf-8", newline="\n") as f:
+            f.write("window.KG_PATIENT = %s;\n"
+                    % json.dumps(pdata, ensure_ascii=False, indent=2))
+        patient_script = '<script src="./data/%s-patient.js"></script>' % topic_key
+        rep.add("附P", "患者层校验（就医警示挂在有出处的节点上）", True,
+                "文件：%s · 警示 %d 条" % (os.path.basename(patient_src),
+                                          len(pdata.get("urgent") or [])))
+    else:
+        rep.add("附P", "患者层校验（就医警示挂在有出处的节点上）", True,
+                "本题目没有 <topicKey>-patient.json —— 患者层不出现（页面用通用免责口径）")
+
     # 4 · 图形库
     copy_if_different(ECHARTS_SRC, os.path.join(lib_dir, "echarts.min.js"))
 
@@ -722,8 +841,16 @@ def build_one(topic_key, data, src_path, out_root, rep, terms_source):
     if os.path.exists(TEMPLATE_INDEX):
         with open(TEMPLATE_INDEX, "r", encoding="utf-8") as f:
             tpl = f.read()
-        page_html = tpl.replace("{{TOPIC_KEY}}", topic_key)
-        # 5a · **写盘前**先过静态结构闸门 —— 坏页面不许落盘
+        page_html = (tpl
+                     .replace("{{TOPIC_KEY}}", topic_key)
+                     .replace("{{PATIENT_SCRIPT}}", patient_script))
+        # 5a · 占位符必须全部替换掉 —— 漏一个 {{XXX}} 就会以字面量出现在页面上
+        leftover = re.findall(r"\{\{[A-Z_]+\}\}", page_html)
+        if leftover:
+            raise StructureGateError(
+                "页面模板有未替换的占位符：%s —— **已中止，未写出 index.html**"
+                % " · ".join(sorted(set(leftover))))
+        # 5b · **写盘前**先过静态结构闸门 —— 坏页面不许落盘
         #      （本次线上缺陷就是「坏页面进了交付目录」才被客户扫码发现）
         static_problems = check_html_static(page_html)
         if static_problems:
@@ -883,12 +1010,14 @@ def load_type_groups(paths, explicit):
 #    另起模块会让交付包里的 build.py 导入失败 ⇒ 结构闸门在客户手上就失效了。
 # --------------------------------------------------------------------------
 
-STRUCT_GATE_VERSION = "2026-11-03"
+STRUCT_GATE_VERSION = "2026-11-03-2"
 
 # 页面上必须存在的锚点 —— 缺一个 = 渲染逻辑走不到那一步
 REQUIRED_ANCHORS = (
     ('id="loading"', "首屏遮罩 #loading"),
     ('id="chart"', "图谱容器 #chart"),
+    ('id="viewList"', "列表视图容器 #viewList"),
+    ('id="viewGraph"', "画布视图容器 #viewGraph"),
     ("KGCORE", "window.KGCORE 赋值"),
     ("KG_GRAPH", "图谱数据 window.KG_GRAPH 引用"),
 )
@@ -898,6 +1027,9 @@ MIN_PAINTED_PIXELS = 1000
 
 # 渲染检查的等待上限（毫秒）
 RENDER_TIMEOUT_MS = 15000
+
+# 移动端检查用的视口（主流竖屏机型 —— 卡片流是手机上的默认形态）
+MOBILE_VIEWPORT = {"width": 390, "height": 844}
 
 
 class StructureGateError(Exception):
@@ -1149,6 +1281,96 @@ def _file_uri(path):
     return pathlib.Path(path).resolve().as_uri()
 
 
+def check_render_mobile(index_path, timeout_ms=RENDER_TIMEOUT_MS):
+    """移动端列表视图检查 —— 真跑一次 390×844。
+
+    断言：页面无未捕获异常 · 遮罩已隐藏 · **列表视图可见且有内容** ·
+          **画布视图不可见**（手机上默认走卡片流，画布是「全景图」那一层）·
+          分类卡数量 > 0（分类卡流真的渲染出来了）。
+
+    为什么单列一层：桌面 1440×900 那次渲染**全绿也不代表手机能用** ——
+    手机上默认形态是卡片流，这条断言只在这里才成立。
+    """
+    try:
+        from playwright.sync_api import sync_playwright
+    except Exception as e:
+        return [], "跳过（本机没有 playwright：%s）" % e
+
+    problems = []
+    errors = []
+
+    try:
+        with sync_playwright() as pw:
+            browser = pw.chromium.launch()
+            try:
+                page = browser.new_page(viewport=dict(MOBILE_VIEWPORT))
+                page.on("pageerror", lambda e: errors.append("未捕获异常：%s" % e))
+                page.on("console", lambda m: errors.append("console.error：%s" % m.text)
+                        if m.type == "error" else None)
+                page.goto(_file_uri(index_path))
+                try:
+                    page.wait_for_function(
+                        "() => { const e = document.getElementById('loading');"
+                        " return !e || getComputedStyle(e).display === 'none'; }",
+                        timeout=timeout_ms)
+                    loading_hidden = True
+                except Exception:
+                    loading_hidden = False
+                page.wait_for_timeout(600)
+                state = page.evaluate("""() => {
+                    const vl = document.getElementById('viewList');
+                    const vg = document.getElementById('viewGraph');
+                    const l = document.getElementById('loading');
+                    const cs = vl ? getComputedStyle(vl) : null;
+                    const gs = vg ? getComputedStyle(vg) : null;
+                    return {
+                        view: document.body.getAttribute('data-view'),
+                        listVisible: cs ? (cs.visibility === 'visible' && cs.display !== 'none') : false,
+                        listCats: document.querySelectorAll('#lgCats .cat').length,
+                        listUrgent: document.querySelectorAll('#lgUrgent .u-item').length,
+                        listRows: document.querySelectorAll('#lgResults .row').length,
+                        graphVisible: gs ? (gs.visibility === 'visible') : false,
+                        loading: l ? getComputedStyle(l).display : 'missing',
+                        nodes: window.KG_GRAPH ? (window.KG_GRAPH.nodes || []).length : -1,
+                        patient: typeof window.KG_PATIENT
+                    };
+                }""")
+            finally:
+                browser.close()
+    except Exception as e:
+        return [], "跳过（playwright 起不来：%s）" % e
+
+    # M1 · 页面级错误
+    for msg in errors:
+        problems.append("M1 页面报错：%s" % msg)
+
+    # M2 · 手机默认走列表视图
+    if state["view"] != "list":
+        problems.append("M2 手机视口下默认视图不是「知识浏览」（body[data-view] = %r）"
+                        " —— 手机首屏应该是卡片流，不是画布" % state["view"])
+
+    # M3 · 列表视图可见
+    if not state["listVisible"]:
+        problems.append("M3 列表视图不可见（#viewList 的 visibility 不是 visible）"
+                        " —— 手机上用户看到的是空白")
+
+    # M4 · 画布视图应当隐藏（它是「全景图」那一层，不是首屏）
+    if state["graphVisible"]:
+        problems.append("M4 画布视图在手机首屏仍然可见 —— 两层叠在一起会互相挡")
+
+    # M5 · 分类卡流真的渲染出来了
+    if state["listCats"] < 1:
+        problems.append("M5 列表里一个分类卡都没有（#lgCats .cat = %d）"
+                        " —— 卡片流没渲染出来" % state["listCats"])
+
+    # M6 · 首屏遮罩已隐藏
+    if not loading_hidden or state["loading"] != "none":
+        problems.append("M6 首屏遮罩没隐藏（#loading 的 display = %s）"
+                        " —— 手机上看到的就是「一直转圈圈」" % state["loading"])
+
+    return problems, ""
+
+
 def structure_gate(index_path, do_render=True, do_js=True):
     """对产出页面跑完整结构闸门。
 
@@ -1179,13 +1401,22 @@ def structure_gate(index_path, do_render=True, do_js=True):
     if do_render:
         render_problems, render_skip = check_render(index_path)
         problems.extend(render_problems)
-        notes.append(("R · 首屏渲染（playwright 真跑一次）",
+        notes.append(("R · 首屏渲染（playwright 1440×900 真跑一次）",
                        "通过" if not render_problems else ("不通过（%d 项）" % len(render_problems)
                                                           if not render_skip else render_skip)))
         if render_skip:
-            notes[-1] = ("R · 首屏渲染（playwright 真跑一次）", render_skip)
+            notes[-1] = ("R · 首屏渲染（playwright 1440×900 真跑一次）", render_skip)
+
+        mob_problems, mob_skip = check_render_mobile(index_path)
+        problems.extend(mob_problems)
+        notes.append(("M · 移动端列表视图（playwright 390×844 真跑一次）",
+                       "通过" if not mob_problems else ("不通过（%d 项）" % len(mob_problems)
+                                                       if not mob_skip else mob_skip)))
+        if mob_skip:
+            notes[-1] = ("M · 移动端列表视图（playwright 390×844 真跑一次）", mob_skip)
     else:
-        notes.append(("R · 首屏渲染（playwright 真跑一次）", "跳过（命令行显式关闭）"))
+        notes.append(("R · 首屏渲染（playwright 1440×900 真跑一次）", "跳过（命令行显式关闭）"))
+        notes.append(("M · 移动端列表视图（playwright 390×844 真跑一次）", "跳过（命令行显式关闭）"))
 
     return problems, notes
 
