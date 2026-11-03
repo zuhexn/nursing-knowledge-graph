@@ -1,6 +1,6 @@
 id,label,name,summary,tags,evidence_count
 DC_CTEnhancedRisk,DiseaseCategory,CT增强检查护理风险,做增强CT时可能遇到的各类护理风险的总称。,题目 CT增强,2
-E_CTEnhancedScan,Exam,CT增强扫描,打药以后再做断层成像的检查方法，图像更清楚，但要用药就有风险。,辅助检查,2
+E_CTEnhancedScan,Exam,CT增强扫描,打药以后再做断层成像的检查方法，图像更清楚，但要用药就有风险。,辅助检查,3
 E_ContrastInjection,Exam,碘对比剂静脉输注,增强检查里打进血管的含碘药水，本图谱所有风险的源头。,辅助检查 对比剂,4
 E_RenalFunction,Exam,肾功能检查,抽血查肾脏过滤能力，用来判断这次造影安不安全。,辅助检查,2
 E_ThyroidFunction,Exam,甲状腺功能检查,抽血查甲状腺功能，甲亢没控制住的人不适合打造影剂。,辅助检查,2
@@ -14,7 +14,7 @@ S_ThroatDiscomfort,SymptomSign,咽喉部不适,嗓子发紧、像有东西卡住
 S_ChestTightness,SymptomSign,胸闷,胸口发闷、觉得透不过气的主诉。,症状体征,2
 S_GeneralizedWeakness,SymptomSign,全身无力,浑身没劲、站不稳的感觉。,症状体征,2
 S_AnaphylacticShock,SymptomSign,过敏性休克,最重的一类过敏反应，会危及生命，必须马上抢救。,症状体征,3
-S_Extravasation,SymptomSign,碘对比剂外渗,造影剂没进血管、漏到皮下，轻则肿痛，重则组织坏死。,症状体征,4
+S_Extravasation,SymptomSign,碘对比剂外渗,造影剂没进血管、漏到皮下，轻则肿痛，重则组织坏死。,症状体征,5
 S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,打完造影剂后短时间内出现的肾脏功能损伤。,症状体征,5
 SC_AdverseSpectrum,SymptomCategory,碘对比剂不良反应谱,把打造影剂之后可能出的各类反应归到一起的分类。,症状分类,1
 SC_Hypersensitivity,SymptomCategory,过敏反应谱,过敏这一类反应从轻到重的分层。,症状分类,1
@@ -71,8 +71,8 @@ SS_MildResolved,SymptomStatus,轻度反应已缓解,轻度反应经过处理以�
 SS_SevereRecovered,SymptomStatus,重度反应已恢复,重度反应经抢救以后生命体征恢复稳定。,症状状态,2
 SS_RenalStable,SymptomStatus,肾功能稳定,复查显示肾功能回到了原有水平。,症状状态,2
 FS_LimbFunction,FunctionalStatus,患肢功能状态,外渗处理以后患肢能不能正常活动、感觉有没有恢复。,功能状态,2
-R01,Reference,ACR Manual on Contrast Media,美国放射学会每年更新的对比剂使用手册，是这份图谱里对比剂安全使用的主干依据。,文献 指南,1
-R02,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines,欧洲泌尿放射学会对比剂安全委员会关于静脉外渗的系统评价与处理指南。,文献 指南,1
+R01,Reference,美国放射学会对比剂手册,美国放射学会每年更新的对比剂使用手册，是这份图谱里对比剂安全使用的主干依据。,文献 指南,1
+R02,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新,欧洲泌尿放射学会对比剂安全委员会关于静脉外渗的系统评价与处理指南。,文献 指南,1
 R03,Reference,碘对比剂使用指南（第2版）,我国放射学界关于碘对比剂怎么选、怎么用、怎么防反应的基础文件。,文献 指南,1
 R04,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）,中华护理学会最新一版外渗护理实践指南，是外渗预防与处理的操作蓝本。,文献 指南,1
 R05,Reference,肾病患者静脉注射碘对比剂应用专家共识,专门给肾功能不好的人定规矩：哪些指标要看、哪些药要停、怎么补液。,文献 共识,1
@@ -81,13 +81,13 @@ R07,Reference,影像科碘对比剂输注安全专家共识,讲输药前后每�
 R08,Reference,WS/T 433—2023 静脉治疗护理技术操作标准,全国静脉治疗的操作标准：怎么选管、怎么穿刺、怎么管并发症。,文献 标准,1
 R09,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范,把外渗预防与护理写成地方标准的地方文件，步骤写得很细。,文献 规范,1
 R10,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范,专门针对 CT 增强场景的外渗预防与护理地方规范。,文献 规范,1
-R11,Reference,Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation,美国放射学会和肾脏病基金会的联合声明，给肾功能不好的人定了用药底线。,文献 声明,1
-R12,Reference,"Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",两个学会联合发布的过敏反应防治声明，是国际上最新的对比剂过敏处理口径。,文献 声明,1
-R13,Reference,"An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",把对比剂过敏反应分成轻中重、并给出逐级处理路径的算法文件。,文献 建议,1
-R14,Reference,CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity,加拿大放射学会与变态反应学会给出的对比剂过敏实践指导。,文献 建议,1
-R15,Reference,"ESUR recommendations on the use of contrast media: Practice survey, review and commentary by CJN, FIRN and SFNDT",欧洲泌尿放射学会对比剂使用推荐意见，护理侧的用药建议多出自此。,文献 推荐,1
-R16,Reference,Anaphylaxis: A 2023 practice parameter update,国际公认的过敏性休克抢救实践参数，肾上腺素怎么打写得很清楚。,文献 推荐实践,1
+R11,Reference,碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明,美国放射学会和肾脏病基金会的联合声明，给肾功能不好的人定了用药底线。,文献 声明,1
+R12,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明,两个学会联合发布的过敏反应防治声明，是国际上最新的对比剂过敏处理口径。,文献 声明,1
+R13,Reference,放射性对比剂超敏反应处理流程（2024 年更新）,把对比剂过敏反应分成轻中重、并给出逐级处理路径的算法文件。,文献 建议,1
+R14,Reference,对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）,加拿大放射学会与变态反应学会给出的对比剂过敏实践指导。,文献 建议,1
+R15,Reference,欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评,欧洲泌尿放射学会对比剂使用推荐意见，护理侧的用药建议多出自此。,文献 推荐,1
+R16,Reference,过敏反应：2023 年实践参数更新,国际公认的过敏性休克抢救实践参数，肾上腺素怎么打写得很清楚。,文献 推荐实践,1
 R17,Reference,放射科碘对比剂外渗影响因素的系统评价,汇总 19 项研究、2063 例外渗案例，归纳出外渗的常见危险因素。,文献 系统评价,1
-R18,Reference,Prevention of contrast-induced acute kidney injury in patients undergoing cardiovascular procedures—a systematic review and network meta-analysis,比较各种防造影肾损伤办法的网络 Meta 分析，补液方案排序的证据来源。,文献 Meta分析,1
-R19,Reference,Outcomes after Angiography with Sodium Bicarbonate and Acetylcysteine,大规模随机对照试验，证明碳酸氢钠加乙酰半胱氨酸并不比生理盐水更好。,文献 最佳证据,1
+R18,Reference,心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析,比较各种防造影肾损伤办法的网络 Meta 分析，补液方案排序的证据来源。,文献 Meta分析,1
+R19,Reference,血管造影后应用碳酸氢钠与乙酰半胱氨酸的临床结局,大规模随机对照试验，证明碳酸氢钠加乙酰半胱氨酸并不比生理盐水更好。,文献 最佳证据,1
 R20,Reference,影像护理学,系统讲影像科护理的教材，护理常规与患者宣教的通识来源。,文献 书籍,1

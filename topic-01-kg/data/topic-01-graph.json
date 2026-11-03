@@ -237,11 +237,11 @@
       "evidence": [
         {
           "type": "指南",
-          "author": "American College of Radiology, Committee on Drugs and Contrast Media",
-          "title": "ACR Manual on Contrast Media",
-          "journal": "American College of Radiology",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
           "year": 2024,
-          "cite": "American College of Radiology, Committee on Drugs and Contrast Media / ACR Manual on Contrast Media / American College of Radiology / 2024",
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
           "grade": "指南与共识",
           "ref": "R01"
         },
@@ -275,11 +275,11 @@
       "evidence": [
         {
           "type": "指南",
-          "author": "American College of Radiology, Committee on Drugs and Contrast Media",
-          "title": "ACR Manual on Contrast Media",
-          "journal": "American College of Radiology",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
           "year": 2024,
-          "cite": "American College of Radiology, Committee on Drugs and Contrast Media / ACR Manual on Contrast Media / American College of Radiology / 2024",
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
           "grade": "指南与共识",
           "ref": "R01"
         },
@@ -292,6 +292,16 @@
           "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
           "grade": "指南与共识",
           "ref": "R03"
+        },
+        {
+          "type": "规范",
+          "author": "广西壮族自治区市场监督管理局",
+          "title": "DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范",
+          "journal": "广西壮族自治区市场监督管理局（地方标准）",
+          "year": 2024,
+          "cite": "广西壮族自治区市场监督管理局 / DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范 / 广西壮族自治区市场监督管理局（地方标准） / 2024",
+          "grade": "标准与规范",
+          "ref": "R10"
         }
       ],
       "graph": "topic-01"
@@ -324,11 +334,11 @@
       "evidence": [
         {
           "type": "指南",
-          "author": "American College of Radiology, Committee on Drugs and Contrast Media",
-          "title": "ACR Manual on Contrast Media",
-          "journal": "American College of Radiology",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
           "year": 2024,
-          "cite": "American College of Radiology, Committee on Drugs and Contrast Media / ACR Manual on Contrast Media / American College of Radiology / 2024",
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
           "grade": "指南与共识",
           "ref": "R01"
         },
@@ -355,10 +365,10 @@
         {
           "type": "推荐",
           "author": "de Laforcade L, Bobot M, Bellin MF, et al.",
-          "title": "ESUR recommendations on the use of contrast media: Practice survey, review and commentary by CJN, FIRN and SFNDT",
-          "journal": "Nephrologie & Therapeutique",
+          "title": "欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评",
+          "journal": "肾脏病与治疗",
           "year": 2021,
-          "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / ESUR recommendations on the use of contrast media: Practice survey, review and commentary by CJN, FIRN and SFNDT / Nephrologie & Therapeutique / 2021",
+          "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / 欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评 / 肾脏病与治疗 / 2021",
           "grade": "推荐意见",
           "ref": "R15"
         }
@@ -394,10 +404,10 @@
         {
           "type": "声明",
           "author": "Davenport MS, Perazella MA, Yee J, et al.",
-          "title": "Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation",
-          "journal": "Radiology",
+          "title": "碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明",
+          "journal": "放射学",
           "year": 2020,
-          "cite": "Davenport MS, Perazella MA, Yee J, et al. / Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation / Radiology / 2020",
+          "cite": "Davenport MS, Perazella MA, Yee J, et al. / 碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明 / 放射学 / 2020",
           "grade": "学会声明",
           "ref": "R11"
         }
@@ -459,31 +469,31 @@
       "evidence": [
         {
           "type": "指南",
-          "author": "American College of Radiology, Committee on Drugs and Contrast Media",
-          "title": "ACR Manual on Contrast Media",
-          "journal": "American College of Radiology",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
           "year": 2024,
-          "cite": "American College of Radiology, Committee on Drugs and Contrast Media / ACR Manual on Contrast Media / American College of Radiology / 2024",
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
           "grade": "指南与共识",
           "ref": "R01"
         },
         {
           "type": "声明",
           "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
-          "journal": "Radiology",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
           "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
           "grade": "学会声明",
           "ref": "R12"
         },
         {
           "type": "建议",
           "author": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al.",
-          "title": "CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity",
-          "journal": "Canadian Association of Radiologists Journal",
+          "title": "对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）",
+          "journal": "加拿大放射医师协会杂志",
           "year": 2025,
-          "cite": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al. / CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity / Canadian Association of Radiologists Journal / 2025",
+          "cite": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al. / 对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会） / 加拿大放射医师协会杂志 / 2025",
           "grade": "推荐意见",
           "ref": "R14"
         }
@@ -509,20 +519,20 @@
         {
           "type": "声明",
           "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
-          "journal": "Radiology",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
           "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
           "grade": "学会声明",
           "ref": "R12"
         },
         {
           "type": "建议",
           "author": "Brockow K",
-          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
-          "journal": "Allergy",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
           "year": 2024,
-          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
           "grade": "推荐意见",
           "ref": "R13"
         }
@@ -546,30 +556,30 @@
         {
           "type": "声明",
           "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
-          "journal": "Radiology",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
           "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
           "grade": "学会声明",
           "ref": "R12"
         },
         {
           "type": "建议",
           "author": "Brockow K",
-          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
-          "journal": "Allergy",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
           "year": 2024,
-          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
           "grade": "推荐意见",
           "ref": "R13"
         },
         {
           "type": "建议",
           "author": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al.",
-          "title": "CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity",
-          "journal": "Canadian Association of Radiologists Journal",
+          "title": "对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）",
+          "journal": "加拿大放射医师协会杂志",
           "year": 2025,
-          "cite": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al. / CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity / Canadian Association of Radiologists Journal / 2025",
+          "cite": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al. / 对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会） / 加拿大放射医师协会杂志 / 2025",
           "grade": "推荐意见",
           "ref": "R14"
         }
@@ -595,30 +605,30 @@
         {
           "type": "声明",
           "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
-          "journal": "Radiology",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
           "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
           "grade": "学会声明",
           "ref": "R12"
         },
         {
           "type": "建议",
           "author": "Brockow K",
-          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
-          "journal": "Allergy",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
           "year": 2024,
-          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
           "grade": "推荐意见",
           "ref": "R13"
         },
         {
           "type": "推荐实践",
           "author": "Golden DBK, Wang J, Waserman S, et al.",
-          "title": "Anaphylaxis: A 2023 practice parameter update",
-          "journal": "Annals of Allergy, Asthma & Immunology",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
           "year": 2024,
-          "cite": "Golden DBK, Wang J, Waserman S, et al. / Anaphylaxis: A 2023 practice parameter update / Annals of Allergy, Asthma & Immunology / 2024",
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
           "grade": "推荐意见",
           "ref": "R16"
         }
@@ -642,20 +652,20 @@
         {
           "type": "声明",
           "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
-          "journal": "Radiology",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
           "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
           "grade": "学会声明",
           "ref": "R12"
         },
         {
           "type": "推荐实践",
           "author": "Golden DBK, Wang J, Waserman S, et al.",
-          "title": "Anaphylaxis: A 2023 practice parameter update",
-          "journal": "Annals of Allergy, Asthma & Immunology",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
           "year": 2024,
-          "cite": "Golden DBK, Wang J, Waserman S, et al. / Anaphylaxis: A 2023 practice parameter update / Annals of Allergy, Asthma & Immunology / 2024",
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
           "grade": "推荐意见",
           "ref": "R16"
         }
@@ -680,20 +690,20 @@
         {
           "type": "声明",
           "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
-          "journal": "Radiology",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
           "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
           "grade": "学会声明",
           "ref": "R12"
         },
         {
           "type": "建议",
           "author": "Brockow K",
-          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
-          "journal": "Allergy",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
           "year": 2024,
-          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
           "grade": "推荐意见",
           "ref": "R13"
         }
@@ -718,20 +728,20 @@
         {
           "type": "声明",
           "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
-          "journal": "Radiology",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
           "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
           "grade": "学会声明",
           "ref": "R12"
         },
         {
           "type": "推荐实践",
           "author": "Golden DBK, Wang J, Waserman S, et al.",
-          "title": "Anaphylaxis: A 2023 practice parameter update",
-          "journal": "Annals of Allergy, Asthma & Immunology",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
           "year": 2024,
-          "cite": "Golden DBK, Wang J, Waserman S, et al. / Anaphylaxis: A 2023 practice parameter update / Annals of Allergy, Asthma & Immunology / 2024",
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
           "grade": "推荐意见",
           "ref": "R16"
         }
@@ -755,20 +765,20 @@
         {
           "type": "声明",
           "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
-          "journal": "Radiology",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
           "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
           "grade": "学会声明",
           "ref": "R12"
         },
         {
           "type": "建议",
           "author": "Brockow K",
-          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
-          "journal": "Allergy",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
           "year": 2024,
-          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
           "grade": "推荐意见",
           "ref": "R13"
         }
@@ -793,20 +803,20 @@
         {
           "type": "声明",
           "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
-          "journal": "Radiology",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
           "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
           "grade": "学会声明",
           "ref": "R12"
         },
         {
           "type": "推荐实践",
           "author": "Golden DBK, Wang J, Waserman S, et al.",
-          "title": "Anaphylaxis: A 2023 practice parameter update",
-          "journal": "Annals of Allergy, Asthma & Immunology",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
           "year": 2024,
-          "cite": "Golden DBK, Wang J, Waserman S, et al. / Anaphylaxis: A 2023 practice parameter update / Annals of Allergy, Asthma & Immunology / 2024",
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
           "grade": "推荐意见",
           "ref": "R16"
         }
@@ -831,30 +841,30 @@
         {
           "type": "推荐实践",
           "author": "Golden DBK, Wang J, Waserman S, et al.",
-          "title": "Anaphylaxis: A 2023 practice parameter update",
-          "journal": "Annals of Allergy, Asthma & Immunology",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
           "year": 2024,
-          "cite": "Golden DBK, Wang J, Waserman S, et al. / Anaphylaxis: A 2023 practice parameter update / Annals of Allergy, Asthma & Immunology / 2024",
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
           "grade": "推荐意见",
           "ref": "R16"
         },
         {
           "type": "声明",
           "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
-          "journal": "Radiology",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
           "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
           "grade": "学会声明",
           "ref": "R12"
         },
         {
           "type": "建议",
           "author": "Brockow K",
-          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
-          "journal": "Allergy",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
           "year": 2024,
-          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
           "grade": "推荐意见",
           "ref": "R13"
         }
@@ -889,10 +899,10 @@
         {
           "type": "指南",
           "author": "Roditi G, Khan N, van der Molen AJ, et al.",
-          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
-          "journal": "European Radiology",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
           "year": 2022,
-          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
           "grade": "指南与共识",
           "ref": "R02"
         },
@@ -925,6 +935,16 @@
           "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
           "grade": "标准与规范",
           "ref": "R09"
+        },
+        {
+          "type": "规范",
+          "author": "广西壮族自治区市场监督管理局",
+          "title": "DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范",
+          "journal": "广西壮族自治区市场监督管理局（地方标准）",
+          "year": 2024,
+          "cite": "广西壮族自治区市场监督管理局 / DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范 / 广西壮族自治区市场监督管理局（地方标准） / 2024",
+          "grade": "标准与规范",
+          "ref": "R10"
         }
       ],
       "graph": "topic-01"
@@ -968,30 +988,30 @@
         {
           "type": "Meta分析",
           "author": "Navarese EP, Gurbel PA, Andreotti F, et al.",
-          "title": "Prevention of contrast-induced acute kidney injury in patients undergoing cardiovascular procedures—a systematic review and network meta-analysis",
-          "journal": "PLOS ONE",
+          "title": "心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析",
+          "journal": "公共科学图书馆·综合",
           "year": 2017,
-          "cite": "Navarese EP, Gurbel PA, Andreotti F, et al. / Prevention of contrast-induced acute kidney injury in patients undergoing cardiovascular procedures—a systematic review and network meta-analysis / PLOS ONE / 2017",
+          "cite": "Navarese EP, Gurbel PA, Andreotti F, et al. / 心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析 / 公共科学图书馆·综合 / 2017",
           "grade": "汇总证据",
           "ref": "R18"
         },
         {
           "type": "声明",
           "author": "Davenport MS, Perazella MA, Yee J, et al.",
-          "title": "Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation",
-          "journal": "Radiology",
+          "title": "碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明",
+          "journal": "放射学",
           "year": 2020,
-          "cite": "Davenport MS, Perazella MA, Yee J, et al. / Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation / Radiology / 2020",
+          "cite": "Davenport MS, Perazella MA, Yee J, et al. / 碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明 / 放射学 / 2020",
           "grade": "学会声明",
           "ref": "R11"
         },
         {
           "type": "推荐",
           "author": "de Laforcade L, Bobot M, Bellin MF, et al.",
-          "title": "ESUR recommendations on the use of contrast media: Practice survey, review and commentary by CJN, FIRN and SFNDT",
-          "journal": "Nephrologie & Therapeutique",
+          "title": "欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评",
+          "journal": "肾脏病与治疗",
           "year": 2021,
-          "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / ESUR recommendations on the use of contrast media: Practice survey, review and commentary by CJN, FIRN and SFNDT / Nephrologie & Therapeutique / 2021",
+          "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / 欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评 / 肾脏病与治疗 / 2021",
           "grade": "推荐意见",
           "ref": "R15"
         }
@@ -1014,11 +1034,11 @@
       "evidence": [
         {
           "type": "指南",
-          "author": "American College of Radiology, Committee on Drugs and Contrast Media",
-          "title": "ACR Manual on Contrast Media",
-          "journal": "American College of Radiology",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
           "year": 2024,
-          "cite": "American College of Radiology, Committee on Drugs and Contrast Media / ACR Manual on Contrast Media / American College of Radiology / 2024",
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
           "grade": "指南与共识",
           "ref": "R01"
         }
@@ -1041,10 +1061,10 @@
         {
           "type": "声明",
           "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
-          "journal": "Radiology",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
           "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
           "grade": "学会声明",
           "ref": "R12"
         }
@@ -1067,10 +1087,10 @@
         {
           "type": "指南",
           "author": "Roditi G, Khan N, van der Molen AJ, et al.",
-          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
-          "journal": "European Radiology",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
           "year": 2022,
-          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
           "grade": "指南与共识",
           "ref": "R02"
         }
@@ -1131,10 +1151,10 @@
         {
           "type": "声明",
           "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
-          "journal": "Radiology",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
           "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
           "grade": "学会声明",
           "ref": "R12"
         }
@@ -1169,10 +1189,10 @@
         {
           "type": "声明",
           "author": "Davenport MS, Perazella MA, Yee J, et al.",
-          "title": "Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation",
-          "journal": "Radiology",
+          "title": "碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明",
+          "journal": "放射学",
           "year": 2020,
-          "cite": "Davenport MS, Perazella MA, Yee J, et al. / Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation / Radiology / 2020",
+          "cite": "Davenport MS, Perazella MA, Yee J, et al. / 碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明 / 放射学 / 2020",
           "grade": "学会声明",
           "ref": "R11"
         }
@@ -1272,20 +1292,20 @@
         {
           "type": "声明",
           "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
-          "journal": "Radiology",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
           "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
           "grade": "学会声明",
           "ref": "R12"
         },
         {
           "type": "建议",
           "author": "Brockow K",
-          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
-          "journal": "Allergy",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
           "year": 2024,
-          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
           "grade": "推荐意见",
           "ref": "R13"
         }
@@ -1320,10 +1340,10 @@
         {
           "type": "声明",
           "author": "Davenport MS, Perazella MA, Yee J, et al.",
-          "title": "Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation",
-          "journal": "Radiology",
+          "title": "碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明",
+          "journal": "放射学",
           "year": 2020,
-          "cite": "Davenport MS, Perazella MA, Yee J, et al. / Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation / Radiology / 2020",
+          "cite": "Davenport MS, Perazella MA, Yee J, et al. / 碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明 / 放射学 / 2020",
           "grade": "学会声明",
           "ref": "R11"
         }
@@ -1384,20 +1404,20 @@
         {
           "type": "声明",
           "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
-          "journal": "Radiology",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
           "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
           "grade": "学会声明",
           "ref": "R12"
         },
         {
           "type": "建议",
           "author": "Brockow K",
-          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
-          "journal": "Allergy",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
           "year": 2024,
-          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
           "grade": "推荐意见",
           "ref": "R13"
         }
@@ -1431,10 +1451,10 @@
         {
           "type": "声明",
           "author": "Davenport MS, Perazella MA, Yee J, et al.",
-          "title": "Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation",
-          "journal": "Radiology",
+          "title": "碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明",
+          "journal": "放射学",
           "year": 2020,
-          "cite": "Davenport MS, Perazella MA, Yee J, et al. / Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation / Radiology / 2020",
+          "cite": "Davenport MS, Perazella MA, Yee J, et al. / 碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明 / 放射学 / 2020",
           "grade": "学会声明",
           "ref": "R11"
         }
@@ -1636,10 +1656,10 @@
         {
           "type": "指南",
           "author": "Roditi G, Khan N, van der Molen AJ, et al.",
-          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
-          "journal": "European Radiology",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
           "year": 2022,
-          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
           "grade": "指南与共识",
           "ref": "R02"
         },
@@ -1730,20 +1750,20 @@
         {
           "type": "推荐实践",
           "author": "Golden DBK, Wang J, Waserman S, et al.",
-          "title": "Anaphylaxis: A 2023 practice parameter update",
-          "journal": "Annals of Allergy, Asthma & Immunology",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
           "year": 2024,
-          "cite": "Golden DBK, Wang J, Waserman S, et al. / Anaphylaxis: A 2023 practice parameter update / Annals of Allergy, Asthma & Immunology / 2024",
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
           "grade": "推荐意见",
           "ref": "R16"
         },
         {
           "type": "声明",
           "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
-          "journal": "Radiology",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
           "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
           "grade": "学会声明",
           "ref": "R12"
         }
@@ -1768,20 +1788,20 @@
         {
           "type": "声明",
           "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
-          "journal": "Radiology",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
           "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
           "grade": "学会声明",
           "ref": "R12"
         },
         {
           "type": "建议",
           "author": "Brockow K",
-          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
-          "journal": "Allergy",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
           "year": 2024,
-          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
           "grade": "推荐意见",
           "ref": "R13"
         }
@@ -1806,20 +1826,20 @@
         {
           "type": "声明",
           "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
-          "journal": "Radiology",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
           "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
           "grade": "学会声明",
           "ref": "R12"
         },
         {
           "type": "建议",
           "author": "Brockow K",
-          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
-          "journal": "Allergy",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
           "year": 2024,
-          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
           "grade": "推荐意见",
           "ref": "R13"
         }
@@ -1864,30 +1884,30 @@
         {
           "type": "Meta分析",
           "author": "Navarese EP, Gurbel PA, Andreotti F, et al.",
-          "title": "Prevention of contrast-induced acute kidney injury in patients undergoing cardiovascular procedures—a systematic review and network meta-analysis",
-          "journal": "PLOS ONE",
+          "title": "心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析",
+          "journal": "公共科学图书馆·综合",
           "year": 2017,
-          "cite": "Navarese EP, Gurbel PA, Andreotti F, et al. / Prevention of contrast-induced acute kidney injury in patients undergoing cardiovascular procedures—a systematic review and network meta-analysis / PLOS ONE / 2017",
+          "cite": "Navarese EP, Gurbel PA, Andreotti F, et al. / 心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析 / 公共科学图书馆·综合 / 2017",
           "grade": "汇总证据",
           "ref": "R18"
         },
         {
           "type": "最佳证据",
           "author": "Weisbord SD, Gallagher M, Jneid H, et al.",
-          "title": "Outcomes after Angiography with Sodium Bicarbonate and Acetylcysteine",
-          "journal": "New England Journal of Medicine",
+          "title": "血管造影后应用碳酸氢钠与乙酰半胱氨酸的临床结局",
+          "journal": "新英格兰医学杂志",
           "year": 2018,
-          "cite": "Weisbord SD, Gallagher M, Jneid H, et al. / Outcomes after Angiography with Sodium Bicarbonate and Acetylcysteine / New England Journal of Medicine / 2018",
+          "cite": "Weisbord SD, Gallagher M, Jneid H, et al. / 血管造影后应用碳酸氢钠与乙酰半胱氨酸的临床结局 / 新英格兰医学杂志 / 2018",
           "grade": "汇总证据",
           "ref": "R19"
         },
         {
           "type": "推荐",
           "author": "de Laforcade L, Bobot M, Bellin MF, et al.",
-          "title": "ESUR recommendations on the use of contrast media: Practice survey, review and commentary by CJN, FIRN and SFNDT",
-          "journal": "Nephrologie & Therapeutique",
+          "title": "欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评",
+          "journal": "肾脏病与治疗",
           "year": 2021,
-          "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / ESUR recommendations on the use of contrast media: Practice survey, review and commentary by CJN, FIRN and SFNDT / Nephrologie & Therapeutique / 2021",
+          "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / 欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评 / 肾脏病与治疗 / 2021",
           "grade": "推荐意见",
           "ref": "R15"
         }
@@ -1975,10 +1995,10 @@
         {
           "type": "声明",
           "author": "Davenport MS, Perazella MA, Yee J, et al.",
-          "title": "Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation",
-          "journal": "Radiology",
+          "title": "碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明",
+          "journal": "放射学",
           "year": 2020,
-          "cite": "Davenport MS, Perazella MA, Yee J, et al. / Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation / Radiology / 2020",
+          "cite": "Davenport MS, Perazella MA, Yee J, et al. / 碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明 / 放射学 / 2020",
           "grade": "学会声明",
           "ref": "R11"
         }
@@ -2003,10 +2023,10 @@
         {
           "type": "指南",
           "author": "Roditi G, Khan N, van der Molen AJ, et al.",
-          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
-          "journal": "European Radiology",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
           "year": 2022,
-          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
           "grade": "指南与共识",
           "ref": "R02"
         },
@@ -2041,10 +2061,10 @@
         {
           "type": "指南",
           "author": "Roditi G, Khan N, van der Molen AJ, et al.",
-          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
-          "journal": "European Radiology",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
           "year": 2022,
-          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
           "grade": "指南与共识",
           "ref": "R02"
         },
@@ -2079,10 +2099,10 @@
         {
           "type": "指南",
           "author": "Roditi G, Khan N, van der Molen AJ, et al.",
-          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
-          "journal": "European Radiology",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
           "year": 2022,
-          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
           "grade": "指南与共识",
           "ref": "R02"
         },
@@ -2126,10 +2146,10 @@
         {
           "type": "指南",
           "author": "Roditi G, Khan N, van der Molen AJ, et al.",
-          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
-          "journal": "European Radiology",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
           "year": 2022,
-          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
           "grade": "指南与共识",
           "ref": "R02"
         },
@@ -2173,11 +2193,11 @@
         },
         {
           "type": "指南",
-          "author": "American College of Radiology, Committee on Drugs and Contrast Media",
-          "title": "ACR Manual on Contrast Media",
-          "journal": "American College of Radiology",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
           "year": 2024,
-          "cite": "American College of Radiology, Committee on Drugs and Contrast Media / ACR Manual on Contrast Media / American College of Radiology / 2024",
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
           "grade": "指南与共识",
           "ref": "R01"
         }
@@ -2201,11 +2221,11 @@
       "evidence": [
         {
           "type": "指南",
-          "author": "American College of Radiology, Committee on Drugs and Contrast Media",
-          "title": "ACR Manual on Contrast Media",
-          "journal": "American College of Radiology",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
           "year": 2024,
-          "cite": "American College of Radiology, Committee on Drugs and Contrast Media / ACR Manual on Contrast Media / American College of Radiology / 2024",
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
           "grade": "指南与共识",
           "ref": "R01"
         },
@@ -2362,11 +2382,11 @@
         },
         {
           "type": "指南",
-          "author": "American College of Radiology, Committee on Drugs and Contrast Media",
-          "title": "ACR Manual on Contrast Media",
-          "journal": "American College of Radiology",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
           "year": 2024,
-          "cite": "American College of Radiology, Committee on Drugs and Contrast Media / ACR Manual on Contrast Media / American College of Radiology / 2024",
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
           "grade": "指南与共识",
           "ref": "R01"
         }
@@ -2410,10 +2430,10 @@
         {
           "type": "指南",
           "author": "Roditi G, Khan N, van der Molen AJ, et al.",
-          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
-          "journal": "European Radiology",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
           "year": 2022,
-          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
           "grade": "指南与共识",
           "ref": "R02"
         }
@@ -2447,20 +2467,20 @@
         {
           "type": "推荐实践",
           "author": "Golden DBK, Wang J, Waserman S, et al.",
-          "title": "Anaphylaxis: A 2023 practice parameter update",
-          "journal": "Annals of Allergy, Asthma & Immunology",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
           "year": 2024,
-          "cite": "Golden DBK, Wang J, Waserman S, et al. / Anaphylaxis: A 2023 practice parameter update / Annals of Allergy, Asthma & Immunology / 2024",
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
           "grade": "推荐意见",
           "ref": "R16"
         },
         {
           "type": "指南",
           "author": "Roditi G, Khan N, van der Molen AJ, et al.",
-          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
-          "journal": "European Radiology",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
           "year": 2022,
-          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
           "grade": "指南与共识",
           "ref": "R02"
         }
@@ -2484,10 +2504,10 @@
         {
           "type": "指南",
           "author": "Roditi G, Khan N, van der Molen AJ, et al.",
-          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
-          "journal": "European Radiology",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
           "year": 2022,
-          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
           "grade": "指南与共识",
           "ref": "R02"
         },
@@ -2531,30 +2551,30 @@
         {
           "type": "声明",
           "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
-          "journal": "Radiology",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
           "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
           "grade": "学会声明",
           "ref": "R12"
         },
         {
           "type": "建议",
           "author": "Brockow K",
-          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
-          "journal": "Allergy",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
           "year": 2024,
-          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
           "grade": "推荐意见",
           "ref": "R13"
         },
         {
           "type": "指南",
-          "author": "American College of Radiology, Committee on Drugs and Contrast Media",
-          "title": "ACR Manual on Contrast Media",
-          "journal": "American College of Radiology",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
           "year": 2024,
-          "cite": "American College of Radiology, Committee on Drugs and Contrast Media / ACR Manual on Contrast Media / American College of Radiology / 2024",
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
           "grade": "指南与共识",
           "ref": "R01"
         }
@@ -2598,30 +2618,30 @@
         {
           "type": "声明",
           "author": "Davenport MS, Perazella MA, Yee J, et al.",
-          "title": "Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation",
-          "journal": "Radiology",
+          "title": "碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明",
+          "journal": "放射学",
           "year": 2020,
-          "cite": "Davenport MS, Perazella MA, Yee J, et al. / Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation / Radiology / 2020",
+          "cite": "Davenport MS, Perazella MA, Yee J, et al. / 碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明 / 放射学 / 2020",
           "grade": "学会声明",
           "ref": "R11"
         },
         {
           "type": "最佳证据",
           "author": "Weisbord SD, Gallagher M, Jneid H, et al.",
-          "title": "Outcomes after Angiography with Sodium Bicarbonate and Acetylcysteine",
-          "journal": "New England Journal of Medicine",
+          "title": "血管造影后应用碳酸氢钠与乙酰半胱氨酸的临床结局",
+          "journal": "新英格兰医学杂志",
           "year": 2018,
-          "cite": "Weisbord SD, Gallagher M, Jneid H, et al. / Outcomes after Angiography with Sodium Bicarbonate and Acetylcysteine / New England Journal of Medicine / 2018",
+          "cite": "Weisbord SD, Gallagher M, Jneid H, et al. / 血管造影后应用碳酸氢钠与乙酰半胱氨酸的临床结局 / 新英格兰医学杂志 / 2018",
           "grade": "汇总证据",
           "ref": "R19"
         },
         {
           "type": "推荐",
           "author": "de Laforcade L, Bobot M, Bellin MF, et al.",
-          "title": "ESUR recommendations on the use of contrast media: Practice survey, review and commentary by CJN, FIRN and SFNDT",
-          "journal": "Nephrologie & Therapeutique",
+          "title": "欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评",
+          "journal": "肾脏病与治疗",
           "year": 2021,
-          "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / ESUR recommendations on the use of contrast media: Practice survey, review and commentary by CJN, FIRN and SFNDT / Nephrologie & Therapeutique / 2021",
+          "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / 欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评 / 肾脏病与治疗 / 2021",
           "grade": "推荐意见",
           "ref": "R15"
         }
@@ -2692,10 +2712,10 @@
         {
           "type": "声明",
           "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
-          "journal": "Radiology",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
           "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
           "grade": "学会声明",
           "ref": "R12"
         }
@@ -2719,20 +2739,20 @@
         {
           "type": "建议",
           "author": "Brockow K",
-          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
-          "journal": "Allergy",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
           "year": 2024,
-          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
           "grade": "推荐意见",
           "ref": "R13"
         },
         {
           "type": "推荐实践",
           "author": "Golden DBK, Wang J, Waserman S, et al.",
-          "title": "Anaphylaxis: A 2023 practice parameter update",
-          "journal": "Annals of Allergy, Asthma & Immunology",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
           "year": 2024,
-          "cite": "Golden DBK, Wang J, Waserman S, et al. / Anaphylaxis: A 2023 practice parameter update / Annals of Allergy, Asthma & Immunology / 2024",
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
           "grade": "推荐意见",
           "ref": "R16"
         }
@@ -2843,11 +2863,11 @@
       "evidence": [
         {
           "type": "指南",
-          "author": "American College of Radiology, Committee on Drugs and Contrast Media",
-          "title": "ACR Manual on Contrast Media",
-          "journal": "American College of Radiology",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
           "year": 2024,
-          "cite": "American College of Radiology, Committee on Drugs and Contrast Media / ACR Manual on Contrast Media / American College of Radiology / 2024",
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
           "grade": "指南与共识",
           "ref": "R01"
         },
@@ -2892,10 +2912,10 @@
         {
           "type": "声明",
           "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
-          "journal": "Radiology",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
           "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
           "grade": "学会声明",
           "ref": "R12"
         },
@@ -2939,10 +2959,10 @@
         {
           "type": "指南",
           "author": "Roditi G, Khan N, van der Molen AJ, et al.",
-          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
-          "journal": "European Radiology",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
           "year": 2022,
-          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
           "grade": "指南与共识",
           "ref": "R02"
         }
@@ -2967,20 +2987,20 @@
         {
           "type": "推荐实践",
           "author": "Golden DBK, Wang J, Waserman S, et al.",
-          "title": "Anaphylaxis: A 2023 practice parameter update",
-          "journal": "Annals of Allergy, Asthma & Immunology",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
           "year": 2024,
-          "cite": "Golden DBK, Wang J, Waserman S, et al. / Anaphylaxis: A 2023 practice parameter update / Annals of Allergy, Asthma & Immunology / 2024",
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
           "grade": "推荐意见",
           "ref": "R16"
         },
         {
           "type": "建议",
           "author": "Brockow K",
-          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
-          "journal": "Allergy",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
           "year": 2024,
-          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
           "grade": "推荐意见",
           "ref": "R13"
         }
@@ -3004,10 +3024,10 @@
         {
           "type": "声明",
           "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
-          "journal": "Radiology",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
           "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
           "grade": "学会声明",
           "ref": "R12"
         },
@@ -3041,20 +3061,20 @@
         {
           "type": "推荐实践",
           "author": "Golden DBK, Wang J, Waserman S, et al.",
-          "title": "Anaphylaxis: A 2023 practice parameter update",
-          "journal": "Annals of Allergy, Asthma & Immunology",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
           "year": 2024,
-          "cite": "Golden DBK, Wang J, Waserman S, et al. / Anaphylaxis: A 2023 practice parameter update / Annals of Allergy, Asthma & Immunology / 2024",
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
           "grade": "推荐意见",
           "ref": "R16"
         },
         {
           "type": "建议",
           "author": "Brockow K",
-          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
-          "journal": "Allergy",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
           "year": 2024,
-          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
           "grade": "推荐意见",
           "ref": "R13"
         }
@@ -3088,10 +3108,10 @@
         {
           "type": "声明",
           "author": "Davenport MS, Perazella MA, Yee J, et al.",
-          "title": "Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation",
-          "journal": "Radiology",
+          "title": "碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明",
+          "journal": "放射学",
           "year": 2020,
-          "cite": "Davenport MS, Perazella MA, Yee J, et al. / Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation / Radiology / 2020",
+          "cite": "Davenport MS, Perazella MA, Yee J, et al. / 碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明 / 放射学 / 2020",
           "grade": "学会声明",
           "ref": "R11"
         }
@@ -3126,10 +3146,10 @@
         {
           "type": "指南",
           "author": "Roditi G, Khan N, van der Molen AJ, et al.",
-          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
-          "journal": "European Radiology",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
           "year": 2022,
-          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
           "grade": "指南与共识",
           "ref": "R02"
         }
@@ -3138,7 +3158,7 @@
     },
     {
       "id": "R01",
-      "name": "ACR Manual on Contrast Media",
+      "name": "美国放射学会对比剂手册",
       "type": "Reference",
       "tags": [
         "文献",
@@ -3174,11 +3194,11 @@
       "evidence": [
         {
           "type": "指南",
-          "author": "American College of Radiology, Committee on Drugs and Contrast Media",
-          "title": "ACR Manual on Contrast Media",
-          "journal": "American College of Radiology",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
           "year": 2024,
-          "cite": "American College of Radiology, Committee on Drugs and Contrast Media / ACR Manual on Contrast Media / American College of Radiology / 2024",
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
           "grade": "指南与共识",
           "ref": "R01"
         }
@@ -3187,7 +3207,7 @@
     },
     {
       "id": "R02",
-      "name": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+      "name": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
       "type": "Reference",
       "tags": [
         "文献",
@@ -3223,10 +3243,10 @@
         {
           "type": "指南",
           "author": "Roditi G, Khan N, van der Molen AJ, et al.",
-          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
-          "journal": "European Radiology",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
           "year": 2022,
-          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
           "grade": "指南与共识",
           "ref": "R02"
         }
@@ -3615,7 +3635,7 @@
     },
     {
       "id": "R11",
-      "name": "Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation",
+      "name": "碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明",
       "type": "Reference",
       "tags": [
         "文献",
@@ -3650,10 +3670,10 @@
         {
           "type": "声明",
           "author": "Davenport MS, Perazella MA, Yee J, et al.",
-          "title": "Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation",
-          "journal": "Radiology",
+          "title": "碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明",
+          "journal": "放射学",
           "year": 2020,
-          "cite": "Davenport MS, Perazella MA, Yee J, et al. / Use of Intravenous Iodinated Contrast Media in Patients with Kidney Disease: Consensus Statements from the American College of Radiology and the National Kidney Foundation / Radiology / 2020",
+          "cite": "Davenport MS, Perazella MA, Yee J, et al. / 碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明 / 放射学 / 2020",
           "grade": "学会声明",
           "ref": "R11"
         }
@@ -3662,7 +3682,7 @@
     },
     {
       "id": "R12",
-      "name": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
+      "name": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
       "type": "Reference",
       "tags": [
         "文献",
@@ -3697,10 +3717,10 @@
         {
           "type": "声明",
           "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology",
-          "journal": "Radiology",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
           "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / Management and Prevention of Hypersensitivity Reactions to Radiocontrast Media: A Consensus Statement from the American College of Radiology and the American Academy of Allergy, Asthma & Immunology / Radiology / 2025",
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
           "grade": "学会声明",
           "ref": "R12"
         }
@@ -3709,7 +3729,7 @@
     },
     {
       "id": "R13",
-      "name": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
+      "name": "放射性对比剂超敏反应处理流程（2024 年更新）",
       "type": "Reference",
       "tags": [
         "文献",
@@ -3744,10 +3764,10 @@
         {
           "type": "建议",
           "author": "Brockow K",
-          "title": "An algorithm for the management of radiocontrast media hypersensitivity, 2024 update",
-          "journal": "Allergy",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
           "year": 2024,
-          "cite": "Brockow K / An algorithm for the management of radiocontrast media hypersensitivity, 2024 update / Allergy / 2024",
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
           "grade": "推荐意见",
           "ref": "R13"
         }
@@ -3756,7 +3776,7 @@
     },
     {
       "id": "R14",
-      "name": "CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity",
+      "name": "对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）",
       "type": "Reference",
       "tags": [
         "文献",
@@ -3791,10 +3811,10 @@
         {
           "type": "建议",
           "author": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al.",
-          "title": "CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity",
-          "journal": "Canadian Association of Radiologists Journal",
+          "title": "对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）",
+          "journal": "加拿大放射医师协会杂志",
           "year": 2025,
-          "cite": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al. / CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity / Canadian Association of Radiologists Journal / 2025",
+          "cite": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al. / 对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会） / 加拿大放射医师协会杂志 / 2025",
           "grade": "推荐意见",
           "ref": "R14"
         }
@@ -3803,7 +3823,7 @@
     },
     {
       "id": "R15",
-      "name": "ESUR recommendations on the use of contrast media: Practice survey, review and commentary by CJN, FIRN and SFNDT",
+      "name": "欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评",
       "type": "Reference",
       "tags": [
         "文献",
@@ -3838,10 +3858,10 @@
         {
           "type": "推荐",
           "author": "de Laforcade L, Bobot M, Bellin MF, et al.",
-          "title": "ESUR recommendations on the use of contrast media: Practice survey, review and commentary by CJN, FIRN and SFNDT",
-          "journal": "Nephrologie & Therapeutique",
+          "title": "欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评",
+          "journal": "肾脏病与治疗",
           "year": 2021,
-          "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / ESUR recommendations on the use of contrast media: Practice survey, review and commentary by CJN, FIRN and SFNDT / Nephrologie & Therapeutique / 2021",
+          "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / 欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评 / 肾脏病与治疗 / 2021",
           "grade": "推荐意见",
           "ref": "R15"
         }
@@ -3850,7 +3870,7 @@
     },
     {
       "id": "R16",
-      "name": "Anaphylaxis: A 2023 practice parameter update",
+      "name": "过敏反应：2023 年实践参数更新",
       "type": "Reference",
       "tags": [
         "文献",
@@ -3885,10 +3905,10 @@
         {
           "type": "推荐实践",
           "author": "Golden DBK, Wang J, Waserman S, et al.",
-          "title": "Anaphylaxis: A 2023 practice parameter update",
-          "journal": "Annals of Allergy, Asthma & Immunology",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
           "year": 2024,
-          "cite": "Golden DBK, Wang J, Waserman S, et al. / Anaphylaxis: A 2023 practice parameter update / Annals of Allergy, Asthma & Immunology / 2024",
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
           "grade": "推荐意见",
           "ref": "R16"
         }
@@ -3945,7 +3965,7 @@
     },
     {
       "id": "R18",
-      "name": "Prevention of contrast-induced acute kidney injury in patients undergoing cardiovascular procedures—a systematic review and network meta-analysis",
+      "name": "心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析",
       "type": "Reference",
       "tags": [
         "文献",
@@ -3980,10 +4000,10 @@
         {
           "type": "Meta分析",
           "author": "Navarese EP, Gurbel PA, Andreotti F, et al.",
-          "title": "Prevention of contrast-induced acute kidney injury in patients undergoing cardiovascular procedures—a systematic review and network meta-analysis",
-          "journal": "PLOS ONE",
+          "title": "心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析",
+          "journal": "公共科学图书馆·综合",
           "year": 2017,
-          "cite": "Navarese EP, Gurbel PA, Andreotti F, et al. / Prevention of contrast-induced acute kidney injury in patients undergoing cardiovascular procedures—a systematic review and network meta-analysis / PLOS ONE / 2017",
+          "cite": "Navarese EP, Gurbel PA, Andreotti F, et al. / 心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析 / 公共科学图书馆·综合 / 2017",
           "grade": "汇总证据",
           "ref": "R18"
         }
@@ -3992,7 +4012,7 @@
     },
     {
       "id": "R19",
-      "name": "Outcomes after Angiography with Sodium Bicarbonate and Acetylcysteine",
+      "name": "血管造影后应用碳酸氢钠与乙酰半胱氨酸的临床结局",
       "type": "Reference",
       "tags": [
         "文献",
@@ -4027,10 +4047,10 @@
         {
           "type": "最佳证据",
           "author": "Weisbord SD, Gallagher M, Jneid H, et al.",
-          "title": "Outcomes after Angiography with Sodium Bicarbonate and Acetylcysteine",
-          "journal": "New England Journal of Medicine",
+          "title": "血管造影后应用碳酸氢钠与乙酰半胱氨酸的临床结局",
+          "journal": "新英格兰医学杂志",
           "year": 2018,
-          "cite": "Weisbord SD, Gallagher M, Jneid H, et al. / Outcomes after Angiography with Sodium Bicarbonate and Acetylcysteine / New England Journal of Medicine / 2018",
+          "cite": "Weisbord SD, Gallagher M, Jneid H, et al. / 血管造影后应用碳酸氢钠与乙酰半胱氨酸的临床结局 / 新英格兰医学杂志 / 2018",
           "grade": "汇总证据",
           "ref": "R19"
         }
@@ -5949,6 +5969,18 @@
     {
       "source": "FS_LimbFunction",
       "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "E_CTEnhancedScan",
+      "target": "R10",
       "type": "SUPPORTED_BY",
       "label": "有文献支持"
     }

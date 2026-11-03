@@ -229,195 +229,195 @@ PharmacologicalManagement,维生素 B6,影响,ManagementOutcome,症状严重程�
 PharmacologicalManagement,肠内营养支持,影响,ManagementOutcome,进食情况改善
 PharmacologicalManagement,肠内营养支持,影响,ManagementOutcome,体重维持
 PharmacologicalManagement,硫胺素（维生素 B1）,影响,ManagementOutcome,住院与急诊减少
-SymptomExperience,恶心,有文献支持,Reference,Summary of the Best Evidence for the Evaluation and Management of Chemotherapy-Related Nausea and Vomiting in Cancer Patients
-SymptomExperience,恶心,有文献支持,Reference,Evidence-based management of chemotherapy-induced nausea and vomiting: a position statement from a European cancer nursing forum
-SymptomExperience,恶心,有文献支持,Reference,2023 MASCC and ESMO guideline update for the prevention of chemotherapy- and radiotherapy-induced nausea and vomiting
-SymptomExperience,呕吐,有文献支持,Reference,Summary of the Best Evidence for the Evaluation and Management of Chemotherapy-Related Nausea and Vomiting in Cancer Patients
-SymptomExperience,呕吐,有文献支持,Reference,Evidence-based management of chemotherapy-induced nausea and vomiting: a position statement from a European cancer nursing forum
-SymptomExperience,呕吐,有文献支持,Reference,Interventions for nausea and vomiting in early pregnancy
-SymptomCategory,化疗相关恶心呕吐,有文献支持,Reference,Antiemetics: ASCO Guideline Update
-SymptomCategory,化疗相关恶心呕吐,有文献支持,Reference,2023 MASCC and ESMO guideline update for the prevention of chemotherapy- and radiotherapy-induced nausea and vomiting
-SymptomCategory,化疗相关恶心呕吐,有文献支持,Reference,2023 updated MASCC-ESMO consensus recommendations: prevention of nausea and vomiting following high-emetic-risk antineoplastic agents
+SymptomExperience,恶心,有文献支持,Reference,癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结
+SymptomExperience,恶心,有文献支持,Reference,化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明
+SymptomExperience,恶心,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防
+SymptomExperience,呕吐,有文献支持,Reference,癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结
+SymptomExperience,呕吐,有文献支持,Reference,化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明
+SymptomExperience,呕吐,有文献支持,Reference,妊娠早期恶心呕吐的干预措施
+SymptomCategory,化疗相关恶心呕吐,有文献支持,Reference,止吐药物：美国临床肿瘤学会指南更新
+SymptomCategory,化疗相关恶心呕吐,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防
+SymptomCategory,化疗相关恶心呕吐,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会共识更新：高致吐风险抗肿瘤药物所致恶心呕吐的预防
 SymptomCategory,化疗相关恶心呕吐,有文献支持,Reference,中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）
-SymptomCategory,化疗相关恶心呕吐,有文献支持,Reference,"NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines): Antiemesis, Version 2.2025"
-SymptomCategory,放疗相关恶心呕吐,有文献支持,Reference,2023 MASCC and ESMO guideline update for the prevention of chemotherapy- and radiotherapy-induced nausea and vomiting
-SymptomCategory,放疗相关恶心呕吐,有文献支持,Reference,Antiemetics: ASCO Guideline Update
-SymptomCategory,妊娠期恶心呕吐,有文献支持,Reference,The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69)
-SymptomCategory,妊娠期恶心呕吐,有文献支持,Reference,Interventions for nausea and vomiting in early pregnancy
-SymptomCategory,妊娠期恶心呕吐,有文献支持,Reference,WHO recommendations on antenatal care for a positive pregnancy experience
-SymptomCategory,妊娠剧吐,有文献支持,Reference,The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69)
-SymptomCategory,妊娠剧吐,有文献支持,Reference,Interventions for nausea and vomiting in early pregnancy
-SymptomCategory,妊娠剧吐,有文献支持,Reference,Summary of the Best Evidence for the Evaluation and Management of Chemotherapy-Related Nausea and Vomiting in Cancer Patients
-SymptomCategory,术后恶心呕吐,有文献支持,Reference,Fifth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting: Executive Summary
-SymptomCategory,术后恶心呕吐,有文献支持,Reference,Antiemetics: ASCO Guideline Update
-SymptomCategory,急性恶心呕吐,有文献支持,Reference,2023 MASCC and ESMO guideline update for the prevention of chemotherapy- and radiotherapy-induced nausea and vomiting
-SymptomCategory,急性恶心呕吐,有文献支持,Reference,2023 updated MASCC-ESMO consensus recommendations: prevention of nausea and vomiting following high-emetic-risk antineoplastic agents
+SymptomCategory,化疗相关恶心呕吐,有文献支持,Reference,美国国家综合癌症网络肿瘤临床实践指南：止吐（2025 年第 2 版）
+SymptomCategory,放疗相关恶心呕吐,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防
+SymptomCategory,放疗相关恶心呕吐,有文献支持,Reference,止吐药物：美国临床肿瘤学会指南更新
+SymptomCategory,妊娠期恶心呕吐,有文献支持,Reference,妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）
+SymptomCategory,妊娠期恶心呕吐,有文献支持,Reference,妊娠早期恶心呕吐的干预措施
+SymptomCategory,妊娠期恶心呕吐,有文献支持,Reference,世界卫生组织关于产前保健促进积极妊娠体验的建议
+SymptomCategory,妊娠剧吐,有文献支持,Reference,妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）
+SymptomCategory,妊娠剧吐,有文献支持,Reference,妊娠早期恶心呕吐的干预措施
+SymptomCategory,妊娠剧吐,有文献支持,Reference,癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结
+SymptomCategory,术后恶心呕吐,有文献支持,Reference,术后恶心呕吐管理第五版共识指南（摘要）
+SymptomCategory,术后恶心呕吐,有文献支持,Reference,止吐药物：美国临床肿瘤学会指南更新
+SymptomCategory,急性恶心呕吐,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防
+SymptomCategory,急性恶心呕吐,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会共识更新：高致吐风险抗肿瘤药物所致恶心呕吐的预防
 SymptomCategory,急性恶心呕吐,有文献支持,Reference,中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）
-SymptomCategory,延迟性恶心呕吐,有文献支持,Reference,2023 MASCC and ESMO guideline update for the prevention of chemotherapy- and radiotherapy-induced nausea and vomiting
-SymptomCategory,延迟性恶心呕吐,有文献支持,Reference,2023 updated MASCC-ESMO consensus recommendations: prevention of nausea and vomiting following high-emetic-risk antineoplastic agents
+SymptomCategory,延迟性恶心呕吐,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防
+SymptomCategory,延迟性恶心呕吐,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会共识更新：高致吐风险抗肿瘤药物所致恶心呕吐的预防
 SymptomCategory,延迟性恶心呕吐,有文献支持,Reference,中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）
 SymptomCategory,预期性恶心呕吐,有文献支持,Reference,中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）
 SymptomCategory,预期性恶心呕吐,有文献支持,Reference,四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版
-SymptomCategory,预期性恶心呕吐,有文献支持,Reference,2023 MASCC and ESMO guideline update for the prevention of chemotherapy- and radiotherapy-induced nausea and vomiting
-SymptomCategory,爆发性恶心呕吐,有文献支持,Reference,2023 MASCC and ESMO guideline update for the prevention of chemotherapy- and radiotherapy-induced nausea and vomiting
-SymptomCategory,爆发性恶心呕吐,有文献支持,Reference,2023 updated MASCC-ESMO consensus recommendations: prevention of nausea and vomiting following high-emetic-risk antineoplastic agents
-SymptomCategory,爆发性恶心呕吐,有文献支持,Reference,Antiemetics: ASCO Guideline Update
-AssessmentTool,CTCAE 不良反应评价标准 v5.0,有文献支持,Reference,Common Terminology Criteria for Adverse Events (CTCAE) Version 5.0
-AssessmentTool,EORTC QLQ-C30 肿瘤生活质量问卷,有文献支持,Reference,EORTC QLQ-C30 Scoring Manual (3rd Edition)
-AssessmentTool,EORTC QLQ-C30 肿瘤生活质量问卷,有文献支持,Reference,Summary of the Best Evidence for the Evaluation and Management of Chemotherapy-Related Nausea and Vomiting in Cancer Patients
-AssessmentTool,MASCC 止吐自评工具,有文献支持,Reference,Validation and psychometric assessment of a short clinical scale to measure chemotherapy-induced nausea and vomiting: the MASCC antiemesis tool
-AssessmentTool,MASCC 止吐自评工具,有文献支持,Reference,Summary of the Best Evidence for the Evaluation and Management of Chemotherapy-Related Nausea and Vomiting in Cancer Patients
-AssessmentTool,Apfel 简化风险评分,有文献支持,Reference,Fifth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting: Executive Summary
-AssessmentTool,Apfel 简化风险评分,有文献支持,Reference,Antiemetics: ASCO Guideline Update
-AssessmentTool,PUQE 妊娠剧吐严重程度评分,有文献支持,Reference,The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69)
-AssessmentTool,PUQE 妊娠剧吐严重程度评分,有文献支持,Reference,Interventions for nausea and vomiting in early pregnancy
-RiskFactor,女性,有文献支持,Reference,Antiemetics: ASCO Guideline Update
-RiskFactor,女性,有文献支持,Reference,2023 MASCC and ESMO guideline update for the prevention of chemotherapy- and radiotherapy-induced nausea and vomiting
-RiskFactor,女性,有文献支持,Reference,Fifth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting: Executive Summary
+SymptomCategory,预期性恶心呕吐,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防
+SymptomCategory,爆发性恶心呕吐,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防
+SymptomCategory,爆发性恶心呕吐,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会共识更新：高致吐风险抗肿瘤药物所致恶心呕吐的预防
+SymptomCategory,爆发性恶心呕吐,有文献支持,Reference,止吐药物：美国临床肿瘤学会指南更新
+AssessmentTool,CTCAE 不良反应评价标准 v5.0,有文献支持,Reference,不良事件通用术语标准（CTCAE 第 5.0 版）
+AssessmentTool,EORTC QLQ-C30 肿瘤生活质量问卷,有文献支持,Reference,肿瘤患者生活质量问卷（EORTC QLQ-C30）评分手册（第 3 版）
+AssessmentTool,EORTC QLQ-C30 肿瘤生活质量问卷,有文献支持,Reference,癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结
+AssessmentTool,MASCC 止吐自评工具,有文献支持,Reference,化疗相关恶心呕吐简明临床量表的验证与心理测量学评价：国际癌症支持治疗协会止吐自评工具
+AssessmentTool,MASCC 止吐自评工具,有文献支持,Reference,癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结
+AssessmentTool,Apfel 简化风险评分,有文献支持,Reference,术后恶心呕吐管理第五版共识指南（摘要）
+AssessmentTool,Apfel 简化风险评分,有文献支持,Reference,止吐药物：美国临床肿瘤学会指南更新
+AssessmentTool,PUQE 妊娠剧吐严重程度评分,有文献支持,Reference,妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）
+AssessmentTool,PUQE 妊娠剧吐严重程度评分,有文献支持,Reference,妊娠早期恶心呕吐的干预措施
+RiskFactor,女性,有文献支持,Reference,止吐药物：美国临床肿瘤学会指南更新
+RiskFactor,女性,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防
+RiskFactor,女性,有文献支持,Reference,术后恶心呕吐管理第五版共识指南（摘要）
 RiskFactor,年龄较轻,有文献支持,Reference,四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版
-RiskFactor,年龄较轻,有文献支持,Reference,2023 MASCC and ESMO guideline update for the prevention of chemotherapy- and radiotherapy-induced nausea and vomiting
+RiskFactor,年龄较轻,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防
 RiskFactor,年龄较轻,有文献支持,Reference,中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）
-RiskFactor,非吸烟者,有文献支持,Reference,Fifth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting: Executive Summary
-RiskFactor,非吸烟者,有文献支持,Reference,Antiemetics: ASCO Guideline Update
-RiskFactor,晕动病史,有文献支持,Reference,Fifth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting: Executive Summary
-RiskFactor,晕动病史,有文献支持,Reference,Antiemetics: ASCO Guideline Update
-RiskFactor,既往恶心呕吐史,有文献支持,Reference,2023 MASCC and ESMO guideline update for the prevention of chemotherapy- and radiotherapy-induced nausea and vomiting
-RiskFactor,既往恶心呕吐史,有文献支持,Reference,Fifth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting: Executive Summary
+RiskFactor,非吸烟者,有文献支持,Reference,术后恶心呕吐管理第五版共识指南（摘要）
+RiskFactor,非吸烟者,有文献支持,Reference,止吐药物：美国临床肿瘤学会指南更新
+RiskFactor,晕动病史,有文献支持,Reference,术后恶心呕吐管理第五版共识指南（摘要）
+RiskFactor,晕动病史,有文献支持,Reference,止吐药物：美国临床肿瘤学会指南更新
+RiskFactor,既往恶心呕吐史,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防
+RiskFactor,既往恶心呕吐史,有文献支持,Reference,术后恶心呕吐管理第五版共识指南（摘要）
 RiskFactor,既往恶心呕吐史,有文献支持,Reference,中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）
 RiskFactor,焦虑,有文献支持,Reference,四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版
 RiskFactor,焦虑,有文献支持,Reference,中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）
-RiskFactor,焦虑,有文献支持,Reference,Evidence-based management of chemotherapy-induced nausea and vomiting: a position statement from a European cancer nursing forum
-RiskFactor,术后阿片类镇痛,有文献支持,Reference,Fifth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting: Executive Summary
-RiskFactor,术后阿片类镇痛,有文献支持,Reference,Antiemetics: ASCO Guideline Update
+RiskFactor,焦虑,有文献支持,Reference,化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明
+RiskFactor,术后阿片类镇痛,有文献支持,Reference,术后恶心呕吐管理第五版共识指南（摘要）
+RiskFactor,术后阿片类镇痛,有文献支持,Reference,止吐药物：美国临床肿瘤学会指南更新
 RiskFactor,睡眠障碍,有文献支持,Reference,四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版
-RiskFactor,睡眠障碍,有文献支持,Reference,Evidence-based management of chemotherapy-induced nausea and vomiting: a position statement from a European cancer nursing forum
+RiskFactor,睡眠障碍,有文献支持,Reference,化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明
 RiskFactor,无饮酒史,有文献支持,Reference,四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版
-RiskFactor,无饮酒史,有文献支持,Reference,Fifth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting: Executive Summary
+RiskFactor,无饮酒史,有文献支持,Reference,术后恶心呕吐管理第五版共识指南（摘要）
 RiskFactor,化疗前进食不足,有文献支持,Reference,四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版
 RiskFactor,化疗前进食不足,有文献支持,Reference,中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）
-PharmacologicalManagement,5-HT3 受体拮抗剂,有文献支持,Reference,Antiemetics: ASCO Guideline Update
-PharmacologicalManagement,5-HT3 受体拮抗剂,有文献支持,Reference,2023 MASCC and ESMO guideline update for the prevention of chemotherapy- and radiotherapy-induced nausea and vomiting
-PharmacologicalManagement,5-HT3 受体拮抗剂,有文献支持,Reference,2023 updated MASCC-ESMO consensus recommendations: prevention of nausea and vomiting following high-emetic-risk antineoplastic agents
-PharmacologicalManagement,地塞米松,有文献支持,Reference,Antiemetics: ASCO Guideline Update
-PharmacologicalManagement,地塞米松,有文献支持,Reference,2023 MASCC and ESMO guideline update for the prevention of chemotherapy- and radiotherapy-induced nausea and vomiting
+PharmacologicalManagement,5-HT3 受体拮抗剂,有文献支持,Reference,止吐药物：美国临床肿瘤学会指南更新
+PharmacologicalManagement,5-HT3 受体拮抗剂,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防
+PharmacologicalManagement,5-HT3 受体拮抗剂,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会共识更新：高致吐风险抗肿瘤药物所致恶心呕吐的预防
+PharmacologicalManagement,地塞米松,有文献支持,Reference,止吐药物：美国临床肿瘤学会指南更新
+PharmacologicalManagement,地塞米松,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防
 PharmacologicalManagement,地塞米松,有文献支持,Reference,中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）
-PharmacologicalManagement,NK-1 受体拮抗剂,有文献支持,Reference,Antiemetics: ASCO Guideline Update
-PharmacologicalManagement,NK-1 受体拮抗剂,有文献支持,Reference,2023 MASCC and ESMO guideline update for the prevention of chemotherapy- and radiotherapy-induced nausea and vomiting
-PharmacologicalManagement,NK-1 受体拮抗剂,有文献支持,Reference,2023 updated MASCC-ESMO consensus recommendations: prevention of nausea and vomiting following high-emetic-risk antineoplastic agents
+PharmacologicalManagement,NK-1 受体拮抗剂,有文献支持,Reference,止吐药物：美国临床肿瘤学会指南更新
+PharmacologicalManagement,NK-1 受体拮抗剂,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防
+PharmacologicalManagement,NK-1 受体拮抗剂,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会共识更新：高致吐风险抗肿瘤药物所致恶心呕吐的预防
 PharmacologicalManagement,NK-1 受体拮抗剂,有文献支持,Reference,中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）
-PharmacologicalManagement,奥氮平,有文献支持,Reference,Antiemetics: ASCO Guideline Update
-PharmacologicalManagement,奥氮平,有文献支持,Reference,2023 MASCC and ESMO guideline update for the prevention of chemotherapy- and radiotherapy-induced nausea and vomiting
-PharmacologicalManagement,奥氮平,有文献支持,Reference,2023 updated MASCC-ESMO consensus recommendations: prevention of nausea and vomiting following high-emetic-risk antineoplastic agents
-PharmacologicalManagement,甲氧氯普胺,有文献支持,Reference,The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69)
-PharmacologicalManagement,甲氧氯普胺,有文献支持,Reference,2023 MASCC and ESMO guideline update for the prevention of chemotherapy- and radiotherapy-induced nausea and vomiting
+PharmacologicalManagement,奥氮平,有文献支持,Reference,止吐药物：美国临床肿瘤学会指南更新
+PharmacologicalManagement,奥氮平,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防
+PharmacologicalManagement,奥氮平,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会共识更新：高致吐风险抗肿瘤药物所致恶心呕吐的预防
+PharmacologicalManagement,甲氧氯普胺,有文献支持,Reference,妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）
+PharmacologicalManagement,甲氧氯普胺,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防
 PharmacologicalManagement,甲氧氯普胺,有文献支持,Reference,中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）
-PharmacologicalManagement,多巴胺受体拮抗剂,有文献支持,Reference,Antiemetics: ASCO Guideline Update
-PharmacologicalManagement,多巴胺受体拮抗剂,有文献支持,Reference,2023 MASCC and ESMO guideline update for the prevention of chemotherapy- and radiotherapy-induced nausea and vomiting
+PharmacologicalManagement,多巴胺受体拮抗剂,有文献支持,Reference,止吐药物：美国临床肿瘤学会指南更新
+PharmacologicalManagement,多巴胺受体拮抗剂,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防
 PharmacologicalManagement,多巴胺受体拮抗剂,有文献支持,Reference,中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）
-PharmacologicalManagement,抗组胺药,有文献支持,Reference,The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69)
-PharmacologicalManagement,抗组胺药,有文献支持,Reference,WHO recommendations on antenatal care for a positive pregnancy experience
-PharmacologicalManagement,抗组胺药,有文献支持,Reference,Interventions for nausea and vomiting in early pregnancy
-PharmacologicalManagement,维生素 B6,有文献支持,Reference,WHO recommendations on antenatal care for a positive pregnancy experience
-PharmacologicalManagement,维生素 B6,有文献支持,Reference,The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69)
-PharmacologicalManagement,维生素 B6,有文献支持,Reference,Interventions for nausea and vomiting in early pregnancy
+PharmacologicalManagement,抗组胺药,有文献支持,Reference,妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）
+PharmacologicalManagement,抗组胺药,有文献支持,Reference,世界卫生组织关于产前保健促进积极妊娠体验的建议
+PharmacologicalManagement,抗组胺药,有文献支持,Reference,妊娠早期恶心呕吐的干预措施
+PharmacologicalManagement,维生素 B6,有文献支持,Reference,世界卫生组织关于产前保健促进积极妊娠体验的建议
+PharmacologicalManagement,维生素 B6,有文献支持,Reference,妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）
+PharmacologicalManagement,维生素 B6,有文献支持,Reference,妊娠早期恶心呕吐的干预措施
 PharmacologicalManagement,肠内营养支持,有文献支持,Reference,成人肠内营养支持的护理
 PharmacologicalManagement,肠内营养支持,有文献支持,Reference,基础护理学（第7版）
-PharmacologicalManagement,肠内营养支持,有文献支持,Reference,Summary of the Best Evidence for the Evaluation and Management of Chemotherapy-Related Nausea and Vomiting in Cancer Patients
-PharmacologicalManagement,硫胺素（维生素 B1）,有文献支持,Reference,The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69)
+PharmacologicalManagement,肠内营养支持,有文献支持,Reference,癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结
+PharmacologicalManagement,硫胺素（维生素 B1）,有文献支持,Reference,妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）
 NonPharmacologicalManagement,起居护理,有文献支持,Reference,四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版
 NonPharmacologicalManagement,起居护理,有文献支持,Reference,基础护理学（第7版）
-NonPharmacologicalManagement,起居护理,有文献支持,Reference,Fifth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting: Executive Summary
-NonPharmacologicalManagement,穴位刺激,有文献支持,Reference,Effects of PC6 acupressure on acute and delayed nausea and vomiting induced by chemotherapy in patients with malignant neoplasm: a meta-analysis
+NonPharmacologicalManagement,起居护理,有文献支持,Reference,术后恶心呕吐管理第五版共识指南（摘要）
+NonPharmacologicalManagement,穴位刺激,有文献支持,Reference,内关穴（PC6）按压对恶性肿瘤患者化疗所致急性与延迟性恶心呕吐的影响：荟萃分析
 NonPharmacologicalManagement,穴位刺激,有文献支持,Reference,非药物干预对癌症化疗致恶心呕吐影响的网状Meta分析
-NonPharmacologicalManagement,穴位刺激,有文献支持,Reference,WHO recommendations on antenatal care for a positive pregnancy experience
-NonPharmacologicalManagement,穴位刺激,有文献支持,Reference,Nurse-led non-pharmacological interventions for prevention and management of postoperative nausea and vomiting in adults undergoing laparoscopic surgery: an evidence summary
-NonPharmacologicalManagement,液体疗法,有文献支持,Reference,The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69)
+NonPharmacologicalManagement,穴位刺激,有文献支持,Reference,世界卫生组织关于产前保健促进积极妊娠体验的建议
+NonPharmacologicalManagement,穴位刺激,有文献支持,Reference,护士主导的非药物干预在腹腔镜手术成人患者术后恶心呕吐预防与管理中的证据总结
+NonPharmacologicalManagement,液体疗法,有文献支持,Reference,妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）
 NonPharmacologicalManagement,液体疗法,有文献支持,Reference,基础护理学（第7版）
 NonPharmacologicalManagement,液体疗法,有文献支持,Reference,四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版
-NonPharmacologicalManagement,芳香疗法（精油疗法）,有文献支持,Reference,Inhaling Peppermint Essential Oil as a Promising Complementary Therapy in the Treatment of Nausea and Vomiting
+NonPharmacologicalManagement,芳香疗法（精油疗法）,有文献支持,Reference,吸入薄荷精油作为恶心呕吐治疗的辅助疗法：一项有前景的补充治疗
 NonPharmacologicalManagement,芳香疗法（精油疗法）,有文献支持,Reference,非药物干预对癌症化疗致恶心呕吐影响的网状Meta分析
-NonPharmacologicalManagement,芳香疗法（精油疗法）,有文献支持,Reference,Nurse-led non-pharmacological interventions for prevention and management of postoperative nausea and vomiting in adults undergoing laparoscopic surgery: an evidence summary
-NonPharmacologicalManagement,生姜疗法,有文献支持,Reference,WHO recommendations on antenatal care for a positive pregnancy experience
-NonPharmacologicalManagement,生姜疗法,有文献支持,Reference,Interventions for nausea and vomiting in early pregnancy
+NonPharmacologicalManagement,芳香疗法（精油疗法）,有文献支持,Reference,护士主导的非药物干预在腹腔镜手术成人患者术后恶心呕吐预防与管理中的证据总结
+NonPharmacologicalManagement,生姜疗法,有文献支持,Reference,世界卫生组织关于产前保健促进积极妊娠体验的建议
+NonPharmacologicalManagement,生姜疗法,有文献支持,Reference,妊娠早期恶心呕吐的干预措施
 NonPharmacologicalManagement,生姜疗法,有文献支持,Reference,非药物干预对癌症化疗致恶心呕吐影响的网状Meta分析
 NonPharmacologicalManagement,健康教育,有文献支持,Reference,四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版
-NonPharmacologicalManagement,健康教育,有文献支持,Reference,Evidence-based management of chemotherapy-induced nausea and vomiting: a position statement from a European cancer nursing forum
-NonPharmacologicalManagement,健康教育,有文献支持,Reference,Nurse-led non-pharmacological interventions for prevention and management of postoperative nausea and vomiting in adults undergoing laparoscopic surgery: an evidence summary
+NonPharmacologicalManagement,健康教育,有文献支持,Reference,化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明
+NonPharmacologicalManagement,健康教育,有文献支持,Reference,护士主导的非药物干预在腹腔镜手术成人患者术后恶心呕吐预防与管理中的证据总结
 NonPharmacologicalManagement,口腔护理,有文献支持,Reference,基础护理学（第7版）
 NonPharmacologicalManagement,口腔护理,有文献支持,Reference,四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版
-NonPharmacologicalManagement,口腔护理,有文献支持,Reference,Evidence-based management of chemotherapy-induced nausea and vomiting: a position statement from a European cancer nursing forum
-NonPharmacologicalManagement,行为干预,有文献支持,Reference,Nurse-led non-pharmacological interventions for prevention and management of postoperative nausea and vomiting in adults undergoing laparoscopic surgery: an evidence summary
+NonPharmacologicalManagement,口腔护理,有文献支持,Reference,化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明
+NonPharmacologicalManagement,行为干预,有文献支持,Reference,护士主导的非药物干预在腹腔镜手术成人患者术后恶心呕吐预防与管理中的证据总结
 NonPharmacologicalManagement,行为干预,有文献支持,Reference,四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版
 NonPharmacologicalManagement,行为干预,有文献支持,Reference,中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）
-ManagementStrategy,化疗相关恶心呕吐管理策略,有文献支持,Reference,Antiemetics: ASCO Guideline Update
-ManagementStrategy,化疗相关恶心呕吐管理策略,有文献支持,Reference,2023 MASCC and ESMO guideline update for the prevention of chemotherapy- and radiotherapy-induced nausea and vomiting
-ManagementStrategy,化疗相关恶心呕吐管理策略,有文献支持,Reference,2023 updated MASCC-ESMO consensus recommendations: prevention of nausea and vomiting following high-emetic-risk antineoplastic agents
+ManagementStrategy,化疗相关恶心呕吐管理策略,有文献支持,Reference,止吐药物：美国临床肿瘤学会指南更新
+ManagementStrategy,化疗相关恶心呕吐管理策略,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防
+ManagementStrategy,化疗相关恶心呕吐管理策略,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会共识更新：高致吐风险抗肿瘤药物所致恶心呕吐的预防
 ManagementStrategy,化疗相关恶心呕吐管理策略,有文献支持,Reference,中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）
 ManagementStrategy,化疗相关恶心呕吐管理策略,有文献支持,Reference,四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版
-ManagementStrategy,化疗相关恶心呕吐管理策略,有文献支持,Reference,"NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines): Antiemesis, Version 2.2025"
-ManagementStrategy,妊娠期恶心呕吐管理策略,有文献支持,Reference,The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69)
-ManagementStrategy,妊娠期恶心呕吐管理策略,有文献支持,Reference,WHO recommendations on antenatal care for a positive pregnancy experience
-ManagementStrategy,妊娠期恶心呕吐管理策略,有文献支持,Reference,Interventions for nausea and vomiting in early pregnancy
-ManagementStrategy,术后恶心呕吐管理策略,有文献支持,Reference,Fifth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting: Executive Summary
-ManagementStrategy,术后恶心呕吐管理策略,有文献支持,Reference,Antiemetics: ASCO Guideline Update
-ManagementStrategy,术后恶心呕吐管理策略,有文献支持,Reference,Nurse-led non-pharmacological interventions for prevention and management of postoperative nausea and vomiting in adults undergoing laparoscopic surgery: an evidence summary
-ManagementStrategy,整合症状管理策略,有文献支持,Reference,Summary of the Best Evidence for the Evaluation and Management of Chemotherapy-Related Nausea and Vomiting in Cancer Patients
-ManagementStrategy,整合症状管理策略,有文献支持,Reference,Evidence-based management of chemotherapy-induced nausea and vomiting: a position statement from a European cancer nursing forum
-ManagementStrategy,整合症状管理策略,有文献支持,Reference,Nurse-led non-pharmacological interventions for prevention and management of postoperative nausea and vomiting in adults undergoing laparoscopic surgery: an evidence summary
-ManagementOutcome,恶心呕吐发生率下降,有文献支持,Reference,Antiemetics: ASCO Guideline Update
-ManagementOutcome,恶心呕吐发生率下降,有文献支持,Reference,2023 MASCC and ESMO guideline update for the prevention of chemotherapy- and radiotherapy-induced nausea and vomiting
-ManagementOutcome,恶心呕吐发生率下降,有文献支持,Reference,2023 updated MASCC-ESMO consensus recommendations: prevention of nausea and vomiting following high-emetic-risk antineoplastic agents
-ManagementOutcome,完全缓解,有文献支持,Reference,Validation and psychometric assessment of a short clinical scale to measure chemotherapy-induced nausea and vomiting: the MASCC antiemesis tool
-ManagementOutcome,完全缓解,有文献支持,Reference,Antiemetics: ASCO Guideline Update
-ManagementOutcome,完全缓解,有文献支持,Reference,Summary of the Best Evidence for the Evaluation and Management of Chemotherapy-Related Nausea and Vomiting in Cancer Patients
-ManagementOutcome,症状严重程度减轻,有文献支持,Reference,Inhaling Peppermint Essential Oil as a Promising Complementary Therapy in the Treatment of Nausea and Vomiting
-ManagementOutcome,症状严重程度减轻,有文献支持,Reference,Effects of PC6 acupressure on acute and delayed nausea and vomiting induced by chemotherapy in patients with malignant neoplasm: a meta-analysis
+ManagementStrategy,化疗相关恶心呕吐管理策略,有文献支持,Reference,美国国家综合癌症网络肿瘤临床实践指南：止吐（2025 年第 2 版）
+ManagementStrategy,妊娠期恶心呕吐管理策略,有文献支持,Reference,妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）
+ManagementStrategy,妊娠期恶心呕吐管理策略,有文献支持,Reference,世界卫生组织关于产前保健促进积极妊娠体验的建议
+ManagementStrategy,妊娠期恶心呕吐管理策略,有文献支持,Reference,妊娠早期恶心呕吐的干预措施
+ManagementStrategy,术后恶心呕吐管理策略,有文献支持,Reference,术后恶心呕吐管理第五版共识指南（摘要）
+ManagementStrategy,术后恶心呕吐管理策略,有文献支持,Reference,止吐药物：美国临床肿瘤学会指南更新
+ManagementStrategy,术后恶心呕吐管理策略,有文献支持,Reference,护士主导的非药物干预在腹腔镜手术成人患者术后恶心呕吐预防与管理中的证据总结
+ManagementStrategy,整合症状管理策略,有文献支持,Reference,癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结
+ManagementStrategy,整合症状管理策略,有文献支持,Reference,化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明
+ManagementStrategy,整合症状管理策略,有文献支持,Reference,护士主导的非药物干预在腹腔镜手术成人患者术后恶心呕吐预防与管理中的证据总结
+ManagementOutcome,恶心呕吐发生率下降,有文献支持,Reference,止吐药物：美国临床肿瘤学会指南更新
+ManagementOutcome,恶心呕吐发生率下降,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防
+ManagementOutcome,恶心呕吐发生率下降,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会共识更新：高致吐风险抗肿瘤药物所致恶心呕吐的预防
+ManagementOutcome,完全缓解,有文献支持,Reference,化疗相关恶心呕吐简明临床量表的验证与心理测量学评价：国际癌症支持治疗协会止吐自评工具
+ManagementOutcome,完全缓解,有文献支持,Reference,止吐药物：美国临床肿瘤学会指南更新
+ManagementOutcome,完全缓解,有文献支持,Reference,癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结
+ManagementOutcome,症状严重程度减轻,有文献支持,Reference,吸入薄荷精油作为恶心呕吐治疗的辅助疗法：一项有前景的补充治疗
+ManagementOutcome,症状严重程度减轻,有文献支持,Reference,内关穴（PC6）按压对恶性肿瘤患者化疗所致急性与延迟性恶心呕吐的影响：荟萃分析
 ManagementOutcome,症状严重程度减轻,有文献支持,Reference,非药物干预对癌症化疗致恶心呕吐影响的网状Meta分析
-ManagementOutcome,进食情况改善,有文献支持,Reference,Summary of the Best Evidence for the Evaluation and Management of Chemotherapy-Related Nausea and Vomiting in Cancer Patients
-ManagementOutcome,进食情况改善,有文献支持,Reference,The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69)
-ManagementOutcome,进食情况改善,有文献支持,Reference,Evidence-based management of chemotherapy-induced nausea and vomiting: a position statement from a European cancer nursing forum
-ManagementOutcome,体重维持,有文献支持,Reference,The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69)
-ManagementOutcome,体重维持,有文献支持,Reference,Summary of the Best Evidence for the Evaluation and Management of Chemotherapy-Related Nausea and Vomiting in Cancer Patients
-ManagementOutcome,生活质量提升,有文献支持,Reference,EORTC QLQ-C30 Scoring Manual (3rd Edition)
-ManagementOutcome,生活质量提升,有文献支持,Reference,Summary of the Best Evidence for the Evaluation and Management of Chemotherapy-Related Nausea and Vomiting in Cancer Patients
-ManagementOutcome,生活质量提升,有文献支持,Reference,Evidence-based management of chemotherapy-induced nausea and vomiting: a position statement from a European cancer nursing forum
+ManagementOutcome,进食情况改善,有文献支持,Reference,癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结
+ManagementOutcome,进食情况改善,有文献支持,Reference,妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）
+ManagementOutcome,进食情况改善,有文献支持,Reference,化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明
+ManagementOutcome,体重维持,有文献支持,Reference,妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）
+ManagementOutcome,体重维持,有文献支持,Reference,癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结
+ManagementOutcome,生活质量提升,有文献支持,Reference,肿瘤患者生活质量问卷（EORTC QLQ-C30）评分手册（第 3 版）
+ManagementOutcome,生活质量提升,有文献支持,Reference,癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结
+ManagementOutcome,生活质量提升,有文献支持,Reference,化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明
 ManagementOutcome,用药依从性提升,有文献支持,Reference,四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版
-ManagementOutcome,用药依从性提升,有文献支持,Reference,Evidence-based management of chemotherapy-induced nausea and vomiting: a position statement from a European cancer nursing forum
-ManagementOutcome,用药依从性提升,有文献支持,Reference,Nurse-led non-pharmacological interventions for prevention and management of postoperative nausea and vomiting in adults undergoing laparoscopic surgery: an evidence summary
-ManagementOutcome,住院与急诊减少,有文献支持,Reference,Summary of the Best Evidence for the Evaluation and Management of Chemotherapy-Related Nausea and Vomiting in Cancer Patients
+ManagementOutcome,用药依从性提升,有文献支持,Reference,化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明
+ManagementOutcome,用药依从性提升,有文献支持,Reference,护士主导的非药物干预在腹腔镜手术成人患者术后恶心呕吐预防与管理中的证据总结
+ManagementOutcome,住院与急诊减少,有文献支持,Reference,癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结
 ManagementOutcome,住院与急诊减少,有文献支持,Reference,四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版
-ManagementOutcome,住院与急诊减少,有文献支持,Reference,Evidence-based management of chemotherapy-induced nausea and vomiting: a position statement from a European cancer nursing forum
-SymptomStatus,化疗相关恶心呕吐发生率,有文献支持,Reference,Antiemetics: ASCO Guideline Update
-SymptomStatus,化疗相关恶心呕吐发生率,有文献支持,Reference,2023 MASCC and ESMO guideline update for the prevention of chemotherapy- and radiotherapy-induced nausea and vomiting
+ManagementOutcome,住院与急诊减少,有文献支持,Reference,化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明
+SymptomStatus,化疗相关恶心呕吐发生率,有文献支持,Reference,止吐药物：美国临床肿瘤学会指南更新
+SymptomStatus,化疗相关恶心呕吐发生率,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防
 SymptomStatus,化疗相关恶心呕吐发生率,有文献支持,Reference,四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版
-SymptomStatus,术后恶心呕吐发生率,有文献支持,Reference,Fifth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting: Executive Summary
-SymptomStatus,术后恶心呕吐发生率,有文献支持,Reference,Antiemetics: ASCO Guideline Update
-SymptomStatus,妊娠期恶心呕吐发生率,有文献支持,Reference,The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69)
-SymptomStatus,妊娠期恶心呕吐发生率,有文献支持,Reference,Interventions for nausea and vomiting in early pregnancy
-SymptomStatus,妊娠剧吐发生率,有文献支持,Reference,The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69)
-SymptomStatus,妊娠剧吐发生率,有文献支持,Reference,Interventions for nausea and vomiting in early pregnancy
+SymptomStatus,术后恶心呕吐发生率,有文献支持,Reference,术后恶心呕吐管理第五版共识指南（摘要）
+SymptomStatus,术后恶心呕吐发生率,有文献支持,Reference,止吐药物：美国临床肿瘤学会指南更新
+SymptomStatus,妊娠期恶心呕吐发生率,有文献支持,Reference,妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）
+SymptomStatus,妊娠期恶心呕吐发生率,有文献支持,Reference,妊娠早期恶心呕吐的干预措施
+SymptomStatus,妊娠剧吐发生率,有文献支持,Reference,妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）
+SymptomStatus,妊娠剧吐发生率,有文献支持,Reference,妊娠早期恶心呕吐的干预措施
 SymptomStatus,预期性恶心呕吐发生率,有文献支持,Reference,中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）
 SymptomStatus,预期性恶心呕吐发生率,有文献支持,Reference,四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版
-SymptomStatus,症状控制率,有文献支持,Reference,Validation and psychometric assessment of a short clinical scale to measure chemotherapy-induced nausea and vomiting: the MASCC antiemesis tool
-SymptomStatus,症状控制率,有文献支持,Reference,Antiemetics: ASCO Guideline Update
-SymptomStatus,脱水,有文献支持,Reference,The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69)
+SymptomStatus,症状控制率,有文献支持,Reference,化疗相关恶心呕吐简明临床量表的验证与心理测量学评价：国际癌症支持治疗协会止吐自评工具
+SymptomStatus,症状控制率,有文献支持,Reference,止吐药物：美国临床肿瘤学会指南更新
+SymptomStatus,脱水,有文献支持,Reference,妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）
 SymptomStatus,脱水,有文献支持,Reference,基础护理学（第7版）
-SymptomStatus,电解质紊乱,有文献支持,Reference,The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69)
-SymptomStatus,电解质紊乱,有文献支持,Reference,Summary of the Best Evidence for the Evaluation and Management of Chemotherapy-Related Nausea and Vomiting in Cancer Patients
-SymptomStatus,干呕,有文献支持,Reference,Evidence-based management of chemotherapy-induced nausea and vomiting: a position statement from a European cancer nursing forum
+SymptomStatus,电解质紊乱,有文献支持,Reference,妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）
+SymptomStatus,电解质紊乱,有文献支持,Reference,癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结
+SymptomStatus,干呕,有文献支持,Reference,化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明
 SymptomStatus,干呕,有文献支持,Reference,基础护理学（第7版）
-FunctionalStatus,进食受影响,有文献支持,Reference,EORTC QLQ-C30 Scoring Manual (3rd Edition)
-FunctionalStatus,进食受影响,有文献支持,Reference,Summary of the Best Evidence for the Evaluation and Management of Chemotherapy-Related Nausea and Vomiting in Cancer Patients
-FunctionalStatus,进食受影响,有文献支持,Reference,Evidence-based management of chemotherapy-induced nausea and vomiting: a position statement from a European cancer nursing forum
-FunctionalStatus,体重下降,有文献支持,Reference,The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69)
-FunctionalStatus,体重下降,有文献支持,Reference,Summary of the Best Evidence for the Evaluation and Management of Chemotherapy-Related Nausea and Vomiting in Cancer Patients
-FunctionalStatus,生活质量下降,有文献支持,Reference,EORTC QLQ-C30 Scoring Manual (3rd Edition)
-FunctionalStatus,生活质量下降,有文献支持,Reference,Summary of the Best Evidence for the Evaluation and Management of Chemotherapy-Related Nausea and Vomiting in Cancer Patients
-FunctionalStatus,自我照护能力下降,有文献支持,Reference,Evidence-based management of chemotherapy-induced nausea and vomiting: a position statement from a European cancer nursing forum
-FunctionalStatus,自我照护能力下降,有文献支持,Reference,Summary of the Best Evidence for the Evaluation and Management of Chemotherapy-Related Nausea and Vomiting in Cancer Patients
-FunctionalStatus,自我照护能力下降,有文献支持,Reference,Nurse-led non-pharmacological interventions for prevention and management of postoperative nausea and vomiting in adults undergoing laparoscopic surgery: an evidence summary
-FunctionalStatus,活动耐力下降,有文献支持,Reference,Fifth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting: Executive Summary
-FunctionalStatus,活动耐力下降,有文献支持,Reference,Summary of the Best Evidence for the Evaluation and Management of Chemotherapy-Related Nausea and Vomiting in Cancer Patients
-FunctionalStatus,活动耐力下降,有文献支持,Reference,Nurse-led non-pharmacological interventions for prevention and management of postoperative nausea and vomiting in adults undergoing laparoscopic surgery: an evidence summary
-FunctionalStatus,误吸风险,有文献支持,Reference,Fifth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting: Executive Summary
-FunctionalStatus,误吸风险,有文献支持,Reference,The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69)
+FunctionalStatus,进食受影响,有文献支持,Reference,肿瘤患者生活质量问卷（EORTC QLQ-C30）评分手册（第 3 版）
+FunctionalStatus,进食受影响,有文献支持,Reference,癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结
+FunctionalStatus,进食受影响,有文献支持,Reference,化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明
+FunctionalStatus,体重下降,有文献支持,Reference,妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）
+FunctionalStatus,体重下降,有文献支持,Reference,癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结
+FunctionalStatus,生活质量下降,有文献支持,Reference,肿瘤患者生活质量问卷（EORTC QLQ-C30）评分手册（第 3 版）
+FunctionalStatus,生活质量下降,有文献支持,Reference,癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结
+FunctionalStatus,自我照护能力下降,有文献支持,Reference,化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明
+FunctionalStatus,自我照护能力下降,有文献支持,Reference,癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结
+FunctionalStatus,自我照护能力下降,有文献支持,Reference,护士主导的非药物干预在腹腔镜手术成人患者术后恶心呕吐预防与管理中的证据总结
+FunctionalStatus,活动耐力下降,有文献支持,Reference,术后恶心呕吐管理第五版共识指南（摘要）
+FunctionalStatus,活动耐力下降,有文献支持,Reference,癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结
+FunctionalStatus,活动耐力下降,有文献支持,Reference,护士主导的非药物干预在腹腔镜手术成人患者术后恶心呕吐预防与管理中的证据总结
+FunctionalStatus,误吸风险,有文献支持,Reference,术后恶心呕吐管理第五版共识指南（摘要）
+FunctionalStatus,误吸风险,有文献支持,Reference,妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）
