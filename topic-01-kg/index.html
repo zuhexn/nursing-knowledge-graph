@@ -232,6 +232,19 @@
   .spin{width:26px;height:26px;border:2px solid #2b3852;border-top-color:var(--accent);border-radius:50%;animation:sp .8s linear infinite;}
   @keyframes sp{to{transform:rotate(360deg);}}
 
+  /* 布局中的提示：力导向布局跑完之前，图上还没有标签。
+     不说一声，用户看到的是「一张没字的光秃秃的图」—— 像坏了。
+     标签一算准就撤掉。 */
+  #settling{
+    position:absolute;left:50%;top:14px;transform:translateX(-50%);
+    display:flex;align-items:center;gap:7px;
+    background:rgba(22,29,44,.9);border:1px solid #2b3852;border-radius:999px;
+    padding:6px 13px;font-size:12px;color:#b6c6e2;pointer-events:none;
+    transition:opacity .25s;z-index:6;
+  }
+  #settling.gone{opacity:0;}
+  #settling .spin{width:13px;height:13px;border-width:1.5px;}
+
   /* 滚动条 */
   #panel-body::-webkit-scrollbar,#suggest::-webkit-scrollbar,#legend::-webkit-scrollbar{width:7px;}
   #panel-body::-webkit-scrollbar-thumb,#suggest::-webkit-scrollbar-thumb,#legend::-webkit-scrollbar-thumb{background:#2b3852;border-radius:4px;}
@@ -316,6 +329,7 @@
 
   <div id="stage">
     <div id="chart"></div>
+    <div id="settling"><span class="spin"></span><span>正在布局图谱…</span></div>
     <div id="stats"></div>
     <div id="hint"><b>拖动</b> 移动节点 · <b>双指 / 滚轮</b> 缩放 · <b>点节点</b> 看详情与关联节点</div>
   </div>
@@ -580,12 +594,14 @@
   });
   var maxDeg = Math.max.apply(null, Object.keys(degree).map(function (k) { return degree[k]; }).concat([1]));
 
-  /* 枢纽节点（度数最高的 6 个）—— 手机上只给这几个挂标签：
-     节点在屏幕上挨得近，标签一多就互相压字。 */
+  /* 枢纽节点（度数最高的一批）—— 手机上只给这几个挂标签：
+     节点在屏幕上挨得近，标签一多就互相压字。
+     候选给到 12 个，实际能画出几个由「避让」定：压字的、被画布切掉的自动不画。
+     候选少 → 屏幕上大片空白没字；候选多 → 避让算法兜底。 */
   var hubSet = {};
   (G.nodes || []).slice().sort(function (a, b) {
     return (degree[b.id] || 0) - (degree[a.id] || 0);
-  }).slice(0, 6).forEach(function (n) { hubSet[n.id] = true; });
+  }).slice(0, 12).forEach(function (n) { hubSet[n.id] = true; });
 
   /* ============ 状态 ============ */
   var state = {
@@ -595,7 +611,9 @@
     query: "",
     hits: [],          // 当前检索命中的节点 id 列表
     labelOff: {},      // id -> true 表示「被避让掉了，这一帧不画标签」
-    labelSide: {}      // id -> "left" 表示标签翻到了节点左侧
+    labelSide: {},     // id -> "left" 表示标签翻到了节点左侧
+    pos: {},           // id -> [x, y]：布局冻结后的节点坐标
+    frozen: false      // 布局是否已定型（定型后才放标签）
   };
 
   /* ============ 构建 ECharts 数据 ============ */
@@ -617,12 +635,34 @@
     }
     return cut.replace(/[\s,;:.]+$/, "") + "…";
   }
-  /* 文本像素宽度估算：中文按全宽、拉丁按半宽 */
-  function textWidth(str, fs) {
-    var w = 0;
-    for (var i = 0; i < str.length; i++) {
-      w += str.charCodeAt(i) > 0x2e80 ? fs : fs * 0.56;
+  /* 文本像素宽度：用真实字体量，别估。
+     估算（拉丁按 0.56 字宽）会系统性偏窄 —— 实测 "Management and…" 在 13px 下
+     真实 121px / 估算 109px，偏窄 11%：避让算出来的框比画出来的字窄，
+     两个标签就会压到一起。真量一次（canvas measureText）成本可忽略。 */
+  var _measureCtx = null, _measureCache = {};
+  function measureCtx() {
+    if (_measureCtx === null) {
+      try { _measureCtx = document.createElement("canvas").getContext("2d"); }
+      catch (e) { _measureCtx = false; }
     }
+    return _measureCtx || null;
+  }
+  function textWidth(str, fs) {
+    var key = fs + "|" + str;
+    if (_measureCache[key] != null) return _measureCache[key];
+    var w = 0, ctx = measureCtx();
+    if (ctx) {
+      try {
+        ctx.font = fs + "px sans-serif";
+        w = ctx.measureText(str).width;
+      } catch (e) { w = 0; }
+    }
+    if (!w) {   /* 量不出来（字体未就绪 / 老浏览器）→ 退回估算 */
+      for (var i = 0; i < str.length; i++) {
+        w += str.charCodeAt(i) > 0x2e80 ? fs : fs * 0.56;
+      }
+    }
+    _measureCache[key] = w;
     return w;
   }
   /* 候选标签：窄屏只标枢纽，宽屏标度数高的 —— 画不画还要过「避让」 */
@@ -635,7 +675,7 @@
   function buildNodes() {
     return (G.nodes || []).map(function (n) {
       var t = typeOf(n);
-      return {
+      var it = {
         id: n.id,
         name: n.name,
         category: t.index,
@@ -649,7 +689,10 @@
           shadowColor: "rgba(0,0,0,.55)"
         },
         label: {
-          show: shouldShowLabel(n) && !state.labelOff[n.id],
+          /* 布局没定型之前不画标签 —— 标签是按坐标摆的，
+             坐标还在动，摆出来的字就追不上节点（还会互相压字）。
+             定型之后一次性算准，见 freezeLayout()。 */
+          show: state.frozen && shouldShowLabel(n) && !state.labelOff[n.id],
           fontSize: isNarrow() ? 13 : 11.5,
           color: "#e8eefc",
           position: state.labelSide[n.id] || "right",
@@ -661,6 +704,11 @@
         _type: n.type,
         _degree: degree[n.id] || 0
       };
+      /* 冻结后的坐标写回数据项 —— 这样后续任何一次 setOption
+         （筛类型 / 高亮 / 重排标签）都不会让节点跳回原点。 */
+      var p = state.pos[n.id];
+      if (p) { it.x = p[0]; it.y = p[1]; }
+      return it;
     });
   }
   function buildLinks() {
@@ -785,6 +833,7 @@
 
   /* ============ 过滤 / 高亮 / 延展 ============ */
   function applyFilter() {
+    freezeLayout();                    /* 换数据会重启布局 → 先定型再换 */
     var nodes = buildNodes().map(function (d) {
       if (state.hidden[d._type]) {
         d.itemStyle = { opacity: 0, color: "transparent", borderWidth: 0, shadowBlur: 0 };
@@ -805,6 +854,7 @@
   /* 选中一个节点 → 高亮它 + 它的直接关联节点（论文口径「点选逐步延展」）：
      其余节点压暗，不是让人在一屏铺开的全图里自己找。 */
   function focusSet() {
+    freezeLayout();          /* 换数据会重启布局 → 先定型（已定型则空转） */
     var focus = null;
     if (state.selected) {
       focus = {};
@@ -1000,15 +1050,54 @@
     });
   }
 
+  /* 把节点挪到视野中央 —— 用户从检索里选中一个「看不见」的节点时，
+     面板打开了但图没动，等于让人猜它在哪儿。
+     已经在画面里的不动镜头（别把用户正在看的东西甩走）。 */
+  function centerOn(id) {
+    try {
+      var model = chart.getModel().getSeriesByIndex(0);
+      var data = model.getData();
+      var idx = -1;
+      for (var i = 0; i < data.count(); i++) {
+        var it = data.getRawDataItem(i);
+        if (it && it.id === id) { idx = i; break; }
+      }
+      if (idx < 0) return false;
+      var l = data.getItemLayout(idx);
+      if (!l || isNaN(l[0]) || isNaN(l[1])) return false;
+      var px = chart.convertToPixel({ seriesIndex: 0 }, l);
+      if (!px || isNaN(px[0]) || isNaN(px[1])) return false;
+      var w = chart.getWidth(), h = chart.getHeight(), m = 30;
+      /* 底部详情抽屉打开时，它盖住画布下半截 —— 目标点要落在「还看得见的那条」中间，
+         否则节点被抽屉盖住，等于还是看不见。
+         可见高度按「抽屉顶边在画布里的位置」算（抽屉贴的是视口底边，不是画布底边）。 */
+      var vis = h;
+      var panel = document.getElementById("panel");
+      if (isNarrow() && panel && panel.classList.contains("open")) {
+        /* 用 offsetTop（布局位置）而不是 getBoundingClientRect（会算上正在跑的滑入动画）*/
+        var pt = panel.offsetTop;
+        var cr = chart.getDom().getBoundingClientRect();
+        vis = Math.max(70, Math.min(h, pt - cr.top));
+      }
+      if (px[0] >= m && px[0] <= w - m && px[1] >= m && px[1] <= vis - m) return false;
+      var zoom = (chart.getOption().series[0] || {}).zoom || 1;
+      var dy = (h - vis) / 2 / zoom;
+      chart.setOption({ series: [{ id: "kg", center: [l[0], l[1] + dy] }] });
+      return true;
+    } catch (e) { return false; }
+  }
+
   function pick(id) {
     var n = NODE[id];
     if (!n) return;
+    freezeLayout();                    /* 选中之前先定型：坐标稳了，选中的节点才不会跑 */
     state.selected = id;
     renderPanel(n);
     document.getElementById("panel").classList.add("open");
     showScrim(isNarrow());
     document.getElementById("suggest").style.display = "none";
     try { chart.dispatchAction({ type: "select", seriesId: "kg", name: n.name }); } catch (e) {}
+    if (centerOn(id)) scheduleLabelAvoid();   /* 镜头动过 → 标签按新坐标重排 */
     focusSet();
   }
 
@@ -1053,6 +1142,7 @@
     clearTimeout(timer);
     var v = searchEl.value;
     timer = setTimeout(function () { doSearch(v); }, 140);
+    freezeLayout();          /* 开始检索 = 用户要动手了 → 布局定型，别再抖 */
   });
   searchEl.addEventListener("focus", function () {
     if (searchEl.value.trim()) doSearch(searchEl.value);
@@ -1104,6 +1194,10 @@
   }
   function applyLabelAvoid() {
     if (avoiding) return;
+    /* 布局没定型之前不算标签：算出来的位置是按「马上就会变的坐标」摆的，
+       而且算标签要改数据、改数据会重启力导向布局 —— 越算越抖。
+       定型（freezeLayout）之后再算一次，那时坐标是真的。 */
+    if (!state.frozen) return;
     avoiding = true;
     try {
       var off = {}, side = {};
@@ -1138,6 +1232,15 @@
           var s = "right";
           if (px[0] + half + tw > W - 4) s = "left";   /* 右边放不下 → 翻到左边 */
           var x0 = s === "right" ? px[0] + half : px[0] - half - tw;
+          /* 翻边之后仍可能贴到画布外（节点本身在画布边缘，或已在视野之外）——
+             再换一次边；两边都放不下就不画这个标签：宁可少一个标签，
+             也不让半截字被画布切掉。 */
+          if (x0 < 4 || x0 + tw > W - 4) {
+            var alt = s === "right" ? "left" : "right";
+            var ax0 = alt === "right" ? px[0] + half : px[0] - half - tw;
+            if (ax0 >= 4 && ax0 + tw <= W - 4) { s = alt; x0 = ax0; }
+            else { off[n.id] = true; return; }
+          }
           var x1 = x0 + tw;
           var y0 = px[1] - fs * 0.62;
           var y1 = y0 + fs * 1.24;
@@ -1158,37 +1261,55 @@
       avoiding = false;
     }
   }
-  chart.on("roam", function () { if (!avoiding) scheduleLabelAvoid(); });
+  chart.on("roam", function () {
+    if (avoiding) return;
+    freezeLayout();                 /* 用户在拖 / 缩 → 布局就此定型 */
+    scheduleLabelAvoid();
+  });
 
   /* ============ 视图控制 ============ */
   /* fitView：把当前可见节点整体收进画布。
      minAbs = 绝对缩放下限 —— 手机上不许缩到「看不清也点不着」，
-     宁可让图溢出画布让用户拖，也不给一堆点不中的小点。 */
-  function fitView(pad, minAbs) {
+     宁可让图溢出画布让用户拖，也不给一堆点不中的小点。
+     fillH = 只按高度铺满（窄屏首屏用）：竖屏 9:16 优先 ——
+     图铺满屏幕高度，宽度上溢出由拖动解决，节点大到点得中；
+     「适应画布」按钮随时能收回全图。 */
+  function fitView(pad, minAbs, fillH) {
     pad = pad || 70;
     chart.resize();
     var w = chart.getWidth(), h = chart.getHeight();
     var zoom0 = (chart.getOption().series[0] || {}).zoom || 1;
     var model = chart.getModel().getSeriesByIndex(0);
     var data = model.getData();
-    var minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity, n = 0;
-    for (var i = 0; i < data.count(); i++) {
-      var it = data.getRawDataItem(i);
-      if (it && it.itemStyle && it.itemStyle.opacity === 0) continue;
-      var layout = data.getItemLayout(i);
-      if (!layout || isNaN(layout[0]) || isNaN(layout[1])) continue;
-      var px = chart.convertToPixel({ seriesIndex: 0 }, layout);
-      if (!px || isNaN(px[0]) || isNaN(px[1])) continue;
-      if (px[0] < minX) minX = px[0];
-      if (px[0] > maxX) maxX = px[0];
-      if (px[1] < minY) minY = px[1];
-      if (px[1] > maxY) maxY = px[1];
-      n++;
+    /* 画布范围只按「有边相连」的节点算 —— 孤立节点（没有任何关系的节点）会被
+       力导向甩到很远；把它算进来，整张图会缩成一小团、中心点也会被带偏。
+       孤立节点照常渲染、照常搜得到，只是不占默认视野。 */
+    function extent(onlyConnected) {
+      var minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity, n = 0;
+      for (var i = 0; i < data.count(); i++) {
+        var it = data.getRawDataItem(i);
+        if (it && it.itemStyle && it.itemStyle.opacity === 0) continue;
+        if (onlyConnected && it && !(degree[it.id] > 0)) continue;
+        var layout = data.getItemLayout(i);
+        if (!layout || isNaN(layout[0]) || isNaN(layout[1])) continue;
+        var px = chart.convertToPixel({ seriesIndex: 0 }, layout);
+        if (!px || isNaN(px[0]) || isNaN(px[1])) continue;
+        if (px[0] < minX) minX = px[0];
+        if (px[0] > maxX) maxX = px[0];
+        if (px[1] < minY) minY = px[1];
+        if (px[1] > maxY) maxY = px[1];
+        n++;
+      }
+      return { minX: minX, minY: minY, maxX: maxX, maxY: maxY, n: n };
     }
-    if (!n) return;
+    var e = extent(true);
+    if (!e.n) e = extent(false);      /* 全图都是孤立节点 → 退回按全量算 */
+    if (!e.n) return;
+    var minX = e.minX, minY = e.minY, maxX = e.maxX, maxY = e.maxY;
     var sx = (maxX - minX) < 1 ? 1 : (w - 2 * pad) / (maxX - minX);
     var sy = (maxY - minY) < 1 ? 1 : (h - 2 * pad) / (maxY - minY);
-    var abs = zoom0 * Math.min(sx, sy, 2.5);
+    var ratio = fillH ? sy : Math.min(sx, sy);
+    var abs = zoom0 * Math.min(ratio, 2.5);
     if (minAbs && abs < minAbs) abs = minAbs;
     var centerPx = [(minX + maxX) / 2, (minY + maxY) / 2];
     var gc = chart.convertFromPixel({ seriesIndex: 0 }, centerPx) || [0, 0];
@@ -1196,20 +1317,21 @@
   }
 
   /* 首屏视图：宽屏 = 全图收进画布；
-     窄屏 = 收到「看得清也点得中」的下限，居中显示图的中段，其余靠拖动查看。 */
+     窄屏 = 图铺满竖屏高度（9:16 的用法：节点大、点得中、字看得清），
+     宽度上溢出靠拖动，全图靠「适应画布」按钮。 */
   function initialView() {
-    /* 窄屏：缩放到「看得清也点得中」的下限（节点约 17px），居中显示图的中段，
-       全图收进画布交给「适应画布」按钮 —— 首屏就该看得清字。 */
-    if (isNarrow()) fitView(40, 0.95);
+    if (isNarrow()) fitView(40, 0.95, true);
     else fitView(80);
     scheduleLabelAvoid();
   }
 
   document.getElementById("btnFit").addEventListener("click", function () {
+    freezeLayout();                    /* 用户动手了 → 布局就此定型 */
     fitView(isNarrow() ? 40 : 80);     /* 按钮 = 看全图（不设缩放下限） */
     scheduleLabelAvoid();
   });
   document.getElementById("btnLabels").addEventListener("click", function () {
+    freezeLayout();
     state.labelsAll = !state.labelsAll;
     document.getElementById("btnLabels").classList.toggle("on", state.labelsAll);
     state.labelOff = {}; state.labelSide = {};
@@ -1227,8 +1349,16 @@
     document.getElementById("btnLegend").classList.remove("on");
     document.getElementById("scrim").classList.remove("show");
     document.getElementById("suggest").style.display = "none";
+    /* 重置 = 布局从头再跑一遍 → 解冻、坐标作废、提示条重新挂上 */
+    state.frozen = false; state.pos = {};
+    state.labelOff = {}; state.labelSide = {};
+    prevLayoutPos = null; lastExtent = null; stableRounds = 0;
+    var badge = document.getElementById("settling");
+    if (badge) badge.classList.remove("gone");
     chart.clear();
+    option.series[0].data = buildNodes();
     chart.setOption(option);
+    setTimeout(function () { settleView(0); }, 1200);
     setTimeout(function () { initialView(); }, 900);
   });
 
@@ -1254,15 +1384,21 @@
      图看起来是冲出画布的。改成反复适配，直到图的范围不再变化为止；
      用户已动手（拖动 / 缩放）就停手，不打乱他。 */
   var userMoved = false;
-  chart.getZr().on("mousedown", function () { userMoved = true; });
-  chart.getZr().on("wheel", function () { userMoved = true; });
+  /* 用户一动手就把布局冻住 —— 节点在动的话，手指按不住也点不准。
+     冻住之后图不再抖，交互才是稳的。 */
+  chart.getZr().on("mousedown", function () { userMoved = true; freezeLayout(); });
+  chart.getZr().on("wheel", function () { userMoved = true; freezeLayout(); });
 
-  /* 图的范围（系列坐标）—— 布局变了它就变 */
+  /* 图的范围（系列坐标）—— 布局变了它就变。
+     只按「有边相连」的节点算：孤立节点会被力导向甩着漂，计进去会让
+     「定型判定」一直不收敛（每轮都在重新适配）。 */
   function graphExtent() {
     var model = chart.getModel().getSeriesByIndex(0);
     var data = model.getData();
     var mnX = Infinity, mnY = Infinity, mxX = -Infinity, mxY = -Infinity, n = 0;
     for (var i = 0; i < data.count(); i++) {
+      var it = data.getRawDataItem(i);
+      if (it && !(degree[it.id] > 0)) continue;
       var l = data.getItemLayout(i);
       if (!l || isNaN(l[0]) || isNaN(l[1])) continue;
       if (l[0] < mnX) mnX = l[0];
@@ -1275,19 +1411,100 @@
     return Math.max(mxX - mnX, mxY - mnY);
   }
 
+  /* 布局漂移量：这一轮（两次采样之间）节点挪了多远。
+     外框不变 ≠ 布局定型 —— 中间的节点还在慢慢挪，标签却按旧坐标摆着，
+     就会跟别的标签压到一起（实测：R04 与「过敏反应」打架）。
+     所以「定型」看漂移，不只看外框。
+     孤立节点不计入：它被力导向甩着漂，会让「定型」永远不成立，
+     而它本来就不带标签，漂不漂不影响标签避让。 */
+  var prevLayoutPos = null;
+  function layoutDrift() {
+    var model = chart.getModel().getSeriesByIndex(0);
+    var data = model.getData();
+    var cur = [], maxd = 0;
+    for (var i = 0; i < data.count(); i++) {
+      var it = data.getRawDataItem(i);
+      if (it && !(degree[it.id] > 0)) { cur.push(null); continue; }
+      var l = data.getItemLayout(i);
+      cur.push(l ? [l[0], l[1]] : null);
+    }
+    if (prevLayoutPos && prevLayoutPos.length === cur.length) {
+      for (var j = 0; j < cur.length; j++) {
+        var a = prevLayoutPos[j], b = cur[j];
+        if (!a || !b) continue;
+        var d = Math.abs(a[0] - b[0]) + Math.abs(a[1] - b[1]);
+        if (d > maxd) maxd = d;
+      }
+    }
+    prevLayoutPos = cur;
+    return maxd;
+  }
+
+  /* ============ 冻结布局（关键一步） ============
+     ECharts 每次 setOption 换掉 series.data，都会重跑一遍力导向布局，
+     整张图立刻抖起来（实测：一次 setOption 后立刻漂 23.7px，之后还在动）。
+     于是形成自喂循环：放标签要改数据 → 改数据触发重排 → 图动了 →
+     标签追不上坐标 → 再放标签 → 又触发重排 …… 抖到超时才停。
+
+     冻结 = 把当前坐标写回数据项 + 切到 layout:'none'（不再跑布局引擎）。
+     冻住之后：图不动，标签一次算准，也就永远追不上。
+     实测冻结瞬间：位置零跳动、之后零漂移，坐标换算照常。 */
+  function freezeLayout() {
+    if (state.frozen) return false;
+    try {
+      var model = chart.getModel().getSeriesByIndex(0);
+      var data = model.getData();
+      for (var i = 0; i < data.count(); i++) {
+        var raw = data.getRawDataItem(i);
+        if (!raw || raw.id == null) continue;
+        var l = data.getItemLayout(i);
+        if (!l || isNaN(l[0]) || isNaN(l[1])) continue;
+        state.pos[raw.id] = [l[0], l[1]];
+      }
+      state.frozen = true;
+      /* 这一帧先把标签全关掉：标签还没算避让，全画出来会先压字一下。
+         避让算完（160ms 后）再由 focusSet 决定哪些该亮。 */
+      var items = buildNodes().map(function (d) { d.label.show = false; return d; });
+      chart.setOption({ series: [{ id: "kg", layout: "none", data: items }] });
+      /* 切到 layout:'none' 之后，图的比例尺跟布局运行时不是一套了 ——
+         不重新适配的话，整张图会缩成中间一小团（实测：310px 的画布只占 216px）。
+         冻住的坐标是最终坐标，此刻适配一次就是最终视图。 */
+      initialView();
+      var badge = document.getElementById("settling");
+      if (badge) badge.classList.add("gone");
+      scheduleLabelAvoid();          /* 冻住了 → 标签一次算准 */
+      return true;
+    } catch (e) {
+      state.frozen = false;
+      return false;
+    }
+  }
+
   var lastExtent = null, stableRounds = 0;
   function settleView(round) {
     round = round || 0;
-    if (round > 24 || userMoved) { scheduleLabelAvoid(); return; }   /* 最多约 12 秒 */
+    if (state.frozen) return;
+    var drift = layoutDrift();                          /* 这一轮节点挪了多少 */
+    if (userMoved) {
+      /* 用户已经自己控视图（拖动 / 缩放）→ 停手，别把人家正在看的东西甩走；
+         同时把布局冻住 —— 节点还在动的话，手指按不住也点不准。 */
+      freezeLayout();
+      return;
+    }
+    if (round >= 14) { freezeLayout(); return; }   /* 最多等约 7 秒 */
     var ext = graphExtent();
     var changed = lastExtent === null || Math.abs(ext - lastExtent) / (lastExtent || 1) >= 0.005;
     if (changed) {
       initialView();          /* 布局变了 → 重新适配 */
       lastExtent = ext;
       stableRounds = 0;
+    }
+    if (drift > 0.5) {
+      /* 位置还在动（哪怕外框没变）→ 还不能定型 */
+      stableRounds = 0;
     } else {
       stableRounds++;
-      if (stableRounds >= 2) { scheduleLabelAvoid(); return; }   /* 连续两轮稳定 → 收工 */
+      if (stableRounds >= 2) { freezeLayout(); return; }   /* 连续两轮稳定 → 收工 */
     }
     setTimeout(function () { settleView(round + 1); }, 400);
   }
