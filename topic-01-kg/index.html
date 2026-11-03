@@ -123,7 +123,9 @@
 
   #panel{
     position:fixed;left:0;right:0;bottom:0;z-index:40;
-    height:min(76vh,660px);height:min(76dvh,660px);
+    /* 抽屉不占满屏：上面要留出画布 —— 展开一个节点之后，新长出来的那一圈
+       就在抽屉上方，看得到才算「点了一个，长出一片」。 */
+    height:min(62vh,560px);height:min(62dvh,560px);
     background:var(--panel);border-top:1px solid var(--line);border-radius:18px 18px 0 0;
     transform:translateY(101%);transition:transform .28s cubic-bezier(.4,0,.2,1);
     display:flex;flex-direction:column;box-shadow:0 -18px 44px rgba(0,0,0,.55);
@@ -147,6 +149,20 @@
   .chip.tag{background:transparent;border:1px solid var(--line);color:var(--text-dim);}
   .chip.alias{background:transparent;border:1px dashed #3b4d6e;color:#a9b8d4;}
   #p-summary{margin:12px 0 0;font-size:13.5px;line-height:1.75;color:#c3cfe6;}
+  /* 节点操作（展开 / 锁定 / 关闭）—— Neo4j 那三个选项放在详情卡头部：
+     手指点完节点，按钮就在眼前，不用在画布上够小图标。 */
+  .p-actions{display:flex;gap:8px;margin:14px 0 0;}
+  .p-act{
+    flex:1;min-width:0;min-height:44px;padding:8px 6px;border-radius:10px;
+    border:1px solid var(--line);background:rgba(255,255,255,.045);color:var(--text);
+    font-size:13px;font-family:inherit;cursor:pointer;white-space:nowrap;
+    transition:border-color .15s,color .15s,background .15s;
+  }
+  .p-act:hover:not(:disabled){border-color:var(--accent);color:#fff;}
+  .p-act:disabled{opacity:.4;cursor:default;}
+  .p-act.on{border-color:var(--accent-2);color:var(--accent-2);background:rgba(240,180,41,.12);}
+  .p-act.danger{color:#ffb4a8;border-color:rgba(255,120,100,.34);}
+  .p-act.danger:hover:not(:disabled){border-color:#ff8a75;color:#ff8a75;background:rgba(255,120,100,.1);}
   #panel-body{flex:1;overflow-y:auto;padding:6px 16px calc(var(--sab) + 26px);-webkit-overflow-scrolling:touch;}
 
   .sec{margin-top:18px;}
@@ -389,6 +405,7 @@
     #panel-head{padding:18px 20px 14px;}
     #panel-close{top:14px;right:14px;width:28px;height:28px;}
     #p-name{font-size:20px;}
+    .p-act{min-height:36px;font-size:12.5px;}
     #panel-body{padding:6px 20px 28px;}
     #legend{
       position:absolute;left:16px;right:auto;bottom:16px;top:auto;max-width:290px;max-height:none;
@@ -433,6 +450,7 @@
     <div id="tools">
       <button class="btn only-mobile" id="btnLegend">图例</button>
       <button class="btn" id="btnFit">适应画布</button>
+      <button class="btn" id="btnAll" title="把整张图谱一次展开">全部展开</button>
       <button class="btn" id="btnLabels" title="显示全部标签">全部标签</button>
       <button class="btn" id="btnReset">重置视图</button>
     </div>
@@ -454,7 +472,7 @@
       <div id="chart"></div>
       <div id="settling"><span class="spin"></span><span>正在布局图谱…</span></div>
       <div id="stats"></div>
-      <div id="hint"><b>拖动</b> 移动节点 · <b>双指</b> 缩放 · <b>点节点</b> 看详情与关联节点</div>
+      <div id="hint"><b>点节点</b> → 展开它的关联 / 锁定 / 关闭 · <b>拖动</b> 平移 · <b>双指</b> 缩放</div>
     </div>
   </div>
 
@@ -467,6 +485,11 @@
     <button id="panel-close">×</button>
     <h2 id="p-name"></h2>
     <div id="p-meta"></div>
+    <div class="p-actions">
+      <button type="button" class="p-act" id="pExpand">展开</button>
+      <button type="button" class="p-act" id="pLock">锁定</button>
+      <button type="button" class="p-act danger" id="pRemove">关闭</button>
+    </div>
     <p id="p-summary"></p>
   </div>
   <div id="panel-body"></div>
@@ -739,8 +762,24 @@
     labelSide: {},     // id -> "left" 表示标签翻到了节点左侧
     pos: {},           // id -> [x, y]：布局冻结后的节点坐标
     frozen: false,     // 布局是否已定型（定型后才放标签）
+    vis: {},           // id -> true：当前画在画布上的节点（逐步展开的可见集）
+    locked: {},        // id -> true：锁定 —— 重置时保留 · 展开时新节点避开它
+    expanded: {},      // id -> true：已经展开过
     view: "graph"      // "list" 卡片流 | "graph" 画布（手机默认 list，桌面默认 graph）
   };
+  /* 每次展开最多长这么多个：一次几十个点糊上来 = 又一次「一锅粥」。
+     先按数据声明的类型顺序（论文框架就是顺序）和度数排，剩下的留在
+     「展开 · N」里，想继续点就再点一下。 */
+  var EXPAND_MAX = 16;
+  var TORDER = {};
+  CATS.forEach(function (t, i) { TORDER[t.key] = i; });
+  function sortByTypeOrder(ids) {
+    return ids.slice().sort(function (a, b) {
+      var oa = TORDER[NODE[a].type], ob = TORDER[NODE[b].type];
+      if (oa !== ob) return (oa == null ? 99 : oa) - (ob == null ? 99 : ob);
+      return (degree[b] || 0) - (degree[a] || 0);
+    });
+  }
 
   /* ============ 患者层数据（可选 · 来自 data/<topicKey>-patient.js） ============
      这份文件是给「患者」看的那一层：免责声明 + 一句导语 + 就医警示。
@@ -867,6 +906,7 @@
     document.getElementById("tabList").classList.toggle("on", v === "list");
     document.getElementById("tabGraph").classList.toggle("on", v === "graph");
     document.getElementById("tools").style.display = (v === "graph") ? "" : "none";
+    updateActions();                   /* 切视图时同步按钮的可用性 */
     if (v === "list") {
       document.getElementById("suggest").style.display = "none";
       return;
@@ -885,11 +925,230 @@
   document.getElementById("tabList").addEventListener("click", function () { setView("list"); });
   document.getElementById("tabGraph").addEventListener("click", function () { setView("graph"); });
 
+  /* ============ 逐步展开（Neo4j 式：点一个节点 → 长出一圈） ============
+     为什么不一次画全：92 个节点铺在 390px 的屏上间距只有约 4px，点不准也读不清
+     —— 这是结构问题，改字号 / 配色都解决不了。改成从「主题节点」起步、点到哪长到哪，
+     也就是论文正文写的那句「点选逐步延展」。
+     题目无关：种子节点由数据推出来（第一个声明类型里度数最高的那个），
+     代码里不出现任何题目名（判据第 11 条）。 */
+  var ADJ = {};
+  (G.edges || []).forEach(function (e) {
+    (ADJ[e.source] = ADJ[e.source] || []).push(e.target);
+    (ADJ[e.target] = ADJ[e.target] || []).push(e.source);
+  });
+  function neighborsOf(id) { return ADJ[id] || []; }
+  function typeHidden(nid) {
+    var n = NODE[nid];
+    return !n || !!state.hidden[n.type];
+  }
+  /* 还没画出来、且没被类型筛选藏掉的邻居 —— 「展开 · N」里的 N 就是它 */
+  function expandableOf(id) {
+    var seen = {}, out = [];
+    neighborsOf(id).forEach(function (nid) {
+      if (seen[nid] || state.vis[nid] || typeHidden(nid)) return;
+      seen[nid] = true; out.push(nid);
+    });
+    return sortByTypeOrder(out);
+  }
+  function seedNode() {
+    function best(arr) {
+      var b = null;
+      (arr || []).forEach(function (n) {
+        if (!b || (degree[n.id] || 0) > (degree[b.id] || 0)) b = n;
+      });
+      return b;
+    }
+    /* ① 名字就是题目名的那一个（数据里有就直接用它当中心）；
+       ② 否则取第一种声明类型里度数最高的（论文框架第一层）；
+       ③ 再没有就取全图度数最高的。 */
+    var tname = (G.meta && G.meta.topicName) || "";
+    if (tname) {
+      var exact = (G.nodes || []).filter(function (n) { return n.name === tname; });
+      if (exact.length) return best(exact);
+    }
+    var firstType = (CATS[0] || {}).key;
+    return best((G.nodes || []).filter(function (n) { return n.type === firstType; })) || best(G.nodes);
+  }
+  var SEED_MAX_NEIGHBORS = 14;      /* 首屏上限：再多就不像「一张图」而像「一锅粥」 */
+  function applySeed() {
+    state.vis = {}; state.locked = {}; state.expanded = {};
+    var root = seedNode();
+    if (!root) return;
+    state.vis[root.id] = true;
+    /* 起步 = 主题节点 + 它的一圈邻居：既不空，又能一眼看出「还能往下点」。
+       邻居多的时候只放前 14 个（按数据声明的类型顺序排，论文框架就是顺序）
+       —— 其余的留在「展开 · N」里，点一下再长出来。 */
+    var ns = sortByTypeOrder(neighborsOf(root.id).filter(function (nid) { return !typeHidden(nid); }));
+    ns.slice(0, SEED_MAX_NEIGHBORS).forEach(function (nid) { state.vis[nid] = true; });
+    state.expanded[root.id] = true;
+  }
+  /* 新节点的位置：围着「被展开的那个节点」摆一圈。
+     旧节点一个都不动 —— 动了就是又一次「图一直抖」。 */
+  function hashAngle(id) {
+    var h = 0;
+    for (var i = 0; i < id.length; i++) h = (h * 31 + id.charCodeAt(i)) % 3600;
+    return (h / 3600) * Math.PI * 2;
+  }
+  function tooClose(x, y, min, extra) {
+    var keys = Object.keys(state.pos);
+    for (var i = 0; i < keys.length; i++) {
+      var p = state.pos[keys[i]];
+      if (!p) continue;
+      if (Math.abs(p[0] - x) < min && Math.abs(p[1] - y) < min) return true;
+    }
+    for (var j = 0; j < extra.length; j++) {
+      if (Math.abs(extra[j][0] - x) < min && Math.abs(extra[j][1] - y) < min) return true;
+    }
+    return false;
+  }
+  function placeAround(pid, ids) {
+    var p = state.pos[pid];
+    if (!p) {
+      /* 还没冻结时 pos 是空的 → 直接读当前布局坐标 */
+      var d0 = chart.getModel().getSeriesByIndex(0).getData();
+      for (var i0 = 0; i0 < d0.count(); i0++) {
+        var raw0 = d0.getRawDataItem(i0);
+        if (!raw0 || raw0.id !== pid) continue;
+        var l0 = d0.getItemLayout(i0);
+        if (l0 && !isNaN(l0[0])) p = [l0[0], l0[1]];
+        break;
+      }
+    }
+    if (!p) p = [0, 0];
+    var n = Math.max(ids.length, 1);
+    /* 往「外面」长：从已画出来的这团的质心指向父节点，子节点落在这个方向的
+       外侧扇形里 —— 像树枝，而不是压回中间那一堆。父节点正好在质心上
+       （一般就是根节点）时退回整圈均布。 */
+    var cx = 0, cy = 0, cc = 0;
+    Object.keys(state.pos).forEach(function (k) {
+      var q = state.pos[k];
+      if (q) { cx += q[0]; cy += q[1]; cc++; }
+    });
+    var away = 0, hasDir = false;
+    if (cc > 1) {
+      cx /= cc; cy /= cc;
+      if (Math.abs(p[0] - cx) + Math.abs(p[1] - cy) > 2) {
+        away = Math.atan2(p[1] - cy, p[0] - cx);
+        hasDir = true;
+      }
+    }
+    var base = hasDir ? away : hashAngle(pid);
+    var span = hasDir ? Math.PI * 1.2 : Math.PI * 2;     /* 外侧扇形 ≈ 216° */
+    var start = base - span / 2;
+    var out = [];
+    var ring = 96 + Math.min(n, 10) * 6;
+    for (var k = 0; k < ids.length; k++) {
+      var ang = start + (n === 1 ? span / 2 : k * span / (n - 1));
+      var r = ring, x = p[0], y = p[1], guard = 0;
+      while (guard++ < 40) {
+        x = p[0] + Math.cos(ang) * r;
+        y = p[1] + Math.sin(ang) * r;
+        if (!tooClose(x, y, 64, out)) break;
+        ang += 0.55; r += 14;            /* 撞上了 → 换个角度、再往外让一让 */
+      }
+      out.push([x, y]);
+    }
+    return out;
+  }
+  function offscreen(id) {
+    var p = state.pos[id];
+    if (!p) return false;
+    var q = chart.convertToPixel({ seriesIndex: 0 }, p);
+    if (!q) return true;
+    var m = 16;
+    return q[0] < m || q[0] > chart.getWidth() - m || q[1] < m || q[1] > chart.getHeight() - m;
+  }
+  function expandNode(id) {
+    var ids = expandableOf(id).slice(0, EXPAND_MAX);   /* 一次最多长一圈，剩下的下次再点 */
+    if (!ids.length) return 0;
+    freezeLayout();                     /* 旧的先定型，新节点才不会把老节点挤跑 */
+    var pts = placeAround(id, ids);
+    ids.forEach(function (nid, i) {
+      state.vis[nid] = true;
+      state.pos[nid] = pts[i];
+    });
+    state.expanded[id] = true;
+    paintGraph();
+    for (var i = 0; i < ids.length; i++) {
+      if (offscreen(ids[i])) { fitView(isNarrow() ? 40 : 80); break; }
+    }
+    scheduleLabelAvoid();
+    return ids.length;
+  }
+  function removeNode(id) {
+    if (!id) return false;
+    delete state.vis[id];
+    delete state.expanded[id];
+    delete state.locked[id];
+    if (state.selected === id) {
+      state.selected = null;
+      document.getElementById("panel").classList.remove("open");
+      document.getElementById("scrim").classList.remove("show");
+    }
+    paintGraph();
+    scheduleLabelAvoid();
+    return true;
+  }
+  /* 把图例里刚点开的这类节点补上：只补「挂在已展开节点上的」那些 ——
+     否则用户点开「文献」，画布上什么也不会发生（它们根本还没被展开过）。 */
+  function revealNeighborsOfType(k) {
+    var added = 0;
+    Object.keys(state.vis).forEach(function (vid) {
+      var ids = neighborsOf(vid).filter(function (nid) {
+        var n = NODE[nid];
+        return n && n.type === k && !state.vis[nid];
+      });
+      if (!ids.length) return;
+      var pts = placeAround(vid, ids);
+      ids.forEach(function (nid, i) {
+        if (state.vis[nid]) return;
+        state.vis[nid] = true;
+        state.pos[nid] = pts[i];
+        added++;
+      });
+    });
+    return added;
+  }
+  function toggleLock(id) {
+    if (!id) return;
+    if (state.locked[id]) delete state.locked[id];
+    else state.locked[id] = true;
+    paintGraph();
+  }
+  /* 检索命中的节点可能不在画布上（还没展开到）—— 选中前先把它放出来 */
+  function revealNode(id) {
+    if (state.vis[id]) return;
+    var c = chart.convertFromPixel({ seriesIndex: 0 },
+      [chart.getWidth() / 2, chart.getHeight() / 2]) || [0, 0];
+    state.pos[id] = [c[0], c[1]];
+    state.vis[id] = true;
+  }
+  /* 点选按「离手指最近的点」算，而不是「画在最上层的那个」：
+     节点小、彼此又挨得近时，zrender 的命中是「画得晚的赢」——
+     点 A 会打开 B。最近邻之后，指头粗一点也点得中，点哪儿就是哪儿。 */
+  function nearestNode(px, py, maxDist) {
+    var best = null, bestD = maxDist;
+    Object.keys(state.vis).forEach(function (id) {
+      if (typeHidden(id)) return;
+      var p = state.pos[id];
+      if (!p) return;
+      var q = chart.convertToPixel({ seriesIndex: 0 }, p);
+      if (!q || isNaN(q[0]) || isNaN(q[1])) return;
+      var dx = q[0] - px, dy = q[1] - py;
+      var d = Math.sqrt(dx * dx + dy * dy);
+      if (d <= bestD) { bestD = d; best = id; }
+    });
+    return best;
+  }
+
   /* ============ 构建 ECharts 数据 ============ */
   function nodeSymbolSize(n) {
     var base = typeOf(n).size || 24;
     var d = degree[n.id] || 0;
-    return Math.round(base * (0.72 + 0.75 * Math.sqrt(d / maxDeg)));
+    var s = Math.round(base * (0.72 + 0.75 * Math.sqrt(d / maxDeg)));
+    /* 手机上节点要小 —— 逐步展开之后屏幕上本来就只有十几二十个节点，
+       不再靠「把节点撑大」来点得中（点选按最近邻算，见 nearestNode）。 */
+    return isNarrow() ? Math.max(13, Math.round(s * 0.62)) : s;
   }
   /* 画布上的标签只放「短名」—— 文献题名动辄一两百字符，
      原样画出来会冲出屏幕右边（完整题名在 tooltip 与详情面板里看得到）。 */
@@ -937,12 +1196,13 @@
   /* 候选标签：窄屏只标枢纽，宽屏标度数高的 —— 画不画还要过「避让」 */
   function shouldShowLabel(n) {
     if (state.labelsAll) return true;
-    /* 窄屏：只标枢纽 —— 手机上宁可少标，也不要互相压字 */
-    if (isNarrow()) return !!hubSet[n.id];
+    /* 窄屏：先都试着标 —— 放不下的由避让算法自动不画。
+       逐步展开之后画面上的节点本来就少，标出来才认得出哪个是哪个。 */
+    if (isNarrow()) return true;
     return (degree[n.id] || 0) >= 5;
   }
   function buildNodes() {
-    return (G.nodes || []).map(function (n) {
+    return (G.nodes || []).filter(function (n) { return state.vis[n.id]; }).map(function (n) {
       var t = typeOf(n);
       var it = {
         id: n.id,
@@ -981,7 +1241,9 @@
     });
   }
   function buildLinks() {
-    return (G.edges || []).map(function (e) {
+    return (G.edges || []).filter(function (e) {
+      return state.vis[e.source] && state.vis[e.target];
+    }).map(function (e) {
       var a = NODE[e.source], b = NODE[e.target];
       return {
         source: e.source,
@@ -997,6 +1259,7 @@
 
   /* ============ 初始化图表 ============ */
   var chart = echarts.init(document.getElementById("chart"), null, { renderer: "canvas" });
+  applySeed();          /* 画布从「主题节点 + 一圈邻居」起步，不是一屏铺满 */
   var option = {
     backgroundColor: "transparent",
     animationDuration: 700,
@@ -1019,7 +1282,7 @@
         var t = typeOf(n);
         return '<b style="font-size:13px">' + esc(n.name) + '</b>' +
           '<br><span style="color:' + t.color + '">' + esc(t.label) + '</span>' +
-          '<br><span style="color:#93a3c0">度数 ' + (degree[n.id] || 0) + ' · 点击查看详情</span>';
+          '<br><span style="color:#93a3c0">度数 ' + (degree[n.id] || 0) + ' · 点击可查看详情并展开关联</span>';
       }
     },
     series: [{
@@ -1079,7 +1342,7 @@
     (G.nodes || []).forEach(function (n) { countMap[n.type] = (countMap[n.type] || 0) + 1; });
     var items = CATS.filter(function (t) { return countMap[t.key]; });
     body.innerHTML = '<div class="lg-items">' + items.map(function (t) {
-      return '<div class="lg-item" data-type="' + esc(t.key) + '" title="' + esc(t.desc || t.label) + '">' +
+      return '<div class="lg-item' + (state.hidden[t.key] ? " off" : "") + '" data-type="' + esc(t.key) + '" title="' + esc(t.desc || t.label) + '">' +
         '<span class="lg-dot" style="background:' + t.color + '"></span>' +
         '<span>' + esc(t.label) + '</span>' +
         '<span class="lg-count">' + (countMap[t.key] || 0) + '</span></div>';
@@ -1089,54 +1352,38 @@
         var k = el.dataset.type;
         state.hidden[k] = !state.hidden[k];
         el.classList.toggle("off", !!state.hidden[k]);
+        if (!state.hidden[k]) revealNeighborsOfType(k);
         applyFilter();
       });
     });
     document.getElementById("legendAll").addEventListener("click", function () {
-      var anyOff = Object.keys(state.hidden).some(function (k) { return state.hidden[k]; });
+      var offTypes = Object.keys(state.hidden).filter(function (k) { return state.hidden[k]; });
       state.hidden = {};
       body.querySelectorAll(".lg-item").forEach(function (el) { el.classList.remove("off"); });
-      if (anyOff) { applyFilter(); }
+      offTypes.forEach(function (k) { revealNeighborsOfType(k); });
+      applyFilter();
     });
   }
 
-  /* ============ 过滤 / 高亮 / 延展 ============ */
-  function applyFilter() {
-    freezeLayout();                    /* 换数据会重启布局 → 先定型再换 */
+  /* ============ 画布渲染：一个出口 ============
+     隐藏类型 / 检索命中 / 选中聚焦 / 锁定，全部在这里一次算完。
+     旧的 applyFilter 与 focusSet 各算一套 —— focusSet 里漏掉了「隐藏类型」
+     这一支，于是点一下节点，刚才筛掉的类型又全冒出来。合并成一个出口，
+     不再有两套口径。 */
+  function paintGraph() {
+    var sel = (state.selected && state.vis[state.selected]) ? state.selected : null;
+    var focus = null;
+    if (sel) {
+      focus = {};
+      focus[sel] = true;
+      neighborsOf(sel).forEach(function (nid) { if (state.vis[nid]) focus[nid] = true; });
+    }
     var nodes = buildNodes().map(function (d) {
       if (state.hidden[d._type]) {
         d.itemStyle = { opacity: 0, color: "transparent", borderWidth: 0, shadowBlur: 0 };
         d.label.show = false;
+        return d;
       }
-      return d;
-    });
-    var links = buildLinks().map(function (l) {
-      var a = NODE[l.source], b = NODE[l.target];
-      if ((a && state.hidden[a.type]) || (b && state.hidden[b.type])) {
-        l.lineStyle = { opacity: 0, width: 0 };
-      }
-      return l;
-    });
-    chart.setOption({ series: [{ id: "kg", data: nodes, links: links }] });
-  }
-
-  /* 选中一个节点 → 高亮它 + 它的直接关联节点（论文口径「点选逐步延展」）：
-     其余节点压暗，不是让人在一屏铺开的全图里自己找。 */
-  function focusSet() {
-    /* 列表视图下画布不可见 —— 不碰它（碰了会白白重启一次力导向布局） */
-    if (state.view === "list") return;
-    freezeLayout();          /* 换数据会重启布局 → 先定型（已定型则空转） */
-    var focus = null;
-    if (state.selected) {
-      focus = {};
-      focus[state.selected] = true;
-      (G.edges || []).forEach(function (e) {
-        if (e.source === state.selected) focus[e.target] = true;
-        if (e.target === state.selected) focus[e.source] = true;
-      });
-    }
-    var nodes = buildNodes().map(function (d) {
-      if (state.hidden[d._type]) return d;
       if (state.query) {
         if (state.hitsMap[d.id]) {
           d.itemStyle = { color: typeOf(d).color, borderColor: "#f0b429", borderWidth: 2, opacity: 1, shadowBlur: 18, shadowColor: "rgba(240,180,41,.5)" };
@@ -1145,14 +1392,12 @@
           d.itemStyle = { color: typeOf(d).color, opacity: .12, borderWidth: 0, shadowBlur: 0 };
           d.label.show = false;
         }
-        return d;
-      }
-      if (focus) {
+      } else if (focus) {
         if (focus[d.id]) {
           d.itemStyle = {
             color: typeOf(d).color,
-            borderColor: d.id === state.selected ? "#f0b429" : "rgba(240,180,41,.6)",
-            borderWidth: d.id === state.selected ? 3 : 2,
+            borderColor: d.id === sel ? "#f0b429" : "rgba(240,180,41,.6)",
+            borderWidth: d.id === sel ? 3 : 2,
             opacity: 1, shadowBlur: 16, shadowColor: "rgba(0,0,0,.6)"
           };
           d.label.show = true;
@@ -1161,11 +1406,19 @@
           d.label.show = false;
         }
       }
+      /* 锁定 = 画一圈青边（重置时保留它；展开时新节点避开它） */
+      if (state.locked[d.id]) {
+        d.itemStyle.borderColor = "#7fd1ff";
+        if (!focus || !focus[d.id]) d.itemStyle.borderWidth = 2;
+      }
       return d;
     });
     var links = buildLinks().map(function (l) {
       var a = NODE[l.source], b = NODE[l.target];
-      if ((a && state.hidden[a.type]) || (b && state.hidden[b.type])) return l;
+      if ((a && state.hidden[a.type]) || (b && state.hidden[b.type])) {
+        l.lineStyle = { opacity: 0, width: 0 };
+        return l;
+      }
       if (state.query) {
         if (state.hitsMap[l.source] && state.hitsMap[l.target]) {
           l.lineStyle = { color: "#f0b429", opacity: .95, width: 2.2, curveness: .06 };
@@ -1182,6 +1435,16 @@
       return l;
     });
     chart.setOption({ series: [{ id: "kg", data: nodes, links: links }] });
+    updateStats();
+  }
+  function applyFilter() { freezeLayout(); paintGraph(); }
+
+  /* 选中一个节点 → 高亮它 + 它的直接关联节点，其余压暗 */
+  function focusSet() {
+    /* 列表视图下画布不可见 —— 不碰它（碰了会白白重启一次力导向布局） */
+    if (state.view === "list") return;
+    freezeLayout();          /* 换数据会重启布局 → 先定型（已定型则空转） */
+    paintGraph();
   }
 
   /* ============ 检索（三通道） ============ */
@@ -1383,8 +1646,10 @@
   function pick(id) {
     var n = NODE[id];
     if (!n) return;
+    revealNode(id);                    /* 检索命中的节点可能还没展开出来 —— 先放上画布 */
     state.selected = id;
     renderPanel(n);
+    updateActions();
     document.getElementById("panel").classList.add("open");
     showScrim(isNarrow());
     document.getElementById("suggest").style.display = "none";
@@ -1396,8 +1661,50 @@
     focusSet();
   }
 
-  chart.on("click", function (p) {
-    if (p.dataType === "node") pick(p.data.id);
+  /* 画布点选：取「离手指最近的节点」而不是 zrender 命中的那个元素
+     （节点小、又挨得近时，命中是画得晚的赢 —— 点 A 会打开 B）。 */
+  var downAt = null;
+  chart.getZr().on("mousedown", function (e) { downAt = [e.offsetX, e.offsetY]; });
+  chart.getZr().on("click", function (e) {
+    if (downAt) {
+      var dx = e.offsetX - downAt[0], dy = e.offsetY - downAt[1];
+      downAt = null;
+      if (Math.sqrt(dx * dx + dy * dy) > 10) return;   /* 拖动平移，不算点选 */
+    }
+    var hit = nearestNode(e.offsetX, e.offsetY, isNarrow() ? 38 : 26);
+    if (hit) pick(hit);
+  });
+
+  /* ============ 节点操作（展开 / 锁定 / 关闭） ============ */
+  var btnExpand = document.getElementById("pExpand");
+  var btnLock = document.getElementById("pLock");
+  var btnRemove = document.getElementById("pRemove");
+
+  function updateActions() {
+    /* 这三个按钮是「画布上的操作」：列表视图里画布根本不在眼前，
+       放出来只会让人以为点了会变 —— 那一层只做阅读。 */
+    var row = document.querySelector(".p-actions");
+    if (row) row.style.display = (state.view === "graph") ? "" : "none";
+    var id = state.selected, n = id ? NODE[id] : null;
+    var more = n ? expandableOf(id).length : 0;
+    btnExpand.textContent = !n ? "展开" : (more ? "展开 · " + more : "已全部展开");
+    btnExpand.disabled = !n || !more;
+    btnLock.textContent = (id && state.locked[id]) ? "已锁定" : "锁定";
+    btnLock.classList.toggle("on", !!(id && state.locked[id]));
+    btnLock.disabled = !n;
+    btnRemove.disabled = !n;
+  }
+  btnExpand.addEventListener("click", function () {
+    if (!state.selected) return;
+    expandNode(state.selected);
+    updateActions();
+  });
+  btnLock.addEventListener("click", function () {
+    toggleLock(state.selected);
+    updateActions();
+  });
+  btnRemove.addEventListener("click", function () {
+    removeNode(state.selected);
   });
   document.getElementById("panel-close").addEventListener("click", function () {
     document.getElementById("panel").classList.remove("open");
@@ -1626,7 +1933,9 @@
      窄屏 = 图铺满竖屏高度（9:16 的用法：节点大、点得中、字看得清），
      宽度上溢出靠拖动，全图靠「适应画布」按钮。 */
   function initialView() {
-    if (isNarrow()) fitView(40, 0.95, true);
+    /* 起步只有「主题节点 + 一圈邻居」，全收进屏比铺满高度更好用；
+       下限 0.62 防止节点被缩到点不着（点选按最近邻算，仍有 38px 容错）。 */
+    if (isNarrow()) fitView(36, 0.62, false);
     else fitView(80);
     scheduleLabelAvoid();
   }
@@ -1643,19 +1952,10 @@
     state.labelOff = {}; state.labelSide = {};
     chart.setOption({ series: [{ id: "kg", data: buildNodes() }] });
   });
-  document.getElementById("btnReset").addEventListener("click", function () {
-    searchEl.value = "";
-    state.hidden = {}; state.labelsAll = false; state.selected = null;
-    state.query = ""; state.hits = []; state.hitsMap = {};
-    document.querySelectorAll("#legend-body .lg-item").forEach(function (el) { el.classList.remove("off"); });
-    document.getElementById("btnLabels").classList.remove("on");
-    document.getElementById("clearSearch").style.display = "none";
-    document.getElementById("panel").classList.remove("open");
-    document.getElementById("legend").classList.remove("open");
-    document.getElementById("btnLegend").classList.remove("on");
-    document.getElementById("scrim").classList.remove("show");
-    document.getElementById("suggest").style.display = "none";
-    /* 重置 = 布局从头再跑一遍 → 解冻、坐标作废、提示条重新挂上 */
+  /* 布局从头再跑一遍：解冻、坐标作废、提示条重新挂上。
+     逐步展开的节点是我们自己摆的位置（不跑力导向）；只有「全部展开」和
+     「重置」这种一次换掉大半张图的操作，才值得重跑一次布局。 */
+  function relayout() {
     state.frozen = false; state.pos = {};
     state.labelOff = {}; state.labelSide = {};
     prevLayoutPos = null; lastExtent = null; stableRounds = 0;
@@ -1663,20 +1963,62 @@
     if (badge) badge.classList.remove("gone");
     chart.clear();
     option.series[0].data = buildNodes();
+    option.series[0].links = buildLinks();
     chart.setOption(option);
+    updateStats();
     setTimeout(function () { settleView(0); }, 1200);
     setTimeout(function () { initialView(); }, 900);
+  }
+
+  document.getElementById("btnAll").addEventListener("click", function () {
+    (G.nodes || []).forEach(function (n) {
+      if (!typeHidden(n.id)) { state.vis[n.id] = true; state.expanded[n.id] = true; }
+    });
+    state.selected = null;
+    document.getElementById("panel").classList.remove("open");
+    document.getElementById("scrim").classList.remove("show");
+    relayout();
   });
 
-  /* ============ 统计角标（自己算，不依赖数据里额外字段） ============ */
+  document.getElementById("btnReset").addEventListener("click", function () {
+    var keep = state.locked;
+    searchEl.value = "";
+    state.hidden = {};                   /* 回到出厂口径：不藏任何类型 */
+    state.labelsAll = false; state.selected = null;
+    state.query = ""; state.hits = []; state.hitsMap = {};
+    document.querySelectorAll("#legend-body .lg-item").forEach(function (el) {
+      el.classList.toggle("off", !!state.hidden[el.dataset.type]);
+    });
+    document.getElementById("btnLabels").classList.remove("on");
+    document.getElementById("clearSearch").style.display = "none";
+    document.getElementById("panel").classList.remove("open");
+    document.getElementById("legend").classList.remove("open");
+    document.getElementById("btnLegend").classList.remove("on");
+    document.getElementById("scrim").classList.remove("show");
+    document.getElementById("suggest").style.display = "none";
+    applySeed();
+    /* 锁定的节点在重置后仍然留着 —— 这就是「锁定」的用处 */
+    Object.keys(keep).forEach(function (id) {
+      if (NODE[id]) { state.vis[id] = true; state.locked[id] = true; }
+    });
+    relayout();
+  });
+
+  /* ============ 统计角标（自己算，不依赖数据里额外字段） ============
+     画布是逐步展开的 ⇒ 角标必须同时给「可见 / 共多少」，
+     否则用户会以为图谱只有眼前这些。 */
   var relTypesUsed = {};
   (G.edges || []).forEach(function (e) { relTypesUsed[e.type] = (relTypesUsed[e.type] || 0) + 1; });
   var nodeTypesUsed = {};
   (G.nodes || []).forEach(function (n) { nodeTypesUsed[n.type] = (nodeTypesUsed[n.type] || 0) + 1; });
-  document.getElementById("stats").innerHTML =
-    "节点 <b>" + (G.nodes || []).length + "</b> · 关系 <b>" + (G.edges || []).length + "</b> · " +
-    Object.keys(nodeTypesUsed).length + " 类实体 · " +
-    Object.keys(relTypesUsed).filter(function (k) { return relTypesUsed[k]; }).length + " 类关系";
+  function updateStats() {
+    var vis = Object.keys(state.vis).length, all = (G.nodes || []).length;
+    document.getElementById("stats").innerHTML =
+      "可见 <b>" + vis + "</b> / 共 <b>" + all + "</b> 节点 · 关系 <b>" + (G.edges || []).length + "</b> · " +
+      Object.keys(nodeTypesUsed).length + " 类实体 · " +
+      Object.keys(relTypesUsed).filter(function (k) { return relTypesUsed[k]; }).length + " 类关系";
+  }
+  updateStats();
 
   renderLegend();
 
@@ -1797,7 +2139,7 @@
       freezeLayout();
       return;
     }
-    if (round >= 14) { freezeLayout(); return; }   /* 最多等约 7 秒 */
+    if (round >= 9) { freezeLayout(); return; }    /* 最多等约 5 秒（起步只画一圈，收敛很快） */
     var ext = graphExtent();
     var changed = lastExtent === null || Math.abs(ext - lastExtent) / (lastExtent || 1) >= 0.005;
     if (changed) {

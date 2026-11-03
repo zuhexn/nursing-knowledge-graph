@@ -1010,7 +1010,7 @@ def load_type_groups(paths, explicit):
 #    另起模块会让交付包里的 build.py 导入失败 ⇒ 结构闸门在客户手上就失效了。
 # --------------------------------------------------------------------------
 
-STRUCT_GATE_VERSION = "2026-11-03-2"
+STRUCT_GATE_VERSION = "2026-11-03-3"
 
 # 页面上必须存在的锚点 —— 缺一个 = 渲染逻辑走不到那一步
 REQUIRED_ANCHORS = (
@@ -1226,11 +1226,23 @@ def check_render(index_path, timeout_ms=RENDER_TIMEOUT_MS):
                         } catch (e) { painted = -2; }
                     }
                     const l = document.getElementById('loading');
+                    /* 画布是不是「逐步展开」的：首屏画出来的节点数应当少于总数 */
+                    let rendered = -1;
+                    try {
+                        const inst = window.echarts &&
+                            window.echarts.getInstanceByDom(document.getElementById('chart'));
+                        rendered = inst
+                            ? inst.getModel().getSeriesByIndex(0).getData().count() : -1;
+                    } catch (e) { rendered = -2; }
                     return {
                         kgcore: typeof window.KGCORE,
                         kgcoreKeys: window.KGCORE ? Object.keys(window.KGCORE).length : -1,
                         nodes: window.KG_GRAPH ? (window.KG_GRAPH.nodes || []).length : -1,
                         edges: window.KG_GRAPH ? (window.KG_GRAPH.edges || []).length : -1,
+                        rendered: rendered,
+                        actions: ['pExpand', 'pLock', 'pRemove'].every(function (id) {
+                            return !!document.getElementById(id);
+                        }),
                         loading: l ? getComputedStyle(l).display : 'missing',
                         canvasW: cv ? cv.width : 0,
                         canvasH: cv ? cv.height : 0,
@@ -1273,6 +1285,19 @@ def check_render(index_path, timeout_ms=RENDER_TIMEOUT_MS):
     if state["painted"] >= 0 and state["painted"] < MIN_PAINTED_PIXELS:
         problems.append("R6 画布上只有 %d 个非透明像素（阈值 %d）—— 图没画出来"
                         % (state["painted"], MIN_PAINTED_PIXELS))
+
+    # R7 · 画布是「点选逐步延展」的：首屏只画一部分，不是一次铺满
+    #      （一次铺满 = 92 个节点挤在屏上，手机上点不准也读不清）
+    if state["rendered"] <= 0:
+        problems.append("R7 首屏画布上一个节点都没有（rendered = %d）" % state["rendered"])
+    elif state["nodes"] > 0 and state["rendered"] >= state["nodes"]:
+        problems.append("R7 首屏把全部 %d 个节点一次铺满了 —— 「点选逐步延展」没生效"
+                        % state["nodes"])
+
+    # R8 · 节点操作三件套（展开 / 锁定 / 关闭）在页面上
+    if not state["actions"]:
+        problems.append("R8 详情卡里没有「展开 / 锁定 / 关闭」三个按钮"
+                        " —— 画布退化成只能看，不能一层层展开")
 
     return problems, ""
 
