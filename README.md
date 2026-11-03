@@ -14,6 +14,17 @@
 
 > **两个题目是两份独立交付** —— 各自一个 URL、各自一套二维码，**页面内不做题目切换**。
 
+## 对外入口
+
+**每个题目一个对外入口 = 它的图谱页**（二维码直接指向该页，扫码即开）。
+
+| 题目 | 对外入口 |
+|---|---|
+| 题目一 · CT 增强检查护理风险 | `https://zuhexn.github.io/nursing-knowledge-graph/topic-01-kg/index.html` |
+| 题目二 · 恶心呕吐症状管理 | `https://zuhexn.github.io/nursing-knowledge-graph/topic-02-kg/index.html` |
+
+站点落地页（`index.html`）**只列这两个图谱入口**；`topic-0X-code/`（运行代码下载页与下载包）仍随仓库发布，但**不在落地页露出链接** —— 面向使用者的入口只有图谱页一个，避免多出「该扫哪个」的歧义。
+
 ## 图谱数据说明
 
 - 图谱数据以 JSON 随站点发布（`data/<topicKey>-graph.json` + 同内容 `.js` 副本）；**检索在浏览器内完成**，页面不请求任何后端接口。

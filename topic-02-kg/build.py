@@ -43,10 +43,33 @@ import argparse
 import csv
 import json
 import os
+import pathlib
 import re
 import shutil
+import subprocess
 import sys
+import tempfile
 from datetime import datetime
+from html.parser import HTMLParser
+
+
+# --- 控制台编码兜底（中文 Windows 默认 GBK）--------------------------------
+# 本脚本的输出带 ⛔ / ✅ / ⚠ / ⇒ 等符号；GBK 编不出这些字符 ⇒ print 直接抛
+# UnicodeEncodeError ⇒ **脚本在半路崩掉**，看起来像「跑到一半就死」（2026-11-03 实测）。
+# 这里在开跑前把 stdout/stderr 兜住：显式设了 PYTHONIOENCODING 就尊重它，否则强制
+# UTF-8；无论如何错误处理都改成 replace ⇒ **永不因编码崩**。
+# ⚠️ 本函数**内联**在本文件里（不抽公共模块）：交付包会把 build.py 自副本带走，
+#    另起模块会让交付包里的 build.py 导入失败 ⇒ 客户手上直接 ImportError。
+def _fix_console_encoding():
+    for stream in (sys.stdout, sys.stderr):
+        try:
+            enc = None if os.environ.get("PYTHONIOENCODING") else "utf-8"
+            stream.reconfigure(encoding=enc, errors="replace")
+        except Exception:
+            pass
+
+
+_fix_console_encoding()
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 TEMPLATE_INDEX = os.path.join(HERE, "template", "index.html")
@@ -699,8 +722,17 @@ def build_one(topic_key, data, src_path, out_root, rep, terms_source):
     if os.path.exists(TEMPLATE_INDEX):
         with open(TEMPLATE_INDEX, "r", encoding="utf-8") as f:
             tpl = f.read()
+        page_html = tpl.replace("{{TOPIC_KEY}}", topic_key)
+        # 5a · **写盘前**先过静态结构闸门 —— 坏页面不许落盘
+        #      （本次线上缺陷就是「坏页面进了交付目录」才被客户扫码发现）
+        static_problems = check_html_static(page_html)
+        if static_problems:
+            raise StructureGateError(
+                "页面静态结构不通过 —— **已中止，未写出 index.html**\n"
+                "文件：%s\n%s"
+                % (index_dst, "\n".join("   · " + x for x in static_problems)))
         with open(index_dst, "w", encoding="utf-8", newline="\n") as f:
-            f.write(tpl.replace("{{TOPIC_KEY}}", topic_key))
+            f.write(page_html)
     elif not os.path.exists(index_dst):
         raise RuntimeError("找不到页面模板，且目录里没有现成的 index.html：%s" % out_dir)
 
@@ -830,6 +862,335 @@ def load_type_groups(paths, explicit):
     return None
 
 
+# --------------------------------------------------------------------------
+# 6 · 结构闸门 —— 标签配平 + JS 语法 + 首屏渲染
+#
+# 起因（2026-11-03 线上缺陷）：图谱页「一直转圈圈（正在加载图谱数据…）」——
+# 根因是模板里 KG-CORE 内联 <script> 块**缺一个 </script>** ⇒ 浏览器 raw-text
+# 解析把后面那个 <script> 当成 JS 源码 ⇒ 解析期抛 Unexpected token '<' ⇒
+# window.KGCORE 未定义 ⇒ 渲染 IIFE 整块没执行 ⇒ #loading 遮罩永不隐藏。
+#
+# 为什么旧的四道自检全绿：它们按 KG-CORE-START/END 标记把代码块抽出来在 Node 里
+# 跑，测的是**逻辑**；没有任何一道在问「标签配平吗」「这页真渲染出来了吗」。
+# 本闸门补的就是这两问 —— 把这类缺陷拦在构建期，而不是等客户扫码才发现。
+#
+# 三层（**任何一层「跳过」都会打印原因 —— 不静默省略**）：
+#   S · 静态结构（纯标准库 · 永远跑）
+#   J · JS 语法（node --check · 没 node 则显式跳过）
+#   R · 首屏渲染（playwright · 没装 / 起不来则显式跳过）
+#
+# ⛔ 闸门代码内联在 build.py 里（不另起模块）：交付包会把 build.py 自副本带走，
+#    另起模块会让交付包里的 build.py 导入失败 ⇒ 结构闸门在客户手上就失效了。
+# --------------------------------------------------------------------------
+
+STRUCT_GATE_VERSION = "2026-11-03"
+
+# 页面上必须存在的锚点 —— 缺一个 = 渲染逻辑走不到那一步
+REQUIRED_ANCHORS = (
+    ('id="loading"', "首屏遮罩 #loading"),
+    ('id="chart"', "图谱容器 #chart"),
+    ("KGCORE", "window.KGCORE 赋值"),
+    ("KG_GRAPH", "图谱数据 window.KG_GRAPH 引用"),
+)
+
+# 画布上「非透明像素」低于此数 = 什么都没画出来（空白页）
+MIN_PAINTED_PIXELS = 1000
+
+# 渲染检查的等待上限（毫秒）
+RENDER_TIMEOUT_MS = 15000
+
+
+class StructureGateError(Exception):
+    """结构闸门不通过 —— 构建中止（**不产出坏产物**）"""
+
+
+def split_raw_text_bodies(html):
+    """把每个 <script> / <style> 的正文切出来（标准库 html.parser）。
+
+    HTMLParser 在 script / style 内走 CDATA 模式 —— 正文直到对应的闭标签才结束，
+    这正是浏览器的 raw-text 行为 ⇒ 用它能看出「正文里混进了裸标签字面量」。
+
+    ⚠️ 这是本次缺陷能被抓到的关键：浏览器把开标签当 JS 源码解析时，
+       出错的是**正文内容**，而不是标签计数 —— 只比计数会误判成「配平」。
+    """
+    class _Splitter(HTMLParser):
+        def __init__(self):
+            HTMLParser.__init__(self, convert_charrefs=False)
+            self.items = []          # [{tag, attrs, body}]
+            self._cur = None
+
+        def handle_starttag(self, tag, attrs):
+            if tag in ("script", "style"):
+                self._cur = {"tag": tag, "attrs": dict(attrs), "body": []}
+
+        def handle_startendtag(self, tag, attrs):
+            pass                     # HTML 没有自闭合的 <script/> —— 忽略
+
+        def handle_endtag(self, tag):
+            if self._cur is not None and tag == self._cur["tag"]:
+                self._cur["body"] = "".join(self._cur["body"])
+                self.items.append(self._cur)
+                self._cur = None
+
+        def handle_data(self, data):
+            if self._cur is not None:
+                self._cur["body"].append(data)
+
+        def handle_entityref(self, name):
+            if self._cur is not None:
+                self._cur["body"].append("&%s;" % name)
+
+        def handle_charref(self, name):
+            if self._cur is not None:
+                self._cur["body"].append("&#%s;" % name)
+
+    p = _Splitter()
+    p.feed(html)
+    p.close()
+    return p.items
+
+
+def check_html_static(html):
+    """静态结构检查（纯标准库）—— 返回问题清单（空 = 通过）。
+
+    每条问题都带编号（S1/S2/…），便于回报时指名道姓地说清「哪一项不匹配」。
+    """
+    problems = []
+    low = html.lower()
+    # 计数前先剥掉 HTML 注释 —— 注释里写「<script>」是说明文字，不是标签
+    stripped = re.sub(r"<!--.*?-->", "", html, flags=re.S)
+    slow = stripped.lower()
+
+    # S1 · script 标签配平
+    n_open = slow.count("<script")
+    n_close = slow.count("</script>")
+    if n_open != n_close:
+        problems.append(
+            "S1 script 标签不配平：开标签 <script × %d，闭标签 </script> × %d（差 %+d）"
+            " —— 浏览器会从开标签一路 raw-text 读到下一个闭标签，"
+            "中间的标记被当源码解析" % (n_open, n_close, n_open - n_close))
+
+    # S2 · style 标签配平
+    so = slow.count("<style")
+    sc = slow.count("</style>")
+    if so != sc:
+        problems.append("S2 style 标签不配平：<style × %d，</style> × %d" % (so, sc))
+
+    # S3 · 正文里混入裸标签字面量（**本次线上缺陷的直接指纹**）
+    seq = {"script": 0, "style": 0}
+    for item in split_raw_text_bodies(html):
+        tag = item["tag"]
+        seq[tag] = seq.get(tag, 0) + 1
+        body_low = item["body"].lower()
+        for probe in ("script", "style"):
+            if ("<" + probe) in body_low:
+                problems.append(
+                    "S3 第 %d 个 <%s> 元素的正文里出现了裸露的 <%s 字面量 —— "
+                    "浏览器会把后续内容整段当 %s 源码解析，解析期抛错 -> 该脚本整块不执行"
+                    % (seq[tag], tag, probe, probe))
+
+    # S4 · 必备锚点
+    for needle, human in REQUIRED_ANCHORS:
+        if needle not in html:
+            problems.append("S4 缺少必备结构：%s（找的是 %s）" % (human, needle))
+
+    # S5 · KG-CORE 标记成对（检索层自测按这两个标记抽代码块）
+    ns = html.count("KG-CORE-START")
+    ne = html.count("KG-CORE-END")
+    if ns != 1 or ne != 1:
+        problems.append(
+            "S5 KG-CORE 标记不成对：KG-CORE-START × %d / KG-CORE-END × %d"
+            "（检索层自测按这两个标记抽代码块）" % (ns, ne))
+
+    return problems
+
+
+def check_js_syntax(html):
+    """内联 <script> 正文的 JS 语法检查（node --check）。
+
+    返回 (问题清单, 跳过说明) —— 没 node 时跳过并**说明原因**（不静默）。
+    这一层能在没有浏览器的情况下抓住「Unexpected token '<'」这一类解析期错误。
+    """
+    node = shutil.which("node")
+    if not node:
+        return [], "跳过（未找到 node 可执行文件 —— 本层要在无浏览器环境兜住 JS 解析期错误）"
+
+    problems = []
+    idx = 0
+    for item in split_raw_text_bodies(html):
+        if item["tag"] != "script":
+            continue
+        if item["attrs"].get("src"):
+            continue                          # 外链脚本 —— 正文不在本文件里
+        body = item["body"]
+        if not body.strip():
+            continue
+        idx += 1
+        # 临时文件放系统临时目录 —— 工具运行时产物，不落工作区
+        with tempfile.TemporaryDirectory() as tmpdir:
+            js_path = os.path.join(tmpdir, "inline-%d.js" % idx)
+            with open(js_path, "w", encoding="utf-8", newline="\n") as f:
+                f.write(body)
+            proc = subprocess.run([node, "--check", js_path],
+                                  capture_output=True, text=True,
+                                  encoding="utf-8", errors="replace")
+        if proc.returncode != 0:
+            detail = (proc.stderr or proc.stdout or "").strip()
+            first = " / ".join(detail.splitlines()[:3])
+            problems.append("J1 第 %d 个内联 <script> 的 JS 语法不合法：%s" % (idx, first))
+    return problems, ""
+
+
+def check_render(index_path, timeout_ms=RENDER_TIMEOUT_MS):
+    """首屏渲染检查 —— 真跑一次页面。
+
+    返回 (问题清单, 跳过说明)：
+      · playwright 没装 / 浏览器起不来 → 跳过并**说明原因**（不静默）
+      · 页面本身有问题 → 问题清单（构建据此失败）
+
+    断言：页面无未捕获异常 · #loading 遮罩已隐藏 · window.KGCORE 已定义 ·
+          图谱数据非空 · canvas 已创建且画出了东西。
+    """
+    try:
+        from playwright.sync_api import sync_playwright
+    except Exception as e:
+        return [], "跳过（本机没有 playwright：%s）" % e
+
+    problems = []
+    errors = []
+
+    def _on_console(msg):
+        if msg.type == "error":
+            errors.append("console.error：%s" % msg.text)
+
+    try:
+        with sync_playwright() as pw:
+            browser = pw.chromium.launch()
+            try:
+                page = browser.new_page(viewport={"width": 1440, "height": 900})
+                page.on("pageerror", lambda e: errors.append("未捕获异常：%s" % e))
+                page.on("console", _on_console)
+                page.goto(_file_uri(index_path))
+                try:
+                    page.wait_for_function(
+                        "() => { const e = document.getElementById('loading');"
+                        " return !e || getComputedStyle(e).display === 'none'; }",
+                        timeout=timeout_ms)
+                    loading_hidden = True
+                except Exception:
+                    loading_hidden = False
+                page.wait_for_timeout(1200)      # 等 ECharts 动画画完
+                state = page.evaluate("""() => {
+                    const cv = document.querySelector('#chart canvas');
+                    let painted = -1;
+                    if (cv) {
+                        try {
+                            const d = cv.getContext('2d')
+                                .getImageData(0, 0, cv.width, cv.height).data;
+                            painted = 0;
+                            for (let i = 3; i < d.length; i += 4) {
+                                if (d[i] !== 0) painted++;
+                            }
+                        } catch (e) { painted = -2; }
+                    }
+                    const l = document.getElementById('loading');
+                    return {
+                        kgcore: typeof window.KGCORE,
+                        kgcoreKeys: window.KGCORE ? Object.keys(window.KGCORE).length : -1,
+                        nodes: window.KG_GRAPH ? (window.KG_GRAPH.nodes || []).length : -1,
+                        edges: window.KG_GRAPH ? (window.KG_GRAPH.edges || []).length : -1,
+                        loading: l ? getComputedStyle(l).display : 'missing',
+                        canvasW: cv ? cv.width : 0,
+                        canvasH: cv ? cv.height : 0,
+                        painted: painted
+                    };
+                }""")
+            finally:
+                browser.close()
+    except Exception as e:
+        return [], "跳过（playwright 起不来：%s）" % e
+
+    # R1 · 页面级错误（解析期错误就在这里冒头）
+    for msg in errors:
+        problems.append("R1 页面报错：%s" % msg)
+
+    # R2 · window.KGCORE 已定义
+    if state["kgcore"] != "object":
+        problems.append("R2 window.KGCORE 未定义（typeof = %s）—— 渲染逻辑整块没执行"
+                        % state["kgcore"])
+    elif state["kgcoreKeys"] < 1:
+        problems.append("R2 window.KGCORE 是空对象 —— 检索核心没装载")
+
+    # R3 · 数据非空
+    if state["nodes"] <= 0:
+        problems.append("R3 图谱数据为空（KG_GRAPH.nodes = %d）" % state["nodes"])
+
+    # R4 · 首屏遮罩已隐藏
+    if not loading_hidden or state["loading"] != "none":
+        problems.append(
+            "R4 首屏遮罩没隐藏（#loading 的 display = %s，等待 %d ms 后仍未隐藏）"
+            " —— 客户看到的就是「一直转圈圈（正在加载图谱数据…）」"
+            % (state["loading"], timeout_ms))
+
+    # R5 · canvas 已创建
+    if state["canvasW"] <= 0 or state["canvasH"] <= 0:
+        problems.append("R5 #chart 里没有画布（canvas = %d × %d）"
+                        % (state["canvasW"], state["canvasH"]))
+
+    # R6 · 画布确实画出了东西
+    if state["painted"] >= 0 and state["painted"] < MIN_PAINTED_PIXELS:
+        problems.append("R6 画布上只有 %d 个非透明像素（阈值 %d）—— 图没画出来"
+                        % (state["painted"], MIN_PAINTED_PIXELS))
+
+    return problems, ""
+
+
+def _file_uri(path):
+    return pathlib.Path(path).resolve().as_uri()
+
+
+def structure_gate(index_path, do_render=True, do_js=True):
+    """对产出页面跑完整结构闸门。
+
+    返回 (问题清单, [(层名, 结论)]) —— 结论含「通过」与「跳过（原因）」。
+    """
+    with open(index_path, "r", encoding="utf-8") as f:
+        html = f.read()
+
+    problems = []
+    notes = []
+
+    static_problems = check_html_static(html)
+    problems.extend(static_problems)
+    notes.append(("S · 静态结构（标签配平 / 裸标签字面量 / 必备锚点）",
+                   "通过" if not static_problems else "不通过（%d 项）" % len(static_problems)))
+
+    if do_js:
+        js_problems, js_skip = check_js_syntax(html)
+        problems.extend(js_problems)
+        notes.append(("J · JS 语法（node --check 内联脚本）",
+                       "通过" if not js_problems else ("不通过（%d 项）" % len(js_problems)
+                                                      if not js_skip else js_skip)))
+        if js_skip:
+            notes[-1] = ("J · JS 语法（node --check 内联脚本）", js_skip)
+    else:
+        notes.append(("J · JS 语法（node --check 内联脚本）", "跳过（命令行显式关闭）"))
+
+    if do_render:
+        render_problems, render_skip = check_render(index_path)
+        problems.extend(render_problems)
+        notes.append(("R · 首屏渲染（playwright 真跑一次）",
+                       "通过" if not render_problems else ("不通过（%d 项）" % len(render_problems)
+                                                          if not render_skip else render_skip)))
+        if render_skip:
+            notes[-1] = ("R · 首屏渲染（playwright 真跑一次）", render_skip)
+    else:
+        notes.append(("R · 首屏渲染（playwright 真跑一次）", "跳过（命令行显式关闭）"))
+
+    return problems, notes
+
+
+# --------------------------------------------------------------------------
 def main(argv):
     ap = argparse.ArgumentParser(description="知识图谱构建与校验管线")
     ap.add_argument("--input", action="append", default=[],
@@ -843,6 +1204,10 @@ def main(argv):
     ap.add_argument("--from-triples", default=None, help="从 5 列表转图谱数据骨架")
     ap.add_argument("--out-graph", default=None, help="--from-triples 的输出路径")
     ap.add_argument("--json", action="store_true", help="以 JSON 输出逐条判定（供交叉验证）")
+    ap.add_argument("--no-render-check", action="store_true",
+                    help="关掉首屏渲染检查（默认跑；关掉会打印说明）")
+    ap.add_argument("--no-js-check", action="store_true",
+                    help="关掉内联脚本的 JS 语法检查（默认跑；关掉会打印说明）")
     args = ap.parse_args(argv[1:])
 
     if args.from_triples:
@@ -945,12 +1310,33 @@ def main(argv):
     if not os.path.isdir(out_root):
         os.makedirs(out_root)
     print("\n产出：")
+    gate_problems = []
     for tk, p in topic_of.items():
         d = datas.get(tk)
         if d is None:
             continue
-        out_dir = build_one(tk, d, p, out_root, rep, terms_source)
+        try:
+            out_dir = build_one(tk, d, p, out_root, rep, terms_source)
+        except StructureGateError as e:
+            print("\n⛔ 结构闸门不通过 —— 已中止构建：\n%s" % e)
+            return 1
         print("   %s" % out_dir)
+        # ---- 结构闸门：对**写盘后的真实产物**再查一遍（JS 语法 + 首屏渲染）
+        index_path = os.path.join(out_dir, "index.html")
+        probs, notes = structure_gate(index_path,
+                                       do_render=not args.no_render_check,
+                                       do_js=not args.no_js_check)
+        print("   结构闸门（%s）" % index_path)
+        for nm, verdict in notes:
+            print("      · %-42s %s" % (nm, verdict))
+        if probs:
+            print("      ⛔ 不通过项：")
+            for pb in probs:
+                print("        · %s" % pb)
+            gate_problems.extend(probs)
+    if gate_problems:
+        print("\n⛔ 结构闸门未通过（%d 项）—— **本次产出不可交付**" % len(gate_problems))
+        return 1
     print("\n✅ 完成")
     return 0 if nf == 0 else 1
 
