@@ -1,5 +1,5 @@
 id,label,name,summary,tags,evidence_count
-DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏与外渗,做 CT 增强扫描时使用碘对比剂后，最需要盯住的两类护理风险：碘对比剂过敏反应和碘对比剂外渗。,题目 CT增强 碘对比剂,2
+DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗,做 CT 增强扫描时使用碘对比剂后，最需要盯住的两类护理风险：碘对比剂过敏反应和碘对比剂外渗。,题目 CT增强 碘对比剂,2
 E_CTEnhancedScan,Exam,CT增强扫描,先静脉注射碘对比剂、再做断层成像的检查方法；本图谱关注打药后出现的过敏反应和碘对比剂外渗。,辅助检查,3
 E_ContrastInjection,Exam,碘对比剂,CT 增强扫描时打进血管的含碘对比剂，是过敏反应和外渗这两类风险的来源。,辅助检查 对比剂,4
 S_AdverseReaction,SymptomSign,不良反应,使用碘对比剂后出现的非预期身体反应。,症状体征,3

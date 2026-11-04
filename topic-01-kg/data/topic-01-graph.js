@@ -1,7 +1,7 @@
 window.KG_GRAPH = {
   "meta": {
     "topicKey": "topic-01",
-    "topicName": "CT增强扫描后过敏与外渗",
+    "topicName": "CT增强扫描后过敏反应与外渗",
     "subtitle": "碘对比剂过敏反应 · 碘对比剂外渗 · 护理预防与处置",
     "generatedAt": "2026-11-04"
   },
@@ -216,7 +216,7 @@ window.KG_GRAPH = {
   "nodes": [
     {
       "id": "DC_CTEnhancedRisk",
-      "name": "CT增强扫描后碘对比剂过敏与外渗",
+      "name": "CT增强扫描后碘对比剂过敏反应与外渗",
       "type": "DiseaseCategory",
       "tags": [
         "题目",
