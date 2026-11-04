@@ -428,74 +428,168 @@ PharmacologicalManagement,药物管理,属于,ManagementStrategy,症状管理策
 NonPharmacologicalManagement,非药物管理,属于,ManagementStrategy,症状管理策略
 SymptomStatus,症状现状,属于,ManagementOutcome,症状管理效果
 FunctionalStatus,功能状况,属于,ManagementOutcome,症状管理效果
-SymptomExperience,症状体验,属于,SymptomExperience,恶心
-SymptomExperience,症状体验,属于,SymptomExperience,呕吐
-ManagementStrategy,症状管理策略,属于,ManagementStrategy,化疗相关恶心呕吐管理策略
-ManagementStrategy,症状管理策略,属于,ManagementStrategy,妊娠期恶心呕吐管理策略
-ManagementStrategy,症状管理策略,属于,ManagementStrategy,术后恶心呕吐管理策略
-ManagementStrategy,症状管理策略,属于,ManagementStrategy,整合症状管理策略
-ManagementOutcome,症状管理效果,属于,ManagementOutcome,恶心呕吐发生率下降
-ManagementOutcome,症状管理效果,属于,ManagementOutcome,完全缓解
-ManagementOutcome,症状管理效果,属于,ManagementOutcome,症状严重程度减轻
-ManagementOutcome,症状管理效果,属于,ManagementOutcome,进食情况改善
-ManagementOutcome,症状管理效果,属于,ManagementOutcome,体重维持
-ManagementOutcome,症状管理效果,属于,ManagementOutcome,生活质量提升
-ManagementOutcome,症状管理效果,属于,ManagementOutcome,用药依从性提升
-ManagementOutcome,症状管理效果,属于,ManagementOutcome,住院与急诊减少
-SymptomCategory,症状分类,属于,SymptomCategory,化疗相关恶心呕吐
-SymptomCategory,症状分类,属于,SymptomCategory,放疗相关恶心呕吐
-SymptomCategory,症状分类,属于,SymptomCategory,妊娠期恶心呕吐
-SymptomCategory,症状分类,属于,SymptomCategory,妊娠剧吐
-SymptomCategory,症状分类,属于,SymptomCategory,术后恶心呕吐
-SymptomCategory,症状分类,属于,SymptomCategory,急性恶心呕吐
-SymptomCategory,症状分类,属于,SymptomCategory,延迟性恶心呕吐
-SymptomCategory,症状分类,属于,SymptomCategory,预期性恶心呕吐
-SymptomCategory,症状分类,属于,SymptomCategory,爆发性恶心呕吐
-AssessmentTool,评估工具,属于,AssessmentTool,CTCAE 不良反应评价标准 v5.0
-AssessmentTool,评估工具,属于,AssessmentTool,EORTC QLQ-C30 肿瘤生活质量问卷
-AssessmentTool,评估工具,属于,AssessmentTool,MASCC 止吐自评工具
-AssessmentTool,评估工具,属于,AssessmentTool,Apfel 简化风险评分
-AssessmentTool,评估工具,属于,AssessmentTool,PUQE 妊娠剧吐严重程度评分
-RiskFactor,高危因素识别,属于,RiskFactor,女性
-RiskFactor,高危因素识别,属于,RiskFactor,年龄较轻
-RiskFactor,高危因素识别,属于,RiskFactor,非吸烟者
-RiskFactor,高危因素识别,属于,RiskFactor,晕动病史
-RiskFactor,高危因素识别,属于,RiskFactor,既往恶心呕吐史
-RiskFactor,高危因素识别,属于,RiskFactor,焦虑
-RiskFactor,高危因素识别,属于,RiskFactor,术后阿片类镇痛
-RiskFactor,高危因素识别,属于,RiskFactor,睡眠障碍
-RiskFactor,高危因素识别,属于,RiskFactor,无饮酒史
-RiskFactor,高危因素识别,属于,RiskFactor,化疗前进食不足
-PharmacologicalManagement,药物管理,属于,PharmacologicalManagement,5-HT3 受体拮抗剂
-PharmacologicalManagement,药物管理,属于,PharmacologicalManagement,地塞米松
-PharmacologicalManagement,药物管理,属于,PharmacologicalManagement,NK-1 受体拮抗剂
-PharmacologicalManagement,药物管理,属于,PharmacologicalManagement,奥氮平
-PharmacologicalManagement,药物管理,属于,PharmacologicalManagement,甲氧氯普胺
-PharmacologicalManagement,药物管理,属于,PharmacologicalManagement,多巴胺受体拮抗剂
-PharmacologicalManagement,药物管理,属于,PharmacologicalManagement,抗组胺药
-PharmacologicalManagement,药物管理,属于,PharmacologicalManagement,维生素 B6
-PharmacologicalManagement,药物管理,属于,PharmacologicalManagement,肠内营养支持
-PharmacologicalManagement,药物管理,属于,PharmacologicalManagement,硫胺素（维生素 B1）
-NonPharmacologicalManagement,非药物管理,属于,NonPharmacologicalManagement,起居护理
-NonPharmacologicalManagement,非药物管理,属于,NonPharmacologicalManagement,穴位刺激
-NonPharmacologicalManagement,非药物管理,属于,NonPharmacologicalManagement,液体疗法
-NonPharmacologicalManagement,非药物管理,属于,NonPharmacologicalManagement,芳香疗法（精油疗法）
-NonPharmacologicalManagement,非药物管理,属于,NonPharmacologicalManagement,生姜疗法
-NonPharmacologicalManagement,非药物管理,属于,NonPharmacologicalManagement,健康教育
-NonPharmacologicalManagement,非药物管理,属于,NonPharmacologicalManagement,口腔护理
-NonPharmacologicalManagement,非药物管理,属于,NonPharmacologicalManagement,行为干预
-SymptomStatus,症状现状,属于,SymptomStatus,化疗相关恶心呕吐发生率
-SymptomStatus,症状现状,属于,SymptomStatus,术后恶心呕吐发生率
-SymptomStatus,症状现状,属于,SymptomStatus,妊娠期恶心呕吐发生率
-SymptomStatus,症状现状,属于,SymptomStatus,妊娠剧吐发生率
-SymptomStatus,症状现状,属于,SymptomStatus,预期性恶心呕吐发生率
-SymptomStatus,症状现状,属于,SymptomStatus,症状控制率
-SymptomStatus,症状现状,属于,SymptomStatus,脱水
-SymptomStatus,症状现状,属于,SymptomStatus,电解质紊乱
-SymptomStatus,症状现状,属于,SymptomStatus,干呕
-FunctionalStatus,功能状况,属于,FunctionalStatus,进食受影响
-FunctionalStatus,功能状况,属于,FunctionalStatus,体重下降
-FunctionalStatus,功能状况,属于,FunctionalStatus,生活质量下降
-FunctionalStatus,功能状况,属于,FunctionalStatus,自我照护能力下降
-FunctionalStatus,功能状况,属于,FunctionalStatus,活动耐力下降
-FunctionalStatus,功能状况,属于,FunctionalStatus,误吸风险
+SymptomExperience,恶心,属于,SymptomExperience,症状体验
+SymptomExperience,呕吐,属于,SymptomExperience,症状体验
+ManagementStrategy,化疗相关恶心呕吐管理策略,属于,ManagementStrategy,症状管理策略
+ManagementStrategy,妊娠期恶心呕吐管理策略,属于,ManagementStrategy,症状管理策略
+ManagementStrategy,术后恶心呕吐管理策略,属于,ManagementStrategy,症状管理策略
+ManagementStrategy,整合症状管理策略,属于,ManagementStrategy,症状管理策略
+ManagementOutcome,恶心呕吐发生率下降,属于,ManagementOutcome,症状管理效果
+ManagementOutcome,完全缓解,属于,ManagementOutcome,症状管理效果
+ManagementOutcome,症状严重程度减轻,属于,ManagementOutcome,症状管理效果
+ManagementOutcome,进食情况改善,属于,ManagementOutcome,症状管理效果
+ManagementOutcome,体重维持,属于,ManagementOutcome,症状管理效果
+ManagementOutcome,生活质量提升,属于,ManagementOutcome,症状管理效果
+ManagementOutcome,用药依从性提升,属于,ManagementOutcome,症状管理效果
+ManagementOutcome,住院与急诊减少,属于,ManagementOutcome,症状管理效果
+SymptomCategory,化疗相关恶心呕吐,属于,SymptomCategory,症状分类
+SymptomCategory,放疗相关恶心呕吐,属于,SymptomCategory,症状分类
+SymptomCategory,妊娠期恶心呕吐,属于,SymptomCategory,症状分类
+SymptomCategory,妊娠剧吐,属于,SymptomCategory,症状分类
+SymptomCategory,术后恶心呕吐,属于,SymptomCategory,症状分类
+SymptomCategory,急性恶心呕吐,属于,SymptomCategory,症状分类
+SymptomCategory,延迟性恶心呕吐,属于,SymptomCategory,症状分类
+SymptomCategory,预期性恶心呕吐,属于,SymptomCategory,症状分类
+SymptomCategory,爆发性恶心呕吐,属于,SymptomCategory,症状分类
+AssessmentTool,CTCAE 不良反应评价标准 v5.0,属于,AssessmentTool,评估工具
+AssessmentTool,EORTC QLQ-C30 肿瘤生活质量问卷,属于,AssessmentTool,评估工具
+AssessmentTool,MASCC 止吐自评工具,属于,AssessmentTool,评估工具
+AssessmentTool,Apfel 简化风险评分,属于,AssessmentTool,评估工具
+AssessmentTool,PUQE 妊娠剧吐严重程度评分,属于,AssessmentTool,评估工具
+RiskFactor,女性,属于,RiskFactor,高危因素识别
+RiskFactor,年龄较轻,属于,RiskFactor,高危因素识别
+RiskFactor,非吸烟者,属于,RiskFactor,高危因素识别
+RiskFactor,晕动病史,属于,RiskFactor,高危因素识别
+RiskFactor,既往恶心呕吐史,属于,RiskFactor,高危因素识别
+RiskFactor,焦虑,属于,RiskFactor,高危因素识别
+RiskFactor,术后阿片类镇痛,属于,RiskFactor,高危因素识别
+RiskFactor,睡眠障碍,属于,RiskFactor,高危因素识别
+RiskFactor,无饮酒史,属于,RiskFactor,高危因素识别
+RiskFactor,化疗前进食不足,属于,RiskFactor,高危因素识别
+PharmacologicalManagement,5-HT3 受体拮抗剂,属于,PharmacologicalManagement,药物管理
+PharmacologicalManagement,地塞米松,属于,PharmacologicalManagement,药物管理
+PharmacologicalManagement,NK-1 受体拮抗剂,属于,PharmacologicalManagement,药物管理
+PharmacologicalManagement,奥氮平,属于,PharmacologicalManagement,药物管理
+PharmacologicalManagement,甲氧氯普胺,属于,PharmacologicalManagement,药物管理
+PharmacologicalManagement,多巴胺受体拮抗剂,属于,PharmacologicalManagement,药物管理
+PharmacologicalManagement,抗组胺药,属于,PharmacologicalManagement,药物管理
+PharmacologicalManagement,维生素 B6,属于,PharmacologicalManagement,药物管理
+PharmacologicalManagement,肠内营养支持,属于,PharmacologicalManagement,药物管理
+PharmacologicalManagement,硫胺素（维生素 B1）,属于,PharmacologicalManagement,药物管理
+NonPharmacologicalManagement,起居护理,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,穴位刺激,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,液体疗法,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,芳香疗法（精油疗法）,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,生姜疗法,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,健康教育,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,口腔护理,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,行为干预,属于,NonPharmacologicalManagement,非药物管理
+SymptomStatus,化疗相关恶心呕吐发生率,属于,SymptomStatus,症状现状
+SymptomStatus,术后恶心呕吐发生率,属于,SymptomStatus,症状现状
+SymptomStatus,妊娠期恶心呕吐发生率,属于,SymptomStatus,症状现状
+SymptomStatus,妊娠剧吐发生率,属于,SymptomStatus,症状现状
+SymptomStatus,预期性恶心呕吐发生率,属于,SymptomStatus,症状现状
+SymptomStatus,症状控制率,属于,SymptomStatus,症状现状
+SymptomStatus,脱水,属于,SymptomStatus,症状现状
+SymptomStatus,电解质紊乱,属于,SymptomStatus,症状现状
+SymptomStatus,干呕,属于,SymptomStatus,症状现状
+FunctionalStatus,进食受影响,属于,FunctionalStatus,功能状况
+FunctionalStatus,体重下降,属于,FunctionalStatus,功能状况
+FunctionalStatus,生活质量下降,属于,FunctionalStatus,功能状况
+FunctionalStatus,自我照护能力下降,属于,FunctionalStatus,功能状况
+FunctionalStatus,活动耐力下降,属于,FunctionalStatus,功能状况
+FunctionalStatus,误吸风险,属于,FunctionalStatus,功能状况
+SymptomExperience,症状体验,有文献支持,Reference,癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结
+SymptomExperience,症状体验,有文献支持,Reference,化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明
+SymptomExperience,症状体验,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防
+SymptomExperience,症状体验,有文献支持,Reference,妊娠早期恶心呕吐的干预措施
+ManagementStrategy,症状管理策略,有文献支持,Reference,止吐药物：美国临床肿瘤学会指南更新
+ManagementStrategy,症状管理策略,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防
+ManagementStrategy,症状管理策略,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会共识更新：高致吐风险抗肿瘤药物所致恶心呕吐的预防
+ManagementStrategy,症状管理策略,有文献支持,Reference,中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）
+ManagementStrategy,症状管理策略,有文献支持,Reference,四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版
+ManagementStrategy,症状管理策略,有文献支持,Reference,美国国家综合癌症网络肿瘤临床实践指南：止吐（2025 年第 2 版）
+ManagementStrategy,症状管理策略,有文献支持,Reference,妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）
+ManagementStrategy,症状管理策略,有文献支持,Reference,世界卫生组织关于产前保健促进积极妊娠体验的建议
+ManagementStrategy,症状管理策略,有文献支持,Reference,妊娠早期恶心呕吐的干预措施
+ManagementStrategy,症状管理策略,有文献支持,Reference,术后恶心呕吐管理第五版共识指南（摘要）
+ManagementStrategy,症状管理策略,有文献支持,Reference,护士主导的非药物干预在腹腔镜手术成人患者术后恶心呕吐预防与管理中的证据总结
+ManagementStrategy,症状管理策略,有文献支持,Reference,癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结
+ManagementStrategy,症状管理策略,有文献支持,Reference,化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明
+ManagementOutcome,症状管理效果,有文献支持,Reference,止吐药物：美国临床肿瘤学会指南更新
+ManagementOutcome,症状管理效果,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防
+ManagementOutcome,症状管理效果,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会共识更新：高致吐风险抗肿瘤药物所致恶心呕吐的预防
+ManagementOutcome,症状管理效果,有文献支持,Reference,化疗相关恶心呕吐简明临床量表的验证与心理测量学评价：国际癌症支持治疗协会止吐自评工具
+ManagementOutcome,症状管理效果,有文献支持,Reference,癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结
+ManagementOutcome,症状管理效果,有文献支持,Reference,吸入薄荷精油作为恶心呕吐治疗的辅助疗法：一项有前景的补充治疗
+ManagementOutcome,症状管理效果,有文献支持,Reference,内关穴（PC6）按压对恶性肿瘤患者化疗所致急性与延迟性恶心呕吐的影响：荟萃分析
+ManagementOutcome,症状管理效果,有文献支持,Reference,非药物干预对癌症化疗致恶心呕吐影响的网状Meta分析
+ManagementOutcome,症状管理效果,有文献支持,Reference,妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）
+ManagementOutcome,症状管理效果,有文献支持,Reference,化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明
+ManagementOutcome,症状管理效果,有文献支持,Reference,肿瘤患者生活质量问卷（EORTC QLQ-C30）评分手册（第 3 版）
+ManagementOutcome,症状管理效果,有文献支持,Reference,四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版
+ManagementOutcome,症状管理效果,有文献支持,Reference,护士主导的非药物干预在腹腔镜手术成人患者术后恶心呕吐预防与管理中的证据总结
+SymptomCategory,症状分类,有文献支持,Reference,止吐药物：美国临床肿瘤学会指南更新
+SymptomCategory,症状分类,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防
+SymptomCategory,症状分类,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会共识更新：高致吐风险抗肿瘤药物所致恶心呕吐的预防
+SymptomCategory,症状分类,有文献支持,Reference,中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）
+SymptomCategory,症状分类,有文献支持,Reference,美国国家综合癌症网络肿瘤临床实践指南：止吐（2025 年第 2 版）
+SymptomCategory,症状分类,有文献支持,Reference,妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）
+SymptomCategory,症状分类,有文献支持,Reference,妊娠早期恶心呕吐的干预措施
+SymptomCategory,症状分类,有文献支持,Reference,世界卫生组织关于产前保健促进积极妊娠体验的建议
+SymptomCategory,症状分类,有文献支持,Reference,癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结
+SymptomCategory,症状分类,有文献支持,Reference,术后恶心呕吐管理第五版共识指南（摘要）
+SymptomCategory,症状分类,有文献支持,Reference,四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版
+AssessmentTool,评估工具,有文献支持,Reference,不良事件通用术语标准（CTCAE 第 5.0 版）
+AssessmentTool,评估工具,有文献支持,Reference,肿瘤患者生活质量问卷（EORTC QLQ-C30）评分手册（第 3 版）
+AssessmentTool,评估工具,有文献支持,Reference,癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结
+AssessmentTool,评估工具,有文献支持,Reference,化疗相关恶心呕吐简明临床量表的验证与心理测量学评价：国际癌症支持治疗协会止吐自评工具
+AssessmentTool,评估工具,有文献支持,Reference,术后恶心呕吐管理第五版共识指南（摘要）
+AssessmentTool,评估工具,有文献支持,Reference,止吐药物：美国临床肿瘤学会指南更新
+AssessmentTool,评估工具,有文献支持,Reference,妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）
+AssessmentTool,评估工具,有文献支持,Reference,妊娠早期恶心呕吐的干预措施
+RiskFactor,高危因素识别,有文献支持,Reference,止吐药物：美国临床肿瘤学会指南更新
+RiskFactor,高危因素识别,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防
+RiskFactor,高危因素识别,有文献支持,Reference,术后恶心呕吐管理第五版共识指南（摘要）
+RiskFactor,高危因素识别,有文献支持,Reference,四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版
+RiskFactor,高危因素识别,有文献支持,Reference,中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）
+RiskFactor,高危因素识别,有文献支持,Reference,化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明
+PharmacologicalManagement,药物管理,有文献支持,Reference,止吐药物：美国临床肿瘤学会指南更新
+PharmacologicalManagement,药物管理,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防
+PharmacologicalManagement,药物管理,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会共识更新：高致吐风险抗肿瘤药物所致恶心呕吐的预防
+PharmacologicalManagement,药物管理,有文献支持,Reference,中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）
+PharmacologicalManagement,药物管理,有文献支持,Reference,妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）
+PharmacologicalManagement,药物管理,有文献支持,Reference,世界卫生组织关于产前保健促进积极妊娠体验的建议
+PharmacologicalManagement,药物管理,有文献支持,Reference,妊娠早期恶心呕吐的干预措施
+PharmacologicalManagement,药物管理,有文献支持,Reference,成人肠内营养支持的护理
+PharmacologicalManagement,药物管理,有文献支持,Reference,基础护理学（第7版）
+PharmacologicalManagement,药物管理,有文献支持,Reference,癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结
+NonPharmacologicalManagement,非药物管理,有文献支持,Reference,四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版
+NonPharmacologicalManagement,非药物管理,有文献支持,Reference,基础护理学（第7版）
+NonPharmacologicalManagement,非药物管理,有文献支持,Reference,术后恶心呕吐管理第五版共识指南（摘要）
+NonPharmacologicalManagement,非药物管理,有文献支持,Reference,内关穴（PC6）按压对恶性肿瘤患者化疗所致急性与延迟性恶心呕吐的影响：荟萃分析
+NonPharmacologicalManagement,非药物管理,有文献支持,Reference,非药物干预对癌症化疗致恶心呕吐影响的网状Meta分析
+NonPharmacologicalManagement,非药物管理,有文献支持,Reference,世界卫生组织关于产前保健促进积极妊娠体验的建议
+NonPharmacologicalManagement,非药物管理,有文献支持,Reference,护士主导的非药物干预在腹腔镜手术成人患者术后恶心呕吐预防与管理中的证据总结
+NonPharmacologicalManagement,非药物管理,有文献支持,Reference,妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）
+NonPharmacologicalManagement,非药物管理,有文献支持,Reference,吸入薄荷精油作为恶心呕吐治疗的辅助疗法：一项有前景的补充治疗
+NonPharmacologicalManagement,非药物管理,有文献支持,Reference,妊娠早期恶心呕吐的干预措施
+NonPharmacologicalManagement,非药物管理,有文献支持,Reference,化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明
+NonPharmacologicalManagement,非药物管理,有文献支持,Reference,中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）
+SymptomStatus,症状现状,有文献支持,Reference,止吐药物：美国临床肿瘤学会指南更新
+SymptomStatus,症状现状,有文献支持,Reference,2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防
+SymptomStatus,症状现状,有文献支持,Reference,四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版
+SymptomStatus,症状现状,有文献支持,Reference,术后恶心呕吐管理第五版共识指南（摘要）
+SymptomStatus,症状现状,有文献支持,Reference,妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）
+SymptomStatus,症状现状,有文献支持,Reference,妊娠早期恶心呕吐的干预措施
+SymptomStatus,症状现状,有文献支持,Reference,中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）
+SymptomStatus,症状现状,有文献支持,Reference,化疗相关恶心呕吐简明临床量表的验证与心理测量学评价：国际癌症支持治疗协会止吐自评工具
+SymptomStatus,症状现状,有文献支持,Reference,基础护理学（第7版）
+SymptomStatus,症状现状,有文献支持,Reference,癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结
+SymptomStatus,症状现状,有文献支持,Reference,化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明
+FunctionalStatus,功能状况,有文献支持,Reference,肿瘤患者生活质量问卷（EORTC QLQ-C30）评分手册（第 3 版）
+FunctionalStatus,功能状况,有文献支持,Reference,癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结
+FunctionalStatus,功能状况,有文献支持,Reference,化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明
+FunctionalStatus,功能状况,有文献支持,Reference,妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）
+FunctionalStatus,功能状况,有文献支持,Reference,护士主导的非药物干预在腹腔镜手术成人患者术后恶心呕吐预防与管理中的证据总结
+FunctionalStatus,功能状况,有文献支持,Reference,术后恶心呕吐管理第五版共识指南（摘要）

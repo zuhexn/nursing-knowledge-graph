@@ -1896,7 +1896,7 @@
         "nursing prevention",
         "预防性护理"
       ],
-      "summary": "打药之前把风险挡掉的护理原则：核对过敏史、评估血管条件与外渗高危因素、避免高压注射与不做生理盐水试推、看不清血管时用血管可视化辅助定位，以及对比剂预处理（加温到 37℃ 左右）。",
+      "summary": "打药之前把风险挡掉的护理原则。下挂五条具体措施：过敏史询问、血管条件评估、外渗风险评估、血管可视化、对比剂预处理。",
       "attrs": [],
       "evidence": [
         {
@@ -1943,7 +1943,7 @@
         "nursing intervention",
         "干预性护理"
       ],
-      "summary": "反应已经发生之后的现场护理干预原则：按分级处置原则用药与监护，处置后密切观察；情况变坏之前先看出苗头、及时升级处理（早期预警）。",
+      "summary": "反应已经发生之后的现场护理干预原则。下挂密切观察（处置后确认安全再离开）；用药与监护按「不良反应分级处置原则」执行。上位的框架是早期预警 —— 在情况变坏之前先看出苗头、及时升级处理。",
       "attrs": [],
       "evidence": [
         {
@@ -2322,7 +2322,7 @@
         "mild reaction resolved",
         "轻度已缓解"
       ],
-      "summary": "轻度反应经过处理以后症状消退。",
+      "summary": "轻度反应经处理以后症状消退：过敏反应表现为皮疹、瘙痒减轻；外渗表现为患肢肿胀与疼痛减轻。",
       "attrs": [],
       "evidence": [
         {
@@ -2950,6 +2950,53 @@
       "graph": "topic-01"
     },
     {
+      "id": "R15",
+      "name": "欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "推荐"
+      ],
+      "aliases": [
+        "ESUR 对比剂使用推荐",
+        "ESUR recommendations on contrast media",
+        "推荐",
+        "recommendation"
+      ],
+      "summary": "欧洲泌尿放射学会对比剂使用推荐意见，护理侧的用药建议多出自此。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "推荐"
+        },
+        {
+          "k": "年份",
+          "v": "2021"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.1016/j.nephro.2020.10.011 · PMID 33551369 · 2021;17(2):80-91"
+        },
+        {
+          "k": "证据等级",
+          "v": "推荐意见"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "推荐",
+          "author": "de Laforcade L, Bobot M, Bellin MF, et al.",
+          "title": "欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评",
+          "journal": "肾脏病与治疗",
+          "year": 2021,
+          "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / 欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评 / 肾脏病与治疗 / 2021",
+          "grade": "推荐意见",
+          "ref": "R15"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
       "id": "R16",
       "name": "过敏反应：2023 年实践参数更新",
       "type": "Reference",
@@ -3096,7 +3143,7 @@
       "id": "R21",
       "graph": "topic-01",
       "type": "Reference",
-      "name": "碘对比剂温度与不良反应关系的 Meta 分析（307,329 次注射）",
+      "name": "碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析",
       "tags": [
         "文献",
         "Meta分析"
@@ -3435,7 +3482,7 @@
         "Orem's Self-Care Deficit Nursing Theory",
         "SCDNT"
       ],
-      "summary": "自护理论（Orem，1971）认为人天生具备自我护理的能力，护理的任务是在患者自护能力不足时提供补偿与支持。对应到本主题：指导患者与家属参与碘对比剂过敏反应与外渗的预防、早期识别与居家自我照护。",
+      "summary": "自护理论（Orem，1971）认为人天生具备自我护理的能力，护理的任务是在患者自护能力不足时提供补偿与支持。落到本主题：指导患者与家属参与打针前的准备、检查后的观察，以及居家自我照护与早期求助。",
       "attrs": [
         {
           "k": "理论提出者",
@@ -4898,7 +4945,8 @@
       "source": "S_Extravasation",
       "target": "AT_VascularAssessment",
       "type": "ASSESSED_BY",
-      "label": "由……评估"
+      "label": "由……评估",
+      "note": "使用耐高压型留置针，优先肘正中静脉"
     },
     {
       "source": "S_AllergicReaction",
@@ -5041,13 +5089,6 @@
     },
     {
       "source": "S_Extravasation",
-      "target": "PM_MagnesiumSulfate",
-      "type": "TREATED_BY",
-      "label": "由……治疗",
-      "note": "早期冷敷使用"
-    },
-    {
-      "source": "S_Extravasation",
       "target": "PM_DexamethasoneWetCompress",
       "type": "TREATED_BY",
       "label": "由……治疗"
@@ -5077,7 +5118,8 @@
       "source": "S_Extravasation",
       "target": "NPM_ColdCompress",
       "type": "TREATED_BY",
-      "label": "由……治疗"
+      "label": "由……治疗",
+      "note": "早期冷敷使用"
     },
     {
       "source": "S_Extravasation",
@@ -5116,13 +5158,6 @@
       "target": "NPM_ContrastPreparation",
       "type": "TREATED_BY",
       "label": "由……治疗"
-    },
-    {
-      "source": "E_ContrastInjection",
-      "target": "NPM_VascularVisualization",
-      "type": "TREATED_BY",
-      "label": "由……治疗",
-      "note": "使用耐高压型留置针，优先肘正中静脉"
     },
     {
       "source": "S_AdverseReaction",
@@ -5217,6 +5252,12 @@
     {
       "source": "E_ContrastInjection",
       "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "R15",
       "type": "SUPPORTED_BY",
       "label": "有文献支持"
     },
@@ -5929,10 +5970,34 @@
       "label": "存在症状"
     },
     {
+      "source": "S_ExtravasationSwelling",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ExtravasationSwelling",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
       "source": "S_Extravasation",
       "target": "S_ExtravasationPain",
       "type": "HAS_SYMPTOM",
       "label": "存在症状"
+    },
+    {
+      "source": "S_ExtravasationPain",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ExtravasationPain",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "S_Extravasation",
@@ -5941,16 +6006,52 @@
       "label": "存在症状"
     },
     {
+      "source": "S_ExtravasationRedness",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ExtravasationRedness",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
       "source": "S_Extravasation",
       "target": "S_ExtravasationCoolSkin",
       "type": "HAS_SYMPTOM",
       "label": "存在症状"
     },
     {
+      "source": "S_ExtravasationCoolSkin",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ExtravasationCoolSkin",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
       "source": "S_Extravasation",
       "target": "S_ExtravasationPallor",
       "type": "HAS_SYMPTOM",
       "label": "存在症状"
+    },
+    {
+      "source": "S_ExtravasationPallor",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ExtravasationPallor",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "DC_CTEnhancedRisk",
@@ -5959,494 +6060,1022 @@
       "label": "由……处置"
     },
     {
-      "source": "FW_SymptomCategory",
-      "target": "FW_SymptomSign",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_AssessmentTool",
-      "target": "FW_SymptomSign",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_RiskFactor",
-      "target": "FW_ManagementPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_PharmacologicalManagement",
-      "target": "FW_ManagementPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_NonPharmacologicalManagement",
-      "target": "FW_ManagementPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_SymptomStatus",
-      "target": "FW_ManagementPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_FunctionalStatus",
-      "target": "FW_ManagementPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "S_AdverseReaction",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "S_Rash",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "S_AllergicReaction",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "S_Urticaria",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "S_Pruritus",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "S_FacialEdema",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "S_ThroatDiscomfort",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "S_ChestTightness",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "S_GeneralizedWeakness",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "S_AnaphylacticShock",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "S_Extravasation",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "S_ExtravasationSwelling",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "S_ExtravasationPain",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "S_ExtravasationRedness",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "S_ExtravasationCoolSkin",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "S_ExtravasationPallor",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_Exam",
-      "target": "E_CTEnhancedScan",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_Exam",
-      "target": "E_ContrastInjection",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_ManagementPrinciple",
-      "target": "MP_NursingMeasures",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_ManagementPrinciple",
+      "source": "AT_AllergyHistory",
       "target": "MP_NursingPrevention",
       "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "label": "属于"
     },
     {
-      "source": "FW_ManagementPrinciple",
+      "source": "AT_VascularAssessment",
+      "target": "MP_NursingPrevention",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "AT_ExtravasationAssessment",
+      "target": "MP_NursingPrevention",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "NPM_VascularVisualization",
+      "target": "MP_NursingPrevention",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "NPM_ContrastPreparation",
+      "target": "MP_NursingPrevention",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "NPM_CloseObservation",
       "target": "MP_NursingIntervention",
       "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "label": "属于"
     },
     {
-      "source": "FW_ManagementPrinciple",
-      "target": "MP_ExtravasationPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_ManagementPrinciple",
-      "target": "MP_AdverseReactionTriage",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_NursingTheory",
-      "target": "NT_EarlyWarning",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_NursingTheory",
-      "target": "NT_SelfCareTheory",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_DiseaseEducation",
-      "target": "DE_PreExamNotice",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_DiseaseEducation",
-      "target": "DE_AfterExamCare",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_DiseaseEducation",
-      "target": "DE_AllergyDisclosure",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_DiseaseEducation",
-      "target": "DE_ExtravasationHomeCare",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_DiseaseEducation",
-      "target": "DE_EmergencyKnowledge",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_SymptomCategory",
-      "target": "SC_AdverseSpectrum",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_SymptomCategory",
-      "target": "SC_Hypersensitivity",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_SymptomCategory",
-      "target": "SC_ExtravasationSpectrum",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_AssessmentTool",
-      "target": "AT_AllergyHistory",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_AssessmentTool",
-      "target": "AT_ExtravasationAssessment",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_AssessmentTool",
-      "target": "AT_VascularAssessment",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_RiskFactor",
-      "target": "RF_ContrastAllergyHistory",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_RiskFactor",
-      "target": "RF_UncontrolledAsthma",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_RiskFactor",
-      "target": "RF_AgeExtremes",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_RiskFactor",
-      "target": "RF_FragileVein",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_RiskFactor",
-      "target": "RF_HighPressureInjection",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_RiskFactor",
-      "target": "RF_NoSalineFlush",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_PharmacologicalManagement",
+      "source": "S_ThroatDiscomfort",
       "target": "PM_AdrenalineIM",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "type": "TREATED_BY",
+      "label": "由……治疗"
     },
     {
-      "source": "FW_PharmacologicalManagement",
-      "target": "PM_Corticosteroid",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "source": "S_ChestTightness",
+      "target": "PM_AdrenalineIM",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
     },
     {
-      "source": "FW_PharmacologicalManagement",
+      "source": "S_FacialEdema",
+      "target": "PM_AdrenalineIM",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_FacialEdema",
       "target": "PM_Antihistamine",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "type": "TREATED_BY",
+      "label": "由……治疗"
     },
     {
-      "source": "FW_PharmacologicalManagement",
-      "target": "PM_MagnesiumSulfate",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "source": "S_ThroatDiscomfort",
+      "target": "PM_Antihistamine",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
     },
     {
-      "source": "FW_PharmacologicalManagement",
-      "target": "PM_DexamethasoneWetCompress",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "source": "E_CTEnhancedScan",
+      "target": "S_AllergicReaction",
+      "type": "EFFECT_ON",
+      "label": "影响"
     },
     {
-      "source": "FW_NonPharmacologicalManagement",
-      "target": "NPM_StopInjection",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_NonPharmacologicalManagement",
-      "target": "NPM_KeepCatheter",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_NonPharmacologicalManagement",
-      "target": "NPM_LimbElevation",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_NonPharmacologicalManagement",
-      "target": "NPM_ColdCompress",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_NonPharmacologicalManagement",
-      "target": "NPM_CloseObservation",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_NonPharmacologicalManagement",
-      "target": "NPM_ContrastPreparation",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_NonPharmacologicalManagement",
-      "target": "NPM_VascularVisualization",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_NonPharmacologicalManagement",
-      "target": "NPM_PsychologicalSupport",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_SymptomStatus",
-      "target": "SS_MildResolved",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_SymptomStatus",
-      "target": "SS_SevereRecovered",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_FunctionalStatus",
-      "target": "FS_LimbFunction",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "DC_CTEnhancedRisk",
+      "source": "FW_SymptomCategory",
       "target": "FW_SymptomSign",
       "type": "BELONGS_TO",
       "label": "属于",
       "role": "framework"
     },
     {
-      "source": "DC_CTEnhancedRisk",
+      "source": "FW_AssessmentTool",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomStatus",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_FunctionalStatus",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_Rash",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_Urticaria",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_Pruritus",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_FacialEdema",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_ThroatDiscomfort",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_ChestTightness",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_GeneralizedWeakness",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_ExtravasationSwelling",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_ExtravasationPain",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_ExtravasationRedness",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_ExtravasationCoolSkin",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_ExtravasationPallor",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "E_CTEnhancedScan",
       "target": "FW_Exam",
       "type": "BELONGS_TO",
       "label": "属于",
       "role": "framework"
     },
     {
-      "source": "DC_CTEnhancedRisk",
+      "source": "E_ContrastInjection",
+      "target": "FW_Exam",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_NursingMeasures",
       "target": "FW_ManagementPrinciple",
       "type": "BELONGS_TO",
       "label": "属于",
       "role": "framework"
     },
     {
-      "source": "DC_CTEnhancedRisk",
+      "source": "MP_NursingPrevention",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_NursingIntervention",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_ExtravasationPrinciple",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_AdverseReactionTriage",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NT_EarlyWarning",
       "target": "FW_NursingTheory",
       "type": "BELONGS_TO",
       "label": "属于",
       "role": "framework"
     },
     {
-      "source": "DC_CTEnhancedRisk",
+      "source": "NT_SelfCareTheory",
+      "target": "FW_NursingTheory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "DE_PreExamNotice",
       "target": "FW_DiseaseEducation",
       "type": "BELONGS_TO",
       "label": "属于",
       "role": "framework"
+    },
+    {
+      "source": "DE_AfterExamCare",
+      "target": "FW_DiseaseEducation",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "DE_AllergyDisclosure",
+      "target": "FW_DiseaseEducation",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "DE_ExtravasationHomeCare",
+      "target": "FW_DiseaseEducation",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "DE_EmergencyKnowledge",
+      "target": "FW_DiseaseEducation",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "SC_AdverseSpectrum",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "SC_Hypersensitivity",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "SC_ExtravasationSpectrum",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "AT_AllergyHistory",
+      "target": "FW_AssessmentTool",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "AT_ExtravasationAssessment",
+      "target": "FW_AssessmentTool",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "AT_VascularAssessment",
+      "target": "FW_AssessmentTool",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "RF_ContrastAllergyHistory",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "RF_UncontrolledAsthma",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "RF_AgeExtremes",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "RF_FragileVein",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "RF_HighPressureInjection",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "RF_NoSalineFlush",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "PM_AdrenalineIM",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "PM_Corticosteroid",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "PM_Antihistamine",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "PM_MagnesiumSulfate",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "PM_DexamethasoneWetCompress",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_StopInjection",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_KeepCatheter",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_LimbElevation",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_ColdCompress",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_CloseObservation",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_ContrastPreparation",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_VascularVisualization",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_PsychologicalSupport",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "SS_MildResolved",
+      "target": "FW_SymptomStatus",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "SS_SevereRecovered",
+      "target": "FW_SymptomStatus",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FS_LimbFunction",
+      "target": "FW_FunctionalStatus",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "DC_CTEnhancedRisk",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_Exam",
+      "target": "DC_CTEnhancedRisk",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "DC_CTEnhancedRisk",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_NursingTheory",
+      "target": "DC_CTEnhancedRisk",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "DC_CTEnhancedRisk",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R14",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R21",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R23",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R17",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R22",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_Exam",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_Exam",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_Exam",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_Exam",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_Exam",
+      "target": "R15",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_NursingTheory",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_NursingTheory",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_NursingTheory",
+      "target": "R24",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "R20",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "R17",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "R22",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "R23",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "R17",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "R21",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "R20",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomStatus",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomStatus",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomStatus",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomStatus",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_FunctionalStatus",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_FunctionalStatus",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NT_SelfCareTheory",
+      "target": "R24",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "R24",
+      "target": "R24",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     }
   ]
 }

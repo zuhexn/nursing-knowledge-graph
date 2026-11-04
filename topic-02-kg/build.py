@@ -420,6 +420,86 @@ def check_file(path, topic_key, rep, doc, terms_source):
             ("多种关系 %d 对：%s" % (len(multi), "; ".join(multi[:8]))) if multi
             else "%d 对节点各有唯一关系" % len(pair_types))
 
+    # ---- 附加：每条 evidence 都得有对应的文献节点，且连上 SUPPORTED_BY 边 ----
+    # （⛔ 不拿 evidence.ref 当连接键 —— 两题里它不是 join key，会大面积误报；
+    #   按**标题** join + 查 SUPPORTED_BY 边，才是数据里真正的连接方式。）
+    # 真踩过：文献节点在收窄时被删、但引用它的 evidence 还留在节点上 ⇒
+    #   页面上「文献出处」点得到标题，图里却查不到那条出处。
+    ref_by_title = {}
+    for n in nodes:
+        if n.get("type") != "Reference":
+            continue
+        ref_by_title.setdefault(str(n.get("name") or ""), n.get("id"))
+        for ev in (n.get("evidence") or []):
+            if ev.get("title"):
+                ref_by_title.setdefault(str(ev["title"]), n.get("id"))
+    supported_pairs = set((e.get("source"), e.get("target")) for e in edges
+                           if e.get("type") == "SUPPORTED_BY")
+    ev_orphan, ev_noedge = [], []
+    for n in nodes:
+        if n.get("type") == "Reference":
+            continue
+        for ev in (n.get("evidence") or []):
+            title = str(ev.get("title") or "")
+            if not title:
+                continue
+            rid = ref_by_title.get(title)
+            if rid is None:
+                ev_orphan.append("%s→《%s》无对应文献节点" % (n.get("name"), title[:28]))
+            elif (n.get("id"), rid) not in supported_pairs:
+                ev_noedge.append("%s→《%s》没有 SUPPORTED_BY 边" % (n.get("name"), title[:28]))
+    rep.add("附O", "每条出处都有文献节点且连上边（%s）" % tag,
+            not ev_orphan and not ev_noedge,
+            ("；".join((ev_orphan + ev_noedge)[:8]))
+            if (ev_orphan or ev_noedge) else "全部出处都能在图里点到")
+
+    # ---- 附加：摘要里点名的节点必须够得着 ----
+    # 「护理预防」的摘要列了 5 条措施、点进去一条都没有 —— 这类「摘要承诺 vs 图里没有」
+    # 是客户自检脚本查不出来的，只能自己盯。规则：摘要里出现的其他节点名
+    # （≥3 字、且不是在另一个在场节点名里被顺带包含的），必须 2 跳内够得到。
+    adj = {}
+    for e in edges:
+        # ⛔ 文献边不算「够得着」的路径 —— 共享同一篇出处的节点之间都隔着文献节点，
+        #    走文献边会让任何两个节点都变成 2 跳可达，判据就废了。
+        #    口径与前端画布一致：文献边默认隐藏，不承载知识关系。
+        rel = rel_by_key.get(str(e.get("type") or ""))
+        label = str((rel or {}).get("label") or e.get("label") or "")
+        if "文献" in label:
+            continue
+        adj.setdefault(e.get("source"), set()).add(e.get("target"))
+        adj.setdefault(e.get("target"), set()).add(e.get("source"))
+
+    def reachable2(start):
+        seen, frontier = set([start]), set([start])
+        for _ in range(2):
+            nxt = set()
+            for x in frontier:
+                nxt |= adj.get(x, set())
+            nxt -= seen
+            seen |= nxt
+            frontier = nxt
+        return seen
+
+    node_names = [(n.get("id"), str(n.get("name") or "")) for n in nodes]
+    unreach = []
+    for n in nodes:
+        if n.get("type") == "Reference":
+            continue
+        summ = str(n.get("summary") or "")
+        if not summ:
+            continue
+        present = [nm for _i, nm in node_names if nm and len(nm) >= 3 and nm in summ]
+        for nid, nm in node_names:
+            if nid == n.get("id") or not nm or len(nm) < 3 or nm not in summ:
+                continue
+            # 若它是另一个**在场**节点名的子串（顺带包含），不算点名
+            if any(nm != other and nm in other for other in present):
+                continue
+            if nid not in reachable2(n.get("id")):
+                unreach.append("%s 的摘要提到「%s」但 2 跳内到不了" % (n.get("name"), nm))
+    rep.add("附P", "摘要点名的节点够得着（%s）" % tag, not unreach,
+            ("；".join(unreach[:8])) if unreach else "摘要点名的节点都能到达")
+
     # ---- 附加：节点宣称的「覆盖范围」必须在图里真有着落 ----
     # （收窄过内容时，属性文字常忘了改 —— 页面上仍宣称覆盖已删掉的那一块，
     #   客户看到的就是「内容不对」。真踩过：覆盖范围写着「肾功能保护」，

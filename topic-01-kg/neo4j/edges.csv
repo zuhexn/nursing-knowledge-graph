@@ -88,7 +88,6 @@ S_Urticaria,SymptomSign,荨麻疹,TREATED_BY,由……治疗,PM_Antihistamine,Ph
 S_Rash,SymptomSign,皮疹,TREATED_BY,由……治疗,PM_Antihistamine,PharmacologicalManagement,抗组胺药
 S_Pruritus,SymptomSign,瘙痒,TREATED_BY,由……治疗,PM_Antihistamine,PharmacologicalManagement,抗组胺药
 S_FacialEdema,SymptomSign,颜面部水肿,TREATED_BY,由……治疗,PM_Corticosteroid,PharmacologicalManagement,糖皮质激素
-S_Extravasation,SymptomSign,碘对比剂外渗,TREATED_BY,由……治疗,PM_MagnesiumSulfate,PharmacologicalManagement,50%硫酸镁湿敷
 S_Extravasation,SymptomSign,碘对比剂外渗,TREATED_BY,由……治疗,PM_DexamethasoneWetCompress,PharmacologicalManagement,0.05%地塞米松湿敷
 S_Extravasation,SymptomSign,碘对比剂外渗,TREATED_BY,由……治疗,NPM_StopInjection,NonPharmacologicalManagement,立即停止注射
 S_Extravasation,SymptomSign,碘对比剂外渗,TREATED_BY,由……治疗,NPM_KeepCatheter,NonPharmacologicalManagement,保留静脉留置针
@@ -100,7 +99,6 @@ S_AnaphylacticShock,SymptomSign,过敏性休克,TREATED_BY,由……治疗,NPM_C
 S_AllergicReaction,SymptomSign,过敏反应,TREATED_BY,由……治疗,NPM_CloseObservation,NonPharmacologicalManagement,密切观察
 E_CTEnhancedScan,Exam,CT增强扫描,TREATED_BY,由……治疗,NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理
 E_ContrastInjection,Exam,碘对比剂,TREATED_BY,由……治疗,NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理
-E_ContrastInjection,Exam,碘对比剂,TREATED_BY,由……治疗,NPM_VascularVisualization,NonPharmacologicalManagement,血管可视化
 S_AdverseReaction,SymptomSign,不良反应,TREATED_BY,由……治疗,NPM_PsychologicalSupport,NonPharmacologicalManagement,心理疏导
 S_Extravasation,SymptomSign,碘对比剂外渗,TREATED_BY,由……治疗,NPM_PsychologicalSupport,NonPharmacologicalManagement,心理疏导
 MP_NursingIntervention,ManagementPrinciple,护理干预,EFFECT_ON,影响,SS_SevereRecovered,SymptomStatus,重度反应已恢复
@@ -117,6 +115,7 @@ E_CTEnhancedScan,Exam,CT增强扫描,SUPPORTED_BY,有文献支持,R03,Reference,
 E_ContrastInjection,Exam,碘对比剂,SUPPORTED_BY,有文献支持,R01,Reference,美国放射学会对比剂手册
 E_ContrastInjection,Exam,碘对比剂,SUPPORTED_BY,有文献支持,R03,Reference,碘对比剂使用指南（第2版）
 E_ContrastInjection,Exam,碘对比剂,SUPPORTED_BY,有文献支持,R07,Reference,影像科碘对比剂输注安全专家共识
+E_ContrastInjection,Exam,碘对比剂,SUPPORTED_BY,有文献支持,R15,Reference,欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评
 S_AdverseReaction,SymptomSign,不良反应,SUPPORTED_BY,有文献支持,R01,Reference,美国放射学会对比剂手册
 S_AdverseReaction,SymptomSign,不良反应,SUPPORTED_BY,有文献支持,R12,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
 S_AdverseReaction,SymptomSign,不良反应,SUPPORTED_BY,有文献支持,R14,Reference,对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）
@@ -227,19 +226,41 @@ FS_LimbFunction,FunctionalStatus,患肢功能状态,SUPPORTED_BY,有文献支持
 FS_LimbFunction,FunctionalStatus,患肢功能状态,SUPPORTED_BY,有文献支持,R02,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
 S_Extravasation,SymptomSign,碘对比剂外渗,SUPPORTED_BY,有文献支持,R10,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
 E_CTEnhancedScan,Exam,CT增强扫描,SUPPORTED_BY,有文献支持,R10,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
-NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理,SUPPORTED_BY,有文献支持,R21,Reference,"碘对比剂温度与不良反应关系的 Meta 分析（307,329 次注射）"
-S_AllergicReaction,SymptomSign,过敏反应,SUPPORTED_BY,有文献支持,R21,Reference,"碘对比剂温度与不良反应关系的 Meta 分析（307,329 次注射）"
-S_Extravasation,SymptomSign,碘对比剂外渗,SUPPORTED_BY,有文献支持,R21,Reference,"碘对比剂温度与不良反应关系的 Meta 分析（307,329 次注射）"
+NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理,SUPPORTED_BY,有文献支持,R21,Reference,"碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析"
+S_AllergicReaction,SymptomSign,过敏反应,SUPPORTED_BY,有文献支持,R21,Reference,"碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析"
+S_Extravasation,SymptomSign,碘对比剂外渗,SUPPORTED_BY,有文献支持,R21,Reference,"碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析"
 S_Extravasation,SymptomSign,碘对比剂外渗,SUPPORTED_BY,有文献支持,R22,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
 AT_ExtravasationAssessment,AssessmentTool,外渗风险评估,SUPPORTED_BY,有文献支持,R22,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
 S_AllergicReaction,SymptomSign,过敏反应,SUPPORTED_BY,有文献支持,R23,Reference,对比剂即刻超敏反应危险因素的系统评价与 Meta 分析
 RF_UncontrolledAsthma,RiskFactor,未控制的哮喘,SUPPORTED_BY,有文献支持,R23,Reference,对比剂即刻超敏反应危险因素的系统评价与 Meta 分析
 S_Extravasation,SymptomSign,碘对比剂外渗,HAS_SYMPTOM,存在症状,S_ExtravasationSwelling,SymptomSign,局部肿胀
+S_ExtravasationSwelling,SymptomSign,局部肿胀,SUPPORTED_BY,有文献支持,R02,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
+S_ExtravasationSwelling,SymptomSign,局部肿胀,SUPPORTED_BY,有文献支持,R04,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
 S_Extravasation,SymptomSign,碘对比剂外渗,HAS_SYMPTOM,存在症状,S_ExtravasationPain,SymptomSign,局部疼痛
+S_ExtravasationPain,SymptomSign,局部疼痛,SUPPORTED_BY,有文献支持,R02,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
+S_ExtravasationPain,SymptomSign,局部疼痛,SUPPORTED_BY,有文献支持,R04,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
 S_Extravasation,SymptomSign,碘对比剂外渗,HAS_SYMPTOM,存在症状,S_ExtravasationRedness,SymptomSign,局部发红
+S_ExtravasationRedness,SymptomSign,局部发红,SUPPORTED_BY,有文献支持,R02,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
+S_ExtravasationRedness,SymptomSign,局部发红,SUPPORTED_BY,有文献支持,R04,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
 S_Extravasation,SymptomSign,碘对比剂外渗,HAS_SYMPTOM,存在症状,S_ExtravasationCoolSkin,SymptomSign,皮肤发凉
+S_ExtravasationCoolSkin,SymptomSign,皮肤发凉,SUPPORTED_BY,有文献支持,R02,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
+S_ExtravasationCoolSkin,SymptomSign,皮肤发凉,SUPPORTED_BY,有文献支持,R04,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
 S_Extravasation,SymptomSign,碘对比剂外渗,HAS_SYMPTOM,存在症状,S_ExtravasationPallor,SymptomSign,皮肤发白发紧
+S_ExtravasationPallor,SymptomSign,皮肤发白发紧,SUPPORTED_BY,有文献支持,R02,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
+S_ExtravasationPallor,SymptomSign,皮肤发白发紧,SUPPORTED_BY,有文献支持,R04,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
 DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗,MANAGED_BY,由……处置,MP_NursingIntervention,ManagementPrinciple,护理干预
+AT_AllergyHistory,AssessmentTool,过敏史询问,BELONGS_TO,属于,MP_NursingPrevention,ManagementPrinciple,护理预防
+AT_VascularAssessment,AssessmentTool,血管条件评估,BELONGS_TO,属于,MP_NursingPrevention,ManagementPrinciple,护理预防
+AT_ExtravasationAssessment,AssessmentTool,外渗风险评估,BELONGS_TO,属于,MP_NursingPrevention,ManagementPrinciple,护理预防
+NPM_VascularVisualization,NonPharmacologicalManagement,血管可视化,BELONGS_TO,属于,MP_NursingPrevention,ManagementPrinciple,护理预防
+NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理,BELONGS_TO,属于,MP_NursingPrevention,ManagementPrinciple,护理预防
+NPM_CloseObservation,NonPharmacologicalManagement,密切观察,BELONGS_TO,属于,MP_NursingIntervention,ManagementPrinciple,护理干预
+S_ThroatDiscomfort,SymptomSign,咽喉部不适,TREATED_BY,由……治疗,PM_AdrenalineIM,PharmacologicalManagement,肌内注射肾上腺素
+S_ChestTightness,SymptomSign,胸闷,TREATED_BY,由……治疗,PM_AdrenalineIM,PharmacologicalManagement,肌内注射肾上腺素
+S_FacialEdema,SymptomSign,颜面部水肿,TREATED_BY,由……治疗,PM_AdrenalineIM,PharmacologicalManagement,肌内注射肾上腺素
+S_FacialEdema,SymptomSign,颜面部水肿,TREATED_BY,由……治疗,PM_Antihistamine,PharmacologicalManagement,抗组胺药
+S_ThroatDiscomfort,SymptomSign,咽喉部不适,TREATED_BY,由……治疗,PM_Antihistamine,PharmacologicalManagement,抗组胺药
+E_CTEnhancedScan,Exam,CT增强扫描,EFFECT_ON,影响,S_AllergicReaction,SymptomSign,过敏反应
 FW_SymptomCategory,SymptomCategory,症状分类,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
 FW_AssessmentTool,AssessmentTool,评估工具,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
 FW_RiskFactor,RiskFactor,高危因素识别,BELONGS_TO,属于,FW_ManagementPrinciple,ManagementPrinciple,处置原则
@@ -247,66 +268,142 @@ FW_PharmacologicalManagement,PharmacologicalManagement,药物管理,BELONGS_TO,�
 FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理,BELONGS_TO,属于,FW_ManagementPrinciple,ManagementPrinciple,处置原则
 FW_SymptomStatus,SymptomStatus,症状现状,BELONGS_TO,属于,FW_ManagementPrinciple,ManagementPrinciple,处置原则
 FW_FunctionalStatus,FunctionalStatus,功能状况,BELONGS_TO,属于,FW_ManagementPrinciple,ManagementPrinciple,处置原则
-FW_SymptomSign,SymptomSign,症状体征,BELONGS_TO,属于,S_AdverseReaction,SymptomSign,不良反应
-FW_SymptomSign,SymptomSign,症状体征,BELONGS_TO,属于,S_Rash,SymptomSign,皮疹
-FW_SymptomSign,SymptomSign,症状体征,BELONGS_TO,属于,S_AllergicReaction,SymptomSign,过敏反应
-FW_SymptomSign,SymptomSign,症状体征,BELONGS_TO,属于,S_Urticaria,SymptomSign,荨麻疹
-FW_SymptomSign,SymptomSign,症状体征,BELONGS_TO,属于,S_Pruritus,SymptomSign,瘙痒
-FW_SymptomSign,SymptomSign,症状体征,BELONGS_TO,属于,S_FacialEdema,SymptomSign,颜面部水肿
-FW_SymptomSign,SymptomSign,症状体征,BELONGS_TO,属于,S_ThroatDiscomfort,SymptomSign,咽喉部不适
-FW_SymptomSign,SymptomSign,症状体征,BELONGS_TO,属于,S_ChestTightness,SymptomSign,胸闷
-FW_SymptomSign,SymptomSign,症状体征,BELONGS_TO,属于,S_GeneralizedWeakness,SymptomSign,全身无力
-FW_SymptomSign,SymptomSign,症状体征,BELONGS_TO,属于,S_AnaphylacticShock,SymptomSign,过敏性休克
-FW_SymptomSign,SymptomSign,症状体征,BELONGS_TO,属于,S_Extravasation,SymptomSign,碘对比剂外渗
-FW_SymptomSign,SymptomSign,症状体征,BELONGS_TO,属于,S_ExtravasationSwelling,SymptomSign,局部肿胀
-FW_SymptomSign,SymptomSign,症状体征,BELONGS_TO,属于,S_ExtravasationPain,SymptomSign,局部疼痛
-FW_SymptomSign,SymptomSign,症状体征,BELONGS_TO,属于,S_ExtravasationRedness,SymptomSign,局部发红
-FW_SymptomSign,SymptomSign,症状体征,BELONGS_TO,属于,S_ExtravasationCoolSkin,SymptomSign,皮肤发凉
-FW_SymptomSign,SymptomSign,症状体征,BELONGS_TO,属于,S_ExtravasationPallor,SymptomSign,皮肤发白发紧
-FW_Exam,Exam,辅助检查,BELONGS_TO,属于,E_CTEnhancedScan,Exam,CT增强扫描
-FW_Exam,Exam,辅助检查,BELONGS_TO,属于,E_ContrastInjection,Exam,碘对比剂
-FW_ManagementPrinciple,ManagementPrinciple,处置原则,BELONGS_TO,属于,MP_NursingMeasures,ManagementPrinciple,护理措施
-FW_ManagementPrinciple,ManagementPrinciple,处置原则,BELONGS_TO,属于,MP_NursingPrevention,ManagementPrinciple,护理预防
-FW_ManagementPrinciple,ManagementPrinciple,处置原则,BELONGS_TO,属于,MP_NursingIntervention,ManagementPrinciple,护理干预
-FW_ManagementPrinciple,ManagementPrinciple,处置原则,BELONGS_TO,属于,MP_ExtravasationPrinciple,ManagementPrinciple,外渗处置原则
-FW_ManagementPrinciple,ManagementPrinciple,处置原则,BELONGS_TO,属于,MP_AdverseReactionTriage,ManagementPrinciple,不良反应分级处置原则
-FW_NursingTheory,NursingTheory,护理理论,BELONGS_TO,属于,NT_EarlyWarning,NursingTheory,早期预警
-FW_NursingTheory,NursingTheory,护理理论,BELONGS_TO,属于,NT_SelfCareTheory,NursingTheory,自护理论
-FW_DiseaseEducation,DiseaseEducation,疾病科普,BELONGS_TO,属于,DE_PreExamNotice,DiseaseEducation,检查前注意事项科普
-FW_DiseaseEducation,DiseaseEducation,疾病科普,BELONGS_TO,属于,DE_AfterExamCare,DiseaseEducation,检查后观察与护理科普
-FW_DiseaseEducation,DiseaseEducation,疾病科普,BELONGS_TO,属于,DE_AllergyDisclosure,DiseaseEducation,过敏史告知科普
-FW_DiseaseEducation,DiseaseEducation,疾病科普,BELONGS_TO,属于,DE_ExtravasationHomeCare,DiseaseEducation,外渗居家护理科普
-FW_DiseaseEducation,DiseaseEducation,疾病科普,BELONGS_TO,属于,DE_EmergencyKnowledge,DiseaseEducation,急救知识科普
-FW_SymptomCategory,SymptomCategory,症状分类,BELONGS_TO,属于,SC_AdverseSpectrum,SymptomCategory,碘对比剂不良反应谱
-FW_SymptomCategory,SymptomCategory,症状分类,BELONGS_TO,属于,SC_Hypersensitivity,SymptomCategory,过敏反应谱
-FW_SymptomCategory,SymptomCategory,症状分类,BELONGS_TO,属于,SC_ExtravasationSpectrum,SymptomCategory,静脉外渗反应谱
-FW_AssessmentTool,AssessmentTool,评估工具,BELONGS_TO,属于,AT_AllergyHistory,AssessmentTool,过敏史询问
-FW_AssessmentTool,AssessmentTool,评估工具,BELONGS_TO,属于,AT_ExtravasationAssessment,AssessmentTool,外渗风险评估
-FW_AssessmentTool,AssessmentTool,评估工具,BELONGS_TO,属于,AT_VascularAssessment,AssessmentTool,血管条件评估
-FW_RiskFactor,RiskFactor,高危因素识别,BELONGS_TO,属于,RF_ContrastAllergyHistory,RiskFactor,既往碘对比剂过敏史
-FW_RiskFactor,RiskFactor,高危因素识别,BELONGS_TO,属于,RF_UncontrolledAsthma,RiskFactor,未控制的哮喘
-FW_RiskFactor,RiskFactor,高危因素识别,BELONGS_TO,属于,RF_AgeExtremes,RiskFactor,高龄或低龄
-FW_RiskFactor,RiskFactor,高危因素识别,BELONGS_TO,属于,RF_FragileVein,RiskFactor,静脉条件差
-FW_RiskFactor,RiskFactor,高危因素识别,BELONGS_TO,属于,RF_HighPressureInjection,RiskFactor,高压注射
-FW_RiskFactor,RiskFactor,高危因素识别,BELONGS_TO,属于,RF_NoSalineFlush,RiskFactor,未做生理盐水试推
-FW_PharmacologicalManagement,PharmacologicalManagement,药物管理,BELONGS_TO,属于,PM_AdrenalineIM,PharmacologicalManagement,肌内注射肾上腺素
-FW_PharmacologicalManagement,PharmacologicalManagement,药物管理,BELONGS_TO,属于,PM_Corticosteroid,PharmacologicalManagement,糖皮质激素
-FW_PharmacologicalManagement,PharmacologicalManagement,药物管理,BELONGS_TO,属于,PM_Antihistamine,PharmacologicalManagement,抗组胺药
-FW_PharmacologicalManagement,PharmacologicalManagement,药物管理,BELONGS_TO,属于,PM_MagnesiumSulfate,PharmacologicalManagement,50%硫酸镁湿敷
-FW_PharmacologicalManagement,PharmacologicalManagement,药物管理,BELONGS_TO,属于,PM_DexamethasoneWetCompress,PharmacologicalManagement,0.05%地塞米松湿敷
-FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理,BELONGS_TO,属于,NPM_StopInjection,NonPharmacologicalManagement,立即停止注射
-FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理,BELONGS_TO,属于,NPM_KeepCatheter,NonPharmacologicalManagement,保留静脉留置针
-FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理,BELONGS_TO,属于,NPM_LimbElevation,NonPharmacologicalManagement,患肢抬高
-FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理,BELONGS_TO,属于,NPM_ColdCompress,NonPharmacologicalManagement,局部冷敷
-FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理,BELONGS_TO,属于,NPM_CloseObservation,NonPharmacologicalManagement,密切观察
-FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理,BELONGS_TO,属于,NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理
-FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理,BELONGS_TO,属于,NPM_VascularVisualization,NonPharmacologicalManagement,血管可视化
-FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理,BELONGS_TO,属于,NPM_PsychologicalSupport,NonPharmacologicalManagement,心理疏导
-FW_SymptomStatus,SymptomStatus,症状现状,BELONGS_TO,属于,SS_MildResolved,SymptomStatus,轻度反应已缓解
-FW_SymptomStatus,SymptomStatus,症状现状,BELONGS_TO,属于,SS_SevereRecovered,SymptomStatus,重度反应已恢复
-FW_FunctionalStatus,FunctionalStatus,功能状况,BELONGS_TO,属于,FS_LimbFunction,FunctionalStatus,患肢功能状态
-DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
-DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗,BELONGS_TO,属于,FW_Exam,Exam,辅助检查
-DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗,BELONGS_TO,属于,FW_ManagementPrinciple,ManagementPrinciple,处置原则
-DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗,BELONGS_TO,属于,FW_NursingTheory,NursingTheory,护理理论
-DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗,BELONGS_TO,属于,FW_DiseaseEducation,DiseaseEducation,疾病科普
+S_AdverseReaction,SymptomSign,不良反应,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
+S_Rash,SymptomSign,皮疹,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
+S_AllergicReaction,SymptomSign,过敏反应,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
+S_Urticaria,SymptomSign,荨麻疹,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
+S_Pruritus,SymptomSign,瘙痒,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
+S_FacialEdema,SymptomSign,颜面部水肿,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
+S_ThroatDiscomfort,SymptomSign,咽喉部不适,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
+S_ChestTightness,SymptomSign,胸闷,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
+S_GeneralizedWeakness,SymptomSign,全身无力,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
+S_AnaphylacticShock,SymptomSign,过敏性休克,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
+S_Extravasation,SymptomSign,碘对比剂外渗,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
+S_ExtravasationSwelling,SymptomSign,局部肿胀,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
+S_ExtravasationPain,SymptomSign,局部疼痛,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
+S_ExtravasationRedness,SymptomSign,局部发红,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
+S_ExtravasationCoolSkin,SymptomSign,皮肤发凉,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
+S_ExtravasationPallor,SymptomSign,皮肤发白发紧,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
+E_CTEnhancedScan,Exam,CT增强扫描,BELONGS_TO,属于,FW_Exam,Exam,辅助检查
+E_ContrastInjection,Exam,碘对比剂,BELONGS_TO,属于,FW_Exam,Exam,辅助检查
+MP_NursingMeasures,ManagementPrinciple,护理措施,BELONGS_TO,属于,FW_ManagementPrinciple,ManagementPrinciple,处置原则
+MP_NursingPrevention,ManagementPrinciple,护理预防,BELONGS_TO,属于,FW_ManagementPrinciple,ManagementPrinciple,处置原则
+MP_NursingIntervention,ManagementPrinciple,护理干预,BELONGS_TO,属于,FW_ManagementPrinciple,ManagementPrinciple,处置原则
+MP_ExtravasationPrinciple,ManagementPrinciple,外渗处置原则,BELONGS_TO,属于,FW_ManagementPrinciple,ManagementPrinciple,处置原则
+MP_AdverseReactionTriage,ManagementPrinciple,不良反应分级处置原则,BELONGS_TO,属于,FW_ManagementPrinciple,ManagementPrinciple,处置原则
+NT_EarlyWarning,NursingTheory,早期预警,BELONGS_TO,属于,FW_NursingTheory,NursingTheory,护理理论
+NT_SelfCareTheory,NursingTheory,自护理论,BELONGS_TO,属于,FW_NursingTheory,NursingTheory,护理理论
+DE_PreExamNotice,DiseaseEducation,检查前注意事项科普,BELONGS_TO,属于,FW_DiseaseEducation,DiseaseEducation,疾病科普
+DE_AfterExamCare,DiseaseEducation,检查后观察与护理科普,BELONGS_TO,属于,FW_DiseaseEducation,DiseaseEducation,疾病科普
+DE_AllergyDisclosure,DiseaseEducation,过敏史告知科普,BELONGS_TO,属于,FW_DiseaseEducation,DiseaseEducation,疾病科普
+DE_ExtravasationHomeCare,DiseaseEducation,外渗居家护理科普,BELONGS_TO,属于,FW_DiseaseEducation,DiseaseEducation,疾病科普
+DE_EmergencyKnowledge,DiseaseEducation,急救知识科普,BELONGS_TO,属于,FW_DiseaseEducation,DiseaseEducation,疾病科普
+SC_AdverseSpectrum,SymptomCategory,碘对比剂不良反应谱,BELONGS_TO,属于,FW_SymptomCategory,SymptomCategory,症状分类
+SC_Hypersensitivity,SymptomCategory,过敏反应谱,BELONGS_TO,属于,FW_SymptomCategory,SymptomCategory,症状分类
+SC_ExtravasationSpectrum,SymptomCategory,静脉外渗反应谱,BELONGS_TO,属于,FW_SymptomCategory,SymptomCategory,症状分类
+AT_AllergyHistory,AssessmentTool,过敏史询问,BELONGS_TO,属于,FW_AssessmentTool,AssessmentTool,评估工具
+AT_ExtravasationAssessment,AssessmentTool,外渗风险评估,BELONGS_TO,属于,FW_AssessmentTool,AssessmentTool,评估工具
+AT_VascularAssessment,AssessmentTool,血管条件评估,BELONGS_TO,属于,FW_AssessmentTool,AssessmentTool,评估工具
+RF_ContrastAllergyHistory,RiskFactor,既往碘对比剂过敏史,BELONGS_TO,属于,FW_RiskFactor,RiskFactor,高危因素识别
+RF_UncontrolledAsthma,RiskFactor,未控制的哮喘,BELONGS_TO,属于,FW_RiskFactor,RiskFactor,高危因素识别
+RF_AgeExtremes,RiskFactor,高龄或低龄,BELONGS_TO,属于,FW_RiskFactor,RiskFactor,高危因素识别
+RF_FragileVein,RiskFactor,静脉条件差,BELONGS_TO,属于,FW_RiskFactor,RiskFactor,高危因素识别
+RF_HighPressureInjection,RiskFactor,高压注射,BELONGS_TO,属于,FW_RiskFactor,RiskFactor,高危因素识别
+RF_NoSalineFlush,RiskFactor,未做生理盐水试推,BELONGS_TO,属于,FW_RiskFactor,RiskFactor,高危因素识别
+PM_AdrenalineIM,PharmacologicalManagement,肌内注射肾上腺素,BELONGS_TO,属于,FW_PharmacologicalManagement,PharmacologicalManagement,药物管理
+PM_Corticosteroid,PharmacologicalManagement,糖皮质激素,BELONGS_TO,属于,FW_PharmacologicalManagement,PharmacologicalManagement,药物管理
+PM_Antihistamine,PharmacologicalManagement,抗组胺药,BELONGS_TO,属于,FW_PharmacologicalManagement,PharmacologicalManagement,药物管理
+PM_MagnesiumSulfate,PharmacologicalManagement,50%硫酸镁湿敷,BELONGS_TO,属于,FW_PharmacologicalManagement,PharmacologicalManagement,药物管理
+PM_DexamethasoneWetCompress,PharmacologicalManagement,0.05%地塞米松湿敷,BELONGS_TO,属于,FW_PharmacologicalManagement,PharmacologicalManagement,药物管理
+NPM_StopInjection,NonPharmacologicalManagement,立即停止注射,BELONGS_TO,属于,FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理
+NPM_KeepCatheter,NonPharmacologicalManagement,保留静脉留置针,BELONGS_TO,属于,FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理
+NPM_LimbElevation,NonPharmacologicalManagement,患肢抬高,BELONGS_TO,属于,FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理
+NPM_ColdCompress,NonPharmacologicalManagement,局部冷敷,BELONGS_TO,属于,FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理
+NPM_CloseObservation,NonPharmacologicalManagement,密切观察,BELONGS_TO,属于,FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理
+NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理,BELONGS_TO,属于,FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理
+NPM_VascularVisualization,NonPharmacologicalManagement,血管可视化,BELONGS_TO,属于,FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理
+NPM_PsychologicalSupport,NonPharmacologicalManagement,心理疏导,BELONGS_TO,属于,FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理
+SS_MildResolved,SymptomStatus,轻度反应已缓解,BELONGS_TO,属于,FW_SymptomStatus,SymptomStatus,症状现状
+SS_SevereRecovered,SymptomStatus,重度反应已恢复,BELONGS_TO,属于,FW_SymptomStatus,SymptomStatus,症状现状
+FS_LimbFunction,FunctionalStatus,患肢功能状态,BELONGS_TO,属于,FW_FunctionalStatus,FunctionalStatus,功能状况
+FW_SymptomSign,SymptomSign,症状体征,BELONGS_TO,属于,DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗
+FW_Exam,Exam,辅助检查,BELONGS_TO,属于,DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗
+FW_ManagementPrinciple,ManagementPrinciple,处置原则,BELONGS_TO,属于,DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗
+FW_NursingTheory,NursingTheory,护理理论,BELONGS_TO,属于,DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗
+FW_DiseaseEducation,DiseaseEducation,疾病科普,BELONGS_TO,属于,DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗
+FW_SymptomSign,SymptomSign,症状体征,SUPPORTED_BY,有文献支持,R01,Reference,美国放射学会对比剂手册
+FW_SymptomSign,SymptomSign,症状体征,SUPPORTED_BY,有文献支持,R12,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
+FW_SymptomSign,SymptomSign,症状体征,SUPPORTED_BY,有文献支持,R14,Reference,对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）
+FW_SymptomSign,SymptomSign,症状体征,SUPPORTED_BY,有文献支持,R13,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
+FW_SymptomSign,SymptomSign,症状体征,SUPPORTED_BY,有文献支持,R21,Reference,"碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析"
+FW_SymptomSign,SymptomSign,症状体征,SUPPORTED_BY,有文献支持,R23,Reference,对比剂即刻超敏反应危险因素的系统评价与 Meta 分析
+FW_SymptomSign,SymptomSign,症状体征,SUPPORTED_BY,有文献支持,R16,Reference,过敏反应：2023 年实践参数更新
+FW_SymptomSign,SymptomSign,症状体征,SUPPORTED_BY,有文献支持,R02,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
+FW_SymptomSign,SymptomSign,症状体征,SUPPORTED_BY,有文献支持,R04,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+FW_SymptomSign,SymptomSign,症状体征,SUPPORTED_BY,有文献支持,R17,Reference,放射科碘对比剂外渗影响因素的系统评价
+FW_SymptomSign,SymptomSign,症状体征,SUPPORTED_BY,有文献支持,R09,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
+FW_SymptomSign,SymptomSign,症状体征,SUPPORTED_BY,有文献支持,R10,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
+FW_SymptomSign,SymptomSign,症状体征,SUPPORTED_BY,有文献支持,R22,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
+FW_Exam,Exam,辅助检查,SUPPORTED_BY,有文献支持,R01,Reference,美国放射学会对比剂手册
+FW_Exam,Exam,辅助检查,SUPPORTED_BY,有文献支持,R03,Reference,碘对比剂使用指南（第2版）
+FW_Exam,Exam,辅助检查,SUPPORTED_BY,有文献支持,R10,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
+FW_Exam,Exam,辅助检查,SUPPORTED_BY,有文献支持,R07,Reference,影像科碘对比剂输注安全专家共识
+FW_Exam,Exam,辅助检查,SUPPORTED_BY,有文献支持,R15,Reference,欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评
+FW_ManagementPrinciple,ManagementPrinciple,处置原则,SUPPORTED_BY,有文献支持,R04,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+FW_ManagementPrinciple,ManagementPrinciple,处置原则,SUPPORTED_BY,有文献支持,R07,Reference,影像科碘对比剂输注安全专家共识
+FW_ManagementPrinciple,ManagementPrinciple,处置原则,SUPPORTED_BY,有文献支持,R01,Reference,美国放射学会对比剂手册
+FW_ManagementPrinciple,ManagementPrinciple,处置原则,SUPPORTED_BY,有文献支持,R09,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
+FW_ManagementPrinciple,ManagementPrinciple,处置原则,SUPPORTED_BY,有文献支持,R02,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
+FW_ManagementPrinciple,ManagementPrinciple,处置原则,SUPPORTED_BY,有文献支持,R16,Reference,过敏反应：2023 年实践参数更新
+FW_ManagementPrinciple,ManagementPrinciple,处置原则,SUPPORTED_BY,有文献支持,R12,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
+FW_ManagementPrinciple,ManagementPrinciple,处置原则,SUPPORTED_BY,有文献支持,R13,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
+FW_NursingTheory,NursingTheory,护理理论,SUPPORTED_BY,有文献支持,R13,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
+FW_NursingTheory,NursingTheory,护理理论,SUPPORTED_BY,有文献支持,R16,Reference,过敏反应：2023 年实践参数更新
+FW_NursingTheory,NursingTheory,护理理论,SUPPORTED_BY,有文献支持,R24,Reference,Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析
+FW_DiseaseEducation,DiseaseEducation,疾病科普,SUPPORTED_BY,有文献支持,R03,Reference,碘对比剂使用指南（第2版）
+FW_DiseaseEducation,DiseaseEducation,疾病科普,SUPPORTED_BY,有文献支持,R20,Reference,影像护理学
+FW_DiseaseEducation,DiseaseEducation,疾病科普,SUPPORTED_BY,有文献支持,R01,Reference,美国放射学会对比剂手册
+FW_DiseaseEducation,DiseaseEducation,疾病科普,SUPPORTED_BY,有文献支持,R07,Reference,影像科碘对比剂输注安全专家共识
+FW_DiseaseEducation,DiseaseEducation,疾病科普,SUPPORTED_BY,有文献支持,R12,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
+FW_DiseaseEducation,DiseaseEducation,疾病科普,SUPPORTED_BY,有文献支持,R04,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+FW_DiseaseEducation,DiseaseEducation,疾病科普,SUPPORTED_BY,有文献支持,R02,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
+FW_DiseaseEducation,DiseaseEducation,疾病科普,SUPPORTED_BY,有文献支持,R16,Reference,过敏反应：2023 年实践参数更新
+FW_DiseaseEducation,DiseaseEducation,疾病科普,SUPPORTED_BY,有文献支持,R13,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
+FW_SymptomCategory,SymptomCategory,症状分类,SUPPORTED_BY,有文献支持,R01,Reference,美国放射学会对比剂手册
+FW_SymptomCategory,SymptomCategory,症状分类,SUPPORTED_BY,有文献支持,R12,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
+FW_SymptomCategory,SymptomCategory,症状分类,SUPPORTED_BY,有文献支持,R02,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
+FW_AssessmentTool,AssessmentTool,评估工具,SUPPORTED_BY,有文献支持,R03,Reference,碘对比剂使用指南（第2版）
+FW_AssessmentTool,AssessmentTool,评估工具,SUPPORTED_BY,有文献支持,R12,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
+FW_AssessmentTool,AssessmentTool,评估工具,SUPPORTED_BY,有文献支持,R04,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+FW_AssessmentTool,AssessmentTool,评估工具,SUPPORTED_BY,有文献支持,R17,Reference,放射科碘对比剂外渗影响因素的系统评价
+FW_AssessmentTool,AssessmentTool,评估工具,SUPPORTED_BY,有文献支持,R22,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
+FW_AssessmentTool,AssessmentTool,评估工具,SUPPORTED_BY,有文献支持,R08,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
+FW_AssessmentTool,AssessmentTool,评估工具,SUPPORTED_BY,有文献支持,R09,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
+FW_RiskFactor,RiskFactor,高危因素识别,SUPPORTED_BY,有文献支持,R12,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
+FW_RiskFactor,RiskFactor,高危因素识别,SUPPORTED_BY,有文献支持,R13,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
+FW_RiskFactor,RiskFactor,高危因素识别,SUPPORTED_BY,有文献支持,R23,Reference,对比剂即刻超敏反应危险因素的系统评价与 Meta 分析
+FW_RiskFactor,RiskFactor,高危因素识别,SUPPORTED_BY,有文献支持,R04,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+FW_RiskFactor,RiskFactor,高危因素识别,SUPPORTED_BY,有文献支持,R17,Reference,放射科碘对比剂外渗影响因素的系统评价
+FW_RiskFactor,RiskFactor,高危因素识别,SUPPORTED_BY,有文献支持,R02,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
+FW_RiskFactor,RiskFactor,高危因素识别,SUPPORTED_BY,有文献支持,R09,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
+FW_PharmacologicalManagement,PharmacologicalManagement,药物管理,SUPPORTED_BY,有文献支持,R16,Reference,过敏反应：2023 年实践参数更新
+FW_PharmacologicalManagement,PharmacologicalManagement,药物管理,SUPPORTED_BY,有文献支持,R12,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
+FW_PharmacologicalManagement,PharmacologicalManagement,药物管理,SUPPORTED_BY,有文献支持,R13,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
+FW_PharmacologicalManagement,PharmacologicalManagement,药物管理,SUPPORTED_BY,有文献支持,R07,Reference,影像科碘对比剂输注安全专家共识
+FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理,SUPPORTED_BY,有文献支持,R02,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
+FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理,SUPPORTED_BY,有文献支持,R04,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理,SUPPORTED_BY,有文献支持,R07,Reference,影像科碘对比剂输注安全专家共识
+FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理,SUPPORTED_BY,有文献支持,R01,Reference,美国放射学会对比剂手册
+FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理,SUPPORTED_BY,有文献支持,R03,Reference,碘对比剂使用指南（第2版）
+FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理,SUPPORTED_BY,有文献支持,R09,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
+FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理,SUPPORTED_BY,有文献支持,R21,Reference,"碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析"
+FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理,SUPPORTED_BY,有文献支持,R08,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
+FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理,SUPPORTED_BY,有文献支持,R20,Reference,影像护理学
+FW_SymptomStatus,SymptomStatus,症状现状,SUPPORTED_BY,有文献支持,R12,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
+FW_SymptomStatus,SymptomStatus,症状现状,SUPPORTED_BY,有文献支持,R07,Reference,影像科碘对比剂输注安全专家共识
+FW_SymptomStatus,SymptomStatus,症状现状,SUPPORTED_BY,有文献支持,R16,Reference,过敏反应：2023 年实践参数更新
+FW_SymptomStatus,SymptomStatus,症状现状,SUPPORTED_BY,有文献支持,R13,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
+FW_FunctionalStatus,FunctionalStatus,功能状况,SUPPORTED_BY,有文献支持,R04,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+FW_FunctionalStatus,FunctionalStatus,功能状况,SUPPORTED_BY,有文献支持,R02,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
+NT_SelfCareTheory,NursingTheory,自护理论,SUPPORTED_BY,有文献支持,R24,Reference,Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析
+R24,Reference,Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析,SUPPORTED_BY,有文献支持,R24,Reference,Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析

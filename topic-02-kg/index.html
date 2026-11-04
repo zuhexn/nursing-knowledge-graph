@@ -910,35 +910,49 @@
     var fws = {}, any = false;
     (G.nodes || []).forEach(function (n) { if (isFramework(n)) { fws[n.id] = n; any = true; } });
     if (!any) return null;
+    /* 「属于」的方向按客户规范 §四 = 细类 → 粗类：
+         成员 属于 框架 · 二级框架 属于 一级框架 · 一级框架 属于 模块根
+       ⇒ 一律是「**指向粗的那一端是父**」：一条框架边的 target 就是父。 */
     var parent = {}, owned = {}, ownerOf = {}, subOf = {}, moduleRoot = null;
     (G.edges || []).forEach(function (e) {
       if (e.role !== FRAME_EDGE_ROLE) return;
       var s = NODE[e.source], t = NODE[e.target];
       if (!s || !t) return;
-      if (isFramework(s) && isFramework(t)) { parent[e.source] = e.target; return; }
-      if (isFramework(t) && !isFramework(s)) { moduleRoot = e.source; return; }   /* 模块根 → 一级框架 */
-      if (isFramework(s) && !isFramework(t)) {
-        (owned[e.source] = owned[e.source] || []).push(e.target);
-        ownerOf[e.target] = e.source;
+      if (isFramework(s) && isFramework(t)) {
+        parent[e.source] = e.target;                       /* 二级框架 → 一级框架 */
+        (subOf[e.target] = subOf[e.target] || []).push(e.source);
+        return;
+      }
+      if (!isFramework(s) && isFramework(t)) {             /* 成员 → 框架 */
+        (owned[e.target] = owned[e.target] || []).push(e.source);
+        if (!ownerOf[e.source]) ownerOf[e.source] = e.target;
+        return;
+      }
+      if (isFramework(s) && !isFramework(t)) {             /* 一级框架 → 模块根 */
+        moduleRoot = e.target;
+        (subOf[e.target] = subOf[e.target] || []).push(e.source);
       }
     });
-    Object.keys(parent).forEach(function (cid) {
-      var pid = parent[cid];
-      (subOf[pid] = subOf[pid] || []).push(cid);
-    });
-    var roots = Object.keys(fws).filter(function (id) { return !parent[id]; });
+    var roots = Object.keys(fws).filter(function (id) { return !parent[id] && id !== moduleRoot; });
     /* 同归属内的「属于」边 = 缩进层级（数据自己已有的上下级，我们不发明层级） */
     var childOf = {};
+    /* 跨归属的「属于」边 = 该原则另外挂着的措施（如「护理预防」挂着评估工具与
+       非药物管理里的措施）。这类节点会**同时**出现在自己的框架和这条原则下 ——
+       知识图谱本来就允许多重归属，不是重复数据。 */
+    var crossChild = {};
     (G.edges || []).forEach(function (e) {
       if (e.role === FRAME_EDGE_ROLE) return;
       if (!isContainEdge(e)) return;
       var p = NODE[e.target], c = NODE[e.source];      /* source 属于 target ⇒ source 是下级 */
       if (!p || !c || isFramework(p) || isFramework(c)) return;
-      if (!ownerOf[p.id] || ownerOf[p.id] !== ownerOf[c.id]) return;
-      (childOf[p.id] = childOf[p.id] || []).push(c.id);
+      var op = ownerOf[p.id], oc = ownerOf[c.id];
+      if (!op || !oc) return;
+      if (op === oc) (childOf[p.id] = childOf[p.id] || []).push(c.id);
+      else (crossChild[p.id] = crossChild[p.id] || []).push(c.id);
     });
     return { fws: fws, parent: parent, owned: owned, ownerOf: ownerOf,
-             subOf: subOf, roots: roots, childOf: childOf, moduleRoot: moduleRoot };
+             subOf: subOf, roots: roots, childOf: childOf, crossChild: crossChild,
+             moduleRoot: moduleRoot };
   }
   var FRAME_TREE = buildFrameTree();
   /* 框架占住的类型（这些类型不再单独成块 —— 它们已经在框架里） */
@@ -1076,6 +1090,11 @@
     var html = nodeRow(NODE[id], depth);
     ((FRAME_TREE.childOf[id]) || []).forEach(function (kid) {
       html += frameEntryTree(kid, depth + 1);
+    });
+    /* 跨归属挂在这条原则下的措施（如「护理预防」挂着评估工具与非药物管理里的措施）——
+       知识图谱允许多重归属：这些条目在自己的框架下也在，这里是第二个落点。 */
+    ((FRAME_TREE.crossChild[id]) || []).forEach(function (kid) {
+      if (NODE[kid]) html += nodeRow(NODE[kid], depth);
     });
     return html;
   }

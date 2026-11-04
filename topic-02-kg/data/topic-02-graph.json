@@ -5813,7 +5813,7 @@
         },
         {
           "k": "作者",
-          "v": "Matthews A, Haas DM, O'Mathúna DP, Dowswell T, Doyle M"
+          "v": "Matthews A, Haas DM, O'Mathúna DP, Dowswell T"
         },
         {
           "k": "期刊/出处",
@@ -5839,14 +5839,14 @@
       "evidence": [
         {
           "type": "系统评价",
-          "author": "Matthews A, Haas DM, O'Mathúna DP, Dowswell T, Doyle M",
+          "author": "Matthews A, Haas DM, O'Mathúna DP, Dowswell T",
           "title": "妊娠早期恶心呕吐的干预措施",
           "journal": "考克兰系统评价数据库",
           "year": 2015,
           "grade": "系统评价",
           "locate": "DOI 10.1002/14651858.CD007575.pub4",
           "ref": "R18",
-          "cite": "Matthews A, Haas DM, O'Mathúna DP, Dowswell T, Doyle M/妊娠早期恶心呕吐的干预措施/考克兰系统评价数据库/2015"
+          "cite": "Matthews A, Haas DM, O'Mathúna DP, Dowswell T/妊娠早期恶心呕吐的干预措施/考克兰系统评价数据库/2015"
         }
       ]
     },
@@ -9877,501 +9877,1065 @@
       "role": "framework"
     },
     {
-      "source": "FW_SymptomExperience",
-      "target": "t02-exp-nausea",
+      "source": "t02-exp-nausea",
+      "target": "FW_SymptomExperience",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-exp-vomiting",
+      "target": "FW_SymptomExperience",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-strategy-cinv",
+      "target": "FW_ManagementStrategy",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-strategy-nvp",
+      "target": "FW_ManagementStrategy",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-strategy-ponv",
+      "target": "FW_ManagementStrategy",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-strategy-integrated",
+      "target": "FW_ManagementStrategy",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-outcome-incidence",
+      "target": "FW_ManagementOutcome",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-outcome-complete-response",
+      "target": "FW_ManagementOutcome",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-outcome-severity",
+      "target": "FW_ManagementOutcome",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-outcome-eating",
+      "target": "FW_ManagementOutcome",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-outcome-weight",
+      "target": "FW_ManagementOutcome",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-outcome-qol",
+      "target": "FW_ManagementOutcome",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-outcome-adherence",
+      "target": "FW_ManagementOutcome",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-outcome-hospitalization",
+      "target": "FW_ManagementOutcome",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-cat-cinv",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-cat-rinv",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-cat-nvp",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-cat-hg",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-cat-ponv",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-cat-acute",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-cat-delayed",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-cat-anticipatory",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-cat-breakthrough",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-tool-ctca",
+      "target": "FW_AssessmentTool",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-tool-eortc-qlq-c30",
+      "target": "FW_AssessmentTool",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-tool-mascc-mat",
+      "target": "FW_AssessmentTool",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-tool-apfel",
+      "target": "FW_AssessmentTool",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-tool-puqe",
+      "target": "FW_AssessmentTool",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-risk-female",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-risk-young-age",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-risk-non-smoker",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-risk-motion-sickness",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-risk-prior-nv",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-risk-anxiety",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-risk-opioid",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-risk-sleep-disturbance",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-risk-low-alcohol",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-risk-no-prior-meal",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-pharm-5ht3-ra",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-pharm-dexamethasone",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-pharm-nk1-ra",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-pharm-olanzapine",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-pharm-metoclopramide",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-pharm-dopamine-antagonist",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-pharm-antihistamine",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-pharm-vitamin-b6",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-pharm-enteral-nutrition",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-pharm-thiamine",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-nonpharm-lifestyle",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-nonpharm-acupoint",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-nonpharm-fluid",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-nonpharm-aromatherapy",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-nonpharm-ginger",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-nonpharm-health-education",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-nonpharm-oral-care",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-nonpharm-behavioral",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-status-cinv-incidence",
+      "target": "FW_SymptomStatus",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-status-ponv-incidence",
+      "target": "FW_SymptomStatus",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-status-nvp-incidence",
+      "target": "FW_SymptomStatus",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-status-hg-incidence",
+      "target": "FW_SymptomStatus",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-status-anticipatory-incidence",
+      "target": "FW_SymptomStatus",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-status-control-rate",
+      "target": "FW_SymptomStatus",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-status-dehydration",
+      "target": "FW_SymptomStatus",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-status-electrolyte",
+      "target": "FW_SymptomStatus",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-status-retching",
+      "target": "FW_SymptomStatus",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-func-eating",
+      "target": "FW_FunctionalStatus",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-func-weight",
+      "target": "FW_FunctionalStatus",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-func-qol",
+      "target": "FW_FunctionalStatus",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-func-self-care",
+      "target": "FW_FunctionalStatus",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-func-activity",
+      "target": "FW_FunctionalStatus",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "t02-func-aspiration-risk",
+      "target": "FW_FunctionalStatus",
       "type": "BELONGS_TO",
       "label": "属于",
       "role": "framework"
     },
     {
       "source": "FW_SymptomExperience",
-      "target": "t02-exp-vomiting",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomExperience",
+      "target": "t02-ref-13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomExperience",
+      "target": "t02-ref-02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomExperience",
+      "target": "t02-ref-18",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_ManagementStrategy",
-      "target": "t02-strategy-cinv",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_ManagementStrategy",
-      "target": "t02-strategy-nvp",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_ManagementStrategy",
-      "target": "t02-strategy-ponv",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_ManagementStrategy",
-      "target": "t02-strategy-integrated",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-06",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementStrategy",
+      "target": "t02-ref-07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementStrategy",
+      "target": "t02-ref-03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementStrategy",
+      "target": "t02-ref-04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementStrategy",
+      "target": "t02-ref-11",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementStrategy",
+      "target": "t02-ref-18",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementStrategy",
+      "target": "t02-ref-05",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementStrategy",
+      "target": "t02-ref-17",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementStrategy",
+      "target": "t02-ref-16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementStrategy",
+      "target": "t02-ref-13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_ManagementOutcome",
-      "target": "t02-outcome-incidence",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_ManagementOutcome",
-      "target": "t02-outcome-complete-response",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_ManagementOutcome",
-      "target": "t02-outcome-severity",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_ManagementOutcome",
-      "target": "t02-outcome-eating",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_ManagementOutcome",
-      "target": "t02-outcome-weight",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_ManagementOutcome",
-      "target": "t02-outcome-qol",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-20",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_ManagementOutcome",
-      "target": "t02-outcome-adherence",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-19",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_ManagementOutcome",
-      "target": "t02-outcome-hospitalization",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-21",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementOutcome",
+      "target": "t02-ref-04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementOutcome",
+      "target": "t02-ref-13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementOutcome",
+      "target": "t02-ref-09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementOutcome",
+      "target": "t02-ref-07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementOutcome",
+      "target": "t02-ref-17",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_SymptomCategory",
-      "target": "t02-cat-cinv",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_SymptomCategory",
-      "target": "t02-cat-rinv",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_SymptomCategory",
-      "target": "t02-cat-nvp",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_SymptomCategory",
-      "target": "t02-cat-hg",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-06",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_SymptomCategory",
-      "target": "t02-cat-ponv",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_SymptomCategory",
-      "target": "t02-cat-acute",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_SymptomCategory",
-      "target": "t02-cat-delayed",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-18",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_SymptomCategory",
-      "target": "t02-cat-anticipatory",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-11",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_SymptomCategory",
-      "target": "t02-cat-breakthrough",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "t02-ref-05",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "t02-ref-07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_AssessmentTool",
-      "target": "t02-tool-ctca",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_AssessmentTool",
-      "target": "t02-tool-eortc-qlq-c30",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_AssessmentTool",
-      "target": "t02-tool-mascc-mat",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_AssessmentTool",
-      "target": "t02-tool-apfel",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_AssessmentTool",
-      "target": "t02-tool-puqe",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-05",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "t02-ref-01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "t02-ref-04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "t02-ref-18",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_RiskFactor",
-      "target": "t02-risk-female",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_RiskFactor",
-      "target": "t02-risk-young-age",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_RiskFactor",
-      "target": "t02-risk-non-smoker",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-05",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_RiskFactor",
-      "target": "t02-risk-motion-sickness",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_RiskFactor",
-      "target": "t02-risk-prior-nv",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-06",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_RiskFactor",
-      "target": "t02-risk-anxiety",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_RiskFactor",
-      "target": "t02-risk-opioid",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_RiskFactor",
-      "target": "t02-risk-sleep-disturbance",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_RiskFactor",
-      "target": "t02-risk-low-alcohol",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_RiskFactor",
-      "target": "t02-risk-no-prior-meal",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_PharmacologicalManagement",
-      "target": "t02-pharm-5ht3-ra",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_PharmacologicalManagement",
-      "target": "t02-pharm-dexamethasone",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_PharmacologicalManagement",
-      "target": "t02-pharm-nk1-ra",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_PharmacologicalManagement",
-      "target": "t02-pharm-olanzapine",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-06",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_PharmacologicalManagement",
-      "target": "t02-pharm-metoclopramide",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_PharmacologicalManagement",
-      "target": "t02-pharm-dopamine-antagonist",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-11",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_PharmacologicalManagement",
-      "target": "t02-pharm-antihistamine",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-18",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_PharmacologicalManagement",
-      "target": "t02-pharm-vitamin-b6",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-14",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_PharmacologicalManagement",
-      "target": "t02-pharm-enteral-nutrition",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-15",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_PharmacologicalManagement",
-      "target": "t02-pharm-thiamine",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_NonPharmacologicalManagement",
-      "target": "t02-nonpharm-lifestyle",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_NonPharmacologicalManagement",
-      "target": "t02-nonpharm-acupoint",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-15",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_NonPharmacologicalManagement",
-      "target": "t02-nonpharm-fluid",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-05",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_NonPharmacologicalManagement",
-      "target": "t02-nonpharm-aromatherapy",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-19",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_NonPharmacologicalManagement",
-      "target": "t02-nonpharm-ginger",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-21",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_NonPharmacologicalManagement",
-      "target": "t02-nonpharm-health-education",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-11",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_NonPharmacologicalManagement",
-      "target": "t02-nonpharm-oral-care",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-17",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_NonPharmacologicalManagement",
-      "target": "t02-nonpharm-behavioral",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "t02-ref-20",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "t02-ref-18",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "t02-ref-13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "t02-ref-06",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_SymptomStatus",
-      "target": "t02-status-cinv-incidence",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_SymptomStatus",
-      "target": "t02-status-ponv-incidence",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_SymptomStatus",
-      "target": "t02-status-nvp-incidence",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_SymptomStatus",
-      "target": "t02-status-hg-incidence",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-05",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_SymptomStatus",
-      "target": "t02-status-anticipatory-incidence",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_SymptomStatus",
-      "target": "t02-status-control-rate",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-18",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_SymptomStatus",
-      "target": "t02-status-dehydration",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-06",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_SymptomStatus",
-      "target": "t02-status-electrolyte",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_SymptomStatus",
-      "target": "t02-status-retching",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-15",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomStatus",
+      "target": "t02-ref-16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomStatus",
+      "target": "t02-ref-13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_FunctionalStatus",
-      "target": "t02-func-eating",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_FunctionalStatus",
-      "target": "t02-func-weight",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_FunctionalStatus",
-      "target": "t02-func-qol",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_FunctionalStatus",
-      "target": "t02-func-self-care",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_FunctionalStatus",
-      "target": "t02-func-activity",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-17",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     },
     {
       "source": "FW_FunctionalStatus",
-      "target": "t02-func-aspiration-risk",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
+      "target": "t02-ref-05",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
     }
   ]
 }
