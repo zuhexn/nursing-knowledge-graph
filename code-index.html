@@ -77,37 +77,51 @@
 
   <div class="card">
     <h2>论文附件 1 的导入脚本（Excel → Neo4j）· 已脱敏</h2>
-    <p>这是论文二维码里那张代码图的内容：用 <code>pandas</code> 读五列表，再用 <code>py2neo</code> 写入本地 Neo4j。<b>这里做了两处脱敏</b>：口令写成 <code>***</code>；清空数据库那一行<b>已注释掉</b>（照抄原样会直接抹掉本机 Neo4j 里的库）。仅作形态说明。</p>
+    <p>这是论文附件 1 那张代码图的内容：<code>pandas</code> 读一张五列表，<code>py2neo</code> 写进<b>本机</b> Neo4j —— <b>先建节点，再建关系</b>。<b>这里做了两处脱敏</b>：口令写成 <code>***</code>；清空数据库那一行<b>已注释掉</b>（照抄原样会直接抹掉本机 Neo4j 里的库）。</p>
+    <div class="note">
+      ⚠️ 截图里的 <code>profile:</code> 与 <code>*labels:</code> 是 <b>PyCharm 的内联参数提示</b>（灰字），<b>不是源码</b> —— Python 没有「<code>参数名: 值</code>」这种写法。论文作者的真实源码是<b>位置参数</b>形态，下面这段已按源码还原，<b>可直接解析</b>。
+    </div>
 <pre><code>from py2neo import Graph, Node
 import pandas as pd
 
+
 def init_py2neo():
     t1 = pd.read_excel('工作簿1.xlsx').drop_duplicates()
-    g = Graph(profile="http://127.0.0.1:7474",
-              auth=("neo4j", "***"))
+    # t2 = pd.read_excel('newrel.xlsx').drop_duplicates()
+    # t1 = pd.concat((t1, t2)).drop_duplicates()
+    g = Graph("http://127.0.0.1:7474", auth=("neo4j", "***"))
     # g.delete_all()   ← 原脚本在此清空整个库；此处已注释，确认要重来再放开
 
     is_create = []
     for index, i in t1[['sub_type', 'sub_name']].iterrows():
         if i['sub_name'] not in is_create:
             is_create.append(i['sub_name'])
-            node = Node(*labels: i['sub_type'], name=i['sub_name'])
+            node = Node(i['sub_type'], name=i['sub_name'])
             g.create(node)
-    # 对象节点同理（obj_type / obj_name）
+    for index, i in t1[['obj_type', 'obj_name']].iterrows():
+        if i['obj_name'] not in is_create:
+            is_create.append(i['obj_name'])
+            node = Node(i['obj_type'], name=i['obj_name'])
+            g.create(node)
+
     for index, i in t1.iterrows():
-        query = ("match(p),(q) where p.name='%s' and q.name='%s' "
-                 "create (p)-[rel:%s]->(q)") % (
-                 i['sub_name'], i['obj_name'], i['rel_name'])
+        query = "match(p),(q) where p.name='%s'and q.name='%s' create (p)-[rel:%s]->(q)" % (
+            i['sub_name'], i['obj_name'], i['rel_name'])
+        print(query)
         try:
             g.run(query)
         except Exception as e:
             print(e)
 
+
 init_py2neo()</code></pre>
-    <div class="warn">
-      ⛔ 原脚本会 <b>清空当前 Neo4j 库</b>（这一行已在上方注释掉）、口令写死在代码里、Cypher 用字符串拼接 —— 只适合本机一次性导入，不要直接用在有数据的库上，也不要把口令提交到公开仓库。
+    <div class="note">
+      <b>五列表怎么变成图</b>：<code>sub_type</code> / <code>obj_type</code> → 节点的<b>标签</b>（属于哪一类）· <code>sub_name</code> / <code>obj_name</code> → 节点的 <code>name</code>（是哪一个）· <code>rel_name</code> → <b>关系类型</b>；方向恒为<b>主体 → 客体</b>。
     </div>
-    <p>本交付的实际构建脚本是各构建包里的 <code>build.py</code>：只做数据校验与静态页面生成，不连数据库；在线图谱也不需要 Neo4j。</p>
+    <div class="warn">
+      ⛔ 原脚本会 <b>清空当前 Neo4j 库</b>（这一行已在上方注释掉）、口令写死在代码里、Cypher 用字符串拼接、<code>match(p),(q)</code> 会把所有节点两两配对 —— 只适合本机一次性导入，不要直接用在有数据的库上，也不要把口令提交到公开仓库。
+    </div>
+    <p>本交付的实际构建脚本是各构建包里的 <code>build.py</code>：只做数据校验与静态页面生成，不连数据库；在线图谱也不需要 Neo4j。随包的 <b>Neo4j 导入包</b>用 <code>import.cypher</code>（<code>LOAD CSV</code> + <code>MERGE</code> + 唯一约束）：<b>可重复执行</b>、<b>不删数据</b>、匹配时带上标签不会两两配对、跑完自带条数自检。</p>
   </div>
 
   <div class="card">
