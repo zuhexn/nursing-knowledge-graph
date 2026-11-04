@@ -76,8 +76,8 @@
   </div>
 
   <div class="card">
-    <h2>论文附件 1 的原始导入脚本（Excel → Neo4j）</h2>
-    <p>这是论文二维码里那张代码图的内容：用 <code>pandas</code> 读五列表，再用 <code>py2neo</code> 写入本地 Neo4j。这里把口令隐去，仅作形态说明。</p>
+    <h2>论文附件 1 的导入脚本（Excel → Neo4j）· 已脱敏</h2>
+    <p>这是论文二维码里那张代码图的内容：用 <code>pandas</code> 读五列表，再用 <code>py2neo</code> 写入本地 Neo4j。<b>这里做了两处脱敏</b>：口令写成 <code>***</code>；清空数据库那一行<b>已注释掉</b>（照抄原样会直接抹掉本机 Neo4j 里的库）。仅作形态说明。</p>
 <pre><code>from py2neo import Graph, Node
 import pandas as pd
 
@@ -85,7 +85,7 @@ def init_py2neo():
     t1 = pd.read_excel('工作簿1.xlsx').drop_duplicates()
     g = Graph(profile="http://127.0.0.1:7474",
               auth=("neo4j", "***"))
-    g.delete_all()
+    # g.delete_all()   ← 原脚本在此清空整个库；此处已注释，确认要重来再放开
 
     is_create = []
     for index, i in t1[['sub_type', 'sub_name']].iterrows():
@@ -105,7 +105,7 @@ def init_py2neo():
 
 init_py2neo()</code></pre>
     <div class="warn">
-      ⛔ 原脚本会 <b>清空当前 Neo4j 库</b>、口令写死在代码里、Cypher 用字符串拼接 —— 只适合本机一次性导入，不要直接用在有数据的库上，也不要把口令提交到公开仓库。
+      ⛔ 原脚本会 <b>清空当前 Neo4j 库</b>（这一行已在上方注释掉）、口令写死在代码里、Cypher 用字符串拼接 —— 只适合本机一次性导入，不要直接用在有数据的库上，也不要把口令提交到公开仓库。
     </div>
     <p>本交付的实际构建脚本是各构建包里的 <code>build.py</code>：只做数据校验与静态页面生成，不连数据库；在线图谱也不需要 Neo4j。</p>
   </div>
