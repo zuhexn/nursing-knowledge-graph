@@ -103,6 +103,13 @@
     max-width:calc(100% - 20px);pointer-events:none;
   }
   #stats b{color:var(--accent);font-size:12px;}
+  /* 邻域模式的出口：面板关掉之后也能一键回全图 */
+  #egoExit{
+    position:absolute;right:10px;top:8px;z-index:12;display:none;
+    border:1px solid var(--accent);border-radius:9px;background:rgba(240,180,41,.16);
+    color:var(--accent);font-family:inherit;font-size:11.5px;padding:6px 10px;cursor:pointer;
+  }
+  #egoExit:hover{background:rgba(240,180,41,.26);color:#fff;}
 
   /* ---------- 提示条（8 秒后淡出） ---------- */
   #hint{
@@ -163,6 +170,28 @@
   .p-act.on{border-color:var(--accent-2);color:var(--accent-2);background:rgba(240,180,41,.12);}
   .p-act.danger{color:#ffb4a8;border-color:rgba(255,120,100,.34);}
   .p-act.danger:hover:not(:disabled){border-color:#ff8a75;color:#ff8a75;background:rgba(255,120,100,.1);}
+  /* 「在关系图里看这一圈」—— 把当前节点 + 一跳邻居收成一屏 */
+  .p-view{
+    display:flex;align-items:center;justify-content:center;gap:6px;width:100%;
+    margin:10px 0 0;min-height:40px;border-radius:10px;
+    border:1px solid var(--line);background:rgba(74,158,255,.1);color:#bcd7ff;
+    font-family:inherit;font-size:13px;cursor:pointer;transition:.15s;
+  }
+  .p-view:hover{border-color:var(--accent-2);color:#fff;}
+  /* 来时路径：从哪儿点进来的，一眼看见，也能原路退回 */
+  #p-crumbs{
+    display:flex;align-items:center;gap:4px;overflow-x:auto;white-space:nowrap;
+    margin:0 36px 8px 0;font-size:12px;color:var(--text-dim);scrollbar-width:none;
+  }
+  #p-crumbs::-webkit-scrollbar{display:none;}
+  .crumb{
+    border:none;background:none;color:var(--text-dim);font-family:inherit;
+    font-size:12px;cursor:pointer;padding:2px 0;max-width:140px;
+    overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  }
+  .crumb:hover{color:var(--accent-2);}
+  .crumb.cur{color:var(--text);font-weight:600;}
+  .crumb-sep{color:#3b4d6e;flex-shrink:0;}
   #panel-body{flex:1;overflow-y:auto;padding:6px 16px calc(var(--sab) + 26px);-webkit-overflow-scrolling:touch;}
 
   .sec{margin-top:18px;}
@@ -206,6 +235,29 @@
   }
   .obj .nm{flex:1;font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
   .obj .tp{font-size:11px;color:var(--text-dim);flex-shrink:0;}
+
+  /* 关联节点：按「关系 + 方向」分组 —— 十几条平铺读不出结构，分组后
+     一眼能看出「它会导致什么 / 由什么处理 / 依据是什么」。 */
+  .rel-group{margin-bottom:12px;}
+  .rel-group:last-child{margin-bottom:0;}
+  .rel-head{
+    display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;
+    color:#9fb0cc;margin:0 0 6px;
+  }
+  .rel-head .dir{
+    flex-shrink:0;width:18px;height:18px;border-radius:5px;background:#243149;
+    color:var(--accent);font-size:11px;line-height:18px;text-align:center;font-weight:700;
+  }
+  .rel-head .n{margin-left:auto;font-weight:400;color:#5f6e8a;font-size:11px;}
+
+  /* 文献出处默认折叠：证据要随时能查，但不该挡在「下一步」前面。 */
+  details.sec > summary.sec-title{cursor:pointer;list-style:none;margin:0 0 10px;}
+  details.sec > summary.sec-title::-webkit-details-marker{display:none;}
+  details.sec > summary.sec-title::after{
+    content:"展开";margin-left:auto;font-size:11px;color:var(--text-dim);font-weight:400;
+  }
+  details.sec[open] > summary.sec-title::after{content:"收起";}
+  details.sec > summary.sec-title .n{margin-left:0;}
 
   /* ---------- 图例（手机 = 底部抽屉；桌面 = 左下角浮层） ---------- */
   #legend{
@@ -315,6 +367,54 @@
   .u-act{font-size:12.5px;color:var(--accent);line-height:1.6;}
   .u-link{font-size:11.5px;color:var(--text-dim);line-height:1.5;}
 
+  /* ---------- 分诊（患者第一屏：先对号入座，再给行动） ----------
+     为什么不是一张静态警示列表：扫码那一刻，人问的是「我现在这样算不算」，
+     不是「有哪些危险情况」。所以每条警示都要能被点选，选完直接给结论。 */
+  .triage-hint{font-size:12.5px;color:#9fb0cc;line-height:1.75;margin:0 0 10px;}
+  .triage .u-item{position:relative;padding-left:40px;}
+  .u-check{
+    position:absolute;left:12px;top:13px;width:18px;height:18px;border-radius:50%;
+    border:1.5px solid #5f6e8a;background:transparent;flex-shrink:0;transition:.15s;
+  }
+  .triage .u-item.sel{border-color:#ff8f80;background:rgba(192,57,43,.2);}
+  .triage .u-item.sel .u-check{border-color:#ff8f80;background:#c0392b;}
+  .triage .u-item.sel .u-check::after{
+    content:"✓";position:absolute;inset:0;color:#fff;font-size:12px;
+    line-height:18px;text-align:center;font-weight:700;
+  }
+  .triage-actions{display:flex;gap:8px;margin:10px 0 0;}
+  .triage-btn{
+    flex:1;min-height:40px;border-radius:10px;border:1px solid var(--line);
+    background:var(--panel-2);color:var(--text);font-family:inherit;font-size:13px;
+    cursor:pointer;transition:.15s;
+  }
+  .triage-btn:hover{border-color:var(--accent-2);color:#fff;}
+  .triage-result{
+    position:sticky;top:0;z-index:2;
+    margin:0 0 10px;border-radius:11px;padding:11px 12px;font-size:13px;line-height:1.75;
+    border:1px solid var(--line);background:var(--panel-2);color:#c3cfe6;
+    box-shadow:0 8px 20px rgba(0,0,0,.28);
+  }
+  .triage-result:empty{display:none;}
+  .triage-result b{color:#fff;}
+  .triage-result.red{border-color:#7a3333;background:rgba(122,38,38,.24);color:#ffd9d2;}
+  .triage-result.green{border-color:#2f6b4f;background:rgba(39,103,73,.2);color:#c9f0da;}
+
+  /* ---------- 检索推荐词（数据驱动 · 只在没输入时出现） ---------- */
+  #searchChips{
+    display:flex;align-items:center;gap:6px;overflow-x:auto;
+    padding:0 1px 12px;scrollbar-width:none;
+  }
+  #searchChips::-webkit-scrollbar{display:none;}
+  .chips-label{font-size:11.5px;color:#5f6e8a;flex-shrink:0;}
+  .s-chip{
+    flex:0 0 auto;border:1px solid var(--line);border-radius:999px;
+    background:var(--panel-2);color:var(--text-dim);font-family:inherit;
+    font-size:11.5px;padding:5px 10px;cursor:pointer;white-space:nowrap;
+    -webkit-tap-highlight-color:transparent;transition:.15s;
+  }
+  .s-chip:hover,.s-chip:active{border-color:var(--accent-2);color:#fff;}
+
   /* ---------- 分类卡 ---------- */
   .cat{border:1px solid var(--line);border-radius:13px;background:var(--panel);margin-bottom:9px;overflow:hidden;}
   .cat.open{border-color:#3b4d6e;}
@@ -415,6 +515,9 @@
     #legend::before{display:none;}
     #legend h4{font-size:12px;}
     .lg-item{font-size:11.5px;padding:3px 9px 3px 7px;}
+    /* 桌面列表视图：详情面板是右侧常驻栏 —— 列表给它让出宽度，
+       否则正文会被盖住（2026-11-04 实测：导语被截在面板下面）。 */
+    body.panel-open[data-view="list"] #viewList{padding-right:min(460px,52vw);}
     #hint{display:none;}
     #stats{left:16px;top:16px;font-size:11.5px;padding:9px 13px;}
   }
@@ -460,6 +563,7 @@
     <!-- 列表视图（手机默认） -->
     <div id="viewList">
       <div id="lgInner">
+        <div id="searchChips"></div>
         <div id="lgIntro"></div>
         <div id="lgUrgent"></div>
         <div id="lgResults"></div>
@@ -472,6 +576,7 @@
       <div id="chart"></div>
       <div id="settling"><span class="spin"></span><span>正在布局图谱…</span></div>
       <div id="stats"></div>
+      <button type="button" id="egoExit">退出这一圈</button>
       <div id="hint"><b>点节点</b> → 展开它的关联 / 锁定 / 关闭 · <b>拖动</b> 平移 · <b>双指</b> 缩放</div>
     </div>
   </div>
@@ -483,6 +588,7 @@
 <aside id="panel">
   <div id="panel-head">
     <button id="panel-close">×</button>
+    <div id="p-crumbs"></div>
     <h2 id="p-name"></h2>
     <div id="p-meta"></div>
     <div class="p-actions">
@@ -491,6 +597,7 @@
       <button type="button" class="p-act danger" id="pRemove">关闭</button>
     </div>
     <p id="p-summary"></p>
+    <button type="button" class="p-view" id="pEgo">在关系图里看这一圈 ›</button>
   </div>
   <div id="panel-body"></div>
 </aside>
@@ -732,6 +839,15 @@
   var REL = {};
   (G.relationTypes || []).forEach(function (r) { if (r && r.key) REL[r.key] = r; });
 
+  /* 文献边判定 —— 不写死关系 key / 节点类型 key：
+     关系的显示标签里带「文献」就视为「证据边」。换一道题、换一套关系命名，
+     这条判据最多不生效，不会把别的边误藏。 */
+  function isEvidenceEdge(e) {
+    var r = REL[e.type];
+    var label = (r && r.label) ? r.label : (e.label || "");
+    return String(label).indexOf("文献") >= 0;
+  }
+
   var NODE = {};
   (G.nodes || []).forEach(function (n) { NODE[n.id] = n; });
 
@@ -765,12 +881,22 @@
     vis: {},           // id -> true：当前画在画布上的节点（逐步展开的可见集）
     locked: {},        // id -> true：锁定 —— 重置时保留 · 展开时新节点避开它
     expanded: {},      // id -> true：已经展开过
-    view: "graph"      // "list" 卡片流 | "graph" 画布（手机默认 list，桌面默认 graph）
+    view: "graph",     // "list" 卡片流 | "graph" 画布（手机默认 list，桌面默认 graph）
+    triageSel: {},     // 患者分诊：nodeId -> true（当前勾选的就医警示）
+    triageAnswered: false,
+    trail: [],         // 详情卡的来时路径（nodeId 栈；面包屑可原路退回）
+    ego: null,         // 非空 = 「只看这一圈」的中心节点 id
+    egoSet: null,      // 邻域模式实际画出来的节点集（中心 + 最多 16 个邻居）
+    egoHidden: 0,      // 邻域里没画出来的邻居数（角标如实说）
+    showEvidence: false // 是否在画布上画文献边（默认关：一半边是书目结构）
   };
   /* 每次展开最多长这么多个：一次几十个点糊上来 = 又一次「一锅粥」。
      先按数据声明的类型顺序（论文框架就是顺序）和度数排，剩下的留在
      「展开 · N」里，想继续点就再点一下。 */
   var EXPAND_MAX = 16;
+  /* 邻域最多画几个邻居：手机 10 个 / 宽屏 16 个 —— 再多人眼在一屏里分不清 */
+  var EGO_MAX_NARROW = 10;
+  var EGO_MAX_WIDE = 16;
   var TORDER = {};
   CATS.forEach(function (t, i) { TORDER[t.key] = i; });
   function sortByTypeOrder(ids) {
@@ -805,6 +931,39 @@
   function nodesOfType(key) {
     return (G.nodes || []).filter(function (n) { return n.type === key; });
   }
+
+  /* 「试试」推荐词 —— 从数据推：度数最高的节点名 + 数据里实际出现的文献类型。
+     ⛔ 不写死任何题目名 / 类型 key；加一道题自动换词。 */
+  function suggestionTerms() {
+    var out = [], seen = {};
+    function add(s) {
+      s = String(s == null ? "" : s).trim();
+      if (!s || s.length > 16 || seen[s]) return;
+      seen[s] = true; out.push(s);
+    }
+    (G.nodes || []).slice().sort(function (a, b) {
+      return (degree[b.id] || 0) - (degree[a.id] || 0);
+    }).slice(0, 6).forEach(function (n) { add(n.name); });
+    var evs = C.evidenceTypes(G);
+    Object.keys(evs).slice(0, 3).forEach(function (k) { add(evs[k]); });
+    return out.slice(0, 6);
+  }
+  function renderChips() {
+    var box = document.getElementById("searchChips");
+    if (!box) return;
+    var terms = suggestionTerms();
+    if (!terms.length) { box.innerHTML = ""; return; }
+    box.innerHTML = '<span class="chips-label">试试</span>' + terms.map(function (t) {
+      return '<button type="button" class="s-chip" data-q="' + esc(t) + '">' + esc(t) + '</button>';
+    }).join("");
+    box.querySelectorAll(".s-chip").forEach(function (el) {
+      el.addEventListener("click", function () {
+        searchEl.value = el.dataset.q;
+        doSearch(el.dataset.q);
+        searchEl.focus();
+      });
+    });
+  }
   /* 词条卡 —— 名字 + 一句大白话。
      节点的 summary 本身就是大白话（「嗓子发紧、像有东西卡住，是需要立刻处理的危险信号」），
      所以这里直接用，不必另写一套文案 —— 两处说法不会漂。 */
@@ -834,9 +993,53 @@
       }
     });
     bindOnce(lgCats, ".row", function (ev) { pick(ev.currentTarget.dataset.id); });
-    bindOnce(lgUrgent, ".u-item", function (ev) { pick(ev.currentTarget.dataset.id); });
     bindOnce(lgResults, ".row", function (ev) { pick(ev.currentTarget.dataset.id); });
   }
+
+  /* 分诊卡：点卡片 = 勾选 / 取消；点「相关知识」= 打开详情（不勾选）。
+     用事件委托绑在容器上 —— renderList 会重画整块，逐项绑会丢。 */
+  function renderTriageResult() {
+    var box = document.getElementById("triageResult");
+    if (!box) return;
+    var urgent = (PG && PG.urgent) || [];
+    var sel = urgent.filter(function (u) { return state.triageSel[u.nodeId]; });
+    if (!state.triageAnswered) {
+      box.className = "triage-result";
+      box.innerHTML = "";
+      return;
+    }
+    if (sel.length) {
+      var actions = sel.map(function (u) { return u.action; }).join("；");
+      box.className = "triage-result red";
+      box.innerHTML = "<b>你选中的情况需要马上处理</b><br>" + esc(actions) +
+        "<br><span style=\"color:#ffb3a7\">把这一屏指给护士看，方便他们快速判断。</span>";
+    } else {
+      box.className = "triage-result green";
+      box.innerHTML = "<b>先观察</b> —— 现在没有需要马上处理的情况。出现上面任何一条，立刻告诉医护人员；也可以继续往下按分类了解。";
+    }
+  }
+  lgUrgent.addEventListener("click", function (ev) {
+    var open = ev.target.closest("[data-open]");
+    if (open) {
+      ev.preventDefault(); ev.stopPropagation();
+      pick(open.dataset.open);
+      return;
+    }
+    if (ev.target.closest("#triageNone")) {
+      state.triageSel = {};
+      state.triageAnswered = true;
+      lgUrgent.querySelectorAll(".u-item").forEach(function (el) { el.classList.remove("sel"); });
+      renderTriageResult();
+      return;
+    }
+    var item = ev.target.closest(".u-item");
+    if (!item || !item.dataset.id) return;
+    var id = item.dataset.id;
+    state.triageSel[id] = !state.triageSel[id];
+    state.triageAnswered = true;
+    item.classList.toggle("sel", !!state.triageSel[id]);
+    renderTriageResult();
+  });
   function renderList() {
     var countMap = countByType();
     var intro = (PG && PG.intro) ? PG.intro : "";
@@ -845,21 +1048,28 @@
       (intro ? '<p class="lg-lead">' + esc(intro) + '</p>' : '') +
       '<p class="lg-disc">' + esc(disc) + '</p>';
 
-    /* 就医警示 —— 「正确引导」的落点：先让人对号入座，再点进去看依据 */
+    /* 就医警示 —— 患者第一屏走「分诊」：逐条点选 → 直接给行动。
+       静态列表只回答「有哪些危险」，分诊回答「我现在该怎么」。 */
     var urgent = (PG && PG.urgent) || [];
     if (urgent.length) {
       lgUrgent.innerHTML =
-        '<div class="lg-urgent"><h3 class="lg-uh">' +
+        '<div class="lg-urgent triage"><h3 class="lg-uh">' +
         esc((PG && PG.urgentTitle) || "出现这些情况，请及时就医") + '</h3>' +
+        '<p class="triage-hint">逐条点选符合你现在的情况；如果都没有，点下面的「这些都没有」。</p>' +
+        '<div class="triage-result" id="triageResult"></div>' +
         urgent.map(function (u) {
           var n = NODE[u.nodeId];
-          return '<button type="button" class="u-item" data-id="' + esc(u.nodeId) + '">' +
+          return '<button type="button" class="u-item' + (state.triageSel[u.nodeId] ? " sel" : "") + '" data-id="' + esc(u.nodeId) + '">' +
+            '<span class="u-check"></span>' +
             '<span class="u-body">' +
             '<span class="u-plain">' + esc(u.plain) + '</span>' +
             '<span class="u-act">' + esc(u.action) + '</span>' +
-            (n ? '<span class="u-link">相关知识：' + esc(n.name) + ' ›</span>' : '') +
+            (n ? '<span class="u-link" data-open="' + esc(n.id) + '">相关知识：' + esc(n.name) + ' ›</span>' : '') +
             '</span></button>';
-        }).join("") + '</div>';
+        }).join("") +
+        '<div class="triage-actions"><button type="button" class="triage-btn" id="triageNone">这些都没有</button></div>' +
+        '</div>';
+      renderTriageResult();
     } else {
       lgUrgent.innerHTML = "";
     }
@@ -919,7 +1129,8 @@
       try { initialView(); } catch (e) {}
       if (!state.frozen) return;
       try { focusSet(); } catch (e) {}
-      if (state.query) { try { doSearch(state.query); } catch (e) {} }
+      if (state.query && !state.ego) { try { doSearch(state.query); } catch (e) {} }
+      else { document.getElementById("suggest").style.display = "none"; }
     }, 60);
   }
   document.getElementById("tabList").addEventListener("click", function () { setView("list"); });
@@ -937,6 +1148,46 @@
     (ADJ[e.target] = ADJ[e.target] || []).push(e.source);
   });
   function neighborsOf(id) { return ADJ[id] || []; }
+  /* 知识边 = 非文献边。只在「文献边隐藏」时用来判断一个节点
+     是否还有可见的关系 —— 只有文献边的节点（文献节点）不画在画布上。 */
+  var _knowledgeEdgeCache = null;
+  function hasKnowledgeEdge(id) {
+    if (_knowledgeEdgeCache === null) {
+      _knowledgeEdgeCache = {};
+      (G.edges || []).forEach(function (e) {
+        if (isEvidenceEdge(e)) return;
+        _knowledgeEdgeCache[e.source] = true;
+        _knowledgeEdgeCache[e.target] = true;
+      });
+    }
+    return !!_knowledgeEdgeCache[id];
+  }
+  /* 只靠文献边连接的节点类型（通常是「文献」）—— 打开文献边时要把它们补上 */
+  var _evidenceOnlyTypesCache = null;
+  function evidenceOnlyTypes() {
+    if (_evidenceOnlyTypesCache === null) {
+      _evidenceOnlyTypesCache = {};
+      var all = {}, knowledge = {};
+      (G.edges || []).forEach(function (e) {
+        all[e.source] = true; all[e.target] = true;
+        if (!isEvidenceEdge(e)) { knowledge[e.source] = true; knowledge[e.target] = true; }
+      });
+      (G.nodes || []).forEach(function (n) {
+        if (all[n.id] && !knowledge[n.id]) _evidenceOnlyTypesCache[n.type] = true;
+      });
+    }
+    return _evidenceOnlyTypesCache;
+  }
+  /* 「只看这一圈」= 当前节点 + 一跳邻居；null = 看全图 */
+  function egoIds() {
+    if (!state.ego || !NODE[state.ego]) return null;
+    if (state.egoSet) return state.egoSet;
+    /* 兜底：正常路径下 enterEgo 已经建好 egoSet */
+    var ids = {};
+    ids[state.ego] = true;
+    neighborsOf(state.ego).forEach(function (nid) { if (NODE[nid]) ids[nid] = true; });
+    return ids;
+  }
   function typeHidden(nid) {
     var n = NODE[nid];
     return !n || !!state.hidden[n.type];
@@ -946,6 +1197,8 @@
     var seen = {}, out = [];
     neighborsOf(id).forEach(function (nid) {
       if (seen[nid] || state.vis[nid] || typeHidden(nid)) return;
+      /* 文献边隐藏时，只有文献边的节点不参与「展开 · N」—— 展开也看不见 */
+      if (!state.showEvidence && (degree[nid] || 0) > 0 && !hasKnowledgeEdge(nid)) return;
       seen[nid] = true; out.push(nid);
     });
     return sortByTypeOrder(out);
@@ -978,7 +1231,11 @@
     /* 起步 = 主题节点 + 它的一圈邻居：既不空，又能一眼看出「还能往下点」。
        邻居多的时候只放前 14 个（按数据声明的类型顺序排，论文框架就是顺序）
        —— 其余的留在「展开 · N」里，点一下再长出来。 */
-    var ns = sortByTypeOrder(neighborsOf(root.id).filter(function (nid) { return !typeHidden(nid); }));
+    var ns = sortByTypeOrder(neighborsOf(root.id).filter(function (nid) {
+      if (typeHidden(nid)) return false;
+      if (!state.showEvidence && (degree[nid] || 0) > 0 && !hasKnowledgeEdge(nid)) return false;
+      return true;
+    }));
     ns.slice(0, SEED_MAX_NEIGHBORS).forEach(function (nid) { state.vis[nid] = true; });
     state.expanded[root.id] = true;
   }
@@ -1082,8 +1339,10 @@
     delete state.locked[id];
     if (state.selected === id) {
       state.selected = null;
+      state.trail = [];
       document.getElementById("panel").classList.remove("open");
       document.getElementById("scrim").classList.remove("show");
+      document.body.classList.remove("panel-open");
     }
     paintGraph();
     scheduleLabelAvoid();
@@ -1123,13 +1382,84 @@
     state.pos[id] = [c[0], c[1]];
     state.vis[id] = true;
   }
+
+  /* ============ 只看这一圈（ego network） ============
+     全局 92 个点在手机上不可读；但「当前节点 + 一跳邻居」通常 5–15 个，
+     一屏放得下、标签也放得下。这是图谱在手机上真正可用的画法：
+     不是看全图，是沿关系走。 */
+  function enterEgo(id) {
+    if (!id || !NODE[id]) return;
+    /* 进邻域 = 从「找词」切到「沿关系走」：清掉检索，
+       否则搜索下拉会在切到画布 60ms 后重新盖住这一圈。 */
+    if (state.query) {
+      state.query = ""; state.hits = []; state.hitsMap = {};
+      var sEl = document.getElementById("search");
+      if (sEl) sEl.value = "";
+      var cEl = document.getElementById("clearSearch");
+      if (cEl) cEl.style.display = "none";
+      var chips = document.getElementById("searchChips");
+      if (chips) chips.style.display = "";
+      renderListResults([]);
+    }
+    document.getElementById("suggest").style.display = "none";
+    /* 文献节点的邻居全是文献边 —— 看它的这一圈时必须把文献边打开 */
+    if (!hasKnowledgeEdge(id)) state.showEvidence = true;
+    state.ego = id;
+    state.selected = id;
+    revealNode(id);
+    var all = neighborsOf(id).filter(function (nid) {
+      if (!NODE[nid] || typeHidden(nid)) return false;
+      if (state.showEvidence) return true;
+      return (degree[nid] || 0) === 0 || hasKnowledgeEdge(nid);
+    });
+    /* 超大枢纽（35 个邻居）一屏放不下：按数据声明的类型顺序取前 N 个，
+       剩下的在角标里如实说「另有 N 个」—— 想看就点邻居换中心继续走。 */
+    var cap = isNarrow() ? EGO_MAX_NARROW : EGO_MAX_WIDE;
+    var chosen = sortByTypeOrder(all).slice(0, cap);
+    state.egoSet = {};
+    state.egoSet[id] = true;
+    chosen.forEach(function (nid) { state.egoSet[nid] = true; });
+    state.egoHidden = Math.max(0, all.length - chosen.length);
+    var missing = chosen.filter(function (nid) { return !state.vis[nid]; });
+    if (missing.length) {
+      freezeLayout();
+      var pts = placeAround(id, missing);
+      missing.forEach(function (nid, i) {
+        state.vis[nid] = true;
+        state.pos[nid] = pts[i];
+      });
+      state.expanded[id] = true;
+    }
+    if (state.view !== "graph") setView("graph");
+    freezeLayout();
+    paintGraph();
+    initialView();
+    scheduleLabelAvoid();
+    updateActions();
+    syncEvidenceUI();
+    if (isNarrow()) {
+      document.getElementById("panel").classList.remove("open");
+      document.getElementById("scrim").classList.remove("show");
+      document.body.classList.remove("panel-open");
+    }
+  }
+  function exitEgo() {
+    state.ego = null;
+    state.egoSet = null;
+    state.egoHidden = 0;
+    paintGraph();
+    initialView();
+    updateActions();
+  }
   /* 点选按「离手指最近的点」算，而不是「画在最上层的那个」：
      节点小、彼此又挨得近时，zrender 的命中是「画得晚的赢」——
      点 A 会打开 B。最近邻之后，指头粗一点也点得中，点哪儿就是哪儿。 */
   function nearestNode(px, py, maxDist) {
     var best = null, bestD = maxDist;
+    var ego = egoIds();
     Object.keys(state.vis).forEach(function (id) {
       if (typeHidden(id)) return;
+      if (ego && !ego[id]) return;
       var p = state.pos[id];
       if (!p) return;
       var q = chart.convertToPixel({ seriesIndex: 0 }, p);
@@ -1202,7 +1532,14 @@
     return (degree[n.id] || 0) >= 5;
   }
   function buildNodes() {
-    return (G.nodes || []).filter(function (n) { return state.vis[n.id]; }).map(function (n) {
+    var ego = egoIds();
+    return (G.nodes || []).filter(function (n) {
+      if (!state.vis[n.id]) return false;
+      if (ego && !ego[n.id]) return false;
+      /* 文献边隐藏时，只有文献边的节点（文献节点）不画 —— 否则是一圈孤立点 */
+      if (!state.showEvidence && (degree[n.id] || 0) > 0 && !hasKnowledgeEdge(n.id)) return false;
+      return true;
+    }).map(function (n) {
       var t = typeOf(n);
       var it = {
         id: n.id,
@@ -1241,8 +1578,12 @@
     });
   }
   function buildLinks() {
+    var ego = egoIds();
     return (G.edges || []).filter(function (e) {
-      return state.vis[e.source] && state.vis[e.target];
+      if (!(state.vis[e.source] && state.vis[e.target])) return false;
+      if (ego && !(ego[e.source] && ego[e.target])) return false;
+      if (!state.showEvidence && isEvidenceEdge(e)) return false;
+      return true;
     }).map(function (e) {
       var a = NODE[e.source], b = NODE[e.target];
       return {
@@ -1336,6 +1677,15 @@
   });
 
   /* ============ 图例（由数据自带，不在代码里写死） ============ */
+  function syncEvidenceUI() {
+    var el = document.getElementById("legendEvidence");
+    if (el) el.classList.toggle("off", !state.showEvidence);
+    var lab = document.getElementById("legendEvidenceState");
+    if (lab) {
+      var n = (G.edges || []).filter(isEvidenceEdge).length;
+      lab.textContent = (state.showEvidence ? "显示" : "隐藏") + " · " + n + " 条";
+    }
+  }
   function renderLegend() {
     var body = document.getElementById("legend-body");
     var countMap = {};
@@ -1346,20 +1696,48 @@
         '<span class="lg-dot" style="background:' + t.color + '"></span>' +
         '<span>' + esc(t.label) + '</span>' +
         '<span class="lg-count">' + (countMap[t.key] || 0) + '</span></div>';
-    }).join("") + '</div>';
-    body.querySelectorAll(".lg-item").forEach(function (el) {
+    }).join("") + '</div>' +
+      '<div class="legend-head" style="margin:16px 0 10px;"><h4>关系边</h4></div>' +
+      '<div class="lg-items"><div class="lg-item' + (state.showEvidence ? "" : " off") + '" id="legendEvidence" ' +
+      'title="有文献支持的边默认隐藏：它们占全部边的一半，画出来会盖住知识结构">' +
+      '<span class="lg-dot" style="background:#f0b429"></span><span>文献边</span>' +
+      '<span class="lg-count" id="legendEvidenceState"></span></div></div>';
+    syncEvidenceUI();
+    body.querySelectorAll(".lg-item[data-type]").forEach(function (el) {
       el.addEventListener("click", function () {
         var k = el.dataset.type;
+        /* 点「文献」这类只靠文献边连接的类型时，自动把文献边打开 ——
+           否则节点被隐藏，点了像没反应。 */
+        if (!state.showEvidence && evidenceOnlyTypes()[k]) {
+          state.showEvidence = true;
+          syncEvidenceUI();
+        }
         state.hidden[k] = !state.hidden[k];
         el.classList.toggle("off", !!state.hidden[k]);
         if (!state.hidden[k]) revealNeighborsOfType(k);
         applyFilter();
       });
     });
+    var evEl = document.getElementById("legendEvidence");
+    if (evEl) {
+      evEl.addEventListener("click", function () {
+        state.showEvidence = !state.showEvidence;
+        syncEvidenceUI();
+        /* 邻域模式下重算这一圈：打开/关闭文献边会改变圈里该有谁 */
+        if (state.ego) { enterEgo(state.ego); return; }
+        if (state.showEvidence) {
+          /* 打开文献边时，把只靠文献边连接的节点补到画布上 */
+          var etypes = evidenceOnlyTypes();
+          Object.keys(etypes).forEach(function (k) { revealNeighborsOfType(k); });
+        }
+        applyFilter();
+        updateActions();
+      });
+    }
     document.getElementById("legendAll").addEventListener("click", function () {
       var offTypes = Object.keys(state.hidden).filter(function (k) { return state.hidden[k]; });
       state.hidden = {};
-      body.querySelectorAll(".lg-item").forEach(function (el) { el.classList.remove("off"); });
+      body.querySelectorAll(".lg-item[data-type]").forEach(function (el) { el.classList.remove("off"); });
       offTypes.forEach(function (k) { revealNeighborsOfType(k); });
       applyFilter();
     });
@@ -1452,6 +1830,8 @@
     var box = document.getElementById("suggest");
     state.query = (q || "").trim();
     document.getElementById("clearSearch").style.display = state.query ? "block" : "none";
+    var chips = document.getElementById("searchChips");
+    if (chips) chips.style.display = state.query ? "none" : "";
     if (!state.query) {
       box.style.display = "none";
       state.hits = []; state.hitsMap = {};
@@ -1526,9 +1906,63 @@
     return (e.source === n.id) ? (e.label + " →") : ("← " + e.label);
   }
 
+  /* 来时路径：面包屑。点一个节点 → 记一步；点面包屑 → 退回那一步。
+     手机上这是「知道自己怎么走到这儿的」唯一线索。 */
+  function renderCrumbs() {
+    var el = document.getElementById("p-crumbs");
+    if (!el) return;
+    var ids = state.trail.filter(function (id) { return !!NODE[id]; });
+    if (ids.length < 2) { el.innerHTML = ""; return; }
+    el.innerHTML = ids.map(function (id, i) {
+      var n = NODE[id];
+      var cur = (i === ids.length - 1);
+      return (i ? '<span class="crumb-sep">›</span>' : '') +
+        '<button type="button" class="crumb' + (cur ? " cur" : "") + '" data-crumb="' + esc(id) + '">' +
+        esc(shortLabel(n.name)) + '</button>';
+    }).join("");
+    el.querySelectorAll("[data-crumb]").forEach(function (b) {
+      b.addEventListener("click", function () { goCrumb(b.dataset.crumb); });
+    });
+    el.scrollLeft = el.scrollWidth;
+  }
+  function goCrumb(id) {
+    var idx = state.trail.indexOf(id);
+    if (idx >= 0) state.trail = state.trail.slice(0, idx + 1);
+    pick(id, { fromCrumb: true });
+  }
+
+  /* 关联节点分组：按「关系 + 方向」归并。
+     方向用 → / ← 标：→ = 从本节点指出，← = 指向本节点。
+     文献边不在这里重复 —— 证据在折叠的「文献出处」里看。 */
+  function relGroups(n) {
+    var groups = {}, order = [];
+    (G.edges || []).forEach(function (e) {
+      if (e.source !== n.id && e.target !== n.id) return;
+      if (isEvidenceEdge(e)) return;
+      var out = e.source === n.id;
+      var rel = REL[e.type] || { label: e.label || e.type };
+      var key = (out ? "out:" : "in:") + e.type;
+      var o = NODE[other(e, n)];
+      if (!o) return;
+      if (!groups[key]) {
+        groups[key] = { out: out, label: rel.label || e.type || "", items: [] };
+        order.push(key);
+      }
+      groups[key].items.push(o);
+    });
+    return order.map(function (k) { return groups[k]; }).sort(function (a, b) {
+      if (a.out !== b.out) return a.out ? -1 : 1;      /* 先「本节点指出」，再「指向本节点」 */
+      return b.items.length - a.items.length;
+    }).map(function (g) {
+      g.items.sort(function (a, b) { return (degree[b.id] || 0) - (degree[a.id] || 0); });
+      return g;
+    });
+  }
+
   function renderPanel(n) {
     var t = typeOf(n);
     document.getElementById("p-name").textContent = n.name || "";
+    renderCrumbs();
     document.getElementById("p-meta").innerHTML =
       '<span class="chip type" style="background:' + t.color + '33;color:' + t.color + '">' + esc(t.label) + '</span>' +
       '<span class="chip">度数 ' + (degree[n.id] || 0) + '</span>' +
@@ -1549,6 +1983,28 @@
         }).join("") + '</div></div>';
     }
 
+    /* --- 关联节点：按关系分组，先给「下一步能去哪」 --- */
+    var groups = relGroups(n);
+    var relCount = 0;
+    groups.forEach(function (g) { relCount += g.items.length; });
+    if (relCount) {
+      html += '<div class="sec"><h3 class="sec-title">关联节点<span class="n">' + relCount + ' 个</span></h3>' +
+        '<div class="sec-hint">按关系分组 · → 从本节点指出 · ← 指向本节点 · 点一行继续走</div>' +
+        groups.map(function (g) {
+          return '<div class="rel-group">' +
+            '<div class="rel-head"><span class="dir">' + (g.out ? "→" : "←") + '</span>' +
+            '<span>' + esc(g.label) + '</span>' +
+            '<span class="n">' + g.items.length + '</span></div>' +
+            '<div class="obj-list">' + g.items.slice(0, 12).map(function (o) {
+              return '<div class="obj" data-id="' + esc(o.id) + '">' +
+                '<span class="nm">' + esc(o.name) + '</span>' +
+                '<span class="tp" style="color:' + typeOf(o).color + '">' + esc(typeOf(o).label) + '</span></div>';
+            }).join("") + '</div>' +
+            (g.items.length > 12 ? '<div class="sec-hint" style="margin:6px 0 0">还有 ' + (g.items.length - 12) + ' 个未显示</div>' : '') +
+            '</div>';
+        }).join("") + '</div>';
+    }
+
     /* --- 别名（客户原文的英文写法 / 旧称 / 错字写法都在这里） --- */
     if (n.aliases && n.aliases.length) {
       html += '<div class="sec"><h3 class="sec-title">别名<span class="n">' + n.aliases.length + ' 个</span></h3>' +
@@ -1557,9 +2013,9 @@
         }).join("") + '</div></div>';
     }
 
-    /* --- 文献出处 --- */
+    /* --- 文献出处：默认折叠，放最后 —— 证据随时能查，但不挡「下一步」 --- */
     if (n.evidence && n.evidence.length) {
-      html += '<div class="sec"><h3 class="sec-title">文献出处<span class="n">' + n.evidence.length + ' 条</span></h3>' +
+      html += '<details class="sec"><summary class="sec-title">文献出处<span class="n">' + n.evidence.length + ' 条</span></summary>' +
         n.evidence.map(function (ev) {
           if (!ev) return "";
           var head = '';
@@ -1574,25 +2030,7 @@
           if (ev.cite) body2 += '<div class="ev-cite">' + esc(ev.cite) + '</div>';
           if (!title && !src && !ev.cite) body2 = '<div class="ev-src">（无出处信息）</div>';
           return '<div class="ev">' + (head ? '<div class="ev-head">' + head + '</div>' : '') + body2 + '</div>';
-        }).join("") + '</div></div>';
-    }
-
-    /* --- 关联节点（点选逐步延展的落点） --- */
-    var rel = (G.edges || []).filter(function (e) {
-      return e.source === n.id || e.target === n.id;
-    });
-    if (rel.length) {
-      html += '<div class="sec"><h3 class="sec-title">关联节点<span class="n">' + rel.length + ' 个</span></h3>' +
-        '<div class="sec-hint">点击可跳转到该节点</div><div class="obj-list">' +
-        rel.map(function (e) {
-          var oid = other(e, n);
-          var o = NODE[oid];
-          if (!o) return "";
-          return '<div class="obj" data-id="' + esc(o.id) + '">' +
-            '<span class="rel">' + esc(relText(e, n)) + '</span>' +
-            '<span class="nm">' + esc(o.name) + '</span>' +
-            '<span class="tp" style="color:' + typeOf(o).color + '">' + esc(typeOf(o).label) + '</span></div>';
-        }).join("") + '</div></div>';
+        }).join("") + '</details>';
     }
 
     if (!html) {
@@ -1643,14 +2081,29 @@
     } catch (e) { return false; }
   }
 
-  function pick(id) {
+  function pick(id, opts) {
     var n = NODE[id];
     if (!n) return;
     revealNode(id);                    /* 检索命中的节点可能还没展开出来 —— 先放上画布 */
+    /* 邻域模式下点开一个被截掉的邻居 → 临时放进这一圈，让它在图上看得见 */
+    if (state.ego && state.egoSet && !state.egoSet[id]) {
+      state.egoSet[id] = true;
+      if (state.egoHidden > 0) state.egoHidden--;
+    }
+    /* 来时路径：回到走过的节点就截断，不记环；最多留 8 步 */
+    if (!(opts && opts.fromCrumb)) {
+      var at = state.trail.indexOf(id);
+      if (at >= 0) state.trail = state.trail.slice(0, at + 1);
+      else {
+        state.trail.push(id);
+        if (state.trail.length > 8) state.trail.shift();
+      }
+    }
     state.selected = id;
     renderPanel(n);
     updateActions();
     document.getElementById("panel").classList.add("open");
+    document.body.classList.add("panel-open");
     showScrim(isNarrow());
     document.getElementById("suggest").style.display = "none";
     /* 列表视图下画布不可见 —— 只开详情抽屉，不去动镜头与高亮 */
@@ -1687,12 +2140,31 @@
     if (row) row.style.display = (state.view === "graph") ? "" : "none";
     var id = state.selected, n = id ? NODE[id] : null;
     var more = n ? expandableOf(id).length : 0;
-    btnExpand.textContent = !n ? "展开" : (more ? "展开 · " + more : "已全部展开");
-    btnExpand.disabled = !n || !more;
+    if (state.ego) {
+      /* 邻域模式下画布只画一圈 —— 展开的下一圈会落在这一圈之外，看不到 */
+      btnExpand.textContent = "只看一圈";
+      btnExpand.disabled = true;
+    } else {
+      btnExpand.textContent = !n ? "展开" : (more ? "展开 · " + more : "已全部展开");
+      btnExpand.disabled = !n || !more;
+    }
     btnLock.textContent = (id && state.locked[id]) ? "已锁定" : "锁定";
     btnLock.classList.toggle("on", !!(id && state.locked[id]));
     btnLock.disabled = !n;
     btnRemove.disabled = !n;
+    /* 「看这一圈」在列表视图里也要能点 —— 它是从阅读切到关系图的入口 */
+    var pEgo = document.getElementById("pEgo");
+    if (pEgo) {
+      pEgo.style.display = n ? "" : "none";
+      pEgo.textContent = state.ego
+        ? (id && id !== state.ego ? "以这个节点为中心 ›" : "退出这一圈，看全图")
+        : "在关系图里看这一圈 ›";
+    }
+    var egoExit = document.getElementById("egoExit");
+    if (egoExit) egoExit.style.display = state.ego ? "block" : "none";
+    /* 邻域模式右上角有出口 → 统计角标让出右侧宽度，别压字 */
+    var statsEl = document.getElementById("stats");
+    if (statsEl) statsEl.style.maxWidth = state.ego ? "calc(100% - 128px)" : "";
   }
   btnExpand.addEventListener("click", function () {
     if (!state.selected) return;
@@ -1706,10 +2178,23 @@
   btnRemove.addEventListener("click", function () {
     removeNode(state.selected);
   });
+  document.getElementById("pEgo").addEventListener("click", function () {
+    if (state.ego) {
+      if (state.selected && state.selected !== state.ego) enterEgo(state.selected);
+      else exitEgo();
+      return;
+    }
+    if (state.selected) enterEgo(state.selected);
+  });
+  document.getElementById("egoExit").addEventListener("click", function () { exitEgo(); });
   document.getElementById("panel-close").addEventListener("click", function () {
     document.getElementById("panel").classList.remove("open");
     document.getElementById("scrim").classList.remove("show");
+    document.body.classList.remove("panel-open");
     state.selected = null;
+    state.trail = [];
+    state.ego = null; state.egoSet = null; state.egoHidden = 0;  /* 手动关详情 = 回到全图 */
+    updateActions();
     try { chart.dispatchAction({ type: "unselect", seriesId: "kg" }); } catch (e) {}
     focusSet();
   });
@@ -1734,7 +2219,13 @@
     document.getElementById("legend").classList.remove("open");
     document.getElementById("btnLegend").classList.remove("on");
     document.getElementById("panel").classList.remove("open");
+    document.body.classList.remove("panel-open");
+    state.selected = null;
+    state.trail = [];
+    state.ego = null; state.egoSet = null; state.egoHidden = 0;
+    updateActions();
     showScrim(false);
+    focusSet();
   });
 
   /* ============ 检索框交互 ============ */
@@ -1975,8 +2466,12 @@
       if (!typeHidden(n.id)) { state.vis[n.id] = true; state.expanded[n.id] = true; }
     });
     state.selected = null;
+    state.ego = null; state.egoSet = null; state.egoHidden = 0;
+    state.trail = [];
     document.getElementById("panel").classList.remove("open");
     document.getElementById("scrim").classList.remove("show");
+    document.body.classList.remove("panel-open");
+    updateActions();
     relayout();
   });
 
@@ -1986,21 +2481,29 @@
     state.hidden = {};                   /* 回到出厂口径：不藏任何类型 */
     state.labelsAll = false; state.selected = null;
     state.query = ""; state.hits = []; state.hitsMap = {};
-    document.querySelectorAll("#legend-body .lg-item").forEach(function (el) {
+    state.trail = []; state.ego = null; state.egoSet = null; state.egoHidden = 0;
+    state.triageSel = {}; state.triageAnswered = false;
+    state.showEvidence = false;          /* 画布回到「只看知识边」 */
+    document.querySelectorAll("#legend-body .lg-item[data-type]").forEach(function (el) {
       el.classList.toggle("off", !!state.hidden[el.dataset.type]);
     });
     document.getElementById("btnLabels").classList.remove("on");
     document.getElementById("clearSearch").style.display = "none";
+    var chipsEl = document.getElementById("searchChips");
+    if (chipsEl) chipsEl.style.display = "";
     document.getElementById("panel").classList.remove("open");
     document.getElementById("legend").classList.remove("open");
     document.getElementById("btnLegend").classList.remove("on");
     document.getElementById("scrim").classList.remove("show");
+    document.body.classList.remove("panel-open");
     document.getElementById("suggest").style.display = "none";
     applySeed();
     /* 锁定的节点在重置后仍然留着 —— 这就是「锁定」的用处 */
     Object.keys(keep).forEach(function (id) {
       if (NODE[id]) { state.vis[id] = true; state.locked[id] = true; }
     });
+    updateActions();
+    syncEvidenceUI();
     relayout();
   });
 
@@ -2012,11 +2515,18 @@
   var nodeTypesUsed = {};
   (G.nodes || []).forEach(function (n) { nodeTypesUsed[n.type] = (nodeTypesUsed[n.type] || 0) + 1; });
   function updateStats() {
-    var vis = Object.keys(state.vis).length, all = (G.nodes || []).length;
+    var vis = buildNodes().length, all = (G.nodes || []).length;
+    var totalLinks = (G.edges || []).length;
+    var visLinks = buildLinks().length;
+    var tail = state.ego
+      ? " · <b>只看这一圈</b>" +
+        (state.egoHidden ? " · 另有 <b>" + state.egoHidden + "</b> 个" : "")
+      : " · " + Object.keys(nodeTypesUsed).length + " 类实体 · " +
+        Object.keys(relTypesUsed).filter(function (k) { return relTypesUsed[k]; }).length + " 类关系";
     document.getElementById("stats").innerHTML =
-      "可见 <b>" + vis + "</b> / 共 <b>" + all + "</b> 节点 · 关系 <b>" + (G.edges || []).length + "</b> · " +
-      Object.keys(nodeTypesUsed).length + " 类实体 · " +
-      Object.keys(relTypesUsed).filter(function (k) { return relTypesUsed[k]; }).length + " 类关系";
+      "可见 <b>" + vis + "</b> / 共 <b>" + all + "</b> 节点 · 关系 <b>" + visLinks + "</b>" +
+      (visLinks !== totalLinks ? " / " + totalLinks : "") + tail +
+      (state.showEvidence ? "" : " · 文献边隐藏");
   }
   updateStats();
 
@@ -2166,6 +2676,7 @@
   setView(state.view);
   viewReady = true;
   renderList();
+  renderChips();
 
   document.getElementById("loading").style.display = "none";
 })();
