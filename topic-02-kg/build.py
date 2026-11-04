@@ -420,6 +420,33 @@ def check_file(path, topic_key, rep, doc, terms_source):
             ("多种关系 %d 对：%s" % (len(multi), "; ".join(multi[:8]))) if multi
             else "%d 对节点各有唯一关系" % len(pair_types))
 
+    # ---- 附加：节点宣称的「覆盖范围」必须在图里真有着落 ----
+    # （收窄过内容时，属性文字常忘了改 —— 页面上仍宣称覆盖已删掉的那一块，
+    #   客户看到的就是「内容不对」。真踩过：覆盖范围写着「肾功能保护」，
+    #   而肾功能那一支在收窄时已删、客户明说不要。）
+    # ⛔ 判据不写死任何题目标识：只看属性键里带「覆盖」的项。
+    all_names = set()
+    for n in nodes:
+        all_names.add(str(n.get("name") or ""))
+        for al in (n.get("aliases") or []):
+            all_names.add(str(al))
+    scope_bad = []
+    for n in nodes:
+        for a in (n.get("attrs") or []):
+            if not isinstance(a, dict):
+                continue
+            if "覆盖" not in str(a.get("k") or ""):
+                continue
+            for part in re.split(r"[·、，,;；/]+", str(a.get("v") or "")):
+                part = part.strip()
+                if not part:
+                    continue
+                if not any(part in x or x in part for x in all_names):
+                    scope_bad.append("%s[%s] 宣称「%s」但图里没有" % (
+                        n.get("name"), a.get("k"), part))
+    rep.add("附N", "宣称的覆盖范围在图里有着落（%s）" % tag, not scope_bad,
+            ("；".join(scope_bad[:8])) if scope_bad else "覆盖范围声明与图内节点一致")
+
     # ---- 附加：有主张的节点不得用空话代替内容 ----
     # 「本图谱中……的总称」这类同义反复 = 读者读完等于没读。
     # ⛔ 判据不写死任何节点名 / 类型名以外的题目标识；
