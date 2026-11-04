@@ -12,6 +12,7 @@ SymptomSign,碘对比剂外渗,属于,SymptomCategory,静脉外渗反应谱
 SymptomSign,不良反应,属于,SymptomCategory,碘对比剂不良反应谱
 SymptomCategory,过敏反应谱,属于,SymptomCategory,碘对比剂不良反应谱
 SymptomCategory,静脉外渗反应谱,属于,SymptomCategory,碘对比剂不良反应谱
+ManagementPrinciple,护理干预,属于,NursingTheory,早期预警
 ManagementPrinciple,外渗处置原则,属于,ManagementPrinciple,护理措施
 ManagementPrinciple,不良反应分级处置原则,属于,ManagementPrinciple,护理措施
 DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗,存在症状,SymptomSign,不良反应
@@ -29,7 +30,6 @@ SymptomSign,过敏反应,存在症状,SymptomSign,咽喉部不适
 SymptomSign,过敏反应,存在症状,SymptomSign,胸闷
 SymptomSign,过敏反应,存在症状,SymptomSign,全身无力
 SymptomSign,荨麻疹,存在症状,SymptomSign,瘙痒
-SymptomSign,荨麻疹,存在症状,SymptomSign,皮疹
 DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗,由……处置,ManagementPrinciple,护理措施
 DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗,由……处置,ManagementPrinciple,护理预防
 SymptomSign,不良反应,由……处置,ManagementPrinciple,护理措施
@@ -37,6 +37,7 @@ SymptomSign,不良反应,由……处置,ManagementPrinciple,不良反应分级�
 SymptomSign,过敏反应,由……处置,ManagementPrinciple,护理措施
 SymptomSign,过敏反应,由……处置,ManagementPrinciple,护理干预
 SymptomSign,过敏反应,由……处置,ManagementPrinciple,不良反应分级处置原则
+SymptomSign,过敏反应,由……处置,NursingTheory,早期预警
 SymptomSign,过敏性休克,由……处置,ManagementPrinciple,护理干预
 SymptomSign,过敏性休克,由……处置,ManagementPrinciple,不良反应分级处置原则
 SymptomSign,荨麻疹,由……处置,ManagementPrinciple,护理干预
@@ -205,6 +206,8 @@ ManagementPrinciple,外渗处置原则,有文献支持,Reference,影像科碘对
 ManagementPrinciple,不良反应分级处置原则,有文献支持,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
 ManagementPrinciple,不良反应分级处置原则,有文献支持,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
 ManagementPrinciple,不良反应分级处置原则,有文献支持,Reference,美国放射学会对比剂手册
+NursingTheory,早期预警,有文献支持,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
+NursingTheory,早期预警,有文献支持,Reference,过敏反应：2023 年实践参数更新
 DiseaseEducation,检查前注意事项科普,有文献支持,Reference,碘对比剂使用指南（第2版）
 DiseaseEducation,检查前注意事项科普,有文献支持,Reference,影像护理学
 DiseaseEducation,检查后观察与护理科普,有文献支持,Reference,美国放射学会对比剂手册
@@ -231,6 +234,12 @@ SymptomSign,碘对比剂外渗,有文献支持,Reference,CT 扫描患者对比�
 AssessmentTool,外渗风险评估,有文献支持,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
 SymptomSign,过敏反应,有文献支持,Reference,对比剂即刻超敏反应危险因素的系统评价与 Meta 分析
 RiskFactor,未控制的哮喘,有文献支持,Reference,对比剂即刻超敏反应危险因素的系统评价与 Meta 分析
+SymptomSign,碘对比剂外渗,存在症状,SymptomSign,局部肿胀
+SymptomSign,碘对比剂外渗,存在症状,SymptomSign,局部疼痛
+SymptomSign,碘对比剂外渗,存在症状,SymptomSign,局部发红
+SymptomSign,碘对比剂外渗,存在症状,SymptomSign,皮肤发凉
+SymptomSign,碘对比剂外渗,存在症状,SymptomSign,皮肤发白发紧
+DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗,由……处置,ManagementPrinciple,护理干预
 SymptomCategory,症状分类,属于,SymptomSign,症状体征
 AssessmentTool,评估工具,属于,SymptomSign,症状体征
 RiskFactor,高危因素识别,属于,ManagementPrinciple,处置原则
@@ -249,6 +258,11 @@ SymptomSign,症状体征,属于,SymptomSign,胸闷
 SymptomSign,症状体征,属于,SymptomSign,全身无力
 SymptomSign,症状体征,属于,SymptomSign,过敏性休克
 SymptomSign,症状体征,属于,SymptomSign,碘对比剂外渗
+SymptomSign,症状体征,属于,SymptomSign,局部肿胀
+SymptomSign,症状体征,属于,SymptomSign,局部疼痛
+SymptomSign,症状体征,属于,SymptomSign,局部发红
+SymptomSign,症状体征,属于,SymptomSign,皮肤发凉
+SymptomSign,症状体征,属于,SymptomSign,皮肤发白发紧
 Exam,辅助检查,属于,Exam,CT增强扫描
 Exam,辅助检查,属于,Exam,碘对比剂
 ManagementPrinciple,处置原则,属于,ManagementPrinciple,护理措施
@@ -256,6 +270,7 @@ ManagementPrinciple,处置原则,属于,ManagementPrinciple,护理预防
 ManagementPrinciple,处置原则,属于,ManagementPrinciple,护理干预
 ManagementPrinciple,处置原则,属于,ManagementPrinciple,外渗处置原则
 ManagementPrinciple,处置原则,属于,ManagementPrinciple,不良反应分级处置原则
+NursingTheory,护理理论,属于,NursingTheory,早期预警
 NursingTheory,护理理论,属于,NursingTheory,自护理论
 DiseaseEducation,疾病科普,属于,DiseaseEducation,检查前注意事项科普
 DiseaseEducation,疾病科普,属于,DiseaseEducation,检查后观察与护理科普

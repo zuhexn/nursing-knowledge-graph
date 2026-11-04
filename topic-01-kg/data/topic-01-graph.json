@@ -272,7 +272,7 @@
         "增强CT",
         "CT增强"
       ],
-      "summary": "先静脉注射碘对比剂、再做断层成像的检查方法；本图谱关注打药后出现的过敏反应和碘对比剂外渗。",
+      "summary": "先静脉注射碘对比剂、再做断层成像的检查方法；关注的是打药后出现的过敏反应和碘对比剂外渗。",
       "attrs": [],
       "evidence": [
         {
@@ -970,7 +970,7 @@
       "aliases": [
         "外渗反应谱"
       ],
-      "summary": "外渗发生后从轻到重的表现分层。",
+      "summary": "外渗发生后从轻到重的表现分层：局部肿胀、疼痛、发红、皮肤发凉与发白发紧；疼痛加重、感觉改变、活动受限、出现水疱或组织坏死，都是需要立即升级处理的信号。",
       "attrs": [],
       "evidence": [
         {
@@ -1849,7 +1849,7 @@
         "nursing measures",
         "护理处置措施"
       ],
-      "summary": "本图谱中针对各类风险采取的护理动作总称。",
+      "summary": "两类风险（碘对比剂过敏反应、碘对比剂外渗）的护理处置总纲。下分两条原则：外渗处置原则（外渗之后的处理顺序与操作边界）、不良反应分级处置原则（按轻重分级决定用药、监护与是否转诊）。",
       "attrs": [],
       "evidence": [
         {
@@ -1896,7 +1896,7 @@
         "nursing prevention",
         "预防性护理"
       ],
-      "summary": "在问题发生之前把风险挡掉的护理原则。",
+      "summary": "打药之前把风险挡掉的护理原则：核对过敏史、评估血管条件与外渗高危因素、避免高压注射与不做生理盐水试推、看不清血管时用血管可视化辅助定位，以及对比剂预处理（加温到 37℃ 左右）。",
       "attrs": [],
       "evidence": [
         {
@@ -1943,7 +1943,7 @@
         "nursing intervention",
         "干预性护理"
       ],
-      "summary": "反应已经发生之后的现场护理干预原则。",
+      "summary": "反应已经发生之后的现场护理干预原则：按分级处置原则用药与监护，处置后密切观察；情况变坏之前先看出苗头、及时升级处理（早期预警）。",
       "attrs": [],
       "evidence": [
         {
@@ -2069,6 +2069,43 @@
           "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
           "grade": "指南与共识",
           "ref": "R01"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "NT_EarlyWarning",
+      "name": "早期预警",
+      "type": "NursingTheory",
+      "tags": [
+        "护理理论"
+      ],
+      "aliases": [
+        "early warning",
+        "早期识别与预警"
+      ],
+      "summary": "在情况变坏之前先看出苗头、及时升级处理 —— 过敏反应与外渗的现场护理干预里，「早发现、早升级」是防住重症的第一道关口。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
         }
       ],
       "graph": "topic-01"
@@ -3187,6 +3224,204 @@
       ]
     },
     {
+      "id": "S_ExtravasationSwelling",
+      "graph": "topic-01",
+      "type": "SymptomSign",
+      "name": "局部肿胀",
+      "tags": [
+        "外渗表现",
+        "症状体征"
+      ],
+      "aliases": [
+        "swelling",
+        "局部肿痛",
+        "肿胀",
+        "局部肿胀"
+      ],
+      "summary": "打针的部位肿起来，是外渗最直观的表现；肿胀可向近心端或远心端延伸。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        }
+      ]
+    },
+    {
+      "id": "S_ExtravasationPain",
+      "graph": "topic-01",
+      "type": "SymptomSign",
+      "name": "局部疼痛",
+      "tags": [
+        "外渗表现",
+        "症状体征"
+      ],
+      "aliases": [
+        "pain",
+        "局部刺痛",
+        "灼痛",
+        "局部疼痛"
+      ],
+      "summary": "推药时局部刺痛或灼痛，随后疼痛可逐渐加重。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        }
+      ]
+    },
+    {
+      "id": "S_ExtravasationRedness",
+      "graph": "topic-01",
+      "type": "SymptomSign",
+      "name": "局部发红",
+      "tags": [
+        "外渗表现",
+        "症状体征"
+      ],
+      "aliases": [
+        "redness",
+        "局部红肿",
+        "局部发红"
+      ],
+      "summary": "外渗部位皮肤发红。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        }
+      ]
+    },
+    {
+      "id": "S_ExtravasationCoolSkin",
+      "graph": "topic-01",
+      "type": "SymptomSign",
+      "name": "皮肤发凉",
+      "tags": [
+        "外渗表现",
+        "症状体征"
+      ],
+      "aliases": [
+        "cool skin",
+        "局部发凉",
+        "皮肤发凉"
+      ],
+      "summary": "外渗部位皮肤温度低于周围，提示局部循环受到影响。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        }
+      ]
+    },
+    {
+      "id": "S_ExtravasationPallor",
+      "graph": "topic-01",
+      "type": "SymptomSign",
+      "name": "皮肤发白发紧",
+      "tags": [
+        "外渗表现",
+        "症状体征"
+      ],
+      "aliases": [
+        "pale tight skin",
+        "皮肤苍白",
+        "局部发白",
+        "皮肤发白发紧"
+      ],
+      "summary": "外渗部位皮肤发白、发紧，是皮下积液张力高的表现。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        }
+      ]
+    },
+    {
       "id": "NT_SelfCareTheory",
       "name": "自护理论",
       "type": "NursingTheory",
@@ -3286,7 +3521,7 @@
       "aliases": [
         "症状体征"
       ],
-      "summary": "论文「疾病知识图」一级框架之一。本模块收录碘对比剂使用后可能出现的症状与体征 —— 不良反应、过敏反应、碘对比剂外渗，以及它们的下一级表现（荨麻疹、皮疹、瘙痒、颜面部水肿、咽喉部不适、胸闷、全身无力、过敏性休克）。",
+      "summary": "论文「疾病知识图」一级框架之一。收录碘对比剂使用后可能出现的症状与体征 —— 不良反应、过敏反应、碘对比剂外渗；过敏反应下的下一级表现（皮疹、荨麻疹、瘙痒、颜面部水肿、咽喉部不适、胸闷、全身无力、过敏性休克），以及碘对比剂外渗下的局部表现（局部肿胀、局部疼痛、局部发红、皮肤发凉、皮肤发白发紧）。",
       "attrs": [
         {
           "k": "框架层级",
@@ -3432,7 +3667,7 @@
       "aliases": [
         "辅助检查"
       ],
-      "summary": "论文「疾病知识图」一级框架之一。本模块收录与本主题相关的检查项目 —— CT 增强扫描、碘对比剂。",
+      "summary": "论文「疾病知识图」一级框架之一。收录与本主题相关的检查项目 —— CT 增强扫描、碘对比剂。",
       "attrs": [
         {
           "k": "框架层级",
@@ -3504,7 +3739,7 @@
       "aliases": [
         "处置原则"
       ],
-      "summary": "论文「疾病知识图」一级框架之一。本模块收录护理处置原则 —— 护理措施、护理预防、护理干预，以及其下的外渗处置原则与不良反应分级处置原则。",
+      "summary": "论文「疾病知识图」一级框架之一。收录护理处置原则 —— 护理措施、护理预防、护理干预，以及其下的外渗处置原则与不良反应分级处置原则。",
       "attrs": [
         {
           "k": "框架层级",
@@ -3606,7 +3841,7 @@
       "aliases": [
         "护理理论"
       ],
-      "summary": "论文「疾病知识图」一级框架之一。本模块收录指导护理实践的理论 —— 自护理论（Orem）：人天生具备自我护理的能力，护理的任务是在患者自护能力不足时提供补偿与支持；对应到本主题，是指导患者与家属参与预防、早期识别与居家自我照护。",
+      "summary": "论文「疾病知识图」一级框架之一。收录指导护理实践的理论 —— 自护理论（Orem）：人天生具备自我护理的能力，护理的任务是在患者自护能力不足时提供补偿与支持；对应到本主题，是指导患者与家属参与预防、早期识别与居家自我照护。以及早期预警：在情况变坏之前先看出苗头、及时升级处理。",
       "attrs": [
         {
           "k": "框架层级",
@@ -3614,6 +3849,26 @@
         }
       ],
       "evidence": [
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        },
         {
           "type": "系统评价",
           "author": "Nasiri M, Jafari Z, Rakhshan M, Yarahmadi F, et al.",
@@ -3638,7 +3893,7 @@
       "aliases": [
         "疾病科普"
       ],
-      "summary": "论文「疾病知识图」一级框架之一。论文 §3.2 指出「疾病知识图中科普模块的内容可面向公众开放，便于公众了解疾病的早期症状及常见误区」。本模块收录检查前注意事项、检查后观察与护理、过敏史告知、外渗居家护理、急救知识五篇科普。",
+      "summary": "论文「疾病知识图」一级框架之一。论文 §3.2 指出「疾病知识图中科普模块的内容可面向公众开放，便于公众了解疾病的早期症状及常见误区」。收录检查前注意事项、检查后观察与护理、过敏史告知、外渗居家护理、急救知识五篇科普。",
       "attrs": [
         {
           "k": "框架层级",
@@ -3750,7 +4005,7 @@
       "aliases": [
         "症状分类"
       ],
-      "summary": "论文表 1「症状分类」二级框架。本模块把症状按谱归类 —— 碘对比剂不良反应谱，其下有过敏反应谱、静脉外渗反应谱。",
+      "summary": "论文表 1「症状分类」二级框架。把症状按谱归类 —— 碘对比剂不良反应谱，其下有过敏反应谱、静脉外渗反应谱。",
       "attrs": [
         {
           "k": "框架层级",
@@ -3802,7 +4057,7 @@
       "aliases": [
         "评估工具"
       ],
-      "summary": "论文表 1「评估工具」二级框架。本模块收录评估工具 —— 过敏史询问、外渗风险评估、血管条件评估。",
+      "summary": "论文表 1「评估工具」二级框架。收录评估工具 —— 过敏史询问、外渗风险评估、血管条件评估。",
       "attrs": [
         {
           "k": "框架层级",
@@ -3892,7 +4147,7 @@
       "aliases": [
         "高危因素识别"
       ],
-      "summary": "论文表 1「高危因素识别」二级框架。本模块收录高危因素 —— 既往碘对比剂过敏史、未控制的哮喘、高龄或低龄、静脉条件差、高压注射、未做生理盐水试推。",
+      "summary": "论文表 1「高危因素识别」二级框架。收录高危因素 —— 既往碘对比剂过敏史、未控制的哮喘、高龄或低龄、静脉条件差、高压注射、未做生理盐水试推。",
       "attrs": [
         {
           "k": "框架层级",
@@ -3982,7 +4237,7 @@
       "aliases": [
         "药物管理"
       ],
-      "summary": "论文表 1「药物管理」二级框架。本模块收录药物处置 —— 肌内注射肾上腺素、糖皮质激素、抗组胺药、50% 硫酸镁湿敷、0.05% 地塞米松湿敷。",
+      "summary": "论文表 1「药物管理」二级框架。收录药物处置 —— 肌内注射肾上腺素、糖皮质激素、抗组胺药、50% 硫酸镁湿敷、0.05% 地塞米松湿敷。",
       "attrs": [
         {
           "k": "框架层级",
@@ -4044,7 +4299,7 @@
       "aliases": [
         "非药物管理"
       ],
-      "summary": "论文表 1「非药物管理」二级框架。论文第 20 页写明：点击「非药物管理」实体节点，Web 端返回其关联实体节点。本模块收录非药物处置 —— 立即停止注射、保留静脉留置针、患肢抬高、局部冷敷、密切观察、对比剂预处理、血管可视化、心理疏导。",
+      "summary": "论文表 1「非药物管理」二级框架。论文第 20 页写明：点击「非药物管理」实体节点，Web 端返回其关联实体节点。收录非药物处置 —— 立即停止注射、保留静脉留置针、患肢抬高、局部冷敷、密切观察、对比剂预处理、血管可视化、心理疏导。",
       "attrs": [
         {
           "k": "框架层级",
@@ -4154,7 +4409,7 @@
       "aliases": [
         "症状现状"
       ],
-      "summary": "论文表 1「症状现状」二级框架。本模块收录症状现状 —— 轻度反应已缓解、重度反应已恢复。（在本题数据里，这两个节点是护理措施 / 护理干预 / 外渗处置原则的「影响」目标，故归在处置原则之下。）",
+      "summary": "论文表 1「症状现状」二级框架。收录症状现状 —— 轻度反应已缓解、重度反应已恢复。（在本题数据里，这两个节点是护理措施 / 护理干预 / 外渗处置原则的「影响」目标，故归在处置原则之下。）",
       "attrs": [
         {
           "k": "框架层级",
@@ -4216,7 +4471,7 @@
       "aliases": [
         "功能状况"
       ],
-      "summary": "论文表 1「功能状况」二级框架。本模块收录功能状况 —— 患肢功能状态。（在本题数据里，该节点是护理干预的「影响」目标，故归在处置原则之下。）",
+      "summary": "论文表 1「功能状况」二级框架。收录功能状况 —— 患肢功能状态。（在本题数据里，该节点是护理干预的「影响」目标，故归在处置原则之下。）",
       "attrs": [
         {
           "k": "框架层级",
@@ -4328,6 +4583,12 @@
       "label": "属于"
     },
     {
+      "source": "MP_NursingIntervention",
+      "target": "NT_EarlyWarning",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
       "source": "MP_ExtravasationPrinciple",
       "target": "MP_NursingMeasures",
       "type": "BELONGS_TO",
@@ -4430,12 +4691,6 @@
       "label": "存在症状"
     },
     {
-      "source": "S_Urticaria",
-      "target": "S_Rash",
-      "type": "HAS_SYMPTOM",
-      "label": "存在症状"
-    },
-    {
       "source": "DC_CTEnhancedRisk",
       "target": "MP_NursingMeasures",
       "type": "MANAGED_BY",
@@ -4474,6 +4729,12 @@
     {
       "source": "S_AllergicReaction",
       "target": "MP_AdverseReactionTriage",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "NT_EarlyWarning",
       "type": "MANAGED_BY",
       "label": "由……处置"
     },
@@ -5494,6 +5755,18 @@
       "label": "有文献支持"
     },
     {
+      "source": "NT_EarlyWarning",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NT_EarlyWarning",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
       "source": "DE_PreExamNotice",
       "target": "R03",
       "type": "SUPPORTED_BY",
@@ -5650,6 +5923,42 @@
       "label": "有文献支持"
     },
     {
+      "source": "S_Extravasation",
+      "target": "S_ExtravasationSwelling",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "S_ExtravasationPain",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "S_ExtravasationRedness",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "S_ExtravasationCoolSkin",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "S_ExtravasationPallor",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "MP_NursingIntervention",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
       "source": "FW_SymptomCategory",
       "target": "FW_SymptomSign",
       "type": "BELONGS_TO",
@@ -5776,6 +6085,41 @@
       "role": "framework"
     },
     {
+      "source": "FW_SymptomSign",
+      "target": "S_ExtravasationSwelling",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "S_ExtravasationPain",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "S_ExtravasationRedness",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "S_ExtravasationCoolSkin",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "S_ExtravasationPallor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
       "source": "FW_Exam",
       "target": "E_CTEnhancedScan",
       "type": "BELONGS_TO",
@@ -5820,6 +6164,13 @@
     {
       "source": "FW_ManagementPrinciple",
       "target": "MP_AdverseReactionTriage",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_NursingTheory",
+      "target": "NT_EarlyWarning",
       "type": "BELONGS_TO",
       "label": "属于",
       "role": "framework"

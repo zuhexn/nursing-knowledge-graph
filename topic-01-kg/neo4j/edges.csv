@@ -12,6 +12,7 @@ S_Extravasation,SymptomSign,碘对比剂外渗,BELONGS_TO,属于,SC_Extravasatio
 S_AdverseReaction,SymptomSign,不良反应,BELONGS_TO,属于,SC_AdverseSpectrum,SymptomCategory,碘对比剂不良反应谱
 SC_Hypersensitivity,SymptomCategory,过敏反应谱,BELONGS_TO,属于,SC_AdverseSpectrum,SymptomCategory,碘对比剂不良反应谱
 SC_ExtravasationSpectrum,SymptomCategory,静脉外渗反应谱,BELONGS_TO,属于,SC_AdverseSpectrum,SymptomCategory,碘对比剂不良反应谱
+MP_NursingIntervention,ManagementPrinciple,护理干预,BELONGS_TO,属于,NT_EarlyWarning,NursingTheory,早期预警
 MP_ExtravasationPrinciple,ManagementPrinciple,外渗处置原则,BELONGS_TO,属于,MP_NursingMeasures,ManagementPrinciple,护理措施
 MP_AdverseReactionTriage,ManagementPrinciple,不良反应分级处置原则,BELONGS_TO,属于,MP_NursingMeasures,ManagementPrinciple,护理措施
 DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗,HAS_SYMPTOM,存在症状,S_AdverseReaction,SymptomSign,不良反应
@@ -29,7 +30,6 @@ S_AllergicReaction,SymptomSign,过敏反应,HAS_SYMPTOM,存在症状,S_ThroatDis
 S_AllergicReaction,SymptomSign,过敏反应,HAS_SYMPTOM,存在症状,S_ChestTightness,SymptomSign,胸闷
 S_AllergicReaction,SymptomSign,过敏反应,HAS_SYMPTOM,存在症状,S_GeneralizedWeakness,SymptomSign,全身无力
 S_Urticaria,SymptomSign,荨麻疹,HAS_SYMPTOM,存在症状,S_Pruritus,SymptomSign,瘙痒
-S_Urticaria,SymptomSign,荨麻疹,HAS_SYMPTOM,存在症状,S_Rash,SymptomSign,皮疹
 DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗,MANAGED_BY,由……处置,MP_NursingMeasures,ManagementPrinciple,护理措施
 DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗,MANAGED_BY,由……处置,MP_NursingPrevention,ManagementPrinciple,护理预防
 S_AdverseReaction,SymptomSign,不良反应,MANAGED_BY,由……处置,MP_NursingMeasures,ManagementPrinciple,护理措施
@@ -37,6 +37,7 @@ S_AdverseReaction,SymptomSign,不良反应,MANAGED_BY,由……处置,MP_Adverse
 S_AllergicReaction,SymptomSign,过敏反应,MANAGED_BY,由……处置,MP_NursingMeasures,ManagementPrinciple,护理措施
 S_AllergicReaction,SymptomSign,过敏反应,MANAGED_BY,由……处置,MP_NursingIntervention,ManagementPrinciple,护理干预
 S_AllergicReaction,SymptomSign,过敏反应,MANAGED_BY,由……处置,MP_AdverseReactionTriage,ManagementPrinciple,不良反应分级处置原则
+S_AllergicReaction,SymptomSign,过敏反应,MANAGED_BY,由……处置,NT_EarlyWarning,NursingTheory,早期预警
 S_AnaphylacticShock,SymptomSign,过敏性休克,MANAGED_BY,由……处置,MP_NursingIntervention,ManagementPrinciple,护理干预
 S_AnaphylacticShock,SymptomSign,过敏性休克,MANAGED_BY,由……处置,MP_AdverseReactionTriage,ManagementPrinciple,不良反应分级处置原则
 S_Urticaria,SymptomSign,荨麻疹,MANAGED_BY,由……处置,MP_NursingIntervention,ManagementPrinciple,护理干预
@@ -205,6 +206,8 @@ MP_ExtravasationPrinciple,ManagementPrinciple,外渗处置原则,SUPPORTED_BY,�
 MP_AdverseReactionTriage,ManagementPrinciple,不良反应分级处置原则,SUPPORTED_BY,有文献支持,R12,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
 MP_AdverseReactionTriage,ManagementPrinciple,不良反应分级处置原则,SUPPORTED_BY,有文献支持,R13,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
 MP_AdverseReactionTriage,ManagementPrinciple,不良反应分级处置原则,SUPPORTED_BY,有文献支持,R01,Reference,美国放射学会对比剂手册
+NT_EarlyWarning,NursingTheory,早期预警,SUPPORTED_BY,有文献支持,R13,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
+NT_EarlyWarning,NursingTheory,早期预警,SUPPORTED_BY,有文献支持,R16,Reference,过敏反应：2023 年实践参数更新
 DE_PreExamNotice,DiseaseEducation,检查前注意事项科普,SUPPORTED_BY,有文献支持,R03,Reference,碘对比剂使用指南（第2版）
 DE_PreExamNotice,DiseaseEducation,检查前注意事项科普,SUPPORTED_BY,有文献支持,R20,Reference,影像护理学
 DE_AfterExamCare,DiseaseEducation,检查后观察与护理科普,SUPPORTED_BY,有文献支持,R01,Reference,美国放射学会对比剂手册
@@ -231,6 +234,12 @@ S_Extravasation,SymptomSign,碘对比剂外渗,SUPPORTED_BY,有文献支持,R22,
 AT_ExtravasationAssessment,AssessmentTool,外渗风险评估,SUPPORTED_BY,有文献支持,R22,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
 S_AllergicReaction,SymptomSign,过敏反应,SUPPORTED_BY,有文献支持,R23,Reference,对比剂即刻超敏反应危险因素的系统评价与 Meta 分析
 RF_UncontrolledAsthma,RiskFactor,未控制的哮喘,SUPPORTED_BY,有文献支持,R23,Reference,对比剂即刻超敏反应危险因素的系统评价与 Meta 分析
+S_Extravasation,SymptomSign,碘对比剂外渗,HAS_SYMPTOM,存在症状,S_ExtravasationSwelling,SymptomSign,局部肿胀
+S_Extravasation,SymptomSign,碘对比剂外渗,HAS_SYMPTOM,存在症状,S_ExtravasationPain,SymptomSign,局部疼痛
+S_Extravasation,SymptomSign,碘对比剂外渗,HAS_SYMPTOM,存在症状,S_ExtravasationRedness,SymptomSign,局部发红
+S_Extravasation,SymptomSign,碘对比剂外渗,HAS_SYMPTOM,存在症状,S_ExtravasationCoolSkin,SymptomSign,皮肤发凉
+S_Extravasation,SymptomSign,碘对比剂外渗,HAS_SYMPTOM,存在症状,S_ExtravasationPallor,SymptomSign,皮肤发白发紧
+DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗,MANAGED_BY,由……处置,MP_NursingIntervention,ManagementPrinciple,护理干预
 FW_SymptomCategory,SymptomCategory,症状分类,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
 FW_AssessmentTool,AssessmentTool,评估工具,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
 FW_RiskFactor,RiskFactor,高危因素识别,BELONGS_TO,属于,FW_ManagementPrinciple,ManagementPrinciple,处置原则
@@ -249,6 +258,11 @@ FW_SymptomSign,SymptomSign,症状体征,BELONGS_TO,属于,S_ChestTightness,Sympt
 FW_SymptomSign,SymptomSign,症状体征,BELONGS_TO,属于,S_GeneralizedWeakness,SymptomSign,全身无力
 FW_SymptomSign,SymptomSign,症状体征,BELONGS_TO,属于,S_AnaphylacticShock,SymptomSign,过敏性休克
 FW_SymptomSign,SymptomSign,症状体征,BELONGS_TO,属于,S_Extravasation,SymptomSign,碘对比剂外渗
+FW_SymptomSign,SymptomSign,症状体征,BELONGS_TO,属于,S_ExtravasationSwelling,SymptomSign,局部肿胀
+FW_SymptomSign,SymptomSign,症状体征,BELONGS_TO,属于,S_ExtravasationPain,SymptomSign,局部疼痛
+FW_SymptomSign,SymptomSign,症状体征,BELONGS_TO,属于,S_ExtravasationRedness,SymptomSign,局部发红
+FW_SymptomSign,SymptomSign,症状体征,BELONGS_TO,属于,S_ExtravasationCoolSkin,SymptomSign,皮肤发凉
+FW_SymptomSign,SymptomSign,症状体征,BELONGS_TO,属于,S_ExtravasationPallor,SymptomSign,皮肤发白发紧
 FW_Exam,Exam,辅助检查,BELONGS_TO,属于,E_CTEnhancedScan,Exam,CT增强扫描
 FW_Exam,Exam,辅助检查,BELONGS_TO,属于,E_ContrastInjection,Exam,碘对比剂
 FW_ManagementPrinciple,ManagementPrinciple,处置原则,BELONGS_TO,属于,MP_NursingMeasures,ManagementPrinciple,护理措施
@@ -256,6 +270,7 @@ FW_ManagementPrinciple,ManagementPrinciple,处置原则,BELONGS_TO,属于,MP_Nur
 FW_ManagementPrinciple,ManagementPrinciple,处置原则,BELONGS_TO,属于,MP_NursingIntervention,ManagementPrinciple,护理干预
 FW_ManagementPrinciple,ManagementPrinciple,处置原则,BELONGS_TO,属于,MP_ExtravasationPrinciple,ManagementPrinciple,外渗处置原则
 FW_ManagementPrinciple,ManagementPrinciple,处置原则,BELONGS_TO,属于,MP_AdverseReactionTriage,ManagementPrinciple,不良反应分级处置原则
+FW_NursingTheory,NursingTheory,护理理论,BELONGS_TO,属于,NT_EarlyWarning,NursingTheory,早期预警
 FW_NursingTheory,NursingTheory,护理理论,BELONGS_TO,属于,NT_SelfCareTheory,NursingTheory,自护理论
 FW_DiseaseEducation,DiseaseEducation,疾病科普,BELONGS_TO,属于,DE_PreExamNotice,DiseaseEducation,检查前注意事项科普
 FW_DiseaseEducation,DiseaseEducation,疾病科普,BELONGS_TO,属于,DE_AfterExamCare,DiseaseEducation,检查后观察与护理科普

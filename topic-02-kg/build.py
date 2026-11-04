@@ -408,6 +408,41 @@ def check_file(path, topic_key, rep, doc, terms_source):
             (not meta_topic or meta_topic == topic_key) and bool(meta.get("topicName")),
             "meta.topicKey=%s · meta.topicName=%s" % (meta_topic or "（缺）", meta.get("topicName") or "（缺）"))
 
+    # ---- 附加：同一对节点不得挂多种关系类型 ----
+    # （画布上会连出两条平行边；语义上等于对同一对节点说了两句话）
+    pair_types = {}
+    for e in edges:
+        key = (e.get("source"), e.get("target"))
+        pair_types.setdefault(key, set()).add(str(e.get("type")))
+    multi = sorted("%s->%s:%s" % (k[0], k[1], "/".join(sorted(v)))
+                   for k, v in pair_types.items() if len(v) > 1)
+    rep.add("附L", "同一对节点只挂一种关系（%s）" % tag, not multi,
+            ("多种关系 %d 对：%s" % (len(multi), "; ".join(multi[:8]))) if multi
+            else "%d 对节点各有唯一关系" % len(pair_types))
+
+    # ---- 附加：有主张的节点不得用空话代替内容 ----
+    # 「本图谱中……的总称」这类同义反复 = 读者读完等于没读。
+    # ⛔ 判据不写死任何节点名 / 类型名以外的题目标识；
+    #    Reference 节点豁免（书目性摘要本就是元描述）。
+    META_TALK = ("本图谱", "本文", "本模块", "本单元", "本页面")
+    empty_sum, meta_sum = [], []
+    for n in nodes:
+        if n.get("type") == "Reference":
+            continue
+        s = str(n.get("summary") or "").strip()
+        if not s:
+            empty_sum.append("%s(%s)" % (n.get("name"), n.get("type")))
+        elif any(m in s for m in META_TALK):
+            meta_sum.append("%s(%s)" % (n.get("name"), n.get("type")))
+    detail_m = []
+    if empty_sum:
+        detail_m.append("空摘要 %d：%s" % (len(empty_sum), "; ".join(empty_sum[:8])))
+    if meta_sum:
+        detail_m.append("元话术摘要 %d：%s" % (len(meta_sum), "; ".join(meta_sum[:8])))
+    rep.add("附M", "节点摘要有实质内容（%s）" % tag,
+            not empty_sum and not meta_sum,
+            "；".join(detail_m) if detail_m else "非文献节点摘要全部有内容")
+
     # ---- 附加：5 列表逐行对照（仅当同目录存在该表时；这是客户部的对照件，只读不改）
     csv_path = os.path.join(os.path.dirname(path),
                             os.path.basename(path).replace("-graph.json", "-triples.csv"))
