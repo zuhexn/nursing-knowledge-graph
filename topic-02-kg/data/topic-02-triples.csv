@@ -421,3 +421,81 @@ FunctionalStatus,活动耐力下降,有文献支持,Reference,癌症患者化疗
 FunctionalStatus,活动耐力下降,有文献支持,Reference,护士主导的非药物干预在腹腔镜手术成人患者术后恶心呕吐预防与管理中的证据总结
 FunctionalStatus,误吸风险,有文献支持,Reference,术后恶心呕吐管理第五版共识指南（摘要）
 FunctionalStatus,误吸风险,有文献支持,Reference,妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）
+SymptomCategory,症状分类,属于,SymptomExperience,症状体验
+AssessmentTool,评估工具,属于,SymptomExperience,症状体验
+RiskFactor,高危因素识别,属于,ManagementStrategy,症状管理策略
+PharmacologicalManagement,药物管理,属于,ManagementStrategy,症状管理策略
+NonPharmacologicalManagement,非药物管理,属于,ManagementStrategy,症状管理策略
+SymptomStatus,症状现状,属于,ManagementOutcome,症状管理效果
+FunctionalStatus,功能状况,属于,ManagementOutcome,症状管理效果
+SymptomExperience,症状体验,属于,SymptomExperience,恶心
+SymptomExperience,症状体验,属于,SymptomExperience,呕吐
+ManagementStrategy,症状管理策略,属于,ManagementStrategy,化疗相关恶心呕吐管理策略
+ManagementStrategy,症状管理策略,属于,ManagementStrategy,妊娠期恶心呕吐管理策略
+ManagementStrategy,症状管理策略,属于,ManagementStrategy,术后恶心呕吐管理策略
+ManagementStrategy,症状管理策略,属于,ManagementStrategy,整合症状管理策略
+ManagementOutcome,症状管理效果,属于,ManagementOutcome,恶心呕吐发生率下降
+ManagementOutcome,症状管理效果,属于,ManagementOutcome,完全缓解
+ManagementOutcome,症状管理效果,属于,ManagementOutcome,症状严重程度减轻
+ManagementOutcome,症状管理效果,属于,ManagementOutcome,进食情况改善
+ManagementOutcome,症状管理效果,属于,ManagementOutcome,体重维持
+ManagementOutcome,症状管理效果,属于,ManagementOutcome,生活质量提升
+ManagementOutcome,症状管理效果,属于,ManagementOutcome,用药依从性提升
+ManagementOutcome,症状管理效果,属于,ManagementOutcome,住院与急诊减少
+SymptomCategory,症状分类,属于,SymptomCategory,化疗相关恶心呕吐
+SymptomCategory,症状分类,属于,SymptomCategory,放疗相关恶心呕吐
+SymptomCategory,症状分类,属于,SymptomCategory,妊娠期恶心呕吐
+SymptomCategory,症状分类,属于,SymptomCategory,妊娠剧吐
+SymptomCategory,症状分类,属于,SymptomCategory,术后恶心呕吐
+SymptomCategory,症状分类,属于,SymptomCategory,急性恶心呕吐
+SymptomCategory,症状分类,属于,SymptomCategory,延迟性恶心呕吐
+SymptomCategory,症状分类,属于,SymptomCategory,预期性恶心呕吐
+SymptomCategory,症状分类,属于,SymptomCategory,爆发性恶心呕吐
+AssessmentTool,评估工具,属于,AssessmentTool,CTCAE 不良反应评价标准 v5.0
+AssessmentTool,评估工具,属于,AssessmentTool,EORTC QLQ-C30 肿瘤生活质量问卷
+AssessmentTool,评估工具,属于,AssessmentTool,MASCC 止吐自评工具
+AssessmentTool,评估工具,属于,AssessmentTool,Apfel 简化风险评分
+AssessmentTool,评估工具,属于,AssessmentTool,PUQE 妊娠剧吐严重程度评分
+RiskFactor,高危因素识别,属于,RiskFactor,女性
+RiskFactor,高危因素识别,属于,RiskFactor,年龄较轻
+RiskFactor,高危因素识别,属于,RiskFactor,非吸烟者
+RiskFactor,高危因素识别,属于,RiskFactor,晕动病史
+RiskFactor,高危因素识别,属于,RiskFactor,既往恶心呕吐史
+RiskFactor,高危因素识别,属于,RiskFactor,焦虑
+RiskFactor,高危因素识别,属于,RiskFactor,术后阿片类镇痛
+RiskFactor,高危因素识别,属于,RiskFactor,睡眠障碍
+RiskFactor,高危因素识别,属于,RiskFactor,无饮酒史
+RiskFactor,高危因素识别,属于,RiskFactor,化疗前进食不足
+PharmacologicalManagement,药物管理,属于,PharmacologicalManagement,5-HT3 受体拮抗剂
+PharmacologicalManagement,药物管理,属于,PharmacologicalManagement,地塞米松
+PharmacologicalManagement,药物管理,属于,PharmacologicalManagement,NK-1 受体拮抗剂
+PharmacologicalManagement,药物管理,属于,PharmacologicalManagement,奥氮平
+PharmacologicalManagement,药物管理,属于,PharmacologicalManagement,甲氧氯普胺
+PharmacologicalManagement,药物管理,属于,PharmacologicalManagement,多巴胺受体拮抗剂
+PharmacologicalManagement,药物管理,属于,PharmacologicalManagement,抗组胺药
+PharmacologicalManagement,药物管理,属于,PharmacologicalManagement,维生素 B6
+PharmacologicalManagement,药物管理,属于,PharmacologicalManagement,肠内营养支持
+PharmacologicalManagement,药物管理,属于,PharmacologicalManagement,硫胺素（维生素 B1）
+NonPharmacologicalManagement,非药物管理,属于,NonPharmacologicalManagement,起居护理
+NonPharmacologicalManagement,非药物管理,属于,NonPharmacologicalManagement,穴位刺激
+NonPharmacologicalManagement,非药物管理,属于,NonPharmacologicalManagement,液体疗法
+NonPharmacologicalManagement,非药物管理,属于,NonPharmacologicalManagement,芳香疗法（精油疗法）
+NonPharmacologicalManagement,非药物管理,属于,NonPharmacologicalManagement,生姜疗法
+NonPharmacologicalManagement,非药物管理,属于,NonPharmacologicalManagement,健康教育
+NonPharmacologicalManagement,非药物管理,属于,NonPharmacologicalManagement,口腔护理
+NonPharmacologicalManagement,非药物管理,属于,NonPharmacologicalManagement,行为干预
+SymptomStatus,症状现状,属于,SymptomStatus,化疗相关恶心呕吐发生率
+SymptomStatus,症状现状,属于,SymptomStatus,术后恶心呕吐发生率
+SymptomStatus,症状现状,属于,SymptomStatus,妊娠期恶心呕吐发生率
+SymptomStatus,症状现状,属于,SymptomStatus,妊娠剧吐发生率
+SymptomStatus,症状现状,属于,SymptomStatus,预期性恶心呕吐发生率
+SymptomStatus,症状现状,属于,SymptomStatus,症状控制率
+SymptomStatus,症状现状,属于,SymptomStatus,脱水
+SymptomStatus,症状现状,属于,SymptomStatus,电解质紊乱
+SymptomStatus,症状现状,属于,SymptomStatus,干呕
+FunctionalStatus,功能状况,属于,FunctionalStatus,进食受影响
+FunctionalStatus,功能状况,属于,FunctionalStatus,体重下降
+FunctionalStatus,功能状况,属于,FunctionalStatus,生活质量下降
+FunctionalStatus,功能状况,属于,FunctionalStatus,自我照护能力下降
+FunctionalStatus,功能状况,属于,FunctionalStatus,活动耐力下降
+FunctionalStatus,功能状况,属于,FunctionalStatus,误吸风险

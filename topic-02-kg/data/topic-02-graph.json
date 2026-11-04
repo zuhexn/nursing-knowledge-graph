@@ -6038,6 +6038,1260 @@
           "cite": "张英英, 乔欣, 赵丽丽, 汤媛媛, 刘芳/非药物干预对癌症化疗致恶心呕吐影响的网状Meta分析/循证护理/2024"
         }
       ]
+    },
+    {
+      "id": "FW_SymptomExperience",
+      "name": "症状体验",
+      "type": "SymptomExperience",
+      "tags": [
+        "知识框架",
+        "一级框架"
+      ],
+      "aliases": [
+        "症状体验"
+      ],
+      "summary": "论文「恶心呕吐症状管理图」一级框架之一，以症状管理理论为基础。本模块收录核心症状体验 —— 恶心、呕吐。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "一级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "最佳证据",
+          "author": "Zheng P, Ou Y, Jiang J, Liu H, Mo X, Li J",
+          "title": "癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结",
+          "journal": "长江医学",
+          "year": 2023,
+          "grade": "最佳证据总结",
+          "locate": "DOI 10.4236/ym.2023.71004",
+          "ref": "R16",
+          "cite": "Zheng P, Ou Y, Jiang J, Liu H, Mo X, Li J/癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结/长江医学/2023"
+        },
+        {
+          "type": "声明",
+          "author": "Vidall C, Dielenseger P, Farrell C, et al.",
+          "title": "化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明",
+          "journal": "欧洲癌症医学科学",
+          "year": 2011,
+          "grade": "学会立场声明",
+          "locate": "PMID 22276054 · DOI 10.3332/ecancer.2011.211",
+          "ref": "R13",
+          "cite": "Vidall C, Dielenseger P, Farrell C, et al./化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明/欧洲癌症医学科学/2011"
+        },
+        {
+          "type": "指南",
+          "author": "Herrstedt J, Clark-Snow R, Ruhlmann CH, et al.",
+          "title": "2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防",
+          "journal": "欧洲肿瘤内科学会开放版",
+          "year": 2024,
+          "grade": "指南（最新版本）",
+          "locate": "PMID 38458657 · DOI 10.1016/j.esmoop.2023.102195",
+          "ref": "R02",
+          "cite": "Herrstedt J, Clark-Snow R, Ruhlmann CH, et al./2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防/欧洲肿瘤内科学会开放版/2024"
+        },
+        {
+          "type": "系统评价",
+          "author": "Matthews A, Haas DM, O'Mathúna DP, Dowswell T, Doyle M",
+          "title": "妊娠早期恶心呕吐的干预措施",
+          "journal": "考克兰系统评价数据库",
+          "year": 2015,
+          "grade": "系统评价",
+          "locate": "DOI 10.1002/14651858.CD007575.pub4",
+          "ref": "R18",
+          "cite": "Matthews A, Haas DM, O'Mathúna DP, Dowswell T, Doyle M/妊娠早期恶心呕吐的干预措施/考克兰系统评价数据库/2015"
+        }
+      ],
+      "graph": "topic-02"
+    },
+    {
+      "id": "FW_ManagementStrategy",
+      "name": "症状管理策略",
+      "type": "ManagementStrategy",
+      "tags": [
+        "知识框架",
+        "一级框架"
+      ],
+      "aliases": [
+        "症状管理策略"
+      ],
+      "summary": "论文「恶心呕吐症状管理图」一级框架之一。本模块收录症状管理策略 —— 化疗相关恶心呕吐管理策略、妊娠期恶心呕吐管理策略、术后恶心呕吐管理策略、整合症状管理策略。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "一级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Hesketh PJ, Kris MG, Basch E, et al.",
+          "title": "止吐药物：美国临床肿瘤学会指南更新",
+          "journal": "临床肿瘤学杂志",
+          "year": 2020,
+          "grade": "指南（最新版本）",
+          "locate": "PMID 32658626 · DOI 10.1200/JCO.20.01296",
+          "ref": "R01",
+          "cite": "Hesketh PJ, Kris MG, Basch E, et al./止吐药物：美国临床肿瘤学会指南更新/临床肿瘤学杂志/2020"
+        },
+        {
+          "type": "指南",
+          "author": "Herrstedt J, Clark-Snow R, Ruhlmann CH, et al.",
+          "title": "2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防",
+          "journal": "欧洲肿瘤内科学会开放版",
+          "year": 2024,
+          "grade": "指南（最新版本）",
+          "locate": "PMID 38458657 · DOI 10.1016/j.esmoop.2023.102195",
+          "ref": "R02",
+          "cite": "Herrstedt J, Clark-Snow R, Ruhlmann CH, et al./2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防/欧洲肿瘤内科学会开放版/2024"
+        },
+        {
+          "type": "推荐",
+          "author": "Herrstedt J, Celio L, Hesketh PJ, et al.",
+          "title": "2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会共识更新：高致吐风险抗肿瘤药物所致恶心呕吐的预防",
+          "journal": "癌症支持治疗",
+          "year": 2023,
+          "grade": "共识推荐条目",
+          "locate": "PMID 38127246 · DOI 10.1007/s00520-023-08221-4",
+          "ref": "R12",
+          "cite": "Herrstedt J, Celio L, Hesketh PJ, et al./2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会共识更新：高致吐风险抗肿瘤药物所致恶心呕吐的预防/癌症支持治疗/2023"
+        },
+        {
+          "type": "共识",
+          "author": "中国抗癌协会肿瘤临床化疗专业委员会, 中国抗癌协会肿瘤支持治疗专业委员会",
+          "title": "中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）",
+          "journal": "中华医学杂志",
+          "year": 2022,
+          "grade": "专家共识",
+          "locate": "DOI 10.3760/cma.j.cn112137-20220810-01724",
+          "ref": "R06",
+          "cite": "中国抗癌协会肿瘤临床化疗专业委员会, 中国抗癌协会肿瘤支持治疗专业委员会/中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）/中华医学杂志/2022"
+        },
+        {
+          "type": "共识",
+          "author": "《四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识》编写专家组",
+          "title": "四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版",
+          "journal": "中国循证医学杂志",
+          "year": 2024,
+          "grade": "专家共识",
+          "locate": "DOI 10.7507/1672-2531.202407066",
+          "ref": "R07",
+          "cite": "《四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识》编写专家组/四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版/中国循证医学杂志/2024"
+        },
+        {
+          "type": "指南",
+          "author": "美国国家综合癌症网络",
+          "title": "美国国家综合癌症网络肿瘤临床实践指南：止吐（2025 年第 2 版）",
+          "journal": "美国国家综合癌症网络",
+          "year": 2025,
+          "grade": "指南（最新版本）",
+          "locate": "https://www.nccn.org/guidelines/guidelines-detail?category=3&id=1415",
+          "ref": "R03",
+          "cite": "美国国家综合癌症网络/美国国家综合癌症网络肿瘤临床实践指南：止吐（2025 年第 2 版）/美国国家综合癌症网络/2025"
+        },
+        {
+          "type": "指南",
+          "author": "Nelson-Piercy C, Dean C, Shehmar M, et al.",
+          "title": "妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）",
+          "journal": "国际妇产科杂志",
+          "year": 2024,
+          "grade": "指南（最新版本）",
+          "locate": "PMID 38311315",
+          "ref": "R04",
+          "cite": "Nelson-Piercy C, Dean C, Shehmar M, et al./妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）/国际妇产科杂志/2024"
+        },
+        {
+          "type": "建议",
+          "author": "世界卫生组织",
+          "title": "世界卫生组织关于产前保健促进积极妊娠体验的建议",
+          "journal": "世界卫生组织",
+          "year": 2016,
+          "grade": "指南推荐条目",
+          "locate": "ISBN 9789241549912 · 推荐条目 D.1",
+          "ref": "R11",
+          "cite": "世界卫生组织/世界卫生组织关于产前保健促进积极妊娠体验的建议/世界卫生组织/2016"
+        },
+        {
+          "type": "系统评价",
+          "author": "Matthews A, Haas DM, O'Mathúna DP, Dowswell T, Doyle M",
+          "title": "妊娠早期恶心呕吐的干预措施",
+          "journal": "考克兰系统评价数据库",
+          "year": 2015,
+          "grade": "系统评价",
+          "locate": "DOI 10.1002/14651858.CD007575.pub4",
+          "ref": "R18",
+          "cite": "Matthews A, Haas DM, O'Mathúna DP, Dowswell T, Doyle M/妊娠早期恶心呕吐的干预措施/考克兰系统评价数据库/2015"
+        },
+        {
+          "type": "共识",
+          "author": "Gan TJ, Jin Z, Ayad S, et al.",
+          "title": "术后恶心呕吐管理第五版共识指南（摘要）",
+          "journal": "麻醉与镇痛",
+          "year": 2025,
+          "grade": "专家共识（最新版本）",
+          "locate": "PMID 41237407 · DOI 10.1213/ANE.0000000000007816",
+          "ref": "R05",
+          "cite": "Gan TJ, Jin Z, Ayad S, et al./术后恶心呕吐管理第五版共识指南（摘要）/麻醉与镇痛/2025"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Han J, Xu Q, Wang W, Zhou Y",
+          "title": "护士主导的非药物干预在腹腔镜手术成人患者术后恶心呕吐预防与管理中的证据总结",
+          "journal": "BMC 护理",
+          "year": 2026,
+          "grade": "证据总结（推荐实践）",
+          "locate": "DOI 10.1186/s12912-026-05029-5",
+          "ref": "R17",
+          "cite": "Han J, Xu Q, Wang W, Zhou Y/护士主导的非药物干预在腹腔镜手术成人患者术后恶心呕吐预防与管理中的证据总结/BMC 护理/2026"
+        },
+        {
+          "type": "最佳证据",
+          "author": "Zheng P, Ou Y, Jiang J, Liu H, Mo X, Li J",
+          "title": "癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结",
+          "journal": "长江医学",
+          "year": 2023,
+          "grade": "最佳证据总结",
+          "locate": "DOI 10.4236/ym.2023.71004",
+          "ref": "R16",
+          "cite": "Zheng P, Ou Y, Jiang J, Liu H, Mo X, Li J/癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结/长江医学/2023"
+        },
+        {
+          "type": "声明",
+          "author": "Vidall C, Dielenseger P, Farrell C, et al.",
+          "title": "化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明",
+          "journal": "欧洲癌症医学科学",
+          "year": 2011,
+          "grade": "学会立场声明",
+          "locate": "PMID 22276054 · DOI 10.3332/ecancer.2011.211",
+          "ref": "R13",
+          "cite": "Vidall C, Dielenseger P, Farrell C, et al./化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明/欧洲癌症医学科学/2011"
+        }
+      ],
+      "graph": "topic-02"
+    },
+    {
+      "id": "FW_ManagementOutcome",
+      "name": "症状管理效果",
+      "type": "ManagementOutcome",
+      "tags": [
+        "知识框架",
+        "一级框架"
+      ],
+      "aliases": [
+        "症状管理效果"
+      ],
+      "summary": "论文「恶心呕吐症状管理图」一级框架之一。本模块收录症状管理效果 —— 恶心呕吐发生率下降、完全缓解、症状严重程度减轻、进食情况改善、体重维持、生活质量提升、用药依从性提升、住院与急诊减少。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "一级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Hesketh PJ, Kris MG, Basch E, et al.",
+          "title": "止吐药物：美国临床肿瘤学会指南更新",
+          "journal": "临床肿瘤学杂志",
+          "year": 2020,
+          "grade": "指南（最新版本）",
+          "locate": "PMID 32658626 · DOI 10.1200/JCO.20.01296",
+          "ref": "R01",
+          "cite": "Hesketh PJ, Kris MG, Basch E, et al./止吐药物：美国临床肿瘤学会指南更新/临床肿瘤学杂志/2020"
+        },
+        {
+          "type": "指南",
+          "author": "Herrstedt J, Clark-Snow R, Ruhlmann CH, et al.",
+          "title": "2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防",
+          "journal": "欧洲肿瘤内科学会开放版",
+          "year": 2024,
+          "grade": "指南（最新版本）",
+          "locate": "PMID 38458657 · DOI 10.1016/j.esmoop.2023.102195",
+          "ref": "R02",
+          "cite": "Herrstedt J, Clark-Snow R, Ruhlmann CH, et al./2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防/欧洲肿瘤内科学会开放版/2024"
+        },
+        {
+          "type": "推荐",
+          "author": "Herrstedt J, Celio L, Hesketh PJ, et al.",
+          "title": "2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会共识更新：高致吐风险抗肿瘤药物所致恶心呕吐的预防",
+          "journal": "癌症支持治疗",
+          "year": 2023,
+          "grade": "共识推荐条目",
+          "locate": "PMID 38127246 · DOI 10.1007/s00520-023-08221-4",
+          "ref": "R12",
+          "cite": "Herrstedt J, Celio L, Hesketh PJ, et al./2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会共识更新：高致吐风险抗肿瘤药物所致恶心呕吐的预防/癌症支持治疗/2023"
+        },
+        {
+          "type": "标准",
+          "author": "Molassiotis A, Coventry PA, Stricker CT, et al.",
+          "title": "化疗相关恶心呕吐简明临床量表的验证与心理测量学评价：国际癌症支持治疗协会止吐自评工具",
+          "journal": "疼痛与症状管理杂志",
+          "year": 2007,
+          "grade": "标准文本（量表信效度验证）",
+          "locate": "PMID 17509816 · DOI 10.1016/j.jpainsymman.2006.10.018",
+          "ref": "R10",
+          "cite": "Molassiotis A, Coventry PA, Stricker CT, et al./化疗相关恶心呕吐简明临床量表的验证与心理测量学评价：国际癌症支持治疗协会止吐自评工具/疼痛与症状管理杂志/2007"
+        },
+        {
+          "type": "最佳证据",
+          "author": "Zheng P, Ou Y, Jiang J, Liu H, Mo X, Li J",
+          "title": "癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结",
+          "journal": "长江医学",
+          "year": 2023,
+          "grade": "最佳证据总结",
+          "locate": "DOI 10.4236/ym.2023.71004",
+          "ref": "R16",
+          "cite": "Zheng P, Ou Y, Jiang J, Liu H, Mo X, Li J/癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结/长江医学/2023"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Gergő D, Garmaa G, Tóth-Mészáros A, et al.",
+          "title": "吸入薄荷精油作为恶心呕吐治疗的辅助疗法：一项有前景的补充治疗",
+          "journal": "临床医学杂志",
+          "year": 2025,
+          "grade": "Meta分析",
+          "locate": "PMID 40725767 · DOI 10.3390/jcm14145069",
+          "ref": "R20",
+          "cite": "Gergő D, Garmaa G, Tóth-Mészáros A, et al./吸入薄荷精油作为恶心呕吐治疗的辅助疗法：一项有前景的补充治疗/临床医学杂志/2025"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Xiao C, Qin M, Xia H, Xing Q, Wang D, Qian W",
+          "title": "内关穴（PC6）按压对恶性肿瘤患者化疗所致急性与延迟性恶心呕吐的影响：荟萃分析",
+          "journal": "癌症支持治疗",
+          "year": 2023,
+          "grade": "Meta分析",
+          "locate": "PMID 37548707 · DOI 10.1007/s00520-023-07976-0",
+          "ref": "R19",
+          "cite": "Xiao C, Qin M, Xia H, Xing Q, Wang D, Qian W/内关穴（PC6）按压对恶性肿瘤患者化疗所致急性与延迟性恶心呕吐的影响：荟萃分析/癌症支持治疗/2023"
+        },
+        {
+          "type": "Meta分析",
+          "author": "张英英, 乔欣, 赵丽丽, 汤媛媛, 刘芳",
+          "title": "非药物干预对癌症化疗致恶心呕吐影响的网状Meta分析",
+          "journal": "循证护理",
+          "year": 2024,
+          "grade": "Meta分析（网状）",
+          "locate": "DOI 10.12102/j.issn.2095-8668.2024.10.001",
+          "ref": "R21",
+          "cite": "张英英, 乔欣, 赵丽丽, 汤媛媛, 刘芳/非药物干预对癌症化疗致恶心呕吐影响的网状Meta分析/循证护理/2024"
+        },
+        {
+          "type": "指南",
+          "author": "Nelson-Piercy C, Dean C, Shehmar M, et al.",
+          "title": "妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）",
+          "journal": "国际妇产科杂志",
+          "year": 2024,
+          "grade": "指南（最新版本）",
+          "locate": "PMID 38311315",
+          "ref": "R04",
+          "cite": "Nelson-Piercy C, Dean C, Shehmar M, et al./妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）/国际妇产科杂志/2024"
+        },
+        {
+          "type": "声明",
+          "author": "Vidall C, Dielenseger P, Farrell C, et al.",
+          "title": "化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明",
+          "journal": "欧洲癌症医学科学",
+          "year": 2011,
+          "grade": "学会立场声明",
+          "locate": "PMID 22276054 · DOI 10.3332/ecancer.2011.211",
+          "ref": "R13",
+          "cite": "Vidall C, Dielenseger P, Farrell C, et al./化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明/欧洲癌症医学科学/2011"
+        },
+        {
+          "type": "标准",
+          "author": "Fayers PM, Aaronson NK, Bjordal K, Groenvold M, Curran D, Bottomley A",
+          "title": "肿瘤患者生活质量问卷（EORTC QLQ-C30）评分手册（第 3 版）",
+          "journal": "欧洲癌症研究与治疗组织",
+          "year": 2001,
+          "grade": "标准文本（量表与评分标准）",
+          "locate": "ISBN 2-930064-22-6",
+          "ref": "R09",
+          "cite": "Fayers PM, Aaronson NK, Bjordal K, Groenvold M, Curran D, Bottomley A/肿瘤患者生活质量问卷（EORTC QLQ-C30）评分手册（第 3 版）/欧洲癌症研究与治疗组织/2001"
+        },
+        {
+          "type": "共识",
+          "author": "《四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识》编写专家组",
+          "title": "四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版",
+          "journal": "中国循证医学杂志",
+          "year": 2024,
+          "grade": "专家共识",
+          "locate": "DOI 10.7507/1672-2531.202407066",
+          "ref": "R07",
+          "cite": "《四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识》编写专家组/四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版/中国循证医学杂志/2024"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Han J, Xu Q, Wang W, Zhou Y",
+          "title": "护士主导的非药物干预在腹腔镜手术成人患者术后恶心呕吐预防与管理中的证据总结",
+          "journal": "BMC 护理",
+          "year": 2026,
+          "grade": "证据总结（推荐实践）",
+          "locate": "DOI 10.1186/s12912-026-05029-5",
+          "ref": "R17",
+          "cite": "Han J, Xu Q, Wang W, Zhou Y/护士主导的非药物干预在腹腔镜手术成人患者术后恶心呕吐预防与管理中的证据总结/BMC 护理/2026"
+        }
+      ],
+      "graph": "topic-02"
+    },
+    {
+      "id": "FW_SymptomCategory",
+      "name": "症状分类",
+      "type": "SymptomCategory",
+      "tags": [
+        "知识框架",
+        "二级框架"
+      ],
+      "aliases": [
+        "症状分类"
+      ],
+      "summary": "论文表 1「症状分类」二级框架。表 1 原文：「化疗相关性呕吐包括急性呕吐、延迟性呕吐、预期性呕吐、爆发性呕吐及难治性呕吐」。本模块收录症状分型 —— 化疗相关、放疗相关、妊娠期、妊娠剧吐、术后、急性、延迟性、预期性、爆发性恶心呕吐。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "二级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Hesketh PJ, Kris MG, Basch E, et al.",
+          "title": "止吐药物：美国临床肿瘤学会指南更新",
+          "journal": "临床肿瘤学杂志",
+          "year": 2020,
+          "grade": "指南（最新版本）",
+          "locate": "PMID 32658626 · DOI 10.1200/JCO.20.01296",
+          "ref": "R01",
+          "cite": "Hesketh PJ, Kris MG, Basch E, et al./止吐药物：美国临床肿瘤学会指南更新/临床肿瘤学杂志/2020"
+        },
+        {
+          "type": "指南",
+          "author": "Herrstedt J, Clark-Snow R, Ruhlmann CH, et al.",
+          "title": "2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防",
+          "journal": "欧洲肿瘤内科学会开放版",
+          "year": 2024,
+          "grade": "指南（最新版本）",
+          "locate": "PMID 38458657 · DOI 10.1016/j.esmoop.2023.102195",
+          "ref": "R02",
+          "cite": "Herrstedt J, Clark-Snow R, Ruhlmann CH, et al./2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防/欧洲肿瘤内科学会开放版/2024"
+        },
+        {
+          "type": "推荐",
+          "author": "Herrstedt J, Celio L, Hesketh PJ, et al.",
+          "title": "2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会共识更新：高致吐风险抗肿瘤药物所致恶心呕吐的预防",
+          "journal": "癌症支持治疗",
+          "year": 2023,
+          "grade": "共识推荐条目",
+          "locate": "PMID 38127246 · DOI 10.1007/s00520-023-08221-4",
+          "ref": "R12",
+          "cite": "Herrstedt J, Celio L, Hesketh PJ, et al./2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会共识更新：高致吐风险抗肿瘤药物所致恶心呕吐的预防/癌症支持治疗/2023"
+        },
+        {
+          "type": "共识",
+          "author": "中国抗癌协会肿瘤临床化疗专业委员会, 中国抗癌协会肿瘤支持治疗专业委员会",
+          "title": "中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）",
+          "journal": "中华医学杂志",
+          "year": 2022,
+          "grade": "专家共识",
+          "locate": "DOI 10.3760/cma.j.cn112137-20220810-01724",
+          "ref": "R06",
+          "cite": "中国抗癌协会肿瘤临床化疗专业委员会, 中国抗癌协会肿瘤支持治疗专业委员会/中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）/中华医学杂志/2022"
+        },
+        {
+          "type": "指南",
+          "author": "美国国家综合癌症网络",
+          "title": "美国国家综合癌症网络肿瘤临床实践指南：止吐（2025 年第 2 版）",
+          "journal": "美国国家综合癌症网络",
+          "year": 2025,
+          "grade": "指南（最新版本）",
+          "locate": "https://www.nccn.org/guidelines/guidelines-detail?category=3&id=1415",
+          "ref": "R03",
+          "cite": "美国国家综合癌症网络/美国国家综合癌症网络肿瘤临床实践指南：止吐（2025 年第 2 版）/美国国家综合癌症网络/2025"
+        },
+        {
+          "type": "指南",
+          "author": "Nelson-Piercy C, Dean C, Shehmar M, et al.",
+          "title": "妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）",
+          "journal": "国际妇产科杂志",
+          "year": 2024,
+          "grade": "指南（最新版本）",
+          "locate": "PMID 38311315",
+          "ref": "R04",
+          "cite": "Nelson-Piercy C, Dean C, Shehmar M, et al./妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）/国际妇产科杂志/2024"
+        },
+        {
+          "type": "系统评价",
+          "author": "Matthews A, Haas DM, O'Mathúna DP, Dowswell T, Doyle M",
+          "title": "妊娠早期恶心呕吐的干预措施",
+          "journal": "考克兰系统评价数据库",
+          "year": 2015,
+          "grade": "系统评价",
+          "locate": "DOI 10.1002/14651858.CD007575.pub4",
+          "ref": "R18",
+          "cite": "Matthews A, Haas DM, O'Mathúna DP, Dowswell T, Doyle M/妊娠早期恶心呕吐的干预措施/考克兰系统评价数据库/2015"
+        },
+        {
+          "type": "建议",
+          "author": "世界卫生组织",
+          "title": "世界卫生组织关于产前保健促进积极妊娠体验的建议",
+          "journal": "世界卫生组织",
+          "year": 2016,
+          "grade": "指南推荐条目",
+          "locate": "ISBN 9789241549912 · 推荐条目 D.1",
+          "ref": "R11",
+          "cite": "世界卫生组织/世界卫生组织关于产前保健促进积极妊娠体验的建议/世界卫生组织/2016"
+        },
+        {
+          "type": "最佳证据",
+          "author": "Zheng P, Ou Y, Jiang J, Liu H, Mo X, Li J",
+          "title": "癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结",
+          "journal": "长江医学",
+          "year": 2023,
+          "grade": "最佳证据总结",
+          "locate": "DOI 10.4236/ym.2023.71004",
+          "ref": "R16",
+          "cite": "Zheng P, Ou Y, Jiang J, Liu H, Mo X, Li J/癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结/长江医学/2023"
+        },
+        {
+          "type": "共识",
+          "author": "Gan TJ, Jin Z, Ayad S, et al.",
+          "title": "术后恶心呕吐管理第五版共识指南（摘要）",
+          "journal": "麻醉与镇痛",
+          "year": 2025,
+          "grade": "专家共识（最新版本）",
+          "locate": "PMID 41237407 · DOI 10.1213/ANE.0000000000007816",
+          "ref": "R05",
+          "cite": "Gan TJ, Jin Z, Ayad S, et al./术后恶心呕吐管理第五版共识指南（摘要）/麻醉与镇痛/2025"
+        },
+        {
+          "type": "共识",
+          "author": "《四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识》编写专家组",
+          "title": "四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版",
+          "journal": "中国循证医学杂志",
+          "year": 2024,
+          "grade": "专家共识",
+          "locate": "DOI 10.7507/1672-2531.202407066",
+          "ref": "R07",
+          "cite": "《四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识》编写专家组/四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版/中国循证医学杂志/2024"
+        }
+      ],
+      "graph": "topic-02"
+    },
+    {
+      "id": "FW_AssessmentTool",
+      "name": "评估工具",
+      "type": "AssessmentTool",
+      "tags": [
+        "知识框架",
+        "二级框架"
+      ],
+      "aliases": [
+        "评估工具"
+      ],
+      "summary": "论文表 1「评估工具」二级框架。表 1 原文举例 CTCAE v5.0 的恶心分级。本模块收录评估工具 —— CTCAE 不良反应评价标准 v5.0、EORTC QLQ-C30 肿瘤生活质量问卷、MASCC 止吐自评工具、Apfel 简化风险评分、PUQE 妊娠剧吐严重程度评分。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "二级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "标准",
+          "author": "美国国立卫生研究院·国家癌症研究所",
+          "title": "不良事件通用术语标准（CTCAE 第 5.0 版）",
+          "journal": "美国国家癌症研究所",
+          "year": 2017,
+          "grade": "标准文本",
+          "locate": "https://ctep.cancer.gov/protocoldevelopment/electronic_applications/ctc.htm",
+          "ref": "R08",
+          "cite": "美国国立卫生研究院, 美国国家癌症研究所/不良事件通用术语标准（CTCAE 第 5.0 版）/美国国家癌症研究所/2017"
+        },
+        {
+          "type": "标准",
+          "author": "Fayers PM, Aaronson NK, Bjordal K, Groenvold M, Curran D, Bottomley A",
+          "title": "肿瘤患者生活质量问卷（EORTC QLQ-C30）评分手册（第 3 版）",
+          "journal": "欧洲癌症研究与治疗组织",
+          "year": 2001,
+          "grade": "标准文本（量表与评分标准）",
+          "locate": "ISBN 2-930064-22-6",
+          "ref": "R09",
+          "cite": "Fayers PM, Aaronson NK, Bjordal K, Groenvold M, Curran D, Bottomley A/肿瘤患者生活质量问卷（EORTC QLQ-C30）评分手册（第 3 版）/欧洲癌症研究与治疗组织/2001"
+        },
+        {
+          "type": "最佳证据",
+          "author": "Zheng P, Ou Y, Jiang J, Liu H, Mo X, Li J",
+          "title": "癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结",
+          "journal": "长江医学",
+          "year": 2023,
+          "grade": "最佳证据总结",
+          "locate": "DOI 10.4236/ym.2023.71004",
+          "ref": "R16",
+          "cite": "Zheng P, Ou Y, Jiang J, Liu H, Mo X, Li J/癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结/长江医学/2023"
+        },
+        {
+          "type": "标准",
+          "author": "Molassiotis A, Coventry PA, Stricker CT, et al.",
+          "title": "化疗相关恶心呕吐简明临床量表的验证与心理测量学评价：国际癌症支持治疗协会止吐自评工具",
+          "journal": "疼痛与症状管理杂志",
+          "year": 2007,
+          "grade": "标准文本（量表信效度验证）",
+          "locate": "PMID 17509816 · DOI 10.1016/j.jpainsymman.2006.10.018",
+          "ref": "R10",
+          "cite": "Molassiotis A, Coventry PA, Stricker CT, et al./化疗相关恶心呕吐简明临床量表的验证与心理测量学评价：国际癌症支持治疗协会止吐自评工具/疼痛与症状管理杂志/2007"
+        },
+        {
+          "type": "共识",
+          "author": "Gan TJ, Jin Z, Ayad S, et al.",
+          "title": "术后恶心呕吐管理第五版共识指南（摘要）",
+          "journal": "麻醉与镇痛",
+          "year": 2025,
+          "grade": "专家共识（最新版本）",
+          "locate": "PMID 41237407 · DOI 10.1213/ANE.0000000000007816",
+          "ref": "R05",
+          "cite": "Gan TJ, Jin Z, Ayad S, et al./术后恶心呕吐管理第五版共识指南（摘要）/麻醉与镇痛/2025"
+        },
+        {
+          "type": "指南",
+          "author": "Hesketh PJ, Kris MG, Basch E, et al.",
+          "title": "止吐药物：美国临床肿瘤学会指南更新",
+          "journal": "临床肿瘤学杂志",
+          "year": 2020,
+          "grade": "指南（最新版本）",
+          "locate": "PMID 32658626 · DOI 10.1200/JCO.20.01296",
+          "ref": "R01",
+          "cite": "Hesketh PJ, Kris MG, Basch E, et al./止吐药物：美国临床肿瘤学会指南更新/临床肿瘤学杂志/2020"
+        },
+        {
+          "type": "指南",
+          "author": "Nelson-Piercy C, Dean C, Shehmar M, et al.",
+          "title": "妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）",
+          "journal": "国际妇产科杂志",
+          "year": 2024,
+          "grade": "指南（最新版本）",
+          "locate": "PMID 38311315",
+          "ref": "R04",
+          "cite": "Nelson-Piercy C, Dean C, Shehmar M, et al./妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）/国际妇产科杂志/2024"
+        },
+        {
+          "type": "系统评价",
+          "author": "Matthews A, Haas DM, O'Mathúna DP, Dowswell T, Doyle M",
+          "title": "妊娠早期恶心呕吐的干预措施",
+          "journal": "考克兰系统评价数据库",
+          "year": 2015,
+          "grade": "系统评价",
+          "locate": "DOI 10.1002/14651858.CD007575.pub4",
+          "ref": "R18",
+          "cite": "Matthews A, Haas DM, O'Mathúna DP, Dowswell T, Doyle M/妊娠早期恶心呕吐的干预措施/考克兰系统评价数据库/2015"
+        }
+      ],
+      "graph": "topic-02"
+    },
+    {
+      "id": "FW_RiskFactor",
+      "name": "高危因素识别",
+      "type": "RiskFactor",
+      "tags": [
+        "知识框架",
+        "二级框架"
+      ],
+      "aliases": [
+        "高危因素识别"
+      ],
+      "summary": "论文表 1「高危因素识别」二级框架。表 1 原文：「成人术后恶心·呕吐高危因素包括：①女性；②年龄；③不吸烟；④手术类型……⑤既往术后恶心或晕动病史；⑥麻醉」。本模块收录高危因素 —— 女性、年龄较轻、非吸烟者、晕动病史、既往恶心呕吐史、焦虑、术后阿片类镇痛、睡眠障碍、无饮酒史、化疗前进食不足。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "二级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Hesketh PJ, Kris MG, Basch E, et al.",
+          "title": "止吐药物：美国临床肿瘤学会指南更新",
+          "journal": "临床肿瘤学杂志",
+          "year": 2020,
+          "grade": "指南（最新版本）",
+          "locate": "PMID 32658626 · DOI 10.1200/JCO.20.01296",
+          "ref": "R01",
+          "cite": "Hesketh PJ, Kris MG, Basch E, et al./止吐药物：美国临床肿瘤学会指南更新/临床肿瘤学杂志/2020"
+        },
+        {
+          "type": "指南",
+          "author": "Herrstedt J, Clark-Snow R, Ruhlmann CH, et al.",
+          "title": "2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防",
+          "journal": "欧洲肿瘤内科学会开放版",
+          "year": 2024,
+          "grade": "指南（最新版本）",
+          "locate": "PMID 38458657 · DOI 10.1016/j.esmoop.2023.102195",
+          "ref": "R02",
+          "cite": "Herrstedt J, Clark-Snow R, Ruhlmann CH, et al./2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防/欧洲肿瘤内科学会开放版/2024"
+        },
+        {
+          "type": "共识",
+          "author": "Gan TJ, Jin Z, Ayad S, et al.",
+          "title": "术后恶心呕吐管理第五版共识指南（摘要）",
+          "journal": "麻醉与镇痛",
+          "year": 2025,
+          "grade": "专家共识（最新版本）",
+          "locate": "PMID 41237407 · DOI 10.1213/ANE.0000000000007816",
+          "ref": "R05",
+          "cite": "Gan TJ, Jin Z, Ayad S, et al./术后恶心呕吐管理第五版共识指南（摘要）/麻醉与镇痛/2025"
+        },
+        {
+          "type": "共识",
+          "author": "《四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识》编写专家组",
+          "title": "四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版",
+          "journal": "中国循证医学杂志",
+          "year": 2024,
+          "grade": "专家共识",
+          "locate": "DOI 10.7507/1672-2531.202407066",
+          "ref": "R07",
+          "cite": "《四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识》编写专家组/四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版/中国循证医学杂志/2024"
+        },
+        {
+          "type": "共识",
+          "author": "中国抗癌协会肿瘤临床化疗专业委员会, 中国抗癌协会肿瘤支持治疗专业委员会",
+          "title": "中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）",
+          "journal": "中华医学杂志",
+          "year": 2022,
+          "grade": "专家共识",
+          "locate": "DOI 10.3760/cma.j.cn112137-20220810-01724",
+          "ref": "R06",
+          "cite": "中国抗癌协会肿瘤临床化疗专业委员会, 中国抗癌协会肿瘤支持治疗专业委员会/中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）/中华医学杂志/2022"
+        },
+        {
+          "type": "声明",
+          "author": "Vidall C, Dielenseger P, Farrell C, et al.",
+          "title": "化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明",
+          "journal": "欧洲癌症医学科学",
+          "year": 2011,
+          "grade": "学会立场声明",
+          "locate": "PMID 22276054 · DOI 10.3332/ecancer.2011.211",
+          "ref": "R13",
+          "cite": "Vidall C, Dielenseger P, Farrell C, et al./化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明/欧洲癌症医学科学/2011"
+        }
+      ],
+      "graph": "topic-02"
+    },
+    {
+      "id": "FW_PharmacologicalManagement",
+      "name": "药物管理",
+      "type": "PharmacologicalManagement",
+      "tags": [
+        "知识框架",
+        "二级框架"
+      ],
+      "aliases": [
+        "药物管理"
+      ],
+      "summary": "论文表 1「药物管理」二级框架。表 1 原文：「止吐药物的选择首先应基于抗肿瘤药物的致吐风险分级……将抗肿瘤药物的致吐风险分为高度、中度、低度和轻微 4 个等级」。本模块收录药物 —— 5-HT3 受体拮抗剂、地塞米松、NK-1 受体拮抗剂、奥氮平、甲氧氯普胺、多巴胺受体拮抗剂、抗组胺药、维生素 B6、肠内营养支持、硫胺素（维生素 B1）。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "二级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Hesketh PJ, Kris MG, Basch E, et al.",
+          "title": "止吐药物：美国临床肿瘤学会指南更新",
+          "journal": "临床肿瘤学杂志",
+          "year": 2020,
+          "grade": "指南（最新版本）",
+          "locate": "PMID 32658626 · DOI 10.1200/JCO.20.01296",
+          "ref": "R01",
+          "cite": "Hesketh PJ, Kris MG, Basch E, et al./止吐药物：美国临床肿瘤学会指南更新/临床肿瘤学杂志/2020"
+        },
+        {
+          "type": "指南",
+          "author": "Herrstedt J, Clark-Snow R, Ruhlmann CH, et al.",
+          "title": "2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防",
+          "journal": "欧洲肿瘤内科学会开放版",
+          "year": 2024,
+          "grade": "指南（最新版本）",
+          "locate": "PMID 38458657 · DOI 10.1016/j.esmoop.2023.102195",
+          "ref": "R02",
+          "cite": "Herrstedt J, Clark-Snow R, Ruhlmann CH, et al./2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防/欧洲肿瘤内科学会开放版/2024"
+        },
+        {
+          "type": "推荐",
+          "author": "Herrstedt J, Celio L, Hesketh PJ, et al.",
+          "title": "2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会共识更新：高致吐风险抗肿瘤药物所致恶心呕吐的预防",
+          "journal": "癌症支持治疗",
+          "year": 2023,
+          "grade": "共识推荐条目",
+          "locate": "PMID 38127246 · DOI 10.1007/s00520-023-08221-4",
+          "ref": "R12",
+          "cite": "Herrstedt J, Celio L, Hesketh PJ, et al./2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会共识更新：高致吐风险抗肿瘤药物所致恶心呕吐的预防/癌症支持治疗/2023"
+        },
+        {
+          "type": "共识",
+          "author": "中国抗癌协会肿瘤临床化疗专业委员会, 中国抗癌协会肿瘤支持治疗专业委员会",
+          "title": "中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）",
+          "journal": "中华医学杂志",
+          "year": 2022,
+          "grade": "专家共识",
+          "locate": "DOI 10.3760/cma.j.cn112137-20220810-01724",
+          "ref": "R06",
+          "cite": "中国抗癌协会肿瘤临床化疗专业委员会, 中国抗癌协会肿瘤支持治疗专业委员会/中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）/中华医学杂志/2022"
+        },
+        {
+          "type": "指南",
+          "author": "Nelson-Piercy C, Dean C, Shehmar M, et al.",
+          "title": "妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）",
+          "journal": "国际妇产科杂志",
+          "year": 2024,
+          "grade": "指南（最新版本）",
+          "locate": "PMID 38311315",
+          "ref": "R04",
+          "cite": "Nelson-Piercy C, Dean C, Shehmar M, et al./妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）/国际妇产科杂志/2024"
+        },
+        {
+          "type": "建议",
+          "author": "世界卫生组织",
+          "title": "世界卫生组织关于产前保健促进积极妊娠体验的建议",
+          "journal": "世界卫生组织",
+          "year": 2016,
+          "grade": "指南推荐条目",
+          "locate": "ISBN 9789241549912 · 推荐条目 D.1",
+          "ref": "R11",
+          "cite": "世界卫生组织/世界卫生组织关于产前保健促进积极妊娠体验的建议/世界卫生组织/2016"
+        },
+        {
+          "type": "系统评价",
+          "author": "Matthews A, Haas DM, O'Mathúna DP, Dowswell T, Doyle M",
+          "title": "妊娠早期恶心呕吐的干预措施",
+          "journal": "考克兰系统评价数据库",
+          "year": 2015,
+          "grade": "系统评价",
+          "locate": "DOI 10.1002/14651858.CD007575.pub4",
+          "ref": "R18",
+          "cite": "Matthews A, Haas DM, O'Mathúna DP, Dowswell T, Doyle M/妊娠早期恶心呕吐的干预措施/考克兰系统评价数据库/2015"
+        },
+        {
+          "type": "规范",
+          "author": "中华护理学会",
+          "title": "成人肠内营养支持的护理",
+          "journal": "中华护理学会",
+          "year": 2021,
+          "grade": "团体标准（护理规范）",
+          "locate": "T/CNAS 19—2020（编号年 2020 · 发布 2021-02-01 · 实施 2021-05-01）· https://www.ttbz.org.cn/standardDetail.html?id=s6s3qhpso8xyf3jot0eth1xlyxizyls",
+          "ref": "R14",
+          "cite": "中华护理学会/成人肠内营养支持的护理/中华护理学会/2021"
+        },
+        {
+          "type": "书籍",
+          "author": "李小寒, 尚少梅",
+          "title": "基础护理学（第7版）",
+          "journal": "人民卫生出版社",
+          "year": 2022,
+          "grade": "本科规划教材",
+          "locate": "ISBN 9787117333511",
+          "ref": "R15",
+          "cite": "李小寒, 尚少梅/基础护理学（第7版）/人民卫生出版社/2022"
+        },
+        {
+          "type": "最佳证据",
+          "author": "Zheng P, Ou Y, Jiang J, Liu H, Mo X, Li J",
+          "title": "癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结",
+          "journal": "长江医学",
+          "year": 2023,
+          "grade": "最佳证据总结",
+          "locate": "DOI 10.4236/ym.2023.71004",
+          "ref": "R16",
+          "cite": "Zheng P, Ou Y, Jiang J, Liu H, Mo X, Li J/癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结/长江医学/2023"
+        }
+      ],
+      "graph": "topic-02"
+    },
+    {
+      "id": "FW_NonPharmacologicalManagement",
+      "name": "非药物管理",
+      "type": "NonPharmacologicalManagement",
+      "tags": [
+        "知识框架",
+        "二级框架"
+      ],
+      "aliases": [
+        "非药物管理"
+      ],
+      "summary": "论文表 1「非药物管理」二级框架。论文第 20 页写明：点击「非药物管理」实体节点，Web 端返回「起居护理；穴位刺激；液体疗法；芳香疗法/精油疗法；生姜疗法；健康教育」。本模块另收录口腔护理、行为干预。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "二级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "《四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识》编写专家组",
+          "title": "四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版",
+          "journal": "中国循证医学杂志",
+          "year": 2024,
+          "grade": "专家共识",
+          "locate": "DOI 10.7507/1672-2531.202407066",
+          "ref": "R07",
+          "cite": "《四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识》编写专家组/四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版/中国循证医学杂志/2024"
+        },
+        {
+          "type": "书籍",
+          "author": "李小寒, 尚少梅",
+          "title": "基础护理学（第7版）",
+          "journal": "人民卫生出版社",
+          "year": 2022,
+          "grade": "本科规划教材",
+          "locate": "ISBN 9787117333511",
+          "ref": "R15",
+          "cite": "李小寒, 尚少梅/基础护理学（第7版）/人民卫生出版社/2022"
+        },
+        {
+          "type": "共识",
+          "author": "Gan TJ, Jin Z, Ayad S, et al.",
+          "title": "术后恶心呕吐管理第五版共识指南（摘要）",
+          "journal": "麻醉与镇痛",
+          "year": 2025,
+          "grade": "专家共识（最新版本）",
+          "locate": "PMID 41237407 · DOI 10.1213/ANE.0000000000007816",
+          "ref": "R05",
+          "cite": "Gan TJ, Jin Z, Ayad S, et al./术后恶心呕吐管理第五版共识指南（摘要）/麻醉与镇痛/2025"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Xiao C, Qin M, Xia H, Xing Q, Wang D, Qian W",
+          "title": "内关穴（PC6）按压对恶性肿瘤患者化疗所致急性与延迟性恶心呕吐的影响：荟萃分析",
+          "journal": "癌症支持治疗",
+          "year": 2023,
+          "grade": "Meta分析",
+          "locate": "PMID 37548707 · DOI 10.1007/s00520-023-07976-0",
+          "ref": "R19",
+          "cite": "Xiao C, Qin M, Xia H, Xing Q, Wang D, Qian W/内关穴（PC6）按压对恶性肿瘤患者化疗所致急性与延迟性恶心呕吐的影响：荟萃分析/癌症支持治疗/2023"
+        },
+        {
+          "type": "Meta分析",
+          "author": "张英英, 乔欣, 赵丽丽, 汤媛媛, 刘芳",
+          "title": "非药物干预对癌症化疗致恶心呕吐影响的网状Meta分析",
+          "journal": "循证护理",
+          "year": 2024,
+          "grade": "Meta分析（网状）",
+          "locate": "DOI 10.12102/j.issn.2095-8668.2024.10.001",
+          "ref": "R21",
+          "cite": "张英英, 乔欣, 赵丽丽, 汤媛媛, 刘芳/非药物干预对癌症化疗致恶心呕吐影响的网状Meta分析/循证护理/2024"
+        },
+        {
+          "type": "建议",
+          "author": "世界卫生组织",
+          "title": "世界卫生组织关于产前保健促进积极妊娠体验的建议",
+          "journal": "世界卫生组织",
+          "year": 2016,
+          "grade": "指南推荐条目",
+          "locate": "ISBN 9789241549912 · 推荐条目 D.1",
+          "ref": "R11",
+          "cite": "世界卫生组织/世界卫生组织关于产前保健促进积极妊娠体验的建议/世界卫生组织/2016"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Han J, Xu Q, Wang W, Zhou Y",
+          "title": "护士主导的非药物干预在腹腔镜手术成人患者术后恶心呕吐预防与管理中的证据总结",
+          "journal": "BMC 护理",
+          "year": 2026,
+          "grade": "证据总结（推荐实践）",
+          "locate": "DOI 10.1186/s12912-026-05029-5",
+          "ref": "R17",
+          "cite": "Han J, Xu Q, Wang W, Zhou Y/护士主导的非药物干预在腹腔镜手术成人患者术后恶心呕吐预防与管理中的证据总结/BMC 护理/2026"
+        },
+        {
+          "type": "指南",
+          "author": "Nelson-Piercy C, Dean C, Shehmar M, et al.",
+          "title": "妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）",
+          "journal": "国际妇产科杂志",
+          "year": 2024,
+          "grade": "指南（最新版本）",
+          "locate": "PMID 38311315",
+          "ref": "R04",
+          "cite": "Nelson-Piercy C, Dean C, Shehmar M, et al./妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）/国际妇产科杂志/2024"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Gergő D, Garmaa G, Tóth-Mészáros A, et al.",
+          "title": "吸入薄荷精油作为恶心呕吐治疗的辅助疗法：一项有前景的补充治疗",
+          "journal": "临床医学杂志",
+          "year": 2025,
+          "grade": "Meta分析",
+          "locate": "PMID 40725767 · DOI 10.3390/jcm14145069",
+          "ref": "R20",
+          "cite": "Gergő D, Garmaa G, Tóth-Mészáros A, et al./吸入薄荷精油作为恶心呕吐治疗的辅助疗法：一项有前景的补充治疗/临床医学杂志/2025"
+        },
+        {
+          "type": "系统评价",
+          "author": "Matthews A, Haas DM, O'Mathúna DP, Dowswell T, Doyle M",
+          "title": "妊娠早期恶心呕吐的干预措施",
+          "journal": "考克兰系统评价数据库",
+          "year": 2015,
+          "grade": "系统评价",
+          "locate": "DOI 10.1002/14651858.CD007575.pub4",
+          "ref": "R18",
+          "cite": "Matthews A, Haas DM, O'Mathúna DP, Dowswell T, Doyle M/妊娠早期恶心呕吐的干预措施/考克兰系统评价数据库/2015"
+        },
+        {
+          "type": "声明",
+          "author": "Vidall C, Dielenseger P, Farrell C, et al.",
+          "title": "化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明",
+          "journal": "欧洲癌症医学科学",
+          "year": 2011,
+          "grade": "学会立场声明",
+          "locate": "PMID 22276054 · DOI 10.3332/ecancer.2011.211",
+          "ref": "R13",
+          "cite": "Vidall C, Dielenseger P, Farrell C, et al./化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明/欧洲癌症医学科学/2011"
+        },
+        {
+          "type": "共识",
+          "author": "中国抗癌协会肿瘤临床化疗专业委员会, 中国抗癌协会肿瘤支持治疗专业委员会",
+          "title": "中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）",
+          "journal": "中华医学杂志",
+          "year": 2022,
+          "grade": "专家共识",
+          "locate": "DOI 10.3760/cma.j.cn112137-20220810-01724",
+          "ref": "R06",
+          "cite": "中国抗癌协会肿瘤临床化疗专业委员会, 中国抗癌协会肿瘤支持治疗专业委员会/中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）/中华医学杂志/2022"
+        }
+      ],
+      "graph": "topic-02"
+    },
+    {
+      "id": "FW_SymptomStatus",
+      "name": "症状现状",
+      "type": "SymptomStatus",
+      "tags": [
+        "知识框架",
+        "二级框架"
+      ],
+      "aliases": [
+        "症状现状"
+      ],
+      "summary": "论文表 1「症状现状」二级框架。表 1 原文：「是否发生、是否缓解、主要影响因素（包括患者个人特征、疾病和临床评估、社会支持、依从性）」。本模块收录症状现状 —— 化疗相关 / 术后 / 妊娠期 / 妊娠剧吐 / 预期性恶心呕吐发生率、症状控制率、脱水、电解质紊乱、干呕。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "二级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Hesketh PJ, Kris MG, Basch E, et al.",
+          "title": "止吐药物：美国临床肿瘤学会指南更新",
+          "journal": "临床肿瘤学杂志",
+          "year": 2020,
+          "grade": "指南（最新版本）",
+          "locate": "PMID 32658626 · DOI 10.1200/JCO.20.01296",
+          "ref": "R01",
+          "cite": "Hesketh PJ, Kris MG, Basch E, et al./止吐药物：美国临床肿瘤学会指南更新/临床肿瘤学杂志/2020"
+        },
+        {
+          "type": "指南",
+          "author": "Herrstedt J, Clark-Snow R, Ruhlmann CH, et al.",
+          "title": "2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防",
+          "journal": "欧洲肿瘤内科学会开放版",
+          "year": 2024,
+          "grade": "指南（最新版本）",
+          "locate": "PMID 38458657 · DOI 10.1016/j.esmoop.2023.102195",
+          "ref": "R02",
+          "cite": "Herrstedt J, Clark-Snow R, Ruhlmann CH, et al./2023 年国际癌症支持治疗协会与欧洲肿瘤内科学会指南更新：化疗及放疗相关恶心呕吐的预防/欧洲肿瘤内科学会开放版/2024"
+        },
+        {
+          "type": "共识",
+          "author": "《四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识》编写专家组",
+          "title": "四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版",
+          "journal": "中国循证医学杂志",
+          "year": 2024,
+          "grade": "专家共识",
+          "locate": "DOI 10.7507/1672-2531.202407066",
+          "ref": "R07",
+          "cite": "《四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识》编写专家组/四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版/中国循证医学杂志/2024"
+        },
+        {
+          "type": "共识",
+          "author": "Gan TJ, Jin Z, Ayad S, et al.",
+          "title": "术后恶心呕吐管理第五版共识指南（摘要）",
+          "journal": "麻醉与镇痛",
+          "year": 2025,
+          "grade": "专家共识（最新版本）",
+          "locate": "PMID 41237407 · DOI 10.1213/ANE.0000000000007816",
+          "ref": "R05",
+          "cite": "Gan TJ, Jin Z, Ayad S, et al./术后恶心呕吐管理第五版共识指南（摘要）/麻醉与镇痛/2025"
+        },
+        {
+          "type": "指南",
+          "author": "Nelson-Piercy C, Dean C, Shehmar M, et al.",
+          "title": "妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）",
+          "journal": "国际妇产科杂志",
+          "year": 2024,
+          "grade": "指南（最新版本）",
+          "locate": "PMID 38311315",
+          "ref": "R04",
+          "cite": "Nelson-Piercy C, Dean C, Shehmar M, et al./妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）/国际妇产科杂志/2024"
+        },
+        {
+          "type": "系统评价",
+          "author": "Matthews A, Haas DM, O'Mathúna DP, Dowswell T, Doyle M",
+          "title": "妊娠早期恶心呕吐的干预措施",
+          "journal": "考克兰系统评价数据库",
+          "year": 2015,
+          "grade": "系统评价",
+          "locate": "DOI 10.1002/14651858.CD007575.pub4",
+          "ref": "R18",
+          "cite": "Matthews A, Haas DM, O'Mathúna DP, Dowswell T, Doyle M/妊娠早期恶心呕吐的干预措施/考克兰系统评价数据库/2015"
+        },
+        {
+          "type": "共识",
+          "author": "中国抗癌协会肿瘤临床化疗专业委员会, 中国抗癌协会肿瘤支持治疗专业委员会",
+          "title": "中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）",
+          "journal": "中华医学杂志",
+          "year": 2022,
+          "grade": "专家共识",
+          "locate": "DOI 10.3760/cma.j.cn112137-20220810-01724",
+          "ref": "R06",
+          "cite": "中国抗癌协会肿瘤临床化疗专业委员会, 中国抗癌协会肿瘤支持治疗专业委员会/中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）/中华医学杂志/2022"
+        },
+        {
+          "type": "标准",
+          "author": "Molassiotis A, Coventry PA, Stricker CT, et al.",
+          "title": "化疗相关恶心呕吐简明临床量表的验证与心理测量学评价：国际癌症支持治疗协会止吐自评工具",
+          "journal": "疼痛与症状管理杂志",
+          "year": 2007,
+          "grade": "标准文本（量表信效度验证）",
+          "locate": "PMID 17509816 · DOI 10.1016/j.jpainsymman.2006.10.018",
+          "ref": "R10",
+          "cite": "Molassiotis A, Coventry PA, Stricker CT, et al./化疗相关恶心呕吐简明临床量表的验证与心理测量学评价：国际癌症支持治疗协会止吐自评工具/疼痛与症状管理杂志/2007"
+        },
+        {
+          "type": "书籍",
+          "author": "李小寒, 尚少梅",
+          "title": "基础护理学（第7版）",
+          "journal": "人民卫生出版社",
+          "year": 2022,
+          "grade": "本科规划教材",
+          "locate": "ISBN 9787117333511",
+          "ref": "R15",
+          "cite": "李小寒, 尚少梅/基础护理学（第7版）/人民卫生出版社/2022"
+        },
+        {
+          "type": "最佳证据",
+          "author": "Zheng P, Ou Y, Jiang J, Liu H, Mo X, Li J",
+          "title": "癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结",
+          "journal": "长江医学",
+          "year": 2023,
+          "grade": "最佳证据总结",
+          "locate": "DOI 10.4236/ym.2023.71004",
+          "ref": "R16",
+          "cite": "Zheng P, Ou Y, Jiang J, Liu H, Mo X, Li J/癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结/长江医学/2023"
+        },
+        {
+          "type": "声明",
+          "author": "Vidall C, Dielenseger P, Farrell C, et al.",
+          "title": "化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明",
+          "journal": "欧洲癌症医学科学",
+          "year": 2011,
+          "grade": "学会立场声明",
+          "locate": "PMID 22276054 · DOI 10.3332/ecancer.2011.211",
+          "ref": "R13",
+          "cite": "Vidall C, Dielenseger P, Farrell C, et al./化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明/欧洲癌症医学科学/2011"
+        }
+      ],
+      "graph": "topic-02"
+    },
+    {
+      "id": "FW_FunctionalStatus",
+      "name": "功能状况",
+      "type": "FunctionalStatus",
+      "tags": [
+        "知识框架",
+        "二级框架"
+      ],
+      "aliases": [
+        "功能状况"
+      ],
+      "summary": "论文表 1「功能状况」二级框架。表 1 原文举例 FACT-G 生命质量测量量表。本模块收录功能状况 —— 进食受影响、体重下降、生活质量下降、自我照护能力下降、活动耐力下降、误吸风险。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "二级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "标准",
+          "author": "Fayers PM, Aaronson NK, Bjordal K, Groenvold M, Curran D, Bottomley A",
+          "title": "肿瘤患者生活质量问卷（EORTC QLQ-C30）评分手册（第 3 版）",
+          "journal": "欧洲癌症研究与治疗组织",
+          "year": 2001,
+          "grade": "标准文本（量表与评分标准）",
+          "locate": "ISBN 2-930064-22-6",
+          "ref": "R09",
+          "cite": "Fayers PM, Aaronson NK, Bjordal K, Groenvold M, Curran D, Bottomley A/肿瘤患者生活质量问卷（EORTC QLQ-C30）评分手册（第 3 版）/欧洲癌症研究与治疗组织/2001"
+        },
+        {
+          "type": "最佳证据",
+          "author": "Zheng P, Ou Y, Jiang J, Liu H, Mo X, Li J",
+          "title": "癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结",
+          "journal": "长江医学",
+          "year": 2023,
+          "grade": "最佳证据总结",
+          "locate": "DOI 10.4236/ym.2023.71004",
+          "ref": "R16",
+          "cite": "Zheng P, Ou Y, Jiang J, Liu H, Mo X, Li J/癌症患者化疗相关恶心呕吐评估与管理的最佳证据总结/长江医学/2023"
+        },
+        {
+          "type": "声明",
+          "author": "Vidall C, Dielenseger P, Farrell C, et al.",
+          "title": "化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明",
+          "journal": "欧洲癌症医学科学",
+          "year": 2011,
+          "grade": "学会立场声明",
+          "locate": "PMID 22276054 · DOI 10.3332/ecancer.2011.211",
+          "ref": "R13",
+          "cite": "Vidall C, Dielenseger P, Farrell C, et al./化疗相关恶心呕吐的循证管理：欧洲肿瘤护理论坛立场声明/欧洲癌症医学科学/2011"
+        },
+        {
+          "type": "指南",
+          "author": "Nelson-Piercy C, Dean C, Shehmar M, et al.",
+          "title": "妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）",
+          "journal": "国际妇产科杂志",
+          "year": 2024,
+          "grade": "指南（最新版本）",
+          "locate": "PMID 38311315",
+          "ref": "R04",
+          "cite": "Nelson-Piercy C, Dean C, Shehmar M, et al./妊娠期恶心呕吐与妊娠剧吐的管理（英国皇家妇产科医学院绿皮书第 69 号）/国际妇产科杂志/2024"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Han J, Xu Q, Wang W, Zhou Y",
+          "title": "护士主导的非药物干预在腹腔镜手术成人患者术后恶心呕吐预防与管理中的证据总结",
+          "journal": "BMC 护理",
+          "year": 2026,
+          "grade": "证据总结（推荐实践）",
+          "locate": "DOI 10.1186/s12912-026-05029-5",
+          "ref": "R17",
+          "cite": "Han J, Xu Q, Wang W, Zhou Y/护士主导的非药物干预在腹腔镜手术成人患者术后恶心呕吐预防与管理中的证据总结/BMC 护理/2026"
+        },
+        {
+          "type": "共识",
+          "author": "Gan TJ, Jin Z, Ayad S, et al.",
+          "title": "术后恶心呕吐管理第五版共识指南（摘要）",
+          "journal": "麻醉与镇痛",
+          "year": 2025,
+          "grade": "专家共识（最新版本）",
+          "locate": "PMID 41237407 · DOI 10.1213/ANE.0000000000007816",
+          "ref": "R05",
+          "cite": "Gan TJ, Jin Z, Ayad S, et al./术后恶心呕吐管理第五版共识指南（摘要）/麻醉与镇痛/2025"
+        }
+      ],
+      "graph": "topic-02"
     }
   ],
   "edges": [
@@ -8572,6 +9826,552 @@
       "target": "t02-ref-04",
       "type": "SUPPORTED_BY",
       "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "FW_SymptomExperience",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "FW_SymptomExperience",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "FW_ManagementStrategy",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "FW_ManagementStrategy",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "FW_ManagementStrategy",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomStatus",
+      "target": "FW_ManagementOutcome",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_FunctionalStatus",
+      "target": "FW_ManagementOutcome",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomExperience",
+      "target": "t02-exp-nausea",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomExperience",
+      "target": "t02-exp-vomiting",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_ManagementStrategy",
+      "target": "t02-strategy-cinv",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_ManagementStrategy",
+      "target": "t02-strategy-nvp",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_ManagementStrategy",
+      "target": "t02-strategy-ponv",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_ManagementStrategy",
+      "target": "t02-strategy-integrated",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_ManagementOutcome",
+      "target": "t02-outcome-incidence",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_ManagementOutcome",
+      "target": "t02-outcome-complete-response",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_ManagementOutcome",
+      "target": "t02-outcome-severity",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_ManagementOutcome",
+      "target": "t02-outcome-eating",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_ManagementOutcome",
+      "target": "t02-outcome-weight",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_ManagementOutcome",
+      "target": "t02-outcome-qol",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_ManagementOutcome",
+      "target": "t02-outcome-adherence",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_ManagementOutcome",
+      "target": "t02-outcome-hospitalization",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "t02-cat-cinv",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "t02-cat-rinv",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "t02-cat-nvp",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "t02-cat-hg",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "t02-cat-ponv",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "t02-cat-acute",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "t02-cat-delayed",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "t02-cat-anticipatory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "t02-cat-breakthrough",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "t02-tool-ctca",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "t02-tool-eortc-qlq-c30",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "t02-tool-mascc-mat",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "t02-tool-apfel",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "t02-tool-puqe",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "t02-risk-female",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "t02-risk-young-age",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "t02-risk-non-smoker",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "t02-risk-motion-sickness",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "t02-risk-prior-nv",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "t02-risk-anxiety",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "t02-risk-opioid",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "t02-risk-sleep-disturbance",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "t02-risk-low-alcohol",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "t02-risk-no-prior-meal",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "t02-pharm-5ht3-ra",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "t02-pharm-dexamethasone",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "t02-pharm-nk1-ra",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "t02-pharm-olanzapine",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "t02-pharm-metoclopramide",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "t02-pharm-dopamine-antagonist",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "t02-pharm-antihistamine",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "t02-pharm-vitamin-b6",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "t02-pharm-enteral-nutrition",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "t02-pharm-thiamine",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "t02-nonpharm-lifestyle",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "t02-nonpharm-acupoint",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "t02-nonpharm-fluid",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "t02-nonpharm-aromatherapy",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "t02-nonpharm-ginger",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "t02-nonpharm-health-education",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "t02-nonpharm-oral-care",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "t02-nonpharm-behavioral",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomStatus",
+      "target": "t02-status-cinv-incidence",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomStatus",
+      "target": "t02-status-ponv-incidence",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomStatus",
+      "target": "t02-status-nvp-incidence",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomStatus",
+      "target": "t02-status-hg-incidence",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomStatus",
+      "target": "t02-status-anticipatory-incidence",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomStatus",
+      "target": "t02-status-control-rate",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomStatus",
+      "target": "t02-status-dehydration",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomStatus",
+      "target": "t02-status-electrolyte",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomStatus",
+      "target": "t02-status-retching",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_FunctionalStatus",
+      "target": "t02-func-eating",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_FunctionalStatus",
+      "target": "t02-func-weight",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_FunctionalStatus",
+      "target": "t02-func-qol",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_FunctionalStatus",
+      "target": "t02-func-self-care",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_FunctionalStatus",
+      "target": "t02-func-activity",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_FunctionalStatus",
+      "target": "t02-func-aspiration-risk",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
     }
   ]
 }

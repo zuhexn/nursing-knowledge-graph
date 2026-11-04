@@ -447,9 +447,20 @@
   .cat-n{font-size:12px;color:var(--accent);flex-shrink:0;}
   .cat-arrow{font-size:17px;color:#5f6e8a;flex-shrink:0;line-height:1;transition:transform .18s;}
   .cat.open .cat-arrow{transform:rotate(90deg);}
+  /* 二级框架卡：缩进一级 + 轻一点 —— 一级框架是「章节」，二级框架是「小节」 */
+  .cat.sub{margin-left:12px;border-style:dashed;}
+  .cat.sub .cat-label{font-size:13.5px;}
+  .cat.sub .cat-dot{width:8px;height:8px;}
+  /* 模块根（题目的那一个节点） */
+  .mod-root{border:1px solid #3b4d6e;border-radius:13px;background:var(--panel);margin-bottom:9px;overflow:hidden;}
+  .mod-root .row{border-bottom:none;}
 
   /* ---------- 词条卡（分类展开后 / 检索结果） ---------- */
   .cat-body{padding:2px 9px 9px;border-top:1px solid var(--line);}
+  /* 框架内的缩进层级：数据里同归属的「属于」上下级 */
+  .row.d1{margin-left:14px;padding-left:12px;border-left:2px solid #2b3852;}
+  .row.d2{margin-left:28px;padding-left:12px;border-left:2px solid #2b3852;}
+  .row.d3{margin-left:42px;padding-left:12px;border-left:2px solid #2b3852;}
   .row{
     display:flex;flex-direction:column;gap:4px;width:100%;text-align:left;
     background:none;border:none;border-bottom:1px dashed #232f45;
@@ -871,6 +882,71 @@
   });
   var maxDeg = Math.max.apply(null, Object.keys(degree).map(function (k) { return degree[k]; }).concat([1]));
 
+  /* ============ 知识框架层（一级框架 / 二级框架） ============
+     论文的知识骨架：疾病知识图 6 类一级框架 · 症状管理图 3 类一级框架 · 表 1 的 7 类二级框架。
+     框架节点是**图里的真节点** —— 数据用 attrs 的「框架层级」属性标注自己是几级框架
+     （与 EVIDENCE_TYPE_ATTR_KEYS 同一手法：**判据在前端，值在数据**）。
+     ⛔ 代码里不写死任何类型 key / 框架名 —— 换一道题、换一套框架命名，这条判据最多不生效，
+        列表自动退回「平级分类卡」的老路（renderList 的兜底分支）。
+     层级关系全部从**边**推导，不从代码写死：
+       框架→框架 = 父子（一级/二级）· 框架→内容 = 归属 · 内容→内容（同归属的「属于」边）= 缩进 */
+  var FRAME_ATTR_KEYS = ["框架层级", "frameworkLevel"];
+  var FRAME_EDGE_ROLE = "framework";
+  function frameLevel(n) {
+    var a = (n && n.attrs) || [];
+    for (var i = 0; i < a.length; i++) {
+      if (a[i] && FRAME_ATTR_KEYS.indexOf(String(a[i].k)) >= 0) return String(a[i].v || "");
+    }
+    return "";
+  }
+  function isFramework(n) { return frameLevel(n) !== ""; }
+  /* 「属于」= 包含关系 —— 照 isEvidenceEdge 的做法看关系**名**，不看关系 key */
+  function isContainEdge(e) {
+    var r = REL[e.type];
+    var label = (r && r.label) ? r.label : (e.label || "");
+    return String(label).indexOf("属于") >= 0;
+  }
+  function buildFrameTree() {
+    var fws = {}, any = false;
+    (G.nodes || []).forEach(function (n) { if (isFramework(n)) { fws[n.id] = n; any = true; } });
+    if (!any) return null;
+    var parent = {}, owned = {}, ownerOf = {}, subOf = {}, moduleRoot = null;
+    (G.edges || []).forEach(function (e) {
+      if (e.role !== FRAME_EDGE_ROLE) return;
+      var s = NODE[e.source], t = NODE[e.target];
+      if (!s || !t) return;
+      if (isFramework(s) && isFramework(t)) { parent[e.source] = e.target; return; }
+      if (isFramework(t) && !isFramework(s)) { moduleRoot = e.source; return; }   /* 模块根 → 一级框架 */
+      if (isFramework(s) && !isFramework(t)) {
+        (owned[e.source] = owned[e.source] || []).push(e.target);
+        ownerOf[e.target] = e.source;
+      }
+    });
+    Object.keys(parent).forEach(function (cid) {
+      var pid = parent[cid];
+      (subOf[pid] = subOf[pid] || []).push(cid);
+    });
+    var roots = Object.keys(fws).filter(function (id) { return !parent[id]; });
+    /* 同归属内的「属于」边 = 缩进层级（数据自己已有的上下级，我们不发明层级） */
+    var childOf = {};
+    (G.edges || []).forEach(function (e) {
+      if (e.role === FRAME_EDGE_ROLE) return;
+      if (!isContainEdge(e)) return;
+      var p = NODE[e.target], c = NODE[e.source];      /* source 属于 target ⇒ source 是下级 */
+      if (!p || !c || isFramework(p) || isFramework(c)) return;
+      if (!ownerOf[p.id] || ownerOf[p.id] !== ownerOf[c.id]) return;
+      (childOf[p.id] = childOf[p.id] || []).push(c.id);
+    });
+    return { fws: fws, parent: parent, owned: owned, ownerOf: ownerOf,
+             subOf: subOf, roots: roots, childOf: childOf, moduleRoot: moduleRoot };
+  }
+  var FRAME_TREE = buildFrameTree();
+  /* 框架占住的类型（这些类型不再单独成块 —— 它们已经在框架里） */
+  var FRAME_TYPES = {};
+  if (FRAME_TREE) {
+    Object.keys(FRAME_TREE.fws).forEach(function (id) { FRAME_TYPES[NODE[id].type] = true; });
+  }
+
   /* 枢纽节点（度数最高的一批）—— 手机上只给这几个挂标签：
      节点在屏幕上挨得近，标签一多就互相压字。
      候选给到 12 个，实际能画出几个由「避让」定：压字的、被画布切掉的自动不画。
@@ -901,7 +977,8 @@
     ego: null,         // 非空 = 「只看这一圈」的中心节点 id
     egoSet: null,      // 邻域模式实际画出来的节点集（中心 + 最多 16 个邻居）
     egoHidden: 0,      // 邻域里没画出来的邻居数（角标如实说）
-    showEvidence: false // 是否在画布上画文献边（默认关：一半边是书目结构）
+    showEvidence: false, // 是否在画布上画文献边（默认关：一半边是书目结构）
+    frameOpen: {}      // 框架卡展开状态：frameworkId -> true
   };
   /* 每次展开最多长这么多个：一次几十个点糊上来 = 又一次「一锅粥」。
      先按数据声明的类型顺序（论文框架就是顺序）和度数排，剩下的留在
@@ -914,8 +991,12 @@
   CATS.forEach(function (t, i) { TORDER[t.key] = i; });
   function sortByTypeOrder(ids) {
     return ids.slice().sort(function (a, b) {
-      var oa = TORDER[NODE[a].type], ob = TORDER[NODE[b].type];
+      var na = NODE[a], nb = NODE[b];
+      var oa = TORDER[na.type], ob = TORDER[nb.type];
       if (oa !== ob) return (oa == null ? 99 : oa) - (ob == null ? 99 : ob);
+      /* 同一类型里，框架节点排前面 —— 画布上的第一眼应该是骨架，不是散条目 */
+      var fa = isFramework(na), fb = isFramework(nb);
+      if (fa !== fb) return fa ? -1 : 1;
       return (degree[b] || 0) - (degree[a] || 0);
     });
   }
@@ -980,12 +1061,80 @@
   /* 词条卡 —— 名字 + 一句大白话。
      节点的 summary 本身就是大白话（「嗓子发紧、像有东西卡住，是需要立刻处理的危险信号」），
      所以这里直接用，不必另写一套文案 —— 两处说法不会漂。 */
-  function nodeRow(n) {
+  function nodeRow(n, depth) {
     var t = typeOf(n);
-    return '<button type="button" class="row" data-id="' + esc(n.id) + '">' +
+    var cls = depth ? "row d" + Math.min(depth, 3) : "row";
+    return '<button type="button" class="' + cls + '" data-id="' + esc(n.id) + '">' +
       '<span class="row-top"><span class="row-name">' + esc(n.name) + '</span>' +
       '<span class="row-tp" style="color:' + t.color + '">' + esc(t.label) + '</span></span>' +
       '<span class="row-sum">' + esc(n.summary || "") + '</span></button>';
+  }
+
+  /* ============ 框架树渲染 ============
+     层级：模块根 → 一级框架 → 二级框架 → 条目（条目的缩进来自数据里同归属的「属于」边）。 */
+  function frameEntryTree(id, depth) {
+    var html = nodeRow(NODE[id], depth);
+    ((FRAME_TREE.childOf[id]) || []).forEach(function (kid) {
+      html += frameEntryTree(kid, depth + 1);
+    });
+    return html;
+  }
+  /* 框架自己的条目 = 它认领的节点里**不是别的条目的下级**的那些
+     （是下级的那些缩进渲染在它的上级下面 —— 上级自己仍然出现在顶层） */
+  function frameMembers(fid) {
+    var isChild = {};
+    Object.keys(FRAME_TREE.childOf).forEach(function (pid) {
+      if (FRAME_TREE.ownerOf[pid] !== fid) return;
+      (FRAME_TREE.childOf[pid] || []).forEach(function (cid) { isChild[cid] = true; });
+    });
+    return ((FRAME_TREE.owned[fid]) || []).filter(function (id) { return !isChild[id]; });
+  }
+  /* 一个框架下面一共有多少条（含子框架里的全部条目，每条只算一次） */
+  function frameCount(fid) {
+    var n = ((FRAME_TREE.owned[fid]) || []).length;
+    ((FRAME_TREE.subOf[fid]) || []).forEach(function (sid) { n += frameCount(sid); });
+    return n;
+  }
+  function frameCard(fid, isSub) {
+    var f = NODE[fid];
+    var open = !!state.frameOpen[fid];
+    var t = typeOf(f);
+    var html = '<div class="cat' + (open ? " open" : "") + (isSub ? " sub" : "") + '" data-frame="' + esc(fid) + '">' +
+      '<button type="button" class="cat-head" data-frame="' + esc(fid) + '">' +
+        '<span class="cat-dot" style="background:' + t.color + '"></span>' +
+        '<span class="cat-txt"><span class="cat-label">' + esc(f.name) + '</span>' +
+        '<span class="cat-desc">' + esc(f.summary || "") + '</span></span>' +
+        '<span class="cat-n">' + frameCount(fid) + '</span>' +
+        '<span class="cat-arrow">›</span>' +
+      '</button>';
+    if (open) {
+      html += '<div class="cat-body">';
+      ((FRAME_TREE.subOf[fid]) || []).forEach(function (sid) { html += frameCard(sid, true); });
+      frameMembers(fid).forEach(function (id) { html += frameEntryTree(id, 0); });
+      html += '</div>';
+    }
+    html += '</div>';
+    return html;
+  }
+  /* 没被任何框架认领的节点（文献出处等）—— 单独成一块，不塞进框架 */
+  function otherNodesOfType(key) {
+    return (G.nodes || []).filter(function (n) {
+      if (n.type !== key) return false;
+      if (isFramework(n)) return false;
+      if (FRAME_TREE.ownerOf[n.id]) return false;
+      if (FRAME_TREE.moduleRoot === n.id) return false;
+      return true;
+    });
+  }
+  function otherTypeList() {
+    var cnt = {};
+    (G.nodes || []).forEach(function (n) {
+      if (isFramework(n)) return;
+      if (FRAME_TREE.ownerOf[n.id]) return;
+      if (FRAME_TREE.moduleRoot === n.id) return;
+      cnt[n.type] = (cnt[n.type] || 0) + 1;
+    });
+    return CATS.filter(function (t) { return cnt[t.key]; });
   }
   /* 一个元素只绑一次（renderList 与 renderListResults 会先后重画同一块区域） */
   function bindOnce(root, sel, fn) {
@@ -996,7 +1145,18 @@
     });
   }
   function bindListEvents() {
-    bindOnce(lgCats, ".cat-head", function (ev) {
+    /* 框架卡（一级 / 二级）—— 各自独立展开，可同时开多个 */
+    bindOnce(lgCats, ".cat-head[data-frame]", function (ev) {
+      var k = ev.currentTarget.dataset.frame;
+      state.frameOpen[k] = !state.frameOpen[k];
+      renderList();
+      var box = lgCats.querySelector('.cat[data-frame="' + k + '"]');
+      if (box && state.frameOpen[k]) {
+        try { box.scrollIntoView({ block: "nearest" }); } catch (e) {}
+      }
+    });
+    /* 平级分类卡（没有框架数据时的兜底路径） */
+    bindOnce(lgCats, ".cat-head[data-type]", function (ev) {
       var k = ev.currentTarget.dataset.type;
       expandedType = (expandedType === k) ? null : k;
       renderList();
@@ -1087,23 +1247,56 @@
       lgUrgent.innerHTML = "";
     }
 
-    /* 分类卡流 —— 顺序取自数据声明的 nodeTypes 顺序，
-       所以论文的框架类（疾病分类 → 症状体征 → 检查项目 → 处置原则 → …）自然排在前面。 */
-    var cats = CATS.filter(function (t) { return countMap[t.key]; });
-    lgCats.innerHTML = '<h3 class="lg-ch">按分类浏览</h3>' + cats.map(function (t) {
-      var open = expandedType === t.key;
-      return '<div class="cat' + (open ? " open" : "") + '" data-type="' + esc(t.key) + '">' +
-        '<button type="button" class="cat-head" data-type="' + esc(t.key) + '">' +
-          '<span class="cat-dot" style="background:' + t.color + '"></span>' +
-          '<span class="cat-txt"><span class="cat-label">' + esc(t.label) + '</span>' +
-          '<span class="cat-desc">' + esc(t.desc || "") + '</span></span>' +
-          '<span class="cat-n">' + (countMap[t.key]) + '</span>' +
-          '<span class="cat-arrow">›</span>' +
-        '</button>' +
-        (open ? '<div class="cat-body">' +
-          nodesOfType(t.key).map(nodeRow).join("") + '</div>' : '') +
-        '</div>';
-    }).join("");
+    /* 知识框架树 —— 论文的骨架：一级框架 → 二级框架 → 条目。
+       框架节点与归属关系都来自数据（见 buildFrameTree），前端不写死任何框架名。
+       数据里没有框架节点时（换一道题 / 旧数据）⇒ 原样退回平级分类卡。 */
+    if (FRAME_TREE && FRAME_TREE.roots.length) {
+      var fh = '<h3 class="lg-ch">按知识框架浏览</h3>';
+      if (FRAME_TREE.moduleRoot && NODE[FRAME_TREE.moduleRoot]) {
+        fh += '<div class="mod-root">' + nodeRow(NODE[FRAME_TREE.moduleRoot], 0) + '</div>';
+      }
+      fh += FRAME_TREE.roots.map(function (fid) { return frameCard(fid, false); }).join("");
+      /* 没被任何框架认领的条目（文献出处等）—— 单独成一块，不塞进框架 */
+      var others = otherTypeList();
+      if (others.length) {
+        /* 整块只有文献时，标题就叫「文献出处」（与详情卡里的说法一致） */
+        var oh = "其他条目";
+        if (others.length === 1 && String(others[0].label || "").indexOf("文献") >= 0) oh = "文献出处";
+        fh += '<h3 class="lg-ch">' + oh + '</h3>' + others.map(function (t) {
+          var open = expandedType === t.key;
+          var ns = otherNodesOfType(t.key);
+          return '<div class="cat' + (open ? " open" : "") + '" data-type="' + esc(t.key) + '">' +
+            '<button type="button" class="cat-head" data-type="' + esc(t.key) + '">' +
+              '<span class="cat-dot" style="background:' + t.color + '"></span>' +
+              '<span class="cat-txt"><span class="cat-label">' + esc(t.label) + '</span>' +
+              '<span class="cat-desc">' + esc(t.desc || "") + '</span></span>' +
+              '<span class="cat-n">' + ns.length + '</span>' +
+              '<span class="cat-arrow">›</span>' +
+            '</button>' +
+            (open ? '<div class="cat-body">' +
+              ns.map(function (n) { return nodeRow(n, 0); }).join("") + '</div>' : '') +
+            '</div>';
+        }).join("");
+      }
+      lgCats.innerHTML = fh;
+    } else {
+      /* 兜底：平级分类卡 —— 顺序取自数据声明的 nodeTypes 顺序 */
+      var cats = CATS.filter(function (t) { return countMap[t.key]; });
+      lgCats.innerHTML = '<h3 class="lg-ch">按分类浏览</h3>' + cats.map(function (t) {
+        var open = expandedType === t.key;
+        return '<div class="cat' + (open ? " open" : "") + '" data-type="' + esc(t.key) + '">' +
+          '<button type="button" class="cat-head" data-type="' + esc(t.key) + '">' +
+            '<span class="cat-dot" style="background:' + t.color + '"></span>' +
+            '<span class="cat-txt"><span class="cat-label">' + esc(t.label) + '</span>' +
+            '<span class="cat-desc">' + esc(t.desc || "") + '</span></span>' +
+            '<span class="cat-n">' + (countMap[t.key]) + '</span>' +
+            '<span class="cat-arrow">›</span>' +
+          '</button>' +
+          (open ? '<div class="cat-body">' +
+            nodesOfType(t.key).map(function (n) { return nodeRow(n, 0); }).join("") + '</div>' : '') +
+          '</div>';
+      }).join("");
+    }
     bindListEvents();
   }
   /* 检索结果 —— 列表视图里用它替代下拉建议（手机上下拉会盖住内容） */
@@ -1115,7 +1308,7 @@
       return;
     }
     lgResults.innerHTML = '<h3 class="lg-ch">检索结果<span class="lg-n">' +
-      hits.length + ' 条</span></h3>' + hits.map(nodeRow).join("");
+      hits.length + ' 条</span></h3>' + hits.map(function (n) { return nodeRow(n, 0); }).join("");
     bindListEvents();
   }
 
@@ -1225,12 +1418,20 @@
       return b;
     }
     /* ① 名字就是题目名的那一个（数据里有就直接用它当中心）；
-       ② 否则取第一种声明类型里度数最高的（论文框架第一层）；
-       ③ 再没有就取全图度数最高的。 */
+       ② 有框架层时，从**最上层的一级框架**进入（论文的顶层结构；按声明顺序取第一个）；
+       ③ 否则取第一种声明类型里度数最高的（论文框架第一层）；
+       ④ 再没有就取全图度数最高的。 */
     var tname = (G.meta && G.meta.topicName) || "";
     if (tname) {
       var exact = (G.nodes || []).filter(function (n) { return n.name === tname; });
       if (exact.length) return best(exact);
+    }
+    if (FRAME_TREE && FRAME_TREE.roots.length) {
+      var top = FRAME_TREE.roots.slice().sort(function (a, b) {
+        var oa = TORDER[NODE[a].type], ob = TORDER[NODE[b].type];
+        return (oa == null ? 99 : oa) - (ob == null ? 99 : ob);
+      })[0];
+      if (top && NODE[top]) return NODE[top];
     }
     var firstType = (CATS[0] || {}).key;
     return best((G.nodes || []).filter(function (n) { return n.type === firstType; })) || best(G.nodes);
@@ -1554,16 +1755,19 @@
       return true;
     }).map(function (n) {
       var t = typeOf(n);
+      /* 框架节点（论文的一级/二级框架）用菱形 + 虚线边 —— 一眼看得出哪些是「骨架」 */
+      var fw = isFramework(n);
       var it = {
         id: n.id,
         name: n.name,
         category: t.index,
-        symbolSize: nodeSymbolSize(n),
-        symbol: t.shape === "pin" ? "circle" : (t.shape || "circle"),
+        symbolSize: fw ? Math.round(nodeSymbolSize(n) * 1.3) : nodeSymbolSize(n),
+        symbol: fw ? "diamond" : (t.shape === "pin" ? "circle" : (t.shape || "circle")),
         itemStyle: {
           color: t.color,
-          borderColor: "rgba(255,255,255,.55)",
-          borderWidth: 1.2,
+          borderColor: fw ? "#f0b429" : "rgba(255,255,255,.55)",
+          borderWidth: fw ? 2 : 1.2,
+          borderType: fw ? "dashed" : "solid",
           shadowBlur: 12,
           shadowColor: "rgba(0,0,0,.55)"
         },
