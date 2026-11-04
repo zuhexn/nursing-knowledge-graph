@@ -92,7 +92,12 @@
 
   /* ---------- 舞台（画布） ---------- */
   #stage{flex:1 1 auto;position:relative;min-height:0;}
-  #chart{position:absolute;top:0;left:0;right:0;bottom:var(--bar-h);}
+  #chart{
+    position:absolute;top:0;left:0;right:0;bottom:var(--bar-h);
+    /* 整个图谱画布（含空白区）都接收拖/缩手势，浏览器不要抢去做页面滚动/缩放 */
+    touch-action:none;-webkit-user-select:none;user-select:none;cursor:grab;
+  }
+  #chart:active{cursor:grabbing;}
   #chart canvas{touch-action:none;}
 
   /* ---------- 统计角标 ---------- */
@@ -1612,6 +1617,8 @@
   var option = {
     backgroundColor: "transparent",
     animationDuration: 700,
+    /* 手势更新必须立即生效：默认 300ms 的更新动画会让画布追不上手指 */
+    animationDurationUpdate: 0,
     animationEasingUpdate: "quinticInOut",
     tooltip: {
       confine: true,          /* 手机上提示框不许溢出画布 */
@@ -1638,8 +1645,11 @@
       id: "kg",
       type: "graph",
       layout: "force",
-      roam: true,
-      draggable: true,
+      /* 手势由下面的 pointer 处理器自己接管：ECharts 自带的 roam 在
+         空白区不响应、双指缩放比例也不是 1:1；roam/draggable 关掉，
+         避免两套手势互相打架。 */
+      roam: false,
+      draggable: false,
       zoom: 0.82,
       categories: CATS.map(function (t) { return { name: t.label, itemStyle: { color: t.color } }; }),
       data: buildNodes(),
@@ -2136,19 +2146,186 @@
     focusSet();
   }
 
-  /* 画布点选：取「离手指最近的节点」而不是 zrender 命中的那个元素
-     （节点小、又挨得近时，命中是画得晚的赢 —— 点 A 会打开 B）。 */
-  var downAt = null;
-  chart.getZr().on("mousedown", function (e) { downAt = [e.offsetX, e.offsetY]; });
-  chart.getZr().on("click", function (e) {
-    if (downAt) {
-      var dx = e.offsetX - downAt[0], dy = e.offsetY - downAt[1];
-      downAt = null;
-      if (Math.sqrt(dx * dx + dy * dy) > 10) return;   /* 拖动平移，不算点选 */
+  /* ============ 画布手势（自定义 · 全画布可操作 · 1:1） ============
+     为什么不用 ECharts 自带 roam（2026-11-04 实测）：
+       ① 在节点范围外的空白区，拖动 / 双指缩放**完全不响应**；
+       ② 双指缩放的比例与手指距离不成 1:1（用户实测「太灵敏、不跟手」）。
+     这里直接在 #chart 上接管 pointer 事件：
+       - 单指 / 鼠标拖动 = 平移，位移与手指 1:1（空白区也生效）；
+       - 双指 = 以两指中点为锚，zoom = 起始 zoom × 当前距离 / 起始距离；
+       - 滚轮 = 以鼠标位置为锚缩放；
+       - 轻点（移动 < 6px）= 选节点打开详情。
+     series 的 roam / draggable 已关掉，避免两套手势打架。 */
+  var GESTURE_MIN_ZOOM = 0.35, GESTURE_MAX_ZOOM = 3.0;
+  var activePointers = {};
+  var gesture = null;
+  var pinchRaf = 0;
+  var chartEl = chart.getDom();
+
+  function chartPoint(e) {
+    var r = chartEl.getBoundingClientRect();
+    return { id: e.pointerId, x: e.clientX - r.left, y: e.clientY - r.top };
+  }
+  function currentZoom() {
+    var s = chart.getOption().series[0] || {};
+    return (typeof s.zoom === "number" && !isNaN(s.zoom)) ? s.zoom : 1;
+  }
+  function clampZoom(z) {
+    return Math.max(GESTURE_MIN_ZOOM, Math.min(GESTURE_MAX_ZOOM, z));
+  }
+  function setViewport(zoom, center) {
+    var s = { id: "kg" };
+    if (typeof zoom === "number") s.zoom = zoom;
+    if (center) s.center = center;
+    chart.setOption({ series: [s] });
+  }
+  function activeCount() { return Object.keys(activePointers).length; }
+  function firstTwoPointers() {
+    var ids = Object.keys(activePointers);
+    if (ids.length < 2) return null;
+    return [activePointers[ids[0]], activePointers[ids[1]]];
+  }
+  function pinchInfo(pts) {
+    var dx = pts[1].x - pts[0].x, dy = pts[1].y - pts[0].y;
+    return {
+      dist: Math.sqrt(dx * dx + dy * dy),
+      mid: [(pts[0].x + pts[1].x) / 2, (pts[0].y + pts[1].y) / 2]
+    };
+  }
+  function beginPinch() {
+    var pts = firstTwoPointers();
+    if (!pts) return;
+    var info = pinchInfo(pts);
+    if (info.dist < 1) return;
+    freezeLayout();
+    var anchor = chart.convertFromPixel({ seriesIndex: 0 }, info.mid);
+    if (!anchor) return;
+    gesture = {
+      mode: "pinch",
+      startDist: info.dist,
+      startZoom: currentZoom(),
+      anchor: anchor,
+      moved: true
+    };
+  }
+  function applyPinch() {
+    pinchRaf = 0;
+    if (!gesture || gesture.mode !== "pinch") return;
+    var pts = firstTwoPointers();
+    if (!pts) return;
+    var info = pinchInfo(pts);
+    if (info.dist <= 0) return;
+    var target = clampZoom(gesture.startZoom * (info.dist / gesture.startDist));
+    if (Math.abs(target - currentZoom()) > 1e-5) setViewport(target, null);
+    /* 把「双指起始中点下的那个数据点」钉在当前中点下：
+       zoom 先变，量出锚点新像素，再反推镜头中心。 */
+    var ap = chart.convertToPixel({ seriesIndex: 0 }, gesture.anchor);
+    if (!ap || isNaN(ap[0]) || isNaN(ap[1])) return;
+    var w = chart.getWidth(), h = chart.getHeight();
+    var center = chart.convertFromPixel({ seriesIndex: 0 },
+      [w / 2 + ap[0] - info.mid[0], h / 2 + ap[1] - info.mid[1]]);
+    if (center && !isNaN(center[0]) && !isNaN(center[1])) setViewport(null, center);
+    scheduleLabelAvoid();
+  }
+  function schedulePinch() {
+    if (pinchRaf) return;
+    pinchRaf = requestAnimationFrame(applyPinch);
+  }
+  function panByPointer(p) {
+    if (!gesture || gesture.mode !== "pan") return;
+    var dx = p.x - gesture.lastX, dy = p.y - gesture.lastY;
+    if (Math.abs(dx) + Math.abs(dy) < 0.5) return;
+    var w = chart.getWidth(), h = chart.getHeight();
+    /* 手指往右 10px → 镜头中心往左取 10px 处的数据 ⇒ 画布跟手 1:1 */
+    var center = chart.convertFromPixel({ seriesIndex: 0 }, [w / 2 - dx, h / 2 - dy]);
+    if (center && !isNaN(center[0]) && !isNaN(center[1])) setViewport(null, center);
+    gesture.lastX = p.x; gesture.lastY = p.y;
+    scheduleLabelAvoid();
+  }
+
+  chartEl.addEventListener("pointerdown", function (e) {
+    if (e.pointerType === "mouse" && e.button !== 0) return;
+    activePointers[e.pointerId] = chartPoint(e);
+    try { chartEl.setPointerCapture(e.pointerId); } catch (err) {}
+    if (activeCount() >= 2) { beginPinch(); return; }
+    var p = activePointers[e.pointerId];
+    gesture = {
+      mode: "tap",
+      startX: p.x, startY: p.y,
+      lastX: p.x, lastY: p.y,
+      startTime: Date.now(),
+      moved: false
+    };
+  }, true);
+  chartEl.addEventListener("pointermove", function (e) {
+    if (!activePointers[e.pointerId]) return;
+    activePointers[e.pointerId] = chartPoint(e);
+    if (activeCount() >= 2) {
+      if (!gesture || gesture.mode !== "pinch") beginPinch();
+      schedulePinch();
+      return;
     }
-    var hit = nearestNode(e.offsetX, e.offsetY, isNarrow() ? 38 : 26);
-    if (hit) pick(hit);
-  });
+    if (!gesture) return;
+    var p = activePointers[e.pointerId];
+    if (gesture.mode === "tap") {
+      var total = Math.abs(p.x - gesture.startX) + Math.abs(p.y - gesture.startY);
+      if (total <= 6) return;
+      freezeLayout();                 /* 真的开始拖了才定型，轻点不冻 */
+      gesture.mode = "pan";
+      gesture.moved = true;
+      /* 从起点算第一段位移 —— 不能从当前点算，否则开头这几像素会被吞掉 */
+      gesture.lastX = gesture.startX;
+      gesture.lastY = gesture.startY;
+      panByPointer(p);
+      return;
+    }
+    if (gesture.mode === "pan") panByPointer(p);
+  }, true);
+  function endPointer(e) {
+    if (!activePointers[e.pointerId]) return;
+    delete activePointers[e.pointerId];
+    var n = activeCount();
+    if (gesture && gesture.mode === "pinch" && n === 1) {
+      /* 双指中抬起一根 → 剩下那根继续平移，不触发点选 */
+      var q = activePointers[Object.keys(activePointers)[0]];
+      gesture = { mode: "pan", lastX: q.x, lastY: q.y, moved: true };
+      return;
+    }
+    if (n >= 2) { beginPinch(); return; }
+    if (n === 0) {
+      if (gesture && gesture.mode === "tap" && !gesture.moved) {
+        var hit = nearestNode(gesture.startX, gesture.startY, isNarrow() ? 38 : 26);
+        if (hit) pick(hit);
+      }
+      gesture = null;
+    }
+  }
+  chartEl.addEventListener("pointerup", endPointer, true);
+  chartEl.addEventListener("pointercancel", function (e) {
+    if (!activePointers[e.pointerId]) return;
+    delete activePointers[e.pointerId];
+    if (activeCount() === 0) { gesture = null; return; }
+    if (activeCount() === 1) {
+      var q = activePointers[Object.keys(activePointers)[0]];
+      gesture = { mode: "pan", lastX: q.x, lastY: q.y, moved: true };
+    }
+  }, true);
+  chartEl.addEventListener("wheel", function (e) {
+    e.preventDefault();
+    freezeLayout();
+    var p = chartPoint(e);
+    var anchor = chart.convertFromPixel({ seriesIndex: 0 }, [p.x, p.y]);
+    if (!anchor) return;
+    var target = clampZoom(currentZoom() * Math.exp(-e.deltaY * 0.0012));
+    setViewport(target, null);
+    var ap = chart.convertToPixel({ seriesIndex: 0 }, anchor);
+    if (!ap || isNaN(ap[0]) || isNaN(ap[1])) return;
+    var w = chart.getWidth(), h = chart.getHeight();
+    var center = chart.convertFromPixel({ seriesIndex: 0 },
+      [w / 2 + ap[0] - p.x, h / 2 + ap[1] - p.y]);
+    if (center && !isNaN(center[0]) && !isNaN(center[1])) setViewport(null, center);
+    scheduleLabelAvoid();
+  }, { capture: true, passive: false });
 
   /* ============ 节点操作（展开 / 锁定 / 关闭） ============ */
   var btnExpand = document.getElementById("pExpand");
@@ -2571,10 +2748,8 @@
      图看起来是冲出画布的。改成反复适配，直到图的范围不再变化为止；
      用户已动手（拖动 / 缩放）就停手，不打乱他。 */
   var userMoved = false;
-  /* 用户一动手就把布局冻住 —— 节点在动的话，手指按不住也点不准。
-     冻住之后图不再抖，交互才是稳的。 */
-  chart.getZr().on("mousedown", function () { userMoved = true; freezeLayout(); });
-  chart.getZr().on("wheel", function () { userMoved = true; freezeLayout(); });
+  /* 手势冻结统一放在自定义 pointer / wheel 处理器里（真正开始拖/缩才冻结），
+     避免轻点时也改镜头。 */
 
   /* 图的范围（系列坐标）—— 布局变了它就变。
      只按「有边相连」的节点算：孤立节点会被力导向甩着漂，计进去会让
