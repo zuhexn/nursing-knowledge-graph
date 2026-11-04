@@ -9,27 +9,19 @@ S_ChestTightness,SymptomSign,胸闷,BELONGS_TO,属于,SC_Hypersensitivity,Sympto
 S_GeneralizedWeakness,SymptomSign,全身无力,BELONGS_TO,属于,SC_Hypersensitivity,SymptomCategory,过敏反应谱
 S_Pruritus,SymptomSign,瘙痒,BELONGS_TO,属于,SC_Hypersensitivity,SymptomCategory,过敏反应谱
 S_Extravasation,SymptomSign,碘对比剂外渗,BELONGS_TO,属于,SC_ExtravasationSpectrum,SymptomCategory,静脉外渗反应谱
-S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,BELONGS_TO,属于,SC_RenalSpectrum,SymptomCategory,肾功能损害谱
 S_AdverseReaction,SymptomSign,不良反应,BELONGS_TO,属于,SC_AdverseSpectrum,SymptomCategory,碘对比剂不良反应谱
 SC_Hypersensitivity,SymptomCategory,过敏反应谱,BELONGS_TO,属于,SC_AdverseSpectrum,SymptomCategory,碘对比剂不良反应谱
 SC_ExtravasationSpectrum,SymptomCategory,静脉外渗反应谱,BELONGS_TO,属于,SC_AdverseSpectrum,SymptomCategory,碘对比剂不良反应谱
-SC_RenalSpectrum,SymptomCategory,肾功能损害谱,BELONGS_TO,属于,SC_AdverseSpectrum,SymptomCategory,碘对比剂不良反应谱
-MP_NursingMeasures,ManagementPrinciple,护理措施,BELONGS_TO,属于,NT_EvidenceBasedNursing,NursingTheory,循证护理
-MP_NursingPrevention,ManagementPrinciple,护理预防,BELONGS_TO,属于,NT_StandardizedProcess,NursingTheory,标准化护理流程
-MP_NursingIntervention,ManagementPrinciple,护理干预,BELONGS_TO,属于,NT_EarlyWarning,NursingTheory,早期预警
 MP_ExtravasationPrinciple,ManagementPrinciple,外渗处置原则,BELONGS_TO,属于,MP_NursingMeasures,ManagementPrinciple,护理措施
 MP_AdverseReactionTriage,ManagementPrinciple,不良反应分级处置原则,BELONGS_TO,属于,MP_NursingMeasures,ManagementPrinciple,护理措施
-MP_RenalProtectionPrinciple,ManagementPrinciple,肾保护原则,BELONGS_TO,属于,MP_NursingMeasures,ManagementPrinciple,护理措施
-DC_CTEnhancedRisk,DiseaseCategory,CT增强检查护理风险,HAS_SYMPTOM,存在症状,S_AdverseReaction,SymptomSign,不良反应
-DC_CTEnhancedRisk,DiseaseCategory,CT增强检查护理风险,HAS_SYMPTOM,存在症状,S_AllergicReaction,SymptomSign,过敏反应
-DC_CTEnhancedRisk,DiseaseCategory,CT增强检查护理风险,HAS_SYMPTOM,存在症状,S_Extravasation,SymptomSign,碘对比剂外渗
-DC_CTEnhancedRisk,DiseaseCategory,CT增强检查护理风险,HAS_SYMPTOM,存在症状,S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤
-E_CTEnhancedScan,Exam,CT增强扫描,HAS_SYMPTOM,存在症状,S_AdverseReaction,SymptomSign,不良反应
-E_CTEnhancedScan,Exam,CT增强扫描,HAS_SYMPTOM,存在症状,S_Extravasation,SymptomSign,碘对比剂外渗
-E_CTEnhancedScan,Exam,CT增强扫描,HAS_SYMPTOM,存在症状,S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤
-E_ContrastInjection,Exam,碘对比剂静脉输注,HAS_SYMPTOM,存在症状,S_AllergicReaction,SymptomSign,过敏反应
-E_ContrastInjection,Exam,碘对比剂静脉输注,HAS_SYMPTOM,存在症状,S_Extravasation,SymptomSign,碘对比剂外渗
-E_ContrastInjection,Exam,碘对比剂静脉输注,HAS_SYMPTOM,存在症状,S_AdverseReaction,SymptomSign,不良反应
+DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏与外渗,HAS_SYMPTOM,存在症状,S_AdverseReaction,SymptomSign,不良反应
+DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏与外渗,HAS_SYMPTOM,存在症状,S_AllergicReaction,SymptomSign,过敏反应
+DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏与外渗,HAS_SYMPTOM,存在症状,S_Extravasation,SymptomSign,碘对比剂外渗
+E_CTEnhancedScan,Exam,CT增强扫描,EFFECT_ON,影响,S_AdverseReaction,SymptomSign,不良反应
+E_CTEnhancedScan,Exam,CT增强扫描,EFFECT_ON,影响,S_Extravasation,SymptomSign,碘对比剂外渗
+E_ContrastInjection,Exam,碘对比剂,EFFECT_ON,影响,S_AllergicReaction,SymptomSign,过敏反应
+E_ContrastInjection,Exam,碘对比剂,EFFECT_ON,影响,S_Extravasation,SymptomSign,碘对比剂外渗
+E_ContrastInjection,Exam,碘对比剂,EFFECT_ON,影响,S_AdverseReaction,SymptomSign,不良反应
 S_AllergicReaction,SymptomSign,过敏反应,HAS_SYMPTOM,存在症状,S_AnaphylacticShock,SymptomSign,过敏性休克
 S_AllergicReaction,SymptomSign,过敏反应,HAS_SYMPTOM,存在症状,S_Urticaria,SymptomSign,荨麻疹
 S_AllergicReaction,SymptomSign,过敏反应,HAS_SYMPTOM,存在症状,S_FacialEdema,SymptomSign,颜面部水肿
@@ -38,22 +30,13 @@ S_AllergicReaction,SymptomSign,过敏反应,HAS_SYMPTOM,存在症状,S_ChestTigh
 S_AllergicReaction,SymptomSign,过敏反应,HAS_SYMPTOM,存在症状,S_GeneralizedWeakness,SymptomSign,全身无力
 S_Urticaria,SymptomSign,荨麻疹,HAS_SYMPTOM,存在症状,S_Pruritus,SymptomSign,瘙痒
 S_Urticaria,SymptomSign,荨麻疹,HAS_SYMPTOM,存在症状,S_Rash,SymptomSign,皮疹
-S_Extravasation,SymptomSign,碘对比剂外渗,HAS_SYMPTOM,存在症状,S_Rash,SymptomSign,皮疹
-DC_CTEnhancedRisk,DiseaseCategory,CT增强检查护理风险,DETECTED_BY,通过检查发现,E_CTEnhancedScan,Exam,CT增强扫描
-DC_CTEnhancedRisk,DiseaseCategory,CT增强检查护理风险,DETECTED_BY,通过检查发现,E_RenalFunction,Exam,肾功能检查
-S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,DETECTED_BY,通过检查发现,E_RenalFunction,Exam,肾功能检查
-RF_Hyperthyroidism,RiskFactor,甲亢未控制,DETECTED_BY,通过检查发现,E_ThyroidFunction,Exam,甲状腺功能检查
-DC_CTEnhancedRisk,DiseaseCategory,CT增强检查护理风险,MANAGED_BY,由……处置,MP_NursingMeasures,ManagementPrinciple,护理措施
-DC_CTEnhancedRisk,DiseaseCategory,CT增强检查护理风险,MANAGED_BY,由……处置,MP_NursingPrevention,ManagementPrinciple,护理预防
-DC_CTEnhancedRisk,DiseaseCategory,CT增强检查护理风险,MANAGED_BY,由……处置,NT_StandardizedProcess,NursingTheory,标准化护理流程
-DC_CTEnhancedRisk,DiseaseCategory,CT增强检查护理风险,MANAGED_BY,由……处置,NT_RiskAssessment,NursingTheory,护理风险评估理论
+DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏与外渗,MANAGED_BY,由……处置,MP_NursingMeasures,ManagementPrinciple,护理措施
+DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏与外渗,MANAGED_BY,由……处置,MP_NursingPrevention,ManagementPrinciple,护理预防
 S_AdverseReaction,SymptomSign,不良反应,MANAGED_BY,由……处置,MP_NursingMeasures,ManagementPrinciple,护理措施
 S_AdverseReaction,SymptomSign,不良反应,MANAGED_BY,由……处置,MP_AdverseReactionTriage,ManagementPrinciple,不良反应分级处置原则
 S_AllergicReaction,SymptomSign,过敏反应,MANAGED_BY,由……处置,MP_NursingMeasures,ManagementPrinciple,护理措施
 S_AllergicReaction,SymptomSign,过敏反应,MANAGED_BY,由……处置,MP_NursingIntervention,ManagementPrinciple,护理干预
 S_AllergicReaction,SymptomSign,过敏反应,MANAGED_BY,由……处置,MP_AdverseReactionTriage,ManagementPrinciple,不良反应分级处置原则
-S_AllergicReaction,SymptomSign,过敏反应,MANAGED_BY,由……处置,NT_EarlyWarning,NursingTheory,早期预警
-S_AllergicReaction,SymptomSign,过敏反应,MANAGED_BY,由……处置,NT_EvidenceBasedNursing,NursingTheory,循证护理
 S_AnaphylacticShock,SymptomSign,过敏性休克,MANAGED_BY,由……处置,MP_NursingIntervention,ManagementPrinciple,护理干预
 S_AnaphylacticShock,SymptomSign,过敏性休克,MANAGED_BY,由……处置,MP_AdverseReactionTriage,ManagementPrinciple,不良反应分级处置原则
 S_Urticaria,SymptomSign,荨麻疹,MANAGED_BY,由……处置,MP_NursingIntervention,ManagementPrinciple,护理干预
@@ -65,29 +48,24 @@ S_ChestTightness,SymptomSign,胸闷,MANAGED_BY,由……处置,MP_NursingInterve
 S_GeneralizedWeakness,SymptomSign,全身无力,MANAGED_BY,由……处置,MP_NursingIntervention,ManagementPrinciple,护理干预
 S_Extravasation,SymptomSign,碘对比剂外渗,MANAGED_BY,由……处置,MP_NursingIntervention,ManagementPrinciple,护理干预
 S_Extravasation,SymptomSign,碘对比剂外渗,MANAGED_BY,由……处置,MP_ExtravasationPrinciple,ManagementPrinciple,外渗处置原则
-S_Extravasation,SymptomSign,碘对比剂外渗,MANAGED_BY,由……处置,NT_RiskAssessment,NursingTheory,护理风险评估理论
-S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,MANAGED_BY,由……处置,MP_RenalProtectionPrinciple,ManagementPrinciple,肾保护原则
-S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,MANAGED_BY,由……处置,NT_RiskAssessment,NursingTheory,护理风险评估理论
 E_CTEnhancedScan,Exam,CT增强扫描,MANAGED_BY,由……处置,MP_NursingPrevention,ManagementPrinciple,护理预防
-E_ContrastInjection,Exam,碘对比剂静脉输注,MANAGED_BY,由……处置,MP_NursingPrevention,ManagementPrinciple,护理预防
-DC_CTEnhancedRisk,DiseaseCategory,CT增强检查护理风险,EDUCATED_BY,由……教育,DE_PreExamNotice,DiseaseEducation,检查前注意事项科普
-DC_CTEnhancedRisk,DiseaseCategory,CT增强检查护理风险,EDUCATED_BY,由……教育,DE_AfterExamCare,DiseaseEducation,检查后观察与护理科普
-DC_CTEnhancedRisk,DiseaseCategory,CT增强检查护理风险,EDUCATED_BY,由……教育,DE_AllergyDisclosure,DiseaseEducation,过敏史告知科普
-DC_CTEnhancedRisk,DiseaseCategory,CT增强检查护理风险,EDUCATED_BY,由……教育,DE_ExtravasationHomeCare,DiseaseEducation,外渗居家护理科普
-DC_CTEnhancedRisk,DiseaseCategory,CT增强检查护理风险,EDUCATED_BY,由……教育,DE_EmergencyKnowledge,DiseaseEducation,急救知识科普
-E_ContrastInjection,Exam,碘对比剂静脉输注,EDUCATED_BY,由……教育,DE_PreExamNotice,DiseaseEducation,检查前注意事项科普
+E_ContrastInjection,Exam,碘对比剂,MANAGED_BY,由……处置,MP_NursingPrevention,ManagementPrinciple,护理预防
+DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏与外渗,EDUCATED_BY,由……教育,DE_PreExamNotice,DiseaseEducation,检查前注意事项科普
+DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏与外渗,EDUCATED_BY,由……教育,DE_AfterExamCare,DiseaseEducation,检查后观察与护理科普
+DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏与外渗,EDUCATED_BY,由……教育,DE_AllergyDisclosure,DiseaseEducation,过敏史告知科普
+DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏与外渗,EDUCATED_BY,由……教育,DE_ExtravasationHomeCare,DiseaseEducation,外渗居家护理科普
+DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏与外渗,EDUCATED_BY,由……教育,DE_EmergencyKnowledge,DiseaseEducation,急救知识科普
+E_ContrastInjection,Exam,碘对比剂,EDUCATED_BY,由……教育,DE_PreExamNotice,DiseaseEducation,检查前注意事项科普
 S_Extravasation,SymptomSign,碘对比剂外渗,EDUCATED_BY,由……教育,DE_ExtravasationHomeCare,DiseaseEducation,外渗居家护理科普
 S_AnaphylacticShock,SymptomSign,过敏性休克,EDUCATED_BY,由……教育,DE_EmergencyKnowledge,DiseaseEducation,急救知识科普
 S_AllergicReaction,SymptomSign,过敏反应,ASSESSED_BY,由……评估,AT_AllergyHistory,AssessmentTool,过敏史询问
 S_AnaphylacticShock,SymptomSign,过敏性休克,ASSESSED_BY,由……评估,AT_AllergyHistory,AssessmentTool,过敏史询问
 S_AdverseReaction,SymptomSign,不良反应,ASSESSED_BY,由……评估,AT_AllergyHistory,AssessmentTool,过敏史询问
 S_Urticaria,SymptomSign,荨麻疹,ASSESSED_BY,由……评估,AT_AllergyHistory,AssessmentTool,过敏史询问
-S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,ASSESSED_BY,由……评估,AT_RenalAssessment,AssessmentTool,肾功能风险评估
 S_Extravasation,SymptomSign,碘对比剂外渗,ASSESSED_BY,由……评估,AT_ExtravasationAssessment,AssessmentTool,外渗风险评估
 S_Extravasation,SymptomSign,碘对比剂外渗,ASSESSED_BY,由……评估,AT_VascularAssessment,AssessmentTool,血管条件评估
 S_AllergicReaction,SymptomSign,过敏反应,AT_RISK_BY,风险来自,RF_ContrastAllergyHistory,RiskFactor,既往碘对比剂过敏史
 S_AllergicReaction,SymptomSign,过敏反应,AT_RISK_BY,风险来自,RF_UncontrolledAsthma,RiskFactor,未控制的哮喘
-S_AllergicReaction,SymptomSign,过敏反应,AT_RISK_BY,风险来自,RF_Hyperthyroidism,RiskFactor,甲亢未控制
 S_AnaphylacticShock,SymptomSign,过敏性休克,AT_RISK_BY,风险来自,RF_ContrastAllergyHistory,RiskFactor,既往碘对比剂过敏史
 S_AnaphylacticShock,SymptomSign,过敏性休克,AT_RISK_BY,风险来自,RF_UncontrolledAsthma,RiskFactor,未控制的哮喘
 S_AnaphylacticShock,SymptomSign,过敏性休克,AT_RISK_BY,风险来自,RF_AgeExtremes,RiskFactor,高龄或低龄
@@ -95,22 +73,12 @@ S_Extravasation,SymptomSign,碘对比剂外渗,AT_RISK_BY,风险来自,RF_Fragil
 S_Extravasation,SymptomSign,碘对比剂外渗,AT_RISK_BY,风险来自,RF_HighPressureInjection,RiskFactor,高压注射
 S_Extravasation,SymptomSign,碘对比剂外渗,AT_RISK_BY,风险来自,RF_NoSalineFlush,RiskFactor,未做生理盐水试推
 S_Extravasation,SymptomSign,碘对比剂外渗,AT_RISK_BY,风险来自,RF_AgeExtremes,RiskFactor,高龄或低龄
-S_Extravasation,SymptomSign,碘对比剂外渗,AT_RISK_BY,风险来自,RF_Dehydration,RiskFactor,脱水
-S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,AT_RISK_BY,风险来自,RF_RenalImpairment,RiskFactor,肾功能不全
-S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,AT_RISK_BY,风险来自,RF_Dehydration,RiskFactor,脱水
-S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,AT_RISK_BY,风险来自,RF_DiabetesMetformin,RiskFactor,糖尿病服用二甲双胍
-S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,AT_RISK_BY,风险来自,RF_CardiacDisease,RiskFactor,心功能不全
-S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,AT_RISK_BY,风险来自,RF_AgeExtremes,RiskFactor,高龄或低龄
 S_AdverseReaction,SymptomSign,不良反应,AT_RISK_BY,风险来自,RF_ContrastAllergyHistory,RiskFactor,既往碘对比剂过敏史
-S_AdverseReaction,SymptomSign,不良反应,AT_RISK_BY,风险来自,RF_RenalImpairment,RiskFactor,肾功能不全
-S_AdverseReaction,SymptomSign,不良反应,AT_RISK_BY,风险来自,RF_Pregnancy,RiskFactor,妊娠
 S_Rash,SymptomSign,皮疹,AT_RISK_BY,风险来自,RF_ContrastAllergyHistory,RiskFactor,既往碘对比剂过敏史
 S_Urticaria,SymptomSign,荨麻疹,AT_RISK_BY,风险来自,RF_ContrastAllergyHistory,RiskFactor,既往碘对比剂过敏史
 S_Pruritus,SymptomSign,瘙痒,AT_RISK_BY,风险来自,RF_ContrastAllergyHistory,RiskFactor,既往碘对比剂过敏史
 S_FacialEdema,SymptomSign,颜面部水肿,AT_RISK_BY,风险来自,RF_ContrastAllergyHistory,RiskFactor,既往碘对比剂过敏史
 S_ThroatDiscomfort,SymptomSign,咽喉部不适,AT_RISK_BY,风险来自,RF_ContrastAllergyHistory,RiskFactor,既往碘对比剂过敏史
-S_ChestTightness,SymptomSign,胸闷,AT_RISK_BY,风险来自,RF_CardiacDisease,RiskFactor,心功能不全
-S_GeneralizedWeakness,SymptomSign,全身无力,AT_RISK_BY,风险来自,RF_Dehydration,RiskFactor,脱水
 S_AnaphylacticShock,SymptomSign,过敏性休克,TREATED_BY,由……治疗,PM_AdrenalineIM,PharmacologicalManagement,肌内注射肾上腺素
 S_AnaphylacticShock,SymptomSign,过敏性休克,TREATED_BY,由……治疗,PM_Corticosteroid,PharmacologicalManagement,糖皮质激素
 S_AllergicReaction,SymptomSign,过敏反应,TREATED_BY,由……治疗,PM_Antihistamine,PharmacologicalManagement,抗组胺药
@@ -121,8 +89,6 @@ S_Pruritus,SymptomSign,瘙痒,TREATED_BY,由……治疗,PM_Antihistamine,Pharma
 S_FacialEdema,SymptomSign,颜面部水肿,TREATED_BY,由……治疗,PM_Corticosteroid,PharmacologicalManagement,糖皮质激素
 S_Extravasation,SymptomSign,碘对比剂外渗,TREATED_BY,由……治疗,PM_MagnesiumSulfate,PharmacologicalManagement,50%硫酸镁湿敷
 S_Extravasation,SymptomSign,碘对比剂外渗,TREATED_BY,由……治疗,PM_DexamethasoneWetCompress,PharmacologicalManagement,0.05%地塞米松湿敷
-S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,TREATED_BY,由……治疗,PM_SalineHydration,PharmacologicalManagement,生理盐水水化
-S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,TREATED_BY,由……治疗,PM_MetforminHold,PharmacologicalManagement,暂停二甲双胍
 S_Extravasation,SymptomSign,碘对比剂外渗,TREATED_BY,由……治疗,NPM_StopInjection,NonPharmacologicalManagement,立即停止注射
 S_Extravasation,SymptomSign,碘对比剂外渗,TREATED_BY,由……治疗,NPM_KeepCatheter,NonPharmacologicalManagement,保留静脉留置针
 S_Extravasation,SymptomSign,碘对比剂外渗,TREATED_BY,由……治疗,NPM_LimbElevation,NonPharmacologicalManagement,患肢抬高
@@ -131,33 +97,25 @@ S_Extravasation,SymptomSign,碘对比剂外渗,TREATED_BY,由……治疗,NPM_Va
 S_AdverseReaction,SymptomSign,不良反应,TREATED_BY,由……治疗,NPM_CloseObservation,NonPharmacologicalManagement,密切观察
 S_AnaphylacticShock,SymptomSign,过敏性休克,TREATED_BY,由……治疗,NPM_CloseObservation,NonPharmacologicalManagement,密切观察
 S_AllergicReaction,SymptomSign,过敏反应,TREATED_BY,由……治疗,NPM_CloseObservation,NonPharmacologicalManagement,密切观察
-S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,TREATED_BY,由……治疗,NPM_CloseObservation,NonPharmacologicalManagement,密切观察
-S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,TREATED_BY,由……治疗,NPM_OralHydration,NonPharmacologicalManagement,口服补液
 E_CTEnhancedScan,Exam,CT增强扫描,TREATED_BY,由……治疗,NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理
-E_ContrastInjection,Exam,碘对比剂静脉输注,TREATED_BY,由……治疗,NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理
-E_ContrastInjection,Exam,碘对比剂静脉输注,TREATED_BY,由……治疗,NPM_VascularVisualization,NonPharmacologicalManagement,血管可视化
+E_ContrastInjection,Exam,碘对比剂,TREATED_BY,由……治疗,NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理
+E_ContrastInjection,Exam,碘对比剂,TREATED_BY,由……治疗,NPM_VascularVisualization,NonPharmacologicalManagement,血管可视化
 S_AdverseReaction,SymptomSign,不良反应,TREATED_BY,由……治疗,NPM_PsychologicalSupport,NonPharmacologicalManagement,心理疏导
 S_Extravasation,SymptomSign,碘对比剂外渗,TREATED_BY,由……治疗,NPM_PsychologicalSupport,NonPharmacologicalManagement,心理疏导
 MP_NursingIntervention,ManagementPrinciple,护理干预,EFFECT_ON,影响,SS_SevereRecovered,SymptomStatus,重度反应已恢复
 MP_NursingMeasures,ManagementPrinciple,护理措施,EFFECT_ON,影响,SS_MildResolved,SymptomStatus,轻度反应已缓解
 MP_ExtravasationPrinciple,ManagementPrinciple,外渗处置原则,EFFECT_ON,影响,SS_MildResolved,SymptomStatus,轻度反应已缓解
 MP_AdverseReactionTriage,ManagementPrinciple,不良反应分级处置原则,EFFECT_ON,影响,SS_MildResolved,SymptomStatus,轻度反应已缓解
-MP_RenalProtectionPrinciple,ManagementPrinciple,肾保护原则,EFFECT_ON,影响,SS_RenalStable,SymptomStatus,肾功能稳定
 MP_NursingIntervention,ManagementPrinciple,护理干预,EFFECT_ON,影响,FS_LimbFunction,FunctionalStatus,患肢功能状态
 MP_ExtravasationPrinciple,ManagementPrinciple,外渗处置原则,EFFECT_ON,影响,FS_LimbFunction,FunctionalStatus,患肢功能状态
 SS_MildResolved,SymptomStatus,轻度反应已缓解,EFFECT_ON,影响,FS_LimbFunction,FunctionalStatus,患肢功能状态
-DC_CTEnhancedRisk,DiseaseCategory,CT增强检查护理风险,SUPPORTED_BY,有文献支持,R01,Reference,美国放射学会对比剂手册
-DC_CTEnhancedRisk,DiseaseCategory,CT增强检查护理风险,SUPPORTED_BY,有文献支持,R03,Reference,碘对比剂使用指南（第2版）
+DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏与外渗,SUPPORTED_BY,有文献支持,R01,Reference,美国放射学会对比剂手册
+DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏与外渗,SUPPORTED_BY,有文献支持,R03,Reference,碘对比剂使用指南（第2版）
 E_CTEnhancedScan,Exam,CT增强扫描,SUPPORTED_BY,有文献支持,R01,Reference,美国放射学会对比剂手册
 E_CTEnhancedScan,Exam,CT增强扫描,SUPPORTED_BY,有文献支持,R03,Reference,碘对比剂使用指南（第2版）
-E_ContrastInjection,Exam,碘对比剂静脉输注,SUPPORTED_BY,有文献支持,R01,Reference,美国放射学会对比剂手册
-E_ContrastInjection,Exam,碘对比剂静脉输注,SUPPORTED_BY,有文献支持,R03,Reference,碘对比剂使用指南（第2版）
-E_ContrastInjection,Exam,碘对比剂静脉输注,SUPPORTED_BY,有文献支持,R07,Reference,影像科碘对比剂输注安全专家共识
-E_ContrastInjection,Exam,碘对比剂静脉输注,SUPPORTED_BY,有文献支持,R15,Reference,欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评
-E_RenalFunction,Exam,肾功能检查,SUPPORTED_BY,有文献支持,R05,Reference,肾病患者静脉注射碘对比剂应用专家共识
-E_RenalFunction,Exam,肾功能检查,SUPPORTED_BY,有文献支持,R11,Reference,碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明
-E_ThyroidFunction,Exam,甲状腺功能检查,SUPPORTED_BY,有文献支持,R03,Reference,碘对比剂使用指南（第2版）
-E_ThyroidFunction,Exam,甲状腺功能检查,SUPPORTED_BY,有文献支持,R05,Reference,肾病患者静脉注射碘对比剂应用专家共识
+E_ContrastInjection,Exam,碘对比剂,SUPPORTED_BY,有文献支持,R01,Reference,美国放射学会对比剂手册
+E_ContrastInjection,Exam,碘对比剂,SUPPORTED_BY,有文献支持,R03,Reference,碘对比剂使用指南（第2版）
+E_ContrastInjection,Exam,碘对比剂,SUPPORTED_BY,有文献支持,R07,Reference,影像科碘对比剂输注安全专家共识
 S_AdverseReaction,SymptomSign,不良反应,SUPPORTED_BY,有文献支持,R01,Reference,美国放射学会对比剂手册
 S_AdverseReaction,SymptomSign,不良反应,SUPPORTED_BY,有文献支持,R12,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
 S_AdverseReaction,SymptomSign,不良反应,SUPPORTED_BY,有文献支持,R14,Reference,对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）
@@ -186,40 +144,21 @@ S_Extravasation,SymptomSign,碘对比剂外渗,SUPPORTED_BY,有文献支持,R02,
 S_Extravasation,SymptomSign,碘对比剂外渗,SUPPORTED_BY,有文献支持,R04,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
 S_Extravasation,SymptomSign,碘对比剂外渗,SUPPORTED_BY,有文献支持,R17,Reference,放射科碘对比剂外渗影响因素的系统评价
 S_Extravasation,SymptomSign,碘对比剂外渗,SUPPORTED_BY,有文献支持,R09,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
-S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,SUPPORTED_BY,有文献支持,R05,Reference,肾病患者静脉注射碘对比剂应用专家共识
-S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,SUPPORTED_BY,有文献支持,R06,Reference,碘对比剂诱导的急性肾损伤防治的专家共识
-S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,SUPPORTED_BY,有文献支持,R18,Reference,心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析
-S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,SUPPORTED_BY,有文献支持,R11,Reference,碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明
-S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,SUPPORTED_BY,有文献支持,R15,Reference,欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评
 SC_AdverseSpectrum,SymptomCategory,碘对比剂不良反应谱,SUPPORTED_BY,有文献支持,R01,Reference,美国放射学会对比剂手册
 SC_Hypersensitivity,SymptomCategory,过敏反应谱,SUPPORTED_BY,有文献支持,R12,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
 SC_ExtravasationSpectrum,SymptomCategory,静脉外渗反应谱,SUPPORTED_BY,有文献支持,R02,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
-SC_RenalSpectrum,SymptomCategory,肾功能损害谱,SUPPORTED_BY,有文献支持,R05,Reference,肾病患者静脉注射碘对比剂应用专家共识
 AT_AllergyHistory,AssessmentTool,过敏史询问,SUPPORTED_BY,有文献支持,R03,Reference,碘对比剂使用指南（第2版）
 AT_AllergyHistory,AssessmentTool,过敏史询问,SUPPORTED_BY,有文献支持,R12,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
-AT_RenalAssessment,AssessmentTool,肾功能风险评估,SUPPORTED_BY,有文献支持,R05,Reference,肾病患者静脉注射碘对比剂应用专家共识
-AT_RenalAssessment,AssessmentTool,肾功能风险评估,SUPPORTED_BY,有文献支持,R11,Reference,碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明
 AT_ExtravasationAssessment,AssessmentTool,外渗风险评估,SUPPORTED_BY,有文献支持,R04,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
 AT_ExtravasationAssessment,AssessmentTool,外渗风险评估,SUPPORTED_BY,有文献支持,R17,Reference,放射科碘对比剂外渗影响因素的系统评价
 AT_VascularAssessment,AssessmentTool,血管条件评估,SUPPORTED_BY,有文献支持,R08,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
 AT_VascularAssessment,AssessmentTool,血管条件评估,SUPPORTED_BY,有文献支持,R09,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
 RF_ContrastAllergyHistory,RiskFactor,既往碘对比剂过敏史,SUPPORTED_BY,有文献支持,R12,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
 RF_ContrastAllergyHistory,RiskFactor,既往碘对比剂过敏史,SUPPORTED_BY,有文献支持,R13,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
-RF_RenalImpairment,RiskFactor,肾功能不全,SUPPORTED_BY,有文献支持,R05,Reference,肾病患者静脉注射碘对比剂应用专家共识
-RF_RenalImpairment,RiskFactor,肾功能不全,SUPPORTED_BY,有文献支持,R11,Reference,碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明
-RF_Dehydration,RiskFactor,脱水,SUPPORTED_BY,有文献支持,R05,Reference,肾病患者静脉注射碘对比剂应用专家共识
-RF_Dehydration,RiskFactor,脱水,SUPPORTED_BY,有文献支持,R06,Reference,碘对比剂诱导的急性肾损伤防治的专家共识
 RF_UncontrolledAsthma,RiskFactor,未控制的哮喘,SUPPORTED_BY,有文献支持,R12,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
 RF_UncontrolledAsthma,RiskFactor,未控制的哮喘,SUPPORTED_BY,有文献支持,R13,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
-RF_DiabetesMetformin,RiskFactor,糖尿病服用二甲双胍,SUPPORTED_BY,有文献支持,R05,Reference,肾病患者静脉注射碘对比剂应用专家共识
-RF_DiabetesMetformin,RiskFactor,糖尿病服用二甲双胍,SUPPORTED_BY,有文献支持,R11,Reference,碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明
-RF_Hyperthyroidism,RiskFactor,甲亢未控制,SUPPORTED_BY,有文献支持,R03,Reference,碘对比剂使用指南（第2版）
-RF_Hyperthyroidism,RiskFactor,甲亢未控制,SUPPORTED_BY,有文献支持,R05,Reference,肾病患者静脉注射碘对比剂应用专家共识
-RF_CardiacDisease,RiskFactor,心功能不全,SUPPORTED_BY,有文献支持,R05,Reference,肾病患者静脉注射碘对比剂应用专家共识
-RF_CardiacDisease,RiskFactor,心功能不全,SUPPORTED_BY,有文献支持,R06,Reference,碘对比剂诱导的急性肾损伤防治的专家共识
 RF_AgeExtremes,RiskFactor,高龄或低龄,SUPPORTED_BY,有文献支持,R04,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
 RF_AgeExtremes,RiskFactor,高龄或低龄,SUPPORTED_BY,有文献支持,R17,Reference,放射科碘对比剂外渗影响因素的系统评价
-RF_Pregnancy,RiskFactor,妊娠,SUPPORTED_BY,有文献支持,R03,Reference,碘对比剂使用指南（第2版）
 RF_FragileVein,RiskFactor,静脉条件差,SUPPORTED_BY,有文献支持,R04,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
 RF_FragileVein,RiskFactor,静脉条件差,SUPPORTED_BY,有文献支持,R17,Reference,放射科碘对比剂外渗影响因素的系统评价
 RF_HighPressureInjection,RiskFactor,高压注射,SUPPORTED_BY,有文献支持,R02,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
@@ -233,15 +172,8 @@ PM_Corticosteroid,PharmacologicalManagement,糖皮质激素,SUPPORTED_BY,有文�
 PM_Corticosteroid,PharmacologicalManagement,糖皮质激素,SUPPORTED_BY,有文献支持,R13,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
 PM_Antihistamine,PharmacologicalManagement,抗组胺药,SUPPORTED_BY,有文献支持,R12,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
 PM_Antihistamine,PharmacologicalManagement,抗组胺药,SUPPORTED_BY,有文献支持,R13,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
-PM_SalineHydration,PharmacologicalManagement,生理盐水水化,SUPPORTED_BY,有文献支持,R05,Reference,肾病患者静脉注射碘对比剂应用专家共识
-PM_SalineHydration,PharmacologicalManagement,生理盐水水化,SUPPORTED_BY,有文献支持,R06,Reference,碘对比剂诱导的急性肾损伤防治的专家共识
-PM_SalineHydration,PharmacologicalManagement,生理盐水水化,SUPPORTED_BY,有文献支持,R18,Reference,心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析
-PM_SalineHydration,PharmacologicalManagement,生理盐水水化,SUPPORTED_BY,有文献支持,R19,Reference,血管造影后应用碳酸氢钠与乙酰半胱氨酸的临床结局
-PM_SalineHydration,PharmacologicalManagement,生理盐水水化,SUPPORTED_BY,有文献支持,R15,Reference,欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评
 PM_MagnesiumSulfate,PharmacologicalManagement,50%硫酸镁湿敷,SUPPORTED_BY,有文献支持,R07,Reference,影像科碘对比剂输注安全专家共识
 PM_DexamethasoneWetCompress,PharmacologicalManagement,0.05%地塞米松湿敷,SUPPORTED_BY,有文献支持,R07,Reference,影像科碘对比剂输注安全专家共识
-PM_MetforminHold,PharmacologicalManagement,暂停二甲双胍,SUPPORTED_BY,有文献支持,R05,Reference,肾病患者静脉注射碘对比剂应用专家共识
-PM_MetforminHold,PharmacologicalManagement,暂停二甲双胍,SUPPORTED_BY,有文献支持,R11,Reference,碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明
 NPM_StopInjection,NonPharmacologicalManagement,立即停止注射,SUPPORTED_BY,有文献支持,R02,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
 NPM_StopInjection,NonPharmacologicalManagement,立即停止注射,SUPPORTED_BY,有文献支持,R04,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
 NPM_KeepCatheter,NonPharmacologicalManagement,保留静脉留置针,SUPPORTED_BY,有文献支持,R02,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
@@ -253,8 +185,6 @@ NPM_ColdCompress,NonPharmacologicalManagement,局部冷敷,SUPPORTED_BY,有文�
 NPM_ColdCompress,NonPharmacologicalManagement,局部冷敷,SUPPORTED_BY,有文献支持,R07,Reference,影像科碘对比剂输注安全专家共识
 NPM_CloseObservation,NonPharmacologicalManagement,密切观察,SUPPORTED_BY,有文献支持,R07,Reference,影像科碘对比剂输注安全专家共识
 NPM_CloseObservation,NonPharmacologicalManagement,密切观察,SUPPORTED_BY,有文献支持,R01,Reference,美国放射学会对比剂手册
-NPM_OralHydration,NonPharmacologicalManagement,口服补液,SUPPORTED_BY,有文献支持,R01,Reference,美国放射学会对比剂手册
-NPM_OralHydration,NonPharmacologicalManagement,口服补液,SUPPORTED_BY,有文献支持,R03,Reference,碘对比剂使用指南（第2版）
 NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理,SUPPORTED_BY,有文献支持,R03,Reference,碘对比剂使用指南（第2版）
 NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理,SUPPORTED_BY,有文献支持,R09,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
 NPM_VascularVisualization,NonPharmacologicalManagement,血管可视化,SUPPORTED_BY,有文献支持,R08,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
@@ -275,20 +205,6 @@ MP_ExtravasationPrinciple,ManagementPrinciple,外渗处置原则,SUPPORTED_BY,�
 MP_AdverseReactionTriage,ManagementPrinciple,不良反应分级处置原则,SUPPORTED_BY,有文献支持,R12,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
 MP_AdverseReactionTriage,ManagementPrinciple,不良反应分级处置原则,SUPPORTED_BY,有文献支持,R13,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
 MP_AdverseReactionTriage,ManagementPrinciple,不良反应分级处置原则,SUPPORTED_BY,有文献支持,R01,Reference,美国放射学会对比剂手册
-MP_RenalProtectionPrinciple,ManagementPrinciple,肾保护原则,SUPPORTED_BY,有文献支持,R05,Reference,肾病患者静脉注射碘对比剂应用专家共识
-MP_RenalProtectionPrinciple,ManagementPrinciple,肾保护原则,SUPPORTED_BY,有文献支持,R06,Reference,碘对比剂诱导的急性肾损伤防治的专家共识
-MP_RenalProtectionPrinciple,ManagementPrinciple,肾保护原则,SUPPORTED_BY,有文献支持,R11,Reference,碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明
-MP_RenalProtectionPrinciple,ManagementPrinciple,肾保护原则,SUPPORTED_BY,有文献支持,R19,Reference,血管造影后应用碳酸氢钠与乙酰半胱氨酸的临床结局
-MP_RenalProtectionPrinciple,ManagementPrinciple,肾保护原则,SUPPORTED_BY,有文献支持,R15,Reference,欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评
-NT_RiskAssessment,NursingTheory,护理风险评估理论,SUPPORTED_BY,有文献支持,R04,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
-NT_RiskAssessment,NursingTheory,护理风险评估理论,SUPPORTED_BY,有文献支持,R17,Reference,放射科碘对比剂外渗影响因素的系统评价
-NT_EvidenceBasedNursing,NursingTheory,循证护理,SUPPORTED_BY,有文献支持,R04,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
-NT_EvidenceBasedNursing,NursingTheory,循证护理,SUPPORTED_BY,有文献支持,R12,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
-NT_EarlyWarning,NursingTheory,早期预警,SUPPORTED_BY,有文献支持,R13,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
-NT_EarlyWarning,NursingTheory,早期预警,SUPPORTED_BY,有文献支持,R16,Reference,过敏反应：2023 年实践参数更新
-NT_StandardizedProcess,NursingTheory,标准化护理流程,SUPPORTED_BY,有文献支持,R08,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
-NT_StandardizedProcess,NursingTheory,标准化护理流程,SUPPORTED_BY,有文献支持,R09,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
-NT_StandardizedProcess,NursingTheory,标准化护理流程,SUPPORTED_BY,有文献支持,R07,Reference,影像科碘对比剂输注安全专家共识
 DE_PreExamNotice,DiseaseEducation,检查前注意事项科普,SUPPORTED_BY,有文献支持,R03,Reference,碘对比剂使用指南（第2版）
 DE_PreExamNotice,DiseaseEducation,检查前注意事项科普,SUPPORTED_BY,有文献支持,R20,Reference,影像护理学
 DE_AfterExamCare,DiseaseEducation,检查后观察与护理科普,SUPPORTED_BY,有文献支持,R01,Reference,美国放射学会对比剂手册
@@ -304,9 +220,14 @@ SS_MildResolved,SymptomStatus,轻度反应已缓解,SUPPORTED_BY,有文献支持
 SS_MildResolved,SymptomStatus,轻度反应已缓解,SUPPORTED_BY,有文献支持,R07,Reference,影像科碘对比剂输注安全专家共识
 SS_SevereRecovered,SymptomStatus,重度反应已恢复,SUPPORTED_BY,有文献支持,R16,Reference,过敏反应：2023 年实践参数更新
 SS_SevereRecovered,SymptomStatus,重度反应已恢复,SUPPORTED_BY,有文献支持,R13,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
-SS_RenalStable,SymptomStatus,肾功能稳定,SUPPORTED_BY,有文献支持,R05,Reference,肾病患者静脉注射碘对比剂应用专家共识
-SS_RenalStable,SymptomStatus,肾功能稳定,SUPPORTED_BY,有文献支持,R11,Reference,碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明
 FS_LimbFunction,FunctionalStatus,患肢功能状态,SUPPORTED_BY,有文献支持,R04,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
 FS_LimbFunction,FunctionalStatus,患肢功能状态,SUPPORTED_BY,有文献支持,R02,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
 S_Extravasation,SymptomSign,碘对比剂外渗,SUPPORTED_BY,有文献支持,R10,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
 E_CTEnhancedScan,Exam,CT增强扫描,SUPPORTED_BY,有文献支持,R10,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
+NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理,SUPPORTED_BY,有文献支持,R21,Reference,"碘对比剂温度与不良反应关系的 Meta 分析（307,329 次注射）"
+S_AllergicReaction,SymptomSign,过敏反应,SUPPORTED_BY,有文献支持,R21,Reference,"碘对比剂温度与不良反应关系的 Meta 分析（307,329 次注射）"
+S_Extravasation,SymptomSign,碘对比剂外渗,SUPPORTED_BY,有文献支持,R21,Reference,"碘对比剂温度与不良反应关系的 Meta 分析（307,329 次注射）"
+S_Extravasation,SymptomSign,碘对比剂外渗,SUPPORTED_BY,有文献支持,R22,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
+AT_ExtravasationAssessment,AssessmentTool,外渗风险评估,SUPPORTED_BY,有文献支持,R22,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
+S_AllergicReaction,SymptomSign,过敏反应,SUPPORTED_BY,有文献支持,R23,Reference,对比剂即刻超敏反应危险因素的系统评价与 Meta 分析
+RF_UncontrolledAsthma,RiskFactor,未控制的哮喘,SUPPORTED_BY,有文献支持,R23,Reference,对比剂即刻超敏反应危险因素的系统评价与 Meta 分析

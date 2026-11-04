@@ -1,9 +1,9 @@
 window.KG_GRAPH = {
   "meta": {
     "topicKey": "topic-01",
-    "topicName": "CT增强检查护理风险",
-    "subtitle": "碘对比剂相关不良反应 · 静脉外渗 · 肾功能保护的护理知识图谱",
-    "generatedAt": "2026-11-02"
+    "topicName": "CT增强扫描后过敏与外渗",
+    "subtitle": "碘对比剂过敏反应 · 碘对比剂外渗 · 护理预防与处置",
+    "generatedAt": "2026-11-04"
   },
   "nodeTypes": [
     {
@@ -216,18 +216,20 @@ window.KG_GRAPH = {
   "nodes": [
     {
       "id": "DC_CTEnhancedRisk",
-      "name": "CT增强检查护理风险",
+      "name": "CT增强扫描后碘对比剂过敏与外渗",
       "type": "DiseaseCategory",
       "tags": [
         "题目",
-        "CT增强"
+        "CT增强",
+        "碘对比剂"
       ],
       "aliases": [
         "CT增强检查护理风险",
-        "增强CT护理风险",
-        "CT增强检查风险"
+        "CT增强扫描护理风险",
+        "碘对比剂过敏反应",
+        "碘对比剂外渗"
       ],
-      "summary": "做增强CT时可能遇到的各类护理风险的总称。",
+      "summary": "做 CT 增强扫描时使用碘对比剂后，最需要盯住的两类护理风险：碘对比剂过敏反应和碘对比剂外渗。",
       "attrs": [
         {
           "k": "覆盖范围",
@@ -270,7 +272,7 @@ window.KG_GRAPH = {
         "增强CT",
         "CT增强"
       ],
-      "summary": "打药以后再做断层成像的检查方法，图像更清楚，但要用药就有风险。",
+      "summary": "先静脉注射碘对比剂、再做断层成像的检查方法；本图谱关注打药后出现的过敏反应和碘对比剂外渗。",
       "attrs": [],
       "evidence": [
         {
@@ -308,19 +310,19 @@ window.KG_GRAPH = {
     },
     {
       "id": "E_ContrastInjection",
-      "name": "碘对比剂静脉输注",
+      "name": "碘对比剂",
       "type": "Exam",
       "tags": [
         "辅助检查",
         "对比剂"
       ],
       "aliases": [
-        "iodine contrast agent",
-        "碘对比剂",
+        "碘对比剂静脉输注",
         "含碘造影剂",
-        "造影剂"
+        "造影剂",
+        "iodine contrast agent"
       ],
-      "summary": "增强检查里打进血管的含碘药水，本图谱所有风险的源头。",
+      "summary": "CT 增强扫描时打进血管的含碘对比剂，是过敏反应和外渗这两类风险的来源。",
       "attrs": [
         {
           "k": "给药方式",
@@ -371,83 +373,6 @@ window.KG_GRAPH = {
           "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / 欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评 / 肾脏病与治疗 / 2021",
           "grade": "推荐意见",
           "ref": "R15"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
-      "id": "E_RenalFunction",
-      "name": "肾功能检查",
-      "type": "Exam",
-      "tags": [
-        "辅助检查"
-      ],
-      "aliases": [
-        "renal function test",
-        "eGFR",
-        "血清肌酐",
-        "肾功能"
-      ],
-      "summary": "抽血查肾脏过滤能力，用来判断这次造影安不安全。",
-      "attrs": [],
-      "evidence": [
-        {
-          "type": "共识",
-          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
-          "title": "肾病患者静脉注射碘对比剂应用专家共识",
-          "journal": "中华放射学杂志",
-          "year": 2021,
-          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
-          "grade": "指南与共识",
-          "ref": "R05"
-        },
-        {
-          "type": "声明",
-          "author": "Davenport MS, Perazella MA, Yee J, et al.",
-          "title": "碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明",
-          "journal": "放射学",
-          "year": 2020,
-          "cite": "Davenport MS, Perazella MA, Yee J, et al. / 碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明 / 放射学 / 2020",
-          "grade": "学会声明",
-          "ref": "R11"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
-      "id": "E_ThyroidFunction",
-      "name": "甲状腺功能检查",
-      "type": "Exam",
-      "tags": [
-        "辅助检查"
-      ],
-      "aliases": [
-        "thyroid function test",
-        "甲功",
-        "TSH"
-      ],
-      "summary": "抽血查甲状腺功能，甲亢没控制住的人不适合打造影剂。",
-      "attrs": [],
-      "evidence": [
-        {
-          "type": "指南",
-          "author": "中华医学会放射学分会对比剂安全使用工作组",
-          "title": "碘对比剂使用指南（第2版）",
-          "journal": "中华放射学杂志",
-          "year": 2013,
-          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
-          "grade": "指南与共识",
-          "ref": "R03"
-        },
-        {
-          "type": "共识",
-          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
-          "title": "肾病患者静脉注射碘对比剂应用专家共识",
-          "journal": "中华放射学杂志",
-          "year": 2021,
-          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
-          "grade": "指南与共识",
-          "ref": "R05"
         }
       ],
       "graph": "topic-01"
@@ -548,7 +473,8 @@ window.KG_GRAPH = {
       ],
       "aliases": [
         "allergic reaction",
-        "碘过敏反应"
+        "碘过敏反应",
+        "碘对比剂过敏反应"
       ],
       "summary": "对碘对比剂发生的变态反应，可以累及呼吸道、循环系统和全身。",
       "attrs": [],
@@ -582,6 +508,22 @@ window.KG_GRAPH = {
           "cite": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al. / 对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会） / 加拿大放射医师协会杂志 / 2025",
           "grade": "推荐意见",
           "ref": "R14"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Nawras M, Alyousif Z, Beran A, Elsamaloty H",
+          "title": "碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析",
+          "journal": "临床影像学",
+          "year": 2023,
+          "cite": "Nawras M, Alyousif Z, Beran A, Elsamaloty H / 碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析 / 临床影像学 / 2023 · DOI 10.1016/j.clinimag.2023.05.006 · PMID 37216743"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Huang W, He C, Chen Y, Xu H, Yao J, Zhao L",
+          "title": "对比剂即刻超敏反应危险因素的系统评价与 Meta 分析",
+          "journal": "欧洲放射学杂志",
+          "year": 2026,
+          "cite": "Huang W, He C, Chen Y, Xu H, Yao J, Zhao L / 对比剂即刻超敏反应危险因素的系统评价与 Meta 分析 / 欧洲放射学杂志 / 2026 · DOI 10.1016/j.ejrad.2025.112472 · PMID 41175815"
         }
       ],
       "graph": "topic-01"
@@ -945,75 +887,22 @@ window.KG_GRAPH = {
           "cite": "广西壮族自治区市场监督管理局 / DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范 / 广西壮族自治区市场监督管理局（地方标准） / 2024",
           "grade": "标准与规范",
           "ref": "R10"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
-      "id": "S_ContrastAKI",
-      "name": "对比剂相关急性肾损伤",
-      "type": "SymptomSign",
-      "tags": [
-        "症状体征"
-      ],
-      "aliases": [
-        "contrast induced acute kidney injury",
-        "对比剂相关性急性肾损伤",
-        "造影剂肾病",
-        "CI-AKI"
-      ],
-      "summary": "打完造影剂后短时间内出现的肾脏功能损伤。",
-      "attrs": [],
-      "evidence": [
-        {
-          "type": "共识",
-          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
-          "title": "肾病患者静脉注射碘对比剂应用专家共识",
-          "journal": "中华放射学杂志",
-          "year": 2021,
-          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
-          "grade": "指南与共识",
-          "ref": "R05"
-        },
-        {
-          "type": "共识",
-          "author": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会",
-          "title": "碘对比剂诱导的急性肾损伤防治的专家共识",
-          "journal": "中华肾脏病杂志",
-          "year": 2022,
-          "cite": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会 / 碘对比剂诱导的急性肾损伤防治的专家共识 / 中华肾脏病杂志 / 2022",
-          "grade": "指南与共识",
-          "ref": "R06"
         },
         {
           "type": "Meta分析",
-          "author": "Navarese EP, Gurbel PA, Andreotti F, et al.",
-          "title": "心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析",
-          "journal": "公共科学图书馆·综合",
-          "year": 2017,
-          "cite": "Navarese EP, Gurbel PA, Andreotti F, et al. / 心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析 / 公共科学图书馆·综合 / 2017",
-          "grade": "汇总证据",
-          "ref": "R18"
+          "author": "Nawras M, Alyousif Z, Beran A, Elsamaloty H",
+          "title": "碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析",
+          "journal": "临床影像学",
+          "year": 2023,
+          "cite": "Nawras M, Alyousif Z, Beran A, Elsamaloty H / 碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析 / 临床影像学 / 2023 · DOI 10.1016/j.clinimag.2023.05.006 · PMID 37216743"
         },
         {
-          "type": "声明",
-          "author": "Davenport MS, Perazella MA, Yee J, et al.",
-          "title": "碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明",
-          "journal": "放射学",
-          "year": 2020,
-          "cite": "Davenport MS, Perazella MA, Yee J, et al. / 碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明 / 放射学 / 2020",
-          "grade": "学会声明",
-          "ref": "R11"
-        },
-        {
-          "type": "推荐",
-          "author": "de Laforcade L, Bobot M, Bellin MF, et al.",
-          "title": "欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评",
-          "journal": "肾脏病与治疗",
-          "year": 2021,
-          "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / 欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评 / 肾脏病与治疗 / 2021",
-          "grade": "推荐意见",
-          "ref": "R15"
+          "type": "Meta分析",
+          "author": "Ding S, Meystre NR, Campeanu C, Gullo G",
+          "title": "CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析",
+          "journal": "JBI 系统评价与实施报告",
+          "year": 2018,
+          "cite": "Ding S, Meystre NR, Campeanu C, Gullo G / CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析 / JBI 系统评价与实施报告 / 2018 · DOI 10.11124/JBISRIR-2017-003348 · PMID 29324560"
         }
       ],
       "graph": "topic-01"
@@ -1098,32 +987,6 @@ window.KG_GRAPH = {
       "graph": "topic-01"
     },
     {
-      "id": "SC_RenalSpectrum",
-      "name": "肾功能损害谱",
-      "type": "SymptomCategory",
-      "tags": [
-        "症状分类"
-      ],
-      "aliases": [
-        "肾功能损害谱"
-      ],
-      "summary": "造影后肾功能从轻微波动到明显损伤的分层。",
-      "attrs": [],
-      "evidence": [
-        {
-          "type": "共识",
-          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
-          "title": "肾病患者静脉注射碘对比剂应用专家共识",
-          "journal": "中华放射学杂志",
-          "year": 2021,
-          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
-          "grade": "指南与共识",
-          "ref": "R05"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
       "id": "AT_AllergyHistory",
       "name": "过敏史询问",
       "type": "AssessmentTool",
@@ -1162,44 +1025,6 @@ window.KG_GRAPH = {
       "graph": "topic-01"
     },
     {
-      "id": "AT_RenalAssessment",
-      "name": "肾功能风险评估",
-      "type": "AssessmentTool",
-      "tags": [
-        "评估工具"
-      ],
-      "aliases": [
-        "renal risk assessment",
-        "eGFR 评估",
-        "肾功能评估"
-      ],
-      "summary": "结合 eGFR 与正在吃的药，判断这次造影风险有多大的评估方法。",
-      "attrs": [],
-      "evidence": [
-        {
-          "type": "共识",
-          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
-          "title": "肾病患者静脉注射碘对比剂应用专家共识",
-          "journal": "中华放射学杂志",
-          "year": 2021,
-          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
-          "grade": "指南与共识",
-          "ref": "R05"
-        },
-        {
-          "type": "声明",
-          "author": "Davenport MS, Perazella MA, Yee J, et al.",
-          "title": "碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明",
-          "journal": "放射学",
-          "year": 2020,
-          "cite": "Davenport MS, Perazella MA, Yee J, et al. / 碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明 / 放射学 / 2020",
-          "grade": "学会声明",
-          "ref": "R11"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
       "id": "AT_ExtravasationAssessment",
       "name": "外渗风险评估",
       "type": "AssessmentTool",
@@ -1232,6 +1057,14 @@ window.KG_GRAPH = {
           "cite": "姚金秀、杨丽娜、梅申聪、董芳辉 / 放射科碘对比剂外渗影响因素的系统评价 / 上海护理 / 2023",
           "grade": "汇总证据",
           "ref": "R17"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Ding S, Meystre NR, Campeanu C, Gullo G",
+          "title": "CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析",
+          "journal": "JBI 系统评价与实施报告",
+          "year": 2018,
+          "cite": "Ding S, Meystre NR, Campeanu C, Gullo G / CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析 / JBI 系统评价与实施报告 / 2018 · DOI 10.11124/JBISRIR-2017-003348 · PMID 29324560"
         }
       ],
       "graph": "topic-01"
@@ -1313,81 +1146,6 @@ window.KG_GRAPH = {
       "graph": "topic-01"
     },
     {
-      "id": "RF_RenalImpairment",
-      "name": "肾功能不全",
-      "type": "RiskFactor",
-      "tags": [
-        "高危因素"
-      ],
-      "aliases": [
-        "renal impairment",
-        "肾功能损害",
-        "eGFR 偏低"
-      ],
-      "summary": "肾脏过滤功能本来就不好，造影后更容易受损。",
-      "attrs": [],
-      "evidence": [
-        {
-          "type": "共识",
-          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
-          "title": "肾病患者静脉注射碘对比剂应用专家共识",
-          "journal": "中华放射学杂志",
-          "year": 2021,
-          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
-          "grade": "指南与共识",
-          "ref": "R05"
-        },
-        {
-          "type": "声明",
-          "author": "Davenport MS, Perazella MA, Yee J, et al.",
-          "title": "碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明",
-          "journal": "放射学",
-          "year": 2020,
-          "cite": "Davenport MS, Perazella MA, Yee J, et al. / 碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明 / 放射学 / 2020",
-          "grade": "学会声明",
-          "ref": "R11"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
-      "id": "RF_Dehydration",
-      "name": "脱水",
-      "type": "RiskFactor",
-      "tags": [
-        "高危因素"
-      ],
-      "aliases": [
-        "dehydration",
-        "容量不足"
-      ],
-      "summary": "身体缺水时血管更脆、肾脏也更容易受损。",
-      "attrs": [],
-      "evidence": [
-        {
-          "type": "共识",
-          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
-          "title": "肾病患者静脉注射碘对比剂应用专家共识",
-          "journal": "中华放射学杂志",
-          "year": 2021,
-          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
-          "grade": "指南与共识",
-          "ref": "R05"
-        },
-        {
-          "type": "共识",
-          "author": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会",
-          "title": "碘对比剂诱导的急性肾损伤防治的专家共识",
-          "journal": "中华肾脏病杂志",
-          "year": 2022,
-          "cite": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会 / 碘对比剂诱导的急性肾损伤防治的专家共识 / 中华肾脏病杂志 / 2022",
-          "grade": "指南与共识",
-          "ref": "R06"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
       "id": "RF_UncontrolledAsthma",
       "name": "未控制的哮喘",
       "type": "RiskFactor",
@@ -1398,7 +1156,7 @@ window.KG_GRAPH = {
         "uncontrolled asthma",
         "哮喘未控制"
       ],
-      "summary": "哮喘没控制好时，造影剂诱发反应的风险更高。",
+      "summary": "哮喘没控制好时，指南仍列为需要关注的风险因素；2026 年 Meta 分析未显示显著关联，证据不一致。",
       "attrs": [],
       "evidence": [
         {
@@ -1420,118 +1178,14 @@ window.KG_GRAPH = {
           "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
           "grade": "推荐意见",
           "ref": "R13"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
-      "id": "RF_DiabetesMetformin",
-      "name": "糖尿病服用二甲双胍",
-      "type": "RiskFactor",
-      "tags": [
-        "高危因素"
-      ],
-      "aliases": [
-        "metformin use",
-        "二甲双胍用药"
-      ],
-      "summary": "正在吃二甲双胍的糖尿病患者，造影前后要按医嘱停药。",
-      "attrs": [],
-      "evidence": [
-        {
-          "type": "共识",
-          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
-          "title": "肾病患者静脉注射碘对比剂应用专家共识",
-          "journal": "中华放射学杂志",
-          "year": 2021,
-          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
-          "grade": "指南与共识",
-          "ref": "R05"
         },
         {
-          "type": "声明",
-          "author": "Davenport MS, Perazella MA, Yee J, et al.",
-          "title": "碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明",
-          "journal": "放射学",
-          "year": 2020,
-          "cite": "Davenport MS, Perazella MA, Yee J, et al. / 碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明 / 放射学 / 2020",
-          "grade": "学会声明",
-          "ref": "R11"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
-      "id": "RF_Hyperthyroidism",
-      "name": "甲亢未控制",
-      "type": "RiskFactor",
-      "tags": [
-        "高危因素"
-      ],
-      "aliases": [
-        "hyperthyroidism",
-        "甲状腺功能亢进"
-      ],
-      "summary": "甲亢没治好的人打造影剂，可能诱发甲状腺危象。",
-      "attrs": [],
-      "evidence": [
-        {
-          "type": "指南",
-          "author": "中华医学会放射学分会对比剂安全使用工作组",
-          "title": "碘对比剂使用指南（第2版）",
-          "journal": "中华放射学杂志",
-          "year": 2013,
-          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
-          "grade": "指南与共识",
-          "ref": "R03"
-        },
-        {
-          "type": "共识",
-          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
-          "title": "肾病患者静脉注射碘对比剂应用专家共识",
-          "journal": "中华放射学杂志",
-          "year": 2021,
-          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
-          "grade": "指南与共识",
-          "ref": "R05"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
-      "id": "RF_CardiacDisease",
-      "name": "心功能不全",
-      "type": "RiskFactor",
-      "tags": [
-        "高危因素"
-      ],
-      "aliases": [
-        "heart failure",
-        "充血性心力衰竭",
-        "心功能不全"
-      ],
-      "summary": "心脏泵血功能差的人，补液要格外谨慎。",
-      "attrs": [],
-      "evidence": [
-        {
-          "type": "共识",
-          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
-          "title": "肾病患者静脉注射碘对比剂应用专家共识",
-          "journal": "中华放射学杂志",
-          "year": 2021,
-          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
-          "grade": "指南与共识",
-          "ref": "R05"
-        },
-        {
-          "type": "共识",
-          "author": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会",
-          "title": "碘对比剂诱导的急性肾损伤防治的专家共识",
-          "journal": "中华肾脏病杂志",
-          "year": 2022,
-          "cite": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会 / 碘对比剂诱导的急性肾损伤防治的专家共识 / 中华肾脏病杂志 / 2022",
-          "grade": "指南与共识",
-          "ref": "R06"
+          "type": "Meta分析",
+          "author": "Huang W, He C, Chen Y, Xu H, Yao J, Zhao L",
+          "title": "对比剂即刻超敏反应危险因素的系统评价与 Meta 分析",
+          "journal": "欧洲放射学杂志",
+          "year": 2026,
+          "cite": "Huang W, He C, Chen Y, Xu H, Yao J, Zhao L / 对比剂即刻超敏反应危险因素的系统评价与 Meta 分析 / 欧洲放射学杂志 / 2026 · DOI 10.1016/j.ejrad.2025.112472 · PMID 41175815"
         }
       ],
       "graph": "topic-01"
@@ -1570,33 +1224,6 @@ window.KG_GRAPH = {
           "cite": "姚金秀、杨丽娜、梅申聪、董芳辉 / 放射科碘对比剂外渗影响因素的系统评价 / 上海护理 / 2023",
           "grade": "汇总证据",
           "ref": "R17"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
-      "id": "RF_Pregnancy",
-      "name": "妊娠",
-      "type": "RiskFactor",
-      "tags": [
-        "高危因素"
-      ],
-      "aliases": [
-        "pregnancy",
-        "妊娠期"
-      ],
-      "summary": "怀孕期间要先评估辐射与对比剂的必要性。",
-      "attrs": [],
-      "evidence": [
-        {
-          "type": "指南",
-          "author": "中华医学会放射学分会对比剂安全使用工作组",
-          "title": "碘对比剂使用指南（第2版）",
-          "journal": "中华放射学杂志",
-          "year": 2013,
-          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
-          "grade": "指南与共识",
-          "ref": "R03"
         }
       ],
       "graph": "topic-01"
@@ -1847,74 +1474,6 @@ window.KG_GRAPH = {
       "graph": "topic-01"
     },
     {
-      "id": "PM_SalineHydration",
-      "name": "生理盐水水化",
-      "type": "PharmacologicalManagement",
-      "tags": [
-        "药物治疗"
-      ],
-      "aliases": [
-        "saline hydration",
-        "静脉水化",
-        "生理盐水补液"
-      ],
-      "summary": "用生理盐水把血容量补足，是保护肾脏最有效的常规办法。",
-      "attrs": [],
-      "evidence": [
-        {
-          "type": "共识",
-          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
-          "title": "肾病患者静脉注射碘对比剂应用专家共识",
-          "journal": "中华放射学杂志",
-          "year": 2021,
-          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
-          "grade": "指南与共识",
-          "ref": "R05"
-        },
-        {
-          "type": "共识",
-          "author": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会",
-          "title": "碘对比剂诱导的急性肾损伤防治的专家共识",
-          "journal": "中华肾脏病杂志",
-          "year": 2022,
-          "cite": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会 / 碘对比剂诱导的急性肾损伤防治的专家共识 / 中华肾脏病杂志 / 2022",
-          "grade": "指南与共识",
-          "ref": "R06"
-        },
-        {
-          "type": "Meta分析",
-          "author": "Navarese EP, Gurbel PA, Andreotti F, et al.",
-          "title": "心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析",
-          "journal": "公共科学图书馆·综合",
-          "year": 2017,
-          "cite": "Navarese EP, Gurbel PA, Andreotti F, et al. / 心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析 / 公共科学图书馆·综合 / 2017",
-          "grade": "汇总证据",
-          "ref": "R18"
-        },
-        {
-          "type": "最佳证据",
-          "author": "Weisbord SD, Gallagher M, Jneid H, et al.",
-          "title": "血管造影后应用碳酸氢钠与乙酰半胱氨酸的临床结局",
-          "journal": "新英格兰医学杂志",
-          "year": 2018,
-          "cite": "Weisbord SD, Gallagher M, Jneid H, et al. / 血管造影后应用碳酸氢钠与乙酰半胱氨酸的临床结局 / 新英格兰医学杂志 / 2018",
-          "grade": "汇总证据",
-          "ref": "R19"
-        },
-        {
-          "type": "推荐",
-          "author": "de Laforcade L, Bobot M, Bellin MF, et al.",
-          "title": "欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评",
-          "journal": "肾脏病与治疗",
-          "year": 2021,
-          "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / 欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评 / 肾脏病与治疗 / 2021",
-          "grade": "推荐意见",
-          "ref": "R15"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
       "id": "PM_MagnesiumSulfate",
       "name": "50%硫酸镁湿敷",
       "type": "PharmacologicalManagement",
@@ -1964,43 +1523,6 @@ window.KG_GRAPH = {
           "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
           "grade": "指南与共识",
           "ref": "R07"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
-      "id": "PM_MetforminHold",
-      "name": "暂停二甲双胍",
-      "type": "PharmacologicalManagement",
-      "tags": [
-        "药物治疗"
-      ],
-      "aliases": [
-        "metformin hold",
-        "停用二甲双胍"
-      ],
-      "summary": "肾功能明显下降时，按医嘱停用二甲双胍并复查肾功能。",
-      "attrs": [],
-      "evidence": [
-        {
-          "type": "共识",
-          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
-          "title": "肾病患者静脉注射碘对比剂应用专家共识",
-          "journal": "中华放射学杂志",
-          "year": 2021,
-          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
-          "grade": "指南与共识",
-          "ref": "R05"
-        },
-        {
-          "type": "声明",
-          "author": "Davenport MS, Perazella MA, Yee J, et al.",
-          "title": "碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明",
-          "journal": "放射学",
-          "year": 2020,
-          "cite": "Davenport MS, Perazella MA, Yee J, et al. / 碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明 / 放射学 / 2020",
-          "grade": "学会声明",
-          "ref": "R11"
         }
       ],
       "graph": "topic-01"
@@ -2205,44 +1727,6 @@ window.KG_GRAPH = {
       "graph": "topic-01"
     },
     {
-      "id": "NPM_OralHydration",
-      "name": "口服补液",
-      "type": "NonPharmacologicalManagement",
-      "tags": [
-        "非药物管理"
-      ],
-      "aliases": [
-        "oral hydration",
-        "饮水",
-        "多喝水"
-      ],
-      "summary": "检查以后适量喝水，帮助肾脏把造影剂排出去。",
-      "attrs": [],
-      "evidence": [
-        {
-          "type": "指南",
-          "author": "美国放射学会药物与对比剂委员会",
-          "title": "美国放射学会对比剂手册",
-          "journal": "美国放射学会",
-          "year": 2024,
-          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
-          "grade": "指南与共识",
-          "ref": "R01"
-        },
-        {
-          "type": "指南",
-          "author": "中华医学会放射学分会对比剂安全使用工作组",
-          "title": "碘对比剂使用指南（第2版）",
-          "journal": "中华放射学杂志",
-          "year": 2013,
-          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
-          "grade": "指南与共识",
-          "ref": "R03"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
       "id": "NPM_ContrastPreparation",
       "name": "对比剂预处理",
       "type": "NonPharmacologicalManagement",
@@ -2254,7 +1738,7 @@ window.KG_GRAPH = {
         "对比剂加温",
         "预热对比剂"
       ],
-      "summary": "把对比剂加温到 37℃ 左右再用，可减少不适和外渗。",
+      "summary": "把对比剂加温到 37℃ 左右再用。对高黏度对比剂可减少过敏/不适反应；现有 Meta 分析未证实能减少外渗。",
       "attrs": [],
       "evidence": [
         {
@@ -2276,6 +1760,14 @@ window.KG_GRAPH = {
           "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
           "grade": "标准与规范",
           "ref": "R09"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Nawras M, Alyousif Z, Beran A, Elsamaloty H",
+          "title": "碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析",
+          "journal": "临床影像学",
+          "year": 2023,
+          "cite": "Nawras M, Alyousif Z, Beran A, Elsamaloty H / 碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析 / 临床影像学 / 2023 · DOI 10.1016/j.clinimag.2023.05.006 · PMID 37216743"
         }
       ],
       "graph": "topic-01"
@@ -2582,231 +2074,6 @@ window.KG_GRAPH = {
       "graph": "topic-01"
     },
     {
-      "id": "MP_RenalProtectionPrinciple",
-      "name": "肾保护原则",
-      "type": "ManagementPrinciple",
-      "tags": [
-        "肾保护"
-      ],
-      "aliases": [
-        "renal protection principle",
-        "肾功能保护原则"
-      ],
-      "summary": "以保护肾功能为目标的用药与补液原则。",
-      "attrs": [],
-      "evidence": [
-        {
-          "type": "共识",
-          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
-          "title": "肾病患者静脉注射碘对比剂应用专家共识",
-          "journal": "中华放射学杂志",
-          "year": 2021,
-          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
-          "grade": "指南与共识",
-          "ref": "R05"
-        },
-        {
-          "type": "共识",
-          "author": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会",
-          "title": "碘对比剂诱导的急性肾损伤防治的专家共识",
-          "journal": "中华肾脏病杂志",
-          "year": 2022,
-          "cite": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会 / 碘对比剂诱导的急性肾损伤防治的专家共识 / 中华肾脏病杂志 / 2022",
-          "grade": "指南与共识",
-          "ref": "R06"
-        },
-        {
-          "type": "声明",
-          "author": "Davenport MS, Perazella MA, Yee J, et al.",
-          "title": "碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明",
-          "journal": "放射学",
-          "year": 2020,
-          "cite": "Davenport MS, Perazella MA, Yee J, et al. / 碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明 / 放射学 / 2020",
-          "grade": "学会声明",
-          "ref": "R11"
-        },
-        {
-          "type": "最佳证据",
-          "author": "Weisbord SD, Gallagher M, Jneid H, et al.",
-          "title": "血管造影后应用碳酸氢钠与乙酰半胱氨酸的临床结局",
-          "journal": "新英格兰医学杂志",
-          "year": 2018,
-          "cite": "Weisbord SD, Gallagher M, Jneid H, et al. / 血管造影后应用碳酸氢钠与乙酰半胱氨酸的临床结局 / 新英格兰医学杂志 / 2018",
-          "grade": "汇总证据",
-          "ref": "R19"
-        },
-        {
-          "type": "推荐",
-          "author": "de Laforcade L, Bobot M, Bellin MF, et al.",
-          "title": "欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评",
-          "journal": "肾脏病与治疗",
-          "year": 2021,
-          "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / 欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评 / 肾脏病与治疗 / 2021",
-          "grade": "推荐意见",
-          "ref": "R15"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
-      "id": "NT_RiskAssessment",
-      "name": "护理风险评估理论",
-      "type": "NursingTheory",
-      "tags": [
-        "护理理论"
-      ],
-      "aliases": [
-        "nursing risk assessment theory",
-        "风险评估理论"
-      ],
-      "summary": "用系统化方法识别并分级风险的护理思路。",
-      "attrs": [],
-      "evidence": [
-        {
-          "type": "指南",
-          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
-          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
-          "journal": "中华护理杂志",
-          "year": 2026,
-          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
-          "grade": "指南与共识",
-          "ref": "R04"
-        },
-        {
-          "type": "系统评价",
-          "author": "姚金秀、杨丽娜、梅申聪、董芳辉",
-          "title": "放射科碘对比剂外渗影响因素的系统评价",
-          "journal": "上海护理",
-          "year": 2023,
-          "cite": "姚金秀、杨丽娜、梅申聪、董芳辉 / 放射科碘对比剂外渗影响因素的系统评价 / 上海护理 / 2023",
-          "grade": "汇总证据",
-          "ref": "R17"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
-      "id": "NT_EvidenceBasedNursing",
-      "name": "循证护理",
-      "type": "NursingTheory",
-      "tags": [
-        "护理理论"
-      ],
-      "aliases": [
-        "evidence based nursing",
-        "循证护理实践"
-      ],
-      "summary": "每一项护理动作都以最新、最可靠的证据为依据。",
-      "attrs": [],
-      "evidence": [
-        {
-          "type": "指南",
-          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
-          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
-          "journal": "中华护理杂志",
-          "year": 2026,
-          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
-          "grade": "指南与共识",
-          "ref": "R04"
-        },
-        {
-          "type": "声明",
-          "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
-          "journal": "放射学",
-          "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
-          "grade": "学会声明",
-          "ref": "R12"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
-      "id": "NT_EarlyWarning",
-      "name": "早期预警",
-      "type": "NursingTheory",
-      "tags": [
-        "护理理论"
-      ],
-      "aliases": [
-        "early warning",
-        "早期识别与预警"
-      ],
-      "summary": "在情况变坏之前先看出苗头、及时升级处理。",
-      "attrs": [],
-      "evidence": [
-        {
-          "type": "建议",
-          "author": "Brockow K",
-          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
-          "journal": "变态反应",
-          "year": 2024,
-          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
-          "grade": "推荐意见",
-          "ref": "R13"
-        },
-        {
-          "type": "推荐实践",
-          "author": "Golden DBK, Wang J, Waserman S, et al.",
-          "title": "过敏反应：2023 年实践参数更新",
-          "journal": "变态反应、哮喘与免疫学年鉴",
-          "year": 2024,
-          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
-          "grade": "推荐意见",
-          "ref": "R16"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
-      "id": "NT_StandardizedProcess",
-      "name": "标准化护理流程",
-      "type": "NursingTheory",
-      "tags": [
-        "护理理论"
-      ],
-      "aliases": [
-        "standardized nursing process",
-        "流程化管理"
-      ],
-      "summary": "用统一流程把每一步做对，减少个人之间的差异。",
-      "attrs": [],
-      "evidence": [
-        {
-          "type": "标准",
-          "author": "国家卫生健康委员会",
-          "title": "WS/T 433—2023 静脉治疗护理技术操作标准",
-          "journal": "国家卫生健康委员会（卫生行业标准）",
-          "year": 2023,
-          "cite": "国家卫生健康委员会 / WS/T 433—2023 静脉治疗护理技术操作标准 / 国家卫生健康委员会（卫生行业标准） / 2023",
-          "grade": "标准与规范",
-          "ref": "R08"
-        },
-        {
-          "type": "规范",
-          "author": "江西省市场监督管理局",
-          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
-          "journal": "江西省市场监督管理局（地方标准）",
-          "year": 2026,
-          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
-          "grade": "标准与规范",
-          "ref": "R09"
-        },
-        {
-          "type": "共识",
-          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
-          "title": "影像科碘对比剂输注安全专家共识",
-          "journal": "介入放射学杂志",
-          "year": 2018,
-          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
-          "grade": "指南与共识",
-          "ref": "R07"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
       "id": "DE_PreExamNotice",
       "name": "检查前注意事项科普",
       "type": "DiseaseEducation",
@@ -3082,43 +2349,6 @@ window.KG_GRAPH = {
       "graph": "topic-01"
     },
     {
-      "id": "SS_RenalStable",
-      "name": "肾功能稳定",
-      "type": "SymptomStatus",
-      "tags": [
-        "症状状态"
-      ],
-      "aliases": [
-        "stable renal function",
-        "肾功能平稳"
-      ],
-      "summary": "复查显示肾功能回到了原有水平。",
-      "attrs": [],
-      "evidence": [
-        {
-          "type": "共识",
-          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
-          "title": "肾病患者静脉注射碘对比剂应用专家共识",
-          "journal": "中华放射学杂志",
-          "year": 2021,
-          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
-          "grade": "指南与共识",
-          "ref": "R05"
-        },
-        {
-          "type": "声明",
-          "author": "Davenport MS, Perazella MA, Yee J, et al.",
-          "title": "碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明",
-          "journal": "放射学",
-          "year": 2020,
-          "cite": "Davenport MS, Perazella MA, Yee J, et al. / 碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明 / 放射学 / 2020",
-          "grade": "学会声明",
-          "ref": "R11"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
       "id": "FS_LimbFunction",
       "name": "患肢功能状态",
       "type": "FunctionalStatus",
@@ -3267,7 +2497,9 @@ window.KG_GRAPH = {
         "对比剂使用指南第2版",
         "指南",
         "guideline",
-        "guidelines"
+        "guidelines",
+        "CT指南",
+        "CT增强指南"
       ],
       "summary": "我国放射学界关于碘对比剂怎么选、怎么用、怎么防反应的基础文件。",
       "attrs": [
@@ -3346,100 +2578,6 @@ window.KG_GRAPH = {
           "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
           "grade": "指南与共识",
           "ref": "R04"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
-      "id": "R05",
-      "name": "肾病患者静脉注射碘对比剂应用专家共识",
-      "type": "Reference",
-      "tags": [
-        "文献",
-        "共识"
-      ],
-      "aliases": [
-        "肾病患者静脉注射碘对比剂应用专家共识",
-        "肾病与碘对比剂共识",
-        "共识",
-        "consensus"
-      ],
-      "summary": "专门给肾功能不好的人定规矩：哪些指标要看、哪些药要停、怎么补液。",
-      "attrs": [
-        {
-          "k": "文献类型",
-          "v": "共识"
-        },
-        {
-          "k": "年份",
-          "v": "2021"
-        },
-        {
-          "k": "核验标识",
-          "v": "rs.yiigle.com/cmaid/1323652 · 2021;55(6):580-590"
-        },
-        {
-          "k": "证据等级",
-          "v": "指南与共识"
-        }
-      ],
-      "evidence": [
-        {
-          "type": "共识",
-          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
-          "title": "肾病患者静脉注射碘对比剂应用专家共识",
-          "journal": "中华放射学杂志",
-          "year": 2021,
-          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
-          "grade": "指南与共识",
-          "ref": "R05"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
-      "id": "R06",
-      "name": "碘对比剂诱导的急性肾损伤防治的专家共识",
-      "type": "Reference",
-      "tags": [
-        "文献",
-        "共识"
-      ],
-      "aliases": [
-        "碘对比剂诱导的急性肾损伤防治的专家共识",
-        "CI-AKI 防治专家共识",
-        "共识",
-        "consensus"
-      ],
-      "summary": "从用药角度讲清楚造影后肾损伤怎么定义、怎么防、怎么治。",
-      "attrs": [
-        {
-          "k": "文献类型",
-          "v": "共识"
-        },
-        {
-          "k": "年份",
-          "v": "2022"
-        },
-        {
-          "k": "核验标识",
-          "v": "DOI 10.3760/cma.j.cn441217-20210909-00041 · 2022;38(3):265-288"
-        },
-        {
-          "k": "证据等级",
-          "v": "指南与共识"
-        }
-      ],
-      "evidence": [
-        {
-          "type": "共识",
-          "author": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会",
-          "title": "碘对比剂诱导的急性肾损伤防治的专家共识",
-          "journal": "中华肾脏病杂志",
-          "year": 2022,
-          "cite": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会 / 碘对比剂诱导的急性肾损伤防治的专家共识 / 中华肾脏病杂志 / 2022",
-          "grade": "指南与共识",
-          "ref": "R06"
         }
       ],
       "graph": "topic-01"
@@ -3634,53 +2772,6 @@ window.KG_GRAPH = {
       "graph": "topic-01"
     },
     {
-      "id": "R11",
-      "name": "碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明",
-      "type": "Reference",
-      "tags": [
-        "文献",
-        "声明"
-      ],
-      "aliases": [
-        "ACR 与 NKF 肾脏病患者使用碘对比剂声明",
-        "ACR-NKF consensus statement",
-        "声明",
-        "statement"
-      ],
-      "summary": "美国放射学会和肾脏病基金会的联合声明，给肾功能不好的人定了用药底线。",
-      "attrs": [
-        {
-          "k": "文献类型",
-          "v": "声明"
-        },
-        {
-          "k": "年份",
-          "v": "2020"
-        },
-        {
-          "k": "核验标识",
-          "v": "DOI 10.1148/radiol.2019192094 · PMID 31961246 · 2020;294(3):660-668"
-        },
-        {
-          "k": "证据等级",
-          "v": "学会声明"
-        }
-      ],
-      "evidence": [
-        {
-          "type": "声明",
-          "author": "Davenport MS, Perazella MA, Yee J, et al.",
-          "title": "碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明",
-          "journal": "放射学",
-          "year": 2020,
-          "cite": "Davenport MS, Perazella MA, Yee J, et al. / 碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明 / 放射学 / 2020",
-          "grade": "学会声明",
-          "ref": "R11"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
       "id": "R12",
       "name": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
       "type": "Reference",
@@ -3822,53 +2913,6 @@ window.KG_GRAPH = {
       "graph": "topic-01"
     },
     {
-      "id": "R15",
-      "name": "欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评",
-      "type": "Reference",
-      "tags": [
-        "文献",
-        "推荐"
-      ],
-      "aliases": [
-        "ESUR 对比剂使用推荐",
-        "ESUR recommendations on contrast media",
-        "推荐",
-        "recommendation"
-      ],
-      "summary": "欧洲泌尿放射学会对比剂使用推荐意见，护理侧的用药建议多出自此。",
-      "attrs": [
-        {
-          "k": "文献类型",
-          "v": "推荐"
-        },
-        {
-          "k": "年份",
-          "v": "2021"
-        },
-        {
-          "k": "核验标识",
-          "v": "DOI 10.1016/j.nephro.2020.10.011 · PMID 33551369 · 2021;17(2):80-91"
-        },
-        {
-          "k": "证据等级",
-          "v": "推荐意见"
-        }
-      ],
-      "evidence": [
-        {
-          "type": "推荐",
-          "author": "de Laforcade L, Bobot M, Bellin MF, et al.",
-          "title": "欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评",
-          "journal": "肾脏病与治疗",
-          "year": 2021,
-          "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / 欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评 / 肾脏病与治疗 / 2021",
-          "grade": "推荐意见",
-          "ref": "R15"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
       "id": "R16",
       "name": "过敏反应：2023 年实践参数更新",
       "type": "Reference",
@@ -3964,100 +3008,6 @@ window.KG_GRAPH = {
       "graph": "topic-01"
     },
     {
-      "id": "R18",
-      "name": "心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析",
-      "type": "Reference",
-      "tags": [
-        "文献",
-        "Meta分析"
-      ],
-      "aliases": [
-        "对比剂急性肾损伤预防网络 Meta 分析",
-        "CI-AKI prevention network meta-analysis",
-        "Meta分析",
-        "meta analysis"
-      ],
-      "summary": "比较各种防造影肾损伤办法的网络 Meta 分析，补液方案排序的证据来源。",
-      "attrs": [
-        {
-          "k": "文献类型",
-          "v": "Meta分析"
-        },
-        {
-          "k": "年份",
-          "v": "2017"
-        },
-        {
-          "k": "核验标识",
-          "v": "DOI 10.1371/journal.pone.0168726 · PMID 28151965 · 2017;12(2):e0168726"
-        },
-        {
-          "k": "证据等级",
-          "v": "汇总证据"
-        }
-      ],
-      "evidence": [
-        {
-          "type": "Meta分析",
-          "author": "Navarese EP, Gurbel PA, Andreotti F, et al.",
-          "title": "心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析",
-          "journal": "公共科学图书馆·综合",
-          "year": 2017,
-          "cite": "Navarese EP, Gurbel PA, Andreotti F, et al. / 心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析 / 公共科学图书馆·综合 / 2017",
-          "grade": "汇总证据",
-          "ref": "R18"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
-      "id": "R19",
-      "name": "血管造影后应用碳酸氢钠与乙酰半胱氨酸的临床结局",
-      "type": "Reference",
-      "tags": [
-        "文献",
-        "最佳证据"
-      ],
-      "aliases": [
-        "PRESERVE 试验",
-        "造影后碳酸氢钠与乙酰半胱氨酸研究",
-        "最佳证据",
-        "best evidence"
-      ],
-      "summary": "大规模随机对照试验，证明碳酸氢钠加乙酰半胱氨酸并不比生理盐水更好。",
-      "attrs": [
-        {
-          "k": "文献类型",
-          "v": "最佳证据"
-        },
-        {
-          "k": "年份",
-          "v": "2018"
-        },
-        {
-          "k": "核验标识",
-          "v": "DOI 10.1056/NEJMoa1710933 · PMID 29130810 · 2018;378(7):603-614 · NCT01467466"
-        },
-        {
-          "k": "证据等级",
-          "v": "汇总证据"
-        }
-      ],
-      "evidence": [
-        {
-          "type": "最佳证据",
-          "author": "Weisbord SD, Gallagher M, Jneid H, et al.",
-          "title": "血管造影后应用碳酸氢钠与乙酰半胱氨酸的临床结局",
-          "journal": "新英格兰医学杂志",
-          "year": 2018,
-          "cite": "Weisbord SD, Gallagher M, Jneid H, et al. / 血管造影后应用碳酸氢钠与乙酰半胱氨酸的临床结局 / 新英格兰医学杂志 / 2018",
-          "grade": "汇总证据",
-          "ref": "R19"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
       "id": "R20",
       "name": "影像护理学",
       "type": "Reference",
@@ -4104,6 +3054,137 @@ window.KG_GRAPH = {
         }
       ],
       "graph": "topic-01"
+    },
+    {
+      "id": "R21",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "碘对比剂温度与不良反应关系的 Meta 分析（307,329 次注射）",
+      "tags": [
+        "文献",
+        "Meta分析"
+      ],
+      "aliases": [
+        "The relationship between iodinated contrast material temperature and adverse reactions",
+        "碘对比剂温度 Meta 分析",
+        "对比剂加温 Meta 分析"
+      ],
+      "summary": "汇总 5 项研究、307,329 次注射：高黏度对比剂加温到 37℃ 可减少过敏反应；但未证实能减少外渗。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "Meta分析"
+        },
+        {
+          "k": "年份",
+          "v": "2023"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.1016/j.clinimag.2023.05.006 · PMID 37216743"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "Meta分析",
+          "author": "Nawras M, Alyousif Z, Beran A, Elsamaloty H",
+          "title": "碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析",
+          "journal": "临床影像学",
+          "year": 2023,
+          "cite": "Nawras M, Alyousif Z, Beran A, Elsamaloty H / 碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析 / 临床影像学 / 2023 · DOI 10.1016/j.clinimag.2023.05.006 · PMID 37216743"
+        }
+      ]
+    },
+    {
+      "id": "R22",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析",
+      "tags": [
+        "文献",
+        "Meta分析"
+      ],
+      "aliases": [
+        "Contrast media extravasations in patients undergoing computerized tomography scanning",
+        "CT对比剂外渗 Meta分析",
+        "对比剂外渗危险因素 Meta分析"
+      ],
+      "summary": "汇总 CT 增强扫描外渗的危险因素与干预证据：女性、住院患者等风险较高；干预证据仍有限。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "Meta分析"
+        },
+        {
+          "k": "年份",
+          "v": "2018"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.11124/JBISRIR-2017-003348 · PMID 29324560"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "Meta分析",
+          "author": "Ding S, Meystre NR, Campeanu C, Gullo G",
+          "title": "CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析",
+          "journal": "JBI 系统评价与实施报告",
+          "year": 2018,
+          "cite": "Ding S, Meystre NR, Campeanu C, Gullo G / CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析 / JBI 系统评价与实施报告 / 2018 · DOI 10.11124/JBISRIR-2017-003348 · PMID 29324560"
+        }
+      ]
+    },
+    {
+      "id": "R23",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "对比剂即刻超敏反应危险因素的系统评价与 Meta 分析",
+      "tags": [
+        "文献",
+        "Meta分析"
+      ],
+      "aliases": [
+        "Risk factors associated with immediate hypersensitivity reaction to contrast media",
+        "对比剂超敏反应危险因素 Meta分析"
+      ],
+      "summary": "汇总对比剂即刻超敏反应的危险因素：女性风险较高，哮喘史未见显著关联，门诊患者风险较高。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "Meta分析"
+        },
+        {
+          "k": "年份",
+          "v": "2026"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.1016/j.ejrad.2025.112472 · PMID 41175815"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "Meta分析",
+          "author": "Huang W, He C, Chen Y, Xu H, Yao J, Zhao L",
+          "title": "对比剂即刻超敏反应危险因素的系统评价与 Meta 分析",
+          "journal": "欧洲放射学杂志",
+          "year": 2026,
+          "cite": "Huang W, He C, Chen Y, Xu H, Yao J, Zhao L / 对比剂即刻超敏反应危险因素的系统评价与 Meta 分析 / 欧洲放射学杂志 / 2026 · DOI 10.1016/j.ejrad.2025.112472 · PMID 41175815"
+        }
+      ]
     }
   ],
   "edges": [
@@ -4168,12 +3249,6 @@ window.KG_GRAPH = {
       "label": "属于"
     },
     {
-      "source": "S_ContrastAKI",
-      "target": "SC_RenalSpectrum",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
       "source": "S_AdverseReaction",
       "target": "SC_AdverseSpectrum",
       "type": "BELONGS_TO",
@@ -4192,30 +3267,6 @@ window.KG_GRAPH = {
       "label": "属于"
     },
     {
-      "source": "SC_RenalSpectrum",
-      "target": "SC_AdverseSpectrum",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "MP_NursingMeasures",
-      "target": "NT_EvidenceBasedNursing",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "MP_NursingPrevention",
-      "target": "NT_StandardizedProcess",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "MP_NursingIntervention",
-      "target": "NT_EarlyWarning",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
       "source": "MP_ExtravasationPrinciple",
       "target": "MP_NursingMeasures",
       "type": "BELONGS_TO",
@@ -4228,12 +3279,6 @@ window.KG_GRAPH = {
       "label": "属于"
     },
     {
-      "source": "MP_RenalProtectionPrinciple",
-      "target": "MP_NursingMeasures",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
       "source": "DC_CTEnhancedRisk",
       "target": "S_AdverseReaction",
       "type": "HAS_SYMPTOM",
@@ -4252,46 +3297,34 @@ window.KG_GRAPH = {
       "label": "存在症状"
     },
     {
-      "source": "DC_CTEnhancedRisk",
-      "target": "S_ContrastAKI",
-      "type": "HAS_SYMPTOM",
-      "label": "存在症状"
-    },
-    {
       "source": "E_CTEnhancedScan",
       "target": "S_AdverseReaction",
-      "type": "HAS_SYMPTOM",
-      "label": "存在症状"
+      "type": "EFFECT_ON",
+      "label": "影响"
     },
     {
       "source": "E_CTEnhancedScan",
       "target": "S_Extravasation",
-      "type": "HAS_SYMPTOM",
-      "label": "存在症状"
-    },
-    {
-      "source": "E_CTEnhancedScan",
-      "target": "S_ContrastAKI",
-      "type": "HAS_SYMPTOM",
-      "label": "存在症状"
+      "type": "EFFECT_ON",
+      "label": "影响"
     },
     {
       "source": "E_ContrastInjection",
       "target": "S_AllergicReaction",
-      "type": "HAS_SYMPTOM",
-      "label": "存在症状"
+      "type": "EFFECT_ON",
+      "label": "影响"
     },
     {
       "source": "E_ContrastInjection",
       "target": "S_Extravasation",
-      "type": "HAS_SYMPTOM",
-      "label": "存在症状"
+      "type": "EFFECT_ON",
+      "label": "影响"
     },
     {
       "source": "E_ContrastInjection",
       "target": "S_AdverseReaction",
-      "type": "HAS_SYMPTOM",
-      "label": "存在症状"
+      "type": "EFFECT_ON",
+      "label": "影响"
     },
     {
       "source": "S_AllergicReaction",
@@ -4342,36 +3375,6 @@ window.KG_GRAPH = {
       "label": "存在症状"
     },
     {
-      "source": "S_Extravasation",
-      "target": "S_Rash",
-      "type": "HAS_SYMPTOM",
-      "label": "存在症状"
-    },
-    {
-      "source": "DC_CTEnhancedRisk",
-      "target": "E_CTEnhancedScan",
-      "type": "DETECTED_BY",
-      "label": "通过检查发现"
-    },
-    {
-      "source": "DC_CTEnhancedRisk",
-      "target": "E_RenalFunction",
-      "type": "DETECTED_BY",
-      "label": "通过检查发现"
-    },
-    {
-      "source": "S_ContrastAKI",
-      "target": "E_RenalFunction",
-      "type": "DETECTED_BY",
-      "label": "通过检查发现"
-    },
-    {
-      "source": "RF_Hyperthyroidism",
-      "target": "E_ThyroidFunction",
-      "type": "DETECTED_BY",
-      "label": "通过检查发现"
-    },
-    {
       "source": "DC_CTEnhancedRisk",
       "target": "MP_NursingMeasures",
       "type": "MANAGED_BY",
@@ -4380,18 +3383,6 @@ window.KG_GRAPH = {
     {
       "source": "DC_CTEnhancedRisk",
       "target": "MP_NursingPrevention",
-      "type": "MANAGED_BY",
-      "label": "由……处置"
-    },
-    {
-      "source": "DC_CTEnhancedRisk",
-      "target": "NT_StandardizedProcess",
-      "type": "MANAGED_BY",
-      "label": "由……处置"
-    },
-    {
-      "source": "DC_CTEnhancedRisk",
-      "target": "NT_RiskAssessment",
       "type": "MANAGED_BY",
       "label": "由……处置"
     },
@@ -4422,18 +3413,6 @@ window.KG_GRAPH = {
     {
       "source": "S_AllergicReaction",
       "target": "MP_AdverseReactionTriage",
-      "type": "MANAGED_BY",
-      "label": "由……处置"
-    },
-    {
-      "source": "S_AllergicReaction",
-      "target": "NT_EarlyWarning",
-      "type": "MANAGED_BY",
-      "label": "由……处置"
-    },
-    {
-      "source": "S_AllergicReaction",
-      "target": "NT_EvidenceBasedNursing",
       "type": "MANAGED_BY",
       "label": "由……处置"
     },
@@ -4500,24 +3479,6 @@ window.KG_GRAPH = {
     {
       "source": "S_Extravasation",
       "target": "MP_ExtravasationPrinciple",
-      "type": "MANAGED_BY",
-      "label": "由……处置"
-    },
-    {
-      "source": "S_Extravasation",
-      "target": "NT_RiskAssessment",
-      "type": "MANAGED_BY",
-      "label": "由……处置"
-    },
-    {
-      "source": "S_ContrastAKI",
-      "target": "MP_RenalProtectionPrinciple",
-      "type": "MANAGED_BY",
-      "label": "由……处置"
-    },
-    {
-      "source": "S_ContrastAKI",
-      "target": "NT_RiskAssessment",
       "type": "MANAGED_BY",
       "label": "由……处置"
     },
@@ -4606,12 +3567,6 @@ window.KG_GRAPH = {
       "label": "由……评估"
     },
     {
-      "source": "S_ContrastAKI",
-      "target": "AT_RenalAssessment",
-      "type": "ASSESSED_BY",
-      "label": "由……评估"
-    },
-    {
       "source": "S_Extravasation",
       "target": "AT_ExtravasationAssessment",
       "type": "ASSESSED_BY",
@@ -4632,12 +3587,6 @@ window.KG_GRAPH = {
     {
       "source": "S_AllergicReaction",
       "target": "RF_UncontrolledAsthma",
-      "type": "AT_RISK_BY",
-      "label": "风险来自"
-    },
-    {
-      "source": "S_AllergicReaction",
-      "target": "RF_Hyperthyroidism",
       "type": "AT_RISK_BY",
       "label": "风险来自"
     },
@@ -4684,56 +3633,8 @@ window.KG_GRAPH = {
       "label": "风险来自"
     },
     {
-      "source": "S_Extravasation",
-      "target": "RF_Dehydration",
-      "type": "AT_RISK_BY",
-      "label": "风险来自"
-    },
-    {
-      "source": "S_ContrastAKI",
-      "target": "RF_RenalImpairment",
-      "type": "AT_RISK_BY",
-      "label": "风险来自"
-    },
-    {
-      "source": "S_ContrastAKI",
-      "target": "RF_Dehydration",
-      "type": "AT_RISK_BY",
-      "label": "风险来自"
-    },
-    {
-      "source": "S_ContrastAKI",
-      "target": "RF_DiabetesMetformin",
-      "type": "AT_RISK_BY",
-      "label": "风险来自"
-    },
-    {
-      "source": "S_ContrastAKI",
-      "target": "RF_CardiacDisease",
-      "type": "AT_RISK_BY",
-      "label": "风险来自"
-    },
-    {
-      "source": "S_ContrastAKI",
-      "target": "RF_AgeExtremes",
-      "type": "AT_RISK_BY",
-      "label": "风险来自"
-    },
-    {
       "source": "S_AdverseReaction",
       "target": "RF_ContrastAllergyHistory",
-      "type": "AT_RISK_BY",
-      "label": "风险来自"
-    },
-    {
-      "source": "S_AdverseReaction",
-      "target": "RF_RenalImpairment",
-      "type": "AT_RISK_BY",
-      "label": "风险来自"
-    },
-    {
-      "source": "S_AdverseReaction",
-      "target": "RF_Pregnancy",
       "type": "AT_RISK_BY",
       "label": "风险来自"
     },
@@ -4764,18 +3665,6 @@ window.KG_GRAPH = {
     {
       "source": "S_ThroatDiscomfort",
       "target": "RF_ContrastAllergyHistory",
-      "type": "AT_RISK_BY",
-      "label": "风险来自"
-    },
-    {
-      "source": "S_ChestTightness",
-      "target": "RF_CardiacDisease",
-      "type": "AT_RISK_BY",
-      "label": "风险来自"
-    },
-    {
-      "source": "S_GeneralizedWeakness",
-      "target": "RF_Dehydration",
       "type": "AT_RISK_BY",
       "label": "风险来自"
     },
@@ -4842,20 +3731,6 @@ window.KG_GRAPH = {
       "label": "由……治疗"
     },
     {
-      "source": "S_ContrastAKI",
-      "target": "PM_SalineHydration",
-      "type": "TREATED_BY",
-      "label": "由……治疗",
-      "note": "eGFR＜30 且未透析者按医嘱静脉水化"
-    },
-    {
-      "source": "S_ContrastAKI",
-      "target": "PM_MetforminHold",
-      "type": "TREATED_BY",
-      "label": "由……治疗",
-      "note": "eGFR＜30 者注射时停用，48 小时后复查再定"
-    },
-    {
       "source": "S_Extravasation",
       "target": "NPM_StopInjection",
       "type": "TREATED_BY",
@@ -4906,19 +3781,6 @@ window.KG_GRAPH = {
       "target": "NPM_CloseObservation",
       "type": "TREATED_BY",
       "label": "由……治疗"
-    },
-    {
-      "source": "S_ContrastAKI",
-      "target": "NPM_CloseObservation",
-      "type": "TREATED_BY",
-      "label": "由……治疗"
-    },
-    {
-      "source": "S_ContrastAKI",
-      "target": "NPM_OralHydration",
-      "type": "TREATED_BY",
-      "label": "由……治疗",
-      "note": "肾功能正常者口服补液即可"
     },
     {
       "source": "E_CTEnhancedScan",
@@ -4973,12 +3835,6 @@ window.KG_GRAPH = {
     {
       "source": "MP_AdverseReactionTriage",
       "target": "SS_MildResolved",
-      "type": "EFFECT_ON",
-      "label": "影响"
-    },
-    {
-      "source": "MP_RenalProtectionPrinciple",
-      "target": "SS_RenalStable",
       "type": "EFFECT_ON",
       "label": "影响"
     },
@@ -5043,36 +3899,6 @@ window.KG_GRAPH = {
       "label": "有文献支持"
     },
     {
-      "source": "E_ContrastInjection",
-      "target": "R15",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "E_RenalFunction",
-      "target": "R05",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "E_RenalFunction",
-      "target": "R11",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "E_ThyroidFunction",
-      "target": "R03",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "E_ThyroidFunction",
-      "target": "R05",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
       "source": "S_AdverseReaction",
       "target": "R01",
       "type": "SUPPORTED_BY",
@@ -5241,36 +4067,6 @@ window.KG_GRAPH = {
       "label": "有文献支持"
     },
     {
-      "source": "S_ContrastAKI",
-      "target": "R05",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "S_ContrastAKI",
-      "target": "R06",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "S_ContrastAKI",
-      "target": "R18",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "S_ContrastAKI",
-      "target": "R11",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "S_ContrastAKI",
-      "target": "R15",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
       "source": "SC_AdverseSpectrum",
       "target": "R01",
       "type": "SUPPORTED_BY",
@@ -5289,12 +4085,6 @@ window.KG_GRAPH = {
       "label": "有文献支持"
     },
     {
-      "source": "SC_RenalSpectrum",
-      "target": "R05",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
       "source": "AT_AllergyHistory",
       "target": "R03",
       "type": "SUPPORTED_BY",
@@ -5303,18 +4093,6 @@ window.KG_GRAPH = {
     {
       "source": "AT_AllergyHistory",
       "target": "R12",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "AT_RenalAssessment",
-      "target": "R05",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "AT_RenalAssessment",
-      "target": "R11",
       "type": "SUPPORTED_BY",
       "label": "有文献支持"
     },
@@ -5355,30 +4133,6 @@ window.KG_GRAPH = {
       "label": "有文献支持"
     },
     {
-      "source": "RF_RenalImpairment",
-      "target": "R05",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "RF_RenalImpairment",
-      "target": "R11",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "RF_Dehydration",
-      "target": "R05",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "RF_Dehydration",
-      "target": "R06",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
       "source": "RF_UncontrolledAsthma",
       "target": "R12",
       "type": "SUPPORTED_BY",
@@ -5391,42 +4145,6 @@ window.KG_GRAPH = {
       "label": "有文献支持"
     },
     {
-      "source": "RF_DiabetesMetformin",
-      "target": "R05",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "RF_DiabetesMetformin",
-      "target": "R11",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "RF_Hyperthyroidism",
-      "target": "R03",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "RF_Hyperthyroidism",
-      "target": "R05",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "RF_CardiacDisease",
-      "target": "R05",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "RF_CardiacDisease",
-      "target": "R06",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
       "source": "RF_AgeExtremes",
       "target": "R04",
       "type": "SUPPORTED_BY",
@@ -5435,12 +4153,6 @@ window.KG_GRAPH = {
     {
       "source": "RF_AgeExtremes",
       "target": "R17",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "RF_Pregnancy",
-      "target": "R03",
       "type": "SUPPORTED_BY",
       "label": "有文献支持"
     },
@@ -5523,36 +4235,6 @@ window.KG_GRAPH = {
       "label": "有文献支持"
     },
     {
-      "source": "PM_SalineHydration",
-      "target": "R05",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "PM_SalineHydration",
-      "target": "R06",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "PM_SalineHydration",
-      "target": "R18",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "PM_SalineHydration",
-      "target": "R19",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "PM_SalineHydration",
-      "target": "R15",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
       "source": "PM_MagnesiumSulfate",
       "target": "R07",
       "type": "SUPPORTED_BY",
@@ -5565,18 +4247,6 @@ window.KG_GRAPH = {
       "label": "有文献支持"
     },
     {
-      "source": "PM_MetforminHold",
-      "target": "R05",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "PM_MetforminHold",
-      "target": "R11",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
       "source": "NPM_StopInjection",
       "target": "R02",
       "type": "SUPPORTED_BY",
@@ -5639,18 +4309,6 @@ window.KG_GRAPH = {
     {
       "source": "NPM_CloseObservation",
       "target": "R01",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "NPM_OralHydration",
-      "target": "R01",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "NPM_OralHydration",
-      "target": "R03",
       "type": "SUPPORTED_BY",
       "label": "有文献支持"
     },
@@ -5775,90 +4433,6 @@ window.KG_GRAPH = {
       "label": "有文献支持"
     },
     {
-      "source": "MP_RenalProtectionPrinciple",
-      "target": "R05",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "MP_RenalProtectionPrinciple",
-      "target": "R06",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "MP_RenalProtectionPrinciple",
-      "target": "R11",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "MP_RenalProtectionPrinciple",
-      "target": "R19",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "MP_RenalProtectionPrinciple",
-      "target": "R15",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "NT_RiskAssessment",
-      "target": "R04",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "NT_RiskAssessment",
-      "target": "R17",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "NT_EvidenceBasedNursing",
-      "target": "R04",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "NT_EvidenceBasedNursing",
-      "target": "R12",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "NT_EarlyWarning",
-      "target": "R13",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "NT_EarlyWarning",
-      "target": "R16",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "NT_StandardizedProcess",
-      "target": "R08",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "NT_StandardizedProcess",
-      "target": "R09",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "NT_StandardizedProcess",
-      "target": "R07",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
       "source": "DE_PreExamNotice",
       "target": "R03",
       "type": "SUPPORTED_BY",
@@ -5949,18 +4523,6 @@ window.KG_GRAPH = {
       "label": "有文献支持"
     },
     {
-      "source": "SS_RenalStable",
-      "target": "R05",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
-      "source": "SS_RenalStable",
-      "target": "R11",
-      "type": "SUPPORTED_BY",
-      "label": "有文献支持"
-    },
-    {
       "source": "FS_LimbFunction",
       "target": "R04",
       "type": "SUPPORTED_BY",
@@ -5981,6 +4543,48 @@ window.KG_GRAPH = {
     {
       "source": "E_CTEnhancedScan",
       "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ContrastPreparation",
+      "target": "R21",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "R21",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "R21",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "R22",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_ExtravasationAssessment",
+      "target": "R22",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "R23",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_UncontrolledAsthma",
+      "target": "R23",
       "type": "SUPPORTED_BY",
       "label": "有文献支持"
     }
