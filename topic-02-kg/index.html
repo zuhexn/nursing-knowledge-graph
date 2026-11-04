@@ -2044,9 +2044,12 @@
     });
   }
 
-  /* 把节点挪到视野中央 —— 用户从检索里选中一个「看不见」的节点时，
-     面板打开了但图没动，等于让人猜它在哪儿。
-     已经在画面里的不动镜头（别把用户正在看的东西甩走）。 */
+  /* 把选中的节点挪到「还看得见的画布」正中 —— 手机是底部抽屉上方那一条，
+     桌面是右侧详情栏左边那一块。
+     ⚠️ 不能自己算 dy/zoom：ECharts 的图系列在 zoom 之外还有一层基础比例尺
+     （实测有效比例 ≈1.386，而 zoom 只有 1.019）⇒ 手算会系统性偏移。
+     正确做法：用 convertToPixel 量出节点现在在哪儿，算出「要挪到目标点」
+     需要把镜头中心放到哪个像素，再用 convertFromPixel 换算回数据坐标。 */
   function centerOn(id) {
     try {
       var model = chart.getModel().getSeriesByIndex(0);
@@ -2061,22 +2064,30 @@
       if (!l || isNaN(l[0]) || isNaN(l[1])) return false;
       var px = chart.convertToPixel({ seriesIndex: 0 }, l);
       if (!px || isNaN(px[0]) || isNaN(px[1])) return false;
-      var w = chart.getWidth(), h = chart.getHeight(), m = 30;
-      /* 底部详情抽屉打开时，它盖住画布下半截 —— 目标点要落在「还看得见的那条」中间，
-         否则节点被抽屉盖住，等于还是看不见。
-         可见高度按「抽屉顶边在画布里的位置」算（抽屉贴的是视口底边，不是画布底边）。 */
-      var vis = h;
+      var w = chart.getWidth(), h = chart.getHeight();
       var panel = document.getElementById("panel");
-      if (isNarrow() && panel && panel.classList.contains("open")) {
-        /* 用 offsetTop（布局位置）而不是 getBoundingClientRect（会算上正在跑的滑入动画）*/
-        var pt = panel.offsetTop;
-        var cr = chart.getDom().getBoundingClientRect();
-        vis = Math.max(70, Math.min(h, pt - cr.top));
+      var cr = chart.getDom().getBoundingClientRect();
+      /* 可见区域：手机按高度让（底部抽屉），桌面按宽度让（右侧栏）。
+         用布局尺寸（offsetTop / offsetWidth）而不是 getBoundingClientRect，
+         后者会把正在跑的滑入/滑出动画算进去。 */
+      var visW = w, visH = h;
+      if (panel && panel.classList.contains("open")) {
+        if (isNarrow()) {
+          var panelTop = panel.offsetTop - cr.top;
+          if (panelTop > 0 && panelTop < h) visH = Math.max(70, panelTop);
+        } else {
+          var panelLeft = (window.innerWidth - panel.offsetWidth) - cr.left;
+          if (panelLeft > 0 && panelLeft < w) visW = Math.max(120, panelLeft);
+        }
       }
-      if (px[0] >= m && px[0] <= w - m && px[1] >= m && px[1] <= vis - m) return false;
-      var zoom = (chart.getOption().series[0] || {}).zoom || 1;
-      var dy = (h - vis) / 2 / zoom;
-      chart.setOption({ series: [{ id: "kg", center: [l[0], l[1] + dy] }] });
+      var tx = visW / 2, ty = visH / 2;
+      /* 已经基本在中心就不动镜头（避免每点一下都跳一次） */
+      if (Math.abs(px[0] - tx) < 8 && Math.abs(px[1] - ty) < 8) return false;
+      /* 把节点从 px 移到 (tx, ty) ⇒ 镜头中心像素跟着反向移动同样的量 */
+      var centerPx = [w / 2 + (px[0] - tx), h / 2 + (px[1] - ty)];
+      var center = chart.convertFromPixel({ seriesIndex: 0 }, centerPx);
+      if (!center || isNaN(center[0]) || isNaN(center[1])) return false;
+      chart.setOption({ series: [{ id: "kg", center: center }] });
       return true;
     } catch (e) { return false; }
   }
@@ -2200,8 +2211,13 @@
   });
 
   /* ============ 底部抽屉（图例 / 详情）· 手机端交互 ============ */
+  /* 遮罩打开后的 400ms 内忽略点击 —— 触摸抬起时浏览器会补发一次合成 click，
+     它会落在刚出现的遮罩上，把刚打开的面板/图例立刻关掉。
+     这是 2026-11-04 实测的「点节点只闪现一下、看不到详情」的根因。 */
+  var scrimArmedAt = 0;
   function showScrim(on) {
     document.getElementById("scrim").classList.toggle("show", !!on);
+    if (on) scrimArmedAt = Date.now();
   }
   document.getElementById("btnLegend").addEventListener("click", function () {
     var lg = document.getElementById("legend");
@@ -2216,6 +2232,8 @@
     showScrim(false);
   });
   document.getElementById("scrim").addEventListener("click", function () {
+    /* 触摸抬起后的合成 click 不算「点外部关闭」—— 见 showScrim 上方注释 */
+    if (Date.now() - scrimArmedAt < 400) return;
     document.getElementById("legend").classList.remove("open");
     document.getElementById("btnLegend").classList.remove("on");
     document.getElementById("panel").classList.remove("open");
