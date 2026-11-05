@@ -1,0 +1,15096 @@
+window.KG_GRAPH = {
+  "meta": {
+    "topicKey": "topic-01",
+    "topicName": "CT增强扫描后过敏反应与外渗",
+    "subtitle": "碘对比剂过敏反应 · 碘对比剂外渗 · 护理预防与处置",
+    "generatedAt": "2026-11-04"
+  },
+  "nodeTypes": [
+    {
+      "key": "DiseaseCategory",
+      "label": "疾病分类",
+      "color": "#5B7C99",
+      "shape": "round",
+      "size": 22,
+      "desc": "疾病大类"
+    },
+    {
+      "key": "SymptomSign",
+      "label": "症状体征",
+      "color": "#C0563F",
+      "shape": "diamond",
+      "size": 18,
+      "desc": "可观察到的体征"
+    },
+    {
+      "key": "Exam",
+      "label": "检查项目",
+      "color": "#2F855A",
+      "shape": "round",
+      "size": 20,
+      "desc": "检查 / 检验 / 用药"
+    },
+    {
+      "key": "ManagementPrinciple",
+      "label": "处置原则",
+      "color": "#6B46C1",
+      "shape": "round",
+      "size": 18,
+      "desc": "护理处置原则"
+    },
+    {
+      "key": "NursingTheory",
+      "label": "护理理论",
+      "color": "#975A16",
+      "shape": "triangle",
+      "size": 20,
+      "desc": "护理理论框架"
+    },
+    {
+      "key": "DiseaseEducation",
+      "label": "疾病教育",
+      "color": "#2B6CB0",
+      "shape": "round",
+      "size": 18,
+      "desc": "健康宣教内容"
+    },
+    {
+      "key": "SymptomExperience",
+      "label": "症状体验",
+      "color": "#B83280",
+      "shape": "diamond",
+      "size": 18,
+      "desc": "患者主观症状体验"
+    },
+    {
+      "key": "ManagementStrategy",
+      "label": "管理策略",
+      "color": "#2C7A7B",
+      "shape": "round",
+      "size": 18,
+      "desc": "症状管理策略"
+    },
+    {
+      "key": "ManagementOutcome",
+      "label": "管理效果",
+      "color": "#38A169",
+      "shape": "round",
+      "size": 18,
+      "desc": "症状管理结果"
+    },
+    {
+      "key": "SymptomCategory",
+      "label": "症状分类",
+      "color": "#B7791F",
+      "shape": "triangle",
+      "size": 20,
+      "desc": "症状大类"
+    },
+    {
+      "key": "AssessmentTool",
+      "label": "评估工具",
+      "color": "#4A5568",
+      "shape": "round",
+      "size": 18,
+      "desc": "评估量表 / 工具"
+    },
+    {
+      "key": "RiskFactor",
+      "label": "危险因素",
+      "color": "#9B2C2C",
+      "shape": "triangle",
+      "size": 20,
+      "desc": "风险因素"
+    },
+    {
+      "key": "PharmacologicalManagement",
+      "label": "药物治疗",
+      "color": "#276749",
+      "shape": "round",
+      "size": 18,
+      "desc": "用药处置"
+    },
+    {
+      "key": "NonPharmacologicalManagement",
+      "label": "非药物管理",
+      "color": "#285E61",
+      "shape": "round",
+      "size": 18,
+      "desc": "非药物处置"
+    },
+    {
+      "key": "SymptomStatus",
+      "label": "症状状态",
+      "color": "#5A67D8",
+      "shape": "round",
+      "size": 16,
+      "desc": "症状当前状态"
+    },
+    {
+      "key": "FunctionalStatus",
+      "label": "功能状态",
+      "color": "#6B46C1",
+      "shape": "round",
+      "size": 16,
+      "desc": "功能受影响程度"
+    },
+    {
+      "key": "Reference",
+      "label": "文献",
+      "color": "#718096",
+      "shape": "round",
+      "size": 16,
+      "desc": "文献出处节点"
+    },
+    {
+      "key": "CaseReport",
+      "label": "个案",
+      "color": "#A0AEC0",
+      "shape": "round",
+      "size": 16,
+      "desc": "个案（本期零节点）"
+    }
+  ],
+  "relationTypes": [
+    {
+      "key": "BELONGS_TO",
+      "label": "属于",
+      "desc": "属于"
+    },
+    {
+      "key": "HAS_SYMPTOM",
+      "label": "存在症状",
+      "desc": "存在症状"
+    },
+    {
+      "key": "DETECTED_BY",
+      "label": "通过检查发现",
+      "desc": "通过检查发现"
+    },
+    {
+      "key": "MANAGED_BY",
+      "label": "由……处置",
+      "desc": "由……处置"
+    },
+    {
+      "key": "EDUCATED_BY",
+      "label": "由……教育",
+      "desc": "由……教育"
+    },
+    {
+      "key": "EXPERIENCED_AS",
+      "label": "表现为",
+      "desc": "表现为"
+    },
+    {
+      "key": "ASSESSED_BY",
+      "label": "由……评估",
+      "desc": "由……评估"
+    },
+    {
+      "key": "AT_RISK_BY",
+      "label": "风险来自",
+      "desc": "风险来自"
+    },
+    {
+      "key": "TREATED_BY",
+      "label": "由……治疗",
+      "desc": "由……治疗"
+    },
+    {
+      "key": "EFFECT_ON",
+      "label": "影响",
+      "desc": "影响"
+    },
+    {
+      "key": "PART_OF_CASE",
+      "label": "属于个案",
+      "desc": "属于个案"
+    },
+    {
+      "key": "SUPPORTED_BY",
+      "label": "有文献支持",
+      "desc": "有文献支持"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "DC_CTEnhancedRisk",
+      "name": "CT增强扫描后碘对比剂过敏反应与外渗",
+      "type": "DiseaseCategory",
+      "tags": [
+        "题目",
+        "CT增强",
+        "碘对比剂"
+      ],
+      "aliases": [
+        "CT增强检查护理风险",
+        "CT增强扫描护理风险",
+        "碘对比剂过敏反应",
+        "碘对比剂外渗"
+      ],
+      "summary": "做 CT 增强扫描时使用碘对比剂后，最需要盯住的两类护理风险：碘对比剂过敏反应和碘对比剂外渗。",
+      "attrs": [
+        {
+          "k": "覆盖范围",
+          "v": "碘对比剂过敏反应 · 碘对比剂外渗"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "留观 30 分钟",
+          "v": "注射对比剂后，患者应在医疗环境内留观 30 min",
+          "quote": "留观：注射对比剂后，患者应在医疗环境内留观 30 min",
+          "src": "CG-09",
+          "cat": "留观与离院"
+        },
+        {
+          "k": "检查室必备急救药械",
+          "v": "氧气、1∶1000 肾上腺素、H1 抗组胺药、阿托品、β2 激动剂气雾器、静脉注射液、生理盐水或林格氏液、抗惊厥药（安定）、血压计等",
+          "quote": "应在检查室备妥的一线急救药品和设备，包括氧气、1∶1 000 的肾上腺素、抗组胺药 H1 注射剂、阿托品、β2 受体激动剂气雾器",
+          "src": "CG-09",
+          "cat": "急救准备"
+        },
+        {
+          "k": "急性不良反应占比",
+          "v": "对比剂不良反应中急性不良反应（AARs）占比高达 86.4%~96.3%",
+          "quote": "占比高达 86.4%～96.3%，进一步凸显其临床风险",
+          "src": "CG-05",
+          "cat": "流行病学"
+        },
+        {
+          "k": "使用体量",
+          "v": "全球对比剂年使用量已超过数 10 亿剂，仅美国每年用量即达 1.5 亿剂",
+          "quote": "全球 ICM 年使用量已超过数 10 亿剂，仅美国每年用量即达 1.5 亿剂",
+          "src": "CG-05",
+          "cat": "流行病学"
+        },
+        {
+          "k": "不良反应的危害地位",
+          "v": "对比剂相关过敏样反应已成为仅次于抗肿瘤药物的第二大不良反应来源",
+          "quote": "已成为仅次于抗肿瘤药物的第二大 ADR 来源",
+          "src": "CG-05",
+          "cat": "定位"
+        }
+      ]
+    },
+    {
+      "id": "E_CTEnhancedScan",
+      "name": "CT增强扫描",
+      "type": "Exam",
+      "tags": [
+        "辅助检查"
+      ],
+      "aliases": [
+        "CT enhanced scan",
+        "增强CT",
+        "CT增强"
+      ],
+      "summary": "先静脉注射碘对比剂、再做断层成像的检查方法；关注的是打药后出现的过敏反应和碘对比剂外渗。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        },
+        {
+          "type": "规范",
+          "author": "广西壮族自治区市场监督管理局",
+          "title": "DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范",
+          "journal": "广西壮族自治区市场监督管理局（地方标准）",
+          "year": 2024,
+          "cite": "广西壮族自治区市场监督管理局 / DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范 / 广西壮族自治区市场监督管理局（地方标准） / 2024",
+          "grade": "标准与规范",
+          "ref": "R10"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "针号与流速对应",
+          "v": "22G可耐受5 mL/s；流速≥3 mL/s宜用20G及以上；手/腕穿刺须降至1–2 mL/s",
+          "quote": "Although 22-gauge catheters may be able to tolerate flow rates up to 5 ml/sec, a 20-gauge or larger catheter is preferable for flow rates of 3 ml/sec or greater.",
+          "src": "R01",
+          "cat": "对比剂与流程"
+        },
+        {
+          "k": "儿童剂量与推注参数",
+          "v": "新生儿/婴儿用量1.5–2 mL/kg；24G外周可高压推注上限约1.5 mL/s、150 psi",
+          "quote": "24-gauge angiocatheters in a peripheral location can be safely power injected using a maximum flow rate of approximately 1.5 mL/sec and a maximum pressure of 150 psi",
+          "src": "R01",
+          "cat": "特殊人群"
+        }
+      ]
+    },
+    {
+      "id": "E_ContrastInjection",
+      "name": "碘对比剂",
+      "type": "Exam",
+      "tags": [
+        "辅助检查",
+        "对比剂"
+      ],
+      "aliases": [
+        "碘对比剂静脉输注",
+        "含碘造影剂",
+        "造影剂",
+        "iodine contrast agent"
+      ],
+      "summary": "CT 增强扫描时打进血管的含碘对比剂，是过敏反应和外渗这两类风险的来源。",
+      "attrs": [
+        {
+          "k": "给药方式",
+          "v": "经静脉注射（高压注射器）"
+        },
+        {
+          "k": "检查前皮试",
+          "v": "常规不需要做碘对比剂过敏试验"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        },
+        {
+          "type": "推荐",
+          "author": "de Laforcade L, Bobot M, Bellin MF, et al.",
+          "title": "欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评",
+          "journal": "肾脏病与治疗",
+          "year": 2021,
+          "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / 欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评 / 肾脏病与治疗 / 2021",
+          "grade": "推荐意见",
+          "ref": "R15"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "单次剂量上限",
+          "v": "肾病高危患者优先选非离子型等渗或次高渗对比剂；低风险患者单次用量控制在 300~400 mL 内，且对比剂剂量与肌酐清除率比值要小于 3.7",
+          "quote": "低风险患者单次用量控制在 300 - 400ml 内",
+          "src": "CG-07",
+          "cat": "对比剂选择"
+        },
+        {
+          "k": "最大剂量公式",
+          "v": "满足成像前提下用最低剂量；最大量按5 mL×体重(kg)/血清肌酐(mg/dL)，总量不超300 mL",
+          "quote": "［5 mL×体重（kg）/血清肌酐（mg/dL）］（总量不超过300 mL）",
+          "src": "R07",
+          "cat": "对比剂与流程"
+        },
+        {
+          "k": "水化窗口与肾病位次",
+          "v": "用前6–12 h至用后24 h内水化；对比剂肾病已成为医源性急性肾损伤第3位病因",
+          "quote": "在使用碘对比剂前6～12 h至使用后24 h内，对患者给予水化。",
+          "src": "R07",
+          "cat": "肾功能与对比剂"
+        },
+        {
+          "k": "对比剂选择原则",
+          "v": "尽量选非离子型、选等渗或次高渗对比剂，尽量避免高渗对比剂",
+          "quote": "尽量选择非离子型对比剂；尽量选择使用等渗或次高渗对比剂，尽量避免使用高渗对比剂。",
+          "src": "R03",
+          "cat": "对比剂与流程"
+        },
+        {
+          "k": "次高渗与等渗界定",
+          "v": "次高渗渗透压仍高于血浆渗透压约2倍；等渗以血浆渗透压为参照，等渗非离子二聚体为碘克沙醇",
+          "quote": "次高渗对比剂的渗透压仍高于血浆渗透压约2倍",
+          "src": "R03",
+          "cat": "对比剂与流程"
+        },
+        {
+          "k": "最大剂量公式",
+          "v": "推荐最大对比剂用量＝5 ml×体质量(kg)/基础血清肌酐(mg/dl)",
+          "quote": "推荐最大对比剂用量＝5 ml×体质量(kg)/基础血清肌酐(mg/dl)。",
+          "src": "R03",
+          "cat": "对比剂与流程"
+        },
+        {
+          "k": "CIN定义与危险因素",
+          "v": "CIN为血管内用碘对比剂后2–3 d内肌酐升高≥44 μmol/L或超基础值25%；危险因素含高龄、肾功能不全、糖尿病",
+          "quote": "血清肌酐升高至少44 μmol/L或超过基础值25%",
+          "src": "R03",
+          "cat": "肾功能与对比剂"
+        },
+        {
+          "k": "重复间隔与预后",
+          "v": "72 h内重复使用诊断剂量是CIN独立危险因素，两次间隔最好≥14 d；肌酐3 d达峰、约10 d回基线",
+          "quote": "建议两次对比剂应用间隔时间最好≥14 d",
+          "src": "R03",
+          "cat": "肾功能与对比剂"
+        }
+      ]
+    },
+    {
+      "id": "S_AdverseReaction",
+      "name": "不良反应",
+      "type": "SymptomSign",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "adverse reaction",
+        "对比剂不良反应",
+        "药物不良反应"
+      ],
+      "summary": "使用碘对比剂后出现的非预期身体反应。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al.",
+          "title": "对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）",
+          "journal": "加拿大放射医师协会杂志",
+          "year": 2025,
+          "cite": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al. / 对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会） / 加拿大放射医师协会杂志 / 2025",
+          "grade": "推荐意见",
+          "ref": "R14"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "发生率",
+          "v": "即刻反应 0.3%–1.4%（轻度 0.2%–0.5%、中度 0.04%–0.1%）；重度 0.005%–0.06%，死亡 0.0006%",
+          "quote": "Immediate reactions to LOCM and iso-osmolar contrast media have been reported to occur in 0.3% to 1.4% of injections",
+          "src": "R12",
+          "cat": "反应分级"
+        },
+        {
+          "k": "生理性与过敏样",
+          "v": "生理性（非免疫）反应一般无需处理：孤立恶心呕吐、发冷/发热感、头痛、味觉改变、无低血压的头晕",
+          "quote": "isolated nausea or vomiting with no other systemic symptoms, chills or a sensation of warmth, headaches, altered sense of taste",
+          "src": "R12",
+          "cat": "识别要点"
+        },
+        {
+          "k": "生理性反应",
+          "v": "生理性反应占大多数：血管迷走、味觉改变、躁动、头痛、恶心、头晕、感觉异常；注射处可热/冷/痛",
+          "quote": "Common physiologic reactions include a vasovagal reaction",
+          "src": "R14",
+          "cat": "反应分级"
+        },
+        {
+          "k": "儿童人群",
+          "v": "儿童反应率低于成人（iopromide：儿童 0.47% vs 成人 0.74%，校正 OR 0.58）；预处理剂量按体重调整",
+          "quote": "a reaction rate of 0.47% for children compared to the adult rate of reaction of 0.74%",
+          "src": "R14",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "婴幼儿症状",
+          "v": "婴幼儿皮肤症状更多、呼吸症状更少；行为表现如退缩、哭闹不止、易激惹、黏人，需靠家属报告",
+          "quote": "parents of infants and toddlers may report age-specific symptoms that are less often reported by older children and adults",
+          "src": "R16",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "儿童",
+          "v": "儿童超敏反应罕见、多数较轻；既往有反应史的患儿更换对比剂可降低再次发生率",
+          "quote": "对于既往有超敏反应史的患儿，更换 ICM 可降低超敏反应再次发生率",
+          "src": "CG-01",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "发生率",
+          "v": "低渗及等渗非离子型对比剂的超敏反应发生率 0.5%~3.0%；70% 的速发型超敏反应出现在给药后 5 min 内",
+          "quote": "其超敏反应发生率较既往高渗离子型 ICM 显著降低，为 0.5%~3.0%",
+          "src": "CG-01",
+          "cat": "流行病学"
+        },
+        {
+          "k": "按机制分型",
+          "v": "过敏样反应（非剂量依赖性）与类生理反应（剂量依赖性）",
+          "quote": "ICM 不良反应按照发生机制分为过敏样反应（非剂",
+          "src": "CG-03",
+          "cat": "分型"
+        },
+        {
+          "k": "过敏样反应发生率",
+          "v": "对比剂相关过敏样反应的发生率约为 0.5%~3%",
+          "quote": "ICM 相关过敏样反应的发生率约为 0.5%～3%",
+          "src": "CG-05",
+          "cat": "流行病学"
+        },
+        {
+          "k": "ICM-ADR 的相对风险地位",
+          "v": "在各类药物引发的不良反应中，对比剂不良反应的发生率仅次于抗癌药，位居第二",
+          "quote": "在各类药物引发的 ADR 中，ICM-ADR 的发生率仅次于抗癌药，位居第二。",
+          "src": "CG-06",
+          "cat": "风险背景"
+        },
+        {
+          "k": "使用体量与风险人群",
+          "v": "全球使用量已超过 10 亿人次；但在特定人群或特殊临床状态下可能引发不同程度的不良反应",
+          "quote": "碘对比剂(iodinated contrast media, ICM)广泛应用于影像检查，全世界使用量已经超过10亿人次",
+          "src": "CG-06",
+          "cat": "风险背景"
+        },
+        {
+          "k": "过敏样与生理性二分",
+          "v": "急性反应分过敏样与生理性两类，再按轻/中/重三级分级；两者处理与是否预处理不同",
+          "quote": "Acute adverse events can be categorized as either allergic-like or physiologic and organized into three general categories of severity (mild, moderate, or severe).",
+          "src": "R01",
+          "cat": "不良反应谱"
+        },
+        {
+          "k": "迟发反应窗口与症状",
+          "v": "迟发反应可发生于30–60分钟至1周，多数在3小时至2天；非皮肤症状有恶心呕吐、发热、嗜睡、头痛",
+          "quote": "These include nausea, vomiting, fever, drowsiness, and headache.",
+          "src": "R01",
+          "cat": "不良反应谱"
+        },
+        {
+          "k": "二分类与表现谱",
+          "v": "分特异性/过敏样（非剂量依赖）与非特异性/类生理（剂量依赖）；最常见为瘙痒、荨麻疹、面色潮红、血管炎",
+          "quote": "特异性/过敏样反应（非剂量依赖性）和非特异性/类生理反应（剂量依赖性）",
+          "src": "R07",
+          "cat": "不良反应谱"
+        },
+        {
+          "k": "急性反应定义与表现",
+          "v": "注射后1 h内为急性不良反应；含恶心呕吐、荨麻疹、支气管痉挛、喉头水肿、低血压、迷走神经反应、全身过敏样反应",
+          "quote": "急性不良反应：为对比剂注射后1 h内出现的不良反应。",
+          "src": "R03",
+          "cat": "输注与观察"
+        },
+        {
+          "k": "迟发与晚迟发反应",
+          "v": "迟发为注射后1 h至1周，症状有恶心呕吐、头痛、骨骼肌肉疼痛、发热；晚迟发在1周后可致甲亢",
+          "quote": "对比剂注射后1 h至1周内出现的不良反应为迟发性不良反应。",
+          "src": "R03",
+          "cat": "不良反应谱"
+        }
+      ]
+    },
+    {
+      "id": "S_Rash",
+      "name": "皮疹",
+      "type": "SymptomSign",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "rash",
+        "皮肤",
+        "皮肤反应",
+        "皮疹"
+      ],
+      "summary": "身上出现的红斑或丘疹样皮损。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "迟发表现",
+          "v": "迟发反应在数小时至数天出现，多为孤立皮肤反应，斑丘疹最常见；罕见 AGEP、DRESS、SJS/TEN",
+          "quote": "maculopapular exanthem is the most common drug hypersensitivity reaction to ICM",
+          "src": "R14",
+          "cat": "识别要点"
+        },
+        {
+          "k": "荨麻疹·轻度",
+          "v": "风团数 <20 个、间歇瘙痒：密切观察；症状明显者遵医嘱口服苯海拉明 25~50 mg 或非索非那定 180 mg",
+          "quote": "轻度（风团数量＜20 个，间歇瘙痒）：密切观察，症状明显者可根据医嘱使用抗过敏药物",
+          "src": "CG-03",
+          "cat": "处理"
+        },
+        {
+          "k": "荨麻疹·中度",
+          "v": "20~50 个风团、持续瘙痒：监测生命体征、开通静脉通路；口服苯海拉明 25~50 mg 或非索非那定 180 mg，效果不佳可肌注或静注苯海拉明 25~50 mg（1~2 min 缓慢注完）",
+          "quote": "口服盐酸苯海拉明片 25～50 mg 或盐酸非索非那定片 180 mg",
+          "src": "CG-03",
+          "cat": "处理"
+        },
+        {
+          "k": "荨麻疹·重度",
+          "v": ">50 个风团或大面积风团、持续严重瘙痒：抗过敏药物 + 肾上腺素 1 mg/mL 肌注 0.3 mL，或 0.1 mg/mL 肾上腺素静注 1~3 mL",
+          "quote": "重度（＞50 个风团或大面积风团，持续严重瘙痒）：考虑使用抗过敏药物，还可以考",
+          "src": "CG-03",
+          "cat": "处理"
+        },
+        {
+          "k": "荨麻疹·处理方案",
+          "v": "散发的、一过性荨麻疹 → 支持性治疗（停药、安慰、观察）；持续时间长者 → 遵医嘱肌注或静注 H1 受体拮抗剂；严重者 → 1∶1000 肾上腺素，成人 0.1~0.3 ml 肌注，6~12 岁 1/2 成人量、6 岁以下 1/4 成人量，必要时重复",
+          "quote": "（1）荨麻疹：散发的、一过性荨麻疹建议采用支持性治疗",
+          "src": "CG-09",
+          "cat": "处理"
+        },
+        {
+          "k": "轻度反应清单",
+          "v": "轻度生理性：限性恶心呕吐、一过性潮红温暖寒战、头痛眩晕；轻度过敏样：局限性荨麻疹瘙痒、皮肤水肿、咽痒、鼻塞喷嚏",
+          "quote": "Transient flushing / warmth / chills",
+          "src": "R01",
+          "cat": "不良反应谱"
+        }
+      ]
+    },
+    {
+      "id": "S_AllergicReaction",
+      "name": "过敏反应",
+      "type": "SymptomSign",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "allergic reaction",
+        "碘过敏反应",
+        "碘对比剂过敏反应"
+      ],
+      "summary": "对碘对比剂发生的变态反应，可以累及呼吸道、循环系统和全身。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        },
+        {
+          "type": "建议",
+          "author": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al.",
+          "title": "对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）",
+          "journal": "加拿大放射医师协会杂志",
+          "year": 2025,
+          "cite": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al. / 对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会） / 加拿大放射医师协会杂志 / 2025",
+          "grade": "推荐意见",
+          "ref": "R14"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Nawras M, Alyousif Z, Beran A, Elsamaloty H",
+          "title": "碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析",
+          "journal": "临床影像学",
+          "year": 2023,
+          "cite": "Nawras M, Alyousif Z, Beran A, Elsamaloty H / 碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析 / 临床影像学 / 2023 · DOI 10.1016/j.clinimag.2023.05.006 · PMID 37216743"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Huang W, He C, Chen Y, Xu H, Yao J, Zhao L",
+          "title": "对比剂即刻超敏反应危险因素的系统评价与 Meta 分析",
+          "journal": "欧洲放射学杂志",
+          "year": 2026,
+          "cite": "Huang W, He C, Chen Y, Xu H, Yao J, Zhao L / 对比剂即刻超敏反应危险因素的系统评价与 Meta 分析 / 欧洲放射学杂志 / 2026 · DOI 10.1016/j.ejrad.2025.112472 · PMID 41175815"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "观察时长与去向",
+          "v": "重度或需≥1 剂肾上腺素者观察延长至 6 小时或更长（含住院）；疑似过敏反应者转最近急诊科",
+          "quote": "it would be prudent to extend observation to up to 6 hours or longer (including hospital admission) for a patient with severe anaphylaxis",
+          "src": "R12",
+          "cat": "观察与出院"
+        },
+        {
+          "k": "速发分界",
+          "v": "速发超敏反应定义为暴露后 1 小时内发生，含 IgE 与非 IgE 两种机制；临床处理相同",
+          "quote": "Acute or immediate HRs occur within 1 hour of exposure",
+          "src": "R14",
+          "cat": "识别要点"
+        },
+        {
+          "k": "迟发表现",
+          "v": "迟发反应在数小时至数天出现，多为孤立皮肤反应，斑丘疹最常见；罕见 AGEP、DRESS、SJS/TEN",
+          "quote": "maculopapular exanthem is the most common drug hypersensitivity reaction to ICM",
+          "src": "R14",
+          "cat": "识别要点"
+        },
+        {
+          "k": "WAO 诊断标准",
+          "v": "WAO 2020 两条：①急性起病（数分钟至数小时）累及皮肤/黏膜，且并呼吸受累、血压下降或严重胃肠症状；②单独低血压/支气管痉挛/喉受累",
+          "quote": "Acute onset of an illness (minutes to several hours) with involvement of the skin, mucosal tissue, or both",
+          "src": "R16",
+          "cat": "识别要点"
+        },
+        {
+          "k": "无皮疹也可诊断",
+          "v": "已知或高度可能过敏原暴露后出现急性低血压、支气管痉挛或喉受累，即使无典型皮肤表现也符合诊断",
+          "quote": "Acute onset of hypotension or bronchospasma or laryngeal involvement after exposure to a known or highly probable allergen for that patient",
+          "src": "R16",
+          "cat": "识别要点"
+        },
+        {
+          "k": "分型轴（速发/非速发）",
+          "v": "用药 1 h 之内为速发型超敏反应，1 h 之后为非速发型",
+          "quote": "出现在用药 1 h 之内的，为速发型超敏反应；出现在用药 1 h 之后的，为非速发型超敏反应",
+          "src": "CG-01",
+          "cat": "分型"
+        },
+        {
+          "k": "按严重程度分型",
+          "v": "对比剂不良反应根据严重程度分为轻度、中度和重度",
+          "quote": "此外，ICM 不良反应根据严重程度分为轻度、中度",
+          "src": "CG-03",
+          "cat": "分型"
+        },
+        {
+          "k": "按发生时间分型",
+          "v": "急性（注射后 1 h 内）、迟发性（1 h~1 周内）、晚发性（1 周后）",
+          "quote": "周内发生）、晚发性不良反应（ICM 注射 1 周后发生）。急",
+          "src": "CG-03",
+          "cat": "分型"
+        },
+        {
+          "k": "急性不良反应时点",
+          "v": "急性不良反应＝对比剂注射后 1 h 内发生",
+          "quote": "急性不良反应：发生在对比剂注射后 1 h 内",
+          "src": "CG-09",
+          "cat": "分型"
+        },
+        {
+          "k": "迟发性不良反应时点",
+          "v": "迟发性不良反应＝对比剂注射后 1 h 至 1 周内发生；多为斑丘疹、红斑、肿胀、瘙痒等自限性皮肤反应",
+          "quote": "迟发性不良反应：发生在对比剂注射后 1 h 至 1 周内",
+          "src": "CG-09",
+          "cat": "分型"
+        },
+        {
+          "k": "分型处理（解读稿）",
+          "v": "轻度反应可对症使用地塞米松并观察病情；中重度反应需严密监测生命体征，备好急救设备与药品，及时清理呕吐物防窒息，心跳停止时立即开展心肺复苏",
+          "quote": "中重度反应需严密监测生命体征",
+          "src": "CG-07",
+          "cat": "过敏反应"
+        }
+      ]
+    },
+    {
+      "id": "S_Urticaria",
+      "name": "荨麻疹",
+      "type": "SymptomSign",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "寻麻疹",
+        "urticaria",
+        "风团",
+        "hives"
+      ],
+      "summary": "接触碘对比剂后成片出现的红色风团样皮损。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "荨麻疹·轻度",
+          "v": "风团数 <20 个、间歇瘙痒：密切观察；症状明显者遵医嘱口服苯海拉明 25~50 mg 或非索非那定 180 mg",
+          "quote": "轻度（风团数量＜20 个，间歇瘙痒）：密切观察，症状明显者可根据医嘱使用抗过敏药物",
+          "src": "CG-03",
+          "cat": "处理"
+        },
+        {
+          "k": "荨麻疹·中度",
+          "v": "20~50 个风团、持续瘙痒：监测生命体征、开通静脉通路；口服苯海拉明 25~50 mg 或非索非那定 180 mg，效果不佳可肌注或静注苯海拉明 25~50 mg（1~2 min 缓慢注完）",
+          "quote": "口服盐酸苯海拉明片 25～50 mg 或盐酸非索非那定片 180 mg",
+          "src": "CG-03",
+          "cat": "处理"
+        },
+        {
+          "k": "荨麻疹·重度",
+          "v": ">50 个风团或大面积风团、持续严重瘙痒：抗过敏药物 + 肾上腺素 1 mg/mL 肌注 0.3 mL，或 0.1 mg/mL 肾上腺素静注 1~3 mL",
+          "quote": "重度（＞50 个风团或大面积风团，持续严重瘙痒）：考虑使用抗过敏药物，还可以考",
+          "src": "CG-03",
+          "cat": "处理"
+        },
+        {
+          "k": "荨麻疹·处理方案",
+          "v": "散发的、一过性荨麻疹 → 支持性治疗（停药、安慰、观察）；持续时间长者 → 遵医嘱肌注或静注 H1 受体拮抗剂；严重者 → 1∶1000 肾上腺素，成人 0.1~0.3 ml 肌注，6~12 岁 1/2 成人量、6 岁以下 1/4 成人量，必要时重复",
+          "quote": "（1）荨麻疹：散发的、一过性荨麻疹建议采用支持性治疗",
+          "src": "CG-09",
+          "cat": "处理"
+        },
+        {
+          "k": "荨麻疹处理",
+          "v": "散发的、一过性荨麻疹支持治疗；严重者肾上腺素(1∶1000)0.1–0.3 ml肌注，儿童按年龄减量",
+          "quote": "成人0.1～0.3 ml(0.1～0.3 mg)肌内注射",
+          "src": "R03",
+          "cat": "不良反应谱"
+        }
+      ]
+    },
+    {
+      "id": "S_Pruritus",
+      "name": "瘙痒",
+      "type": "SymptomSign",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "pruritus",
+        "皮肤瘙痒"
+      ],
+      "summary": "主观上难以忍受的痒感。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "轻度反应清单",
+          "v": "轻度生理性：限性恶心呕吐、一过性潮红温暖寒战、头痛眩晕；轻度过敏样：局限性荨麻疹瘙痒、皮肤水肿、咽痒、鼻塞喷嚏",
+          "quote": "Transient flushing / warmth / chills",
+          "src": "R01",
+          "cat": "不良反应谱"
+        },
+        {
+          "k": "荨麻疹处理",
+          "v": "散发的、一过性荨麻疹支持治疗；严重者肾上腺素(1∶1000)0.1–0.3 ml肌注，儿童按年龄减量",
+          "quote": "成人0.1～0.3 ml(0.1～0.3 mg)肌内注射",
+          "src": "R03",
+          "cat": "不良反应谱"
+        }
+      ]
+    },
+    {
+      "id": "S_FacialEdema",
+      "name": "颜面部水肿",
+      "type": "SymptomSign",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "facial edema",
+        "面部水肿",
+        "颜面水肿"
+      ],
+      "summary": "面部和眼睑肿起来，提示反应正在加重。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "中度过敏样",
+          "v": "中度过敏样：全身荨麻疹/瘙痒、弥漫红斑且生命体征稳定、面部水肿无呼吸困难、咽紧声嘶、喘息",
+          "quote": "Diffuse urticaria/pruritis",
+          "src": "R14",
+          "cat": "反应分级"
+        },
+        {
+          "k": "重度过敏样",
+          "v": "重度过敏样：喉水肿伴喉鸣和/或低氧、面部水肿伴呼吸困难、弥漫红斑伴低血压、过敏性休克（低血压+心动过速）",
+          "quote": "Laryngeal oedema with stridor",
+          "src": "R14",
+          "cat": "反应分级"
+        },
+        {
+          "k": "表2 · 中度处理",
+          "v": "弥漫性荨麻疹瘙痒、弥漫性红斑（无低血压）、面部肿胀（无呼吸困难）→ 抗组胺药；喉咙嘶哑→抗组胺药+支气管扩张剂；轻度支气管痉挛→支气管扩张剂",
+          "quote": "中度 b 2级 支气管扩张剂",
+          "src": "CG-01",
+          "cat": "分型"
+        },
+        {
+          "k": "表2 · 重度处理",
+          "v": "弥漫/面部水肿伴呼吸困难、弥漫红斑伴低血压、喉头水肿伴缺氧、重度支气管痉挛伴缺氧、过敏性休克 → 肾上腺素 + 启动急救流程；心跳呼吸骤停 → 心肺复苏",
+          "quote": "重度 c 4级 心肺复苏、肾上腺素、启动急救流程",
+          "src": "CG-01",
+          "cat": "分型"
+        }
+      ]
+    },
+    {
+      "id": "S_ThroatDiscomfort",
+      "name": "咽喉部不适",
+      "type": "SymptomSign",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "throat discomfort",
+        "咽部不适",
+        "咽喉不适"
+      ],
+      "summary": "嗓子发紧、像有东西卡住，是需要立刻处理的危险信号。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "喉头水肿处理",
+          "v": "维持静脉通道、监测生命体征与血氧、面罩供氧 6~10 L/min；用肾上腺素（静脉或肌内）；必要时呼叫急救小组",
+          "quote": "（1）静脉注射0.1 mg/mL 肾上腺",
+          "src": "CG-03",
+          "cat": "处理"
+        },
+        {
+          "k": "喉头水肿·处理方案",
+          "v": "面罩吸氧 6~10 L/min；肌注 1∶1000 肾上腺素，成人 0.5 ml，必要时重复；6~12 岁 0.3 ml、6 岁以下 0.15 ml",
+          "quote": "（3）喉头水肿：给予面罩吸氧 6~10 L/min",
+          "src": "CG-09",
+          "cat": "处理"
+        },
+        {
+          "k": "支痉挛与喉头水肿",
+          "v": "面罩吸氧6–10 L/min并吸入β2激动剂2–3次；喉头水肿肌注肾上腺素成人0.5 ml(0.5 mg)",
+          "quote": "氧气面罩吸氧(6～10 L/min)，定量吸入β2受体激动剂气雾剂",
+          "src": "R03",
+          "cat": "不良反应谱"
+        }
+      ]
+    },
+    {
+      "id": "S_ChestTightness",
+      "name": "胸闷",
+      "type": "SymptomSign",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "chest tightness",
+        "胸部闷"
+      ],
+      "summary": "胸口发闷、觉得透不过气的主诉。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "支气管痉挛分型处理",
+          "v": "轻度：沙丁胺醇气雾剂 2 喷（90 μg/喷），最多重复 3 次；中度：+ 肾上腺素 1 mg/mL 肌注 0.3 mL（5~15 min 可重复 1 次，最大 1 mL）+ 0.1 mg/mL 静注 0.1 mg；重度：改 0.1 mg/mL 静注 1 mL 起 + 呼叫急救小组",
+          "quote": "β2 受体激动剂气雾剂（沙丁胺醇气雾剂）2 喷，90 μg/喷，最多可重复 3 次",
+          "src": "CG-03",
+          "cat": "处理"
+        },
+        {
+          "k": "支气管痉挛·处理方案",
+          "v": "面罩吸氧 6~10 L/min；定量吸入 β2 激动剂 2~3 次；血压正常时肌注 1∶1000 肾上腺素 0.1~0.3 ml；血压降低时成人 0.5 ml、6~12 岁 0.3 ml、6 岁以下 0.15 ml",
+          "quote": "（2）支气管痉挛：面罩吸氧 6~10 L/min",
+          "src": "CG-09",
+          "cat": "处理"
+        }
+      ]
+    },
+    {
+      "id": "S_GeneralizedWeakness",
+      "name": "全身无力",
+      "type": "SymptomSign",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "generalized weakness",
+        "乏力",
+        "全身乏力"
+      ],
+      "summary": "浑身没劲、站不稳的感觉。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "低血压阈值",
+          "v": "成人收缩压 <90 mmHg 或较基线下降 >30%；婴幼儿按年龄别收缩压低或下降 >30%",
+          "quote": "systolic BP of less than 90 mm Hg or greater than 30% decrease from that person's baseline",
+          "src": "R16",
+          "cat": "识别要点"
+        },
+        {
+          "k": "无皮疹也可诊断",
+          "v": "已知或高度可能过敏原暴露后出现急性低血压、支气管痉挛或喉受累，即使无典型皮肤表现也符合诊断",
+          "quote": "Acute onset of hypotension or bronchospasma or laryngeal involvement after exposure to a known or highly probable allergen for that patient",
+          "src": "R16",
+          "cat": "识别要点"
+        },
+        {
+          "k": "单纯性低血压",
+          "v": "抬高患者下肢；开通静脉通路快速补液（0.9% 氯化钠或林格氏液）；面罩供氧 6~10 L/min；肌注 1 mg/mL 肾上腺素 0.5 mL，可重复给药",
+          "quote": "补液选用 0.9% 氯化钠注射液或林格氏液；肌内注射 1 mg/mL 肾上腺素 0.5 mL，可重复给药",
+          "src": "CG-03",
+          "cat": "处理"
+        },
+        {
+          "k": "肺水肿处理",
+          "v": "维持静脉通道、面罩供氧、尽可能抬高床头；呋塞米注射液 20~40 mg 静脉注射（2 min 内缓慢注完）；呼叫急救小组",
+          "quote": "呋塞米注射液：20～40 mg，静脉注射，2 min 内缓慢注射完毕",
+          "src": "CG-03",
+          "cat": "处理"
+        },
+        {
+          "k": "低血压·处理方案",
+          "v": "单纯性低血压：抬高双下肢、面罩吸氧 6~10 L/min、快速静滴 0.9% NaCl 或林格氏液、补液无效时肌注肾上腺素成人 0.5 ml；迷走神经反应：阿托品 0.6~1.0 mg 静注，3~5 min 可重复，成人总量 3 mg",
+          "quote": "（4）低血压：①单纯性低血压：抬高双下肢，面罩吸氧 6~10 L/min",
+          "src": "CG-09",
+          "cat": "处理"
+        }
+      ]
+    },
+    {
+      "id": "S_AnaphylacticShock",
+      "name": "过敏性休克",
+      "type": "SymptomSign",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "anaphylactic shock",
+        "过敏性休克表现",
+        "休克"
+      ],
+      "summary": "最重的一类过敏反应，会危及生命，必须马上抢救。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        },
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "双相反应",
+          "v": "双相过敏反应：症状完全缓解后再发，最迟 72 小时内（平均 11 小时），145 例中 10.3% 发生",
+          "quote": "Biphasic anaphylaxis occurs when the initial symptoms of anaphylaxis resolve completely but then recur up to 72 hours later, with a mean of 11 hours",
+          "src": "R12",
+          "cat": "观察与出院"
+        },
+        {
+          "k": "WAO 诊断标准",
+          "v": "WAO 2020 两条：①急性起病（数分钟至数小时）累及皮肤/黏膜，且并呼吸受累、血压下降或严重胃肠症状；②单独低血压/支气管痉挛/喉受累",
+          "quote": "Acute onset of an illness (minutes to several hours) with involvement of the skin, mucosal tissue, or both",
+          "src": "R16",
+          "cat": "识别要点"
+        },
+        {
+          "k": "低血压阈值",
+          "v": "成人收缩压 <90 mmHg 或较基线下降 >30%；婴幼儿按年龄别收缩压低或下降 >30%",
+          "quote": "systolic BP of less than 90 mm Hg or greater than 30% decrease from that person's baseline",
+          "src": "R16",
+          "cat": "识别要点"
+        },
+        {
+          "k": "何时呼叫急救",
+          "v": "用药后迅速、完全、持久缓解且备有追加肾上腺素与医疗条件时可不立即呼叫急救；重症、未完全缓解或复发须立即呼叫",
+          "quote": "immediate activation of EMS may not be required if the patient experiences prompt, complete, and durable response to treatment with epinephrine",
+          "src": "R16",
+          "cat": "观察与出院"
+        },
+        {
+          "k": "单纯性低血压",
+          "v": "抬高患者下肢；开通静脉通路快速补液（0.9% 氯化钠或林格氏液）；面罩供氧 6~10 L/min；肌注 1 mg/mL 肾上腺素 0.5 mL，可重复给药",
+          "quote": "补液选用 0.9% 氯化钠注射液或林格氏液；肌内注射 1 mg/mL 肾上腺素 0.5 mL，可重复给药",
+          "src": "CG-03",
+          "cat": "处理"
+        },
+        {
+          "k": "低血压·处理方案",
+          "v": "单纯性低血压：抬高双下肢、面罩吸氧 6~10 L/min、快速静滴 0.9% NaCl 或林格氏液、补液无效时肌注肾上腺素成人 0.5 ml；迷走神经反应：阿托品 0.6~1.0 mg 静注，3~5 min 可重复，成人总量 3 mg",
+          "quote": "（4）低血压：①单纯性低血压：抬高双下肢，面罩吸氧 6~10 L/min",
+          "src": "CG-09",
+          "cat": "处理"
+        },
+        {
+          "k": "低血压与阿托品",
+          "v": "抬高双下肢、吸氧、快速补液；迷走神经反应阿托品0.6–1.0 mg，3–5 min可重复，成人总量3 mg",
+          "quote": "静脉注射阿托品0.6～1.0 mg，必要时于3～5 min后重复用药",
+          "src": "R03",
+          "cat": "不良反应谱"
+        }
+      ]
+    },
+    {
+      "id": "S_Extravasation",
+      "name": "碘对比剂外渗",
+      "type": "SymptomSign",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "extravasation of iodine contrast agent",
+        "对比剂外渗",
+        "静脉外渗",
+        "外渗"
+      ],
+      "summary": "造影剂没进血管、漏到皮下，轻则肿痛，重则组织坏死。",
+      "attrs": [
+        {
+          "k": "发生率",
+          "v": "文献报道约 0.1%～0.9%"
+        },
+        {
+          "k": "处置要点",
+          "v": "停止注射 · 保留留置针 · 禁止揉搓 · 抬高患肢"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "系统评价",
+          "author": "姚金秀、杨丽娜、梅申聪、董芳辉",
+          "title": "放射科碘对比剂外渗影响因素的系统评价",
+          "journal": "上海护理",
+          "year": 2023,
+          "cite": "姚金秀、杨丽娜、梅申聪、董芳辉 / 放射科碘对比剂外渗影响因素的系统评价 / 上海护理 / 2023",
+          "grade": "汇总证据",
+          "ref": "R17"
+        },
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        },
+        {
+          "type": "规范",
+          "author": "广西壮族自治区市场监督管理局",
+          "title": "DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范",
+          "journal": "广西壮族自治区市场监督管理局（地方标准）",
+          "year": 2024,
+          "cite": "广西壮族自治区市场监督管理局 / DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范 / 广西壮族自治区市场监督管理局（地方标准） / 2024",
+          "grade": "标准与规范",
+          "ref": "R10"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Nawras M, Alyousif Z, Beran A, Elsamaloty H",
+          "title": "碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析",
+          "journal": "临床影像学",
+          "year": 2023,
+          "cite": "Nawras M, Alyousif Z, Beran A, Elsamaloty H / 碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析 / 临床影像学 / 2023 · DOI 10.1016/j.clinimag.2023.05.006 · PMID 37216743"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Ding S, Meystre NR, Campeanu C, Gullo G",
+          "title": "CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析",
+          "journal": "JBI 系统评价与实施报告",
+          "year": 2018,
+          "cite": "Ding S, Meystre NR, Campeanu C, Gullo G / CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析 / JBI 系统评价与实施报告 / 2018 · DOI 10.11124/JBISRIR-2017-003348 · PMID 29324560"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "损伤机制",
+          "v": "外渗导致周围组织损伤，产生局部炎症反应尤其是皮肤；急性组织损伤可能与高渗透压有关",
+          "quote": "碘对比剂外渗引起的急性组织损伤可能与其高渗透压有关",
+          "src": "CG-09",
+          "cat": "外渗机制"
+        },
+        {
+          "k": "发生率与轻度处理报告",
+          "v": "高压输注外渗率0.1%–0.9%；轻度无需特殊处理，嘱其观察、外渗加重即告知医护人员，疼痛者冷湿敷",
+          "quote": "静脉高压输注对比剂外渗事件发生率为0.1%～0.9%",
+          "src": "R07",
+          "cat": "外渗早期识别"
+        },
+        {
+          "k": "以临床诊断为主",
+          "v": "外渗主要依靠临床表现诊断,常规影像学检查并非其检出指征",
+          "quote": "mostly a clinical diagnosis",
+          "src": "R02",
+          "cat": "识别"
+        },
+        {
+          "k": "轻度处理路径",
+          "v": "轻度者抬高患肢、冰袋、每2~4小时监测;好转可离院,无好转需外科意见",
+          "quote": "monitor patient 2–4 hourly",
+          "src": "R02",
+          "cat": "处置顺序"
+        },
+        {
+          "k": "红旗症状清单",
+          "v": "需告知患者出现肿胀或疼痛加重、发红、肢体感觉改变、皮肤溃疡或水疱时须就医",
+          "quote": "Skin ulceration or blistering",
+          "src": "R02",
+          "cat": "居家护理与宣教"
+        },
+        {
+          "k": "立即停止拔针",
+          "v": "外渗后立即停止注射,避免加压冲洗导管,及时拔针并按规范处置(A级,修订)",
+          "quote": "应立即停止注射，避免加压冲洗导管，及时拔针",
+          "src": "R04",
+          "cat": "处置顺序"
+        },
+        {
+          "k": "轻度处理",
+          "v": "轻度外渗:患肢抬高、局部冰敷或冷湿敷,并监测受检者情况(A级,强推荐)",
+          "quote": "患肢抬高、局部冰敷或冷湿敷，并监测受检者的情况",
+          "src": "R04",
+          "cat": "局部处理"
+        },
+        {
+          "k": "中重度处理",
+          "v": "中重度:患肢抬高、冰敷冷湿敷,50%硫酸镁、黏多糖软膏、0.05%地塞米松局部冷湿敷,可用如意金黄散外敷(B级)",
+          "quote": "使用50%的硫酸镁、黏多糖软膏、0.05%的地塞米松局部冷湿敷",
+          "src": "R04",
+          "cat": "局部处理"
+        },
+        {
+          "k": "渗出与外渗定义",
+          "v": "药物外渗=静脉治疗中腐蚀性药液进入静脉管腔以外的周围组织(对比剂属腐蚀性);药物渗出=非腐蚀性药液进入静脉管腔以外的周围组织",
+          "quote": "静脉治疗过程中，腐蚀性药液进入静脉管腔以外的周围组织",
+          "src": "R08",
+          "cat": "外渗分级"
+        }
+      ]
+    },
+    {
+      "id": "SC_AdverseSpectrum",
+      "name": "碘对比剂不良反应谱",
+      "type": "SymptomCategory",
+      "tags": [
+        "症状分类"
+      ],
+      "aliases": [
+        "不良反应谱",
+        "不良反应谱系"
+      ],
+      "summary": "把打造影剂之后可能出的各类反应归到一起的分类。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "速发分界",
+          "v": "速发超敏反应定义为暴露后 1 小时内发生，含 IgE 与非 IgE 两种机制；临床处理相同",
+          "quote": "Acute or immediate HRs occur within 1 hour of exposure",
+          "src": "R14",
+          "cat": "识别要点"
+        },
+        {
+          "k": "按机制分型",
+          "v": "过敏样反应（非剂量依赖性）与类生理反应（剂量依赖性）",
+          "quote": "ICM 不良反应按照发生机制分为过敏样反应（非剂",
+          "src": "CG-03",
+          "cat": "分型"
+        },
+        {
+          "k": "急性不良反应时点",
+          "v": "急性不良反应＝对比剂注射后 1 h 内发生",
+          "quote": "急性不良反应：发生在对比剂注射后 1 h 内",
+          "src": "CG-09",
+          "cat": "分型"
+        },
+        {
+          "k": "过敏样与生理性二分",
+          "v": "急性反应分过敏样与生理性两类，再按轻/中/重三级分级；两者处理与是否预处理不同",
+          "quote": "Acute adverse events can be categorized as either allergic-like or physiologic and organized into three general categories of severity (mild, moderate, or severe).",
+          "src": "R01",
+          "cat": "不良反应谱"
+        },
+        {
+          "k": "急性反应定义与表现",
+          "v": "注射后1 h内为急性不良反应；含恶心呕吐、荨麻疹、支气管痉挛、喉头水肿、低血压、迷走神经反应、全身过敏样反应",
+          "quote": "急性不良反应：为对比剂注射后1 h内出现的不良反应。",
+          "src": "R03",
+          "cat": "输注与观察"
+        }
+      ]
+    },
+    {
+      "id": "SC_Hypersensitivity",
+      "name": "过敏反应谱",
+      "type": "SymptomCategory",
+      "tags": [
+        "症状分类"
+      ],
+      "aliases": [
+        "过敏反应谱"
+      ],
+      "summary": "过敏这一类反应从轻到重的分层。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "分型轴（速发/非速发）",
+          "v": "用药 1 h 之内为速发型超敏反应，1 h 之后为非速发型",
+          "quote": "出现在用药 1 h 之内的，为速发型超敏反应；出现在用药 1 h 之后的，为非速发型超敏反应",
+          "src": "CG-01",
+          "cat": "分型"
+        },
+        {
+          "k": "严重程度分级标准",
+          "v": "含 ACR 对比剂不良反应严重程度分级及 Ring-Messmer 分级，按严重程度分轻、中、重度及 1~4 级",
+          "quote": "根据发病的严重程度，分为轻、中、重度及 1~4 级（表 2）",
+          "src": "CG-01",
+          "cat": "分型"
+        }
+      ]
+    },
+    {
+      "id": "SC_ExtravasationSpectrum",
+      "name": "静脉外渗反应谱",
+      "type": "SymptomCategory",
+      "tags": [
+        "症状分类"
+      ],
+      "aliases": [
+        "外渗反应谱"
+      ],
+      "summary": "外渗发生后从轻到重的表现分层：局部肿胀、疼痛、发红、皮肤发凉与发白发紧；疼痛加重、感觉改变、活动受限、出现水疱或组织坏死，都是需要立即升级处理的信号。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "损伤机制",
+          "v": "外渗导致周围组织损伤，产生局部炎症反应尤其是皮肤；急性组织损伤可能与高渗透压有关",
+          "quote": "碘对比剂外渗引起的急性组织损伤可能与其高渗透压有关",
+          "src": "CG-09",
+          "cat": "外渗机制"
+        },
+        {
+          "k": "外渗三度分级",
+          "v": "轻度:仅轻微红肿、无皮肤改变;中度:水疱、进行性水肿和/或溃疡;重度:神经血管受损、组织坏死或骨筋膜室综合征",
+          "quote": "Minor erythema or swelling",
+          "src": "R02",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "筋膜室综合征禁忌",
+          "v": "疑有骨筋膜室综合征者严禁抬高患肢以免加重缺血,应立即请骨科、手外科等相关科室会诊(A级,修订)",
+          "quote": "严禁抬高患肢，以免加重缺血",
+          "src": "R04",
+          "cat": "并发症"
+        },
+        {
+          "k": "渗出与外渗定义",
+          "v": "药物外渗=静脉治疗中腐蚀性药液进入静脉管腔以外的周围组织(对比剂属腐蚀性);药物渗出=非腐蚀性药液进入静脉管腔以外的周围组织",
+          "quote": "静脉治疗过程中，腐蚀性药液进入静脉管腔以外的周围组织",
+          "src": "R08",
+          "cat": "外渗分级"
+        }
+      ]
+    },
+    {
+      "id": "AT_AllergyHistory",
+      "name": "过敏史询问",
+      "type": "AssessmentTool",
+      "tags": [
+        "评估工具"
+      ],
+      "aliases": [
+        "allergy history inquiry",
+        "既往过敏史询问",
+        "过敏史筛查"
+      ],
+      "summary": "检查前一项一项问清楚以前有没有过敏反应的评估动作。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        },
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "风险与病史评估",
+          "v": "排查心绞痛、心力衰竭等基础病，重点关注过敏史、哮喘病史患者；评估对比剂诱导急性肾损伤风险",
+          "quote": "重点关注过敏史、哮喘病史患者",
+          "src": "CG-07",
+          "cat": "检查前评估"
+        },
+        {
+          "k": "既往同类反应为首位风险",
+          "v": "既往同类对比剂过敏样反应是预测未来反应的首位风险因素，再次暴露风险约5倍",
+          "quote": "A prior allergic-like or unknown type reaction to the same class of contrast medium is considered the greatest risk factor",
+          "src": "R01",
+          "cat": "检查前准备"
+        },
+        {
+          "k": "全面评估与既往反应风险",
+          "v": "检查前全面评估是减少不良反应第一步；既往对比剂反应者再次发生概率为原来的5倍",
+          "quote": "检查前对患者进行全面评估是减少不良反应发生的第一步。",
+          "src": "R07",
+          "cat": "检查前准备"
+        },
+        {
+          "k": "病史核对项",
+          "v": "询问既往碘对比剂使用史与中重度不良反应史、肾毒性药物或影响肾小球滤过率疾病、脱水与心衰",
+          "quote": "了解患者既往有无碘对比剂使用史，是否有中、重度不良反应史",
+          "src": "R03",
+          "cat": "检查前准备"
+        }
+      ]
+    },
+    {
+      "id": "AT_ExtravasationAssessment",
+      "name": "外渗风险评估",
+      "type": "AssessmentTool",
+      "tags": [
+        "评估工具"
+      ],
+      "aliases": [
+        "extravasation risk assessment",
+        "外渗风险评估表"
+      ],
+      "summary": "检查前先把外渗高危的人挑出来的评估方法。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "系统评价",
+          "author": "姚金秀、杨丽娜、梅申聪、董芳辉",
+          "title": "放射科碘对比剂外渗影响因素的系统评价",
+          "journal": "上海护理",
+          "year": 2023,
+          "cite": "姚金秀、杨丽娜、梅申聪、董芳辉 / 放射科碘对比剂外渗影响因素的系统评价 / 上海护理 / 2023",
+          "grade": "汇总证据",
+          "ref": "R17"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Ding S, Meystre NR, Campeanu C, Gullo G",
+          "title": "CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析",
+          "journal": "JBI 系统评价与实施报告",
+          "year": 2018,
+          "cite": "Ding S, Meystre NR, Campeanu C, Gullo G / CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析 / JBI 系统评价与实施报告 / 2018 · DOI 10.11124/JBISRIR-2017-003348 · PMID 29324560"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "外渗红旗征象",
+          "v": "注射部位红肿瘙痒；血液回流异常或流速减慢；患者主诉疼痛麻木等",
+          "quote": "出现以下情况应高度怀疑含碘对比剂静脉外渗：注射部位红肿、瘙痒",
+          "src": "R04",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "外渗高危人群",
+          "v": "婴幼儿、老年人、不能进行有效沟通及配合者、被穿刺血管情况不佳者",
+          "quote": "含碘对比剂静脉外渗的高危人群包括婴幼儿、老年人、不能进行有效沟通及配合者、被穿刺血管情况不佳者",
+          "src": "R04",
+          "cat": "检查前评估"
+        },
+        {
+          "k": "外渗高危人群",
+          "v": "婴幼儿、老年人、不能有效沟通配合者、被穿刺血管情况不佳者",
+          "quote": "发生外渗的高危人群包括婴幼儿、老年人",
+          "src": "CG-09",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "红旗症状（2021 版）",
+          "v": "出现感觉异常、皮肤溃疡或肢体循环障碍等症状时，应立即通知医生",
+          "quote": "若患者出现感觉异常、皮肤溃疡或肢体循环障碍等症状时，应立即通知医生",
+          "src": "CG-08",
+          "cat": "安全边界"
+        },
+        {
+          "k": "疼痛或肿胀即停止",
+          "v": "注射全程保持技师与患者沟通；患者诉注射处疼痛或肿胀感须立即停止注射",
+          "quote": "If the patient reports pain or the sensation of swelling at the injection site, injection should be discontinued.",
+          "src": "R01",
+          "cat": "护理教学与沟通"
+        },
+        {
+          "k": "召唤责任医护评估",
+          "v": "外渗发生即召唤责任医护到场，询问疼痛与感觉异常并检查肿胀、发红、手指活动度与灌注",
+          "quote": "A responsible health care provider should be summoned to examine any patient in whom an extravasation of contrast material has occurred.",
+          "src": "R01",
+          "cat": "外渗早期识别"
+        },
+        {
+          "k": "外渗可疑征象",
+          "v": "注射部位红肿瘙痒、血液回流异常或流速减慢、患者主诉疼痛麻木时应高度怀疑外渗(B级,新增)",
+          "quote": "注射部位红肿、瘙痒；血液回流异常或流速减慢；患者主诉疼痛、麻木等",
+          "src": "R04",
+          "cat": "识别"
+        },
+        {
+          "k": "巡视观察内容",
+          "v": "输液过程中应定时巡视,观察有无输液反应,穿刺部位有无红、肿、热、痛、渗出等表现",
+          "quote": "观察患者有无输液反应，穿刺部位有无红、肿、热、痛、渗出等表现",
+          "src": "R08",
+          "cat": "识别"
+        }
+      ]
+    },
+    {
+      "id": "AT_VascularAssessment",
+      "name": "血管条件评估",
+      "type": "AssessmentTool",
+      "tags": [
+        "评估工具"
+      ],
+      "aliases": [
+        "vascular assessment",
+        "静脉条件评估",
+        "血管可视化评估"
+      ],
+      "summary": "扎针之前评估血管粗细、弹性和位置的方法。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "标准",
+          "author": "国家卫生健康委员会",
+          "title": "WS/T 433—2023 静脉治疗护理技术操作标准",
+          "journal": "国家卫生健康委员会（卫生行业标准）",
+          "year": 2023,
+          "cite": "国家卫生健康委员会 / WS/T 433—2023 静脉治疗护理技术操作标准 / 国家卫生健康委员会（卫生行业标准） / 2023",
+          "grade": "标准与规范",
+          "ref": "R08"
+        },
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "穿刺部位与器材选择",
+          "v": "注射部位推荐前臂、肘部静脉，尽量避免在手、腕、足和脚踝处穿刺；使用钢针或留置时间 >24 h 的静脉留置针会增加外渗风险",
+          "quote": "使用留置时间>24 h的静脉留置针注射含碘对比剂会增加静脉外渗的风险",
+          "src": "R04",
+          "cat": "检查前评估"
+        },
+        {
+          "k": "针号与流速对应",
+          "v": "22G可耐受5 mL/s；流速≥3 mL/s宜用20G及以上；手/腕穿刺须降至1–2 mL/s",
+          "quote": "Although 22-gauge catheters may be able to tolerate flow rates up to 5 ml/sec, a 20-gauge or larger catheter is preferable for flow rates of 3 ml/sec or greater.",
+          "src": "R01",
+          "cat": "对比剂与流程"
+        },
+        {
+          "k": "儿童剂量与推注参数",
+          "v": "新生儿/婴儿用量1.5–2 mL/kg；24G外周可高压推注上限约1.5 mL/s、150 psi",
+          "quote": "24-gauge angiocatheters in a peripheral location can be safely power injected using a maximum flow rate of approximately 1.5 mL/sec and a maximum pressure of 150 psi",
+          "src": "R01",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "速率与压力上限",
+          "v": "输注速率不宜超过5 mL/s，加压注射器最大压强不超过300 psi",
+          "quote": "输注速率不宜超过5 mL/s，加压注射器最大压强不超过300 psi",
+          "src": "R07",
+          "cat": "对比剂与流程"
+        },
+        {
+          "k": "ESUR官网预防要点",
+          "v": "使用与流量匹配型号的留置针、置入合适血管,推注前生理盐水试注,选用非离子碘对比剂",
+          "quote": "appropriate-sized plastic cannula",
+          "src": "R02",
+          "cat": "预防"
+        },
+        {
+          "k": "穿刺部位选择",
+          "v": "推荐前臂、肘部静脉,尽量避免手、腕、足和脚踝处穿刺;肘窝粗直静脉,不推荐肱静脉(A级)",
+          "quote": "注射部位推荐前臂、肘部静脉，尽量避免在手、腕、足和脚踝处穿刺",
+          "src": "R04",
+          "cat": "预防"
+        },
+        {
+          "k": "穿刺部位与血管评级",
+          "v": "应选前臂和肘部粗直弹性好的外周静脉,不宜手背足背患侧肢体,不在同一静脉反复穿刺;浅静脉血管评级Ⅱ~Ⅲ级为外渗高风险人群,须签高风险知情同意书",
+          "quote": "应选择前臂和肘部粗、直且弹性好的外周静脉进行 VAD 穿刺",
+          "src": "R10",
+          "cat": "预防"
+        },
+        {
+          "k": "观察回血",
+          "v": "输入刺激性、腐蚀性药物过程中应注意观察回血情况,确保导管在静脉管腔内",
+          "quote": "输入刺激性、腐蚀性药物过程中，应注意观察回血情况，确保导管在静脉管腔内",
+          "src": "R08",
+          "cat": "识别"
+        },
+        {
+          "k": "通路通畅确认",
+          "v": "经PVC输注药物前应确定导管在静脉管腔内;经PICC、CVC、PORT输注药物前宜通过回抽血液确定",
+          "quote": "经 PVC 输注药物前应确定导管在静脉管腔内",
+          "src": "R08",
+          "cat": "预防"
+        },
+        {
+          "k": "血管可视化与导管选择",
+          "v": "操作中可使用血管可视化技术;评估穿刺部位皮肤情况和静脉条件后,满足治疗需要时宜选管径细、管腔少的导管",
+          "quote": "操作中可使用血管可视化技术",
+          "src": "R08",
+          "cat": "预防"
+        },
+        {
+          "k": "穿刺部位与消毒范围",
+          "v": "宜选上肢静脉,避开静脉瓣、关节及有疤痕炎症硬结处;钢针穿刺消毒范围直径≥5 cm,外周静脉留置针≥8 cm",
+          "quote": "宜选择上肢静脉作为穿刺部位",
+          "src": "R08",
+          "cat": "预防"
+        }
+      ]
+    },
+    {
+      "id": "RF_ContrastAllergyHistory",
+      "name": "既往碘对比剂过敏史",
+      "type": "RiskFactor",
+      "tags": [
+        "高危因素"
+      ],
+      "aliases": [
+        "contrast allergy history",
+        "碘对比剂过敏史",
+        "既往过敏反应史"
+      ],
+      "summary": "以前打造影剂出过事，是最重要的一条风险提示。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "预防用药（择期口服）",
+          "v": "应用对比剂前 13 h、7 h、1 h 口服泼尼松 50 mg（或甲基泼尼松龙 40 mg），前 1 h 苯海拉明 1 mg/kg 口服或肌注（或西替利嗪 10 mg）",
+          "quote": "应用 ICM 前 13 h、7 h、1 h 泼尼松 50 mg 口服",
+          "src": "CG-01",
+          "cat": "处理"
+        },
+        {
+          "k": "不做碘过敏预试验",
+          "v": "皮肤预防性试验对预测过敏反应风险价值极为有限，且极少数患者接受少量对比剂即出现严重过敏反应，不建议进行对比剂预试验",
+          "quote": "不建议进行对比剂预试验",
+          "src": "CG-04",
+          "cat": "检查前评估"
+        },
+        {
+          "k": "风险与病史评估",
+          "v": "排查心绞痛、心力衰竭等基础病，重点关注过敏史、哮喘病史患者；评估对比剂诱导急性肾损伤风险",
+          "quote": "重点关注过敏史、哮喘病史患者",
+          "src": "CG-07",
+          "cat": "检查前评估"
+        },
+        {
+          "k": "既往同类反应为首位风险",
+          "v": "既往同类对比剂过敏样反应是预测未来反应的首位风险因素，再次暴露风险约5倍",
+          "quote": "A prior allergic-like or unknown type reaction to the same class of contrast medium is considered the greatest risk factor",
+          "src": "R01",
+          "cat": "检查前准备"
+        },
+        {
+          "k": "全面评估与既往反应风险",
+          "v": "检查前全面评估是减少不良反应第一步；既往对比剂反应者再次发生概率为原来的5倍",
+          "quote": "检查前对患者进行全面评估是减少不良反应发生的第一步。",
+          "src": "R07",
+          "cat": "检查前准备"
+        }
+      ]
+    },
+    {
+      "id": "RF_UncontrolledAsthma",
+      "name": "未控制的哮喘",
+      "type": "RiskFactor",
+      "tags": [
+        "高危因素"
+      ],
+      "aliases": [
+        "uncontrolled asthma",
+        "哮喘未控制"
+      ],
+      "summary": "哮喘没控制好时，指南仍列为需要关注的风险因素；2026 年 Meta 分析未显示显著关联，证据不一致。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Huang W, He C, Chen Y, Xu H, Yao J, Zhao L",
+          "title": "对比剂即刻超敏反应危险因素的系统评价与 Meta 分析",
+          "journal": "欧洲放射学杂志",
+          "year": 2026,
+          "cite": "Huang W, He C, Chen Y, Xu H, Yao J, Zhao L / 对比剂即刻超敏反应危险因素的系统评价与 Meta 分析 / 欧洲放射学杂志 / 2026 · DOI 10.1016/j.ejrad.2025.112472 · PMID 41175815"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "老年人与禁忌人群",
+          "v": "老年人皮试敏感性可能降低；肾功能不全、甲亢者为激发试验禁忌；严重心血管疾病、未控制哮喘为相对禁忌",
+          "quote": "对于肾功能不全、甲状腺功能亢进患者，ICM 激发试验为禁忌",
+          "src": "CG-01",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "不做碘过敏预试验",
+          "v": "皮肤预防性试验对预测过敏反应风险价值极为有限，且极少数患者接受少量对比剂即出现严重过敏反应，不建议进行对比剂预试验",
+          "quote": "不建议进行对比剂预试验",
+          "src": "CG-04",
+          "cat": "检查前评估"
+        },
+        {
+          "k": "绝对禁忌证与高危人群",
+          "v": "绝对禁忌为甲亢未治疗者；高危含既往中重度反应者、不稳定性哮喘、糖尿病肾病、肾功能不全等12类",
+          "quote": "既往使用碘对比剂出现中、重度不良反应者；②不稳定性哮喘者；",
+          "src": "R07",
+          "cat": "检查前准备"
+        }
+      ]
+    },
+    {
+      "id": "RF_AgeExtremes",
+      "name": "高龄或低龄",
+      "type": "RiskFactor",
+      "tags": [
+        "高危因素"
+      ],
+      "aliases": [
+        "extremes of age",
+        "高龄",
+        "婴幼儿"
+      ],
+      "summary": "年纪特别大或者特别小的患者，血管条件通常更差。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "系统评价",
+          "author": "姚金秀、杨丽娜、梅申聪、董芳辉",
+          "title": "放射科碘对比剂外渗影响因素的系统评价",
+          "journal": "上海护理",
+          "year": 2023,
+          "cite": "姚金秀、杨丽娜、梅申聪、董芳辉 / 放射科碘对比剂外渗影响因素的系统评价 / 上海护理 / 2023",
+          "grade": "汇总证据",
+          "ref": "R17"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "儿童",
+          "v": "儿童超敏反应罕见、多数较轻；既往有反应史的患儿更换对比剂可降低再次发生率",
+          "quote": "对于既往有超敏反应史的患儿，更换 ICM 可降低超敏反应再次发生率",
+          "src": "CG-01",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "老年人与禁忌人群",
+          "v": "老年人皮试敏感性可能降低；肾功能不全、甲亢者为激发试验禁忌；严重心血管疾病、未控制哮喘为相对禁忌",
+          "quote": "对于肾功能不全、甲状腺功能亢进患者，ICM 激发试验为禁忌",
+          "src": "CG-01",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "风险与病史评估",
+          "v": "排查心绞痛、心力衰竭等基础病，重点关注过敏史、哮喘病史患者；评估对比剂诱导急性肾损伤风险",
+          "quote": "重点关注过敏史、哮喘病史患者",
+          "src": "CG-07",
+          "cat": "检查前评估"
+        },
+        {
+          "k": "妊娠与哺乳",
+          "v": "妊娠期女性需权衡利弊后使用，且胎儿出生后要检查甲状腺功能；哺乳期女性无需中断哺乳",
+          "quote": "胎儿出生后要检查甲状腺功能",
+          "src": "CG-07",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "儿童与术后留观",
+          "v": "小儿不能配合者可遵医嘱用镇静剂，术后留观 30 分钟并多喂水，需格外关注对比剂渗透压选择",
+          "quote": "术后留观 30 分钟并多喂水",
+          "src": "CG-07",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "绝对禁忌证与高危人群",
+          "v": "绝对禁忌为甲亢未治疗者；高危含既往中重度反应者、不稳定性哮喘、糖尿病肾病、肾功能不全等12类",
+          "quote": "既往使用碘对比剂出现中、重度不良反应者；②不稳定性哮喘者；",
+          "src": "R07",
+          "cat": "检查前准备"
+        }
+      ]
+    },
+    {
+      "id": "RF_FragileVein",
+      "name": "静脉条件差",
+      "type": "RiskFactor",
+      "tags": [
+        "高危因素"
+      ],
+      "aliases": [
+        "fragile vein",
+        "外周静脉硬化",
+        "血管脆弱"
+      ],
+      "summary": "血管细、脆、硬化，容易发生外渗。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "系统评价",
+          "author": "姚金秀、杨丽娜、梅申聪、董芳辉",
+          "title": "放射科碘对比剂外渗影响因素的系统评价",
+          "journal": "上海护理",
+          "year": 2023,
+          "cite": "姚金秀、杨丽娜、梅申聪、董芳辉 / 放射科碘对比剂外渗影响因素的系统评价 / 上海护理 / 2023",
+          "grade": "汇总证据",
+          "ref": "R17"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "单次剂量上限",
+          "v": "肾病高危患者优先选非离子型等渗或次高渗对比剂；低风险患者单次用量控制在 300~400 mL 内，且对比剂剂量与肌酐清除率比值要小于 3.7",
+          "quote": "低风险患者单次用量控制在 300 - 400ml 内",
+          "src": "CG-07",
+          "cat": "对比剂选择"
+        },
+        {
+          "k": "ESUR风险因素",
+          "v": "技术因素含高压注射器、下肢与细小远端静脉、大剂量、高渗对比剂;患者因素含不能沟通、血管脆",
+          "quote": "Use of a power injector.",
+          "src": "R02",
+          "cat": "预防"
+        },
+        {
+          "k": "血管与通路选择",
+          "v": "应选粗、直且弹性好的外周静脉,不宜选肱静脉;应使用与输注速率匹配的耐高压型静脉留置针和耐高压型中心VAD,不用钢针",
+          "quote": "应选择粗、直且弹性好的外周静脉，不宜选择肱静脉",
+          "src": "R09",
+          "cat": "预防"
+        },
+        {
+          "k": "穿刺部位与血管评级",
+          "v": "应选前臂和肘部粗直弹性好的外周静脉,不宜手背足背患侧肢体,不在同一静脉反复穿刺;浅静脉血管评级Ⅱ~Ⅲ级为外渗高风险人群,须签高风险知情同意书",
+          "quote": "应选择前臂和肘部粗、直且弹性好的外周静脉进行 VAD 穿刺",
+          "src": "R10",
+          "cat": "预防"
+        },
+        {
+          "k": "穿刺部位与消毒范围",
+          "v": "宜选上肢静脉,避开静脉瓣、关节及有疤痕炎症硬结处;钢针穿刺消毒范围直径≥5 cm,外周静脉留置针≥8 cm",
+          "quote": "宜选择上肢静脉作为穿刺部位",
+          "src": "R08",
+          "cat": "预防"
+        }
+      ]
+    },
+    {
+      "id": "RF_HighPressureInjection",
+      "name": "高压注射",
+      "type": "RiskFactor",
+      "tags": [
+        "高危因素"
+      ],
+      "aliases": [
+        "high pressure injection",
+        "高压注射器推注"
+      ],
+      "summary": "用高压注射器快速推药，会明显增加外渗风险。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "系统评价",
+          "author": "姚金秀、杨丽娜、梅申聪、董芳辉",
+          "title": "放射科碘对比剂外渗影响因素的系统评价",
+          "journal": "上海护理",
+          "year": 2023,
+          "cite": "姚金秀、杨丽娜、梅申聪、董芳辉 / 放射科碘对比剂外渗影响因素的系统评价 / 上海护理 / 2023",
+          "grade": "汇总证据",
+          "ref": "R17"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "对比剂预热与注射速度",
+          "v": "使用前可预热至人体温度 37 ℃ 以降低黏度、减少注射阻力；注射速度不宜过猛过快",
+          "quote": "可在使用前将对比剂预热至人体温度（37 ℃）",
+          "src": "CG-04",
+          "cat": "操作处置"
+        },
+        {
+          "k": "针号与流速对应",
+          "v": "22G可耐受5 mL/s；流速≥3 mL/s宜用20G及以上；手/腕穿刺须降至1–2 mL/s",
+          "quote": "Although 22-gauge catheters may be able to tolerate flow rates up to 5 ml/sec, a 20-gauge or larger catheter is preferable for flow rates of 3 ml/sec or greater.",
+          "src": "R01",
+          "cat": "对比剂与流程"
+        },
+        {
+          "k": "ESUR风险因素",
+          "v": "技术因素含高压注射器、下肢与细小远端静脉、大剂量、高渗对比剂;患者因素含不能沟通、血管脆",
+          "quote": "Use of a power injector.",
+          "src": "R02",
+          "cat": "预防"
+        },
+        {
+          "k": "造影剂高压注射限制",
+          "v": "PICC、CVC、输液港均不应使用高压注射泵注射造影剂(耐高压导管除外);中心静脉通路须按说明书速度限制并影像确认尖端位置",
+          "quote": "不应用于高压注射泵注射造影剂（耐高压导管除外）",
+          "src": "R08",
+          "cat": "预防"
+        }
+      ]
+    },
+    {
+      "id": "RF_NoSalineFlush",
+      "name": "未做生理盐水试推",
+      "type": "RiskFactor",
+      "tags": [
+        "高危因素"
+      ],
+      "aliases": [
+        "no saline flush check",
+        "未试推生理盐水"
+      ],
+      "summary": "推药之前不先试推生理盐水，就难发现血管通不通。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "ESUR官网预防要点",
+          "v": "使用与流量匹配型号的留置针、置入合适血管,推注前生理盐水试注,选用非离子碘对比剂",
+          "quote": "appropriate-sized plastic cannula",
+          "src": "R02",
+          "cat": "预防"
+        },
+        {
+          "k": "ESUR风险因素",
+          "v": "技术因素含高压注射器、下肢与细小远端静脉、大剂量、高渗对比剂;患者因素含不能沟通、血管脆",
+          "quote": "Use of a power injector.",
+          "src": "R02",
+          "cat": "预防"
+        },
+        {
+          "k": "血管与通路选择",
+          "v": "应选粗、直且弹性好的外周静脉,不宜选肱静脉;应使用与输注速率匹配的耐高压型静脉留置针和耐高压型中心VAD,不用钢针",
+          "quote": "应选择粗、直且弹性好的外周静脉，不宜选择肱静脉",
+          "src": "R09",
+          "cat": "预防"
+        },
+        {
+          "k": "观察回血",
+          "v": "输入刺激性、腐蚀性药物过程中应注意观察回血情况,确保导管在静脉管腔内",
+          "quote": "输入刺激性、腐蚀性药物过程中，应注意观察回血情况，确保导管在静脉管腔内",
+          "src": "R08",
+          "cat": "识别"
+        }
+      ]
+    },
+    {
+      "id": "PM_AdrenalineIM",
+      "name": "肌内注射肾上腺素",
+      "type": "PharmacologicalManagement",
+      "tags": [
+        "药物治疗"
+      ],
+      "aliases": [
+        "intramuscular adrenaline",
+        "IM adrenaline",
+        "肾上腺素肌注"
+      ],
+      "summary": "抢救过敏性休克的第一线用药，打在大腿外侧中部。",
+      "attrs": [
+        {
+          "k": "给药部位",
+          "v": "大腿外侧中部肌内注射"
+        },
+        {
+          "k": "重复给药",
+          "v": "必要时每 5～15 分钟重复"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        },
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "肾上腺素肌注",
+          "v": "肾上腺素 1:1000（1 mg/mL）0.01 mg/kg 肌注，单次最大 0.5 mg（>50 kg），重症可重复给药",
+          "quote": "An intramuscular injection of 0.01 mg/kg of a 1:1000 concentration (1 mg/mL) of epinephrine should be administered, with a maximum single dose of 0.5 mg",
+          "src": "R12",
+          "cat": "首选用药"
+        },
+        {
+          "k": "注射部位",
+          "v": "注射于大腿外侧中部股外侧肌（vastus lateralis），以获得最佳吸收；罕见迁延性过敏可用1:10000 静脉泵入",
+          "quote": "Epinephrine should be administered into the vastus lateralis in the anterolateral thigh",
+          "src": "R12",
+          "cat": "首选用药"
+        },
+        {
+          "k": "体位与补液",
+          "v": "出现低血压者立即液体复苏，体位改仰卧位或头低脚高位（Trendelenburg）；有呼吸症状者给氧",
+          "quote": "Fluid resuscitation should commence immediately in patients presenting with hypotension, and patient positioning should be changed to supine or Trendelenburg",
+          "src": "R12",
+          "cat": "体位与液体复苏"
+        },
+        {
+          "k": "不等诊断即用药",
+          "v": "尚未满足诊断标准的全身超敏反应也须给肾上腺素；且不得以是否用药、用药反应反推诊断",
+          "quote": "meeting anaphylaxis diagnostic criteria is not requisite before epinephrine use in treating a systemic hypersensitivity reaction",
+          "src": "R16",
+          "cat": "识别要点"
+        },
+        {
+          "k": "肌注剂量",
+          "v": "肾上腺素 1:1000（1 mg/mL）0.01 mg/kg 肌注；成人单次最大 0.5 mg、学龄前儿童 0.3 mg，该剂量毒性可忽略",
+          "quote": "0.01 mg/kg of a 1:1000 [1 mg/mL] solution to a maximum of 0.5 mg in adults and 0.3 mg in prepubertal children",
+          "src": "R16",
+          "cat": "首选用药"
+        },
+        {
+          "k": "常规剂量上限",
+          "v": "标准做法为 0.01 mg/kg，儿童青少年最大 0.3 mg、成人最大 0.5 mg；无症状时预防性给药不推荐",
+          "quote": "The current standard practice is to treat anaphylaxis with a dosage of epinephrine of 0.01 mg/kg, up to a maximum of 0.3 mg for children and teenagers and 0.5 mg for adults",
+          "src": "R16",
+          "cat": "首选用药"
+        },
+        {
+          "k": "补液与吸氧",
+          "v": "静脉补液与吸氧等支持治疗同样关键，即使尚未出现低血压也应给",
+          "quote": "intravenous fluids and supplemental oxygen, may play an important role in the treatment of anaphylaxis, even before the development of hypotension",
+          "src": "R16",
+          "cat": "首选用药"
+        },
+        {
+          "k": "严重反应一线用药",
+          "v": "1∶1000 肾上腺素（1 mg/ml）肌肉注射（大腿外侧中段为优选肌注部位），青少年及成人 0.3~0.5 ml/次，严重者需重复给药",
+          "quote": "推荐给予 1∶1000 肾上腺素（1 mg/ml）肌肉注射（大腿外侧中段为优选肌注部位），青少年及成人 0.3~0.5 ml/次",
+          "src": "CG-01",
+          "cat": "处理"
+        },
+        {
+          "k": "儿童肾上腺素剂量",
+          "v": "12 岁及以下按体重 1∶1000 肾上腺素 0.01 mg/kg，最大剂量 0.3 ml",
+          "quote": "12 岁及以下儿童的给药剂量按体重计算，1∶1000 肾上腺素 0.01 mg/kg，最大剂量 0.3 ml",
+          "src": "CG-01",
+          "cat": "处理"
+        },
+        {
+          "k": "重度过敏反应一线用药",
+          "v": "大多数重度过敏反应都需要肾上腺素治疗；参与心血管介入诊治的医护人员需具备快速识别能力，导管室内配备相应急救药物及设备",
+          "quote": "大多数重度过敏反应都需要肾上腺素治疗",
+          "src": "CG-04",
+          "cat": "处理"
+        }
+      ]
+    },
+    {
+      "id": "PM_Corticosteroid",
+      "name": "糖皮质激素",
+      "type": "PharmacologicalManagement",
+      "tags": [
+        "药物治疗"
+      ],
+      "aliases": [
+        "corticosteroid",
+        "激素治疗",
+        "地塞米松"
+      ],
+      "summary": "配合抗组胺药控制过敏反应的辅助用药。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "二线用药",
+          "v": "糖皮质激素不用于急性过敏反应治疗（起效慢）；H1 抗组胺药只处理皮肤表现，不得作为唯一治疗",
+          "quote": "Glucocorticoids have no role in treating acute anaphylaxis given the slow onset of action",
+          "src": "R12",
+          "cat": "首选用药"
+        }
+      ]
+    },
+    {
+      "id": "PM_Antihistamine",
+      "name": "抗组胺药",
+      "type": "PharmacologicalManagement",
+      "tags": [
+        "药物治疗"
+      ],
+      "aliases": [
+        "antihistamine",
+        "苯海拉明",
+        "异丙嗪"
+      ],
+      "summary": "止痒、减轻风团样皮损的常用药。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "处理原则",
+          "v": "轻度用二代抗组胺药；较重者用肌注肾上腺素加心肺支持；IgE 与非 IgE 机制处理方式相同",
+          "quote": "intramuscular epinephrine and cardiorespiratory support for more severe reactions",
+          "src": "R14",
+          "cat": "首选用药"
+        }
+      ]
+    },
+    {
+      "id": "PM_MagnesiumSulfate",
+      "name": "50%硫酸镁湿敷",
+      "type": "PharmacologicalManagement",
+      "tags": [
+        "药物治疗"
+      ],
+      "aliases": [
+        "magnesium sulfate wet compress",
+        "硫酸镁湿敷"
+      ],
+      "summary": "外渗后局部湿敷用的药，可以减轻肿胀和疼痛。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "中重度处理流程",
+          "v": "抬高患肢，早期50%硫酸镁冷敷、24 h后改热敷；严重者口服地塞米松5 mg/次，3次/d，连用3 d",
+          "quote": "早期使用50％硫酸镁保湿冷敷，24 h后改硫酸镁保湿热敷",
+          "src": "R07",
+          "cat": "外渗早期识别"
+        },
+        {
+          "k": "中重度处理",
+          "v": "中重度:患肢抬高、冰敷冷湿敷,50%硫酸镁、黏多糖软膏、0.05%地塞米松局部冷湿敷,可用如意金黄散外敷(B级)",
+          "quote": "使用50%的硫酸镁、黏多糖软膏、0.05%的地塞米松局部冷湿敷",
+          "src": "R04",
+          "cat": "局部处理"
+        },
+        {
+          "k": "药物外敷种类",
+          "v": "外渗后24 h内遵医嘱药物外敷:磺胺嘧啶银冷霜、多磺酸黏多糖软膏、0.05%地塞米松、2%利多卡因、中成药如意金黄散/膏",
+          "quote": "如磺胺嘧啶银冷霜、多磺酸黏多糖软膏、0.05％地塞米松、2％利多卡因",
+          "src": "R10",
+          "cat": "局部处理"
+        }
+      ]
+    },
+    {
+      "id": "PM_DexamethasoneWetCompress",
+      "name": "0.05%地塞米松湿敷",
+      "type": "PharmacologicalManagement",
+      "tags": [
+        "药物治疗"
+      ],
+      "aliases": [
+        "dexamethasone wet compress",
+        "地塞米松湿敷"
+      ],
+      "summary": "外渗后局部湿敷的另一种选择。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "中重度处理流程",
+          "v": "抬高患肢，早期50%硫酸镁冷敷、24 h后改热敷；严重者口服地塞米松5 mg/次，3次/d，连用3 d",
+          "quote": "早期使用50％硫酸镁保湿冷敷，24 h后改硫酸镁保湿热敷",
+          "src": "R07",
+          "cat": "外渗早期识别"
+        },
+        {
+          "k": "中重度处理",
+          "v": "中重度:患肢抬高、冰敷冷湿敷,50%硫酸镁、黏多糖软膏、0.05%地塞米松局部冷湿敷,可用如意金黄散外敷(B级)",
+          "quote": "使用50%的硫酸镁、黏多糖软膏、0.05%的地塞米松局部冷湿敷",
+          "src": "R04",
+          "cat": "局部处理"
+        },
+        {
+          "k": "药物外敷种类",
+          "v": "外渗后24 h内遵医嘱药物外敷:磺胺嘧啶银冷霜、多磺酸黏多糖软膏、0.05%地塞米松、2%利多卡因、中成药如意金黄散/膏",
+          "quote": "如磺胺嘧啶银冷霜、多磺酸黏多糖软膏、0.05％地塞米松、2％利多卡因",
+          "src": "R10",
+          "cat": "局部处理"
+        }
+      ]
+    },
+    {
+      "id": "NPM_StopInjection",
+      "name": "立即停止注射",
+      "type": "NonPharmacologicalManagement",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "stop injection",
+        "停止输注",
+        "停止推注"
+      ],
+      "summary": "怀疑外渗时，第一时间停下推药。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "外渗即时处置",
+          "v": "立即停止注射，避免加压冲洗导管，及时拔针并按规范处置；尚无明确证据表明回抽的有效性",
+          "quote": "静脉外渗发生后，应立即停止注射，避免加压冲洗导管，及时拔针",
+          "src": "R04",
+          "cat": "操作处置"
+        },
+        {
+          "k": "外渗即时处置（2021 版）",
+          "v": "立即停止注射，及时拔针，迅速按规范进行处理",
+          "quote": "含碘对比剂外渗后，立即停止注射，及时拔针，迅速按规范进行处理",
+          "src": "CG-08",
+          "cat": "操作处置"
+        },
+        {
+          "k": "首步停止推注",
+          "v": "外渗后立即停止注射与扫描,并按轻、中、重三级分类",
+          "quote": "Stop injection and scan",
+          "src": "R02",
+          "cat": "处置顺序"
+        },
+        {
+          "k": "立即停止拔针",
+          "v": "外渗后立即停止注射,避免加压冲洗导管,及时拔针并按规范处置(A级,修订)",
+          "quote": "应立即停止注射，避免加压冲洗导管，及时拔针",
+          "src": "R04",
+          "cat": "处置顺序"
+        },
+        {
+          "k": "首步停输评估",
+          "v": "发生外渗后立即停止输注,并评估外渗肿胀范围及程度",
+          "quote": "发生外渗后，应立即停止输注和评估外渗肿胀范围及程度",
+          "src": "R09",
+          "cat": "处置顺序"
+        },
+        {
+          "k": "外渗首要处置",
+          "v": "应立即停止在原部位输液,抬高患肢,及时通知医师,给予对症处理",
+          "quote": "应立即停止在原部位输液，抬高患肢，及时通知医师，给予对症处理",
+          "src": "R08",
+          "cat": "处置顺序"
+        }
+      ]
+    },
+    {
+      "id": "NPM_KeepCatheter",
+      "name": "保留静脉留置针",
+      "type": "NonPharmacologicalManagement",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "keep catheter",
+        "保留留置针",
+        "回抽外渗药液"
+      ],
+      "summary": "先不拔针，尽量回抽漏出来的药液，再按规范处理。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "回抽与拔针",
+          "v": "留置针在位时回抽对比剂以减少外渗量与压力;不可逆时按规范拔针",
+          "quote": "Aspiration of contrast whilst cannula",
+          "src": "R02",
+          "cat": "处置顺序"
+        },
+        {
+          "k": "回抽证据不足",
+          "v": "尚无明确证据表明含碘对比剂静脉外渗时回抽的有效性(A级,新增)",
+          "quote": "尚无明确证据表明，含碘对比剂静脉外渗时回抽的有效性",
+          "src": "R04",
+          "cat": "处置顺序"
+        }
+      ]
+    },
+    {
+      "id": "NPM_LimbElevation",
+      "name": "患肢抬高",
+      "type": "NonPharmacologicalManagement",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "limb elevation",
+        "抬高患肢",
+        "患肢高于心脏水平"
+      ],
+      "summary": "把患肢抬到比心脏高的位置，帮助消肿。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "中重度处理流程",
+          "v": "抬高患肢，早期50%硫酸镁冷敷、24 h后改热敷；严重者口服地塞米松5 mg/次，3次/d，连用3 d",
+          "quote": "早期使用50％硫酸镁保湿冷敷，24 h后改硫酸镁保湿热敷",
+          "src": "R07",
+          "cat": "外渗早期识别"
+        },
+        {
+          "k": "轻度处理路径",
+          "v": "轻度者抬高患肢、冰袋、每2~4小时监测;好转可离院,无好转需外科意见",
+          "quote": "monitor patient 2–4 hourly",
+          "src": "R02",
+          "cat": "处置顺序"
+        },
+        {
+          "k": "ESUR保守处置",
+          "v": "多数外渗保守处理即可:抬高患肢、冰敷、密切观察;严重损伤请外科会诊",
+          "quote": "Conservative management is adequate",
+          "src": "R02",
+          "cat": "局部处理"
+        },
+        {
+          "k": "轻度处理",
+          "v": "轻度外渗:患肢抬高、局部冰敷或冷湿敷,并监测受检者情况(A级,强推荐)",
+          "quote": "患肢抬高、局部冰敷或冷湿敷，并监测受检者的情况",
+          "src": "R04",
+          "cat": "局部处理"
+        },
+        {
+          "k": "中重度处理",
+          "v": "中重度:患肢抬高、冰敷冷湿敷,50%硫酸镁、黏多糖软膏、0.05%地塞米松局部冷湿敷,可用如意金黄散外敷(B级)",
+          "quote": "使用50%的硫酸镁、黏多糖软膏、0.05%的地塞米松局部冷湿敷",
+          "src": "R04",
+          "cat": "局部处理"
+        },
+        {
+          "k": "筋膜室综合征禁忌",
+          "v": "疑有骨筋膜室综合征者严禁抬高患肢以免加重缺血,应立即请骨科、手外科等相关科室会诊(A级,修订)",
+          "quote": "严禁抬高患肢，以免加重缺血",
+          "src": "R04",
+          "cat": "并发症"
+        },
+        {
+          "k": "1级护理",
+          "v": "1级:观察;对个别疼痛明显者局部冷湿敷或遵医嘱口服止痛药",
+          "quote": "局部给予冷湿敷或遵医嘱给予口服止痛药",
+          "src": "R09",
+          "cat": "局部处理"
+        },
+        {
+          "k": "2级护理",
+          "v": "2级:在1级基础上抬高患肢,嘱外渗肢体多活动,宜使用药物冷湿敷",
+          "quote": "在 1 级外渗护理基础上，抬高患肢，嘱外渗肢体多活动，宜使用药物冷湿敷",
+          "src": "R09",
+          "cat": "局部处理"
+        },
+        {
+          "k": "抬高冰敷与握拳运动",
+          "v": "抬高患肢至高于心脏水平,局部冰敷或冷湿敷,24 h内不应热敷;并做抓握拳运动:用力握拳10 s后松开,间歇10 s再握,25次/组,早中晚各1组",
+          "quote": "指导患者抬高患肢至高于心脏水平，局部给予冰敷或冷湿敷，24 h内不应热敷",
+          "src": "R10",
+          "cat": "局部处理"
+        },
+        {
+          "k": "居家禁忌与按压",
+          "v": "24 h内严禁热敷,抬高肿胀肢体至心脏水平,多做松拳握拳运动,适当多饮水促进血液循环;指导按压穿刺部位至少10 min",
+          "quote": "24 h 内严禁热敷，抬高肿胀肢体至心脏水平",
+          "src": "R10",
+          "cat": "居家护理与宣教"
+        },
+        {
+          "k": "外渗首要处置",
+          "v": "应立即停止在原部位输液,抬高患肢,及时通知医师,给予对症处理",
+          "quote": "应立即停止在原部位输液，抬高患肢，及时通知医师，给予对症处理",
+          "src": "R08",
+          "cat": "处置顺序"
+        }
+      ]
+    },
+    {
+      "id": "NPM_ColdCompress",
+      "name": "局部冷敷",
+      "type": "NonPharmacologicalManagement",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "cold compress",
+        "冷敷"
+      ],
+      "summary": "外渗早期冷敷能减轻肿胀和疼痛。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "轻度处理路径",
+          "v": "轻度者抬高患肢、冰袋、每2~4小时监测;好转可离院,无好转需外科意见",
+          "quote": "monitor patient 2–4 hourly",
+          "src": "R02",
+          "cat": "处置顺序"
+        },
+        {
+          "k": "冷敷参数",
+          "v": "冷敷15~60分钟、每日3次,持续3~4天,经血管收缩起抗炎作用",
+          "quote": "15 to 60 minutes three times per day",
+          "src": "R02",
+          "cat": "局部处理"
+        },
+        {
+          "k": "ESUR保守处置",
+          "v": "多数外渗保守处理即可:抬高患肢、冰敷、密切观察;严重损伤请外科会诊",
+          "quote": "Conservative management is adequate",
+          "src": "R02",
+          "cat": "局部处理"
+        },
+        {
+          "k": "轻度处理",
+          "v": "轻度外渗:患肢抬高、局部冰敷或冷湿敷,并监测受检者情况(A级,强推荐)",
+          "quote": "患肢抬高、局部冰敷或冷湿敷，并监测受检者的情况",
+          "src": "R04",
+          "cat": "局部处理"
+        },
+        {
+          "k": "1级护理",
+          "v": "1级:观察;对个别疼痛明显者局部冷湿敷或遵医嘱口服止痛药",
+          "quote": "局部给予冷湿敷或遵医嘱给予口服止痛药",
+          "src": "R09",
+          "cat": "局部处理"
+        },
+        {
+          "k": "2级护理",
+          "v": "2级:在1级基础上抬高患肢,嘱外渗肢体多活动,宜使用药物冷湿敷",
+          "quote": "在 1 级外渗护理基础上，抬高患肢，嘱外渗肢体多活动，宜使用药物冷湿敷",
+          "src": "R09",
+          "cat": "局部处理"
+        },
+        {
+          "k": "抬高冰敷与握拳运动",
+          "v": "抬高患肢至高于心脏水平,局部冰敷或冷湿敷,24 h内不应热敷;并做抓握拳运动:用力握拳10 s后松开,间歇10 s再握,25次/组,早中晚各1组",
+          "quote": "指导患者抬高患肢至高于心脏水平，局部给予冰敷或冷湿敷，24 h内不应热敷",
+          "src": "R10",
+          "cat": "局部处理"
+        },
+        {
+          "k": "居家禁忌与按压",
+          "v": "24 h内严禁热敷,抬高肿胀肢体至心脏水平,多做松拳握拳运动,适当多饮水促进血液循环;指导按压穿刺部位至少10 min",
+          "quote": "24 h 内严禁热敷，抬高肿胀肢体至心脏水平",
+          "src": "R10",
+          "cat": "居家护理与宣教"
+        }
+      ]
+    },
+    {
+      "id": "NPM_CloseObservation",
+      "name": "密切观察",
+      "type": "NonPharmacologicalManagement",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "close observation",
+        "观察30分钟",
+        "严密观察"
+      ],
+      "summary": "处置或用药之后至少观察一段时间，确认安全再离开。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        },
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "观察时长与去向",
+          "v": "重度或需≥1 剂肾上腺素者观察延长至 6 小时或更长（含住院）；疑似过敏反应者转最近急诊科",
+          "quote": "it would be prudent to extend observation to up to 6 hours or longer (including hospital admission) for a patient with severe anaphylaxis",
+          "src": "R12",
+          "cat": "观察与出院"
+        },
+        {
+          "k": "注射中及注射后监测",
+          "v": "既往超敏反应史者与本次发生反应者，造影剂注射过程中及注射后均须监测",
+          "quote": "The patient should be monitored during and after the contrast media injection.",
+          "src": "R14",
+          "cat": "观察与出院"
+        },
+        {
+          "k": "轻反应观察与五项评估",
+          "v": "轻度过敏样反应至少观察20–30分钟；评估外观、说话与声音、呼吸质量、脉搏、血压五项",
+          "quote": "Any patient with a mild allergic-like reaction should be observed for a minimum of 20 to 30 minutes",
+          "src": "R01",
+          "cat": "输注与观察"
+        },
+        {
+          "k": "轻度反应：观察 30 分钟并多饮水",
+          "v": "轻度过敏样反应：严密观察 30 min（如有必要延长时间），监测生命体征，嘱患者多饮水，一般情况无需药物治疗",
+          "quote": "严密观察30 min（如有必要需延长时间），监测患者的生命体征，嘱患者多饮水，一般情况无需药物治疗。",
+          "src": "R07",
+          "cat": "不良反应谱"
+        }
+      ]
+    },
+    {
+      "id": "NPM_OralHydration",
+      "name": "口服补液",
+      "type": "NonPharmacologicalManagement",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "oral hydration",
+        "饮水",
+        "多喝水"
+      ],
+      "summary": "检查以后适量喝水，帮助肾脏把造影剂排出去。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "轻度反应：观察 30 分钟并多饮水",
+          "v": "轻度过敏样反应：严密观察 30 min（如有必要延长时间），监测生命体征，嘱患者多饮水，一般情况无需药物治疗",
+          "quote": "严密观察30 min（如有必要需延长时间），监测患者的生命体征，嘱患者多饮水，一般情况无需药物治疗。",
+          "src": "R07",
+          "cat": "不良反应谱"
+        },
+        {
+          "k": "留观期间多饮水（每小时不少于 100 mL）",
+          "v": "健康宣教明确要求：指导受检者多饮水（每小时不少于 100 mL）以利于对比剂的排出；可通过尿液颜色简单判断水化是否充分",
+          "quote": "指导受检者多饮水（每小时不少于100 mL）以利于对比剂的排出，可通过尿液颜色来简单判断水化是否充分，以预防对比剂肾病［25，32- 33］。",
+          "src": "R07",
+          "cat": "检查后护理"
+        },
+        {
+          "k": "水化时间窗与途径",
+          "v": "用前6–12 h至用后24 h水化；动脉内用药注射前静脉补液≥100 ml/h并持续24 h",
+          "quote": "建议在使用碘对比剂前6～12 h至使用后24 h内，对患者给予水化。",
+          "src": "R03",
+          "cat": "检查前准备"
+        }
+      ]
+    },
+    {
+      "id": "NPM_ContrastPreparation",
+      "name": "对比剂预处理",
+      "type": "NonPharmacologicalManagement",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "contrast preparation",
+        "对比剂加温",
+        "预热对比剂"
+      ],
+      "summary": "把对比剂加温到 37℃ 左右再用。ⓘ **来源口径不一致**：国内共识（中华放射学杂志 2013 指南 / 影像科输注安全专家共识 2018 / 中华护理杂志 2026 实践指南 / 江西 DB36/T 2026 / 广西 DB45/T 2024）均推荐加温至 37℃；ACR 手册 2024 版按情形列为「建议」（>5 mL/s 快速推注、黏稠对比剂等四类可能有益），2026 版则称证据不足、不推荐常规加温 —— 按院内流程执行。另：对高黏度对比剂可减少过敏/不适反应；现有 Meta 分析未证实能减少外渗。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        },
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Nawras M, Alyousif Z, Beran A, Elsamaloty H",
+          "title": "碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析",
+          "journal": "临床影像学",
+          "year": 2023,
+          "cite": "Nawras M, Alyousif Z, Beran A, Elsamaloty H / 碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析 / 临床影像学 / 2023 · DOI 10.1016/j.clinimag.2023.05.006 · PMID 37216743"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "加温的适用情形",
+          "v": "加温至 37℃：>5 mL/s 高压注射、黏稠对比剂（如碘帕醇 370）、≤5 French 小口径导管动脉注射、时相与峰值强化关键时，四类**可能有益**；≤5 mL/s 低流率、低黏度对比剂（如碘帕醇 300）、≥6 French 动脉注射、常规门静脉期胸腹盆 CT 四类**可能不需要或无益**。",
+          "quote": "Based on the available literature, the validity of extrinsic warmers seems predicated on the intended outcome.",
+          "src": "R01",
+          "cat": "对比剂与流程"
+        },
+        {
+          "k": "加温有益的情形",
+          "v": "2024 版按情形列为「建议」：>5 mL/s 高压注射、黏稠碘帕醇 370 等黏稠对比剂、≤5 French 小口径导管动脉注射、时相与峰值强化关键的动脉检查。",
+          "quote": "Extrinsic warming of iodinated contrast material to human body temperature (37C) may be helpful",
+          "src": "R01",
+          "cat": "对比剂与流程"
+        },
+        {
+          "k": "加温不需要的情形",
+          "v": "≤5 mL/s 低流率推注、碘帕醇 300 等低黏度对比剂、≥6 French 大口径导管动脉注射、常规门静脉期胸腹盆 CT —— 这四类加温可能不需要或无益。",
+          "quote": "Extrinsic warming of iodinated contrast material may not be needed or beneficial",
+          "src": "R01",
+          "cat": "对比剂与流程"
+        },
+        {
+          "k": "加温不常规推荐（2026 版）",
+          "v": "2026 版把加温改为 ACR Appropriateness Criteria 结构，判定「缺乏支持证据、不推荐常规加温」，并另行否定为舒适度/图像质量而加温 —— **与国内五份共识的推荐口径相反**",
+          "quote": "There is a lack of supportive evidence to recommend the practice of routine warming",
+          "src": "R01-2026",
+          "cat": "对比剂与流程"
+        },
+        {
+          "k": "分层预处理",
+          "v": "轻度史不预处理；中度史可考虑；重度史先评估替代检查，无替代者用预处理+换剂并在医院内做（须有快速反应团队）",
+          "quote": "importantly, no corticosteroid premedication is generally recommended for patients with a prior mild acute hypersensitivity reaction",
+          "src": "R12",
+          "cat": "预防"
+        },
+        {
+          "k": "不建议预处理",
+          "v": "单纯海鲜/碘过敏（含碘伏）、单纯迟发反应史、单纯哮喘或药物过敏史、单纯生理性反应均不推荐预处理",
+          "quote": "Premedication is not recommended for only an isolated history of shellfish or iodine allergy",
+          "src": "R12",
+          "cat": "预防"
+        },
+        {
+          "k": "激素预处理不推荐",
+          "v": "不推荐常规激素预处理：证据质量低且基于旧的高渗造影剂；NNT 69（任何严重度）、569（重度）",
+          "quote": "premedication with steroids is not supported by high quality research",
+          "src": "R14",
+          "cat": "预防"
+        },
+        {
+          "k": "二代抗组胺时机",
+          "v": "轻度超敏史者用二代口服抗组胺药预处理，至少在造影剂输注前 1 小时给药；一代抗组胺药不推荐",
+          "quote": "oral second-generation antihistamines should be given at least 1 hour prior to initiation of contrast",
+          "src": "R14",
+          "cat": "预防"
+        },
+        {
+          "k": "按既往反应定策略",
+          "v": "既往轻度→直接更换对比剂可不预防用药；中度→更换对比剂可考虑联合预防用药；重度→更换对比剂联合预防用药并做好急救准备",
+          "quote": "既往超敏反应为重度，更换 ICM 联合预防用药",
+          "src": "CG-01",
+          "cat": "处理"
+        },
+        {
+          "k": "预防用药（择期口服）",
+          "v": "应用对比剂前 13 h、7 h、1 h 口服泼尼松 50 mg（或甲基泼尼松龙 40 mg），前 1 h 苯海拉明 1 mg/kg 口服或肌注（或西替利嗪 10 mg）",
+          "quote": "应用 ICM 前 13 h、7 h、1 h 泼尼松 50 mg 口服",
+          "src": "CG-01",
+          "cat": "处理"
+        },
+        {
+          "k": "注射前准备（加温与回抽）",
+          "v": "静脉注射前置于恒温箱加热至 37.0 ℃（降低黏稠度、减少注射阻力）；注射前应抽回血，注射前后以高压注射同等速度推注 0.9% 氯化钠注射液",
+          "quote": "静脉注射含碘对比剂前，建议将其置于恒温箱中，加热至 37.0 ℃",
+          "src": "R04",
+          "cat": "检查前评估"
+        },
+        {
+          "k": "预防用药（择期口服）",
+          "v": "给药前 13、7、1 h 分别口服泼尼松 50 mg；或以甲泼尼松为基础给药前 12 h、2 h 各口服 32 mg",
+          "quote": "ICM 给药前 13、7、1 h 分别口服泼尼松 50 mg",
+          "src": "CG-03",
+          "cat": "检查前评估"
+        },
+        {
+          "k": "对比剂预热与注射速度",
+          "v": "使用前可预热至人体温度 37 ℃ 以降低黏度、减少注射阻力；注射速度不宜过猛过快",
+          "quote": "可在使用前将对比剂预热至人体温度（37 ℃）",
+          "src": "CG-04",
+          "cat": "操作处置"
+        },
+        {
+          "k": "配制与加温",
+          "v": "从原装瓶抽取，开启后 4 小时内用完；使用前建议加热到 37 ℃，保温设备需专人管理并记录日志",
+          "quote": "对比剂需从原装瓶抽取，开启后 4 小时内用完",
+          "src": "CG-07",
+          "cat": "对比剂选择"
+        },
+        {
+          "k": "对比剂选择与加温",
+          "v": "用非离子型次高渗或等渗对比剂，不推荐离子型高渗；用前加温至37℃并置恒温箱",
+          "quote": "使用非离子型次高渗或等渗碘对比剂，不推荐使用离子型高渗对比剂。",
+          "src": "R07",
+          "cat": "对比剂与流程"
+        },
+        {
+          "k": "水化时间窗与途径",
+          "v": "用前6–12 h至用后24 h水化；动脉内用药注射前静脉补液≥100 ml/h并持续24 h",
+          "quote": "建议在使用碘对比剂前6～12 h至使用后24 h内，对患者给予水化。",
+          "src": "R03",
+          "cat": "检查前准备"
+        },
+        {
+          "k": "加温至37℃",
+          "v": "对比剂使用前加温到37℃，并建立抢救应急通道",
+          "quote": "对比剂使用前加温到37℃",
+          "src": "R03",
+          "cat": "对比剂与流程"
+        },
+        {
+          "k": "对比剂预热37度",
+          "v": "注射前将对比剂置于恒温箱加热至37.0℃,降低黏稠度、减少注射阻力(A级,强推荐)",
+          "quote": "加热至37.0 ℃，以降低黏稠度、减少注射阻力",
+          "src": "R04",
+          "cat": "预防"
+        },
+        {
+          "k": "等速试推与预热",
+          "v": "输注前确认血管通路通畅,以0.9%氯化钠注射液按高压输注同等速率试推注20~30 mL;宜将对比剂预热至37 ℃",
+          "quote": "以高压输注同等速率试推注20 mL～30 mL",
+          "src": "R09",
+          "cat": "预防"
+        },
+        {
+          "k": "通路工具与预热试推",
+          "v": "按年龄、体重指数、检查部位与碘对比剂浓度选用与注射速率匹配的耐高压型VAD,不应使用钢针、普通型VAD;碘对比剂宜提前预热至37 ℃;先用0.9%氯化钠按设定流速高压试推注",
+          "quote": "不应使用钢针、普通型 VAD 进行注射",
+          "src": "R10",
+          "cat": "预防"
+        }
+      ]
+    },
+    {
+      "id": "NPM_VascularVisualization",
+      "name": "血管可视化",
+      "type": "NonPharmacologicalManagement",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "vascular visualization",
+        "血管可视化技术",
+        "超声引导穿刺"
+      ],
+      "summary": "看不清血管时，用超声等设备辅助定位再扎针。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "标准",
+          "author": "国家卫生健康委员会",
+          "title": "WS/T 433—2023 静脉治疗护理技术操作标准",
+          "journal": "国家卫生健康委员会（卫生行业标准）",
+          "year": 2023,
+          "cite": "国家卫生健康委员会 / WS/T 433—2023 静脉治疗护理技术操作标准 / 国家卫生健康委员会（卫生行业标准） / 2023",
+          "grade": "标准与规范",
+          "ref": "R08"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "血管可视化与导管选择",
+          "v": "操作中可使用血管可视化技术;评估穿刺部位皮肤情况和静脉条件后,满足治疗需要时宜选管径细、管腔少的导管",
+          "quote": "操作中可使用血管可视化技术",
+          "src": "R08",
+          "cat": "预防"
+        }
+      ]
+    },
+    {
+      "id": "NPM_PsychologicalSupport",
+      "name": "心理疏导",
+      "type": "NonPharmacologicalManagement",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "psychological support",
+        "心理护理",
+        "安抚患者"
+      ],
+      "summary": "检查前后安抚情绪，减少紧张带来的不适。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "书籍",
+          "author": "秦月兰、郑淑梅、刘雪莲",
+          "title": "影像护理学",
+          "journal": "人民卫生出版社",
+          "year": 2020,
+          "cite": "秦月兰、郑淑梅、刘雪莲 / 影像护理学 / 人民卫生出版社 / 2020",
+          "grade": "教材",
+          "ref": "R20"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "知情同意与心理安抚",
+          "v": "告知适应证、禁忌证、可能不良反应与注意事项，解答疑问缓解焦虑并签知情同意书",
+          "quote": "告知对比剂使用的适应证、禁忌证、可能发生的不良反应和注意事项",
+          "src": "R07",
+          "cat": "护理教学与沟通"
+        }
+      ]
+    },
+    {
+      "id": "MP_NursingMeasures",
+      "name": "护理措施",
+      "type": "ManagementPrinciple",
+      "tags": [
+        "处置原则"
+      ],
+      "aliases": [
+        "nursing measures",
+        "护理处置措施"
+      ],
+      "summary": "两类风险（碘对比剂过敏反应、碘对比剂外渗）的护理处置总纲。下分两条原则：外渗处置原则（外渗之后的处理顺序与操作边界）、不良反应分级处置原则（按轻重分级决定用药、监护与是否转诊）。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        },
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "外渗即时处置",
+          "v": "立即停止注射，避免加压冲洗导管，及时拔针并按规范处置；尚无明确证据表明回抽的有效性",
+          "quote": "静脉外渗发生后，应立即停止注射，避免加压冲洗导管，及时拔针",
+          "src": "R04",
+          "cat": "操作处置"
+        },
+        {
+          "k": "外渗记录",
+          "v": "用皮肤标记笔标记外渗边界并拍照，完整记录发生时间、部位、估计外渗量、评估结果、即时处置措施，并持续监测患肢",
+          "quote": "应使用皮肤标记笔标记静脉外渗的边界并拍照",
+          "src": "R04",
+          "cat": "操作处置"
+        },
+        {
+          "k": "护理质量敏感指标",
+          "v": "把含碘对比剂静脉外渗发生率作为放射科护理质量敏感指标，纳入护理部质量考核；建立外渗管理制度与不良事件上报",
+          "quote": "将含碘对比剂静脉外渗发生率作为放射科护理质量敏感指标",
+          "src": "R04",
+          "cat": "质量管理"
+        },
+        {
+          "k": "轻度外渗处理",
+          "v": "多数损伤轻微无须处理；对疼痛明显者抬高患肢、局部冰敷或冷湿敷并监测，如无改善需咨询临床医生用药",
+          "quote": "无须处理；对疼痛明显者，进行抬高患肢、局部冰敷或冷",
+          "src": "CG-03",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "中重度外渗处理",
+          "v": "①抬高患肢、局部冰敷或冷湿敷；②50% 硫酸镁、多磺酸黏多糖乳膏、0.05% 地塞米松局部冷湿敷；③密切监测并对症处理；④必要时咨询临床医生用药",
+          "quote": "敷；②以 50% 硫酸镁、多磺酸粘多糖乳膏、0.05% 地塞米",
+          "src": "CG-03",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "证据分级体系（2021 版）",
+          "v": "证据质量分高(A)/中(B)/低(C)/极低(D) 四级；40 条推荐意见经 12 名外部专家函询定稿",
+          "quote": "证据质量分为高（A）、中（B）、低（C）、极低（D）4 个等级",
+          "src": "CG-08",
+          "cat": "方法学"
+        },
+        {
+          "k": "防治核心",
+          "v": "含碘对比剂不良反应防治的核心是识别高危患者、避免过量使用对比剂以及个体化的水化治疗",
+          "quote": "含碘对比剂不良反应防治的核心是识别高危患者、避免过量使用对比剂以及个体化的水化治疗",
+          "src": "CG-04",
+          "cat": "结论"
+        },
+        {
+          "k": "适用人群",
+          "v": "适用于影像科医师、护士、技师及临床医师和护士",
+          "quote": "本共识适用于影像科医师、护士、技师及临床医师和护士。",
+          "src": "CG-06",
+          "cat": "适用范围"
+        }
+      ]
+    },
+    {
+      "id": "MP_NursingPrevention",
+      "name": "护理预防",
+      "type": "ManagementPrinciple",
+      "tags": [
+        "预防性护理"
+      ],
+      "aliases": [
+        "nursing prevention",
+        "预防性护理"
+      ],
+      "summary": "打药之前把风险挡掉的护理原则。下挂五条具体措施：过敏史询问、血管条件评估、外渗风险评估、血管可视化、对比剂预处理。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "预防用药（择期口服）",
+          "v": "应用对比剂前 13 h、7 h、1 h 口服泼尼松 50 mg（或甲基泼尼松龙 40 mg），前 1 h 苯海拉明 1 mg/kg 口服或肌注（或西替利嗪 10 mg）",
+          "quote": "应用 ICM 前 13 h、7 h、1 h 泼尼松 50 mg 口服",
+          "src": "CG-01",
+          "cat": "处理"
+        },
+        {
+          "k": "知情同意书签署",
+          "v": "CT 增强及使用含碘对比剂的介入操作前，须说明目的、禁忌证、可能的不良反应及注意事项，指导签署《含碘对比剂使用知情同意书》；无民事行为能力者由近亲属代签",
+          "quote": "并指导其签署《CT 增强检查患者知情同意书》或《含碘对比剂使用知情同意书》",
+          "src": "R04",
+          "cat": "检查前评估"
+        },
+        {
+          "k": "外渗高危人群",
+          "v": "婴幼儿、老年人、不能进行有效沟通及配合者、被穿刺血管情况不佳者",
+          "quote": "含碘对比剂静脉外渗的高危人群包括婴幼儿、老年人、不能进行有效沟通及配合者、被穿刺血管情况不佳者",
+          "src": "R04",
+          "cat": "检查前评估"
+        },
+        {
+          "k": "注射前准备（加温与回抽）",
+          "v": "静脉注射前置于恒温箱加热至 37.0 ℃（降低黏稠度、减少注射阻力）；注射前应抽回血，注射前后以高压注射同等速度推注 0.9% 氯化钠注射液",
+          "quote": "静脉注射含碘对比剂前，建议将其置于恒温箱中，加热至 37.0 ℃",
+          "src": "R04",
+          "cat": "检查前评估"
+        },
+        {
+          "k": "穿刺部位与器材选择",
+          "v": "注射部位推荐前臂、肘部静脉，尽量避免在手、腕、足和脚踝处穿刺；使用钢针或留置时间 >24 h 的静脉留置针会增加外渗风险",
+          "quote": "使用留置时间>24 h的静脉留置针注射含碘对比剂会增加静脉外渗的风险",
+          "src": "R04",
+          "cat": "检查前评估"
+        },
+        {
+          "k": "检查前评估步骤",
+          "v": "①了解过敏史、疾病史、用药史并评估禁忌证；②评估肾功能，明确能否使用对比剂；③综合评估合并用药、是否特殊人群及水化方案；④核对品种与剂量；⑤口头宣教",
+          "quote": "（2）评估患者肾功能，明确患者能否使用 ICM",
+          "src": "CG-03",
+          "cat": "检查前评估"
+        },
+        {
+          "k": "预防用药（择期口服）",
+          "v": "给药前 13、7、1 h 分别口服泼尼松 50 mg；或以甲泼尼松为基础给药前 12 h、2 h 各口服 32 mg",
+          "quote": "ICM 给药前 13、7、1 h 分别口服泼尼松 50 mg",
+          "src": "CG-03",
+          "cat": "检查前评估"
+        }
+      ]
+    },
+    {
+      "id": "MP_NursingIntervention",
+      "name": "护理干预",
+      "type": "ManagementPrinciple",
+      "tags": [
+        "应急干预"
+      ],
+      "aliases": [
+        "nursing intervention",
+        "干预性护理"
+      ],
+      "summary": "反应已经发生之后的现场护理干预原则。下挂密切观察（处置后确认安全再离开）；用药与监护按「不良反应分级处置原则」执行。上位的框架是早期预警 —— 在情况变坏之前先看出苗头、及时升级处理。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "处理原则",
+          "v": "轻度用二代抗组胺药；较重者用肌注肾上腺素加心肺支持；IgE 与非 IgE 机制处理方式相同",
+          "quote": "intramuscular epinephrine and cardiorespiratory support for more severe reactions",
+          "src": "R14",
+          "cat": "首选用药"
+        },
+        {
+          "k": "换剂为首选",
+          "v": "有 ICM/GBCA 超敏史者，换化学结构不同的造影剂是防突破反应最有效的单一措施（风险降 61%）",
+          "quote": "switching to a chemically different contrast agent is the single best protective measure",
+          "src": "R14",
+          "cat": "预防"
+        },
+        {
+          "k": "严重反应一线用药",
+          "v": "1∶1000 肾上腺素（1 mg/ml）肌肉注射（大腿外侧中段为优选肌注部位），青少年及成人 0.3~0.5 ml/次，严重者需重复给药",
+          "quote": "推荐给予 1∶1000 肾上腺素（1 mg/ml）肌肉注射（大腿外侧中段为优选肌注部位），青少年及成人 0.3~0.5 ml/次",
+          "src": "CG-01",
+          "cat": "处理"
+        },
+        {
+          "k": "急救流程 8 步",
+          "v": "停止给药 → 呼救启动院内急救流程 → 体位 → 肌注肾上腺素 → 吸氧 → 开放静脉通路 → 补液 → 监护及转运",
+          "quote": "严重过敏反应处理要点：停止给药、呼救启动院内急救流程、体位、肌注肾上腺素、吸氧、开放静脉通路、补液、监护及转运",
+          "src": "CG-01",
+          "cat": "处理"
+        },
+        {
+          "k": "按既往反应定策略",
+          "v": "既往轻度→直接更换对比剂可不预防用药；中度→更换对比剂可考虑联合预防用药；重度→更换对比剂联合预防用药并做好急救准备",
+          "quote": "既往超敏反应为重度，更换 ICM 联合预防用药",
+          "src": "CG-01",
+          "cat": "处理"
+        },
+        {
+          "k": "过敏警示与记录",
+          "v": "标准化病历记录（对比剂名称、给药途径、症状、生命体征、用药至症状的时间间隔、处理及结局）；电子病历设药物过敏警示；发放过敏警示卡并嘱携带",
+          "quote": "患者出院/检查结束后为患者发放过敏警示卡",
+          "src": "CG-01",
+          "cat": "长期管理"
+        },
+        {
+          "k": "基层转诊标准",
+          "v": "既往速发型超敏反应的中重度（ACR 分级）建议转诊至有经验的医疗机构；非速发型 SCAR 表现者严格避免应用对比剂",
+          "quote": "既往为速发型超敏反应的中重度反应（ACR 分级）建议转诊至有经验的医疗机构",
+          "src": "CG-01",
+          "cat": "长期管理"
+        }
+      ]
+    },
+    {
+      "id": "MP_ExtravasationPrinciple",
+      "name": "外渗处置原则",
+      "type": "ManagementPrinciple",
+      "tags": [
+        "外渗处置"
+      ],
+      "aliases": [
+        "extravasation management principle",
+        "外渗处理原则"
+      ],
+      "summary": "外渗之后的处理顺序与操作边界。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "中重度外渗处理",
+          "v": "患肢抬高 + 局部冰敷或冷湿敷；50% 硫酸镁、黏多糖软膏、0.05% 地塞米松局部冷湿敷；中成药制剂如意金黄散外敷；密切监测并对症处理（B 级，强推荐）",
+          "quote": "中重度静脉外渗的处理：患肢抬高、局部冰敷或冷湿敷",
+          "src": "R04",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "外渗局部用药",
+          "v": "使用 50% 的硫酸镁、黏多糖软膏、0.05% 的地塞米松局部冷湿敷",
+          "quote": "使用 50% 的硫酸镁、黏多糖软膏、0.05% 的地塞米松局部冷湿敷",
+          "src": "R04",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "中成药外敷",
+          "v": "使用中成药制剂如意金黄散外敷",
+          "quote": "使用中成药制剂如意金黄散外敷",
+          "src": "R04",
+          "cat": "中医外治法"
+        },
+        {
+          "k": "中重度外渗处理",
+          "v": "①抬高患肢、局部冰敷或冷湿敷；②50% 硫酸镁、多磺酸黏多糖乳膏、0.05% 地塞米松局部冷湿敷；③密切监测并对症处理；④必要时咨询临床医生用药",
+          "quote": "敷；②以 50% 硫酸镁、多磺酸粘多糖乳膏、0.05% 地塞米",
+          "src": "CG-03",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "中重度外渗四步",
+          "v": "①患肢抬高、局部冰敷或冷湿敷；②50% 硫酸镁、黏多糖软膏、0.05% 地塞米松局部冷湿敷；③中成药制剂如意金黄散外敷；④密切监测外渗部位变化并对症处理",
+          "quote": "重度外渗：（1）患肢抬高、局部冰敷或冷湿敷",
+          "src": "CG-09",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "中重度外渗局部用药（2021 版）",
+          "v": "50% 硫酸镁、黏多糖软膏、0.05% 地塞米松局部冷湿敷（B 级，强推荐）",
+          "quote": "50% 硫酸镁、黏多糖软骨、0.05% 地塞米松局部冷湿敷",
+          "src": "CG-08",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "外渗发生率（2021 版）",
+          "v": "含碘对比剂静脉外渗率 0.6%~1.2%",
+          "quote": "外渗率为0.6%~1.2%",
+          "src": "CG-08",
+          "cat": "流行病学"
+        },
+        {
+          "k": "对比剂血管外渗处理",
+          "v": "轻症者加压包扎、疼痛明显者局部冰袋冷敷；重症者加压包扎并抬高患肢，尽早使用 50% 硫酸镁、黏多糖软膏或 0.05% 地塞米松局部外敷，严重者静注或肌注甲泼尼龙/地塞米松",
+          "quote": "尽早使用 50% 硫酸镁、黏多糖软膏或 0.05% 的地塞米松等局部外敷",
+          "src": "CG-04",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "外渗三度分级",
+          "v": "轻度:仅轻微红肿、无皮肤改变;中度:水疱、进行性水肿和/或溃疡;重度:神经血管受损、组织坏死或骨筋膜室综合征",
+          "quote": "Minor erythema or swelling",
+          "src": "R02",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "中度分级体征",
+          "v": "中度外渗可出现皮肤水疱、进行性水肿和/或溃疡,需医师评估远端脉搏与感觉",
+          "quote": "progressive oedema and/or ulceration",
+          "src": "R02",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "转外科阈值",
+          "v": "外渗量>150 ml时共识仍建议外科会诊;但不应以体积阈值代替临床严重度判断",
+          "quote": "extravasate > 150 ml",
+          "src": "R02",
+          "cat": "并发症"
+        },
+        {
+          "k": "ESUR保守处置",
+          "v": "多数外渗保守处理即可:抬高患肢、冰敷、密切观察;严重损伤请外科会诊",
+          "quote": "Conservative management is adequate",
+          "src": "R02",
+          "cat": "局部处理"
+        },
+        {
+          "k": "3级护理",
+          "v": "3级:在2级基础上宜使用水胶体敷料等外敷处理,观察外渗部位变化并对症处理",
+          "quote": "宜使用水胶体敷料等外敷处理",
+          "src": "R09",
+          "cat": "局部处理"
+        },
+        {
+          "k": "药物外敷种类",
+          "v": "外渗后24 h内遵医嘱药物外敷:磺胺嘧啶银冷霜、多磺酸黏多糖软膏、0.05%地塞米松、2%利多卡因、中成药如意金黄散/膏",
+          "quote": "如磺胺嘧啶银冷霜、多磺酸黏多糖软膏、0.05％地塞米松、2％利多卡因",
+          "src": "R10",
+          "cat": "局部处理"
+        },
+        {
+          "k": "外渗首要处置",
+          "v": "应立即停止在原部位输液,抬高患肢,及时通知医师,给予对症处理",
+          "quote": "应立即停止在原部位输液，抬高患肢，及时通知医师，给予对症处理",
+          "src": "R08",
+          "cat": "处置顺序"
+        },
+        {
+          "k": "中成药外敷（核心推荐）",
+          "v": "中重度外渗用「中成药制剂如意金黄散外敷」，证据 B 级、强推荐，与 50% 硫酸镁等西药外用并列，不是替代",
+          "quote": "使用中成药制剂如意金黄散外敷",
+          "src": "R04",
+          "cat": "中医外治法"
+        },
+        {
+          "k": "同条并列的西药外用",
+          "v": "同一条推荐意见内并列 50% 硫酸镁、黏多糖软膏、0.05% 地塞米松局部冷湿敷 —— 中药与西药同等级、同一条",
+          "quote": "使用50%的硫酸镁、黏多糖软膏、0.05%的地塞米松局部冷湿敷",
+          "src": "R04",
+          "cat": "中医外治法"
+        },
+        {
+          "k": "临床侧也推荐中药外敷",
+          "v": "共识第 5 条「对比剂外渗的处理」原文写明中重度外渗用中成药制剂如意金黄散外敷，并引用护理指南为文献出处",
+          "quote": "中成药制剂如意金黄散外敷",
+          "src": "CG-09",
+          "cat": "中医外治法"
+        },
+        {
+          "k": "为什么会损伤",
+          "v": "共识解释：外渗引起周围组织损伤，产生局部炎症反应尤其是皮肤；急性组织损伤可能与高渗透压有关",
+          "quote": "碘对比剂外渗引起的急性组织损伤可能与其高渗透压有关",
+          "src": "CG-09",
+          "cat": "外渗机制"
+        },
+        {
+          "k": "外渗处理与监测",
+          "v": "密切监测外渗部位变化并给予对症处理",
+          "quote": "密切监测外渗部位的变化并给予对症处理",
+          "src": "CG-09",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "越早越好",
+          "v": "依据红肿范围调配如意金黄散局部湿敷、每日更换一次；18 例在 2~24 h 内开始湿敷者全部愈合（6.44±2.99 d）",
+          "quote": "调制如意金黄散早期湿敷药物外渗性皮肤损伤安全、有效",
+          "src": "CN-05",
+          "cat": "中医外治法"
+        }
+      ]
+    },
+    {
+      "id": "MP_AdverseReactionTriage",
+      "name": "不良反应分级处置原则",
+      "type": "ManagementPrinciple",
+      "tags": [
+        "分级处置"
+      ],
+      "aliases": [
+        "adverse reaction triage",
+        "不良反应分级处置"
+      ],
+      "summary": "按轻重分级决定用药、监护与是否转诊的处置原则。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        },
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "发生率",
+          "v": "即刻反应 0.3%–1.4%（轻度 0.2%–0.5%、中度 0.04%–0.1%）；重度 0.005%–0.06%，死亡 0.0006%",
+          "quote": "Immediate reactions to LOCM and iso-osmolar contrast media have been reported to occur in 0.3% to 1.4% of injections",
+          "src": "R12",
+          "cat": "反应分级"
+        },
+        {
+          "k": "严重程度分级标准",
+          "v": "含 ACR 对比剂不良反应严重程度分级及 Ring-Messmer 分级，按严重程度分轻、中、重度及 1~4 级",
+          "quote": "根据发病的严重程度，分为轻、中、重度及 1~4 级（表 2）",
+          "src": "CG-01",
+          "cat": "分型"
+        },
+        {
+          "k": "证据分级体系（2021 版）",
+          "v": "证据质量分高(A)/中(B)/低(C)/极低(D) 四级；40 条推荐意见经 12 名外部专家函询定稿",
+          "quote": "证据质量分为高（A）、中（B）、低（C）、极低（D）4 个等级",
+          "src": "CG-08",
+          "cat": "方法学"
+        }
+      ]
+    },
+    {
+      "id": "NT_EarlyWarning",
+      "name": "早期预警",
+      "type": "NursingTheory",
+      "tags": [
+        "护理理论"
+      ],
+      "aliases": [
+        "early warning",
+        "早期识别与预警"
+      ],
+      "summary": "在情况变坏之前先看出苗头、及时升级处理 —— 过敏反应与外渗的现场护理干预里，「早发现、早升级」是防住重症的第一道关口。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "观察时长与去向",
+          "v": "重度或需≥1 剂肾上腺素者观察延长至 6 小时或更长（含住院）；疑似过敏反应者转最近急诊科",
+          "quote": "it would be prudent to extend observation to up to 6 hours or longer (including hospital admission) for a patient with severe anaphylaxis",
+          "src": "R12",
+          "cat": "观察与出院"
+        },
+        {
+          "k": "双相反应",
+          "v": "双相过敏反应：症状完全缓解后再发，最迟 72 小时内（平均 11 小时），145 例中 10.3% 发生",
+          "quote": "Biphasic anaphylaxis occurs when the initial symptoms of anaphylaxis resolve completely but then recur up to 72 hours later, with a mean of 11 hours",
+          "src": "R12",
+          "cat": "观察与出院"
+        },
+        {
+          "k": "急救流程 8 步",
+          "v": "停止给药 → 呼救启动院内急救流程 → 体位 → 肌注肾上腺素 → 吸氧 → 开放静脉通路 → 补液 → 监护及转运",
+          "quote": "严重过敏反应处理要点：停止给药、呼救启动院内急救流程、体位、肌注肾上腺素、吸氧、开放静脉通路、补液、监护及转运",
+          "src": "CG-01",
+          "cat": "处理"
+        },
+        {
+          "k": "基层转诊标准",
+          "v": "既往速发型超敏反应的中重度（ACR 分级）建议转诊至有经验的医疗机构；非速发型 SCAR 表现者严格避免应用对比剂",
+          "quote": "既往为速发型超敏反应的中重度反应（ACR 分级）建议转诊至有经验的医疗机构",
+          "src": "CG-01",
+          "cat": "长期管理"
+        }
+      ]
+    },
+    {
+      "id": "DE_PreExamNotice",
+      "name": "检查前注意事项科普",
+      "type": "DiseaseEducation",
+      "tags": [
+        "疾病科普"
+      ],
+      "aliases": [
+        "pre-examination notice",
+        "检查前宣教",
+        "增强CT检查前须知",
+        "iodine contrast agent",
+        "碘对比剂"
+      ],
+      "summary": "告诉患者检查前该做什么、该跟医生说什么。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        },
+        {
+          "type": "书籍",
+          "author": "秦月兰、郑淑梅、刘雪莲",
+          "title": "影像护理学",
+          "journal": "人民卫生出版社",
+          "year": 2020,
+          "cite": "秦月兰、郑淑梅、刘雪莲 / 影像护理学 / 人民卫生出版社 / 2020",
+          "grade": "教材",
+          "ref": "R20"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "术前不禁食",
+          "v": "不应要求血管内造影前禁食（除非检查本身需要）；现代造影剂呕吐风险极低，禁食可致漏服药与低血糖",
+          "quote": "patients not be instructed to fast prior to receiving intravascular contrast media",
+          "src": "R14",
+          "cat": "预防"
+        },
+        {
+          "k": "妊娠期",
+          "v": "妊娠期患者的放射学检查、皮肤试验及激发试验为相对禁忌，建议避免在妊娠期应用对比剂；确因病情所需须多学科评估获益与风险后个体化决策",
+          "quote": "建议避免在妊娠期应用 ICM",
+          "src": "CG-01",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "老年人与禁忌人群",
+          "v": "老年人皮试敏感性可能降低；肾功能不全、甲亢者为激发试验禁忌；严重心血管疾病、未控制哮喘为相对禁忌",
+          "quote": "对于肾功能不全、甲状腺功能亢进患者，ICM 激发试验为禁忌",
+          "src": "CG-01",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "知情同意书签署",
+          "v": "CT 增强及使用含碘对比剂的介入操作前，须说明目的、禁忌证、可能的不良反应及注意事项，指导签署《含碘对比剂使用知情同意书》；无民事行为能力者由近亲属代签",
+          "quote": "并指导其签署《CT 增强检查患者知情同意书》或《含碘对比剂使用知情同意书》",
+          "src": "R04",
+          "cat": "检查前评估"
+        },
+        {
+          "k": "检查前评估步骤",
+          "v": "①了解过敏史、疾病史、用药史并评估禁忌证；②评估肾功能，明确能否使用对比剂；③综合评估合并用药、是否特殊人群及水化方案；④核对品种与剂量；⑤口头宣教",
+          "quote": "（2）评估患者肾功能，明确患者能否使用 ICM",
+          "src": "CG-03",
+          "cat": "检查前评估"
+        },
+        {
+          "k": "哺乳期",
+          "v": "建议使用对比剂后至少停止哺乳 24 h",
+          "quote": "建议在使用 ICM 后至少停止哺乳 24 h",
+          "src": "CG-03",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "妊娠与哺乳",
+          "v": "妊娠期女性需权衡利弊后使用，且胎儿出生后要检查甲状腺功能；哺乳期女性无需中断哺乳",
+          "quote": "胎儿出生后要检查甲状腺功能",
+          "src": "CG-07",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "常规不需禁食",
+          "v": "常规血管内对比剂注射前不要求禁食；禁食反有低血糖与不适等负面效应",
+          "quote": "fasting is not required prior to routine intravascular contrast material administration",
+          "src": "R01",
+          "cat": "检查前准备"
+        },
+        {
+          "k": "孕妇不需常规筛查",
+          "v": "妊娠期不推荐常规妊娠筛查；不因妊娠或可能妊娠而拒绝必要的诊断性增强检查",
+          "quote": "we do not recommend routine screening for pregnancy prior to contrast media use",
+          "src": "R01",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "哺乳期可停12至24h",
+          "v": "哺乳期可继续哺乳；若母亲担心可自给药起停12–24 h并挤出弃去，超过24 h无意义",
+          "quote": "she may abstain from breast-feeding from the time of contrast administration for a period of 12 to 24 hours",
+          "src": "R01",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "绝对禁忌证与高危人群",
+          "v": "绝对禁忌为甲亢未治疗者；高危含既往中重度反应者、不稳定性哮喘、糖尿病肾病、肾功能不全等12类",
+          "quote": "既往使用碘对比剂出现中、重度不良反应者；②不稳定性哮喘者；",
+          "src": "R07",
+          "cat": "检查前准备"
+        },
+        {
+          "k": "知情同意与心理安抚",
+          "v": "告知适应证、禁忌证、可能不良反应与注意事项，解答疑问缓解焦虑并签知情同意书",
+          "quote": "告知对比剂使用的适应证、禁忌证、可能发生的不良反应和注意事项",
+          "src": "R07",
+          "cat": "护理教学与沟通"
+        },
+        {
+          "k": "特殊人群与甲亢康复期",
+          "v": "特殊人群含70岁以上、新生儿婴幼儿、妊娠哺乳期妇女；甲亢治疗康复者须咨询内分泌并用最低剂量",
+          "quote": "特殊人群，如70岁以上老人，新生儿，婴、幼儿，妊娠和哺乳期妇女。",
+          "src": "R07",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "禁忌慎用与择期检查",
+          "v": "甲亢未治愈禁用；心肺疾病、妊娠哺乳、副蛋白血症、高胱氨酸尿慎用；肌酐异常或需动脉注射者择期检查",
+          "quote": "甲状腺功能亢进未治愈患者不能使用含碘对比剂。",
+          "src": "R03",
+          "cat": "特殊人群"
+        }
+      ]
+    },
+    {
+      "id": "DE_AfterExamCare",
+      "name": "检查后观察与护理科普",
+      "type": "DiseaseEducation",
+      "tags": [
+        "疾病科普"
+      ],
+      "aliases": [
+        "after examination care",
+        "检查后宣教",
+        "增强CT检查后须知"
+      ],
+      "summary": "告诉患者检查以后怎么观察、多久能回家、怎么补水。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        },
+        {
+          "type": "书籍",
+          "author": "秦月兰、郑淑梅、刘雪莲",
+          "title": "影像护理学",
+          "journal": "人民卫生出版社",
+          "year": 2020,
+          "cite": "秦月兰、郑淑梅、刘雪莲 / 影像护理学 / 人民卫生出版社 / 2020",
+          "grade": "教材",
+          "ref": "R20"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "观察区休息 30 分钟",
+          "v": "指导受检者在观察区休息 30 min；医护人员定时巡视观察区，询问有无不适，及时发现不良反应并处理",
+          "quote": "指导受检者在观察区休息30 min，如有不适及时告知医护人员；医护人员定时巡视观察区，询问受检者有无不适，及时发现不良反应并处理。",
+          "src": "R07",
+          "cat": "输注与观察"
+        },
+        {
+          "k": "留观期间多饮水（每小时不少于 100 mL）",
+          "v": "健康宣教明确要求：指导受检者多饮水（每小时不少于 100 mL）以利于对比剂的排出；可通过尿液颜色简单判断水化是否充分",
+          "quote": "指导受检者多饮水（每小时不少于100 mL）以利于对比剂的排出，可通过尿液颜色来简单判断水化是否充分，以预防对比剂肾病［25，32- 33］。",
+          "src": "R07",
+          "cat": "检查后护理"
+        }
+      ]
+    },
+    {
+      "id": "DE_AllergyDisclosure",
+      "name": "过敏史告知科普",
+      "type": "DiseaseEducation",
+      "tags": [
+        "疾病科普"
+      ],
+      "aliases": [
+        "allergy disclosure",
+        "过敏史告知",
+        "过敏史说明"
+      ],
+      "summary": "告诉患者为什么一定要如实说自己的过敏史。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "碘过敏≠对比剂过敏",
+          "v": "「碘过敏」不等于碘对比剂过敏；碘伏、海鲜等含碘物质过敏并非对比剂使用禁忌",
+          "quote": "加强患者教育，对常见误区做好宣教，如“碘过敏”≠碘对比剂过敏",
+          "src": "CG-01",
+          "cat": "误区宣教"
+        },
+        {
+          "k": "知情同意告知内容",
+          "v": "告知适应证、禁忌证、可能发生的不良反应与注意事项，签署碘对比剂使用知情同意书",
+          "quote": "告知患者或其监护人关于对比剂使用的适应证、禁忌证",
+          "src": "R03",
+          "cat": "护理教学与沟通"
+        }
+      ]
+    },
+    {
+      "id": "DE_ExtravasationHomeCare",
+      "name": "外渗居家护理科普",
+      "type": "DiseaseEducation",
+      "tags": [
+        "疾病科普"
+      ],
+      "aliases": [
+        "extravasation home care",
+        "外渗后居家护理"
+      ],
+      "summary": "告诉患者回家以后怎么观察患肢、什么时候必须回医院。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "外渗后离院标准",
+          "v": "外渗后应在治疗区域内的观察区观察 2~4 h，由医护人员判断未出现新并发症和严重损伤时方可离开（B 级，强推荐，新增）",
+          "quote": "含碘对比剂静脉外渗后，患者应在治疗区域内的观察区观察 2~4 h",
+          "src": "R04",
+          "cat": "留观与离院"
+        },
+        {
+          "k": "门诊离院指导与随访",
+          "v": "所有发生静脉外渗的门诊患者离院时均应获得积极处理和明确指导；推荐建立系统随访机制，按外渗程度确定随访频次",
+          "quote": "根据静脉外渗程度确定随访频次",
+          "src": "R04",
+          "cat": "留观与离院"
+        },
+        {
+          "k": "外渗/反应延长留观",
+          "v": "过敏样反应与对比剂外渗的患者应留观 2~4 h，由医护人员判断未出现新的并发症和严重损伤后方可离开",
+          "quote": "过敏样反应与 ICM 外渗的患者应留观 2～4 h，由医护人员判断未出现",
+          "src": "CG-03",
+          "cat": "留观与离院"
+        },
+        {
+          "k": "外渗后离院标准（2021 版）",
+          "v": "含碘对比剂外渗后患者应在治疗区域内的观察区观察 2~4 h",
+          "quote": "含碘对比剂外渗后患者应在治疗区域内的观察区观察2~4 h",
+          "src": "CG-08",
+          "cat": "留观与离院"
+        },
+        {
+          "k": "离院宣教与记录交接",
+          "v": "门诊外渗须观察后离院并交代就医指征；全部外渗事件与处理须记录并通知转诊医师",
+          "quote": "All extravasation events and their treatment should be documented in the medical record. In addition, the referring provider should be notified following any symptomatic extravasation.",
+          "src": "R01",
+          "cat": "外渗早期识别"
+        },
+        {
+          "k": "红旗症状清单",
+          "v": "需告知患者出现肿胀或疼痛加重、发红、肢体感觉改变、皮肤溃疡或水疱时须就医",
+          "quote": "Skin ulceration or blistering",
+          "src": "R02",
+          "cat": "居家护理与宣教"
+        },
+        {
+          "k": "离院后观察与就诊",
+          "v": "外渗后应在治疗区域观察区观察2~4 h;出现疼痛加剧、感觉异常、活动受限、皮肤溃疡或水疱须及时就诊(B/A级)",
+          "quote": "患者应在治疗区域内的观察区观察2~4 h",
+          "src": "R04",
+          "cat": "居家护理与宣教"
+        },
+        {
+          "k": "不适就近就诊",
+          "v": "应对患者进行健康宣教,如输注部位有不适,及时就近就诊",
+          "quote": "应对患者进行健康宣教，如输注部位有不适，及时就近就诊",
+          "src": "R09",
+          "cat": "居家护理与宣教"
+        },
+        {
+          "k": "抬高冰敷与握拳运动",
+          "v": "抬高患肢至高于心脏水平,局部冰敷或冷湿敷,24 h内不应热敷;并做抓握拳运动:用力握拳10 s后松开,间歇10 s再握,25次/组,早中晚各1组",
+          "quote": "指导患者抬高患肢至高于心脏水平，局部给予冰敷或冷湿敷，24 h内不应热敷",
+          "src": "R10",
+          "cat": "局部处理"
+        },
+        {
+          "k": "水疱处理",
+          "v": "出现水疱用碘伏消毒水疱处皮肤,无菌注射器抽吸水疱,可给水胶体等敷料外敷直至愈合",
+          "quote": "应使用碘伏消毒水疱处皮肤，无菌注射器抽吸水疱",
+          "src": "R10",
+          "cat": "局部处理"
+        },
+        {
+          "k": "肿胀高峰与消退",
+          "v": "外渗后4~6 h为肿胀高峰期,24~48 h肿胀能基本消退",
+          "quote": "外渗后 4 h～6 h 为肿胀高峰期，24 h～48 h 肿胀能基本消退",
+          "src": "R10",
+          "cat": "居家护理与宣教"
+        },
+        {
+          "k": "居家禁忌与按压",
+          "v": "24 h内严禁热敷,抬高肿胀肢体至心脏水平,多做松拳握拳运动,适当多饮水促进血液循环;指导按压穿刺部位至少10 min",
+          "quote": "24 h 内严禁热敷，抬高肿胀肢体至心脏水平",
+          "src": "R10",
+          "cat": "居家护理与宣教"
+        },
+        {
+          "k": "异常不适告知",
+          "v": "应告知患者穿刺部位出现肿胀、疼痛等异常不适时及时告知医务人员",
+          "quote": "应告知患者穿刺部位出现肿胀、疼痛等异常不适时，及时告知医务人员",
+          "src": "R08",
+          "cat": "居家护理与宣教"
+        },
+        {
+          "k": "患者与照护者教育",
+          "v": "应对患者和照顾者进行静脉治疗、导管使用及维护等相关知识的教育",
+          "quote": "应对患者和照顾者进行静脉治疗、导管使用及维护等相关知识的教育",
+          "src": "R08",
+          "cat": "居家护理与宣教"
+        },
+        {
+          "k": "外渗后离院观察时长",
+          "v": "外渗后应在治疗区域观察区观察 2~4 h，判定未出现新并发症和严重损伤方可离开",
+          "quote": "应在治疗区域内的观察区观察2~4 h",
+          "src": "R04",
+          "cat": "留观与离院"
+        }
+      ]
+    },
+    {
+      "id": "DE_EmergencyKnowledge",
+      "name": "急救知识科普",
+      "type": "DiseaseEducation",
+      "tags": [
+        "疾病科普"
+      ],
+      "aliases": [
+        "emergency knowledge",
+        "急救知识",
+        "自救与呼救"
+      ],
+      "summary": "告诉患者出现严重反应时立刻该做什么、怎么呼救。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "记录要求",
+          "v": "记入 EHR 过敏模块：写明具体致敏造影剂（禁用「碘造影剂」「碘」字样）、症状、起病时间、治疗与监测时间",
+          "quote": "The occurrence of an ICM HSR and manifesting symptoms should be documented in the allergy field or module of the EHR",
+          "src": "R12",
+          "cat": "护理记录与上报"
+        },
+        {
+          "k": "转诊阈值",
+          "v": "仅重度超敏反应（含 SJS/TEN、DRESS 等严重迟发反应）转过敏专科；>90% 速发超敏者皮试阴性，不推荐常规皮试",
+          "quote": "only patients with history of severe HR, including serious delayed reactions such as SJS/TEN or DRESS",
+          "src": "R14",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "记录字段与药名",
+          "v": "EHR 须记症状、严重度（轻/中/重）、急慢性、治疗与结局；放射报告与 PACS 写致敏剂名；只写「碘」「钆」不合格",
+          "quote": "The symptoms, severity (mild, moderate, severe), acuity (acute vs delayed), treatment, and outcome",
+          "src": "R14",
+          "cat": "护理记录与上报"
+        },
+        {
+          "k": "何时呼叫急救",
+          "v": "用药后迅速、完全、持久缓解且备有追加肾上腺素与医疗条件时可不立即呼叫急救；重症、未完全缓解或复发须立即呼叫",
+          "quote": "immediate activation of EMS may not be required if the patient experiences prompt, complete, and durable response to treatment with epinephrine",
+          "src": "R16",
+          "cat": "观察与出院"
+        },
+        {
+          "k": "急救流程 8 步",
+          "v": "停止给药 → 呼救启动院内急救流程 → 体位 → 肌注肾上腺素 → 吸氧 → 开放静脉通路 → 补液 → 监护及转运",
+          "quote": "严重过敏反应处理要点：停止给药、呼救启动院内急救流程、体位、肌注肾上腺素、吸氧、开放静脉通路、补液、监护及转运",
+          "src": "CG-01",
+          "cat": "处理"
+        },
+        {
+          "k": "过敏警示与记录",
+          "v": "标准化病历记录（对比剂名称、给药途径、症状、生命体征、用药至症状的时间间隔、处理及结局）；电子病历设药物过敏警示；发放过敏警示卡并嘱携带",
+          "quote": "患者出院/检查结束后为患者发放过敏警示卡",
+          "src": "CG-01",
+          "cat": "长期管理"
+        },
+        {
+          "k": "基层转诊标准",
+          "v": "既往速发型超敏反应的中重度（ACR 分级）建议转诊至有经验的医疗机构；非速发型 SCAR 表现者严格避免应用对比剂",
+          "quote": "既往为速发型超敏反应的中重度反应（ACR 分级）建议转诊至有经验的医疗机构",
+          "src": "CG-01",
+          "cat": "长期管理"
+        },
+        {
+          "k": "检查室必备急救药械",
+          "v": "氧气、1∶1000 肾上腺素、H1 抗组胺药、阿托品、β2 激动剂气雾器、静脉注射液、生理盐水或林格氏液、抗惊厥药（安定）、血压计等",
+          "quote": "应在检查室备妥的一线急救药品和设备，包括氧气、1∶1 000 的肾上腺素、抗组胺药 H1 注射剂、阿托品、β2 受体激动剂气雾器",
+          "src": "CG-09",
+          "cat": "急救准备"
+        }
+      ]
+    },
+    {
+      "id": "SS_MildResolved",
+      "name": "轻度反应已缓解",
+      "type": "SymptomStatus",
+      "tags": [
+        "症状状态"
+      ],
+      "aliases": [
+        "mild reaction resolved",
+        "轻度已缓解"
+      ],
+      "summary": "轻度反应经处理以后症状消退：过敏反应表现为皮疹、瘙痒减轻；外渗表现为患肢肿胀与疼痛减轻。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "观察时长与去向",
+          "v": "重度或需≥1 剂肾上腺素者观察延长至 6 小时或更长（含住院）；疑似过敏反应者转最近急诊科",
+          "quote": "it would be prudent to extend observation to up to 6 hours or longer (including hospital admission) for a patient with severe anaphylaxis",
+          "src": "R12",
+          "cat": "观察与出院"
+        },
+        {
+          "k": "轻反应观察与五项评估",
+          "v": "轻度过敏样反应至少观察20–30分钟；评估外观、说话与声音、呼吸质量、脉搏、血压五项",
+          "quote": "Any patient with a mild allergic-like reaction should be observed for a minimum of 20 to 30 minutes",
+          "src": "R01",
+          "cat": "输注与观察"
+        },
+        {
+          "k": "轻度反应：观察 30 分钟并多饮水",
+          "v": "轻度过敏样反应：严密观察 30 min（如有必要延长时间），监测生命体征，嘱患者多饮水，一般情况无需药物治疗",
+          "quote": "严密观察30 min（如有必要需延长时间），监测患者的生命体征，嘱患者多饮水，一般情况无需药物治疗。",
+          "src": "R07",
+          "cat": "不良反应谱"
+        }
+      ]
+    },
+    {
+      "id": "SS_SevereRecovered",
+      "name": "重度反应已恢复",
+      "type": "SymptomStatus",
+      "tags": [
+        "症状状态"
+      ],
+      "aliases": [
+        "severe reaction recovered",
+        "重度已恢复"
+      ],
+      "summary": "重度反应经抢救以后生命体征恢复稳定。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "中重度处理流程",
+          "v": "抬高患肢，早期50%硫酸镁冷敷、24 h后改热敷；严重者口服地塞米松5 mg/次，3次/d，连用3 d",
+          "quote": "早期使用50％硫酸镁保湿冷敷，24 h后改硫酸镁保湿热敷",
+          "src": "R07",
+          "cat": "外渗早期识别"
+        }
+      ]
+    },
+    {
+      "id": "FS_LimbFunction",
+      "name": "患肢功能状态",
+      "type": "FunctionalStatus",
+      "tags": [
+        "功能状态"
+      ],
+      "aliases": [
+        "limb function",
+        "患肢功能",
+        "肢体功能状况"
+      ],
+      "summary": "外渗处理以后患肢能不能正常活动、感觉有没有恢复。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "肿胀高峰与消退",
+          "v": "外渗后4~6 h为肿胀高峰期,24~48 h肿胀能基本消退",
+          "quote": "外渗后 4 h～6 h 为肿胀高峰期，24 h～48 h 肿胀能基本消退",
+          "src": "R10",
+          "cat": "居家护理与宣教"
+        },
+        {
+          "k": "居家禁忌与按压",
+          "v": "24 h内严禁热敷,抬高肿胀肢体至心脏水平,多做松拳握拳运动,适当多饮水促进血液循环;指导按压穿刺部位至少10 min",
+          "quote": "24 h 内严禁热敷，抬高肿胀肢体至心脏水平",
+          "src": "R10",
+          "cat": "居家护理与宣教"
+        }
+      ]
+    },
+    {
+      "id": "R01",
+      "name": "美国放射学会对比剂手册",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "指南"
+      ],
+      "aliases": [
+        "ACR Manual on Contrast Media",
+        "ACR 对比剂手册",
+        "美国放射学会对比剂手册",
+        "指南",
+        "guideline",
+        "guidelines"
+      ],
+      "summary": "美国放射学会每年更新的对比剂使用手册，是这份图谱里对比剂安全使用的主干依据。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "指南"
+        },
+        {
+          "k": "年份",
+          "v": "2024"
+        },
+        {
+          "k": "核验标识",
+          "v": "https://www.acr.org/clinical-resources/contrast-manual（官方在线版 · 2024 年版）"
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R02",
+      "name": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "指南"
+      ],
+      "aliases": [
+        "ESUR 对比剂外渗指南",
+        "欧洲泌尿放射学会外渗指南",
+        "指南",
+        "guideline",
+        "guidelines"
+      ],
+      "summary": "欧洲泌尿放射学会对比剂安全委员会关于静脉外渗的系统评价与处理指南。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "指南"
+        },
+        {
+          "k": "年份",
+          "v": "2022"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.1007/s00330-021-08433-4 · PMID 35175378 · 2022;32(5):3056-3066"
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R03",
+      "name": "碘对比剂使用指南（第2版）",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "指南"
+      ],
+      "aliases": [
+        "碘对比剂使用指南",
+        "碘对比剂使用指南第2版",
+        "对比剂使用指南第2版",
+        "指南",
+        "guideline",
+        "guidelines",
+        "CT指南",
+        "CT增强指南"
+      ],
+      "summary": "我国放射学界关于碘对比剂怎么选、怎么用、怎么防反应的基础文件。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "指南"
+        },
+        {
+          "k": "年份",
+          "v": "2013"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.3760/cma.j.issn.1005-1201.2013.10.001 · 中华医学期刊全文数据库 rs.yiigle.com/cmaid/733764"
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R04",
+      "name": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "指南"
+      ],
+      "aliases": [
+        "含碘对比剂静脉外渗护理管理实践指南",
+        "外渗护理管理实践指南 2026",
+        "指南",
+        "guideline",
+        "guidelines"
+      ],
+      "summary": "中华护理学会最新一版外渗护理实践指南，是外渗预防与处理的操作蓝本。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "指南"
+        },
+        {
+          "k": "年份",
+          "v": "2026"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.3761/j.issn.0254-1769.2026.15.006 · 2026;61(15):2054-2060"
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R07",
+      "name": "影像科碘对比剂输注安全专家共识",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "共识"
+      ],
+      "aliases": [
+        "影像科碘对比剂输注安全专家共识",
+        "输注安全专家共识",
+        "共识",
+        "consensus"
+      ],
+      "summary": "讲输药前后每一步怎么做、出了事怎么处理的第一份护理共识。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "共识"
+        },
+        {
+          "k": "年份",
+          "v": "2018"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.3969/j.issn.1008-794X.2018.08.001 · 2018;27(8):707-712"
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R08",
+      "name": "WS/T 433—2023 静脉治疗护理技术操作标准",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "标准"
+      ],
+      "aliases": [
+        "静脉治疗护理技术操作标准",
+        "WS/T 433-2023",
+        "静脉治疗护理技术操作标准 2023",
+        "标准",
+        "standard"
+      ],
+      "summary": "全国静脉治疗的操作标准：怎么选管、怎么穿刺、怎么管并发症。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "标准"
+        },
+        {
+          "k": "年份",
+          "v": "2023"
+        },
+        {
+          "k": "核验标识",
+          "v": "国卫通〔2023〕9号 · nhc.gov.cn/wjw/pjl/202309/d09188781db944f8936728280cba4759.shtml"
+        },
+        {
+          "k": "证据等级",
+          "v": "标准与规范"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "标准",
+          "author": "国家卫生健康委员会",
+          "title": "WS/T 433—2023 静脉治疗护理技术操作标准",
+          "journal": "国家卫生健康委员会（卫生行业标准）",
+          "year": 2023,
+          "cite": "国家卫生健康委员会 / WS/T 433—2023 静脉治疗护理技术操作标准 / 国家卫生健康委员会（卫生行业标准） / 2023",
+          "grade": "标准与规范",
+          "ref": "R08"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R09",
+      "name": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "规范"
+      ],
+      "aliases": [
+        "含碘对比剂静脉外渗预防与护理规范",
+        "DB36/T 2299-2026",
+        "规范",
+        "specification"
+      ],
+      "summary": "把外渗预防与护理写成地方标准的地方文件，步骤写得很细。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "规范"
+        },
+        {
+          "k": "年份",
+          "v": "2026"
+        },
+        {
+          "k": "核验标识",
+          "v": "全国标准信息公共服务平台 std.samr.gov.cn · 备案号 131428-2026 · 2026-09-12 发布 / 2027-04-01 实施"
+        },
+        {
+          "k": "证据等级",
+          "v": "标准与规范"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R10",
+      "name": "DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "规范"
+      ],
+      "aliases": [
+        "CT增强扫描碘对比剂外渗预防与护理规范",
+        "DB45/T 2935-2024",
+        "规范",
+        "specification"
+      ],
+      "summary": "专门针对 CT 增强场景的外渗预防与护理地方规范。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "规范"
+        },
+        {
+          "k": "年份",
+          "v": "2024"
+        },
+        {
+          "k": "核验标识",
+          "v": "全国标准信息公共服务平台 dbba.sacinfo.org.cn · 2024-11-14 发布 / 2025-02-01 实施"
+        },
+        {
+          "k": "证据等级",
+          "v": "标准与规范"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "规范",
+          "author": "广西壮族自治区市场监督管理局",
+          "title": "DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范",
+          "journal": "广西壮族自治区市场监督管理局（地方标准）",
+          "year": 2024,
+          "cite": "广西壮族自治区市场监督管理局 / DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范 / 广西壮族自治区市场监督管理局（地方标准） / 2024",
+          "grade": "标准与规范",
+          "ref": "R10"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R12",
+      "name": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "声明"
+      ],
+      "aliases": [
+        "ACR-AAAAI 对比剂过敏反应声明",
+        "对比剂过敏反应学会声明",
+        "声明",
+        "statement"
+      ],
+      "summary": "两个学会联合发布的过敏反应防治声明，是国际上最新的对比剂过敏处理口径。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "声明"
+        },
+        {
+          "k": "年份",
+          "v": "2025"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.1148/radiol.240100 · PMID 40326871 · 2025;315(2):e240100"
+        },
+        {
+          "k": "证据等级",
+          "v": "学会声明"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R13",
+      "name": "放射性对比剂超敏反应处理流程（2024 年更新）",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "建议"
+      ],
+      "aliases": [
+        "对比剂过敏反应管理算法 2024",
+        "radiocontrast hypersensitivity algorithm",
+        "建议",
+        "advice"
+      ],
+      "summary": "把对比剂过敏反应分成轻中重、并给出逐级处理路径的算法文件。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "建议"
+        },
+        {
+          "k": "年份",
+          "v": "2024"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.1111/all.16191 · PMID 38887890 · 2024;79(9):2570-2572"
+        },
+        {
+          "k": "证据等级",
+          "v": "推荐意见"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R14",
+      "name": "对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "建议"
+      ],
+      "aliases": [
+        "CAR-CSACI 对比剂过敏实践指导",
+        "对比剂过敏实践指导",
+        "建议",
+        "advice"
+      ],
+      "summary": "加拿大放射学会与变态反应学会给出的对比剂过敏实践指导。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "建议"
+        },
+        {
+          "k": "年份",
+          "v": "2025"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.1177/08465371241311253 · PMID 39797723 · 2025;76(3):400-416"
+        },
+        {
+          "k": "证据等级",
+          "v": "推荐意见"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "建议",
+          "author": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al.",
+          "title": "对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）",
+          "journal": "加拿大放射医师协会杂志",
+          "year": 2025,
+          "cite": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al. / 对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会） / 加拿大放射医师协会杂志 / 2025",
+          "grade": "推荐意见",
+          "ref": "R14"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R15",
+      "name": "欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "推荐"
+      ],
+      "aliases": [
+        "ESUR 对比剂使用推荐",
+        "ESUR recommendations on contrast media",
+        "推荐",
+        "recommendation"
+      ],
+      "summary": "欧洲泌尿放射学会对比剂使用推荐意见，护理侧的用药建议多出自此。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "推荐"
+        },
+        {
+          "k": "年份",
+          "v": "2021"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.1016/j.nephro.2020.10.011 · PMID 33551369 · 2021;17(2):80-91"
+        },
+        {
+          "k": "证据等级",
+          "v": "推荐意见"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "推荐",
+          "author": "de Laforcade L, Bobot M, Bellin MF, et al.",
+          "title": "欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评",
+          "journal": "肾脏病与治疗",
+          "year": 2021,
+          "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / 欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评 / 肾脏病与治疗 / 2021",
+          "grade": "推荐意见",
+          "ref": "R15"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R16",
+      "name": "过敏反应：2023 年实践参数更新",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "推荐实践"
+      ],
+      "aliases": [
+        "2023 过敏性休克实践参数更新",
+        "anaphylaxis practice parameter",
+        "推荐实践",
+        "practice parameter"
+      ],
+      "summary": "国际公认的过敏性休克抢救实践参数，肾上腺素怎么打写得很清楚。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "推荐实践"
+        },
+        {
+          "k": "年份",
+          "v": "2024"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.1016/j.anai.2023.09.015 · PMID 38108678 · 2024;132(2):124-176"
+        },
+        {
+          "k": "证据等级",
+          "v": "推荐意见"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R17",
+      "name": "放射科碘对比剂外渗影响因素的系统评价",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "系统评价"
+      ],
+      "aliases": [
+        "放射科碘对比剂外渗影响因素的系统评价",
+        "外渗影响因素系统评价",
+        "系统评价",
+        "systematic review",
+        "systematic reviews"
+      ],
+      "summary": "汇总 19 项研究、2063 例外渗案例，归纳出外渗的常见危险因素。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "系统评价"
+        },
+        {
+          "k": "年份",
+          "v": "2023"
+        },
+        {
+          "k": "核验标识",
+          "v": "上海护理 2023;23(5):45-49 · 官网摘要页 sh-nj.com/shhl/ch/reader/view_abstract.aspx?file_no=20221220（该文 DOI 未在数据库核到，故不列）"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "系统评价",
+          "author": "姚金秀、杨丽娜、梅申聪、董芳辉",
+          "title": "放射科碘对比剂外渗影响因素的系统评价",
+          "journal": "上海护理",
+          "year": 2023,
+          "cite": "姚金秀、杨丽娜、梅申聪、董芳辉 / 放射科碘对比剂外渗影响因素的系统评价 / 上海护理 / 2023",
+          "grade": "汇总证据",
+          "ref": "R17"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R20",
+      "name": "影像护理学",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "书籍"
+      ],
+      "aliases": [
+        "影像护理学",
+        "imaging nursing",
+        "影像护理学教材",
+        "书籍",
+        "book"
+      ],
+      "summary": "系统讲影像科护理的教材，护理常规与患者宣教的通识来源。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "书籍"
+        },
+        {
+          "k": "年份",
+          "v": "2020"
+        },
+        {
+          "k": "核验标识",
+          "v": "ISBN 978-7-117-30161-9（人民卫生出版社第 1 版）"
+        },
+        {
+          "k": "证据等级",
+          "v": "教材"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "书籍",
+          "author": "秦月兰、郑淑梅、刘雪莲",
+          "title": "影像护理学",
+          "journal": "人民卫生出版社",
+          "year": 2020,
+          "cite": "秦月兰、郑淑梅、刘雪莲 / 影像护理学 / 人民卫生出版社 / 2020",
+          "grade": "教材",
+          "ref": "R20"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R21",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析",
+      "tags": [
+        "文献",
+        "Meta分析"
+      ],
+      "aliases": [
+        "The relationship between iodinated contrast material temperature and adverse reactions",
+        "碘对比剂温度 Meta 分析",
+        "对比剂加温 Meta 分析"
+      ],
+      "summary": "汇总 5 项研究、307,329 次注射：高黏度对比剂加温到 37℃ 可减少过敏反应；但未证实能减少外渗。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "Meta分析"
+        },
+        {
+          "k": "年份",
+          "v": "2023"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.1016/j.clinimag.2023.05.006 · PMID 37216743"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "Meta分析",
+          "author": "Nawras M, Alyousif Z, Beran A, Elsamaloty H",
+          "title": "碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析",
+          "journal": "临床影像学",
+          "year": 2023,
+          "cite": "Nawras M, Alyousif Z, Beran A, Elsamaloty H / 碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析 / 临床影像学 / 2023 · DOI 10.1016/j.clinimag.2023.05.006 · PMID 37216743"
+        }
+      ]
+    },
+    {
+      "id": "R22",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析",
+      "tags": [
+        "文献",
+        "Meta分析"
+      ],
+      "aliases": [
+        "Contrast media extravasations in patients undergoing computerized tomography scanning",
+        "CT对比剂外渗 Meta分析",
+        "对比剂外渗危险因素 Meta分析"
+      ],
+      "summary": "汇总 CT 增强扫描外渗的危险因素与干预证据：女性、住院患者等风险较高；干预证据仍有限。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "Meta分析"
+        },
+        {
+          "k": "年份",
+          "v": "2018"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.11124/JBISRIR-2017-003348 · PMID 29324560"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "Meta分析",
+          "author": "Ding S, Meystre NR, Campeanu C, Gullo G",
+          "title": "CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析",
+          "journal": "JBI 系统评价与实施报告",
+          "year": 2018,
+          "cite": "Ding S, Meystre NR, Campeanu C, Gullo G / CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析 / JBI 系统评价与实施报告 / 2018 · DOI 10.11124/JBISRIR-2017-003348 · PMID 29324560"
+        }
+      ]
+    },
+    {
+      "id": "R23",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "对比剂即刻超敏反应危险因素的系统评价与 Meta 分析",
+      "tags": [
+        "文献",
+        "Meta分析"
+      ],
+      "aliases": [
+        "Risk factors associated with immediate hypersensitivity reaction to contrast media",
+        "对比剂超敏反应危险因素 Meta分析"
+      ],
+      "summary": "汇总对比剂即刻超敏反应的危险因素：女性风险较高，哮喘史未见显著关联，门诊患者风险较高。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "Meta分析"
+        },
+        {
+          "k": "年份",
+          "v": "2026"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.1016/j.ejrad.2025.112472 · PMID 41175815"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "Meta分析",
+          "author": "Huang W, He C, Chen Y, Xu H, Yao J, Zhao L",
+          "title": "对比剂即刻超敏反应危险因素的系统评价与 Meta 分析",
+          "journal": "欧洲放射学杂志",
+          "year": 2026,
+          "cite": "Huang W, He C, Chen Y, Xu H, Yao J, Zhao L / 对比剂即刻超敏反应危险因素的系统评价与 Meta 分析 / 欧洲放射学杂志 / 2026 · DOI 10.1016/j.ejrad.2025.112472 · PMID 41175815"
+        }
+      ]
+    },
+    {
+      "id": "S_ContrastNausea",
+      "graph": "topic-01",
+      "type": "SymptomSign",
+      "name": "恶心",
+      "tags": [
+        "症状体征",
+        "不良反应"
+      ],
+      "aliases": [
+        "恶心",
+        "nausea",
+        "Nausea",
+        "对比剂相关恶心",
+        "恶心反应"
+      ],
+      "summary": "打对比剂后出现的恶心；多数为轻度、一过性，与推药速度过快有关，需与过敏反应相鉴别。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        }
+      ],
+      "details": [
+        {
+          "k": "生理性与过敏样",
+          "v": "生理性（非免疫）反应一般无需处理：孤立恶心呕吐、发冷/发热感、头痛、味觉改变、无低血压的头晕",
+          "quote": "isolated nausea or vomiting with no other systemic symptoms, chills or a sensation of warmth, headaches, altered sense of taste",
+          "src": "R12",
+          "cat": "识别要点"
+        },
+        {
+          "k": "生理性反应",
+          "v": "生理性反应占大多数：血管迷走、味觉改变、躁动、头痛、恶心、头晕、感觉异常；注射处可热/冷/痛",
+          "quote": "Common physiologic reactions include a vasovagal reaction",
+          "src": "R14",
+          "cat": "反应分级"
+        },
+        {
+          "k": "轻度反应清单",
+          "v": "轻度生理性：限性恶心呕吐、一过性潮红温暖寒战、头痛眩晕；轻度过敏样：局限性荨麻疹瘙痒、皮肤水肿、咽痒、鼻塞喷嚏",
+          "quote": "Transient flushing / warmth / chills",
+          "src": "R01",
+          "cat": "不良反应谱"
+        }
+      ]
+    },
+    {
+      "id": "S_ContrastVomiting",
+      "graph": "topic-01",
+      "type": "SymptomSign",
+      "name": "呕吐",
+      "tags": [
+        "症状体征",
+        "不良反应"
+      ],
+      "aliases": [
+        "呕吐",
+        "vomiting",
+        "Vomiting",
+        "对比剂相关呕吐"
+      ],
+      "summary": "打对比剂后出现的呕吐；常与恶心同时出现，属于对比剂不良反应之一。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        }
+      ],
+      "details": [
+        {
+          "k": "生理性与过敏样",
+          "v": "生理性（非免疫）反应一般无需处理：孤立恶心呕吐、发冷/发热感、头痛、味觉改变、无低血压的头晕",
+          "quote": "isolated nausea or vomiting with no other systemic symptoms, chills or a sensation of warmth, headaches, altered sense of taste",
+          "src": "R12",
+          "cat": "识别要点"
+        },
+        {
+          "k": "生理性反应",
+          "v": "生理性反应占大多数：血管迷走、味觉改变、躁动、头痛、恶心、头晕、感觉异常；注射处可热/冷/痛",
+          "quote": "Common physiologic reactions include a vasovagal reaction",
+          "src": "R14",
+          "cat": "反应分级"
+        },
+        {
+          "k": "轻度反应清单",
+          "v": "轻度生理性：限性恶心呕吐、一过性潮红温暖寒战、头痛眩晕；轻度过敏样：局限性荨麻疹瘙痒、皮肤水肿、咽痒、鼻塞喷嚏",
+          "quote": "Transient flushing / warmth / chills",
+          "src": "R01",
+          "cat": "不良反应谱"
+        }
+      ]
+    },
+    {
+      "id": "S_ExtravasationSwelling",
+      "graph": "topic-01",
+      "type": "SymptomSign",
+      "name": "局部肿胀",
+      "tags": [
+        "外渗表现",
+        "症状体征"
+      ],
+      "aliases": [
+        "swelling",
+        "局部肿痛",
+        "肿胀",
+        "局部肿胀"
+      ],
+      "summary": "打针的部位肿起来，是外渗最直观的表现；肿胀可向近心端或远心端延伸。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        }
+      ],
+      "details": [
+        {
+          "k": "轻度外渗处理",
+          "v": "多数损伤轻微无须处理；对疼痛明显者抬高患肢、局部冰敷或冷湿敷并监测，如无改善需咨询临床医生用药",
+          "quote": "无须处理；对疼痛明显者，进行抬高患肢、局部冰敷或冷",
+          "src": "CG-03",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "疼痛或肿胀即停止",
+          "v": "注射全程保持技师与患者沟通；患者诉注射处疼痛或肿胀感须立即停止注射",
+          "quote": "If the patient reports pain or the sensation of swelling at the injection site, injection should be discontinued.",
+          "src": "R01",
+          "cat": "护理教学与沟通"
+        },
+        {
+          "k": "发生率与轻度处理报告",
+          "v": "高压输注外渗率0.1%–0.9%；轻度无需特殊处理，嘱其观察、外渗加重即告知医护人员，疼痛者冷湿敷",
+          "quote": "静脉高压输注对比剂外渗事件发生率为0.1%～0.9%",
+          "src": "R07",
+          "cat": "外渗早期识别"
+        },
+        {
+          "k": "外渗可疑征象",
+          "v": "注射部位红肿瘙痒、血液回流异常或流速减慢、患者主诉疼痛麻木时应高度怀疑外渗(B级,新增)",
+          "quote": "注射部位红肿、瘙痒；血液回流异常或流速减慢；患者主诉疼痛、麻木等",
+          "src": "R04",
+          "cat": "识别"
+        },
+        {
+          "k": "离院后观察与就诊",
+          "v": "外渗后应在治疗区域观察区观察2~4 h;出现疼痛加剧、感觉异常、活动受限、皮肤溃疡或水疱须及时就诊(B/A级)",
+          "quote": "患者应在治疗区域内的观察区观察2~4 h",
+          "src": "R04",
+          "cat": "居家护理与宣教"
+        },
+        {
+          "k": "1级标准",
+          "v": "外渗量<20 mL、测量直径<2.5 cm,表皮温度稍降低、颜色稍变浅,可能疼痛或无痛",
+          "quote": "含碘对比剂外渗量＜20 mL，测量直径＜2.5 cm",
+          "src": "R09",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "2级标准",
+          "v": "外渗量20~50 mL、直径2.5~15 cm,水肿、表皮温度降低、颜色变浅,疼痛感逐渐增加",
+          "quote": "含碘对比剂外渗量20 mL～50 mL，测量直径2.5 cm～15 cm",
+          "src": "R09",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "3级标准",
+          "v": "外渗量>50 mL、直径>15 cm,明显水肿呈半透明状、表皮发凉,疼痛加剧部分出现麻木",
+          "quote": "含碘对比剂外渗量＞50 mL，测量直径＞15 cm",
+          "src": "R09",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "4级标准与转归",
+          "v": "4级:外渗量>50 mL、最小直径>15 cm,严重凹陷性水肿、局部青紫或水疱、疼痛剧烈,可发展为筋膜间室综合征需外科手术",
+          "quote": "外渗部位呈严重凹陷性水肿，局部青紫或有水疱形成",
+          "src": "R09",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "软尺测量标记",
+          "v": "外渗后立即停止输注,用软尺测量外渗部位,确认外渗边界并做好标记",
+          "quote": "应使用软尺测量外渗部位，确认外渗边界并做好标记",
+          "src": "R09",
+          "cat": "识别"
+        },
+        {
+          "k": "肿胀测量频次",
+          "v": "观察皮肤颜色、温度、外渗远端组织血运和外渗量,在外渗肿胀期4~5 h测量一次肿胀范围",
+          "quote": "在外渗肿胀期 4 h～5 h 测量一次肿胀范围",
+          "src": "R09",
+          "cat": "识别"
+        },
+        {
+          "k": "1级标准",
+          "v": "表皮颜色稍变浅、有或无定点疼痛、表皮温度稍降低,外渗量0~9 mL",
+          "quote": "外渗量为0 mL～9 mL",
+          "src": "R10",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "2级标准",
+          "v": "症状似1级但触摸表皮温度降低、疼痛感逐渐增加,外渗量10~49 mL",
+          "quote": "外渗量为10 mL～49 mL",
+          "src": "R10",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "3级标准",
+          "v": "表皮肿胀明显、颜色呈半透明状、疼痛感觉加剧,外渗量50~99 mL",
+          "quote": "外渗量为50 mL～99 mL",
+          "src": "R10",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "4级标准与转归",
+          "v": "严重凹陷性水肿、疼痛剧烈压迫感明显、局部组织循环障碍,外渗量≥100 mL,很快发展为筋膜间室综合征需外科手术",
+          "quote": "外渗量≥100 mL",
+          "src": "R10",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "损伤分期Ⅰ/Ⅱ期",
+          "v": "Ⅰ期局部组织炎性反应:皮肤红润、肿胀、发热、刺痛,无水疱和坏死;Ⅱ期静脉炎性反应:皮下出血或水疱形成,破溃后组织苍白形成浅表溃疡",
+          "quote": "局部皮肤红润、肿胀、发热、刺痛，无水疱和坏死",
+          "src": "R10",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "水疱处理",
+          "v": "出现水疱用碘伏消毒水疱处皮肤,无菌注射器抽吸水疱,可给水胶体等敷料外敷直至愈合",
+          "quote": "应使用碘伏消毒水疱处皮肤，无菌注射器抽吸水疱",
+          "src": "R10",
+          "cat": "局部处理"
+        },
+        {
+          "k": "肿胀高峰与消退",
+          "v": "外渗后4~6 h为肿胀高峰期,24~48 h肿胀能基本消退",
+          "quote": "外渗后 4 h～6 h 为肿胀高峰期，24 h～48 h 肿胀能基本消退",
+          "src": "R10",
+          "cat": "居家护理与宣教"
+        },
+        {
+          "k": "巡视观察内容",
+          "v": "输液过程中应定时巡视,观察有无输液反应,穿刺部位有无红、肿、热、痛、渗出等表现",
+          "quote": "观察患者有无输液反应，穿刺部位有无红、肿、热、痛、渗出等表现",
+          "src": "R08",
+          "cat": "识别"
+        }
+      ]
+    },
+    {
+      "id": "S_ExtravasationPain",
+      "graph": "topic-01",
+      "type": "SymptomSign",
+      "name": "局部疼痛",
+      "tags": [
+        "外渗表现",
+        "症状体征"
+      ],
+      "aliases": [
+        "pain",
+        "局部刺痛",
+        "灼痛",
+        "局部疼痛"
+      ],
+      "summary": "推药时局部刺痛或灼痛，随后疼痛可逐渐加重。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        }
+      ],
+      "details": [
+        {
+          "k": "疼痛或肿胀即停止",
+          "v": "注射全程保持技师与患者沟通；患者诉注射处疼痛或肿胀感须立即停止注射",
+          "quote": "If the patient reports pain or the sensation of swelling at the injection site, injection should be discontinued.",
+          "src": "R01",
+          "cat": "护理教学与沟通"
+        },
+        {
+          "k": "发生率与轻度处理报告",
+          "v": "高压输注外渗率0.1%–0.9%；轻度无需特殊处理，嘱其观察、外渗加重即告知医护人员，疼痛者冷湿敷",
+          "quote": "静脉高压输注对比剂外渗事件发生率为0.1%～0.9%",
+          "src": "R07",
+          "cat": "外渗早期识别"
+        },
+        {
+          "k": "外渗可疑征象",
+          "v": "注射部位红肿瘙痒、血液回流异常或流速减慢、患者主诉疼痛麻木时应高度怀疑外渗(B级,新增)",
+          "quote": "注射部位红肿、瘙痒；血液回流异常或流速减慢；患者主诉疼痛、麻木等",
+          "src": "R04",
+          "cat": "识别"
+        },
+        {
+          "k": "离院后观察与就诊",
+          "v": "外渗后应在治疗区域观察区观察2~4 h;出现疼痛加剧、感觉异常、活动受限、皮肤溃疡或水疱须及时就诊(B/A级)",
+          "quote": "患者应在治疗区域内的观察区观察2~4 h",
+          "src": "R04",
+          "cat": "居家护理与宣教"
+        },
+        {
+          "k": "1级标准",
+          "v": "外渗量<20 mL、测量直径<2.5 cm,表皮温度稍降低、颜色稍变浅,可能疼痛或无痛",
+          "quote": "含碘对比剂外渗量＜20 mL，测量直径＜2.5 cm",
+          "src": "R09",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "2级标准",
+          "v": "外渗量20~50 mL、直径2.5~15 cm,水肿、表皮温度降低、颜色变浅,疼痛感逐渐增加",
+          "quote": "含碘对比剂外渗量20 mL～50 mL，测量直径2.5 cm～15 cm",
+          "src": "R09",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "3级标准",
+          "v": "外渗量>50 mL、直径>15 cm,明显水肿呈半透明状、表皮发凉,疼痛加剧部分出现麻木",
+          "quote": "含碘对比剂外渗量＞50 mL，测量直径＞15 cm",
+          "src": "R09",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "4级标准与转归",
+          "v": "4级:外渗量>50 mL、最小直径>15 cm,严重凹陷性水肿、局部青紫或水疱、疼痛剧烈,可发展为筋膜间室综合征需外科手术",
+          "quote": "外渗部位呈严重凹陷性水肿，局部青紫或有水疱形成",
+          "src": "R09",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "不适就近就诊",
+          "v": "应对患者进行健康宣教,如输注部位有不适,及时就近就诊",
+          "quote": "应对患者进行健康宣教，如输注部位有不适，及时就近就诊",
+          "src": "R09",
+          "cat": "居家护理与宣教"
+        },
+        {
+          "k": "1级标准",
+          "v": "表皮颜色稍变浅、有或无定点疼痛、表皮温度稍降低,外渗量0~9 mL",
+          "quote": "外渗量为0 mL～9 mL",
+          "src": "R10",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "2级标准",
+          "v": "症状似1级但触摸表皮温度降低、疼痛感逐渐增加,外渗量10~49 mL",
+          "quote": "外渗量为10 mL～49 mL",
+          "src": "R10",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "3级标准",
+          "v": "表皮肿胀明显、颜色呈半透明状、疼痛感觉加剧,外渗量50~99 mL",
+          "quote": "外渗量为50 mL～99 mL",
+          "src": "R10",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "损伤分期Ⅰ/Ⅱ期",
+          "v": "Ⅰ期局部组织炎性反应:皮肤红润、肿胀、发热、刺痛,无水疱和坏死;Ⅱ期静脉炎性反应:皮下出血或水疱形成,破溃后组织苍白形成浅表溃疡",
+          "quote": "局部皮肤红润、肿胀、发热、刺痛，无水疱和坏死",
+          "src": "R10",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "举手示意与肿胀测量",
+          "v": "告知患者注射部位疼痛立即举手示意;观察皮肤颜色、温度、感觉和关节活动度,每2~4 h测量一次肿胀范围",
+          "quote": "每 2 h～4 h 测量一次肿胀范围",
+          "src": "R10",
+          "cat": "识别"
+        },
+        {
+          "k": "巡视观察内容",
+          "v": "输液过程中应定时巡视,观察有无输液反应,穿刺部位有无红、肿、热、痛、渗出等表现",
+          "quote": "观察患者有无输液反应，穿刺部位有无红、肿、热、痛、渗出等表现",
+          "src": "R08",
+          "cat": "识别"
+        }
+      ]
+    },
+    {
+      "id": "S_ExtravasationRedness",
+      "graph": "topic-01",
+      "type": "SymptomSign",
+      "name": "局部发红",
+      "tags": [
+        "外渗表现",
+        "症状体征"
+      ],
+      "aliases": [
+        "redness",
+        "局部红肿",
+        "局部发红"
+      ],
+      "summary": "外渗部位皮肤发红。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        }
+      ],
+      "details": [
+        {
+          "k": "外渗可疑征象",
+          "v": "注射部位红肿瘙痒、血液回流异常或流速减慢、患者主诉疼痛麻木时应高度怀疑外渗(B级,新增)",
+          "quote": "注射部位红肿、瘙痒；血液回流异常或流速减慢；患者主诉疼痛、麻木等",
+          "src": "R04",
+          "cat": "识别"
+        },
+        {
+          "k": "1级标准",
+          "v": "外渗量<20 mL、测量直径<2.5 cm,表皮温度稍降低、颜色稍变浅,可能疼痛或无痛",
+          "quote": "含碘对比剂外渗量＜20 mL，测量直径＜2.5 cm",
+          "src": "R09",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "3级标准",
+          "v": "表皮肿胀明显、颜色呈半透明状、疼痛感觉加剧,外渗量50~99 mL",
+          "quote": "外渗量为50 mL～99 mL",
+          "src": "R10",
+          "cat": "外渗分级"
+        }
+      ]
+    },
+    {
+      "id": "S_ExtravasationCoolSkin",
+      "graph": "topic-01",
+      "type": "SymptomSign",
+      "name": "皮肤发凉",
+      "tags": [
+        "外渗表现",
+        "症状体征"
+      ],
+      "aliases": [
+        "cool skin",
+        "局部发凉",
+        "皮肤发凉"
+      ],
+      "summary": "外渗部位皮肤温度低于周围，提示局部循环受到影响。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        }
+      ],
+      "details": [
+        {
+          "k": "1级标准",
+          "v": "外渗量<20 mL、测量直径<2.5 cm,表皮温度稍降低、颜色稍变浅,可能疼痛或无痛",
+          "quote": "含碘对比剂外渗量＜20 mL，测量直径＜2.5 cm",
+          "src": "R09",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "2级标准",
+          "v": "外渗量20~50 mL、直径2.5~15 cm,水肿、表皮温度降低、颜色变浅,疼痛感逐渐增加",
+          "quote": "含碘对比剂外渗量20 mL～50 mL，测量直径2.5 cm～15 cm",
+          "src": "R09",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "3级标准",
+          "v": "外渗量>50 mL、直径>15 cm,明显水肿呈半透明状、表皮发凉,疼痛加剧部分出现麻木",
+          "quote": "含碘对比剂外渗量＞50 mL，测量直径＞15 cm",
+          "src": "R09",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "1级标准",
+          "v": "表皮颜色稍变浅、有或无定点疼痛、表皮温度稍降低,外渗量0~9 mL",
+          "quote": "外渗量为0 mL～9 mL",
+          "src": "R10",
+          "cat": "外渗分级"
+        }
+      ]
+    },
+    {
+      "id": "S_ExtravasationPallor",
+      "graph": "topic-01",
+      "type": "SymptomSign",
+      "name": "皮肤发白发紧",
+      "tags": [
+        "外渗表现",
+        "症状体征"
+      ],
+      "aliases": [
+        "pale tight skin",
+        "皮肤苍白",
+        "局部发白",
+        "皮肤发白发紧"
+      ],
+      "summary": "外渗部位皮肤发白、发紧，是皮下积液张力高的表现。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        }
+      ],
+      "details": [
+        {
+          "k": "1级标准",
+          "v": "外渗量<20 mL、测量直径<2.5 cm,表皮温度稍降低、颜色稍变浅,可能疼痛或无痛",
+          "quote": "含碘对比剂外渗量＜20 mL，测量直径＜2.5 cm",
+          "src": "R09",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "2级标准",
+          "v": "外渗量20~50 mL、直径2.5~15 cm,水肿、表皮温度降低、颜色变浅,疼痛感逐渐增加",
+          "quote": "含碘对比剂外渗量20 mL～50 mL，测量直径2.5 cm～15 cm",
+          "src": "R09",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "3级标准",
+          "v": "外渗量>50 mL、直径>15 cm,明显水肿呈半透明状、表皮发凉,疼痛加剧部分出现麻木",
+          "quote": "含碘对比剂外渗量＞50 mL，测量直径＞15 cm",
+          "src": "R09",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "1级标准",
+          "v": "表皮颜色稍变浅、有或无定点疼痛、表皮温度稍降低,外渗量0~9 mL",
+          "quote": "外渗量为0 mL～9 mL",
+          "src": "R10",
+          "cat": "外渗分级"
+        }
+      ]
+    },
+    {
+      "id": "NT_SelfCareTheory",
+      "name": "自护理论",
+      "type": "NursingTheory",
+      "tags": [
+        "护理理论",
+        "自护理论"
+      ],
+      "aliases": [
+        "Orem 自护理论",
+        "自我护理理论",
+        "Orem's Self-Care Deficit Nursing Theory",
+        "SCDNT"
+      ],
+      "summary": "自护理论（Orem，1971）认为人天生具备自我护理的能力，护理的任务是在患者自护能力不足时提供补偿与支持。落到本主题：指导患者与家属参与打针前的准备、检查后的观察，以及居家自我照护与早期求助。",
+      "attrs": [
+        {
+          "k": "理论提出者",
+          "v": "Dorothea E. Orem"
+        },
+        {
+          "k": "提出年份",
+          "v": "1971"
+        },
+        {
+          "k": "理论依据",
+          "v": "系统评价与剂量反应 Meta 分析（Nasiri 等 2023）—— 纳入 46 项研究"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "系统评价",
+          "author": "Nasiri M, Jafari Z, Rakhshan M, Yarahmadi F, et al.",
+          "title": "Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析",
+          "journal": "国际护理评论",
+          "year": 2023,
+          "cite": "Nasiri M, Jafari Z, Rakhshan M, Yarahmadi F, et al. / Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析 / 国际护理评论 / 2023",
+          "grade": "汇总证据",
+          "ref": "R24"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "研究目的",
+          "v": "评价按 Orem 自护缺陷护理理论设计的照护方案，对 18–70 岁慢性病患者的生活质量与自我照护（主要结局）及自我效能、焦虑、抑郁、压力（次要结局）的价值",
+          "quote": "This study aimed to clarify the value of caring programs developed according to Orem's Self-Care Deficit Nursing Theory regarding quality of life and self-care as the primary outcomes",
+          "src": "R24",
+          "cat": "护理理论"
+        },
+        {
+          "k": "纳入研究量",
+          "v": "检索 8 个信息源 + 国际临床试验注册库，截至 2022-03-30；共 46 项研究 + 11 条研究注册记录入选",
+          "quote": "A total of 46 studies and 11 study register entries were eligible.",
+          "src": "R24",
+          "cat": "护理理论"
+        },
+        {
+          "k": "主要效果",
+          "v": "自护理论干预显著改善生活质量、**自我照护能力**与自我效能，并显著降低焦虑与抑郁",
+          "quote": "Orem's theory-based interventions significantly improved the quality of life, self-care, and self-efficacy as well as significantly reduced anxiety and depression.",
+          "src": "R24",
+          "cat": "护理理论"
+        },
+        {
+          "k": "不确定的部分",
+          "v": "对**压力**的效果不确定 —— 无法做 Meta 分析",
+          "quote": "the value of the interventions on stress was uncertain, as performing the meta-analysis was not possible",
+          "src": "R24",
+          "cat": "护理理论"
+        },
+        {
+          "k": "证据强度偏低",
+          "v": "⚠️ 摘要自述：证据质量不理想、研究间异质性高，仍需设计良好的试验才能得出循证结论",
+          "quote": "Considering the undesirable evidence quality and the high between-study heterogeneity, further well-designed trials are required to draw an evidence-based conclusion.",
+          "src": "R24",
+          "cat": "护理理论"
+        },
+        {
+          "k": "对护理实践的意义",
+          "v": "Orem 理论可帮助护士动态评估患者的自我照护能力、实施针对其需求与问题的护理措施",
+          "quote": "Orem's Nursing Theory can help nurses in different fields to dynamically and carefully evaluate patients' self-care ability and implement appropriate nursing measures tailored to their needs, interests, and problems.",
+          "src": "R24",
+          "cat": "护理理论"
+        },
+        {
+          "k": "理论定位",
+          "v": "Orem 护理理论是最知名、可为患者自我照护活动提供结构的理论；慢性病患者需要恰当的自我照护训练、辅导与支持",
+          "quote": "Orem's Nursing Theory is the most well-known theory that provides a structure to involve patients in their self-care activities.",
+          "src": "R24",
+          "cat": "护理理论"
+        }
+      ]
+    },
+    {
+      "id": "R24",
+      "name": "Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "系统评价"
+      ],
+      "aliases": [
+        "Application of Orem's theory-based caring programs among chronically ill adults",
+        "Orem 自护理论系统评价",
+        "Nasiri 2023 系统评价"
+      ],
+      "summary": "系统评价与剂量反应 Meta 分析，纳入 46 项研究：以自护理论为基础的照护方案可改善慢病成人的生活质量、自我照护能力与自我效能，并降低焦虑与抑郁；但研究间异质性高、证据质量不理想，仍需设计良好的试验。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "系统评价"
+        },
+        {
+          "k": "年份",
+          "v": "2023"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.1111/inr.12808 · PROSPERO CRD42020152789 · Int Nurs Rev 70(1):59-77"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "系统评价",
+          "author": "Nasiri M, Jafari Z, Rakhshan M, Yarahmadi F, et al.",
+          "title": "Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析",
+          "journal": "国际护理评论",
+          "year": 2023,
+          "cite": "Nasiri M, Jafari Z, Rakhshan M, Yarahmadi F, et al. / Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析 / 国际护理评论 / 2023",
+          "grade": "汇总证据",
+          "ref": "R24"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "FW_SymptomSign",
+      "name": "症状体征",
+      "type": "SymptomSign",
+      "tags": [
+        "知识框架",
+        "一级框架"
+      ],
+      "aliases": [
+        "症状体征"
+      ],
+      "summary": "论文「疾病知识图」一级框架之一。收录碘对比剂使用后可能出现的症状与体征 —— 不良反应、过敏反应、碘对比剂外渗；过敏反应下的下一级表现（皮疹、荨麻疹、瘙痒、颜面部水肿、咽喉部不适、胸闷、全身无力、过敏性休克），以及碘对比剂外渗下的局部表现（局部肿胀、局部疼痛、局部发红、皮肤发凉、皮肤发白发紧）。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "一级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al.",
+          "title": "对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）",
+          "journal": "加拿大放射医师协会杂志",
+          "year": 2025,
+          "cite": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al. / 对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会） / 加拿大放射医师协会杂志 / 2025",
+          "grade": "推荐意见",
+          "ref": "R14"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Nawras M, Alyousif Z, Beran A, Elsamaloty H",
+          "title": "碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析",
+          "journal": "临床影像学",
+          "year": 2023,
+          "cite": "Nawras M, Alyousif Z, Beran A, Elsamaloty H / 碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析 / 临床影像学 / 2023 · DOI 10.1016/j.clinimag.2023.05.006 · PMID 37216743"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Huang W, He C, Chen Y, Xu H, Yao J, Zhao L",
+          "title": "对比剂即刻超敏反应危险因素的系统评价与 Meta 分析",
+          "journal": "欧洲放射学杂志",
+          "year": 2026,
+          "cite": "Huang W, He C, Chen Y, Xu H, Yao J, Zhao L / 对比剂即刻超敏反应危险因素的系统评价与 Meta 分析 / 欧洲放射学杂志 / 2026 · DOI 10.1016/j.ejrad.2025.112472 · PMID 41175815"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "系统评价",
+          "author": "姚金秀、杨丽娜、梅申聪、董芳辉",
+          "title": "放射科碘对比剂外渗影响因素的系统评价",
+          "journal": "上海护理",
+          "year": 2023,
+          "cite": "姚金秀、杨丽娜、梅申聪、董芳辉 / 放射科碘对比剂外渗影响因素的系统评价 / 上海护理 / 2023",
+          "grade": "汇总证据",
+          "ref": "R17"
+        },
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        },
+        {
+          "type": "规范",
+          "author": "广西壮族自治区市场监督管理局",
+          "title": "DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范",
+          "journal": "广西壮族自治区市场监督管理局（地方标准）",
+          "year": 2024,
+          "cite": "广西壮族自治区市场监督管理局 / DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范 / 广西壮族自治区市场监督管理局（地方标准） / 2024",
+          "grade": "标准与规范",
+          "ref": "R10"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Ding S, Meystre NR, Campeanu C, Gullo G",
+          "title": "CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析",
+          "journal": "JBI 系统评价与实施报告",
+          "year": 2018,
+          "cite": "Ding S, Meystre NR, Campeanu C, Gullo G / CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析 / JBI 系统评价与实施报告 / 2018 · DOI 10.11124/JBISRIR-2017-003348 · PMID 29324560"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "FW_Exam",
+      "name": "辅助检查",
+      "type": "Exam",
+      "tags": [
+        "知识框架",
+        "一级框架"
+      ],
+      "aliases": [
+        "辅助检查"
+      ],
+      "summary": "论文「疾病知识图」一级框架之一。收录与本主题相关的检查项目 —— CT 增强扫描、碘对比剂。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "一级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        },
+        {
+          "type": "规范",
+          "author": "广西壮族自治区市场监督管理局",
+          "title": "DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范",
+          "journal": "广西壮族自治区市场监督管理局（地方标准）",
+          "year": 2024,
+          "cite": "广西壮族自治区市场监督管理局 / DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范 / 广西壮族自治区市场监督管理局（地方标准） / 2024",
+          "grade": "标准与规范",
+          "ref": "R10"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        },
+        {
+          "type": "推荐",
+          "author": "de Laforcade L, Bobot M, Bellin MF, et al.",
+          "title": "欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评",
+          "journal": "肾脏病与治疗",
+          "year": 2021,
+          "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / 欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评 / 肾脏病与治疗 / 2021",
+          "grade": "推荐意见",
+          "ref": "R15"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "FW_ManagementPrinciple",
+      "name": "处置原则",
+      "type": "ManagementPrinciple",
+      "tags": [
+        "知识框架",
+        "一级框架"
+      ],
+      "aliases": [
+        "处置原则"
+      ],
+      "summary": "论文「疾病知识图」一级框架之一。收录护理处置原则 —— 护理措施、护理预防、护理干预，以及其下的外渗处置原则与不良反应分级处置原则。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "一级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        },
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        },
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "FW_NursingTheory",
+      "name": "护理理论",
+      "type": "NursingTheory",
+      "tags": [
+        "知识框架",
+        "一级框架"
+      ],
+      "aliases": [
+        "护理理论"
+      ],
+      "summary": "论文「疾病知识图」一级框架之一。收录指导护理实践的理论 —— 自护理论（Orem）：人天生具备自我护理的能力，护理的任务是在患者自护能力不足时提供补偿与支持；对应到本主题，是指导患者与家属参与预防、早期识别与居家自我照护。以及早期预警：在情况变坏之前先看出苗头、及时升级处理。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "一级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        },
+        {
+          "type": "系统评价",
+          "author": "Nasiri M, Jafari Z, Rakhshan M, Yarahmadi F, et al.",
+          "title": "Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析",
+          "journal": "国际护理评论",
+          "year": 2023,
+          "cite": "Nasiri M, Jafari Z, Rakhshan M, Yarahmadi F, et al. / Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析 / 国际护理评论 / 2023",
+          "grade": "汇总证据",
+          "ref": "R24"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "FW_DiseaseEducation",
+      "name": "疾病科普",
+      "type": "DiseaseEducation",
+      "tags": [
+        "知识框架",
+        "一级框架"
+      ],
+      "aliases": [
+        "疾病科普"
+      ],
+      "summary": "论文「疾病知识图」一级框架之一。论文 §3.2 指出「疾病知识图中科普模块的内容可面向公众开放，便于公众了解疾病的早期症状及常见误区」。收录检查前注意事项、检查后观察与护理、过敏史告知、外渗居家护理、急救知识五篇科普。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "一级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        },
+        {
+          "type": "书籍",
+          "author": "秦月兰、郑淑梅、刘雪莲",
+          "title": "影像护理学",
+          "journal": "人民卫生出版社",
+          "year": 2020,
+          "cite": "秦月兰、郑淑梅、刘雪莲 / 影像护理学 / 人民卫生出版社 / 2020",
+          "grade": "教材",
+          "ref": "R20"
+        },
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        },
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "FW_SymptomCategory",
+      "name": "症状分类",
+      "type": "SymptomCategory",
+      "tags": [
+        "知识框架",
+        "二级框架"
+      ],
+      "aliases": [
+        "症状分类"
+      ],
+      "summary": "论文表 1「症状分类」二级框架。把症状按谱归类 —— 碘对比剂不良反应谱，其下有过敏反应谱、静脉外渗反应谱。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "二级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "FW_AssessmentTool",
+      "name": "评估工具",
+      "type": "AssessmentTool",
+      "tags": [
+        "知识框架",
+        "二级框架"
+      ],
+      "aliases": [
+        "评估工具"
+      ],
+      "summary": "论文表 1「评估工具」二级框架。收录评估工具 —— 过敏史询问、外渗风险评估、血管条件评估。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "二级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        },
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "系统评价",
+          "author": "姚金秀、杨丽娜、梅申聪、董芳辉",
+          "title": "放射科碘对比剂外渗影响因素的系统评价",
+          "journal": "上海护理",
+          "year": 2023,
+          "cite": "姚金秀、杨丽娜、梅申聪、董芳辉 / 放射科碘对比剂外渗影响因素的系统评价 / 上海护理 / 2023",
+          "grade": "汇总证据",
+          "ref": "R17"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Ding S, Meystre NR, Campeanu C, Gullo G",
+          "title": "CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析",
+          "journal": "JBI 系统评价与实施报告",
+          "year": 2018,
+          "cite": "Ding S, Meystre NR, Campeanu C, Gullo G / CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析 / JBI 系统评价与实施报告 / 2018 · DOI 10.11124/JBISRIR-2017-003348 · PMID 29324560"
+        },
+        {
+          "type": "标准",
+          "author": "国家卫生健康委员会",
+          "title": "WS/T 433—2023 静脉治疗护理技术操作标准",
+          "journal": "国家卫生健康委员会（卫生行业标准）",
+          "year": 2023,
+          "cite": "国家卫生健康委员会 / WS/T 433—2023 静脉治疗护理技术操作标准 / 国家卫生健康委员会（卫生行业标准） / 2023",
+          "grade": "标准与规范",
+          "ref": "R08"
+        },
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "FW_RiskFactor",
+      "name": "高危因素识别",
+      "type": "RiskFactor",
+      "tags": [
+        "知识框架",
+        "二级框架"
+      ],
+      "aliases": [
+        "高危因素识别"
+      ],
+      "summary": "论文表 1「高危因素识别」二级框架。收录高危因素 —— 既往碘对比剂过敏史、未控制的哮喘、高龄或低龄、静脉条件差、高压注射、未做生理盐水试推。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "二级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Huang W, He C, Chen Y, Xu H, Yao J, Zhao L",
+          "title": "对比剂即刻超敏反应危险因素的系统评价与 Meta 分析",
+          "journal": "欧洲放射学杂志",
+          "year": 2026,
+          "cite": "Huang W, He C, Chen Y, Xu H, Yao J, Zhao L / 对比剂即刻超敏反应危险因素的系统评价与 Meta 分析 / 欧洲放射学杂志 / 2026 · DOI 10.1016/j.ejrad.2025.112472 · PMID 41175815"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "系统评价",
+          "author": "姚金秀、杨丽娜、梅申聪、董芳辉",
+          "title": "放射科碘对比剂外渗影响因素的系统评价",
+          "journal": "上海护理",
+          "year": 2023,
+          "cite": "姚金秀、杨丽娜、梅申聪、董芳辉 / 放射科碘对比剂外渗影响因素的系统评价 / 上海护理 / 2023",
+          "grade": "汇总证据",
+          "ref": "R17"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "FW_PharmacologicalManagement",
+      "name": "药物管理",
+      "type": "PharmacologicalManagement",
+      "tags": [
+        "知识框架",
+        "二级框架"
+      ],
+      "aliases": [
+        "药物管理"
+      ],
+      "summary": "论文表 1「药物管理」二级框架。收录药物处置 —— 肌内注射肾上腺素、糖皮质激素、抗组胺药、50% 硫酸镁湿敷、0.05% 地塞米松湿敷。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "二级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        },
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "FW_NonPharmacologicalManagement",
+      "name": "非药物管理",
+      "type": "NonPharmacologicalManagement",
+      "tags": [
+        "知识框架",
+        "二级框架"
+      ],
+      "aliases": [
+        "非药物管理"
+      ],
+      "summary": "论文表 1「非药物管理」二级框架。论文第 20 页写明：点击「非药物管理」实体节点，Web 端返回其关联实体节点。收录非药物处置 —— 立即停止注射、保留静脉留置针、患肢抬高、局部冷敷、密切观察、对比剂预处理、血管可视化、心理疏导。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "二级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        },
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        },
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Nawras M, Alyousif Z, Beran A, Elsamaloty H",
+          "title": "碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析",
+          "journal": "临床影像学",
+          "year": 2023,
+          "cite": "Nawras M, Alyousif Z, Beran A, Elsamaloty H / 碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析 / 临床影像学 / 2023 · DOI 10.1016/j.clinimag.2023.05.006 · PMID 37216743"
+        },
+        {
+          "type": "标准",
+          "author": "国家卫生健康委员会",
+          "title": "WS/T 433—2023 静脉治疗护理技术操作标准",
+          "journal": "国家卫生健康委员会（卫生行业标准）",
+          "year": 2023,
+          "cite": "国家卫生健康委员会 / WS/T 433—2023 静脉治疗护理技术操作标准 / 国家卫生健康委员会（卫生行业标准） / 2023",
+          "grade": "标准与规范",
+          "ref": "R08"
+        },
+        {
+          "type": "书籍",
+          "author": "秦月兰、郑淑梅、刘雪莲",
+          "title": "影像护理学",
+          "journal": "人民卫生出版社",
+          "year": 2020,
+          "cite": "秦月兰、郑淑梅、刘雪莲 / 影像护理学 / 人民卫生出版社 / 2020",
+          "grade": "教材",
+          "ref": "R20"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "FW_SymptomStatus",
+      "name": "症状现状",
+      "type": "SymptomStatus",
+      "tags": [
+        "知识框架",
+        "二级框架"
+      ],
+      "aliases": [
+        "症状现状"
+      ],
+      "summary": "论文表 1「症状现状」二级框架。收录症状现状 —— 轻度反应已缓解、重度反应已恢复。（在本题数据里，这两个节点是护理措施 / 护理干预 / 外渗处置原则的「影响」目标，故归在处置原则之下。）",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "二级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "FW_FunctionalStatus",
+      "name": "功能状况",
+      "type": "FunctionalStatus",
+      "tags": [
+        "知识框架",
+        "二级框架"
+      ],
+      "aliases": [
+        "功能状况"
+      ],
+      "summary": "论文表 1「功能状况」二级框架。收录功能状况 —— 患肢功能状态。（在本题数据里，该节点是护理干预的「影响」目标，故归在处置原则之下。）",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "二级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R01-2026",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "ACR Manual on Contrast Media（2026 版 · 对比剂加温章节）",
+      "tags": [
+        "文献",
+        "指南"
+      ],
+      "aliases": [
+        "ACR Manual on Contrast Media（2026 版 · 对比剂加温章节）"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "指南"
+        },
+        {
+          "k": "年份",
+          "v": "2026"
+        },
+        {
+          "k": "核验标识",
+          "v": "活页 PDF（Copyright 2026）· 入口 URL 无版本参数、内容原地替换 · 该句为版本指纹（2024 版无此句）"
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "American College of Radiology",
+          "title": "ACR Manual on Contrast Media（2026 版 · 对比剂加温章节）",
+          "journal": "American College of Radiology",
+          "year": 2026,
+          "cite": "American College of Radiology / ACR Manual on Contrast Media（2026 版 · 对比剂加温章节） / American College of Radiology / 2026",
+          "grade": "指南与共识",
+          "ref": "R01-2026"
+        }
+      ]
+    },
+    {
+      "id": "CG-01",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "碘对比剂超敏反应临床诊疗及长期管理专家共识（2026版）",
+      "tags": [
+        "文献",
+        "共识"
+      ],
+      "aliases": [
+        "碘对比剂超敏反应临床诊疗及长期管理专家共识（2026版）"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "共识"
+        },
+        {
+          "k": "年份",
+          "v": "2026"
+        },
+        {
+          "k": "核验标识",
+          "v": "60(9):1387-1404 · 10.3760/cma.j.cn112150-20260529-00488 · https://rs.yiigle.com/cmaid/1696934"
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "国家免疫学（含变态反应）专业医疗质量控制中心·国家放射影像专业医疗质量控制中心·国家急诊医学专业医疗质量控制中心",
+          "title": "碘对比剂超敏反应临床诊疗及长期管理专家共识（2026版）",
+          "journal": "中华预防医学杂志",
+          "year": 2026,
+          "cite": "国家免疫学（含变态反应）专业医疗质量控制中心·国家放射影像专业医疗质量控制中心·国家急诊医学专业医疗质量控制中心 / 碘对比剂超敏反应临床诊疗及长期管理专家共识（2026版） / 中华预防医学杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "CG-01"
+        }
+      ]
+    },
+    {
+      "id": "CG-03",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "碘对比剂全程化药学服务共识",
+      "tags": [
+        "文献",
+        "共识"
+      ],
+      "aliases": [
+        "碘对比剂全程化药学服务共识"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "共识"
+        },
+        {
+          "k": "年份",
+          "v": "2024"
+        },
+        {
+          "k": "核验标识",
+          "v": "35(1):1-9 · 10.6039/j.issn.1001-0408.2024.01.01 · https://wap.china-pharmacy.com/attached/wenjian/14/202401/20240112_105157_724_364.pdf"
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中国医药教育协会临床合理用药专业委员会·广东省药学会用药评价与临床科研专家委员会",
+          "title": "碘对比剂全程化药学服务共识",
+          "journal": "中国药房",
+          "year": 2024,
+          "cite": "中国医药教育协会临床合理用药专业委员会·广东省药学会用药评价与临床科研专家委员会 / 碘对比剂全程化药学服务共识 / 中国药房 / 2024",
+          "grade": "指南与共识",
+          "ref": "CG-03"
+        }
+      ]
+    },
+    {
+      "id": "CG-09",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "恶性肿瘤患者CT增强扫描对比剂安全管理专家共识（2022）",
+      "tags": [
+        "文献",
+        "共识"
+      ],
+      "aliases": [
+        "恶性肿瘤患者CT增强扫描对比剂安全管理专家共识（2022）"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "共识"
+        },
+        {
+          "k": "年份",
+          "v": "2022"
+        },
+        {
+          "k": "核验标识",
+          "v": "56(9):941-949 · 10.3760/cma.j.cn112149-20220420-00367 · https://dzrmyy.cn/d/file/content/2022/10/6348d5bdc37d3.pdf"
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中国抗癌协会肿瘤影像专业委员会",
+          "title": "恶性肿瘤患者CT增强扫描对比剂安全管理专家共识（2022）",
+          "journal": "中华放射学杂志",
+          "year": 2022,
+          "cite": "中国抗癌协会肿瘤影像专业委员会 / 恶性肿瘤患者CT增强扫描对比剂安全管理专家共识（2022） / 中华放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "CG-09"
+        }
+      ]
+    },
+    {
+      "id": "CG-08",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "含碘对比剂静脉外渗护理管理实践指南（2021 原始版）",
+      "tags": [
+        "文献",
+        "指南"
+      ],
+      "aliases": [
+        "含碘对比剂静脉外渗护理管理实践指南（2021 原始版）"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "指南"
+        },
+        {
+          "k": "年份",
+          "v": "2021"
+        },
+        {
+          "k": "核验标识",
+          "v": "56(7):1008-1016 · 10.3760/j.issn.0254-1769.2021.07.008 · https://zh.zhhlzzs.com/CN/PDF/2140"
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会内科专业委员会",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2021 原始版）",
+          "journal": "中华护理杂志",
+          "year": 2021,
+          "cite": "中华护理学会内科专业委员会 / 含碘对比剂静脉外渗护理管理实践指南（2021 原始版） / 中华护理杂志 / 2021",
+          "grade": "指南与共识",
+          "ref": "CG-08"
+        }
+      ]
+    },
+    {
+      "id": "CG-04",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "经动脉心血管介入诊治中含碘对比剂相关不良反应防治的中国专家共识（2021）",
+      "tags": [
+        "文献",
+        "共识"
+      ],
+      "aliases": [
+        "经动脉心血管介入诊治中含碘对比剂相关不良反应防治的中国专家共识（2021）"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "共识"
+        },
+        {
+          "k": "年份",
+          "v": "2021"
+        },
+        {
+          "k": "核验标识",
+          "v": "49(10):972-985 · 10.3760/cma.j.cn112148-20210315-00224 · https://www.fwhzxxgbyy.com/article/157.html"
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中华医学会心血管病学分会介入心脏病学组·大血管病学组",
+          "title": "经动脉心血管介入诊治中含碘对比剂相关不良反应防治的中国专家共识（2021）",
+          "journal": "中华心血管病杂志",
+          "year": 2021,
+          "cite": "中华医学会心血管病学分会介入心脏病学组·大血管病学组 / 经动脉心血管介入诊治中含碘对比剂相关不良反应防治的中国专家共识（2021） / 中华心血管病杂志 / 2021",
+          "grade": "指南与共识",
+          "ref": "CG-04"
+        }
+      ]
+    },
+    {
+      "id": "CG-05",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "影像科碘对比剂临床应用与不良反应处置规范培训及管理专家共识",
+      "tags": [
+        "文献",
+        "共识"
+      ],
+      "aliases": [
+        "影像科碘对比剂临床应用与不良反应处置规范培训及管理专家共识"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "共识"
+        },
+        {
+          "k": "年份",
+          "v": "2026"
+        },
+        {
+          "k": "核验标识",
+          "v": "45(1):13-18 · https://www.lcfsxzz.com/CN/Y2026/V45/I1/13"
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会护理学组·湖北省医学会介入医学分会护理学组",
+          "title": "影像科碘对比剂临床应用与不良反应处置规范培训及管理专家共识",
+          "journal": "临床放射学杂志",
+          "year": 2026,
+          "cite": "中华医学会放射学分会护理学组·湖北省医学会介入医学分会护理学组 / 影像科碘对比剂临床应用与不良反应处置规范培训及管理专家共识 / 临床放射学杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "CG-05"
+        }
+      ]
+    },
+    {
+      "id": "CG-06",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "碘对比剂临床应用的风险评估管理专家共识",
+      "tags": [
+        "文献",
+        "共识"
+      ],
+      "aliases": [
+        "碘对比剂临床应用的风险评估管理专家共识"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "共识"
+        },
+        {
+          "k": "年份",
+          "v": "2025"
+        },
+        {
+          "k": "核验标识",
+          "v": "44(5):790-796 · https://www.lcfsxzz.com/CN/Y2025/V44/I5/790"
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会护理学组",
+          "title": "碘对比剂临床应用的风险评估管理专家共识",
+          "journal": "临床放射学杂志",
+          "year": 2025,
+          "cite": "中华医学会放射学分会护理学组 / 碘对比剂临床应用的风险评估管理专家共识 / 临床放射学杂志 / 2025",
+          "grade": "指南与共识",
+          "ref": "CG-06"
+        }
+      ]
+    },
+    {
+      "id": "CG-07",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "心血管介入碘对比剂使用管理护理专家共识",
+      "tags": [
+        "文献",
+        "共识"
+      ],
+      "aliases": [
+        "心血管介入碘对比剂使用管理护理专家共识"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "共识"
+        },
+        {
+          "k": "年份",
+          "v": "2021"
+        },
+        {
+          "k": "核验标识",
+          "v": "36(7):625-633 · 10.3969/j.issn.1000-3614.2021.07.001 · https://www.cnki.com.cn/Article/CJFDTotal-ZGXH202107001.htm"
+        },
+        {
+          "k": "证据等级",
+          "v": "推荐意见"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "海峡两岸医药卫生交流协会护理分会心血管护技专业学组",
+          "title": "心血管介入碘对比剂使用管理护理专家共识",
+          "journal": "中国循环杂志",
+          "year": 2021,
+          "cite": "海峡两岸医药卫生交流协会护理分会心血管护技专业学组 / 心血管介入碘对比剂使用管理护理专家共识 / 中国循环杂志 / 2021",
+          "grade": "推荐意见",
+          "ref": "CG-07"
+        }
+      ]
+    },
+    {
+      "id": "CN-03",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "中医护理技术在碘对比剂外渗处理中应用的范围综述",
+      "tags": [
+        "文献",
+        "系统评价"
+      ],
+      "aliases": [
+        "中医护理技术在碘对比剂外渗处理中应用的范围综述"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "系统评价"
+        },
+        {
+          "k": "年份",
+          "v": "2026"
+        },
+        {
+          "k": "核验标识",
+          "v": "7(4):91-96 · https://publish.cnki.net/journal/portal/yxln/client/paper/e0f531985a9e3379ac7533e078adc2a9"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "系统评价",
+          "author": "承德医学院护理学院（秦雨轩、王树艳、丁艺华等）",
+          "title": "中医护理技术在碘对比剂外渗处理中应用的范围综述",
+          "journal": "老年医学研究",
+          "year": 2026,
+          "cite": "承德医学院护理学院（秦雨轩、王树艳、丁艺华等） / 中医护理技术在碘对比剂外渗处理中应用的范围综述 / 老年医学研究 / 2026",
+          "grade": "汇总证据",
+          "ref": "CN-03"
+        }
+      ]
+    },
+    {
+      "id": "CN-04",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "如意金黄双散糊剂外敷在治疗碘造影剂外渗中的应用",
+      "tags": [
+        "文献",
+        "对照研究"
+      ],
+      "aliases": [
+        "如意金黄双散糊剂外敷在治疗碘造影剂外渗中的应用"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "对照研究"
+        },
+        {
+          "k": "年份",
+          "v": "2015"
+        },
+        {
+          "k": "核验标识",
+          "v": "21(9):1022-1023 · 10.3760/cma.j.issn.1674-2907.2015.09.009 · https://search.napstic.cn/literature/periodical/010xdhl201509010"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "对照研究",
+          "author": "哈尔滨医科大学附属第四医院普外一科（孙海霞、李红霞）",
+          "title": "如意金黄双散糊剂外敷在治疗碘造影剂外渗中的应用",
+          "journal": "中华现代护理杂志",
+          "year": 2015,
+          "cite": "哈尔滨医科大学附属第四医院普外一科（孙海霞、李红霞） / 如意金黄双散糊剂外敷在治疗碘造影剂外渗中的应用 / 中华现代护理杂志 / 2015",
+          "grade": "汇总证据",
+          "ref": "CN-04"
+        }
+      ]
+    },
+    {
+      "id": "CN-05",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "中药如意金黄散早期湿敷在药物外渗性皮肤损伤中的效果分析",
+      "tags": [
+        "文献",
+        "病例系列"
+      ],
+      "aliases": [
+        "中药如意金黄散早期湿敷在药物外渗性皮肤损伤中的效果分析"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "病例系列"
+        },
+        {
+          "k": "年份",
+          "v": "2020"
+        },
+        {
+          "k": "核验标识",
+          "v": "26(13):1783-1788 · https://search.napstic.cn/literature/periodical/010xdhl202013021"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "病例系列",
+          "author": "连云港市第一人民医院伤口造口门诊（李来娟、蒋琪霞等）",
+          "title": "中药如意金黄散早期湿敷在药物外渗性皮肤损伤中的效果分析",
+          "journal": "中华现代护理杂志",
+          "year": 2020,
+          "cite": "连云港市第一人民医院伤口造口门诊（李来娟、蒋琪霞等） / 中药如意金黄散早期湿敷在药物外渗性皮肤损伤中的效果分析 / 中华现代护理杂志 / 2020",
+          "grade": "汇总证据",
+          "ref": "CN-05"
+        }
+      ]
+    },
+    {
+      "id": "CN-06",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "新磺片糊剂湿敷治疗静脉炎",
+      "tags": [
+        "文献",
+        "对照研究"
+      ],
+      "aliases": [
+        "新磺片糊剂湿敷治疗静脉炎"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "对照研究"
+        },
+        {
+          "k": "年份",
+          "v": "2016"
+        },
+        {
+          "k": "核验标识",
+          "v": "5:203 · https://coaa.istic.ac.cn/openjournal/periodicalArticle/0120160512115342"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "对照研究",
+          "author": "中国十五冶金建设集团有限公司职工医院（陈佳兰、王声勇）",
+          "title": "新磺片糊剂湿敷治疗静脉炎",
+          "journal": "医学信息",
+          "year": 2016,
+          "cite": "中国十五冶金建设集团有限公司职工医院（陈佳兰、王声勇） / 新磺片糊剂湿敷治疗静脉炎 / 医学信息 / 2016",
+          "grade": "汇总证据",
+          "ref": "CN-06"
+        }
+      ]
+    },
+    {
+      "id": "CN-07",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "新鲜马铃薯与新磺片交替外敷治疗深静脉所致静脉炎的临床疗效",
+      "tags": [
+        "文献",
+        "病例系列"
+      ],
+      "aliases": [
+        "新鲜马铃薯与新磺片交替外敷治疗深静脉所致静脉炎的临床疗效"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "病例系列"
+        },
+        {
+          "k": "年份",
+          "v": "2010"
+        },
+        {
+          "k": "核验标识",
+          "v": "18(11):1650 · https://opaj.napstic.cn/periodicalArticle/0120110504063474"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "病例系列",
+          "author": "江西省赣州市人民医院肿瘤外科（徐瑶）",
+          "title": "新鲜马铃薯与新磺片交替外敷治疗深静脉所致静脉炎的临床疗效",
+          "journal": "实用心脑肺血管病杂志",
+          "year": 2010,
+          "cite": "江西省赣州市人民医院肿瘤外科（徐瑶） / 新鲜马铃薯与新磺片交替外敷治疗深静脉所致静脉炎的临床疗效 / 实用心脑肺血管病杂志 / 2010",
+          "grade": "汇总证据",
+          "ref": "CN-07"
+        }
+      ]
+    },
+    {
+      "id": "CN-08",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "新癀片外敷治疗静脉输液渗漏临床疗效观察",
+      "tags": [
+        "文献",
+        "对照研究"
+      ],
+      "aliases": [
+        "新癀片外敷治疗静脉输液渗漏临床疗效观察"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "对照研究"
+        },
+        {
+          "k": "年份",
+          "v": "2019"
+        },
+        {
+          "k": "核验标识",
+          "v": "(14) · https://www.eastyaoshan.com/a/2019nianqiyuexia_14qi/2294.html"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "对照研究",
+          "author": "中山大学附属第一医院中医科（许璧瑜）",
+          "title": "新癀片外敷治疗静脉输液渗漏临床疗效观察",
+          "journal": "东方药膳",
+          "year": 2019,
+          "cite": "中山大学附属第一医院中医科（许璧瑜） / 新癀片外敷治疗静脉输液渗漏临床疗效观察 / 东方药膳 / 2019",
+          "grade": "汇总证据",
+          "ref": "CN-08"
+        }
+      ]
+    },
+    {
+      "id": "CN-09",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "五黄油外敷治疗化疗所致静脉炎效果观察",
+      "tags": [
+        "文献",
+        "对照研究"
+      ],
+      "aliases": [
+        "五黄油外敷治疗化疗所致静脉炎效果观察"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "对照研究"
+        },
+        {
+          "k": "年份",
+          "v": "2010"
+        },
+        {
+          "k": "核验标识",
+          "v": "8(13):116-117 · https://search.napstic.cn/literature/periodical/010zgyyzn201013126"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "对照研究",
+          "author": "南昌大学第一附属医院",
+          "title": "五黄油外敷治疗化疗所致静脉炎效果观察",
+          "journal": "中国医药指南",
+          "year": 2010,
+          "cite": "南昌大学第一附属医院 / 五黄油外敷治疗化疗所致静脉炎效果观察 / 中国医药指南 / 2010",
+          "grade": "汇总证据",
+          "ref": "CN-09"
+        }
+      ]
+    },
+    {
+      "id": "CN-10",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "五黄油对顺铂所致静脉炎的疗效观察",
+      "tags": [
+        "文献",
+        "对照研究"
+      ],
+      "aliases": [
+        "五黄油对顺铂所致静脉炎的疗效观察"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "对照研究"
+        },
+        {
+          "k": "年份",
+          "v": "2010"
+        },
+        {
+          "k": "核验标识",
+          "v": "11(10):1 · https://qks.ncu.edu.cn/Jwk_lcyx/CN/abstract/abstract28905.shtml"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "对照研究",
+          "author": "南昌大学第二附属医院（黄丹、黄小梅、王曾庚）",
+          "title": "五黄油对顺铂所致静脉炎的疗效观察",
+          "journal": "实用临床医学",
+          "year": 2010,
+          "cite": "南昌大学第二附属医院（黄丹、黄小梅、王曾庚） / 五黄油对顺铂所致静脉炎的疗效观察 / 实用临床医学 / 2010",
+          "grade": "汇总证据",
+          "ref": "CN-10"
+        }
+      ]
+    },
+    {
+      "id": "CN-11",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "五黄油治疗肠造口粪水性皮炎的临床疗效研究",
+      "tags": [
+        "文献",
+        "对照研究"
+      ],
+      "aliases": [
+        "五黄油治疗肠造口粪水性皮炎的临床疗效研究"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "对照研究"
+        },
+        {
+          "k": "年份",
+          "v": "2025"
+        },
+        {
+          "k": "核验标识",
+          "v": "32(12):159-161 · https://search.napstic.cn/literature/periodical/010sdyy202512052"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "对照研究",
+          "author": "南昌大学第一附属医院（魏明珠、吴姝玲、陈景华等）",
+          "title": "五黄油治疗肠造口粪水性皮炎的临床疗效研究",
+          "journal": "首都食品与医药",
+          "year": 2025,
+          "cite": "南昌大学第一附属医院（魏明珠、吴姝玲、陈景华等） / 五黄油治疗肠造口粪水性皮炎的临床疗效研究 / 首都食品与医药 / 2025",
+          "grade": "汇总证据",
+          "ref": "CN-11"
+        }
+      ]
+    },
+    {
+      "id": "DRUG-01",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "总局关于修订跌打万花油等 32 种非处方药说明书的公告（2017 年第 175 号）附件 10《如意金黄散非处方药说明书范本》",
+      "tags": [
+        "文献",
+        "药品说明书"
+      ],
+      "aliases": [
+        "总局关于修订跌打万花油等 32 种非处方药说明书的公告（2017 年第 175 号）附件 10《如意金黄散非处方药说明书范本》"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "药品说明书"
+        },
+        {
+          "k": "年份",
+          "v": "2017"
+        },
+        {
+          "k": "核验标识",
+          "v": "2017 年第 175 号公告（落款 2017-12-28）· 附件 10《如意金黄散非处方药说明书范本》· ⚠️ 附件本身无核准日期/修订日期栏"
+        },
+        {
+          "k": "证据等级",
+          "v": "说明书"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "药品说明书",
+          "author": "国家药品监督管理局",
+          "title": "总局关于修订跌打万花油等 32 种非处方药说明书的公告（2017 年第 175 号）附件 10《如意金黄散非处方药说明书范本》",
+          "journal": "国家药监局公告",
+          "year": 2017,
+          "cite": "国家药品监督管理局 / 总局关于修订跌打万花油等 32 种非处方药说明书的公告（2017 年第 175 号）附件 10《如意金黄散非处方药说明书范本》 / 国家药监局公告 / 2017",
+          "grade": "说明书",
+          "ref": "DRUG-01"
+        }
+      ]
+    },
+    {
+      "id": "DRUG-02",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "新癀片说明书（国药准字 Z35020063）",
+      "tags": [
+        "文献",
+        "药品说明书"
+      ],
+      "aliases": [
+        "新癀片说明书（国药准字 Z35020063）"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "药品说明书"
+        },
+        {
+          "k": "年份",
+          "v": "2015"
+        },
+        {
+          "k": "核验标识",
+          "v": "国药准字 Z35020063 · 厦门中药厂有限公司 · 说明书执行标准《中国药典 2015 年版一部》 · ⚠️ 说明书页面**无核准日期/修订日期栏** ⇒ 年份取执行标准版年（2015），非说明书出版年"
+        },
+        {
+          "k": "证据等级",
+          "v": "说明书"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "药品说明书",
+          "author": "厦门中药厂有限公司",
+          "title": "新癀片说明书（国药准字 Z35020063）",
+          "journal": "药品说明书（执行标准：中国药典 2015 年版一部）",
+          "year": 2015,
+          "cite": "厦门中药厂有限公司 / 新癀片说明书（国药准字 Z35020063） / 药品说明书（执行标准：中国药典 2015 年版一部） / 2015",
+          "grade": "说明书",
+          "ref": "DRUG-02"
+        }
+      ]
+    },
+    {
+      "id": "S_VasovagalReaction",
+      "graph": "topic-01",
+      "type": "SymptomSign",
+      "name": "血管迷走反应",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "血管迷走反应"
+      ],
+      "summary": "注射时出现的迷走神经反应：苍白、无力、恶心呕吐、出汗、心动过缓、低血压；与过敏反应的关键区别是**先心动过缓**（过敏反应多为先心动过速）。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al.",
+          "title": "对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）",
+          "journal": "加拿大放射医师协会杂志",
+          "year": 2025,
+          "cite": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al. / 对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会） / 加拿大放射医师协会杂志 / 2025",
+          "grade": "推荐意见",
+          "ref": "R14"
+        }
+      ],
+      "details": [
+        {
+          "k": "血管迷走鉴别",
+          "v": "血管迷走：苍白、无力、恶心呕吐、出汗、心动过缓、低血压；过敏反应多为先心动过速后心动过缓",
+          "quote": "Features of a vasovagal event may include pallor, weakness, nausea, vomiting, diaphoresis, bradycardia, and hypotension",
+          "src": "R12",
+          "cat": "识别要点"
+        }
+      ]
+    },
+    {
+      "id": "PM_EpiAutoInjector",
+      "graph": "topic-01",
+      "type": "PharmacologicalManagement",
+      "name": "肾上腺素自动注射笔",
+      "tags": [
+        "药物管理"
+      ],
+      "aliases": [
+        "肾上腺素自动注射笔"
+      ],
+      "summary": "院外或患者自用的肾上腺素自动注射笔；规格按体重选（≥30 kg 用 0.3 mg），取药不熟者用笔可减少差错。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        }
+      ],
+      "details": [
+        {
+          "k": "自动注射笔剂量",
+          "v": "肾上腺素自动注射笔：>30 kg 用 0.3 mg，<25–30 kg 儿童用 0.15 mg；取药不熟者用笔可减少差错",
+          "quote": "0.3 mg for patients greater than 30 kg and 0.15 mg for children less than 25 to 30 kg",
+          "src": "R12",
+          "cat": "首选用药"
+        },
+        {
+          "k": "自动注射笔规格",
+          "v": "FDA 批准规格：≥30 kg 用 0.3 mg、15–30 kg 用 0.15 mg、7.5–15 kg 用 0.1 mg（Auvi-Q）",
+          "quote": "0.3 mg EAIs for patients weighing above or equal to 30 kg, 0.15 mg EAIs for patients weighing 15 to 30 kg, and a 0.1 mg EAI (Auvi-Q) for patients weighing 7.5 to 15 kg",
+          "src": "R16",
+          "cat": "首选用药"
+        },
+        {
+          "k": "婴幼儿剂量",
+          "v": "<15 kg 婴幼儿用 0.1 mg 或 0.15 mg 自动注射笔之一；患者年龄与反应严重度不相关",
+          "quote": "We suggest clinicians prescribe either the 0.1 mg or the 0.15 mg EAI dose for infants/toddlers weighing less than 15 kg",
+          "src": "R16",
+          "cat": "特殊人群"
+        }
+      ]
+    },
+    {
+      "id": "AT_SerumTryptase",
+      "graph": "topic-01",
+      "type": "AssessmentTool",
+      "name": "血清胰蛋白酶",
+      "tags": [
+        "评估工具"
+      ],
+      "aliases": [
+        "血清胰蛋白酶"
+      ],
+      "summary": "过敏反应后抽血查血清胰蛋白酶，用于判断是否为 IgE 介导的 mast 细胞活化；急性期与基线值要配对采集。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al.",
+          "title": "对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）",
+          "journal": "加拿大放射医师协会杂志",
+          "year": 2025,
+          "cite": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al. / 对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会） / 加拿大放射医师协会杂志 / 2025",
+          "grade": "推荐意见",
+          "ref": "R14"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        }
+      ],
+      "details": [
+        {
+          "k": "皮试与胰蛋白酶",
+          "v": "重度反应后采血清胰蛋白酶（理想 2 小时内、可至 4–6 h）与 >24 h 基线值比较；并转过敏专科考虑皮试，宜 6 个月内做",
+          "quote": "serum tryptase level is drawn ideally within 2 hours but potentially up to 4 to 6 hours",
+          "src": "R12",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "胰蛋白酶采集",
+          "v": "发生过敏反应、稳定后采血清胰蛋白酶：症状出现后 30–120 分钟采集；结果须与基线值比较判断",
+          "quote": "Serum tryptase should be collected 30 to 120 minutes after the onset of symptoms",
+          "src": "R14",
+          "cat": "护理记录与上报"
+        },
+        {
+          "k": "急性期胰蛋白酶",
+          "v": "急性期血清胰蛋白酶尽早采集（理想在症状出现后 2 小时内），并稍后采第二次作基线对比",
+          "quote": "We suggest drawing an acute-phase tryptase level as early as possible during a suspected anaphylactic event (ideally within 2 hours after onset of symptoms)",
+          "src": "R16",
+          "cat": "护理记录与上报"
+        },
+        {
+          "k": "基线胰蛋白酶",
+          "v": "反复性、特发性或重度过敏反应史者测基线血清胰蛋白酶；>8 ng/mL 考虑遗传性 α-胰蛋白酶血症或克隆性肥大细胞病",
+          "quote": "Baseline serum tryptase (bST) level should be measured in patients presenting with a history of recurrent, idiopathic, or severe anaphylaxis",
+          "src": "R16",
+          "cat": "护理记录与上报"
+        }
+      ]
+    },
+    {
+      "id": "S_BiphasicAnaphylaxis",
+      "graph": "topic-01",
+      "type": "SymptomSign",
+      "name": "双相过敏反应",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "双相过敏反应"
+      ],
+      "summary": "症状完全缓解后再次发作的双相反应；最迟可到 72 小时内（平均约 11 小时），与初始反应更重、需多剂肾上腺素相关。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        }
+      ],
+      "details": [
+        {
+          "k": "双相反应",
+          "v": "双相过敏反应：症状完全缓解后再发，最迟 72 小时内（平均 11 小时），145 例中 10.3% 发生",
+          "quote": "Biphasic anaphylaxis occurs when the initial symptoms of anaphylaxis resolve completely but then recur up to 72 hours later, with a mean of 11 hours",
+          "src": "R12",
+          "cat": "观察与出院"
+        },
+        {
+          "k": "双相反应风险",
+          "v": "双相过敏反应与初始反应更重、需 >1 剂肾上腺素相关；早期给药可降低双相反应风险",
+          "quote": "Biphasic anaphylaxis is associated with greater severity of the initial reaction and requirement of more than one dose of epinephrine",
+          "src": "R16",
+          "cat": "观察与出院"
+        }
+      ]
+    },
+    {
+      "id": "SC_ExtravDamageStage",
+      "graph": "topic-01",
+      "type": "SymptomCategory",
+      "name": "药物外渗性损伤分期",
+      "tags": [
+        "症状分类"
+      ],
+      "aliases": [
+        "药物外渗性损伤分期"
+      ],
+      "summary": "按组织受损程度分三期：Ⅰ 期炎性反应（红肿发热刺痛）、Ⅱ 期静脉炎性反应（皮下出血或水疱）、Ⅲ 期组织坏死（黑痂或深部溃疡）。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "规范",
+          "author": "广西壮族自治区市场监督管理局",
+          "title": "DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范",
+          "journal": "广西壮族自治区市场监督管理局（地方标准）",
+          "year": 2024,
+          "cite": "广西壮族自治区市场监督管理局 / DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范 / 广西壮族自治区市场监督管理局（地方标准） / 2024",
+          "grade": "标准与规范",
+          "ref": "R10"
+        }
+      ],
+      "details": [
+        {
+          "k": "损伤分期Ⅰ/Ⅱ期",
+          "v": "Ⅰ期局部组织炎性反应:皮肤红润、肿胀、发热、刺痛,无水疱和坏死;Ⅱ期静脉炎性反应:皮下出血或水疱形成,破溃后组织苍白形成浅表溃疡",
+          "quote": "局部皮肤红润、肿胀、发热、刺痛，无水疱和坏死",
+          "src": "R10",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "损伤分期Ⅲ期",
+          "v": "Ⅲ期组织坏死期:局部皮肤变性坏死、形成黑痂或深部溃疡、肌腱血管神经外露或伴感染",
+          "quote": "局部皮肤变性坏死、形成黑痂或深部溃疡、肌腱、血管、神经外露或伴感染",
+          "src": "R10",
+          "cat": "外渗分级"
+        }
+      ]
+    },
+    {
+      "id": "S_CompartmentSyndrome",
+      "graph": "topic-01",
+      "type": "SymptomSign",
+      "name": "骨筋膜室综合征",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "骨筋膜室综合征"
+      ],
+      "summary": "外渗最重的并发症：神经血管受损、组织坏死，筋膜切开应在 2 小时内进行；疑有本征者**严禁抬高患肢**，须立即请骨科/手外科会诊。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        }
+      ],
+      "details": [
+        {
+          "k": "骨筋膜室综合征禁忌",
+          "v": "严重静脉外渗且疑有骨筋膜室综合征者严禁抬高患肢（以免加重缺血），应立即组织骨科、手外科会诊",
+          "quote": "对严重静脉外渗且疑有骨筋膜室综合征者，严禁抬高患肢",
+          "src": "R04",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "重度分级体征",
+          "v": "重度指任何神经血管受损、组织坏死或骨筋膜室综合征,需急诊外科处理(如筋膜切开)",
+          "quote": "necrosis or compartment syndrome",
+          "src": "R02",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "筋膜切开时机",
+          "v": "剧痛或神经血管受损须警惕骨筋膜室综合征;好发于前臂掌侧与手;筋膜切开应在2小时内",
+          "quote": "fasciotomy should be performed",
+          "src": "R02",
+          "cat": "并发症"
+        },
+        {
+          "k": "手术时机窗口",
+          "v": "90~300分钟内手术可保全肢体、预后良好;延迟转诊>300分钟是术后并发症最大风险",
+          "quote": "within 90 to 300 min has been reported",
+          "src": "R02",
+          "cat": "并发症"
+        },
+        {
+          "k": "筋膜室综合征禁忌",
+          "v": "疑有骨筋膜室综合征者严禁抬高患肢以免加重缺血,应立即请骨科、手外科等相关科室会诊(A级,修订)",
+          "quote": "严禁抬高患肢，以免加重缺血",
+          "src": "R04",
+          "cat": "并发症"
+        },
+        {
+          "k": "4级标准与转归",
+          "v": "4级:外渗量>50 mL、最小直径>15 cm,严重凹陷性水肿、局部青紫或水疱、疼痛剧烈,可发展为筋膜间室综合征需外科手术",
+          "quote": "外渗部位呈严重凹陷性水肿，局部青紫或有水疱形成",
+          "src": "R09",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "4级会诊指征",
+          "v": "如出现皮肤溃疡或变性坏死,应立即报告医生,并请专科护理小组或外科会诊处理",
+          "quote": "如出现皮肤溃疡或变性坏死，应立即报告医生",
+          "src": "R09",
+          "cat": "并发症"
+        },
+        {
+          "k": "4级标准与转归",
+          "v": "严重凹陷性水肿、疼痛剧烈压迫感明显、局部组织循环障碍,外渗量≥100 mL,很快发展为筋膜间室综合征需外科手术",
+          "quote": "外渗量≥100 mL",
+          "src": "R10",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "损伤分期Ⅲ期",
+          "v": "Ⅲ期组织坏死期:局部皮肤变性坏死、形成黑痂或深部溃疡、肌腱血管神经外露或伴感染",
+          "quote": "局部皮肤变性坏死、形成黑痂或深部溃疡、肌腱、血管、神经外露或伴感染",
+          "src": "R10",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "坏死期报告医生",
+          "v": "局部皮肤变性坏死、形成黑痂或深部溃疡、肌腱血管神经外露或伴感染,应报告医生,遵医嘱治疗及护理",
+          "quote": "应报告医生，遵医嘱治疗及护理",
+          "src": "R10",
+          "cat": "并发症"
+        }
+      ]
+    },
+    {
+      "id": "PM_Hyaluronidase",
+      "graph": "topic-01",
+      "type": "PharmacologicalManagement",
+      "name": "透明质酸酶",
+      "tags": [
+        "药物管理"
+      ],
+      "aliases": [
+        "透明质酸酶"
+      ],
+      "summary": "直接注入外渗部位的透明质酸酶（5–250 单位）；证据有限，不属常规治疗。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        }
+      ],
+      "details": [
+        {
+          "k": "透明质酸酶注射",
+          "v": "透明质酸酶5~250单位为最有效剂量,直接注入外渗部位;证据有限,不属常规治疗",
+          "quote": "Dose of between 5–250 Units",
+          "src": "R02",
+          "cat": "局部处理"
+        }
+      ]
+    },
+    {
+      "id": "PM_Atropine",
+      "graph": "topic-01",
+      "type": "PharmacologicalManagement",
+      "name": "阿托品",
+      "tags": [
+        "药物管理"
+      ],
+      "aliases": [
+        "阿托品"
+      ],
+      "summary": "迷走神经反应（心动过缓、低血压）的用药：静脉注射 0.6–1.0 mg，必要时 3–5 分钟后重复，成人总量不超过 3 mg。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        }
+      ],
+      "details": [
+        {
+          "k": "低血压伴心动过缓",
+          "v": "心率 <50 次/分时，在单纯低血压处理基础上遵医嘱静脉注射阿托品 0.6~1.0 mg，必要时可重复，成人总量不超过 3 mg",
+          "quote": "静脉注射阿托品 0.6～1.0 mg，如有必要可以重复",
+          "src": "CG-03",
+          "cat": "处理"
+        },
+        {
+          "k": "阿托品儿童剂量",
+          "v": "儿童 0.02 mg/kg（每次最大 0.6 mg），必要时重复，总量不超过 2 mg",
+          "quote": "儿童剂量 0.02 mg/kg（每次最大剂量 0.6 mg），必要时重复给药，总量不超过 2 mg",
+          "src": "CG-09",
+          "cat": "处理"
+        },
+        {
+          "k": "低血压与阿托品",
+          "v": "抬高双下肢、吸氧、快速补液；迷走神经反应阿托品0.6–1.0 mg，3–5 min可重复，成人总量3 mg",
+          "quote": "静脉注射阿托品0.6～1.0 mg，必要时于3～5 min后重复用药",
+          "src": "R03",
+          "cat": "不良反应谱"
+        }
+      ]
+    },
+    {
+      "id": "AT_CMAllergyTest",
+      "graph": "topic-01",
+      "type": "AssessmentTool",
+      "name": "碘对比剂过敏试验",
+      "tags": [
+        "评估工具"
+      ],
+      "aliases": [
+        "碘对比剂过敏试验"
+      ],
+      "summary": "皮内皮肤试验与试注都不能预测谁会发生反应，**不推荐**做碘对比剂过敏试验；除非产品说明书特别要求。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        }
+      ],
+      "details": [
+        {
+          "k": "皮试浓度与判读",
+          "v": "SPT 用 300~350 mg/ml；稀释 10 倍做 IDT；阳性：SPT 风团较阴性对照大 3 mm 以上，IDT 皮丘增加 3 mm 以上伴红晕",
+          "quote": "进行 SPT 的 ICM 浓度为 300~350 mg/ml，稀释 10 倍（1∶10）进行 IDT",
+          "src": "CG-01",
+          "cat": "处理"
+        },
+        {
+          "k": "不做碘过敏预试验",
+          "v": "皮肤预防性试验对预测过敏反应风险价值极为有限，且极少数患者接受少量对比剂即出现严重过敏反应，不建议进行对比剂预试验",
+          "quote": "不建议进行对比剂预试验",
+          "src": "CG-04",
+          "cat": "检查前评估"
+        },
+        {
+          "k": "碘过敏试验与知情同意",
+          "v": "无需常规做碘过敏试验（除非药品说明书有特殊要求）；术前必须告知患者对比剂相关的目的、风险等，签署知情同意书",
+          "quote": "无需常规做碘过敏试验",
+          "src": "CG-07",
+          "cat": "检查前评估"
+        },
+        {
+          "k": "碘过敏试验与试注不推荐",
+          "v": "皮内皮肤试验与试注均不能预测反应，故不推荐做碘对比剂过敏试验",
+          "quote": "Test injections are not recommended for predicting which patients will react to ICM.",
+          "src": "R01",
+          "cat": "检查前准备"
+        },
+        {
+          "k": "过敏试验不推荐",
+          "v": "碘对比剂过敏试验不能预测过敏样反应且本身可致严重反应，原则上不做",
+          "quote": "碘对比剂过敏试验没有预测过敏样不良反应发生的价值",
+          "src": "R07",
+          "cat": "对比剂与流程"
+        },
+        {
+          "k": "碘过敏试验不需做",
+          "v": "原则上无需碘对比剂过敏试验，除非产品说明书注明特别要求",
+          "quote": "无需碘过敏试验，除非产品说明书注明特别要求",
+          "src": "R03",
+          "cat": "检查前准备"
+        }
+      ]
+    },
+    {
+      "id": "NPM_PowerInjectorSafeCatheter",
+      "graph": "topic-01",
+      "type": "NonPharmacologicalManagement",
+      "name": "耐高压型静脉留置针",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "耐高压型静脉留置针"
+      ],
+      "summary": "输注含碘对比剂要选与速率匹配的直型、耐高压型外周静脉留置针：大管径、留置不超过 24 小时；**禁用钢针**。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "标准",
+          "author": "国家卫生健康委员会",
+          "title": "WS/T 433—2023 静脉治疗护理技术操作标准",
+          "journal": "国家卫生健康委员会（卫生行业标准）",
+          "year": 2023,
+          "cite": "国家卫生健康委员会 / WS/T 433—2023 静脉治疗护理技术操作标准 / 国家卫生健康委员会（卫生行业标准） / 2023",
+          "grade": "标准与规范",
+          "ref": "R08"
+        },
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        },
+        {
+          "type": "规范",
+          "author": "广西壮族自治区市场监督管理局",
+          "title": "DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范",
+          "journal": "广西壮族自治区市场监督管理局（地方标准）",
+          "year": 2024,
+          "cite": "广西壮族自治区市场监督管理局 / DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范 / 广西壮族自治区市场监督管理局（地方标准） / 2024",
+          "grade": "标准与规范",
+          "ref": "R10"
+        }
+      ],
+      "details": [
+        {
+          "k": "穿刺部位与器材选择",
+          "v": "注射部位推荐前臂、肘部静脉，尽量避免在手、腕、足和脚踝处穿刺；使用钢针或留置时间 >24 h 的静脉留置针会增加外渗风险",
+          "quote": "使用留置时间>24 h的静脉留置针注射含碘对比剂会增加静脉外渗的风险",
+          "src": "R04",
+          "cat": "检查前评估"
+        },
+        {
+          "k": "留置针与通路准备",
+          "v": "用留置针或耐高压注射型双腔PICC针；先回抽确认在血管内并用0.9%NaCl预冲",
+          "quote": "推荐选用留置针或耐高压注射型双腔PICC针",
+          "src": "R07",
+          "cat": "对比剂与流程"
+        },
+        {
+          "k": "留置针规格",
+          "v": "22G外渗率高于20G与18G;18G与20G无显著差异;儿童研究显示针径无影响",
+          "quote": "22G compared to 20G and 18G cannulas",
+          "src": "R02",
+          "cat": "预防"
+        },
+        {
+          "k": "ESUR官网预防要点",
+          "v": "使用与流量匹配型号的留置针、置入合适血管,推注前生理盐水试注,选用非离子碘对比剂",
+          "quote": "appropriate-sized plastic cannula",
+          "src": "R02",
+          "cat": "预防"
+        },
+        {
+          "k": "禁钢针",
+          "v": "使用钢针注射含碘对比剂会增加静脉外渗风险(A级,强推荐)",
+          "quote": "使用钢针注射含碘对比剂会增加静脉外渗的风险",
+          "src": "R04",
+          "cat": "预防"
+        },
+        {
+          "k": "留置针使用时长",
+          "v": "使用留置时间>24 h的静脉留置针注射含碘对比剂增加外渗风险(A级,强推荐)",
+          "quote": "使用留置时间>24 h的静脉留置针注射含碘对比剂会增加静脉外渗的风险",
+          "src": "R04",
+          "cat": "预防"
+        },
+        {
+          "k": "选大管径留置针",
+          "v": "使用静脉留置针注射含碘对比剂时尽可能选择大管径留置针(A级,强推荐)",
+          "quote": "尽可能选择大管径的留置针",
+          "src": "R04",
+          "cat": "预防"
+        },
+        {
+          "k": "耐高压留置针",
+          "v": "推荐使用专用于输注含碘对比剂的直型、安全、耐高压型外周静脉留置针(A级,新增)",
+          "quote": "推荐使用专用于输注含碘对比剂的直型、安全、耐高压型外周静脉留置针",
+          "src": "R04",
+          "cat": "预防"
+        },
+        {
+          "k": "血管与通路选择",
+          "v": "应选粗、直且弹性好的外周静脉,不宜选肱静脉;应使用与输注速率匹配的耐高压型静脉留置针和耐高压型中心VAD,不用钢针",
+          "quote": "应选择粗、直且弹性好的外周静脉，不宜选择肱静脉",
+          "src": "R09",
+          "cat": "预防"
+        },
+        {
+          "k": "留置针时限与留观",
+          "v": "不宜使用留置时间>24 h的耐高压型静脉留置针;未外渗者应留观30 min,无不适后由护士拔针并指导正确按压",
+          "quote": "不宜使用留置时间＞24 h的耐高压型静脉留置针",
+          "src": "R09",
+          "cat": "预防"
+        },
+        {
+          "k": "通路工具与预热试推",
+          "v": "按年龄、体重指数、检查部位与碘对比剂浓度选用与注射速率匹配的耐高压型VAD,不应使用钢针、普通型VAD;碘对比剂宜提前预热至37 ℃;先用0.9%氯化钠按设定流速高压试推注",
+          "quote": "不应使用钢针、普通型 VAD 进行注射",
+          "src": "R10",
+          "cat": "预防"
+        },
+        {
+          "k": "造影剂高压注射限制",
+          "v": "PICC、CVC、输液港均不应使用高压注射泵注射造影剂(耐高压导管除外);中心静脉通路须按说明书速度限制并影像确认尖端位置",
+          "quote": "不应用于高压注射泵注射造影剂（耐高压导管除外）",
+          "src": "R08",
+          "cat": "预防"
+        },
+        {
+          "k": "附加装置精简",
+          "v": "输液附加装置包括三通、延长管、输液接头、过滤器等,应尽可能减少使用;接头宜随留置针一并更换",
+          "quote": "输液附加装置包括三通、延长管、输液接头、过滤器等，应尽可能减少输液附加装置的使用",
+          "src": "R08",
+          "cat": "预防"
+        },
+        {
+          "k": "留置针拔除时机",
+          "v": "外周静脉留置针宜72 h~96 h拔除导管",
+          "quote": "外周静脉留置针宜 72h~96h 拔除导管",
+          "src": "R08",
+          "cat": "预防"
+        }
+      ]
+    },
+    {
+      "id": "NPM_SalineFlushCheck",
+      "graph": "topic-01",
+      "type": "NonPharmacologicalManagement",
+      "name": "等速生理盐水试推",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "等速生理盐水试推"
+      ],
+      "summary": "推对比剂前后都以高压注射同等速度推 0.9% 氯化钠 20–30 mL，确认通路通畅、降低局部刺激与外渗风险。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        },
+        {
+          "type": "规范",
+          "author": "广西壮族自治区市场监督管理局",
+          "title": "DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范",
+          "journal": "广西壮族自治区市场监督管理局（地方标准）",
+          "year": 2024,
+          "cite": "广西壮族自治区市场监督管理局 / DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范 / 广西壮族自治区市场监督管理局（地方标准） / 2024",
+          "grade": "标准与规范",
+          "ref": "R10"
+        }
+      ],
+      "details": [
+        {
+          "k": "注射前准备（加温与回抽）",
+          "v": "静脉注射前置于恒温箱加热至 37.0 ℃（降低黏稠度、减少注射阻力）；注射前应抽回血，注射前后以高压注射同等速度推注 0.9% 氯化钠注射液",
+          "quote": "静脉注射含碘对比剂前，建议将其置于恒温箱中，加热至 37.0 ℃",
+          "src": "R04",
+          "cat": "检查前评估"
+        },
+        {
+          "k": "试水四步法与观察",
+          "v": "连接时排气、护士手动试水、技师高压试水，做到一看二摸三感觉四询问；输注中观察局部与全身症状",
+          "quote": "护士先手动试水，技师再高压试水。做到：“一看、二摸、三感觉、四询问”",
+          "src": "R07",
+          "cat": "输注与观察"
+        },
+        {
+          "k": "等速生理盐水试注",
+          "v": "注射前后均以高压注射同等速度推注0.9%氯化钠注射液,降低局部刺激与外渗风险(C级,修订)",
+          "quote": "以高压注射同等速度推注0.9%氯化钠注射液",
+          "src": "R04",
+          "cat": "预防"
+        },
+        {
+          "k": "等速试推与预热",
+          "v": "输注前确认血管通路通畅,以0.9%氯化钠注射液按高压输注同等速率试推注20~30 mL;宜将对比剂预热至37 ℃",
+          "quote": "以高压输注同等速率试推注20 mL～30 mL",
+          "src": "R09",
+          "cat": "预防"
+        },
+        {
+          "k": "通路工具与预热试推",
+          "v": "按年龄、体重指数、检查部位与碘对比剂浓度选用与注射速率匹配的耐高压型VAD,不应使用钢针、普通型VAD;碘对比剂宜提前预热至37 ℃;先用0.9%氯化钠按设定流速高压试推注",
+          "quote": "不应使用钢针、普通型 VAD 进行注射",
+          "src": "R10",
+          "cat": "预防"
+        },
+        {
+          "k": "通路通畅确认",
+          "v": "经PVC输注药物前应确定导管在静脉管腔内;经PICC、CVC、PORT输注药物前宜通过回抽血液确定",
+          "quote": "经 PVC 输注药物前应确定导管在静脉管腔内",
+          "src": "R08",
+          "cat": "预防"
+        }
+      ]
+    },
+    {
+      "id": "NPM_ObservationThenRemove",
+      "graph": "topic-01",
+      "type": "NonPharmacologicalManagement",
+      "name": "留观后拔针",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "留观后拔针"
+      ],
+      "summary": "检查结束后留观 30 分钟，确认无不良反应后由护士拔针，并指导正确按压（至少 10 分钟）。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        }
+      ],
+      "details": [
+        {
+          "k": "检查结束拔针与留观",
+          "v": "检查结束后受检者应留院观察 30 min，确定无不良反应后拔针；拔针后指导正确按压穿刺部位，确认无肿胀后方可离开",
+          "quote": "检查结束后，受检者应留院观察 30 min，确定无不良反应后拔针",
+          "src": "R04",
+          "cat": "留观与离院"
+        },
+        {
+          "k": "常规留观时长",
+          "v": "建议注射对比剂后在医疗机构内留观 30 min；用药监护记录表要求在观察区休息 30 min 以上并定时巡视",
+          "quote": "在观察区休息 30 min 以上，医护人员定时巡视观察区",
+          "src": "CG-03",
+          "cat": "留观与离院"
+        },
+        {
+          "k": "留观 30 分钟",
+          "v": "注射对比剂后，患者应在医疗环境内留观 30 min",
+          "quote": "留观：注射对比剂后，患者应在医疗环境内留观 30 min",
+          "src": "CG-09",
+          "cat": "留观与离院"
+        },
+        {
+          "k": "检查结束拔针与留观（2021 版）",
+          "v": "受检者检查结束后留院观察 30 min，确定无不良反应后拔针",
+          "quote": "受检者检查结束后留院观察30 min，确定无不良反应后拔针",
+          "src": "CG-08",
+          "cat": "留观与离院"
+        },
+        {
+          "k": "儿童与术后留观",
+          "v": "小儿不能配合者可遵医嘱用镇静剂，术后留观 30 分钟并多喂水，需格外关注对比剂渗透压选择",
+          "quote": "术后留观 30 分钟并多喂水",
+          "src": "CG-07",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "观察区休息 30 分钟",
+          "v": "指导受检者在观察区休息 30 min；医护人员定时巡视观察区，询问有无不适，及时发现不良反应并处理",
+          "quote": "指导受检者在观察区休息30 min，如有不适及时告知医护人员；医护人员定时巡视观察区，询问受检者有无不适，及时发现不良反应并处理。",
+          "src": "R07",
+          "cat": "输注与观察"
+        },
+        {
+          "k": "留观期间多饮水（每小时不少于 100 mL）",
+          "v": "健康宣教明确要求：指导受检者多饮水（每小时不少于 100 mL）以利于对比剂的排出；可通过尿液颜色简单判断水化是否充分",
+          "quote": "指导受检者多饮水（每小时不少于100 mL）以利于对比剂的排出，可通过尿液颜色来简单判断水化是否充分，以预防对比剂肾病［25，32- 33］。",
+          "src": "R07",
+          "cat": "检查后护理"
+        },
+        {
+          "k": "留观30分钟拔针",
+          "v": "检查结束后受检者应留院观察30 min,确定无不良反应后拔针(C级,弱推荐)",
+          "quote": "检查结束后，受检者应留院观察30 min，确定无不良反应后拔针",
+          "src": "R04",
+          "cat": "预防"
+        },
+        {
+          "k": "留置针时限与留观",
+          "v": "不宜使用留置时间>24 h的耐高压型静脉留置针;未外渗者应留观30 min,无不适后由护士拔针并指导正确按压",
+          "quote": "不宜使用留置时间＞24 h的耐高压型静脉留置针",
+          "src": "R09",
+          "cat": "预防"
+        },
+        {
+          "k": "拔管后记录与闭合",
+          "v": "静脉导管拔除后应检查导管的完整性,PICC、CVC还应保持穿刺点密闭24 h",
+          "quote": "静脉导管拔除后应检查导管的完整性，PICC、CVC 还应保持穿刺点密闭 24h",
+          "src": "R08",
+          "cat": "记录与上报"
+        }
+      ]
+    },
+    {
+      "id": "AT_SwellingMeasurement",
+      "graph": "topic-01",
+      "type": "AssessmentTool",
+      "name": "肿胀测量与皮肤标记",
+      "tags": [
+        "评估工具"
+      ],
+      "aliases": [
+        "肿胀测量与皮肤标记"
+      ],
+      "summary": "外渗后用软尺测量外渗范围并标记边界；肿胀期每 2–5 小时测一次，同时看颜色、温度、感觉与远端血运。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        },
+        {
+          "type": "规范",
+          "author": "广西壮族自治区市场监督管理局",
+          "title": "DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范",
+          "journal": "广西壮族自治区市场监督管理局（地方标准）",
+          "year": 2024,
+          "cite": "广西壮族自治区市场监督管理局 / DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范 / 广西壮族自治区市场监督管理局（地方标准） / 2024",
+          "grade": "标准与规范",
+          "ref": "R10"
+        }
+      ],
+      "details": [
+        {
+          "k": "软尺测量标记",
+          "v": "外渗后立即停止输注,用软尺测量外渗部位,确认外渗边界并做好标记",
+          "quote": "应使用软尺测量外渗部位，确认外渗边界并做好标记",
+          "src": "R09",
+          "cat": "识别"
+        },
+        {
+          "k": "肿胀测量频次",
+          "v": "观察皮肤颜色、温度、外渗远端组织血运和外渗量,在外渗肿胀期4~5 h测量一次肿胀范围",
+          "quote": "在外渗肿胀期 4 h～5 h 测量一次肿胀范围",
+          "src": "R09",
+          "cat": "识别"
+        },
+        {
+          "k": "举手示意与肿胀测量",
+          "v": "告知患者注射部位疼痛立即举手示意;观察皮肤颜色、温度、感觉和关节活动度,每2~4 h测量一次肿胀范围",
+          "quote": "每 2 h～4 h 测量一次肿胀范围",
+          "src": "R10",
+          "cat": "识别"
+        },
+        {
+          "k": "外渗后观察与记录",
+          "v": "观察渗出或外渗区域的皮肤颜色、温度、感觉等变化及置管侧关节活动和远端血运情况并记录",
+          "quote": "观察渗出或外渗区域的皮肤颜色、温度、感觉等变化",
+          "src": "R08",
+          "cat": "记录与上报"
+        }
+      ]
+    },
+    {
+      "id": "AT_ExtravasationDetection",
+      "graph": "topic-01",
+      "type": "AssessmentTool",
+      "name": "外渗探测与压力监测",
+      "tags": [
+        "评估工具"
+      ],
+      "aliases": [
+        "外渗探测与压力监测"
+      ],
+      "summary": "除直接观察外，还可用注射器压力监测（遇阻力自动中止）与外渗探测附件传感器来发现外渗。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        }
+      ],
+      "details": [
+        {
+          "k": "识别三条路径",
+          "v": "三条识别路径:直接观察患者与监控扫描、压力监测(注射器遇阻力可自动中止)、外渗探测附件传感器",
+          "quote": "three main ways of detecting CMEX",
+          "src": "R02",
+          "cat": "识别"
+        }
+      ]
+    },
+    {
+      "id": "MP_ExtravasationReporting",
+      "graph": "topic-01",
+      "type": "ManagementPrinciple",
+      "name": "外渗上报与回访",
+      "tags": [
+        "处置原则"
+      ],
+      "aliases": [
+        "外渗上报与回访"
+      ],
+      "summary": "外渗要记入放射科报告与本院不良事件上报系统，建立回访档案并随访至外渗部位痊愈。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        },
+        {
+          "type": "规范",
+          "author": "广西壮族自治区市场监督管理局",
+          "title": "DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范",
+          "journal": "广西壮族自治区市场监督管理局（地方标准）",
+          "year": 2024,
+          "cite": "广西壮族自治区市场监督管理局 / DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范 / 广西壮族自治区市场监督管理局（地方标准） / 2024",
+          "grade": "标准与规范",
+          "ref": "R10"
+        }
+      ],
+      "details": [
+        {
+          "k": "外渗记录",
+          "v": "用皮肤标记笔标记外渗边界并拍照，完整记录发生时间、部位、估计外渗量、评估结果、即时处置措施，并持续监测患肢",
+          "quote": "应使用皮肤标记笔标记静脉外渗的边界并拍照",
+          "src": "R04",
+          "cat": "操作处置"
+        },
+        {
+          "k": "护理质量敏感指标",
+          "v": "把含碘对比剂静脉外渗发生率作为放射科护理质量敏感指标，纳入护理部质量考核；建立外渗管理制度与不良事件上报",
+          "quote": "将含碘对比剂静脉外渗发生率作为放射科护理质量敏感指标",
+          "src": "R04",
+          "cat": "质量管理"
+        },
+        {
+          "k": "召唤责任医护评估",
+          "v": "外渗发生即召唤责任医护到场，询问疼痛与感觉异常并检查肿胀、发红、手指活动度与灌注",
+          "quote": "A responsible health care provider should be summoned to examine any patient in whom an extravasation of contrast material has occurred.",
+          "src": "R01",
+          "cat": "外渗早期识别"
+        },
+        {
+          "k": "影像与报告双记录",
+          "v": "将外渗作为并发症记入放射科报告及本院不良事件上报系统",
+          "quote": "Record extravasation as a complication",
+          "src": "R02",
+          "cat": "记录与上报"
+        },
+        {
+          "k": "记录与上报要素",
+          "v": "建立外渗医疗文书记录,含基础疾病、留置针管径、穿刺部位、注射速度、外渗程度、干预措施与预后;并做不良事件上报",
+          "quote": "建立门诊受检者含碘对比剂静脉外渗医疗文书记录",
+          "src": "R04",
+          "cat": "记录与上报"
+        },
+        {
+          "k": "4级会诊指征",
+          "v": "如出现皮肤溃疡或变性坏死,应立即报告医生,并请专科护理小组或外科会诊处理",
+          "quote": "如出现皮肤溃疡或变性坏死，应立即报告医生",
+          "src": "R09",
+          "cat": "并发症"
+        },
+        {
+          "k": "记录上报与交接",
+          "v": "按外渗护理记录单记录并填写外渗护理交接单(放射科护士立即干预、随患者带入所在科室连续干预评估);应上报不良事件,建立回访档案随访至痊愈",
+          "quote": "应上报不良事件，建立回访档案，进行定期随访，直至外渗部位痊愈",
+          "src": "R09",
+          "cat": "记录与上报"
+        },
+        {
+          "k": "坏死期报告医生",
+          "v": "局部皮肤变性坏死、形成黑痂或深部溃疡、肌腱血管神经外露或伴感染,应报告医生,遵医嘱治疗及护理",
+          "quote": "应报告医生，遵医嘱治疗及护理",
+          "src": "R10",
+          "cat": "并发症"
+        },
+        {
+          "k": "不良事件与回访",
+          "v": "应按机构要求进行不良事件的上报;建立回访档案,定期回访直至外渗部位恢复正常",
+          "quote": "应按机构要求进行不良事件的上报",
+          "src": "R10",
+          "cat": "记录与上报"
+        },
+        {
+          "k": "外渗后观察与记录",
+          "v": "观察渗出或外渗区域的皮肤颜色、温度、感觉等变化及置管侧关节活动和远端血运情况并记录",
+          "quote": "观察渗出或外渗区域的皮肤颜色、温度、感觉等变化",
+          "src": "R08",
+          "cat": "记录与上报"
+        }
+      ]
+    },
+    {
+      "id": "NPM_SwitchContrastAgent",
+      "graph": "topic-01",
+      "type": "NonPharmacologicalManagement",
+      "name": "换用对比剂",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "换用对比剂"
+      ],
+      "summary": "有对比剂或钆对比剂超敏史者，换用化学结构不同的对比剂是防突破反应最有效的单一措施（风险可降约 61%）。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "建议",
+          "author": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al.",
+          "title": "对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）",
+          "journal": "加拿大放射医师协会杂志",
+          "year": 2025,
+          "cite": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al. / 对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会） / 加拿大放射医师协会杂志 / 2025",
+          "grade": "推荐意见",
+          "ref": "R14"
+        }
+      ],
+      "details": [
+        {
+          "k": "换剂为首选",
+          "v": "有 ICM/GBCA 超敏史者，换化学结构不同的造影剂是防突破反应最有效的单一措施（风险降 61%）",
+          "quote": "switching to a chemically different contrast agent is the single best protective measure",
+          "src": "R14",
+          "cat": "预防"
+        }
+      ]
+    },
+    {
+      "id": "S_Phlebitis",
+      "graph": "topic-01",
+      "type": "SymptomSign",
+      "name": "导管相关静脉炎",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "导管相关静脉炎"
+      ],
+      "summary": "输液后沿静脉走行的红肿热痛（与外渗损伤分期里的「静脉炎性反应期」不是一回事）；处理为拔除外周留置针、抬高患肢避免受压、报告医生并记录。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "标准",
+          "author": "国家卫生健康委员会",
+          "title": "WS/T 433—2023 静脉治疗护理技术操作标准",
+          "journal": "国家卫生健康委员会（卫生行业标准）",
+          "year": 2023,
+          "cite": "国家卫生健康委员会 / WS/T 433—2023 静脉治疗护理技术操作标准 / 国家卫生健康委员会（卫生行业标准） / 2023",
+          "grade": "标准与规范",
+          "ref": "R08"
+        }
+      ],
+      "details": [
+        {
+          "k": "静脉炎处置与记录",
+          "v": "发生静脉炎应拔除PVC、可暂时保留PICC,及时通知医师给予对症处理;抬高患肢避免受压,观察局部及全身情况并记录",
+          "quote": "应拔除 PVC，可暂时保留 PICC；及时通知医师，给予对症处理",
+          "src": "R08",
+          "cat": "并发症"
+        }
+      ]
+    },
+    {
+      "id": "RF_BetaBlockerACEI",
+      "graph": "topic-01",
+      "type": "RiskFactor",
+      "name": "β 阻滞剂与 ACEI 用药",
+      "tags": [
+        "高危因素识别"
+      ],
+      "aliases": [
+        "β 阻滞剂与 ACEI 用药"
+      ],
+      "summary": "计划性造影、脱敏或输注前，若 β 阻滞剂/ACEI 不能安全停用，须共同决策权衡检查必要性与其加重反应的风险。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        }
+      ],
+      "details": [
+        {
+          "k": "β阻滞剂与造影",
+          "v": "计划性造影（RCM）、脱敏、输注前若 β 阻滞剂/ACEI 不能安全停用，须共同决策权衡必要性与其加重反应的风险",
+          "quote": "For planned procedures that carry a risk of anaphylaxis (eg, radiocontrast media [RCM], challenge/desensitization, and infusion), if the BBs/ACEIs cannot be safely interrupted",
+          "src": "R16",
+          "cat": "特殊人群"
+        }
+      ]
+    },
+    {
+      "id": "SC_CMHSRMild",
+      "graph": "topic-01",
+      "type": "SymptomCategory",
+      "name": "轻度过敏反应",
+      "tags": [
+        "症状分类"
+      ],
+      "aliases": [
+        "轻度过敏反应"
+      ],
+      "summary": "对比剂过敏样反应的轻度：症状局限于皮肤黏膜、可自行缓解、生命体征无改变；处理以停止注射、安慰吸氧、观察为主。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al.",
+          "title": "对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）",
+          "journal": "加拿大放射医师协会杂志",
+          "year": 2025,
+          "cite": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al. / 对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会） / 加拿大放射医师协会杂志 / 2025",
+          "grade": "推荐意见",
+          "ref": "R14"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        }
+      ],
+      "details": [
+        {
+          "k": "轻度反应",
+          "v": "轻度（ACR 分级）：自限性、非进行性症状",
+          "quote": "Mild reactions are characterized by self-limited, nonprogressive symptoms",
+          "src": "R12",
+          "cat": "反应分级"
+        },
+        {
+          "k": "轻度过敏样",
+          "v": "轻度过敏样（ACR 表）：局部荨麻疹/瘙痒、皮肤水肿、咽部痒、鼻塞、喷嚏/结膜炎/流涕",
+          "quote": "Limited urticaria/pruritis",
+          "src": "R14",
+          "cat": "反应分级"
+        },
+        {
+          "k": "表2 · 轻度处理",
+          "v": "鼻塞、打喷嚏、结膜炎、流涕、局限性/散发性荨麻疹瘙痒、皮肤肿胀、局限性喉咙发痒 → 观察 / 抗组胺药；轻度为自限性、非进展性症状",
+          "quote": "轻度 a 1级 观察",
+          "src": "CG-01",
+          "cat": "分型"
+        }
+      ]
+    },
+    {
+      "id": "SC_CMHSRModerate",
+      "graph": "topic-01",
+      "type": "SymptomCategory",
+      "name": "中度过敏反应",
+      "tags": [
+        "症状分类"
+      ],
+      "aliases": [
+        "中度过敏反应"
+      ],
+      "summary": "对比剂过敏样反应的中度：全身荨麻疹、弥漫红斑、面部水肿伴呼吸困难、喘息等，需医疗处理。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al.",
+          "title": "对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）",
+          "journal": "加拿大放射医师协会杂志",
+          "year": 2025,
+          "cite": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al. / 对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会） / 加拿大放射医师协会杂志 / 2025",
+          "grade": "推荐意见",
+          "ref": "R14"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        }
+      ],
+      "details": [
+        {
+          "k": "中度反应",
+          "v": "中度：症状较轻度明显但生命体征未改变（如全身荨麻疹），需医疗处理，不治可进展为重度",
+          "quote": "Moderate reactions exhibit signs and symptoms that are more pronounced than mild reactions but do not result in altered vital signs",
+          "src": "R12",
+          "cat": "反应分级"
+        },
+        {
+          "k": "表2 · 中度处理",
+          "v": "弥漫性荨麻疹瘙痒、弥漫性红斑（无低血压）、面部肿胀（无呼吸困难）→ 抗组胺药；喉咙嘶哑→抗组胺药+支气管扩张剂；轻度支气管痉挛→支气管扩张剂",
+          "quote": "中度 b 2级 支气管扩张剂",
+          "src": "CG-01",
+          "cat": "分型"
+        }
+      ]
+    },
+    {
+      "id": "SC_CMHSRSevere",
+      "graph": "topic-01",
+      "type": "SymptomCategory",
+      "name": "重度过敏反应",
+      "tags": [
+        "症状分类"
+      ],
+      "aliases": [
+        "重度过敏反应"
+      ],
+      "summary": "对比剂过敏样反应的重度：符合过敏反应（anaphylaxis）诊断标准 —— 喉水肿伴喉鸣和/或低氧、弥漫红斑伴低血压、过敏性休克。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al.",
+          "title": "对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）",
+          "journal": "加拿大放射医师协会杂志",
+          "year": 2025,
+          "cite": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al. / 对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会） / 加拿大放射医师协会杂志 / 2025",
+          "grade": "推荐意见",
+          "ref": "R14"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        }
+      ],
+      "details": [
+        {
+          "k": "重度反应",
+          "v": "重度：符合过敏反应（anaphylaxis）诊断标准，处理不当可致死或留永久损害",
+          "quote": "Severe reactions include symptoms fulfilling the criteria for anaphylaxis",
+          "src": "R12",
+          "cat": "反应分级"
+        },
+        {
+          "k": "系统化分级标准",
+          "v": "2022 版 Brighton 按皮肤/呼吸/心血管/胃肠/实验室分重大与次要标准：重大胃肠=新发呕吐或腹泻；重大实验室=胰蛋白酶升高",
+          "quote": "New-onset vomiting; new-onset diarrhea",
+          "src": "R16",
+          "cat": "反应分级"
+        },
+        {
+          "k": "表2 · 重度处理",
+          "v": "弥漫/面部水肿伴呼吸困难、弥漫红斑伴低血压、喉头水肿伴缺氧、重度支气管痉挛伴缺氧、过敏性休克 → 肾上腺素 + 启动急救流程；心跳呼吸骤停 → 心肺复苏",
+          "quote": "重度 c 4级 心肺复苏、肾上腺素、启动急救流程",
+          "src": "CG-01",
+          "cat": "分型"
+        }
+      ]
+    },
+    {
+      "id": "SC_ExtravL1",
+      "graph": "topic-01",
+      "type": "SymptomCategory",
+      "name": "对比剂外渗 1 级",
+      "tags": [
+        "症状分类"
+      ],
+      "aliases": [
+        "对比剂外渗 1 级"
+      ],
+      "summary": "外渗量最轻的一档：局部颜色稍变浅、可能无痛或仅定点疼痛、表皮温度稍降。处理以观察为主。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        },
+        {
+          "type": "规范",
+          "author": "广西壮族自治区市场监督管理局",
+          "title": "DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范",
+          "journal": "广西壮族自治区市场监督管理局（地方标准）",
+          "year": 2024,
+          "cite": "广西壮族自治区市场监督管理局 / DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范 / 广西壮族自治区市场监督管理局（地方标准） / 2024",
+          "grade": "标准与规范",
+          "ref": "R10"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        }
+      ],
+      "details": [
+        {
+          "k": "轻度外渗处理",
+          "v": "多数损伤轻微无须处理；对疼痛明显者抬高患肢、局部冰敷或冷湿敷并监测，如无改善需咨询临床医生用药",
+          "quote": "无须处理；对疼痛明显者，进行抬高患肢、局部冰敷或冷",
+          "src": "CG-03",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "轻度外渗处理",
+          "v": "无需特殊处理，或患肢抬高、局部冰敷或冷湿敷，并监测受检者情况",
+          "quote": "高、局部冰敷或冷湿敷，并监测受检者情况",
+          "src": "CG-09",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "轻度外渗处理（2021 版）",
+          "v": "患肢抬高、局部冰敷或冷湿敷，并监测受检者情况（A 级，强推荐）",
+          "quote": "轻度外渗：患肢抬高、局部冰敷或冷湿敷，并监测受检者情况",
+          "src": "CG-08",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "轻度处理",
+          "v": "轻度外渗:患肢抬高、局部冰敷或冷湿敷,并监测受检者情况(A级,强推荐)",
+          "quote": "患肢抬高、局部冰敷或冷湿敷，并监测受检者的情况",
+          "src": "R04",
+          "cat": "局部处理"
+        },
+        {
+          "k": "1级标准",
+          "v": "外渗量<20 mL、测量直径<2.5 cm,表皮温度稍降低、颜色稍变浅,可能疼痛或无痛",
+          "quote": "含碘对比剂外渗量＜20 mL，测量直径＜2.5 cm",
+          "src": "R09",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "1级护理",
+          "v": "1级:观察;对个别疼痛明显者局部冷湿敷或遵医嘱口服止痛药",
+          "quote": "局部给予冷湿敷或遵医嘱给予口服止痛药",
+          "src": "R09",
+          "cat": "局部处理"
+        },
+        {
+          "k": "1级标准",
+          "v": "表皮颜色稍变浅、有或无定点疼痛、表皮温度稍降低,外渗量0~9 mL",
+          "quote": "外渗量为0 mL～9 mL",
+          "src": "R10",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "轻度不用外敷药",
+          "v": "轻度外渗仅患肢抬高、局部冰敷或冷湿敷 + 监测，不涉及任何药物外敷 ⇒ 中药外敷只挂中重度分支",
+          "quote": "患肢抬高、局部冰敷或冷湿敷，并监测受检者的情况",
+          "src": "R04",
+          "cat": "外渗分级"
+        }
+      ]
+    },
+    {
+      "id": "SC_ExtravL2",
+      "graph": "topic-01",
+      "type": "SymptomCategory",
+      "name": "对比剂外渗 2 级",
+      "tags": [
+        "症状分类"
+      ],
+      "aliases": [
+        "对比剂外渗 2 级"
+      ],
+      "summary": "外渗量较轻的一档：表皮温度降低、颜色变浅、疼痛感逐渐增加、水肿形成。处理需抬高患肢并药物冷湿敷。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        },
+        {
+          "type": "规范",
+          "author": "广西壮族自治区市场监督管理局",
+          "title": "DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范",
+          "journal": "广西壮族自治区市场监督管理局（地方标准）",
+          "year": 2024,
+          "cite": "广西壮族自治区市场监督管理局 / DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范 / 广西壮族自治区市场监督管理局（地方标准） / 2024",
+          "grade": "标准与规范",
+          "ref": "R10"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        }
+      ],
+      "details": [
+        {
+          "k": "2级标准",
+          "v": "外渗量20~50 mL、直径2.5~15 cm,水肿、表皮温度降低、颜色变浅,疼痛感逐渐增加",
+          "quote": "含碘对比剂外渗量20 mL～50 mL，测量直径2.5 cm～15 cm",
+          "src": "R09",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "2级护理",
+          "v": "2级:在1级基础上抬高患肢,嘱外渗肢体多活动,宜使用药物冷湿敷",
+          "quote": "在 1 级外渗护理基础上，抬高患肢，嘱外渗肢体多活动，宜使用药物冷湿敷",
+          "src": "R09",
+          "cat": "局部处理"
+        },
+        {
+          "k": "2级标准",
+          "v": "症状似1级但触摸表皮温度降低、疼痛感逐渐增加,外渗量10~49 mL",
+          "quote": "外渗量为10 mL～49 mL",
+          "src": "R10",
+          "cat": "外渗分级"
+        }
+      ]
+    },
+    {
+      "id": "SC_ExtravL3",
+      "graph": "topic-01",
+      "type": "SymptomCategory",
+      "name": "对比剂外渗 3 级",
+      "tags": [
+        "症状分类"
+      ],
+      "aliases": [
+        "对比剂外渗 3 级"
+      ],
+      "summary": "外渗量较大的一档：明显水肿呈半透明状、表皮发凉、疼痛加剧甚至麻木。处理需加用水胶体敷料等外敷并对症处理。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        },
+        {
+          "type": "规范",
+          "author": "广西壮族自治区市场监督管理局",
+          "title": "DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范",
+          "journal": "广西壮族自治区市场监督管理局（地方标准）",
+          "year": 2024,
+          "cite": "广西壮族自治区市场监督管理局 / DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范 / 广西壮族自治区市场监督管理局（地方标准） / 2024",
+          "grade": "标准与规范",
+          "ref": "R10"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        }
+      ],
+      "details": [
+        {
+          "k": "中重度外渗处理",
+          "v": "①抬高患肢、局部冰敷或冷湿敷；②50% 硫酸镁、多磺酸黏多糖乳膏、0.05% 地塞米松局部冷湿敷；③密切监测并对症处理；④必要时咨询临床医生用药",
+          "quote": "敷；②以 50% 硫酸镁、多磺酸粘多糖乳膏、0.05% 地塞米",
+          "src": "CG-03",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "中重度处理",
+          "v": "中重度:患肢抬高、冰敷冷湿敷,50%硫酸镁、黏多糖软膏、0.05%地塞米松局部冷湿敷,可用如意金黄散外敷(B级)",
+          "quote": "使用50%的硫酸镁、黏多糖软膏、0.05%的地塞米松局部冷湿敷",
+          "src": "R04",
+          "cat": "局部处理"
+        },
+        {
+          "k": "3级标准",
+          "v": "外渗量>50 mL、直径>15 cm,明显水肿呈半透明状、表皮发凉,疼痛加剧部分出现麻木",
+          "quote": "含碘对比剂外渗量＞50 mL，测量直径＞15 cm",
+          "src": "R09",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "3级护理",
+          "v": "3级:在2级基础上宜使用水胶体敷料等外敷处理,观察外渗部位变化并对症处理",
+          "quote": "宜使用水胶体敷料等外敷处理",
+          "src": "R09",
+          "cat": "局部处理"
+        },
+        {
+          "k": "3级标准",
+          "v": "表皮肿胀明显、颜色呈半透明状、疼痛感觉加剧,外渗量50~99 mL",
+          "quote": "外渗量为50 mL～99 mL",
+          "src": "R10",
+          "cat": "外渗分级"
+        }
+      ]
+    },
+    {
+      "id": "SC_ExtravL4",
+      "graph": "topic-01",
+      "type": "SymptomCategory",
+      "name": "对比剂外渗 4 级",
+      "tags": [
+        "症状分类"
+      ],
+      "aliases": [
+        "对比剂外渗 4 级"
+      ],
+      "summary": "外渗最重的一档：严重凹陷性水肿、局部青紫或水疱、疼痛剧烈，可发展为骨筋膜室综合征，需外科处理。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        },
+        {
+          "type": "规范",
+          "author": "广西壮族自治区市场监督管理局",
+          "title": "DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范",
+          "journal": "广西壮族自治区市场监督管理局（地方标准）",
+          "year": 2024,
+          "cite": "广西壮族自治区市场监督管理局 / DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范 / 广西壮族自治区市场监督管理局（地方标准） / 2024",
+          "grade": "标准与规范",
+          "ref": "R10"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        }
+      ],
+      "details": [
+        {
+          "k": "4级标准与转归",
+          "v": "4级:外渗量>50 mL、最小直径>15 cm,严重凹陷性水肿、局部青紫或水疱、疼痛剧烈,可发展为筋膜间室综合征需外科手术",
+          "quote": "外渗部位呈严重凹陷性水肿，局部青紫或有水疱形成",
+          "src": "R09",
+          "cat": "外渗分级"
+        },
+        {
+          "k": "4级标准与转归",
+          "v": "严重凹陷性水肿、疼痛剧烈压迫感明显、局部组织循环障碍,外渗量≥100 mL,很快发展为筋膜间室综合征需外科手术",
+          "quote": "外渗量≥100 mL",
+          "src": "R10",
+          "cat": "外渗分级"
+        }
+      ]
+    },
+    {
+      "id": "S_Bronchospasm",
+      "graph": "topic-01",
+      "type": "SymptomSign",
+      "name": "支气管痉挛",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "支气管痉挛"
+      ],
+      "summary": "支气管平滑肌痉挛导致喘息、呼吸困难，是中重度过敏反应的表现之一；处理为吸氧 + β2 激动剂 + 肾上腺素。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中国医药教育协会临床合理用药专业委员会·广东省药学会用药评价与临床科研专家委员会",
+          "title": "碘对比剂全程化药学服务共识",
+          "journal": "中国药房",
+          "year": 2024,
+          "cite": "中国医药教育协会临床合理用药专业委员会·广东省药学会用药评价与临床科研专家委员会 / 碘对比剂全程化药学服务共识 / 中国药房 / 2024",
+          "grade": "指南与共识",
+          "ref": "CG-03"
+        },
+        {
+          "type": "共识",
+          "author": "中国抗癌协会肿瘤影像专业委员会",
+          "title": "恶性肿瘤患者CT增强扫描对比剂安全管理专家共识（2022）",
+          "journal": "中华放射学杂志",
+          "year": 2022,
+          "cite": "中国抗癌协会肿瘤影像专业委员会 / 恶性肿瘤患者CT增强扫描对比剂安全管理专家共识（2022） / 中华放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "CG-09"
+        }
+      ],
+      "details": [
+        {
+          "k": "支气管痉挛分型处理",
+          "v": "轻度：沙丁胺醇气雾剂 2 喷（90 μg/喷），最多重复 3 次；中度：+ 肾上腺素 1 mg/mL 肌注 0.3 mL（5~15 min 可重复 1 次，最大 1 mL）+ 0.1 mg/mL 静注 0.1 mg；重度：改 0.1 mg/mL 静注 1 mL 起 + 呼叫急救小组",
+          "quote": "β2 受体激动剂气雾剂（沙丁胺醇气雾剂）2 喷，90 μg/喷，最多可重复 3 次",
+          "src": "CG-03",
+          "cat": "处理"
+        },
+        {
+          "k": "支气管痉挛·处理方案",
+          "v": "面罩吸氧 6~10 L/min；定量吸入 β2 激动剂 2~3 次；血压正常时肌注 1∶1000 肾上腺素 0.1~0.3 ml；血压降低时成人 0.5 ml、6~12 岁 0.3 ml、6 岁以下 0.15 ml",
+          "quote": "（2）支气管痉挛：面罩吸氧 6~10 L/min",
+          "src": "CG-09",
+          "cat": "处理"
+        },
+        {
+          "k": "支痉挛与喉头水肿",
+          "v": "面罩吸氧6–10 L/min并吸入β2激动剂2–3次；喉头水肿肌注肾上腺素成人0.5 ml(0.5 mg)",
+          "quote": "氧气面罩吸氧(6～10 L/min)，定量吸入β2受体激动剂气雾剂",
+          "src": "R03",
+          "cat": "不良反应谱"
+        }
+      ]
+    },
+    {
+      "id": "S_PulmonaryEdema",
+      "graph": "topic-01",
+      "type": "SymptomSign",
+      "name": "肺水肿",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "肺水肿"
+      ],
+      "summary": "对比剂过敏反应累及肺部的表现：呼吸困难、端坐呼吸；处理为吸氧、抬高床头、呋塞米静注并呼叫急救。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中国医药教育协会临床合理用药专业委员会·广东省药学会用药评价与临床科研专家委员会",
+          "title": "碘对比剂全程化药学服务共识",
+          "journal": "中国药房",
+          "year": 2024,
+          "cite": "中国医药教育协会临床合理用药专业委员会·广东省药学会用药评价与临床科研专家委员会 / 碘对比剂全程化药学服务共识 / 中国药房 / 2024",
+          "grade": "指南与共识",
+          "ref": "CG-03"
+        }
+      ],
+      "details": [
+        {
+          "k": "肺水肿处理",
+          "v": "维持静脉通道、面罩供氧、尽可能抬高床头；呋塞米注射液 20~40 mg 静脉注射（2 min 内缓慢注完）；呼叫急救小组",
+          "quote": "呋塞米注射液：20～40 mg，静脉注射，2 min 内缓慢注射完毕",
+          "src": "CG-03",
+          "cat": "处理"
+        }
+      ]
+    },
+    {
+      "id": "MP_SkinIntegrity",
+      "graph": "topic-01",
+      "type": "ManagementPrinciple",
+      "name": "外渗后皮肤完整性",
+      "tags": [
+        "处置原则"
+      ],
+      "aliases": [
+        "外渗后皮肤完整性"
+      ],
+      "summary": "外渗后处置的第一分叉：皮肤完整 → 可遵医嘱外敷（含中成药）；出现水疱 / 破溃 / 皮损 / 感染 → **禁用中药外敷**，转创面处理与外科会诊。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "系统评价",
+          "author": "承德医学院护理学院（秦雨轩、王树艳、丁艺华等）",
+          "title": "中医护理技术在碘对比剂外渗处理中应用的范围综述",
+          "journal": "老年医学研究",
+          "year": 2026,
+          "cite": "承德医学院护理学院（秦雨轩、王树艳、丁艺华等） / 中医护理技术在碘对比剂外渗处理中应用的范围综述 / 老年医学研究 / 2026",
+          "grade": "汇总证据",
+          "ref": "CN-03"
+        },
+        {
+          "type": "病例系列",
+          "author": "连云港市第一人民医院伤口造口门诊（李来娟、蒋琪霞等）",
+          "title": "中药如意金黄散早期湿敷在药物外渗性皮肤损伤中的效果分析",
+          "journal": "中华现代护理杂志",
+          "year": 2020,
+          "cite": "连云港市第一人民医院伤口造口门诊（李来娟、蒋琪霞等） / 中药如意金黄散早期湿敷在药物外渗性皮肤损伤中的效果分析 / 中华现代护理杂志 / 2020",
+          "grade": "汇总证据",
+          "ref": "CN-05"
+        },
+        {
+          "type": "药品说明书",
+          "author": "国家药品监督管理局",
+          "title": "总局关于修订跌打万花油等 32 种非处方药说明书的公告（2017 年第 175 号）附件 10《如意金黄散非处方药说明书范本》",
+          "journal": "国家药监局公告",
+          "year": 2017,
+          "cite": "国家药品监督管理局 / 总局关于修订跌打万花油等 32 种非处方药说明书的公告（2017 年第 175 号）附件 10《如意金黄散非处方药说明书范本》 / 国家药监局公告 / 2017",
+          "grade": "说明书",
+          "ref": "DRUG-01"
+        }
+      ],
+      "details": [
+        {
+          "k": "破溃水疱走另一条路",
+          "v": "出现感觉异常、皮肤溃疡、肢体循环障碍或水疱 ⇒ 立即通知医生并组织骨科/手外科会诊；疑骨筋膜室综合征严禁抬高患肢",
+          "quote": "出现严重外渗症状（如疼痛加剧、感觉异常、活动受限、皮肤溃疡或水疱）",
+          "src": "R04",
+          "cat": "安全边界"
+        },
+        {
+          "k": "指南未给中药排除条件",
+          "v": "全文核对：如意金黄散仅出现在 3.7⑤ 一条，未附任何排除条件或禁忌限定 ⇒ 指南与说明书之间存在未弥合的缺口，须显式点出",
+          "quote": "皮肤破溃、软组织坏死",
+          "src": "R04",
+          "cat": "安全边界"
+        },
+        {
+          "k": "该领域证据质量偏低",
+          "v": "综述明确：现有研究存在干预方案报告不完整、方法学质量偏低、辨证分型与严重程度分级缺失",
+          "quote": "现有研究存在干预方案报告不完整、方法学质量偏低",
+          "src": "CN-03",
+          "cat": "证据质量"
+        },
+        {
+          "k": "综述未回答的问题",
+          "v": "未说明是否限定皮肤完整病例，未回答破损皮肤能否用中药外敷，未给禁忌与安全监测结论 ⇒ 证据空白，须标待核",
+          "quote": "共纳入23篇中文文献，总样本量1 403例。",
+          "src": "CN-03",
+          "cat": "安全边界"
+        },
+        {
+          "k": "已形成伤口的处理",
+          "v": "出现不可逆组织坏死者按伤口护理原则清创/抗感染/负压/湿性治疗（不是继续外敷）",
+          "quote": "探讨中药如意金黄散早期湿敷在药物外渗性皮肤损伤中的效果。",
+          "src": "CN-05",
+          "cat": "中医外治法"
+        },
+        {
+          "k": "破溃处禁用",
+          "v": "【禁忌】第 3 条：皮肤破溃、皮损或感染处禁用 —— 是禁忌，不是注意事项",
+          "quote": "皮肤破溃、皮损或感染处禁用。",
+          "src": "DRUG-01",
+          "cat": "安全边界"
+        },
+        {
+          "k": "本身可致皮损",
+          "v": "说明书有独立【不良反应】项：可能引起瘙痒、刺痛、皮疹（红斑、丘疹、水疱）—— 与外渗后观察到的皮疹/水疱易混淆",
+          "quote": "本品可能引起瘙痒、刺痛、皮疹（如红斑、丘疹、水疱）等。",
+          "src": "DRUG-01",
+          "cat": "安全边界"
+        },
+        {
+          "k": "需就医的红旗信号",
+          "v": "局部变软化脓或已破溃者应去医院就诊；用药 3 天症状无缓解应去医院就诊；出现瘙痒、刺痛、皮疹应停用",
+          "quote": "疮疖较重或局部变软化脓或已破溃者应去医院就诊。",
+          "src": "DRUG-01",
+          "cat": "安全边界"
+        }
+      ]
+    },
+    {
+      "id": "NPM_TcmExternalApply",
+      "graph": "topic-01",
+      "type": "NonPharmacologicalManagement",
+      "name": "中药外敷法（外渗）",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "中药外敷法（外渗）"
+      ],
+      "summary": "外渗的中成药外敷：国家层面唯一的推荐是中华护理学会指南 3.7⑤「中成药制剂如意金黄散外敷」（B 级强推荐，与 50% 硫酸镁等并列）；各家配伍与证据强度不一，**必须遵医嘱、限于皮肤完整者**。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "共识",
+          "author": "中国抗癌协会肿瘤影像专业委员会",
+          "title": "恶性肿瘤患者CT增强扫描对比剂安全管理专家共识（2022）",
+          "journal": "中华放射学杂志",
+          "year": 2022,
+          "cite": "中国抗癌协会肿瘤影像专业委员会 / 恶性肿瘤患者CT增强扫描对比剂安全管理专家共识（2022） / 中华放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "CG-09"
+        },
+        {
+          "type": "系统评价",
+          "author": "承德医学院护理学院（秦雨轩、王树艳、丁艺华等）",
+          "title": "中医护理技术在碘对比剂外渗处理中应用的范围综述",
+          "journal": "老年医学研究",
+          "year": 2026,
+          "cite": "承德医学院护理学院（秦雨轩、王树艳、丁艺华等） / 中医护理技术在碘对比剂外渗处理中应用的范围综述 / 老年医学研究 / 2026",
+          "grade": "汇总证据",
+          "ref": "CN-03"
+        },
+        {
+          "type": "对照研究",
+          "author": "哈尔滨医科大学附属第四医院普外一科（孙海霞、李红霞）",
+          "title": "如意金黄双散糊剂外敷在治疗碘造影剂外渗中的应用",
+          "journal": "中华现代护理杂志",
+          "year": 2015,
+          "cite": "哈尔滨医科大学附属第四医院普外一科（孙海霞、李红霞） / 如意金黄双散糊剂外敷在治疗碘造影剂外渗中的应用 / 中华现代护理杂志 / 2015",
+          "grade": "汇总证据",
+          "ref": "CN-04"
+        },
+        {
+          "type": "病例系列",
+          "author": "连云港市第一人民医院伤口造口门诊（李来娟、蒋琪霞等）",
+          "title": "中药如意金黄散早期湿敷在药物外渗性皮肤损伤中的效果分析",
+          "journal": "中华现代护理杂志",
+          "year": 2020,
+          "cite": "连云港市第一人民医院伤口造口门诊（李来娟、蒋琪霞等） / 中药如意金黄散早期湿敷在药物外渗性皮肤损伤中的效果分析 / 中华现代护理杂志 / 2020",
+          "grade": "汇总证据",
+          "ref": "CN-05"
+        },
+        {
+          "type": "对照研究",
+          "author": "中国十五冶金建设集团有限公司职工医院（陈佳兰、王声勇）",
+          "title": "新磺片糊剂湿敷治疗静脉炎",
+          "journal": "医学信息",
+          "year": 2016,
+          "cite": "中国十五冶金建设集团有限公司职工医院（陈佳兰、王声勇） / 新磺片糊剂湿敷治疗静脉炎 / 医学信息 / 2016",
+          "grade": "汇总证据",
+          "ref": "CN-06"
+        },
+        {
+          "type": "病例系列",
+          "author": "江西省赣州市人民医院肿瘤外科（徐瑶）",
+          "title": "新鲜马铃薯与新磺片交替外敷治疗深静脉所致静脉炎的临床疗效",
+          "journal": "实用心脑肺血管病杂志",
+          "year": 2010,
+          "cite": "江西省赣州市人民医院肿瘤外科（徐瑶） / 新鲜马铃薯与新磺片交替外敷治疗深静脉所致静脉炎的临床疗效 / 实用心脑肺血管病杂志 / 2010",
+          "grade": "汇总证据",
+          "ref": "CN-07"
+        },
+        {
+          "type": "对照研究",
+          "author": "中山大学附属第一医院中医科（许璧瑜）",
+          "title": "新癀片外敷治疗静脉输液渗漏临床疗效观察",
+          "journal": "东方药膳",
+          "year": 2019,
+          "cite": "中山大学附属第一医院中医科（许璧瑜） / 新癀片外敷治疗静脉输液渗漏临床疗效观察 / 东方药膳 / 2019",
+          "grade": "汇总证据",
+          "ref": "CN-08"
+        },
+        {
+          "type": "对照研究",
+          "author": "南昌大学第一附属医院",
+          "title": "五黄油外敷治疗化疗所致静脉炎效果观察",
+          "journal": "中国医药指南",
+          "year": 2010,
+          "cite": "南昌大学第一附属医院 / 五黄油外敷治疗化疗所致静脉炎效果观察 / 中国医药指南 / 2010",
+          "grade": "汇总证据",
+          "ref": "CN-09"
+        },
+        {
+          "type": "对照研究",
+          "author": "南昌大学第二附属医院（黄丹、黄小梅、王曾庚）",
+          "title": "五黄油对顺铂所致静脉炎的疗效观察",
+          "journal": "实用临床医学",
+          "year": 2010,
+          "cite": "南昌大学第二附属医院（黄丹、黄小梅、王曾庚） / 五黄油对顺铂所致静脉炎的疗效观察 / 实用临床医学 / 2010",
+          "grade": "汇总证据",
+          "ref": "CN-10"
+        },
+        {
+          "type": "对照研究",
+          "author": "南昌大学第一附属医院（魏明珠、吴姝玲、陈景华等）",
+          "title": "五黄油治疗肠造口粪水性皮炎的临床疗效研究",
+          "journal": "首都食品与医药",
+          "year": 2025,
+          "cite": "南昌大学第一附属医院（魏明珠、吴姝玲、陈景华等） / 五黄油治疗肠造口粪水性皮炎的临床疗效研究 / 首都食品与医药 / 2025",
+          "grade": "汇总证据",
+          "ref": "CN-11"
+        },
+        {
+          "type": "药品说明书",
+          "author": "厦门中药厂有限公司",
+          "title": "新癀片说明书（国药准字 Z35020063）",
+          "journal": "药品说明书（执行标准：中国药典 2015 年版一部）",
+          "year": 2015,
+          "cite": "厦门中药厂有限公司 / 新癀片说明书（国药准字 Z35020063） / 药品说明书（执行标准：中国药典 2015 年版一部） / 2015",
+          "grade": "说明书",
+          "ref": "DRUG-02"
+        }
+      ],
+      "details": [
+        {
+          "k": "干预形式四大类",
+          "v": "中药外敷、涂抹、推拿手法、联合干预 4 大类别；纳入 23 篇中文文献、总样本量 1403 例",
+          "quote": "干预形式可归纳为中药外敷、涂抹、推拿手法及联合干预4大类别",
+          "src": "CN-03",
+          "cat": "中医外治法"
+        },
+        {
+          "k": "外敷配伍与操作",
+          "v": "如意金黄双散 9 g + 米醋 10 ml + 蜂蜜 2 ml 调成糊状湿敷；对照组 50% 硫酸镁冷敷 24 h 后热敷",
+          "quote": "观察组患者用如意金黄双散9 g+米醋10 ml+蜂蜜2 ml调成糊状湿敷",
+          "src": "CN-04",
+          "cat": "中医外治法"
+        },
+        {
+          "k": "效果与局限",
+          "v": "72 h 总有效率 95% vs 60%（P<0.05）；但单中心 n=40、未说明盲法与分配隐藏，只报有效率",
+          "quote": "观察组72 h总有效率为95%,常规组72 h总有效率为60%",
+          "src": "CN-04",
+          "cat": "证据质量"
+        },
+        {
+          "k": "结论",
+          "v": "如意金黄散糊剂外敷治疗碘造影剂外渗效果优于 50% 硫酸镁外敷（证据级别：可操作方法参考，非推荐强度）",
+          "quote": "如意金黄散糊剂外敷治疗碘造影剂外渗效果优于50%硫酸镁外敷。",
+          "src": "CN-04",
+          "cat": "中医外治法"
+        },
+        {
+          "k": "证据级别说明",
+          "v": "便利抽样 n=21、无平行对照组 ⇒ 病例系列而非对照研究，图谱引用须标「病例系列」",
+          "quote": "纳入2017年1月至2019年12月两家医院发生的21例药物外渗性皮肤损伤患者",
+          "src": "CN-05",
+          "cat": "证据质量"
+        },
+        {
+          "k": "新磺片身份不明",
+          "v": "56 例静脉炎随机分两组，新磺片糊剂湿敷 vs 硫酸镁热湿敷；3 d 后有效率 100% vs 71.4%（P<0.05）；但未披露成分与制备 ⇒ 不可作药理身份依据",
+          "quote": "实验组采用新磺片糊剂湿敷治疗，对照组采用硫酸镁溶液热湿敷治疗",
+          "src": "CN-06",
+          "cat": "文献"
+        },
+        {
+          "k": "证据缺口",
+          "v": "「新磺片」作为名词在文献中稳定存在，但作为物质从未被定义（无成分/剂量/频次/疗程）",
+          "quote": "实验组有效率100%，对照组有效率71.4%",
+          "src": "CN-06",
+          "cat": "安全边界"
+        },
+        {
+          "k": "第二篇用该名称的文献",
+          "v": "40 例深静脉置管所致静脉炎采用马铃薯片与新磺片交替外敷；39 例治愈、1 例显效，无不良反应发生",
+          "quote": "本组40例患者,39例治愈,1例显效",
+          "src": "CN-07",
+          "cat": "文献"
+        },
+        {
+          "k": "直接针对输液渗漏的对照",
+          "v": "80 例各 40 例随机分组；治疗组新癀片+蜂蜜调糊外敷 vs 对照组 50% 硫酸镁湿敷；72 h 静脉炎发生率 17.5% vs 52.5%，总有效率 97.5% vs 77.5%（P<0.05）",
+          "quote": "治疗组采用新癀片碾碎加蜂蜜调成糊状并涂敷于渗漏处",
+          "src": "CN-08",
+          "cat": "文献"
+        },
+        {
+          "k": "该研究证据质量低",
+          "v": "存在明显内部不一致、未说明盲法与不良反应监测 ⇒ 只能作参考",
+          "quote": "（该文自身存在内部不一致，图谱中标为小样本证据）",
+          "src": "CN-08",
+          "cat": "安全边界"
+        },
+        {
+          "k": "五黄油的证据场景",
+          "v": "95 例乳腺癌化疗后静脉炎随机分三组：A 五黄油外敷、B 地塞米松软膏、C 75% 酒精湿敷，差异有统计学意义 ⇒ 支持局部炎症外用，但对象是化疗静脉炎",
+          "quote": "3组比较差异显著(P<0.05)",
+          "src": "CN-09",
+          "cat": "文献"
+        },
+        {
+          "k": "不能外推到对比剂外渗",
+          "v": "⚠️ 五黄油无任何碘对比剂外渗适应证证据；现有证据全在化疗静脉炎/压疮/烧伤/造口皮炎 ⇒ 跨适应证外推须标待核",
+          "quote": "（该文研究对象为化疗所致静脉炎，非碘对比剂外渗）",
+          "src": "CN-09",
+          "cat": "安全边界"
+        },
+        {
+          "k": "与硫酸镁的对照",
+          "v": "75 例顺铂所致静脉炎分两组，治疗组五黄油湿敷 vs 对照组 33% 硫酸镁湿敷，比较 Ⅰ/Ⅱ/Ⅲ 级静脉炎好转时间，治疗组总有效率明显更高",
+          "quote": "治疗组患者采用五黄油湿敷治疗,对照组患者采用33%硫酸镁湿敷治疗",
+          "src": "CN-10",
+          "cat": "文献"
+        },
+        {
+          "k": "五黄油最新证据",
+          "v": "90 例肠造口粪水性皮炎随机数字表法分三组：常规换药 vs 氧化锌软膏 vs 五黄油涂抹；五黄油组总有效率、造口 DET 评分、WHOQOL-BREF 均更优（P<0.05）",
+          "quote": "肠造口粪水性皮炎患者采用五黄油干预效果较好",
+          "src": "CN-11",
+          "cat": "文献"
+        },
+        {
+          "k": "不宜长期大面积使用",
+          "v": "含生天南星（有毒药材），禁止长期或大面积使用；自行用药不超过 7 天 ⇒ 外渗面积可能较大，必须由医嘱限定",
+          "quote": "本品含生天南星，不宜长期或大面积使用。",
+          "src": "DRUG-01",
+          "cat": "安全边界"
+        },
+        {
+          "k": "特殊人群禁忌",
+          "v": "孕妇禁用、婴幼儿禁用；儿童/哺乳期/年老体弱者须在医师指导下使用；糖尿病严重者慎用（防使用不当引起皮肤损伤）",
+          "quote": "糖尿病严重者慎用，以防止使用不当引起皮肤损伤。",
+          "src": "DRUG-01",
+          "cat": "安全边界"
+        },
+        {
+          "k": "外用须避开破溃处",
+          "v": "用冷开水调化成糊状，均匀涂敷于患处，厚约 1 mm，**避开破溃处**，每日 2-3 次；出现局部皮肤过敏反应应停用",
+          "quote": "用冷开水调化成糊状，均匀涂敷于患处，厚约1mm，避开破溃处",
+          "src": "DRUG-02",
+          "cat": "安全边界"
+        },
+        {
+          "k": "孕妇哺乳期禁用",
+          "v": "孕妇、哺乳期妇女禁用；14 岁以下小儿一般不宜应用；既往有消化道出血史者忌用；胃及十二指肠溃疡者、肾功能不全者及孕妇慎用",
+          "quote": "孕妇、哺乳期妇女禁用。",
+          "src": "DRUG-02",
+          "cat": "安全边界"
+        },
+        {
+          "k": "含 NSAID 的致敏风险",
+          "v": "警示语「本品含有吲哚美辛」，对阿司匹林或其他非甾体抗炎药过敏者禁用；外用仍可致瘙痒、刺痛、皮疹、水疱、大疱性多型红斑",
+          "quote": "本品含有吲哚美辛。",
+          "src": "DRUG-02",
+          "cat": "安全边界"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "S_Urticaria",
+      "target": "S_Rash",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_Rash",
+      "target": "SC_Hypersensitivity",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "SC_Hypersensitivity",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "SC_Hypersensitivity",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_FacialEdema",
+      "target": "SC_Hypersensitivity",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_ThroatDiscomfort",
+      "target": "SC_Hypersensitivity",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_ChestTightness",
+      "target": "SC_Hypersensitivity",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_GeneralizedWeakness",
+      "target": "SC_Hypersensitivity",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_Pruritus",
+      "target": "SC_Hypersensitivity",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "SC_ExtravasationSpectrum",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "SC_AdverseSpectrum",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "SC_Hypersensitivity",
+      "target": "SC_AdverseSpectrum",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "SC_ExtravasationSpectrum",
+      "target": "SC_AdverseSpectrum",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "MP_NursingIntervention",
+      "target": "NT_EarlyWarning",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "MP_ExtravasationPrinciple",
+      "target": "MP_NursingMeasures",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "MP_AdverseReactionTriage",
+      "target": "MP_NursingMeasures",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "S_AdverseReaction",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "S_AllergicReaction",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "S_Extravasation",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "E_CTEnhancedScan",
+      "target": "S_AdverseReaction",
+      "type": "EFFECT_ON",
+      "label": "影响"
+    },
+    {
+      "source": "E_CTEnhancedScan",
+      "target": "S_Extravasation",
+      "type": "EFFECT_ON",
+      "label": "影响"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "S_AllergicReaction",
+      "type": "EFFECT_ON",
+      "label": "影响"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "S_Extravasation",
+      "type": "EFFECT_ON",
+      "label": "影响"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "S_AdverseReaction",
+      "type": "EFFECT_ON",
+      "label": "影响"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "S_AnaphylacticShock",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "S_Urticaria",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "S_FacialEdema",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "S_ThroatDiscomfort",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "S_ChestTightness",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "S_GeneralizedWeakness",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "S_Urticaria",
+      "target": "S_Pruritus",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "MP_NursingMeasures",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "MP_NursingPrevention",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "MP_NursingMeasures",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "MP_AdverseReactionTriage",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "MP_NursingMeasures",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "MP_NursingIntervention",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "MP_AdverseReactionTriage",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "NT_EarlyWarning",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "MP_NursingIntervention",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "MP_AdverseReactionTriage",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_Urticaria",
+      "target": "MP_NursingIntervention",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_Pruritus",
+      "target": "MP_NursingMeasures",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_Rash",
+      "target": "MP_NursingMeasures",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_FacialEdema",
+      "target": "MP_NursingIntervention",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_ThroatDiscomfort",
+      "target": "MP_NursingIntervention",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_ChestTightness",
+      "target": "MP_NursingIntervention",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_GeneralizedWeakness",
+      "target": "MP_NursingIntervention",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "MP_NursingIntervention",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "MP_ExtravasationPrinciple",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "E_CTEnhancedScan",
+      "target": "MP_NursingPrevention",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "MP_NursingPrevention",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "DE_PreExamNotice",
+      "type": "EDUCATED_BY",
+      "label": "由……教育"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "DE_AfterExamCare",
+      "type": "EDUCATED_BY",
+      "label": "由……教育"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "DE_AllergyDisclosure",
+      "type": "EDUCATED_BY",
+      "label": "由……教育"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "DE_ExtravasationHomeCare",
+      "type": "EDUCATED_BY",
+      "label": "由……教育"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "DE_EmergencyKnowledge",
+      "type": "EDUCATED_BY",
+      "label": "由……教育"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "DE_PreExamNotice",
+      "type": "EDUCATED_BY",
+      "label": "由……教育"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "DE_ExtravasationHomeCare",
+      "type": "EDUCATED_BY",
+      "label": "由……教育"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "DE_EmergencyKnowledge",
+      "type": "EDUCATED_BY",
+      "label": "由……教育"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "AT_AllergyHistory",
+      "type": "ASSESSED_BY",
+      "label": "由……评估"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "AT_AllergyHistory",
+      "type": "ASSESSED_BY",
+      "label": "由……评估"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "AT_AllergyHistory",
+      "type": "ASSESSED_BY",
+      "label": "由……评估"
+    },
+    {
+      "source": "S_Urticaria",
+      "target": "AT_AllergyHistory",
+      "type": "ASSESSED_BY",
+      "label": "由……评估"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "AT_ExtravasationAssessment",
+      "type": "ASSESSED_BY",
+      "label": "由……评估"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "AT_VascularAssessment",
+      "type": "ASSESSED_BY",
+      "label": "由……评估",
+      "note": "使用耐高压型留置针，优先肘正中静脉"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "RF_ContrastAllergyHistory",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "RF_UncontrolledAsthma",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "RF_ContrastAllergyHistory",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "RF_UncontrolledAsthma",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "RF_AgeExtremes",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "RF_FragileVein",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "RF_HighPressureInjection",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "RF_NoSalineFlush",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "RF_AgeExtremes",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "RF_ContrastAllergyHistory",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_Rash",
+      "target": "RF_ContrastAllergyHistory",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_Urticaria",
+      "target": "RF_ContrastAllergyHistory",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_Pruritus",
+      "target": "RF_ContrastAllergyHistory",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_FacialEdema",
+      "target": "RF_ContrastAllergyHistory",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_ThroatDiscomfort",
+      "target": "RF_ContrastAllergyHistory",
+      "type": "AT_RISK_BY",
+      "label": "风险来自"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "PM_AdrenalineIM",
+      "type": "TREATED_BY",
+      "label": "由……治疗",
+      "note": "大腿外侧中部肌内注射，必要时每 5～15 分钟重复"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "PM_Corticosteroid",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "PM_Antihistamine",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "PM_Corticosteroid",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_Urticaria",
+      "target": "PM_Antihistamine",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_Rash",
+      "target": "PM_Antihistamine",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_Pruritus",
+      "target": "PM_Antihistamine",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_FacialEdema",
+      "target": "PM_Corticosteroid",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "PM_DexamethasoneWetCompress",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "NPM_StopInjection",
+      "type": "TREATED_BY",
+      "label": "由……治疗",
+      "note": "第一步：立即停止推注"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "NPM_KeepCatheter",
+      "type": "TREATED_BY",
+      "label": "由……治疗",
+      "note": "第二步：保留留置针并尽量回抽"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "NPM_LimbElevation",
+      "type": "TREATED_BY",
+      "label": "由……治疗",
+      "note": "禁止局部按压揉搓"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "NPM_ColdCompress",
+      "type": "TREATED_BY",
+      "label": "由……治疗",
+      "note": "早期冷敷使用"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "NPM_VascularVisualization",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "NPM_CloseObservation",
+      "type": "TREATED_BY",
+      "label": "由……治疗",
+      "note": "轻度反应观察 30 分钟"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "NPM_CloseObservation",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "NPM_CloseObservation",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "E_CTEnhancedScan",
+      "target": "NPM_ContrastPreparation",
+      "type": "TREATED_BY",
+      "label": "由……治疗",
+      "note": "对比剂加温至 37℃ 左右"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "NPM_ContrastPreparation",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "NPM_PsychologicalSupport",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "NPM_PsychologicalSupport",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "MP_NursingIntervention",
+      "target": "SS_SevereRecovered",
+      "type": "EFFECT_ON",
+      "label": "影响"
+    },
+    {
+      "source": "MP_NursingMeasures",
+      "target": "SS_MildResolved",
+      "type": "EFFECT_ON",
+      "label": "影响"
+    },
+    {
+      "source": "MP_ExtravasationPrinciple",
+      "target": "SS_MildResolved",
+      "type": "EFFECT_ON",
+      "label": "影响"
+    },
+    {
+      "source": "MP_AdverseReactionTriage",
+      "target": "SS_MildResolved",
+      "type": "EFFECT_ON",
+      "label": "影响"
+    },
+    {
+      "source": "MP_NursingIntervention",
+      "target": "FS_LimbFunction",
+      "type": "EFFECT_ON",
+      "label": "影响"
+    },
+    {
+      "source": "MP_ExtravasationPrinciple",
+      "target": "FS_LimbFunction",
+      "type": "EFFECT_ON",
+      "label": "影响"
+    },
+    {
+      "source": "SS_MildResolved",
+      "target": "FS_LimbFunction",
+      "type": "EFFECT_ON",
+      "label": "影响"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "E_CTEnhancedScan",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "E_CTEnhancedScan",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "R15",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "R14",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Rash",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Rash",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "R14",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Urticaria",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Urticaria",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Urticaria",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Pruritus",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Pruritus",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_FacialEdema",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_FacialEdema",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ThroatDiscomfort",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ThroatDiscomfort",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ChestTightness",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ChestTightness",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_GeneralizedWeakness",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_GeneralizedWeakness",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "R17",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_AdverseSpectrum",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_Hypersensitivity",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_ExtravasationSpectrum",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_AllergyHistory",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_AllergyHistory",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_ExtravasationAssessment",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_ExtravasationAssessment",
+      "target": "R17",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_VascularAssessment",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_VascularAssessment",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_ContrastAllergyHistory",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_ContrastAllergyHistory",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_UncontrolledAsthma",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_UncontrolledAsthma",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_AgeExtremes",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_AgeExtremes",
+      "target": "R17",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_FragileVein",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_FragileVein",
+      "target": "R17",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_HighPressureInjection",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_HighPressureInjection",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_HighPressureInjection",
+      "target": "R17",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_NoSalineFlush",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_NoSalineFlush",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_AdrenalineIM",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_AdrenalineIM",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_Corticosteroid",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_Corticosteroid",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_Antihistamine",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_Antihistamine",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_MagnesiumSulfate",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_DexamethasoneWetCompress",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_StopInjection",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_StopInjection",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_KeepCatheter",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_KeepCatheter",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_LimbElevation",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_LimbElevation",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_LimbElevation",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ColdCompress",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ColdCompress",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_CloseObservation",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_CloseObservation",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_OralHydration",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_OralHydration",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ContrastPreparation",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ContrastPreparation",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_VascularVisualization",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_VascularVisualization",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_PsychologicalSupport",
+      "target": "R20",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_NursingMeasures",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_NursingMeasures",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_NursingMeasures",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_NursingPrevention",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_NursingPrevention",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_NursingPrevention",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_NursingIntervention",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_NursingIntervention",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_NursingIntervention",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_ExtravasationPrinciple",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_ExtravasationPrinciple",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_ExtravasationPrinciple",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_AdverseReactionTriage",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_AdverseReactionTriage",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_AdverseReactionTriage",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NT_EarlyWarning",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NT_EarlyWarning",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_PreExamNotice",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_PreExamNotice",
+      "target": "R20",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_AfterExamCare",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_AfterExamCare",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_AfterExamCare",
+      "target": "R20",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_AllergyDisclosure",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_AllergyDisclosure",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_ExtravasationHomeCare",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_ExtravasationHomeCare",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_EmergencyKnowledge",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_EmergencyKnowledge",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SS_MildResolved",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SS_MildResolved",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SS_SevereRecovered",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SS_SevereRecovered",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FS_LimbFunction",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FS_LimbFunction",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "E_CTEnhancedScan",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ContrastPreparation",
+      "target": "R21",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "R21",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "R21",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "R22",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_ExtravasationAssessment",
+      "target": "R22",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "R23",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_UncontrolledAsthma",
+      "target": "R23",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ContrastNausea",
+      "target": "S_AdverseReaction",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_ContrastNausea",
+      "target": "DE_AfterExamCare",
+      "type": "EDUCATED_BY",
+      "label": "由……教育"
+    },
+    {
+      "source": "S_ContrastNausea",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ContrastNausea",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ContrastVomiting",
+      "target": "S_AdverseReaction",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_ContrastVomiting",
+      "target": "DE_AfterExamCare",
+      "type": "EDUCATED_BY",
+      "label": "由……教育"
+    },
+    {
+      "source": "S_ContrastVomiting",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ContrastVomiting",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "S_ExtravasationSwelling",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "S_ExtravasationSwelling",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ExtravasationSwelling",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "S_ExtravasationPain",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "S_ExtravasationPain",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ExtravasationPain",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "S_ExtravasationRedness",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "S_ExtravasationRedness",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ExtravasationRedness",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "S_ExtravasationCoolSkin",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "S_ExtravasationCoolSkin",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ExtravasationCoolSkin",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "S_ExtravasationPallor",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "S_ExtravasationPallor",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ExtravasationPallor",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "MP_NursingIntervention",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "AT_AllergyHistory",
+      "target": "MP_NursingPrevention",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "AT_VascularAssessment",
+      "target": "MP_NursingPrevention",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "AT_ExtravasationAssessment",
+      "target": "MP_NursingPrevention",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "NPM_VascularVisualization",
+      "target": "MP_NursingPrevention",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "NPM_ContrastPreparation",
+      "target": "MP_NursingPrevention",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "NPM_CloseObservation",
+      "target": "MP_NursingIntervention",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "NPM_OralHydration",
+      "target": "MP_NursingMeasures",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "NPM_OralHydration",
+      "target": "DE_AfterExamCare",
+      "type": "EDUCATED_BY",
+      "label": "由……教育"
+    },
+    {
+      "source": "S_ThroatDiscomfort",
+      "target": "PM_AdrenalineIM",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_ChestTightness",
+      "target": "PM_AdrenalineIM",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_FacialEdema",
+      "target": "PM_AdrenalineIM",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_FacialEdema",
+      "target": "PM_Antihistamine",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_ThroatDiscomfort",
+      "target": "PM_Antihistamine",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "E_CTEnhancedScan",
+      "target": "S_AllergicReaction",
+      "type": "EFFECT_ON",
+      "label": "影响"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomStatus",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_FunctionalStatus",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_Rash",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_Urticaria",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_Pruritus",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_FacialEdema",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_ThroatDiscomfort",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_ChestTightness",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_GeneralizedWeakness",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_ContrastNausea",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_ContrastVomiting",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_ExtravasationSwelling",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_ExtravasationPain",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_ExtravasationRedness",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_ExtravasationCoolSkin",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_ExtravasationPallor",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "E_CTEnhancedScan",
+      "target": "FW_Exam",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "FW_Exam",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_NursingMeasures",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_NursingPrevention",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_NursingIntervention",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_ExtravasationPrinciple",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_AdverseReactionTriage",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NT_EarlyWarning",
+      "target": "FW_NursingTheory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NT_SelfCareTheory",
+      "target": "FW_NursingTheory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "DE_PreExamNotice",
+      "target": "FW_DiseaseEducation",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "DE_AfterExamCare",
+      "target": "FW_DiseaseEducation",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "DE_AllergyDisclosure",
+      "target": "FW_DiseaseEducation",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "DE_ExtravasationHomeCare",
+      "target": "FW_DiseaseEducation",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "DE_EmergencyKnowledge",
+      "target": "FW_DiseaseEducation",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "SC_AdverseSpectrum",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "SC_Hypersensitivity",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "SC_ExtravasationSpectrum",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "AT_AllergyHistory",
+      "target": "FW_AssessmentTool",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "AT_ExtravasationAssessment",
+      "target": "FW_AssessmentTool",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "AT_VascularAssessment",
+      "target": "FW_AssessmentTool",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "RF_ContrastAllergyHistory",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "RF_UncontrolledAsthma",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "RF_AgeExtremes",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "RF_FragileVein",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "RF_HighPressureInjection",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "RF_NoSalineFlush",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "PM_AdrenalineIM",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "PM_Corticosteroid",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "PM_Antihistamine",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "PM_MagnesiumSulfate",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "PM_DexamethasoneWetCompress",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_StopInjection",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_KeepCatheter",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_LimbElevation",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_ColdCompress",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_CloseObservation",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_OralHydration",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_ContrastPreparation",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_VascularVisualization",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_PsychologicalSupport",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "SS_MildResolved",
+      "target": "FW_SymptomStatus",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "SS_SevereRecovered",
+      "target": "FW_SymptomStatus",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FS_LimbFunction",
+      "target": "FW_FunctionalStatus",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "DC_CTEnhancedRisk",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_Exam",
+      "target": "DC_CTEnhancedRisk",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "DC_CTEnhancedRisk",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_NursingTheory",
+      "target": "DC_CTEnhancedRisk",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "DC_CTEnhancedRisk",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R14",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R21",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R23",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R17",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R22",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_Exam",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_Exam",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_Exam",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_Exam",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_Exam",
+      "target": "R15",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_NursingTheory",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_NursingTheory",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_NursingTheory",
+      "target": "R24",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "R20",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "R17",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "R22",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "R23",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "R17",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "R21",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "R20",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomStatus",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomStatus",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomStatus",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_SymptomStatus",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_FunctionalStatus",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FW_FunctionalStatus",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NT_SelfCareTheory",
+      "target": "R24",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "R24",
+      "target": "R24",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_VasovagalReaction",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_VasovagalReaction",
+      "target": "R14",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_EpiAutoInjector",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_EpiAutoInjector",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_SerumTryptase",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_SerumTryptase",
+      "target": "R14",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_SerumTryptase",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_BiphasicAnaphylaxis",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_BiphasicAnaphylaxis",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_ExtravDamageStage",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_CompartmentSyndrome",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_CompartmentSyndrome",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_Hyaluronidase",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_Atropine",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_CMAllergyTest",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_CMAllergyTest",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_CMAllergyTest",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_PowerInjectorSafeCatheter",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_PowerInjectorSafeCatheter",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_PowerInjectorSafeCatheter",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_PowerInjectorSafeCatheter",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_PowerInjectorSafeCatheter",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_SalineFlushCheck",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_SalineFlushCheck",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_SalineFlushCheck",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ObservationThenRemove",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ObservationThenRemove",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_SwellingMeasurement",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_SwellingMeasurement",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_ExtravasationDetection",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_ExtravasationReporting",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_ExtravasationReporting",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_ExtravasationReporting",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_SwitchContrastAgent",
+      "target": "R14",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Phlebitis",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_BetaBlockerACEI",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_CMHSRMild",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_CMHSRMild",
+      "target": "R14",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_CMHSRMild",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_CMHSRModerate",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_CMHSRModerate",
+      "target": "R14",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_CMHSRModerate",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_CMHSRSevere",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_CMHSRSevere",
+      "target": "R14",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_CMHSRSevere",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_ExtravL1",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_ExtravL1",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_ExtravL1",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_ExtravL2",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_ExtravL2",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_ExtravL2",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_ExtravL3",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_ExtravL3",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_ExtravL3",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_ExtravL4",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_ExtravL4",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_ExtravL4",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Bronchospasm",
+      "target": "CG-03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Bronchospasm",
+      "target": "CG-09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_PulmonaryEdema",
+      "target": "CG-03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_SkinIntegrity",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_SkinIntegrity",
+      "target": "CN-03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_SkinIntegrity",
+      "target": "CN-05",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_SkinIntegrity",
+      "target": "DRUG-01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_TcmExternalApply",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_TcmExternalApply",
+      "target": "CG-09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_TcmExternalApply",
+      "target": "CN-03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_TcmExternalApply",
+      "target": "CN-04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_TcmExternalApply",
+      "target": "CN-05",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_TcmExternalApply",
+      "target": "CN-06",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_TcmExternalApply",
+      "target": "CN-07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_TcmExternalApply",
+      "target": "CN-08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_TcmExternalApply",
+      "target": "CN-09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_TcmExternalApply",
+      "target": "CN-10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_TcmExternalApply",
+      "target": "CN-11",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_TcmExternalApply",
+      "target": "DRUG-02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ContrastPreparation",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ContrastPreparation",
+      "target": "R01-2026",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NT_EarlyWarning",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_CloseObservation",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ContrastPreparation",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_EmergencyKnowledge",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_FacialEdema",
+      "target": "R14",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ContrastNausea",
+      "target": "R14",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ContrastVomiting",
+      "target": "R14",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_AdverseSpectrum",
+      "target": "R14",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Rash",
+      "target": "R14",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_NursingIntervention",
+      "target": "R14",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_Antihistamine",
+      "target": "R14",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ContrastPreparation",
+      "target": "R14",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_PreExamNotice",
+      "target": "R14",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_CloseObservation",
+      "target": "R14",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_EmergencyKnowledge",
+      "target": "R14",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_CMHSRMild",
+      "target": "CG-01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_CMHSRModerate",
+      "target": "CG-01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_FacialEdema",
+      "target": "CG-01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_CMHSRSevere",
+      "target": "CG-01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_Hypersensitivity",
+      "target": "CG-01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "CG-01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_AdverseReactionTriage",
+      "target": "CG-01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_NursingIntervention",
+      "target": "CG-01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_AdrenalineIM",
+      "target": "CG-01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_EmergencyKnowledge",
+      "target": "CG-01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NT_EarlyWarning",
+      "target": "CG-01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ContrastPreparation",
+      "target": "CG-01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_NursingPrevention",
+      "target": "CG-01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_ContrastAllergyHistory",
+      "target": "CG-01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_CMAllergyTest",
+      "target": "CG-01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_AgeExtremes",
+      "target": "CG-01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "CG-01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_PreExamNotice",
+      "target": "CG-01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_UncontrolledAsthma",
+      "target": "CG-01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_AllergyDisclosure",
+      "target": "CG-01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_PreExamNotice",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ContrastPreparation",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_VascularAssessment",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_ExtravasationReporting",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "CG-03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "CG-03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_AdverseSpectrum",
+      "target": "CG-03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Urticaria",
+      "target": "CG-03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Rash",
+      "target": "CG-03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "CG-03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_GeneralizedWeakness",
+      "target": "CG-03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_Atropine",
+      "target": "CG-03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ChestTightness",
+      "target": "CG-03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ThroatDiscomfort",
+      "target": "CG-03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_NursingMeasures",
+      "target": "CG-03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_ExtravL1",
+      "target": "CG-03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ExtravasationSwelling",
+      "target": "CG-03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_ExtravL3",
+      "target": "CG-03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_ExtravasationPrinciple",
+      "target": "CG-03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_ExtravasationHomeCare",
+      "target": "CG-03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ObservationThenRemove",
+      "target": "CG-03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_NursingPrevention",
+      "target": "CG-03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_PreExamNotice",
+      "target": "CG-03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ContrastPreparation",
+      "target": "CG-03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "CG-09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_AdverseSpectrum",
+      "target": "CG-09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Urticaria",
+      "target": "CG-09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Rash",
+      "target": "CG-09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ChestTightness",
+      "target": "CG-09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ThroatDiscomfort",
+      "target": "CG-09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "CG-09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_GeneralizedWeakness",
+      "target": "CG-09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_Atropine",
+      "target": "CG-09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_ExtravL1",
+      "target": "CG-09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_ExtravasationPrinciple",
+      "target": "CG-09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "CG-09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_ExtravasationSpectrum",
+      "target": "CG-09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_ExtravasationAssessment",
+      "target": "CG-09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "CG-09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ObservationThenRemove",
+      "target": "CG-09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_EmergencyKnowledge",
+      "target": "CG-09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_ExtravL1",
+      "target": "CG-08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_ExtravasationPrinciple",
+      "target": "CG-08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_ExtravasationHomeCare",
+      "target": "CG-08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ObservationThenRemove",
+      "target": "CG-08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_StopInjection",
+      "target": "CG-08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_ExtravasationAssessment",
+      "target": "CG-08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_AdverseReactionTriage",
+      "target": "CG-08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_NursingMeasures",
+      "target": "CG-08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_ExtravasationPrinciple",
+      "target": "CG-04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_AdrenalineIM",
+      "target": "CG-04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_CMAllergyTest",
+      "target": "CG-04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_ContrastAllergyHistory",
+      "target": "CG-04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_UncontrolledAsthma",
+      "target": "CG-04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ContrastPreparation",
+      "target": "CG-04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_HighPressureInjection",
+      "target": "CG-04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_NursingMeasures",
+      "target": "CG-04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "CG-05",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DC_CTEnhancedRisk",
+      "target": "CG-05",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_NursingMeasures",
+      "target": "CG-06",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "CG-06",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "CG-07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_FragileVein",
+      "target": "CG-07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ContrastPreparation",
+      "target": "CG-07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_AllergyHistory",
+      "target": "CG-07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_ContrastAllergyHistory",
+      "target": "CG-07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_AgeExtremes",
+      "target": "CG-07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_CMAllergyTest",
+      "target": "CG-07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_PreExamNotice",
+      "target": "CG-07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ObservationThenRemove",
+      "target": "CG-07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "CG-07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_ContrastAllergyHistory",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_AllergyHistory",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_PreExamNotice",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_VascularAssessment",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_HighPressureInjection",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_ExtravasationAssessment",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ExtravasationPain",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ExtravasationSwelling",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SS_MildResolved",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Pruritus",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Rash",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_ExtravasationReporting",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_ExtravasationHomeCare",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_AllergyHistory",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_ContrastAllergyHistory",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_PreExamNotice",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_AgeExtremes",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_UncontrolledAsthma",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_PsychologicalSupport",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ContrastPreparation",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_PowerInjectorSafeCatheter",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_VascularAssessment",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_SalineFlushCheck",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ObservationThenRemove",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_OralHydration",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ExtravasationSwelling",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ExtravasationPain",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SS_SevereRecovered",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_AdverseSpectrum",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Urticaria",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Pruritus",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ThroatDiscomfort",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Bronchospasm",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_NoSalineFlush",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_VascularAssessment",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_FragileVein",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ColdCompress",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_MagnesiumSulfate",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_DexamethasoneWetCompress",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_ExtravasationSpectrum",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ExtravasationSwelling",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ExtravasationPain",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ExtravasationCoolSkin",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ExtravasationPallor",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ExtravasationRedness",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_CompartmentSyndrome",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_StopInjection",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_LimbElevation",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ColdCompress",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_ExtravasationPrinciple",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_FragileVein",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_ExtravasationHomeCare",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ExtravasationSwelling",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ExtravasationPain",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ExtravasationCoolSkin",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ExtravasationPallor",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ExtravasationRedness",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_CompartmentSyndrome",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_LimbElevation",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ColdCompress",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_ExtravasationHomeCare",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_ExtravasationPrinciple",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_MagnesiumSulfate",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "PM_DexamethasoneWetCompress",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_VascularAssessment",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_FragileVein",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ContrastPreparation",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "FS_LimbFunction",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "SC_ExtravasationSpectrum",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_ExtravasationPrinciple",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_LimbElevation",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_StopInjection",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_ExtravasationAssessment",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ExtravasationSwelling",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ExtravasationPain",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_NoSalineFlush",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_ExtravasationReporting",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "AT_SwellingMeasurement",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_HighPressureInjection",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_SalineFlushCheck",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "RF_FragileVein",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "DE_ExtravasationHomeCare",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_ObservationThenRemove",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "MP_ExtravasationPrinciple",
+      "target": "CN-05",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "NPM_TcmExternalApply",
+      "target": "DRUG-01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_VasovagalReaction",
+      "target": "SC_AdverseSpectrum",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_BiphasicAnaphylaxis",
+      "target": "SC_Hypersensitivity",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "SC_ExtravDamageStage",
+      "target": "SC_ExtravasationSpectrum",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_CompartmentSyndrome",
+      "target": "SC_ExtravasationSpectrum",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_Phlebitis",
+      "target": "SC_AdverseSpectrum",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "S_CompartmentSyndrome",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "S_VasovagalReaction",
+      "type": "EFFECT_ON",
+      "label": "影响"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "NPM_PowerInjectorSafeCatheter",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "NPM_SalineFlushCheck",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "NPM_ObservationThenRemove",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "NPM_SwitchContrastAgent",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "PM_Hyaluronidase",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_VasovagalReaction",
+      "target": "PM_Atropine",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "PM_EpiAutoInjector",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "AT_SerumTryptase",
+      "type": "ASSESSED_BY",
+      "label": "由……评估"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "AT_SwellingMeasurement",
+      "type": "ASSESSED_BY",
+      "label": "由……评估"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "AT_ExtravasationDetection",
+      "type": "ASSESSED_BY",
+      "label": "由……评估"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "MP_ExtravasationReporting",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "RF_HighPressureInjection",
+      "target": "NPM_SalineFlushCheck",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "SC_CMHSRMild",
+      "target": "SC_Hypersensitivity",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "SC_CMHSRModerate",
+      "target": "SC_Hypersensitivity",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "SC_CMHSRSevere",
+      "target": "SC_Hypersensitivity",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "SC_CMHSRMild",
+      "target": "S_AllergicReaction",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "SC_CMHSRModerate",
+      "target": "S_AllergicReaction",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "SC_CMHSRSevere",
+      "target": "S_AllergicReaction",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "SC_ExtravL1",
+      "target": "SC_ExtravasationSpectrum",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "SC_ExtravL1",
+      "target": "S_Extravasation",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "SC_ExtravL2",
+      "target": "SC_ExtravasationSpectrum",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "SC_ExtravL2",
+      "target": "S_Extravasation",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "SC_ExtravL3",
+      "target": "SC_ExtravasationSpectrum",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "SC_ExtravL3",
+      "target": "S_Extravasation",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "SC_ExtravL4",
+      "target": "SC_ExtravasationSpectrum",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "SC_ExtravL4",
+      "target": "S_Extravasation",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "SC_ExtravL1",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "SC_ExtravL2",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "SC_ExtravL3",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "SC_ExtravL4",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "SC_ExtravL1",
+      "target": "MP_ExtravasationPrinciple",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "SC_ExtravL2",
+      "target": "MP_ExtravasationPrinciple",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "SC_ExtravL3",
+      "target": "MP_ExtravasationPrinciple",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "SC_ExtravL4",
+      "target": "MP_ExtravasationReporting",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "S_Bronchospasm",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "S_PulmonaryEdema",
+      "type": "HAS_SYMPTOM",
+      "label": "存在症状"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "MP_SkinIntegrity",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "MP_SkinIntegrity",
+      "target": "NPM_TcmExternalApply",
+      "type": "MANAGED_BY",
+      "label": "由……处置"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "NPM_TcmExternalApply",
+      "type": "TREATED_BY",
+      "label": "由……治疗"
+    }
+  ]
+}
+;
