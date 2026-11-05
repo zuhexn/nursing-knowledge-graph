@@ -3271,6 +3271,87 @@ window.KG_GRAPH = {
       ]
     },
     {
+      "id": "S_ContrastNausea",
+      "graph": "topic-01",
+      "type": "SymptomSign",
+      "name": "恶心",
+      "tags": [
+        "症状体征",
+        "不良反应"
+      ],
+      "aliases": [
+        "恶心",
+        "nausea",
+        "Nausea",
+        "对比剂相关恶心",
+        "恶心反应"
+      ],
+      "summary": "打对比剂后出现的恶心；多数为轻度、一过性，与推药速度过快有关，需与过敏反应相鉴别。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        }
+      ]
+    },
+    {
+      "id": "S_ContrastVomiting",
+      "graph": "topic-01",
+      "type": "SymptomSign",
+      "name": "呕吐",
+      "tags": [
+        "症状体征",
+        "不良反应"
+      ],
+      "aliases": [
+        "呕吐",
+        "vomiting",
+        "Vomiting",
+        "对比剂相关呕吐"
+      ],
+      "summary": "打对比剂后出现的呕吐；常与恶心同时出现，属于对比剂不良反应之一。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        }
+      ]
+    },
+    {
       "id": "S_ExtravasationSwelling",
       "graph": "topic-01",
       "type": "SymptomSign",
@@ -5964,6 +6045,54 @@ window.KG_GRAPH = {
       "label": "有文献支持"
     },
     {
+      "source": "S_ContrastNausea",
+      "target": "S_AdverseReaction",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_ContrastNausea",
+      "target": "DE_AfterExamCare",
+      "type": "EDUCATED_BY",
+      "label": "由……教育"
+    },
+    {
+      "source": "S_ContrastNausea",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ContrastNausea",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ContrastVomiting",
+      "target": "S_AdverseReaction",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_ContrastVomiting",
+      "target": "DE_AfterExamCare",
+      "type": "EDUCATED_BY",
+      "label": "由……教育"
+    },
+    {
+      "source": "S_ContrastVomiting",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
+      "source": "S_ContrastVomiting",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "有文献支持"
+    },
+    {
       "source": "S_Extravasation",
       "target": "S_ExtravasationSwelling",
       "type": "HAS_SYMPTOM",
@@ -6252,6 +6381,20 @@ window.KG_GRAPH = {
     },
     {
       "source": "S_Extravasation",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_ContrastNausea",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_ContrastVomiting",
       "target": "FW_SymptomSign",
       "type": "BELONGS_TO",
       "label": "属于",

@@ -233,6 +233,14 @@ S_Extravasation,SymptomSign,碘对比剂外渗,SUPPORTED_BY,有文献支持,R22,
 AT_ExtravasationAssessment,AssessmentTool,外渗风险评估,SUPPORTED_BY,有文献支持,R22,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
 S_AllergicReaction,SymptomSign,过敏反应,SUPPORTED_BY,有文献支持,R23,Reference,对比剂即刻超敏反应危险因素的系统评价与 Meta 分析
 RF_UncontrolledAsthma,RiskFactor,未控制的哮喘,SUPPORTED_BY,有文献支持,R23,Reference,对比剂即刻超敏反应危险因素的系统评价与 Meta 分析
+S_ContrastNausea,SymptomSign,恶心,BELONGS_TO,属于,S_AdverseReaction,SymptomSign,不良反应
+S_ContrastNausea,SymptomSign,恶心,EDUCATED_BY,由……教育,DE_AfterExamCare,DiseaseEducation,检查后观察与护理科普
+S_ContrastNausea,SymptomSign,恶心,SUPPORTED_BY,有文献支持,R01,Reference,美国放射学会对比剂手册
+S_ContrastNausea,SymptomSign,恶心,SUPPORTED_BY,有文献支持,R12,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
+S_ContrastVomiting,SymptomSign,呕吐,BELONGS_TO,属于,S_AdverseReaction,SymptomSign,不良反应
+S_ContrastVomiting,SymptomSign,呕吐,EDUCATED_BY,由……教育,DE_AfterExamCare,DiseaseEducation,检查后观察与护理科普
+S_ContrastVomiting,SymptomSign,呕吐,SUPPORTED_BY,有文献支持,R01,Reference,美国放射学会对比剂手册
+S_ContrastVomiting,SymptomSign,呕吐,SUPPORTED_BY,有文献支持,R12,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
 S_Extravasation,SymptomSign,碘对比剂外渗,HAS_SYMPTOM,存在症状,S_ExtravasationSwelling,SymptomSign,局部肿胀
 S_ExtravasationSwelling,SymptomSign,局部肿胀,SUPPORTED_BY,有文献支持,R02,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
 S_ExtravasationSwelling,SymptomSign,局部肿胀,SUPPORTED_BY,有文献支持,R04,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
@@ -279,6 +287,8 @@ S_ChestTightness,SymptomSign,胸闷,BELONGS_TO,属于,FW_SymptomSign,SymptomSign
 S_GeneralizedWeakness,SymptomSign,全身无力,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
 S_AnaphylacticShock,SymptomSign,过敏性休克,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
 S_Extravasation,SymptomSign,碘对比剂外渗,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
+S_ContrastNausea,SymptomSign,恶心,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
+S_ContrastVomiting,SymptomSign,呕吐,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
 S_ExtravasationSwelling,SymptomSign,局部肿胀,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
 S_ExtravasationPain,SymptomSign,局部疼痛,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
 S_ExtravasationRedness,SymptomSign,局部发红,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征

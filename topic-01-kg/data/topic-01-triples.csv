@@ -233,6 +233,14 @@ SymptomSign,碘对比剂外渗,有文献支持,Reference,CT 扫描患者对比�
 AssessmentTool,外渗风险评估,有文献支持,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
 SymptomSign,过敏反应,有文献支持,Reference,对比剂即刻超敏反应危险因素的系统评价与 Meta 分析
 RiskFactor,未控制的哮喘,有文献支持,Reference,对比剂即刻超敏反应危险因素的系统评价与 Meta 分析
+SymptomSign,恶心,属于,SymptomSign,不良反应
+SymptomSign,恶心,由……教育,DiseaseEducation,检查后观察与护理科普
+SymptomSign,恶心,有文献支持,Reference,美国放射学会对比剂手册
+SymptomSign,恶心,有文献支持,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
+SymptomSign,呕吐,属于,SymptomSign,不良反应
+SymptomSign,呕吐,由……教育,DiseaseEducation,检查后观察与护理科普
+SymptomSign,呕吐,有文献支持,Reference,美国放射学会对比剂手册
+SymptomSign,呕吐,有文献支持,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
 SymptomSign,碘对比剂外渗,存在症状,SymptomSign,局部肿胀
 SymptomSign,局部肿胀,有文献支持,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
 SymptomSign,局部肿胀,有文献支持,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
@@ -279,6 +287,8 @@ SymptomSign,胸闷,属于,SymptomSign,症状体征
 SymptomSign,全身无力,属于,SymptomSign,症状体征
 SymptomSign,过敏性休克,属于,SymptomSign,症状体征
 SymptomSign,碘对比剂外渗,属于,SymptomSign,症状体征
+SymptomSign,恶心,属于,SymptomSign,症状体征
+SymptomSign,呕吐,属于,SymptomSign,症状体征
 SymptomSign,局部肿胀,属于,SymptomSign,症状体征
 SymptomSign,局部疼痛,属于,SymptomSign,症状体征
 SymptomSign,局部发红,属于,SymptomSign,症状体征
