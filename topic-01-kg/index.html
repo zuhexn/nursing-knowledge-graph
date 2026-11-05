@@ -1297,7 +1297,6 @@
       htmlU +=
         '<div class="lg-urgent triage"><h3 class="lg-uh">' +
         esc((PG && PG.urgentTitle) || "出现这些情况，请及时就医") + '</h3>' +
-        ((PG && PG.urgentLead) ? '<p class="triage-lead">' + esc(PG.urgentLead) + '</p>' : '') +
         '<p class="triage-hint">逐条点选符合你现在的情况；如果都没有，点下面的「这些都没有」。</p>' +
         '<div class="triage-result" id="triageResult"></div>' +
         urgent.map(function (u) {
