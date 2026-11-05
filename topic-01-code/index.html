@@ -104,7 +104,7 @@
 
   <div class="card">
     <h2>数据与校验</h2>
-    <p>构建包里的 <code>build.py</code> 会按同一套判据校验数据（两个题目各跑一遍，判据完全相同）；<code>data/search-terms.json</code> 是检索词覆盖检查的对照清单，随包提供，可自行重跑核对。</p>
+    <p>构建包里的 <code>build.py</code> 会按同一套判据校验数据（每个题目各跑一遍，判据完全相同）；<code>data/search-terms.json</code> 是检索词覆盖检查的对照清单，随包提供，可自行重跑核对。</p>
     <p class="sub">校验不通过的输出示例：</p>
 <pre><code>[FAIL] 5 客户检索词覆盖（数据名）
         未覆盖 2 条：荨麻疹 → 期望类型 SymptomSign; Meta分析 → evidence.type 缺「Meta分析」</code></pre>
