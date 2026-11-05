@@ -468,6 +468,7 @@
   }
   .ac-plain{font-size:13.5px;line-height:1.6;}
   .ac-act{font-size:12px;color:var(--text-dim);line-height:1.6;}
+  .triage-lead{font-size:13px;color:var(--text);line-height:1.6;margin:0 0 8px;}
 
   /* ---------- 节点「要点」（来自文献原文的逐条提取） ---------- */
   .pt{border-left:2px solid var(--accent);padding:2px 0 2px 10px;margin-bottom:11px;}
@@ -962,9 +963,13 @@
     var roots = Object.keys(fws).filter(function (id) { return !parent[id] && id !== moduleRoot; });
     /* 同归属内的「属于」边 = 缩进层级（数据自己已有的上下级，我们不发明层级） */
     var childOf = {};
-    /* 跨归属的「属于」边 = 该原则另外挂着的措施（如「护理预防」挂着评估工具与
-       非药物管理里的措施）。这类节点会**同时**出现在自己的框架和这条原则下 ——
-       知识图谱本来就允许多重归属，不是重复数据。 */
+    /* 跨归属的「属于」边 = **分类归属 / 管辖关系**，不是层级嵌套。
+       （例：皮疹 --属于--> 过敏反应谱 是「皮疹属于过敏反应谱这一类」；
+         过敏史询问 --属于--> 护理预防 是「这一项措施归护理预防管」）
+       ⇒ 若渲染成树里的缩进子节点，同一个症状会在「症状分类」与「症状体征」两个分支
+         各出现一次（客户看到的是重影）。所以：**跨归属的「属于」不渲染成树子节点**，
+         只在详情卡的「关联节点」里呈现（带关系说明，可点进去）——
+         **树里每个节点只出现一次**。 */
     var crossChild = {};
     (G.edges || []).forEach(function (e) {
       if (e.role === FRAME_EDGE_ROLE) return;
@@ -1117,11 +1122,12 @@
     ((FRAME_TREE.childOf[id]) || []).forEach(function (kid) {
       html += frameEntryTree(kid, depth + 1);
     });
-    /* 跨归属挂在这条原则下的措施（如「护理预防」挂着评估工具与非药物管理里的措施）——
-       知识图谱允许多重归属：这些条目在自己的框架下也在，这里是第二个落点。 */
-    ((FRAME_TREE.crossChild[id]) || []).forEach(function (kid) {
-      if (NODE[kid]) html += nodeRow(NODE[kid], depth);
-    });
+    /* ⚠️ 跨归属的「属于」**不渲染成树子节点** —— 那是分类归属 / 管辖关系，不是层级。
+     *   例：皮疹 --属于--> 过敏反应谱 是「皮疹属于过敏反应谱这一类」；
+     *       过敏史询问 --属于--> 护理预防 是「这一项措施归护理预防管」。
+     *   若渲染成缩进子节点，同一个症状会在「症状分类」与「症状体征」两个分支各出现
+     *   一次（客户看到的是重影）。⇒ 树里每个节点只出现一次；跨归属关系在详情卡的
+     *   「关联节点」里呈现（带关系说明，可点进去）。 */
     return html;
   }
   /* 框架自己的条目 = 它认领的节点里**不是别的条目的下级**的那些
@@ -1291,6 +1297,7 @@
       htmlU +=
         '<div class="lg-urgent triage"><h3 class="lg-uh">' +
         esc((PG && PG.urgentTitle) || "出现这些情况，请及时就医") + '</h3>' +
+        ((PG && PG.urgentLead) ? '<p class="triage-lead">' + esc(PG.urgentLead) + '</p>' : '') +
         '<p class="triage-hint">逐条点选符合你现在的情况；如果都没有，点下面的「这些都没有」。</p>' +
         '<div class="triage-result" id="triageResult"></div>' +
         urgent.map(function (u) {
