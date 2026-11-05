@@ -269,6 +269,69 @@ SymptomSign,颜面部水肿,由……治疗,PharmacologicalManagement,肌内注�
 SymptomSign,颜面部水肿,由……治疗,PharmacologicalManagement,抗组胺药
 SymptomSign,咽喉部不适,由……治疗,PharmacologicalManagement,抗组胺药
 Exam,CT增强扫描,影响,SymptomSign,过敏反应
+SymptomCategory,对比剂过敏样反应分级,有文献支持,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
+SymptomCategory,对比剂过敏样反应分级,有文献支持,Reference,对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）
+SymptomCategory,对比剂过敏样反应分级,有文献支持,Reference,过敏反应：2023 年实践参数更新
+SymptomSign,血管迷走反应,有文献支持,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
+SymptomSign,血管迷走反应,有文献支持,Reference,对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）
+PharmacologicalManagement,肾上腺素自动注射笔,有文献支持,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
+PharmacologicalManagement,肾上腺素自动注射笔,有文献支持,Reference,过敏反应：2023 年实践参数更新
+AssessmentTool,血清胰蛋白酶,有文献支持,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
+AssessmentTool,血清胰蛋白酶,有文献支持,Reference,对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）
+AssessmentTool,血清胰蛋白酶,有文献支持,Reference,过敏反应：2023 年实践参数更新
+SymptomSign,双相过敏反应,有文献支持,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
+SymptomSign,双相过敏反应,有文献支持,Reference,过敏反应：2023 年实践参数更新
+SymptomCategory,对比剂外渗分级（江西 DB36/T 2299—2026）,有文献支持,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
+SymptomCategory,对比剂外渗分级（广西 DB45/T 2935—2024）,有文献支持,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
+SymptomCategory,药物外渗性损伤分期,有文献支持,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
+SymptomSign,骨筋膜室综合征,有文献支持,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
+SymptomSign,骨筋膜室综合征,有文献支持,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+PharmacologicalManagement,透明质酸酶,有文献支持,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
+PharmacologicalManagement,阿托品,有文献支持,Reference,碘对比剂使用指南（第2版）
+AssessmentTool,碘对比剂过敏试验,有文献支持,Reference,美国放射学会对比剂手册
+AssessmentTool,碘对比剂过敏试验,有文献支持,Reference,碘对比剂使用指南（第2版）
+AssessmentTool,碘对比剂过敏试验,有文献支持,Reference,影像科碘对比剂输注安全专家共识
+NonPharmacologicalManagement,耐高压型静脉留置针,有文献支持,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
+NonPharmacologicalManagement,耐高压型静脉留置针,有文献支持,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+NonPharmacologicalManagement,耐高压型静脉留置针,有文献支持,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
+NonPharmacologicalManagement,耐高压型静脉留置针,有文献支持,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
+NonPharmacologicalManagement,耐高压型静脉留置针,有文献支持,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
+NonPharmacologicalManagement,等速生理盐水试推,有文献支持,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+NonPharmacologicalManagement,等速生理盐水试推,有文献支持,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
+NonPharmacologicalManagement,等速生理盐水试推,有文献支持,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
+NonPharmacologicalManagement,留观后拔针,有文献支持,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+NonPharmacologicalManagement,留观后拔针,有文献支持,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
+AssessmentTool,肿胀测量与皮肤标记,有文献支持,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
+AssessmentTool,肿胀测量与皮肤标记,有文献支持,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
+AssessmentTool,外渗探测与压力监测,有文献支持,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
+ManagementPrinciple,外渗上报与回访,有文献支持,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
+ManagementPrinciple,外渗上报与回访,有文献支持,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
+ManagementPrinciple,外渗上报与回访,有文献支持,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
+NonPharmacologicalManagement,换用对比剂,有文献支持,Reference,对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）
+SymptomSign,导管相关静脉炎,有文献支持,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
+RiskFactor,β 阻滞剂与 ACEI 用药,有文献支持,Reference,过敏反应：2023 年实践参数更新
+SymptomCategory,对比剂过敏样反应分级,属于,SymptomCategory,过敏反应谱
+SymptomSign,血管迷走反应,属于,SymptomCategory,碘对比剂不良反应谱
+SymptomSign,双相过敏反应,属于,SymptomCategory,过敏反应谱
+SymptomCategory,对比剂外渗分级（江西 DB36/T 2299—2026）,属于,SymptomCategory,静脉外渗反应谱
+SymptomCategory,对比剂外渗分级（广西 DB45/T 2935—2024）,属于,SymptomCategory,静脉外渗反应谱
+SymptomCategory,药物外渗性损伤分期,属于,SymptomCategory,静脉外渗反应谱
+SymptomSign,骨筋膜室综合征,属于,SymptomCategory,静脉外渗反应谱
+SymptomSign,导管相关静脉炎,属于,SymptomCategory,碘对比剂不良反应谱
+SymptomSign,碘对比剂外渗,存在症状,SymptomSign,骨筋膜室综合征
+Exam,碘对比剂,影响,SymptomSign,血管迷走反应
+Exam,碘对比剂,由……治疗,NonPharmacologicalManagement,耐高压型静脉留置针
+Exam,碘对比剂,由……治疗,NonPharmacologicalManagement,等速生理盐水试推
+Exam,碘对比剂,由……治疗,NonPharmacologicalManagement,留观后拔针
+Exam,碘对比剂,由……治疗,NonPharmacologicalManagement,换用对比剂
+SymptomSign,碘对比剂外渗,由……治疗,PharmacologicalManagement,透明质酸酶
+SymptomSign,血管迷走反应,由……治疗,PharmacologicalManagement,阿托品
+SymptomSign,过敏性休克,由……治疗,PharmacologicalManagement,肾上腺素自动注射笔
+SymptomSign,过敏反应,由……评估,AssessmentTool,血清胰蛋白酶
+SymptomSign,碘对比剂外渗,由……评估,AssessmentTool,肿胀测量与皮肤标记
+SymptomSign,碘对比剂外渗,由……评估,AssessmentTool,外渗探测与压力监测
+SymptomSign,碘对比剂外渗,由……处置,ManagementPrinciple,外渗上报与回访
+RiskFactor,高压注射,由……处置,NonPharmacologicalManagement,等速生理盐水试推
 SymptomCategory,症状分类,属于,SymptomSign,症状体征
 AssessmentTool,评估工具,属于,SymptomSign,症状体征
 RiskFactor,高危因素识别,属于,ManagementPrinciple,处置原则
@@ -294,6 +357,10 @@ SymptomSign,局部疼痛,属于,SymptomSign,症状体征
 SymptomSign,局部发红,属于,SymptomSign,症状体征
 SymptomSign,皮肤发凉,属于,SymptomSign,症状体征
 SymptomSign,皮肤发白发紧,属于,SymptomSign,症状体征
+SymptomSign,血管迷走反应,属于,SymptomSign,症状体征
+SymptomSign,双相过敏反应,属于,SymptomSign,症状体征
+SymptomSign,骨筋膜室综合征,属于,SymptomSign,症状体征
+SymptomSign,导管相关静脉炎,属于,SymptomSign,症状体征
 Exam,CT增强扫描,属于,Exam,辅助检查
 Exam,碘对比剂,属于,Exam,辅助检查
 ManagementPrinciple,护理措施,属于,ManagementPrinciple,处置原则
@@ -301,6 +368,7 @@ ManagementPrinciple,护理预防,属于,ManagementPrinciple,处置原则
 ManagementPrinciple,护理干预,属于,ManagementPrinciple,处置原则
 ManagementPrinciple,外渗处置原则,属于,ManagementPrinciple,处置原则
 ManagementPrinciple,不良反应分级处置原则,属于,ManagementPrinciple,处置原则
+ManagementPrinciple,外渗上报与回访,属于,ManagementPrinciple,处置原则
 NursingTheory,早期预警,属于,NursingTheory,护理理论
 NursingTheory,自护理论,属于,NursingTheory,护理理论
 DiseaseEducation,检查前注意事项科普,属于,DiseaseEducation,疾病科普
@@ -311,20 +379,32 @@ DiseaseEducation,急救知识科普,属于,DiseaseEducation,疾病科普
 SymptomCategory,碘对比剂不良反应谱,属于,SymptomCategory,症状分类
 SymptomCategory,过敏反应谱,属于,SymptomCategory,症状分类
 SymptomCategory,静脉外渗反应谱,属于,SymptomCategory,症状分类
+SymptomCategory,对比剂过敏样反应分级,属于,SymptomCategory,症状分类
+SymptomCategory,对比剂外渗分级（江西 DB36/T 2299—2026）,属于,SymptomCategory,症状分类
+SymptomCategory,对比剂外渗分级（广西 DB45/T 2935—2024）,属于,SymptomCategory,症状分类
+SymptomCategory,药物外渗性损伤分期,属于,SymptomCategory,症状分类
 AssessmentTool,过敏史询问,属于,AssessmentTool,评估工具
 AssessmentTool,外渗风险评估,属于,AssessmentTool,评估工具
 AssessmentTool,血管条件评估,属于,AssessmentTool,评估工具
+AssessmentTool,血清胰蛋白酶,属于,AssessmentTool,评估工具
+AssessmentTool,碘对比剂过敏试验,属于,AssessmentTool,评估工具
+AssessmentTool,肿胀测量与皮肤标记,属于,AssessmentTool,评估工具
+AssessmentTool,外渗探测与压力监测,属于,AssessmentTool,评估工具
 RiskFactor,既往碘对比剂过敏史,属于,RiskFactor,高危因素识别
 RiskFactor,未控制的哮喘,属于,RiskFactor,高危因素识别
 RiskFactor,高龄或低龄,属于,RiskFactor,高危因素识别
 RiskFactor,静脉条件差,属于,RiskFactor,高危因素识别
 RiskFactor,高压注射,属于,RiskFactor,高危因素识别
 RiskFactor,未做生理盐水试推,属于,RiskFactor,高危因素识别
+RiskFactor,β 阻滞剂与 ACEI 用药,属于,RiskFactor,高危因素识别
 PharmacologicalManagement,肌内注射肾上腺素,属于,PharmacologicalManagement,药物管理
 PharmacologicalManagement,糖皮质激素,属于,PharmacologicalManagement,药物管理
 PharmacologicalManagement,抗组胺药,属于,PharmacologicalManagement,药物管理
 PharmacologicalManagement,50%硫酸镁湿敷,属于,PharmacologicalManagement,药物管理
 PharmacologicalManagement,0.05%地塞米松湿敷,属于,PharmacologicalManagement,药物管理
+PharmacologicalManagement,肾上腺素自动注射笔,属于,PharmacologicalManagement,药物管理
+PharmacologicalManagement,透明质酸酶,属于,PharmacologicalManagement,药物管理
+PharmacologicalManagement,阿托品,属于,PharmacologicalManagement,药物管理
 NonPharmacologicalManagement,立即停止注射,属于,NonPharmacologicalManagement,非药物管理
 NonPharmacologicalManagement,保留静脉留置针,属于,NonPharmacologicalManagement,非药物管理
 NonPharmacologicalManagement,患肢抬高,属于,NonPharmacologicalManagement,非药物管理
@@ -333,6 +413,10 @@ NonPharmacologicalManagement,密切观察,属于,NonPharmacologicalManagement,�
 NonPharmacologicalManagement,对比剂预处理,属于,NonPharmacologicalManagement,非药物管理
 NonPharmacologicalManagement,血管可视化,属于,NonPharmacologicalManagement,非药物管理
 NonPharmacologicalManagement,心理疏导,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,耐高压型静脉留置针,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,等速生理盐水试推,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,留观后拔针,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,换用对比剂,属于,NonPharmacologicalManagement,非药物管理
 SymptomStatus,轻度反应已缓解,属于,SymptomStatus,症状现状
 SymptomStatus,重度反应已恢复,属于,SymptomStatus,症状现状
 FunctionalStatus,患肢功能状态,属于,FunctionalStatus,功能状况
@@ -354,6 +438,7 @@ SymptomSign,症状体征,有文献支持,Reference,放射科碘对比剂外渗�
 SymptomSign,症状体征,有文献支持,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
 SymptomSign,症状体征,有文献支持,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
 SymptomSign,症状体征,有文献支持,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
+SymptomSign,症状体征,有文献支持,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
 Exam,辅助检查,有文献支持,Reference,美国放射学会对比剂手册
 Exam,辅助检查,有文献支持,Reference,碘对比剂使用指南（第2版）
 Exam,辅助检查,有文献支持,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
@@ -367,6 +452,7 @@ ManagementPrinciple,处置原则,有文献支持,Reference,静脉对比剂外渗
 ManagementPrinciple,处置原则,有文献支持,Reference,过敏反应：2023 年实践参数更新
 ManagementPrinciple,处置原则,有文献支持,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
 ManagementPrinciple,处置原则,有文献支持,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
+ManagementPrinciple,处置原则,有文献支持,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
 NursingTheory,护理理论,有文献支持,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
 NursingTheory,护理理论,有文献支持,Reference,过敏反应：2023 年实践参数更新
 NursingTheory,护理理论,有文献支持,Reference,Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析
@@ -382,6 +468,10 @@ DiseaseEducation,疾病科普,有文献支持,Reference,放射性对比剂超敏
 SymptomCategory,症状分类,有文献支持,Reference,美国放射学会对比剂手册
 SymptomCategory,症状分类,有文献支持,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
 SymptomCategory,症状分类,有文献支持,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
+SymptomCategory,症状分类,有文献支持,Reference,对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）
+SymptomCategory,症状分类,有文献支持,Reference,过敏反应：2023 年实践参数更新
+SymptomCategory,症状分类,有文献支持,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
+SymptomCategory,症状分类,有文献支持,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
 AssessmentTool,评估工具,有文献支持,Reference,碘对比剂使用指南（第2版）
 AssessmentTool,评估工具,有文献支持,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
 AssessmentTool,评估工具,有文献支持,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
@@ -389,6 +479,12 @@ AssessmentTool,评估工具,有文献支持,Reference,放射科碘对比剂外�
 AssessmentTool,评估工具,有文献支持,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
 AssessmentTool,评估工具,有文献支持,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
 AssessmentTool,评估工具,有文献支持,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
+AssessmentTool,评估工具,有文献支持,Reference,对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）
+AssessmentTool,评估工具,有文献支持,Reference,过敏反应：2023 年实践参数更新
+AssessmentTool,评估工具,有文献支持,Reference,美国放射学会对比剂手册
+AssessmentTool,评估工具,有文献支持,Reference,影像科碘对比剂输注安全专家共识
+AssessmentTool,评估工具,有文献支持,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
+AssessmentTool,评估工具,有文献支持,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
 RiskFactor,高危因素识别,有文献支持,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
 RiskFactor,高危因素识别,有文献支持,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
 RiskFactor,高危因素识别,有文献支持,Reference,对比剂即刻超敏反应危险因素的系统评价与 Meta 分析
@@ -396,10 +492,13 @@ RiskFactor,高危因素识别,有文献支持,Reference,含碘对比剂静脉外
 RiskFactor,高危因素识别,有文献支持,Reference,放射科碘对比剂外渗影响因素的系统评价
 RiskFactor,高危因素识别,有文献支持,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
 RiskFactor,高危因素识别,有文献支持,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
+RiskFactor,高危因素识别,有文献支持,Reference,过敏反应：2023 年实践参数更新
 PharmacologicalManagement,药物管理,有文献支持,Reference,过敏反应：2023 年实践参数更新
 PharmacologicalManagement,药物管理,有文献支持,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
 PharmacologicalManagement,药物管理,有文献支持,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
 PharmacologicalManagement,药物管理,有文献支持,Reference,影像科碘对比剂输注安全专家共识
+PharmacologicalManagement,药物管理,有文献支持,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
+PharmacologicalManagement,药物管理,有文献支持,Reference,碘对比剂使用指南（第2版）
 NonPharmacologicalManagement,非药物管理,有文献支持,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
 NonPharmacologicalManagement,非药物管理,有文献支持,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
 NonPharmacologicalManagement,非药物管理,有文献支持,Reference,影像科碘对比剂输注安全专家共识
@@ -409,6 +508,8 @@ NonPharmacologicalManagement,非药物管理,有文献支持,Reference,DB36/T 22
 NonPharmacologicalManagement,非药物管理,有文献支持,Reference,"碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析"
 NonPharmacologicalManagement,非药物管理,有文献支持,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
 NonPharmacologicalManagement,非药物管理,有文献支持,Reference,影像护理学
+NonPharmacologicalManagement,非药物管理,有文献支持,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
+NonPharmacologicalManagement,非药物管理,有文献支持,Reference,对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）
 SymptomStatus,症状现状,有文献支持,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
 SymptomStatus,症状现状,有文献支持,Reference,影像科碘对比剂输注安全专家共识
 SymptomStatus,症状现状,有文献支持,Reference,过敏反应：2023 年实践参数更新

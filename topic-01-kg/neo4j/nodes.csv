@@ -35,7 +35,7 @@ NPM_KeepCatheter,NonPharmacologicalManagement,保留静脉留置针,先不拔针
 NPM_LimbElevation,NonPharmacologicalManagement,患肢抬高,把患肢抬到比心脏高的位置，帮助消肿。,非药物管理,3
 NPM_ColdCompress,NonPharmacologicalManagement,局部冷敷,外渗早期冷敷能减轻肿胀和疼痛。,非药物管理,2
 NPM_CloseObservation,NonPharmacologicalManagement,密切观察,处置或用药之后至少观察一段时间，确认安全再离开。,非药物管理,2
-NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理,把对比剂加温到 37℃ 左右再用。对高黏度对比剂可减少过敏/不适反应；现有 Meta 分析未证实能减少外渗。,非药物管理,3
+NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理,把对比剂加温到 37℃ 左右再用。ⓘ **来源口径不一致**：国内共识（中华放射学杂志 2013 指南 / 影像科输注安全专家共识 2018 / 中华护理杂志 2026 实践指南 / 江西 DB36/T 2026 / 广西 DB45/T 2024）均推荐加温至 37℃；ACR 手册 2024 版按情形列为「建议」（>5 mL/s 快速推注、黏稠对比剂等四类可能有益），2026 版则称证据不足、不推荐常规加温 —— 按院内流程执行。另：对高黏度对比剂可减少过敏/不适反应；现有 Meta 分析未证实能减少外渗。,非药物管理,3
 NPM_VascularVisualization,NonPharmacologicalManagement,血管可视化,看不清血管时，用超声等设备辅助定位再扎针。,非药物管理,2
 NPM_PsychologicalSupport,NonPharmacologicalManagement,心理疏导,检查前后安抚情绪，减少紧张带来的不适。,非药物管理,1
 MP_NursingMeasures,ManagementPrinciple,护理措施,两类风险（碘对比剂过敏反应、碘对比剂外渗）的护理处置总纲。下分两条原则：外渗处置原则（外渗之后的处理顺序与操作边界）、不良反应分级处置原则（按轻重分级决定用药、监护与是否转诊）。,处置原则,3
@@ -77,17 +77,38 @@ S_ExtravasationPain,SymptomSign,局部疼痛,推药时局部刺痛或灼痛，�
 S_ExtravasationRedness,SymptomSign,局部发红,外渗部位皮肤发红。,外渗表现 症状体征,2
 S_ExtravasationCoolSkin,SymptomSign,皮肤发凉,外渗部位皮肤温度低于周围，提示局部循环受到影响。,外渗表现 症状体征,2
 S_ExtravasationPallor,SymptomSign,皮肤发白发紧,外渗部位皮肤发白、发紧，是皮下积液张力高的表现。,外渗表现 症状体征,2
+SC_CMHSRGrade,SymptomCategory,对比剂过敏样反应分级,对比剂过敏样反应按轻、中、重三级划分（ACR 分级）：轻度为限性皮疹瘙痒，重度符合过敏反应（anaphylaxis）诊断标准。,症状分类,3
+S_VasovagalReaction,SymptomSign,血管迷走反应,注射时出现的迷走神经反应：苍白、无力、恶心呕吐、出汗、心动过缓、低血压；与过敏反应的关键区别是**先心动过缓**（过敏反应多为先心动过速）。,症状体征,2
+PM_EpiAutoInjector,PharmacologicalManagement,肾上腺素自动注射笔,院外或患者自用的肾上腺素自动注射笔；规格按体重选（≥30 kg 用 0.3 mg），取药不熟者用笔可减少差错。,药物管理,2
+AT_SerumTryptase,AssessmentTool,血清胰蛋白酶,过敏反应后抽血查血清胰蛋白酶，用于判断是否为 IgE 介导的 mast 细胞活化；急性期与基线值要配对采集。,评估工具,3
+S_BiphasicAnaphylaxis,SymptomSign,双相过敏反应,症状完全缓解后再次发作的双相反应；最迟可到 72 小时内（平均约 11 小时），与初始反应更重、需多剂肾上腺素相关。,症状体征,2
+SC_ExtravGradeJX,SymptomCategory,对比剂外渗分级（江西 DB36/T 2299—2026）,江西省地方标准的外渗分级，按「外渗量 + 测量直径」双轴分 4 级；与广西 DB45/T 的阈值不同，两套标准不可混用。,症状分类,1
+SC_ExtravGradeGX,SymptomCategory,对比剂外渗分级（广西 DB45/T 2935—2024）,广西地方标准的外渗分级，按单一「外渗量」轴分 4 级；其「损伤分期 Ⅰ/Ⅱ/Ⅲ 期」是组织损伤的独立轴，不是外渗量分级。,症状分类,1
+SC_ExtravDamageStage,SymptomCategory,药物外渗性损伤分期,按组织受损程度分三期：Ⅰ 期炎性反应（红肿发热刺痛）、Ⅱ 期静脉炎性反应（皮下出血或水疱）、Ⅲ 期组织坏死（黑痂或深部溃疡）。,症状分类,1
+S_CompartmentSyndrome,SymptomSign,骨筋膜室综合征,外渗最重的并发症：神经血管受损、组织坏死，筋膜切开应在 2 小时内进行；疑有本征者**严禁抬高患肢**，须立即请骨科/手外科会诊。,症状体征,2
+PM_Hyaluronidase,PharmacologicalManagement,透明质酸酶,直接注入外渗部位的透明质酸酶（5–250 单位）；证据有限，不属常规治疗。,药物管理,1
+PM_Atropine,PharmacologicalManagement,阿托品,迷走神经反应（心动过缓、低血压）的用药：静脉注射 0.6–1.0 mg，必要时 3–5 分钟后重复，成人总量不超过 3 mg。,药物管理,1
+AT_CMAllergyTest,AssessmentTool,碘对比剂过敏试验,皮内皮肤试验与试注都不能预测谁会发生反应，**不推荐**做碘对比剂过敏试验；除非产品说明书特别要求。,评估工具,3
+NPM_PowerInjectorSafeCatheter,NonPharmacologicalManagement,耐高压型静脉留置针,输注含碘对比剂要选与速率匹配的直型、耐高压型外周静脉留置针：大管径、留置不超过 24 小时；**禁用钢针**。,非药物管理,5
+NPM_SalineFlushCheck,NonPharmacologicalManagement,等速生理盐水试推,推对比剂前后都以高压注射同等速度推 0.9% 氯化钠 20–30 mL，确认通路通畅、降低局部刺激与外渗风险。,非药物管理,3
+NPM_ObservationThenRemove,NonPharmacologicalManagement,留观后拔针,检查结束后留观 30 分钟，确认无不良反应后由护士拔针，并指导正确按压（至少 10 分钟）。,非药物管理,2
+AT_SwellingMeasurement,AssessmentTool,肿胀测量与皮肤标记,外渗后用软尺测量外渗范围并标记边界；肿胀期每 2–5 小时测一次，同时看颜色、温度、感觉与远端血运。,评估工具,2
+AT_ExtravasationDetection,AssessmentTool,外渗探测与压力监测,除直接观察外，还可用注射器压力监测（遇阻力自动中止）与外渗探测附件传感器来发现外渗。,评估工具,1
+MP_ExtravasationReporting,ManagementPrinciple,外渗上报与回访,外渗要记入放射科报告与本院不良事件上报系统，建立回访档案并随访至外渗部位痊愈。,处置原则,3
+NPM_SwitchContrastAgent,NonPharmacologicalManagement,换用对比剂,有对比剂或钆对比剂超敏史者，换用化学结构不同的对比剂是防突破反应最有效的单一措施（风险可降约 61%）。,非药物管理,1
+S_Phlebitis,SymptomSign,导管相关静脉炎,输液后沿静脉走行的红肿热痛（与外渗损伤分期里的「静脉炎性反应期」不是一回事）；处理为拔除外周留置针、抬高患肢避免受压、报告医生并记录。,症状体征,1
+RF_BetaBlockerACEI,RiskFactor,β 阻滞剂与 ACEI 用药,计划性造影、脱敏或输注前，若 β 阻滞剂/ACEI 不能安全停用，须共同决策权衡检查必要性与其加重反应的风险。,高危因素识别,1
 NT_SelfCareTheory,NursingTheory,自护理论,自护理论（Orem，1971）认为人天生具备自我护理的能力，护理的任务是在患者自护能力不足时提供补偿与支持。落到本主题：指导患者与家属参与打针前的准备、检查后的观察，以及居家自我照护与早期求助。,护理理论 自护理论,1
 R24,Reference,Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析,系统评价与剂量反应 Meta 分析，纳入 46 项研究：以自护理论为基础的照护方案可改善慢病成人的生活质量、自我照护能力与自我效能，并降低焦虑与抑郁；但研究间异质性高、证据质量不理想，仍需设计良好的试验。,文献 系统评价,1
-FW_SymptomSign,SymptomSign,症状体征,论文「疾病知识图」一级框架之一。收录碘对比剂使用后可能出现的症状与体征 —— 不良反应、过敏反应、碘对比剂外渗；过敏反应下的下一级表现（皮疹、荨麻疹、瘙痒、颜面部水肿、咽喉部不适、胸闷、全身无力、过敏性休克），以及碘对比剂外渗下的局部表现（局部肿胀、局部疼痛、局部发红、皮肤发凉、皮肤发白发紧）。,知识框架 一级框架,13
+FW_SymptomSign,SymptomSign,症状体征,论文「疾病知识图」一级框架之一。收录碘对比剂使用后可能出现的症状与体征 —— 不良反应、过敏反应、碘对比剂外渗；过敏反应下的下一级表现（皮疹、荨麻疹、瘙痒、颜面部水肿、咽喉部不适、胸闷、全身无力、过敏性休克），以及碘对比剂外渗下的局部表现（局部肿胀、局部疼痛、局部发红、皮肤发凉、皮肤发白发紧）。,知识框架 一级框架,14
 FW_Exam,Exam,辅助检查,论文「疾病知识图」一级框架之一。收录与本主题相关的检查项目 —— CT 增强扫描、碘对比剂。,知识框架 一级框架,5
-FW_ManagementPrinciple,ManagementPrinciple,处置原则,论文「疾病知识图」一级框架之一。收录护理处置原则 —— 护理措施、护理预防、护理干预，以及其下的外渗处置原则与不良反应分级处置原则。,知识框架 一级框架,8
+FW_ManagementPrinciple,ManagementPrinciple,处置原则,论文「疾病知识图」一级框架之一。收录护理处置原则 —— 护理措施、护理预防、护理干预，以及其下的外渗处置原则与不良反应分级处置原则。,知识框架 一级框架,9
 FW_NursingTheory,NursingTheory,护理理论,论文「疾病知识图」一级框架之一。收录指导护理实践的理论 —— 自护理论（Orem）：人天生具备自我护理的能力，护理的任务是在患者自护能力不足时提供补偿与支持；对应到本主题，是指导患者与家属参与预防、早期识别与居家自我照护。以及早期预警：在情况变坏之前先看出苗头、及时升级处理。,知识框架 一级框架,3
 FW_DiseaseEducation,DiseaseEducation,疾病科普,论文「疾病知识图」一级框架之一。论文 §3.2 指出「疾病知识图中科普模块的内容可面向公众开放，便于公众了解疾病的早期症状及常见误区」。收录检查前注意事项、检查后观察与护理、过敏史告知、外渗居家护理、急救知识五篇科普。,知识框架 一级框架,9
-FW_SymptomCategory,SymptomCategory,症状分类,论文表 1「症状分类」二级框架。把症状按谱归类 —— 碘对比剂不良反应谱，其下有过敏反应谱、静脉外渗反应谱。,知识框架 二级框架,3
-FW_AssessmentTool,AssessmentTool,评估工具,论文表 1「评估工具」二级框架。收录评估工具 —— 过敏史询问、外渗风险评估、血管条件评估。,知识框架 二级框架,7
-FW_RiskFactor,RiskFactor,高危因素识别,论文表 1「高危因素识别」二级框架。收录高危因素 —— 既往碘对比剂过敏史、未控制的哮喘、高龄或低龄、静脉条件差、高压注射、未做生理盐水试推。,知识框架 二级框架,7
-FW_PharmacologicalManagement,PharmacologicalManagement,药物管理,论文表 1「药物管理」二级框架。收录药物处置 —— 肌内注射肾上腺素、糖皮质激素、抗组胺药、50% 硫酸镁湿敷、0.05% 地塞米松湿敷。,知识框架 二级框架,4
-FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理,论文表 1「非药物管理」二级框架。论文第 20 页写明：点击「非药物管理」实体节点，Web 端返回其关联实体节点。收录非药物处置 —— 立即停止注射、保留静脉留置针、患肢抬高、局部冷敷、密切观察、对比剂预处理、血管可视化、心理疏导。,知识框架 二级框架,9
+FW_SymptomCategory,SymptomCategory,症状分类,论文表 1「症状分类」二级框架。把症状按谱归类 —— 碘对比剂不良反应谱，其下有过敏反应谱、静脉外渗反应谱。,知识框架 二级框架,7
+FW_AssessmentTool,AssessmentTool,评估工具,论文表 1「评估工具」二级框架。收录评估工具 —— 过敏史询问、外渗风险评估、血管条件评估。,知识框架 二级框架,13
+FW_RiskFactor,RiskFactor,高危因素识别,论文表 1「高危因素识别」二级框架。收录高危因素 —— 既往碘对比剂过敏史、未控制的哮喘、高龄或低龄、静脉条件差、高压注射、未做生理盐水试推。,知识框架 二级框架,8
+FW_PharmacologicalManagement,PharmacologicalManagement,药物管理,论文表 1「药物管理」二级框架。收录药物处置 —— 肌内注射肾上腺素、糖皮质激素、抗组胺药、50% 硫酸镁湿敷、0.05% 地塞米松湿敷。,知识框架 二级框架,6
+FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理,论文表 1「非药物管理」二级框架。论文第 20 页写明：点击「非药物管理」实体节点，Web 端返回其关联实体节点。收录非药物处置 —— 立即停止注射、保留静脉留置针、患肢抬高、局部冷敷、密切观察、对比剂预处理、血管可视化、心理疏导。,知识框架 二级框架,11
 FW_SymptomStatus,SymptomStatus,症状现状,论文表 1「症状现状」二级框架。收录症状现状 —— 轻度反应已缓解、重度反应已恢复。（在本题数据里，这两个节点是护理措施 / 护理干预 / 外渗处置原则的「影响」目标，故归在处置原则之下。）,知识框架 二级框架,4
 FW_FunctionalStatus,FunctionalStatus,功能状况,论文表 1「功能状况」二级框架。收录功能状况 —— 患肢功能状态。（在本题数据里，该节点是护理干预的「影响」目标，故归在处置原则之下。）,知识框架 二级框架,2

@@ -455,6 +455,32 @@
   .mod-root{border:1px solid #3b4d6e;border-radius:13px;background:var(--panel);margin-bottom:9px;overflow:hidden;}
   .mod-root .row{border-bottom:none;}
 
+
+  /* ---------- 检查后须知（患者层的第一段） ---------- */
+  .lg-urgent.aftercare{border-color:#2f6b52;background:rgba(47,107,82,.10);}
+  /* 须知是**正常流程**，不是急症 ⇒ 不用红色的「!」 */
+  .lg-urgent.aftercare .lg-uh{color:#9fe3c4;}
+  .lg-urgent.aftercare .lg-uh::before{content:"✓";background:#2f7a5b;}
+  .ac-list{display:flex;flex-direction:column;gap:9px;}
+  .ac-item{
+    border:1px solid var(--line);border-radius:11px;background:var(--panel);
+    padding:11px 12px;display:flex;flex-direction:column;gap:5px;
+  }
+  .ac-plain{font-size:13.5px;line-height:1.6;}
+  .ac-act{font-size:12px;color:var(--text-dim);line-height:1.6;}
+
+  /* ---------- 节点「要点」（来自文献原文的逐条提取） ---------- */
+  .pt{border-left:2px solid var(--accent);padding:2px 0 2px 10px;margin-bottom:11px;}
+  .pt:last-child{margin-bottom:0;}
+  .pt-k{font-size:12px;color:var(--accent);font-weight:600;margin-bottom:3px;}
+  .pt-v{font-size:13px;line-height:1.65;}
+  .pt .quote{font-size:11.5px;color:var(--text-dim);line-height:1.55;margin-top:4px;
+             padding-left:8px;border-left:1px dashed var(--line);}
+  .pt .src{display:inline-block;margin-top:5px;font-size:11px;color:var(--accent-2);cursor:pointer;}
+
+  /* ---------- 关系上的说明（note）---------- */
+  .obj .onote{display:block;font-size:11px;color:var(--text-dim);line-height:1.5;margin-top:2px;}
+
   /* ---------- 词条卡（分类展开后 / 检索结果） ---------- */
   .cat-body{padding:2px 9px 9px;border-top:1px solid var(--line);}
   /* 框架内的缩进层级：数据里同归属的「属于」上下级 */
@@ -1243,8 +1269,26 @@
     /* 就医警示 —— 患者第一屏走「分诊」：逐条点选 → 直接给行动。
        静态列表只回答「有哪些危险」，分诊回答「我现在该怎么」。 */
     var urgent = (PG && PG.urgent) || [];
+    /* 检查后须知（正常流程）—— 客户口径的三段式：
+       ① 做完检查后该怎样（留观多久、什么时候拔针）→ ② 留观期间可以做的（多喝水）
+       → ③ 出现这些症状怎么办（分诊）。这是患者扫码后真正要照着做的事。 */
+    var after = (PG && PG.aftercare) || [];
+    var htmlU = "";
+    if (after.length) {
+      htmlU +=
+        '<div class="lg-urgent aftercare"><h3 class="lg-uh">' +
+        esc((PG && PG.aftercareTitle) || "做完检查后，请这样做") + '</h3>' +
+        '<div class="ac-list">' + after.map(function (a) {
+          var n = NODE[a.nodeId];
+          return '<div class="ac-item">' +
+            '<div class="ac-plain">' + esc(a.plain) + '</div>' +
+            (a.action ? '<div class="ac-act">' + esc(a.action) + '</div>' : '') +
+            (n ? '<span class="u-link" data-open="' + esc(n.id) + '">相关知识：' + esc(n.name) + ' ›</span>' : '') +
+            '</div>';
+        }).join("") + '</div></div>';
+    }
     if (urgent.length) {
-      lgUrgent.innerHTML =
+      htmlU +=
         '<div class="lg-urgent triage"><h3 class="lg-uh">' +
         esc((PG && PG.urgentTitle) || "出现这些情况，请及时就医") + '</h3>' +
         '<p class="triage-hint">逐条点选符合你现在的情况；如果都没有，点下面的「这些都没有」。</p>' +
@@ -1261,10 +1305,9 @@
         }).join("") +
         '<div class="triage-actions"><button type="button" class="triage-btn" id="triageNone">这些都没有</button></div>' +
         '</div>';
-      renderTriageResult();
-    } else {
-      lgUrgent.innerHTML = "";
     }
+    lgUrgent.innerHTML = htmlU;
+    if (urgent.length) renderTriageResult();
 
     /* 知识框架树 —— 论文的骨架：一级框架 → 二级框架 → 条目。
        框架节点与归属关系都来自数据（见 buildFrameTree），前端不写死任何框架名。
@@ -2186,10 +2229,13 @@
       var o = NODE[other(e, n)];
       if (!o) return;
       if (!groups[key]) {
-        groups[key] = { out: out, label: rel.label || e.type || "", items: [] };
+        groups[key] = { out: out, label: rel.label || e.type || "", items: [], notes: {} };
         order.push(key);
       }
       groups[key].items.push(o);
+      /* 关系上的说明（note）—— 例如「轻度反应观察 30 分钟」「大腿外侧中部肌内注射，必要时每 5～15 分钟重复」。
+         这类是**具体怎么做**的关键内容，不能只活在数据里看不见。 */
+      if (e.note && !groups[key].notes[o.id]) groups[key].notes[o.id] = e.note;
     });
     return order.map(function (k) { return groups[k]; }).sort(function (a, b) {
       if (a.out !== b.out) return a.out ? -1 : 1;      /* 先「本节点指出」，再「指向本节点」 */
@@ -2214,6 +2260,26 @@
     var body = document.getElementById("panel-body");
     var html = "";
 
+    /* --- 要点：这条知识**具体怎么做 / 具体是什么**（来自文献原文的逐条提取） ---
+       摘要只说「这是什么」，要点才说「怎么办、是多少、什么时候」——
+       每条都挂着自己的出处（可点回文献节点）。 */
+    if (n.details && n.details.length) {
+      html += '<div class="sec"><h3 class="sec-title">要点<span class="n">' + n.details.length + ' 条</span></h3>' +
+        '<div class="sec-hint">每条都来自文献原文 · 点出处可跳到该文献</div>' +
+        n.details.map(function (d) {
+          var srcName = "";
+          var srcId = d.src || "";
+          if (srcId && NODE[srcId]) srcName = NODE[srcId].name;
+          var quote = d.quote ? '<div class="quote">' + esc(d.quote) + '</div>' : '';
+          var srcBtn = srcId && NODE[srcId]
+            ? '<span class="src" data-id="' + esc(srcId) + '">出处：' + esc(srcName) + ' ›</span>' : '';
+          return '<div class="pt">' +
+            '<div class="pt-k">' + esc(d.k || "") + '</div>' +
+            '<div class="pt-v">' + esc(d.v || "") + '</div>' +
+            quote + srcBtn + '</div>';
+        }).join("") + '</div>';
+    }
+
     /* --- 属性 --- */
     if (n.attrs && n.attrs.length) {
       html += '<div class="sec"><h3 class="sec-title">属性<span class="n">' + n.attrs.length + ' 条</span></h3><div>' +
@@ -2237,9 +2303,11 @@
             '<span>' + esc(g.label) + '</span>' +
             '<span class="n">' + g.items.length + '</span></div>' +
             '<div class="obj-list">' + g.items.slice(0, 12).map(function (o) {
+              var nt = g.notes && g.notes[o.id] ? '<span class="onote">' + esc(g.notes[o.id]) + '</span>' : '';
               return '<div class="obj" data-id="' + esc(o.id) + '">' +
                 '<span class="nm">' + esc(o.name) + '</span>' +
-                '<span class="tp" style="color:' + typeOf(o).color + '">' + esc(typeOf(o).label) + '</span></div>';
+                '<span class="tp" style="color:' + typeOf(o).color + '">' + esc(typeOf(o).label) + '</span>' +
+                nt + '</div>';
             }).join("") + '</div>' +
             (g.items.length > 12 ? '<div class="sec-hint" style="margin:6px 0 0">还有 ' + (g.items.length - 12) + ' 个未显示</div>' : '') +
             '</div>';

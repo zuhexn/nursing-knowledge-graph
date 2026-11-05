@@ -500,6 +500,56 @@ def check_file(path, topic_key, rep, doc, terms_source):
     rep.add("附P", "摘要点名的节点够得着（%s）" % tag, not unreach,
             ("；".join(unreach[:8])) if unreach else "摘要点名的节点都能到达")
 
+    # ---- 附加：每条「要点」都必须有可回溯的出处 ----
+    # 节点内容少 ⇒ 客户说「每个节点只说了一个标题的感觉」⇒ 加 `details`（要点数组）。
+    # ⛔ 要点不许是空话：每条都要指到**图里真实存在的文献节点**，且正文非空。
+    ref_ids = set(n.get("id") for n in nodes if n.get("type") == "Reference")
+    det_bad = []
+    det_total = 0
+    for n in nodes:
+        for d in (n.get("details") or []):
+            det_total += 1
+            if not isinstance(d, dict):
+                det_bad.append("%s 的要点不是对象" % n.get("name")); continue
+            if not str(d.get("v") or "").strip():
+                det_bad.append("%s 的要点缺正文" % n.get("name")); continue
+            if not str(d.get("k") or "").strip():
+                det_bad.append("%s 的要点缺标题" % n.get("name")); continue
+            src = d.get("src")
+            if not src:
+                det_bad.append("%s 的要点没有出处（src）" % n.get("name")); continue
+            if src not in ref_ids:
+                det_bad.append("%s 的要点出处 %s 不是图里的文献节点" % (n.get("name"), src))
+    rep.add("附Q", "每条要点都有可回溯的出处（%s）" % tag, not det_bad,
+            ("；".join(det_bad[:8])) if det_bad else "%d 条要点全部指到图内文献节点" % det_total)
+
+    # ---- 附加：患者层的「检查后须知」每条都要挂在有出处的节点上 ----
+    # （与 P3 / P4 同一道闸：患者层是站内唯一直接对患者说话的内容）
+    pdata = None
+    try:
+        ppath = find_patient_source(path, topic_key)
+        if ppath:
+            with open(ppath, "r", encoding="utf-8") as pf:
+                pdata = json.load(pf)
+    except Exception:
+        pdata = None
+    if pdata:
+        ac_bad = []
+        ac = pdata.get("aftercare") or []
+        for a in ac:
+            nid = a.get("nodeId")
+            if nid not in idset:
+                ac_bad.append("须知条目引用了图里没有的节点 %s" % nid)
+                continue
+            tgt = by_id0 = None
+            for x in nodes:
+                if x.get("id") == nid:
+                    tgt = x; break
+            if tgt is not None and not (tgt.get("evidence") or []):
+                ac_bad.append("须知条目 %s 挂着的节点没有文献出处" % (a.get("plain") or nid))
+        rep.add("附R", "患者层「检查后须知」每条都挂在有出处的节点上（%s）" % tag, not ac_bad,
+                ("；".join(ac_bad[:6])) if ac_bad else "%d 条须知全部有出处" % len(ac))
+
     # ---- 附加：节点宣称的「覆盖范围」必须在图里真有着落 ----
     # （收窄过内容时，属性文字常忘了改 —— 页面上仍宣称覆盖已删掉的那一块，
     #   客户看到的就是「内容不对」。真踩过：覆盖范围写着「肾功能保护」，
