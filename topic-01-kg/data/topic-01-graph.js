@@ -461,7 +461,7 @@ window.KG_GRAPH = {
         {
           "k": "Overall extravasation rates iodinated vs gadolinium",
           "v": "Systematic review of 17 papers: 2191 contrast media extravasations in 1,104,872 injections (0.2%). Extravasation with iodinated contrast is nearly 6-fold higher than with gadolinium.",
-          "quote": "Methods: Data were extracted from 17 papers reporting 2191 extravasations in 1,104,872 patients (0.2%) undergoing computed tomography (CT) or magnetic resonance imaging (MRI). Results: Extravasation rates were 0.045% for gadolinium-based contrast agents (GBCA) and nearly 6-fold higher, 0.26% for iodinated contrast agents. Factors associated with increased contrast media extravasations included: older age, female gender, using an existing intravenous (IV) instead of placing a new IV in radiology, in-patient status, use of automated power injection, high injection rates, catheter location, and failing to warm up the more viscous contrast media to body temperature.",
+          "quote": "Methods: Data were extracted from 17 papers reporting 2191 extravasations in 1,104,872 patients (0.2%) undergoing computed tomography (CT) or magnetic resonance imaging (MRI). Results: Extravasation rates were 0.045% for gadolinium-based contrast agents (GBCA) and nearly 6-fold higher, 0.26% for iodinated contrast agents.",
           "src": "EN-06",
           "cat": "风险因素"
         },
@@ -520,6 +520,13 @@ window.KG_GRAPH = {
           "quote": "建议两次对比剂应用间隔时间最好≥14 d",
           "src": "R03",
           "cat": "肾功能与对比剂"
+        },
+        {
+          "k": "DSA 造影剂给药与成像时序",
+          "v": "第七章 DSA 的造影剂给药时序：注造影剂前先成像并转成数字信号储存，注后再成像，两次数字相减得到只含造影剂的血管图像。",
+          "quote": "数字减影血管成像或数字减影血管造影(digital subtraction angiography,DSA)是20世纪80年代初出现的一项医学影像技术,它是应用计算机程序进行两次成像完成的。在注入造影剂之前,首先进行第一次成像,并用计算机将图像转换成数字信号储存起来。注入造影剂后,再次成像并转换成数字信号。两次数字相减,消除相同的信号,获得一个只有造影剂的血管图像。",
+          "src": "R20",
+          "cat": "护理流程"
         }
       ]
     },
@@ -703,6 +710,20 @@ window.KG_GRAPH = {
           "quote": "对比剂注射后1 h至1周内出现的不良反应为迟发性不良反应。",
           "src": "R03",
           "cat": "不良反应谱"
+        },
+        {
+          "k": "按时间窗给不良反应分型",
+          "v": "不良反应分为速发超敏反应(IHR，注射后1 h内)、迟发超敏反应(NIHR，暴露1 h以后)、毒性反应(全身瘙痒、潮红、恶心)以及与对比剂无关的事件(自发性荨麻疹)。",
+          "quote": "Adverse reactions after administration are classified into immediate hypersensitivity reactions (IHR) occurring within 1 h after RCM administration, non‐immediate hypersensitivity reactions (NIHR) presenting >1 h after exposure, toxic reactions (e.g., generalized pruritus, flushing, nausea), or events unrelated to RCM exposure (e.g., spontaneous urticaria).",
+          "src": "R13",
+          "cat": "分级处置"
+        },
+        {
+          "k": "IHR 与 NIHR 的发生率",
+          "v": "速发与迟发超敏反应在接受对比剂人群中各约占 0.5%–2%。",
+          "quote": "IHR and NIHR occur each in about 0.5%–2% of patients receiving RCM.",
+          "src": "R13",
+          "cat": "发生率"
         }
       ]
     },
@@ -943,6 +964,27 @@ window.KG_GRAPH = {
           "quote": "中重度反应需严密监测生命体征",
           "src": "CG-07",
           "cat": "过敏反应"
+        },
+        {
+          "k": "按时间窗给不良反应分型",
+          "v": "不良反应分为速发超敏反应(IHR，注射后1 h内)、迟发超敏反应(NIHR，暴露1 h以后)、毒性反应(全身瘙痒、潮红、恶心)以及与对比剂无关的事件(自发性荨麻疹)。",
+          "quote": "Adverse reactions after administration are classified into immediate hypersensitivity reactions (IHR) occurring within 1 h after RCM administration, non‐immediate hypersensitivity reactions (NIHR) presenting >1 h after exposure, toxic reactions (e.g., generalized pruritus, flushing, nausea), or events unrelated to RCM exposure (e.g., spontaneous urticaria).",
+          "src": "R13",
+          "cat": "分级处置"
+        },
+        {
+          "k": "IHR 与 NIHR 的临床表现",
+          "v": "速发超敏反应表现为过敏性休克样的症状，最常见的是轻度皮肤反应；迟发超敏反应表现为皮疹变异，以斑丘疹(MPE)为主。",
+          "quote": "IHR presents with symptoms seen in anaphylaxis, most commonly mild skin reactions. NIHR present with exanthema variants, predominantly with maculopapular exanthem (MPE).",
+          "src": "R13",
+          "cat": "分级处置"
+        },
+        {
+          "k": "皮试的 IgE 意义与 NIHR 机制",
+          "v": "重度过敏性休克者皮试常提示 IgE 介导机制，轻症者皮试多阴性；迟发超敏反应常由 T 细胞介导。",
+          "quote": "In patients with severe anaphylaxis, skin tests indicating an IgE‐mediated mechanism are often positive, whereas they mostly remain negative in those with mild reactions. NIHR are often caused by T cell‐mediated allergy.",
+          "src": "R13",
+          "cat": "分级处置"
         },
         {
           "k": "即刻超敏反应的危险因素（Meta 结论）",
@@ -1573,7 +1615,7 @@ window.KG_GRAPH = {
         {
           "k": "Overall extravasation rates iodinated vs gadolinium",
           "v": "Systematic review of 17 papers: 2191 contrast media extravasations in 1,104,872 injections (0.2%). Extravasation with iodinated contrast is nearly 6-fold higher than with gadolinium.",
-          "quote": "Methods: Data were extracted from 17 papers reporting 2191 extravasations in 1,104,872 patients (0.2%) undergoing computed tomography (CT) or magnetic resonance imaging (MRI). Results: Extravasation rates were 0.045% for gadolinium-based contrast agents (GBCA) and nearly 6-fold higher, 0.26% for iodinated contrast agents. Factors associated with increased contrast media extravasations included: older age, female gender, using an existing intravenous (IV) instead of placing a new IV in radiology, in-patient status, use of automated power injection, high injection rates, catheter location, and failing to warm up the more viscous contrast media to body temperature.",
+          "quote": "Methods: Data were extracted from 17 papers reporting 2191 extravasations in 1,104,872 patients (0.2%) undergoing computed tomography (CT) or magnetic resonance imaging (MRI). Results: Extravasation rates were 0.045% for gadolinium-based contrast agents (GBCA) and nearly 6-fold higher, 0.26% for iodinated contrast agents.",
           "src": "EN-06",
           "cat": "风险因素"
         },
@@ -1717,6 +1759,13 @@ window.KG_GRAPH = {
           "quote": "急性不良反应：为对比剂注射后1 h内出现的不良反应。",
           "src": "R03",
           "cat": "输注与观察"
+        },
+        {
+          "k": "IHR 与 NIHR 的发生率",
+          "v": "速发与迟发超敏反应在接受对比剂人群中各约占 0.5%–2%。",
+          "quote": "IHR and NIHR occur each in about 0.5%–2% of patients receiving RCM.",
+          "src": "R13",
+          "cat": "发生率"
         }
       ]
     },
@@ -1815,6 +1864,13 @@ window.KG_GRAPH = {
           "quote": "静脉治疗过程中，腐蚀性药液进入静脉管腔以外的周围组织",
           "src": "R08",
           "cat": "外渗分级"
+        },
+        {
+          "k": "纳入研究数与外渗例数",
+          "v": "系统评价纳入 19 项研究，共报告 2063 例碘对比剂外渗。",
+          "quote": "结果 纳入19项研究，共报告2063例碘对比剂外渗，提取外渗发生影响因素，包括年龄较大，女性性别，使用现有的静脉导管，使用高压注射器注射，高注射率，导管位置，使用未加热的高粘度对比剂，住院患者。",
+          "src": "R17",
+          "cat": "危险因素"
         }
       ]
     },
@@ -1897,6 +1953,13 @@ window.KG_GRAPH = {
           "quote": "了解患者既往有无碘对比剂使用史，是否有中、重度不良反应史",
           "src": "R03",
           "cat": "检查前准备"
+        },
+        {
+          "k": "CT 检查护理评估要点",
+          "v": "第五章 CT 常规护理流程以护理评估起手：评估年龄、性别、生命体征与神志；病史须问既往史、检查史、用药史、过敏史、家族史。",
+          "quote": "计算机断层扫描(computed tomography,CT),是电子计算机与X线检査技术相结合的产物。它利用X线管环绕某一体层扫描测得各点吸收X线的数据,通过电子计算机系统以数字矩阵显示,再转换为图像信号,最后由显示器显示出各体层横断面或冠状面的解剖图像。第一节||常规护理流程\n\n一、护理评估1.患者(1)年龄、性别、目前的临床表现:①生命体征是否平稳;②神志意识是否清楚等。(2)病史:既往史、检查史、用药史、过敏史、家族史。",
+          "src": "R20",
+          "cat": "护理流程"
         },
         {
           "k": "即刻超敏反应的危险因素（Meta 结论）",
@@ -2030,6 +2093,55 @@ window.KG_GRAPH = {
           "cat": "识别"
         },
         {
+          "k": "纳入研究数与外渗例数",
+          "v": "系统评价纳入 19 项研究，共报告 2063 例碘对比剂外渗。",
+          "quote": "结果 纳入19项研究，共报告2063例碘对比剂外渗，提取外渗发生影响因素，包括年龄较大，女性性别，使用现有的静脉导管，使用高压注射器注射，高注射率，导管位置，使用未加热的高粘度对比剂，住院患者。",
+          "src": "R17",
+          "cat": "危险因素"
+        },
+        {
+          "k": "八类外渗影响因素",
+          "v": "提取出的外渗影响因素共八项：年龄较大、女性性别、使用现有的静脉导管、使用高压注射器注射、高注射率、导管位置、使用未加热的高粘度对比剂、住院患者。",
+          "quote": "提取外渗发生影响因素，包括年龄较大，女性性别，使用现有的静脉导管，使用高压注射器注射，高注射率，导管位置，使用未加热的高粘度对比剂，住院患者。",
+          "src": "R17",
+          "cat": "危险因素"
+        },
+        {
+          "k": "检索库与检索截止时间",
+          "v": "计算机检索 Web of Science、PubMed、EMBASE、Cochrane、中国生物医学文献数据库、万方数据库、维普数据库和 CNKI 数据库，检索时间为建库至 2020 年 10 月。",
+          "quote": "方法 计算机检索Web of Science、PubMed、EMBASE、Cochrane、中国生物医学文献数据库、万方数据库、维普数据库和CNKI数据库，检索时间为建库至2020年10月",
+          "src": "R17",
+          "cat": "检索方法"
+        },
+        {
+          "k": "结论：早期识别高危患者",
+          "v": "碘对比剂外渗与多种因素相关，建议临床工作者提高对这些因素的关注，早期识别外渗高危患者，预防碘对比剂外渗。",
+          "quote": "结论 碘对比剂外渗与多种因素相关，建议临床工作者提高对这些因素的关注，早期识别外渗高危患者，预防碘对比剂外渗。",
+          "src": "R17",
+          "cat": "预防"
+        },
+        {
+          "k": "英文摘要：八项因素原文",
+          "v": "英文摘要列出八项提取出的影响因素：年龄较大、女性性别、使用现有的静脉导管、使用高压注射器注射、高注射率、导管位置、使用未加热的高粘度对比剂、住院患者。",
+          "quote": "It was found that advanced age，female，use of existing venous catheters，use of high-pressure injector，high injection rate，catheter location，use of unheated high-viscosity contrast agent and inpatients were factors influencing extravasation of iodine contrast agents.",
+          "src": "R17",
+          "cat": "危险因素"
+        },
+        {
+          "k": "英文摘要：例数与研究数",
+          "v": "英文摘要：19 项研究共报告 2063 例碘对比剂外渗。",
+          "quote": "Results Totally 2,063 cases of iodine contrast agent extravasation were reported in the 19 studies collected.",
+          "src": "R17",
+          "cat": "危险因素"
+        },
+        {
+          "k": "英文摘要：临床建议原文",
+          "v": "英文摘要建议：临床工作者重视上述因素，早期识别外渗高危患者，预防碘对比剂外渗。",
+          "quote": "It is recommended that clinicians pay more attention to these factors so as to identify patients at high risk of extravasation in early stage，and prevent extravasation of iodine contrast agents.",
+          "src": "R17",
+          "cat": "预防"
+        },
+        {
           "k": "外渗危险因素（系统评价结论）",
           "v": "从 2151 篇唯一研究筛出 15 篇（2 篇 RCT + 13 篇准实验/观察性研究，**质量低到中等**）：**女性、住院状态**是外渗危险因素；**注射速率、静脉通路部位、导管留置时间**影响外渗量",
           "quote": "Fifteen articles were selected from a total of 2151 unique studies identified. Two were randomized controlled trials and 13 were quasi-experimental and observational studies. The quality of these studies was judged to be low to moderate. Some patient characteristics, such as female sex and inpatient status, appeared to be risk factors for extravasation. Additionally, injection rate, venous access site and catheter dwelling time could affect the volume extravasated.",
@@ -2107,7 +2219,7 @@ window.KG_GRAPH = {
         {
           "k": "Radiology nurse vascular access protocol",
           "v": "Protocol at the study's radiology departments: all contrast media were externally heated to a target temperature of 37 degrees C to reduce viscosity before injection. For a high-pressure resistant central venous catheter (max tolerable pressure 300 psi), the radiology nurse drew blood back to confirm the catheter was in the vein and used 20 mL of normal saline to confirm patency before use. The nurse selected an 18G-22G high-pressure resistant peripheral short catheter (max tolerable pressure 350 psi) according to the proposed injection speed and the patient's vascular conditions.",
-          "quote": "CM injection Three hospitals used CM, including iodixanol, iohexol, ioversol, iomeprol, iopromide, iopamidol, etc., and before injection, all CM were externally heated to a target temperature of 37 °C to reduce viscosity. For enhanced-computed tomography, if the patient had a high-pressure resistant central venous catheter (the maximum tolerable pressure was 300 psi), the radiology nurse drew blood back to confirm that the catheter was in the vein and used 20 mL of normal saline to confirm its patency before use. Central venous catheters labeled with high-pressure resistant labels can be used for high-pressure injection of iodine containing contrast agents. In addition, the radiology nurse selected the 18G‒22G [17] high-pressure resistant peripheral short catheter (the maximum tolerable pressure was 350 psi) according to the proposed injection speed and the patient's vascular conditions. Before the intravenous injection of CM, the radiology nurse again conducted routine tests on all intravenous routes by manually injecting normal saline to determine whether the catheter was unobstructed and to confirm that the catheter was located in the vein.",
+          "quote": "before injection, all CM were externally heated to a target temperature of 37 °C to reduce viscosity. For enhanced-computed tomography, if the patient had a high-pressure resistant central venous catheter (the maximum tolerable pressure was 300 psi), the radiology nurse drew blood back to confirm that the catheter was in the vein and used 20 mL of normal saline to confirm its patency before use. Central venous catheters labeled with high-pressure resistant labels can be used for high-pressure injection of iodine containing contrast agents. In addition, the radiology nurse selected the 18G‒22G [17] high-pressure resistant peripheral short catheter (the maximum tolerable pressure was 350 psi) according to the proposed injection speed and the patient's vascular conditions.",
           "src": "EN-05",
           "cat": "对比剂安全"
         },
@@ -2265,8 +2377,8 @@ window.KG_GRAPH = {
         },
         {
           "k": "Pre-procedure screening risk factors for reactions",
-          "v": "Allergic-like reactions to modern iodinated contrast are uncommon (iodinated 0.6% aggregate, 0.04% severe; gadolinium-based 0.01-0.22% aggregate, 0.008% severe). Prior allergic-like or unknown-type reaction to the same class of contrast is the greatest risk factor (approximately 5-fold increased risk). Shellfish and povidone-iodine allergies are NOT a risk factor for iodinated contrast. Asthma increases likelihood; unrelated allergy gives 2- to 3-fold increase. Beta-blocker users do not need to discontinue medication.",
-          "quote": "Risk Factors for Adverse Reactions to Intravenous Contrast Media Primary Considerations Allergic-like reactions to modern iodinated and gadolinium-based contrast medium are uncommon (iodinated: 0.6% aggregate [1], 0.04% severe [2]; gadolinium-based: 0.01-0.22% aggregate [2], 0.008% severe) [3]. Risk factors exist that increase the risk of a contrast reaction. These generally increase the likelihood of a reaction by less than one order of magnitude, effectively increasing the risk that an uncommon event will occur, but not guaranteeing a reaction will take place. The following are some examples: Allergy: Patients who have had a prior allergic-like reaction or unknown-type reaction (i.e., a reaction of unknown manifestation) to contrast medium have an approximately 5-fold increased risk of developing a future allergic-like reaction if exposed to the same class of contrast medium again [2].",
+          "v": "Allergic-like reactions to modern iodinated contrast are uncommon (iodinated 0.6% aggregate, 0.04% severe; gadolinium-based 0.01-0.22% aggregate, 0.008% severe). Prior allergic-like or unknown-type reaction to the same class of contrast is the greatest risk factor (approximately 5-fold increased risk). Shellfish and povidone-iodine allergies are NOT a risk factor for iodinated contrast. Asthma increases likelihood; unrelated allergy gives 2- to 3-fold increase.",
+          "quote": "Risk Factors for Adverse Reactions to Intravenous Contrast Media Primary Considerations Allergic-like reactions to modern iodinated and gadolinium-based contrast medium are uncommon (iodinated: 0.6% aggregate [1], 0.04% severe [2]; gadolinium-based: 0.01-0.22% aggregate [2], 0.008% severe) [3]. Risk factors exist that increase the risk of a contrast reaction. These generally increase the likelihood of a reaction by less than one order of magnitude, effectively increasing the risk that an uncommon event will occur, but not guaranteeing a reaction will take place. The following are some examples: Allergy: Patients who have had a prior allergic-like reaction or unknown-type reaction (i.e., a reaction of unknown manifestation) to contrast medium have an approximately 5-fold increased risk of developing a future allergic-like reaction if exposed to the same class of contrast medium again [2]. A prior allergic-like or unknown type reaction to the same class of contrast medium is considered the greatest risk factor for predicting future adverse events. In general, patients with unrelated allergies are at a 2- to 3-fold increased risk of an allergic-like contrast reaction, but due to the modest increased risk, restricting contrast medium use or premedicating solely on the basis of unrelated allergies is not recommended. Patients with shellfish or povidone-iodine (e.g., Betadine®) allergies are at no greater risk from iodinated contrast medium than are patients with other allergies (i.e., neither is a significant risk factor) [4,5]. There is no cross-reactivity between different classes of contrast medium. For example, a prior reaction to gadolinium-based contrast medium does not predict a future reaction to iodinated contrast medium, or vice versa, more than any other unrelated allergy. Asthma: A history of asthma increases the likelihood of an allergic-like contrast reaction [2,6]. Patients with asthma may be more prone to develop bronchospasm. Due to the modest increased risk, restricting contrast medium use or premedicating solely on the basis of a history of asthma is not recommended. Renal Insufficiency: Screening and selection strategies to mitigate the possible risks of the non-allergic adverse events of contrast-induced nephrotoxicity (CIN) and nephrogenic systemic fibrosis (NSF) can be found in the Chapters on Post-Contrast Acute Kidney Injury and Contrast Induced Nephropathy in Adults and Nephrogenic Systemic Fibrosis. Cardiac Status: Patients with severe cardiac disease may be at increased risk of a non-allergic cardiac event if an allergic-like or non-allergic contrast reaction occurs. These include symptomatic patients (e.g., patients with angina or congestive heart failure symptoms with minimal exertion) and also patients with severe aortic stenosis, cardiac arrhythmias, primary pulmonary hypertension, or severe but compensated cardiomyopathy. Due to the modest increased risk, restricting contrast medium use or premedicating solely on the basis of a patient’s cardiac status is not recommended. Anxiety: There is some evidence that contrast reactions are more common in anxious patients [7]. Reassuring an anxious patient before contrast medium injection may mitigate the likelihood of a mild contrast reaction. Other Historical and Pre-Procedure Considerations Age and Gender: Infants, neonates, children, and the elderly have lower reaction rates than middle-aged patients [1,8]. Male patients have lower reaction rates than female patients. Due to the modest increased risk, restricting contrast medium use or premedicating solely on the basis of patient age or gender is not recommended.",
           "src": "R01",
           "cat": "对比剂安全"
         },
@@ -2287,7 +2399,7 @@ window.KG_GRAPH = {
         {
           "k": "Premedication does not abolish paediatric recurrence",
           "v": "Of 23,429 examinations, 226 were indicated for premedication because of prior allergic-like reactions to low-osmolality contrast; 172 were performed after premedication. Acute allergic-like reactions occurred in 6.40% (11/172) of examinations performed with premedication versus 3.70% (2/54) where premedication was indicated but not given, and 0.84% (195/23,203) in those without such history (P < 0.001). Premedication therefore does not remove the risk of recurrence in children.",
-          "quote": "LOCM = low-osmolar iodinated contrast media, RR = relative risk, eGFR = estimated glomerular filtration rate, ICM = iodinated contrast media Among the 23,429 examinations, 226 were indicated for premedication owing to a prior history of allergic-like reactions associated with LOCM. Of these, 172 examinations were performed after premedication. Acute allergic-like reactions occurred in 6.40% (11 of 172) of examinations performed with premedication and in 3.70% (2 of 54) of examinations for which premedication was indicated but not administered. The incidence of acute allergic-like reactions remained significantly higher in patients with a history of such reactions, even with premedication (6.40%), compared to that of those without such a history (0.84%, 195 of 23,203) (P < 0.001). ICM-Associated Acute Physiologic Reactions The incidences of acute physiologic reactions according to the type of LOCM used are described in Table 2 and Figure 3. The incidence of acute physiologic reactions among all LOCM injections was 0.55% (128 of 23,429), with the majority being mild (0.50% of all injections, 118 of 23,429), followed by moderate (0.04%, 9 of 23,429), and severe (0.01%, 1 of 23,429).",
+          "quote": "Among the 23,429 examinations, 226 were indicated for premedication owing to a prior history of allergic-like reactions associated with LOCM. Of these, 172 examinations were performed after premedication. Acute allergic-like reactions occurred in 6.40% (11 of 172) of examinations performed with premedication and in 3.70% (2 of 54) of examinations for which premedication was indicated but not administered. The incidence of acute allergic-like reactions remained significantly higher in patients with a history of such reactions, even with premedication (6.40%), compared to that of those without such a history (0.84%, 195 of 23,203) (P < 0.001).",
           "src": "EN-14",
           "cat": "超敏反应"
         },
@@ -2304,6 +2416,13 @@ window.KG_GRAPH = {
           "quote": "检查前对患者进行全面评估是减少不良反应发生的第一步。",
           "src": "R07",
           "cat": "检查前准备"
+        },
+        {
+          "k": "ACEI/ARB 不需常规停用（ESUR）",
+          "v": "ESUR：ACE 抑制剂与血管紧张素 II 受体拮抗剂在对比剂注射前不必停用。",
+          "quote": "ESUR recommendations: ACE inhibitors and angiotensin receptor blockers do not have to be stopped before CM administration.",
+          "src": "R15",
+          "cat": "用药"
         },
         {
           "k": "即刻超敏反应的危险因素（Meta 结论）",
@@ -2382,8 +2501,8 @@ window.KG_GRAPH = {
         },
         {
           "k": "Pre-procedure screening risk factors for reactions",
-          "v": "Allergic-like reactions to modern iodinated contrast are uncommon (iodinated 0.6% aggregate, 0.04% severe; gadolinium-based 0.01-0.22% aggregate, 0.008% severe). Prior allergic-like or unknown-type reaction to the same class of contrast is the greatest risk factor (approximately 5-fold increased risk). Shellfish and povidone-iodine allergies are NOT a risk factor for iodinated contrast. Asthma increases likelihood; unrelated allergy gives 2- to 3-fold increase. Beta-blocker users do not need to discontinue medication.",
-          "quote": "Risk Factors for Adverse Reactions to Intravenous Contrast Media Primary Considerations Allergic-like reactions to modern iodinated and gadolinium-based contrast medium are uncommon (iodinated: 0.6% aggregate [1], 0.04% severe [2]; gadolinium-based: 0.01-0.22% aggregate [2], 0.008% severe) [3]. Risk factors exist that increase the risk of a contrast reaction. These generally increase the likelihood of a reaction by less than one order of magnitude, effectively increasing the risk that an uncommon event will occur, but not guaranteeing a reaction will take place. The following are some examples: Allergy: Patients who have had a prior allergic-like reaction or unknown-type reaction (i.e., a reaction of unknown manifestation) to contrast medium have an approximately 5-fold increased risk of developing a future allergic-like reaction if exposed to the same class of contrast medium again [2].",
+          "v": "Allergic-like reactions to modern iodinated contrast are uncommon (iodinated 0.6% aggregate, 0.04% severe; gadolinium-based 0.01-0.22% aggregate, 0.008% severe). Prior allergic-like or unknown-type reaction to the same class of contrast is the greatest risk factor (approximately 5-fold increased risk). Shellfish and povidone-iodine allergies are NOT a risk factor for iodinated contrast. Asthma increases likelihood; unrelated allergy gives 2- to 3-fold increase.",
+          "quote": "Risk Factors for Adverse Reactions to Intravenous Contrast Media Primary Considerations Allergic-like reactions to modern iodinated and gadolinium-based contrast medium are uncommon (iodinated: 0.6% aggregate [1], 0.04% severe [2]; gadolinium-based: 0.01-0.22% aggregate [2], 0.008% severe) [3]. Risk factors exist that increase the risk of a contrast reaction. These generally increase the likelihood of a reaction by less than one order of magnitude, effectively increasing the risk that an uncommon event will occur, but not guaranteeing a reaction will take place. The following are some examples: Allergy: Patients who have had a prior allergic-like reaction or unknown-type reaction (i.e., a reaction of unknown manifestation) to contrast medium have an approximately 5-fold increased risk of developing a future allergic-like reaction if exposed to the same class of contrast medium again [2]. A prior allergic-like or unknown type reaction to the same class of contrast medium is considered the greatest risk factor for predicting future adverse events. In general, patients with unrelated allergies are at a 2- to 3-fold increased risk of an allergic-like contrast reaction, but due to the modest increased risk, restricting contrast medium use or premedicating solely on the basis of unrelated allergies is not recommended. Patients with shellfish or povidone-iodine (e.g., Betadine®) allergies are at no greater risk from iodinated contrast medium than are patients with other allergies (i.e., neither is a significant risk factor) [4,5]. There is no cross-reactivity between different classes of contrast medium. For example, a prior reaction to gadolinium-based contrast medium does not predict a future reaction to iodinated contrast medium, or vice versa, more than any other unrelated allergy. Asthma: A history of asthma increases the likelihood of an allergic-like contrast reaction [2,6]. Patients with asthma may be more prone to develop bronchospasm. Due to the modest increased risk, restricting contrast medium use or premedicating solely on the basis of a history of asthma is not recommended. Renal Insufficiency: Screening and selection strategies to mitigate the possible risks of the non-allergic adverse events of contrast-induced nephrotoxicity (CIN) and nephrogenic systemic fibrosis (NSF) can be found in the Chapters on Post-Contrast Acute Kidney Injury and Contrast Induced Nephropathy in Adults and Nephrogenic Systemic Fibrosis. Cardiac Status: Patients with severe cardiac disease may be at increased risk of a non-allergic cardiac event if an allergic-like or non-allergic contrast reaction occurs. These include symptomatic patients (e.g., patients with angina or congestive heart failure symptoms with minimal exertion) and also patients with severe aortic stenosis, cardiac arrhythmias, primary pulmonary hypertension, or severe but compensated cardiomyopathy. Due to the modest increased risk, restricting contrast medium use or premedicating solely on the basis of a patient’s cardiac status is not recommended. Anxiety: There is some evidence that contrast reactions are more common in anxious patients [7]. Reassuring an anxious patient before contrast medium injection may mitigate the likelihood of a mild contrast reaction. Other Historical and Pre-Procedure Considerations Age and Gender: Infants, neonates, children, and the elderly have lower reaction rates than middle-aged patients [1,8]. Male patients have lower reaction rates than female patients. Due to the modest increased risk, restricting contrast medium use or premedicating solely on the basis of patient age or gender is not recommended.",
           "src": "R01",
           "cat": "对比剂安全"
         },
@@ -2531,6 +2650,13 @@ window.KG_GRAPH = {
           "quote": "既往使用碘对比剂出现中、重度不良反应者；②不稳定性哮喘者；",
           "src": "R07",
           "cat": "检查前准备"
+        },
+        {
+          "k": "老年患者的检查风险评估",
+          "v": "第十章把老年人列为影像诊疗特殊人群：WHO 标准为发达国家 65 周岁以上、发展中国家（特别是亚太地区）60 岁以上；老年人反应迟缓、思维能力衰退、易产生消极情绪，检查前须做针对性风险评估与控制。",
+          "quote": "第一节||老年人\n\n世界卫生组织(WHO)对老年人年龄的划分有两个标准:在发达国家将65周岁以上人群定义为老年人,而在发展中国家(特别是亚太地区)将60岁以上人群称为老年人。老年人在生理和心理上出现一系列变化,表现为反应迟缓、思维能力衰退、易产生消极情绪等。在人口老龄化社会与人口日益增加的健康需求的推动下,影像诊疗中老年患者的比例逐年攀升。因此,结合老年患者的特点有针对性做好影像诊疗的风险评估和控制十分重要。",
+          "src": "R20",
+          "cat": "宣教"
         }
       ]
     },
@@ -2608,6 +2734,13 @@ window.KG_GRAPH = {
           "cat": "预防"
         },
         {
+          "k": "八类外渗影响因素",
+          "v": "提取出的外渗影响因素共八项：年龄较大、女性性别、使用现有的静脉导管、使用高压注射器注射、高注射率、导管位置、使用未加热的高粘度对比剂、住院患者。",
+          "quote": "提取外渗发生影响因素，包括年龄较大，女性性别，使用现有的静脉导管，使用高压注射器注射，高注射率，导管位置，使用未加热的高粘度对比剂，住院患者。",
+          "src": "R17",
+          "cat": "危险因素"
+        },
+        {
           "k": "外渗危险因素（系统评价结论）",
           "v": "从 2151 篇唯一研究筛出 15 篇（2 篇 RCT + 13 篇准实验/观察性研究，**质量低到中等**）：**女性、住院状态**是外渗危险因素；**注射速率、静脉通路部位、导管留置时间**影响外渗量",
           "quote": "Fifteen articles were selected from a total of 2151 unique studies identified. Two were randomized controlled trials and 13 were quasi-experimental and observational studies. The quality of these studies was judged to be low to moderate. Some patient characteristics, such as female sex and inpatient status, appeared to be risk factors for extravasation. Additionally, injection rate, venous access site and catheter dwelling time could affect the volume extravasated.",
@@ -2673,7 +2806,7 @@ window.KG_GRAPH = {
         {
           "k": "High injection pressure plus low muscle index",
           "v": "Contrast extravasation risk in abdominal CTA was associated with both high injection pressure profiles and low CT-derived skeletal muscle index. Extravasation occurred in 380 patients (3.05%); patients with extravasation had lower L3 SMI, a higher prevalence of sarcopenia, higher peak pressures, and elevated injection pressure-to-rate ratios. The combined model achieved an AUC of 0.941 (95% CI 0.927-0.955), showing higher discrimination than the pressure-only model (AUC 0.926), body composition-only model (AUC 0.840), and clinical-only model (AUC 0.796).",
-          "quote": "Contrast extravasation risk in abdominal CTA was associated with both high injection pressure profiles and low CT-derived skeletal muscle index. The combined clinical-pressure-body composition model showed higher discrimination than single-domain models after correction of the ROC-labeling error. What are the implications of the main findings? Opportunistic body composition assessment may refine pre-injection risk stratification without additional scanning or radiation exposure. The results provide a basis for future nurse-led, model-informed vascular access planning, but prospective external validation is required before routine deployment. Abstract Purpose: Contrast media extravasation can complicate CT angiography (CTA), particularly when high-flow injection protocols are used. Current risk assessment relies mainly on clinical factors and injection pressure monitoring, whereas opportunistic CT-derived body composition has rarely been evaluated for this purpose. Methods: This single-center retrospective cohort study analyzed 12,460 consecutive adult patients who underwent contrast-enhanced abdominal CTA. The L3 skeletal muscle index (SMI) was extracted from routine CT images, and pressure metrics were obtained from power injector logs. Logistic-regression models incorporating clinical variables, pressure parameters, and body composition variables were evaluated and internally validated. Results: Extravasation occurred in 380 patients (3.05%). Patients with extravasation had lower L3 SMI, a higher prevalence of sarcopenia, higher peak pressures, and elevated injection pressure-to-rate ratios (IPIRs). In multivariable analysis, lower L3 SMI, sarcopenia, peak pressure, IPIR, age, catheter gauge, and injection site were associated with extravasation. The combined model achieved an AUC of 0.941 (95% CI 0.927-0.955), showing higher discrimination than the pressure-only model (AUC 0.926, 95% CI 0.910-0.942), body composition-only model (AUC 0.840, 95% CI 0.819-0.861), and clinical-only model (AUC 0.796, 95% CI 0.772-0.820). The bootstrap optimism-corrected AUC was 0.928.",
+          "quote": "Results: Extravasation occurred in 380 patients (3.05%). Patients with extravasation had lower L3 SMI, a higher prevalence of sarcopenia, higher peak pressures, and elevated injection pressure-to-rate ratios (IPIRs). In multivariable analysis, lower L3 SMI, sarcopenia, peak pressure, IPIR, age, catheter gauge, and injection site were associated with extravasation. The combined model achieved an AUC of 0.941 (95% CI 0.927-0.955), showing higher discrimination than the pressure-only model (AUC 0.926, 95% CI 0.910-0.942), body composition-only model (AUC 0.840, 95% CI 0.819-0.861), and clinical-only model (AUC 0.796, 95% CI 0.772-0.820).",
           "src": "EN-21",
           "cat": "风险因素"
         },
@@ -2704,6 +2837,13 @@ window.KG_GRAPH = {
           "quote": "不应用于高压注射泵注射造影剂（耐高压导管除外）",
           "src": "R08",
           "cat": "预防"
+        },
+        {
+          "k": "八类外渗影响因素",
+          "v": "提取出的外渗影响因素共八项：年龄较大、女性性别、使用现有的静脉导管、使用高压注射器注射、高注射率、导管位置、使用未加热的高粘度对比剂、住院患者。",
+          "quote": "提取外渗发生影响因素，包括年龄较大，女性性别，使用现有的静脉导管，使用高压注射器注射，高注射率，导管位置，使用未加热的高粘度对比剂，住院患者。",
+          "src": "R17",
+          "cat": "危险因素"
         },
         {
           "k": "外渗危险因素（系统评价结论）",
@@ -2753,8 +2893,8 @@ window.KG_GRAPH = {
       "details": [
         {
           "k": "Serious injury risk factors quantified",
-          "v": "586,812 contrast injections over 11 years: 709 extravasations (0.12%). Severity: 672 (94.8%) mild, 32 (4.5%) moderate, 5 (0.7%) severe; only 5 patients received dermatology or burn specialist consultation and none required surgery. Multivariate analysis: diabetes mellitus (OR 8.04, P<0.01), injection in the dorsum of the hand (OR 4.86, P<0.01), injection without a saline test (OR 2.58, P=0.02), and large-volume extravasation (OR 5.49, P<0.01) were independent risk factors for moderate or severe injury.",
-          "quote": "Results CM extravasation occurred in 0.12% (709/586,812) of cases. Of the 709 extravasation injuries, 672 (94.8%) were mild, 32 (4.5%) were moderate, and 5 (0.7%) were severe. Only 5 patients received consultations from dermatologists or burn specialists, and none required surgery. Multivariate analysis underscored the presence of diabetes mellitus [DM, odds ratio (OR) =8.04; P<0.01], injections in the dorsum of the hand (OR =4.86; P<0.01), without saline test (OR =2.58; P=0.02), and large-volume extravasation (OR =5.49; P<0.01) as potential risk factors of moderate or severe CM extravasation injury. Conclusions Most CM extravasation injuries are mild and without serious consequences. Multiple modifiable risk factors for serious CM extravasation injury have been identified that could mitigate the severity of the injury. Keywords: Contrast media (CM), extravasation of diagnostic and therapeutic materials, injection site reactions, computed tomography (CT) statusreleaseddisplay-pdfyesis-olfnois-manuscriptnois-preprintnois-journal-matternois-scannednois-retractednoReceived 2024 Oct 24; Accepted 2025 Apr 29; Issue date 2025 Aug 1. Introduction Contrast media (CM) is widely used in contrast-enhanced computed tomography (CECT) scans to improve the visualization of abnormal structures in various parts of the body (1). With the increasing availability of computed tomography (CT) equipment in healthcare, there were approximately 91.4 million CT scans conducted in the US in 2019; 48% of these recipients required the intravenous administration of CM (2). Characterized by its distinct physicochemical properties, including high concentration, osmotic pressure, and viscosity, CM typically requires intravenous injection into the human body at a rapid rate. Multiple complications can occur after CM injection, of which extravasation is well-recognized, with an occurrence rate of 0.1-1.2% (3-8). Extravasation refers to the inadvertent administration of vesicant solutions or drugs into adjacent tissues (9,10). CM is categorized as a high-risk vesicant, with tissue toxicity primarily driven by its hyperosmolarity (11).",
+          "v": "586,812 contrast injections（研究期 November 2012 至 December 2023）：709 例外渗（0.12%）。严重度：672 例（94.8%）轻度、32 例（4.5%）中度、5 例（0.7%）重度；仅 5 人请皮肤科/烧伤科会诊，无人需手术。多因素分析：糖尿病（OR 8.04，P<0.01）、手背注射（OR 4.86，P<0.01）、未做生理盐水试推（OR 2.58，P=0.02）、大量外渗（OR 5.49，P<0.01）",
+          "quote": "A total of 586,812 CM injections were performed during CECT scans at a single institution between November 2012 and December 2023. Among these, 709 cases (334 males, 375 females; age: 62.9±15.2 years) with CM extravasation injuries were included. Extravasation injuries were classified by severity. The frequency and clinical outcomes of different severities of injuries were investigated. Risk factors of serious injuries were evaluated using logistic regression with generalized estimating equation analyses. Results CM extravasation occurred in 0.12% (709/586,812) of cases. Of the 709 extravasation injuries, 672 (94.8%) were mild, 32 (4.5%) were moderate, and 5 (0.7%) were severe. Only 5 patients received consultations from dermatologists or burn specialists, and none required surgery. Multivariate analysis underscored the presence of diabetes mellitus [DM, odds ratio (OR) =8.04; P<0.01], injections in the dorsum of the hand (OR =4.86; P<0.01), without saline test (OR =2.58; P=0.02), and large-volume extravasation (OR =5.49; P<0.01) as potential risk factors of moderate or severe CM extravasation injury.",
           "src": "EN-09",
           "cat": "风险因素"
         },
@@ -2785,6 +2925,13 @@ window.KG_GRAPH = {
           "quote": "输入刺激性、腐蚀性药物过程中，应注意观察回血情况，确保导管在静脉管腔内",
           "src": "R08",
           "cat": "识别"
+        },
+        {
+          "k": "八类外渗影响因素",
+          "v": "提取出的外渗影响因素共八项：年龄较大、女性性别、使用现有的静脉导管、使用高压注射器注射、高注射率、导管位置、使用未加热的高粘度对比剂、住院患者。",
+          "quote": "提取外渗发生影响因素，包括年龄较大，女性性别，使用现有的静脉导管，使用高压注射器注射，高注射率，导管位置，使用未加热的高粘度对比剂，住院患者。",
+          "src": "R17",
+          "cat": "危险因素"
         }
       ]
     },
@@ -2915,7 +3062,7 @@ window.KG_GRAPH = {
         {
           "k": "ACR Table 3 bronchospasm doses",
           "v": "ACR Table 3, bronchospasm: all forms - preserve IV access, monitor vitals, pulse oximeter, O2 by mask 6-10 L/min. Mild: beta agonist inhaler 2 puffs (90 mcg/puff) = 180 mcg, up to 3 times. Moderate: same beta agonist plus consider epinephrine IM 0.3 mL of 1.0 mg/mL (1:1,000) = 0.3 mg, repeat every 5-15 minutes up to 1 mL (1 mg) total.",
-          "quote": "BRONCHOSPASM Treatment Dosing All forms Preserve IV access Monitor vitals Pulse oximeter O2 by mask 6-10 L/min Mild Beta agonist inhaler (Albuterol®) 2 puffs (90 mcg/puff) for a total of 180 mcg; can repeat up to 3 times Consider sending patient to the Emergency Department or calling emergency response team or 911, based upon the completeness of the response to the beta agonist inhaler Moderate Beta agonist inhaler (Albuterol®) 2 puffs (90 mcg/puff) for a total of 180 mcg; can repeat up to 3 times Consider adding epinephrine (IM)* IM 0.3 mL of 1.0 mg/mL (1:1,000) dilution (0.3 mg); can repeat every 5-15 minutes up to 1 mL (1 mg) total or Epinephrine auto-injector (EpiPen® or equivalent) (0.3 mL of 1.0 mg/mL (1:1,000) dilution, fixed [0.3mg]); can repeat every 5-15 minutes up to three times or Epinephrine (IV)* IV 1 mL of 0.1 mg/mL(1:10,000) dilution (0.1 mg); administer slowly into a running IV infusion of fluids or use saline flush; can repeat every few minutes as needed up to 10 mL (1 mg) total Consider calling emergency response team or 911 based upon the completeness of the response Severe Epinephrine (IV)* IV 1 mL of 0.1 mg/mL (1:10,000) dilution (0.1 mg); administer slowly into a running IV infusion of fluids or slow IV push followed by a slow saline flush; can repeat every few minutes as needed up to 10 mL (1 mg) total or Epinephrine (IM)* IM 0.3 mL of 1:1,000 dilution (0.3 mg); can repeat every 5-15 minutes up to 1 mL (1 mg) total or Epinephrine auto-injector (EpiPen® or equivalent) (0.3 mL of 1.0 mg/mL(1:1,000) dilution, Fixed [0.3mg]); can repeat every 5-15 minutes up to three times AND 2 puffs (90 mcg/puff) for a total of 180 mcg; can repeat up to 3 Beta agonist inhaler (Albuterol®) (may work times synergistically) Call emergency response team or 911 * Note: in hypotensive patients, the preferred route of epinephrine delivery is IV, as the extremities may not be perfused sufficiently to allow for adequate absorption of IM administered drug.",
+          "quote": "BRONCHOSPASM Treatment Dosing All forms Preserve IV access Monitor vitals Pulse oximeter O2 by mask 6-10 L/min Mild Beta agonist inhaler (Albuterol®) 2 puffs (90 mcg/puff) for a total of 180 mcg; can repeat up to 3 times Consider sending patient to the Emergency Department or calling emergency response team or 911, based upon the completeness of the response to the beta agonist inhaler Moderate Beta agonist inhaler (Albuterol®) 2 puffs (90 mcg/puff) for a total of 180 mcg; can repeat up to 3 times Consider adding epinephrine (IM)* IM 0.3 mL of 1.0 mg/mL (1:1,000) dilution (0.3 mg); can repeat every 5-15 minutes up to 1 mL (1 mg) total or Epinephrine auto-injector (EpiPen® or equivalent) (0.3 mL of 1.0 mg/mL (1:1,000) dilution, fixed [0.3mg]); can repeat every 5-15 minutes up to three times or Epinephrine (IV)* IV 1 mL of 0.1 mg/mL(1:10,000) dilution (0.1 mg); administer slowly into a running IV infusion of fluids or use saline flush; can repeat every few minutes as needed up to 10 mL (1 mg) total Consider calling emergency response team or 911 based upon the completeness of the response",
           "src": "R01",
           "cat": "超敏反应"
         },
@@ -2990,7 +3137,7 @@ window.KG_GRAPH = {
         {
           "k": "Emergency premedication protocol doses",
           "v": "Emergency premedication protocol: 50 mg prednisolone IV (or equivalent) given at least 30 min before contrast medium administration, plus 2 mg clemastine IV (or equivalent) at least 30 min before administration. Equivalents: 50 mg prednisolone = 40 mg methylprednisolone = 8 mg dexamethasone = 200 mg hydrocortisone; 2 mg clemastine = 50 mg diphenhydramine = 20 mg chlorphenamine = 10 mg cetirizine (all IV).",
-          "quote": "1 Emergency premedication protocol: • 50 mg prednisolone IV (or equivalent): ≥ 30 min before contrast medium administration • 2 mg clemastine IV (or equivalent): ≥ 30 min before contrast medium administration Note: 50 mg prednisolone IV is equivalent to: • 40 mg methylprednisolone IV • 8 mg dexamethasone IV • 200 mg hydrocortisone IV Note: 2 mg clemastine IV is equivalent to: • 50 mg diphenhydramine IV • 20 mg chlorphenamine IV • 10 mg cetirizine IV Non-immediate hypersensitivity reactions (NIHR) In patients with a history of a mild non-immediate hypersensitivity reaction to an iodine-based contrast medium or a gadolinium-based contrast agent without danger signs: • Interview the patient about their previous hypersensitivity reaction • Optionally, refer the patient to a drug allergy specialist (if not done before) when the local drug allergy specialist capacity is sufficient • Optimize the allergy registration in the electronic health record • Apply the advice of the drug allergy specialist for a safe iodine-based contrast medium or gadolinium-based contrast agent, or, when not available, choose a different Iodine-based contrast medium or gadolinium-based contrast agent if the culprit contrast agent is known* • When the contrast medium is administered, observe the patient for at least 30 min with the IV line in place • Give the patient written instructions for a possible repeat non-immediate hypersensitivity reaction • If a non-immediate hypersensitivity reaction recurs, referral to a drug allergy specialist is mandatory * See also Fig.",
+          "quote": "1 Emergency premedication protocol: • 50 mg prednisolone IV (or equivalent): ≥ 30 min before contrast medium administration • 2 mg clemastine IV (or equivalent): ≥ 30 min before contrast medium administration Note: 50 mg prednisolone IV is equivalent to: • 40 mg methylprednisolone IV • 8 mg dexamethasone IV • 200 mg hydrocortisone IV Note: 2 mg clemastine IV is equivalent to: • 50 mg diphenhydramine IV • 20 mg chlorphenamine IV • 10 mg cetirizine IV",
           "src": "EN-04",
           "cat": "超敏反应"
         },
@@ -3072,7 +3219,7 @@ window.KG_GRAPH = {
         {
           "k": "Emergency premedication protocol doses",
           "v": "Emergency premedication protocol: 50 mg prednisolone IV (or equivalent) given at least 30 min before contrast medium administration, plus 2 mg clemastine IV (or equivalent) at least 30 min before administration. Equivalents: 50 mg prednisolone = 40 mg methylprednisolone = 8 mg dexamethasone = 200 mg hydrocortisone; 2 mg clemastine = 50 mg diphenhydramine = 20 mg chlorphenamine = 10 mg cetirizine (all IV).",
-          "quote": "1 Emergency premedication protocol: • 50 mg prednisolone IV (or equivalent): ≥ 30 min before contrast medium administration • 2 mg clemastine IV (or equivalent): ≥ 30 min before contrast medium administration Note: 50 mg prednisolone IV is equivalent to: • 40 mg methylprednisolone IV • 8 mg dexamethasone IV • 200 mg hydrocortisone IV Note: 2 mg clemastine IV is equivalent to: • 50 mg diphenhydramine IV • 20 mg chlorphenamine IV • 10 mg cetirizine IV Non-immediate hypersensitivity reactions (NIHR) In patients with a history of a mild non-immediate hypersensitivity reaction to an iodine-based contrast medium or a gadolinium-based contrast agent without danger signs: • Interview the patient about their previous hypersensitivity reaction • Optionally, refer the patient to a drug allergy specialist (if not done before) when the local drug allergy specialist capacity is sufficient • Optimize the allergy registration in the electronic health record • Apply the advice of the drug allergy specialist for a safe iodine-based contrast medium or gadolinium-based contrast agent, or, when not available, choose a different Iodine-based contrast medium or gadolinium-based contrast agent if the culprit contrast agent is known* • When the contrast medium is administered, observe the patient for at least 30 min with the IV line in place • Give the patient written instructions for a possible repeat non-immediate hypersensitivity reaction • If a non-immediate hypersensitivity reaction recurs, referral to a drug allergy specialist is mandatory * See also Fig.",
+          "quote": "1 Emergency premedication protocol: • 50 mg prednisolone IV (or equivalent): ≥ 30 min before contrast medium administration • 2 mg clemastine IV (or equivalent): ≥ 30 min before contrast medium administration Note: 50 mg prednisolone IV is equivalent to: • 40 mg methylprednisolone IV • 8 mg dexamethasone IV • 200 mg hydrocortisone IV Note: 2 mg clemastine IV is equivalent to: • 50 mg diphenhydramine IV • 20 mg chlorphenamine IV • 10 mg cetirizine IV",
           "src": "EN-04",
           "cat": "超敏反应"
         },
@@ -3303,7 +3450,7 @@ window.KG_GRAPH = {
         {
           "k": "Initial management steps uncontroversial",
           "v": "Initial management of contrast media extravasation injury is well defined: stopping the infusion, attempting aspiration through the original cannula, splinting and elevating the limb, and applying cooling attract little controversy. Cohan described 22 cases of extravasation over 30 mL, none of whom required surgery and who had no long-term adverse effects; Sistrom corroborated this with 28 cases.",
-          "quote": "Management Options Conservative Management The initial management of CMEI is well defined. The initial steps of stopping the infusion, attempting aspiration through the original cannula, splinting and elevating the limb, and applying cooling attract little controversy. Cohan described 22 cases of CMEI > 30 mL, none of whom required surgery and had no long-term adverse effects, and Sistrom corroborated this with a study of 28 cases.3, 11 Ko et al successfully managed 9 cases of CMEI with up to 90 mL of various low-osmolar solutions conservatively, advocating the use of room temperature damp gauze rather than ice packs and Silvadene ointment with clobetasol cream.",
+          "quote": "Management Options Conservative Management The initial management of CMEI is well defined. The initial steps of stopping the infusion, attempting aspiration through the original cannula, splinting and elevating the limb, and applying cooling attract little controversy. Cohan described 22 cases of CMEI > 30 mL, none of whom required surgery and had no long-term adverse effects, and Sistrom corroborated this with a study of 28 cases.",
           "src": "EN-08",
           "cat": "处置"
         },
@@ -3498,7 +3645,7 @@ window.KG_GRAPH = {
         {
           "k": "Initial management steps uncontroversial",
           "v": "Initial management of contrast media extravasation injury is well defined: stopping the infusion, attempting aspiration through the original cannula, splinting and elevating the limb, and applying cooling attract little controversy. Cohan described 22 cases of extravasation over 30 mL, none of whom required surgery and who had no long-term adverse effects; Sistrom corroborated this with 28 cases.",
-          "quote": "Management Options Conservative Management The initial management of CMEI is well defined. The initial steps of stopping the infusion, attempting aspiration through the original cannula, splinting and elevating the limb, and applying cooling attract little controversy. Cohan described 22 cases of CMEI > 30 mL, none of whom required surgery and had no long-term adverse effects, and Sistrom corroborated this with a study of 28 cases.3, 11 Ko et al successfully managed 9 cases of CMEI with up to 90 mL of various low-osmolar solutions conservatively, advocating the use of room temperature damp gauze rather than ice packs and Silvadene ointment with clobetasol cream.",
+          "quote": "Management Options Conservative Management The initial management of CMEI is well defined. The initial steps of stopping the infusion, attempting aspiration through the original cannula, splinting and elevating the limb, and applying cooling attract little controversy. Cohan described 22 cases of CMEI > 30 mL, none of whom required surgery and had no long-term adverse effects, and Sistrom corroborated this with a study of 28 cases.",
           "src": "EN-08",
           "cat": "处置"
         },
@@ -3656,7 +3803,7 @@ window.KG_GRAPH = {
         {
           "k": "Initial management steps uncontroversial",
           "v": "Initial management of contrast media extravasation injury is well defined: stopping the infusion, attempting aspiration through the original cannula, splinting and elevating the limb, and applying cooling attract little controversy. Cohan described 22 cases of extravasation over 30 mL, none of whom required surgery and who had no long-term adverse effects; Sistrom corroborated this with 28 cases.",
-          "quote": "Management Options Conservative Management The initial management of CMEI is well defined. The initial steps of stopping the infusion, attempting aspiration through the original cannula, splinting and elevating the limb, and applying cooling attract little controversy. Cohan described 22 cases of CMEI > 30 mL, none of whom required surgery and had no long-term adverse effects, and Sistrom corroborated this with a study of 28 cases.3, 11 Ko et al successfully managed 9 cases of CMEI with up to 90 mL of various low-osmolar solutions conservatively, advocating the use of room temperature damp gauze rather than ice packs and Silvadene ointment with clobetasol cream.",
+          "quote": "Management Options Conservative Management The initial management of CMEI is well defined. The initial steps of stopping the infusion, attempting aspiration through the original cannula, splinting and elevating the limb, and applying cooling attract little controversy. Cohan described 22 cases of CMEI > 30 mL, none of whom required surgery and had no long-term adverse effects, and Sistrom corroborated this with a study of 28 cases.",
           "src": "EN-08",
           "cat": "处置"
         },
@@ -4057,7 +4204,7 @@ window.KG_GRAPH = {
         {
           "k": "Emergency premedication protocol doses",
           "v": "Emergency premedication protocol: 50 mg prednisolone IV (or equivalent) given at least 30 min before contrast medium administration, plus 2 mg clemastine IV (or equivalent) at least 30 min before administration. Equivalents: 50 mg prednisolone = 40 mg methylprednisolone = 8 mg dexamethasone = 200 mg hydrocortisone; 2 mg clemastine = 50 mg diphenhydramine = 20 mg chlorphenamine = 10 mg cetirizine (all IV).",
-          "quote": "1 Emergency premedication protocol: • 50 mg prednisolone IV (or equivalent): ≥ 30 min before contrast medium administration • 2 mg clemastine IV (or equivalent): ≥ 30 min before contrast medium administration Note: 50 mg prednisolone IV is equivalent to: • 40 mg methylprednisolone IV • 8 mg dexamethasone IV • 200 mg hydrocortisone IV Note: 2 mg clemastine IV is equivalent to: • 50 mg diphenhydramine IV • 20 mg chlorphenamine IV • 10 mg cetirizine IV Non-immediate hypersensitivity reactions (NIHR) In patients with a history of a mild non-immediate hypersensitivity reaction to an iodine-based contrast medium or a gadolinium-based contrast agent without danger signs: • Interview the patient about their previous hypersensitivity reaction • Optionally, refer the patient to a drug allergy specialist (if not done before) when the local drug allergy specialist capacity is sufficient • Optimize the allergy registration in the electronic health record • Apply the advice of the drug allergy specialist for a safe iodine-based contrast medium or gadolinium-based contrast agent, or, when not available, choose a different Iodine-based contrast medium or gadolinium-based contrast agent if the culprit contrast agent is known* • When the contrast medium is administered, observe the patient for at least 30 min with the IV line in place • Give the patient written instructions for a possible repeat non-immediate hypersensitivity reaction • If a non-immediate hypersensitivity reaction recurs, referral to a drug allergy specialist is mandatory * See also Fig.",
+          "quote": "1 Emergency premedication protocol: • 50 mg prednisolone IV (or equivalent): ≥ 30 min before contrast medium administration • 2 mg clemastine IV (or equivalent): ≥ 30 min before contrast medium administration Note: 50 mg prednisolone IV is equivalent to: • 40 mg methylprednisolone IV • 8 mg dexamethasone IV • 200 mg hydrocortisone IV Note: 2 mg clemastine IV is equivalent to: • 50 mg diphenhydramine IV • 20 mg chlorphenamine IV • 10 mg cetirizine IV",
           "src": "EN-04",
           "cat": "超敏反应"
         },
@@ -4078,14 +4225,14 @@ window.KG_GRAPH = {
         {
           "k": "Premedication carries cost and length-of-stay harm",
           "v": "Steroid premedication is not a free intervention: it can transiently elevate blood glucose and may also be associated with prolonged hospital stays, increased costs and worse outcomes. Combined with the finding that changing the culprit contrast medium reduces recurrent reactions far more than steroid premedication (OR 0.14), this argues for premedication protocols being reviewed as a workflow item with measurable operational cost, not applied by default.",
-          "quote": "This is supported by a large retrospective study showing that patients who received a different ICM had a significantly lower rate of recurrent HR compared to those who received the same ICM with corticosteroid premedication (same ICM and steroid premedication: 80 of 423 examinations (19%); different ICM and no steroid premedication: 10 of 322 examinations (3%); odds ratio (OR), 0.14 [95% confidence interval (CI): 0.06, 0.33]; p < 0.001) [59]. Therefore, a recent anaphylaxis guideline from two American Allergology Societies concluded that evidence was lacking to support corticosteroid premedication [60]. Corticosteroid premedication can transiently elevate blood glucose [61] and may also be associated with prolonged hospital stays, increased costs, and worse outcomes [62]. H1-antihistamine monotherapy has been successfully used in mild HR in Korea [57, 63, 64].",
+          "quote": "This is supported by a large retrospective study showing that patients who received a different ICM had a significantly lower rate of recurrent HR compared to those who received the same ICM with corticosteroid premedication (same ICM and steroid premedication: 80 of 423 examinations (19%); different ICM and no steroid premedication: 10 of 322 examinations (3%); odds ratio (OR), 0.14 [95% confidence interval (CI): 0.06, 0.33]; p < 0.001) [59]. Therefore, a recent anaphylaxis guideline from two American Allergology Societies concluded that evidence was lacking to support corticosteroid premedication [60]. Corticosteroid premedication can transiently elevate blood glucose [61] and may also be associated with prolonged hospital stays, increased costs, and worse outcomes [62].",
           "src": "EN-04",
           "cat": "运营"
         },
         {
           "k": "Premedication does not abolish paediatric recurrence",
           "v": "Of 23,429 examinations, 226 were indicated for premedication because of prior allergic-like reactions to low-osmolality contrast; 172 were performed after premedication. Acute allergic-like reactions occurred in 6.40% (11/172) of examinations performed with premedication versus 3.70% (2/54) where premedication was indicated but not given, and 0.84% (195/23,203) in those without such history (P < 0.001). Premedication therefore does not remove the risk of recurrence in children.",
-          "quote": "LOCM = low-osmolar iodinated contrast media, RR = relative risk, eGFR = estimated glomerular filtration rate, ICM = iodinated contrast media Among the 23,429 examinations, 226 were indicated for premedication owing to a prior history of allergic-like reactions associated with LOCM. Of these, 172 examinations were performed after premedication. Acute allergic-like reactions occurred in 6.40% (11 of 172) of examinations performed with premedication and in 3.70% (2 of 54) of examinations for which premedication was indicated but not administered. The incidence of acute allergic-like reactions remained significantly higher in patients with a history of such reactions, even with premedication (6.40%), compared to that of those without such a history (0.84%, 195 of 23,203) (P < 0.001). ICM-Associated Acute Physiologic Reactions The incidences of acute physiologic reactions according to the type of LOCM used are described in Table 2 and Figure 3. The incidence of acute physiologic reactions among all LOCM injections was 0.55% (128 of 23,429), with the majority being mild (0.50% of all injections, 118 of 23,429), followed by moderate (0.04%, 9 of 23,429), and severe (0.01%, 1 of 23,429).",
+          "quote": "Among the 23,429 examinations, 226 were indicated for premedication owing to a prior history of allergic-like reactions associated with LOCM. Of these, 172 examinations were performed after premedication. Acute allergic-like reactions occurred in 6.40% (11 of 172) of examinations performed with premedication and in 3.70% (2 of 54) of examinations for which premedication was indicated but not administered. The incidence of acute allergic-like reactions remained significantly higher in patients with a history of such reactions, even with premedication (6.40%), compared to that of those without such a history (0.84%, 195 of 23,203) (P < 0.001).",
           "src": "EN-14",
           "cat": "超敏反应"
         },
@@ -4158,6 +4305,34 @@ window.KG_GRAPH = {
           "quote": "不应使用钢针、普通型 VAD 进行注射",
           "src": "R10",
           "cat": "预防"
+        },
+        {
+          "k": "ACEI/ARB 不需常规停用（ESUR）",
+          "v": "ESUR：ACE 抑制剂与血管紧张素 II 受体拮抗剂在对比剂注射前不必停用。",
+          "quote": "ESUR recommendations: ACE inhibitors and angiotensin receptor blockers do not have to be stopped before CM administration.",
+          "src": "R15",
+          "cat": "用药"
+        },
+        {
+          "k": "ACEI/ARB 停药仅限低血容量",
+          "v": "工作组：注射对比剂前停用 ACE 抑制剂与血管紧张素 II 受体拮抗剂似无必要，低血容量者除外。",
+          "quote": "Avis du groupe de travail : l’arrêt des inhibiteurs des IEC et ARA2 ne semble pas nécessaire avant l’injection de PCI, mis à part en cas d’hypovolémie.",
+          "src": "R15",
+          "cat": "用药"
+        },
+        {
+          "k": "八类外渗影响因素",
+          "v": "提取出的外渗影响因素共八项：年龄较大、女性性别、使用现有的静脉导管、使用高压注射器注射、高注射率、导管位置、使用未加热的高粘度对比剂、住院患者。",
+          "quote": "提取外渗发生影响因素，包括年龄较大，女性性别，使用现有的静脉导管，使用高压注射器注射，高注射率，导管位置，使用未加热的高粘度对比剂，住院患者。",
+          "src": "R17",
+          "cat": "危险因素"
+        },
+        {
+          "k": "DSA 造影剂给药与成像时序",
+          "v": "第七章 DSA 的造影剂给药时序：注造影剂前先成像并转成数字信号储存，注后再成像，两次数字相减得到只含造影剂的血管图像。",
+          "quote": "数字减影血管成像或数字减影血管造影(digital subtraction angiography,DSA)是20世纪80年代初出现的一项医学影像技术,它是应用计算机程序进行两次成像完成的。在注入造影剂之前,首先进行第一次成像,并用计算机将图像转换成数字信号储存起来。注入造影剂后,再次成像并转换成数字信号。两次数字相减,消除相同的信号,获得一个只有造影剂的血管图像。",
+          "src": "R20",
+          "cat": "护理流程"
         },
         {
           "k": "加温可减少过敏反应（高黏度对比剂）",
@@ -4237,7 +4412,7 @@ window.KG_GRAPH = {
         {
           "k": "Ultrasound-guided access and pre-existing cannula",
           "v": "Ultrasound-guided cannula insertion carried higher extravasation rates (3.6%) than standard insertion (0.3%), attributed to prior failed attempts and deeper veins permitting a shorter intravascular cannula length that can dislodge. A newly sited cannula gave a smaller extravasate volume (40.6 ml vs 63.1 ml, p = 0.0005) than reusing an existing cannula, so a new cannula is advised for at-risk patients.",
-          "quote": "Cannula insertion technical factors A non-randomised retrospective study found higher rates of extravasation in patients who had ultrasound-guided cannula insertion (3.6%) vs. standard insertion (0.3%). However, the numbers of patients in each group were drastically different-364 in the ultrasound-guided cannula inserted group and 896 in the standard cannula inserted group (2% of a random sample of 40,143 patients). The difference in results in this study is likely due to confounding variables; i.e. prior failure of standard insertion and with deeper veins there is potentially a shorter length of intravascular cannula hence greater potential for dislodgement upon injection [47]. The type of healthcare worker who inserts the IV cannula was investigated by Sinan et al. which showed that CMEX rates were higher when inserted by non-radiology staff (0.3%) as compared to radiology staff (0.2%). However, this difference did not demonstrate statistical significance and a number of confounders could explain this difference [34]. Another study evaluated extravasation between newly inserted cannula vs. use of an existing cannula for CM injection with a difference in rates and a reduced volume of extravasate observed with those freshly sited (40.6 ml vs. 63.1 ml, p = 0.0005) [46], despite older cannulae being checked for flush efficacy. Therefore, consideration should be given to placing a new cannula for at-risk patients to reduce potential impact of any extravasation. Chemical properties of CM Three main contrast media properties have been studied in relation to CMEX: osmolarity, charge and viscosity.",
+          "quote": "Cannula insertion technical factors A non-randomised retrospective study found higher rates of extravasation in patients who had ultrasound-guided cannula insertion (3.6%) vs. standard insertion (0.3%). However, the numbers of patients in each group were drastically different-364 in the ultrasound-guided cannula inserted group and 896 in the standard cannula inserted group (2% of a random sample of 40,143 patients). The difference in results in this study is likely due to confounding variables; i.e. prior failure of standard insertion and with deeper veins there is potentially a shorter length of intravascular cannula hence greater potential for dislodgement upon injection [47]. The type of healthcare worker who inserts the IV cannula was investigated by Sinan et al. which showed that CMEX rates were higher when inserted by non-radiology staff (0.3%) as compared to radiology staff (0.2%). However, this difference did not demonstrate statistical significance and a number of confounders could explain this difference [34]. Another study evaluated extravasation between newly inserted cannula vs. use of an existing cannula for CM injection with a difference in rates and a reduced volume of extravasate observed with those freshly sited (40.6 ml vs. 63.1 ml, p = 0.0005) [46], despite older cannulae being checked for flush efficacy. Therefore, consideration should be given to placing a new cannula for at-risk patients to reduce potential impact of any extravasation.",
           "src": "EN-01",
           "cat": "风险因素"
         },
@@ -4522,6 +4697,20 @@ window.KG_GRAPH = {
           "quote": "护理人员在进行输液时应根据患者的治疗计划制订合理的输液措施,加强巡视及预防措施,以减少静脉输液渗出外渗的发生.",
           "src": "CN-13",
           "cat": "预防"
+        },
+        {
+          "k": "ACEI/ARB 停药仅限低血容量",
+          "v": "工作组：注射对比剂前停用 ACE 抑制剂与血管紧张素 II 受体拮抗剂似无必要，低血容量者除外。",
+          "quote": "Avis du groupe de travail : l’arrêt des inhibiteurs des IEC et ARA2 ne semble pas nécessaire avant l’injection de PCI, mis à part en cas d’hypovolémie.",
+          "src": "R15",
+          "cat": "用药"
+        },
+        {
+          "k": "结论：早期识别高危患者",
+          "v": "碘对比剂外渗与多种因素相关，建议临床工作者提高对这些因素的关注，早期识别外渗高危患者，预防碘对比剂外渗。",
+          "quote": "结论 碘对比剂外渗与多种因素相关，建议临床工作者提高对这些因素的关注，早期识别外渗高危患者，预防碘对比剂外渗。",
+          "src": "R17",
+          "cat": "预防"
         }
       ]
     },
@@ -4736,7 +4925,7 @@ window.KG_GRAPH = {
         {
           "k": "Hyaluronidase and aspiration not recommended",
           "v": "Recommendation 3: routine use of hyaluronidase or corticosteroid injections or aspiration of the affected limb is not recommended (strength of evidence Limited 1). There is no consistent evidence that local injection of corticosteroids or hyaluronidase is beneficial; no adequate studies confirm efficacy of hyaluronidase after contrast media extravasation. Topical silver sulfadiazine and steroid cream three to four times daily has been suggested for blistering, though efficacy is unknown.",
-          "quote": "Strength of evidence: Limited 3 Reference # Original SQ Reassessed SQ Final SQ 22 4 - 4 24 4 - 4 Recommendation 2: Cold compresses or ice packs should initially be applied to the extravasation site (rather than warm compresses) Strength of evidence: Limited 1 Reference # Original SQ Reassessed SQ Final SQ 22 4 - 4 23 - 24 Inadequate - Inadequate 25 4 - 4 1 1 Recommendation 3: Routine use of hyaluronidase or corticosteroid injections or aspiration of the affected limb is not recommended. Strength of evidence: Limited 1 Reference # Original SQ Reassessed SQ Final SQ 15 4 4 4 22 4 - 4 28 4 - 4 29 2 - 2 Recommendation 4: All discharged outpatients should be given clear instructions concerning where and when to seek additional medical care (including for worsening pain, development of paresthesia, diminished range of motion, and new skin ulceration o r blistering) as severe extravasation could develop several hours later.",
+          "quote": "Recommendation 3: Routine use of hyaluronidase or corticosteroid injections or aspiration of the affected limb is not recommended. Strength of evidence: Limited 1",
           "src": "R01",
           "cat": "处置"
         },
@@ -4802,6 +4991,13 @@ window.KG_GRAPH = {
           "quote": "应立即停止在原部位输液，抬高患肢，及时通知医师，给予对症处理",
           "src": "R08",
           "cat": "处置顺序"
+        },
+        {
+          "k": "文献质量评价工具与统计方法",
+          "v": "按研究类型选纽尔卡斯渥太华量表或美国卫生保健质量和研究机构推荐的横断面研究质量评价标准评价文献质量，视情况进行 meta 分析或描述性分析。",
+          "quote": "根据其类型选择纽尔卡斯渥太华量表或美国卫生保健质量和研究机构推荐的横断面研究质量评价标准评价文献质量，视情况进行meta分析或描述性分析。",
+          "src": "R17",
+          "cat": "检索方法"
         },
         {
           "k": "该领域的研究缺口",
@@ -4999,7 +5195,7 @@ window.KG_GRAPH = {
         {
           "k": "Deterioration can follow a mild initial injury",
           "v": "A 47-year-old woman with pulmonary embolism history was diagnosed with compartment syndrome of the left hand after contrast injection during CT; her first diagnosis had been mild contrast extravasation injury 24 hours before the compartment syndrome. Standard radiography showed accumulated contrast medium in the left hand. She underwent fasciotomy and secondary healing, with good radiographic, clinical and hand function at 2 months. Hand compartment syndrome secondary to extravasation is exceptional and, because its incidence is unknown, treatment is not codified.",
-          "quote": "Case presentation We present a 47-year-old woman with a history of pulmonary embolism who was diagnosed of compartment syndrome of the left hand after injection of contrast medium during a CT scan. Whose first diagnosis was mild contrast medium extravasation injury 24 h before the compartment syndrome. Standard radiography showed an accumulation of contrast medium in the left hand. The patient underwent a fasciotomy and secondary healing. Follow-up showed good radiographic, clinical, and hand function after 2 months. Discussion The occurrence of hand compartment syndrome secondary to contrast media extravasation is rare. Most of the time, they are initially diagnosed as medium extravasation before the worsening of symptoms. Because of its unknown incidence, treatment is not codified. The goal of treatment is to save the limb and restore function.",
+          "quote": "We present a 47-year-old woman with a history of pulmonary embolism who was diagnosed of compartment syndrome of the left hand after injection of contrast medium during a CT scan. Whose first diagnosis was mild contrast medium extravasation injury 24 h before the compartment syndrome. Standard radiography showed an accumulation of contrast medium in the left hand. The patient underwent a fasciotomy and secondary healing. Follow-up showed good radiographic, clinical, and hand function after 2 months. Discussion The occurrence of hand compartment syndrome secondary to contrast media extravasation is rare. Most of the time, they are initially diagnosed as medium extravasation before the worsening of symptoms. Because of its unknown incidence, treatment is not codified.",
           "src": "EN-16",
           "cat": "识别分级"
         }
@@ -5149,6 +5345,27 @@ window.KG_GRAPH = {
           "quote": "甲状腺功能亢进未治愈患者不能使用含碘对比剂。",
           "src": "R03",
           "cat": "特殊人群"
+        },
+        {
+          "k": "CT 检查护理评估要点",
+          "v": "第五章 CT 常规护理流程以护理评估起手：评估年龄、性别、生命体征与神志；病史须问既往史、检查史、用药史、过敏史、家族史。",
+          "quote": "计算机断层扫描(computed tomography,CT),是电子计算机与X线检査技术相结合的产物。它利用X线管环绕某一体层扫描测得各点吸收X线的数据,通过电子计算机系统以数字矩阵显示,再转换为图像信号,最后由显示器显示出各体层横断面或冠状面的解剖图像。第一节||常规护理流程\n\n一、护理评估1.患者(1)年龄、性别、目前的临床表现:①生命体征是否平稳;②神志意识是否清楚等。(2)病史:既往史、检查史、用药史、过敏史、家族史。",
+          "src": "R20",
+          "cat": "护理流程"
+        },
+        {
+          "k": "X 线成像与造影的护理评估",
+          "v": "第四章 X 线成像与造影的护理评估：核对年龄、性别、病情、摄片部位与检查必要性，并检查金属饰物、膏药敷料等影响穿透力的物品；X 线检查占医院影像检查的 60%~70%。",
+          "quote": "X线是一种波长很短的电磁波,由高速运动的电子撞击物质的原子所产生,于1895年被德国物理学家伦琴发现,故又称为伦琴射线。X线检查是指使用X线对人体内部器官进行透视或摄影的检查方法。根据国际医疗影像专业机构调查显示,在医院影像检查中,X线检查所占比例达到60%~70%,在我国这一比例更高,尤其是在基层、社区医院。第一节||常规护理流程\n\n一、护理评估1.患者(1)评估患者的年龄、性别、病情与摄片部位,以及是否必须行该项检查。(2)是否佩戴影响X线穿透力的物质,如发卡、金属饰物、膏药和敷料等。",
+          "src": "R20",
+          "cat": "护理流程"
+        },
+        {
+          "k": "老年患者的检查风险评估",
+          "v": "第十章把老年人列为影像诊疗特殊人群：WHO 标准为发达国家 65 周岁以上、发展中国家（特别是亚太地区）60 岁以上；老年人反应迟缓、思维能力衰退、易产生消极情绪，检查前须做针对性风险评估与控制。",
+          "quote": "第一节||老年人\n\n世界卫生组织(WHO)对老年人年龄的划分有两个标准:在发达国家将65周岁以上人群定义为老年人,而在发展中国家(特别是亚太地区)将60岁以上人群称为老年人。老年人在生理和心理上出现一系列变化,表现为反应迟缓、思维能力衰退、易产生消极情绪等。在人口老龄化社会与人口日益增加的健康需求的推动下,影像诊疗中老年患者的比例逐年攀升。因此,结合老年患者的特点有针对性做好影像诊疗的风险评估和控制十分重要。",
+          "src": "R20",
+          "cat": "宣教"
         }
       ]
     },
@@ -5234,6 +5451,69 @@ window.KG_GRAPH = {
           "quote": "指导受检者多饮水（每小时不少于100 mL）以利于对比剂的排出，可通过尿液颜色来简单判断水化是否充分，以预防对比剂肾病［25，32- 33］。",
           "src": "R07",
           "cat": "检查后护理"
+        },
+        {
+          "k": "首选换用不同侧链对比剂",
+          "v": "既往有超敏反应者再次检查，首选换用侧链结构不同(DSC)的对比剂，且最好是皮试阴性者；预防性用药仅提供较低水平的保护，只在无法皮试而急需用对比剂时考虑。",
+          "quote": "Thus, applying a DSC RCM, ideally skin test‐negative, is now the first choice for prevention of repeat reactions. In contrast, premedication prior to RCM reexposure for patients with previous IHRs to low‐osmolar RCM may possibly add a lower level of protection. It can be given in urgent need for RCM without test possibility and may additionally be considered after allergy testing.",
+          "src": "R13",
+          "cat": "预防"
+        },
+        {
+          "k": "预防用药的糖皮质激素方案",
+          "v": "低渗对比剂致速发反应后，用至少 2 次糖皮质激素有一定效果：泼尼松龙或甲泼尼龙 32–50 mg，在下一次检查前 1–2 h 与 4–12 h 各给一次；轻度反应还可加用抗组胺预处理。",
+          "quote": "Some efficacy has meanwhile been reported also for low‐osmolar RCM after IHR if using at least two doses of corticosteroids (32–50 mg prednisolone or methylprednisolone given 1–2 h and 4–12 h before) in a meta‐analysis and for antihistamine premedication after mild reactions.",
+          "src": "R13",
+          "cat": "用药"
+        },
+        {
+          "k": "降低剂量与速率减少再发",
+          "v": "把 CT 管电压降到 100 kVp、剂量降到 1.5 mL/kg（最多 130 mL）、速度降到 2.5 或 3 mL/s，可减少速发反应的再发；在中重度速发反应中效果更明显（RR 0.62），此时推荐使用。",
+          "quote": "Lowering the computertomogram (CT) voltage to 100 kVp, the dose to 1.5 mL/kg (max, 130 mL), and speed to 2.5 or 3 mL/s may be an additional approach to reduce repeat reactions in IHR. The effect was more pronounced in moderate to severe IHRs (relative risk 0.62), where it can be recommended, if applicable.",
+          "src": "R13",
+          "cat": "用药"
+        },
+        {
+          "k": "谁该做变态反应学检查",
+          "v": "有过敏性休克、支气管痉挛、风团/血管性水肿及皮疹史者应接受变态反应学检查；迟发型重症（大疱性皮疹 SJS/TEN，或伴系统症状的 DRESS）应避免以后再用对比剂，但仍可做皮试。",
+          "quote": "(1) Patients with history of anaphylaxis, bronchospasm, urticaria/angioedema, and exanthems to RCM should undergo allergological work‐up. Those with severe NIHRs, as bullous exanthems (SJS/TEN) or with systemic symptoms (DRESS), should avoid future RCM application, whereas skin tests can be done.",
+          "src": "R13",
+          "cat": "分级处置"
+        },
+        {
+          "k": "轻度反应：换药加 H1 预处理",
+          "v": "轻度速发反应（风团±血管性水肿）或迟发反应（MPE）而急需增强检查者，须给予侧链不同的非致敏对比剂，速发反应者同时给 H1 预处理；过敏性休克者应避免对比剂、改行 CT 或 MR 平扫。",
+          "quote": "(2) In patients with mild IHR (urticaria +/− angioedema) or NIHR (maculopapular exanthema, MPE) and urgent need for RCM‐based imaging, a non‐culprit RCM with different side chain (DSC) has to be given, in IHR after applying H1‐premedication (H1). In patients with anaphylaxis, RCM should be avoided and native CT‐ or magnet resonance (MR)‐scan considered. If RCM is indispensable, administer a non‐culprit DSC RCM; in IHR, emergency preparedness including anesthesia standby and premedicate with H1 and with two times corticosteroids (2×CS).",
+          "src": "R13",
+          "cat": "分级处置"
+        },
+        {
+          "k": "皮试：时机与组合",
+          "v": "先做皮肤 prick test，阴性再做皮内试验；迟发反应加做 patch test；反应后 2–6 个月检测敏感性最佳。检测时把既往致敏对比剂与一组可用对比剂（含一个 DSC 替代品）一起测。",
+          "quote": "(3) Skin prick test and, if negative, intradermal tests are performed, in NIHR additionally patch tests; best sensitivity is 2–6 months after the reaction (Table S1). The culprits of previous reactions together with a panel of available RCM including an DSC alternative are tested. Basophil activation test (BAT) and lymphocyte transformation tests (LTT) may optionally be used.",
+          "src": "R13",
+          "cat": "分级处置"
+        },
+        {
+          "k": "迟发反应预处理证据不足",
+          "v": "对迟发超敏反应(NIHR)使用预处理的有效性证据不足，且已有大量突破性反应报道。",
+          "quote": "There is insufficient evidence on the degree of effectiveness of premedication in patients with NIHR to RCM; numerous breakthrough reactions have been described.",
+          "src": "R13",
+          "cat": "用药"
+        },
+        {
+          "k": "预处理不作为迟发反应主策略",
+          "v": "预处理不应作为避免迟发超敏反应再发的主要策略。",
+          "quote": "Thus, premedication should be no principal strategy to avoid further reactions after NIHR.",
+          "src": "R13",
+          "cat": "用药"
+        },
+        {
+          "k": "药物激发试验替代再暴露",
+          "v": "在有经验的变态反应科，用皮试阴性对比剂做药物激发试验(DPT)已成为替代在放射科再次暴露、用于筛出安全替代品的成熟做法，对患者更安全。",
+          "quote": "Drug provocation tests (DPTs) with a skin test‐negative RCM in experienced allergy departments have been established as an alternative to reexposition in the radiology department for identifying a safe alternative and provide more safety for the patient.",
+          "src": "R13",
+          "cat": "分级处置"
         }
       ]
     },
@@ -5577,6 +5857,13 @@ window.KG_GRAPH = {
           "quote": "In these leaflets, the possibility of occurrence of a NIHR should be mentioned, and detailed patient instructions should be given.",
           "src": "EN-03",
           "cat": "患者宣教"
+        },
+        {
+          "k": "教材四大主题与急救流程",
+          "v": "教材四大主题：影像护理学概述、影像技术基本知识、护理基本知识，以及影像科各项检查的基本流程、急救护理技术及抢救流程、职业防护规范与流程。",
+          "quote": "全书围绕四个主题：第一个主题为影像护理学概述，包括影像医学与影像护理学的发展、影像护理学的目的与任务、影像护理岗位标准等；第二个主题为影像技术基本知识，包括影像设备原理、成像原理、扫描原理、影像读片等。第三个主题为护理基本知识，内容包括影像护理的理论知识、基本操作、心理护理等；第四个主题为影像科各项检查的基本流程、急救护理技术及抢救流程、职业防护规范与流程等。",
+          "src": "R20",
+          "cat": "护理流程"
         }
       ]
     },
@@ -11223,7 +11510,7 @@ window.KG_GRAPH = {
         {
           "k": "Atropine for vasovagal bradycardia (ACR Table 3)",
           "v": "ACR Table 3, hypotension with bradycardia (pulse < 60 bpm) = vasovagal reaction. If mild, no other treatment usually necessary. If severe: in addition to those measures give atropine IV 0.6-1.0 mg into a running IV infusion of fluids, repeat up to 3 mg total, and consider calling the emergency response team or 911.",
-          "quote": "Hypotension with bradycardia (pulse < 60 bpm) (Vasovagal reaction) If mild No other treatment usually necessary If severe In addition to above measures: Atropine (IV) 0.6-1.0 mg; administer into a running IV infusion (patient remains symptomatic despite above measures) of fluids; can repeat up to 3 mg total Consider calling the emergency response team or 911 Hypotension with tachycardia (pulse > 100 bpm) (Anaphylactoid reaction) If hypotension persists Epinephrine (IV)* IV 1 mL of 0.1 mg/mL (1:10,000) dilution (0.1 mg); administer slowly into a running IV infusion of fluids; can repeat every few minutes as needed up to 10 mL (1 mg) total or Epinephrine (IM)* IM 0.3 mL of 1.0 mg/mL (1:1,000) dilution (0.3 mg); can repeat every 5-15 minutes up to 1 mL (1 mg) total or Epinephrine auto-injector (EpiPen® or equivalent) (0.3 mL of 1.0 mg/mL (1:1,000) dilution, fixed [0.3mg]); can repeat every 5-15 minutes up to three times Consider calling emergency response team or 911 based upon the severity of the reaction and the completeness of the response * Note: in hypotensive patients, the preferred route of epinephrine delivery is IV, as the extremities may not be perfused sufficiently to allow for adequate absorption of IM administered drug.",
+          "quote": "Hypotension with bradycardia (pulse < 60 bpm) (Vasovagal reaction) If mild No other treatment usually necessary If severe In addition to above measures: Atropine (IV) 0.6-1.0 mg; administer into a running IV infusion (patient remains symptomatic despite above measures) of fluids; can repeat up to 3 mg total Consider calling the emergency response team or 911",
           "src": "R01",
           "cat": "超敏反应"
         },
@@ -11581,7 +11868,7 @@ window.KG_GRAPH = {
         {
           "k": "Deterioration can follow a mild initial injury",
           "v": "A 47-year-old woman with pulmonary embolism history was diagnosed with compartment syndrome of the left hand after contrast injection during CT; her first diagnosis had been mild contrast extravasation injury 24 hours before the compartment syndrome. Standard radiography showed accumulated contrast medium in the left hand. She underwent fasciotomy and secondary healing, with good radiographic, clinical and hand function at 2 months. Hand compartment syndrome secondary to extravasation is exceptional and, because its incidence is unknown, treatment is not codified.",
-          "quote": "Case presentation We present a 47-year-old woman with a history of pulmonary embolism who was diagnosed of compartment syndrome of the left hand after injection of contrast medium during a CT scan. Whose first diagnosis was mild contrast medium extravasation injury 24 h before the compartment syndrome. Standard radiography showed an accumulation of contrast medium in the left hand. The patient underwent a fasciotomy and secondary healing. Follow-up showed good radiographic, clinical, and hand function after 2 months. Discussion The occurrence of hand compartment syndrome secondary to contrast media extravasation is rare. Most of the time, they are initially diagnosed as medium extravasation before the worsening of symptoms. Because of its unknown incidence, treatment is not codified. The goal of treatment is to save the limb and restore function.",
+          "quote": "We present a 47-year-old woman with a history of pulmonary embolism who was diagnosed of compartment syndrome of the left hand after injection of contrast medium during a CT scan. Whose first diagnosis was mild contrast medium extravasation injury 24 h before the compartment syndrome. Standard radiography showed an accumulation of contrast medium in the left hand. The patient underwent a fasciotomy and secondary healing. Follow-up showed good radiographic, clinical, and hand function after 2 months. Discussion The occurrence of hand compartment syndrome secondary to contrast media extravasation is rare. Most of the time, they are initially diagnosed as medium extravasation before the worsening of symptoms. Because of its unknown incidence, treatment is not codified.",
           "src": "EN-16",
           "cat": "识别分级"
         },
@@ -11686,7 +11973,7 @@ window.KG_GRAPH = {
         {
           "k": "Hyaluronidase and aspiration not recommended",
           "v": "Recommendation 3: routine use of hyaluronidase or corticosteroid injections or aspiration of the affected limb is not recommended (strength of evidence Limited 1). There is no consistent evidence that local injection of corticosteroids or hyaluronidase is beneficial; no adequate studies confirm efficacy of hyaluronidase after contrast media extravasation. Topical silver sulfadiazine and steroid cream three to four times daily has been suggested for blistering, though efficacy is unknown.",
-          "quote": "Strength of evidence: Limited 3 Reference # Original SQ Reassessed SQ Final SQ 22 4 - 4 24 4 - 4 Recommendation 2: Cold compresses or ice packs should initially be applied to the extravasation site (rather than warm compresses) Strength of evidence: Limited 1 Reference # Original SQ Reassessed SQ Final SQ 22 4 - 4 23 - 24 Inadequate - Inadequate 25 4 - 4 1 1 Recommendation 3: Routine use of hyaluronidase or corticosteroid injections or aspiration of the affected limb is not recommended. Strength of evidence: Limited 1 Reference # Original SQ Reassessed SQ Final SQ 15 4 4 4 22 4 - 4 28 4 - 4 29 2 - 2 Recommendation 4: All discharged outpatients should be given clear instructions concerning where and when to seek additional medical care (including for worsening pain, development of paresthesia, diminished range of motion, and new skin ulceration o r blistering) as severe extravasation could develop several hours later.",
+          "quote": "Recommendation 3: Routine use of hyaluronidase or corticosteroid injections or aspiration of the affected limb is not recommended. Strength of evidence: Limited 1",
           "src": "R01",
           "cat": "处置"
         },
@@ -11770,7 +12057,7 @@ window.KG_GRAPH = {
         {
           "k": "Atropine for vasovagal bradycardia (ACR Table 3)",
           "v": "ACR Table 3, hypotension with bradycardia (pulse < 60 bpm) = vasovagal reaction. If mild, no other treatment usually necessary. If severe: in addition to those measures give atropine IV 0.6-1.0 mg into a running IV infusion of fluids, repeat up to 3 mg total, and consider calling the emergency response team or 911.",
-          "quote": "Hypotension with bradycardia (pulse < 60 bpm) (Vasovagal reaction) If mild No other treatment usually necessary If severe In addition to above measures: Atropine (IV) 0.6-1.0 mg; administer into a running IV infusion (patient remains symptomatic despite above measures) of fluids; can repeat up to 3 mg total Consider calling the emergency response team or 911 Hypotension with tachycardia (pulse > 100 bpm) (Anaphylactoid reaction) If hypotension persists Epinephrine (IV)* IV 1 mL of 0.1 mg/mL (1:10,000) dilution (0.1 mg); administer slowly into a running IV infusion of fluids; can repeat every few minutes as needed up to 10 mL (1 mg) total or Epinephrine (IM)* IM 0.3 mL of 1.0 mg/mL (1:1,000) dilution (0.3 mg); can repeat every 5-15 minutes up to 1 mL (1 mg) total or Epinephrine auto-injector (EpiPen® or equivalent) (0.3 mL of 1.0 mg/mL (1:1,000) dilution, fixed [0.3mg]); can repeat every 5-15 minutes up to three times Consider calling emergency response team or 911 based upon the severity of the reaction and the completeness of the response * Note: in hypotensive patients, the preferred route of epinephrine delivery is IV, as the extremities may not be perfused sufficiently to allow for adequate absorption of IM administered drug.",
+          "quote": "Hypotension with bradycardia (pulse < 60 bpm) (Vasovagal reaction) If mild No other treatment usually necessary If severe In addition to above measures: Atropine (IV) 0.6-1.0 mg; administer into a running IV infusion (patient remains symptomatic despite above measures) of fluids; can repeat up to 3 mg total Consider calling the emergency response team or 911",
           "src": "R01",
           "cat": "超敏反应"
         },
@@ -11884,6 +12171,13 @@ window.KG_GRAPH = {
           "quote": "无需碘过敏试验，除非产品说明书注明特别要求",
           "src": "R03",
           "cat": "检查前准备"
+        },
+        {
+          "k": "皮试的 IgE 意义与 NIHR 机制",
+          "v": "重度过敏性休克者皮试常提示 IgE 介导机制，轻症者皮试多阴性；迟发超敏反应常由 T 细胞介导。",
+          "quote": "In patients with severe anaphylaxis, skin tests indicating an IgE‐mediated mechanism are often positive, whereas they mostly remain negative in those with mild reactions. NIHR are often caused by T cell‐mediated allergy.",
+          "src": "R13",
+          "cat": "分级处置"
         }
       ]
     },
@@ -11984,7 +12278,7 @@ window.KG_GRAPH = {
         {
           "k": "Radiology nurse vascular access protocol",
           "v": "Protocol at the study's radiology departments: all contrast media were externally heated to a target temperature of 37 degrees C to reduce viscosity before injection. For a high-pressure resistant central venous catheter (max tolerable pressure 300 psi), the radiology nurse drew blood back to confirm the catheter was in the vein and used 20 mL of normal saline to confirm patency before use. The nurse selected an 18G-22G high-pressure resistant peripheral short catheter (max tolerable pressure 350 psi) according to the proposed injection speed and the patient's vascular conditions.",
-          "quote": "CM injection Three hospitals used CM, including iodixanol, iohexol, ioversol, iomeprol, iopromide, iopamidol, etc., and before injection, all CM were externally heated to a target temperature of 37 °C to reduce viscosity. For enhanced-computed tomography, if the patient had a high-pressure resistant central venous catheter (the maximum tolerable pressure was 300 psi), the radiology nurse drew blood back to confirm that the catheter was in the vein and used 20 mL of normal saline to confirm its patency before use. Central venous catheters labeled with high-pressure resistant labels can be used for high-pressure injection of iodine containing contrast agents. In addition, the radiology nurse selected the 18G‒22G [17] high-pressure resistant peripheral short catheter (the maximum tolerable pressure was 350 psi) according to the proposed injection speed and the patient's vascular conditions. Before the intravenous injection of CM, the radiology nurse again conducted routine tests on all intravenous routes by manually injecting normal saline to determine whether the catheter was unobstructed and to confirm that the catheter was located in the vein.",
+          "quote": "before injection, all CM were externally heated to a target temperature of 37 °C to reduce viscosity. For enhanced-computed tomography, if the patient had a high-pressure resistant central venous catheter (the maximum tolerable pressure was 300 psi), the radiology nurse drew blood back to confirm that the catheter was in the vein and used 20 mL of normal saline to confirm its patency before use. Central venous catheters labeled with high-pressure resistant labels can be used for high-pressure injection of iodine containing contrast agents. In addition, the radiology nurse selected the 18G‒22G [17] high-pressure resistant peripheral short catheter (the maximum tolerable pressure was 350 psi) according to the proposed injection speed and the patient's vascular conditions.",
           "src": "EN-05",
           "cat": "对比剂安全"
         },
@@ -12172,7 +12466,7 @@ window.KG_GRAPH = {
         {
           "k": "Radiology nurse vascular access protocol",
           "v": "Protocol at the study's radiology departments: all contrast media were externally heated to a target temperature of 37 degrees C to reduce viscosity before injection. For a high-pressure resistant central venous catheter (max tolerable pressure 300 psi), the radiology nurse drew blood back to confirm the catheter was in the vein and used 20 mL of normal saline to confirm patency before use. The nurse selected an 18G-22G high-pressure resistant peripheral short catheter (max tolerable pressure 350 psi) according to the proposed injection speed and the patient's vascular conditions.",
-          "quote": "CM injection Three hospitals used CM, including iodixanol, iohexol, ioversol, iomeprol, iopromide, iopamidol, etc., and before injection, all CM were externally heated to a target temperature of 37 °C to reduce viscosity. For enhanced-computed tomography, if the patient had a high-pressure resistant central venous catheter (the maximum tolerable pressure was 300 psi), the radiology nurse drew blood back to confirm that the catheter was in the vein and used 20 mL of normal saline to confirm its patency before use. Central venous catheters labeled with high-pressure resistant labels can be used for high-pressure injection of iodine containing contrast agents. In addition, the radiology nurse selected the 18G‒22G [17] high-pressure resistant peripheral short catheter (the maximum tolerable pressure was 350 psi) according to the proposed injection speed and the patient's vascular conditions. Before the intravenous injection of CM, the radiology nurse again conducted routine tests on all intravenous routes by manually injecting normal saline to determine whether the catheter was unobstructed and to confirm that the catheter was located in the vein.",
+          "quote": "before injection, all CM were externally heated to a target temperature of 37 °C to reduce viscosity. For enhanced-computed tomography, if the patient had a high-pressure resistant central venous catheter (the maximum tolerable pressure was 300 psi), the radiology nurse drew blood back to confirm that the catheter was in the vein and used 20 mL of normal saline to confirm its patency before use. Central venous catheters labeled with high-pressure resistant labels can be used for high-pressure injection of iodine containing contrast agents. In addition, the radiology nurse selected the 18G‒22G [17] high-pressure resistant peripheral short catheter (the maximum tolerable pressure was 350 psi) according to the proposed injection speed and the patient's vascular conditions.",
           "src": "EN-05",
           "cat": "对比剂安全"
         },
@@ -12486,7 +12780,7 @@ window.KG_GRAPH = {
         {
           "k": "High injection pressure plus low muscle index",
           "v": "Contrast extravasation risk in abdominal CTA was associated with both high injection pressure profiles and low CT-derived skeletal muscle index. Extravasation occurred in 380 patients (3.05%); patients with extravasation had lower L3 SMI, a higher prevalence of sarcopenia, higher peak pressures, and elevated injection pressure-to-rate ratios. The combined model achieved an AUC of 0.941 (95% CI 0.927-0.955), showing higher discrimination than the pressure-only model (AUC 0.926), body composition-only model (AUC 0.840), and clinical-only model (AUC 0.796).",
-          "quote": "Contrast extravasation risk in abdominal CTA was associated with both high injection pressure profiles and low CT-derived skeletal muscle index. The combined clinical-pressure-body composition model showed higher discrimination than single-domain models after correction of the ROC-labeling error. What are the implications of the main findings? Opportunistic body composition assessment may refine pre-injection risk stratification without additional scanning or radiation exposure. The results provide a basis for future nurse-led, model-informed vascular access planning, but prospective external validation is required before routine deployment. Abstract Purpose: Contrast media extravasation can complicate CT angiography (CTA), particularly when high-flow injection protocols are used. Current risk assessment relies mainly on clinical factors and injection pressure monitoring, whereas opportunistic CT-derived body composition has rarely been evaluated for this purpose. Methods: This single-center retrospective cohort study analyzed 12,460 consecutive adult patients who underwent contrast-enhanced abdominal CTA. The L3 skeletal muscle index (SMI) was extracted from routine CT images, and pressure metrics were obtained from power injector logs. Logistic-regression models incorporating clinical variables, pressure parameters, and body composition variables were evaluated and internally validated. Results: Extravasation occurred in 380 patients (3.05%). Patients with extravasation had lower L3 SMI, a higher prevalence of sarcopenia, higher peak pressures, and elevated injection pressure-to-rate ratios (IPIRs). In multivariable analysis, lower L3 SMI, sarcopenia, peak pressure, IPIR, age, catheter gauge, and injection site were associated with extravasation. The combined model achieved an AUC of 0.941 (95% CI 0.927-0.955), showing higher discrimination than the pressure-only model (AUC 0.926, 95% CI 0.910-0.942), body composition-only model (AUC 0.840, 95% CI 0.819-0.861), and clinical-only model (AUC 0.796, 95% CI 0.772-0.820). The bootstrap optimism-corrected AUC was 0.928.",
+          "quote": "Results: Extravasation occurred in 380 patients (3.05%). Patients with extravasation had lower L3 SMI, a higher prevalence of sarcopenia, higher peak pressures, and elevated injection pressure-to-rate ratios (IPIRs). In multivariable analysis, lower L3 SMI, sarcopenia, peak pressure, IPIR, age, catheter gauge, and injection site were associated with extravasation. The combined model achieved an AUC of 0.941 (95% CI 0.927-0.955), showing higher discrimination than the pressure-only model (AUC 0.926, 95% CI 0.910-0.942), body composition-only model (AUC 0.840, 95% CI 0.819-0.861), and clinical-only model (AUC 0.796, 95% CI 0.772-0.820).",
           "src": "EN-21",
           "cat": "风险因素"
         },
@@ -12618,7 +12912,7 @@ window.KG_GRAPH = {
         {
           "k": "Outpatient observation and follow-up pathway",
           "v": "After contrast media extravasation, outpatients were observed in the radiology injection room for 2 hours. If the injection site showed no blistering or evident pain they could leave hospital with family and receive daily follow-up. If symptoms worsened or became uncontrollable after discharge, the hospital's intravenous treatment nurses and wound nurses intervened in a timely manner. Inpatients were observed on the ward and were not discharged within 24 hours of extravasation.",
-          "quote": "All symptoms resolved within 2 weeks Severe extravasation damage Serious adverse effects; cyanosis, tissue necrosis, or symptoms lasting more than 2 weeks, such as persistent pain and edema, difficulty in locomotion, and cases requiring surgery After the occurrence of CM extravasation, outpatients were observed in the injection room of the radiology department for 2 h. If the injection site did not show any signs of blistering or evident pain, they could leave the hospital accompanied by their family members and receive daily follow-up. If the symptoms worsen or become uncontrollable after leaving the hospital, the hospital's intravenous treatment nurses and wound nurses will intervene in a timely manner for treatment. Inpatients were observed in the original inpatient department and were not discharged within 24 h after extravasation.",
+          "quote": "After the occurrence of CM extravasation, outpatients were observed in the injection room of the radiology department for 2 h. If the injection site did not show any signs of blistering or evident pain, they could leave the hospital accompanied by their family members and receive daily follow-up. If the symptoms worsen or become uncontrollable after leaving the hospital, the hospital's intravenous treatment nurses and wound nurses will intervene in a timely manner for treatment. Inpatients were observed in the original inpatient department and were not discharged within 24 h after extravasation.",
           "src": "EN-05",
           "cat": "护理能力与记录"
         },
@@ -12858,6 +13152,13 @@ window.KG_GRAPH = {
           "v": "计划性造影（RCM）、脱敏、输注前若 β 阻滞剂/ACEI 不能安全停用，须共同决策权衡必要性与其加重反应的风险",
           "quote": "For planned procedures that carry a risk of anaphylaxis (eg, radiocontrast media [RCM], challenge/desensitization, and infusion), if the BBs/ACEIs cannot be safely interrupted",
           "src": "R16",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "β 阻滞剂不需停药（ACR 手册）",
+          "v": "使用 β 阻滞剂可能降低对比剂反应的阈值、加剧反应严重程度，并降低肾上腺素治疗的反应性；因风险增加有限，不推荐仅因使用 β 阻滞剂而限制对比剂使用或给予预处理用药；正在服用 β 阻滞剂的患者在对比剂给药前无需停用该药。",
+          "quote": "Beta-Blockers: Some have suggested that use of beta-blockers lowers the threshold for contrast reactions, increases the severity of contrast reactions, and reduces the responsiveness of treatment with epinephrine [9]. Due to the modest increased risk, restricting contrast medium use or premedicating solely on the basis of beta-blocker use is not recommended. Patients on beta-blocker therapy do not need to discontinue their medication(s) prior to contrast medium administration.",
+          "src": "R01",
           "cat": "特殊人群"
         }
       ]
@@ -13510,7 +13811,7 @@ window.KG_GRAPH = {
         {
           "k": "ACR Table 3 bronchospasm doses",
           "v": "ACR Table 3, bronchospasm: all forms - preserve IV access, monitor vitals, pulse oximeter, O2 by mask 6-10 L/min. Mild: beta agonist inhaler 2 puffs (90 mcg/puff) = 180 mcg, up to 3 times. Moderate: same beta agonist plus consider epinephrine IM 0.3 mL of 1.0 mg/mL (1:1,000) = 0.3 mg, repeat every 5-15 minutes up to 1 mL (1 mg) total.",
-          "quote": "BRONCHOSPASM Treatment Dosing All forms Preserve IV access Monitor vitals Pulse oximeter O2 by mask 6-10 L/min Mild Beta agonist inhaler (Albuterol®) 2 puffs (90 mcg/puff) for a total of 180 mcg; can repeat up to 3 times Consider sending patient to the Emergency Department or calling emergency response team or 911, based upon the completeness of the response to the beta agonist inhaler Moderate Beta agonist inhaler (Albuterol®) 2 puffs (90 mcg/puff) for a total of 180 mcg; can repeat up to 3 times Consider adding epinephrine (IM)* IM 0.3 mL of 1.0 mg/mL (1:1,000) dilution (0.3 mg); can repeat every 5-15 minutes up to 1 mL (1 mg) total or Epinephrine auto-injector (EpiPen® or equivalent) (0.3 mL of 1.0 mg/mL (1:1,000) dilution, fixed [0.3mg]); can repeat every 5-15 minutes up to three times or Epinephrine (IV)* IV 1 mL of 0.1 mg/mL(1:10,000) dilution (0.1 mg); administer slowly into a running IV infusion of fluids or use saline flush; can repeat every few minutes as needed up to 10 mL (1 mg) total Consider calling emergency response team or 911 based upon the completeness of the response Severe Epinephrine (IV)* IV 1 mL of 0.1 mg/mL (1:10,000) dilution (0.1 mg); administer slowly into a running IV infusion of fluids or slow IV push followed by a slow saline flush; can repeat every few minutes as needed up to 10 mL (1 mg) total or Epinephrine (IM)* IM 0.3 mL of 1:1,000 dilution (0.3 mg); can repeat every 5-15 minutes up to 1 mL (1 mg) total or Epinephrine auto-injector (EpiPen® or equivalent) (0.3 mL of 1.0 mg/mL(1:1,000) dilution, Fixed [0.3mg]); can repeat every 5-15 minutes up to three times AND 2 puffs (90 mcg/puff) for a total of 180 mcg; can repeat up to 3 Beta agonist inhaler (Albuterol®) (may work times synergistically) Call emergency response team or 911 * Note: in hypotensive patients, the preferred route of epinephrine delivery is IV, as the extremities may not be perfused sufficiently to allow for adequate absorption of IM administered drug.",
+          "quote": "BRONCHOSPASM Treatment Dosing All forms Preserve IV access Monitor vitals Pulse oximeter O2 by mask 6-10 L/min Mild Beta agonist inhaler (Albuterol®) 2 puffs (90 mcg/puff) for a total of 180 mcg; can repeat up to 3 times Consider sending patient to the Emergency Department or calling emergency response team or 911, based upon the completeness of the response to the beta agonist inhaler Moderate Beta agonist inhaler (Albuterol®) 2 puffs (90 mcg/puff) for a total of 180 mcg; can repeat up to 3 times Consider adding epinephrine (IM)* IM 0.3 mL of 1.0 mg/mL (1:1,000) dilution (0.3 mg); can repeat every 5-15 minutes up to 1 mL (1 mg) total or Epinephrine auto-injector (EpiPen® or equivalent) (0.3 mL of 1.0 mg/mL (1:1,000) dilution, fixed [0.3mg]); can repeat every 5-15 minutes up to three times or Epinephrine (IV)* IV 1 mL of 0.1 mg/mL(1:10,000) dilution (0.1 mg); administer slowly into a running IV infusion of fluids or use saline flush; can repeat every few minutes as needed up to 10 mL (1 mg) total Consider calling emergency response team or 911 based upon the completeness of the response",
           "src": "R01",
           "cat": "超敏反应"
         },
@@ -14219,7 +14520,7 @@ window.KG_GRAPH = {
         {
           "k": "Radiology nurse vascular access protocol",
           "v": "Protocol at the study's radiology departments: all contrast media were externally heated to a target temperature of 37 degrees C to reduce viscosity before injection. For a high-pressure resistant central venous catheter (max tolerable pressure 300 psi), the radiology nurse drew blood back to confirm the catheter was in the vein and used 20 mL of normal saline to confirm patency before use. The nurse selected an 18G-22G high-pressure resistant peripheral short catheter (max tolerable pressure 350 psi) according to the proposed injection speed and the patient's vascular conditions.",
-          "quote": "CM injection Three hospitals used CM, including iodixanol, iohexol, ioversol, iomeprol, iopromide, iopamidol, etc., and before injection, all CM were externally heated to a target temperature of 37 °C to reduce viscosity. For enhanced-computed tomography, if the patient had a high-pressure resistant central venous catheter (the maximum tolerable pressure was 300 psi), the radiology nurse drew blood back to confirm that the catheter was in the vein and used 20 mL of normal saline to confirm its patency before use. Central venous catheters labeled with high-pressure resistant labels can be used for high-pressure injection of iodine containing contrast agents. In addition, the radiology nurse selected the 18G‒22G [17] high-pressure resistant peripheral short catheter (the maximum tolerable pressure was 350 psi) according to the proposed injection speed and the patient's vascular conditions. Before the intravenous injection of CM, the radiology nurse again conducted routine tests on all intravenous routes by manually injecting normal saline to determine whether the catheter was unobstructed and to confirm that the catheter was located in the vein.",
+          "quote": "before injection, all CM were externally heated to a target temperature of 37 °C to reduce viscosity. For enhanced-computed tomography, if the patient had a high-pressure resistant central venous catheter (the maximum tolerable pressure was 300 psi), the radiology nurse drew blood back to confirm that the catheter was in the vein and used 20 mL of normal saline to confirm its patency before use. Central venous catheters labeled with high-pressure resistant labels can be used for high-pressure injection of iodine containing contrast agents. In addition, the radiology nurse selected the 18G‒22G [17] high-pressure resistant peripheral short catheter (the maximum tolerable pressure was 350 psi) according to the proposed injection speed and the patient's vascular conditions.",
           "src": "EN-05",
           "cat": "对比剂安全"
         },
@@ -14339,7 +14640,7 @@ window.KG_GRAPH = {
         {
           "k": "Existing IV versus new radiology-placed cannula",
           "v": "IV cannulas inserted by non-radiology staff prior to arrival gave extravasation rates of 0.58% versus 0.33% for cannulas inserted by radiology staff immediately before scanning (P < .001). Contributing factors: cannulas placed more than 24 hours earlier or after multiple attempts; dislodgement during transport; and site preference (radiology preferred upper forearm, non-radiology staff preferred smaller more peripheral hand veins, which are more prone to extravasation).",
-          "quote": "These factors increase the likelihood of extravasation in elderly.[21,37,38] 3.4.Cannula insertion by radiology staff versus using an existing IV Three studies[28,31,34] reported on the rate of extravasation during CT scanning with IV cannula insertions performed by nonradiology staff (0.58%) prior to patient arrival in the radiology department as compared with IV catheter insertions performed by radiology staff immediately prior to scanning (0.33%) (P < .001) (Table 5). A number of factors might account for this difference: the IV cannulas inserted by nonradiology staff may have been in place for more than 24 h or inserted after multiple attempts, with no extravasation with drip infusions but leaks at the higher injection rates used for CT and MRI.[40-44] Catheters could be dislodged during transportation of the patient to the CT scanner from the patient floor.",
+          "quote": "3.4.Cannula insertion by radiology staff versus using an existing IV Three studies[28,31,34] reported on the rate of extravasation during CT scanning with IV cannula insertions performed by nonradiology staff (0.58%) prior to patient arrival in the radiology department as compared with IV catheter insertions performed by radiology staff immediately prior to scanning (0.33%) (P < .001) (Table 5). A number of factors might account for this difference: the IV cannulas inserted by nonradiology staff may have been in place for more than 24 h or inserted after multiple attempts, with no extravasation with drip infusions but leaks at the higher injection rates used for CT and MRI.[40-44] Catheters could be dislodged during transportation of the patient to the CT scanner from the patient floor.",
           "src": "EN-06",
           "cat": "风险因素"
         },
@@ -14539,7 +14840,7 @@ window.KG_GRAPH = {
         {
           "k": "Incidence and inject parameters observed",
           "v": "Results Over a 4‐year period, in our hospital, 80 cases of CM extravasation were reported from approximately 218 000 CT scans using an intravenous contrast agent, representing an incidence rate of 0·036%. The mean age of the 80 patients (52 women, 28 men) was 58 years at the time of diagnosis (range 2-94 years). The most common anatomical locations of extravasation were the forearm area (right: 28, left: 34), followed by the dorsum of the hand (right: 11, left: 5) and two other sites. The injected flow rates ranged from 0·6 to 5 ml/second. In all cases, a power CM injector was used. Mean volume of the extravasated agent was 44·5 ml (range 5-140 ml).",
-          "quote": "Results Over a 4‐year period, in our hospital, 80 cases of CM extravasation were reported from approximately 218 000 CT scans using an intravenous contrast agent, representing an incidence rate of 0·036%. The mean age of the 80 patients (52 women, 28 men) was 58 years at the time of diagnosis (range 2-94 years). Figure 2 shows the incidence of the CM extravasation by age. The most common anatomical locations of extravasation were the forearm area (right: 28, left: 34), followed by the dorsum of the hand (right: 11, left: 5) and two other sites. Five different brands of non‐ionic contrast agents were given in all the cases, Bonorex (Central Medical Service, Seoul, Korea), Omnihexol (Korea United Pharm, Seoul, Korea), Optiray (Reyon Phram, Seoul, Korea), Scanlux (Dasol Life Science, Seoul, Korea) and Iomeron (Bracco Imaging Korea, Seoul, Korea). The injected flow rates ranged from 0·6 to 5 ml/second. In all cases, a power CM injector was used. The mean gauge of needles for the power injector was 20·2 (range 18-24). Mean volume of the extravasated agent was 44·5 ml (range 5-140 ml). The mean flow rate of the power CM injector was 2·8 ml/second (range 0·6-5 ml/second).",
+          "quote": "Results Over a 4‐year period, in our hospital, 80 cases of CM extravasation were reported from approximately 218 000 CT scans using an intravenous contrast agent, representing an incidence rate of 0·036%. The mean age of the 80 patients (52 women, 28 men) was 58 years at the time of diagnosis (range 2-94 years). Figure 2 shows the incidence of the CM extravasation by age. The most common anatomical locations of extravasation were the forearm area (right: 28, left: 34), followed by the dorsum of the hand (right: 11, left: 5) and two other sites. Five different brands of non‐ionic contrast agents were given in all the cases, Bonorex (Central Medical Service, Seoul, Korea), Omnihexol (Korea United Pharm, Seoul, Korea), Optiray (Reyon Phram, Seoul, Korea), Scanlux (Dasol Life Science, Seoul, Korea) and Iomeron (Bracco Imaging Korea, Seoul, Korea). The injected flow rates ranged from 0·6 to 5 ml/second. In all cases, a power CM injector was used. The mean gauge of needles for the power injector was 20·2 (range 18-24). Mean volume of the extravasated agent was 44·5 ml (range 5-140 ml).",
           "src": "EN-07",
           "cat": "处置"
         }
@@ -14780,14 +15081,14 @@ window.KG_GRAPH = {
         {
           "k": "Hyaluronidase and aspiration not recommended",
           "v": "Recommendation 3: routine use of hyaluronidase or corticosteroid injections or aspiration of the affected limb is not recommended (strength of evidence Limited 1). There is no consistent evidence that local injection of corticosteroids or hyaluronidase is beneficial; no adequate studies confirm efficacy of hyaluronidase after contrast media extravasation. Topical silver sulfadiazine and steroid cream three to four times daily has been suggested for blistering, though efficacy is unknown.",
-          "quote": "Strength of evidence: Limited 3 Reference # Original SQ Reassessed SQ Final SQ 22 4 - 4 24 4 - 4 Recommendation 2: Cold compresses or ice packs should initially be applied to the extravasation site (rather than warm compresses) Strength of evidence: Limited 1 Reference # Original SQ Reassessed SQ Final SQ 22 4 - 4 23 - 24 Inadequate - Inadequate 25 4 - 4 1 1 Recommendation 3: Routine use of hyaluronidase or corticosteroid injections or aspiration of the affected limb is not recommended. Strength of evidence: Limited 1 Reference # Original SQ Reassessed SQ Final SQ 15 4 4 4 22 4 - 4 28 4 - 4 29 2 - 2 Recommendation 4: All discharged outpatients should be given clear instructions concerning where and when to seek additional medical care (including for worsening pain, development of paresthesia, diminished range of motion, and new skin ulceration o r blistering) as severe extravasation could develop several hours later.",
+          "quote": "Recommendation 3: Routine use of hyaluronidase or corticosteroid injections or aspiration of the affected limb is not recommended. Strength of evidence: Limited 1",
           "src": "R01",
           "cat": "处置"
         },
         {
           "k": "Initial management steps uncontroversial",
           "v": "Initial management of contrast media extravasation injury is well defined: stopping the infusion, attempting aspiration through the original cannula, splinting and elevating the limb, and applying cooling attract little controversy. Cohan described 22 cases of extravasation over 30 mL, none of whom required surgery and who had no long-term adverse effects; Sistrom corroborated this with 28 cases.",
-          "quote": "Management Options Conservative Management The initial management of CMEI is well defined. The initial steps of stopping the infusion, attempting aspiration through the original cannula, splinting and elevating the limb, and applying cooling attract little controversy. Cohan described 22 cases of CMEI > 30 mL, none of whom required surgery and had no long-term adverse effects, and Sistrom corroborated this with a study of 28 cases.3, 11 Ko et al successfully managed 9 cases of CMEI with up to 90 mL of various low-osmolar solutions conservatively, advocating the use of room temperature damp gauze rather than ice packs and Silvadene ointment with clobetasol cream.",
+          "quote": "Management Options Conservative Management The initial management of CMEI is well defined. The initial steps of stopping the infusion, attempting aspiration through the original cannula, splinting and elevating the limb, and applying cooling attract little controversy. Cohan described 22 cases of CMEI > 30 mL, none of whom required surgery and had no long-term adverse effects, and Sistrom corroborated this with a study of 28 cases.",
           "src": "EN-08",
           "cat": "处置"
         }
@@ -14852,7 +15153,7 @@ window.KG_GRAPH = {
         {
           "k": "Surgical referral is clinical not volume based",
           "v": "Surgical opinion is recommended for extravasate over 150 ml, but the overall decision should be clinical - based on red flag signs and symptoms rather than an arbitrary CMEX volume. Fasciotomy should be performed within 2 hours to avoid muscle necrosis and nerve damage; surgery performed within 90 to 300 min has been reported to conserve all extremities. Red flags: painful active flexion, passive extension, neurosensory disturbance, increasing swelling; highest-risk locations are the volar forearm and the hand.",
-          "quote": "Whilst a radiologist can attend to mild cases, in more severe cases, a surgeon should be urgently consulted, and fasciotomy should be performed within 2 h to avoid muscle necrosis and nerve damage. Surgery performed within 90 to 300 min has been reported to conserve all extremities with favourable prognosis [54]. Sbitany et al. in a study of 102 cases of CMEX used a threshold of 30 ml extravasate as a referral prompt [55] and none required surgery, even in the 10% with > 100 ml CMEX volume. Wang et al. reported similar findings where even extravasate volumes of up to 150 ml of non-ionic IBCM were conservatively managed, suggesting no discrete threshold extravasate volume should be set [56]. Dykes et al. suggest that larger extravasated volumes correlate with moderate-to-severe injuries, but the data does not support using a volume threshold to determine surgical referral or more aggressive management [23]. Nevertheless, in unusual cases with very large volumes of extravasate (> 150 ml), the consensus remains that surgical consult is appropriate. Overall, the decision to refer for surgical intervention should be a clinical one-i.e. based on red flag signs and symptoms, rather than arbitrary CMEX volumes. Conclusion This review highlights the key up-to-date evidence pertaining to CMEX summarising the important risk factors and a systematic approach to management.",
+          "quote": "Whilst a radiologist can attend to mild cases, in more severe cases, a surgeon should be urgently consulted, and fasciotomy should be performed within 2 h to avoid muscle necrosis and nerve damage. Surgery performed within 90 to 300 min has been reported to conserve all extremities with favourable prognosis [54]. Sbitany et al. in a study of 102 cases of CMEX used a threshold of 30 ml extravasate as a referral prompt [55] and none required surgery, even in the 10% with > 100 ml CMEX volume. Wang et al. reported similar findings where even extravasate volumes of up to 150 ml of non-ionic IBCM were conservatively managed, suggesting no discrete threshold extravasate volume should be set [56]. Dykes et al. suggest that larger extravasated volumes correlate with moderate-to-severe injuries, but the data does not support using a volume threshold to determine surgical referral or more aggressive management [23]. Nevertheless, in unusual cases with very large volumes of extravasate (> 150 ml), the consensus remains that surgical consult is appropriate. Overall, the decision to refer for surgical intervention should be a clinical one-i.e. based on red flag signs and symptoms, rather than arbitrary CMEX volumes.",
           "src": "EN-01",
           "cat": "处置"
         },
@@ -14925,7 +15226,7 @@ window.KG_GRAPH = {
         {
           "k": "Initial management steps uncontroversial",
           "v": "Initial management of contrast media extravasation injury is well defined: stopping the infusion, attempting aspiration through the original cannula, splinting and elevating the limb, and applying cooling attract little controversy. Cohan described 22 cases of extravasation over 30 mL, none of whom required surgery and who had no long-term adverse effects; Sistrom corroborated this with 28 cases.",
-          "quote": "Management Options Conservative Management The initial management of CMEI is well defined. The initial steps of stopping the infusion, attempting aspiration through the original cannula, splinting and elevating the limb, and applying cooling attract little controversy. Cohan described 22 cases of CMEI > 30 mL, none of whom required surgery and had no long-term adverse effects, and Sistrom corroborated this with a study of 28 cases.3, 11 Ko et al successfully managed 9 cases of CMEI with up to 90 mL of various low-osmolar solutions conservatively, advocating the use of room temperature damp gauze rather than ice packs and Silvadene ointment with clobetasol cream.",
+          "quote": "Management Options Conservative Management The initial management of CMEI is well defined. The initial steps of stopping the infusion, attempting aspiration through the original cannula, splinting and elevating the limb, and applying cooling attract little controversy. Cohan described 22 cases of CMEI > 30 mL, none of whom required surgery and had no long-term adverse effects, and Sistrom corroborated this with a study of 28 cases.",
           "src": "EN-08",
           "cat": "处置"
         }
@@ -15171,7 +15472,7 @@ window.KG_GRAPH = {
         {
           "k": "Outpatient observation and follow-up pathway",
           "v": "After contrast media extravasation, outpatients were observed in the radiology injection room for 2 hours. If the injection site showed no blistering or evident pain they could leave hospital with family and receive daily follow-up. If symptoms worsened or became uncontrollable after discharge, the hospital's intravenous treatment nurses and wound nurses intervened in a timely manner. Inpatients were observed on the ward and were not discharged within 24 hours of extravasation.",
-          "quote": "All symptoms resolved within 2 weeks Severe extravasation damage Serious adverse effects; cyanosis, tissue necrosis, or symptoms lasting more than 2 weeks, such as persistent pain and edema, difficulty in locomotion, and cases requiring surgery After the occurrence of CM extravasation, outpatients were observed in the injection room of the radiology department for 2 h. If the injection site did not show any signs of blistering or evident pain, they could leave the hospital accompanied by their family members and receive daily follow-up. If the symptoms worsen or become uncontrollable after leaving the hospital, the hospital's intravenous treatment nurses and wound nurses will intervene in a timely manner for treatment. Inpatients were observed in the original inpatient department and were not discharged within 24 h after extravasation.",
+          "quote": "After the occurrence of CM extravasation, outpatients were observed in the injection room of the radiology department for 2 h. If the injection site did not show any signs of blistering or evident pain, they could leave the hospital accompanied by their family members and receive daily follow-up. If the symptoms worsen or become uncontrollable after leaving the hospital, the hospital's intravenous treatment nurses and wound nurses will intervene in a timely manner for treatment. Inpatients were observed in the original inpatient department and were not discharged within 24 h after extravasation.",
           "src": "EN-05",
           "cat": "护理能力与记录"
         },
@@ -15340,7 +15641,7 @@ window.KG_GRAPH = {
         {
           "k": "ACR Table 3 bronchospasm doses",
           "v": "ACR Table 3, bronchospasm: all forms - preserve IV access, monitor vitals, pulse oximeter, O2 by mask 6-10 L/min. Mild: beta agonist inhaler 2 puffs (90 mcg/puff) = 180 mcg, up to 3 times. Moderate: same beta agonist plus consider epinephrine IM 0.3 mL of 1.0 mg/mL (1:1,000) = 0.3 mg, repeat every 5-15 minutes up to 1 mL (1 mg) total.",
-          "quote": "BRONCHOSPASM Treatment Dosing All forms Preserve IV access Monitor vitals Pulse oximeter O2 by mask 6-10 L/min Mild Beta agonist inhaler (Albuterol®) 2 puffs (90 mcg/puff) for a total of 180 mcg; can repeat up to 3 times Consider sending patient to the Emergency Department or calling emergency response team or 911, based upon the completeness of the response to the beta agonist inhaler Moderate Beta agonist inhaler (Albuterol®) 2 puffs (90 mcg/puff) for a total of 180 mcg; can repeat up to 3 times Consider adding epinephrine (IM)* IM 0.3 mL of 1.0 mg/mL (1:1,000) dilution (0.3 mg); can repeat every 5-15 minutes up to 1 mL (1 mg) total or Epinephrine auto-injector (EpiPen® or equivalent) (0.3 mL of 1.0 mg/mL (1:1,000) dilution, fixed [0.3mg]); can repeat every 5-15 minutes up to three times or Epinephrine (IV)* IV 1 mL of 0.1 mg/mL(1:10,000) dilution (0.1 mg); administer slowly into a running IV infusion of fluids or use saline flush; can repeat every few minutes as needed up to 10 mL (1 mg) total Consider calling emergency response team or 911 based upon the completeness of the response Severe Epinephrine (IV)* IV 1 mL of 0.1 mg/mL (1:10,000) dilution (0.1 mg); administer slowly into a running IV infusion of fluids or slow IV push followed by a slow saline flush; can repeat every few minutes as needed up to 10 mL (1 mg) total or Epinephrine (IM)* IM 0.3 mL of 1:1,000 dilution (0.3 mg); can repeat every 5-15 minutes up to 1 mL (1 mg) total or Epinephrine auto-injector (EpiPen® or equivalent) (0.3 mL of 1.0 mg/mL(1:1,000) dilution, Fixed [0.3mg]); can repeat every 5-15 minutes up to three times AND 2 puffs (90 mcg/puff) for a total of 180 mcg; can repeat up to 3 Beta agonist inhaler (Albuterol®) (may work times synergistically) Call emergency response team or 911 * Note: in hypotensive patients, the preferred route of epinephrine delivery is IV, as the extremities may not be perfused sufficiently to allow for adequate absorption of IM administered drug.",
+          "quote": "BRONCHOSPASM Treatment Dosing All forms Preserve IV access Monitor vitals Pulse oximeter O2 by mask 6-10 L/min Mild Beta agonist inhaler (Albuterol®) 2 puffs (90 mcg/puff) for a total of 180 mcg; can repeat up to 3 times Consider sending patient to the Emergency Department or calling emergency response team or 911, based upon the completeness of the response to the beta agonist inhaler Moderate Beta agonist inhaler (Albuterol®) 2 puffs (90 mcg/puff) for a total of 180 mcg; can repeat up to 3 times Consider adding epinephrine (IM)* IM 0.3 mL of 1.0 mg/mL (1:1,000) dilution (0.3 mg); can repeat every 5-15 minutes up to 1 mL (1 mg) total or Epinephrine auto-injector (EpiPen® or equivalent) (0.3 mL of 1.0 mg/mL (1:1,000) dilution, fixed [0.3mg]); can repeat every 5-15 minutes up to three times or Epinephrine (IV)* IV 1 mL of 0.1 mg/mL(1:10,000) dilution (0.1 mg); administer slowly into a running IV infusion of fluids or use saline flush; can repeat every few minutes as needed up to 10 mL (1 mg) total Consider calling emergency response team or 911 based upon the completeness of the response",
           "src": "R01",
           "cat": "超敏反应"
         },
@@ -15537,7 +15838,7 @@ window.KG_GRAPH = {
         {
           "k": "Incidence and inject parameters observed",
           "v": "Results Over a 4‐year period, in our hospital, 80 cases of CM extravasation were reported from approximately 218 000 CT scans using an intravenous contrast agent, representing an incidence rate of 0·036%. The mean age of the 80 patients (52 women, 28 men) was 58 years at the time of diagnosis (range 2-94 years). The most common anatomical locations of extravasation were the forearm area (right: 28, left: 34), followed by the dorsum of the hand (right: 11, left: 5) and two other sites. The injected flow rates ranged from 0·6 to 5 ml/second. In all cases, a power CM injector was used. Mean volume of the extravasated agent was 44·5 ml (range 5-140 ml).",
-          "quote": "Results Over a 4‐year period, in our hospital, 80 cases of CM extravasation were reported from approximately 218 000 CT scans using an intravenous contrast agent, representing an incidence rate of 0·036%. The mean age of the 80 patients (52 women, 28 men) was 58 years at the time of diagnosis (range 2-94 years). Figure 2 shows the incidence of the CM extravasation by age. The most common anatomical locations of extravasation were the forearm area (right: 28, left: 34), followed by the dorsum of the hand (right: 11, left: 5) and two other sites. Five different brands of non‐ionic contrast agents were given in all the cases, Bonorex (Central Medical Service, Seoul, Korea), Omnihexol (Korea United Pharm, Seoul, Korea), Optiray (Reyon Phram, Seoul, Korea), Scanlux (Dasol Life Science, Seoul, Korea) and Iomeron (Bracco Imaging Korea, Seoul, Korea). The injected flow rates ranged from 0·6 to 5 ml/second. In all cases, a power CM injector was used. The mean gauge of needles for the power injector was 20·2 (range 18-24). Mean volume of the extravasated agent was 44·5 ml (range 5-140 ml). The mean flow rate of the power CM injector was 2·8 ml/second (range 0·6-5 ml/second).",
+          "quote": "Results Over a 4‐year period, in our hospital, 80 cases of CM extravasation were reported from approximately 218 000 CT scans using an intravenous contrast agent, representing an incidence rate of 0·036%. The mean age of the 80 patients (52 women, 28 men) was 58 years at the time of diagnosis (range 2-94 years). Figure 2 shows the incidence of the CM extravasation by age. The most common anatomical locations of extravasation were the forearm area (right: 28, left: 34), followed by the dorsum of the hand (right: 11, left: 5) and two other sites. Five different brands of non‐ionic contrast agents were given in all the cases, Bonorex (Central Medical Service, Seoul, Korea), Omnihexol (Korea United Pharm, Seoul, Korea), Optiray (Reyon Phram, Seoul, Korea), Scanlux (Dasol Life Science, Seoul, Korea) and Iomeron (Bracco Imaging Korea, Seoul, Korea). The injected flow rates ranged from 0·6 to 5 ml/second. In all cases, a power CM injector was used. The mean gauge of needles for the power injector was 20·2 (range 18-24). Mean volume of the extravasated agent was 44·5 ml (range 5-140 ml).",
           "src": "EN-07",
           "cat": "处置"
         },
@@ -15834,7 +16135,7 @@ window.KG_GRAPH = {
         {
           "k": "Ultrasound-guided access and pre-existing cannula",
           "v": "Ultrasound-guided cannula insertion carried higher extravasation rates (3.6%) than standard insertion (0.3%), attributed to prior failed attempts and deeper veins permitting a shorter intravascular cannula length that can dislodge. A newly sited cannula gave a smaller extravasate volume (40.6 ml vs 63.1 ml, p = 0.0005) than reusing an existing cannula, so a new cannula is advised for at-risk patients.",
-          "quote": "Cannula insertion technical factors A non-randomised retrospective study found higher rates of extravasation in patients who had ultrasound-guided cannula insertion (3.6%) vs. standard insertion (0.3%). However, the numbers of patients in each group were drastically different-364 in the ultrasound-guided cannula inserted group and 896 in the standard cannula inserted group (2% of a random sample of 40,143 patients). The difference in results in this study is likely due to confounding variables; i.e. prior failure of standard insertion and with deeper veins there is potentially a shorter length of intravascular cannula hence greater potential for dislodgement upon injection [47]. The type of healthcare worker who inserts the IV cannula was investigated by Sinan et al. which showed that CMEX rates were higher when inserted by non-radiology staff (0.3%) as compared to radiology staff (0.2%). However, this difference did not demonstrate statistical significance and a number of confounders could explain this difference [34]. Another study evaluated extravasation between newly inserted cannula vs. use of an existing cannula for CM injection with a difference in rates and a reduced volume of extravasate observed with those freshly sited (40.6 ml vs. 63.1 ml, p = 0.0005) [46], despite older cannulae being checked for flush efficacy. Therefore, consideration should be given to placing a new cannula for at-risk patients to reduce potential impact of any extravasation. Chemical properties of CM Three main contrast media properties have been studied in relation to CMEX: osmolarity, charge and viscosity.",
+          "quote": "Cannula insertion technical factors A non-randomised retrospective study found higher rates of extravasation in patients who had ultrasound-guided cannula insertion (3.6%) vs. standard insertion (0.3%). However, the numbers of patients in each group were drastically different-364 in the ultrasound-guided cannula inserted group and 896 in the standard cannula inserted group (2% of a random sample of 40,143 patients). The difference in results in this study is likely due to confounding variables; i.e. prior failure of standard insertion and with deeper veins there is potentially a shorter length of intravascular cannula hence greater potential for dislodgement upon injection [47]. The type of healthcare worker who inserts the IV cannula was investigated by Sinan et al. which showed that CMEX rates were higher when inserted by non-radiology staff (0.3%) as compared to radiology staff (0.2%). However, this difference did not demonstrate statistical significance and a number of confounders could explain this difference [34]. Another study evaluated extravasation between newly inserted cannula vs. use of an existing cannula for CM injection with a difference in rates and a reduced volume of extravasate observed with those freshly sited (40.6 ml vs. 63.1 ml, p = 0.0005) [46], despite older cannulae being checked for flush efficacy. Therefore, consideration should be given to placing a new cannula for at-risk patients to reduce potential impact of any extravasation.",
           "src": "EN-01",
           "cat": "风险因素"
         },
@@ -15848,7 +16149,7 @@ window.KG_GRAPH = {
         {
           "k": "Existing IV versus new radiology-placed cannula",
           "v": "IV cannulas inserted by non-radiology staff prior to arrival gave extravasation rates of 0.58% versus 0.33% for cannulas inserted by radiology staff immediately before scanning (P < .001). Contributing factors: cannulas placed more than 24 hours earlier or after multiple attempts; dislodgement during transport; and site preference (radiology preferred upper forearm, non-radiology staff preferred smaller more peripheral hand veins, which are more prone to extravasation).",
-          "quote": "These factors increase the likelihood of extravasation in elderly.[21,37,38] 3.4.Cannula insertion by radiology staff versus using an existing IV Three studies[28,31,34] reported on the rate of extravasation during CT scanning with IV cannula insertions performed by nonradiology staff (0.58%) prior to patient arrival in the radiology department as compared with IV catheter insertions performed by radiology staff immediately prior to scanning (0.33%) (P < .001) (Table 5). A number of factors might account for this difference: the IV cannulas inserted by nonradiology staff may have been in place for more than 24 h or inserted after multiple attempts, with no extravasation with drip infusions but leaks at the higher injection rates used for CT and MRI.[40-44] Catheters could be dislodged during transportation of the patient to the CT scanner from the patient floor.",
+          "quote": "3.4.Cannula insertion by radiology staff versus using an existing IV Three studies[28,31,34] reported on the rate of extravasation during CT scanning with IV cannula insertions performed by nonradiology staff (0.58%) prior to patient arrival in the radiology department as compared with IV catheter insertions performed by radiology staff immediately prior to scanning (0.33%) (P < .001) (Table 5). A number of factors might account for this difference: the IV cannulas inserted by nonradiology staff may have been in place for more than 24 h or inserted after multiple attempts, with no extravasation with drip infusions but leaks at the higher injection rates used for CT and MRI.[40-44] Catheters could be dislodged during transportation of the patient to the CT scanner from the patient floor.",
           "src": "EN-06",
           "cat": "风险因素"
         }
@@ -15937,14 +16238,14 @@ window.KG_GRAPH = {
         {
           "k": "Hand veins and small-bore catheters worse",
           "v": "Extravasations occurred more frequently with catheters in hand veins than larger veins; for 20-gauge catheters there was a significant difference between dorsum of hand and antecubital fossa (1.8% vs 0.8%; P = .018). A separate investigation found small-diameter angio-catheters (22-gauge) associated with higher extravasation rates (2.2%; P < .05) independent of anatomic location. Based on one study, relative risk was 0.4 for antecubital IV, 9.4 for deep brachial IV and 1.7 for all other IV sites.",
-          "quote": "Extravasations occurred more frequently in IV catheters placed into hand veins compared with larger veins; for 20-gauge IV catheters, a significant difference between the dorsum of the hand and the antecubital fossa was noticed (1.8% vs. 0.8%; P = .018).[30] Table 6Three papers[27,30,35] reported the rates of extravasation of iodinated contrast media (mostly nonionic) for different sites of injection. Based on the findings of Hardie et al, the rate of extravasation for antecubital IV, deep brachial IV and all other IV sites was 0.6%, 6.5%, and 0.9%, respectively. The relative risk of extravasation for antecubital IV, deep brachial IV, and all other IV sites was 0.4, 9.4, and 1.7, respectively.[35] This finding is in line with results of another study that reported a significantly higher rate of extravasation injuries with injections into dorsum of the hand when compared with antecubital fossa injections.[26] 3.6.Catheter size Jacobs et al found no difference in extravasation rate for different catheter sizes,[27] but an investigation by Wienbeck et al found that small diameter angio-catheters (e.g., 22-gauge) were associated with higher rates of contrast material extravasation (2.2%; P < .05), independent of the anatomic location.[29] Their finding corroborated a previous report by Cohan et al which found that extravasations were significantly higher in patients receiving Contrast Media injection through small-bore catheters.[25] These observations may be confounded by the use of smaller bore catheters in smaller more tenuous veins.[21] 3.7.Power versus manual injection The introduction of automated power injection enabled larger volumes of contrast media to be injected at higher flow rates than are possible with hand injection.",
+          "quote": "Extravasations occurred more frequently in IV catheters placed into hand veins compared with larger veins; for 20-gauge IV catheters, a significant difference between the dorsum of the hand and the antecubital fossa was noticed (1.8% vs. 0.8%; P = .018).[30] Table 6Three papers[27,30,35] reported the rates of extravasation of iodinated contrast media (mostly nonionic) for different sites of injection. Based on the findings of Hardie et al, the rate of extravasation for antecubital IV, deep brachial IV and all other IV sites was 0.6%, 6.5%, and 0.9%, respectively. The relative risk of extravasation for antecubital IV, deep brachial IV, and all other IV sites was 0.4, 9.4, and 1.7, respectively.[35] This finding is in line with results of another study that reported a significantly higher rate of extravasation injuries with injections into dorsum of the hand when compared with antecubital fossa injections.[26] 3.6.Catheter size Jacobs et al found no difference in extravasation rate for different catheter sizes,[27] but an investigation by Wienbeck et al found that small diameter angio-catheters (e.g., 22-gauge) were associated with higher rates of contrast material extravasation (2.2%; P < .05), independent of the anatomic location.[29]",
           "src": "EN-06",
           "cat": "风险因素"
         },
         {
           "k": "Incidence and inject parameters observed",
           "v": "Results Over a 4‐year period, in our hospital, 80 cases of CM extravasation were reported from approximately 218 000 CT scans using an intravenous contrast agent, representing an incidence rate of 0·036%. The mean age of the 80 patients (52 women, 28 men) was 58 years at the time of diagnosis (range 2-94 years). The most common anatomical locations of extravasation were the forearm area (right: 28, left: 34), followed by the dorsum of the hand (right: 11, left: 5) and two other sites. The injected flow rates ranged from 0·6 to 5 ml/second. In all cases, a power CM injector was used. Mean volume of the extravasated agent was 44·5 ml (range 5-140 ml).",
-          "quote": "Results Over a 4‐year period, in our hospital, 80 cases of CM extravasation were reported from approximately 218 000 CT scans using an intravenous contrast agent, representing an incidence rate of 0·036%. The mean age of the 80 patients (52 women, 28 men) was 58 years at the time of diagnosis (range 2-94 years). Figure 2 shows the incidence of the CM extravasation by age. The most common anatomical locations of extravasation were the forearm area (right: 28, left: 34), followed by the dorsum of the hand (right: 11, left: 5) and two other sites. Five different brands of non‐ionic contrast agents were given in all the cases, Bonorex (Central Medical Service, Seoul, Korea), Omnihexol (Korea United Pharm, Seoul, Korea), Optiray (Reyon Phram, Seoul, Korea), Scanlux (Dasol Life Science, Seoul, Korea) and Iomeron (Bracco Imaging Korea, Seoul, Korea). The injected flow rates ranged from 0·6 to 5 ml/second. In all cases, a power CM injector was used. The mean gauge of needles for the power injector was 20·2 (range 18-24). Mean volume of the extravasated agent was 44·5 ml (range 5-140 ml). The mean flow rate of the power CM injector was 2·8 ml/second (range 0·6-5 ml/second).",
+          "quote": "Results Over a 4‐year period, in our hospital, 80 cases of CM extravasation were reported from approximately 218 000 CT scans using an intravenous contrast agent, representing an incidence rate of 0·036%. The mean age of the 80 patients (52 women, 28 men) was 58 years at the time of diagnosis (range 2-94 years). Figure 2 shows the incidence of the CM extravasation by age. The most common anatomical locations of extravasation were the forearm area (right: 28, left: 34), followed by the dorsum of the hand (right: 11, left: 5) and two other sites. Five different brands of non‐ionic contrast agents were given in all the cases, Bonorex (Central Medical Service, Seoul, Korea), Omnihexol (Korea United Pharm, Seoul, Korea), Optiray (Reyon Phram, Seoul, Korea), Scanlux (Dasol Life Science, Seoul, Korea) and Iomeron (Bracco Imaging Korea, Seoul, Korea). The injected flow rates ranged from 0·6 to 5 ml/second. In all cases, a power CM injector was used. The mean gauge of needles for the power injector was 20·2 (range 18-24). Mean volume of the extravasated agent was 44·5 ml (range 5-140 ml).",
           "src": "EN-07",
           "cat": "处置"
         },
@@ -16064,21 +16365,21 @@ window.KG_GRAPH = {
         {
           "k": "Hand veins and small-bore catheters worse",
           "v": "Extravasations occurred more frequently with catheters in hand veins than larger veins; for 20-gauge catheters there was a significant difference between dorsum of hand and antecubital fossa (1.8% vs 0.8%; P = .018). A separate investigation found small-diameter angio-catheters (22-gauge) associated with higher extravasation rates (2.2%; P < .05) independent of anatomic location. Based on one study, relative risk was 0.4 for antecubital IV, 9.4 for deep brachial IV and 1.7 for all other IV sites.",
-          "quote": "Extravasations occurred more frequently in IV catheters placed into hand veins compared with larger veins; for 20-gauge IV catheters, a significant difference between the dorsum of the hand and the antecubital fossa was noticed (1.8% vs. 0.8%; P = .018).[30] Table 6Three papers[27,30,35] reported the rates of extravasation of iodinated contrast media (mostly nonionic) for different sites of injection. Based on the findings of Hardie et al, the rate of extravasation for antecubital IV, deep brachial IV and all other IV sites was 0.6%, 6.5%, and 0.9%, respectively. The relative risk of extravasation for antecubital IV, deep brachial IV, and all other IV sites was 0.4, 9.4, and 1.7, respectively.[35] This finding is in line with results of another study that reported a significantly higher rate of extravasation injuries with injections into dorsum of the hand when compared with antecubital fossa injections.[26] 3.6.Catheter size Jacobs et al found no difference in extravasation rate for different catheter sizes,[27] but an investigation by Wienbeck et al found that small diameter angio-catheters (e.g., 22-gauge) were associated with higher rates of contrast material extravasation (2.2%; P < .05), independent of the anatomic location.[29] Their finding corroborated a previous report by Cohan et al which found that extravasations were significantly higher in patients receiving Contrast Media injection through small-bore catheters.[25] These observations may be confounded by the use of smaller bore catheters in smaller more tenuous veins.[21] 3.7.Power versus manual injection The introduction of automated power injection enabled larger volumes of contrast media to be injected at higher flow rates than are possible with hand injection.",
+          "quote": "Extravasations occurred more frequently in IV catheters placed into hand veins compared with larger veins; for 20-gauge IV catheters, a significant difference between the dorsum of the hand and the antecubital fossa was noticed (1.8% vs. 0.8%; P = .018).[30] Table 6Three papers[27,30,35] reported the rates of extravasation of iodinated contrast media (mostly nonionic) for different sites of injection. Based on the findings of Hardie et al, the rate of extravasation for antecubital IV, deep brachial IV and all other IV sites was 0.6%, 6.5%, and 0.9%, respectively. The relative risk of extravasation for antecubital IV, deep brachial IV, and all other IV sites was 0.4, 9.4, and 1.7, respectively.[35] This finding is in line with results of another study that reported a significantly higher rate of extravasation injuries with injections into dorsum of the hand when compared with antecubital fossa injections.[26] 3.6.Catheter size Jacobs et al found no difference in extravasation rate for different catheter sizes,[27] but an investigation by Wienbeck et al found that small diameter angio-catheters (e.g., 22-gauge) were associated with higher rates of contrast material extravasation (2.2%; P < .05), independent of the anatomic location.[29]",
           "src": "EN-06",
           "cat": "风险因素"
         },
         {
           "k": "Incidence and inject parameters observed",
           "v": "Results Over a 4‐year period, in our hospital, 80 cases of CM extravasation were reported from approximately 218 000 CT scans using an intravenous contrast agent, representing an incidence rate of 0·036%. The mean age of the 80 patients (52 women, 28 men) was 58 years at the time of diagnosis (range 2-94 years). The most common anatomical locations of extravasation were the forearm area (right: 28, left: 34), followed by the dorsum of the hand (right: 11, left: 5) and two other sites. The injected flow rates ranged from 0·6 to 5 ml/second. In all cases, a power CM injector was used. Mean volume of the extravasated agent was 44·5 ml (range 5-140 ml).",
-          "quote": "Results Over a 4‐year period, in our hospital, 80 cases of CM extravasation were reported from approximately 218 000 CT scans using an intravenous contrast agent, representing an incidence rate of 0·036%. The mean age of the 80 patients (52 women, 28 men) was 58 years at the time of diagnosis (range 2-94 years). Figure 2 shows the incidence of the CM extravasation by age. The most common anatomical locations of extravasation were the forearm area (right: 28, left: 34), followed by the dorsum of the hand (right: 11, left: 5) and two other sites. Five different brands of non‐ionic contrast agents were given in all the cases, Bonorex (Central Medical Service, Seoul, Korea), Omnihexol (Korea United Pharm, Seoul, Korea), Optiray (Reyon Phram, Seoul, Korea), Scanlux (Dasol Life Science, Seoul, Korea) and Iomeron (Bracco Imaging Korea, Seoul, Korea). The injected flow rates ranged from 0·6 to 5 ml/second. In all cases, a power CM injector was used. The mean gauge of needles for the power injector was 20·2 (range 18-24). Mean volume of the extravasated agent was 44·5 ml (range 5-140 ml). The mean flow rate of the power CM injector was 2·8 ml/second (range 0·6-5 ml/second).",
+          "quote": "Results Over a 4‐year period, in our hospital, 80 cases of CM extravasation were reported from approximately 218 000 CT scans using an intravenous contrast agent, representing an incidence rate of 0·036%. The mean age of the 80 patients (52 women, 28 men) was 58 years at the time of diagnosis (range 2-94 years). Figure 2 shows the incidence of the CM extravasation by age. The most common anatomical locations of extravasation were the forearm area (right: 28, left: 34), followed by the dorsum of the hand (right: 11, left: 5) and two other sites. Five different brands of non‐ionic contrast agents were given in all the cases, Bonorex (Central Medical Service, Seoul, Korea), Omnihexol (Korea United Pharm, Seoul, Korea), Optiray (Reyon Phram, Seoul, Korea), Scanlux (Dasol Life Science, Seoul, Korea) and Iomeron (Bracco Imaging Korea, Seoul, Korea). The injected flow rates ranged from 0·6 to 5 ml/second. In all cases, a power CM injector was used. The mean gauge of needles for the power injector was 20·2 (range 18-24). Mean volume of the extravasated agent was 44·5 ml (range 5-140 ml).",
           "src": "EN-07",
           "cat": "处置"
         },
         {
           "k": "Serious injury risk factors quantified",
-          "v": "586,812 contrast injections over 11 years: 709 extravasations (0.12%). Severity: 672 (94.8%) mild, 32 (4.5%) moderate, 5 (0.7%) severe; only 5 patients received dermatology or burn specialist consultation and none required surgery. Multivariate analysis: diabetes mellitus (OR 8.04, P<0.01), injection in the dorsum of the hand (OR 4.86, P<0.01), injection without a saline test (OR 2.58, P=0.02), and large-volume extravasation (OR 5.49, P<0.01) were independent risk factors for moderate or severe injury.",
-          "quote": "Results CM extravasation occurred in 0.12% (709/586,812) of cases. Of the 709 extravasation injuries, 672 (94.8%) were mild, 32 (4.5%) were moderate, and 5 (0.7%) were severe. Only 5 patients received consultations from dermatologists or burn specialists, and none required surgery. Multivariate analysis underscored the presence of diabetes mellitus [DM, odds ratio (OR) =8.04; P<0.01], injections in the dorsum of the hand (OR =4.86; P<0.01), without saline test (OR =2.58; P=0.02), and large-volume extravasation (OR =5.49; P<0.01) as potential risk factors of moderate or severe CM extravasation injury. Conclusions Most CM extravasation injuries are mild and without serious consequences. Multiple modifiable risk factors for serious CM extravasation injury have been identified that could mitigate the severity of the injury. Keywords: Contrast media (CM), extravasation of diagnostic and therapeutic materials, injection site reactions, computed tomography (CT) statusreleaseddisplay-pdfyesis-olfnois-manuscriptnois-preprintnois-journal-matternois-scannednois-retractednoReceived 2024 Oct 24; Accepted 2025 Apr 29; Issue date 2025 Aug 1. Introduction Contrast media (CM) is widely used in contrast-enhanced computed tomography (CECT) scans to improve the visualization of abnormal structures in various parts of the body (1). With the increasing availability of computed tomography (CT) equipment in healthcare, there were approximately 91.4 million CT scans conducted in the US in 2019; 48% of these recipients required the intravenous administration of CM (2). Characterized by its distinct physicochemical properties, including high concentration, osmotic pressure, and viscosity, CM typically requires intravenous injection into the human body at a rapid rate. Multiple complications can occur after CM injection, of which extravasation is well-recognized, with an occurrence rate of 0.1-1.2% (3-8). Extravasation refers to the inadvertent administration of vesicant solutions or drugs into adjacent tissues (9,10). CM is categorized as a high-risk vesicant, with tissue toxicity primarily driven by its hyperosmolarity (11).",
+          "v": "586,812 contrast injections（研究期 November 2012 至 December 2023）：709 例外渗（0.12%）。严重度：672 例（94.8%）轻度、32 例（4.5%）中度、5 例（0.7%）重度；仅 5 人请皮肤科/烧伤科会诊，无人需手术。多因素分析：糖尿病（OR 8.04，P<0.01）、手背注射（OR 4.86，P<0.01）、未做生理盐水试推（OR 2.58，P=0.02）、大量外渗（OR 5.49，P<0.01）",
+          "quote": "A total of 586,812 CM injections were performed during CECT scans at a single institution between November 2012 and December 2023. Among these, 709 cases (334 males, 375 females; age: 62.9±15.2 years) with CM extravasation injuries were included. Extravasation injuries were classified by severity. The frequency and clinical outcomes of different severities of injuries were investigated. Risk factors of serious injuries were evaluated using logistic regression with generalized estimating equation analyses. Results CM extravasation occurred in 0.12% (709/586,812) of cases. Of the 709 extravasation injuries, 672 (94.8%) were mild, 32 (4.5%) were moderate, and 5 (0.7%) were severe. Only 5 patients received consultations from dermatologists or burn specialists, and none required surgery. Multivariate analysis underscored the presence of diabetes mellitus [DM, odds ratio (OR) =8.04; P<0.01], injections in the dorsum of the hand (OR =4.86; P<0.01), without saline test (OR =2.58; P=0.02), and large-volume extravasation (OR =5.49; P<0.01) as potential risk factors of moderate or severe CM extravasation injury.",
           "src": "EN-09",
           "cat": "风险因素"
         },
@@ -16129,8 +16430,8 @@ window.KG_GRAPH = {
       "details": [
         {
           "k": "Serious injury risk factors quantified",
-          "v": "586,812 contrast injections over 11 years: 709 extravasations (0.12%). Severity: 672 (94.8%) mild, 32 (4.5%) moderate, 5 (0.7%) severe; only 5 patients received dermatology or burn specialist consultation and none required surgery. Multivariate analysis: diabetes mellitus (OR 8.04, P<0.01), injection in the dorsum of the hand (OR 4.86, P<0.01), injection without a saline test (OR 2.58, P=0.02), and large-volume extravasation (OR 5.49, P<0.01) were independent risk factors for moderate or severe injury.",
-          "quote": "Results CM extravasation occurred in 0.12% (709/586,812) of cases. Of the 709 extravasation injuries, 672 (94.8%) were mild, 32 (4.5%) were moderate, and 5 (0.7%) were severe. Only 5 patients received consultations from dermatologists or burn specialists, and none required surgery. Multivariate analysis underscored the presence of diabetes mellitus [DM, odds ratio (OR) =8.04; P<0.01], injections in the dorsum of the hand (OR =4.86; P<0.01), without saline test (OR =2.58; P=0.02), and large-volume extravasation (OR =5.49; P<0.01) as potential risk factors of moderate or severe CM extravasation injury. Conclusions Most CM extravasation injuries are mild and without serious consequences. Multiple modifiable risk factors for serious CM extravasation injury have been identified that could mitigate the severity of the injury. Keywords: Contrast media (CM), extravasation of diagnostic and therapeutic materials, injection site reactions, computed tomography (CT) statusreleaseddisplay-pdfyesis-olfnois-manuscriptnois-preprintnois-journal-matternois-scannednois-retractednoReceived 2024 Oct 24; Accepted 2025 Apr 29; Issue date 2025 Aug 1. Introduction Contrast media (CM) is widely used in contrast-enhanced computed tomography (CECT) scans to improve the visualization of abnormal structures in various parts of the body (1). With the increasing availability of computed tomography (CT) equipment in healthcare, there were approximately 91.4 million CT scans conducted in the US in 2019; 48% of these recipients required the intravenous administration of CM (2). Characterized by its distinct physicochemical properties, including high concentration, osmotic pressure, and viscosity, CM typically requires intravenous injection into the human body at a rapid rate. Multiple complications can occur after CM injection, of which extravasation is well-recognized, with an occurrence rate of 0.1-1.2% (3-8). Extravasation refers to the inadvertent administration of vesicant solutions or drugs into adjacent tissues (9,10). CM is categorized as a high-risk vesicant, with tissue toxicity primarily driven by its hyperosmolarity (11).",
+          "v": "586,812 contrast injections（研究期 November 2012 至 December 2023）：709 例外渗（0.12%）。严重度：672 例（94.8%）轻度、32 例（4.5%）中度、5 例（0.7%）重度；仅 5 人请皮肤科/烧伤科会诊，无人需手术。多因素分析：糖尿病（OR 8.04，P<0.01）、手背注射（OR 4.86，P<0.01）、未做生理盐水试推（OR 2.58，P=0.02）、大量外渗（OR 5.49，P<0.01）",
+          "quote": "A total of 586,812 CM injections were performed during CECT scans at a single institution between November 2012 and December 2023. Among these, 709 cases (334 males, 375 females; age: 62.9±15.2 years) with CM extravasation injuries were included. Extravasation injuries were classified by severity. The frequency and clinical outcomes of different severities of injuries were investigated. Risk factors of serious injuries were evaluated using logistic regression with generalized estimating equation analyses. Results CM extravasation occurred in 0.12% (709/586,812) of cases. Of the 709 extravasation injuries, 672 (94.8%) were mild, 32 (4.5%) were moderate, and 5 (0.7%) were severe. Only 5 patients received consultations from dermatologists or burn specialists, and none required surgery. Multivariate analysis underscored the presence of diabetes mellitus [DM, odds ratio (OR) =8.04; P<0.01], injections in the dorsum of the hand (OR =4.86; P<0.01), without saline test (OR =2.58; P=0.02), and large-volume extravasation (OR =5.49; P<0.01) as potential risk factors of moderate or severe CM extravasation injury.",
           "src": "EN-09",
           "cat": "风险因素"
         },
@@ -16217,7 +16518,7 @@ window.KG_GRAPH = {
         {
           "k": "High injection pressure plus low muscle index",
           "v": "Contrast extravasation risk in abdominal CTA was associated with both high injection pressure profiles and low CT-derived skeletal muscle index. Extravasation occurred in 380 patients (3.05%); patients with extravasation had lower L3 SMI, a higher prevalence of sarcopenia, higher peak pressures, and elevated injection pressure-to-rate ratios. The combined model achieved an AUC of 0.941 (95% CI 0.927-0.955), showing higher discrimination than the pressure-only model (AUC 0.926), body composition-only model (AUC 0.840), and clinical-only model (AUC 0.796).",
-          "quote": "Contrast extravasation risk in abdominal CTA was associated with both high injection pressure profiles and low CT-derived skeletal muscle index. The combined clinical-pressure-body composition model showed higher discrimination than single-domain models after correction of the ROC-labeling error. What are the implications of the main findings? Opportunistic body composition assessment may refine pre-injection risk stratification without additional scanning or radiation exposure. The results provide a basis for future nurse-led, model-informed vascular access planning, but prospective external validation is required before routine deployment. Abstract Purpose: Contrast media extravasation can complicate CT angiography (CTA), particularly when high-flow injection protocols are used. Current risk assessment relies mainly on clinical factors and injection pressure monitoring, whereas opportunistic CT-derived body composition has rarely been evaluated for this purpose. Methods: This single-center retrospective cohort study analyzed 12,460 consecutive adult patients who underwent contrast-enhanced abdominal CTA. The L3 skeletal muscle index (SMI) was extracted from routine CT images, and pressure metrics were obtained from power injector logs. Logistic-regression models incorporating clinical variables, pressure parameters, and body composition variables were evaluated and internally validated. Results: Extravasation occurred in 380 patients (3.05%). Patients with extravasation had lower L3 SMI, a higher prevalence of sarcopenia, higher peak pressures, and elevated injection pressure-to-rate ratios (IPIRs). In multivariable analysis, lower L3 SMI, sarcopenia, peak pressure, IPIR, age, catheter gauge, and injection site were associated with extravasation. The combined model achieved an AUC of 0.941 (95% CI 0.927-0.955), showing higher discrimination than the pressure-only model (AUC 0.926, 95% CI 0.910-0.942), body composition-only model (AUC 0.840, 95% CI 0.819-0.861), and clinical-only model (AUC 0.796, 95% CI 0.772-0.820). The bootstrap optimism-corrected AUC was 0.928.",
+          "quote": "Results: Extravasation occurred in 380 patients (3.05%). Patients with extravasation had lower L3 SMI, a higher prevalence of sarcopenia, higher peak pressures, and elevated injection pressure-to-rate ratios (IPIRs). In multivariable analysis, lower L3 SMI, sarcopenia, peak pressure, IPIR, age, catheter gauge, and injection site were associated with extravasation. The combined model achieved an AUC of 0.941 (95% CI 0.927-0.955), showing higher discrimination than the pressure-only model (AUC 0.926, 95% CI 0.910-0.942), body composition-only model (AUC 0.840, 95% CI 0.819-0.861), and clinical-only model (AUC 0.796, 95% CI 0.772-0.820).",
           "src": "EN-21",
           "cat": "风险因素"
         },
@@ -16413,8 +16714,8 @@ window.KG_GRAPH = {
         },
         {
           "k": "Serious injury risk factors quantified",
-          "v": "586,812 contrast injections over 11 years: 709 extravasations (0.12%). Severity: 672 (94.8%) mild, 32 (4.5%) moderate, 5 (0.7%) severe; only 5 patients received dermatology or burn specialist consultation and none required surgery. Multivariate analysis: diabetes mellitus (OR 8.04, P<0.01), injection in the dorsum of the hand (OR 4.86, P<0.01), injection without a saline test (OR 2.58, P=0.02), and large-volume extravasation (OR 5.49, P<0.01) were independent risk factors for moderate or severe injury.",
-          "quote": "Results CM extravasation occurred in 0.12% (709/586,812) of cases. Of the 709 extravasation injuries, 672 (94.8%) were mild, 32 (4.5%) were moderate, and 5 (0.7%) were severe. Only 5 patients received consultations from dermatologists or burn specialists, and none required surgery. Multivariate analysis underscored the presence of diabetes mellitus [DM, odds ratio (OR) =8.04; P<0.01], injections in the dorsum of the hand (OR =4.86; P<0.01), without saline test (OR =2.58; P=0.02), and large-volume extravasation (OR =5.49; P<0.01) as potential risk factors of moderate or severe CM extravasation injury. Conclusions Most CM extravasation injuries are mild and without serious consequences. Multiple modifiable risk factors for serious CM extravasation injury have been identified that could mitigate the severity of the injury. Keywords: Contrast media (CM), extravasation of diagnostic and therapeutic materials, injection site reactions, computed tomography (CT) statusreleaseddisplay-pdfyesis-olfnois-manuscriptnois-preprintnois-journal-matternois-scannednois-retractednoReceived 2024 Oct 24; Accepted 2025 Apr 29; Issue date 2025 Aug 1. Introduction Contrast media (CM) is widely used in contrast-enhanced computed tomography (CECT) scans to improve the visualization of abnormal structures in various parts of the body (1). With the increasing availability of computed tomography (CT) equipment in healthcare, there were approximately 91.4 million CT scans conducted in the US in 2019; 48% of these recipients required the intravenous administration of CM (2). Characterized by its distinct physicochemical properties, including high concentration, osmotic pressure, and viscosity, CM typically requires intravenous injection into the human body at a rapid rate. Multiple complications can occur after CM injection, of which extravasation is well-recognized, with an occurrence rate of 0.1-1.2% (3-8). Extravasation refers to the inadvertent administration of vesicant solutions or drugs into adjacent tissues (9,10). CM is categorized as a high-risk vesicant, with tissue toxicity primarily driven by its hyperosmolarity (11).",
+          "v": "586,812 contrast injections（研究期 November 2012 至 December 2023）：709 例外渗（0.12%）。严重度：672 例（94.8%）轻度、32 例（4.5%）中度、5 例（0.7%）重度；仅 5 人请皮肤科/烧伤科会诊，无人需手术。多因素分析：糖尿病（OR 8.04，P<0.01）、手背注射（OR 4.86，P<0.01）、未做生理盐水试推（OR 2.58，P=0.02）、大量外渗（OR 5.49，P<0.01）",
+          "quote": "A total of 586,812 CM injections were performed during CECT scans at a single institution between November 2012 and December 2023. Among these, 709 cases (334 males, 375 females; age: 62.9±15.2 years) with CM extravasation injuries were included. Extravasation injuries were classified by severity. The frequency and clinical outcomes of different severities of injuries were investigated. Risk factors of serious injuries were evaluated using logistic regression with generalized estimating equation analyses. Results CM extravasation occurred in 0.12% (709/586,812) of cases. Of the 709 extravasation injuries, 672 (94.8%) were mild, 32 (4.5%) were moderate, and 5 (0.7%) were severe. Only 5 patients received consultations from dermatologists or burn specialists, and none required surgery. Multivariate analysis underscored the presence of diabetes mellitus [DM, odds ratio (OR) =8.04; P<0.01], injections in the dorsum of the hand (OR =4.86; P<0.01), without saline test (OR =2.58; P=0.02), and large-volume extravasation (OR =5.49; P<0.01) as potential risk factors of moderate or severe CM extravasation injury.",
           "src": "EN-09",
           "cat": "风险因素"
         }
@@ -16611,7 +16912,7 @@ window.KG_GRAPH = {
         {
           "k": "Competency-based recurrent training needed",
           "v": "Structured, recurrent, competency-based training programmes focusing on risk assessment, reaction recognition, emergency management and simulation-based practice are needed to strengthen preparedness and patient safety during contrast-enhanced CT. A major limitation of current training models is that they primarily focus on radiologists and other physicians, with comparatively limited attention given to radiographers; the absence of standardised radiographer-specific training contributes to variability in preparedness, and in some institutions formal protocols for managing severe contrast media reactions may be insufficient or absent altogether.",
-          "quote": "Structured, recurrent, competency-based training programs focusing on risk assessment, reaction recognition, emergency management, and simulation-based practice are needed to strengthen preparedness and patient safety during contrast-enhanced CT. computed tomographycontrast media reactionspatient safetyradiographersradiologic technologistsThe author(s) declared that financial support was not received for this work and/or its publication.pmc-status-qastatus0pmc-status-liveyespmc-status-embargonopmc-status-releasedyespmc-prop-open-accessyespmc-prop-olfnopmc-prop-manuscriptnopmc-prop-legally-suppressednopmc-prop-has-pdfyespmc-prop-has-supplementnopmc-prop-pdf-onlynopmc-prop-suppress-copyrightnopmc-prop-is-real-versionnopmc-prop-is-scanned-articlenopmc-prop-preprintnopmc-prop-in-epmcyespmc-license-refCC BYsection-at-acceptanceInterventional RadiologyIntroduction Intravenous contrast media (IVCM) have significantly enhanced the diagnostic capability of computed tomography (CT), enabling the generation of highly detailed and accurate images that improve clinical decision-making and patient care (1).",
+          "quote": "Structured, recurrent, competency-based training programs focusing on risk assessment, reaction recognition, emergency management, and simulation-based practice are needed to strengthen preparedness and patient safety during contrast-enhanced CT.",
           "src": "EN-13",
           "cat": "护理能力与记录"
         },
@@ -16720,8 +17021,8 @@ window.KG_GRAPH = {
         },
         {
           "k": "Pre-procedure screening risk factors for reactions",
-          "v": "Allergic-like reactions to modern iodinated contrast are uncommon (iodinated 0.6% aggregate, 0.04% severe; gadolinium-based 0.01-0.22% aggregate, 0.008% severe). Prior allergic-like or unknown-type reaction to the same class of contrast is the greatest risk factor (approximately 5-fold increased risk). Shellfish and povidone-iodine allergies are NOT a risk factor for iodinated contrast. Asthma increases likelihood; unrelated allergy gives 2- to 3-fold increase. Beta-blocker users do not need to discontinue medication.",
-          "quote": "Risk Factors for Adverse Reactions to Intravenous Contrast Media Primary Considerations Allergic-like reactions to modern iodinated and gadolinium-based contrast medium are uncommon (iodinated: 0.6% aggregate [1], 0.04% severe [2]; gadolinium-based: 0.01-0.22% aggregate [2], 0.008% severe) [3]. Risk factors exist that increase the risk of a contrast reaction. These generally increase the likelihood of a reaction by less than one order of magnitude, effectively increasing the risk that an uncommon event will occur, but not guaranteeing a reaction will take place. The following are some examples: Allergy: Patients who have had a prior allergic-like reaction or unknown-type reaction (i.e., a reaction of unknown manifestation) to contrast medium have an approximately 5-fold increased risk of developing a future allergic-like reaction if exposed to the same class of contrast medium again [2].",
+          "v": "Allergic-like reactions to modern iodinated contrast are uncommon (iodinated 0.6% aggregate, 0.04% severe; gadolinium-based 0.01-0.22% aggregate, 0.008% severe). Prior allergic-like or unknown-type reaction to the same class of contrast is the greatest risk factor (approximately 5-fold increased risk). Shellfish and povidone-iodine allergies are NOT a risk factor for iodinated contrast. Asthma increases likelihood; unrelated allergy gives 2- to 3-fold increase.",
+          "quote": "Risk Factors for Adverse Reactions to Intravenous Contrast Media Primary Considerations Allergic-like reactions to modern iodinated and gadolinium-based contrast medium are uncommon (iodinated: 0.6% aggregate [1], 0.04% severe [2]; gadolinium-based: 0.01-0.22% aggregate [2], 0.008% severe) [3]. Risk factors exist that increase the risk of a contrast reaction. These generally increase the likelihood of a reaction by less than one order of magnitude, effectively increasing the risk that an uncommon event will occur, but not guaranteeing a reaction will take place. The following are some examples: Allergy: Patients who have had a prior allergic-like reaction or unknown-type reaction (i.e., a reaction of unknown manifestation) to contrast medium have an approximately 5-fold increased risk of developing a future allergic-like reaction if exposed to the same class of contrast medium again [2]. A prior allergic-like or unknown type reaction to the same class of contrast medium is considered the greatest risk factor for predicting future adverse events. In general, patients with unrelated allergies are at a 2- to 3-fold increased risk of an allergic-like contrast reaction, but due to the modest increased risk, restricting contrast medium use or premedicating solely on the basis of unrelated allergies is not recommended. Patients with shellfish or povidone-iodine (e.g., Betadine®) allergies are at no greater risk from iodinated contrast medium than are patients with other allergies (i.e., neither is a significant risk factor) [4,5]. There is no cross-reactivity between different classes of contrast medium. For example, a prior reaction to gadolinium-based contrast medium does not predict a future reaction to iodinated contrast medium, or vice versa, more than any other unrelated allergy. Asthma: A history of asthma increases the likelihood of an allergic-like contrast reaction [2,6]. Patients with asthma may be more prone to develop bronchospasm. Due to the modest increased risk, restricting contrast medium use or premedicating solely on the basis of a history of asthma is not recommended. Renal Insufficiency: Screening and selection strategies to mitigate the possible risks of the non-allergic adverse events of contrast-induced nephrotoxicity (CIN) and nephrogenic systemic fibrosis (NSF) can be found in the Chapters on Post-Contrast Acute Kidney Injury and Contrast Induced Nephropathy in Adults and Nephrogenic Systemic Fibrosis. Cardiac Status: Patients with severe cardiac disease may be at increased risk of a non-allergic cardiac event if an allergic-like or non-allergic contrast reaction occurs. These include symptomatic patients (e.g., patients with angina or congestive heart failure symptoms with minimal exertion) and also patients with severe aortic stenosis, cardiac arrhythmias, primary pulmonary hypertension, or severe but compensated cardiomyopathy. Due to the modest increased risk, restricting contrast medium use or premedicating solely on the basis of a patient’s cardiac status is not recommended. Anxiety: There is some evidence that contrast reactions are more common in anxious patients [7]. Reassuring an anxious patient before contrast medium injection may mitigate the likelihood of a mild contrast reaction. Other Historical and Pre-Procedure Considerations Age and Gender: Infants, neonates, children, and the elderly have lower reaction rates than middle-aged patients [1,8]. Male patients have lower reaction rates than female patients. Due to the modest increased risk, restricting contrast medium use or premedicating solely on the basis of patient age or gender is not recommended.",
           "src": "R01",
           "cat": "对比剂安全"
         },
@@ -16835,7 +17136,7 @@ window.KG_GRAPH = {
         {
           "k": "Surgical referral is clinical not volume based",
           "v": "Surgical opinion is recommended for extravasate over 150 ml, but the overall decision should be clinical - based on red flag signs and symptoms rather than an arbitrary CMEX volume. Fasciotomy should be performed within 2 hours to avoid muscle necrosis and nerve damage; surgery performed within 90 to 300 min has been reported to conserve all extremities. Red flags: painful active flexion, passive extension, neurosensory disturbance, increasing swelling; highest-risk locations are the volar forearm and the hand.",
-          "quote": "Whilst a radiologist can attend to mild cases, in more severe cases, a surgeon should be urgently consulted, and fasciotomy should be performed within 2 h to avoid muscle necrosis and nerve damage. Surgery performed within 90 to 300 min has been reported to conserve all extremities with favourable prognosis [54]. Sbitany et al. in a study of 102 cases of CMEX used a threshold of 30 ml extravasate as a referral prompt [55] and none required surgery, even in the 10% with > 100 ml CMEX volume. Wang et al. reported similar findings where even extravasate volumes of up to 150 ml of non-ionic IBCM were conservatively managed, suggesting no discrete threshold extravasate volume should be set [56]. Dykes et al. suggest that larger extravasated volumes correlate with moderate-to-severe injuries, but the data does not support using a volume threshold to determine surgical referral or more aggressive management [23]. Nevertheless, in unusual cases with very large volumes of extravasate (> 150 ml), the consensus remains that surgical consult is appropriate. Overall, the decision to refer for surgical intervention should be a clinical one-i.e. based on red flag signs and symptoms, rather than arbitrary CMEX volumes. Conclusion This review highlights the key up-to-date evidence pertaining to CMEX summarising the important risk factors and a systematic approach to management.",
+          "quote": "Whilst a radiologist can attend to mild cases, in more severe cases, a surgeon should be urgently consulted, and fasciotomy should be performed within 2 h to avoid muscle necrosis and nerve damage. Surgery performed within 90 to 300 min has been reported to conserve all extremities with favourable prognosis [54]. Sbitany et al. in a study of 102 cases of CMEX used a threshold of 30 ml extravasate as a referral prompt [55] and none required surgery, even in the 10% with > 100 ml CMEX volume. Wang et al. reported similar findings where even extravasate volumes of up to 150 ml of non-ionic IBCM were conservatively managed, suggesting no discrete threshold extravasate volume should be set [56]. Dykes et al. suggest that larger extravasated volumes correlate with moderate-to-severe injuries, but the data does not support using a volume threshold to determine surgical referral or more aggressive management [23]. Nevertheless, in unusual cases with very large volumes of extravasate (> 150 ml), the consensus remains that surgical consult is appropriate. Overall, the decision to refer for surgical intervention should be a clinical one-i.e. based on red flag signs and symptoms, rather than arbitrary CMEX volumes.",
           "src": "EN-01",
           "cat": "处置"
         },
@@ -16935,7 +17236,7 @@ window.KG_GRAPH = {
         {
           "k": "Deterioration can follow a mild initial injury",
           "v": "A 47-year-old woman with pulmonary embolism history was diagnosed with compartment syndrome of the left hand after contrast injection during CT; her first diagnosis had been mild contrast extravasation injury 24 hours before the compartment syndrome. Standard radiography showed accumulated contrast medium in the left hand. She underwent fasciotomy and secondary healing, with good radiographic, clinical and hand function at 2 months. Hand compartment syndrome secondary to extravasation is exceptional and, because its incidence is unknown, treatment is not codified.",
-          "quote": "Case presentation We present a 47-year-old woman with a history of pulmonary embolism who was diagnosed of compartment syndrome of the left hand after injection of contrast medium during a CT scan. Whose first diagnosis was mild contrast medium extravasation injury 24 h before the compartment syndrome. Standard radiography showed an accumulation of contrast medium in the left hand. The patient underwent a fasciotomy and secondary healing. Follow-up showed good radiographic, clinical, and hand function after 2 months. Discussion The occurrence of hand compartment syndrome secondary to contrast media extravasation is rare. Most of the time, they are initially diagnosed as medium extravasation before the worsening of symptoms. Because of its unknown incidence, treatment is not codified. The goal of treatment is to save the limb and restore function.",
+          "quote": "We present a 47-year-old woman with a history of pulmonary embolism who was diagnosed of compartment syndrome of the left hand after injection of contrast medium during a CT scan. Whose first diagnosis was mild contrast medium extravasation injury 24 h before the compartment syndrome. Standard radiography showed an accumulation of contrast medium in the left hand. The patient underwent a fasciotomy and secondary healing. Follow-up showed good radiographic, clinical, and hand function after 2 months. Discussion The occurrence of hand compartment syndrome secondary to contrast media extravasation is rare. Most of the time, they are initially diagnosed as medium extravasation before the worsening of symptoms. Because of its unknown incidence, treatment is not codified.",
           "src": "EN-16",
           "cat": "识别分级"
         },
@@ -17246,7 +17547,7 @@ window.KG_GRAPH = {
         {
           "k": "Clinical audit cycle drives documentation compliance",
           "v": "A two-cycle clinical audit over 8 months (Jan-Aug 2025), 172 patients, 86 per cycle. Cycle 1 was baseline with no interventions; after analysis, internal process reinforcement was communicated to cardiology fellows, nursing staff and laboratory personnel about documenting both pre- and post-procedure creatinine. Cycle 2 evaluated whether informal reminders improved documentation. Cycle 2 achieved 100% compliance with creatinine documentation versus 39 patients (22.7%) with at least one missing measurement in Cycle 1.",
-          "quote": "Patients were divided equally into Cycle 1 (January-April 2025, n=86) and Cycle 2 (May-August 2025, n=86). Cycle 1 included patients with both complete and incomplete creatinine documentation, while Cycle 2 comprised exclusively fully documented patients. CIN was defined per the European Society of Urogenital Radiology (ESUR) criteria as an absolute rise in serum creatinine of ≥0.5 mg/dL or a relative rise of ≥25% from baseline within 48-72 hours, or per the Kidney Disease: Improving Global Outcomes (KDIGO) criteria as ≥0.3 mg/dL or ≥50% rise. Results: Among the 172 patients, 39 (22.7%) had at least one missing creatinine measurement. Specifically, 4 patients (2.3%) lacked pre-procedure values, 37 (21.5%) lacked post-procedure values, and 2 (1.1%) lacked both (accounted for in both categories). The two patients missing both measurements are included in both the pre- and post-procedure missing categories. All 39 patients with missing documentation belonged to Cycle 1. Cycle 2 demonstrated 100% compliance with creatinine documentation. Due to missing post-procedure data, CIN incidence could not be fully assessed in Cycle 1. No CIN cases were identified in Cycle 2 among patients with complete data. Conclusion: The audit revealed that missing post-procedure creatinine documentation was the primary barrier to accurate CIN detection. Targeted interventions, including mandatory creatinine order sets, electronic medical record (EMR) prompts, and checklist integration, are recommended. Documentation improved in Cycle 2, supporting the benefit of workflow reinforcement. A re-audit is planned following the implementation of corrective measures. Keywords: acute kidney injury, clinical audit, contrast-induced nephropathy (cin), contrast-media, renal function documentation, serum creatinine monitoring statusreleaseddisplay-pdfyesis-olfnois-manuscriptnois-preprintnois-journal-matternois-scannednois-retractednoAccepted 2026 Jul 8; Collection date 2026 Jul.",
+          "quote": "Cycle 1 (January-April 2025, n=86) and Cycle 2 (May-August 2025, n=86). Cycle 1 included patients with both complete and incomplete creatinine documentation, while Cycle 2 comprised exclusively fully documented patients. CIN was defined per the European Society of Urogenital Radiology (ESUR) criteria as an absolute rise in serum creatinine of ≥0.5 mg/dL or a relative rise of ≥25% from baseline within 48-72 hours, or per the Kidney Disease: Improving Global Outcomes (KDIGO) criteria as ≥0.3 mg/dL or ≥50% rise. Results: Among the 172 patients, 39 (22.7%) had at least one missing creatinine measurement. Specifically, 4 patients (2.3%) lacked pre-procedure values, 37 (21.5%) lacked post-procedure values, and 2 (1.1%) lacked both (accounted for in both categories). The two patients missing both measurements are included in both the pre- and post-procedure missing categories. All 39 patients with missing documentation belonged to Cycle 1. Cycle 2 demonstrated 100% compliance with creatinine documentation.",
           "src": "EN-18",
           "cat": "护理能力与记录"
         }
@@ -17926,7 +18227,7 @@ window.KG_GRAPH = {
         {
           "k": "Surgical referral is clinical not volume based",
           "v": "Surgical opinion is recommended for extravasate over 150 ml, but the overall decision should be clinical - based on red flag signs and symptoms rather than an arbitrary CMEX volume. Fasciotomy should be performed within 2 hours to avoid muscle necrosis and nerve damage; surgery performed within 90 to 300 min has been reported to conserve all extremities. Red flags: painful active flexion, passive extension, neurosensory disturbance, increasing swelling; highest-risk locations are the volar forearm and the hand.",
-          "quote": "Whilst a radiologist can attend to mild cases, in more severe cases, a surgeon should be urgently consulted, and fasciotomy should be performed within 2 h to avoid muscle necrosis and nerve damage. Surgery performed within 90 to 300 min has been reported to conserve all extremities with favourable prognosis [54]. Sbitany et al. in a study of 102 cases of CMEX used a threshold of 30 ml extravasate as a referral prompt [55] and none required surgery, even in the 10% with > 100 ml CMEX volume. Wang et al. reported similar findings where even extravasate volumes of up to 150 ml of non-ionic IBCM were conservatively managed, suggesting no discrete threshold extravasate volume should be set [56]. Dykes et al. suggest that larger extravasated volumes correlate with moderate-to-severe injuries, but the data does not support using a volume threshold to determine surgical referral or more aggressive management [23]. Nevertheless, in unusual cases with very large volumes of extravasate (> 150 ml), the consensus remains that surgical consult is appropriate. Overall, the decision to refer for surgical intervention should be a clinical one-i.e. based on red flag signs and symptoms, rather than arbitrary CMEX volumes. Conclusion This review highlights the key up-to-date evidence pertaining to CMEX summarising the important risk factors and a systematic approach to management.",
+          "quote": "Whilst a radiologist can attend to mild cases, in more severe cases, a surgeon should be urgently consulted, and fasciotomy should be performed within 2 h to avoid muscle necrosis and nerve damage. Surgery performed within 90 to 300 min has been reported to conserve all extremities with favourable prognosis [54]. Sbitany et al. in a study of 102 cases of CMEX used a threshold of 30 ml extravasate as a referral prompt [55] and none required surgery, even in the 10% with > 100 ml CMEX volume. Wang et al. reported similar findings where even extravasate volumes of up to 150 ml of non-ionic IBCM were conservatively managed, suggesting no discrete threshold extravasate volume should be set [56]. Dykes et al. suggest that larger extravasated volumes correlate with moderate-to-severe injuries, but the data does not support using a volume threshold to determine surgical referral or more aggressive management [23]. Nevertheless, in unusual cases with very large volumes of extravasate (> 150 ml), the consensus remains that surgical consult is appropriate. Overall, the decision to refer for surgical intervention should be a clinical one-i.e. based on red flag signs and symptoms, rather than arbitrary CMEX volumes.",
           "src": "EN-01",
           "cat": "处置"
         },
@@ -18089,7 +18390,7 @@ window.KG_GRAPH = {
         {
           "k": "Premedication does not abolish paediatric recurrence",
           "v": "Of 23,429 examinations, 226 were indicated for premedication because of prior allergic-like reactions to low-osmolality contrast; 172 were performed after premedication. Acute allergic-like reactions occurred in 6.40% (11/172) of examinations performed with premedication versus 3.70% (2/54) where premedication was indicated but not given, and 0.84% (195/23,203) in those without such history (P < 0.001). Premedication therefore does not remove the risk of recurrence in children.",
-          "quote": "LOCM = low-osmolar iodinated contrast media, RR = relative risk, eGFR = estimated glomerular filtration rate, ICM = iodinated contrast media Among the 23,429 examinations, 226 were indicated for premedication owing to a prior history of allergic-like reactions associated with LOCM. Of these, 172 examinations were performed after premedication. Acute allergic-like reactions occurred in 6.40% (11 of 172) of examinations performed with premedication and in 3.70% (2 of 54) of examinations for which premedication was indicated but not administered. The incidence of acute allergic-like reactions remained significantly higher in patients with a history of such reactions, even with premedication (6.40%), compared to that of those without such a history (0.84%, 195 of 23,203) (P < 0.001). ICM-Associated Acute Physiologic Reactions The incidences of acute physiologic reactions according to the type of LOCM used are described in Table 2 and Figure 3. The incidence of acute physiologic reactions among all LOCM injections was 0.55% (128 of 23,429), with the majority being mild (0.50% of all injections, 118 of 23,429), followed by moderate (0.04%, 9 of 23,429), and severe (0.01%, 1 of 23,429).",
+          "quote": "Among the 23,429 examinations, 226 were indicated for premedication owing to a prior history of allergic-like reactions associated with LOCM. Of these, 172 examinations were performed after premedication. Acute allergic-like reactions occurred in 6.40% (11 of 172) of examinations performed with premedication and in 3.70% (2 of 54) of examinations for which premedication was indicated but not administered. The incidence of acute allergic-like reactions remained significantly higher in patients with a history of such reactions, even with premedication (6.40%), compared to that of those without such a history (0.84%, 195 of 23,203) (P < 0.001).",
           "src": "EN-14",
           "cat": "超敏反应"
         },
@@ -18217,6 +18518,111 @@ window.KG_GRAPH = {
           "quote": "Since severe extravasation injuries can develop slowly (up to hours after an extravasation), all discharged outpatients should be given clear instructions concerning where and when to seek additional medical care (including for worsening pain, development of paresthesia, diminished range of motion, and new skin ulceration or blistering) [22].",
           "src": "R01",
           "cat": "患者宣教"
+        }
+      ]
+    },
+    {
+      "id": "N_SpeedReactions",
+      "graph": "topic-01",
+      "type": "SymptomCategory",
+      "name": "速发反应",
+      "tags": [
+        "症状分类"
+      ],
+      "aliases": [
+        "速发反应"
+      ],
+      "summary": "按**发生时间**给对比剂不良反应分的型：注射后即刻（1 小时内）为速发型，1 小时后至 1 周内为迟发型；速发型多表现为荨麻疹、喉头水肿、支气管痉挛与休克。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        }
+      ],
+      "details": [
+        {
+          "k": "IHR 与 NIHR 的临床表现",
+          "v": "速发超敏反应表现为过敏性休克样的症状，最常见的是轻度皮肤反应；迟发超敏反应表现为皮疹变异，以斑丘疹(MPE)为主。",
+          "quote": "IHR presents with symptoms seen in anaphylaxis, most commonly mild skin reactions. NIHR present with exanthema variants, predominantly with maculopapular exanthem (MPE).",
+          "src": "R13",
+          "cat": "分级处置"
+        }
+      ]
+    },
+    {
+      "id": "MP_ImagingNursingEssentials",
+      "graph": "topic-01",
+      "type": "ManagementPrinciple",
+      "name": "影像护理学要点",
+      "tags": [
+        "处置原则"
+      ],
+      "aliases": [
+        "影像护理学要点"
+      ],
+      "summary": "影像护理的通用框架：概述、影像技术基本知识、护理基本知识，以及各检查的基本流程、急救护理与抢救流程、职业防护规范 —— 是各项具体护理动作的上位知识底座。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "书籍",
+          "author": "秦月兰、郑淑梅、刘雪莲",
+          "title": "影像护理学",
+          "journal": "人民卫生出版社",
+          "year": 2020,
+          "cite": "秦月兰、郑淑梅、刘雪莲 / 影像护理学 / 人民卫生出版社 / 2020",
+          "grade": "教材",
+          "ref": "R20"
+        }
+      ],
+      "details": [
+        {
+          "k": "教材四大主题与急救流程",
+          "v": "教材四大主题：影像护理学概述、影像技术基本知识、护理基本知识，以及影像科各项检查的基本流程、急救护理技术及抢救流程、职业防护规范与流程。",
+          "quote": "全书围绕四个主题：第一个主题为影像护理学概述，包括影像医学与影像护理学的发展、影像护理学的目的与任务、影像护理岗位标准等；第二个主题为影像技术基本知识，包括影像设备原理、成像原理、扫描原理、影像读片等。第三个主题为护理基本知识，内容包括影像护理的理论知识、基本操作、心理护理等；第四个主题为影像科各项检查的基本流程、急救护理技术及抢救流程、职业防护规范与流程等。",
+          "src": "R20",
+          "cat": "护理流程"
+        }
+      ]
+    },
+    {
+      "id": "MP_ImagingDeptNursingMgmt",
+      "graph": "topic-01",
+      "type": "ManagementPrinciple",
+      "name": "检查室护理管理",
+      "tags": [
+        "处置原则"
+      ],
+      "aliases": [
+        "检查室护理管理"
+      ],
+      "summary": "影像护理的质量直接影响检查的速度、质量、安全、品质与效率；需按各影像诊疗科室的实际情况构建护理管理方案。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "书籍",
+          "author": "秦月兰、郑淑梅、刘雪莲",
+          "title": "影像护理学",
+          "journal": "人民卫生出版社",
+          "year": 2020,
+          "cite": "秦月兰、郑淑梅、刘雪莲 / 影像护理学 / 人民卫生出版社 / 2020",
+          "grade": "教材",
+          "ref": "R20"
+        }
+      ],
+      "details": [
+        {
+          "k": "影像科室护理管理的意义",
+          "v": "第二章指出影像护理工作的质量将直接影响检查的速度、质量、安全、品质和效率，构建适合各影像诊疗科室实际情况的护理管理方案对规范影像检查、保障患者安全至关重要。",
+          "quote": "影像诊疗科室是提供X线、CT、MRI、核素、超声及介入放射诊疗的场所。近年来,随着影像设备、技术的飞速发展及患者检查需求量的增加,影像护理工作的重要性日趋突出,护理工作的质量将直接影响检查的速度、质量、安全、品质和效率。因此,构建适合各影像诊疗科室实际情况的护理管理方案对于规范影像检查、保障患者安全与提升影像服务价值至关重要。",
+          "src": "R20",
+          "cat": "护理流程"
         }
       ]
     }
@@ -22301,6 +22707,24 @@ window.KG_GRAPH = {
       "label": "出处"
     },
     {
+      "source": "N_SpeedReactions",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_ImagingNursingEssentials",
+      "target": "R20",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_ImagingDeptNursingMgmt",
+      "target": "R20",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
       "source": "NPM_ContrastPreparation",
       "target": "R01",
       "type": "SUPPORTED_BY",
@@ -23555,6 +23979,12 @@ window.KG_GRAPH = {
       "label": "出处"
     },
     {
+      "source": "RF_BetaBlockerACEI",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
       "source": "PM_AdrenalineIM",
       "target": "EN-03",
       "type": "SUPPORTED_BY",
@@ -24725,6 +25155,108 @@ window.KG_GRAPH = {
       "label": "出处"
     },
     {
+      "source": "S_AdverseReaction",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "SC_AdverseSpectrum",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_CMAllergyTest",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "DE_AfterExamCare",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_ContrastPreparation",
+      "target": "R15",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_ContrastAllergyHistory",
+      "target": "R15",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_NursingPrevention",
+      "target": "R15",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "SC_ExtravasationSpectrum",
+      "target": "R17",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_ExtravasationPrinciple",
+      "target": "R17",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_NoSalineFlush",
+      "target": "R17",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_ContrastPreparation",
+      "target": "R17",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_NursingPrevention",
+      "target": "R17",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "DE_EmergencyKnowledge",
+      "target": "R20",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_AllergyHistory",
+      "target": "R20",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_ContrastPreparation",
+      "target": "R20",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "R20",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_AgeExtremes",
+      "target": "R20",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
       "source": "RF_FragileVein",
       "target": "R22",
       "type": "SUPPORTED_BY",
@@ -25779,6 +26311,24 @@ window.KG_GRAPH = {
       "target": "MP_NursingPrevention",
       "type": "EFFECT_ON",
       "label": "效果"
+    },
+    {
+      "source": "N_SpeedReactions",
+      "target": "SC_AdverseSpectrum",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_Bronchospasm",
+      "target": "N_SpeedReactions",
+      "type": "HAS_SYMPTOM",
+      "label": "表现为"
+    },
+    {
+      "source": "N_SpeedReactions",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于"
     }
   ]
 }

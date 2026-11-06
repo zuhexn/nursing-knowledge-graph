@@ -238,3 +238,6 @@ SC_ReactionMechanismType,SymptomCategory,对比剂反应机制分型,对比剂�
 SC_BreakthroughReaction,SymptomCategory,突破性过敏反应,已按预处理方案用药后仍发生的对比剂过敏反应，其严重度多与首次反应相当，提示预处理不能彻底消除再次反应的风险。,症状分类,2
 DE_MenuBasedHealthEducation,DiseaseEducation,菜单式健康教育,以菜单形式把健康教育条目呈现给患者并配合专项护理的做法：条目化、易查找、可按患者需求逐项落实，提高知晓度与自我管理能力。,疾病教育,1
 DE_ExtravasationRedFlags,DiseaseEducation,外渗恶化警示信号宣教,出院前向患者及家属交代外渗后必须立即就医的警示信号与求助方式，并用符合机构常用语言的患者手册说明居家观察要点。,疾病教育,3
+N_SpeedReactions,SymptomCategory,速发反应,按**发生时间**给对比剂不良反应分的型：注射后即刻（1 小时内）为速发型，1 小时后至 1 周内为迟发型；速发型多表现为荨麻疹、喉头水肿、支气管痉挛与休克。,症状分类,1
+MP_ImagingNursingEssentials,ManagementPrinciple,影像护理学要点,影像护理的通用框架：概述、影像技术基本知识、护理基本知识，以及各检查的基本流程、急救护理与抢救流程、职业防护规范 —— 是各项具体护理动作的上位知识底座。,处置原则,1
+MP_ImagingDeptNursingMgmt,ManagementPrinciple,检查室护理管理,影像护理的质量直接影响检查的速度、质量、安全、品质与效率；需按各影像诊疗科室的实际情况构建护理管理方案。,处置原则,1

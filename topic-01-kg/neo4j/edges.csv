@@ -665,6 +665,9 @@ DE_MenuBasedHealthEducation,DiseaseEducation,菜单式健康教育,SUPPORTED_BY,
 DE_ExtravasationRedFlags,DiseaseEducation,外渗恶化警示信号宣教,SUPPORTED_BY,出处,EN-01,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
 DE_ExtravasationRedFlags,DiseaseEducation,外渗恶化警示信号宣教,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
 DE_ExtravasationRedFlags,DiseaseEducation,外渗恶化警示信号宣教,SUPPORTED_BY,出处,EN-03,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+N_SpeedReactions,SymptomCategory,速发反应,SUPPORTED_BY,出处,R13,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
+MP_ImagingNursingEssentials,ManagementPrinciple,影像护理学要点,SUPPORTED_BY,出处,R20,Reference,影像护理学
+MP_ImagingDeptNursingMgmt,ManagementPrinciple,检查室护理管理,SUPPORTED_BY,出处,R20,Reference,影像护理学
 NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
 NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理,SUPPORTED_BY,出处,R01-2026,Reference,ACR Manual on Contrast Media（2026 版 · 对比剂加温章节）
 NT_EarlyWarning,NursingTheory,早期预警,SUPPORTED_BY,出处,R12,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
@@ -874,6 +877,7 @@ PM_EpiAutoInjector,PharmacologicalManagement,肾上腺素自动注射笔,SUPPORT
 S_Bronchospasm,SymptomSign,支气管痉挛,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
 PM_Atropine,PharmacologicalManagement,阿托品,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
 S_VasovagalReaction,SymptomSign,血管迷走反应,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+RF_BetaBlockerACEI,RiskFactor,β 阻滞剂与 ACEI 用药,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
 PM_AdrenalineIM,PharmacologicalManagement,肌内注射肾上腺素,SUPPORTED_BY,出处,EN-03,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
 PM_Antihistamine,PharmacologicalManagement,抗组胺药,SUPPORTED_BY,出处,EN-03,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
 PM_Corticosteroid,PharmacologicalManagement,糖皮质激素,SUPPORTED_BY,出处,EN-03,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
@@ -1069,6 +1073,23 @@ NPM_SalineFlushCheck,NonPharmacologicalManagement,等速生理盐水试推,SUPPO
 RF_FragileVein,RiskFactor,静脉条件差,SUPPORTED_BY,出处,R08,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
 DE_ExtravasationHomeCare,DiseaseEducation,外渗居家护理科普,SUPPORTED_BY,出处,R08,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
 NPM_ObservationThenRemove,NonPharmacologicalManagement,留观后拔针,SUPPORTED_BY,出处,R08,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
+S_AdverseReaction,SymptomSign,不良反应,SUPPORTED_BY,出处,R13,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
+SC_AdverseSpectrum,SymptomCategory,碘对比剂不良反应谱,SUPPORTED_BY,出处,R13,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
+AT_CMAllergyTest,AssessmentTool,碘对比剂过敏试验,SUPPORTED_BY,出处,R13,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
+DE_AfterExamCare,DiseaseEducation,检查后观察与护理科普,SUPPORTED_BY,出处,R13,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
+NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理,SUPPORTED_BY,出处,R15,Reference,欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评
+RF_ContrastAllergyHistory,RiskFactor,既往碘对比剂过敏史,SUPPORTED_BY,出处,R15,Reference,欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评
+MP_NursingPrevention,ManagementPrinciple,护理预防,SUPPORTED_BY,出处,R15,Reference,欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评
+SC_ExtravasationSpectrum,SymptomCategory,静脉外渗反应谱,SUPPORTED_BY,出处,R17,Reference,放射科碘对比剂外渗影响因素的系统评价
+MP_ExtravasationPrinciple,ManagementPrinciple,外渗处置原则,SUPPORTED_BY,出处,R17,Reference,放射科碘对比剂外渗影响因素的系统评价
+RF_NoSalineFlush,RiskFactor,未做生理盐水试推,SUPPORTED_BY,出处,R17,Reference,放射科碘对比剂外渗影响因素的系统评价
+NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理,SUPPORTED_BY,出处,R17,Reference,放射科碘对比剂外渗影响因素的系统评价
+MP_NursingPrevention,ManagementPrinciple,护理预防,SUPPORTED_BY,出处,R17,Reference,放射科碘对比剂外渗影响因素的系统评价
+DE_EmergencyKnowledge,DiseaseEducation,急救知识科普,SUPPORTED_BY,出处,R20,Reference,影像护理学
+AT_AllergyHistory,AssessmentTool,过敏史询问,SUPPORTED_BY,出处,R20,Reference,影像护理学
+NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理,SUPPORTED_BY,出处,R20,Reference,影像护理学
+E_ContrastInjection,Exam,碘对比剂,SUPPORTED_BY,出处,R20,Reference,影像护理学
+RF_AgeExtremes,RiskFactor,高龄或低龄,SUPPORTED_BY,出处,R20,Reference,影像护理学
 RF_FragileVein,RiskFactor,静脉条件差,SUPPORTED_BY,出处,R22,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
 RF_HighPressureInjection,RiskFactor,高压注射,SUPPORTED_BY,出处,R22,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
 AT_ExtravasationDetection,AssessmentTool,外渗探测与压力监测,SUPPORTED_BY,出处,R22,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
@@ -1245,3 +1266,6 @@ S_AllergicReaction,SymptomSign,过敏反应,ASSESSED_BY,评估,AT_CMAllergyTest,
 S_AdverseReaction,SymptomSign,不良反应,AT_RISK_BY,高危因素,RF_BetaBlockerACEI,RiskFactor,β 阻滞剂与 ACEI 用药
 MP_EmergencyPreparedness,ManagementPrinciple,检查室急救准备,MANAGED_BY,处置,MP_SimulationTraining,ManagementPrinciple,模拟演练式急救培训
 MP_EvidenceBasedPractice,ManagementPrinciple,循证实践转化,EFFECT_ON,效果,MP_NursingPrevention,ManagementPrinciple,护理预防
+N_SpeedReactions,SymptomCategory,速发反应,BELONGS_TO,属于,SC_AdverseSpectrum,SymptomCategory,碘对比剂不良反应谱
+S_Bronchospasm,SymptomSign,支气管痉挛,HAS_SYMPTOM,表现为,N_SpeedReactions,SymptomCategory,速发反应
+N_SpeedReactions,SymptomCategory,速发反应,BELONGS_TO,属于,FW_SymptomCategory,SymptomCategory,症状分类

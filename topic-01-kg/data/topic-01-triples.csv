@@ -665,6 +665,9 @@ DiseaseEducation,菜单式健康教育,出处,Reference,菜单式健康教育配
 DiseaseEducation,外渗恶化警示信号宣教,出处,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
 DiseaseEducation,外渗恶化警示信号宣教,出处,Reference,美国放射学会对比剂手册
 DiseaseEducation,外渗恶化警示信号宣教,出处,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+SymptomCategory,速发反应,出处,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
+ManagementPrinciple,影像护理学要点,出处,Reference,影像护理学
+ManagementPrinciple,检查室护理管理,出处,Reference,影像护理学
 NonPharmacologicalManagement,对比剂预处理,出处,Reference,美国放射学会对比剂手册
 NonPharmacologicalManagement,对比剂预处理,出处,Reference,ACR Manual on Contrast Media（2026 版 · 对比剂加温章节）
 NursingTheory,早期预警,出处,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
@@ -874,6 +877,7 @@ PharmacologicalManagement,肾上腺素自动注射笔,出处,Reference,美国放
 SymptomSign,支气管痉挛,出处,Reference,美国放射学会对比剂手册
 PharmacologicalManagement,阿托品,出处,Reference,美国放射学会对比剂手册
 SymptomSign,血管迷走反应,出处,Reference,美国放射学会对比剂手册
+RiskFactor,β 阻滞剂与 ACEI 用药,出处,Reference,美国放射学会对比剂手册
 PharmacologicalManagement,肌内注射肾上腺素,出处,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
 PharmacologicalManagement,抗组胺药,出处,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
 PharmacologicalManagement,糖皮质激素,出处,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
@@ -1069,6 +1073,23 @@ NonPharmacologicalManagement,等速生理盐水试推,出处,Reference,WS/T 433�
 RiskFactor,静脉条件差,出处,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
 DiseaseEducation,外渗居家护理科普,出处,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
 NonPharmacologicalManagement,留观后拔针,出处,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
+SymptomSign,不良反应,出处,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
+SymptomCategory,碘对比剂不良反应谱,出处,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
+AssessmentTool,碘对比剂过敏试验,出处,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
+DiseaseEducation,检查后观察与护理科普,出处,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
+NonPharmacologicalManagement,对比剂预处理,出处,Reference,欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评
+RiskFactor,既往碘对比剂过敏史,出处,Reference,欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评
+ManagementPrinciple,护理预防,出处,Reference,欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评
+SymptomCategory,静脉外渗反应谱,出处,Reference,放射科碘对比剂外渗影响因素的系统评价
+ManagementPrinciple,外渗处置原则,出处,Reference,放射科碘对比剂外渗影响因素的系统评价
+RiskFactor,未做生理盐水试推,出处,Reference,放射科碘对比剂外渗影响因素的系统评价
+NonPharmacologicalManagement,对比剂预处理,出处,Reference,放射科碘对比剂外渗影响因素的系统评价
+ManagementPrinciple,护理预防,出处,Reference,放射科碘对比剂外渗影响因素的系统评价
+DiseaseEducation,急救知识科普,出处,Reference,影像护理学
+AssessmentTool,过敏史询问,出处,Reference,影像护理学
+NonPharmacologicalManagement,对比剂预处理,出处,Reference,影像护理学
+Exam,碘对比剂,出处,Reference,影像护理学
+RiskFactor,高龄或低龄,出处,Reference,影像护理学
 RiskFactor,静脉条件差,出处,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
 RiskFactor,高压注射,出处,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
 AssessmentTool,外渗探测与压力监测,出处,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
@@ -1245,3 +1266,6 @@ SymptomSign,过敏反应,评估,AssessmentTool,碘对比剂过敏试验
 SymptomSign,不良反应,高危因素,RiskFactor,β 阻滞剂与 ACEI 用药
 ManagementPrinciple,检查室急救准备,处置,ManagementPrinciple,模拟演练式急救培训
 ManagementPrinciple,循证实践转化,效果,ManagementPrinciple,护理预防
+SymptomCategory,速发反应,属于,SymptomCategory,碘对比剂不良反应谱
+SymptomSign,支气管痉挛,表现为,SymptomCategory,速发反应
+SymptomCategory,速发反应,属于,SymptomCategory,症状分类
