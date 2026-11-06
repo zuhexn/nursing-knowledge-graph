@@ -36,7 +36,7 @@
   #topbar{
     flex:0 0 auto;position:relative;z-index:20;
     padding:calc(var(--sat) + 9px) 13px 9px;
-    background:linear-gradient(180deg,rgba(255,255,255,.98),rgba(247,251,255,.94));
+    background:#fbfdff;   /* ⛔ 必须**实色**：半透明渐变会让下方滚动内容从底部透出来（客户 2026-11-06 报障：「他是透明的，内容会重叠」） */
     border-bottom:1px solid var(--line);
     display:flex;flex-direction:column;gap:8px;
   }
@@ -80,7 +80,7 @@
     position:fixed;left:0;right:0;bottom:0;z-index:25;
     display:flex;gap:8px;align-items:stretch;
     padding:7px 10px calc(var(--sab) + 7px);
-    background:linear-gradient(0deg,rgba(255,255,255,.98),rgba(240,247,255,.94));
+    background:#f7fbff;   /* ⛔ 实色，同上 */
     border-top:1px solid var(--line);
   }
   .btn{
@@ -90,7 +90,7 @@
     -webkit-tap-highlight-color:transparent;
   }
   .btn:active{transform:translateY(1px);background:#dbe8f7;}
-  .btn:hover{border-color:var(--accent-2);color:#fff;background:#dbe8f7;}
+  .btn:hover{border-color:var(--accent-2);color:var(--accent-2);background:#dbe8f7;}
   .btn.on{background:rgba(168,100,4,.12);border-color:var(--accent);color:var(--accent);}
 
   /* ---------- 舞台（画布） ---------- */
@@ -117,7 +117,7 @@
     border:1px solid var(--accent);border-radius:9px;background:rgba(168,100,4,.12);
     color:var(--accent);font-family:inherit;font-size:14.5px;padding:6px 10px;cursor:pointer;
   }
-  #egoExit:hover{background:rgba(168,100,4,.22);color:#fff;}
+  #egoExit:hover{background:rgba(168,100,4,.22);color:#5c3800;}
 
   /* ---------- 提示条（8 秒后淡出） ---------- */
   #hint{
@@ -162,7 +162,7 @@
     border:1px solid var(--line);background:var(--panel-2);color:var(--text-dim);
     cursor:pointer;font-size:18px;line-height:1;padding:0;
   }
-  #panel-close:hover{color:#fff;border-color:var(--accent-2);}
+  #panel-close:hover{color:var(--accent-2);border-color:var(--accent-2);}
   #p-name{font-size:21px;font-weight:700;margin:0 0 8px 0;line-height:1.35;}
   #p-meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center;}
   .chip{font-size:14.5px;padding:3px 10px;border-radius:12px;background:#e2ecf8;color:#2c4463;}
@@ -183,7 +183,7 @@
     font-size:16px;font-family:inherit;cursor:pointer;white-space:nowrap;
     transition:border-color .15s,color .15s,background .15s;
   }
-  .p-act:hover:not(:disabled){border-color:var(--accent);color:#fff;}
+  .p-act:hover:not(:disabled){border-color:var(--accent);color:var(--accent);}
   .p-act:disabled{opacity:.4;cursor:default;}
   .p-act.on{border-color:var(--accent-2);color:var(--accent-2);background:rgba(168,100,4,.10);}
   .p-act.danger{color:#a33527;border-color:rgba(255,120,100,.34);}
@@ -195,7 +195,7 @@
     border:1px solid var(--line);background:rgba(29,95,176,.10);color:#12457f;
     font-family:inherit;font-size:16px;cursor:pointer;transition:.15s;
   }
-  .p-view:hover{border-color:var(--accent-2);color:#fff;}
+  .p-view:hover{border-color:var(--accent-2);color:var(--accent-2);}
   /* 来时路径：从哪儿点进来的，一眼看见，也能原路退回 */
   #p-crumbs{
     display:flex;align-items:center;gap:4px;overflow-x:auto;white-space:nowrap;
@@ -300,7 +300,7 @@
     width:28px;height:28px;flex-shrink:0;border-radius:8px;border:1px solid var(--line);
     background:var(--panel-2);color:var(--text-dim);cursor:pointer;font-size:17px;line-height:1;padding:0;
   }
-  #legend-close:hover{color:#fff;border-color:var(--accent-2);}
+  #legend-close:hover{color:var(--accent-2);border-color:var(--accent-2);}
   .lg-items{display:flex;flex-wrap:wrap;gap:8px;}
   .lg-item{
     display:flex;align-items:center;gap:7px;font-size:16px;padding:8px 12px 8px 10px;
@@ -419,17 +419,33 @@
     background:var(--panel-2);color:var(--text);font-family:inherit;font-size:16px;
     cursor:pointer;transition:.15s;
   }
-  .triage-btn:hover{border-color:var(--accent-2);color:#fff;}
+  .triage-btn:hover{border-color:var(--accent-2);color:var(--accent-2);}
+  /* ⚠️ **不做 sticky**（客户 2026-11-06 报障：「不要让他下滑到下面后常驻顶部，
+     他是透明的，内容会重叠」）：
+       sticky 的结果框吸到滚动容器顶部后，**会盖住它上方那一行文字**
+       （「逐条点选符合你现在的情况…」被切掉半行）—— 这就是「内容会重叠」。
+       ⇒ 改为**留在原位** + 选中后**自动滚到可见**（见 JS 的 scrollIntoView）：
+          结论照样每次都看得见，但不再压住别的内容。 */
   .triage-result{
-    position:sticky;top:0;z-index:2;
+    position:relative;z-index:2;
     margin:0 0 10px;border-radius:11px;padding:11px 12px;font-size:16px;line-height:1.75;
-    border:1px solid var(--line);background:var(--panel-2);color:#2c4463;
+    border:1px solid var(--line);color:#2c4463;
     box-shadow:0 8px 20px rgba(30,60,100,.16);
+    background-color:#f2f7fd;
   }
   .triage-result:empty{display:none;}
-  .triage-result b{color:#fff;}
-  .triage-result.red{border-color:#e0a49a;background:rgba(217,94,75,.14);color:#8c2a1d;}
-  .triage-result.green{border-color:#8fc4a8;background:rgba(56,140,95,.12);color:#1d6b46;}
+  /* 标题字色：浅蓝主题下原为 #fff（深底时的白字）⇒ 浅底上白字看不见 */
+  .triage-result b{color:#1b3550;}
+  .triage-result.red{
+    border-color:#e0a49a;color:#8c2a1d;
+    background-color:#fdf1ee;   /* 实色，不透 */
+    box-shadow:0 8px 20px rgba(30,60,100,.16);
+  }
+  .triage-result.green{
+    border-color:#8fc4a8;color:#1d6b46;
+    background-color:#eef8f2;
+    box-shadow:0 8px 20px rgba(30,60,100,.16);
+  }
 
   /* ---------- 检索推荐词（数据驱动 · 只在没输入时出现） ---------- */
   #searchChips{
@@ -444,7 +460,7 @@
     font-size:14.5px;padding:5px 10px;cursor:pointer;white-space:nowrap;
     -webkit-tap-highlight-color:transparent;transition:.15s;
   }
-  .s-chip:hover,.s-chip:active{border-color:var(--accent-2);color:#fff;}
+  .s-chip:hover,.s-chip:active{border-color:var(--accent-2);color:var(--accent-2);}
 
   /* ---------- 分类卡 ---------- */
   .cat{border:1px solid var(--line);border-radius:13px;background:var(--panel);margin-bottom:9px;overflow:hidden;}
@@ -543,7 +559,7 @@
     -webkit-tap-highlight-color:transparent;transition:.15s;
   }
   .tab.on{background:rgba(168,100,4,.12);color:var(--accent);font-weight:600;}
-  .tab:hover{color:#fff;}
+  .tab:hover{color:var(--accent-2);}
 
   /* 列表视图里不出现画布专属控件 */
   body[data-view="list"] #legend,body[data-view="list"] #suggest{display:none;}
@@ -1270,6 +1286,11 @@
       box.className = "triage-result green";
       box.innerHTML = "<b>先观察</b> —— 现在没有需要马上处理的情况。出现上面任何一条，立刻告诉医护人员；也可以继续往下按知识框架了解。";
     }
+    /* 结果框**不再吸顶**（sticky 会盖住上方那行字）⇒ 改为：勾选后把它滚进视野，
+       「我选了什么 → 结论是什么」每次都看得见，但不会压住任何内容。 */
+    try {
+      if (box.scrollIntoView) box.scrollIntoView({block: "nearest", inline: "nearest"});
+    } catch (e) { /* 老浏览器忽略 */ }
   }
   lgUrgent.addEventListener("click", function (ev) {
     var open = ev.target.closest("[data-open]");
