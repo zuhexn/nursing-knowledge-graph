@@ -699,6 +699,12 @@ NonPharmacologicalManagement,等速生理盐水试推,出处,Reference,WS/T 433�
 RiskFactor,静脉条件差,出处,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
 DiseaseEducation,外渗居家护理科普,出处,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
 NonPharmacologicalManagement,留观后拔针,出处,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
+RiskFactor,静脉条件差,出处,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
+RiskFactor,高压注射,出处,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
+AssessmentTool,外渗探测与压力监测,出处,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
+ManagementPrinciple,外渗处置原则,出处,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
+AssessmentTool,过敏史询问,出处,Reference,对比剂即刻超敏反应危险因素的系统评价与 Meta 分析
+RiskFactor,既往碘对比剂过敏史,出处,Reference,对比剂即刻超敏反应危险因素的系统评价与 Meta 分析
 ManagementPrinciple,外渗处置原则,出处,Reference,中药如意金黄散早期湿敷在药物外渗性皮肤损伤中的效果分析
 NonPharmacologicalManagement,中药外敷法（外渗）,出处,Reference,总局关于修订跌打万花油等 32 种非处方药说明书的公告（2017 年第 175 号）附件 10《如意金黄散非处方药说明书范本》
 SymptomSign,血管迷走反应,属于,SymptomCategory,碘对比剂不良反应谱

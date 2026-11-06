@@ -873,6 +873,27 @@ window.KG_GRAPH = {
           "quote": "中重度反应需严密监测生命体征",
           "src": "CG-07",
           "cat": "过敏反应"
+        },
+        {
+          "k": "即刻超敏反应的危险因素（Meta 结论）",
+          "v": "8,342 条文献筛出 7 篇（115,043 名患者、736,203 次注射；方法学质量 6 篇高、1 篇中）：**女性**是显著危险因素（OR 1.46，95% CI 1.33–1.59）；**年龄越大风险越低**（OR 0.98，95% CI 0.98–0.99）",
+          "quote": "From 8,342 citations, seven were ultimately included in the meta-analysis, encompassing a total of 115,043 patients and 736,203 injections. The methodological quality was rated as high in six studies and moderate in one. Four studies investigated iodinated CM (ICM), while 3 investigated gadolinium-based contrast agent. Female sex (OR 1.46; 95 % CI 1.33-1.59) was identified as a significant risk factor for CM-IHR, and age showed an inverse association with risk (OR 0.98; 95 % CI 0.98-0.99).",
+          "src": "R23",
+          "cat": "风险因素"
+        },
+        {
+          "k": "门诊状态风险更高（限碘对比剂）",
+          "v": "限**碘对比剂**的即刻超敏反应：**门诊状态**风险更高（OR 3.08，95% CI 1.13–8.44）",
+          "quote": "For ICM-IHR specifically, outpatient status was associated with higher risk (OR, 3.08; 95 % CI, 1.13-8.44).",
+          "src": "R23",
+          "cat": "风险因素"
+        },
+        {
+          "k": "解读该 Meta 的告诫",
+          "v": "作者提醒：可用研究数量少、异质性显著 ⇒ 这些发现**应谨慎解读**",
+          "quote": "Given the small number of available studies and substantial heterogeneity, these findings should be interpreted with caution.",
+          "src": "R23",
+          "cat": "方法学"
         }
       ]
     },
@@ -1764,6 +1785,13 @@ window.KG_GRAPH = {
           "quote": "了解患者既往有无碘对比剂使用史，是否有中、重度不良反应史",
           "src": "R03",
           "cat": "检查前准备"
+        },
+        {
+          "k": "即刻超敏反应的危险因素（Meta 结论）",
+          "v": "8,342 条文献筛出 7 篇（115,043 名患者、736,203 次注射；方法学质量 6 篇高、1 篇中）：**女性**是显著危险因素（OR 1.46，95% CI 1.33–1.59）；**年龄越大风险越低**（OR 0.98，95% CI 0.98–0.99）",
+          "quote": "From 8,342 citations, seven were ultimately included in the meta-analysis, encompassing a total of 115,043 patients and 736,203 injections. The methodological quality was rated as high in six studies and moderate in one. Four studies investigated iodinated CM (ICM), while 3 investigated gadolinium-based contrast agent. Female sex (OR 1.46; 95 % CI 1.33-1.59) was identified as a significant risk factor for CM-IHR, and age showed an inverse association with risk (OR 0.98; 95 % CI 0.98-0.99).",
+          "src": "R23",
+          "cat": "风险因素"
         }
       ]
     },
@@ -1867,6 +1895,13 @@ window.KG_GRAPH = {
           "quote": "观察患者有无输液反应，穿刺部位有无红、肿、热、痛、渗出等表现",
           "src": "R08",
           "cat": "识别"
+        },
+        {
+          "k": "外渗危险因素（系统评价结论）",
+          "v": "从 2151 篇唯一研究筛出 15 篇（2 篇 RCT + 13 篇准实验/观察性研究，**质量低到中等**）：**女性、住院状态**是外渗危险因素；**注射速率、静脉通路部位、导管留置时间**影响外渗量",
+          "quote": "Fifteen articles were selected from a total of 2151 unique studies identified. Two were randomized controlled trials and 13 were quasi-experimental and observational studies. The quality of these studies was judged to be low to moderate. Some patient characteristics, such as female sex and inpatient status, appeared to be risk factors for extravasation. Additionally, injection rate, venous access site and catheter dwelling time could affect the volume extravasated.",
+          "src": "R22",
+          "cat": "风险因素"
         }
       ]
     },
@@ -2059,6 +2094,20 @@ window.KG_GRAPH = {
           "quote": "检查前对患者进行全面评估是减少不良反应发生的第一步。",
           "src": "R07",
           "cat": "检查前准备"
+        },
+        {
+          "k": "即刻超敏反应的危险因素（Meta 结论）",
+          "v": "8,342 条文献筛出 7 篇（115,043 名患者、736,203 次注射；方法学质量 6 篇高、1 篇中）：**女性**是显著危险因素（OR 1.46，95% CI 1.33–1.59）；**年龄越大风险越低**（OR 0.98，95% CI 0.98–0.99）",
+          "quote": "From 8,342 citations, seven were ultimately included in the meta-analysis, encompassing a total of 115,043 patients and 736,203 injections. The methodological quality was rated as high in six studies and moderate in one. Four studies investigated iodinated CM (ICM), while 3 investigated gadolinium-based contrast agent. Female sex (OR 1.46; 95 % CI 1.33-1.59) was identified as a significant risk factor for CM-IHR, and age showed an inverse association with risk (OR 0.98; 95 % CI 0.98-0.99).",
+          "src": "R23",
+          "cat": "风险因素"
+        },
+        {
+          "k": "既往过敏史未达显著",
+          "v": "两项研究合并提示既往碘对比剂过敏史风险有升高趋势，但**未达统计学显著**且异质性很高（OR 7.49，95% CI 0.42–135.09，I² = 87%）",
+          "quote": "pooled analysis of two studies suggested a trend toward increased risk with prior history of hypersensitivity reaction to ICM; however, this association was not statistically significant and was accompanied by high heterogeneity (OR 7.49; 95 % CI, 0.42-135.09, I 2 = 87 %).",
+          "src": "R23",
+          "cat": "风险因素"
         }
       ]
     },
@@ -2127,6 +2176,13 @@ window.KG_GRAPH = {
           "quote": "既往使用碘对比剂出现中、重度不良反应者；②不稳定性哮喘者；",
           "src": "R07",
           "cat": "检查前准备"
+        },
+        {
+          "k": "哮喘史未见显著关联",
+          "v": "⚠️ **哮喘史未被证实为显著危险因素**（OR 1.12，95% CI 0.95–1.33，I² = 0%）—— 这一条纠正了「哮喘是碘对比剂过敏的确定危险因素」的常见说法",
+          "quote": "Asthma history was not suggested as a significant risk factor (OR 1.12; 95 % CI, 0.95-1.33; I 2 = 0 %).",
+          "src": "R23",
+          "cat": "风险因素"
         }
       ]
     },
@@ -2284,6 +2340,13 @@ window.KG_GRAPH = {
           "quote": "宜选择上肢静脉作为穿刺部位",
           "src": "R08",
           "cat": "预防"
+        },
+        {
+          "k": "外渗危险因素（系统评价结论）",
+          "v": "从 2151 篇唯一研究筛出 15 篇（2 篇 RCT + 13 篇准实验/观察性研究，**质量低到中等**）：**女性、住院状态**是外渗危险因素；**注射速率、静脉通路部位、导管留置时间**影响外渗量",
+          "quote": "Fifteen articles were selected from a total of 2151 unique studies identified. Two were randomized controlled trials and 13 were quasi-experimental and observational studies. The quality of these studies was judged to be low to moderate. Some patient characteristics, such as female sex and inpatient status, appeared to be risk factors for extravasation. Additionally, injection rate, venous access site and catheter dwelling time could affect the volume extravasated.",
+          "src": "R22",
+          "cat": "风险因素"
         }
       ]
     },
@@ -2361,6 +2424,13 @@ window.KG_GRAPH = {
           "quote": "不应用于高压注射泵注射造影剂（耐高压导管除外）",
           "src": "R08",
           "cat": "预防"
+        },
+        {
+          "k": "外渗危险因素（系统评价结论）",
+          "v": "从 2151 篇唯一研究筛出 15 篇（2 篇 RCT + 13 篇准实验/观察性研究，**质量低到中等**）：**女性、住院状态**是外渗危险因素；**注射速率、静脉通路部位、导管留置时间**影响外渗量",
+          "quote": "Fifteen articles were selected from a total of 2151 unique studies identified. Two were randomized controlled trials and 13 were quasi-experimental and observational studies. The quality of these studies was judged to be low to moderate. Some patient characteristics, such as female sex and inpatient status, appeared to be risk factors for extravasation. Additionally, injection rate, venous access site and catheter dwelling time could affect the volume extravasated.",
+          "src": "R22",
+          "cat": "风险因素"
         }
       ]
     },
@@ -3402,6 +3472,27 @@ window.KG_GRAPH = {
           "quote": "不应使用钢针、普通型 VAD 进行注射",
           "src": "R10",
           "cat": "预防"
+        },
+        {
+          "k": "加温可减少过敏反应（高黏度对比剂）",
+          "v": "汇总 5 项研究、307,329 次注射（86,676 次室温、220,653 次加温至 37 ℃）：**高黏度**对比剂预加温与过敏反应率显著降低相关（OR 0.59，95% CI 0.49–0.72，P < 0.00001）",
+          "quote": "A total of five studies, including 307,329 CM injections (86,676 at room temperature and 220,653 warmed to 37 °C), were included in the analysis. For high viscosity CM, pre-warming was associated with significantly lower allergic reaction rates (OR: 0.59, 95% CI: 0.49-0.72, P < 0.00001).",
+          "src": "R21",
+          "cat": "对比剂与流程"
+        },
+        {
+          "k": "加温不能减少外渗",
+          "v": "⚠️ 同一 Meta 分析：**外渗率**在加温与室温之间**无显著差异**（高黏度对比剂 OR 0.53，95% CI 0.20–1.43，P = 0.21）⇒ 「加温能减少外渗」这个说法**没有证据支持**",
+          "quote": "There was no significant difference in rates of extravasation for high viscosity CM (OR: 0.53, 95% CI: 0.20-1.43, P = 0.21).",
+          "src": "R21",
+          "cat": "对比剂与流程"
+        },
+        {
+          "k": "加温的结论与局限",
+          "v": "结论：加温至 37 ℃ 是降低高黏度对比剂注射时过敏反应与生理反应的安全有效手段；无论黏度如何，加温与室温的外渗率无显著差异",
+          "quote": "Our meta-analysis suggests that warming CM to 37 °C is a safe and effective approach to reduce the risk of allergic reactions and physiologic reactions during injection of high-viscosity CM. However, there was no significant difference in extravasation rates between warmed and room temperature CM, regardless of viscosity.",
+          "src": "R21",
+          "cat": "对比剂与流程"
         }
       ]
     },
@@ -3941,6 +4032,13 @@ window.KG_GRAPH = {
           "quote": "应立即停止在原部位输液，抬高患肢，及时通知医师，给予对症处理",
           "src": "R08",
           "cat": "处置顺序"
+        },
+        {
+          "k": "该领域的研究缺口",
+          "v": "因原始研究质量所限，本系统评价**只识别出「可能的」危险因素与干预措施**，并明确指出该领域存在研究缺口、需要方法学扎实的试验",
+          "quote": "Given the quality of the primary studies, this systematic review identified only potential risk factors and interventions. It further highlighted the research gap in this area and the importance of conducting trials with solid methodological designs.",
+          "src": "R22",
+          "cat": "方法学"
         },
         {
           "k": "中成药外敷（核心推荐）",
@@ -9306,6 +9404,13 @@ window.KG_GRAPH = {
           "quote": "three main ways of detecting CMEX",
           "src": "R02",
           "cat": "识别"
+        },
+        {
+          "k": "外渗探测附件的证据（初步）",
+          "v": "初步研究提示**外渗探测附件**可能有助于识别外渗并减少外渗量；其余干预措施要么未显著降低外渗发生率/外渗量，要么各研究结果不一致",
+          "quote": "Preliminary studies seemed to indicate the potential of extravasation detection accessories to identify extravasation and reduce the volume extravasated. The other interventions either did not result in significant reduction in the frequency/volume of extravasation, or the results were mixed across the studies.",
+          "src": "R22",
+          "cat": "预防"
         }
       ]
     },
@@ -14890,6 +14995,42 @@ window.KG_GRAPH = {
     {
       "source": "NPM_ObservationThenRemove",
       "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_FragileVein",
+      "target": "R22",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_HighPressureInjection",
+      "target": "R22",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_ExtravasationDetection",
+      "target": "R22",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_ExtravasationPrinciple",
+      "target": "R22",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_AllergyHistory",
+      "target": "R23",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_ContrastAllergyHistory",
+      "target": "R23",
       "type": "SUPPORTED_BY",
       "label": "出处"
     },

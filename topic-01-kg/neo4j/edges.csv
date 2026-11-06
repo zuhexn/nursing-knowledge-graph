@@ -699,6 +699,12 @@ NPM_SalineFlushCheck,NonPharmacologicalManagement,等速生理盐水试推,SUPPO
 RF_FragileVein,RiskFactor,静脉条件差,SUPPORTED_BY,出处,R08,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
 DE_ExtravasationHomeCare,DiseaseEducation,外渗居家护理科普,SUPPORTED_BY,出处,R08,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
 NPM_ObservationThenRemove,NonPharmacologicalManagement,留观后拔针,SUPPORTED_BY,出处,R08,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
+RF_FragileVein,RiskFactor,静脉条件差,SUPPORTED_BY,出处,R22,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
+RF_HighPressureInjection,RiskFactor,高压注射,SUPPORTED_BY,出处,R22,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
+AT_ExtravasationDetection,AssessmentTool,外渗探测与压力监测,SUPPORTED_BY,出处,R22,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
+MP_ExtravasationPrinciple,ManagementPrinciple,外渗处置原则,SUPPORTED_BY,出处,R22,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
+AT_AllergyHistory,AssessmentTool,过敏史询问,SUPPORTED_BY,出处,R23,Reference,对比剂即刻超敏反应危险因素的系统评价与 Meta 分析
+RF_ContrastAllergyHistory,RiskFactor,既往碘对比剂过敏史,SUPPORTED_BY,出处,R23,Reference,对比剂即刻超敏反应危险因素的系统评价与 Meta 分析
 MP_ExtravasationPrinciple,ManagementPrinciple,外渗处置原则,SUPPORTED_BY,出处,CN-05,Reference,中药如意金黄散早期湿敷在药物外渗性皮肤损伤中的效果分析
 NPM_TcmExternalApply,NonPharmacologicalManagement,中药外敷法（外渗）,SUPPORTED_BY,出处,DRUG-01,Reference,总局关于修订跌打万花油等 32 种非处方药说明书的公告（2017 年第 175 号）附件 10《如意金黄散非处方药说明书范本》
 S_VasovagalReaction,SymptomSign,血管迷走反应,BELONGS_TO,属于,SC_AdverseSpectrum,SymptomCategory,碘对比剂不良反应谱
