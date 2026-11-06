@@ -24,7 +24,13 @@
     padding:22px 24px;flex:1 1 380px;min-width:320px;
   }
   .topic h2{font-size:19px;margin:0 0 4px;line-height:1.5;}
-  .topic .meta{color:var(--text-dim);font-size:12.5px;margin:0 0 16px;}
+  .topic .meta{color:var(--text-dim);font-size:12.5px;margin:0 0 10px;}
+  /* 规模统计（客户 2026-11-06 问「有多少文献支撑这个」⇒ 落地页直接给总数）*/
+  .topic .stats{
+    margin:0 0 16px;padding:10px 12px;border-radius:10px;background:var(--accent-soft);
+    color:#1c4c96;font-size:13px;line-height:1.9;
+  }
+  .topic .stats b{font-size:15px;font-weight:700;}
   .links{display:flex;flex-direction:column;gap:10px;}
   .link{
     display:block;text-decoration:none;border:1px solid var(--line);border-radius:10px;
@@ -49,6 +55,7 @@
     <div class="topic">
       <h2>CT增强扫描后过敏反应与外渗</h2>
       <p class="meta">碘对比剂过敏反应 · 碘对比剂外渗 · 护理预防与处置</p>
+      <p class="stats"><b>39</b> 篇文献 · <b>105</b> 个知识实体 · <b>516</b> 条文献要点 · <b>92</b> 个实体带要点 · <b>751</b> 条关联关系</p>
       <div class="links">
         <a class="link" href="./topic-01-kg/index.html"><b>图谱页面</b><span>交互式知识图谱 · 知识框架逐层展开 + 关系图 + 检索 + 节点详情</span></a>
       </div>

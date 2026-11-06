@@ -311,6 +311,17 @@
   .lg-item.off{opacity:.32;}
   .lg-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
   .lg-count{color:#6b84a3;font-size:14px;}
+  /* 文献支撑总账（客户 2026-11-06）*/
+  .lg-lit-list{display:flex;flex-direction:column;gap:5px;}
+  .lg-lit{
+    display:flex;align-items:baseline;gap:8px;padding:7px 10px;border-radius:9px;
+    background:var(--panel-2);border:1px solid var(--line);
+  }
+  .lg-lit-name{flex:1;min-width:0;font-size:14.5px;color:var(--text);line-height:1.5;
+               overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .lg-lit .lg-count{flex-shrink:0;font-size:13.5px;}
+  .lg-lit.client{background:rgba(168,100,4,.08);border-color:#e0c79a;}
+  .lg-lit.client .lg-count{color:#7a4a02;}
 
   /* ---------- 首屏遮罩 ---------- */
   #loading{
@@ -483,7 +494,16 @@
   .pt-k{font-size:15px;color:var(--accent);font-weight:600;margin-bottom:3px;}
   .pt-v{font-size:16px;line-height:1.65;}
   .pt .quote{font-size:14.5px;color:var(--text-dim);line-height:1.55;margin-top:4px;
-             padding-left:8px;border-left:1px dashed var(--line);}
+             padding-left:8px;border-left:1px dashed var(--line);
+             white-space:pre-wrap;word-break:break-word;}
+  /* 长引文折叠（2026-11-06）—— 新挖的文献里有引文 1.5~2.1 千字（整段原文 + 表格块），
+     全量展开会把详情卡撑到几千字，手机上根本读不下去。
+     ⇒ 展示层折叠（320 字），数据里仍保留全文（可点出处看文献节点）。 */
+  .pt .quote.long{max-height:7.2em;overflow:hidden;position:relative;
+                  -webkit-mask-image:linear-gradient(180deg,#000 62%,transparent 100%);
+                  mask-image:linear-gradient(180deg,#000 62%,transparent 100%);}
+  .pt .quoteToggle{display:inline-block;margin-top:4px;font-size:13.5px;
+                   color:var(--accent-2);cursor:pointer;user-select:none;}
   .pt .src{display:inline-block;margin-top:5px;font-size:14px;color:var(--accent-2);cursor:pointer;}
   /* 客户实践要点的出处：**不可点**（没有文献节点可跳）⇒ 用琥珀色 + 无手型 */
   .pt .src.client{color:#7a4a02;background:rgba(168,100,4,.10);padding:2px 8px;border-radius:9px;cursor:default;}
@@ -1762,11 +1782,33 @@
     return best;
   }
 
+  /* 客户临床实践要点的出处标记 —— **不是**文献节点 id，
+     它的含义是「这条来自客户提供的临床做法，尚无文献支撑」。
+     ⛔ 前端不写死任何题目名 / 节点类型 key；这是**数据约定**不是题目内容。
+     ⚠️ 必须定义在**任何用到它的地方之前** —— `var` 提升只保证变量存在，
+        不保证值已赋值（用在前面会拿到 undefined）。 */
+  var CLIENT_SRC = "__CLI" + "ENT__";
+
+  /* 这个节点被几篇文献支撑（= 它的要点出处去重计数）——
+     客户 2026-11-06 问「你有多少文献支撑这个」⇒ 画布上也让**证据密度**可见：
+     支撑篇数多的节点画大一点，一眼看出「哪些是证据厚的核心知识」。 */
+  function litCount(n) {
+    var set = {};
+    ((n && n.details) || []).forEach(function (d) {
+      if (d && d.src && d.src !== CLIENT_SRC) set[d.src] = 1;
+    });
+    return Object.keys(set).length;
+  }
+
   /* ============ 构建 ECharts 数据 ============ */
   function nodeSymbolSize(n) {
     var base = typeOf(n).size || 24;
     var d = degree[n.id] || 0;
     var s = Math.round(base * (0.72 + 0.75 * Math.sqrt(d / maxDeg)));
+    /* 证据密度加成：支撑篇数越多，节点越大（最多 +30%）——
+       度数代表「连得多」，文献篇数代表「证据厚」，两件事都该看得出来。 */
+    var lc = litCount(n);
+    if (lc > 0) s = Math.round(s * (1 + Math.min(0.30, 0.06 * Math.log2(lc + 1))));
     /* 手机上节点要小 —— 逐步展开之后屏幕上本来就只有十几二十个节点，
        不再靠「把节点撑大」来点得中（点选按最近邻算，见 nearestNode）。 */
     return isNarrow() ? Math.max(13, Math.round(s * 0.62)) : s;
@@ -1985,6 +2027,50 @@
       lab.textContent = (state.showEvidence ? "显示" : "隐藏") + " · " + n + " 条";
     }
   }
+  /* --- 文献支撑总账（客户 2026-11-06 直接问「你有多少文献支撑这个」）
+     口径与详情卡的「文献支撑 N 篇」一致：按**要点出处 src** 去重。
+     ⇒ 一个节点的文献支撑数 = 它的要点里引用到的**不同文献**数。
+     统计口径：每篇文献 ⇒ 支撑了多少个节点、贡献了多少条要点。 */
+  function renderLiteratureLedger() {
+    var byRef = {};      /* ref -> {name, nodes:Set, points:n} */
+    (G.nodes || []).forEach(function (n) {
+      ((n && n.details) || []).forEach(function (d) {
+        if (!d.src || d.src === CLIENT_SRC) return;
+        if (!byRef[d.src]) {
+          byRef[d.src] = {name: (NODE[d.src] && NODE[d.src].name) || d.src,
+                          nodes: {}, points: 0};
+        }
+        byRef[d.src].nodes[n.id] = 1;
+        byRef[d.src].points += 1;
+      });
+    });
+    var refs = Object.keys(byRef);
+    if (!refs.length) return "";
+    /* 按支撑节点数降序；同数按要点数降序 */
+    refs.sort(function (a, b) {
+      var d = Object.keys(byRef[b].nodes).length - Object.keys(byRef[a].nodes).length;
+      return d !== 0 ? d : byRef[b].points - byRef[a].points;
+    });
+    var rows = refs.map(function (r) {
+      var it = byRef[r];
+      var nn = Object.keys(it.nodes).length;
+      return '<div class="lg-lit"><span class="lg-lit-name">' + esc(it.name) + '</span>' +
+        '<span class="lg-count">支撑 ' + nn + ' 个节点 · ' + it.points + ' 条要点</span></div>';
+    }).join("");
+    var clientN = 0;
+    (G.nodes || []).forEach(function (n) {
+      ((n && n.details) || []).forEach(function (d) {
+        if (d.src === CLIENT_SRC) clientN++;
+      });
+    });
+    return '<div class="legend-head" style="margin:18px 0 8px;">' +
+      '<h4>文献支撑</h4><span class="lg-count">' + refs.length + ' 篇</span></div>' +
+      '<div class="sec-hint">每篇文献支撑了多少个知识实体、多少条要点 —— 点图上节点可见同一口径</div>' +
+      '<div class="lg-lit-list">' + rows + '</div>' +
+      (clientN ? '<div class="lg-lit client"><span class="lg-lit-name">客户提供的临床做法</span>' +
+        '<span class="lg-count">' + clientN + ' 条 · 文献待核</span></div>' : "");
+  }
+
   function renderLegend() {
     var body = document.getElementById("legend-body");
     var countMap = {};
@@ -2000,7 +2086,8 @@
       '<div class="lg-items"><div class="lg-item' + (state.showEvidence ? "" : " off") + '" id="legendEvidence" ' +
       'title="有文献支持的边默认隐藏：它们占全部边的一半，画出来会盖住知识结构">' +
       '<span class="lg-dot" style="background:#a86404"></span><span>文献边</span>' +
-      '<span class="lg-count" id="legendEvidenceState"></span></div></div>';
+      '<span class="lg-count" id="legendEvidenceState"></span></div></div>' +
+      renderLiteratureLedger();
     syncEvidenceUI();
     body.querySelectorAll(".lg-item[data-type]").forEach(function (el) {
       el.addEventListener("click", function () {
@@ -2261,11 +2348,6 @@
     });
   }
 
-  /* 客户临床实践要点的出处标记 —— **不是**文献节点 id，
-     它的含义是「这条来自客户提供的临床做法，尚无文献支撑」。
-     ⛔ 前端不写死任何题目名 / 节点类型 key；这是**数据约定**不是题目内容。 */
-  var CLIENT_SRC = "__CLI" + "ENT__";
-
   function renderPanel(n) {
     var t = typeOf(n);
     document.getElementById("p-name").textContent = n.name || "";
@@ -2308,7 +2390,15 @@
           var srcName = "";
           var srcId = d.src || "";
           if (srcId && NODE[srcId]) srcName = NODE[srcId].name;
-          var quote = d.quote ? '<div class="quote">' + esc(d.quote) + '</div>' : '';
+          var quote = "";
+          if (d.quote) {
+            var isLong = d.quote.length > 320;
+            quote = '<div class="quote' + (isLong ? " long" : "") + '">' + esc(d.quote) + '</div>';
+            if (isLong) {
+              quote += '<span class="quoteToggle" data-toggle="1">展开全文（' +
+                       d.quote.length + ' 字）</span>';
+            }
+          }
           /* 客户实践要点没有文献出处 ⇒ 不给「出处」链接（点了会跳到不存在的节点），
              改成明写「客户做法 · 文献待核」—— 让读者知道这条**不是**文献支撑的。 */
           var srcBtn;
@@ -2397,6 +2487,25 @@
     body.scrollTop = 0;
     body.querySelectorAll(".obj").forEach(function (el) {
       el.addEventListener("click", function () { pick(el.dataset.id); });
+    });
+    /* --- 要点上的「出处：XXX ›」跳到该文献节点 ---
+       ⚠️ 实测发现这里**从未绑过点击**（只有 .obj 绑了）⇒ 页面上写着
+       「点出处可跳到该文献」，实际点了没反应 ⇒ 客户按提示做会以为坏了。 */
+    body.querySelectorAll(".pt .src[data-id]").forEach(function (el) {
+      el.addEventListener("click", function (ev) {
+        ev.stopPropagation();
+        if (el.dataset.id && NODE[el.dataset.id]) pick(el.dataset.id);
+      });
+    });
+    /* --- 长引文折叠/展开 --- */
+    body.querySelectorAll(".quoteToggle").forEach(function (el) {
+      el.addEventListener("click", function (ev) {
+        ev.stopPropagation();
+        var q = el.parentNode.querySelector(".quote");
+        if (!q) return;
+        var open = q.classList.toggle("long") === false;
+        el.textContent = open ? "收起" : ("展开全文（" + (q.textContent || "").length + " 字）");
+      });
     });
   }
 
