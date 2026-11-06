@@ -481,6 +481,17 @@ def check_file(path, topic_key, rep, doc, terms_source):
         return seen
 
     node_names = [(n.get("id"), str(n.get("name") or "")) for n in nodes]
+    # ⚠️ **文献节点不参与附P 判定**（2026-11-05 修正）
+    #    附P 管的是「摘要承诺了一个图里够不着的**内容**节点」—— 那是缺陷。
+    #    但摘要里写「出处：某某指南」是**正常写法**，文献节点是**出处**不是内容；
+    #    而且文献边本来就被排除在可达路径外（否则任何两节点都 2 跳可达，判据失效）
+    #    ⇒ 拿文献名去卡附P = 逼着作者不敢写出处。
+    content_names = [(n.get("id"), str(n.get("name") or ""))
+                     for n in nodes if n.get("type") != "Reference"]
+    # 文献节点名 —— 摘要里出现文献名时，它内部的**内容节点名子串**不算「点名」
+    # （例：文献名「影像科碘对比剂输注安全专家共识」里含「碘对比剂」；
+    #     若不排除，会把「写了出处」误判成「承诺了一个够不着的节点」）
+    ref_names = [str(n.get("name") or "") for n in nodes if n.get("type") == "Reference"]
     unreach = []
     for n in nodes:
         if n.get("type") == "Reference":
@@ -488,12 +499,15 @@ def check_file(path, topic_key, rep, doc, terms_source):
         summ = str(n.get("summary") or "")
         if not summ:
             continue
-        present = [nm for _i, nm in node_names if nm and len(nm) >= 3 and nm in summ]
-        for nid, nm in node_names:
+        present = [nm for _i, nm in content_names if nm and len(nm) >= 3 and nm in summ]
+        for nid, nm in content_names:
             if nid == n.get("id") or not nm or len(nm) < 3 or nm not in summ:
                 continue
             # 若它是另一个**在场**节点名的子串（顺带包含），不算点名
             if any(nm != other and nm in other for other in present):
+                continue
+            # 若它只出现在某个**文献名内部**（是文献名的一部分），不算点名
+            if any(nm != rn and nm in rn for rn in ref_names):
                 continue
             if nid not in reachable2(n.get("id")):
                 unreach.append("%s 的摘要提到「%s」但 2 跳内到不了" % (n.get("name"), nm))
@@ -503,9 +517,15 @@ def check_file(path, topic_key, rep, doc, terms_source):
     # ---- 附加：每条「要点」都必须有可回溯的出处 ----
     # 节点内容少 ⇒ 客户说「每个节点只说了一个标题的感觉」⇒ 加 `details`（要点数组）。
     # ⛔ 要点不许是空话：每条都要指到**图里真实存在的文献节点**，且正文非空。
+    # ⚠️ **客户临床实践的例外**（2026-11-05）：客户口述的临床做法（如「新磺片加五黄油外敷」
+    #    联合方案）**查不到文献** —— 但它不能因此从图上消失，也不能冒充有文献。
+    #    ⇒ 这类要点必须显式标 `src: "__CLIENT__"`，且正文里必须写明证据状态
+    #      （待核 / 跨适应证外推）。判据 = **显式标记 + 正文含证据状态说明**，
+    #      不是「有没有文献」—— 混进来的每条都必须是真文献。
     ref_ids = set(n.get("id") for n in nodes if n.get("type") == "Reference")
     det_bad = []
     det_total = 0
+    det_client = 0
     for n in nodes:
         for d in (n.get("details") or []):
             det_total += 1
@@ -516,12 +536,23 @@ def check_file(path, topic_key, rep, doc, terms_source):
             if not str(d.get("k") or "").strip():
                 det_bad.append("%s 的要点缺标题" % n.get("name")); continue
             src = d.get("src")
+            if src == "__CLIENT__":
+                # 客户临床实践：必须有出处标记 + 正文写明证据状态
+                det_client += 1
+                if not any(kw in str(d.get("v") or "") for kw in
+                           ("待核", "无任何", "证据状态", "跨适应证", "未披露")):
+                    det_bad.append(
+                        "%s 的客户实践要点没有写明证据状态（待核 / 无文献 / 跨适应证外推）"
+                        % n.get("name"))
+                continue
             if not src:
                 det_bad.append("%s 的要点没有出处（src）" % n.get("name")); continue
             if src not in ref_ids:
                 det_bad.append("%s 的要点出处 %s 不是图里的文献节点" % (n.get("name"), src))
     rep.add("附Q", "每条要点都有可回溯的出处（%s）" % tag, not det_bad,
-            ("；".join(det_bad[:8])) if det_bad else "%d 条要点全部指到图内文献节点" % det_total)
+            ("；".join(det_bad[:8])) if det_bad
+            else "%d 条要点全部指到图内文献节点（其中 %d 条为客户临床实践，已标证据状态）"
+                 % (det_total, det_client))
 
     # ---- 附加：患者层的「检查后须知」每条都要挂在有出处的节点上 ----
     # （与 P3 / P4 同一道闸：患者层是站内唯一直接对患者说话的内容）

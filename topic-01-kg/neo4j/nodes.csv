@@ -28,8 +28,8 @@ RF_NoSalineFlush,RiskFactor,未做生理盐水试推,推药之前不先试推生
 PM_AdrenalineIM,PharmacologicalManagement,肌内注射肾上腺素,抢救过敏性休克的第一线用药，打在大腿外侧中部。,药物治疗,2
 PM_Corticosteroid,PharmacologicalManagement,糖皮质激素,配合抗组胺药控制过敏反应的辅助用药。,药物治疗,2
 PM_Antihistamine,PharmacologicalManagement,抗组胺药,止痒、减轻风团样皮损的常用药。,药物治疗,2
-PM_MagnesiumSulfate,PharmacologicalManagement,50%硫酸镁湿敷,外渗后局部湿敷用的药，可以减轻肿胀和疼痛。,药物治疗,1
-PM_DexamethasoneWetCompress,PharmacologicalManagement,0.05%地塞米松湿敷,外渗后局部湿敷的另一种选择。,药物治疗,1
+PM_MagnesiumSulfate,PharmacologicalManagement,50%硫酸镁湿敷,PM_MagnesiumSulfate：局部外用药。早期用保湿**冷**敷，**24 h 后改保湿热敷**（R07）；24 h 内严禁热敷（R10）。**仅中、重度外渗适用**（轻度只需抬高患肢 + 局部冰敷或冷湿敷 + 观察，不用外敷药）。⚠️ **国内外口径不同**：国内 R07 / R04 / R10 都列此法；国际 ESUR（2022）只列抬高患肢 + 冰敷 + 观察，未列本药 —— 用与不用由本院方案与医师判断决定。,药物治疗,1
+PM_DexamethasoneWetCompress,PharmacologicalManagement,0.05%地塞米松湿敷,PM_DexamethasoneWetCompress：局部外用药。属局部外用，与「口服地塞米松」是两回事。**仅中、重度外渗适用**（轻度只需抬高患肢 + 局部冰敷或冷湿敷 + 观察，不用外敷药）。⚠️ **国内外口径不同**：国内 R07 / R04 / R10 都列此法；国际 ESUR（2022）只列抬高患肢 + 冰敷 + 观察，未列本药 —— 用与不用由本院方案与医师判断决定。,药物治疗,1
 NPM_StopInjection,NonPharmacologicalManagement,立即停止注射,怀疑外渗时，第一时间停下推药。,非药物管理,2
 NPM_KeepCatheter,NonPharmacologicalManagement,保留静脉留置针,先不拔针，尽量回抽漏出来的药液，再按规范处理。,非药物管理,2
 NPM_LimbElevation,NonPharmacologicalManagement,患肢抬高,把患肢抬到比心脏高的位置，帮助消肿。,非药物管理,3
@@ -141,3 +141,5 @@ S_Bronchospasm,SymptomSign,支气管痉挛,支气管平滑肌痉挛导致喘息�
 S_PulmonaryEdema,SymptomSign,肺水肿,对比剂过敏反应累及肺部的表现：呼吸困难、端坐呼吸；处理为吸氧、抬高床头、呋塞米静注并呼叫急救。,症状体征,1
 MP_SkinIntegrity,ManagementPrinciple,外渗后皮肤完整性,外渗后处置的第一分叉：皮肤完整 → 可遵医嘱外敷（含中成药）；出现水疱 / 破溃 / 皮损 / 感染 → **禁用中药外敷**，转创面处理与外科会诊。,处置原则,4
 NPM_TcmExternalApply,NonPharmacologicalManagement,中药外敷法（外渗）,外渗的中成药外敷：国家层面唯一的推荐是中华护理学会指南 3.7⑤「中成药制剂如意金黄散外敷」（B 级强推荐，与 50% 硫酸镁等并列）；各家配伍与证据强度不一，**必须遵医嘱、限于皮肤完整者**。,非药物管理,12
+NPM_TcmCombinedApply,NonPharmacologicalManagement,新磺片加五黄油联合外敷,客户 2026-11-05 提供的临床做法：**新磺片加五黄油外敷**。⚠️ **证据状态：待核** —— 两药各自有文献（新磺片 2 篇 · 五黄油 3 篇），但**两药联合无任何一篇文献**；且现有证据场景均为**静脉炎**，用于碘对比剂外渗属跨适应证外推。五黄油为医疗机构制剂（江西以外不可得）。**按本院方案执行，须遵医嘱、限于皮肤完整者。**,非药物管理,0
+PM_DexamethasoneOral,PharmacologicalManagement,口服地塞米松（严重外渗）,**严重**对比剂外渗时，在外用药物基础上口服地塞米松 5 mg/次、3 次/d、连用 3 d；必要时咨询临床医师用药。出处：R07（2018 影像科碘对比剂输注安全专家共识）。⚠️ 属**全身**用药，与局部外敷是两回事，须由医师开具。,药物管理,1

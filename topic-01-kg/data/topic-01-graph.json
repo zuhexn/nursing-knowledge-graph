@@ -159,57 +159,57 @@
     },
     {
       "key": "HAS_SYMPTOM",
-      "label": "存在症状",
+      "label": "表现为",
       "desc": "存在症状"
     },
     {
       "key": "DETECTED_BY",
-      "label": "通过检查发现",
+      "label": "检查",
       "desc": "通过检查发现"
     },
     {
       "key": "MANAGED_BY",
-      "label": "由……处置",
+      "label": "处置",
       "desc": "由……处置"
     },
     {
       "key": "EDUCATED_BY",
-      "label": "由……教育",
+      "label": "科普",
       "desc": "由……教育"
     },
     {
       "key": "EXPERIENCED_AS",
-      "label": "表现为",
+      "label": "体验",
       "desc": "表现为"
     },
     {
       "key": "ASSESSED_BY",
-      "label": "由……评估",
+      "label": "评估",
       "desc": "由……评估"
     },
     {
       "key": "AT_RISK_BY",
-      "label": "风险来自",
+      "label": "高危因素",
       "desc": "风险来自"
     },
     {
       "key": "TREATED_BY",
-      "label": "由……治疗",
+      "label": "管理",
       "desc": "由……治疗"
     },
     {
       "key": "EFFECT_ON",
-      "label": "影响",
+      "label": "效果",
       "desc": "影响"
     },
     {
       "key": "PART_OF_CASE",
-      "label": "属于个案",
+      "label": "属于病例",
       "desc": "属于个案"
     },
     {
       "key": "SUPPORTED_BY",
-      "label": "有文献支持",
+      "label": "出处",
       "desc": "有文献支持"
     }
   ],
@@ -1501,6 +1501,13 @@
           "cat": "居家护理与宣教"
         },
         {
+          "k": "ESUR 国际口径：保守处理为主",
+          "v": "⚠️ **国际口径与国内指南不同**：ESUR（2022 更新）不列 50% 硫酸镁 / 地塞米松湿敷，只列抬高患肢、冰敷、密切观察；透明质酸酶「证据有限、不属常规治疗」⇒ 国内外共识并存，**用药与否由本院方案与医师判断决定**",
+          "quote": "Conservative management is adequate",
+          "src": "R02",
+          "cat": "局部处理"
+        },
+        {
           "k": "立即停止拔针",
           "v": "外渗后立即停止注射,避免加压冲洗导管,及时拔针并按规范处置(A级,修订)",
           "quote": "应立即停止注射，避免加压冲洗导管，及时拔针",
@@ -2648,7 +2655,7 @@
         "magnesium sulfate wet compress",
         "硫酸镁湿敷"
       ],
-      "summary": "外渗后局部湿敷用的药，可以减轻肿胀和疼痛。",
+      "summary": "PM_MagnesiumSulfate：局部外用药。早期用保湿**冷**敷，**24 h 后改保湿热敷**（R07）；24 h 内严禁热敷（R10）。**仅中、重度外渗适用**（轻度只需抬高患肢 + 局部冰敷或冷湿敷 + 观察，不用外敷药）。⚠️ **国内外口径不同**：国内 R07 / R04 / R10 都列此法；国际 ESUR（2022）只列抬高患肢 + 冰敷 + 观察，未列本药 —— 用与不用由本院方案与医师判断决定。",
       "attrs": [],
       "evidence": [
         {
@@ -2665,9 +2672,9 @@
       "graph": "topic-01",
       "details": [
         {
-          "k": "中重度处理流程",
-          "v": "抬高患肢，早期50%硫酸镁冷敷、24 h后改热敷；严重者口服地塞米松5 mg/次，3次/d，连用3 d",
-          "quote": "早期使用50％硫酸镁保湿冷敷，24 h后改硫酸镁保湿热敷",
+          "k": "中重度处理流程（硫酸镁冷敷→24 h改热敷）",
+          "v": "仅**中、重度**外渗适用：抬高患肢促进血液回流；早期 50% 硫酸镁保湿**冷**敷，24 h 后改硫酸镁保湿**热**敷；也可用黏多糖软膏外敷，或 0.05% 地塞米松局部湿敷",
+          "quote": "中、重度外渗 抬高患肢，促进血液回流；早期使用50％硫酸镁保湿冷敷，24 h后改硫酸镁保湿热敷；或者用黏多糖软膏等外敷；或者用0.05％地塞米松局部湿敷。",
           "src": "R07",
           "cat": "外渗早期识别"
         },
@@ -2698,7 +2705,7 @@
         "dexamethasone wet compress",
         "地塞米松湿敷"
       ],
-      "summary": "外渗后局部湿敷的另一种选择。",
+      "summary": "PM_DexamethasoneWetCompress：局部外用药。属局部外用，与「口服地塞米松」是两回事。**仅中、重度外渗适用**（轻度只需抬高患肢 + 局部冰敷或冷湿敷 + 观察，不用外敷药）。⚠️ **国内外口径不同**：国内 R07 / R04 / R10 都列此法；国际 ESUR（2022）只列抬高患肢 + 冰敷 + 观察，未列本药 —— 用与不用由本院方案与医师判断决定。",
       "attrs": [],
       "evidence": [
         {
@@ -2715,9 +2722,9 @@
       "graph": "topic-01",
       "details": [
         {
-          "k": "中重度处理流程",
-          "v": "抬高患肢，早期50%硫酸镁冷敷、24 h后改热敷；严重者口服地塞米松5 mg/次，3次/d，连用3 d",
-          "quote": "早期使用50％硫酸镁保湿冷敷，24 h后改硫酸镁保湿热敷",
+          "k": "中重度处理流程（硫酸镁冷敷→24 h改热敷）",
+          "v": "仅**中、重度**外渗适用：抬高患肢促进血液回流；早期 50% 硫酸镁保湿**冷**敷，24 h 后改硫酸镁保湿**热**敷；也可用黏多糖软膏外敷，或 0.05% 地塞米松局部湿敷",
+          "quote": "中、重度外渗 抬高患肢，促进血液回流；早期使用50％硫酸镁保湿冷敷，24 h后改硫酸镁保湿热敷；或者用黏多糖软膏等外敷；或者用0.05％地塞米松局部湿敷。",
           "src": "R07",
           "cat": "外渗早期识别"
         },
@@ -2922,25 +2929,11 @@
       "graph": "topic-01",
       "details": [
         {
-          "k": "中重度处理流程",
-          "v": "抬高患肢，早期50%硫酸镁冷敷、24 h后改热敷；严重者口服地塞米松5 mg/次，3次/d，连用3 d",
-          "quote": "早期使用50％硫酸镁保湿冷敷，24 h后改硫酸镁保湿热敷",
-          "src": "R07",
-          "cat": "外渗早期识别"
-        },
-        {
           "k": "轻度处理路径",
           "v": "轻度者抬高患肢、冰袋、每2~4小时监测;好转可离院,无好转需外科意见",
           "quote": "monitor patient 2–4 hourly",
           "src": "R02",
           "cat": "处置顺序"
-        },
-        {
-          "k": "ESUR保守处置",
-          "v": "多数外渗保守处理即可:抬高患肢、冰敷、密切观察;严重损伤请外科会诊",
-          "quote": "Conservative management is adequate",
-          "src": "R02",
-          "cat": "局部处理"
         },
         {
           "k": "轻度处理",
@@ -2986,7 +2979,7 @@
         },
         {
           "k": "居家禁忌与按压",
-          "v": "24 h内严禁热敷,抬高肿胀肢体至心脏水平,多做松拳握拳运动,适当多饮水促进血液循环;指导按压穿刺部位至少10 min",
+          "v": "24 h 内严禁热敷（与 R07「早期冷敷、24 h 后改热敷」的时间窗互为印证）·抬高肿胀肢体至心脏水平 · 多做松拳握拳运动 · 适当多饮水促进血液循环 · 指导按压穿刺部位至少 10 min",
           "quote": "24 h 内严禁热敷，抬高肿胀肢体至心脏水平",
           "src": "R10",
           "cat": "居家护理与宣教"
@@ -3052,8 +3045,8 @@
           "cat": "局部处理"
         },
         {
-          "k": "ESUR保守处置",
-          "v": "多数外渗保守处理即可:抬高患肢、冰敷、密切观察;严重损伤请外科会诊",
+          "k": "ESUR 国际口径：保守处理为主",
+          "v": "⚠️ **国际口径与国内指南不同**：ESUR（2022 更新）不列 50% 硫酸镁 / 地塞米松湿敷，只列抬高患肢、冰敷、密切观察；透明质酸酶「证据有限、不属常规治疗」⇒ 国内外共识并存，**用药与否由本院方案与医师判断决定**",
           "quote": "Conservative management is adequate",
           "src": "R02",
           "cat": "局部处理"
@@ -3088,7 +3081,7 @@
         },
         {
           "k": "居家禁忌与按压",
-          "v": "24 h内严禁热敷,抬高肿胀肢体至心脏水平,多做松拳握拳运动,适当多饮水促进血液循环;指导按压穿刺部位至少10 min",
+          "v": "24 h 内严禁热敷（与 R07「早期冷敷、24 h 后改热敷」的时间窗互为印证）·抬高肿胀肢体至心脏水平 · 多做松拳握拳运动 · 适当多饮水促进血液循环 · 指导按压穿刺部位至少 10 min",
           "quote": "24 h 内严禁热敷，抬高肿胀肢体至心脏水平",
           "src": "R10",
           "cat": "居家护理与宣教"
@@ -3922,8 +3915,8 @@
           "cat": "并发症"
         },
         {
-          "k": "ESUR保守处置",
-          "v": "多数外渗保守处理即可:抬高患肢、冰敷、密切观察;严重损伤请外科会诊",
+          "k": "ESUR 国际口径：保守处理为主",
+          "v": "⚠️ **国际口径与国内指南不同**：ESUR（2022 更新）不列 50% 硫酸镁 / 地塞米松湿敷，只列抬高患肢、冰敷、密切观察；透明质酸酶「证据有限、不属常规治疗」⇒ 国内外共识并存，**用药与否由本院方案与医师判断决定**",
           "quote": "Conservative management is adequate",
           "src": "R02",
           "cat": "局部处理"
@@ -4504,7 +4497,7 @@
         },
         {
           "k": "居家禁忌与按压",
-          "v": "24 h内严禁热敷,抬高肿胀肢体至心脏水平,多做松拳握拳运动,适当多饮水促进血液循环;指导按压穿刺部位至少10 min",
+          "v": "24 h 内严禁热敷（与 R07「早期冷敷、24 h 后改热敷」的时间窗互为印证）·抬高肿胀肢体至心脏水平 · 多做松拳握拳运动 · 适当多饮水促进血液循环 · 指导按压穿刺部位至少 10 min",
           "quote": "24 h 内严禁热敷，抬高肿胀肢体至心脏水平",
           "src": "R10",
           "cat": "居家护理与宣教"
@@ -4723,16 +4716,7 @@
           "ref": "R13"
         }
       ],
-      "graph": "topic-01",
-      "details": [
-        {
-          "k": "中重度处理流程",
-          "v": "抬高患肢，早期50%硫酸镁冷敷、24 h后改热敷；严重者口服地塞米松5 mg/次，3次/d，连用3 d",
-          "quote": "早期使用50％硫酸镁保湿冷敷，24 h后改硫酸镁保湿热敷",
-          "src": "R07",
-          "cat": "外渗早期识别"
-        }
-      ]
+      "graph": "topic-01"
     },
     {
       "id": "FS_LimbFunction",
@@ -4781,7 +4765,7 @@
         },
         {
           "k": "居家禁忌与按压",
-          "v": "24 h内严禁热敷,抬高肿胀肢体至心脏水平,多做松拳握拳运动,适当多饮水促进血液循环;指导按压穿刺部位至少10 min",
+          "v": "24 h 内严禁热敷（与 R07「早期冷敷、24 h 后改热敷」的时间窗互为印证）·抬高肿胀肢体至心脏水平 · 多做松拳握拳运动 · 适当多饮水促进血液循环 · 指导按压穿刺部位至少 10 min",
           "quote": "24 h 内严禁热敷，抬高肿胀肢体至心脏水平",
           "src": "R10",
           "cat": "居家护理与宣教"
@@ -8711,6 +8695,13 @@
           "quote": "Dose of between 5–250 Units",
           "src": "R02",
           "cat": "局部处理"
+        },
+        {
+          "k": "ESUR 国际口径：保守处理为主",
+          "v": "⚠️ **国际口径与国内指南不同**：ESUR（2022 更新）不列 50% 硫酸镁 / 地塞米松湿敷，只列抬高患肢、冰敷、密切观察；透明质酸酶「证据有限、不属常规治疗」⇒ 国内外共识并存，**用药与否由本院方案与医师判断决定**",
+          "quote": "Conservative management is adequate",
+          "src": "R02",
+          "cat": "局部处理"
         }
       ]
     },
@@ -9968,6 +9959,13 @@
           "cat": "外渗分级"
         },
         {
+          "k": "中重度处理流程（硫酸镁冷敷→24 h改热敷）",
+          "v": "仅**中、重度**外渗适用：抬高患肢促进血液回流；早期 50% 硫酸镁保湿**冷**敷，24 h 后改硫酸镁保湿**热**敷；也可用黏多糖软膏外敷，或 0.05% 地塞米松局部湿敷",
+          "quote": "中、重度外渗 抬高患肢，促进血液回流；早期使用50％硫酸镁保湿冷敷，24 h后改硫酸镁保湿热敷；或者用黏多糖软膏等外敷；或者用0.05％地塞米松局部湿敷。",
+          "src": "R07",
+          "cat": "外渗早期识别"
+        },
+        {
           "k": "中重度处理",
           "v": "中重度:患肢抬高、冰敷冷湿敷,50%硫酸镁、黏多糖软膏、0.05%地塞米松局部冷湿敷,可用如意金黄散外敷(B级)",
           "quote": "使用50%的硫酸镁、黏多糖软膏、0.05%的地塞米松局部冷湿敷",
@@ -10043,6 +10041,20 @@
         }
       ],
       "details": [
+        {
+          "k": "中重度处理流程（硫酸镁冷敷→24 h改热敷）",
+          "v": "仅**中、重度**外渗适用：抬高患肢促进血液回流；早期 50% 硫酸镁保湿**冷**敷，24 h 后改硫酸镁保湿**热**敷；也可用黏多糖软膏外敷，或 0.05% 地塞米松局部湿敷",
+          "quote": "中、重度外渗 抬高患肢，促进血液回流；早期使用50％硫酸镁保湿冷敷，24 h后改硫酸镁保湿热敷；或者用黏多糖软膏等外敷；或者用0.05％地塞米松局部湿敷。",
+          "src": "R07",
+          "cat": "外渗早期识别"
+        },
+        {
+          "k": "严重者口服地塞米松 5 mg/次",
+          "v": "对比剂外渗**严重者**，在**外用药物基础上**口服地塞米松 5 mg/次，3 次/d，连用 3 d；必要时咨询临床医师用药",
+          "quote": "对比剂外渗严重者，在外用药物基础上口服地塞米松5 mg/次，3次/d，连用3 d；必要时，咨询临床医师用药。",
+          "src": "R07",
+          "cat": "外渗早期识别"
+        },
         {
           "k": "4级标准与转归",
           "v": "4级:外渗量>50 mL、最小直径>15 cm,严重凹陷性水肿、局部青紫或水疱、疼痛剧烈,可发展为筋膜间室综合征需外科手术",
@@ -10440,21 +10452,21 @@
         },
         {
           "k": "新磺片身份不明",
-          "v": "56 例静脉炎随机分两组，新磺片糊剂湿敷 vs 硫酸镁热湿敷；3 d 后有效率 100% vs 71.4%（P<0.05）；但未披露成分与制备 ⇒ 不可作药理身份依据",
+          "v": "56 例静脉炎随机分两组，新磺片糊剂湿敷 vs 硫酸镁热湿敷；3 d 后有效率 100% vs 71.4%（P<0.05）；⚠️ **2026-11-05 已回原文逐字复核**：全文仅写「新磺片糊剂湿敷」，**未披露成分、制备方法、敷料厚度、更换频次与不良反应观察** ⇒ 不可作药理身份依据，也不可作操作规程依据",
           "quote": "实验组采用新磺片糊剂湿敷治疗，对照组采用硫酸镁溶液热湿敷治疗",
           "src": "CN-06",
           "cat": "文献"
         },
         {
           "k": "证据缺口",
-          "v": "「新磺片」作为名词在文献中稳定存在，但作为物质从未被定义（无成分/剂量/频次/疗程）",
+          "v": "「新磺片」作为名词在文献中稳定存在（CN-06 / CN-07 两篇），但作为物质从未被定义（无成分/剂量/频次/疗程）；⚠️ **国家药品库中查无「新磺片」这一药品**（只有「新癀片」· 国药准字 Z35020063）⇒ 极可能是「新癀片」的同音误写，但**文献本身未证实**，须由客户确认",
           "quote": "实验组有效率100%，对照组有效率71.4%",
           "src": "CN-06",
           "cat": "安全边界"
         },
         {
           "k": "第二篇用该名称的文献",
-          "v": "40 例深静脉置管所致静脉炎采用马铃薯片与新磺片交替外敷；39 例治愈、1 例显效，无不良反应发生",
+          "v": "40 例深静脉置管所致静脉炎采用马铃薯片与新磺片交替外敷；39 例治愈、1 例显效，无不良反应发生；⚠️ 2026-11-05 回原文复核：**同样只写「新磺片」，未披露成分与制备方法**，亦未说明是否等同于新癀片",
           "quote": "本组40例患者,39例治愈,1例显效",
           "src": "CN-07",
           "cat": "文献"
@@ -10535,6 +10547,65 @@
           "quote": "本品含有吲哚美辛。",
           "src": "DRUG-02",
           "cat": "安全边界"
+        }
+      ]
+    },
+    {
+      "id": "NPM_TcmCombinedApply",
+      "graph": "topic-01",
+      "type": "NonPharmacologicalManagement",
+      "name": "新磺片加五黄油联合外敷",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "新磺片加五黄油联合外敷"
+      ],
+      "summary": "客户 2026-11-05 提供的临床做法：**新磺片加五黄油外敷**。⚠️ **证据状态：待核** —— 两药各自有文献（新磺片 2 篇 · 五黄油 3 篇），但**两药联合无任何一篇文献**；且现有证据场景均为**静脉炎**，用于碘对比剂外渗属跨适应证外推。五黄油为医疗机构制剂（江西以外不可得）。**按本院方案执行，须遵医嘱、限于皮肤完整者。**",
+      "attrs": [],
+      "evidence": [],
+      "details": [
+        {
+          "k": "新磺片加五黄油外敷（客户口述的联合方案）",
+          "v": "客户 2026-11-05 口述的联合外敷方案：**新磺片 + 五黄油**。⚠️ **证据状态：待核** —— 逐一核对 11 篇中医外治文献：新磺片有 2 篇（CN-06 静脉炎 n=56 · CN-07 深静脉静脉炎 n=40）、五黄油有 3 篇（CN-09 化疗静脉炎 n=95 · CN-10 顺铂静脉炎 n=75 · CN-11 肠造口皮炎 n=90），**两药各自单独有证据，但「两药联合」无任何一篇文献**。另：五黄油 = 复方黄连油涂剂，属**医疗机构制剂**（赣药制备字 Z202100040001 · 南昌大学第一附属医院），非国药准字、江西以外不可得 ⇒ 本图谱按「本院方案」记录，不作普适推荐。**两单药的证据场景均为静脉炎，不是碘对比剂外渗** ⇒ 用于对比剂外渗属跨适应证外推。",
+          "quote": "",
+          "src": "__CLIENT__",
+          "cat": "客户临床做法"
+        }
+      ]
+    },
+    {
+      "id": "PM_DexamethasoneOral",
+      "graph": "topic-01",
+      "type": "PharmacologicalManagement",
+      "name": "口服地塞米松（严重外渗）",
+      "tags": [
+        "药物管理"
+      ],
+      "aliases": [
+        "口服地塞米松（严重外渗）"
+      ],
+      "summary": "**严重**对比剂外渗时，在外用药物基础上口服地塞米松 5 mg/次、3 次/d、连用 3 d；必要时咨询临床医师用药。出处：R07（2018 影像科碘对比剂输注安全专家共识）。⚠️ 属**全身**用药，与局部外敷是两回事，须由医师开具。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        }
+      ],
+      "details": [
+        {
+          "k": "严重者口服地塞米松 5 mg/次",
+          "v": "对比剂外渗**严重者**，在**外用药物基础上**口服地塞米松 5 mg/次，3 次/d，连用 3 d；必要时咨询临床医师用药",
+          "quote": "对比剂外渗严重者，在外用药物基础上口服地塞米松5 mg/次，3次/d，连用3 d；必要时，咨询临床医师用药。",
+          "src": "R07",
+          "cat": "外渗早期识别"
         }
       ]
     }
@@ -10640,1329 +10711,1336 @@
       "source": "DC_CTEnhancedRisk",
       "target": "S_AdverseReaction",
       "type": "HAS_SYMPTOM",
-      "label": "存在症状"
+      "label": "表现为"
     },
     {
       "source": "DC_CTEnhancedRisk",
       "target": "S_AllergicReaction",
       "type": "HAS_SYMPTOM",
-      "label": "存在症状"
+      "label": "表现为"
     },
     {
       "source": "DC_CTEnhancedRisk",
       "target": "S_Extravasation",
       "type": "HAS_SYMPTOM",
-      "label": "存在症状"
+      "label": "表现为"
     },
     {
       "source": "E_CTEnhancedScan",
       "target": "S_AdverseReaction",
       "type": "EFFECT_ON",
-      "label": "影响"
+      "label": "效果"
     },
     {
       "source": "E_CTEnhancedScan",
       "target": "S_Extravasation",
       "type": "EFFECT_ON",
-      "label": "影响"
+      "label": "效果"
     },
     {
       "source": "E_ContrastInjection",
       "target": "S_AllergicReaction",
       "type": "EFFECT_ON",
-      "label": "影响"
+      "label": "效果"
     },
     {
       "source": "E_ContrastInjection",
       "target": "S_Extravasation",
       "type": "EFFECT_ON",
-      "label": "影响"
+      "label": "效果"
     },
     {
       "source": "E_ContrastInjection",
       "target": "S_AdverseReaction",
       "type": "EFFECT_ON",
-      "label": "影响"
+      "label": "效果"
     },
     {
       "source": "S_AllergicReaction",
       "target": "S_AnaphylacticShock",
       "type": "HAS_SYMPTOM",
-      "label": "存在症状"
+      "label": "表现为"
     },
     {
       "source": "S_AllergicReaction",
       "target": "S_Urticaria",
       "type": "HAS_SYMPTOM",
-      "label": "存在症状"
+      "label": "表现为"
     },
     {
       "source": "S_AllergicReaction",
       "target": "S_FacialEdema",
       "type": "HAS_SYMPTOM",
-      "label": "存在症状"
+      "label": "表现为"
     },
     {
       "source": "S_AllergicReaction",
       "target": "S_ThroatDiscomfort",
       "type": "HAS_SYMPTOM",
-      "label": "存在症状"
+      "label": "表现为"
     },
     {
       "source": "S_AllergicReaction",
       "target": "S_ChestTightness",
       "type": "HAS_SYMPTOM",
-      "label": "存在症状"
+      "label": "表现为"
     },
     {
       "source": "S_AllergicReaction",
       "target": "S_GeneralizedWeakness",
       "type": "HAS_SYMPTOM",
-      "label": "存在症状"
+      "label": "表现为"
     },
     {
       "source": "S_Urticaria",
       "target": "S_Pruritus",
       "type": "HAS_SYMPTOM",
-      "label": "存在症状"
+      "label": "表现为"
     },
     {
       "source": "DC_CTEnhancedRisk",
       "target": "MP_NursingMeasures",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "DC_CTEnhancedRisk",
       "target": "MP_NursingPrevention",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "S_AdverseReaction",
       "target": "MP_NursingMeasures",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "S_AdverseReaction",
       "target": "MP_AdverseReactionTriage",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "S_AllergicReaction",
       "target": "MP_NursingMeasures",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "S_AllergicReaction",
       "target": "MP_NursingIntervention",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "S_AllergicReaction",
       "target": "MP_AdverseReactionTriage",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "S_AllergicReaction",
       "target": "NT_EarlyWarning",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "S_AnaphylacticShock",
       "target": "MP_NursingIntervention",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "S_AnaphylacticShock",
       "target": "MP_AdverseReactionTriage",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "S_Urticaria",
       "target": "MP_NursingIntervention",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "S_Pruritus",
       "target": "MP_NursingMeasures",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "S_Rash",
       "target": "MP_NursingMeasures",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "S_FacialEdema",
       "target": "MP_NursingIntervention",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "S_ThroatDiscomfort",
       "target": "MP_NursingIntervention",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "S_ChestTightness",
       "target": "MP_NursingIntervention",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "S_GeneralizedWeakness",
       "target": "MP_NursingIntervention",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "S_Extravasation",
       "target": "MP_NursingIntervention",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "S_Extravasation",
       "target": "MP_ExtravasationPrinciple",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "E_CTEnhancedScan",
       "target": "MP_NursingPrevention",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "E_ContrastInjection",
       "target": "MP_NursingPrevention",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "DC_CTEnhancedRisk",
       "target": "DE_PreExamNotice",
       "type": "EDUCATED_BY",
-      "label": "由……教育"
+      "label": "科普"
     },
     {
       "source": "DC_CTEnhancedRisk",
       "target": "DE_AfterExamCare",
       "type": "EDUCATED_BY",
-      "label": "由……教育"
+      "label": "科普"
     },
     {
       "source": "DC_CTEnhancedRisk",
       "target": "DE_AllergyDisclosure",
       "type": "EDUCATED_BY",
-      "label": "由……教育"
+      "label": "科普"
     },
     {
       "source": "DC_CTEnhancedRisk",
       "target": "DE_ExtravasationHomeCare",
       "type": "EDUCATED_BY",
-      "label": "由……教育"
+      "label": "科普"
     },
     {
       "source": "DC_CTEnhancedRisk",
       "target": "DE_EmergencyKnowledge",
       "type": "EDUCATED_BY",
-      "label": "由……教育"
+      "label": "科普"
     },
     {
       "source": "E_ContrastInjection",
       "target": "DE_PreExamNotice",
       "type": "EDUCATED_BY",
-      "label": "由……教育"
+      "label": "科普"
     },
     {
       "source": "S_Extravasation",
       "target": "DE_ExtravasationHomeCare",
       "type": "EDUCATED_BY",
-      "label": "由……教育"
+      "label": "科普"
     },
     {
       "source": "S_AnaphylacticShock",
       "target": "DE_EmergencyKnowledge",
       "type": "EDUCATED_BY",
-      "label": "由……教育"
+      "label": "科普"
     },
     {
       "source": "S_AllergicReaction",
       "target": "AT_AllergyHistory",
       "type": "ASSESSED_BY",
-      "label": "由……评估"
+      "label": "评估"
     },
     {
       "source": "S_AnaphylacticShock",
       "target": "AT_AllergyHistory",
       "type": "ASSESSED_BY",
-      "label": "由……评估"
+      "label": "评估"
     },
     {
       "source": "S_AdverseReaction",
       "target": "AT_AllergyHistory",
       "type": "ASSESSED_BY",
-      "label": "由……评估"
+      "label": "评估"
     },
     {
       "source": "S_Urticaria",
       "target": "AT_AllergyHistory",
       "type": "ASSESSED_BY",
-      "label": "由……评估"
+      "label": "评估"
     },
     {
       "source": "S_Extravasation",
       "target": "AT_ExtravasationAssessment",
       "type": "ASSESSED_BY",
-      "label": "由……评估"
+      "label": "评估"
     },
     {
       "source": "S_Extravasation",
       "target": "AT_VascularAssessment",
       "type": "ASSESSED_BY",
-      "label": "由……评估",
+      "label": "评估",
       "note": "使用耐高压型留置针，优先肘正中静脉"
     },
     {
       "source": "S_AllergicReaction",
       "target": "RF_ContrastAllergyHistory",
       "type": "AT_RISK_BY",
-      "label": "风险来自"
+      "label": "高危因素"
     },
     {
       "source": "S_AllergicReaction",
       "target": "RF_UncontrolledAsthma",
       "type": "AT_RISK_BY",
-      "label": "风险来自"
+      "label": "高危因素"
     },
     {
       "source": "S_AnaphylacticShock",
       "target": "RF_ContrastAllergyHistory",
       "type": "AT_RISK_BY",
-      "label": "风险来自"
+      "label": "高危因素"
     },
     {
       "source": "S_AnaphylacticShock",
       "target": "RF_UncontrolledAsthma",
       "type": "AT_RISK_BY",
-      "label": "风险来自"
+      "label": "高危因素"
     },
     {
       "source": "S_AnaphylacticShock",
       "target": "RF_AgeExtremes",
       "type": "AT_RISK_BY",
-      "label": "风险来自"
+      "label": "高危因素"
     },
     {
       "source": "S_Extravasation",
       "target": "RF_FragileVein",
       "type": "AT_RISK_BY",
-      "label": "风险来自"
+      "label": "高危因素"
     },
     {
       "source": "S_Extravasation",
       "target": "RF_HighPressureInjection",
       "type": "AT_RISK_BY",
-      "label": "风险来自"
+      "label": "高危因素"
     },
     {
       "source": "S_Extravasation",
       "target": "RF_NoSalineFlush",
       "type": "AT_RISK_BY",
-      "label": "风险来自"
+      "label": "高危因素"
     },
     {
       "source": "S_Extravasation",
       "target": "RF_AgeExtremes",
       "type": "AT_RISK_BY",
-      "label": "风险来自"
+      "label": "高危因素"
     },
     {
       "source": "S_AdverseReaction",
       "target": "RF_ContrastAllergyHistory",
       "type": "AT_RISK_BY",
-      "label": "风险来自"
+      "label": "高危因素"
     },
     {
       "source": "S_Rash",
       "target": "RF_ContrastAllergyHistory",
       "type": "AT_RISK_BY",
-      "label": "风险来自"
+      "label": "高危因素"
     },
     {
       "source": "S_Urticaria",
       "target": "RF_ContrastAllergyHistory",
       "type": "AT_RISK_BY",
-      "label": "风险来自"
+      "label": "高危因素"
     },
     {
       "source": "S_Pruritus",
       "target": "RF_ContrastAllergyHistory",
       "type": "AT_RISK_BY",
-      "label": "风险来自"
+      "label": "高危因素"
     },
     {
       "source": "S_FacialEdema",
       "target": "RF_ContrastAllergyHistory",
       "type": "AT_RISK_BY",
-      "label": "风险来自"
+      "label": "高危因素"
     },
     {
       "source": "S_ThroatDiscomfort",
       "target": "RF_ContrastAllergyHistory",
       "type": "AT_RISK_BY",
-      "label": "风险来自"
+      "label": "高危因素"
     },
     {
       "source": "S_AnaphylacticShock",
       "target": "PM_AdrenalineIM",
       "type": "TREATED_BY",
-      "label": "由……治疗",
+      "label": "管理",
       "note": "大腿外侧中部肌内注射，必要时每 5～15 分钟重复"
     },
     {
       "source": "S_AnaphylacticShock",
       "target": "PM_Corticosteroid",
       "type": "TREATED_BY",
-      "label": "由……治疗"
+      "label": "管理"
     },
     {
       "source": "S_AllergicReaction",
       "target": "PM_Antihistamine",
       "type": "TREATED_BY",
-      "label": "由……治疗"
+      "label": "管理"
     },
     {
       "source": "S_AllergicReaction",
       "target": "PM_Corticosteroid",
       "type": "TREATED_BY",
-      "label": "由……治疗"
+      "label": "管理"
     },
     {
       "source": "S_Urticaria",
       "target": "PM_Antihistamine",
       "type": "TREATED_BY",
-      "label": "由……治疗"
+      "label": "管理"
     },
     {
       "source": "S_Rash",
       "target": "PM_Antihistamine",
       "type": "TREATED_BY",
-      "label": "由……治疗"
+      "label": "管理"
     },
     {
       "source": "S_Pruritus",
       "target": "PM_Antihistamine",
       "type": "TREATED_BY",
-      "label": "由……治疗"
+      "label": "管理"
     },
     {
       "source": "S_FacialEdema",
       "target": "PM_Corticosteroid",
       "type": "TREATED_BY",
-      "label": "由……治疗"
+      "label": "管理"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "PM_MagnesiumSulfate",
+      "type": "TREATED_BY",
+      "label": "管理",
+      "note": "中、重度外渗才用：早期冷敷、24 h 后改热敷"
     },
     {
       "source": "S_Extravasation",
       "target": "PM_DexamethasoneWetCompress",
       "type": "TREATED_BY",
-      "label": "由……治疗"
+      "label": "管理",
+      "note": "中、重度外渗才用；轻度不用外敷药"
     },
     {
       "source": "S_Extravasation",
       "target": "NPM_StopInjection",
       "type": "TREATED_BY",
-      "label": "由……治疗",
+      "label": "管理",
       "note": "第一步：立即停止推注"
     },
     {
       "source": "S_Extravasation",
       "target": "NPM_KeepCatheter",
       "type": "TREATED_BY",
-      "label": "由……治疗",
+      "label": "管理",
       "note": "第二步：保留留置针并尽量回抽"
     },
     {
       "source": "S_Extravasation",
       "target": "NPM_LimbElevation",
       "type": "TREATED_BY",
-      "label": "由……治疗",
+      "label": "管理",
       "note": "禁止局部按压揉搓"
     },
     {
       "source": "S_Extravasation",
       "target": "NPM_ColdCompress",
       "type": "TREATED_BY",
-      "label": "由……治疗",
-      "note": "早期冷敷使用"
+      "label": "管理"
     },
     {
       "source": "S_Extravasation",
       "target": "NPM_VascularVisualization",
       "type": "TREATED_BY",
-      "label": "由……治疗"
+      "label": "管理"
     },
     {
       "source": "S_AdverseReaction",
       "target": "NPM_CloseObservation",
       "type": "TREATED_BY",
-      "label": "由……治疗",
+      "label": "管理",
       "note": "轻度反应观察 30 分钟"
     },
     {
       "source": "S_AnaphylacticShock",
       "target": "NPM_CloseObservation",
       "type": "TREATED_BY",
-      "label": "由……治疗"
+      "label": "管理"
     },
     {
       "source": "S_AllergicReaction",
       "target": "NPM_CloseObservation",
       "type": "TREATED_BY",
-      "label": "由……治疗"
+      "label": "管理"
     },
     {
       "source": "E_CTEnhancedScan",
       "target": "NPM_ContrastPreparation",
       "type": "TREATED_BY",
-      "label": "由……治疗",
+      "label": "管理",
       "note": "对比剂加温至 37℃ 左右"
     },
     {
       "source": "E_ContrastInjection",
       "target": "NPM_ContrastPreparation",
       "type": "TREATED_BY",
-      "label": "由……治疗"
+      "label": "管理"
     },
     {
       "source": "S_AdverseReaction",
       "target": "NPM_PsychologicalSupport",
       "type": "TREATED_BY",
-      "label": "由……治疗"
+      "label": "管理"
     },
     {
       "source": "S_Extravasation",
       "target": "NPM_PsychologicalSupport",
       "type": "TREATED_BY",
-      "label": "由……治疗"
+      "label": "管理"
     },
     {
       "source": "MP_NursingIntervention",
       "target": "SS_SevereRecovered",
       "type": "EFFECT_ON",
-      "label": "影响"
+      "label": "效果"
     },
     {
       "source": "MP_NursingMeasures",
       "target": "SS_MildResolved",
       "type": "EFFECT_ON",
-      "label": "影响"
+      "label": "效果"
     },
     {
       "source": "MP_ExtravasationPrinciple",
       "target": "SS_MildResolved",
       "type": "EFFECT_ON",
-      "label": "影响"
+      "label": "效果"
     },
     {
       "source": "MP_AdverseReactionTriage",
       "target": "SS_MildResolved",
       "type": "EFFECT_ON",
-      "label": "影响"
+      "label": "效果"
     },
     {
       "source": "MP_NursingIntervention",
       "target": "FS_LimbFunction",
       "type": "EFFECT_ON",
-      "label": "影响"
+      "label": "效果"
     },
     {
       "source": "MP_ExtravasationPrinciple",
       "target": "FS_LimbFunction",
       "type": "EFFECT_ON",
-      "label": "影响"
+      "label": "效果"
     },
     {
       "source": "SS_MildResolved",
       "target": "FS_LimbFunction",
       "type": "EFFECT_ON",
-      "label": "影响"
+      "label": "效果"
     },
     {
       "source": "DC_CTEnhancedRisk",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DC_CTEnhancedRisk",
       "target": "R03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "E_CTEnhancedScan",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "E_CTEnhancedScan",
       "target": "R03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "E_ContrastInjection",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "E_ContrastInjection",
       "target": "R03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "E_ContrastInjection",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "E_ContrastInjection",
       "target": "R15",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_AdverseReaction",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_AdverseReaction",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_AdverseReaction",
       "target": "R14",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Rash",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Rash",
       "target": "R13",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_AllergicReaction",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_AllergicReaction",
       "target": "R13",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_AllergicReaction",
       "target": "R14",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Urticaria",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Urticaria",
       "target": "R13",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Urticaria",
       "target": "R16",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Pruritus",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Pruritus",
       "target": "R16",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_FacialEdema",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_FacialEdema",
       "target": "R13",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ThroatDiscomfort",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ThroatDiscomfort",
       "target": "R16",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ChestTightness",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ChestTightness",
       "target": "R13",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_GeneralizedWeakness",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_GeneralizedWeakness",
       "target": "R16",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_AnaphylacticShock",
       "target": "R16",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_AnaphylacticShock",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_AnaphylacticShock",
       "target": "R13",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Extravasation",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Extravasation",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Extravasation",
       "target": "R17",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Extravasation",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_AdverseSpectrum",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_Hypersensitivity",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_ExtravasationSpectrum",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_AllergyHistory",
       "target": "R03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_AllergyHistory",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_ExtravasationAssessment",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_ExtravasationAssessment",
       "target": "R17",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_VascularAssessment",
       "target": "R08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_VascularAssessment",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_ContrastAllergyHistory",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_ContrastAllergyHistory",
       "target": "R13",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_UncontrolledAsthma",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_UncontrolledAsthma",
       "target": "R13",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_AgeExtremes",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_AgeExtremes",
       "target": "R17",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_FragileVein",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_FragileVein",
       "target": "R17",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_HighPressureInjection",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_HighPressureInjection",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_HighPressureInjection",
       "target": "R17",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_NoSalineFlush",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_NoSalineFlush",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "PM_AdrenalineIM",
       "target": "R16",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "PM_AdrenalineIM",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "PM_Corticosteroid",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "PM_Corticosteroid",
       "target": "R13",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "PM_Antihistamine",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "PM_Antihistamine",
       "target": "R13",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "PM_MagnesiumSulfate",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "PM_DexamethasoneWetCompress",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_StopInjection",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_StopInjection",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_KeepCatheter",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_KeepCatheter",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_LimbElevation",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_LimbElevation",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_LimbElevation",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_ColdCompress",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_ColdCompress",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_CloseObservation",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_CloseObservation",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_OralHydration",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_OralHydration",
       "target": "R03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_ContrastPreparation",
       "target": "R03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_ContrastPreparation",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_VascularVisualization",
       "target": "R08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_VascularVisualization",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_PsychologicalSupport",
       "target": "R20",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_NursingMeasures",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_NursingMeasures",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_NursingMeasures",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_NursingPrevention",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_NursingPrevention",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_NursingPrevention",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_NursingIntervention",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_NursingIntervention",
       "target": "R16",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_NursingIntervention",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_ExtravasationPrinciple",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_ExtravasationPrinciple",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_ExtravasationPrinciple",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_AdverseReactionTriage",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_AdverseReactionTriage",
       "target": "R13",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_AdverseReactionTriage",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NT_EarlyWarning",
       "target": "R13",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NT_EarlyWarning",
       "target": "R16",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DE_PreExamNotice",
       "target": "R03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DE_PreExamNotice",
       "target": "R20",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DE_AfterExamCare",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DE_AfterExamCare",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DE_AfterExamCare",
       "target": "R20",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DE_AllergyDisclosure",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DE_AllergyDisclosure",
       "target": "R03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DE_ExtravasationHomeCare",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DE_ExtravasationHomeCare",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DE_EmergencyKnowledge",
       "target": "R16",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DE_EmergencyKnowledge",
       "target": "R13",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SS_MildResolved",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SS_MildResolved",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SS_SevereRecovered",
       "target": "R16",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SS_SevereRecovered",
       "target": "R13",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FS_LimbFunction",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FS_LimbFunction",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Extravasation",
       "target": "R10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "E_CTEnhancedScan",
       "target": "R10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_ContrastPreparation",
       "target": "R21",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_AllergicReaction",
       "target": "R21",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Extravasation",
       "target": "R21",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Extravasation",
       "target": "R22",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_ExtravasationAssessment",
       "target": "R22",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_AllergicReaction",
       "target": "R23",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_UncontrolledAsthma",
       "target": "R23",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ContrastNausea",
@@ -11974,19 +12052,19 @@
       "source": "S_ContrastNausea",
       "target": "DE_AfterExamCare",
       "type": "EDUCATED_BY",
-      "label": "由……教育"
+      "label": "科普"
     },
     {
       "source": "S_ContrastNausea",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ContrastNausea",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ContrastVomiting",
@@ -11998,115 +12076,115 @@
       "source": "S_ContrastVomiting",
       "target": "DE_AfterExamCare",
       "type": "EDUCATED_BY",
-      "label": "由……教育"
+      "label": "科普"
     },
     {
       "source": "S_ContrastVomiting",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ContrastVomiting",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Extravasation",
       "target": "S_ExtravasationSwelling",
       "type": "HAS_SYMPTOM",
-      "label": "存在症状"
+      "label": "表现为"
     },
     {
       "source": "S_ExtravasationSwelling",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ExtravasationSwelling",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Extravasation",
       "target": "S_ExtravasationPain",
       "type": "HAS_SYMPTOM",
-      "label": "存在症状"
+      "label": "表现为"
     },
     {
       "source": "S_ExtravasationPain",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ExtravasationPain",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Extravasation",
       "target": "S_ExtravasationRedness",
       "type": "HAS_SYMPTOM",
-      "label": "存在症状"
+      "label": "表现为"
     },
     {
       "source": "S_ExtravasationRedness",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ExtravasationRedness",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Extravasation",
       "target": "S_ExtravasationCoolSkin",
       "type": "HAS_SYMPTOM",
-      "label": "存在症状"
+      "label": "表现为"
     },
     {
       "source": "S_ExtravasationCoolSkin",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ExtravasationCoolSkin",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Extravasation",
       "target": "S_ExtravasationPallor",
       "type": "HAS_SYMPTOM",
-      "label": "存在症状"
+      "label": "表现为"
     },
     {
       "source": "S_ExtravasationPallor",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ExtravasationPallor",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DC_CTEnhancedRisk",
       "target": "MP_NursingIntervention",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "AT_AllergyHistory",
@@ -12154,43 +12232,43 @@
       "source": "NPM_OralHydration",
       "target": "DE_AfterExamCare",
       "type": "EDUCATED_BY",
-      "label": "由……教育"
+      "label": "科普"
     },
     {
       "source": "S_ThroatDiscomfort",
       "target": "PM_AdrenalineIM",
       "type": "TREATED_BY",
-      "label": "由……治疗"
+      "label": "管理"
     },
     {
       "source": "S_ChestTightness",
       "target": "PM_AdrenalineIM",
       "type": "TREATED_BY",
-      "label": "由……治疗"
+      "label": "管理"
     },
     {
       "source": "S_FacialEdema",
       "target": "PM_AdrenalineIM",
       "type": "TREATED_BY",
-      "label": "由……治疗"
+      "label": "管理"
     },
     {
       "source": "S_FacialEdema",
       "target": "PM_Antihistamine",
       "type": "TREATED_BY",
-      "label": "由……治疗"
+      "label": "管理"
     },
     {
       "source": "S_ThroatDiscomfort",
       "target": "PM_Antihistamine",
       "type": "TREATED_BY",
-      "label": "由……治疗"
+      "label": "管理"
     },
     {
       "source": "E_CTEnhancedScan",
       "target": "S_AllergicReaction",
       "type": "EFFECT_ON",
-      "label": "影响"
+      "label": "效果"
     },
     {
       "source": "FW_SymptomCategory",
@@ -12707,2113 +12785,2125 @@
       "source": "FW_SymptomSign",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_SymptomSign",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_SymptomSign",
       "target": "R14",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_SymptomSign",
       "target": "R13",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_SymptomSign",
       "target": "R21",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_SymptomSign",
       "target": "R23",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_SymptomSign",
       "target": "R16",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_SymptomSign",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_SymptomSign",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_SymptomSign",
       "target": "R17",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_SymptomSign",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_SymptomSign",
       "target": "R10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_SymptomSign",
       "target": "R22",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_Exam",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_Exam",
       "target": "R03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_Exam",
       "target": "R10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_Exam",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_Exam",
       "target": "R15",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_ManagementPrinciple",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_ManagementPrinciple",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_ManagementPrinciple",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_ManagementPrinciple",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_ManagementPrinciple",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_ManagementPrinciple",
       "target": "R16",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_ManagementPrinciple",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_ManagementPrinciple",
       "target": "R13",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_NursingTheory",
       "target": "R13",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_NursingTheory",
       "target": "R16",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_NursingTheory",
       "target": "R24",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_DiseaseEducation",
       "target": "R03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_DiseaseEducation",
       "target": "R20",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_DiseaseEducation",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_DiseaseEducation",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_DiseaseEducation",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_DiseaseEducation",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_DiseaseEducation",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_DiseaseEducation",
       "target": "R16",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_DiseaseEducation",
       "target": "R13",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_SymptomCategory",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_SymptomCategory",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_SymptomCategory",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_AssessmentTool",
       "target": "R03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_AssessmentTool",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_AssessmentTool",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_AssessmentTool",
       "target": "R17",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_AssessmentTool",
       "target": "R22",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_AssessmentTool",
       "target": "R08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_AssessmentTool",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_RiskFactor",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_RiskFactor",
       "target": "R13",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_RiskFactor",
       "target": "R23",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_RiskFactor",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_RiskFactor",
       "target": "R17",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_RiskFactor",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_RiskFactor",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_PharmacologicalManagement",
       "target": "R16",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_PharmacologicalManagement",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_PharmacologicalManagement",
       "target": "R13",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_PharmacologicalManagement",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_NonPharmacologicalManagement",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_NonPharmacologicalManagement",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_NonPharmacologicalManagement",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_NonPharmacologicalManagement",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_NonPharmacologicalManagement",
       "target": "R03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_NonPharmacologicalManagement",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_NonPharmacologicalManagement",
       "target": "R21",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_NonPharmacologicalManagement",
       "target": "R08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_NonPharmacologicalManagement",
       "target": "R20",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_SymptomStatus",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_SymptomStatus",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_SymptomStatus",
       "target": "R16",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_SymptomStatus",
       "target": "R13",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_FunctionalStatus",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FW_FunctionalStatus",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NT_SelfCareTheory",
       "target": "R24",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "R24",
       "target": "R24",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_VasovagalReaction",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_VasovagalReaction",
       "target": "R14",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "PM_EpiAutoInjector",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "PM_EpiAutoInjector",
       "target": "R16",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_SerumTryptase",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_SerumTryptase",
       "target": "R14",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_SerumTryptase",
       "target": "R16",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_BiphasicAnaphylaxis",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_BiphasicAnaphylaxis",
       "target": "R16",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_ExtravDamageStage",
       "target": "R10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_CompartmentSyndrome",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_CompartmentSyndrome",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "PM_Hyaluronidase",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "PM_Atropine",
       "target": "R03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_CMAllergyTest",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_CMAllergyTest",
       "target": "R03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_CMAllergyTest",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_PowerInjectorSafeCatheter",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_PowerInjectorSafeCatheter",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_PowerInjectorSafeCatheter",
       "target": "R08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_PowerInjectorSafeCatheter",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_PowerInjectorSafeCatheter",
       "target": "R10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_SalineFlushCheck",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_SalineFlushCheck",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_SalineFlushCheck",
       "target": "R10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_ObservationThenRemove",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_ObservationThenRemove",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_SwellingMeasurement",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_SwellingMeasurement",
       "target": "R10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_ExtravasationDetection",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_ExtravasationReporting",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_ExtravasationReporting",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_ExtravasationReporting",
       "target": "R10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_SwitchContrastAgent",
       "target": "R14",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Phlebitis",
       "target": "R08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_BetaBlockerACEI",
       "target": "R16",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_CMHSRMild",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_CMHSRMild",
       "target": "R14",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_CMHSRMild",
       "target": "R16",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_CMHSRModerate",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_CMHSRModerate",
       "target": "R14",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_CMHSRModerate",
       "target": "R16",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_CMHSRSevere",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_CMHSRSevere",
       "target": "R14",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_CMHSRSevere",
       "target": "R16",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_ExtravL1",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_ExtravL1",
       "target": "R10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_ExtravL1",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_ExtravL2",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_ExtravL2",
       "target": "R10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_ExtravL2",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_ExtravL3",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_ExtravL3",
       "target": "R10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_ExtravL3",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_ExtravL4",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_ExtravL4",
       "target": "R10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_ExtravL4",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Bronchospasm",
       "target": "CG-03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Bronchospasm",
       "target": "CG-09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_PulmonaryEdema",
       "target": "CG-03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_SkinIntegrity",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_SkinIntegrity",
       "target": "CN-03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_SkinIntegrity",
       "target": "CN-05",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_SkinIntegrity",
       "target": "DRUG-01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_TcmExternalApply",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_TcmExternalApply",
       "target": "CG-09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_TcmExternalApply",
       "target": "CN-03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_TcmExternalApply",
       "target": "CN-04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_TcmExternalApply",
       "target": "CN-05",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_TcmExternalApply",
       "target": "CN-06",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_TcmExternalApply",
       "target": "CN-07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_TcmExternalApply",
       "target": "CN-08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_TcmExternalApply",
       "target": "CN-09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_TcmExternalApply",
       "target": "CN-10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_TcmExternalApply",
       "target": "CN-11",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_TcmExternalApply",
       "target": "DRUG-02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
+    },
+    {
+      "source": "PM_DexamethasoneOral",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
     },
     {
       "source": "NPM_ContrastPreparation",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_ContrastPreparation",
       "target": "R01-2026",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NT_EarlyWarning",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_CloseObservation",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_ContrastPreparation",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DE_EmergencyKnowledge",
       "target": "R12",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_FacialEdema",
       "target": "R14",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ContrastNausea",
       "target": "R14",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ContrastVomiting",
       "target": "R14",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_AdverseSpectrum",
       "target": "R14",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Rash",
       "target": "R14",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_NursingIntervention",
       "target": "R14",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "PM_Antihistamine",
       "target": "R14",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_ContrastPreparation",
       "target": "R14",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DE_PreExamNotice",
       "target": "R14",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_CloseObservation",
       "target": "R14",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DE_EmergencyKnowledge",
       "target": "R14",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_AllergicReaction",
       "target": "R16",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_AdverseReaction",
       "target": "R16",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_CMHSRMild",
       "target": "CG-01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_CMHSRModerate",
       "target": "CG-01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_FacialEdema",
       "target": "CG-01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_CMHSRSevere",
       "target": "CG-01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_Hypersensitivity",
       "target": "CG-01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_AllergicReaction",
       "target": "CG-01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_AdverseReactionTriage",
       "target": "CG-01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_NursingIntervention",
       "target": "CG-01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "PM_AdrenalineIM",
       "target": "CG-01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DE_EmergencyKnowledge",
       "target": "CG-01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NT_EarlyWarning",
       "target": "CG-01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_ContrastPreparation",
       "target": "CG-01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_NursingPrevention",
       "target": "CG-01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_ContrastAllergyHistory",
       "target": "CG-01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_CMAllergyTest",
       "target": "CG-01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_AgeExtremes",
       "target": "CG-01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_AdverseReaction",
       "target": "CG-01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DE_PreExamNotice",
       "target": "CG-01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_UncontrolledAsthma",
       "target": "CG-01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DE_AllergyDisclosure",
       "target": "CG-01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DE_PreExamNotice",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_ContrastPreparation",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_VascularAssessment",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_ExtravasationReporting",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_AllergicReaction",
       "target": "CG-03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_AdverseReaction",
       "target": "CG-03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_AdverseSpectrum",
       "target": "CG-03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Urticaria",
       "target": "CG-03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Rash",
       "target": "CG-03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_AnaphylacticShock",
       "target": "CG-03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_GeneralizedWeakness",
       "target": "CG-03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "PM_Atropine",
       "target": "CG-03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ChestTightness",
       "target": "CG-03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ThroatDiscomfort",
       "target": "CG-03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_NursingMeasures",
       "target": "CG-03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_ExtravL1",
       "target": "CG-03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ExtravasationSwelling",
       "target": "CG-03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_ExtravL3",
       "target": "CG-03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_ExtravasationPrinciple",
       "target": "CG-03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DE_ExtravasationHomeCare",
       "target": "CG-03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_ObservationThenRemove",
       "target": "CG-03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_NursingPrevention",
       "target": "CG-03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DE_PreExamNotice",
       "target": "CG-03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_ContrastPreparation",
       "target": "CG-03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_AllergicReaction",
       "target": "CG-09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_AdverseSpectrum",
       "target": "CG-09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Urticaria",
       "target": "CG-09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Rash",
       "target": "CG-09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ChestTightness",
       "target": "CG-09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ThroatDiscomfort",
       "target": "CG-09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_AnaphylacticShock",
       "target": "CG-09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_GeneralizedWeakness",
       "target": "CG-09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "PM_Atropine",
       "target": "CG-09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_ExtravL1",
       "target": "CG-09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_ExtravasationPrinciple",
       "target": "CG-09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Extravasation",
       "target": "CG-09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_ExtravasationSpectrum",
       "target": "CG-09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_ExtravasationAssessment",
       "target": "CG-09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DC_CTEnhancedRisk",
       "target": "CG-09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_ObservationThenRemove",
       "target": "CG-09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DE_EmergencyKnowledge",
       "target": "CG-09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_ExtravL1",
       "target": "CG-08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_ExtravasationPrinciple",
       "target": "CG-08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DE_ExtravasationHomeCare",
       "target": "CG-08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_ObservationThenRemove",
       "target": "CG-08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_StopInjection",
       "target": "CG-08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_ExtravasationAssessment",
       "target": "CG-08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_AdverseReactionTriage",
       "target": "CG-08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_NursingMeasures",
       "target": "CG-08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_ExtravasationPrinciple",
       "target": "CG-04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "PM_AdrenalineIM",
       "target": "CG-04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_CMAllergyTest",
       "target": "CG-04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_ContrastAllergyHistory",
       "target": "CG-04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_UncontrolledAsthma",
       "target": "CG-04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_ContrastPreparation",
       "target": "CG-04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_HighPressureInjection",
       "target": "CG-04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_NursingMeasures",
       "target": "CG-04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_AdverseReaction",
       "target": "CG-05",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DC_CTEnhancedRisk",
       "target": "CG-05",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_NursingMeasures",
       "target": "CG-06",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_AdverseReaction",
       "target": "CG-06",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "E_ContrastInjection",
       "target": "CG-07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_FragileVein",
       "target": "CG-07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_ContrastPreparation",
       "target": "CG-07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_AllergyHistory",
       "target": "CG-07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_ContrastAllergyHistory",
       "target": "CG-07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_AgeExtremes",
       "target": "CG-07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_CMAllergyTest",
       "target": "CG-07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DE_PreExamNotice",
       "target": "CG-07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_ObservationThenRemove",
       "target": "CG-07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_AllergicReaction",
       "target": "CG-07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_ContrastAllergyHistory",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_AllergyHistory",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DE_PreExamNotice",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_VascularAssessment",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_HighPressureInjection",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_ExtravasationAssessment",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ExtravasationPain",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ExtravasationSwelling",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SS_MildResolved",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Pruritus",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Rash",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_ExtravasationReporting",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DE_ExtravasationHomeCare",
       "target": "R01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_AllergyHistory",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_ContrastAllergyHistory",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DE_PreExamNotice",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_AgeExtremes",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_UncontrolledAsthma",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_PsychologicalSupport",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_ContrastPreparation",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_PowerInjectorSafeCatheter",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_VascularAssessment",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_SalineFlushCheck",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_ObservationThenRemove",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_AdverseReaction",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_OralHydration",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Extravasation",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ExtravasationSwelling",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ExtravasationPain",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
-      "source": "SS_SevereRecovered",
+      "source": "SC_ExtravL3",
       "target": "R07",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
+    },
+    {
+      "source": "SC_ExtravL4",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
     },
     {
       "source": "S_AdverseReaction",
       "target": "R03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_AdverseSpectrum",
       "target": "R03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Urticaria",
       "target": "R03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Pruritus",
       "target": "R03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ThroatDiscomfort",
       "target": "R03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Bronchospasm",
       "target": "R03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_AnaphylacticShock",
       "target": "R03",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_NoSalineFlush",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_VascularAssessment",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_FragileVein",
       "target": "R02",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_ColdCompress",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "PM_MagnesiumSulfate",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "PM_DexamethasoneWetCompress",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_ExtravasationSpectrum",
       "target": "R04",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ExtravasationSwelling",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ExtravasationPain",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ExtravasationCoolSkin",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ExtravasationPallor",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ExtravasationRedness",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_CompartmentSyndrome",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_StopInjection",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_LimbElevation",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_ColdCompress",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_ExtravasationPrinciple",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_FragileVein",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DE_ExtravasationHomeCare",
       "target": "R09",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ExtravasationSwelling",
       "target": "R10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ExtravasationPain",
       "target": "R10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ExtravasationCoolSkin",
       "target": "R10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ExtravasationPallor",
       "target": "R10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ExtravasationRedness",
       "target": "R10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_CompartmentSyndrome",
       "target": "R10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_LimbElevation",
       "target": "R10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_ColdCompress",
       "target": "R10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DE_ExtravasationHomeCare",
       "target": "R10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_ExtravasationPrinciple",
       "target": "R10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "PM_MagnesiumSulfate",
       "target": "R10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "PM_DexamethasoneWetCompress",
       "target": "R10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_VascularAssessment",
       "target": "R10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_FragileVein",
       "target": "R10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_ContrastPreparation",
       "target": "R10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "FS_LimbFunction",
       "target": "R10",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_Extravasation",
       "target": "R08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "SC_ExtravasationSpectrum",
       "target": "R08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_ExtravasationPrinciple",
       "target": "R08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_LimbElevation",
       "target": "R08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_StopInjection",
       "target": "R08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_ExtravasationAssessment",
       "target": "R08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ExtravasationSwelling",
       "target": "R08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_ExtravasationPain",
       "target": "R08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_NoSalineFlush",
       "target": "R08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_ExtravasationReporting",
       "target": "R08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "AT_SwellingMeasurement",
       "target": "R08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_HighPressureInjection",
       "target": "R08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_SalineFlushCheck",
       "target": "R08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "RF_FragileVein",
       "target": "R08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "DE_ExtravasationHomeCare",
       "target": "R08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_ObservationThenRemove",
       "target": "R08",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "MP_ExtravasationPrinciple",
       "target": "CN-05",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "NPM_TcmExternalApply",
       "target": "DRUG-01",
       "type": "SUPPORTED_BY",
-      "label": "有文献支持"
+      "label": "出处"
     },
     {
       "source": "S_VasovagalReaction",
@@ -14849,85 +14939,85 @@
       "source": "S_Extravasation",
       "target": "S_CompartmentSyndrome",
       "type": "HAS_SYMPTOM",
-      "label": "存在症状"
+      "label": "表现为"
     },
     {
       "source": "E_ContrastInjection",
       "target": "S_VasovagalReaction",
       "type": "EFFECT_ON",
-      "label": "影响"
+      "label": "效果"
     },
     {
       "source": "E_ContrastInjection",
       "target": "NPM_PowerInjectorSafeCatheter",
       "type": "TREATED_BY",
-      "label": "由……治疗"
+      "label": "管理"
     },
     {
       "source": "E_ContrastInjection",
       "target": "NPM_SalineFlushCheck",
       "type": "TREATED_BY",
-      "label": "由……治疗"
+      "label": "管理"
     },
     {
       "source": "E_ContrastInjection",
       "target": "NPM_ObservationThenRemove",
       "type": "TREATED_BY",
-      "label": "由……治疗"
+      "label": "管理"
     },
     {
       "source": "E_ContrastInjection",
       "target": "NPM_SwitchContrastAgent",
       "type": "TREATED_BY",
-      "label": "由……治疗"
+      "label": "管理"
     },
     {
       "source": "S_Extravasation",
       "target": "PM_Hyaluronidase",
       "type": "TREATED_BY",
-      "label": "由……治疗"
+      "label": "管理"
     },
     {
       "source": "S_VasovagalReaction",
       "target": "PM_Atropine",
       "type": "TREATED_BY",
-      "label": "由……治疗"
+      "label": "管理"
     },
     {
       "source": "S_AnaphylacticShock",
       "target": "PM_EpiAutoInjector",
       "type": "TREATED_BY",
-      "label": "由……治疗"
+      "label": "管理"
     },
     {
       "source": "S_AllergicReaction",
       "target": "AT_SerumTryptase",
       "type": "ASSESSED_BY",
-      "label": "由……评估"
+      "label": "评估"
     },
     {
       "source": "S_Extravasation",
       "target": "AT_SwellingMeasurement",
-      "type": "ASSESSED_BY",
-      "label": "由……评估"
+      "type": "DETECTED_BY",
+      "label": "检查"
     },
     {
       "source": "S_Extravasation",
       "target": "AT_ExtravasationDetection",
-      "type": "ASSESSED_BY",
-      "label": "由……评估"
+      "type": "DETECTED_BY",
+      "label": "检查"
     },
     {
       "source": "S_Extravasation",
       "target": "MP_ExtravasationReporting",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "RF_HighPressureInjection",
       "target": "NPM_SalineFlushCheck",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "SC_CMHSRMild",
@@ -15017,79 +15107,97 @@
       "source": "S_Extravasation",
       "target": "SC_ExtravL1",
       "type": "HAS_SYMPTOM",
-      "label": "存在症状"
+      "label": "表现为"
     },
     {
       "source": "S_Extravasation",
       "target": "SC_ExtravL2",
       "type": "HAS_SYMPTOM",
-      "label": "存在症状"
+      "label": "表现为"
     },
     {
       "source": "S_Extravasation",
       "target": "SC_ExtravL3",
       "type": "HAS_SYMPTOM",
-      "label": "存在症状"
+      "label": "表现为"
     },
     {
       "source": "S_Extravasation",
       "target": "SC_ExtravL4",
       "type": "HAS_SYMPTOM",
-      "label": "存在症状"
+      "label": "表现为"
     },
     {
       "source": "SC_ExtravL1",
       "target": "MP_ExtravasationPrinciple",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "SC_ExtravL2",
       "target": "MP_ExtravasationPrinciple",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "SC_ExtravL3",
       "target": "MP_ExtravasationPrinciple",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "SC_ExtravL4",
       "target": "MP_ExtravasationReporting",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "S_AllergicReaction",
       "target": "S_Bronchospasm",
       "type": "HAS_SYMPTOM",
-      "label": "存在症状"
+      "label": "表现为"
     },
     {
       "source": "S_AllergicReaction",
       "target": "S_PulmonaryEdema",
       "type": "HAS_SYMPTOM",
-      "label": "存在症状"
+      "label": "表现为"
     },
     {
       "source": "S_Extravasation",
       "target": "MP_SkinIntegrity",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "MP_SkinIntegrity",
       "target": "NPM_TcmExternalApply",
       "type": "MANAGED_BY",
-      "label": "由……处置"
+      "label": "处置"
     },
     {
       "source": "S_Extravasation",
       "target": "NPM_TcmExternalApply",
       "type": "TREATED_BY",
-      "label": "由……治疗"
+      "label": "管理"
+    },
+    {
+      "source": "NPM_TcmCombinedApply",
+      "target": "NPM_TcmExternalApply",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "NPM_TcmCombinedApply",
+      "type": "TREATED_BY",
+      "label": "管理"
+    },
+    {
+      "source": "PM_DexamethasoneOral",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于"
     }
   ]
 }
