@@ -346,6 +346,13 @@ window.KG_GRAPH = {
       "graph": "topic-01",
       "details": [
         {
+          "k": "Paediatric reaction types by CT protocol",
+          "v": "Heart CT examinations showed a lower incidence of acute physiologic reactions than abdomen and pelvis CT examinations (adjusted RR 0.22, 95% CI 0.09-0.56, P = 0.002), although the association was not statistically significant when stratified by age. Multivariable Poisson regression with generalized estimating equations was used to explore risk factors for each reaction type across the pediatric cohort.",
+          "quote": "Heart CT examinations showed a lower incidence of acute physiologic reactions than abdomen and pelvis CT examinations (adjusted RR = 0.22 [95% CI: 0.09, 0.56], P = 0.002)",
+          "src": "EN-14",
+          "cat": "特殊人群"
+        },
+        {
           "k": "针号与流速对应",
           "v": "22G可耐受5 mL/s；流速≥3 mL/s宜用20G及以上；手/腕穿刺须降至1–2 mL/s",
           "quote": "Although 22-gauge catheters may be able to tolerate flow rates up to 5 ml/sec, a 20-gauge or larger catheter is preferable for flow rates of 3 ml/sec or greater.",
@@ -436,6 +443,34 @@ window.KG_GRAPH = {
           "quote": "低风险患者单次用量控制在 300 - 400ml 内",
           "src": "CG-07",
           "cat": "对比剂选择"
+        },
+        {
+          "k": "对比剂种类风险差异",
+          "v": "次高渗碘对比剂所致的急性不良反应发生率高于等渗碘对比剂",
+          "quote": "次高渗碘对比剂所致的急性不良反应发生率高于等渗碘对比剂;",
+          "src": "CN-27",
+          "cat": "过敏护理"
+        },
+        {
+          "k": "临床表现谱",
+          "v": "碘对比剂药品不良反应临床表现以皮疹瘙痒、恶心呕吐等症状为主；居前3位的分别为碘帕醇、碘普罗胺、碘海醇",
+          "quote": "本院碘对比剂药品不良反应中,居前3位的分别为碘帕醇、碘普罗胺、碘海醇.不良反应临床表现以皮疹瘙痒、恶心呕吐等症状为主.",
+          "src": "CN-28",
+          "cat": "过敏护理"
+        },
+        {
+          "k": "Overall extravasation rates iodinated vs gadolinium",
+          "v": "Systematic review of 17 papers: 2191 contrast media extravasations in 1,104,872 injections (0.2%). Extravasation with iodinated contrast is nearly 6-fold higher than with gadolinium.",
+          "quote": "Methods: Data were extracted from 17 papers reporting 2191 extravasations in 1,104,872 patients (0.2%) undergoing computed tomography (CT) or magnetic resonance imaging (MRI). Results: Extravasation rates were 0.045% for gadolinium-based contrast agents (GBCA) and nearly 6-fold higher, 0.26% for iodinated contrast agents. Factors associated with increased contrast media extravasations included: older age, female gender, using an existing intravenous (IV) instead of placing a new IV in radiology, in-patient status, use of automated power injection, high injection rates, catheter location, and failing to warm up the more viscous contrast media to body temperature.",
+          "src": "EN-06",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Thyroid effects and isotope interference",
+          "v": "The thyroid is a significant concern in oncology because exposure to iodinated contrast media can lead to transient thyroid dysfunction in vulnerable patients, and this exposure may interfere with diagnostic scintigraphy or planning for radioactive iodine treatment in cases of differentiated thyroid carcinoma. Many oncology patients are already part of a complex therapeutic and diagnostic framework with polypharmacy, potential interference from isotope studies and various laboratory confounding factors.",
+          "quote": "The thyroid is a significant concern in oncology because exposure to iodinated contrast media can lead to transient thyroid dysfunction in vulnerable patients.",
+          "src": "EN-20",
+          "cat": "特殊人群"
         },
         {
           "k": "最大剂量公式",
@@ -614,6 +649,27 @@ window.KG_GRAPH = {
           "cat": "风险背景"
         },
         {
+          "k": "急性不良反应发生率构成",
+          "v": "5 885 例CT增强中急性不良反应2.72%(160例)；超敏/过敏样反应0.44%(26例)，化学毒性/生理反应2.28%(134例)",
+          "quote": "5 885例病人中,急性不良反应发生率为2.72％(160/5 885);超敏/过敏样反应发生率为0.44％(26/5 885);化学毒性/生理反应发生率为2.28％(134/5 885);",
+          "src": "CN-27",
+          "cat": "过敏护理"
+        },
+        {
+          "k": "Chemo-toxic versus hypersensitivity events",
+          "v": "Adverse drug reactions to intravascular iodinated contrast divide into hypersensitivity (allergic-like) events and chemo-toxic events. Chemo-toxic reactions are frequently dependent on the dose and concentration, while hypersensitivity is likely independent of them. Nausea, vomiting or flushing are occasionally difficult to classify as hypersensitivity or chemo-toxic events.",
+          "quote": "Chemo-toxic reactions to ICM are frequently dependent on the dose and concentration, while hypersensitivity is likely independent of them [2].",
+          "src": "EN-11",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Paediatric acute reaction incidence breakdown",
+          "v": "Across 23,429 injections in pediatric patients, acute physiologic reaction incidence was 0.55% (128/23,429): mild 0.50% (118), moderate 0.04% (9), severe 0.01% (1). By agent: iomeprol 0.62% (74/11,910), iopamidol 0.32% (20/6,217), iohexol 0.64% (27/4,221), ioversol 0.61% (6/989), iobitridol 1.18% (1/85), iopromide 0/7.",
+          "quote": "The incidence of acute physiologic reactions among all LOCM injections was 0.55% (128 of 23,429), with the majority being mild (0.50% of all injections, 118 of 23,429), followed by moderate (0.04%, 9 of 23,429), and severe (0.01%, 1 of 23,429). Acute physiologic reactions occurred in 0.62% of iomeprol injections (74 of 11,910), 0.32% of iopamidol injections (20 of 6,217), 0.64% of iohexol injections (27 of 4,221), 0.61% of ioversol injections (6 of 989), and 1.18% of iobitridol injections (1 of 85). No acute physiologic reactions were observed with iopromide (0 of 7).",
+          "src": "EN-14",
+          "cat": "特殊人群"
+        },
+        {
           "k": "过敏样与生理性二分",
           "v": "急性反应分过敏样与生理性两类，再按轻/中/重三级分级；两者处理与是否预处理不同",
           "quote": "Acute adverse events can be categorized as either allergic-like or physiologic and organized into three general categories of severity (mild, moderate, or severe).",
@@ -723,6 +779,20 @@ window.KG_GRAPH = {
           "quote": "（1）荨麻疹：散发的、一过性荨麻疹建议采用支持性治疗",
           "src": "CG-09",
           "cat": "处理"
+        },
+        {
+          "k": "临床表现谱",
+          "v": "碘对比剂药品不良反应临床表现以皮疹瘙痒、恶心呕吐等症状为主；居前3位的分别为碘帕醇、碘普罗胺、碘海醇",
+          "quote": "本院碘对比剂药品不良反应中,居前3位的分别为碘帕醇、碘普罗胺、碘海醇.不良反应临床表现以皮疹瘙痒、恶心呕吐等症状为主.",
+          "src": "CN-28",
+          "cat": "过敏护理"
+        },
+        {
+          "k": "Delayed T-cell reaction latency in days",
+          "v": "Latency of T cell-mediated delayed-type hypersensitivity to iodinated contrast ranges from hours to days after administration. Drug reaction with eosinophilia and systemic symptoms (DRESS) usually develops 2 to 4 weeks after exposure to the culprit drug, but if induced by contrast the latency is shorter, usually within the week following administration.",
+          "quote": "The latency of T cell-mediated delayed-type hypersensitivity to ICM ranges from hours to days after administration of the ICM. Usually, drug reactions with eosinophilia and systemic symptoms develop after exposure to the culprit drug for 2 to 4 weeks, but if induced by ICM, the latency is shorter (usually within the week following ICM administration) [39].",
+          "src": "EN-11",
+          "cat": "超敏反应"
         },
         {
           "k": "轻度反应清单",
@@ -1020,6 +1090,13 @@ window.KG_GRAPH = {
       ],
       "graph": "topic-01",
       "details": [
+        {
+          "k": "临床表现谱",
+          "v": "碘对比剂药品不良反应临床表现以皮疹瘙痒、恶心呕吐等症状为主；居前3位的分别为碘帕醇、碘普罗胺、碘海醇",
+          "quote": "本院碘对比剂药品不良反应中,居前3位的分别为碘帕醇、碘普罗胺、碘海醇.不良反应临床表现以皮疹瘙痒、恶心呕吐等症状为主.",
+          "src": "CN-28",
+          "cat": "过敏护理"
+        },
         {
           "k": "轻度反应清单",
           "v": "轻度生理性：限性恶心呕吐、一过性潮红温暖寒战、头痛眩晕；轻度过敏样：局限性荨麻疹瘙痒、皮肤水肿、咽痒、鼻塞喷嚏",
@@ -1494,6 +1571,20 @@ window.KG_GRAPH = {
           "cat": "外渗机制"
         },
         {
+          "k": "Overall extravasation rates iodinated vs gadolinium",
+          "v": "Systematic review of 17 papers: 2191 contrast media extravasations in 1,104,872 injections (0.2%). Extravasation with iodinated contrast is nearly 6-fold higher than with gadolinium.",
+          "quote": "Methods: Data were extracted from 17 papers reporting 2191 extravasations in 1,104,872 patients (0.2%) undergoing computed tomography (CT) or magnetic resonance imaging (MRI). Results: Extravasation rates were 0.045% for gadolinium-based contrast agents (GBCA) and nearly 6-fold higher, 0.26% for iodinated contrast agents. Factors associated with increased contrast media extravasations included: older age, female gender, using an existing intravenous (IV) instead of placing a new IV in radiology, in-patient status, use of automated power injection, high injection rates, catheter location, and failing to warm up the more viscous contrast media to body temperature.",
+          "src": "EN-06",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Power injection through ports needs verification",
+          "v": "Use of totally implantable venous access ports (TIVAPs) and central venous catheters for automated power injections requires strict implementation of rigorous verification protocols by the imaging team, because central-line extravasation can cause significant morbidity such as mediastinal extravasation, haematoma and cardiac arrhythmias. Manufacturer specifications, catheter type and flow-rate limits must be followed rather than assumed.",
+          "quote": "Standardization of Vascular Port and Central Venous Catheter Management -The use of totally implantable venous access ports (TIVAPs) and central venous catheters (CVCs) for automated power injections necessitates the strict implementation of rigorous verification protocols. The imaging team must:",
+          "src": "EN-22",
+          "cat": "对比剂安全"
+        },
+        {
           "k": "发生率与轻度处理报告",
           "v": "高压输注外渗率0.1%–0.9%；轻度无需特殊处理，嘱其观察、外渗加重即告知医护人员，疼痛者冷湿敷",
           "quote": "静脉高压输注对比剂外渗事件发生率为0.1%～0.9%",
@@ -1605,6 +1696,13 @@ window.KG_GRAPH = {
           "quote": "急性不良反应：发生在对比剂注射后 1 h 内",
           "src": "CG-09",
           "cat": "分型"
+        },
+        {
+          "k": "急性不良反应发生率构成",
+          "v": "5 885 例CT增强中急性不良反应2.72%(160例)；超敏/过敏样反应0.44%(26例)，化学毒性/生理反应2.28%(134例)",
+          "quote": "5 885例病人中,急性不良反应发生率为2.72％(160/5 885);超敏/过敏样反应发生率为0.44％(26/5 885);化学毒性/生理反应发生率为2.28％(134/5 885);",
+          "src": "CN-27",
+          "cat": "过敏护理"
         },
         {
           "k": "过敏样与生理性二分",
@@ -1766,6 +1864,20 @@ window.KG_GRAPH = {
           "cat": "检查前评估"
         },
         {
+          "k": "ICM注射前预热",
+          "v": "在注射ICM前，83.64%的放射科对其进行预热",
+          "quote": "本研究结果显示，在注射ICM前，83.64%的放射科对其进行预热，80.00%以上的放射科评估患者的病情、过敏史、穿刺部位及血管条件等",
+          "src": "CN-30",
+          "cat": "预防"
+        },
+        {
+          "k": "Pre-examination preparation and scheduling",
+          "v": "Before the examination: know the risks and potential reactions and participate regularly in continuing medical education; know the patient and evaluate risk/benefit, considering imaging alternatives; identify the specific agent that elicited a previous reaction and choose an alternative contrast agent if injection is mandatory; schedule the patient during daytime hours when most personnel are present, preferably in a hospital-based CT or MRI facility; keep a venous access in place if there is increased risk of an adverse reaction.",
+          "quote": "Schedule the patient during daytime hours, when most personnel are present, preferably in a hospital-based CT or MRI facility.",
+          "src": "EN-03",
+          "cat": "对比剂安全"
+        },
+        {
           "k": "既往同类反应为首位风险",
           "v": "既往同类对比剂过敏样反应是预测未来反应的首位风险因素，再次暴露风险约5倍",
           "quote": "A prior allergic-like or unknown type reaction to the same class of contrast medium is considered the greatest risk factor",
@@ -1869,6 +1981,27 @@ window.KG_GRAPH = {
           "cat": "安全边界"
         },
         {
+          "k": "小儿留置针外渗内容范围",
+          "v": "综述小儿外周静脉留置针输液外渗现状、影响因素，并梳理相关预防及处理措施",
+          "quote": "介绍小儿外周静脉留置针输液外渗的现状, 探讨其影响因素, 综述相关的预防及处理措施",
+          "src": "CN-14",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "Nursing role in early recognition",
+          "v": "The authors state that the identified risk factors may assist radiology nurses in the early recognition and timely prevention of patients adversely affected by contrast media extravasation injury. Existing serious-injury literature predominantly consists of case reports, and many cohort studies lack severity grading criteria or follow-up evaluation, so nurse-led risk stratification is a plausible improvement target.",
+          "quote": "The findings may assist radiology nurses in the early recognition and timely prevention of patients adversely affected by CM extravasation injury.",
+          "src": "EN-09",
+          "cat": "护理能力与记录"
+        },
+        {
+          "k": "Nurse-led model-informed access planning",
+          "v": "The combined clinical-pressure-body composition model showed higher discrimination than single-domain models after correction of a ROC-labeling error. Opportunistic body composition assessment may refine pre-injection risk stratification without additional scanning or radiation exposure. The results provide a basis for future nurse-led, model-informed vascular access planning, but prospective external validation is required before routine deployment.",
+          "quote": "The results provide a basis for future nurse-led, model-informed vascular access planning, but prospective external validation is required before routine deployment.",
+          "src": "EN-21",
+          "cat": "护理能力与记录"
+        },
+        {
           "k": "疼痛或肿胀即停止",
           "v": "注射全程保持技师与患者沟通；患者诉注射处疼痛或肿胀感须立即停止注射",
           "quote": "If the patient reports pain or the sensation of swelling at the injection site, injection should be discontinued.",
@@ -1949,6 +2082,41 @@ window.KG_GRAPH = {
           "quote": "使用留置时间>24 h的静脉留置针注射含碘对比剂会增加静脉外渗的风险",
           "src": "R04",
           "cat": "检查前评估"
+        },
+        {
+          "k": "输注前预防证据四方面",
+          "v": "循证总结21条输注前静脉外渗预防证据，含血管评估与选择、静脉注射工具选择、穿刺方法改进、穿刺部位固定4个方面",
+          "quote": "总结了21条含碘非离子对比剂输注前静脉外渗预防的证据,包括血管评估和选择、静脉注射工具的选择、穿刺方法的改进以及穿刺部位的固定4个方面.",
+          "src": "CN-12",
+          "cat": "预防"
+        },
+        {
+          "k": "注射前评估与流速控制",
+          "v": "最佳证据包括注射碘对比剂前做好静脉评估、注射时注意流速、注射后做好外渗观察",
+          "quote": "最佳证据包括注射碘对比剂前做好静脉评估,注射碘对比剂时注意流速,注射碘对比剂后做好对外渗的观察,发生外渗时根据外渗程度采取相应护理措施以降低危害.",
+          "src": "CN-24",
+          "cat": "预防"
+        },
+        {
+          "k": "ICM注射前预热",
+          "v": "在注射ICM前，83.64%的放射科对其进行预热",
+          "quote": "本研究结果显示，在注射ICM前，83.64%的放射科对其进行预热，80.00%以上的放射科评估患者的病情、过敏史、穿刺部位及血管条件等",
+          "src": "CN-30",
+          "cat": "预防"
+        },
+        {
+          "k": "Radiology nurse vascular access protocol",
+          "v": "Protocol at the study's radiology departments: all contrast media were externally heated to a target temperature of 37 degrees C to reduce viscosity before injection. For a high-pressure resistant central venous catheter (max tolerable pressure 300 psi), the radiology nurse drew blood back to confirm the catheter was in the vein and used 20 mL of normal saline to confirm patency before use. The nurse selected an 18G-22G high-pressure resistant peripheral short catheter (max tolerable pressure 350 psi) according to the proposed injection speed and the patient's vascular conditions.",
+          "quote": "CM injection Three hospitals used CM, including iodixanol, iohexol, ioversol, iomeprol, iopromide, iopamidol, etc., and before injection, all CM were externally heated to a target temperature of 37 °C to reduce viscosity. For enhanced-computed tomography, if the patient had a high-pressure resistant central venous catheter (the maximum tolerable pressure was 300 psi), the radiology nurse drew blood back to confirm that the catheter was in the vein and used 20 mL of normal saline to confirm its patency before use. Central venous catheters labeled with high-pressure resistant labels can be used for high-pressure injection of iodine containing contrast agents. In addition, the radiology nurse selected the 18G‒22G [17] high-pressure resistant peripheral short catheter (the maximum tolerable pressure was 350 psi) according to the proposed injection speed and the patient's vascular conditions. Before the intravenous injection of CM, the radiology nurse again conducted routine tests on all intravenous routes by manually injecting normal saline to determine whether the catheter was unobstructed and to confirm that the catheter was located in the vein.",
+          "src": "EN-05",
+          "cat": "对比剂安全"
+        },
+        {
+          "k": "Radiology nurse cannulation protocol",
+          "v": "Most patients had intravenous catheters placed by radiology nurses, all of whom had received systematic training and comprehensive competency assessment in intravenous puncture techniques. Catheters were preferentially placed in the antecubital fossa, then the forearm, rarely the upper arm, wrist, hand and foot. Based on vascular condition an 18-22G high pressure-resistant peripheral catheter (max pressure 350 psi) was used. After placement the radiology nurse assessed patency by aspirating for blood return and manually flushing with 5 mL of normal saline.",
+          "quote": "Based on the patient's vascular conditions, an 18‒22 G high pressure-resistant peripheral catheter (the maximum pressure allowed was 350 psi) was used. After successful catheter placement, the radiology nurse assessed patency by aspirating for blood return and manually flushing with 5 mL of normal saline. During CT scans, saline testing was routinely performed prior to CM administration for all CMs except Optiray® 320 (Ioversol injection, Guerbet, Shanghai, China).",
+          "src": "EN-09",
+          "cat": "对比剂安全"
         },
         {
           "k": "针号与流速对应",
@@ -2082,6 +2250,48 @@ window.KG_GRAPH = {
           "cat": "检查前评估"
         },
         {
+          "k": "独立危险因素",
+          "v": "年龄、体质指数、基础疾病、过敏史、就医方式、碘对比剂种类为CT增强碘对比剂急性不良反应的独立影响因素(P＜0.05)",
+          "quote": "Logistic回归分析结果显示,年龄、体质指数、基础疾病、过敏史、就医方式、碘对比剂种类为CT增强碘对比剂急性不良反应的独立影响因素(P＜0.05).",
+          "src": "CN-27",
+          "cat": "过敏护理"
+        },
+        {
+          "k": "危险因素与监测",
+          "v": "原患高血压、既往药物过敏史、尿素水平与钠离子水平为碘造影剂出现不良反应的危险因素(P值<0.05)；给药后须严密监测尿素与钠离子水平",
+          "quote": "患者原患高危组高血压、既往有药物过敏史、尿素水平、钠离子水平是碘造影剂出现不良反应的危险因素(P值<0.05).",
+          "src": "CN-28",
+          "cat": "过敏护理"
+        },
+        {
+          "k": "Pre-procedure screening risk factors for reactions",
+          "v": "Allergic-like reactions to modern iodinated contrast are uncommon (iodinated 0.6% aggregate, 0.04% severe; gadolinium-based 0.01-0.22% aggregate, 0.008% severe). Prior allergic-like or unknown-type reaction to the same class of contrast is the greatest risk factor (approximately 5-fold increased risk). Shellfish and povidone-iodine allergies are NOT a risk factor for iodinated contrast. Asthma increases likelihood; unrelated allergy gives 2- to 3-fold increase. Beta-blocker users do not need to discontinue medication.",
+          "quote": "Risk Factors for Adverse Reactions to Intravenous Contrast Media Primary Considerations Allergic-like reactions to modern iodinated and gadolinium-based contrast medium are uncommon (iodinated: 0.6% aggregate [1], 0.04% severe [2]; gadolinium-based: 0.01-0.22% aggregate [2], 0.008% severe) [3]. Risk factors exist that increase the risk of a contrast reaction. These generally increase the likelihood of a reaction by less than one order of magnitude, effectively increasing the risk that an uncommon event will occur, but not guaranteeing a reaction will take place. The following are some examples: Allergy: Patients who have had a prior allergic-like reaction or unknown-type reaction (i.e., a reaction of unknown manifestation) to contrast medium have an approximately 5-fold increased risk of developing a future allergic-like reaction if exposed to the same class of contrast medium again [2].",
+          "src": "R01",
+          "cat": "对比剂安全"
+        },
+        {
+          "k": "Acute allergy increases ICM reaction risk",
+          "v": "Patients with acute or poorly controlled allergy (asthma, drug/food allergy, allergic rhinitis) are at increased risk of acquiring contrast hypersensitivity. Because of the modest increased risk, restricting contrast medium use or premedicating solely on the basis of unrelated allergies or a history of asthma is not recommended in the ACR manual. Over-treatment and under-treatment both harm the patient, since prophylactic measures for pseudo-risks are time- and personnel-intensive without clinical benefit.",
+          "quote": "Patients with acute or poorly controlled allergy (e.g., asthma, drug/food allergy, allergic rhinitis) are at increased risk for the acquisition of ICM hypersensitivity.",
+          "src": "EN-12",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Paediatric reaction rates rise with age",
+          "v": "Acute physiologic reactions occurred slightly more frequently in older patients (adjusted RR 1.04 per one-year increase, 95% CI 1.01-1.07, P = 0.008). Stratified by age the incidence was 0.08% (4/5,038) under 2 years, 0.60% (51/8,439) aged 2-12 years, and 0.73% (73/9,952) over 12 years. Reactions were more frequent in patients with a prior history of such reactions (adjusted RR 7.44, 95% CI 2.55-21.70, P < 0.001).",
+          "quote": "Multivariable Poisson regression analyses (Table 4) showed that acute physiologic reactions occurred slightly more frequently in older patients (adjusted RR = 1.04 per 1-year increase [95% CI: 1.01, 1.07], P = 0.008). When stratified by age group, the incidence of physiologic reactions was 0.08% (4 of 5,038) in patients <2 years old, 0.60% (51 of 8,439) in those aged 2-12 years, and 0.73% (73 of 9,952) in those >12 years old (Supplementary Table 2). Additionally, acute physiologic reactions were more frequent in patients with a prior history of such reactions (adjusted RR = 7.44 [95% CI: 2.55, 21.70], P < 0.001).",
+          "src": "EN-14",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "Premedication does not abolish paediatric recurrence",
+          "v": "Of 23,429 examinations, 226 were indicated for premedication because of prior allergic-like reactions to low-osmolality contrast; 172 were performed after premedication. Acute allergic-like reactions occurred in 6.40% (11/172) of examinations performed with premedication versus 3.70% (2/54) where premedication was indicated but not given, and 0.84% (195/23,203) in those without such history (P < 0.001). Premedication therefore does not remove the risk of recurrence in children.",
+          "quote": "LOCM = low-osmolar iodinated contrast media, RR = relative risk, eGFR = estimated glomerular filtration rate, ICM = iodinated contrast media Among the 23,429 examinations, 226 were indicated for premedication owing to a prior history of allergic-like reactions associated with LOCM. Of these, 172 examinations were performed after premedication. Acute allergic-like reactions occurred in 6.40% (11 of 172) of examinations performed with premedication and in 3.70% (2 of 54) of examinations for which premedication was indicated but not administered. The incidence of acute allergic-like reactions remained significantly higher in patients with a history of such reactions, even with premedication (6.40%), compared to that of those without such a history (0.84%, 195 of 23,203) (P < 0.001). ICM-Associated Acute Physiologic Reactions The incidences of acute physiologic reactions according to the type of LOCM used are described in Table 2 and Figure 3. The incidence of acute physiologic reactions among all LOCM injections was 0.55% (128 of 23,429), with the majority being mild (0.50% of all injections, 118 of 23,429), followed by moderate (0.04%, 9 of 23,429), and severe (0.01%, 1 of 23,429).",
+          "src": "EN-14",
+          "cat": "超敏反应"
+        },
+        {
           "k": "既往同类反应为首位风险",
           "v": "既往同类对比剂过敏样反应是预测未来反应的首位风险因素，再次暴露风险约5倍",
           "quote": "A prior allergic-like or unknown type reaction to the same class of contrast medium is considered the greatest risk factor",
@@ -2171,6 +2381,20 @@ window.KG_GRAPH = {
           "cat": "检查前评估"
         },
         {
+          "k": "Pre-procedure screening risk factors for reactions",
+          "v": "Allergic-like reactions to modern iodinated contrast are uncommon (iodinated 0.6% aggregate, 0.04% severe; gadolinium-based 0.01-0.22% aggregate, 0.008% severe). Prior allergic-like or unknown-type reaction to the same class of contrast is the greatest risk factor (approximately 5-fold increased risk). Shellfish and povidone-iodine allergies are NOT a risk factor for iodinated contrast. Asthma increases likelihood; unrelated allergy gives 2- to 3-fold increase. Beta-blocker users do not need to discontinue medication.",
+          "quote": "Risk Factors for Adverse Reactions to Intravenous Contrast Media Primary Considerations Allergic-like reactions to modern iodinated and gadolinium-based contrast medium are uncommon (iodinated: 0.6% aggregate [1], 0.04% severe [2]; gadolinium-based: 0.01-0.22% aggregate [2], 0.008% severe) [3]. Risk factors exist that increase the risk of a contrast reaction. These generally increase the likelihood of a reaction by less than one order of magnitude, effectively increasing the risk that an uncommon event will occur, but not guaranteeing a reaction will take place. The following are some examples: Allergy: Patients who have had a prior allergic-like reaction or unknown-type reaction (i.e., a reaction of unknown manifestation) to contrast medium have an approximately 5-fold increased risk of developing a future allergic-like reaction if exposed to the same class of contrast medium again [2].",
+          "src": "R01",
+          "cat": "对比剂安全"
+        },
+        {
+          "k": "Acute allergy increases ICM reaction risk",
+          "v": "Patients with acute or poorly controlled allergy (asthma, drug/food allergy, allergic rhinitis) are at increased risk of acquiring contrast hypersensitivity. Because of the modest increased risk, restricting contrast medium use or premedicating solely on the basis of unrelated allergies or a history of asthma is not recommended in the ACR manual. Over-treatment and under-treatment both harm the patient, since prophylactic measures for pseudo-risks are time- and personnel-intensive without clinical benefit.",
+          "quote": "Patients with acute or poorly controlled allergy (e.g., asthma, drug/food allergy, allergic rhinitis) are at increased risk for the acquisition of ICM hypersensitivity.",
+          "src": "EN-12",
+          "cat": "超敏反应"
+        },
+        {
           "k": "绝对禁忌证与高危人群",
           "v": "绝对禁忌为甲亢未治疗者；高危含既往中重度反应者、不稳定性哮喘、糖尿病肾病、肾功能不全等12类",
           "quote": "既往使用碘对比剂出现中、重度不良反应者；②不稳定性哮喘者；",
@@ -2258,6 +2482,48 @@ window.KG_GRAPH = {
           "quote": "术后留观 30 分钟并多喂水",
           "src": "CG-07",
           "cat": "特殊人群"
+        },
+        {
+          "k": "独立危险因素",
+          "v": "年龄、体质指数、基础疾病、过敏史、就医方式、碘对比剂种类为CT增强碘对比剂急性不良反应的独立影响因素(P＜0.05)",
+          "quote": "Logistic回归分析结果显示,年龄、体质指数、基础疾病、过敏史、就医方式、碘对比剂种类为CT增强碘对比剂急性不良反应的独立影响因素(P＜0.05).",
+          "src": "CN-27",
+          "cat": "过敏护理"
+        },
+        {
+          "k": "Moderate injury risk factors",
+          "v": "Risk factors for moderate extravasation injury identified in univariate analysis: age ≥ 70 years, malignant tumors, large-volume (> 50 mL) extravasation, insertion on the left side, and injection site (back of the hand) were important variables in the univariate analysis.",
+          "quote": "Age ≥ 70 years, malignant tumors, large-volume (> 50 mL) extravasation, insertion on the left side, and injection site (back of the hand) were important variables in the univariate analysis.",
+          "src": "EN-05",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Female sex and older age raise risk",
+          "v": "Five papers reported iodinated contrast extravasation rates by sex: 276 extravasations in 194,306 male injections (0.14%) versus 354 in 186,636 female injections (0.19%). Older patients also had higher rates: mean age of all patients injected was 53.5 years versus 61.2 years in the extravasation group; one study found significantly higher rates over age 50 (P = .02) and another over age 60 in both CT and MRI (P = .001). Contributing factors: fragile veins, inability to communicate pain quickly, and dislodgement of an initial IV in surprised or confused patients.",
+          "quote": "These include 276 extravasations in 194,306 male patient injections (0.14%) compared with 354 extravasations in 186,636 female patient injections (0.19%) (Table 4). Table 4Five papers reported the rates of extravasation of iodinated contrast media (mostly nonionic) for male versus female patients. Although neither Jacobs et al[27] nor Birnbaum et al[3] found any gender effect, Wienbeck et al showed a predominance of women in the extravasation group (P = .05).[30] This finding was confirmed by 2 more recent studies: Niv et al found the extravasation rate to be nearly twice as high in females (0.64%) compared with male patients (0.33%) (P = .005)[34] and Shaqdan et al also demonstrated that females were more prone to extravasations (0.15%) than male patients (0.11%) (P = .0023).[21] This difference could be related to smaller size and deeper positioning of subcutaneous veins within thicker subcutaneous fat in female patients.[37,38] 3.3.Age Niv et al reported a difference between mean age of all patients being injected for contrast enhanced CT = 53.5 years (range 1-94) compared with the mean age of patients with extravasation = 61.2 years (range 24-93) (P < .0001).[34] Wienbeck et al[30] demonstrated significantly higher extravasation rates for patients older than 50 years (P = .02). Shaqdan et al showed that extravasations increased in patients more than 60 years of age in both CT and MRI (P = .001). This finding is possibly explained by fragile veins in older patients.[38,39] Another possible factor is that elderly patients might not be able to communicate quickly regarding pain at the injection site.[21,35] Uncooperative, confused elderly patients may dislodge an initially functioning IV especially if they are surprised when the injection begins.",
+          "src": "EN-06",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Non-modifiable patient risk factors",
+          "v": "Several non-modifiable factors increase extravasation risk, including female sex, age over 60 years, and patients in general wards or intensive care units. The multi-site American College of Radiology quality improvement initiative aimed to reduce extravasation frequency but did not succeed across participating sites despite identifying risk factors and implementing proactive mitigation measures.",
+          "quote": "Several non-modifiable factors increase the risk of CM extravasation, including female sex, age over 60 years, and patients in general wards or intensive care units (ICUs) (15-17).",
+          "src": "EN-09",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Paediatric reaction rates rise with age",
+          "v": "Acute physiologic reactions occurred slightly more frequently in older patients (adjusted RR 1.04 per one-year increase, 95% CI 1.01-1.07, P = 0.008). Stratified by age the incidence was 0.08% (4/5,038) under 2 years, 0.60% (51/8,439) aged 2-12 years, and 0.73% (73/9,952) over 12 years. Reactions were more frequent in patients with a prior history of such reactions (adjusted RR 7.44, 95% CI 2.55-21.70, P < 0.001).",
+          "quote": "Multivariable Poisson regression analyses (Table 4) showed that acute physiologic reactions occurred slightly more frequently in older patients (adjusted RR = 1.04 per 1-year increase [95% CI: 1.01, 1.07], P = 0.008). When stratified by age group, the incidence of physiologic reactions was 0.08% (4 of 5,038) in patients <2 years old, 0.60% (51 of 8,439) in those aged 2-12 years, and 0.73% (73 of 9,952) in those >12 years old (Supplementary Table 2). Additionally, acute physiologic reactions were more frequent in patients with a prior history of such reactions (adjusted RR = 7.44 [95% CI: 2.55, 21.70], P < 0.001).",
+          "src": "EN-14",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "Established clinical and technical predictors",
+          "v": "Existing studies have emphasized clinical and technical predictors, including age, sex, diabetes, prior chemotherapy, catheter gauge, injection site, and pressure-related variables. CTA requires the rapid intravenous injection of iodinated contrast media to achieve adequate vascular enhancement, typically at rates of 3-5 mL/s using automated power injectors.",
+          "quote": "The procedure requires the rapid intravenous injection of iodinated contrast media to achieve adequate vascular enhancement, typically at rates of 3-5 mL/s using automated power injectors [3,4]. Contrast media extravasation remains an important complication [5]. Although large mixed-protocol CT registries usually report low overall incidence, the risk may be higher in CTA cohorts because rapid high-flow injection places greater mechanical stress on peripheral venous access [6,7,8]. Existing studies have emphasized clinical and technical predictors, including age, sex, diabetes, prior chemotherapy, catheter gauge, injection site, and pressure-related variables [9,10].",
+          "src": "EN-21",
+          "cat": "风险因素"
         },
         {
           "k": "绝对禁忌证与高危人群",
@@ -2405,6 +2671,20 @@ window.KG_GRAPH = {
           "cat": "操作处置"
         },
         {
+          "k": "High injection pressure plus low muscle index",
+          "v": "Contrast extravasation risk in abdominal CTA was associated with both high injection pressure profiles and low CT-derived skeletal muscle index. Extravasation occurred in 380 patients (3.05%); patients with extravasation had lower L3 SMI, a higher prevalence of sarcopenia, higher peak pressures, and elevated injection pressure-to-rate ratios. The combined model achieved an AUC of 0.941 (95% CI 0.927-0.955), showing higher discrimination than the pressure-only model (AUC 0.926), body composition-only model (AUC 0.840), and clinical-only model (AUC 0.796).",
+          "quote": "Contrast extravasation risk in abdominal CTA was associated with both high injection pressure profiles and low CT-derived skeletal muscle index. The combined clinical-pressure-body composition model showed higher discrimination than single-domain models after correction of the ROC-labeling error. What are the implications of the main findings? Opportunistic body composition assessment may refine pre-injection risk stratification without additional scanning or radiation exposure. The results provide a basis for future nurse-led, model-informed vascular access planning, but prospective external validation is required before routine deployment. Abstract Purpose: Contrast media extravasation can complicate CT angiography (CTA), particularly when high-flow injection protocols are used. Current risk assessment relies mainly on clinical factors and injection pressure monitoring, whereas opportunistic CT-derived body composition has rarely been evaluated for this purpose. Methods: This single-center retrospective cohort study analyzed 12,460 consecutive adult patients who underwent contrast-enhanced abdominal CTA. The L3 skeletal muscle index (SMI) was extracted from routine CT images, and pressure metrics were obtained from power injector logs. Logistic-regression models incorporating clinical variables, pressure parameters, and body composition variables were evaluated and internally validated. Results: Extravasation occurred in 380 patients (3.05%). Patients with extravasation had lower L3 SMI, a higher prevalence of sarcopenia, higher peak pressures, and elevated injection pressure-to-rate ratios (IPIRs). In multivariable analysis, lower L3 SMI, sarcopenia, peak pressure, IPIR, age, catheter gauge, and injection site were associated with extravasation. The combined model achieved an AUC of 0.941 (95% CI 0.927-0.955), showing higher discrimination than the pressure-only model (AUC 0.926, 95% CI 0.910-0.942), body composition-only model (AUC 0.840, 95% CI 0.819-0.861), and clinical-only model (AUC 0.796, 95% CI 0.772-0.820). The bootstrap optimism-corrected AUC was 0.928.",
+          "src": "EN-21",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Established clinical and technical predictors",
+          "v": "Existing studies have emphasized clinical and technical predictors, including age, sex, diabetes, prior chemotherapy, catheter gauge, injection site, and pressure-related variables. CTA requires the rapid intravenous injection of iodinated contrast media to achieve adequate vascular enhancement, typically at rates of 3-5 mL/s using automated power injectors.",
+          "quote": "The procedure requires the rapid intravenous injection of iodinated contrast media to achieve adequate vascular enhancement, typically at rates of 3-5 mL/s using automated power injectors [3,4]. Contrast media extravasation remains an important complication [5]. Although large mixed-protocol CT registries usually report low overall incidence, the risk may be higher in CTA cohorts because rapid high-flow injection places greater mechanical stress on peripheral venous access [6,7,8]. Existing studies have emphasized clinical and technical predictors, including age, sex, diabetes, prior chemotherapy, catheter gauge, injection site, and pressure-related variables [9,10].",
+          "src": "EN-21",
+          "cat": "风险因素"
+        },
+        {
           "k": "针号与流速对应",
           "v": "22G可耐受5 mL/s；流速≥3 mL/s宜用20G及以上；手/腕穿刺须降至1–2 mL/s",
           "quote": "Although 22-gauge catheters may be able to tolerate flow rates up to 5 ml/sec, a 20-gauge or larger catheter is preferable for flow rates of 3 ml/sec or greater.",
@@ -2471,6 +2751,13 @@ window.KG_GRAPH = {
       ],
       "graph": "topic-01",
       "details": [
+        {
+          "k": "Serious injury risk factors quantified",
+          "v": "586,812 contrast injections over 11 years: 709 extravasations (0.12%). Severity: 672 (94.8%) mild, 32 (4.5%) moderate, 5 (0.7%) severe; only 5 patients received dermatology or burn specialist consultation and none required surgery. Multivariate analysis: diabetes mellitus (OR 8.04, P<0.01), injection in the dorsum of the hand (OR 4.86, P<0.01), injection without a saline test (OR 2.58, P=0.02), and large-volume extravasation (OR 5.49, P<0.01) were independent risk factors for moderate or severe injury.",
+          "quote": "Results CM extravasation occurred in 0.12% (709/586,812) of cases. Of the 709 extravasation injuries, 672 (94.8%) were mild, 32 (4.5%) were moderate, and 5 (0.7%) were severe. Only 5 patients received consultations from dermatologists or burn specialists, and none required surgery. Multivariate analysis underscored the presence of diabetes mellitus [DM, odds ratio (OR) =8.04; P<0.01], injections in the dorsum of the hand (OR =4.86; P<0.01), without saline test (OR =2.58; P=0.02), and large-volume extravasation (OR =5.49; P<0.01) as potential risk factors of moderate or severe CM extravasation injury. Conclusions Most CM extravasation injuries are mild and without serious consequences. Multiple modifiable risk factors for serious CM extravasation injury have been identified that could mitigate the severity of the injury. Keywords: Contrast media (CM), extravasation of diagnostic and therapeutic materials, injection site reactions, computed tomography (CT) statusreleaseddisplay-pdfyesis-olfnois-manuscriptnois-preprintnois-journal-matternois-scannednois-retractednoReceived 2024 Oct 24; Accepted 2025 Apr 29; Issue date 2025 Aug 1. Introduction Contrast media (CM) is widely used in contrast-enhanced computed tomography (CECT) scans to improve the visualization of abnormal structures in various parts of the body (1). With the increasing availability of computed tomography (CT) equipment in healthcare, there were approximately 91.4 million CT scans conducted in the US in 2019; 48% of these recipients required the intravenous administration of CM (2). Characterized by its distinct physicochemical properties, including high concentration, osmotic pressure, and viscosity, CM typically requires intravenous injection into the human body at a rapid rate. Multiple complications can occur after CM injection, of which extravasation is well-recognized, with an occurrence rate of 0.1-1.2% (3-8). Extravasation refers to the inadvertent administration of vesicant solutions or drugs into adjacent tissues (9,10). CM is categorized as a high-risk vesicant, with tissue toxicity primarily driven by its hyperosmolarity (11).",
+          "src": "EN-09",
+          "cat": "风险因素"
+        },
         {
           "k": "ESUR官网预防要点",
           "v": "使用与流量匹配型号的留置针、置入合适血管,推注前生理盐水试注,选用非离子碘对比剂",
@@ -2617,6 +2904,27 @@ window.KG_GRAPH = {
           "quote": "大多数重度过敏反应都需要肾上腺素治疗",
           "src": "CG-04",
           "cat": "处理"
+        },
+        {
+          "k": "ACR Table 3 epinephrine dosing for adults",
+          "v": "ACR adult reaction table, anaphylactoid reaction with persistent hypotension: epinephrine IV 1 mL of 0.1 mg/mL (1:10,000) = 0.1 mg, repeat every few minutes up to 10 mL (1 mg) total; or IM 0.3 mL of 1.0 mg/mL (1:1,000) = 0.3 mg, repeat every 5-15 minutes up to 1 mL (1 mg) total; or auto-injector 0.3 mL fixed, up to three times. Footnote: IV preferred in hypotensive patients.",
+          "quote": "Hypotension with tachycardia (pulse > 100 bpm) (Anaphylactoid reaction) If hypotension persists Epinephrine (IV)* IV 1 mL of 0.1 mg/mL (1:10,000) dilution (0.1 mg); administer slowly into a running IV infusion of fluids; can repeat every few minutes as needed up to 10 mL (1 mg) total or Epinephrine (IM)* IM 0.3 mL of 1.0 mg/mL (1:1,000) dilution (0.3 mg); can repeat every 5-15 minutes up to 1 mL (1 mg) total or Epinephrine auto-injector (EpiPen® or equivalent) (0.3 mL of 1.0 mg/mL (1:1,000) dilution, fixed [0.3mg]); can repeat every 5-15 minutes up to three times Consider calling emergency response team or 911 based upon the severity of the reaction and the completeness of the response * Note: in hypotensive patients, the preferred route of epinephrine delivery is IV, as the extremities may not be perfused sufficiently to allow for adequate absorption of IM administered drug.",
+          "src": "R01",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "ACR Table 3 bronchospasm doses",
+          "v": "ACR Table 3, bronchospasm: all forms - preserve IV access, monitor vitals, pulse oximeter, O2 by mask 6-10 L/min. Mild: beta agonist inhaler 2 puffs (90 mcg/puff) = 180 mcg, up to 3 times. Moderate: same beta agonist plus consider epinephrine IM 0.3 mL of 1.0 mg/mL (1:1,000) = 0.3 mg, repeat every 5-15 minutes up to 1 mL (1 mg) total.",
+          "quote": "BRONCHOSPASM Treatment Dosing All forms Preserve IV access Monitor vitals Pulse oximeter O2 by mask 6-10 L/min Mild Beta agonist inhaler (Albuterol®) 2 puffs (90 mcg/puff) for a total of 180 mcg; can repeat up to 3 times Consider sending patient to the Emergency Department or calling emergency response team or 911, based upon the completeness of the response to the beta agonist inhaler Moderate Beta agonist inhaler (Albuterol®) 2 puffs (90 mcg/puff) for a total of 180 mcg; can repeat up to 3 times Consider adding epinephrine (IM)* IM 0.3 mL of 1.0 mg/mL (1:1,000) dilution (0.3 mg); can repeat every 5-15 minutes up to 1 mL (1 mg) total or Epinephrine auto-injector (EpiPen® or equivalent) (0.3 mL of 1.0 mg/mL (1:1,000) dilution, fixed [0.3mg]); can repeat every 5-15 minutes up to three times or Epinephrine (IV)* IV 1 mL of 0.1 mg/mL(1:10,000) dilution (0.1 mg); administer slowly into a running IV infusion of fluids or use saline flush; can repeat every few minutes as needed up to 10 mL (1 mg) total Consider calling emergency response team or 911 based upon the completeness of the response Severe Epinephrine (IV)* IV 1 mL of 0.1 mg/mL (1:10,000) dilution (0.1 mg); administer slowly into a running IV infusion of fluids or slow IV push followed by a slow saline flush; can repeat every few minutes as needed up to 10 mL (1 mg) total or Epinephrine (IM)* IM 0.3 mL of 1:1,000 dilution (0.3 mg); can repeat every 5-15 minutes up to 1 mL (1 mg) total or Epinephrine auto-injector (EpiPen® or equivalent) (0.3 mL of 1.0 mg/mL(1:1,000) dilution, Fixed [0.3mg]); can repeat every 5-15 minutes up to three times AND 2 puffs (90 mcg/puff) for a total of 180 mcg; can repeat up to 3 Beta agonist inhaler (Albuterol®) (may work times synergistically) Call emergency response team or 911 * Note: in hypotensive patients, the preferred route of epinephrine delivery is IV, as the extremities may not be perfused sufficiently to allow for adequate absorption of IM administered drug.",
+          "src": "R01",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Anaphylaxis adrenaline dose in adults",
+          "v": "For anaphylaxis or stridor: call the rapid response team, oxygen 10-15 L/min by non-rebreathing mask, adrenaline (epinephrine) 0.5 mg IM in the lateral upper thigh, repeat as necessary guided by heart rate; crystalloid bolus 500 mL IV over 10 min repeated as necessary; salbutamol 2-10 inhalations of 100 mcg (or nebulised 2.5-5 mcg in 3 mL saline) up to 1 h; chlorphenamine 20 mg or clemastine 2 mg IV; consider prednisolone 50 mg IV. IM adrenaline 1 mg/mL remains first-line, with most guidelines recommending an adult dose of 0.5 mg IM.",
+          "quote": "• Give oxygen 10 to 15 L/min with non-rebreathing mask. • Give 0.5 mg adrenaline IM in the lateral upper thigh, repeat as necessary, guided by heart rate. • Give fluid bolus of crystalloid 500 mL IV in 10 min, repeat as necessary. • Short-acting β2-agonist: 2-10 inhalations of 100 μg of salbutamol via inhalation [depending on severity], with option to repeat every 20 min, or via nebulization (2.5-5 μg diluted in 3 mL of saline solution) up to 1 h. • Give chlorphenamine 20 mg or clemastine 2 mg IV, repeat as necessary. • Consider adding corticosteroid (for example, prednisolone 50 mg IV*).",
+          "src": "EN-03",
+          "cat": "超敏反应"
         }
       ]
     },
@@ -2664,6 +2972,41 @@ window.KG_GRAPH = {
           "quote": "Glucocorticoids have no role in treating acute anaphylaxis given the slow onset of action",
           "src": "R12",
           "cat": "首选用药"
+        },
+        {
+          "k": "Anaphylaxis adrenaline dose in adults",
+          "v": "For anaphylaxis or stridor: call the rapid response team, oxygen 10-15 L/min by non-rebreathing mask, adrenaline (epinephrine) 0.5 mg IM in the lateral upper thigh, repeat as necessary guided by heart rate; crystalloid bolus 500 mL IV over 10 min repeated as necessary; salbutamol 2-10 inhalations of 100 mcg (or nebulised 2.5-5 mcg in 3 mL saline) up to 1 h; chlorphenamine 20 mg or clemastine 2 mg IV; consider prednisolone 50 mg IV. IM adrenaline 1 mg/mL remains first-line, with most guidelines recommending an adult dose of 0.5 mg IM.",
+          "quote": "• Give oxygen 10 to 15 L/min with non-rebreathing mask. • Give 0.5 mg adrenaline IM in the lateral upper thigh, repeat as necessary, guided by heart rate. • Give fluid bolus of crystalloid 500 mL IV in 10 min, repeat as necessary. • Short-acting β2-agonist: 2-10 inhalations of 100 μg of salbutamol via inhalation [depending on severity], with option to repeat every 20 min, or via nebulization (2.5-5 μg diluted in 3 mL of saline solution) up to 1 h. • Give chlorphenamine 20 mg or clemastine 2 mg IV, repeat as necessary. • Consider adding corticosteroid (for example, prednisolone 50 mg IV*).",
+          "src": "EN-03",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Non-immediate reaction handling and discharge",
+          "v": "Warn patients who previously had a non-immediate reaction that a repeat reaction may occur, usually a skin reaction; they should contact their general practitioner and the radiology department where the contrast was given. Treat non-immediate reactions symptomatically; consider oral or topical corticosteroids for skin reactions. Severe cutaneous adverse reactions (generalised pustulosis, painful cutaneous blisters) require dermatologist referral for treatment and advice on future contrast use.",
+          "quote": "When severe cutaneous adverse reactions (SCAR) develop, such as generalized pustulosis or painful cutaneous blisters, refer the patient to a dermatologist for treatment and advice on future use of contrast media.",
+          "src": "EN-03",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Emergency premedication protocol doses",
+          "v": "Emergency premedication protocol: 50 mg prednisolone IV (or equivalent) given at least 30 min before contrast medium administration, plus 2 mg clemastine IV (or equivalent) at least 30 min before administration. Equivalents: 50 mg prednisolone = 40 mg methylprednisolone = 8 mg dexamethasone = 200 mg hydrocortisone; 2 mg clemastine = 50 mg diphenhydramine = 20 mg chlorphenamine = 10 mg cetirizine (all IV).",
+          "quote": "1 Emergency premedication protocol: • 50 mg prednisolone IV (or equivalent): ≥ 30 min before contrast medium administration • 2 mg clemastine IV (or equivalent): ≥ 30 min before contrast medium administration Note: 50 mg prednisolone IV is equivalent to: • 40 mg methylprednisolone IV • 8 mg dexamethasone IV • 200 mg hydrocortisone IV Note: 2 mg clemastine IV is equivalent to: • 50 mg diphenhydramine IV • 20 mg chlorphenamine IV • 10 mg cetirizine IV Non-immediate hypersensitivity reactions (NIHR) In patients with a history of a mild non-immediate hypersensitivity reaction to an iodine-based contrast medium or a gadolinium-based contrast agent without danger signs: • Interview the patient about their previous hypersensitivity reaction • Optionally, refer the patient to a drug allergy specialist (if not done before) when the local drug allergy specialist capacity is sufficient • Optimize the allergy registration in the electronic health record • Apply the advice of the drug allergy specialist for a safe iodine-based contrast medium or gadolinium-based contrast agent, or, when not available, choose a different Iodine-based contrast medium or gadolinium-based contrast agent if the culprit contrast agent is known* • When the contrast medium is administered, observe the patient for at least 30 min with the IV line in place • Give the patient written instructions for a possible repeat non-immediate hypersensitivity reaction • If a non-immediate hypersensitivity reaction recurs, referral to a drug allergy specialist is mandatory * See also Fig.",
+          "src": "EN-04",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Early symptoms and usual conservative course",
+          "v": "The first symptoms occur at the time of injection and in most cases evolve to minimal swelling and erythema, and usually disappear with medical measures and small steps such as application of ice packs, analgesics and use of steroids. Exceptionally, with a large volume of contrast medium injection the patient may develop acute compartment syndrome; this complication is rare and its incidence unknown. The decision to proceed to surgery is a difficult moment for the physician.",
+          "quote": "These symptoms usually disappear with medical measures and small steps such as application of ice packs, analgesics and the use of steroids [1].",
+          "src": "EN-16",
+          "cat": "识别分级"
+        },
+        {
+          "k": "H1 blocker vs combination prophylaxis used",
+          "v": "Bern used mainly H1-blocker plus corticosteroids as premedication, while Seoul mainly used H1-blockers only for mild index reactions and H1-blockers plus corticosteroid for moderate or severe index reactions. The combination H1-blocker plus corticosteroid was applied in 213 cases, while 474 cases received an H1-blocker only. Overall there were slightly more moderate and severe breakthrough reactions than index reactions.",
+          "quote": "The combination H1-blocker plus corticosteroid was applied in 213 cases, while 474 cases received a H1-blocker only.",
+          "src": "EN-19",
+          "cat": "超敏反应"
         }
       ]
     },
@@ -2711,6 +3054,34 @@ window.KG_GRAPH = {
           "quote": "intramuscular epinephrine and cardiorespiratory support for more severe reactions",
           "src": "R14",
           "cat": "首选用药"
+        },
+        {
+          "k": "Anaphylaxis adrenaline dose in adults",
+          "v": "For anaphylaxis or stridor: call the rapid response team, oxygen 10-15 L/min by non-rebreathing mask, adrenaline (epinephrine) 0.5 mg IM in the lateral upper thigh, repeat as necessary guided by heart rate; crystalloid bolus 500 mL IV over 10 min repeated as necessary; salbutamol 2-10 inhalations of 100 mcg (or nebulised 2.5-5 mcg in 3 mL saline) up to 1 h; chlorphenamine 20 mg or clemastine 2 mg IV; consider prednisolone 50 mg IV. IM adrenaline 1 mg/mL remains first-line, with most guidelines recommending an adult dose of 0.5 mg IM.",
+          "quote": "• Give oxygen 10 to 15 L/min with non-rebreathing mask. • Give 0.5 mg adrenaline IM in the lateral upper thigh, repeat as necessary, guided by heart rate. • Give fluid bolus of crystalloid 500 mL IV in 10 min, repeat as necessary. • Short-acting β2-agonist: 2-10 inhalations of 100 μg of salbutamol via inhalation [depending on severity], with option to repeat every 20 min, or via nebulization (2.5-5 μg diluted in 3 mL of saline solution) up to 1 h. • Give chlorphenamine 20 mg or clemastine 2 mg IV, repeat as necessary. • Consider adding corticosteroid (for example, prednisolone 50 mg IV*).",
+          "src": "EN-03",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Mild reaction management and observation",
+          "v": "Mild reactions may only need reassurance. Observe vital signs until symptoms resolve and do not remove IV access during observation. Consider a non-sedating antihistamine such as desloratadine 5 mg PO or cetirizine 10 mg PO once daily for mild allergic reactions, and ondansetron 4 mg IV for protracted vomiting.",
+          "quote": "• Do not remove IV access during observation. Consider: • Prescribing a nonsedating antihistamine, for example, desloratadine 5 mg PO or cetirizine 10 mg PO (once daily) for mild allergic reactions. • Ondansetron 4 mg IV for protracted vomiting.",
+          "src": "EN-03",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Emergency premedication protocol doses",
+          "v": "Emergency premedication protocol: 50 mg prednisolone IV (or equivalent) given at least 30 min before contrast medium administration, plus 2 mg clemastine IV (or equivalent) at least 30 min before administration. Equivalents: 50 mg prednisolone = 40 mg methylprednisolone = 8 mg dexamethasone = 200 mg hydrocortisone; 2 mg clemastine = 50 mg diphenhydramine = 20 mg chlorphenamine = 10 mg cetirizine (all IV).",
+          "quote": "1 Emergency premedication protocol: • 50 mg prednisolone IV (or equivalent): ≥ 30 min before contrast medium administration • 2 mg clemastine IV (or equivalent): ≥ 30 min before contrast medium administration Note: 50 mg prednisolone IV is equivalent to: • 40 mg methylprednisolone IV • 8 mg dexamethasone IV • 200 mg hydrocortisone IV Note: 2 mg clemastine IV is equivalent to: • 50 mg diphenhydramine IV • 20 mg chlorphenamine IV • 10 mg cetirizine IV Non-immediate hypersensitivity reactions (NIHR) In patients with a history of a mild non-immediate hypersensitivity reaction to an iodine-based contrast medium or a gadolinium-based contrast agent without danger signs: • Interview the patient about their previous hypersensitivity reaction • Optionally, refer the patient to a drug allergy specialist (if not done before) when the local drug allergy specialist capacity is sufficient • Optimize the allergy registration in the electronic health record • Apply the advice of the drug allergy specialist for a safe iodine-based contrast medium or gadolinium-based contrast agent, or, when not available, choose a different Iodine-based contrast medium or gadolinium-based contrast agent if the culprit contrast agent is known* • When the contrast medium is administered, observe the patient for at least 30 min with the IV line in place • Give the patient written instructions for a possible repeat non-immediate hypersensitivity reaction • If a non-immediate hypersensitivity reaction recurs, referral to a drug allergy specialist is mandatory * See also Fig.",
+          "src": "EN-04",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "H1 blocker vs combination prophylaxis used",
+          "v": "Bern used mainly H1-blocker plus corticosteroids as premedication, while Seoul mainly used H1-blockers only for mild index reactions and H1-blockers plus corticosteroid for moderate or severe index reactions. The combination H1-blocker plus corticosteroid was applied in 213 cases, while 474 cases received an H1-blocker only. Overall there were slightly more moderate and severe breakthrough reactions than index reactions.",
+          "quote": "The combination H1-blocker plus corticosteroid was applied in 213 cases, while 474 cases received a H1-blocker only.",
+          "src": "EN-19",
+          "cat": "超敏反应"
         }
       ]
     },
@@ -2741,6 +3112,48 @@ window.KG_GRAPH = {
       ],
       "graph": "topic-01",
       "details": [
+        {
+          "k": "常用局部外用药物",
+          "v": "乙醇、硫酸镁、地塞米松、利多卡因、中药等，可单用或多种药物联合使用",
+          "quote": "常用外用药物包括乙醇、硫酸镁、地塞米松、利多卡因、中药等药物,单用或多种药物联合使用.",
+          "src": "CN-16",
+          "cat": "局部处理"
+        },
+        {
+          "k": "两组干预设计",
+          "v": "40例CT增强后碘对比剂外渗者随机分为实验组与对照组各20例；对照组50％硫酸镁溶液冷湿敷，实验组康惠尔透明贴",
+          "quote": "将2019年5月1日～2020年5月31日40例经CT增强扫描后发生碘对比剂外渗的患者随机分为实验组和对照组各20例,对照组采取常规50％硫酸镁溶液冷湿敷,实验组采取康惠尔透明贴.",
+          "src": "CN-17",
+          "cat": "局部处理"
+        },
+        {
+          "k": "透明贴疗效优于硫酸镁",
+          "v": "实验组静脉炎发生率更低(P<0.01)、患肢恢复时间更短(P<0.05)、护理满意率更高(P<0.05)",
+          "quote": "实验组静脉炎发生率低于对照组(P<0.01),外渗患肢恢复时间短于对照组(P<0.05);实验组护理满意率高于对照组(P<0.05).",
+          "src": "CN-17",
+          "cat": "局部处理"
+        },
+        {
+          "k": "硫酸镁冷热敷参数",
+          "v": "对照组1用50％硫酸镁溶液湿敷，每小时更换；24 h内冷敷，24 h后改为热敷",
+          "quote": "对照组1采用50％硫酸镁溶液湿敷,每小时更换,24 h内冷敷,24 h后改为热敷;",
+          "src": "CN-18",
+          "cat": "局部处理"
+        },
+        {
+          "k": "乌蔹莓外敷对照设计",
+          "v": "CTA后对比剂外渗60例随机分观察组与对照组各30例；对照组50％硫酸镁湿敷肿胀部位，观察组中药乌蔹莓外敷肿胀部位",
+          "quote": "选择行CT冠状动脉造影(CTA)后对比剂外渗的病人60例,随机分为观察组和对照组,每组30例.对照组给予50％硫酸镁湿敷肿胀部位,观察组给予中药乌蔹莓外敷肿胀部位,对两组病人的干预效果进行比较.",
+          "src": "CN-20",
+          "cat": "中医"
+        },
+        {
+          "k": "硫酸镁湿敷对照参数",
+          "v": "浸满50％硫酸镁湿纱布敷于肿胀处、外用薄膜包裹，2～3 h更换一次，一般48 h左右肿胀消失",
+          "quote": "对照组方法:药物外敷将浸满50％硫酸镁湿纱布敷于患者肿胀处,外用薄膜包裹,2～3 h更换硫酸镁纱布,一般需48 h左右肿胀消失.",
+          "src": "CN-21",
+          "cat": "局部处理"
+        },
         {
           "k": "中重度处理流程（硫酸镁冷敷→24 h改热敷）",
           "v": "仅**中、重度**外渗适用：抬高患肢促进血液回流；早期 50% 硫酸镁保湿**冷**敷，24 h 后改硫酸镁保湿**热**敷；也可用黏多糖软膏外敷，或 0.05% 地塞米松局部湿敷",
@@ -2791,6 +3204,20 @@ window.KG_GRAPH = {
       ],
       "graph": "topic-01",
       "details": [
+        {
+          "k": "常用局部外用药物",
+          "v": "乙醇、硫酸镁、地塞米松、利多卡因、中药等，可单用或多种药物联合使用",
+          "quote": "常用外用药物包括乙醇、硫酸镁、地塞米松、利多卡因、中药等药物,单用或多种药物联合使用.",
+          "src": "CN-16",
+          "cat": "局部处理"
+        },
+        {
+          "k": "Conservative regimen used for all patients",
+          "v": "All patients received conservative treatment, including raising the venipuncture point and cold compress, and local application of dexamethasone and compound aescin gel. (This product is a polypill. Its components are aescin and diethylamine salicylic acid.) No patient received additional treatment intervention with conservative treatment.",
+          "quote": "All patients received conservative treatment, including raising the venipuncture point and cold compress; local application of dexamethasone and compound aescin gel. (This product is a polypill. Its components are aescin and diethylamine salicylic acid.) No patient received additional treatment intervention with conservative treatment.",
+          "src": "EN-05",
+          "cat": "处置"
+        },
         {
           "k": "中重度处理流程（硫酸镁冷敷→24 h改热敷）",
           "v": "仅**中、重度**外渗适用：抬高患肢促进血液回流；早期 50% 硫酸镁保湿**冷**敷，24 h 后改硫酸镁保湿**热**敷；也可用黏多糖软膏外敷，或 0.05% 地塞米松局部湿敷",
@@ -2867,6 +3294,20 @@ window.KG_GRAPH = {
           "cat": "操作处置"
         },
         {
+          "k": "急性期封闭与水疱处理",
+          "v": "立即停输液、回抽残余药液、拔针；2%利多卡因2 ml+地塞米松5 mg+生理盐水5 ml局部环形封闭，抽吸水疱渗液，淤紫处外涂多磺酸粘多糖乳膏，抬高患肢高于心脏水平并避免局部受压",
+          "quote": "立即停止输液，回抽残余药液后拔除留置针，予2%利多卡因2 ml+地塞米松5 mg+生理盐水5 ml局部环形封闭，同时抽吸水疱内渗液，淤紫处外涂多磺酸粘多糖乳膏，抬高患肢，高于心脏水平，避免局部受压。",
+          "src": "CN-19",
+          "cat": "局部处理"
+        },
+        {
+          "k": "Initial management steps uncontroversial",
+          "v": "Initial management of contrast media extravasation injury is well defined: stopping the infusion, attempting aspiration through the original cannula, splinting and elevating the limb, and applying cooling attract little controversy. Cohan described 22 cases of extravasation over 30 mL, none of whom required surgery and who had no long-term adverse effects; Sistrom corroborated this with 28 cases.",
+          "quote": "Management Options Conservative Management The initial management of CMEI is well defined. The initial steps of stopping the infusion, attempting aspiration through the original cannula, splinting and elevating the limb, and applying cooling attract little controversy. Cohan described 22 cases of CMEI > 30 mL, none of whom required surgery and had no long-term adverse effects, and Sistrom corroborated this with a study of 28 cases.3, 11 Ko et al successfully managed 9 cases of CMEI with up to 90 mL of various low-osmolar solutions conservatively, advocating the use of room temperature damp gauze rather than ice packs and Silvadene ointment with clobetasol cream.",
+          "src": "EN-08",
+          "cat": "处置"
+        },
+        {
           "k": "首步停止推注",
           "v": "外渗后立即停止注射与扫描,并按轻、中、重三级分类",
           "quote": "Stop injection and scan",
@@ -2935,6 +3376,20 @@ window.KG_GRAPH = {
       "graph": "topic-01",
       "details": [
         {
+          "k": "Mild reaction management and observation",
+          "v": "Mild reactions may only need reassurance. Observe vital signs until symptoms resolve and do not remove IV access during observation. Consider a non-sedating antihistamine such as desloratadine 5 mg PO or cetirizine 10 mg PO once daily for mild allergic reactions, and ondansetron 4 mg IV for protracted vomiting.",
+          "quote": "• Do not remove IV access during observation. Consider: • Prescribing a nonsedating antihistamine, for example, desloratadine 5 mg PO or cetirizine 10 mg PO (once daily) for mild allergic reactions. • Ondansetron 4 mg IV for protracted vomiting.",
+          "src": "EN-03",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Post-administration observation with IV in place",
+          "v": "When contrast medium is administered, observe the patient for at least 30 minutes with the IV line in place, and be prepared and vigilant for a recurring immediate hypersensitivity reaction. Also give the patient written instructions for a possible repeat non-immediate hypersensitivity reaction. If a reaction recurs, referral to a drug allergy specialist is mandatory.",
+          "quote": "When the contrast medium is administered, observe the patient for at least 30 min with the IV line in place • Be prepared and vigilant for a recurring immediate hypersensitivity reaction • If an immediate hypersensitivity reaction recurs, referral to a drug allergy specialist is mandatory * See also Fig.",
+          "src": "EN-04",
+          "cat": "超敏反应"
+        },
+        {
           "k": "回抽与拔针",
           "v": "留置针在位时回抽对比剂以减少外渗量与压力;不可逆时按规范拔针",
           "quote": "Aspiration of contrast whilst cannula",
@@ -2998,6 +3453,55 @@ window.KG_GRAPH = {
       ],
       "graph": "topic-01",
       "details": [
+        {
+          "k": "综合干预处置组合",
+          "v": "回抽药液、抬高患肢、药物局部外用、止痛、心理干预等综合干预；严重者需外科手术干预",
+          "quote": "造影剂外渗后的处理方法包括回抽药液、抬高患肢、药物局部外用、止痛、心理干预等综合干预,严重者需要外科手术干预治疗.",
+          "src": "CN-16",
+          "cat": "局部处理"
+        },
+        {
+          "k": "急性期封闭与水疱处理",
+          "v": "立即停输液、回抽残余药液、拔针；2%利多卡因2 ml+地塞米松5 mg+生理盐水5 ml局部环形封闭，抽吸水疱渗液，淤紫处外涂多磺酸粘多糖乳膏，抬高患肢高于心脏水平并避免局部受压",
+          "quote": "立即停止输液，回抽残余药液后拔除留置针，予2%利多卡因2 ml+地塞米松5 mg+生理盐水5 ml局部环形封闭，同时抽吸水疱内渗液，淤紫处外涂多磺酸粘多糖乳膏，抬高患肢，高于心脏水平，避免局部受压。",
+          "src": "CN-19",
+          "cat": "局部处理"
+        },
+        {
+          "k": "推拿手法操作",
+          "v": "患者取平卧位或坐位，护士用手托住肿胀肢体，用力将肿胀液向近心端推送",
+          "quote": "观察组方法:患者取平卧位或坐位,护士用手托住患者肿胀肢体,用力将肿胀液向近心端推送.",
+          "src": "CN-21",
+          "cat": "中医"
+        },
+        {
+          "k": "Cold compress parameters for extravasation",
+          "v": "Conservative treatment: raise the affected limb to minimise oedema by reducing hydrostatic pressure and promoting drainage, plus cooling. Specific cold-compress regimen: apply for 15 to 60 minutes three times per day for a period of 3 to 4 days; cooling acts by vasoconstriction to give an anti-inflammatory effect. Warming is controversial and no significant difference was shown between groups.",
+          "quote": "A cold compress 15 to 60 minutes three times per day for a period of 3 to 4 days [1].",
+          "src": "EN-01",
+          "cat": "处置"
+        },
+        {
+          "k": "Mild case monitoring and escalation",
+          "v": "Suggested protocol for mild extravasation: limb elevation, ice packs, and monitor the patient 2-4 hourly; if improving, discharge; if no improvement, a surgical opinion is required.",
+          "quote": "Mild cases: limb elevation, ice packs, monitor patient 2–4 hourly. If improving, then discharge. If no improvement, then requires surgical opinion",
+          "src": "EN-01",
+          "cat": "护理能力与记录"
+        },
+        {
+          "k": "Conservative regimen used for all patients",
+          "v": "All patients received conservative treatment, including raising the venipuncture point and cold compress, and local application of dexamethasone and compound aescin gel. (This product is a polypill. Its components are aescin and diethylamine salicylic acid.) No patient received additional treatment intervention with conservative treatment.",
+          "quote": "All patients received conservative treatment, including raising the venipuncture point and cold compress; local application of dexamethasone and compound aescin gel. (This product is a polypill. Its components are aescin and diethylamine salicylic acid.) No patient received additional treatment intervention with conservative treatment.",
+          "src": "EN-05",
+          "cat": "处置"
+        },
+        {
+          "k": "Initial management steps uncontroversial",
+          "v": "Initial management of contrast media extravasation injury is well defined: stopping the infusion, attempting aspiration through the original cannula, splinting and elevating the limb, and applying cooling attract little controversy. Cohan described 22 cases of extravasation over 30 mL, none of whom required surgery and who had no long-term adverse effects; Sistrom corroborated this with 28 cases.",
+          "quote": "Management Options Conservative Management The initial management of CMEI is well defined. The initial steps of stopping the infusion, attempting aspiration through the original cannula, splinting and elevating the limb, and applying cooling attract little controversy. Cohan described 22 cases of CMEI > 30 mL, none of whom required surgery and had no long-term adverse effects, and Sistrom corroborated this with a study of 28 cases.3, 11 Ko et al successfully managed 9 cases of CMEI with up to 90 mL of various low-osmolar solutions conservatively, advocating the use of room temperature damp gauze rather than ice packs and Silvadene ointment with clobetasol cream.",
+          "src": "EN-08",
+          "cat": "处置"
+        },
         {
           "k": "轻度处理路径",
           "v": "轻度者抬高患肢、冰袋、每2~4小时监测;好转可离院,无好转需外科意见",
@@ -3100,6 +3604,83 @@ window.KG_GRAPH = {
       ],
       "graph": "topic-01",
       "details": [
+        {
+          "k": "硫酸镁冷热敷参数",
+          "v": "对照组1用50％硫酸镁溶液湿敷，每小时更换；24 h内冷敷，24 h后改为热敷",
+          "quote": "对照组1采用50％硫酸镁溶液湿敷,每小时更换,24 h内冷敷,24 h后改为热敷;",
+          "src": "CN-18",
+          "cat": "局部处理"
+        },
+        {
+          "k": "硫酸镁湿敷对照参数",
+          "v": "浸满50％硫酸镁湿纱布敷于肿胀处、外用薄膜包裹，2～3 h更换一次，一般48 h左右肿胀消失",
+          "quote": "对照组方法:药物外敷将浸满50％硫酸镁湿纱布敷于患者肿胀处,外用薄膜包裹,2～3 h更换硫酸镁纱布,一般需48 h左右肿胀消失.",
+          "src": "CN-21",
+          "cat": "局部处理"
+        },
+        {
+          "k": "TDP联合中医适宜技术分组",
+          "v": "2023年1—12月影像中心90例碘对比剂静脉外渗随机分为对照组与干预组；对照组常规处理(冷敷)，干预组在其基础上加中医适宜技术联合TDP治疗仪",
+          "quote": "选取在2023年1月—12月江西省某三甲医院影像中心发生碘对比剂静脉外渗90例患者作为研究对象,采用随机数字表法将其分成对照组与干预组,每组各68例.对照组接受常规处理(冷敷),干预组在常规处理的基础上增加中医适宜技术联合TDP治疗仪治疗",
+          "src": "CN-22",
+          "cat": "中医"
+        },
+        {
+          "k": "Cold compress parameters for extravasation",
+          "v": "Conservative treatment: raise the affected limb to minimise oedema by reducing hydrostatic pressure and promoting drainage, plus cooling. Specific cold-compress regimen: apply for 15 to 60 minutes three times per day for a period of 3 to 4 days; cooling acts by vasoconstriction to give an anti-inflammatory effect. Warming is controversial and no significant difference was shown between groups.",
+          "quote": "A cold compress 15 to 60 minutes three times per day for a period of 3 to 4 days [1].",
+          "src": "EN-01",
+          "cat": "处置"
+        },
+        {
+          "k": "Mild case monitoring and escalation",
+          "v": "Suggested protocol for mild extravasation: limb elevation, ice packs, and monitor the patient 2-4 hourly; if improving, discharge; if no improvement, a surgical opinion is required.",
+          "quote": "Mild cases: limb elevation, ice packs, monitor patient 2–4 hourly. If improving, then discharge. If no improvement, then requires surgical opinion",
+          "src": "EN-01",
+          "cat": "护理能力与记录"
+        },
+        {
+          "k": "Cold compress first; no warm-compress evidence",
+          "v": "Recommendation 2: cold compresses or ice packs should initially be applied to the extravasation site rather than warm compresses (strength of evidence Limited 1). There is no clear evidence favouring warm over cold compresses or vice versa; some surgeons empirically recommend initial cold compresses to promote vasoconstriction and diminish inflowing blood and swelling. No clear evidence supports aspirating contrast through the needle or angiocatheter, so aspiration is not recommended; multiple punctures with manual squeezing are also not recommended.",
+          "quote": "Strength of evidence: Limited 3 Reference # Original SQ Reassessed SQ Final SQ 22 4 - 4 24 4 - 4 Recommendation 2: Cold compresses or ice packs should initially be applied to the extravasation site (rather than warm compresses) Strength of evidence: Limited 1 Reference # Original SQ Reassessed SQ Final SQ 22 4 - 4 23 - 24 Inadequate - Inadequate 25 4 - 4 1 1 Recommendation 3: Routine use of hyaluronidase or corticosteroid injections or aspiration of the affected limb is not recommended.",
+          "src": "R01",
+          "cat": "处置"
+        },
+        {
+          "k": "Conservative regimen used for all patients",
+          "v": "All patients received conservative treatment, including raising the venipuncture point and cold compress, and local application of dexamethasone and compound aescin gel. (This product is a polypill. Its components are aescin and diethylamine salicylic acid.) No patient received additional treatment intervention with conservative treatment.",
+          "quote": "All patients received conservative treatment, including raising the venipuncture point and cold compress; local application of dexamethasone and compound aescin gel. (This product is a polypill. Its components are aescin and diethylamine salicylic acid.) No patient received additional treatment intervention with conservative treatment.",
+          "src": "EN-05",
+          "cat": "处置"
+        },
+        {
+          "k": "Initial management steps uncontroversial",
+          "v": "Initial management of contrast media extravasation injury is well defined: stopping the infusion, attempting aspiration through the original cannula, splinting and elevating the limb, and applying cooling attract little controversy. Cohan described 22 cases of extravasation over 30 mL, none of whom required surgery and who had no long-term adverse effects; Sistrom corroborated this with 28 cases.",
+          "quote": "Management Options Conservative Management The initial management of CMEI is well defined. The initial steps of stopping the infusion, attempting aspiration through the original cannula, splinting and elevating the limb, and applying cooling attract little controversy. Cohan described 22 cases of CMEI > 30 mL, none of whom required surgery and had no long-term adverse effects, and Sistrom corroborated this with a study of 28 cases.3, 11 Ko et al successfully managed 9 cases of CMEI with up to 90 mL of various low-osmolar solutions conservatively, advocating the use of room temperature damp gauze rather than ice packs and Silvadene ointment with clobetasol cream.",
+          "src": "EN-08",
+          "cat": "处置"
+        },
+        {
+          "k": "Cold compress application area and purpose",
+          "v": "Cold compress is a fundamental measure for dealing with extravasation/infiltration. Its main function is to constrict blood vessels, alleviate inflammation and pain, and limit local spread and absorption of the drug. The area of external application should be larger than the area of leakage to restrict the extent of extravasation and prevent tissue necrosis.",
+          "quote": "The area of the external application should be larger than the area of the leakage to restrict the range of extravasation/infiltration and prevent tissue necrosis (2, 24, 25, 26, 33).",
+          "src": "EN-10",
+          "cat": "处置"
+        },
+        {
+          "k": "Warm compress not alone; dressing duration",
+          "v": "For foaming agents and irritant drugs, cold and hot compress must be differentiated by drug category: cold compress for alkylating agents (cisplatin, cyclophosphamide), anthracyclines (doxorubicin) and antimetabolites (5-fluorouracil); hot compress for vincristine, etoposide, oxaliplatin and taxanes (paclitaxel, docetaxel, especially with hyaluronidase). Hot compress should only be considered when the specific drug is clearly identified, and is not recommended on its own. Dressings may be applied for more than 24 hours, for example 15-20 minutes per session, 3-4 times daily over 48-72 hours.",
+          "quote": "It is not recommended to use hot compress alone to handle extravasation.It is conditionally advised to apply the dressing for a duration exceeding 24 h (e.g., 15-20 min per session, 3-4 times daily, over a period of 48-72 h), as opposed to limiting the application to 24 h or less (2, 6, 26). 5 B Extravasation Drug-specific treatment (for foaming drug extravasation) Anthracycline drugs (such as doxorubicin, epirubicin) extravasation: It is strongly recommended to use dexrazoxane as an antidote.",
+          "src": "EN-10",
+          "cat": "处置"
+        },
+        {
+          "k": "Early symptoms and usual conservative course",
+          "v": "The first symptoms occur at the time of injection and in most cases evolve to minimal swelling and erythema, and usually disappear with medical measures and small steps such as application of ice packs, analgesics and use of steroids. Exceptionally, with a large volume of contrast medium injection the patient may develop acute compartment syndrome; this complication is rare and its incidence unknown. The decision to proceed to surgery is a difficult moment for the physician.",
+          "quote": "These symptoms usually disappear with medical measures and small steps such as application of ice packs, analgesics and the use of steroids [1].",
+          "src": "EN-16",
+          "cat": "识别分级"
+        },
         {
           "k": "轻度处理路径",
           "v": "轻度者抬高患肢、冰袋、每2~4小时监测;好转可离院,无好转需外科意见",
@@ -3209,6 +3790,48 @@ window.KG_GRAPH = {
           "quote": "The patient should be monitored during and after the contrast media injection.",
           "src": "R14",
           "cat": "观察与出院"
+        },
+        {
+          "k": "巡视与个体化输液措施",
+          "v": "按患者治疗计划制订合理输液措施，加强巡视及预防措施以减少渗出外渗",
+          "quote": "护理人员在进行输液时应根据患者的治疗计划制订合理的输液措施,加强巡视及预防措施,以减少静脉输液渗出外渗的发生.",
+          "src": "CN-13",
+          "cat": "预防"
+        },
+        {
+          "k": "注射前评估与流速控制",
+          "v": "最佳证据包括注射碘对比剂前做好静脉评估、注射时注意流速、注射后做好外渗观察",
+          "quote": "最佳证据包括注射碘对比剂前做好静脉评估,注射碘对比剂时注意流速,注射碘对比剂后做好对外渗的观察,发生外渗时根据外渗程度采取相应护理措施以降低危害.",
+          "src": "CN-24",
+          "cat": "预防"
+        },
+        {
+          "k": "Observation periods after reaction",
+          "v": "After the examination: if the patient had a mild reaction, keep under surveillance until every symptom has disappeared (minimum 30 min, usually under 60 min). A non-life-threatening reaction should be observed for 4-6 hours after successful treatment before discharge. A life-threatening reaction should be admitted and observed. Serum tryptase should be ordered within 1-4 hours.",
+          "quote": "What to do after the examination: • If the patient has experienced a mild reaction, keep him under surveillance until every symptom has disappeared (minimum 30 min, usually < 60 min). • Patient experiencing a non-life-threatening reaction should be observed for 4-6 h after successful treatment and discharged. • Patient experiencing a life-threatening reaction should be admitted and observed. • Order serum tryptase within 1-4 h (see Part 2).",
+          "src": "EN-03",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Mild reaction management and observation",
+          "v": "Mild reactions may only need reassurance. Observe vital signs until symptoms resolve and do not remove IV access during observation. Consider a non-sedating antihistamine such as desloratadine 5 mg PO or cetirizine 10 mg PO once daily for mild allergic reactions, and ondansetron 4 mg IV for protracted vomiting.",
+          "quote": "• Do not remove IV access during observation. Consider: • Prescribing a nonsedating antihistamine, for example, desloratadine 5 mg PO or cetirizine 10 mg PO (once daily) for mild allergic reactions. • Ondansetron 4 mg IV for protracted vomiting.",
+          "src": "EN-03",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "During examination monitoring rules",
+          "v": "Monitor the patient closely and judge for progression of the reaction; observe closely for mucosal edema of the nose, mouth, throat or larynx; in case of symptoms check heart rate, arterial blood pressure and consciousness; if marked bradycardia is present consider treatment of a vasovagal reaction (atropine); be aware that patients with impaired vision or hearing, neurological disease, psychiatric illness, cognitive disorders or CNS-active medications may have diminished awareness of hypersensitivity symptoms.",
+          "quote": "Be aware that a patient with impaired vision or hearing, neurological disease, psychiatric illness, cognitive disorders or under CNS-active medications might have diminished awareness of hypersensitivity symptoms.",
+          "src": "EN-03",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Frontline radiographer role in contrast reactions",
+          "v": "Although radiologists generally assume primary responsibility for clinical decision-making during severe reactions, CT radiographers and technicians play a crucial frontline role in patient monitoring, early recognition of adverse reactions, and initiation of emergency response protocols. Common guideline recommendations across ACR, RCR, ESUR and RANZCR include ensuring emergency preparedness, continuous patient monitoring after contrast administration, and identifying individuals at increased risk (previous contrast reaction, asthma, renal impairment).",
+          "quote": "Although radiologists generally assume primary responsibility for clinical decision-making during severe reactions, CT radiographers and technicians play a crucial frontline role in patient monitoring, early recognition of adverse reactions, and initiation of emergency response protocols.",
+          "src": "EN-13",
+          "cat": "护理能力与记录"
         },
         {
           "k": "轻反应观察与五项评估",
@@ -3432,6 +4055,69 @@ window.KG_GRAPH = {
           "cat": "对比剂选择"
         },
         {
+          "k": "Emergency premedication protocol doses",
+          "v": "Emergency premedication protocol: 50 mg prednisolone IV (or equivalent) given at least 30 min before contrast medium administration, plus 2 mg clemastine IV (or equivalent) at least 30 min before administration. Equivalents: 50 mg prednisolone = 40 mg methylprednisolone = 8 mg dexamethasone = 200 mg hydrocortisone; 2 mg clemastine = 50 mg diphenhydramine = 20 mg chlorphenamine = 10 mg cetirizine (all IV).",
+          "quote": "1 Emergency premedication protocol: • 50 mg prednisolone IV (or equivalent): ≥ 30 min before contrast medium administration • 2 mg clemastine IV (or equivalent): ≥ 30 min before contrast medium administration Note: 50 mg prednisolone IV is equivalent to: • 40 mg methylprednisolone IV • 8 mg dexamethasone IV • 200 mg hydrocortisone IV Note: 2 mg clemastine IV is equivalent to: • 50 mg diphenhydramine IV • 20 mg chlorphenamine IV • 10 mg cetirizine IV Non-immediate hypersensitivity reactions (NIHR) In patients with a history of a mild non-immediate hypersensitivity reaction to an iodine-based contrast medium or a gadolinium-based contrast agent without danger signs: • Interview the patient about their previous hypersensitivity reaction • Optionally, refer the patient to a drug allergy specialist (if not done before) when the local drug allergy specialist capacity is sufficient • Optimize the allergy registration in the electronic health record • Apply the advice of the drug allergy specialist for a safe iodine-based contrast medium or gadolinium-based contrast agent, or, when not available, choose a different Iodine-based contrast medium or gadolinium-based contrast agent if the culprit contrast agent is known* • When the contrast medium is administered, observe the patient for at least 30 min with the IV line in place • Give the patient written instructions for a possible repeat non-immediate hypersensitivity reaction • If a non-immediate hypersensitivity reaction recurs, referral to a drug allergy specialist is mandatory * See also Fig.",
+          "src": "EN-04",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Contrast agent change beats steroid premedication",
+          "v": "A large retrospective study showed patients who received a different iodinated contrast medium had a significantly lower rate of recurrent hypersensitivity reaction (10 of 322 examinations, 3%) than those who received the same medium with corticosteroid premedication (80 of 423 examinations, 19%); odds ratio 0.14 (95% CI 0.06-0.33), p < 0.001. Two American Allergology Societies concluded evidence was lacking to support corticosteroid premedication; steroids can transiently elevate blood glucose and are associated with prolonged hospital stays, increased costs and worse outcomes.",
+          "quote": "This is supported by a large retrospective study showing that patients who received a different ICM had a significantly lower rate of recurrent HR compared to those who received the same ICM with corticosteroid premedication (same ICM and steroid premedication: 80 of 423 examinations (19%); different ICM and no steroid premedication: 10 of 322 examinations (3%); odds ratio (OR), 0.14 [95% confidence interval (CI): 0.06, 0.33]; p < 0.001) [59].",
+          "src": "EN-04",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Premedication effect on severity not incidence",
+          "v": "Evidence for premedication efficacy is highly heterogeneous and low quality. Premedication may decrease the incidence of hypersensitivity reactions, mainly by reducing the number of mild reactions and thus the overall number of reactions, but it does not significantly impact severe reactions. The utility of premedication is lower in non-immediate reactions and the EAACI guideline does not recommend premedication for non-immediate hypersensitivity reactions.",
+          "quote": "Premedication may decrease the incidence of HR, mainly by reducing the number of mild reactions and thus the overall number of HR [67, 68] but does not significantly impact severe HR [70].",
+          "src": "EN-04",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Premedication carries cost and length-of-stay harm",
+          "v": "Steroid premedication is not a free intervention: it can transiently elevate blood glucose and may also be associated with prolonged hospital stays, increased costs and worse outcomes. Combined with the finding that changing the culprit contrast medium reduces recurrent reactions far more than steroid premedication (OR 0.14), this argues for premedication protocols being reviewed as a workflow item with measurable operational cost, not applied by default.",
+          "quote": "This is supported by a large retrospective study showing that patients who received a different ICM had a significantly lower rate of recurrent HR compared to those who received the same ICM with corticosteroid premedication (same ICM and steroid premedication: 80 of 423 examinations (19%); different ICM and no steroid premedication: 10 of 322 examinations (3%); odds ratio (OR), 0.14 [95% confidence interval (CI): 0.06, 0.33]; p < 0.001) [59]. Therefore, a recent anaphylaxis guideline from two American Allergology Societies concluded that evidence was lacking to support corticosteroid premedication [60]. Corticosteroid premedication can transiently elevate blood glucose [61] and may also be associated with prolonged hospital stays, increased costs, and worse outcomes [62]. H1-antihistamine monotherapy has been successfully used in mild HR in Korea [57, 63, 64].",
+          "src": "EN-04",
+          "cat": "运营"
+        },
+        {
+          "k": "Premedication does not abolish paediatric recurrence",
+          "v": "Of 23,429 examinations, 226 were indicated for premedication because of prior allergic-like reactions to low-osmolality contrast; 172 were performed after premedication. Acute allergic-like reactions occurred in 6.40% (11/172) of examinations performed with premedication versus 3.70% (2/54) where premedication was indicated but not given, and 0.84% (195/23,203) in those without such history (P < 0.001). Premedication therefore does not remove the risk of recurrence in children.",
+          "quote": "LOCM = low-osmolar iodinated contrast media, RR = relative risk, eGFR = estimated glomerular filtration rate, ICM = iodinated contrast media Among the 23,429 examinations, 226 were indicated for premedication owing to a prior history of allergic-like reactions associated with LOCM. Of these, 172 examinations were performed after premedication. Acute allergic-like reactions occurred in 6.40% (11 of 172) of examinations performed with premedication and in 3.70% (2 of 54) of examinations for which premedication was indicated but not administered. The incidence of acute allergic-like reactions remained significantly higher in patients with a history of such reactions, even with premedication (6.40%), compared to that of those without such a history (0.84%, 195 of 23,203) (P < 0.001). ICM-Associated Acute Physiologic Reactions The incidences of acute physiologic reactions according to the type of LOCM used are described in Table 2 and Figure 3. The incidence of acute physiologic reactions among all LOCM injections was 0.55% (128 of 23,429), with the majority being mild (0.50% of all injections, 118 of 23,429), followed by moderate (0.04%, 9 of 23,429), and severe (0.01%, 1 of 23,429).",
+          "src": "EN-14",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Emergency equipment and protocol variability audited",
+          "v": "Protocols for managing hypersensitivity reactions vary significantly across institutions due to differences in local practices, resources and guideline adherence. A survey of Korean referral hospitals highlighted disparities: while most appropriately performed informed consent and risk factor evaluation, there was notable variability in assessing renal function and using emergency equipment. Only 38.6% of Korean hospitals had a bronchodilator, compared to 100% of hospitals abroad. 62.3% of Korean hospitals premedicated patients with a history of HSR using antihistamines and corticosteroids, and 52.8% changed the culprit contrast medium.",
+          "quote": "For example, only 38.6% of Korean hospitals had a bronchodilator, compared to 100% of hospitals abroad. Moreover, 62.3% of Korean hospitals pre-medicated patients with a history of HSRs to ICM using antihistamines and corticosteroids, and 52.8% changed the culprit ICM (86).",
+          "src": "EN-15",
+          "cat": "对比剂安全"
+        },
+        {
+          "k": "Mechanistic and prevention evidence gaps",
+          "v": "Current studies disproportionately emphasise epidemiological patterns or clinical management algorithms, leaving mechanistic insights, risk assessment and interdisciplinary syntheses underdeveloped. The review's stated focus for future research is refining preventive, diagnostic and therapeutic strategies, particularly for high-risk populations with prior reactions or comorbidities.",
+          "quote": "Similarly, premedication protocols, such as corticosteroids and antihistamines, also lack standardized guidelines, particularly for high-risk populations with prior reactions or comorbidities (15, 16).",
+          "src": "EN-15",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Breakthrough reaction definition and limits of prophylaxis",
+          "v": "Current premedication protocols have several limitations: lack of standardisation, risk of causing adverse reactions, and inability to suppress the immediate contrast hypersensitivity reaction. A breakthrough reaction (BTR) is an adverse reaction following contrast injection despite the application of a premedication.",
+          "quote": "Unfortunately, currently used premedication protocols have several limitations, such lack of standardization, risk of causing adverse reactions, and inability to suppress the immediate ICM-hypersensitivity reaction (3,4). The latter phenomenon, called breakthrough reaction (BTR), is an adverse reaction following CM-injection despite the application of a premedication (5-7).",
+          "src": "EN-19",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "H1 blocker vs combination prophylaxis used",
+          "v": "Bern used mainly H1-blocker plus corticosteroids as premedication, while Seoul mainly used H1-blockers only for mild index reactions and H1-blockers plus corticosteroid for moderate or severe index reactions. The combination H1-blocker plus corticosteroid was applied in 213 cases, while 474 cases received an H1-blocker only. Overall there were slightly more moderate and severe breakthrough reactions than index reactions.",
+          "quote": "The combination H1-blocker plus corticosteroid was applied in 213 cases, while 474 cases received a H1-blocker only.",
+          "src": "EN-19",
+          "cat": "超敏反应"
+        },
+        {
           "k": "对比剂选择与加温",
           "v": "用非离子型次高渗或等渗对比剂，不推荐离子型高渗；用前加温至37℃并置恒温箱",
           "quote": "使用非离子型次高渗或等渗碘对比剂，不推荐使用离子型高渗对比剂。",
@@ -3535,6 +4221,34 @@ window.KG_GRAPH = {
       "graph": "topic-01",
       "details": [
         {
+          "k": "可视化穿刺技术",
+          "v": "对穿刺困难患者，INS标准推荐使用红外血管成像技术或超声引导穿刺等可视化技术，以减少反复穿刺、提升穿刺质量",
+          "quote": "对穿刺困难患者，美国静脉输液协会（Infusion Nurses Society，INS）制订的标准 [ 8 ] 推荐使用红外血管成像技术或超声引导穿刺等可视化技术，以减少反复穿刺、提升穿刺质量。",
+          "src": "CN-30",
+          "cat": "预防"
+        },
+        {
+          "k": "血管可视化技术使用率",
+          "v": "仅32.73%的放射科使用了血管可视化技术，提示护理管理者尚未重视血管可视化技术的应用",
+          "quote": "然而，本研究结果显示，仅32.73%的放射科使用了血管可视化技术，提示护理管理者尚未重视血管可视化技术的应用。",
+          "src": "CN-30",
+          "cat": "预防"
+        },
+        {
+          "k": "Ultrasound-guided access and pre-existing cannula",
+          "v": "Ultrasound-guided cannula insertion carried higher extravasation rates (3.6%) than standard insertion (0.3%), attributed to prior failed attempts and deeper veins permitting a shorter intravascular cannula length that can dislodge. A newly sited cannula gave a smaller extravasate volume (40.6 ml vs 63.1 ml, p = 0.0005) than reusing an existing cannula, so a new cannula is advised for at-risk patients.",
+          "quote": "Cannula insertion technical factors A non-randomised retrospective study found higher rates of extravasation in patients who had ultrasound-guided cannula insertion (3.6%) vs. standard insertion (0.3%). However, the numbers of patients in each group were drastically different-364 in the ultrasound-guided cannula inserted group and 896 in the standard cannula inserted group (2% of a random sample of 40,143 patients). The difference in results in this study is likely due to confounding variables; i.e. prior failure of standard insertion and with deeper veins there is potentially a shorter length of intravascular cannula hence greater potential for dislodgement upon injection [47]. The type of healthcare worker who inserts the IV cannula was investigated by Sinan et al. which showed that CMEX rates were higher when inserted by non-radiology staff (0.3%) as compared to radiology staff (0.2%). However, this difference did not demonstrate statistical significance and a number of confounders could explain this difference [34]. Another study evaluated extravasation between newly inserted cannula vs. use of an existing cannula for CM injection with a difference in rates and a reduced volume of extravasate observed with those freshly sited (40.6 ml vs. 63.1 ml, p = 0.0005) [46], despite older cannulae being checked for flush efficacy. Therefore, consideration should be given to placing a new cannula for at-risk patients to reduce potential impact of any extravasation. Chemical properties of CM Three main contrast media properties have been studied in relation to CMEX: osmolarity, charge and viscosity.",
+          "src": "EN-01",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Ultrasound-guided PIV raises extravasation rate",
+          "v": "Extravasation risk appears increased in patients with deep brachial IV access achieved under ultrasound guidance, a practice more common in emergency departments. In one series, contrast extravasation occurred during CT in 0.3% of all patients but 3.6% of patients injected through ultrasound-guided peripheral IV catheters; selection bias likely contributes (these patients have harder access).",
+          "quote": "In one series, contrast media extravasation occurred during CT in 0.3% of all patients, but in 3.6% of patients who were injected through ultrasound-guided peripheral intravenous catheters [78].",
+          "src": "R01",
+          "cat": "风险因素"
+        },
+        {
           "k": "血管可视化与导管选择",
           "v": "操作中可使用血管可视化技术;评估穿刺部位皮肤情况和静脉条件后,满足治疗需要时宜选管径细、管腔少的导管",
           "quote": "操作中可使用血管可视化技术",
@@ -3571,6 +4285,13 @@ window.KG_GRAPH = {
       ],
       "graph": "topic-01",
       "details": [
+        {
+          "k": "综合干预处置组合",
+          "v": "回抽药液、抬高患肢、药物局部外用、止痛、心理干预等综合干预；严重者需外科手术干预",
+          "quote": "造影剂外渗后的处理方法包括回抽药液、抬高患肢、药物局部外用、止痛、心理干预等综合干预,严重者需要外科手术干预治疗.",
+          "src": "CN-16",
+          "cat": "局部处理"
+        },
         {
           "k": "知情同意与心理安抚",
           "v": "告知适应证、禁忌证、可能不良反应与注意事项，解答疑问缓解焦虑并签知情同意书",
@@ -3780,6 +4501,27 @@ window.KG_GRAPH = {
           "quote": "ICM 给药前 13、7、1 h 分别口服泼尼松 50 mg",
           "src": "CG-03",
           "cat": "检查前评估"
+        },
+        {
+          "k": "输注前预防证据四方面",
+          "v": "循证总结21条输注前静脉外渗预防证据，含血管评估与选择、静脉注射工具选择、穿刺方法改进、穿刺部位固定4个方面",
+          "quote": "总结了21条含碘非离子对比剂输注前静脉外渗预防的证据,包括血管评估和选择、静脉注射工具的选择、穿刺方法的改进以及穿刺部位的固定4个方面.",
+          "src": "CN-12",
+          "cat": "预防"
+        },
+        {
+          "k": "临床应用需个体化",
+          "v": "应用证据时须综合考虑证据级别、临床情境及病人意愿，以降低含碘非离子对比剂静脉外渗发生风险",
+          "quote": "含碘非离子对比剂输注前静脉外渗预防策略的证据总结可为临床工作人员提供循证依据,临床医护人员在应用证据时应综合考虑证据级别、临床情境及病人意愿等规范临床实践行为,降低含碘非离子对比剂静脉外渗的发生风险.",
+          "src": "CN-12",
+          "cat": "预防"
+        },
+        {
+          "k": "巡视与个体化输液措施",
+          "v": "按患者治疗计划制订合理输液措施，加强巡视及预防措施以减少渗出外渗",
+          "quote": "护理人员在进行输液时应根据患者的治疗计划制订合理的输液措施,加强巡视及预防措施,以减少静脉输液渗出外渗的发生.",
+          "src": "CN-13",
+          "cat": "预防"
         }
       ]
     },
@@ -3983,6 +4725,34 @@ window.KG_GRAPH = {
           "quote": "尽早使用 50% 硫酸镁、黏多糖软膏或 0.05% 的地塞米松等局部外敷",
           "src": "CG-04",
           "cat": "外渗分级"
+        },
+        {
+          "k": "按外渗程度分级处置",
+          "v": "发生外渗时根据外渗程度采取相应护理措施以降低危害",
+          "quote": "发生外渗时根据外渗程度采取相应护理措施以降低危害.",
+          "src": "CN-24",
+          "cat": "分级"
+        },
+        {
+          "k": "Hyaluronidase and aspiration not recommended",
+          "v": "Recommendation 3: routine use of hyaluronidase or corticosteroid injections or aspiration of the affected limb is not recommended (strength of evidence Limited 1). There is no consistent evidence that local injection of corticosteroids or hyaluronidase is beneficial; no adequate studies confirm efficacy of hyaluronidase after contrast media extravasation. Topical silver sulfadiazine and steroid cream three to four times daily has been suggested for blistering, though efficacy is unknown.",
+          "quote": "Strength of evidence: Limited 3 Reference # Original SQ Reassessed SQ Final SQ 22 4 - 4 24 4 - 4 Recommendation 2: Cold compresses or ice packs should initially be applied to the extravasation site (rather than warm compresses) Strength of evidence: Limited 1 Reference # Original SQ Reassessed SQ Final SQ 22 4 - 4 23 - 24 Inadequate - Inadequate 25 4 - 4 1 1 Recommendation 3: Routine use of hyaluronidase or corticosteroid injections or aspiration of the affected limb is not recommended. Strength of evidence: Limited 1 Reference # Original SQ Reassessed SQ Final SQ 15 4 4 4 22 4 - 4 28 4 - 4 29 2 - 2 Recommendation 4: All discharged outpatients should be given clear instructions concerning where and when to seek additional medical care (including for worsening pain, development of paresthesia, diminished range of motion, and new skin ulceration o r blistering) as severe extravasation could develop several hours later.",
+          "src": "R01",
+          "cat": "处置"
+        },
+        {
+          "k": "Volume threshold algorithm with hyaluronidase",
+          "v": "Treatment algorithm: if expected extravasation volume is less than 50 mL, treat conservatively with light compression, elevation of the affected limb, pain control and hyaluronidase injection. If the expected extravasation volume is larger than 50 mL, or severe pressure is felt on the limb without signs of compartment syndrome, multiple slit incisions are made followed by squeezing. In suspected compartment syndrome, immediate fasciotomy is considered.",
+          "quote": "If the expected extravasation volume is less than 50 ml, the patient is treated conservatively using light compression, affected limb elevation, pain control and hyaluronidase injection.",
+          "src": "EN-07",
+          "cat": "处置"
+        },
+        {
+          "k": "Conservative management before surgery",
+          "v": "Wang et al observed 442 extravasations of low-osmolality solutions between 3 and 150 mL over 5 years; all but one patient was managed conservatively, and blistering, edema and pain resolved within weeks without surgical intervention. These data support a convincing argument for nonoperative management until signs of compartment syndrome develop.",
+          "quote": "Wang et al performed the largest study, observing 442 CMEIs of low-osmolar solutions between 3 and 150 mL over a 5-year period-it is telling that all but one of these patients were managed conservatively and the blistering, edema, and pain that were features in some cases all resolved within weeks without surgical intervention.",
+          "src": "EN-08",
+          "cat": "处置"
         },
         {
           "k": "外渗三度分级",
@@ -4218,6 +4988,20 @@ window.KG_GRAPH = {
           "quote": "既往为速发型超敏反应的中重度反应（ACR 分级）建议转诊至有经验的医疗机构",
           "src": "CG-01",
           "cat": "长期管理"
+        },
+        {
+          "k": "Nursing role in early recognition",
+          "v": "The authors state that the identified risk factors may assist radiology nurses in the early recognition and timely prevention of patients adversely affected by contrast media extravasation injury. Existing serious-injury literature predominantly consists of case reports, and many cohort studies lack severity grading criteria or follow-up evaluation, so nurse-led risk stratification is a plausible improvement target.",
+          "quote": "The findings may assist radiology nurses in the early recognition and timely prevention of patients adversely affected by CM extravasation injury.",
+          "src": "EN-09",
+          "cat": "护理能力与记录"
+        },
+        {
+          "k": "Deterioration can follow a mild initial injury",
+          "v": "A 47-year-old woman with pulmonary embolism history was diagnosed with compartment syndrome of the left hand after contrast injection during CT; her first diagnosis had been mild contrast extravasation injury 24 hours before the compartment syndrome. Standard radiography showed accumulated contrast medium in the left hand. She underwent fasciotomy and secondary healing, with good radiographic, clinical and hand function at 2 months. Hand compartment syndrome secondary to extravasation is exceptional and, because its incidence is unknown, treatment is not codified.",
+          "quote": "Case presentation We present a 47-year-old woman with a history of pulmonary embolism who was diagnosed of compartment syndrome of the left hand after injection of contrast medium during a CT scan. Whose first diagnosis was mild contrast medium extravasation injury 24 h before the compartment syndrome. Standard radiography showed an accumulation of contrast medium in the left hand. The patient underwent a fasciotomy and secondary healing. Follow-up showed good radiographic, clinical, and hand function after 2 months. Discussion The occurrence of hand compartment syndrome secondary to contrast media extravasation is rare. Most of the time, they are initially diagnosed as medium extravasation before the worsening of symptoms. Because of its unknown incidence, treatment is not codified. The goal of treatment is to save the limb and restore function.",
+          "src": "EN-16",
+          "cat": "识别分级"
         }
       ]
     },
@@ -4309,6 +5093,13 @@ window.KG_GRAPH = {
           "quote": "胎儿出生后要检查甲状腺功能",
           "src": "CG-07",
           "cat": "特殊人群"
+        },
+        {
+          "k": "Pre-examination preparation and scheduling",
+          "v": "Before the examination: know the risks and potential reactions and participate regularly in continuing medical education; know the patient and evaluate risk/benefit, considering imaging alternatives; identify the specific agent that elicited a previous reaction and choose an alternative contrast agent if injection is mandatory; schedule the patient during daytime hours when most personnel are present, preferably in a hospital-based CT or MRI facility; keep a venous access in place if there is increased risk of an adverse reaction.",
+          "quote": "Schedule the patient during daytime hours, when most personnel are present, preferably in a hospital-based CT or MRI facility.",
+          "src": "EN-03",
+          "cat": "对比剂安全"
         },
         {
           "k": "常规不需禁食",
@@ -4410,6 +5201,27 @@ window.KG_GRAPH = {
       "graph": "topic-01",
       "details": [
         {
+          "k": "Non-immediate reaction handling and discharge",
+          "v": "Warn patients who previously had a non-immediate reaction that a repeat reaction may occur, usually a skin reaction; they should contact their general practitioner and the radiology department where the contrast was given. Treat non-immediate reactions symptomatically; consider oral or topical corticosteroids for skin reactions. Severe cutaneous adverse reactions (generalised pustulosis, painful cutaneous blisters) require dermatologist referral for treatment and advice on future contrast use.",
+          "quote": "When severe cutaneous adverse reactions (SCAR) develop, such as generalized pustulosis or painful cutaneous blisters, refer the patient to a dermatologist for treatment and advice on future use of contrast media.",
+          "src": "EN-03",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Patient leaflets must mention delayed reactions",
+          "v": "Appropriate patient information leaflets on radiological examinations with contrast medium administration should be available. In these leaflets the possibility of occurrence of a non-immediate hypersensitivity reaction must be mentioned, and detailed patient instructions should be given.",
+          "quote": "In these leaflets, the possibility of occurrence of a NIHR should be mentioned, and detailed patient instructions should be given.",
+          "src": "EN-03",
+          "cat": "患者宣教"
+        },
+        {
+          "k": "Post-administration observation with IV in place",
+          "v": "When contrast medium is administered, observe the patient for at least 30 minutes with the IV line in place, and be prepared and vigilant for a recurring immediate hypersensitivity reaction. Also give the patient written instructions for a possible repeat non-immediate hypersensitivity reaction. If a reaction recurs, referral to a drug allergy specialist is mandatory.",
+          "quote": "When the contrast medium is administered, observe the patient for at least 30 min with the IV line in place • Be prepared and vigilant for a recurring immediate hypersensitivity reaction • If an immediate hypersensitivity reaction recurs, referral to a drug allergy specialist is mandatory * See also Fig.",
+          "src": "EN-04",
+          "cat": "超敏反应"
+        },
+        {
           "k": "观察区休息 30 分钟",
           "v": "指导受检者在观察区休息 30 min；医护人员定时巡视观察区，询问有无不适，及时发现不良反应并处理",
           "quote": "指导受检者在观察区休息30 min，如有不适及时告知医护人员；医护人员定时巡视观察区，询问受检者有无不适，及时发现不良反应并处理。",
@@ -4469,6 +5281,20 @@ window.KG_GRAPH = {
           "quote": "加强患者教育，对常见误区做好宣教，如“碘过敏”≠碘对比剂过敏",
           "src": "CG-01",
           "cat": "误区宣教"
+        },
+        {
+          "k": "Non-immediate reaction handling and discharge",
+          "v": "Warn patients who previously had a non-immediate reaction that a repeat reaction may occur, usually a skin reaction; they should contact their general practitioner and the radiology department where the contrast was given. Treat non-immediate reactions symptomatically; consider oral or topical corticosteroids for skin reactions. Severe cutaneous adverse reactions (generalised pustulosis, painful cutaneous blisters) require dermatologist referral for treatment and advice on future contrast use.",
+          "quote": "When severe cutaneous adverse reactions (SCAR) develop, such as generalized pustulosis or painful cutaneous blisters, refer the patient to a dermatologist for treatment and advice on future use of contrast media.",
+          "src": "EN-03",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Severe delayed reaction forbids the whole class",
+          "v": "For a history of severe non-immediate hypersensitivity reaction with danger signs (SCAR): refer the patient immediately to a drug allergy specialist, choose an alternative imaging modality, and optimise allergy registration in the electronic health record. Do not give the group of contrast media to which the severe skin reaction occurred, and avoid all iodine-based contrast media after a severe non-immediate reaction to an iodine-based contrast medium.",
+          "quote": "Avoid all iodine-based contrast media after a severe non-immediate hypersensitivity reaction to an iodine-based contrast medium • Avoid all gadolinium-based contrast agents after a severe non-immediate hypersensitivity reaction to a gadolinium-based contrast agent • Individualize the approach following multidisciplinary consultation after a severe reaction to an unknown CM See also Fig.",
+          "src": "EN-04",
+          "cat": "超敏反应"
         },
         {
           "k": "知情同意告知内容",
@@ -4543,6 +5369,27 @@ window.KG_GRAPH = {
           "quote": "含碘对比剂外渗后患者应在治疗区域内的观察区观察2~4 h",
           "src": "CG-08",
           "cat": "留观与离院"
+        },
+        {
+          "k": "Patient information leaflet and red flags",
+          "v": "Give clear instructions on when to seek additional medical care if symptoms worsen, using a patient information leaflet in the languages appropriate for the institution. Red flag signs and symptoms to warn about: increased swelling or pain; increased redness; change in sensation in the affected limb; skin ulceration or blistering.",
+          "quote": "A patient information leaflet is recommended, available in the languages appropriate for the institution.",
+          "src": "EN-01",
+          "cat": "患者宣教"
+        },
+        {
+          "k": "Outpatient discharge instructions after extravasation",
+          "v": "Outpatients should be released only after an initial observation period with improvement of signs/symptoms and no new symptoms. Give clear instructions to seek additional medical care for severe pain, progressive pain, numbness or tingling, diminished range of motion (active or passive), skin ulceration, or other neurologic or circulatory symptoms, because initial symptoms of a serious compartment syndrome may be absent or mild.",
+          "quote": "Since severe extravasation injuries can develop slowly (up to hours after an extravasation), all discharged outpatients should be given clear instructions concerning where and when to seek additional medical care (including for worsening pain, development of paresthesia, diminished range of motion, and new skin ulceration or blistering) [22].",
+          "src": "R01",
+          "cat": "患者宣教"
+        },
+        {
+          "k": "Transparent communication reduces medico-legal risk",
+          "v": "The authors conclude that a tiered strategy combining preventive measures, vigilant clinical and imaging monitoring, proactive escalation of treatment and transparent communication offers the best approach to minimise extravasation complications, accelerate recovery and reduce the risk of medico-legal conflicts.",
+          "quote": "Thus, a tiered strategy that combines preventive measures, vigilant clinical and imaging monitoring, proactive escalation of treatment, and transparent communication offers the best approach to minimize CME complications, accelerate recovery, and reduce the risk of medico-legal conflicts.",
+          "src": "EN-17",
+          "cat": "护理能力与记录"
         },
         {
           "k": "离院宣教与记录交接",
@@ -4716,6 +5563,20 @@ window.KG_GRAPH = {
           "quote": "应在检查室备妥的一线急救药品和设备，包括氧气、1∶1 000 的肾上腺素、抗组胺药 H1 注射剂、阿托品、β2 受体激动剂气雾器",
           "src": "CG-09",
           "cat": "急救准备"
+        },
+        {
+          "k": "Mild reaction management and observation",
+          "v": "Mild reactions may only need reassurance. Observe vital signs until symptoms resolve and do not remove IV access during observation. Consider a non-sedating antihistamine such as desloratadine 5 mg PO or cetirizine 10 mg PO once daily for mild allergic reactions, and ondansetron 4 mg IV for protracted vomiting.",
+          "quote": "• Do not remove IV access during observation. Consider: • Prescribing a nonsedating antihistamine, for example, desloratadine 5 mg PO or cetirizine 10 mg PO (once daily) for mild allergic reactions. • Ondansetron 4 mg IV for protracted vomiting.",
+          "src": "EN-03",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Patient leaflets must mention delayed reactions",
+          "v": "Appropriate patient information leaflets on radiological examinations with contrast medium administration should be available. In these leaflets the possibility of occurrence of a non-immediate hypersensitivity reaction must be mentioned, and detailed patient instructions should be given.",
+          "quote": "In these leaflets, the possibility of occurrence of a NIHR should be mentioned, and detailed patient instructions should be given.",
+          "src": "EN-03",
+          "cat": "患者宣教"
         }
       ]
     },
@@ -4854,6 +5715,27 @@ window.KG_GRAPH = {
       ],
       "graph": "topic-01",
       "details": [
+        {
+          "k": "48 h结局指标比较",
+          "v": "比较两组48 h后静脉炎发生率、外渗者患肢恢复时间、护理满意率",
+          "quote": "比较两组48 h后静脉炎发生率、外渗者患肢恢复时间、护理满意率.",
+          "src": "CN-17",
+          "cat": "局部处理"
+        },
+        {
+          "k": "出院后门诊继续治疗",
+          "v": "患者出院后继续在门诊接受伤口治疗；中西医结合护理干预59 d后，创面完全愈合，患者左手活动功能恢复正常",
+          "quote": "患者出院后继续在门诊接受伤口治疗。中西医结合护理干预59 d后，创面完全愈合，患者左手活动功能恢复正常。",
+          "src": "CN-19",
+          "cat": "居家护理"
+        },
+        {
+          "k": "Goal of surgery is limb and function salvage",
+          "v": "The goal of treatment is to save the limb and restore function. This can be achieved rapidly with early surgery because of the unpredictable course. The authors advise always fearing a compartmental syndrome in cases of extravasation of contrast medium, since contrast media injection is not a harmless gesture.",
+          "quote": "The goal of treatment is to save the limb and restore function. This can be achieved rapidly with early surgery because of the unpredictable course.",
+          "src": "EN-16",
+          "cat": "处置"
+        },
         {
           "k": "肿胀高峰与消退",
           "v": "外渗后4~6 h为肿胀高峰期,24~48 h肿胀能基本消退",
@@ -5773,6 +6655,13 @@ window.KG_GRAPH = {
           "cat": "反应分级"
         },
         {
+          "k": "临床表现谱",
+          "v": "碘对比剂药品不良反应临床表现以皮疹瘙痒、恶心呕吐等症状为主；居前3位的分别为碘帕醇、碘普罗胺、碘海醇",
+          "quote": "本院碘对比剂药品不良反应中,居前3位的分别为碘帕醇、碘普罗胺、碘海醇.不良反应临床表现以皮疹瘙痒、恶心呕吐等症状为主.",
+          "src": "CN-28",
+          "cat": "过敏护理"
+        },
+        {
           "k": "轻度反应清单",
           "v": "轻度生理性：限性恶心呕吐、一过性潮红温暖寒战、头痛眩晕；轻度过敏样：局限性荨麻疹瘙痒、皮肤水肿、咽痒、鼻塞喷嚏",
           "quote": "Transient flushing / warmth / chills",
@@ -5890,6 +6779,55 @@ window.KG_GRAPH = {
           "quote": "无须处理；对疼痛明显者，进行抬高患肢、局部冰敷或冷",
           "src": "CG-03",
           "cat": "外渗分级"
+        },
+        {
+          "k": "缓解皮下水肿",
+          "v": "康惠尔透明贴可有效缓解碘对比剂外渗引起的皮下组织水肿、减轻患者痛苦，效果优于50％硫酸镁溶液冷湿敷",
+          "quote": "康惠尔透明贴可有效缓解因碘对比剂外渗所引起的皮下组织水肿,减轻患者痛苦,在治疗碘对比剂外渗病例中的效果优于50％硫酸镁溶液冷湿敷.",
+          "src": "CN-17",
+          "cat": "局部处理"
+        },
+        {
+          "k": "肿胀面积多时点改善",
+          "v": "分别记录用药前、用药后24h、48h、72h的肿胀面积和VAS评分；药后24 h、48 h、72 h三组的肿胀面积均显著降低(P＜0.05)，观察组在不同时点的肿胀面积低于50％硫酸镁组1和如意金黄散组2",
+          "quote": "分别记录用药前、用药后24h、48h、72h的肿胀面积和VAS评分并进行比较.结果:与治疗前比较,药后24 h、48 h、72 h三组的肿胀面积均显著降低(P＜0.05),观察组在不同时点的肿胀面积低于50％硫酸镁组1和如意金黄散组2(P＜0.05);",
+          "src": "CN-18",
+          "cat": "局部处理"
+        },
+        {
+          "k": "干预24 h疗效",
+          "v": "干预后24 h肿胀消退程度与疼痛评分优于对照组(P＜0.05)；总有效率观察组96.7％、对照组83.3％",
+          "quote": "干预后24 h观察组外渗部肿胀消退程度、疼痛评分与对照组比较差异有统计学意义(P＜0.05);观察组干预后总有效率为96.7％,对照组总有效率为83.3％,经比较差异无统计学意义(P＞0.05).",
+          "src": "CN-20",
+          "cat": "局部处理"
+        },
+        {
+          "k": "四项疗效指标",
+          "v": "比较肿胀消退指数、疼痛缓解时间、静脉炎治疗效果与患者满意度，干预组各项均优于对照组且差异有统计学意义",
+          "quote": "对比患者的肿胀消退指数、疼痛缓解时间、静脉炎治疗效果和患者满意度.结果 肿胀消退指数、静脉炎治疗效果、疼痛缓解时间、患者满意度均优于对照组,并且差异具有统计学意义.",
+          "src": "CN-22",
+          "cat": "局部处理"
+        },
+        {
+          "k": "Serous complications of extravasation",
+          "v": "Contrast media extravasation is rarely serious but can include compartment syndrome, severe skin ulceration and tissue necrosis. Less serious consequences include exposure to ionizing radiation without the benefit of diagnostic images, swelling, tightness, stinging, burning pain, edema, erythema or tenderness at the injection site.",
+          "quote": "Contrast medium extravasation is another well-recognized event, which is rarely serious but can include serious complications like compartment syndrome, severe skin ulceration, and tissue necrosis.",
+          "src": "EN-06",
+          "cat": "对比剂安全"
+        },
+        {
+          "k": "Osmolality drives tissue injury cascade",
+          "v": "Cellular osmolality is between 280 and 295 mOsm/kg H2O. Despite modern lower-osmolality solutions, all iodinated contrast media remain of higher osmolality, causing edema in the interstitial space and intracellular dehydration. In severe cases this causes release of inflammatory mediators and even cell death causing de-epithelialization; once the vicious circle of capillary ischemia and edema is initiated, compartment syndrome can result.",
+          "quote": "Cellular osmolality is between 280 and 295 mOsm/kg H2O.",
+          "src": "EN-08",
+          "cat": "识别分级"
+        },
+        {
+          "k": "Early symptoms and usual conservative course",
+          "v": "The first symptoms occur at the time of injection and in most cases evolve to minimal swelling and erythema, and usually disappear with medical measures and small steps such as application of ice packs, analgesics and use of steroids. Exceptionally, with a large volume of contrast medium injection the patient may develop acute compartment syndrome; this complication is rare and its incidence unknown. The decision to proceed to surgery is a difficult moment for the physician.",
+          "quote": "These symptoms usually disappear with medical measures and small steps such as application of ice packs, analgesics and the use of steroids [1].",
+          "src": "EN-16",
+          "cat": "识别分级"
         },
         {
           "k": "疼痛或肿胀即停止",
@@ -6060,6 +6998,41 @@ window.KG_GRAPH = {
       ],
       "details": [
         {
+          "k": "缓解皮下水肿",
+          "v": "康惠尔透明贴可有效缓解碘对比剂外渗引起的皮下组织水肿、减轻患者痛苦，效果优于50％硫酸镁溶液冷湿敷",
+          "quote": "康惠尔透明贴可有效缓解因碘对比剂外渗所引起的皮下组织水肿,减轻患者痛苦,在治疗碘对比剂外渗病例中的效果优于50％硫酸镁溶液冷湿敷.",
+          "src": "CN-17",
+          "cat": "局部处理"
+        },
+        {
+          "k": "疼痛评分改善",
+          "v": "用药后24 h、48 h、72 h三组VAS评分均显著降低(P＜0.05)，观察组各时点均低于50％硫酸镁组1和如意金黄散组2(P＜0.05)",
+          "quote": "与治疗前比较,用药后24 h、48 h、72 h三组VAS评分均显著降低(P＜0.05),且观察组在不同时点的VAS评分均低于50％硫酸镁组1和如意金黄散组2(P＜0.05).",
+          "src": "CN-18",
+          "cat": "中医"
+        },
+        {
+          "k": "干预24 h疗效",
+          "v": "干预后24 h肿胀消退程度与疼痛评分优于对照组(P＜0.05)；总有效率观察组96.7％、对照组83.3％",
+          "quote": "干预后24 h观察组外渗部肿胀消退程度、疼痛评分与对照组比较差异有统计学意义(P＜0.05);观察组干预后总有效率为96.7％,对照组总有效率为83.3％,经比较差异无统计学意义(P＞0.05).",
+          "src": "CN-20",
+          "cat": "局部处理"
+        },
+        {
+          "k": "四项疗效指标",
+          "v": "比较肿胀消退指数、疼痛缓解时间、静脉炎治疗效果与患者满意度，干预组各项均优于对照组且差异有统计学意义",
+          "quote": "对比患者的肿胀消退指数、疼痛缓解时间、静脉炎治疗效果和患者满意度.结果 肿胀消退指数、静脉炎治疗效果、疼痛缓解时间、患者满意度均优于对照组,并且差异具有统计学意义.",
+          "src": "CN-22",
+          "cat": "局部处理"
+        },
+        {
+          "k": "Serous complications of extravasation",
+          "v": "Contrast media extravasation is rarely serious but can include compartment syndrome, severe skin ulceration and tissue necrosis. Less serious consequences include exposure to ionizing radiation without the benefit of diagnostic images, swelling, tightness, stinging, burning pain, edema, erythema or tenderness at the injection site.",
+          "quote": "Contrast medium extravasation is another well-recognized event, which is rarely serious but can include serious complications like compartment syndrome, severe skin ulceration, and tissue necrosis.",
+          "src": "EN-06",
+          "cat": "对比剂安全"
+        },
+        {
           "k": "疼痛或肿胀即停止",
           "v": "注射全程保持技师与患者沟通；患者诉注射处疼痛或肿胀感须立即停止注射",
           "quote": "If the patient reports pain or the sensation of swelling at the injection site, injection should be discontinued.",
@@ -6205,6 +7178,20 @@ window.KG_GRAPH = {
         }
       ],
       "details": [
+        {
+          "k": "外渗致淤紫与水疱",
+          "v": "在输注10%葡萄糖酸钙注射液50 ml、50%葡萄糖注射液50 ml+中性胰岛素4 U时出现药液外渗，左手背穿刺口周围出现8.0 cm × 4.5 cm淤紫及大小不等水疱，触及皮肤温度高",
+          "quote": "在输注10%葡萄糖酸钙注射液50 ml、50%葡萄糖注射液50 ml+中性胰岛素4 U时，出现药液外渗，左手背穿刺口周围出现8.0 cm × 4.5 cm淤紫及大小不等水疱，触及皮肤温度高。",
+          "src": "CN-19",
+          "cat": "并发症"
+        },
+        {
+          "k": "Early symptoms and usual conservative course",
+          "v": "The first symptoms occur at the time of injection and in most cases evolve to minimal swelling and erythema, and usually disappear with medical measures and small steps such as application of ice packs, analgesics and use of steroids. Exceptionally, with a large volume of contrast medium injection the patient may develop acute compartment syndrome; this complication is rare and its incidence unknown. The decision to proceed to surgery is a difficult moment for the physician.",
+          "quote": "These symptoms usually disappear with medical measures and small steps such as application of ice packs, analgesics and the use of steroids [1].",
+          "src": "EN-16",
+          "cat": "识别分级"
+        },
         {
           "k": "外渗可疑征象",
           "v": "注射部位红肿瘙痒、血液回流异常或流速减慢、患者主诉疼痛麻木时应高度怀疑外渗(B级,新增)",
@@ -6410,6 +7397,13 @@ window.KG_GRAPH = {
       ],
       "graph": "topic-01",
       "details": [
+        {
+          "k": "多主体共同参与输液安全",
+          "v": "从患儿、患儿家长、护士、医院管理者等多角度出发，促使其积极参与患儿输液安全，降低外渗发生率",
+          "quote": "提出可从患儿、患儿家长、护士、医院管理者等多角度出发, 促使其积极参与患儿输液安全中, 降低输液外渗发生率.",
+          "src": "CN-14",
+          "cat": "居家护理"
+        },
         {
           "k": "研究目的",
           "v": "评价按 Orem 自护缺陷护理理论设计的照护方案，对 18–70 岁慢性病患者的生活质量与自我照护（主要结局）及自我效能、焦虑、抑郁、压力（次要结局）的价值",
@@ -7896,6 +8890,1810 @@ window.KG_GRAPH = {
       ]
     },
     {
+      "id": "CN-12",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "含碘非离子对比剂输注前预防静脉外渗策略的证据总结",
+      "tags": [
+        "文献",
+        "最佳证据"
+      ],
+      "aliases": [
+        "含碘非离子对比剂输注前预防静脉外渗策略的证据总结"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "最佳证据"
+        },
+        {
+          "k": "年份",
+          "v": "2020"
+        },
+        {
+          "k": "核验标识",
+          "v": "34(24): 4350-4355 · 10.12102/j.issn.1009-6493.2020.24.007"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "最佳证据",
+          "author": "白文辉, 易银萍, 张红梅, 赵文利, 蒋秋焕",
+          "title": "含碘非离子对比剂输注前预防静脉外渗策略的证据总结",
+          "journal": "护理研究",
+          "year": 2020,
+          "cite": "白文辉, 易银萍, 张红梅, 赵文利, 蒋秋焕 / 含碘非离子对比剂输注前预防静脉外渗策略的证据总结 / 护理研究 / 2020",
+          "grade": "汇总证据",
+          "ref": "CN-12"
+        }
+      ]
+    },
+    {
+      "id": "CN-13",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "不同穿刺部位静脉留置针渗出外渗的发生现状及结局差异分析",
+      "tags": [
+        "文献",
+        "调查"
+      ],
+      "aliases": [
+        "不同穿刺部位静脉留置针渗出外渗的发生现状及结局差异分析"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "调查"
+        },
+        {
+          "k": "年份",
+          "v": "2020"
+        },
+        {
+          "k": "核验标识",
+          "v": "26(36): 5023-5027 · 10.3760/cma.j.cn115682-20200401-02396"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "调查",
+          "author": "杨巧芳, 张灵芳, 张新, 白珊, 董方方",
+          "title": "不同穿刺部位静脉留置针渗出外渗的发生现状及结局差异分析",
+          "journal": "中华现代护理杂志",
+          "year": 2020,
+          "cite": "杨巧芳, 张灵芳, 张新, 白珊, 董方方 / 不同穿刺部位静脉留置针渗出外渗的发生现状及结局差异分析 / 中华现代护理杂志 / 2020",
+          "grade": "汇总证据",
+          "ref": "CN-13"
+        }
+      ]
+    },
+    {
+      "id": "CN-14",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "小儿外周静脉留置针输液外渗的研究进展",
+      "tags": [
+        "文献",
+        "综述"
+      ],
+      "aliases": [
+        "小儿外周静脉留置针输液外渗的研究进展"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "综述"
+        },
+        {
+          "k": "年份",
+          "v": "2019"
+        },
+        {
+          "k": "核验标识",
+          "v": "17(4): 411-414 · 10.12104/j.issn.1674-4748.2019.04.009"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "综述",
+          "author": "蒋名丽, 赵磊, 时富枝, 石彩晓, 李丹凤",
+          "title": "小儿外周静脉留置针输液外渗的研究进展",
+          "journal": "全科护理",
+          "year": 2019,
+          "cite": "蒋名丽, 赵磊, 时富枝, 石彩晓, 李丹凤 / 小儿外周静脉留置针输液外渗的研究进展 / 全科护理 / 2019",
+          "grade": "汇总证据",
+          "ref": "CN-14"
+        }
+      ]
+    },
+    {
+      "id": "CN-15",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "护理质量管理在预防婴幼儿输液外渗中的应用研究进展",
+      "tags": [
+        "文献",
+        "综述"
+      ],
+      "aliases": [
+        "护理质量管理在预防婴幼儿输液外渗中的应用研究进展"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "综述"
+        },
+        {
+          "k": "年份",
+          "v": "2025"
+        },
+        {
+          "k": "核验标识",
+          "v": "32(19): 22-25 · 10.19791/j.cnki.1006-6411.2025.19.006"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "综述",
+          "author": "任自然, 方远, 陈金秀",
+          "title": "护理质量管理在预防婴幼儿输液外渗中的应用研究进展",
+          "journal": "当代护士",
+          "year": 2025,
+          "cite": "任自然, 方远, 陈金秀 / 护理质量管理在预防婴幼儿输液外渗中的应用研究进展 / 当代护士 / 2025",
+          "grade": "汇总证据",
+          "ref": "CN-15"
+        }
+      ]
+    },
+    {
+      "id": "CN-16",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "造影剂血管外渗的处置方法研究进展",
+      "tags": [
+        "文献",
+        "综述"
+      ],
+      "aliases": [
+        "造影剂血管外渗的处置方法研究进展"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "综述"
+        },
+        {
+          "k": "年份",
+          "v": "2018"
+        },
+        {
+          "k": "核验标识",
+          "v": "16(27): 3348-3350（该条记录未显示 DOI）"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "综述",
+          "author": "宋朝晖",
+          "title": "造影剂血管外渗的处置方法研究进展",
+          "journal": "全科护理",
+          "year": 2018,
+          "cite": "宋朝晖 / 造影剂血管外渗的处置方法研究进展 / 全科护理 / 2018",
+          "grade": "汇总证据",
+          "ref": "CN-16"
+        }
+      ]
+    },
+    {
+      "id": "CN-17",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "康惠尔透明贴与50％硫酸镁溶液冷湿敷治疗碘对比剂外渗效果比较",
+      "tags": [
+        "文献",
+        "对照研究"
+      ],
+      "aliases": [
+        "康惠尔透明贴与50％硫酸镁溶液冷湿敷治疗碘对比剂外渗效果比较"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "对照研究"
+        },
+        {
+          "k": "年份",
+          "v": "2022"
+        },
+        {
+          "k": "核验标识",
+          "v": "28(18): 114-116 · 10.3969/j.issn.1006-7256.2022.18.040"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "对照研究",
+          "author": "申敏, 李淑英, 明蕾",
+          "title": "康惠尔透明贴与50％硫酸镁溶液冷湿敷治疗碘对比剂外渗效果比较",
+          "journal": "齐鲁护理杂志",
+          "year": 2022,
+          "cite": "申敏, 李淑英, 明蕾 / 康惠尔透明贴与50％硫酸镁溶液冷湿敷治疗碘对比剂外渗效果比较 / 齐鲁护理杂志 / 2022",
+          "grade": "汇总证据",
+          "ref": "CN-17"
+        }
+      ]
+    },
+    {
+      "id": "CN-18",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "应用改良痈疽油剂干预含碘对比剂中重度静脉外渗的临床疗效评价",
+      "tags": [
+        "文献",
+        "对照研究"
+      ],
+      "aliases": [
+        "应用改良痈疽油剂干预含碘对比剂中重度静脉外渗的临床疗效评价"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "对照研究"
+        },
+        {
+          "k": "年份",
+          "v": "2023"
+        },
+        {
+          "k": "核验标识",
+          "v": "32(2): 38-42（该条记录未显示 DOI）"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "对照研究",
+          "author": "李小平, 杨媚月, 宋敏, 谢金婵, 蒲兴春",
+          "title": "应用改良痈疽油剂干预含碘对比剂中重度静脉外渗的临床疗效评价",
+          "journal": "中医外治杂志",
+          "year": 2023,
+          "cite": "李小平, 杨媚月, 宋敏, 谢金婵, 蒲兴春 / 应用改良痈疽油剂干预含碘对比剂中重度静脉外渗的临床疗效评价 / 中医外治杂志 / 2023",
+          "grade": "汇总证据",
+          "ref": "CN-18"
+        }
+      ]
+    },
+    {
+      "id": "CN-19",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "1例药液外渗致慢性难愈性创面形成患者的中西医结合护理",
+      "tags": [
+        "文献",
+        "病例报告"
+      ],
+      "aliases": [
+        "1例药液外渗致慢性难愈性创面形成患者的中西医结合护理"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "病例报告"
+        },
+        {
+          "k": "年份",
+          "v": "2024"
+        },
+        {
+          "k": "核验标识",
+          "v": "59(7): 808-811 · 10.3761/j.issn.0254-1769.2024.07.006"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "病例报告",
+          "author": "张媛媛, 龙秀红, 吕婵, 李鲜, 王艺, 黄兰英, 涂惠琼, 覃惠娟",
+          "title": "1例药液外渗致慢性难愈性创面形成患者的中西医结合护理",
+          "journal": "中华护理杂志",
+          "year": 2024,
+          "cite": "张媛媛, 龙秀红, 吕婵, 李鲜, 王艺, 黄兰英, 涂惠琼, 覃惠娟 / 1例药液外渗致慢性难愈性创面形成患者的中西医结合护理 / 中华护理杂志 / 2024",
+          "grade": "汇总证据",
+          "ref": "CN-19"
+        }
+      ]
+    },
+    {
+      "id": "CN-20",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "乌蔹莓外敷干预碘对比剂外渗的临床疗效观察",
+      "tags": [
+        "文献",
+        "对照研究"
+      ],
+      "aliases": [
+        "乌蔹莓外敷干预碘对比剂外渗的临床疗效观察"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "对照研究"
+        },
+        {
+          "k": "年份",
+          "v": "2018"
+        },
+        {
+          "k": "核验标识",
+          "v": "16(32): 4017-4018（该条记录未显示 DOI）"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "对照研究",
+          "author": "陈绍月, 苏敏",
+          "title": "乌蔹莓外敷干预碘对比剂外渗的临床疗效观察",
+          "journal": "全科护理",
+          "year": 2018,
+          "cite": "陈绍月, 苏敏 / 乌蔹莓外敷干预碘对比剂外渗的临床疗效观察 / 全科护理 / 2018",
+          "grade": "汇总证据",
+          "ref": "CN-20"
+        }
+      ]
+    },
+    {
+      "id": "CN-21",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "推拿法在含碘对比剂外渗中的应用",
+      "tags": [
+        "文献",
+        "对照研究"
+      ],
+      "aliases": [
+        "推拿法在含碘对比剂外渗中的应用"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "对照研究"
+        },
+        {
+          "k": "年份",
+          "v": "2018"
+        },
+        {
+          "k": "核验标识",
+          "v": "39(14): 2248-2251（该条记录未显示 DOI）"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "对照研究",
+          "author": "佘国凤, 邱冬花, 彭一君, 刘晨曦, 唐金花, 林海英, 汪小柳",
+          "title": "推拿法在含碘对比剂外渗中的应用",
+          "journal": "广东医学",
+          "year": 2018,
+          "cite": "佘国凤, 邱冬花, 彭一君, 刘晨曦, 唐金花, 林海英, 汪小柳 / 推拿法在含碘对比剂外渗中的应用 / 广东医学 / 2018",
+          "grade": "汇总证据",
+          "ref": "CN-21"
+        }
+      ]
+    },
+    {
+      "id": "CN-22",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "中医适宜技术联合TDP治疗仪在碘对比剂静脉外渗患者的应用研究",
+      "tags": [
+        "文献",
+        "对照研究"
+      ],
+      "aliases": [
+        "中医适宜技术联合TDP治疗仪在碘对比剂静脉外渗患者的应用研究"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "对照研究"
+        },
+        {
+          "k": "年份",
+          "v": "2025"
+        },
+        {
+          "k": "核验标识",
+          "v": "32(30): 70-73 · 10.19793/j.cnki.1006-6411.2025.30.014"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "对照研究",
+          "author": "乐梦云, 邱翔, 杨蕾, 李璐柳, 曾小红",
+          "title": "中医适宜技术联合TDP治疗仪在碘对比剂静脉外渗患者的应用研究",
+          "journal": "当代护士",
+          "year": 2025,
+          "cite": "乐梦云, 邱翔, 杨蕾, 李璐柳, 曾小红 / 中医适宜技术联合TDP治疗仪在碘对比剂静脉外渗患者的应用研究 / 当代护士 / 2025",
+          "grade": "汇总证据",
+          "ref": "CN-22"
+        }
+      ]
+    },
+    {
+      "id": "CN-23",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "菜单式健康教育配合置管专项护理在肿瘤PICC患者中的应用",
+      "tags": [
+        "文献",
+        "对照研究"
+      ],
+      "aliases": [
+        "菜单式健康教育配合置管专项护理在肿瘤PICC患者中的应用"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "对照研究"
+        },
+        {
+          "k": "年份",
+          "v": "2022"
+        },
+        {
+          "k": "核验标识",
+          "v": "28(9): 25-28 · 10.3969/j.issn.1006-7256.2022.09.007"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "对照研究",
+          "author": "陈丹妮, 姜海燕, 李心慧",
+          "title": "菜单式健康教育配合置管专项护理在肿瘤PICC患者中的应用",
+          "journal": "齐鲁护理杂志",
+          "year": 2022,
+          "cite": "陈丹妮, 姜海燕, 李心慧 / 菜单式健康教育配合置管专项护理在肿瘤PICC患者中的应用 / 齐鲁护理杂志 / 2022",
+          "grade": "汇总证据",
+          "ref": "CN-23"
+        }
+      ]
+    },
+    {
+      "id": "CN-24",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "放射科碘对比剂外渗管理的证据总结",
+      "tags": [
+        "文献",
+        "最佳证据"
+      ],
+      "aliases": [
+        "放射科碘对比剂外渗管理的证据总结"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "最佳证据"
+        },
+        {
+          "k": "年份",
+          "v": "2020"
+        },
+        {
+          "k": "核验标识",
+          "v": "34(14): 2500-2504 · 10.12102/j.issn.1009-6493.2020.14.013"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "最佳证据",
+          "author": "史苏霞, 毛燕君, 程洁, 来小彬",
+          "title": "放射科碘对比剂外渗管理的证据总结",
+          "journal": "护理研究",
+          "year": 2020,
+          "cite": "史苏霞, 毛燕君, 程洁, 来小彬 / 放射科碘对比剂外渗管理的证据总结 / 护理研究 / 2020",
+          "grade": "汇总证据",
+          "ref": "CN-24"
+        }
+      ]
+    },
+    {
+      "id": "CN-25",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "全国部分医院静脉导管维护现状调查",
+      "tags": [
+        "文献",
+        "调查"
+      ],
+      "aliases": [
+        "全国部分医院静脉导管维护现状调查"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "调查"
+        },
+        {
+          "k": "年份",
+          "v": "2022"
+        },
+        {
+          "k": "核验标识",
+          "v": "28(15): 1988-1994 · 10.3760/cma.j.cn115682-20220222-00794"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "调查",
+          "author": "聂圣肖, 王蕾, 孙红, 钱莉",
+          "title": "全国部分医院静脉导管维护现状调查",
+          "journal": "中华现代护理杂志",
+          "year": 2022,
+          "cite": "聂圣肖, 王蕾, 孙红, 钱莉 / 全国部分医院静脉导管维护现状调查 / 中华现代护理杂志 / 2022",
+          "grade": "汇总证据",
+          "ref": "CN-25"
+        }
+      ]
+    },
+    {
+      "id": "CN-26",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "全国三级医院静脉治疗护理技术应用现状的调查研究",
+      "tags": [
+        "文献",
+        "调查"
+      ],
+      "aliases": [
+        "全国三级医院静脉治疗护理技术应用现状的调查研究"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "调查"
+        },
+        {
+          "k": "年份",
+          "v": "2025"
+        },
+        {
+          "k": "核验标识",
+          "v": "39(13): 2149-2155 · 10.12102/j.issn.1009-6493.2025.13.002"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "调查",
+          "author": "白姗, 高伟, 王蕾, 耿敬芝, 李亚南, 宋圆圆, 贾晓辉, 杨巧芳, 李春燕",
+          "title": "全国三级医院静脉治疗护理技术应用现状的调查研究",
+          "journal": "护理研究",
+          "year": 2025,
+          "cite": "白姗, 高伟, 王蕾, 耿敬芝, 李亚南, 宋圆圆, 贾晓辉, 杨巧芳, 李春燕 / 全国三级医院静脉治疗护理技术应用现状的调查研究 / 护理研究 / 2025",
+          "grade": "汇总证据",
+          "ref": "CN-26"
+        }
+      ]
+    },
+    {
+      "id": "CN-27",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "CT增强碘对比剂急性不良反应发生现况及影响因素",
+      "tags": [
+        "文献",
+        "调查"
+      ],
+      "aliases": [
+        "CT增强碘对比剂急性不良反应发生现况及影响因素"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "调查"
+        },
+        {
+          "k": "年份",
+          "v": "2023"
+        },
+        {
+          "k": "核验标识",
+          "v": "37(12): 2122-2129 · 10.12102/j.issn.1009-6493.2023.12.008"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "调查",
+          "author": "杨秋月, 汪晖, 李琴, 李震",
+          "title": "CT增强碘对比剂急性不良反应发生现况及影响因素",
+          "journal": "护理研究",
+          "year": 2023,
+          "cite": "杨秋月, 汪晖, 李琴, 李震 / CT增强碘对比剂急性不良反应发生现况及影响因素 / 护理研究 / 2023",
+          "grade": "汇总证据",
+          "ref": "CN-27"
+        }
+      ]
+    },
+    {
+      "id": "CN-28",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "某院碘对比剂相关药品不良反应研究与合理用药",
+      "tags": [
+        "文献",
+        "病例系列"
+      ],
+      "aliases": [
+        "某院碘对比剂相关药品不良反应研究与合理用药"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "病例系列"
+        },
+        {
+          "k": "年份",
+          "v": "2018"
+        },
+        {
+          "k": "核验标识",
+          "v": "48(10): 1044-1047（该条记录未显示 DOI）"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "病例系列",
+          "author": "熊代琴, 李东锋, 王捷",
+          "title": "某院碘对比剂相关药品不良反应研究与合理用药",
+          "journal": "新疆医学",
+          "year": 2018,
+          "cite": "熊代琴, 李东锋, 王捷 / 某院碘对比剂相关药品不良反应研究与合理用药 / 新疆医学 / 2018",
+          "grade": "汇总证据",
+          "ref": "CN-28"
+        }
+      ]
+    },
+    {
+      "id": "CN-29",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "冠状动脉介入患者围手术期水化预防对比剂急性肾损伤的最佳证据总结",
+      "tags": [
+        "文献",
+        "最佳证据"
+      ],
+      "aliases": [
+        "冠状动脉介入患者围手术期水化预防对比剂急性肾损伤的最佳证据总结"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "最佳证据"
+        },
+        {
+          "k": "年份",
+          "v": "2021"
+        },
+        {
+          "k": "核验标识",
+          "v": "27(19): 2556-2562 · 10.3760/cma.j.cn115682-20200807-04788"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "最佳证据",
+          "author": "程培霞, 宋秀艳, 闫素华, 陈士巧",
+          "title": "冠状动脉介入患者围手术期水化预防对比剂急性肾损伤的最佳证据总结",
+          "journal": "中华现代护理杂志",
+          "year": 2021,
+          "cite": "程培霞, 宋秀艳, 闫素华, 陈士巧 / 冠状动脉介入患者围手术期水化预防对比剂急性肾损伤的最佳证据总结 / 中华现代护理杂志 / 2021",
+          "grade": "汇总证据",
+          "ref": "CN-29"
+        }
+      ]
+    },
+    {
+      "id": "CN-30",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "河南省含碘对比剂外渗管理现状及护士认知水平的调查研究",
+      "tags": [
+        "文献",
+        "调查"
+      ],
+      "aliases": [
+        "河南省含碘对比剂外渗管理现状及护士认知水平的调查研究"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "调查"
+        },
+        {
+          "k": "年份",
+          "v": "2025"
+        },
+        {
+          "k": "核验标识",
+          "v": "60(11): 1351-1358 · 10.3761/j.issn.0254-1769.2025.11.011"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "调查",
+          "author": "宋圆圆, 王宇, 蒿若楠, 董方方, 黄霖霖, 杨巧芳, 贾晓辉, 白姗",
+          "title": "河南省含碘对比剂外渗管理现状及护士认知水平的调查研究",
+          "journal": "中华护理杂志",
+          "year": 2025,
+          "cite": "宋圆圆, 王宇, 蒿若楠, 董方方, 黄霖霖, 杨巧芳, 贾晓辉, 白姗 / 河南省含碘对比剂外渗管理现状及护士认知水平的调查研究 / 中华护理杂志 / 2025",
+          "grade": "汇总证据",
+          "ref": "CN-30"
+        }
+      ]
+    },
+    {
+      "id": "CN-31",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "含碘对比剂静脉外渗护理管理实践指南的循证实践研究",
+      "tags": [
+        "文献",
+        "最佳证据"
+      ],
+      "aliases": [
+        "含碘对比剂静脉外渗护理管理实践指南的循证实践研究"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "最佳证据"
+        },
+        {
+          "k": "年份",
+          "v": "2024"
+        },
+        {
+          "k": "核验标识",
+          "v": "39(9): 56-60 · 10.3870/j.issn.1001-4152.2024.09.056"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "最佳证据",
+          "author": "操帅, 张小红, 何红, 殷倩, 夏红霞",
+          "title": "含碘对比剂静脉外渗护理管理实践指南的循证实践研究",
+          "journal": "护理学杂志",
+          "year": 2024,
+          "cite": "操帅, 张小红, 何红, 殷倩, 夏红霞 / 含碘对比剂静脉外渗护理管理实践指南的循证实践研究 / 护理学杂志 / 2024",
+          "grade": "汇总证据",
+          "ref": "CN-31"
+        }
+      ]
+    },
+    {
+      "id": "EN-01",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+      "tags": [
+        "文献",
+        "指南"
+      ],
+      "aliases": [
+        "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "指南"
+        },
+        {
+          "k": "年份",
+          "v": "2022"
+        },
+        {
+          "k": "核验标识",
+          "v": "European Radiology. 2022;32(5):3056-3066 · DOI: 10.1007/s00330-021-08433-4"
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "EN-01"
+        }
+      ]
+    },
+    {
+      "id": "EN-03",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee",
+      "tags": [
+        "文献",
+        "指南"
+      ],
+      "aliases": [
+        "Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "指南"
+        },
+        {
+          "k": "年份",
+          "v": "2025"
+        },
+        {
+          "k": "核验标识",
+          "v": "European Radiology. 2025;35(11):6798-6810 · DOI: 10.1007/s00330-025-11675-1"
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F",
+          "title": "Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee",
+          "journal": "European Radiology",
+          "year": 2025,
+          "cite": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F / Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee / European Radiology / 2025",
+          "grade": "指南与共识",
+          "ref": "EN-03"
+        }
+      ]
+    },
+    {
+      "id": "EN-04",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "Hypersensitivity reactions to contrast media: Part 2. Prevention of recurrent hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee",
+      "tags": [
+        "文献",
+        "指南"
+      ],
+      "aliases": [
+        "Hypersensitivity reactions to contrast media: Part 2. Prevention of recurrent hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "指南"
+        },
+        {
+          "k": "年份",
+          "v": "2025"
+        },
+        {
+          "k": "核验标识",
+          "v": "European Radiology. 2025;35(11):6811-6825 · DOI: 10.1007/s00330-025-11676-0"
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F",
+          "title": "Hypersensitivity reactions to contrast media: Part 2. Prevention of recurrent hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee",
+          "journal": "European Radiology",
+          "year": 2025,
+          "cite": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F / Hypersensitivity reactions to contrast media: Part 2. Prevention of recurrent hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee / European Radiology / 2025",
+          "grade": "指南与共识",
+          "ref": "EN-04"
+        }
+      ]
+    },
+    {
+      "id": "EN-05",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "Contrast media extravasation injury: a prospective observational cohort study",
+      "tags": [
+        "文献",
+        "队列研究"
+      ],
+      "aliases": [
+        "Contrast media extravasation injury: a prospective observational cohort study"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "队列研究"
+        },
+        {
+          "k": "年份",
+          "v": "2023"
+        },
+        {
+          "k": "核验标识",
+          "v": "European Journal of Medical Research. 2023;28(1):458 · DOI: 10.1186/s40001-023-01444-5"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "队列研究",
+          "author": "Liu W, Wang P, Zhu H, Tang H, Guan H, Wang X, Wang C, Qiu Y, He L",
+          "title": "Contrast media extravasation injury: a prospective observational cohort study",
+          "journal": "European Journal of Medical Research",
+          "year": 2023,
+          "cite": "Liu W, Wang P, Zhu H, Tang H, Guan H, Wang X, Wang C, Qiu Y, He L / Contrast media extravasation injury: a prospective observational cohort study / European Journal of Medical Research / 2023",
+          "grade": "汇总证据",
+          "ref": "EN-05"
+        }
+      ]
+    },
+    {
+      "id": "EN-06",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "MRI and CT contrast media extravasation: A systematic review",
+      "tags": [
+        "文献",
+        "系统评价"
+      ],
+      "aliases": [
+        "MRI and CT contrast media extravasation: A systematic review"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "系统评价"
+        },
+        {
+          "k": "年份",
+          "v": "2018"
+        },
+        {
+          "k": "核验标识",
+          "v": "Medicine (Baltimore). 2018;97(9):e0055 · DOI: 10.1097/MD.0000000000010055"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "系统评价",
+          "author": "Heshmatzadeh Behzadi A, Farooq Z, Newhouse JH, Prince MR",
+          "title": "MRI and CT contrast media extravasation: A systematic review",
+          "journal": "Medicine (Baltimore)",
+          "year": 2018,
+          "cite": "Heshmatzadeh Behzadi A, Farooq Z, Newhouse JH, Prince MR / MRI and CT contrast media extravasation: A systematic review / Medicine (Baltimore) / 2018",
+          "grade": "汇总证据",
+          "ref": "EN-06"
+        }
+      ]
+    },
+    {
+      "id": "EN-07",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions",
+      "tags": [
+        "文献",
+        "病例系列"
+      ],
+      "aliases": [
+        "Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "病例系列"
+        },
+        {
+          "k": "年份",
+          "v": "2017"
+        },
+        {
+          "k": "核验标识",
+          "v": "International Wound Journal. 2017;14(2):430-434 · DOI: 10.1111/iwj.12628"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "病例系列",
+          "author": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC",
+          "title": "Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions",
+          "journal": "International Wound Journal",
+          "year": 2017,
+          "cite": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC / Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions / International Wound Journal / 2017",
+          "grade": "汇总证据",
+          "ref": "EN-07"
+        }
+      ]
+    },
+    {
+      "id": "EN-08",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison",
+      "tags": [
+        "文献",
+        "综述"
+      ],
+      "aliases": [
+        "Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "综述"
+        },
+        {
+          "k": "年份",
+          "v": "2022"
+        },
+        {
+          "k": "核验标识",
+          "v": "Eplasty. 2022;22:e23 · PMID: 35903426"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "综述",
+          "author": "Thomas R, Vermaak L, Price G",
+          "title": "Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison",
+          "journal": "Eplasty",
+          "year": 2022,
+          "cite": "Thomas R, Vermaak L, Price G / Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison / Eplasty / 2022",
+          "grade": "汇总证据",
+          "ref": "EN-08"
+        }
+      ]
+    },
+    {
+      "id": "EN-09",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study",
+      "tags": [
+        "文献",
+        "队列研究"
+      ],
+      "aliases": [
+        "Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "队列研究"
+        },
+        {
+          "k": "年份",
+          "v": "2025"
+        },
+        {
+          "k": "核验标识",
+          "v": "Quantitative Imaging in Medicine and Surgery. 2025;15(8):7338-7351 · DOI: 10.21037/qims-24-2332"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "队列研究",
+          "author": "Wang L, Chen Q, Liu H, Wang X, Qian Q, Xu M, Ma L, Wang X",
+          "title": "Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study",
+          "journal": "Quantitative Imaging in Medicine and Surgery",
+          "year": 2025,
+          "cite": "Wang L, Chen Q, Liu H, Wang X, Qian Q, Xu M, Ma L, Wang X / Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study / Quantitative Imaging in Medicine and Surgery / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-09"
+        }
+      ]
+    },
+    {
+      "id": "EN-10",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation",
+      "tags": [
+        "文献",
+        "最佳证据"
+      ],
+      "aliases": [
+        "Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "最佳证据"
+        },
+        {
+          "k": "年份",
+          "v": "2026"
+        },
+        {
+          "k": "核验标识",
+          "v": "Frontiers in Medicine. 2026;13:1839528 · DOI: 10.3389/fmed.2026.1839528"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "最佳证据",
+          "author": "Liu H, Zeng Q, Zeng X, Lu X, Xiao B, Cheng Y, Liu Y, Yang C, Yang C",
+          "title": "Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation",
+          "journal": "Frontiers in Medicine",
+          "year": 2026,
+          "cite": "Liu H, Zeng Q, Zeng X, Lu X, Xiao B, Cheng Y, Liu Y, Yang C, Yang C / Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation / Frontiers in Medicine / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-10"
+        }
+      ]
+    },
+    {
+      "id": "EN-11",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "Hypersensitivity Reactions to Iodinated Contrast Media",
+      "tags": [
+        "文献",
+        "综述"
+      ],
+      "aliases": [
+        "Hypersensitivity Reactions to Iodinated Contrast Media"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "综述"
+        },
+        {
+          "k": "年份",
+          "v": "2022"
+        },
+        {
+          "k": "核验标识",
+          "v": "Biomedicines. 2022;10(5):1036 · DOI: 10.3390/biomedicines10051036"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "综述",
+          "author": "Chiu TM, Chu SY",
+          "title": "Hypersensitivity Reactions to Iodinated Contrast Media",
+          "journal": "Biomedicines",
+          "year": 2022,
+          "cite": "Chiu TM, Chu SY / Hypersensitivity Reactions to Iodinated Contrast Media / Biomedicines / 2022",
+          "grade": "汇总证据",
+          "ref": "EN-11"
+        }
+      ]
+    },
+    {
+      "id": "EN-12",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "Risk factor analysis of iodinated contrast medium-related hypersensitivity reactions",
+      "tags": [
+        "文献",
+        "系统评价"
+      ],
+      "aliases": [
+        "Risk factor analysis of iodinated contrast medium-related hypersensitivity reactions"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "系统评价"
+        },
+        {
+          "k": "年份",
+          "v": "2025"
+        },
+        {
+          "k": "核验标识",
+          "v": "Insights into Imaging. 2025;16(1):216 · DOI: 10.1186/s13244-025-02099-y"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "系统评价",
+          "author": "Beiner L, Boehm I",
+          "title": "Risk factor analysis of iodinated contrast medium-related hypersensitivity reactions",
+          "journal": "Insights into Imaging",
+          "year": 2025,
+          "cite": "Beiner L, Boehm I / Risk factor analysis of iodinated contrast medium-related hypersensitivity reactions / Insights into Imaging / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-12"
+        }
+      ]
+    },
+    {
+      "id": "EN-13",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "Preparedness of CT technicians and radiographers for severe contrast media reactions: knowledge gaps and training needs",
+      "tags": [
+        "文献",
+        "调查"
+      ],
+      "aliases": [
+        "Preparedness of CT technicians and radiographers for severe contrast media reactions: knowledge gaps and training needs"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "调查"
+        },
+        {
+          "k": "年份",
+          "v": "2026"
+        },
+        {
+          "k": "核验标识",
+          "v": "Frontiers in Radiology. 2026;6:1940155 · DOI: 10.3389/fradi.2026.1940155"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "调查",
+          "author": "Abuanzeh HE, Al-Qaaneh AM",
+          "title": "Preparedness of CT technicians and radiographers for severe contrast media reactions: knowledge gaps and training needs",
+          "journal": "Frontiers in Radiology",
+          "year": 2026,
+          "cite": "Abuanzeh HE, Al-Qaaneh AM / Preparedness of CT technicians and radiographers for severe contrast media reactions: knowledge gaps and training needs / Frontiers in Radiology / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-13"
+        }
+      ]
+    },
+    {
+      "id": "EN-14",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "Acute Adverse Reactions to Nonionic Low-Osmolar Iodinated Contrast Media in Children: A Retrospective Study of 23,429 Injections Over 6 Years",
+      "tags": [
+        "文献",
+        "队列研究"
+      ],
+      "aliases": [
+        "Acute Adverse Reactions to Nonionic Low-Osmolar Iodinated Contrast Media in Children: A Retrospective Study of 23,429 Injections Over 6 Years"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "队列研究"
+        },
+        {
+          "k": "年份",
+          "v": "2025"
+        },
+        {
+          "k": "核验标识",
+          "v": "Korean Journal of Radiology. 2025;26(10):986-997 · DOI: 10.3348/kjr.2025.0263"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "队列研究",
+          "author": "Seong Y, Kim PH, Suh CH, Park KJ, Park HJ, Lee CW, Jung AY, Cho YA, Lee JS, Yoon HM",
+          "title": "Acute Adverse Reactions to Nonionic Low-Osmolar Iodinated Contrast Media in Children: A Retrospective Study of 23,429 Injections Over 6 Years",
+          "journal": "Korean Journal of Radiology",
+          "year": 2025,
+          "cite": "Seong Y, Kim PH, Suh CH, Park KJ, Park HJ, Lee CW, Jung AY, Cho YA, Lee JS, Yoon HM / Acute Adverse Reactions to Nonionic Low-Osmolar Iodinated Contrast Media in Children: A Retrospective Study of 23,429 Injections Over 6 Years / Korean Journal of Radiology / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-14"
+        }
+      ]
+    },
+    {
+      "id": "EN-15",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "Hypersensitivity reactions to iodinated contrast media: potential mechanisms and clinical management",
+      "tags": [
+        "文献",
+        "综述"
+      ],
+      "aliases": [
+        "Hypersensitivity reactions to iodinated contrast media: potential mechanisms and clinical management"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "综述"
+        },
+        {
+          "k": "年份",
+          "v": "2025"
+        },
+        {
+          "k": "核验标识",
+          "v": "Frontiers in Medicine. 2025;12:1582072 · DOI: 10.3389/fmed.2025.1582072"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "综述",
+          "author": "Zhong X, Zhao L",
+          "title": "Hypersensitivity reactions to iodinated contrast media: potential mechanisms and clinical management",
+          "journal": "Frontiers in Medicine",
+          "year": 2025,
+          "cite": "Zhong X, Zhao L / Hypersensitivity reactions to iodinated contrast media: potential mechanisms and clinical management / Frontiers in Medicine / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-15"
+        }
+      ]
+    },
+    {
+      "id": "EN-16",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "Hand compartment syndrome secondary to contrast media extravasation: A case report",
+      "tags": [
+        "文献",
+        "病例报告"
+      ],
+      "aliases": [
+        "Hand compartment syndrome secondary to contrast media extravasation: A case report"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "病例报告"
+        },
+        {
+          "k": "年份",
+          "v": "2022"
+        },
+        {
+          "k": "核验标识",
+          "v": "International Journal of Surgery Case Reports. 2022;98:107595 · DOI: 10.1016/j.ijscr.2022.107595"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "病例报告",
+          "author": "Diop B, Soh GT, Nde AFT, Sarr N, Ndoye AY, Sane JC",
+          "title": "Hand compartment syndrome secondary to contrast media extravasation: A case report",
+          "journal": "International Journal of Surgery Case Reports",
+          "year": 2022,
+          "cite": "Diop B, Soh GT, Nde AFT, Sarr N, Ndoye AY, Sane JC / Hand compartment syndrome secondary to contrast media extravasation: A case report / International Journal of Surgery Case Reports / 2022",
+          "grade": "汇总证据",
+          "ref": "EN-16"
+        }
+      ]
+    },
+    {
+      "id": "EN-17",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention",
+      "tags": [
+        "文献",
+        "病例报告"
+      ],
+      "aliases": [
+        "Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "病例报告"
+        },
+        {
+          "k": "年份",
+          "v": "2025"
+        },
+        {
+          "k": "核验标识",
+          "v": "BMC Surgery. 2025;25(1):531 · DOI: 10.1186/s12893-025-03304-x"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "病例报告",
+          "author": "Hu J, Ge T, Du Y, Wang J, Zhou Y",
+          "title": "Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention",
+          "journal": "BMC Surgery",
+          "year": 2025,
+          "cite": "Hu J, Ge T, Du Y, Wang J, Zhou Y / Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention / BMC Surgery / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-17"
+        }
+      ]
+    },
+    {
+      "id": "EN-18",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "Clinical Audit of the Incidence and Documentation Quality of Contrast-Induced Nephropathy (CIN) in a Tertiary Cardiology Unit",
+      "tags": [
+        "文献",
+        "临床审计"
+      ],
+      "aliases": [
+        "Clinical Audit of the Incidence and Documentation Quality of Contrast-Induced Nephropathy (CIN) in a Tertiary Cardiology Unit"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "临床审计"
+        },
+        {
+          "k": "年份",
+          "v": "2026"
+        },
+        {
+          "k": "核验标识",
+          "v": "Cureus. 2026;18(7):e112270 · DOI: 10.7759/cureus.112270"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "临床审计",
+          "author": "Sunny A, Chandran A, Kareem H",
+          "title": "Clinical Audit of the Incidence and Documentation Quality of Contrast-Induced Nephropathy (CIN) in a Tertiary Cardiology Unit",
+          "journal": "Cureus",
+          "year": 2026,
+          "cite": "Sunny A, Chandran A, Kareem H / Clinical Audit of the Incidence and Documentation Quality of Contrast-Induced Nephropathy (CIN) in a Tertiary Cardiology Unit / Cureus / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-18"
+        }
+      ]
+    },
+    {
+      "id": "EN-19",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "Immediate hypersensitivity reactions to iodinated contrast media despite drug prophylaxis - a comparative retrospective cohort study of breakthrough reactions in Bern (Switzerland) and Seoul (South Korea)",
+      "tags": [
+        "文献",
+        "队列研究"
+      ],
+      "aliases": [
+        "Immediate hypersensitivity reactions to iodinated contrast media despite drug prophylaxis - a comparative retrospective cohort study of breakthrough reactions in Bern (Switzerland) and Seoul (South Korea)"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "队列研究"
+        },
+        {
+          "k": "年份",
+          "v": "2024"
+        },
+        {
+          "k": "核验标识",
+          "v": "Quantitative Imaging in Medicine and Surgery. 2024;14(5):3326-3338 · DOI: 10.21037/qims-23-912"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "队列研究",
+          "author": "Beiner L, Jeong J, Kang DY, Lombardo P, Kang HR, Boehm I",
+          "title": "Immediate hypersensitivity reactions to iodinated contrast media despite drug prophylaxis - a comparative retrospective cohort study of breakthrough reactions in Bern (Switzerland) and Seoul (South Korea)",
+          "journal": "Quantitative Imaging in Medicine and Surgery",
+          "year": 2024,
+          "cite": "Beiner L, Jeong J, Kang DY, Lombardo P, Kang HR, Boehm I / Immediate hypersensitivity reactions to iodinated contrast media despite drug prophylaxis - a comparative retrospective cohort study of breakthrough reactions in Bern (Switzerland) and Seoul (South Korea) / Quantitative Imaging in Medicine and Surgery / 2024",
+          "grade": "汇总证据",
+          "ref": "EN-19"
+        }
+      ]
+    },
+    {
+      "id": "EN-20",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "Iodinated Contrast Media in Oncologic CT: A Narrative Review of Safety, Risk Stratification, and Practical Considerations",
+      "tags": [
+        "文献",
+        "综述"
+      ],
+      "aliases": [
+        "Iodinated Contrast Media in Oncologic CT: A Narrative Review of Safety, Risk Stratification, and Practical Considerations"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "综述"
+        },
+        {
+          "k": "年份",
+          "v": "2026"
+        },
+        {
+          "k": "核验标识",
+          "v": "Diagnostics (Basel). 2026;16(10):1507 · DOI: 10.3390/diagnostics16101507"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "综述",
+          "author": "Vasii SO, Crisan FG, Lazar SM, Ionica C, Iliescu D, Ionica I, Malita DC, Voicu M, Voicu A, Udrescu L",
+          "title": "Iodinated Contrast Media in Oncologic CT: A Narrative Review of Safety, Risk Stratification, and Practical Considerations",
+          "journal": "Diagnostics (Basel)",
+          "year": 2026,
+          "cite": "Vasii SO, Crisan FG, Lazar SM, Ionica C, Iliescu D, Ionica I, Malita DC, Voicu M, Voicu A, Udrescu L / Iodinated Contrast Media in Oncologic CT: A Narrative Review of Safety, Risk Stratification, and Practical Considerations / Diagnostics (Basel) / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-20"
+        }
+      ]
+    },
+    {
+      "id": "EN-21",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "Integrating CT-Derived Body Composition and Real-Time Injection Pressure Monitoring for Predicting Contrast Media Extravasation: A Retrospective Cohort Study with Implications for Nurse-Led Risk Stratification",
+      "tags": [
+        "文献",
+        "队列研究"
+      ],
+      "aliases": [
+        "Integrating CT-Derived Body Composition and Real-Time Injection Pressure Monitoring for Predicting Contrast Media Extravasation: A Retrospective Cohort Study with Implications for Nurse-Led Risk Stratification"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "队列研究"
+        },
+        {
+          "k": "年份",
+          "v": "2026"
+        },
+        {
+          "k": "核验标识",
+          "v": "Healthcare (Basel). 2026;14(14):2124 · DOI: 10.3390/healthcare14142124"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "队列研究",
+          "author": "Zhou Y, Lin S, Qian Q, Shi J, Chen Q",
+          "title": "Integrating CT-Derived Body Composition and Real-Time Injection Pressure Monitoring for Predicting Contrast Media Extravasation: A Retrospective Cohort Study with Implications for Nurse-Led Risk Stratification",
+          "journal": "Healthcare (Basel)",
+          "year": 2026,
+          "cite": "Zhou Y, Lin S, Qian Q, Shi J, Chen Q / Integrating CT-Derived Body Composition and Real-Time Injection Pressure Monitoring for Predicting Contrast Media Extravasation: A Retrospective Cohort Study with Implications for Nurse-Led Risk Stratification / Healthcare (Basel) / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-21"
+        }
+      ]
+    },
+    {
+      "id": "EN-22",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography",
+      "tags": [
+        "文献",
+        "综述"
+      ],
+      "aliases": [
+        "Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "综述"
+        },
+        {
+          "k": "年份",
+          "v": "2026"
+        },
+        {
+          "k": "核验标识",
+          "v": "Journal of Clinical Medicine. 2026;15(13):4958 · DOI: 10.3390/jcm15134958"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "综述",
+          "author": "Romanczuk D, Lange S, Medrzycka-Dabrowska W, Cichowlas G",
+          "title": "Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography",
+          "journal": "Journal of Clinical Medicine",
+          "year": 2026,
+          "cite": "Romanczuk D, Lange S, Medrzycka-Dabrowska W, Cichowlas G / Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography / Journal of Clinical Medicine / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-22"
+        }
+      ]
+    },
+    {
       "id": "CN-03",
       "graph": "topic-01",
       "type": "Reference",
@@ -8421,6 +11219,20 @@ window.KG_GRAPH = {
           "quote": "Features of a vasovagal event may include pallor, weakness, nausea, vomiting, diaphoresis, bradycardia, and hypotension",
           "src": "R12",
           "cat": "识别要点"
+        },
+        {
+          "k": "Atropine for vasovagal bradycardia (ACR Table 3)",
+          "v": "ACR Table 3, hypotension with bradycardia (pulse < 60 bpm) = vasovagal reaction. If mild, no other treatment usually necessary. If severe: in addition to those measures give atropine IV 0.6-1.0 mg into a running IV infusion of fluids, repeat up to 3 mg total, and consider calling the emergency response team or 911.",
+          "quote": "Hypotension with bradycardia (pulse < 60 bpm) (Vasovagal reaction) If mild No other treatment usually necessary If severe In addition to above measures: Atropine (IV) 0.6-1.0 mg; administer into a running IV infusion (patient remains symptomatic despite above measures) of fluids; can repeat up to 3 mg total Consider calling the emergency response team or 911 Hypotension with tachycardia (pulse > 100 bpm) (Anaphylactoid reaction) If hypotension persists Epinephrine (IV)* IV 1 mL of 0.1 mg/mL (1:10,000) dilution (0.1 mg); administer slowly into a running IV infusion of fluids; can repeat every few minutes as needed up to 10 mL (1 mg) total or Epinephrine (IM)* IM 0.3 mL of 1.0 mg/mL (1:1,000) dilution (0.3 mg); can repeat every 5-15 minutes up to 1 mL (1 mg) total or Epinephrine auto-injector (EpiPen® or equivalent) (0.3 mL of 1.0 mg/mL (1:1,000) dilution, fixed [0.3mg]); can repeat every 5-15 minutes up to three times Consider calling emergency response team or 911 based upon the severity of the reaction and the completeness of the response * Note: in hypotensive patients, the preferred route of epinephrine delivery is IV, as the extremities may not be perfused sufficiently to allow for adequate absorption of IM administered drug.",
+          "src": "R01",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "During examination monitoring rules",
+          "v": "Monitor the patient closely and judge for progression of the reaction; observe closely for mucosal edema of the nose, mouth, throat or larynx; in case of symptoms check heart rate, arterial blood pressure and consciousness; if marked bradycardia is present consider treatment of a vasovagal reaction (atropine); be aware that patients with impaired vision or hearing, neurological disease, psychiatric illness, cognitive disorders or CNS-active medications may have diminished awareness of hypersensitivity symptoms.",
+          "quote": "Be aware that a patient with impaired vision or hearing, neurological disease, psychiatric illness, cognitive disorders or under CNS-active medications might have diminished awareness of hypersensitivity symptoms.",
+          "src": "EN-03",
+          "cat": "超敏反应"
         }
       ]
     },
@@ -8480,6 +11292,13 @@ window.KG_GRAPH = {
           "quote": "We suggest clinicians prescribe either the 0.1 mg or the 0.15 mg EAI dose for infants/toddlers weighing less than 15 kg",
           "src": "R16",
           "cat": "特殊人群"
+        },
+        {
+          "k": "ACR Table 3 epinephrine dosing for adults",
+          "v": "ACR adult reaction table, anaphylactoid reaction with persistent hypotension: epinephrine IV 1 mL of 0.1 mg/mL (1:10,000) = 0.1 mg, repeat every few minutes up to 10 mL (1 mg) total; or IM 0.3 mL of 1.0 mg/mL (1:1,000) = 0.3 mg, repeat every 5-15 minutes up to 1 mL (1 mg) total; or auto-injector 0.3 mL fixed, up to three times. Footnote: IV preferred in hypotensive patients.",
+          "quote": "Hypotension with tachycardia (pulse > 100 bpm) (Anaphylactoid reaction) If hypotension persists Epinephrine (IV)* IV 1 mL of 0.1 mg/mL (1:10,000) dilution (0.1 mg); administer slowly into a running IV infusion of fluids; can repeat every few minutes as needed up to 10 mL (1 mg) total or Epinephrine (IM)* IM 0.3 mL of 1.0 mg/mL (1:1,000) dilution (0.3 mg); can repeat every 5-15 minutes up to 1 mL (1 mg) total or Epinephrine auto-injector (EpiPen® or equivalent) (0.3 mL of 1.0 mg/mL (1:1,000) dilution, fixed [0.3mg]); can repeat every 5-15 minutes up to three times Consider calling emergency response team or 911 based upon the severity of the reaction and the completeness of the response * Note: in hypotensive patients, the preferred route of epinephrine delivery is IV, as the extremities may not be perfused sufficiently to allow for adequate absorption of IM administered drug.",
+          "src": "R01",
+          "cat": "超敏反应"
         }
       ]
     },
@@ -8556,6 +11375,13 @@ window.KG_GRAPH = {
           "quote": "Baseline serum tryptase (bST) level should be measured in patients presenting with a history of recurrent, idiopathic, or severe anaphylaxis",
           "src": "R16",
           "cat": "护理记录与上报"
+        },
+        {
+          "k": "Observation periods after reaction",
+          "v": "After the examination: if the patient had a mild reaction, keep under surveillance until every symptom has disappeared (minimum 30 min, usually under 60 min). A non-life-threatening reaction should be observed for 4-6 hours after successful treatment before discharge. A life-threatening reaction should be admitted and observed. Serum tryptase should be ordered within 1-4 hours.",
+          "quote": "What to do after the examination: • If the patient has experienced a mild reaction, keep him under surveillance until every symptom has disappeared (minimum 30 min, usually < 60 min). • Patient experiencing a non-life-threatening reaction should be observed for 4-6 h after successful treatment and discharged. • Patient experiencing a life-threatening reaction should be admitted and observed. • Order serum tryptase within 1-4 h (see Part 2).",
+          "src": "EN-03",
+          "cat": "超敏反应"
         }
       ]
     },
@@ -8638,6 +11464,34 @@ window.KG_GRAPH = {
       ],
       "details": [
         {
+          "k": "中重度静脉外渗分组",
+          "v": "纳入2019年10月～2022年4月CT增强扫描发生中重度静脉外渗102例，随机分为三组各34例",
+          "quote": "选取2019年10月～2022年4月就诊于我院造口伤口门诊,因CT增强扫描发生中重度静脉外渗的102例患者,随机分为三组,每组各34例.",
+          "src": "CN-18",
+          "cat": "分级"
+        },
+        {
+          "k": "按剂量与肿胀分轻重度",
+          "v": "根据对比剂外渗的剂量以及穿刺点肿胀情况评估外渗程度(轻度和重度)",
+          "quote": "根据对比剂外渗的剂量以及穿刺点肿胀情况评估外渗程度(轻度和重度).",
+          "src": "CN-21",
+          "cat": "分级"
+        },
+        {
+          "k": "推拿适用人群",
+          "v": "轻度两种方法差异无统计学意义(P>0.05)；重度患者推拿在肢体疼痛感觉及水泡情况明显优于药物外敷",
+          "quote": "轻度患者两种治疗方法差异无统计学意义(P>0.05),重度患者使用推拿法肢体疼痛感觉以及水泡情况明显比药物外敷疗效好.",
+          "src": "CN-21",
+          "cat": "局部处理"
+        },
+        {
+          "k": "皮肤损伤进展高峰",
+          "v": "ICM外渗导致的皮肤损伤通常在数小时内加剧，24~48 h达到高峰",
+          "quote": "研究 [ 11 ] 表明，ICM外渗导致的皮肤损伤通常在数小时内加剧，24~48 h达到高峰。",
+          "src": "CN-30",
+          "cat": "局部处理"
+        },
+        {
           "k": "损伤分期Ⅰ/Ⅱ期",
           "v": "Ⅰ期局部组织炎性反应:皮肤红润、肿胀、发热、刺痛,无水疱和坏死;Ⅱ期静脉炎性反应:皮下出血或水疱形成,破溃后组织苍白形成浅表溃疡",
           "quote": "局部皮肤红润、肿胀、发热、刺痛，无水疱和坏死",
@@ -8695,6 +11549,41 @@ window.KG_GRAPH = {
           "quote": "对严重静脉外渗且疑有骨筋膜室综合征者，严禁抬高患肢",
           "src": "R04",
           "cat": "外渗分级"
+        },
+        {
+          "k": "骨筋膜室综合征并发",
+          "v": "造影剂外渗可致局部肿胀、疼痛，严重者并发骨筋膜室综合征，导致组织坏死与肢体功能障碍",
+          "quote": "可出现局部肿胀、疼痛,严重者并发骨筋膜室综合征,导致组织坏死、肢体功能障碍.",
+          "src": "CN-16",
+          "cat": "并发症"
+        },
+        {
+          "k": "Serous complications of extravasation",
+          "v": "Contrast media extravasation is rarely serious but can include compartment syndrome, severe skin ulceration and tissue necrosis. Less serious consequences include exposure to ionizing radiation without the benefit of diagnostic images, swelling, tightness, stinging, burning pain, edema, erythema or tenderness at the injection site.",
+          "quote": "Contrast medium extravasation is another well-recognized event, which is rarely serious but can include serious complications like compartment syndrome, severe skin ulceration, and tissue necrosis.",
+          "src": "EN-06",
+          "cat": "对比剂安全"
+        },
+        {
+          "k": "Distribution pattern and large-volume definition",
+          "v": "Contrast media extravasation injuries are relatively benign versus cytotoxic drug extravasation but can cause pressure necrosis, blistering and compartment syndrome. Volume, rate of infusion and osmolality all influence the distribution pattern of the injectate. 'Large-volume' extravasations have been described in the literature as ranging from over 20 mL to over 100 mL.",
+          "quote": "Volume, rate of infusion, and osmolality all influence the distribution pattern of the injectate. \"Large-volume\" extravasations have been described in the literature as being from > 20 mL to > 100 mL.",
+          "src": "EN-08",
+          "cat": "识别分级"
+        },
+        {
+          "k": "Osmolality drives tissue injury cascade",
+          "v": "Cellular osmolality is between 280 and 295 mOsm/kg H2O. Despite modern lower-osmolality solutions, all iodinated contrast media remain of higher osmolality, causing edema in the interstitial space and intracellular dehydration. In severe cases this causes release of inflammatory mediators and even cell death causing de-epithelialization; once the vicious circle of capillary ischemia and edema is initiated, compartment syndrome can result.",
+          "quote": "Cellular osmolality is between 280 and 295 mOsm/kg H2O.",
+          "src": "EN-08",
+          "cat": "识别分级"
+        },
+        {
+          "k": "Deterioration can follow a mild initial injury",
+          "v": "A 47-year-old woman with pulmonary embolism history was diagnosed with compartment syndrome of the left hand after contrast injection during CT; her first diagnosis had been mild contrast extravasation injury 24 hours before the compartment syndrome. Standard radiography showed accumulated contrast medium in the left hand. She underwent fasciotomy and secondary healing, with good radiographic, clinical and hand function at 2 months. Hand compartment syndrome secondary to extravasation is exceptional and, because its incidence is unknown, treatment is not codified.",
+          "quote": "Case presentation We present a 47-year-old woman with a history of pulmonary embolism who was diagnosed of compartment syndrome of the left hand after injection of contrast medium during a CT scan. Whose first diagnosis was mild contrast medium extravasation injury 24 h before the compartment syndrome. Standard radiography showed an accumulation of contrast medium in the left hand. The patient underwent a fasciotomy and secondary healing. Follow-up showed good radiographic, clinical, and hand function after 2 months. Discussion The occurrence of hand compartment syndrome secondary to contrast media extravasation is rare. Most of the time, they are initially diagnosed as medium extravasation before the worsening of symptoms. Because of its unknown incidence, treatment is not codified. The goal of treatment is to save the limb and restore function.",
+          "src": "EN-16",
+          "cat": "识别分级"
         },
         {
           "k": "重度分级体征",
@@ -8788,6 +11677,41 @@ window.KG_GRAPH = {
       ],
       "details": [
         {
+          "k": "Hyaluronidase dose range and status",
+          "v": "Hyaluronic acid injection directly into the extravasation site, dose between 5 and 250 Units considered most effective; believed to work by enzymatically cleaving interstitial structures to promote resorption into vessels and lymphatics. Evidence is limited and some animal models show increased inflammatory response, so it is not considered routine treatment (off-label use only, e.g. inoperable patients with compartment syndrome).",
+          "quote": "Dose of between 5-250 Units is thought to be most effective [15].",
+          "src": "EN-01",
+          "cat": "处置"
+        },
+        {
+          "k": "Hyaluronidase and aspiration not recommended",
+          "v": "Recommendation 3: routine use of hyaluronidase or corticosteroid injections or aspiration of the affected limb is not recommended (strength of evidence Limited 1). There is no consistent evidence that local injection of corticosteroids or hyaluronidase is beneficial; no adequate studies confirm efficacy of hyaluronidase after contrast media extravasation. Topical silver sulfadiazine and steroid cream three to four times daily has been suggested for blistering, though efficacy is unknown.",
+          "quote": "Strength of evidence: Limited 3 Reference # Original SQ Reassessed SQ Final SQ 22 4 - 4 24 4 - 4 Recommendation 2: Cold compresses or ice packs should initially be applied to the extravasation site (rather than warm compresses) Strength of evidence: Limited 1 Reference # Original SQ Reassessed SQ Final SQ 22 4 - 4 23 - 24 Inadequate - Inadequate 25 4 - 4 1 1 Recommendation 3: Routine use of hyaluronidase or corticosteroid injections or aspiration of the affected limb is not recommended. Strength of evidence: Limited 1 Reference # Original SQ Reassessed SQ Final SQ 15 4 4 4 22 4 - 4 28 4 - 4 29 2 - 2 Recommendation 4: All discharged outpatients should be given clear instructions concerning where and when to seek additional medical care (including for worsening pain, development of paresthesia, diminished range of motion, and new skin ulceration o r blistering) as severe extravasation could develop several hours later.",
+          "src": "R01",
+          "cat": "处置"
+        },
+        {
+          "k": "Volume threshold algorithm with hyaluronidase",
+          "v": "Treatment algorithm: if expected extravasation volume is less than 50 mL, treat conservatively with light compression, elevation of the affected limb, pain control and hyaluronidase injection. If the expected extravasation volume is larger than 50 mL, or severe pressure is felt on the limb without signs of compartment syndrome, multiple slit incisions are made followed by squeezing. In suspected compartment syndrome, immediate fasciotomy is considered.",
+          "quote": "If the expected extravasation volume is less than 50 ml, the patient is treated conservatively using light compression, affected limb elevation, pain control and hyaluronidase injection.",
+          "src": "EN-07",
+          "cat": "处置"
+        },
+        {
+          "k": "Hyaluronidase mechanism and role",
+          "v": "Hyaluronidase is an enzyme that breaks down interstitial barriers in connective tissue by disrupting the interstitial polysaccharide bonds that normally hold cells together, promoting removal of extravasated material by lymphatics and capillaries. It is generally accepted as a safe and efficacious treatment for extravasation of many different agents. More invasive options include saline irrigation followed by suction, negative pressure therapies, and a combination of liposuction with saline/hyaluronidase washout.",
+          "quote": "Hyaluronidase is an enzyme that breaks down the interstitial barriers in the connective tissue by disrupting the interstitial polysaccharide bonds that normally hold cells together.",
+          "src": "EN-07",
+          "cat": "处置"
+        },
+        {
+          "k": "Drug-specific antidotes with doses",
+          "v": "Anthracycline extravasation: dexrazoxane is strongly recommended, started within 6 hours, 1,000 mg/m2 on days 1-2 and 500 mg/m2 on day 3. Paclitaxel/docetaxel extravasation: hyaluronidase subcutaneously around the extravasation area within 3-4 hours. Platinum agents with more than 20 mL cisplatin at concentration above 0.5 mg/mL: sodium thiosulfate 1/6 molar solution, multiple 0.1 mL subcutaneous injections totalling 1 mL. Vincristine/vinorelbine: hyaluronidase 150 units subcutaneously at five points around the area. Mitomycin C/mitoxantrone: dimethyl sulfoxide 50-99% applied externally within 10-25 minutes, once every 8 hours for 7 days.",
+          "quote": "The infusion should be started within 6 h and administered over 3 days based on body surface area (1,000 mg/m2 on days 1-2 and 500 mg/m2 on day 3) (6, 26). 2 A Extravasation Paclitaxel (paclitaxel, docetaxel) extravasation: It is recommended to use hyaluronidase as an antidote, which can be subcutaneously injected around the extravasation area within 3-4 h (2, 6, 26). 5 B Extravasation For extravasation of platinum-based drugs involving more than 20 mL of cisplatin and a concentration greater than 0.5 mg/mL, it is recommended to use sodium thiosulfate for local treatment as soon as possible. The 10% or 25% stock solution should be diluted with sterile water to prepare a 1/6 molar solution (approximately 0.167 molar). Multiple subcutaneous injections of 0.1 mL each should be administered around the extravasation site, totaling 1 mL, to ensure even distribution.The method for preparing 10 mL of a 1/6 molar solution is as follows:For 25% sodium thiosulfate solution: Mix 1.6 mL of the stock solution with 8.4 mL of sterile water. For 10% sodium thiosulfate solution: Mix 4.0 mL of the stock solution with 6.0 mL of sterile water (6, 25, 26). 5 A Extravasation Vincristine and vinorelbine extravasation: It is recommended to use hyaluronidase as an antidote as soon as possible. Administer 150 units subcutaneously, injecting at five points around the extravasation area (2, 6, 25, 26). 5 A Extravasation Mitomycin C, mitoxantrone, anthracyclines (when dexrazoxane is unavailable): Use dimethyl sulfoxide. It is recommended to start local application within 10-25 min after extravasation. Apply 50-99% externally, once every 8 h for a total of 7 days (6).",
+          "src": "EN-10",
+          "cat": "处置"
+        },
+        {
           "k": "透明质酸酶注射",
           "v": "透明质酸酶5~250单位为最有效剂量,直接注入外渗部位;证据有限,不属常规治疗",
           "quote": "Dose of between 5–250 Units",
@@ -8842,6 +11766,20 @@ window.KG_GRAPH = {
           "quote": "儿童剂量 0.02 mg/kg（每次最大剂量 0.6 mg），必要时重复给药，总量不超过 2 mg",
           "src": "CG-09",
           "cat": "处理"
+        },
+        {
+          "k": "Atropine for vasovagal bradycardia (ACR Table 3)",
+          "v": "ACR Table 3, hypotension with bradycardia (pulse < 60 bpm) = vasovagal reaction. If mild, no other treatment usually necessary. If severe: in addition to those measures give atropine IV 0.6-1.0 mg into a running IV infusion of fluids, repeat up to 3 mg total, and consider calling the emergency response team or 911.",
+          "quote": "Hypotension with bradycardia (pulse < 60 bpm) (Vasovagal reaction) If mild No other treatment usually necessary If severe In addition to above measures: Atropine (IV) 0.6-1.0 mg; administer into a running IV infusion (patient remains symptomatic despite above measures) of fluids; can repeat up to 3 mg total Consider calling the emergency response team or 911 Hypotension with tachycardia (pulse > 100 bpm) (Anaphylactoid reaction) If hypotension persists Epinephrine (IV)* IV 1 mL of 0.1 mg/mL (1:10,000) dilution (0.1 mg); administer slowly into a running IV infusion of fluids; can repeat every few minutes as needed up to 10 mL (1 mg) total or Epinephrine (IM)* IM 0.3 mL of 1.0 mg/mL (1:1,000) dilution (0.3 mg); can repeat every 5-15 minutes up to 1 mL (1 mg) total or Epinephrine auto-injector (EpiPen® or equivalent) (0.3 mL of 1.0 mg/mL (1:1,000) dilution, fixed [0.3mg]); can repeat every 5-15 minutes up to three times Consider calling emergency response team or 911 based upon the severity of the reaction and the completeness of the response * Note: in hypotensive patients, the preferred route of epinephrine delivery is IV, as the extremities may not be perfused sufficiently to allow for adequate absorption of IM administered drug.",
+          "src": "R01",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "During examination monitoring rules",
+          "v": "Monitor the patient closely and judge for progression of the reaction; observe closely for mucosal edema of the nose, mouth, throat or larynx; in case of symptoms check heart rate, arterial blood pressure and consciousness; if marked bradycardia is present consider treatment of a vasovagal reaction (atropine); be aware that patients with impaired vision or hearing, neurological disease, psychiatric illness, cognitive disorders or CNS-active medications may have diminished awareness of hypersensitivity symptoms.",
+          "quote": "Be aware that a patient with impaired vision or hearing, neurological disease, psychiatric illness, cognitive disorders or under CNS-active medications might have diminished awareness of hypersensitivity symptoms.",
+          "src": "EN-03",
+          "cat": "超敏反应"
         },
         {
           "k": "低血压与阿托品",
@@ -8918,6 +11856,13 @@ window.KG_GRAPH = {
           "quote": "无需常规做碘过敏试验",
           "src": "CG-07",
           "cat": "检查前评估"
+        },
+        {
+          "k": "Immediate versus non-immediate timing",
+          "v": "Hypersensitivity reactions are temporally stratified into immediate and non-immediate subtypes. Immediate reactions typically occur within an hour following contrast administration, while non-immediate reactions occur hours to days after exposure. Intradermal skin testing has emerged as a tool to identify cross-reactive contrast media and guide alternative agent selection, though its predictive value remains debated, and premedication protocols also lack standardised guidelines particularly for high-risk populations.",
+          "quote": "Immediate reactions typically occur within an hour following ICM administration, while non-immediate reactions occur hours to days after ICM exposure.",
+          "src": "EN-15",
+          "cat": "超敏反应"
         },
         {
           "k": "碘过敏试验与试注不推荐",
@@ -9014,6 +11959,55 @@ window.KG_GRAPH = {
           "quote": "使用留置时间>24 h的静脉留置针注射含碘对比剂会增加静脉外渗的风险",
           "src": "R04",
           "cat": "检查前评估"
+        },
+        {
+          "k": "输注前预防证据四方面",
+          "v": "循证总结21条输注前静脉外渗预防证据，含血管评估与选择、静脉注射工具选择、穿刺方法改进、穿刺部位固定4个方面",
+          "quote": "总结了21条含碘非离子对比剂输注前静脉外渗预防的证据,包括血管评估和选择、静脉注射工具的选择、穿刺方法的改进以及穿刺部位的固定4个方面.",
+          "src": "CN-12",
+          "cat": "预防"
+        },
+        {
+          "k": "耐高压型留置针使用",
+          "v": "85.45%的放射科使用耐高压型静脉留置针，92.73%在静脉留置针穿刺后24 h内注射ICM",
+          "quote": "本研究结果显示，85.45%的放射科使用耐高压型静脉留置针，92.73%在静脉留置针穿刺后24 h内注射ICM",
+          "src": "CN-30",
+          "cat": "预防"
+        },
+        {
+          "k": "Angiocatheters and flush-confirmed insertion prevent extravasation",
+          "v": "Extravasation risk is minimised by using angiocatheters rather than butterfly needles, performing meticulous IV insertion technique (confirming IV location by aspirating blood and flushing the catheter with a test injection), and carefully securing the catheter. Strength of evidence: Limited 1.",
+          "quote": "Recommendation 1: Extravasation risk is minimized by 1) using angiocatheters over butterflies, 2) performing meticulous intravenous insertion technique (confirming intravenous location by aspirating blood through an inserted catheter and flushing the inserted catheter with a test injection), 3) and carefully securing an inserted catheter.",
+          "src": "R01",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Radiology nurse vascular access protocol",
+          "v": "Protocol at the study's radiology departments: all contrast media were externally heated to a target temperature of 37 degrees C to reduce viscosity before injection. For a high-pressure resistant central venous catheter (max tolerable pressure 300 psi), the radiology nurse drew blood back to confirm the catheter was in the vein and used 20 mL of normal saline to confirm patency before use. The nurse selected an 18G-22G high-pressure resistant peripheral short catheter (max tolerable pressure 350 psi) according to the proposed injection speed and the patient's vascular conditions.",
+          "quote": "CM injection Three hospitals used CM, including iodixanol, iohexol, ioversol, iomeprol, iopromide, iopamidol, etc., and before injection, all CM were externally heated to a target temperature of 37 °C to reduce viscosity. For enhanced-computed tomography, if the patient had a high-pressure resistant central venous catheter (the maximum tolerable pressure was 300 psi), the radiology nurse drew blood back to confirm that the catheter was in the vein and used 20 mL of normal saline to confirm its patency before use. Central venous catheters labeled with high-pressure resistant labels can be used for high-pressure injection of iodine containing contrast agents. In addition, the radiology nurse selected the 18G‒22G [17] high-pressure resistant peripheral short catheter (the maximum tolerable pressure was 350 psi) according to the proposed injection speed and the patient's vascular conditions. Before the intravenous injection of CM, the radiology nurse again conducted routine tests on all intravenous routes by manually injecting normal saline to determine whether the catheter was unobstructed and to confirm that the catheter was located in the vein.",
+          "src": "EN-05",
+          "cat": "对比剂安全"
+        },
+        {
+          "k": "Radiology nurse cannulation protocol",
+          "v": "Most patients had intravenous catheters placed by radiology nurses, all of whom had received systematic training and comprehensive competency assessment in intravenous puncture techniques. Catheters were preferentially placed in the antecubital fossa, then the forearm, rarely the upper arm, wrist, hand and foot. Based on vascular condition an 18-22G high pressure-resistant peripheral catheter (max pressure 350 psi) was used. After placement the radiology nurse assessed patency by aspirating for blood return and manually flushing with 5 mL of normal saline.",
+          "quote": "Based on the patient's vascular conditions, an 18‒22 G high pressure-resistant peripheral catheter (the maximum pressure allowed was 350 psi) was used. After successful catheter placement, the radiology nurse assessed patency by aspirating for blood return and manually flushing with 5 mL of normal saline. During CT scans, saline testing was routinely performed prior to CM administration for all CMs except Optiray® 320 (Ioversol injection, Guerbet, Shanghai, China).",
+          "src": "EN-09",
+          "cat": "对比剂安全"
+        },
+        {
+          "k": "Catheter gauge limits achievable flow rate",
+          "v": "Catheter gauge significantly limited the achieved flow rate, but 22G was sufficient for most routine non-CT-angiography scans (reported extravasation rate 0.3%, 3/1000; 98% success rate with an average of 1.2 attempts per patient). A separate series reported an overall extravasation rate of 0.12% (38/31,101), with risk significantly higher for ward staff cannulations (0.23%) versus radiology staff cannulations (0.09%); most extravasations occurred in the hand or wrist rather than the antecubital fossa.",
+          "quote": "Johnson P.T. et al., 2010 [27] Prospective observational study n = 1000 USA Peripheral IV catheters Range: 18 G to 24 G (Most common: 20 G-56%, 22 G-34%) Mean rates: 18 G (3.6 mL/s), 20 G (2.9 mL/s), 22 G (2.1 mL/s), 24 G (1.5 mL/s) Recorded during clinical CT protocols Success rate: 98%. Average of 1.2 attempts per patient. Extravasation rate: 0.3% (3/1000). Catheter gauge significantly limited the achieved flow rate, but 22 G was sufficient for most routine non-CTA scans. Goltz J.P. et al., 2011 [20] Retrospective study n = 141 Germany Conventional TIVAPs Forearm ports (various standard gauges for upper extremity) 1.5 mL/s Limit: 150 psi Technical success: 100%. No catheter ruptures, failures, or extravasations. Adequate diagnostic image quality achieved. No catheter tip migration observed. Kingston R.J. et al., 2012 [21] Prospective observational study n = 31,101 Australia Peripheral IV catheters Various (Standard hospital range: 18 G to 22 G) High-rate power injection (standard CT protocols) Recorded via automated power injectors Overall extravasation rate: 0.12% (38/31,101). Risk was significantly higher for ward staff cannulations (0.23%) compared to radiology staff cannulations (0.09%).",
+          "src": "EN-22",
+          "cat": "对比剂安全"
+        },
+        {
+          "k": "Power injection through ports needs verification",
+          "v": "Use of totally implantable venous access ports (TIVAPs) and central venous catheters for automated power injections requires strict implementation of rigorous verification protocols by the imaging team, because central-line extravasation can cause significant morbidity such as mediastinal extravasation, haematoma and cardiac arrhythmias. Manufacturer specifications, catheter type and flow-rate limits must be followed rather than assumed.",
+          "quote": "Standardization of Vascular Port and Central Venous Catheter Management -The use of totally implantable venous access ports (TIVAPs) and central venous catheters (CVCs) for automated power injections necessitates the strict implementation of rigorous verification protocols. The imaging team must:",
+          "src": "EN-22",
+          "cat": "对比剂安全"
         },
         {
           "k": "留置针与通路准备",
@@ -9162,6 +12156,41 @@ window.KG_GRAPH = {
           "cat": "检查前评估"
         },
         {
+          "k": "预推确认通路安全",
+          "v": "81.82%和61.82%的放射科分别通过抽回血和使用高压注射器以高压注射相同的速率预推确认静脉通路的安全性",
+          "quote": "81.82%和61.82%的放射科分别通过抽回血和使用高压注射器以高压注射相同的速率预推确认静脉通路的安全性",
+          "src": "CN-30",
+          "cat": "预防"
+        },
+        {
+          "k": "Angiocatheters and flush-confirmed insertion prevent extravasation",
+          "v": "Extravasation risk is minimised by using angiocatheters rather than butterfly needles, performing meticulous IV insertion technique (confirming IV location by aspirating blood and flushing the catheter with a test injection), and carefully securing the catheter. Strength of evidence: Limited 1.",
+          "quote": "Recommendation 1: Extravasation risk is minimized by 1) using angiocatheters over butterflies, 2) performing meticulous intravenous insertion technique (confirming intravenous location by aspirating blood through an inserted catheter and flushing the inserted catheter with a test injection), 3) and carefully securing an inserted catheter.",
+          "src": "R01",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Radiology nurse vascular access protocol",
+          "v": "Protocol at the study's radiology departments: all contrast media were externally heated to a target temperature of 37 degrees C to reduce viscosity before injection. For a high-pressure resistant central venous catheter (max tolerable pressure 300 psi), the radiology nurse drew blood back to confirm the catheter was in the vein and used 20 mL of normal saline to confirm patency before use. The nurse selected an 18G-22G high-pressure resistant peripheral short catheter (max tolerable pressure 350 psi) according to the proposed injection speed and the patient's vascular conditions.",
+          "quote": "CM injection Three hospitals used CM, including iodixanol, iohexol, ioversol, iomeprol, iopromide, iopamidol, etc., and before injection, all CM were externally heated to a target temperature of 37 °C to reduce viscosity. For enhanced-computed tomography, if the patient had a high-pressure resistant central venous catheter (the maximum tolerable pressure was 300 psi), the radiology nurse drew blood back to confirm that the catheter was in the vein and used 20 mL of normal saline to confirm its patency before use. Central venous catheters labeled with high-pressure resistant labels can be used for high-pressure injection of iodine containing contrast agents. In addition, the radiology nurse selected the 18G‒22G [17] high-pressure resistant peripheral short catheter (the maximum tolerable pressure was 350 psi) according to the proposed injection speed and the patient's vascular conditions. Before the intravenous injection of CM, the radiology nurse again conducted routine tests on all intravenous routes by manually injecting normal saline to determine whether the catheter was unobstructed and to confirm that the catheter was located in the vein.",
+          "src": "EN-05",
+          "cat": "对比剂安全"
+        },
+        {
+          "k": "Radiology nurse cannulation protocol",
+          "v": "Most patients had intravenous catheters placed by radiology nurses, all of whom had received systematic training and comprehensive competency assessment in intravenous puncture techniques. Catheters were preferentially placed in the antecubital fossa, then the forearm, rarely the upper arm, wrist, hand and foot. Based on vascular condition an 18-22G high pressure-resistant peripheral catheter (max pressure 350 psi) was used. After placement the radiology nurse assessed patency by aspirating for blood return and manually flushing with 5 mL of normal saline.",
+          "quote": "Based on the patient's vascular conditions, an 18‒22 G high pressure-resistant peripheral catheter (the maximum pressure allowed was 350 psi) was used. After successful catheter placement, the radiology nurse assessed patency by aspirating for blood return and manually flushing with 5 mL of normal saline. During CT scans, saline testing was routinely performed prior to CM administration for all CMs except Optiray® 320 (Ioversol injection, Guerbet, Shanghai, China).",
+          "src": "EN-09",
+          "cat": "对比剂安全"
+        },
+        {
+          "k": "Monitoring: pumps unreliable, blood return helps",
+          "v": "Electronic infusion pumps are not consistently effective at identifying extravasation, so their alarm mechanisms should not be relied on solely for early detection. Monitoring for blood return can aid early identification of extravasation and is advised as a standard evaluation practice. Leakage or extravasation is strongly associated with inadequate dressing fixation; maintaining a clean, dry, undamaged dressing is crucial and unnecessary or frequent replacement is not recommended.",
+          "quote": "Electronic infusion pumps are not consistently effective in identifying extravasation, and therefore, their alarm mechanisms should not be solely depended on for early detection (2, 21, 33).",
+          "src": "EN-10",
+          "cat": "识别分级"
+        },
+        {
           "k": "试水四步法与观察",
           "v": "连接时排气、护士手动试水、技师高压试水，做到一看二摸三感觉四询问；输注中观察局部与全身症状",
           "quote": "护士先手动试水，技师再高压试水。做到：“一看、二摸、三感觉、四询问”",
@@ -9270,6 +12299,20 @@ window.KG_GRAPH = {
           "cat": "特殊人群"
         },
         {
+          "k": "Outpatient discharge instructions after extravasation",
+          "v": "Outpatients should be released only after an initial observation period with improvement of signs/symptoms and no new symptoms. Give clear instructions to seek additional medical care for severe pain, progressive pain, numbness or tingling, diminished range of motion (active or passive), skin ulceration, or other neurologic or circulatory symptoms, because initial symptoms of a serious compartment syndrome may be absent or mild.",
+          "quote": "Since severe extravasation injuries can develop slowly (up to hours after an extravasation), all discharged outpatients should be given clear instructions concerning where and when to seek additional medical care (including for worsening pain, development of paresthesia, diminished range of motion, and new skin ulceration or blistering) [22].",
+          "src": "R01",
+          "cat": "患者宣教"
+        },
+        {
+          "k": "Post-administration observation with IV in place",
+          "v": "When contrast medium is administered, observe the patient for at least 30 minutes with the IV line in place, and be prepared and vigilant for a recurring immediate hypersensitivity reaction. Also give the patient written instructions for a possible repeat non-immediate hypersensitivity reaction. If a reaction recurs, referral to a drug allergy specialist is mandatory.",
+          "quote": "When the contrast medium is administered, observe the patient for at least 30 min with the IV line in place • Be prepared and vigilant for a recurring immediate hypersensitivity reaction • If an immediate hypersensitivity reaction recurs, referral to a drug allergy specialist is mandatory * See also Fig.",
+          "src": "EN-04",
+          "cat": "超敏反应"
+        },
+        {
           "k": "观察区休息 30 分钟",
           "v": "指导受检者在观察区休息 30 min；医护人员定时巡视观察区，询问有无不适，及时发现不良反应并处理",
           "quote": "指导受检者在观察区休息30 min，如有不适及时告知医护人员；医护人员定时巡视观察区，询问受检者有无不适，及时发现不良反应并处理。",
@@ -9343,6 +12386,20 @@ window.KG_GRAPH = {
       ],
       "details": [
         {
+          "k": "肿胀面积多时点改善",
+          "v": "分别记录用药前、用药后24h、48h、72h的肿胀面积和VAS评分；药后24 h、48 h、72 h三组的肿胀面积均显著降低(P＜0.05)，观察组在不同时点的肿胀面积低于50％硫酸镁组1和如意金黄散组2",
+          "quote": "分别记录用药前、用药后24h、48h、72h的肿胀面积和VAS评分并进行比较.结果:与治疗前比较,药后24 h、48 h、72 h三组的肿胀面积均显著降低(P＜0.05),观察组在不同时点的肿胀面积低于50％硫酸镁组1和如意金黄散组2(P＜0.05);",
+          "src": "CN-18",
+          "cat": "局部处理"
+        },
+        {
+          "k": "INS scale and CTCAE for grading severity",
+          "v": "When assessing extravasation, a comparison must be made between both limbs, with the unaffected side as reference for circumference and colour change. The degree of local skin damage should be evaluated objectively and standardly using the INS extravasation scale and the National Cancer Institute Common Terminology Criteria for Adverse Events (CTCAE).",
+          "quote": "The degree of local skin damage should be objectively and standardly evaluated using the INS extravasation scale and the Common Terminology Criteria for Adverse Events of the National Cancer Institute of the United States (2, 6, 37).",
+          "src": "EN-10",
+          "cat": "识别分级"
+        },
+        {
           "k": "软尺测量标记",
           "v": "外渗后立即停止输注,用软尺测量外渗部位,确认外渗边界并做好标记",
           "quote": "应使用软尺测量外渗部位，确认外渗边界并做好标记",
@@ -9398,6 +12455,41 @@ window.KG_GRAPH = {
         }
       ],
       "details": [
+        {
+          "k": "ICM温度与推注速度监测",
+          "v": "ICM温度会影响外渗发生率及严重程度，推荐在注射前综合评估患者状况及ICM温度、确认静脉通路的安全性、设定合理的推注时间及速度，并做好外渗监测",
+          "quote": "INS标准 [ 8 ] 及国内指南 [ 2 ] 指出，ICM温度会影响外渗发生率及严重程度，推荐在注射前综合评估患者状况及ICM温度、确认静脉通路的安全性、设定合理的推注时间及速度，并做好外渗监测。",
+          "src": "CN-30",
+          "cat": "预防"
+        },
+        {
+          "k": "Mild case monitoring and escalation",
+          "v": "Suggested protocol for mild extravasation: limb elevation, ice packs, and monitor the patient 2-4 hourly; if improving, discharge; if no improvement, a surgical opinion is required.",
+          "quote": "Mild cases: limb elevation, ice packs, monitor patient 2–4 hourly. If improving, then discharge. If no improvement, then requires surgical opinion",
+          "src": "EN-01",
+          "cat": "护理能力与记录"
+        },
+        {
+          "k": "Extravasation detection accessories (EDA)",
+          "v": "Extravasation Detection Accessories are sensors that detect extravasation and interrupt automated injection. In a multi-institution study (1,085 CMEX events across 454,497 CT exams in 58 practices) EDA use produced smaller extravasate volumes when extravasation occurred, but did not change incidence; 28 patients still had 50-99 ml and 4 had over 100 ml.",
+          "quote": "Many vendors have developed Extravasation Detection Accessories (EDA) which are sensors that allow detection and interruption of automated injection in the event of an extravasation. Dykes et al. demonstrated the use of EDA resulted in smaller volumes of CMEX when they occurred compared to when no EDA was utilised (1,085 CMEX events in 454,497 CT exams across 58 radiology practices) [23]. However, incidence of CMEX did not change and importantly some large volume extravasations still occurred with 28 patients suffering 50-99 ml of CMEX and 4 patients experiencing > 100 ml of extravasate (unlike studies by Powell et al. and Birnbaum et al.).",
+          "src": "EN-01",
+          "cat": "对比剂安全"
+        },
+        {
+          "k": "Monitoring: pumps unreliable, blood return helps",
+          "v": "Electronic infusion pumps are not consistently effective at identifying extravasation, so their alarm mechanisms should not be relied on solely for early detection. Monitoring for blood return can aid early identification of extravasation and is advised as a standard evaluation practice. Leakage or extravasation is strongly associated with inadequate dressing fixation; maintaining a clean, dry, undamaged dressing is crucial and unnecessary or frequent replacement is not recommended.",
+          "quote": "Electronic infusion pumps are not consistently effective in identifying extravasation, and therefore, their alarm mechanisms should not be solely depended on for early detection (2, 21, 33).",
+          "src": "EN-10",
+          "cat": "识别分级"
+        },
+        {
+          "k": "High injection pressure plus low muscle index",
+          "v": "Contrast extravasation risk in abdominal CTA was associated with both high injection pressure profiles and low CT-derived skeletal muscle index. Extravasation occurred in 380 patients (3.05%); patients with extravasation had lower L3 SMI, a higher prevalence of sarcopenia, higher peak pressures, and elevated injection pressure-to-rate ratios. The combined model achieved an AUC of 0.941 (95% CI 0.927-0.955), showing higher discrimination than the pressure-only model (AUC 0.926), body composition-only model (AUC 0.840), and clinical-only model (AUC 0.796).",
+          "quote": "Contrast extravasation risk in abdominal CTA was associated with both high injection pressure profiles and low CT-derived skeletal muscle index. The combined clinical-pressure-body composition model showed higher discrimination than single-domain models after correction of the ROC-labeling error. What are the implications of the main findings? Opportunistic body composition assessment may refine pre-injection risk stratification without additional scanning or radiation exposure. The results provide a basis for future nurse-led, model-informed vascular access planning, but prospective external validation is required before routine deployment. Abstract Purpose: Contrast media extravasation can complicate CT angiography (CTA), particularly when high-flow injection protocols are used. Current risk assessment relies mainly on clinical factors and injection pressure monitoring, whereas opportunistic CT-derived body composition has rarely been evaluated for this purpose. Methods: This single-center retrospective cohort study analyzed 12,460 consecutive adult patients who underwent contrast-enhanced abdominal CTA. The L3 skeletal muscle index (SMI) was extracted from routine CT images, and pressure metrics were obtained from power injector logs. Logistic-regression models incorporating clinical variables, pressure parameters, and body composition variables were evaluated and internally validated. Results: Extravasation occurred in 380 patients (3.05%). Patients with extravasation had lower L3 SMI, a higher prevalence of sarcopenia, higher peak pressures, and elevated injection pressure-to-rate ratios (IPIRs). In multivariable analysis, lower L3 SMI, sarcopenia, peak pressure, IPIR, age, catheter gauge, and injection site were associated with extravasation. The combined model achieved an AUC of 0.941 (95% CI 0.927-0.955), showing higher discrimination than the pressure-only model (AUC 0.926, 95% CI 0.910-0.942), body composition-only model (AUC 0.840, 95% CI 0.819-0.861), and clinical-only model (AUC 0.796, 95% CI 0.772-0.820). The bootstrap optimism-corrected AUC was 0.928.",
+          "src": "EN-21",
+          "cat": "风险因素"
+        },
         {
           "k": "识别三条路径",
           "v": "三条识别路径:直接观察患者与监控扫描、压力监测(注射器遇阻力可自动中止)、外渗探测附件传感器",
@@ -9473,6 +12565,90 @@ window.KG_GRAPH = {
           "quote": "将含碘对比剂静脉外渗发生率作为放射科护理质量敏感指标",
           "src": "R04",
           "cat": "质量管理"
+        },
+        {
+          "k": "护理质量管理五类抓手",
+          "v": "包括护理质量前馈控制、护理风险管理、构建外渗风险评估和管理体系、实现闭环管理信息化、监测护理敏感指标",
+          "quote": "护理质量管理在预防婴幼儿输液外渗方面的应用包括护理质量前馈控制、护理风险管理、构建外渗风险评估和管理体系、实现闭环管理信息化、监测护理敏感指标等.",
+          "src": "CN-15",
+          "cat": "记录上报"
+        },
+        {
+          "k": "出院后门诊继续治疗",
+          "v": "患者出院后继续在门诊接受伤口治疗；中西医结合护理干预59 d后，创面完全愈合，患者左手活动功能恢复正常",
+          "quote": "患者出院后继续在门诊接受伤口治疗。中西医结合护理干预59 d后，创面完全愈合，患者左手活动功能恢复正常。",
+          "src": "CN-19",
+          "cat": "居家护理"
+        },
+        {
+          "k": "管理制度与不良事件上报",
+          "v": "89.09%的放射科已制订ICM使用管理制度或规范，且放射科在ICM相关知识培训、不良事件上报等方面的管理较规范",
+          "quote": "本研究结果显示，89.09%的放射科已制订ICM使用管理制度或规范，与董方方等 [ 13 ] 关于静脉治疗质量管理的调查研究结果（88.61%）相近，且放射科在ICM相关知识培训、不良事件上报等方面的管理较规范。",
+          "src": "CN-30",
+          "cat": "记录上报"
+        },
+        {
+          "k": "信息系统记录外渗事件",
+          "v": "有50.91%的放射科建立了ICM使用信息系统，但仅有36.36%采用信息系统记录ICM外渗事件",
+          "quote": "本研究中，有50.91%的放射科建立了ICM使用信息系统，但仅有36.36%采用信息系统记录ICM外渗事件，说明放射科信息化建设及管理水平有待改善。",
+          "src": "CN-30",
+          "cat": "记录上报"
+        },
+        {
+          "k": "外渗后随访管理缺口",
+          "v": "仅43.64%的放射科设置了ICM外渗随访电话，说明放射科延续性护理服务有待改善",
+          "quote": "此外，本研究中，仅43.64%的放射科设置了ICM外渗随访电话，说明放射科延续性护理服务有待改善。",
+          "src": "CN-30",
+          "cat": "居家护理"
+        },
+        {
+          "k": "Documentation and incident reporting for extravasation",
+          "v": "Documentation: the extravasation must be recorded as a complication in the radiology report and in the local incident reporting system.",
+          "quote": "Record extravasation as a complication in radiology report and the local incident reporting system",
+          "src": "EN-01",
+          "cat": "护理能力与记录"
+        },
+        {
+          "k": "Document every extravasation event and treatment",
+          "v": "All extravasation events and their treatment should be documented in the medical record. In addition, the referring provider should be notified following any symptomatic extravasation. The ACR practice quality improvement project found no significant improvement in extravasation frequency even when risk factors were identified and mitigation attempted in advance.",
+          "quote": "All extravasation events and their treatment should be documented in the medical record. In addition, the referring provider should be notified following any symptomatic extravasation.",
+          "src": "R01",
+          "cat": "护理能力与记录"
+        },
+        {
+          "k": "Outpatient observation and follow-up pathway",
+          "v": "After contrast media extravasation, outpatients were observed in the radiology injection room for 2 hours. If the injection site showed no blistering or evident pain they could leave hospital with family and receive daily follow-up. If symptoms worsened or became uncontrollable after discharge, the hospital's intravenous treatment nurses and wound nurses intervened in a timely manner. Inpatients were observed on the ward and were not discharged within 24 hours of extravasation.",
+          "quote": "All symptoms resolved within 2 weeks Severe extravasation damage Serious adverse effects; cyanosis, tissue necrosis, or symptoms lasting more than 2 weeks, such as persistent pain and edema, difficulty in locomotion, and cases requiring surgery After the occurrence of CM extravasation, outpatients were observed in the injection room of the radiology department for 2 h. If the injection site did not show any signs of blistering or evident pain, they could leave the hospital accompanied by their family members and receive daily follow-up. If the symptoms worsen or become uncontrollable after leaving the hospital, the hospital's intravenous treatment nurses and wound nurses will intervene in a timely manner for treatment. Inpatients were observed in the original inpatient department and were not discharged within 24 h after extravasation.",
+          "src": "EN-05",
+          "cat": "护理能力与记录"
+        },
+        {
+          "k": "Nurse-first assessment and escalation pathway",
+          "v": "Hospital guideline at Ajou University Hospital: if potential extravasation is believed to have occurred during CT, the first assessment is made by a nurse who documents the event and alerts the ward or emergency room doctor to contact the plastic surgery (PS) department. The nurse then sends the patient back to the ward or emergency room; outpatients are sent to the PS outpatient department and the event is documented. The PS doctor examines the patient and chooses the treatment option.",
+          "quote": "Briefly, if potential CM extravasation is believed to have occurred during CT scanning, the first assessment is made by a nurse who documents the event and alerts the ward or the emergency room doctor to contact the PS department.",
+          "src": "EN-07",
+          "cat": "护理能力与记录"
+        },
+        {
+          "k": "Adverse event reporting system cut skin necrosis",
+          "v": "In 2011 the hospital initiated an adverse event reporting system requiring immediate consultation with the plastic surgery department after a suspected case of contrast media extravasation from CT scanning. Prior work reported that introducing hospital guidelines for early referral to a specialist service significantly increases the number of patients treated early and results in a major reduction in the incidence of skin necrosis and in surgical intervention needed.",
+          "quote": "In 2011, our hospital initiated an adverse event reporting system for consulting with the PS department immediately after a suspected case of CM extravasation from CT scanning.",
+          "src": "EN-07",
+          "cat": "护理能力与记录"
+        },
+        {
+          "k": "System-level safety and incident learning",
+          "v": "41 evidence-based recommendations were identified across four domains: preventive approaches, early detection and surveillance, intervention strategies, and system-level management and enhancement. Quality of evidence spans JBI levels 1 to 5, with most recommendations at level A (strong consensus). The framework encompasses risk evaluation, standardised cannulation procedures, continuous monitoring, prompt emergency protocols, and organisational learning through incident analysis and systemic refinement.",
+          "quote": "Yes 3.2.5Summary of evidence As presented in Table 7, a total of 41 key evidence-based recommendations were identified in this study, categorized into four domains: preventive approaches, early detection and surveillance, intervention strategies, and system-level management and enhancement. The quality of evidence spans JBI levels 1 to 5, with most recommendations classified as level A, indicating strong consensus.",
+          "src": "EN-10",
+          "cat": "护理能力与记录"
+        },
+        {
+          "k": "Transparent communication reduces medico-legal risk",
+          "v": "The authors conclude that a tiered strategy combining preventive measures, vigilant clinical and imaging monitoring, proactive escalation of treatment and transparent communication offers the best approach to minimise extravasation complications, accelerate recovery and reduce the risk of medico-legal conflicts.",
+          "quote": "Thus, a tiered strategy that combines preventive measures, vigilant clinical and imaging monitoring, proactive escalation of treatment, and transparent communication offers the best approach to minimize CME complications, accelerate recovery, and reduce the risk of medico-legal conflicts.",
+          "src": "EN-17",
+          "cat": "护理能力与记录"
         },
         {
           "k": "召唤责任医护评估",
@@ -9564,6 +12740,34 @@ window.KG_GRAPH = {
           "quote": "switching to a chemically different contrast agent is the single best protective measure",
           "src": "R14",
           "cat": "预防"
+        },
+        {
+          "k": "Pre-examination preparation and scheduling",
+          "v": "Before the examination: know the risks and potential reactions and participate regularly in continuing medical education; know the patient and evaluate risk/benefit, considering imaging alternatives; identify the specific agent that elicited a previous reaction and choose an alternative contrast agent if injection is mandatory; schedule the patient during daytime hours when most personnel are present, preferably in a hospital-based CT or MRI facility; keep a venous access in place if there is increased risk of an adverse reaction.",
+          "quote": "Schedule the patient during daytime hours, when most personnel are present, preferably in a hospital-based CT or MRI facility.",
+          "src": "EN-03",
+          "cat": "对比剂安全"
+        },
+        {
+          "k": "Contrast agent change beats steroid premedication",
+          "v": "A large retrospective study showed patients who received a different iodinated contrast medium had a significantly lower rate of recurrent hypersensitivity reaction (10 of 322 examinations, 3%) than those who received the same medium with corticosteroid premedication (80 of 423 examinations, 19%); odds ratio 0.14 (95% CI 0.06-0.33), p < 0.001. Two American Allergology Societies concluded evidence was lacking to support corticosteroid premedication; steroids can transiently elevate blood glucose and are associated with prolonged hospital stays, increased costs and worse outcomes.",
+          "quote": "This is supported by a large retrospective study showing that patients who received a different ICM had a significantly lower rate of recurrent HR compared to those who received the same ICM with corticosteroid premedication (same ICM and steroid premedication: 80 of 423 examinations (19%); different ICM and no steroid premedication: 10 of 322 examinations (3%); odds ratio (OR), 0.14 [95% confidence interval (CI): 0.06, 0.33]; p < 0.001) [59].",
+          "src": "EN-04",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Severe delayed reaction forbids the whole class",
+          "v": "For a history of severe non-immediate hypersensitivity reaction with danger signs (SCAR): refer the patient immediately to a drug allergy specialist, choose an alternative imaging modality, and optimise allergy registration in the electronic health record. Do not give the group of contrast media to which the severe skin reaction occurred, and avoid all iodine-based contrast media after a severe non-immediate reaction to an iodine-based contrast medium.",
+          "quote": "Avoid all iodine-based contrast media after a severe non-immediate hypersensitivity reaction to an iodine-based contrast medium • Avoid all gadolinium-based contrast agents after a severe non-immediate hypersensitivity reaction to a gadolinium-based contrast agent • Individualize the approach following multidisciplinary consultation after a severe reaction to an unknown CM See also Fig.",
+          "src": "EN-04",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Emergency equipment and protocol variability audited",
+          "v": "Protocols for managing hypersensitivity reactions vary significantly across institutions due to differences in local practices, resources and guideline adherence. A survey of Korean referral hospitals highlighted disparities: while most appropriately performed informed consent and risk factor evaluation, there was notable variability in assessing renal function and using emergency equipment. Only 38.6% of Korean hospitals had a bronchodilator, compared to 100% of hospitals abroad. 62.3% of Korean hospitals premedicated patients with a history of HSR using antihistamines and corticosteroids, and 52.8% changed the culprit contrast medium.",
+          "quote": "For example, only 38.6% of Korean hospitals had a bronchodilator, compared to 100% of hospitals abroad. Moreover, 62.3% of Korean hospitals pre-medicated patients with a history of HSRs to ICM using antihistamines and corticosteroids, and 52.8% changed the culprit ICM (86).",
+          "src": "EN-15",
+          "cat": "对比剂安全"
         }
       ]
     },
@@ -9593,6 +12797,27 @@ window.KG_GRAPH = {
         }
       ],
       "details": [
+        {
+          "k": "48 h结局指标比较",
+          "v": "比较两组48 h后静脉炎发生率、外渗者患肢恢复时间、护理满意率",
+          "quote": "比较两组48 h后静脉炎发生率、外渗者患肢恢复时间、护理满意率.",
+          "src": "CN-17",
+          "cat": "局部处理"
+        },
+        {
+          "k": "四项疗效指标",
+          "v": "比较肿胀消退指数、疼痛缓解时间、静脉炎治疗效果与患者满意度，干预组各项均优于对照组且差异有统计学意义",
+          "quote": "对比患者的肿胀消退指数、疼痛缓解时间、静脉炎治疗效果和患者满意度.结果 肿胀消退指数、静脉炎治疗效果、疼痛缓解时间、患者满意度均优于对照组,并且差异具有统计学意义.",
+          "src": "CN-22",
+          "cat": "局部处理"
+        },
+        {
+          "k": "并发症与拔管率下降",
+          "v": "观察组拔管总发生率低于对照组(P<0.05)，导管滑脱、静脉炎、导管回缩、穿刺点感染发生率亦低于对照组(P<0.05)",
+          "quote": "结果:观察组拔管总发生率低于对照组(P<0.05),导管滑脱、静脉炎、导管回缩、穿刺点感染并发症发生率低于对照组(P<0.05);",
+          "src": "CN-23",
+          "cat": "通路维护"
+        },
         {
           "k": "静脉炎处置与记录",
           "v": "发生静脉炎应拔除PVC、可暂时保留PICC,及时通知医师给予对症处理;抬高患肢避免受压,观察局部及全身情况并记录",
@@ -9703,6 +12928,34 @@ window.KG_GRAPH = {
           "quote": "轻度 a 1级 观察",
           "src": "CG-01",
           "cat": "分型"
+        },
+        {
+          "k": "高发时段与严重度",
+          "v": "98.75%的病人表现为轻度急性不良反应；82.50%的急性不良反应发生在碘对比剂开始注射后的前5 min",
+          "quote": "98.75％的病人表现为轻度急性不良反应,82.50％的急性不良反应发生在碘对比剂开始注射后的前5 min.",
+          "src": "CN-27",
+          "cat": "过敏护理"
+        },
+        {
+          "k": "ACR three-grade reaction definition",
+          "v": "Per the ACR Manual on Contrast Media, adverse drug reactions to iodinated contrast are divided into three grades: mild (signs and symptoms are self-limited without evidence of progression), moderate (signs and symptoms are more pronounced and commonly require medical management), and severe (signs and symptoms are often life-threatening and can result in permanent morbidity or death if not managed appropriately). Some mild and moderate reactions can become severe if not treated.",
+          "quote": "\"mild\" (signs and symptoms are self-limited without evidence of progression), \"moderate\" (signs and symptoms are more pronounced and commonly require medical management), and \"severe\" (signs and symptoms are often life-threatening and can result in permanent morbidity or death if not managed appropriately)",
+          "src": "EN-11",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Breakthrough reaction counts and severity",
+          "v": "445 breakthrough-reaction patients (91.5% from Seoul) with 691 breakthrough reactions (94.5% from Seoul). Most reactions were mild, 11% moderate and 3.9% severe. Fatal reactions or deaths did not occur.",
+          "quote": "We identified 445 BTR-patients (91.5% from Seoul) with 691 BTRs (94.5% from Seoul). Most reactions were mild, 11% moderate and 3.9% severe. In Seoul, we found patients with up to 10 BTRs, and in Bern, there were only patients with one BTR. Fatal reactions or deaths did not occur.",
+          "src": "EN-19",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "BTR severity mirrors index reaction severity",
+          "v": "In most cases the severity of the breakthrough reaction and of the index reaction were identical (80.8%). Mild index reactions remained constant in 90.6%. In severe index reactions, 55.6% of breakthrough reactions were severe again and 44.4% had decreased severity. In 158 breakthrough reactions (22.9%) the culprit contrast medium of the index reaction induced the breakthrough; in the other 482 (69.8%) the culprit agent was changed to another non-culprit agent.",
+          "quote": "In most cases, the severity of the BTRs and of the index reactions were identical (80.8%). Mild index reactions remained constant in 90.6%. In contrast, in moderate index reactions the severity decreased/remained identically in 86.8% and increased in 13.2%. In severe index reactions, 55.6% of BTR reactions were severe again, in 44.4% the severity decreased. In 158 BTRs (22.9%) the culprit iodinated contrast medium (ICM) of the index reaction induced the BTR. In the other 482 BTRs (69.8%) the culprit ICM was changed to another non-culprit ICM.",
+          "src": "EN-19",
+          "cat": "超敏反应"
         }
       ]
     },
@@ -9765,6 +13018,13 @@ window.KG_GRAPH = {
           "quote": "中度 b 2级 支气管扩张剂",
           "src": "CG-01",
           "cat": "分型"
+        },
+        {
+          "k": "ACR three-grade reaction definition",
+          "v": "Per the ACR Manual on Contrast Media, adverse drug reactions to iodinated contrast are divided into three grades: mild (signs and symptoms are self-limited without evidence of progression), moderate (signs and symptoms are more pronounced and commonly require medical management), and severe (signs and symptoms are often life-threatening and can result in permanent morbidity or death if not managed appropriately). Some mild and moderate reactions can become severe if not treated.",
+          "quote": "\"mild\" (signs and symptoms are self-limited without evidence of progression), \"moderate\" (signs and symptoms are more pronounced and commonly require medical management), and \"severe\" (signs and symptoms are often life-threatening and can result in permanent morbidity or death if not managed appropriately)",
+          "src": "EN-11",
+          "cat": "超敏反应"
         }
       ]
     },
@@ -9834,6 +13094,27 @@ window.KG_GRAPH = {
           "quote": "重度 c 4级 心肺复苏、肾上腺素、启动急救流程",
           "src": "CG-01",
           "cat": "分型"
+        },
+        {
+          "k": "ACR three-grade reaction definition",
+          "v": "Per the ACR Manual on Contrast Media, adverse drug reactions to iodinated contrast are divided into three grades: mild (signs and symptoms are self-limited without evidence of progression), moderate (signs and symptoms are more pronounced and commonly require medical management), and severe (signs and symptoms are often life-threatening and can result in permanent morbidity or death if not managed appropriately). Some mild and moderate reactions can become severe if not treated.",
+          "quote": "\"mild\" (signs and symptoms are self-limited without evidence of progression), \"moderate\" (signs and symptoms are more pronounced and commonly require medical management), and \"severe\" (signs and symptoms are often life-threatening and can result in permanent morbidity or death if not managed appropriately)",
+          "src": "EN-11",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Breakthrough reaction counts and severity",
+          "v": "445 breakthrough-reaction patients (91.5% from Seoul) with 691 breakthrough reactions (94.5% from Seoul). Most reactions were mild, 11% moderate and 3.9% severe. Fatal reactions or deaths did not occur.",
+          "quote": "We identified 445 BTR-patients (91.5% from Seoul) with 691 BTRs (94.5% from Seoul). Most reactions were mild, 11% moderate and 3.9% severe. In Seoul, we found patients with up to 10 BTRs, and in Bern, there were only patients with one BTR. Fatal reactions or deaths did not occur.",
+          "src": "EN-19",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "BTR severity mirrors index reaction severity",
+          "v": "In most cases the severity of the breakthrough reaction and of the index reaction were identical (80.8%). Mild index reactions remained constant in 90.6%. In severe index reactions, 55.6% of breakthrough reactions were severe again and 44.4% had decreased severity. In 158 breakthrough reactions (22.9%) the culprit contrast medium of the index reaction induced the breakthrough; in the other 482 (69.8%) the culprit agent was changed to another non-culprit agent.",
+          "quote": "In most cases, the severity of the BTRs and of the index reactions were identical (80.8%). Mild index reactions remained constant in 90.6%. In contrast, in moderate index reactions the severity decreased/remained identically in 86.8% and increased in 13.2%. In severe index reactions, 55.6% of BTR reactions were severe again, in 44.4% the severity decreased. In 158 BTRs (22.9%) the culprit iodinated contrast medium (ICM) of the index reaction induced the BTR. In the other 482 BTRs (69.8%) the culprit ICM was changed to another non-culprit ICM.",
+          "src": "EN-19",
+          "cat": "超敏反应"
         }
       ]
     },
@@ -10227,6 +13508,13 @@ window.KG_GRAPH = {
           "cat": "处理"
         },
         {
+          "k": "ACR Table 3 bronchospasm doses",
+          "v": "ACR Table 3, bronchospasm: all forms - preserve IV access, monitor vitals, pulse oximeter, O2 by mask 6-10 L/min. Mild: beta agonist inhaler 2 puffs (90 mcg/puff) = 180 mcg, up to 3 times. Moderate: same beta agonist plus consider epinephrine IM 0.3 mL of 1.0 mg/mL (1:1,000) = 0.3 mg, repeat every 5-15 minutes up to 1 mL (1 mg) total.",
+          "quote": "BRONCHOSPASM Treatment Dosing All forms Preserve IV access Monitor vitals Pulse oximeter O2 by mask 6-10 L/min Mild Beta agonist inhaler (Albuterol®) 2 puffs (90 mcg/puff) for a total of 180 mcg; can repeat up to 3 times Consider sending patient to the Emergency Department or calling emergency response team or 911, based upon the completeness of the response to the beta agonist inhaler Moderate Beta agonist inhaler (Albuterol®) 2 puffs (90 mcg/puff) for a total of 180 mcg; can repeat up to 3 times Consider adding epinephrine (IM)* IM 0.3 mL of 1.0 mg/mL (1:1,000) dilution (0.3 mg); can repeat every 5-15 minutes up to 1 mL (1 mg) total or Epinephrine auto-injector (EpiPen® or equivalent) (0.3 mL of 1.0 mg/mL (1:1,000) dilution, fixed [0.3mg]); can repeat every 5-15 minutes up to three times or Epinephrine (IV)* IV 1 mL of 0.1 mg/mL(1:10,000) dilution (0.1 mg); administer slowly into a running IV infusion of fluids or use saline flush; can repeat every few minutes as needed up to 10 mL (1 mg) total Consider calling emergency response team or 911 based upon the completeness of the response Severe Epinephrine (IV)* IV 1 mL of 0.1 mg/mL (1:10,000) dilution (0.1 mg); administer slowly into a running IV infusion of fluids or slow IV push followed by a slow saline flush; can repeat every few minutes as needed up to 10 mL (1 mg) total or Epinephrine (IM)* IM 0.3 mL of 1:1,000 dilution (0.3 mg); can repeat every 5-15 minutes up to 1 mL (1 mg) total or Epinephrine auto-injector (EpiPen® or equivalent) (0.3 mL of 1.0 mg/mL(1:1,000) dilution, Fixed [0.3mg]); can repeat every 5-15 minutes up to three times AND 2 puffs (90 mcg/puff) for a total of 180 mcg; can repeat up to 3 Beta agonist inhaler (Albuterol®) (may work times synergistically) Call emergency response team or 911 * Note: in hypotensive patients, the preferred route of epinephrine delivery is IV, as the extremities may not be perfused sufficiently to allow for adequate absorption of IM administered drug.",
+          "src": "R01",
+          "cat": "超敏反应"
+        },
+        {
           "k": "支痉挛与喉头水肿",
           "v": "面罩吸氧6–10 L/min并吸入β2激动剂2–3次；喉头水肿肌注肾上腺素成人0.5 ml(0.5 mg)",
           "quote": "氧气面罩吸氧(6～10 L/min)，定量吸入β2受体激动剂气雾剂",
@@ -10326,6 +13614,62 @@ window.KG_GRAPH = {
         }
       ],
       "details": [
+        {
+          "k": "外渗致淤紫与水疱",
+          "v": "在输注10%葡萄糖酸钙注射液50 ml、50%葡萄糖注射液50 ml+中性胰岛素4 U时出现药液外渗，左手背穿刺口周围出现8.0 cm × 4.5 cm淤紫及大小不等水疱，触及皮肤温度高",
+          "quote": "在输注10%葡萄糖酸钙注射液50 ml、50%葡萄糖注射液50 ml+中性胰岛素4 U时，出现药液外渗，左手背穿刺口周围出现8.0 cm × 4.5 cm淤紫及大小不等水疱，触及皮肤温度高。",
+          "src": "CN-19",
+          "cat": "并发症"
+        },
+        {
+          "k": "外渗发展为慢性难愈性创面",
+          "v": "患者左手背伤口发展为CRW，经多学科团队讨论，拟订后续治疗护理方案",
+          "quote": "患者左手背伤口发展为CRW，经多学科团队讨论，拟订后续治疗护理方案。",
+          "src": "CN-19",
+          "cat": "并发症"
+        },
+        {
+          "k": "出院后门诊继续治疗",
+          "v": "患者出院后继续在门诊接受伤口治疗；中西医结合护理干预59 d后，创面完全愈合，患者左手活动功能恢复正常",
+          "quote": "患者出院后继续在门诊接受伤口治疗。中西医结合护理干预59 d后，创面完全愈合，患者左手活动功能恢复正常。",
+          "src": "CN-19",
+          "cat": "居家护理"
+        },
+        {
+          "k": "急性期封闭与水疱处理",
+          "v": "立即停输液、回抽残余药液、拔针；2%利多卡因2 ml+地塞米松5 mg+生理盐水5 ml局部环形封闭，抽吸水疱渗液，淤紫处外涂多磺酸粘多糖乳膏，抬高患肢高于心脏水平并避免局部受压",
+          "quote": "立即停止输液，回抽残余药液后拔除留置针，予2%利多卡因2 ml+地塞米松5 mg+生理盐水5 ml局部环形封闭，同时抽吸水疱内渗液，淤紫处外涂多磺酸粘多糖乳膏，抬高患肢，高于心脏水平，避免局部受压。",
+          "src": "CN-19",
+          "cat": "局部处理"
+        },
+        {
+          "k": "湿性愈合敷料与换药频次",
+          "v": "肌腱暴露处涂抹水凝胶以防止其坏死，伤口床选择生长因子进行涂抹，选择银离子藻酸盐敷料抗感染，水胶体或泡沫敷料对创面进行覆盖；换药频率为1~2次/周，共计换药8次",
+          "quote": "肌腱暴露处涂抹水凝胶以防止其坏死，伤口床选择生长因子进行涂抹，使其保持湿性愈合环境，促进新生肉芽组织生长，根据伤口渗液情况，选择银离子藻酸盐敷料抗感染，水胶体或泡沫敷料对创面进行覆盖，吸收渗液。伤口造口专科护士根据患者伤口渗液情况，换药频率为1~2次/周，共计换药8次。",
+          "src": "CN-19",
+          "cat": "局部处理"
+        },
+        {
+          "k": "Serous complications of extravasation",
+          "v": "Contrast media extravasation is rarely serious but can include compartment syndrome, severe skin ulceration and tissue necrosis. Less serious consequences include exposure to ionizing radiation without the benefit of diagnostic images, swelling, tightness, stinging, burning pain, edema, erythema or tenderness at the injection site.",
+          "quote": "Contrast medium extravasation is another well-recognized event, which is rarely serious but can include serious complications like compartment syndrome, severe skin ulceration, and tissue necrosis.",
+          "src": "EN-06",
+          "cat": "对比剂安全"
+        },
+        {
+          "k": "Osmolality drives tissue injury cascade",
+          "v": "Cellular osmolality is between 280 and 295 mOsm/kg H2O. Despite modern lower-osmolality solutions, all iodinated contrast media remain of higher osmolality, causing edema in the interstitial space and intracellular dehydration. In severe cases this causes release of inflammatory mediators and even cell death causing de-epithelialization; once the vicious circle of capillary ischemia and edema is initiated, compartment syndrome can result.",
+          "quote": "Cellular osmolality is between 280 and 295 mOsm/kg H2O.",
+          "src": "EN-08",
+          "cat": "识别分级"
+        },
+        {
+          "k": "Surgical technique: irrigation and debridement",
+          "v": "A general surgery consultation was obtained; the lesion was manually compressed to evacuate approximately 30 mL of purulent fluid, then immediately irrigated with 250 mL of normal saline to remove residual contrast and necrotic debris. Sharp debridement was then performed to excise the necrotic skin. Regular dressing changes followed.",
+          "quote": "The lesion was then manually compressed to evacuate approximately 30 mL of purulent fluid, followed immediately by irrigation with 250 mL of normal saline to remove residual contrast and necrotic debris.",
+          "src": "EN-17",
+          "cat": "处置"
+        },
         {
           "k": "破溃水疱走另一条路",
           "v": "出现感觉异常、皮肤溃疡、肢体循环障碍或水疱 ⇒ 立即通知医生并组织骨科/手外科会诊；疑骨筋膜室综合征严禁抬高患肢",
@@ -10521,6 +13865,104 @@ window.KG_GRAPH = {
       ],
       "details": [
         {
+          "k": "常用局部外用药物",
+          "v": "乙醇、硫酸镁、地塞米松、利多卡因、中药等，可单用或多种药物联合使用",
+          "quote": "常用外用药物包括乙醇、硫酸镁、地塞米松、利多卡因、中药等药物,单用或多种药物联合使用.",
+          "src": "CN-16",
+          "cat": "局部处理"
+        },
+        {
+          "k": "中重度静脉外渗分组",
+          "v": "纳入2019年10月～2022年4月CT增强扫描发生中重度静脉外渗102例，随机分为三组各34例",
+          "quote": "选取2019年10月～2022年4月就诊于我院造口伤口门诊,因CT增强扫描发生中重度静脉外渗的102例患者,随机分为三组,每组各34例.",
+          "src": "CN-18",
+          "cat": "分级"
+        },
+        {
+          "k": "改良痈疽油剂外敷频次",
+          "v": "观察组给予改良痈疽油剂外敷，每24 h更换",
+          "quote": "观察组三给予改良痈疽油剂外敷,每24 h更换.",
+          "src": "CN-18",
+          "cat": "中医"
+        },
+        {
+          "k": "肿胀面积多时点改善",
+          "v": "分别记录用药前、用药后24h、48h、72h的肿胀面积和VAS评分；药后24 h、48 h、72 h三组的肿胀面积均显著降低(P＜0.05)，观察组在不同时点的肿胀面积低于50％硫酸镁组1和如意金黄散组2",
+          "quote": "分别记录用药前、用药后24h、48h、72h的肿胀面积和VAS评分并进行比较.结果:与治疗前比较,药后24 h、48 h、72 h三组的肿胀面积均显著降低(P＜0.05),观察组在不同时点的肿胀面积低于50％硫酸镁组1和如意金黄散组2(P＜0.05);",
+          "src": "CN-18",
+          "cat": "局部处理"
+        },
+        {
+          "k": "疼痛评分改善",
+          "v": "用药后24 h、48 h、72 h三组VAS评分均显著降低(P＜0.05)，观察组各时点均低于50％硫酸镁组1和如意金黄散组2(P＜0.05)",
+          "quote": "与治疗前比较,用药后24 h、48 h、72 h三组VAS评分均显著降低(P＜0.05),且观察组在不同时点的VAS评分均低于50％硫酸镁组1和如意金黄散组2(P＜0.05).",
+          "src": "CN-18",
+          "cat": "中医"
+        },
+        {
+          "k": "铜砭刮痧操作参数",
+          "v": "选择在非换药期间操作，护士持铜砭与皮肤呈45°夹角；每个部位20~30次，每次2~3 cm；刮痧顺序为先阳后阴，先上后下，先左后右；每次刮痧时间不超过45 min，每2周1次，共计干预4次",
+          "quote": "选择在非换药期间操作，刮痧时先以刮痧油润滑皮肤，护士持铜砭与皮肤呈45°夹角。刮痧下板力度均匀，以患者能忍受为主，采用徐而和的手法按单一方向刮拭，每个部位20~30次，每次2~3 cm，频率稳定。刮痧顺序为先阳后阴，先上后下，先左后右，以刮透为宜。考虑患者年龄大、体弱，每次刮痧时间不超过45 min，每2周1次，共计干预4次。",
+          "src": "CN-19",
+          "cat": "中医"
+        },
+        {
+          "k": "火龙罐综合灸操作",
+          "v": "患者取仰卧位，暴露患肢，取适量蕲艾精油涂抹于相应皮肤，将艾柱插入罐体内点燃；沿患侧上肢的手阳明大肠经、手少阳三焦经、手太阳小肠经、手厥阴心包经等4条经络，先阳后阴，由上向下走罐，从肩关节旋刮至手指，避开创面处",
+          "quote": "患者取仰卧位，暴露患肢，取适量蕲艾精油涂抹于相应皮肤，采用玄石加紫砂混合烧制而成的小号火龙罐，罐口平面呈齿状、凹凸状，将艾柱插入罐体内点燃。护士采用松、拨等手法沿患侧上肢的手阳明大肠经、手少阳三焦经、手太阳小肠经、手厥阴心包经等4条经络，先阳后阴，由上向下走罐，从肩关节旋刮至手指，避开创面处",
+          "src": "CN-19",
+          "cat": "中医"
+        },
+        {
+          "k": "乌蔹莓外敷对照设计",
+          "v": "CTA后对比剂外渗60例随机分观察组与对照组各30例；对照组50％硫酸镁湿敷肿胀部位，观察组中药乌蔹莓外敷肿胀部位",
+          "quote": "选择行CT冠状动脉造影(CTA)后对比剂外渗的病人60例,随机分为观察组和对照组,每组30例.对照组给予50％硫酸镁湿敷肿胀部位,观察组给予中药乌蔹莓外敷肿胀部位,对两组病人的干预效果进行比较.",
+          "src": "CN-20",
+          "cat": "中医"
+        },
+        {
+          "k": "干预24 h疗效",
+          "v": "干预后24 h肿胀消退程度与疼痛评分优于对照组(P＜0.05)；总有效率观察组96.7％、对照组83.3％",
+          "quote": "干预后24 h观察组外渗部肿胀消退程度、疼痛评分与对照组比较差异有统计学意义(P＜0.05);观察组干预后总有效率为96.7％,对照组总有效率为83.3％,经比较差异无统计学意义(P＞0.05).",
+          "src": "CN-20",
+          "cat": "局部处理"
+        },
+        {
+          "k": "结论",
+          "v": "乌蔹莓外敷可有效缩短碘对比剂外渗肿胀时间、减轻疼痛，是更简便可靠的治疗方法",
+          "quote": "乌蔹莓外敷可有效缩短碘对比剂外渗肿胀时间,减轻疼痛,是治疗碘对比剂外渗更简便、可靠的治疗方法.",
+          "src": "CN-20",
+          "cat": "中医"
+        },
+        {
+          "k": "推拿手法操作",
+          "v": "患者取平卧位或坐位，护士用手托住肿胀肢体，用力将肿胀液向近心端推送",
+          "quote": "观察组方法:患者取平卧位或坐位,护士用手托住患者肿胀肢体,用力将肿胀液向近心端推送.",
+          "src": "CN-21",
+          "cat": "中医"
+        },
+        {
+          "k": "推拿适用人群",
+          "v": "轻度两种方法差异无统计学意义(P>0.05)；重度患者推拿在肢体疼痛感觉及水泡情况明显优于药物外敷",
+          "quote": "轻度患者两种治疗方法差异无统计学意义(P>0.05),重度患者使用推拿法肢体疼痛感觉以及水泡情况明显比药物外敷疗效好.",
+          "src": "CN-21",
+          "cat": "局部处理"
+        },
+        {
+          "k": "TDP联合中医适宜技术分组",
+          "v": "2023年1—12月影像中心90例碘对比剂静脉外渗随机分为对照组与干预组；对照组常规处理(冷敷)，干预组在其基础上加中医适宜技术联合TDP治疗仪",
+          "quote": "选取在2023年1月—12月江西省某三甲医院影像中心发生碘对比剂静脉外渗90例患者作为研究对象,采用随机数字表法将其分成对照组与干预组,每组各68例.对照组接受常规处理(冷敷),干预组在常规处理的基础上增加中医适宜技术联合TDP治疗仪治疗",
+          "src": "CN-22",
+          "cat": "中医"
+        },
+        {
+          "k": "四项疗效指标",
+          "v": "比较肿胀消退指数、疼痛缓解时间、静脉炎治疗效果与患者满意度，干预组各项均优于对照组且差异有统计学意义",
+          "quote": "对比患者的肿胀消退指数、疼痛缓解时间、静脉炎治疗效果和患者满意度.结果 肿胀消退指数、静脉炎治疗效果、疼痛缓解时间、患者满意度均优于对照组,并且差异具有统计学意义.",
+          "src": "CN-22",
+          "cat": "局部处理"
+        },
+        {
           "k": "干预形式四大类",
           "v": "中药外敷、涂抹、推拿手法、联合干预 4 大类别；纳入 23 篇中文文献、总样本量 1403 例",
           "quote": "干预形式可归纳为中药外敷、涂抹、推拿手法及联合干预4大类别",
@@ -10711,6 +14153,4070 @@ window.KG_GRAPH = {
           "quote": "对比剂外渗严重者，在外用药物基础上口服地塞米松5 mg/次，3次/d，连用3 d；必要时，咨询临床医师用药。",
           "src": "R07",
           "cat": "外渗早期识别"
+        }
+      ]
+    },
+    {
+      "id": "NPM_ContrastWarming",
+      "graph": "topic-01",
+      "type": "NonPharmacologicalManagement",
+      "name": "对比剂加温",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "对比剂加温"
+      ],
+      "summary": "对比剂输注前将药液加热至接近体温，以降低黏度、减少高压推注时的血管阻力与外渗风险；黏稠制剂获益更明确，是否常规加温各指南口径不一。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "队列研究",
+          "author": "Liu W, Wang P, Zhu H, Tang H, Guan H, Wang X, Wang C, Qiu Y, He L",
+          "title": "Contrast media extravasation injury: a prospective observational cohort study",
+          "journal": "European Journal of Medical Research",
+          "year": 2023,
+          "cite": "Liu W, Wang P, Zhu H, Tang H, Guan H, Wang X, Wang C, Qiu Y, He L / Contrast media extravasation injury: a prospective observational cohort study / European Journal of Medical Research / 2023",
+          "grade": "汇总证据",
+          "ref": "EN-05"
+        },
+        {
+          "type": "系统评价",
+          "author": "Heshmatzadeh Behzadi A, Farooq Z, Newhouse JH, Prince MR",
+          "title": "MRI and CT contrast media extravasation: A systematic review",
+          "journal": "Medicine (Baltimore)",
+          "year": 2018,
+          "cite": "Heshmatzadeh Behzadi A, Farooq Z, Newhouse JH, Prince MR / MRI and CT contrast media extravasation: A systematic review / Medicine (Baltimore) / 2018",
+          "grade": "汇总证据",
+          "ref": "EN-06"
+        },
+        {
+          "type": "调查",
+          "author": "宋圆圆, 王宇, 蒿若楠, 董方方, 黄霖霖, 杨巧芳, 贾晓辉, 白姗",
+          "title": "河南省含碘对比剂外渗管理现状及护士认知水平的调查研究",
+          "journal": "中华护理杂志",
+          "year": 2025,
+          "cite": "宋圆圆, 王宇, 蒿若楠, 董方方, 黄霖霖, 杨巧芳, 贾晓辉, 白姗 / 河南省含碘对比剂外渗管理现状及护士认知水平的调查研究 / 中华护理杂志 / 2025",
+          "grade": "汇总证据",
+          "ref": "CN-30"
+        }
+      ],
+      "details": [
+        {
+          "k": "ICM注射前预热",
+          "v": "在注射ICM前，83.64%的放射科对其进行预热",
+          "quote": "本研究结果显示，在注射ICM前，83.64%的放射科对其进行预热，80.00%以上的放射科评估患者的病情、过敏史、穿刺部位及血管条件等",
+          "src": "CN-30",
+          "cat": "预防"
+        },
+        {
+          "k": "ICM温度与推注速度监测",
+          "v": "ICM温度会影响外渗发生率及严重程度，推荐在注射前综合评估患者状况及ICM温度、确认静脉通路的安全性、设定合理的推注时间及速度，并做好外渗监测",
+          "quote": "INS标准 [ 8 ] 及国内指南 [ 2 ] 指出，ICM温度会影响外渗发生率及严重程度，推荐在注射前综合评估患者状况及ICM温度、确认静脉通路的安全性、设定合理的推注时间及速度，并做好外渗监测。",
+          "src": "CN-30",
+          "cat": "预防"
+        },
+        {
+          "k": "Radiology nurse vascular access protocol",
+          "v": "Protocol at the study's radiology departments: all contrast media were externally heated to a target temperature of 37 degrees C to reduce viscosity before injection. For a high-pressure resistant central venous catheter (max tolerable pressure 300 psi), the radiology nurse drew blood back to confirm the catheter was in the vein and used 20 mL of normal saline to confirm patency before use. The nurse selected an 18G-22G high-pressure resistant peripheral short catheter (max tolerable pressure 350 psi) according to the proposed injection speed and the patient's vascular conditions.",
+          "quote": "CM injection Three hospitals used CM, including iodixanol, iohexol, ioversol, iomeprol, iopromide, iopamidol, etc., and before injection, all CM were externally heated to a target temperature of 37 °C to reduce viscosity. For enhanced-computed tomography, if the patient had a high-pressure resistant central venous catheter (the maximum tolerable pressure was 300 psi), the radiology nurse drew blood back to confirm that the catheter was in the vein and used 20 mL of normal saline to confirm its patency before use. Central venous catheters labeled with high-pressure resistant labels can be used for high-pressure injection of iodine containing contrast agents. In addition, the radiology nurse selected the 18G‒22G [17] high-pressure resistant peripheral short catheter (the maximum tolerable pressure was 350 psi) according to the proposed injection speed and the patient's vascular conditions. Before the intravenous injection of CM, the radiology nurse again conducted routine tests on all intravenous routes by manually injecting normal saline to determine whether the catheter was unobstructed and to confirm that the catheter was located in the vein.",
+          "src": "EN-05",
+          "cat": "对比剂安全"
+        },
+        {
+          "k": "Failure to warm viscous contrast increases risk",
+          "v": "Factors associated with increased extravasation included older age, female gender, using an existing IV instead of placing a new one in radiology, in-patient status, use of automated power injection, high injection rates, catheter location, and failing to warm up the more viscous contrast media to body temperature. Injecting through an existing IV rather than a newly placed one is itself an independent risk factor.",
+          "quote": "Factors associated with increased contrast media extravasations included: older age, female gender, using an existing intravenous (IV) instead of placing a new IV in radiology, in-patient status, use of automated power injection, high injection rates, catheter location, and failing to warm up the more viscous contrast media to body temperature.",
+          "src": "EN-06",
+          "cat": "风险因素"
+        }
+      ]
+    },
+    {
+      "id": "NPM_PunctureSiteSelection",
+      "graph": "topic-01",
+      "type": "NonPharmacologicalManagement",
+      "name": "穿刺部位选择",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "穿刺部位选择"
+      ],
+      "summary": "按外渗风险选择静脉穿刺部位：优先前臂、其次肘窝等近心端粗大血管，避开手背、手腕、脚踝等细小外周静脉与关节屈曲处。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "EN-01"
+        },
+        {
+          "type": "最佳证据",
+          "author": "Liu H, Zeng Q, Zeng X, Lu X, Xiao B, Cheng Y, Liu Y, Yang C, Yang C",
+          "title": "Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation",
+          "journal": "Frontiers in Medicine",
+          "year": 2026,
+          "cite": "Liu H, Zeng Q, Zeng X, Lu X, Xiao B, Cheng Y, Liu Y, Yang C, Yang C / Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation / Frontiers in Medicine / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-10"
+        },
+        {
+          "type": "综述",
+          "author": "Romanczuk D, Lange S, Medrzycka-Dabrowska W, Cichowlas G",
+          "title": "Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography",
+          "journal": "Journal of Clinical Medicine",
+          "year": 2026,
+          "cite": "Romanczuk D, Lange S, Medrzycka-Dabrowska W, Cichowlas G / Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography / Journal of Clinical Medicine / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-22"
+        },
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "调查",
+          "author": "杨巧芳, 张灵芳, 张新, 白珊, 董方方",
+          "title": "不同穿刺部位静脉留置针渗出外渗的发生现状及结局差异分析",
+          "journal": "中华现代护理杂志",
+          "year": 2020,
+          "cite": "杨巧芳, 张灵芳, 张新, 白珊, 董方方 / 不同穿刺部位静脉留置针渗出外渗的发生现状及结局差异分析 / 中华现代护理杂志 / 2020",
+          "grade": "汇总证据",
+          "ref": "CN-13"
+        },
+        {
+          "type": "调查",
+          "author": "宋圆圆, 王宇, 蒿若楠, 董方方, 黄霖霖, 杨巧芳, 贾晓辉, 白姗",
+          "title": "河南省含碘对比剂外渗管理现状及护士认知水平的调查研究",
+          "journal": "中华护理杂志",
+          "year": 2025,
+          "cite": "宋圆圆, 王宇, 蒿若楠, 董方方, 黄霖霖, 杨巧芳, 贾晓辉, 白姗 / 河南省含碘对比剂外渗管理现状及护士认知水平的调查研究 / 中华护理杂志 / 2025",
+          "grade": "汇总证据",
+          "ref": "CN-30"
+        }
+      ],
+      "details": [
+        {
+          "k": "不同穿刺部位外渗率",
+          "v": "13284例留置针输液中532例发生渗出外渗(4.00%)；上臂静脉7.54%最高、头部静脉2.74%最低",
+          "quote": "13284例静脉留置针输液患者中,发生静脉渗出外渗532例,发生率4.00％;其中手背静脉、前臂静脉、上臂静脉、头部静脉及下肢静脉渗出外渗的发生率分别为3.92％、3.90％、7.54％、2.74％、4.69％.",
+          "src": "CN-13",
+          "cat": "预防"
+        },
+        {
+          "k": "部位与结局差异",
+          "v": "下肢静脉留置时间最短、渗出面积最大；手背静脉留置时间较长、渗出面积最小；各部位差异均有统计学意义(P＜0.05)",
+          "quote": "不同穿刺部位在渗出外渗发生例数、留置时间和渗出外渗面积方面比较差异均有统计学意义(P＜0.05),其中下肢静脉留置时间最短,渗出面积最大;手背静脉留置时间较长,渗出面积最小.",
+          "src": "CN-13",
+          "cat": "预防"
+        },
+        {
+          "k": "Cannula gauge and site drive extravasation risk",
+          "v": "Retrospective cohort data show extravasation rates are higher with 22G cannulas than with 20G or 18G, but no significant difference between 18G and 20G; no difference in extravasate volume between cannula sizes. Cannula location matters: higher rates when placed in a dorsum-of-hand vein than an antecubital fossa vein, although extravasate volume is larger from antecubital injections (higher flow rates, delayed recognition). Lower-limb and small distal veins are the least optimal sites.",
+          "quote": "Furthermore, retrospective cohort studies have shown that extravasation rates were higher with 22G compared to 20G and 18G cannulas, but no significant difference between 18 and 20G cannulas [33-35].",
+          "src": "EN-01",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Small-bore catheters and high-risk sites",
+          "v": "Extravasation is more common in patients injected through small-bore (22 gauge) catheters than larger-bore catheters (2.2% versus 1.0-1.1%). Hand, wrist, foot and ankle access sites are more likely to result in extravasation and should be avoided when possible. Flow rates of up to 3 mL/sec through 22G and 5 mL/sec through 20G catheters can be safely achieved in the vast majority of patients provided there is no increased resistance or pain during a rapid test injection.",
+          "quote": "In some studies, extravasations were more common in patients injected through small-bore (22 gauge) catheters compared to larger-bore catheters (2.2% versus 1.0-1.1%) [41]. While some reviews have found that injection at higher flow rates likely increases the risk of extravasation [48], in others, no such difference has been detected [41,75]. In fact, it has been shown that flow rates of up to 3 and 5 mL/sec can be safely achieved through 22 gauge and 20 gauge intravenous catheters, respectively, in the vast majority of patients, provided that there is n o increased resistance or pain during a rapid test injection [75].",
+          "src": "R01",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Existing IV versus new radiology-placed cannula",
+          "v": "IV cannulas inserted by non-radiology staff prior to arrival gave extravasation rates of 0.58% versus 0.33% for cannulas inserted by radiology staff immediately before scanning (P < .001). Contributing factors: cannulas placed more than 24 hours earlier or after multiple attempts; dislodgement during transport; and site preference (radiology preferred upper forearm, non-radiology staff preferred smaller more peripheral hand veins, which are more prone to extravasation).",
+          "quote": "These factors increase the likelihood of extravasation in elderly.[21,37,38] 3.4.Cannula insertion by radiology staff versus using an existing IV Three studies[28,31,34] reported on the rate of extravasation during CT scanning with IV cannula insertions performed by nonradiology staff (0.58%) prior to patient arrival in the radiology department as compared with IV catheter insertions performed by radiology staff immediately prior to scanning (0.33%) (P < .001) (Table 5). A number of factors might account for this difference: the IV cannulas inserted by nonradiology staff may have been in place for more than 24 h or inserted after multiple attempts, with no extravasation with drip infusions but leaks at the higher injection rates used for CT and MRI.[40-44] Catheters could be dislodged during transportation of the patient to the CT scanner from the patient floor.",
+          "src": "EN-06",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Radiology nurse cannulation protocol",
+          "v": "Most patients had intravenous catheters placed by radiology nurses, all of whom had received systematic training and comprehensive competency assessment in intravenous puncture techniques. Catheters were preferentially placed in the antecubital fossa, then the forearm, rarely the upper arm, wrist, hand and foot. Based on vascular condition an 18-22G high pressure-resistant peripheral catheter (max pressure 350 psi) was used. After placement the radiology nurse assessed patency by aspirating for blood return and manually flushing with 5 mL of normal saline.",
+          "quote": "Based on the patient's vascular conditions, an 18‒22 G high pressure-resistant peripheral catheter (the maximum pressure allowed was 350 psi) was used. After successful catheter placement, the radiology nurse assessed patency by aspirating for blood return and manually flushing with 5 mL of normal saline. During CT scans, saline testing was routinely performed prior to CM administration for all CMs except Optiray® 320 (Ioversol injection, Guerbet, Shanghai, China).",
+          "src": "EN-09",
+          "cat": "对比剂安全"
+        },
+        {
+          "k": "Avoid flexion sites, prefer proximal access",
+          "v": "Peripheral venous puncture sites can be flexibly adjusted according to clinical condition in adult surgery, but areas with joint flexion such as the wrist and elbow should be avoided. Choosing sites closer to the trunk (proximal positions) reduces the risk of extravasation. For high-risk IV medications (vesicants, vasoactive agents, insulin), smart infusion pumps with standardised drug libraries are recommended as a primary strategy to minimise errors and extravasation.",
+          "quote": "1 A General In adult surgical procedures, the selection of peripheral venous puncture sites can be flexibly adjusted according to specific clinical conditions, but areas with joint flexion, such as the wrist and elbow, should be avoided. Choosing sites closer to the trunk (proximal positions) can reduce the risk of extravasation (2, 22, 23, 26, 27, 33).",
+          "src": "EN-10",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Established clinical and technical predictors",
+          "v": "Existing studies have emphasized clinical and technical predictors, including age, sex, diabetes, prior chemotherapy, catheter gauge, injection site, and pressure-related variables. CTA requires the rapid intravenous injection of iodinated contrast media to achieve adequate vascular enhancement, typically at rates of 3-5 mL/s using automated power injectors.",
+          "quote": "The procedure requires the rapid intravenous injection of iodinated contrast media to achieve adequate vascular enhancement, typically at rates of 3-5 mL/s using automated power injectors [3,4]. Contrast media extravasation remains an important complication [5]. Although large mixed-protocol CT registries usually report low overall incidence, the risk may be higher in CTA cohorts because rapid high-flow injection places greater mechanical stress on peripheral venous access [6,7,8]. Existing studies have emphasized clinical and technical predictors, including age, sex, diabetes, prior chemotherapy, catheter gauge, injection site, and pressure-related variables [9,10].",
+          "src": "EN-21",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Ward nurses need power-injection cannulation training",
+          "v": "Because complication rates correlate with where vascular access was established (hospital ward versus radiology department), interdisciplinary training programmes are recommended. Ward nurses responsible for peripheral venous cannulation in patients referred for CT should undergo periodic training on the specific requirements of power injections: optimal insertion site selection - prioritising the forearm and, as a second choice, the antecubital fossa - and proper securing of the cannula to prevent dislodgement.",
+          "quote": "Ward nurses responsible for peripheral venous cannulation in patients referred for CT scans should undergo periodic training regarding the specific requirements of power injections.",
+          "src": "EN-22",
+          "cat": "护理能力与记录"
+        }
+      ]
+    },
+    {
+      "id": "NPM_CannulaSecurement",
+      "graph": "topic-01",
+      "type": "NonPharmacologicalManagement",
+      "name": "留置针固定与敷料维护",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "留置针固定与敷料维护"
+      ],
+      "summary": "留置针置入后的固定与敷料维护要求：固定牢靠以防转运及活动中脱出，保持敷料清洁干燥完整，避免不必要的频繁更换。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "最佳证据",
+          "author": "Liu H, Zeng Q, Zeng X, Lu X, Xiao B, Cheng Y, Liu Y, Yang C, Yang C",
+          "title": "Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation",
+          "journal": "Frontiers in Medicine",
+          "year": 2026,
+          "cite": "Liu H, Zeng Q, Zeng X, Lu X, Xiao B, Cheng Y, Liu Y, Yang C, Yang C / Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation / Frontiers in Medicine / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-10"
+        },
+        {
+          "type": "综述",
+          "author": "Romanczuk D, Lange S, Medrzycka-Dabrowska W, Cichowlas G",
+          "title": "Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography",
+          "journal": "Journal of Clinical Medicine",
+          "year": 2026,
+          "cite": "Romanczuk D, Lange S, Medrzycka-Dabrowska W, Cichowlas G / Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography / Journal of Clinical Medicine / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-22"
+        }
+      ],
+      "details": [
+        {
+          "k": "输注前预防证据四方面",
+          "v": "循证总结21条输注前静脉外渗预防证据，含血管评估与选择、静脉注射工具选择、穿刺方法改进、穿刺部位固定4个方面",
+          "quote": "总结了21条含碘非离子对比剂输注前静脉外渗预防的证据,包括血管评估和选择、静脉注射工具的选择、穿刺方法的改进以及穿刺部位的固定4个方面.",
+          "src": "CN-12",
+          "cat": "预防"
+        },
+        {
+          "k": "Angiocatheters and flush-confirmed insertion prevent extravasation",
+          "v": "Extravasation risk is minimised by using angiocatheters rather than butterfly needles, performing meticulous IV insertion technique (confirming IV location by aspirating blood and flushing the catheter with a test injection), and carefully securing the catheter. Strength of evidence: Limited 1.",
+          "quote": "Recommendation 1: Extravasation risk is minimized by 1) using angiocatheters over butterflies, 2) performing meticulous intravenous insertion technique (confirming intravenous location by aspirating blood through an inserted catheter and flushing the inserted catheter with a test injection), 3) and carefully securing an inserted catheter.",
+          "src": "R01",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Monitoring: pumps unreliable, blood return helps",
+          "v": "Electronic infusion pumps are not consistently effective at identifying extravasation, so their alarm mechanisms should not be relied on solely for early detection. Monitoring for blood return can aid early identification of extravasation and is advised as a standard evaluation practice. Leakage or extravasation is strongly associated with inadequate dressing fixation; maintaining a clean, dry, undamaged dressing is crucial and unnecessary or frequent replacement is not recommended.",
+          "quote": "Electronic infusion pumps are not consistently effective in identifying extravasation, and therefore, their alarm mechanisms should not be solely depended on for early detection (2, 21, 33).",
+          "src": "EN-10",
+          "cat": "识别分级"
+        },
+        {
+          "k": "Ward nurses need power-injection cannulation training",
+          "v": "Because complication rates correlate with where vascular access was established (hospital ward versus radiology department), interdisciplinary training programmes are recommended. Ward nurses responsible for peripheral venous cannulation in patients referred for CT should undergo periodic training on the specific requirements of power injections: optimal insertion site selection - prioritising the forearm and, as a second choice, the antecubital fossa - and proper securing of the cannula to prevent dislodgement.",
+          "quote": "Ward nurses responsible for peripheral venous cannulation in patients referred for CT scans should undergo periodic training regarding the specific requirements of power injections.",
+          "src": "EN-22",
+          "cat": "护理能力与记录"
+        }
+      ]
+    },
+    {
+      "id": "NPM_InjectionRateMatching",
+      "graph": "topic-01",
+      "type": "NonPharmacologicalManagement",
+      "name": "注射速度与通路匹配",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "注射速度与通路匹配"
+      ],
+      "summary": "依据留置针口径、静脉通路类型与患者血管条件设定合适的推注速率与压力上限，注射全程关注阻力与患者主诉，避免速度与通路不匹配。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "最佳证据",
+          "author": "史苏霞, 毛燕君, 程洁, 来小彬",
+          "title": "放射科碘对比剂外渗管理的证据总结",
+          "journal": "护理研究",
+          "year": 2020,
+          "cite": "史苏霞, 毛燕君, 程洁, 来小彬 / 放射科碘对比剂外渗管理的证据总结 / 护理研究 / 2020",
+          "grade": "汇总证据",
+          "ref": "CN-24"
+        },
+        {
+          "type": "调查",
+          "author": "宋圆圆, 王宇, 蒿若楠, 董方方, 黄霖霖, 杨巧芳, 贾晓辉, 白姗",
+          "title": "河南省含碘对比剂外渗管理现状及护士认知水平的调查研究",
+          "journal": "中华护理杂志",
+          "year": 2025,
+          "cite": "宋圆圆, 王宇, 蒿若楠, 董方方, 黄霖霖, 杨巧芳, 贾晓辉, 白姗 / 河南省含碘对比剂外渗管理现状及护士认知水平的调查研究 / 中华护理杂志 / 2025",
+          "grade": "汇总证据",
+          "ref": "CN-30"
+        },
+        {
+          "type": "队列研究",
+          "author": "Liu W, Wang P, Zhu H, Tang H, Guan H, Wang X, Wang C, Qiu Y, He L",
+          "title": "Contrast media extravasation injury: a prospective observational cohort study",
+          "journal": "European Journal of Medical Research",
+          "year": 2023,
+          "cite": "Liu W, Wang P, Zhu H, Tang H, Guan H, Wang X, Wang C, Qiu Y, He L / Contrast media extravasation injury: a prospective observational cohort study / European Journal of Medical Research / 2023",
+          "grade": "汇总证据",
+          "ref": "EN-05"
+        },
+        {
+          "type": "病例系列",
+          "author": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC",
+          "title": "Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions",
+          "journal": "International Wound Journal",
+          "year": 2017,
+          "cite": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC / Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions / International Wound Journal / 2017",
+          "grade": "汇总证据",
+          "ref": "EN-07"
+        },
+        {
+          "type": "综述",
+          "author": "Romanczuk D, Lange S, Medrzycka-Dabrowska W, Cichowlas G",
+          "title": "Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography",
+          "journal": "Journal of Clinical Medicine",
+          "year": 2026,
+          "cite": "Romanczuk D, Lange S, Medrzycka-Dabrowska W, Cichowlas G / Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography / Journal of Clinical Medicine / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-22"
+        }
+      ],
+      "details": [
+        {
+          "k": "注射前评估与流速控制",
+          "v": "最佳证据包括注射碘对比剂前做好静脉评估、注射时注意流速、注射后做好外渗观察",
+          "quote": "最佳证据包括注射碘对比剂前做好静脉评估,注射碘对比剂时注意流速,注射碘对比剂后做好对外渗的观察,发生外渗时根据外渗程度采取相应护理措施以降低危害.",
+          "src": "CN-24",
+          "cat": "预防"
+        },
+        {
+          "k": "注射速度须匹配通路类型型号",
+          "v": "仅54.55%的放射科在设定高压注射速度时考虑了静脉通路类型及型号",
+          "quote": "然而，本研究发现，仅54.55%的放射科在设定高压注射速度时考虑了静脉通路类型及型号。",
+          "src": "CN-30",
+          "cat": "预防"
+        },
+        {
+          "k": "ICM温度与推注速度监测",
+          "v": "ICM温度会影响外渗发生率及严重程度，推荐在注射前综合评估患者状况及ICM温度、确认静脉通路的安全性、设定合理的推注时间及速度，并做好外渗监测",
+          "quote": "INS标准 [ 8 ] 及国内指南 [ 2 ] 指出，ICM温度会影响外渗发生率及严重程度，推荐在注射前综合评估患者状况及ICM温度、确认静脉通路的安全性、设定合理的推注时间及速度，并做好外渗监测。",
+          "src": "CN-30",
+          "cat": "预防"
+        },
+        {
+          "k": "Incidence and inject parameters observed",
+          "v": "Results Over a 4‐year period, in our hospital, 80 cases of CM extravasation were reported from approximately 218 000 CT scans using an intravenous contrast agent, representing an incidence rate of 0·036%. The mean age of the 80 patients (52 women, 28 men) was 58 years at the time of diagnosis (range 2-94 years). The most common anatomical locations of extravasation were the forearm area (right: 28, left: 34), followed by the dorsum of the hand (right: 11, left: 5) and two other sites. The injected flow rates ranged from 0·6 to 5 ml/second. In all cases, a power CM injector was used. Mean volume of the extravasated agent was 44·5 ml (range 5-140 ml).",
+          "quote": "Results Over a 4‐year period, in our hospital, 80 cases of CM extravasation were reported from approximately 218 000 CT scans using an intravenous contrast agent, representing an incidence rate of 0·036%. The mean age of the 80 patients (52 women, 28 men) was 58 years at the time of diagnosis (range 2-94 years). Figure 2 shows the incidence of the CM extravasation by age. The most common anatomical locations of extravasation were the forearm area (right: 28, left: 34), followed by the dorsum of the hand (right: 11, left: 5) and two other sites. Five different brands of non‐ionic contrast agents were given in all the cases, Bonorex (Central Medical Service, Seoul, Korea), Omnihexol (Korea United Pharm, Seoul, Korea), Optiray (Reyon Phram, Seoul, Korea), Scanlux (Dasol Life Science, Seoul, Korea) and Iomeron (Bracco Imaging Korea, Seoul, Korea). The injected flow rates ranged from 0·6 to 5 ml/second. In all cases, a power CM injector was used. The mean gauge of needles for the power injector was 20·2 (range 18-24). Mean volume of the extravasated agent was 44·5 ml (range 5-140 ml). The mean flow rate of the power CM injector was 2·8 ml/second (range 0·6-5 ml/second).",
+          "src": "EN-07",
+          "cat": "处置"
+        }
+      ]
+    },
+    {
+      "id": "NPM_WarmCompress",
+      "graph": "topic-01",
+      "type": "NonPharmacologicalManagement",
+      "name": "局部热敷",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "局部热敷"
+      ],
+      "summary": "局部热敷在静脉外渗处理中的适用条件：一般仅在明确药物种类后与冷敷区分使用，不单独依赖热敷，须与抬高患肢等处置配合。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "EN-01"
+        },
+        {
+          "type": "最佳证据",
+          "author": "Liu H, Zeng Q, Zeng X, Lu X, Xiao B, Cheng Y, Liu Y, Yang C, Yang C",
+          "title": "Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation",
+          "journal": "Frontiers in Medicine",
+          "year": 2026,
+          "cite": "Liu H, Zeng Q, Zeng X, Lu X, Xiao B, Cheng Y, Liu Y, Yang C, Yang C / Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation / Frontiers in Medicine / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-10"
+        },
+        {
+          "type": "对照研究",
+          "author": "李小平, 杨媚月, 宋敏, 谢金婵, 蒲兴春",
+          "title": "应用改良痈疽油剂干预含碘对比剂中重度静脉外渗的临床疗效评价",
+          "journal": "中医外治杂志",
+          "year": 2023,
+          "cite": "李小平, 杨媚月, 宋敏, 谢金婵, 蒲兴春 / 应用改良痈疽油剂干预含碘对比剂中重度静脉外渗的临床疗效评价 / 中医外治杂志 / 2023",
+          "grade": "汇总证据",
+          "ref": "CN-18"
+        }
+      ],
+      "details": [
+        {
+          "k": "硫酸镁冷热敷参数",
+          "v": "对照组1用50％硫酸镁溶液湿敷，每小时更换；24 h内冷敷，24 h后改为热敷",
+          "quote": "对照组1采用50％硫酸镁溶液湿敷,每小时更换,24 h内冷敷,24 h后改为热敷;",
+          "src": "CN-18",
+          "cat": "局部处理"
+        },
+        {
+          "k": "Cold compress first; no warm-compress evidence",
+          "v": "Recommendation 2: cold compresses or ice packs should initially be applied to the extravasation site rather than warm compresses (strength of evidence Limited 1). There is no clear evidence favouring warm over cold compresses or vice versa; some surgeons empirically recommend initial cold compresses to promote vasoconstriction and diminish inflowing blood and swelling. No clear evidence supports aspirating contrast through the needle or angiocatheter, so aspiration is not recommended; multiple punctures with manual squeezing are also not recommended.",
+          "quote": "Strength of evidence: Limited 3 Reference # Original SQ Reassessed SQ Final SQ 22 4 - 4 24 4 - 4 Recommendation 2: Cold compresses or ice packs should initially be applied to the extravasation site (rather than warm compresses) Strength of evidence: Limited 1 Reference # Original SQ Reassessed SQ Final SQ 22 4 - 4 23 - 24 Inadequate - Inadequate 25 4 - 4 1 1 Recommendation 3: Routine use of hyaluronidase or corticosteroid injections or aspiration of the affected limb is not recommended.",
+          "src": "R01",
+          "cat": "处置"
+        },
+        {
+          "k": "Warm compress not alone; dressing duration",
+          "v": "For foaming agents and irritant drugs, cold and hot compress must be differentiated by drug category: cold compress for alkylating agents (cisplatin, cyclophosphamide), anthracyclines (doxorubicin) and antimetabolites (5-fluorouracil); hot compress for vincristine, etoposide, oxaliplatin and taxanes (paclitaxel, docetaxel, especially with hyaluronidase). Hot compress should only be considered when the specific drug is clearly identified, and is not recommended on its own. Dressings may be applied for more than 24 hours, for example 15-20 minutes per session, 3-4 times daily over 48-72 hours.",
+          "quote": "It is not recommended to use hot compress alone to handle extravasation.It is conditionally advised to apply the dressing for a duration exceeding 24 h (e.g., 15-20 min per session, 3-4 times daily, over a period of 48-72 h), as opposed to limiting the application to 24 h or less (2, 6, 26). 5 B Extravasation Drug-specific treatment (for foaming drug extravasation) Anthracycline drugs (such as doxorubicin, epirubicin) extravasation: It is strongly recommended to use dexrazoxane as an antidote.",
+          "src": "EN-10",
+          "cat": "处置"
+        }
+      ]
+    },
+    {
+      "id": "NPM_StabIncisionSqueezing",
+      "graph": "topic-01",
+      "type": "NonPharmacologicalManagement",
+      "name": "针刺切开挤压排液",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "针刺切开挤压排液"
+      ],
+      "summary": "外渗量大或局部张力高时，在明确的局限性肿胀区做针刺或小切口后手法挤压排出外渗液的适用前提与操作要领，属有创操作须先评估。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "EN-01"
+        },
+        {
+          "type": "病例系列",
+          "author": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC",
+          "title": "Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions",
+          "journal": "International Wound Journal",
+          "year": 2017,
+          "cite": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC / Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions / International Wound Journal / 2017",
+          "grade": "汇总证据",
+          "ref": "EN-07"
+        },
+        {
+          "type": "综述",
+          "author": "Thomas R, Vermaak L, Price G",
+          "title": "Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison",
+          "journal": "Eplasty",
+          "year": 2022,
+          "cite": "Thomas R, Vermaak L, Price G / Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison / Eplasty / 2022",
+          "grade": "汇总证据",
+          "ref": "EN-08"
+        }
+      ],
+      "details": [
+        {
+          "k": "Manual squeezing and stab incision technique",
+          "v": "Manual expression of extravasate after punctures or stab incisions (e.g. 5-10 stabs with an 18G needle). A series of 8 cases with vascular compromise after 50-80 ml extravasate healed satisfactorily; a 23-case series of extravasate over 50 ml also responded well after 1-week follow-up, with immediate temporary mild blistering.",
+          "quote": "Manual squeezing technique: manual expression of extravasate after various punctures/stab incisions (e.g. 5-10 stabs with 18G needle). Study by Tsai et al. of 8 cases who developed vascular compromise with 50 - 80 ml of non-ionic, low osmolarity extravasate demonstrated satisfactory healing using this method [66]. A similar study by Kim et al. with 23 cases (no control group) of extravasate > 50 ml also showed satisfactory response after 1 week follow-up although there was immediate temporary mild blistering [67].",
+          "src": "EN-01",
+          "cat": "处置"
+        },
+        {
+          "k": "Cold compress first; no warm-compress evidence",
+          "v": "Recommendation 2: cold compresses or ice packs should initially be applied to the extravasation site rather than warm compresses (strength of evidence Limited 1). There is no clear evidence favouring warm over cold compresses or vice versa; some surgeons empirically recommend initial cold compresses to promote vasoconstriction and diminish inflowing blood and swelling. No clear evidence supports aspirating contrast through the needle or angiocatheter, so aspiration is not recommended; multiple punctures with manual squeezing are also not recommended.",
+          "quote": "Strength of evidence: Limited 3 Reference # Original SQ Reassessed SQ Final SQ 22 4 - 4 24 4 - 4 Recommendation 2: Cold compresses or ice packs should initially be applied to the extravasation site (rather than warm compresses) Strength of evidence: Limited 1 Reference # Original SQ Reassessed SQ Final SQ 22 4 - 4 23 - 24 Inadequate - Inadequate 25 4 - 4 1 1 Recommendation 3: Routine use of hyaluronidase or corticosteroid injections or aspiration of the affected limb is not recommended.",
+          "src": "R01",
+          "cat": "处置"
+        },
+        {
+          "k": "Volume threshold algorithm with hyaluronidase",
+          "v": "Treatment algorithm: if expected extravasation volume is less than 50 mL, treat conservatively with light compression, elevation of the affected limb, pain control and hyaluronidase injection. If the expected extravasation volume is larger than 50 mL, or severe pressure is felt on the limb without signs of compartment syndrome, multiple slit incisions are made followed by squeezing. In suspected compartment syndrome, immediate fasciotomy is considered.",
+          "quote": "If the expected extravasation volume is less than 50 ml, the patient is treated conservatively using light compression, affected limb elevation, pain control and hyaluronidase injection.",
+          "src": "EN-07",
+          "cat": "处置"
+        },
+        {
+          "k": "Slit incision squeezing technique indications",
+          "v": "A slit-incision 'squeezing' technique was described by Kim to minimise complications in extravasation over 50 mL. The slit incisions are centred over a discrete area of localised swelling rather than diffuse arm edema, and good results were confirmed by Raveendran et al in what appeared to be an area of well-defined local turgor. Other described methods are needle aspiration or stab incisions with compression, and hyaluronidase injection with saline washout and liposuction.",
+          "quote": "Further to this, a description of using slit incisions with a similar \"squeezing\" technique was described by Kim as a way to minimise complications in CMEI > 50 mL. The slit incisions described here are centred over a discrete area of localised swelling rather than diffuse arm edema. 14 Good results from this technique were confirmed by Raveendran et al, again in what appeared to be an area of well-defined local turgor.",
+          "src": "EN-08",
+          "cat": "处置"
+        }
+      ]
+    },
+    {
+      "id": "NPM_ResidualFluidAspiration",
+      "graph": "topic-01",
+      "type": "NonPharmacologicalManagement",
+      "name": "回抽残留药液",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "回抽残留药液"
+      ],
+      "summary": "外渗发生后拔针前从留置针回抽残留药液以减少局部留存的护理操作；国内实践列为常规步骤，国际指南认为其获益证据不足。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "综述",
+          "author": "Thomas R, Vermaak L, Price G",
+          "title": "Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison",
+          "journal": "Eplasty",
+          "year": 2022,
+          "cite": "Thomas R, Vermaak L, Price G / Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison / Eplasty / 2022",
+          "grade": "汇总证据",
+          "ref": "EN-08"
+        },
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "综述",
+          "author": "宋朝晖",
+          "title": "造影剂血管外渗的处置方法研究进展",
+          "journal": "全科护理",
+          "year": 2018,
+          "cite": "宋朝晖 / 造影剂血管外渗的处置方法研究进展 / 全科护理 / 2018",
+          "grade": "汇总证据",
+          "ref": "CN-16"
+        },
+        {
+          "type": "病例报告",
+          "author": "张媛媛, 龙秀红, 吕婵, 李鲜, 王艺, 黄兰英, 涂惠琼, 覃惠娟",
+          "title": "1例药液外渗致慢性难愈性创面形成患者的中西医结合护理",
+          "journal": "中华护理杂志",
+          "year": 2024,
+          "cite": "张媛媛, 龙秀红, 吕婵, 李鲜, 王艺, 黄兰英, 涂惠琼, 覃惠娟 / 1例药液外渗致慢性难愈性创面形成患者的中西医结合护理 / 中华护理杂志 / 2024",
+          "grade": "汇总证据",
+          "ref": "CN-19"
+        }
+      ],
+      "details": [
+        {
+          "k": "综合干预处置组合",
+          "v": "回抽药液、抬高患肢、药物局部外用、止痛、心理干预等综合干预；严重者需外科手术干预",
+          "quote": "造影剂外渗后的处理方法包括回抽药液、抬高患肢、药物局部外用、止痛、心理干预等综合干预,严重者需要外科手术干预治疗.",
+          "src": "CN-16",
+          "cat": "局部处理"
+        },
+        {
+          "k": "急性期封闭与水疱处理",
+          "v": "立即停输液、回抽残余药液、拔针；2%利多卡因2 ml+地塞米松5 mg+生理盐水5 ml局部环形封闭，抽吸水疱渗液，淤紫处外涂多磺酸粘多糖乳膏，抬高患肢高于心脏水平并避免局部受压",
+          "quote": "立即停止输液，回抽残余药液后拔除留置针，予2%利多卡因2 ml+地塞米松5 mg+生理盐水5 ml局部环形封闭，同时抽吸水疱内渗液，淤紫处外涂多磺酸粘多糖乳膏，抬高患肢，高于心脏水平，避免局部受压。",
+          "src": "CN-19",
+          "cat": "局部处理"
+        },
+        {
+          "k": "Cold compress first; no warm-compress evidence",
+          "v": "Recommendation 2: cold compresses or ice packs should initially be applied to the extravasation site rather than warm compresses (strength of evidence Limited 1). There is no clear evidence favouring warm over cold compresses or vice versa; some surgeons empirically recommend initial cold compresses to promote vasoconstriction and diminish inflowing blood and swelling. No clear evidence supports aspirating contrast through the needle or angiocatheter, so aspiration is not recommended; multiple punctures with manual squeezing are also not recommended.",
+          "quote": "Strength of evidence: Limited 3 Reference # Original SQ Reassessed SQ Final SQ 22 4 - 4 24 4 - 4 Recommendation 2: Cold compresses or ice packs should initially be applied to the extravasation site (rather than warm compresses) Strength of evidence: Limited 1 Reference # Original SQ Reassessed SQ Final SQ 22 4 - 4 23 - 24 Inadequate - Inadequate 25 4 - 4 1 1 Recommendation 3: Routine use of hyaluronidase or corticosteroid injections or aspiration of the affected limb is not recommended.",
+          "src": "R01",
+          "cat": "处置"
+        },
+        {
+          "k": "Hyaluronidase and aspiration not recommended",
+          "v": "Recommendation 3: routine use of hyaluronidase or corticosteroid injections or aspiration of the affected limb is not recommended (strength of evidence Limited 1). There is no consistent evidence that local injection of corticosteroids or hyaluronidase is beneficial; no adequate studies confirm efficacy of hyaluronidase after contrast media extravasation. Topical silver sulfadiazine and steroid cream three to four times daily has been suggested for blistering, though efficacy is unknown.",
+          "quote": "Strength of evidence: Limited 3 Reference # Original SQ Reassessed SQ Final SQ 22 4 - 4 24 4 - 4 Recommendation 2: Cold compresses or ice packs should initially be applied to the extravasation site (rather than warm compresses) Strength of evidence: Limited 1 Reference # Original SQ Reassessed SQ Final SQ 22 4 - 4 23 - 24 Inadequate - Inadequate 25 4 - 4 1 1 Recommendation 3: Routine use of hyaluronidase or corticosteroid injections or aspiration of the affected limb is not recommended. Strength of evidence: Limited 1 Reference # Original SQ Reassessed SQ Final SQ 15 4 4 4 22 4 - 4 28 4 - 4 29 2 - 2 Recommendation 4: All discharged outpatients should be given clear instructions concerning where and when to seek additional medical care (including for worsening pain, development of paresthesia, diminished range of motion, and new skin ulceration o r blistering) as severe extravasation could develop several hours later.",
+          "src": "R01",
+          "cat": "处置"
+        },
+        {
+          "k": "Initial management steps uncontroversial",
+          "v": "Initial management of contrast media extravasation injury is well defined: stopping the infusion, attempting aspiration through the original cannula, splinting and elevating the limb, and applying cooling attract little controversy. Cohan described 22 cases of extravasation over 30 mL, none of whom required surgery and who had no long-term adverse effects; Sistrom corroborated this with 28 cases.",
+          "quote": "Management Options Conservative Management The initial management of CMEI is well defined. The initial steps of stopping the infusion, attempting aspiration through the original cannula, splinting and elevating the limb, and applying cooling attract little controversy. Cohan described 22 cases of CMEI > 30 mL, none of whom required surgery and had no long-term adverse effects, and Sistrom corroborated this with a study of 28 cases.3, 11 Ko et al successfully managed 9 cases of CMEI with up to 90 mL of various low-osmolar solutions conservatively, advocating the use of room temperature damp gauze rather than ice packs and Silvadene ointment with clobetasol cream.",
+          "src": "EN-08",
+          "cat": "处置"
+        }
+      ]
+    },
+    {
+      "id": "NPM_Fasciotomy",
+      "graph": "topic-01",
+      "type": "NonPharmacologicalManagement",
+      "name": "筋膜切开减压",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "筋膜切开减压"
+      ],
+      "summary": "疑骨筋膜室综合征时尽早行筋膜切开以避免肌肉坏死与神经损伤的手术处置原则，含时间窗要求与肢体功能保全目标。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "EN-01"
+        },
+        {
+          "type": "病例系列",
+          "author": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC",
+          "title": "Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions",
+          "journal": "International Wound Journal",
+          "year": 2017,
+          "cite": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC / Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions / International Wound Journal / 2017",
+          "grade": "汇总证据",
+          "ref": "EN-07"
+        },
+        {
+          "type": "病例报告",
+          "author": "Diop B, Soh GT, Nde AFT, Sarr N, Ndoye AY, Sane JC",
+          "title": "Hand compartment syndrome secondary to contrast media extravasation: A case report",
+          "journal": "International Journal of Surgery Case Reports",
+          "year": 2022,
+          "cite": "Diop B, Soh GT, Nde AFT, Sarr N, Ndoye AY, Sane JC / Hand compartment syndrome secondary to contrast media extravasation: A case report / International Journal of Surgery Case Reports / 2022",
+          "grade": "汇总证据",
+          "ref": "EN-16"
+        },
+        {
+          "type": "病例报告",
+          "author": "Hu J, Ge T, Du Y, Wang J, Zhou Y",
+          "title": "Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention",
+          "journal": "BMC Surgery",
+          "year": 2025,
+          "cite": "Hu J, Ge T, Du Y, Wang J, Zhou Y / Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention / BMC Surgery / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-17"
+        }
+      ],
+      "details": [
+        {
+          "k": "Surgical referral is clinical not volume based",
+          "v": "Surgical opinion is recommended for extravasate over 150 ml, but the overall decision should be clinical - based on red flag signs and symptoms rather than an arbitrary CMEX volume. Fasciotomy should be performed within 2 hours to avoid muscle necrosis and nerve damage; surgery performed within 90 to 300 min has been reported to conserve all extremities. Red flags: painful active flexion, passive extension, neurosensory disturbance, increasing swelling; highest-risk locations are the volar forearm and the hand.",
+          "quote": "Whilst a radiologist can attend to mild cases, in more severe cases, a surgeon should be urgently consulted, and fasciotomy should be performed within 2 h to avoid muscle necrosis and nerve damage. Surgery performed within 90 to 300 min has been reported to conserve all extremities with favourable prognosis [54]. Sbitany et al. in a study of 102 cases of CMEX used a threshold of 30 ml extravasate as a referral prompt [55] and none required surgery, even in the 10% with > 100 ml CMEX volume. Wang et al. reported similar findings where even extravasate volumes of up to 150 ml of non-ionic IBCM were conservatively managed, suggesting no discrete threshold extravasate volume should be set [56]. Dykes et al. suggest that larger extravasated volumes correlate with moderate-to-severe injuries, but the data does not support using a volume threshold to determine surgical referral or more aggressive management [23]. Nevertheless, in unusual cases with very large volumes of extravasate (> 150 ml), the consensus remains that surgical consult is appropriate. Overall, the decision to refer for surgical intervention should be a clinical one-i.e. based on red flag signs and symptoms, rather than arbitrary CMEX volumes. Conclusion This review highlights the key up-to-date evidence pertaining to CMEX summarising the important risk factors and a systematic approach to management.",
+          "src": "EN-01",
+          "cat": "处置"
+        },
+        {
+          "k": "Topical agents and fasciotomy trigger",
+          "v": "Topical application of silver sulfadiazine and Intrasyte gel to the affected area is recommended whenever skin blistering is observed. Prompt fasciotomy is required if compartment syndrome is suspected., five minor complications (bullae formation and epidermolysis) resolved spontaneously.",
+          "quote": "Prompt fasciotomy is required if compartment syndrome is suspected.",
+          "src": "EN-07",
+          "cat": "处置"
+        },
+        {
+          "k": "Goal of surgery is limb and function salvage",
+          "v": "The goal of treatment is to save the limb and restore function. This can be achieved rapidly with early surgery because of the unpredictable course. The authors advise always fearing a compartmental syndrome in cases of extravasation of contrast medium, since contrast media injection is not a harmless gesture.",
+          "quote": "The goal of treatment is to save the limb and restore function. This can be achieved rapidly with early surgery because of the unpredictable course.",
+          "src": "EN-16",
+          "cat": "处置"
+        },
+        {
+          "k": "Tiered escalation when conservative care fails",
+          "v": "Case of a patient who developed skin ulcers, necrosis and hematoma despite conservative management. Conservative therapy remains first-line, but invasive interventions should be promptly considered in cases of progressive necrosis, hematoma or failure of conservative management. A stepwise surgical approach is recommended: minimally invasive aspiration/irrigation or liposuction-like techniques first, reserving fasciotomy for severe or refractory cases.",
+          "quote": "Maintain a low threshold for invasive interventions when conservative therapy fails or when tissue necrosis or hematoma develops, even in the absence of compartment syndrome.",
+          "src": "EN-17",
+          "cat": "处置"
+        }
+      ]
+    },
+    {
+      "id": "NPM_LightCompressionSplint",
+      "graph": "topic-01",
+      "type": "NonPharmacologicalManagement",
+      "name": "局部加压与制动",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "局部加压与制动"
+      ],
+      "summary": "外渗局部加压包扎与制动固定的护理配合，用于限制药液继续扩散与减轻局部张力，属保守处置的组成部分。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "病例系列",
+          "author": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC",
+          "title": "Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions",
+          "journal": "International Wound Journal",
+          "year": 2017,
+          "cite": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC / Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions / International Wound Journal / 2017",
+          "grade": "汇总证据",
+          "ref": "EN-07"
+        },
+        {
+          "type": "综述",
+          "author": "Thomas R, Vermaak L, Price G",
+          "title": "Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison",
+          "journal": "Eplasty",
+          "year": 2022,
+          "cite": "Thomas R, Vermaak L, Price G / Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison / Eplasty / 2022",
+          "grade": "汇总证据",
+          "ref": "EN-08"
+        }
+      ],
+      "details": [
+        {
+          "k": "Volume threshold algorithm with hyaluronidase",
+          "v": "Treatment algorithm: if expected extravasation volume is less than 50 mL, treat conservatively with light compression, elevation of the affected limb, pain control and hyaluronidase injection. If the expected extravasation volume is larger than 50 mL, or severe pressure is felt on the limb without signs of compartment syndrome, multiple slit incisions are made followed by squeezing. In suspected compartment syndrome, immediate fasciotomy is considered.",
+          "quote": "If the expected extravasation volume is less than 50 ml, the patient is treated conservatively using light compression, affected limb elevation, pain control and hyaluronidase injection.",
+          "src": "EN-07",
+          "cat": "处置"
+        },
+        {
+          "k": "Initial management steps uncontroversial",
+          "v": "Initial management of contrast media extravasation injury is well defined: stopping the infusion, attempting aspiration through the original cannula, splinting and elevating the limb, and applying cooling attract little controversy. Cohan described 22 cases of extravasation over 30 mL, none of whom required surgery and who had no long-term adverse effects; Sistrom corroborated this with 28 cases.",
+          "quote": "Management Options Conservative Management The initial management of CMEI is well defined. The initial steps of stopping the infusion, attempting aspiration through the original cannula, splinting and elevating the limb, and applying cooling attract little controversy. Cohan described 22 cases of CMEI > 30 mL, none of whom required surgery and had no long-term adverse effects, and Sistrom corroborated this with a study of 28 cases.3, 11 Ko et al successfully managed 9 cases of CMEI with up to 90 mL of various low-osmolar solutions conservatively, advocating the use of room temperature damp gauze rather than ice packs and Silvadene ointment with clobetasol cream.",
+          "src": "EN-08",
+          "cat": "处置"
+        }
+      ]
+    },
+    {
+      "id": "NPM_WoundDressingManagement",
+      "graph": "topic-01",
+      "type": "NonPharmacologicalManagement",
+      "name": "外渗创面敷料与湿性愈合护理",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "外渗创面敷料与湿性愈合护理"
+      ],
+      "summary": "外渗后创面的敷料与湿性愈合管理：按渗液量与创面深度选择水胶体、藻酸盐、泡沫、水凝胶等敷料，规律换药并保护暴露的肌腱。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "对照研究",
+          "author": "申敏, 李淑英, 明蕾",
+          "title": "康惠尔透明贴与50％硫酸镁溶液冷湿敷治疗碘对比剂外渗效果比较",
+          "journal": "齐鲁护理杂志",
+          "year": 2022,
+          "cite": "申敏, 李淑英, 明蕾 / 康惠尔透明贴与50％硫酸镁溶液冷湿敷治疗碘对比剂外渗效果比较 / 齐鲁护理杂志 / 2022",
+          "grade": "汇总证据",
+          "ref": "CN-17"
+        },
+        {
+          "type": "病例报告",
+          "author": "张媛媛, 龙秀红, 吕婵, 李鲜, 王艺, 黄兰英, 涂惠琼, 覃惠娟",
+          "title": "1例药液外渗致慢性难愈性创面形成患者的中西医结合护理",
+          "journal": "中华护理杂志",
+          "year": 2024,
+          "cite": "张媛媛, 龙秀红, 吕婵, 李鲜, 王艺, 黄兰英, 涂惠琼, 覃惠娟 / 1例药液外渗致慢性难愈性创面形成患者的中西医结合护理 / 中华护理杂志 / 2024",
+          "grade": "汇总证据",
+          "ref": "CN-19"
+        },
+        {
+          "type": "调查",
+          "author": "聂圣肖, 王蕾, 孙红, 钱莉",
+          "title": "全国部分医院静脉导管维护现状调查",
+          "journal": "中华现代护理杂志",
+          "year": 2022,
+          "cite": "聂圣肖, 王蕾, 孙红, 钱莉 / 全国部分医院静脉导管维护现状调查 / 中华现代护理杂志 / 2022",
+          "grade": "汇总证据",
+          "ref": "CN-25"
+        }
+      ],
+      "details": [
+        {
+          "k": "两组干预设计",
+          "v": "40例CT增强后碘对比剂外渗者随机分为实验组与对照组各20例；对照组50％硫酸镁溶液冷湿敷，实验组康惠尔透明贴",
+          "quote": "将2019年5月1日～2020年5月31日40例经CT增强扫描后发生碘对比剂外渗的患者随机分为实验组和对照组各20例,对照组采取常规50％硫酸镁溶液冷湿敷,实验组采取康惠尔透明贴.",
+          "src": "CN-17",
+          "cat": "局部处理"
+        },
+        {
+          "k": "48 h结局指标比较",
+          "v": "比较两组48 h后静脉炎发生率、外渗者患肢恢复时间、护理满意率",
+          "quote": "比较两组48 h后静脉炎发生率、外渗者患肢恢复时间、护理满意率.",
+          "src": "CN-17",
+          "cat": "局部处理"
+        },
+        {
+          "k": "透明贴疗效优于硫酸镁",
+          "v": "实验组静脉炎发生率更低(P<0.01)、患肢恢复时间更短(P<0.05)、护理满意率更高(P<0.05)",
+          "quote": "实验组静脉炎发生率低于对照组(P<0.01),外渗患肢恢复时间短于对照组(P<0.05);实验组护理满意率高于对照组(P<0.05).",
+          "src": "CN-17",
+          "cat": "局部处理"
+        },
+        {
+          "k": "缓解皮下水肿",
+          "v": "康惠尔透明贴可有效缓解碘对比剂外渗引起的皮下组织水肿、减轻患者痛苦，效果优于50％硫酸镁溶液冷湿敷",
+          "quote": "康惠尔透明贴可有效缓解因碘对比剂外渗所引起的皮下组织水肿,减轻患者痛苦,在治疗碘对比剂外渗病例中的效果优于50％硫酸镁溶液冷湿敷.",
+          "src": "CN-17",
+          "cat": "局部处理"
+        },
+        {
+          "k": "湿性愈合敷料与换药频次",
+          "v": "肌腱暴露处涂抹水凝胶以防止其坏死，伤口床选择生长因子进行涂抹，选择银离子藻酸盐敷料抗感染，水胶体或泡沫敷料对创面进行覆盖；换药频率为1~2次/周，共计换药8次",
+          "quote": "肌腱暴露处涂抹水凝胶以防止其坏死，伤口床选择生长因子进行涂抹，使其保持湿性愈合环境，促进新生肉芽组织生长，根据伤口渗液情况，选择银离子藻酸盐敷料抗感染，水胶体或泡沫敷料对创面进行覆盖，吸收渗液。伤口造口专科护士根据患者伤口渗液情况，换药频率为1~2次/周，共计换药8次。",
+          "src": "CN-19",
+          "cat": "局部处理"
+        },
+        {
+          "k": "外渗与静脉炎时敷料选择",
+          "v": "发生静脉炎时525家(70.9%)用水胶体敷料；发生渗出或外渗时414家(55.9%)用水胶体敷料、332家(44.9%)用纱布敷料",
+          "quote": "患者发生静脉炎时，525家医院（70.9%，525/740）使用水胶体敷料；患者发生渗出或外渗时，分别有414家（55.9%，414/740）和332家（44.9%，332/740）医院使用水胶体敷料和纱布敷料。",
+          "src": "CN-25",
+          "cat": "局部处理"
+        },
+        {
+          "k": "Topical agents and fasciotomy trigger",
+          "v": "Topical application of silver sulfadiazine and Intrasyte gel to the affected area is recommended whenever skin blistering is observed. Prompt fasciotomy is required if compartment syndrome is suspected., five minor complications (bullae formation and epidermolysis) resolved spontaneously.",
+          "quote": "Prompt fasciotomy is required if compartment syndrome is suspected.",
+          "src": "EN-07",
+          "cat": "处置"
+        },
+        {
+          "k": "Warm compress not alone; dressing duration",
+          "v": "For foaming agents and irritant drugs, cold and hot compress must be differentiated by drug category: cold compress for alkylating agents (cisplatin, cyclophosphamide), anthracyclines (doxorubicin) and antimetabolites (5-fluorouracil); hot compress for vincristine, etoposide, oxaliplatin and taxanes (paclitaxel, docetaxel, especially with hyaluronidase). Hot compress should only be considered when the specific drug is clearly identified, and is not recommended on its own. Dressings may be applied for more than 24 hours, for example 15-20 minutes per session, 3-4 times daily over 48-72 hours.",
+          "quote": "It is not recommended to use hot compress alone to handle extravasation.It is conditionally advised to apply the dressing for a duration exceeding 24 h (e.g., 15-20 min per session, 3-4 times daily, over a period of 48-72 h), as opposed to limiting the application to 24 h or less (2, 6, 26). 5 B Extravasation Drug-specific treatment (for foaming drug extravasation) Anthracycline drugs (such as doxorubicin, epirubicin) extravasation: It is strongly recommended to use dexrazoxane as an antidote.",
+          "src": "EN-10",
+          "cat": "处置"
+        },
+        {
+          "k": "Surgical technique: irrigation and debridement",
+          "v": "A general surgery consultation was obtained; the lesion was manually compressed to evacuate approximately 30 mL of purulent fluid, then immediately irrigated with 250 mL of normal saline to remove residual contrast and necrotic debris. Sharp debridement was then performed to excise the necrotic skin. Regular dressing changes followed.",
+          "quote": "The lesion was then manually compressed to evacuate approximately 30 mL of purulent fluid, followed immediately by irrigation with 250 mL of normal saline to remove residual contrast and necrotic debris.",
+          "src": "EN-17",
+          "cat": "处置"
+        }
+      ]
+    },
+    {
+      "id": "NPM_CrystalloidBolus",
+      "graph": "topic-01",
+      "type": "NonPharmacologicalManagement",
+      "name": "晶体液快速扩容",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "晶体液快速扩容"
+      ],
+      "summary": "发生过敏反应时快速静脉推注晶体液以补充有效循环血量的抢救措施，用于低血压与休克状态的早期支持，须与其他抢救用药配合。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F",
+          "title": "Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee",
+          "journal": "European Radiology",
+          "year": 2025,
+          "cite": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F / Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee / European Radiology / 2025",
+          "grade": "指南与共识",
+          "ref": "EN-03"
+        }
+      ],
+      "details": [
+        {
+          "k": "Anaphylaxis adrenaline dose in adults",
+          "v": "For anaphylaxis or stridor: call the rapid response team, oxygen 10-15 L/min by non-rebreathing mask, adrenaline (epinephrine) 0.5 mg IM in the lateral upper thigh, repeat as necessary guided by heart rate; crystalloid bolus 500 mL IV over 10 min repeated as necessary; salbutamol 2-10 inhalations of 100 mcg (or nebulised 2.5-5 mcg in 3 mL saline) up to 1 h; chlorphenamine 20 mg or clemastine 2 mg IV; consider prednisolone 50 mg IV. IM adrenaline 1 mg/mL remains first-line, with most guidelines recommending an adult dose of 0.5 mg IM.",
+          "quote": "• Give oxygen 10 to 15 L/min with non-rebreathing mask. • Give 0.5 mg adrenaline IM in the lateral upper thigh, repeat as necessary, guided by heart rate. • Give fluid bolus of crystalloid 500 mL IV in 10 min, repeat as necessary. • Short-acting β2-agonist: 2-10 inhalations of 100 μg of salbutamol via inhalation [depending on severity], with option to repeat every 20 min, or via nebulization (2.5-5 μg diluted in 3 mL of saline solution) up to 1 h. • Give chlorphenamine 20 mg or clemastine 2 mg IV, repeat as necessary. • Consider adding corticosteroid (for example, prednisolone 50 mg IV*).",
+          "src": "EN-03",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Fluid bolus and beta-agonist in anaphylaxis",
+          "v": "Crystalloid bolus 500 mL IV given over 10 minutes, repeated as necessary. Short-acting beta-agonist: 2-10 inhalations of 100 mcg salbutamol via inhalation depending on severity, with the option to repeat every 20 min, or nebulisation of 2.5-5 mcg diluted in 3 mL saline up to 1 hour.",
+          "quote": "• Give fluid bolus of crystalloid 500 mL IV in 10 min, repeat as necessary. • Short-acting β2-agonist: 2-10 inhalations of 100 μg of salbutamol via inhalation [depending on severity], with option to repeat every 20 min, or via nebulization (2.5-5 μg diluted in 3 mL of saline solution) up to 1 h.",
+          "src": "EN-03",
+          "cat": "超敏反应"
+        }
+      ]
+    },
+    {
+      "id": "NPM_ExtravasationObservation",
+      "graph": "topic-01",
+      "type": "NonPharmacologicalManagement",
+      "name": "外渗后分级留观",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "外渗后分级留观"
+      ],
+      "summary": "对比剂外渗后的分级留观与离院安排：按外渗严重程度设定观察时长与观察区配置，轻度可离院并随访，症状进展则升级处置。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "调查",
+          "author": "宋圆圆, 王宇, 蒿若楠, 董方方, 黄霖霖, 杨巧芳, 贾晓辉, 白姗",
+          "title": "河南省含碘对比剂外渗管理现状及护士认知水平的调查研究",
+          "journal": "中华护理杂志",
+          "year": 2025,
+          "cite": "宋圆圆, 王宇, 蒿若楠, 董方方, 黄霖霖, 杨巧芳, 贾晓辉, 白姗 / 河南省含碘对比剂外渗管理现状及护士认知水平的调查研究 / 中华护理杂志 / 2025",
+          "grade": "汇总证据",
+          "ref": "CN-30"
+        },
+        {
+          "type": "队列研究",
+          "author": "Liu W, Wang P, Zhu H, Tang H, Guan H, Wang X, Wang C, Qiu Y, He L",
+          "title": "Contrast media extravasation injury: a prospective observational cohort study",
+          "journal": "European Journal of Medical Research",
+          "year": 2023,
+          "cite": "Liu W, Wang P, Zhu H, Tang H, Guan H, Wang X, Wang C, Qiu Y, He L / Contrast media extravasation injury: a prospective observational cohort study / European Journal of Medical Research / 2023",
+          "grade": "汇总证据",
+          "ref": "EN-05"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "EN-01"
+        },
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        }
+      ],
+      "details": [
+        {
+          "k": "皮肤损伤进展高峰",
+          "v": "ICM外渗导致的皮肤损伤通常在数小时内加剧，24~48 h达到高峰",
+          "quote": "研究 [ 11 ] 表明，ICM外渗导致的皮肤损伤通常在数小时内加剧，24~48 h达到高峰。",
+          "src": "CN-30",
+          "cat": "局部处理"
+        },
+        {
+          "k": "外渗后留观时长",
+          "v": "国内指南推荐放射科设立观察区，在ICM外渗后确保患者在观察区内观察2~4 h，确认无新发症状或严重损伤时方可离开",
+          "quote": "国内指南 [ 2 ] 推荐放射科设立观察区，在ICM外渗后确保患者在观察区内观察2~4 h，确认无新发症状或严重损伤时方可离开。",
+          "src": "CN-30",
+          "cat": "局部处理"
+        },
+        {
+          "k": "观察区与留观落实率",
+          "v": "仅56.36%的放射科设有专用观察区或观察室，9.09%的放射科在ICM外渗后观察2~4 h",
+          "quote": "但本研究中，仅56.36%的放射科设有专用观察区或观察室，9.09%的放射科在ICM外渗后观察2~4 h。",
+          "src": "CN-30",
+          "cat": "局部处理"
+        },
+        {
+          "k": "Mild case monitoring and escalation",
+          "v": "Suggested protocol for mild extravasation: limb elevation, ice packs, and monitor the patient 2-4 hourly; if improving, discharge; if no improvement, a surgical opinion is required.",
+          "quote": "Mild cases: limb elevation, ice packs, monitor patient 2–4 hourly. If improving, then discharge. If no improvement, then requires surgical opinion",
+          "src": "EN-01",
+          "cat": "护理能力与记录"
+        },
+        {
+          "k": "Outpatient observation and follow-up pathway",
+          "v": "After contrast media extravasation, outpatients were observed in the radiology injection room for 2 hours. If the injection site showed no blistering or evident pain they could leave hospital with family and receive daily follow-up. If symptoms worsened or became uncontrollable after discharge, the hospital's intravenous treatment nurses and wound nurses intervened in a timely manner. Inpatients were observed on the ward and were not discharged within 24 hours of extravasation.",
+          "quote": "All symptoms resolved within 2 weeks Severe extravasation damage Serious adverse effects; cyanosis, tissue necrosis, or symptoms lasting more than 2 weeks, such as persistent pain and edema, difficulty in locomotion, and cases requiring surgery After the occurrence of CM extravasation, outpatients were observed in the injection room of the radiology department for 2 h. If the injection site did not show any signs of blistering or evident pain, they could leave the hospital accompanied by their family members and receive daily follow-up. If the symptoms worsen or become uncontrollable after leaving the hospital, the hospital's intravenous treatment nurses and wound nurses will intervene in a timely manner for treatment. Inpatients were observed in the original inpatient department and were not discharged within 24 h after extravasation.",
+          "src": "EN-05",
+          "cat": "护理能力与记录"
+        },
+        {
+          "k": "Escalation to wound centre after 3 days",
+          "v": "If symptoms of severe injury persisted for more than 3 days and could not be relieved completely or tended to deteriorate into acute compartment syndrome and necrosis of the overlying skin, the patient was transferred to the wound center or surgical ward. All patients in this cohort received conservative treatment only: raising the venipuncture point and cold compress, plus local application of dexamethasone and compound aescin gel; only three cases of skin pigmentation occurred, with no other sequelae.",
+          "quote": "If the symptoms of severe injury persisted for more than 3 days and could not be relieved completely or had a tendency to deteriorate into acute compartment syndrome and necrosis of the overlying skin [19-21], the patient was transferred to the wound center or surgical ward.",
+          "src": "EN-05",
+          "cat": "护理能力与记录"
+        }
+      ]
+    },
+    {
+      "id": "NPM_PainControl",
+      "graph": "topic-01",
+      "type": "NonPharmacologicalManagement",
+      "name": "外渗疼痛评估与镇痛",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "外渗疼痛评估与镇痛"
+      ],
+      "summary": "外渗部位的疼痛评估与镇痛措施，含疼痛评分工具的使用、局部封闭与全身镇痛给药；疼痛加重是外渗恶化的重要信号。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "综述",
+          "author": "宋朝晖",
+          "title": "造影剂血管外渗的处置方法研究进展",
+          "journal": "全科护理",
+          "year": 2018,
+          "cite": "宋朝晖 / 造影剂血管外渗的处置方法研究进展 / 全科护理 / 2018",
+          "grade": "汇总证据",
+          "ref": "CN-16"
+        },
+        {
+          "type": "病例系列",
+          "author": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC",
+          "title": "Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions",
+          "journal": "International Wound Journal",
+          "year": 2017,
+          "cite": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC / Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions / International Wound Journal / 2017",
+          "grade": "汇总证据",
+          "ref": "EN-07"
+        },
+        {
+          "type": "病例报告",
+          "author": "Diop B, Soh GT, Nde AFT, Sarr N, Ndoye AY, Sane JC",
+          "title": "Hand compartment syndrome secondary to contrast media extravasation: A case report",
+          "journal": "International Journal of Surgery Case Reports",
+          "year": 2022,
+          "cite": "Diop B, Soh GT, Nde AFT, Sarr N, Ndoye AY, Sane JC / Hand compartment syndrome secondary to contrast media extravasation: A case report / International Journal of Surgery Case Reports / 2022",
+          "grade": "汇总证据",
+          "ref": "EN-16"
+        },
+        {
+          "type": "对照研究",
+          "author": "李小平, 杨媚月, 宋敏, 谢金婵, 蒲兴春",
+          "title": "应用改良痈疽油剂干预含碘对比剂中重度静脉外渗的临床疗效评价",
+          "journal": "中医外治杂志",
+          "year": 2023,
+          "cite": "李小平, 杨媚月, 宋敏, 谢金婵, 蒲兴春 / 应用改良痈疽油剂干预含碘对比剂中重度静脉外渗的临床疗效评价 / 中医外治杂志 / 2023",
+          "grade": "汇总证据",
+          "ref": "CN-18"
+        },
+        {
+          "type": "病例报告",
+          "author": "张媛媛, 龙秀红, 吕婵, 李鲜, 王艺, 黄兰英, 涂惠琼, 覃惠娟",
+          "title": "1例药液外渗致慢性难愈性创面形成患者的中西医结合护理",
+          "journal": "中华护理杂志",
+          "year": 2024,
+          "cite": "张媛媛, 龙秀红, 吕婵, 李鲜, 王艺, 黄兰英, 涂惠琼, 覃惠娟 / 1例药液外渗致慢性难愈性创面形成患者的中西医结合护理 / 中华护理杂志 / 2024",
+          "grade": "汇总证据",
+          "ref": "CN-19"
+        }
+      ],
+      "details": [
+        {
+          "k": "疼痛评分改善",
+          "v": "用药后24 h、48 h、72 h三组VAS评分均显著降低(P＜0.05)，观察组各时点均低于50％硫酸镁组1和如意金黄散组2(P＜0.05)",
+          "quote": "与治疗前比较,用药后24 h、48 h、72 h三组VAS评分均显著降低(P＜0.05),且观察组在不同时点的VAS评分均低于50％硫酸镁组1和如意金黄散组2(P＜0.05).",
+          "src": "CN-18",
+          "cat": "中医"
+        },
+        {
+          "k": "Early symptoms and usual conservative course",
+          "v": "The first symptoms occur at the time of injection and in most cases evolve to minimal swelling and erythema, and usually disappear with medical measures and small steps such as application of ice packs, analgesics and use of steroids. Exceptionally, with a large volume of contrast medium injection the patient may develop acute compartment syndrome; this complication is rare and its incidence unknown. The decision to proceed to surgery is a difficult moment for the physician.",
+          "quote": "These symptoms usually disappear with medical measures and small steps such as application of ice packs, analgesics and the use of steroids [1].",
+          "src": "EN-16",
+          "cat": "识别分级"
+        }
+      ]
+    },
+    {
+      "id": "NPM_PostReactionObservation",
+      "graph": "topic-01",
+      "type": "NonPharmacologicalManagement",
+      "name": "过敏反应后分级观察",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "过敏反应后分级观察"
+      ],
+      "summary": "对比剂过敏反应发生后的分级观察要求：轻度观察至症状完全消失，非危及生命的反应治疗后仍需观察数小时，危及生命者应收住院观察。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F",
+          "title": "Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee",
+          "journal": "European Radiology",
+          "year": 2025,
+          "cite": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F / Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee / European Radiology / 2025",
+          "grade": "指南与共识",
+          "ref": "EN-03"
+        }
+      ],
+      "details": [
+        {
+          "k": "Observation periods after reaction",
+          "v": "After the examination: if the patient had a mild reaction, keep under surveillance until every symptom has disappeared (minimum 30 min, usually under 60 min). A non-life-threatening reaction should be observed for 4-6 hours after successful treatment before discharge. A life-threatening reaction should be admitted and observed. Serum tryptase should be ordered within 1-4 hours.",
+          "quote": "What to do after the examination: • If the patient has experienced a mild reaction, keep him under surveillance until every symptom has disappeared (minimum 30 min, usually < 60 min). • Patient experiencing a non-life-threatening reaction should be observed for 4-6 h after successful treatment and discharged. • Patient experiencing a life-threatening reaction should be admitted and observed. • Order serum tryptase within 1-4 h (see Part 2).",
+          "src": "EN-03",
+          "cat": "超敏反应"
+        }
+      ]
+    },
+    {
+      "id": "PM_Beta2Agonist",
+      "graph": "topic-01",
+      "type": "PharmacologicalManagement",
+      "name": "短效选择性β受体激动剂",
+      "tags": [
+        "药物治疗"
+      ],
+      "aliases": [
+        "短效选择性β受体激动剂"
+      ],
+      "summary": "针对对比剂相关支气管痉挛的短效选择性受体激动剂，经吸入或雾化给药，按反应严重程度决定是否加用肾上腺素等更强措施。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F",
+          "title": "Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee",
+          "journal": "European Radiology",
+          "year": 2025,
+          "cite": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F / Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee / European Radiology / 2025",
+          "grade": "指南与共识",
+          "ref": "EN-03"
+        },
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        }
+      ],
+      "details": [
+        {
+          "k": "ACR Table 3 bronchospasm doses",
+          "v": "ACR Table 3, bronchospasm: all forms - preserve IV access, monitor vitals, pulse oximeter, O2 by mask 6-10 L/min. Mild: beta agonist inhaler 2 puffs (90 mcg/puff) = 180 mcg, up to 3 times. Moderate: same beta agonist plus consider epinephrine IM 0.3 mL of 1.0 mg/mL (1:1,000) = 0.3 mg, repeat every 5-15 minutes up to 1 mL (1 mg) total.",
+          "quote": "BRONCHOSPASM Treatment Dosing All forms Preserve IV access Monitor vitals Pulse oximeter O2 by mask 6-10 L/min Mild Beta agonist inhaler (Albuterol®) 2 puffs (90 mcg/puff) for a total of 180 mcg; can repeat up to 3 times Consider sending patient to the Emergency Department or calling emergency response team or 911, based upon the completeness of the response to the beta agonist inhaler Moderate Beta agonist inhaler (Albuterol®) 2 puffs (90 mcg/puff) for a total of 180 mcg; can repeat up to 3 times Consider adding epinephrine (IM)* IM 0.3 mL of 1.0 mg/mL (1:1,000) dilution (0.3 mg); can repeat every 5-15 minutes up to 1 mL (1 mg) total or Epinephrine auto-injector (EpiPen® or equivalent) (0.3 mL of 1.0 mg/mL (1:1,000) dilution, fixed [0.3mg]); can repeat every 5-15 minutes up to three times or Epinephrine (IV)* IV 1 mL of 0.1 mg/mL(1:10,000) dilution (0.1 mg); administer slowly into a running IV infusion of fluids or use saline flush; can repeat every few minutes as needed up to 10 mL (1 mg) total Consider calling emergency response team or 911 based upon the completeness of the response Severe Epinephrine (IV)* IV 1 mL of 0.1 mg/mL (1:10,000) dilution (0.1 mg); administer slowly into a running IV infusion of fluids or slow IV push followed by a slow saline flush; can repeat every few minutes as needed up to 10 mL (1 mg) total or Epinephrine (IM)* IM 0.3 mL of 1:1,000 dilution (0.3 mg); can repeat every 5-15 minutes up to 1 mL (1 mg) total or Epinephrine auto-injector (EpiPen® or equivalent) (0.3 mL of 1.0 mg/mL(1:1,000) dilution, Fixed [0.3mg]); can repeat every 5-15 minutes up to three times AND 2 puffs (90 mcg/puff) for a total of 180 mcg; can repeat up to 3 Beta agonist inhaler (Albuterol®) (may work times synergistically) Call emergency response team or 911 * Note: in hypotensive patients, the preferred route of epinephrine delivery is IV, as the extremities may not be perfused sufficiently to allow for adequate absorption of IM administered drug.",
+          "src": "R01",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Anaphylaxis adrenaline dose in adults",
+          "v": "For anaphylaxis or stridor: call the rapid response team, oxygen 10-15 L/min by non-rebreathing mask, adrenaline (epinephrine) 0.5 mg IM in the lateral upper thigh, repeat as necessary guided by heart rate; crystalloid bolus 500 mL IV over 10 min repeated as necessary; salbutamol 2-10 inhalations of 100 mcg (or nebulised 2.5-5 mcg in 3 mL saline) up to 1 h; chlorphenamine 20 mg or clemastine 2 mg IV; consider prednisolone 50 mg IV. IM adrenaline 1 mg/mL remains first-line, with most guidelines recommending an adult dose of 0.5 mg IM.",
+          "quote": "• Give oxygen 10 to 15 L/min with non-rebreathing mask. • Give 0.5 mg adrenaline IM in the lateral upper thigh, repeat as necessary, guided by heart rate. • Give fluid bolus of crystalloid 500 mL IV in 10 min, repeat as necessary. • Short-acting β2-agonist: 2-10 inhalations of 100 μg of salbutamol via inhalation [depending on severity], with option to repeat every 20 min, or via nebulization (2.5-5 μg diluted in 3 mL of saline solution) up to 1 h. • Give chlorphenamine 20 mg or clemastine 2 mg IV, repeat as necessary. • Consider adding corticosteroid (for example, prednisolone 50 mg IV*).",
+          "src": "EN-03",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Fluid bolus and beta-agonist in anaphylaxis",
+          "v": "Crystalloid bolus 500 mL IV given over 10 minutes, repeated as necessary. Short-acting beta-agonist: 2-10 inhalations of 100 mcg salbutamol via inhalation depending on severity, with the option to repeat every 20 min, or nebulisation of 2.5-5 mcg diluted in 3 mL saline up to 1 hour.",
+          "quote": "• Give fluid bolus of crystalloid 500 mL IV in 10 min, repeat as necessary. • Short-acting β2-agonist: 2-10 inhalations of 100 μg of salbutamol via inhalation [depending on severity], with option to repeat every 20 min, or via nebulization (2.5-5 μg diluted in 3 mL of saline solution) up to 1 h.",
+          "src": "EN-03",
+          "cat": "超敏反应"
+        }
+      ]
+    },
+    {
+      "id": "PM_WeightBasedDosing",
+      "graph": "topic-01",
+      "type": "PharmacologicalManagement",
+      "name": "按体重调整用药剂量",
+      "tags": [
+        "药物治疗"
+      ],
+      "aliases": [
+        "按体重调整用药剂量"
+      ],
+      "summary": "按体重计算对比剂用量与抢救药物剂量，并在儿童人群中尽量减少肠外糖皮质激素的使用；特定适应证可采用更高的按体重用量。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F",
+          "title": "Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee",
+          "journal": "European Radiology",
+          "year": 2025,
+          "cite": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F / Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee / European Radiology / 2025",
+          "grade": "指南与共识",
+          "ref": "EN-03"
+        },
+        {
+          "type": "指南",
+          "author": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F",
+          "title": "Hypersensitivity reactions to contrast media: Part 2. Prevention of recurrent hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee",
+          "journal": "European Radiology",
+          "year": 2025,
+          "cite": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F / Hypersensitivity reactions to contrast media: Part 2. Prevention of recurrent hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee / European Radiology / 2025",
+          "grade": "指南与共识",
+          "ref": "EN-04"
+        },
+        {
+          "type": "系统评价",
+          "author": "Beiner L, Boehm I",
+          "title": "Risk factor analysis of iodinated contrast medium-related hypersensitivity reactions",
+          "journal": "Insights into Imaging",
+          "year": 2025,
+          "cite": "Beiner L, Boehm I / Risk factor analysis of iodinated contrast medium-related hypersensitivity reactions / Insights into Imaging / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-12"
+        }
+      ],
+      "details": [
+        {
+          "k": "Paediatric decisions mirror adult principles",
+          "v": "Studies with pediatric populations (under 18 years) were excluded because information is very limited and existing data do not differ significantly from adults. Decisions for children are therefore generally based on the same principles as for adults, with weight-based dose adjustments and a recommendation to avoid parenteral corticosteroids whenever possible; for certain indications higher CM doses per kg body weight and higher injection rates may be used.",
+          "quote": "Studies with pediatric populations (< 18 years) were excluded since there is very limited information available for this group, and the existing data do not differ significantly from those obtained in adults. For this reason, decisions for children are generally based on the same principles as those for adults, with weight-based dose adjustments and a recommendation to avoid the use of parenteral corticosteroids whenever possible, but for certain indications, higher CM doses per kg body weight and higher injection rates may be used.",
+          "src": "EN-04",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "Individual dose adjustment in women proposed",
+          "v": "The authors propose that individual dose adjustment could reduce the incidence of hypersensitivity reactions in women as well as healthcare costs, the carbon footprint for drugs, and contamination of drinking water with contrast agents.",
+          "quote": "Thus, an individual dose adjustment should reduce the incidence of HSR in women as well as healthcare costs, the carbon footprint for drugs, and the contamination of drinking water with contrast agents [126-129].",
+          "src": "EN-12",
+          "cat": "超敏反应"
+        }
+      ]
+    },
+    {
+      "id": "PM_DrugSpecificAntidotes",
+      "graph": "topic-01",
+      "type": "PharmacologicalManagement",
+      "name": "药物特异性外渗解毒剂",
+      "tags": [
+        "药物治疗"
+      ],
+      "aliases": [
+        "药物特异性外渗解毒剂"
+      ],
+      "summary": "依据外渗的具体药物种类选用特异性解毒剂的处理原则，涵盖蒽环类、紫杉类、铂类与丝裂霉素等不同药物各自对应的解毒手段。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "最佳证据",
+          "author": "Liu H, Zeng Q, Zeng X, Lu X, Xiao B, Cheng Y, Liu Y, Yang C, Yang C",
+          "title": "Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation",
+          "journal": "Frontiers in Medicine",
+          "year": 2026,
+          "cite": "Liu H, Zeng Q, Zeng X, Lu X, Xiao B, Cheng Y, Liu Y, Yang C, Yang C / Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation / Frontiers in Medicine / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-10"
+        }
+      ],
+      "details": [
+        {
+          "k": "Drug-specific antidotes with doses",
+          "v": "Anthracycline extravasation: dexrazoxane is strongly recommended, started within 6 hours, 1,000 mg/m2 on days 1-2 and 500 mg/m2 on day 3. Paclitaxel/docetaxel extravasation: hyaluronidase subcutaneously around the extravasation area within 3-4 hours. Platinum agents with more than 20 mL cisplatin at concentration above 0.5 mg/mL: sodium thiosulfate 1/6 molar solution, multiple 0.1 mL subcutaneous injections totalling 1 mL. Vincristine/vinorelbine: hyaluronidase 150 units subcutaneously at five points around the area. Mitomycin C/mitoxantrone: dimethyl sulfoxide 50-99% applied externally within 10-25 minutes, once every 8 hours for 7 days.",
+          "quote": "The infusion should be started within 6 h and administered over 3 days based on body surface area (1,000 mg/m2 on days 1-2 and 500 mg/m2 on day 3) (6, 26). 2 A Extravasation Paclitaxel (paclitaxel, docetaxel) extravasation: It is recommended to use hyaluronidase as an antidote, which can be subcutaneously injected around the extravasation area within 3-4 h (2, 6, 26). 5 B Extravasation For extravasation of platinum-based drugs involving more than 20 mL of cisplatin and a concentration greater than 0.5 mg/mL, it is recommended to use sodium thiosulfate for local treatment as soon as possible. The 10% or 25% stock solution should be diluted with sterile water to prepare a 1/6 molar solution (approximately 0.167 molar). Multiple subcutaneous injections of 0.1 mL each should be administered around the extravasation site, totaling 1 mL, to ensure even distribution.The method for preparing 10 mL of a 1/6 molar solution is as follows:For 25% sodium thiosulfate solution: Mix 1.6 mL of the stock solution with 8.4 mL of sterile water. For 10% sodium thiosulfate solution: Mix 4.0 mL of the stock solution with 6.0 mL of sterile water (6, 25, 26). 5 A Extravasation Vincristine and vinorelbine extravasation: It is recommended to use hyaluronidase as an antidote as soon as possible. Administer 150 units subcutaneously, injecting at five points around the extravasation area (2, 6, 25, 26). 5 A Extravasation Mitomycin C, mitoxantrone, anthracyclines (when dexrazoxane is unavailable): Use dimethyl sulfoxide. It is recommended to start local application within 10-25 min after extravasation. Apply 50-99% externally, once every 8 h for a total of 7 days (6).",
+          "src": "EN-10",
+          "cat": "处置"
+        }
+      ]
+    },
+    {
+      "id": "AT_ExtravSeverityGrading",
+      "graph": "topic-01",
+      "type": "AssessmentTool",
+      "name": "外渗严重程度分级",
+      "tags": [
+        "评估工具"
+      ],
+      "aliases": [
+        "外渗严重程度分级"
+      ],
+      "summary": "外渗严重程度的客观分级方法，含轻中重三档的判定要点、专科外渗分级量表与不良事件通用分级标准，以及双侧肢体对照测量要求。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "EN-01"
+        },
+        {
+          "type": "最佳证据",
+          "author": "Liu H, Zeng Q, Zeng X, Lu X, Xiao B, Cheng Y, Liu Y, Yang C, Yang C",
+          "title": "Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation",
+          "journal": "Frontiers in Medicine",
+          "year": 2026,
+          "cite": "Liu H, Zeng Q, Zeng X, Lu X, Xiao B, Cheng Y, Liu Y, Yang C, Yang C / Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation / Frontiers in Medicine / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-10"
+        },
+        {
+          "type": "对照研究",
+          "author": "佘国凤, 邱冬花, 彭一君, 刘晨曦, 唐金花, 林海英, 汪小柳",
+          "title": "推拿法在含碘对比剂外渗中的应用",
+          "journal": "广东医学",
+          "year": 2018,
+          "cite": "佘国凤, 邱冬花, 彭一君, 刘晨曦, 唐金花, 林海英, 汪小柳 / 推拿法在含碘对比剂外渗中的应用 / 广东医学 / 2018",
+          "grade": "汇总证据",
+          "ref": "CN-21"
+        },
+        {
+          "type": "病例系列",
+          "author": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC",
+          "title": "Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions",
+          "journal": "International Wound Journal",
+          "year": 2017,
+          "cite": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC / Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions / International Wound Journal / 2017",
+          "grade": "汇总证据",
+          "ref": "EN-07"
+        }
+      ],
+      "details": [
+        {
+          "k": "按剂量与肿胀分轻重度",
+          "v": "根据对比剂外渗的剂量以及穿刺点肿胀情况评估外渗程度(轻度和重度)",
+          "quote": "根据对比剂外渗的剂量以及穿刺点肿胀情况评估外渗程度(轻度和重度).",
+          "src": "CN-21",
+          "cat": "分级"
+        },
+        {
+          "k": "按外渗程度分级处置",
+          "v": "发生外渗时根据外渗程度采取相应护理措施以降低危害",
+          "quote": "发生外渗时根据外渗程度采取相应护理措施以降低危害.",
+          "src": "CN-24",
+          "cat": "分级"
+        },
+        {
+          "k": "Mild moderate severe extravasation grading",
+          "v": "Mild = minor erythema or swelling with no skin change. Moderate = skin blistering, progressive oedema and/or ulceration; requires close monitoring and physician assessment of peripheral pulse and distal sensation for neurovascular compromise. Severe = any neurovascular compromise, tissue necrosis or compartment syndrome, requiring urgent surgical attention such as emergency fasciotomy.",
+          "quote": "Any neurovascular compromise, signs of tissue necrosis or compartment syndrome. This would require urgent surgical attention e.g. emergency fasciotomy *Grade of recommendation (see Appendix 2) We summarise three main ways of detecting CMEX in Table 2.",
+          "src": "EN-01",
+          "cat": "识别分级"
+        },
+        {
+          "k": "Incidence and inject parameters observed",
+          "v": "Results Over a 4‐year period, in our hospital, 80 cases of CM extravasation were reported from approximately 218 000 CT scans using an intravenous contrast agent, representing an incidence rate of 0·036%. The mean age of the 80 patients (52 women, 28 men) was 58 years at the time of diagnosis (range 2-94 years). The most common anatomical locations of extravasation were the forearm area (right: 28, left: 34), followed by the dorsum of the hand (right: 11, left: 5) and two other sites. The injected flow rates ranged from 0·6 to 5 ml/second. In all cases, a power CM injector was used. Mean volume of the extravasated agent was 44·5 ml (range 5-140 ml).",
+          "quote": "Results Over a 4‐year period, in our hospital, 80 cases of CM extravasation were reported from approximately 218 000 CT scans using an intravenous contrast agent, representing an incidence rate of 0·036%. The mean age of the 80 patients (52 women, 28 men) was 58 years at the time of diagnosis (range 2-94 years). Figure 2 shows the incidence of the CM extravasation by age. The most common anatomical locations of extravasation were the forearm area (right: 28, left: 34), followed by the dorsum of the hand (right: 11, left: 5) and two other sites. Five different brands of non‐ionic contrast agents were given in all the cases, Bonorex (Central Medical Service, Seoul, Korea), Omnihexol (Korea United Pharm, Seoul, Korea), Optiray (Reyon Phram, Seoul, Korea), Scanlux (Dasol Life Science, Seoul, Korea) and Iomeron (Bracco Imaging Korea, Seoul, Korea). The injected flow rates ranged from 0·6 to 5 ml/second. In all cases, a power CM injector was used. The mean gauge of needles for the power injector was 20·2 (range 18-24). Mean volume of the extravasated agent was 44·5 ml (range 5-140 ml). The mean flow rate of the power CM injector was 2·8 ml/second (range 0·6-5 ml/second).",
+          "src": "EN-07",
+          "cat": "处置"
+        },
+        {
+          "k": "INS scale and CTCAE for grading severity",
+          "v": "When assessing extravasation, a comparison must be made between both limbs, with the unaffected side as reference for circumference and colour change. The degree of local skin damage should be evaluated objectively and standardly using the INS extravasation scale and the National Cancer Institute Common Terminology Criteria for Adverse Events (CTCAE).",
+          "quote": "The degree of local skin damage should be objectively and standardly evaluated using the INS extravasation scale and the Common Terminology Criteria for Adverse Events of the National Cancer Institute of the United States (2, 6, 37).",
+          "src": "EN-10",
+          "cat": "识别分级"
+        }
+      ]
+    },
+    {
+      "id": "AT_ExtravasationPhysicalExam",
+      "graph": "topic-01",
+      "type": "AssessmentTool",
+      "name": "外渗后肢体检查",
+      "tags": [
+        "评估工具"
+      ],
+      "aliases": [
+        "外渗后肢体检查"
+      ],
+      "summary": "外渗发生后患肢的系统检查：询问疼痛与感觉异常，检查压痛、肿胀、红斑、感觉、手指主动与被动活动度以及末梢灌注情况。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "EN-01"
+        },
+        {
+          "type": "病例报告",
+          "author": "Diop B, Soh GT, Nde AFT, Sarr N, Ndoye AY, Sane JC",
+          "title": "Hand compartment syndrome secondary to contrast media extravasation: A case report",
+          "journal": "International Journal of Surgery Case Reports",
+          "year": 2022,
+          "cite": "Diop B, Soh GT, Nde AFT, Sarr N, Ndoye AY, Sane JC / Hand compartment syndrome secondary to contrast media extravasation: A case report / International Journal of Surgery Case Reports / 2022",
+          "grade": "汇总证据",
+          "ref": "EN-16"
+        },
+        {
+          "type": "病例系列",
+          "author": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC",
+          "title": "Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions",
+          "journal": "International Wound Journal",
+          "year": 2017,
+          "cite": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC / Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions / International Wound Journal / 2017",
+          "grade": "汇总证据",
+          "ref": "EN-07"
+        }
+      ],
+      "details": [
+        {
+          "k": "Mild moderate severe extravasation grading",
+          "v": "Mild = minor erythema or swelling with no skin change. Moderate = skin blistering, progressive oedema and/or ulceration; requires close monitoring and physician assessment of peripheral pulse and distal sensation for neurovascular compromise. Severe = any neurovascular compromise, tissue necrosis or compartment syndrome, requiring urgent surgical attention such as emergency fasciotomy.",
+          "quote": "Any neurovascular compromise, signs of tissue necrosis or compartment syndrome. This would require urgent surgical attention e.g. emergency fasciotomy *Grade of recommendation (see Appendix 2) We summarise three main ways of detecting CMEX in Table 2.",
+          "src": "EN-01",
+          "cat": "识别分级"
+        },
+        {
+          "k": "Examination of the affected extremity",
+          "v": "A responsible health care provider should be summoned to examine any patient in whom extravasation has occurred. Ask about pain and paresthesias; examination must include extremity tenderness, swelling, erythema, paresthesia, active and passive range of motion of the fingers, and perfusion.",
+          "quote": "The patient should be asked about symptoms of pain and paresthesias. A brief examination should be performed and should include assessment of extremity tenderness, swelling, erythema, paresthesia, active and passive range of motion of the fingers, and perfusion [62].",
+          "src": "R01",
+          "cat": "识别分级"
+        },
+        {
+          "k": "Nurse-first assessment and escalation pathway",
+          "v": "Hospital guideline at Ajou University Hospital: if potential extravasation is believed to have occurred during CT, the first assessment is made by a nurse who documents the event and alerts the ward or emergency room doctor to contact the plastic surgery (PS) department. The nurse then sends the patient back to the ward or emergency room; outpatients are sent to the PS outpatient department and the event is documented. The PS doctor examines the patient and chooses the treatment option.",
+          "quote": "Briefly, if potential CM extravasation is believed to have occurred during CT scanning, the first assessment is made by a nurse who documents the event and alerts the ward or the emergency room doctor to contact the PS department.",
+          "src": "EN-07",
+          "cat": "护理能力与记录"
+        }
+      ]
+    },
+    {
+      "id": "AT_TissuePerfusionAssessment",
+      "graph": "topic-01",
+      "type": "AssessmentTool",
+      "name": "组织灌注评估",
+      "tags": [
+        "评估工具"
+      ],
+      "aliases": [
+        "组织灌注评估"
+      ],
+      "summary": "通过血管充盈情况、皮肤温度、肢体麻木与毛细血管再充盈等指标判断外渗肢体组织灌注状态，是评估外渗严重程度的关键一环。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "调查",
+          "author": "宋圆圆, 王宇, 蒿若楠, 董方方, 黄霖霖, 杨巧芳, 贾晓辉, 白姗",
+          "title": "河南省含碘对比剂外渗管理现状及护士认知水平的调查研究",
+          "journal": "中华护理杂志",
+          "year": 2025,
+          "cite": "宋圆圆, 王宇, 蒿若楠, 董方方, 黄霖霖, 杨巧芳, 贾晓辉, 白姗 / 河南省含碘对比剂外渗管理现状及护士认知水平的调查研究 / 中华护理杂志 / 2025",
+          "grade": "汇总证据",
+          "ref": "CN-30"
+        },
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "EN-01"
+        }
+      ],
+      "details": [
+        {
+          "k": "组织灌注评估",
+          "v": "组织灌注情况是判断ICM外渗严重程度的关键指标，护士可通过血管充盈情况、皮肤温度、肢体麻木程度等进行评估",
+          "quote": "此外，组织灌注情况是判断ICM外渗严重程度的关键指标，护士可通过血管充盈情况、皮肤温度、肢体麻木程度等进行评估。",
+          "src": "CN-30",
+          "cat": "分级"
+        },
+        {
+          "k": "组织灌注情况关注率",
+          "v": "仅58.18%的放射科关注组织灌注情况",
+          "quote": "然而，本研究中，仅58.18%的放射科关注组织灌注情况。",
+          "src": "CN-30",
+          "cat": "分级"
+        },
+        {
+          "k": "Examination of the affected extremity",
+          "v": "A responsible health care provider should be summoned to examine any patient in whom extravasation has occurred. Ask about pain and paresthesias; examination must include extremity tenderness, swelling, erythema, paresthesia, active and passive range of motion of the fingers, and perfusion.",
+          "quote": "The patient should be asked about symptoms of pain and paresthesias. A brief examination should be performed and should include assessment of extremity tenderness, swelling, erythema, paresthesia, active and passive range of motion of the fingers, and perfusion [62].",
+          "src": "R01",
+          "cat": "识别分级"
+        }
+      ]
+    },
+    {
+      "id": "AT_ReactionDocumentation",
+      "graph": "topic-01",
+      "type": "AssessmentTool",
+      "name": "超敏反应评估与记录",
+      "tags": [
+        "评估工具"
+      ],
+      "aliases": [
+        "超敏反应评估与记录"
+      ],
+      "summary": "对比剂过敏反应的评估与登记要求：药名剂量、反应类型与分级、症状体征与生命征、处置与转归、专科会诊及随访建议的完整记录与上报。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F",
+          "title": "Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee",
+          "journal": "European Radiology",
+          "year": 2025,
+          "cite": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F / Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee / European Radiology / 2025",
+          "grade": "指南与共识",
+          "ref": "EN-03"
+        },
+        {
+          "type": "病例系列",
+          "author": "熊代琴, 李东锋, 王捷",
+          "title": "某院碘对比剂相关药品不良反应研究与合理用药",
+          "journal": "新疆医学",
+          "year": 2018,
+          "cite": "熊代琴, 李东锋, 王捷 / 某院碘对比剂相关药品不良反应研究与合理用药 / 新疆医学 / 2018",
+          "grade": "汇总证据",
+          "ref": "CN-28"
+        }
+      ],
+      "details": [
+        {
+          "k": "不良反应报告回顾分析",
+          "v": "回顾性分析2016—2017年上报的碘对比剂相关药品不良反应报告，用国家药品不良反应监测中心关联性评价表筛选",
+          "quote": "目的回顾性分析和评价本院2016年-2017年上报的碘对比剂相关药品不良反应报告,以发现碘对比剂不良反应发生特点、规律及相关危险因素,为临床合理用药提供参考信息.",
+          "src": "CN-28",
+          "cat": "记录上报"
+        },
+        {
+          "k": "EHR documentation fields for hypersensitivity reactions",
+          "v": "The physician responsible for administration, or the drug allergy specialist, must ensure accurate documentation in the electronic health record: location, date and time of CM administration; specific contrast agent name and dose (volume, concentration); type (immediate or non-immediate) and severity category of the HSR; all symptoms and vital signs (blood pressure, pulse, respiration rate, oxygen saturation), time of first symptoms and evolution; treatment given and patient response; any telephonic allergy-specialist consultation; clinical follow-up and advice to see a drug allergy specialist. Serious or unexpected reactions should be reported to the Marketing Authorization Holder and/or National Pharmacovigilance Authority.",
+          "quote": "The type (immediate or non-immediate) and severity category of the HSR • All available patient symptoms and vital signs (blood pressure, pulse, respiration rate, oxygen saturation), time of first symptoms, and their evolution • The treatment given and the response of the patient to the treatment • Any results of a telephonic consultation with a drug allergy specialist • Any clinical follow-up and advice to see a drug allergy specialist If a HR to a contrast medium is serious or unexpected, the physician responsible for its administration or the drug allergy specialist should report all details of such a reaction to the Marketing Authorization Holder and/or the National Pharmacovigilance Authority.",
+          "src": "EN-03",
+          "cat": "护理能力与记录"
+        }
+      ]
+    },
+    {
+      "id": "AT_ExtravasationImaging",
+      "graph": "topic-01",
+      "type": "AssessmentTool",
+      "name": "外渗范围影像学评估",
+      "tags": [
+        "评估工具"
+      ],
+      "aliases": [
+        "外渗范围影像学评估"
+      ],
+      "summary": "借助X线与超声等影像手段评估外渗范围、分布与深度，判断保守处置是否充分，为是否需要外科干预提供依据。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "病例报告",
+          "author": "Hu J, Ge T, Du Y, Wang J, Zhou Y",
+          "title": "Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention",
+          "journal": "BMC Surgery",
+          "year": 2025,
+          "cite": "Hu J, Ge T, Du Y, Wang J, Zhou Y / Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention / BMC Surgery / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-17"
+        }
+      ],
+      "details": [
+        {
+          "k": "Imaging to judge depth and extent",
+          "v": "Carefully document the volume and site of extravasation. Radiographic or ultrasound imaging of the affected area is recommended to evaluate the extent, topography and depth of contrast diffusion, which helps determine whether conservative measures are sufficient or whether deeper tissue involvement warrants surgical intervention.",
+          "quote": "Radiographic or ultrasound imaging of the affected area is recommended to evaluate the extent, topography, and depth of contrast diffusion, which helps determine whether conservative measures are sufficient or if deeper tissue involvement warrants surgical intervention.",
+          "src": "EN-17",
+          "cat": "识别分级"
+        }
+      ]
+    },
+    {
+      "id": "RF_ExistingIVReuse",
+      "graph": "topic-01",
+      "type": "RiskFactor",
+      "name": "沿用既有静脉通路",
+      "tags": [
+        "危险因素"
+      ],
+      "aliases": [
+        "沿用既有静脉通路"
+      ],
+      "summary": "沿用外院或病区已置入的静脉留置针进行对比剂注射是外渗的独立危险因素，与置管时间长、多次尝试及转运中脱出有关。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "EN-01"
+        },
+        {
+          "type": "系统评价",
+          "author": "Heshmatzadeh Behzadi A, Farooq Z, Newhouse JH, Prince MR",
+          "title": "MRI and CT contrast media extravasation: A systematic review",
+          "journal": "Medicine (Baltimore)",
+          "year": 2018,
+          "cite": "Heshmatzadeh Behzadi A, Farooq Z, Newhouse JH, Prince MR / MRI and CT contrast media extravasation: A systematic review / Medicine (Baltimore) / 2018",
+          "grade": "汇总证据",
+          "ref": "EN-06"
+        },
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        }
+      ],
+      "details": [
+        {
+          "k": "Ultrasound-guided access and pre-existing cannula",
+          "v": "Ultrasound-guided cannula insertion carried higher extravasation rates (3.6%) than standard insertion (0.3%), attributed to prior failed attempts and deeper veins permitting a shorter intravascular cannula length that can dislodge. A newly sited cannula gave a smaller extravasate volume (40.6 ml vs 63.1 ml, p = 0.0005) than reusing an existing cannula, so a new cannula is advised for at-risk patients.",
+          "quote": "Cannula insertion technical factors A non-randomised retrospective study found higher rates of extravasation in patients who had ultrasound-guided cannula insertion (3.6%) vs. standard insertion (0.3%). However, the numbers of patients in each group were drastically different-364 in the ultrasound-guided cannula inserted group and 896 in the standard cannula inserted group (2% of a random sample of 40,143 patients). The difference in results in this study is likely due to confounding variables; i.e. prior failure of standard insertion and with deeper veins there is potentially a shorter length of intravascular cannula hence greater potential for dislodgement upon injection [47]. The type of healthcare worker who inserts the IV cannula was investigated by Sinan et al. which showed that CMEX rates were higher when inserted by non-radiology staff (0.3%) as compared to radiology staff (0.2%). However, this difference did not demonstrate statistical significance and a number of confounders could explain this difference [34]. Another study evaluated extravasation between newly inserted cannula vs. use of an existing cannula for CM injection with a difference in rates and a reduced volume of extravasate observed with those freshly sited (40.6 ml vs. 63.1 ml, p = 0.0005) [46], despite older cannulae being checked for flush efficacy. Therefore, consideration should be given to placing a new cannula for at-risk patients to reduce potential impact of any extravasation. Chemical properties of CM Three main contrast media properties have been studied in relation to CMEX: osmolarity, charge and viscosity.",
+          "src": "EN-01",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Ultrasound-guided PIV raises extravasation rate",
+          "v": "Extravasation risk appears increased in patients with deep brachial IV access achieved under ultrasound guidance, a practice more common in emergency departments. In one series, contrast extravasation occurred during CT in 0.3% of all patients but 3.6% of patients injected through ultrasound-guided peripheral IV catheters; selection bias likely contributes (these patients have harder access).",
+          "quote": "In one series, contrast media extravasation occurred during CT in 0.3% of all patients, but in 3.6% of patients who were injected through ultrasound-guided peripheral intravenous catheters [78].",
+          "src": "R01",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Existing IV versus new radiology-placed cannula",
+          "v": "IV cannulas inserted by non-radiology staff prior to arrival gave extravasation rates of 0.58% versus 0.33% for cannulas inserted by radiology staff immediately before scanning (P < .001). Contributing factors: cannulas placed more than 24 hours earlier or after multiple attempts; dislodgement during transport; and site preference (radiology preferred upper forearm, non-radiology staff preferred smaller more peripheral hand veins, which are more prone to extravasation).",
+          "quote": "These factors increase the likelihood of extravasation in elderly.[21,37,38] 3.4.Cannula insertion by radiology staff versus using an existing IV Three studies[28,31,34] reported on the rate of extravasation during CT scanning with IV cannula insertions performed by nonradiology staff (0.58%) prior to patient arrival in the radiology department as compared with IV catheter insertions performed by radiology staff immediately prior to scanning (0.33%) (P < .001) (Table 5). A number of factors might account for this difference: the IV cannulas inserted by nonradiology staff may have been in place for more than 24 h or inserted after multiple attempts, with no extravasation with drip infusions but leaks at the higher injection rates used for CT and MRI.[40-44] Catheters could be dislodged during transportation of the patient to the CT scanner from the patient floor.",
+          "src": "EN-06",
+          "cat": "风险因素"
+        }
+      ]
+    },
+    {
+      "id": "RF_SmallBoreCannula",
+      "graph": "topic-01",
+      "type": "RiskFactor",
+      "name": "小口径留置针",
+      "tags": [
+        "危险因素"
+      ],
+      "aliases": [
+        "小口径留置针"
+      ],
+      "summary": "小口径留置针用于高压推注时外渗风险相对更高，针号越小可达到的流速上限越低；应按推注速度需求与血管条件选择合适口径。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "EN-01"
+        },
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "系统评价",
+          "author": "Heshmatzadeh Behzadi A, Farooq Z, Newhouse JH, Prince MR",
+          "title": "MRI and CT contrast media extravasation: A systematic review",
+          "journal": "Medicine (Baltimore)",
+          "year": 2018,
+          "cite": "Heshmatzadeh Behzadi A, Farooq Z, Newhouse JH, Prince MR / MRI and CT contrast media extravasation: A systematic review / Medicine (Baltimore) / 2018",
+          "grade": "汇总证据",
+          "ref": "EN-06"
+        },
+        {
+          "type": "病例系列",
+          "author": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC",
+          "title": "Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions",
+          "journal": "International Wound Journal",
+          "year": 2017,
+          "cite": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC / Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions / International Wound Journal / 2017",
+          "grade": "汇总证据",
+          "ref": "EN-07"
+        },
+        {
+          "type": "综述",
+          "author": "Romanczuk D, Lange S, Medrzycka-Dabrowska W, Cichowlas G",
+          "title": "Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography",
+          "journal": "Journal of Clinical Medicine",
+          "year": 2026,
+          "cite": "Romanczuk D, Lange S, Medrzycka-Dabrowska W, Cichowlas G / Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography / Journal of Clinical Medicine / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-22"
+        }
+      ],
+      "details": [
+        {
+          "k": "Cannula gauge and site drive extravasation risk",
+          "v": "Retrospective cohort data show extravasation rates are higher with 22G cannulas than with 20G or 18G, but no significant difference between 18G and 20G; no difference in extravasate volume between cannula sizes. Cannula location matters: higher rates when placed in a dorsum-of-hand vein than an antecubital fossa vein, although extravasate volume is larger from antecubital injections (higher flow rates, delayed recognition). Lower-limb and small distal veins are the least optimal sites.",
+          "quote": "Furthermore, retrospective cohort studies have shown that extravasation rates were higher with 22G compared to 20G and 18G cannulas, but no significant difference between 18 and 20G cannulas [33-35].",
+          "src": "EN-01",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Small-bore catheters and high-risk sites",
+          "v": "Extravasation is more common in patients injected through small-bore (22 gauge) catheters than larger-bore catheters (2.2% versus 1.0-1.1%). Hand, wrist, foot and ankle access sites are more likely to result in extravasation and should be avoided when possible. Flow rates of up to 3 mL/sec through 22G and 5 mL/sec through 20G catheters can be safely achieved in the vast majority of patients provided there is no increased resistance or pain during a rapid test injection.",
+          "quote": "In some studies, extravasations were more common in patients injected through small-bore (22 gauge) catheters compared to larger-bore catheters (2.2% versus 1.0-1.1%) [41]. While some reviews have found that injection at higher flow rates likely increases the risk of extravasation [48], in others, no such difference has been detected [41,75]. In fact, it has been shown that flow rates of up to 3 and 5 mL/sec can be safely achieved through 22 gauge and 20 gauge intravenous catheters, respectively, in the vast majority of patients, provided that there is n o increased resistance or pain during a rapid test injection [75].",
+          "src": "R01",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Hand veins and small-bore catheters worse",
+          "v": "Extravasations occurred more frequently with catheters in hand veins than larger veins; for 20-gauge catheters there was a significant difference between dorsum of hand and antecubital fossa (1.8% vs 0.8%; P = .018). A separate investigation found small-diameter angio-catheters (22-gauge) associated with higher extravasation rates (2.2%; P < .05) independent of anatomic location. Based on one study, relative risk was 0.4 for antecubital IV, 9.4 for deep brachial IV and 1.7 for all other IV sites.",
+          "quote": "Extravasations occurred more frequently in IV catheters placed into hand veins compared with larger veins; for 20-gauge IV catheters, a significant difference between the dorsum of the hand and the antecubital fossa was noticed (1.8% vs. 0.8%; P = .018).[30] Table 6Three papers[27,30,35] reported the rates of extravasation of iodinated contrast media (mostly nonionic) for different sites of injection. Based on the findings of Hardie et al, the rate of extravasation for antecubital IV, deep brachial IV and all other IV sites was 0.6%, 6.5%, and 0.9%, respectively. The relative risk of extravasation for antecubital IV, deep brachial IV, and all other IV sites was 0.4, 9.4, and 1.7, respectively.[35] This finding is in line with results of another study that reported a significantly higher rate of extravasation injuries with injections into dorsum of the hand when compared with antecubital fossa injections.[26] 3.6.Catheter size Jacobs et al found no difference in extravasation rate for different catheter sizes,[27] but an investigation by Wienbeck et al found that small diameter angio-catheters (e.g., 22-gauge) were associated with higher rates of contrast material extravasation (2.2%; P < .05), independent of the anatomic location.[29] Their finding corroborated a previous report by Cohan et al which found that extravasations were significantly higher in patients receiving Contrast Media injection through small-bore catheters.[25] These observations may be confounded by the use of smaller bore catheters in smaller more tenuous veins.[21] 3.7.Power versus manual injection The introduction of automated power injection enabled larger volumes of contrast media to be injected at higher flow rates than are possible with hand injection.",
+          "src": "EN-06",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Incidence and inject parameters observed",
+          "v": "Results Over a 4‐year period, in our hospital, 80 cases of CM extravasation were reported from approximately 218 000 CT scans using an intravenous contrast agent, representing an incidence rate of 0·036%. The mean age of the 80 patients (52 women, 28 men) was 58 years at the time of diagnosis (range 2-94 years). The most common anatomical locations of extravasation were the forearm area (right: 28, left: 34), followed by the dorsum of the hand (right: 11, left: 5) and two other sites. The injected flow rates ranged from 0·6 to 5 ml/second. In all cases, a power CM injector was used. Mean volume of the extravasated agent was 44·5 ml (range 5-140 ml).",
+          "quote": "Results Over a 4‐year period, in our hospital, 80 cases of CM extravasation were reported from approximately 218 000 CT scans using an intravenous contrast agent, representing an incidence rate of 0·036%. The mean age of the 80 patients (52 women, 28 men) was 58 years at the time of diagnosis (range 2-94 years). Figure 2 shows the incidence of the CM extravasation by age. The most common anatomical locations of extravasation were the forearm area (right: 28, left: 34), followed by the dorsum of the hand (right: 11, left: 5) and two other sites. Five different brands of non‐ionic contrast agents were given in all the cases, Bonorex (Central Medical Service, Seoul, Korea), Omnihexol (Korea United Pharm, Seoul, Korea), Optiray (Reyon Phram, Seoul, Korea), Scanlux (Dasol Life Science, Seoul, Korea) and Iomeron (Bracco Imaging Korea, Seoul, Korea). The injected flow rates ranged from 0·6 to 5 ml/second. In all cases, a power CM injector was used. The mean gauge of needles for the power injector was 20·2 (range 18-24). Mean volume of the extravasated agent was 44·5 ml (range 5-140 ml). The mean flow rate of the power CM injector was 2·8 ml/second (range 0·6-5 ml/second).",
+          "src": "EN-07",
+          "cat": "处置"
+        },
+        {
+          "k": "Catheter gauge limits achievable flow rate",
+          "v": "Catheter gauge significantly limited the achieved flow rate, but 22G was sufficient for most routine non-CT-angiography scans (reported extravasation rate 0.3%, 3/1000; 98% success rate with an average of 1.2 attempts per patient). A separate series reported an overall extravasation rate of 0.12% (38/31,101), with risk significantly higher for ward staff cannulations (0.23%) versus radiology staff cannulations (0.09%); most extravasations occurred in the hand or wrist rather than the antecubital fossa.",
+          "quote": "Johnson P.T. et al., 2010 [27] Prospective observational study n = 1000 USA Peripheral IV catheters Range: 18 G to 24 G (Most common: 20 G-56%, 22 G-34%) Mean rates: 18 G (3.6 mL/s), 20 G (2.9 mL/s), 22 G (2.1 mL/s), 24 G (1.5 mL/s) Recorded during clinical CT protocols Success rate: 98%. Average of 1.2 attempts per patient. Extravasation rate: 0.3% (3/1000). Catheter gauge significantly limited the achieved flow rate, but 22 G was sufficient for most routine non-CTA scans. Goltz J.P. et al., 2011 [20] Retrospective study n = 141 Germany Conventional TIVAPs Forearm ports (various standard gauges for upper extremity) 1.5 mL/s Limit: 150 psi Technical success: 100%. No catheter ruptures, failures, or extravasations. Adequate diagnostic image quality achieved. No catheter tip migration observed. Kingston R.J. et al., 2012 [21] Prospective observational study n = 31,101 Australia Peripheral IV catheters Various (Standard hospital range: 18 G to 22 G) High-rate power injection (standard CT protocols) Recorded via automated power injectors Overall extravasation rate: 0.12% (38/31,101). Risk was significantly higher for ward staff cannulations (0.23%) compared to radiology staff cannulations (0.09%).",
+          "src": "EN-22",
+          "cat": "对比剂安全"
+        }
+      ]
+    },
+    {
+      "id": "RF_HandDorsalSite",
+      "graph": "topic-01",
+      "type": "RiskFactor",
+      "name": "手背等外周静脉穿刺",
+      "tags": [
+        "危险因素"
+      ],
+      "aliases": [
+        "手背等外周静脉穿刺"
+      ],
+      "summary": "手背等细小外周静脉作为对比剂注射部位时外渗风险显著升高，与血管细脆、疼痛不易及时表达及导管易移位有关。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "EN-01"
+        },
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "系统评价",
+          "author": "Heshmatzadeh Behzadi A, Farooq Z, Newhouse JH, Prince MR",
+          "title": "MRI and CT contrast media extravasation: A systematic review",
+          "journal": "Medicine (Baltimore)",
+          "year": 2018,
+          "cite": "Heshmatzadeh Behzadi A, Farooq Z, Newhouse JH, Prince MR / MRI and CT contrast media extravasation: A systematic review / Medicine (Baltimore) / 2018",
+          "grade": "汇总证据",
+          "ref": "EN-06"
+        },
+        {
+          "type": "队列研究",
+          "author": "Wang L, Chen Q, Liu H, Wang X, Qian Q, Xu M, Ma L, Wang X",
+          "title": "Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study",
+          "journal": "Quantitative Imaging in Medicine and Surgery",
+          "year": 2025,
+          "cite": "Wang L, Chen Q, Liu H, Wang X, Qian Q, Xu M, Ma L, Wang X / Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study / Quantitative Imaging in Medicine and Surgery / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-09"
+        },
+        {
+          "type": "队列研究",
+          "author": "Liu W, Wang P, Zhu H, Tang H, Guan H, Wang X, Wang C, Qiu Y, He L",
+          "title": "Contrast media extravasation injury: a prospective observational cohort study",
+          "journal": "European Journal of Medical Research",
+          "year": 2023,
+          "cite": "Liu W, Wang P, Zhu H, Tang H, Guan H, Wang X, Wang C, Qiu Y, He L / Contrast media extravasation injury: a prospective observational cohort study / European Journal of Medical Research / 2023",
+          "grade": "汇总证据",
+          "ref": "EN-05"
+        },
+        {
+          "type": "综述",
+          "author": "Romanczuk D, Lange S, Medrzycka-Dabrowska W, Cichowlas G",
+          "title": "Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography",
+          "journal": "Journal of Clinical Medicine",
+          "year": 2026,
+          "cite": "Romanczuk D, Lange S, Medrzycka-Dabrowska W, Cichowlas G / Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography / Journal of Clinical Medicine / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-22"
+        }
+      ],
+      "details": [
+        {
+          "k": "不同穿刺部位外渗率",
+          "v": "13284例留置针输液中532例发生渗出外渗(4.00%)；上臂静脉7.54%最高、头部静脉2.74%最低",
+          "quote": "13284例静脉留置针输液患者中,发生静脉渗出外渗532例,发生率4.00％;其中手背静脉、前臂静脉、上臂静脉、头部静脉及下肢静脉渗出外渗的发生率分别为3.92％、3.90％、7.54％、2.74％、4.69％.",
+          "src": "CN-13",
+          "cat": "预防"
+        },
+        {
+          "k": "Cannula gauge and site drive extravasation risk",
+          "v": "Retrospective cohort data show extravasation rates are higher with 22G cannulas than with 20G or 18G, but no significant difference between 18G and 20G; no difference in extravasate volume between cannula sizes. Cannula location matters: higher rates when placed in a dorsum-of-hand vein than an antecubital fossa vein, although extravasate volume is larger from antecubital injections (higher flow rates, delayed recognition). Lower-limb and small distal veins are the least optimal sites.",
+          "quote": "Furthermore, retrospective cohort studies have shown that extravasation rates were higher with 22G compared to 20G and 18G cannulas, but no significant difference between 18 and 20G cannulas [33-35].",
+          "src": "EN-01",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Small-bore catheters and high-risk sites",
+          "v": "Extravasation is more common in patients injected through small-bore (22 gauge) catheters than larger-bore catheters (2.2% versus 1.0-1.1%). Hand, wrist, foot and ankle access sites are more likely to result in extravasation and should be avoided when possible. Flow rates of up to 3 mL/sec through 22G and 5 mL/sec through 20G catheters can be safely achieved in the vast majority of patients provided there is no increased resistance or pain during a rapid test injection.",
+          "quote": "In some studies, extravasations were more common in patients injected through small-bore (22 gauge) catheters compared to larger-bore catheters (2.2% versus 1.0-1.1%) [41]. While some reviews have found that injection at higher flow rates likely increases the risk of extravasation [48], in others, no such difference has been detected [41,75]. In fact, it has been shown that flow rates of up to 3 and 5 mL/sec can be safely achieved through 22 gauge and 20 gauge intravenous catheters, respectively, in the vast majority of patients, provided that there is n o increased resistance or pain during a rapid test injection [75].",
+          "src": "R01",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Moderate injury risk factors",
+          "v": "Risk factors for moderate extravasation injury identified in univariate analysis: age ≥ 70 years, malignant tumors, large-volume (> 50 mL) extravasation, insertion on the left side, and injection site (back of the hand) were important variables in the univariate analysis.",
+          "quote": "Age ≥ 70 years, malignant tumors, large-volume (> 50 mL) extravasation, insertion on the left side, and injection site (back of the hand) were important variables in the univariate analysis.",
+          "src": "EN-05",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Hand veins and small-bore catheters worse",
+          "v": "Extravasations occurred more frequently with catheters in hand veins than larger veins; for 20-gauge catheters there was a significant difference between dorsum of hand and antecubital fossa (1.8% vs 0.8%; P = .018). A separate investigation found small-diameter angio-catheters (22-gauge) associated with higher extravasation rates (2.2%; P < .05) independent of anatomic location. Based on one study, relative risk was 0.4 for antecubital IV, 9.4 for deep brachial IV and 1.7 for all other IV sites.",
+          "quote": "Extravasations occurred more frequently in IV catheters placed into hand veins compared with larger veins; for 20-gauge IV catheters, a significant difference between the dorsum of the hand and the antecubital fossa was noticed (1.8% vs. 0.8%; P = .018).[30] Table 6Three papers[27,30,35] reported the rates of extravasation of iodinated contrast media (mostly nonionic) for different sites of injection. Based on the findings of Hardie et al, the rate of extravasation for antecubital IV, deep brachial IV and all other IV sites was 0.6%, 6.5%, and 0.9%, respectively. The relative risk of extravasation for antecubital IV, deep brachial IV, and all other IV sites was 0.4, 9.4, and 1.7, respectively.[35] This finding is in line with results of another study that reported a significantly higher rate of extravasation injuries with injections into dorsum of the hand when compared with antecubital fossa injections.[26] 3.6.Catheter size Jacobs et al found no difference in extravasation rate for different catheter sizes,[27] but an investigation by Wienbeck et al found that small diameter angio-catheters (e.g., 22-gauge) were associated with higher rates of contrast material extravasation (2.2%; P < .05), independent of the anatomic location.[29] Their finding corroborated a previous report by Cohan et al which found that extravasations were significantly higher in patients receiving Contrast Media injection through small-bore catheters.[25] These observations may be confounded by the use of smaller bore catheters in smaller more tenuous veins.[21] 3.7.Power versus manual injection The introduction of automated power injection enabled larger volumes of contrast media to be injected at higher flow rates than are possible with hand injection.",
+          "src": "EN-06",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Incidence and inject parameters observed",
+          "v": "Results Over a 4‐year period, in our hospital, 80 cases of CM extravasation were reported from approximately 218 000 CT scans using an intravenous contrast agent, representing an incidence rate of 0·036%. The mean age of the 80 patients (52 women, 28 men) was 58 years at the time of diagnosis (range 2-94 years). The most common anatomical locations of extravasation were the forearm area (right: 28, left: 34), followed by the dorsum of the hand (right: 11, left: 5) and two other sites. The injected flow rates ranged from 0·6 to 5 ml/second. In all cases, a power CM injector was used. Mean volume of the extravasated agent was 44·5 ml (range 5-140 ml).",
+          "quote": "Results Over a 4‐year period, in our hospital, 80 cases of CM extravasation were reported from approximately 218 000 CT scans using an intravenous contrast agent, representing an incidence rate of 0·036%. The mean age of the 80 patients (52 women, 28 men) was 58 years at the time of diagnosis (range 2-94 years). Figure 2 shows the incidence of the CM extravasation by age. The most common anatomical locations of extravasation were the forearm area (right: 28, left: 34), followed by the dorsum of the hand (right: 11, left: 5) and two other sites. Five different brands of non‐ionic contrast agents were given in all the cases, Bonorex (Central Medical Service, Seoul, Korea), Omnihexol (Korea United Pharm, Seoul, Korea), Optiray (Reyon Phram, Seoul, Korea), Scanlux (Dasol Life Science, Seoul, Korea) and Iomeron (Bracco Imaging Korea, Seoul, Korea). The injected flow rates ranged from 0·6 to 5 ml/second. In all cases, a power CM injector was used. The mean gauge of needles for the power injector was 20·2 (range 18-24). Mean volume of the extravasated agent was 44·5 ml (range 5-140 ml). The mean flow rate of the power CM injector was 2·8 ml/second (range 0·6-5 ml/second).",
+          "src": "EN-07",
+          "cat": "处置"
+        },
+        {
+          "k": "Serious injury risk factors quantified",
+          "v": "586,812 contrast injections over 11 years: 709 extravasations (0.12%). Severity: 672 (94.8%) mild, 32 (4.5%) moderate, 5 (0.7%) severe; only 5 patients received dermatology or burn specialist consultation and none required surgery. Multivariate analysis: diabetes mellitus (OR 8.04, P<0.01), injection in the dorsum of the hand (OR 4.86, P<0.01), injection without a saline test (OR 2.58, P=0.02), and large-volume extravasation (OR 5.49, P<0.01) were independent risk factors for moderate or severe injury.",
+          "quote": "Results CM extravasation occurred in 0.12% (709/586,812) of cases. Of the 709 extravasation injuries, 672 (94.8%) were mild, 32 (4.5%) were moderate, and 5 (0.7%) were severe. Only 5 patients received consultations from dermatologists or burn specialists, and none required surgery. Multivariate analysis underscored the presence of diabetes mellitus [DM, odds ratio (OR) =8.04; P<0.01], injections in the dorsum of the hand (OR =4.86; P<0.01), without saline test (OR =2.58; P=0.02), and large-volume extravasation (OR =5.49; P<0.01) as potential risk factors of moderate or severe CM extravasation injury. Conclusions Most CM extravasation injuries are mild and without serious consequences. Multiple modifiable risk factors for serious CM extravasation injury have been identified that could mitigate the severity of the injury. Keywords: Contrast media (CM), extravasation of diagnostic and therapeutic materials, injection site reactions, computed tomography (CT) statusreleaseddisplay-pdfyesis-olfnois-manuscriptnois-preprintnois-journal-matternois-scannednois-retractednoReceived 2024 Oct 24; Accepted 2025 Apr 29; Issue date 2025 Aug 1. Introduction Contrast media (CM) is widely used in contrast-enhanced computed tomography (CECT) scans to improve the visualization of abnormal structures in various parts of the body (1). With the increasing availability of computed tomography (CT) equipment in healthcare, there were approximately 91.4 million CT scans conducted in the US in 2019; 48% of these recipients required the intravenous administration of CM (2). Characterized by its distinct physicochemical properties, including high concentration, osmotic pressure, and viscosity, CM typically requires intravenous injection into the human body at a rapid rate. Multiple complications can occur after CM injection, of which extravasation is well-recognized, with an occurrence rate of 0.1-1.2% (3-8). Extravasation refers to the inadvertent administration of vesicant solutions or drugs into adjacent tissues (9,10). CM is categorized as a high-risk vesicant, with tissue toxicity primarily driven by its hyperosmolarity (11).",
+          "src": "EN-09",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Catheter gauge limits achievable flow rate",
+          "v": "Catheter gauge significantly limited the achieved flow rate, but 22G was sufficient for most routine non-CT-angiography scans (reported extravasation rate 0.3%, 3/1000; 98% success rate with an average of 1.2 attempts per patient). A separate series reported an overall extravasation rate of 0.12% (38/31,101), with risk significantly higher for ward staff cannulations (0.23%) versus radiology staff cannulations (0.09%); most extravasations occurred in the hand or wrist rather than the antecubital fossa.",
+          "quote": "Johnson P.T. et al., 2010 [27] Prospective observational study n = 1000 USA Peripheral IV catheters Range: 18 G to 24 G (Most common: 20 G-56%, 22 G-34%) Mean rates: 18 G (3.6 mL/s), 20 G (2.9 mL/s), 22 G (2.1 mL/s), 24 G (1.5 mL/s) Recorded during clinical CT protocols Success rate: 98%. Average of 1.2 attempts per patient. Extravasation rate: 0.3% (3/1000). Catheter gauge significantly limited the achieved flow rate, but 22 G was sufficient for most routine non-CTA scans. Goltz J.P. et al., 2011 [20] Retrospective study n = 141 Germany Conventional TIVAPs Forearm ports (various standard gauges for upper extremity) 1.5 mL/s Limit: 150 psi Technical success: 100%. No catheter ruptures, failures, or extravasations. Adequate diagnostic image quality achieved. No catheter tip migration observed. Kingston R.J. et al., 2012 [21] Prospective observational study n = 31,101 Australia Peripheral IV catheters Various (Standard hospital range: 18 G to 22 G) High-rate power injection (standard CT protocols) Recorded via automated power injectors Overall extravasation rate: 0.12% (38/31,101). Risk was significantly higher for ward staff cannulations (0.23%) compared to radiology staff cannulations (0.09%).",
+          "src": "EN-22",
+          "cat": "对比剂安全"
+        }
+      ]
+    },
+    {
+      "id": "RF_DiabetesMellitus",
+      "graph": "topic-01",
+      "type": "RiskFactor",
+      "name": "糖尿病",
+      "tags": [
+        "危险因素"
+      ],
+      "aliases": [
+        "糖尿病"
+      ],
+      "summary": "糖尿病患者发生中重度对比剂外渗损伤的风险明显升高，与血管病变、末梢循环差及创面愈合不良等因素相关。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "队列研究",
+          "author": "Wang L, Chen Q, Liu H, Wang X, Qian Q, Xu M, Ma L, Wang X",
+          "title": "Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study",
+          "journal": "Quantitative Imaging in Medicine and Surgery",
+          "year": 2025,
+          "cite": "Wang L, Chen Q, Liu H, Wang X, Qian Q, Xu M, Ma L, Wang X / Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study / Quantitative Imaging in Medicine and Surgery / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-09"
+        },
+        {
+          "type": "队列研究",
+          "author": "Zhou Y, Lin S, Qian Q, Shi J, Chen Q",
+          "title": "Integrating CT-Derived Body Composition and Real-Time Injection Pressure Monitoring for Predicting Contrast Media Extravasation: A Retrospective Cohort Study with Implications for Nurse-Led Risk Stratification",
+          "journal": "Healthcare (Basel)",
+          "year": 2026,
+          "cite": "Zhou Y, Lin S, Qian Q, Shi J, Chen Q / Integrating CT-Derived Body Composition and Real-Time Injection Pressure Monitoring for Predicting Contrast Media Extravasation: A Retrospective Cohort Study with Implications for Nurse-Led Risk Stratification / Healthcare (Basel) / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-21"
+        }
+      ],
+      "details": [
+        {
+          "k": "Serious injury risk factors quantified",
+          "v": "586,812 contrast injections over 11 years: 709 extravasations (0.12%). Severity: 672 (94.8%) mild, 32 (4.5%) moderate, 5 (0.7%) severe; only 5 patients received dermatology or burn specialist consultation and none required surgery. Multivariate analysis: diabetes mellitus (OR 8.04, P<0.01), injection in the dorsum of the hand (OR 4.86, P<0.01), injection without a saline test (OR 2.58, P=0.02), and large-volume extravasation (OR 5.49, P<0.01) were independent risk factors for moderate or severe injury.",
+          "quote": "Results CM extravasation occurred in 0.12% (709/586,812) of cases. Of the 709 extravasation injuries, 672 (94.8%) were mild, 32 (4.5%) were moderate, and 5 (0.7%) were severe. Only 5 patients received consultations from dermatologists or burn specialists, and none required surgery. Multivariate analysis underscored the presence of diabetes mellitus [DM, odds ratio (OR) =8.04; P<0.01], injections in the dorsum of the hand (OR =4.86; P<0.01), without saline test (OR =2.58; P=0.02), and large-volume extravasation (OR =5.49; P<0.01) as potential risk factors of moderate or severe CM extravasation injury. Conclusions Most CM extravasation injuries are mild and without serious consequences. Multiple modifiable risk factors for serious CM extravasation injury have been identified that could mitigate the severity of the injury. Keywords: Contrast media (CM), extravasation of diagnostic and therapeutic materials, injection site reactions, computed tomography (CT) statusreleaseddisplay-pdfyesis-olfnois-manuscriptnois-preprintnois-journal-matternois-scannednois-retractednoReceived 2024 Oct 24; Accepted 2025 Apr 29; Issue date 2025 Aug 1. Introduction Contrast media (CM) is widely used in contrast-enhanced computed tomography (CECT) scans to improve the visualization of abnormal structures in various parts of the body (1). With the increasing availability of computed tomography (CT) equipment in healthcare, there were approximately 91.4 million CT scans conducted in the US in 2019; 48% of these recipients required the intravenous administration of CM (2). Characterized by its distinct physicochemical properties, including high concentration, osmotic pressure, and viscosity, CM typically requires intravenous injection into the human body at a rapid rate. Multiple complications can occur after CM injection, of which extravasation is well-recognized, with an occurrence rate of 0.1-1.2% (3-8). Extravasation refers to the inadvertent administration of vesicant solutions or drugs into adjacent tissues (9,10). CM is categorized as a high-risk vesicant, with tissue toxicity primarily driven by its hyperosmolarity (11).",
+          "src": "EN-09",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Established clinical and technical predictors",
+          "v": "Existing studies have emphasized clinical and technical predictors, including age, sex, diabetes, prior chemotherapy, catheter gauge, injection site, and pressure-related variables. CTA requires the rapid intravenous injection of iodinated contrast media to achieve adequate vascular enhancement, typically at rates of 3-5 mL/s using automated power injectors.",
+          "quote": "The procedure requires the rapid intravenous injection of iodinated contrast media to achieve adequate vascular enhancement, typically at rates of 3-5 mL/s using automated power injectors [3,4]. Contrast media extravasation remains an important complication [5]. Although large mixed-protocol CT registries usually report low overall incidence, the risk may be higher in CTA cohorts because rapid high-flow injection places greater mechanical stress on peripheral venous access [6,7,8]. Existing studies have emphasized clinical and technical predictors, including age, sex, diabetes, prior chemotherapy, catheter gauge, injection site, and pressure-related variables [9,10].",
+          "src": "EN-21",
+          "cat": "风险因素"
+        }
+      ]
+    },
+    {
+      "id": "RF_MalignancyChemotherapy",
+      "graph": "topic-01",
+      "type": "RiskFactor",
+      "name": "恶性肿瘤与既往化疗",
+      "tags": [
+        "危险因素"
+      ],
+      "aliases": [
+        "恶性肿瘤与既往化疗"
+      ],
+      "summary": "恶性肿瘤患者及既往接受化疗者对比剂外渗后损伤程度更重的风险因素，与血管脆性、既往治疗损伤及整体虚弱状况相关。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "队列研究",
+          "author": "Liu W, Wang P, Zhu H, Tang H, Guan H, Wang X, Wang C, Qiu Y, He L",
+          "title": "Contrast media extravasation injury: a prospective observational cohort study",
+          "journal": "European Journal of Medical Research",
+          "year": 2023,
+          "cite": "Liu W, Wang P, Zhu H, Tang H, Guan H, Wang X, Wang C, Qiu Y, He L / Contrast media extravasation injury: a prospective observational cohort study / European Journal of Medical Research / 2023",
+          "grade": "汇总证据",
+          "ref": "EN-05"
+        },
+        {
+          "type": "队列研究",
+          "author": "Zhou Y, Lin S, Qian Q, Shi J, Chen Q",
+          "title": "Integrating CT-Derived Body Composition and Real-Time Injection Pressure Monitoring for Predicting Contrast Media Extravasation: A Retrospective Cohort Study with Implications for Nurse-Led Risk Stratification",
+          "journal": "Healthcare (Basel)",
+          "year": 2026,
+          "cite": "Zhou Y, Lin S, Qian Q, Shi J, Chen Q / Integrating CT-Derived Body Composition and Real-Time Injection Pressure Monitoring for Predicting Contrast Media Extravasation: A Retrospective Cohort Study with Implications for Nurse-Led Risk Stratification / Healthcare (Basel) / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-21"
+        }
+      ],
+      "details": [
+        {
+          "k": "Moderate injury risk factors",
+          "v": "Risk factors for moderate extravasation injury identified in univariate analysis: age ≥ 70 years, malignant tumors, large-volume (> 50 mL) extravasation, insertion on the left side, and injection site (back of the hand) were important variables in the univariate analysis.",
+          "quote": "Age ≥ 70 years, malignant tumors, large-volume (> 50 mL) extravasation, insertion on the left side, and injection site (back of the hand) were important variables in the univariate analysis.",
+          "src": "EN-05",
+          "cat": "风险因素"
+        }
+      ]
+    },
+    {
+      "id": "RF_Sarcopenia",
+      "graph": "topic-01",
+      "type": "RiskFactor",
+      "name": "肌少症与低肌量",
+      "tags": [
+        "危险因素"
+      ],
+      "aliases": [
+        "肌少症与低肌量"
+      ],
+      "summary": "肌少症与骨骼肌量偏低者对高压外周静脉注射的耐受性更差，肌肉储备不足、组织韧性下降是可能的影响途径。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "队列研究",
+          "author": "Zhou Y, Lin S, Qian Q, Shi J, Chen Q",
+          "title": "Integrating CT-Derived Body Composition and Real-Time Injection Pressure Monitoring for Predicting Contrast Media Extravasation: A Retrospective Cohort Study with Implications for Nurse-Led Risk Stratification",
+          "journal": "Healthcare (Basel)",
+          "year": 2026,
+          "cite": "Zhou Y, Lin S, Qian Q, Shi J, Chen Q / Integrating CT-Derived Body Composition and Real-Time Injection Pressure Monitoring for Predicting Contrast Media Extravasation: A Retrospective Cohort Study with Implications for Nurse-Led Risk Stratification / Healthcare (Basel) / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-21"
+        }
+      ],
+      "details": [
+        {
+          "k": "High injection pressure plus low muscle index",
+          "v": "Contrast extravasation risk in abdominal CTA was associated with both high injection pressure profiles and low CT-derived skeletal muscle index. Extravasation occurred in 380 patients (3.05%); patients with extravasation had lower L3 SMI, a higher prevalence of sarcopenia, higher peak pressures, and elevated injection pressure-to-rate ratios. The combined model achieved an AUC of 0.941 (95% CI 0.927-0.955), showing higher discrimination than the pressure-only model (AUC 0.926), body composition-only model (AUC 0.840), and clinical-only model (AUC 0.796).",
+          "quote": "Contrast extravasation risk in abdominal CTA was associated with both high injection pressure profiles and low CT-derived skeletal muscle index. The combined clinical-pressure-body composition model showed higher discrimination than single-domain models after correction of the ROC-labeling error. What are the implications of the main findings? Opportunistic body composition assessment may refine pre-injection risk stratification without additional scanning or radiation exposure. The results provide a basis for future nurse-led, model-informed vascular access planning, but prospective external validation is required before routine deployment. Abstract Purpose: Contrast media extravasation can complicate CT angiography (CTA), particularly when high-flow injection protocols are used. Current risk assessment relies mainly on clinical factors and injection pressure monitoring, whereas opportunistic CT-derived body composition has rarely been evaluated for this purpose. Methods: This single-center retrospective cohort study analyzed 12,460 consecutive adult patients who underwent contrast-enhanced abdominal CTA. The L3 skeletal muscle index (SMI) was extracted from routine CT images, and pressure metrics were obtained from power injector logs. Logistic-regression models incorporating clinical variables, pressure parameters, and body composition variables were evaluated and internally validated. Results: Extravasation occurred in 380 patients (3.05%). Patients with extravasation had lower L3 SMI, a higher prevalence of sarcopenia, higher peak pressures, and elevated injection pressure-to-rate ratios (IPIRs). In multivariable analysis, lower L3 SMI, sarcopenia, peak pressure, IPIR, age, catheter gauge, and injection site were associated with extravasation. The combined model achieved an AUC of 0.941 (95% CI 0.927-0.955), showing higher discrimination than the pressure-only model (AUC 0.926, 95% CI 0.910-0.942), body composition-only model (AUC 0.840, 95% CI 0.819-0.861), and clinical-only model (AUC 0.796, 95% CI 0.772-0.820). The bootstrap optimism-corrected AUC was 0.928.",
+          "src": "EN-21",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Sarcopenia as a risk marker",
+          "v": "Sarcopenia, defined by reduced skeletal muscle mass and quality, is a marker of frailty and impaired physiological reserve. The L3 skeletal muscle index measured on routine abdominal CT gives a standardised estimate of skeletal muscle mass obtainable without additional imaging or radiation exposure. Although the direct mechanism linking sarcopenia to contrast extravasation is not established, low muscle mass may reflect frailty, reduced tissue resilience, impaired nutritional status and vascular vulnerability, plausibly affecting tolerance to high-pressure peripheral venous injection.",
+          "quote": "Sarcopenia, defined by reduced skeletal muscle mass and quality, is a marker of frailty and impaired physiological reserve [15,16]. The L3 skeletal muscle index (SMI) measured on routine abdominal CT provides a standardized estimate of skeletal muscle mass and can be obtained without additional imaging or radiation exposure [17,18].",
+          "src": "EN-21",
+          "cat": "风险因素"
+        }
+      ]
+    },
+    {
+      "id": "RF_FemaleGender",
+      "graph": "topic-01",
+      "type": "RiskFactor",
+      "name": "女性性别",
+      "tags": [
+        "危险因素"
+      ],
+      "aliases": [
+        "女性性别"
+      ],
+      "summary": "女性在对比剂外渗与超敏反应中报告率略高于男性，可能与皮下脂肪较厚致血管位置更深及剂量常被超出体重范围有关。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "系统评价",
+          "author": "Heshmatzadeh Behzadi A, Farooq Z, Newhouse JH, Prince MR",
+          "title": "MRI and CT contrast media extravasation: A systematic review",
+          "journal": "Medicine (Baltimore)",
+          "year": 2018,
+          "cite": "Heshmatzadeh Behzadi A, Farooq Z, Newhouse JH, Prince MR / MRI and CT contrast media extravasation: A systematic review / Medicine (Baltimore) / 2018",
+          "grade": "汇总证据",
+          "ref": "EN-06"
+        },
+        {
+          "type": "队列研究",
+          "author": "Wang L, Chen Q, Liu H, Wang X, Qian Q, Xu M, Ma L, Wang X",
+          "title": "Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study",
+          "journal": "Quantitative Imaging in Medicine and Surgery",
+          "year": 2025,
+          "cite": "Wang L, Chen Q, Liu H, Wang X, Qian Q, Xu M, Ma L, Wang X / Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study / Quantitative Imaging in Medicine and Surgery / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-09"
+        },
+        {
+          "type": "系统评价",
+          "author": "Beiner L, Boehm I",
+          "title": "Risk factor analysis of iodinated contrast medium-related hypersensitivity reactions",
+          "journal": "Insights into Imaging",
+          "year": 2025,
+          "cite": "Beiner L, Boehm I / Risk factor analysis of iodinated contrast medium-related hypersensitivity reactions / Insights into Imaging / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-12"
+        }
+      ],
+      "details": [
+        {
+          "k": "Female sex and older age raise risk",
+          "v": "Five papers reported iodinated contrast extravasation rates by sex: 276 extravasations in 194,306 male injections (0.14%) versus 354 in 186,636 female injections (0.19%). Older patients also had higher rates: mean age of all patients injected was 53.5 years versus 61.2 years in the extravasation group; one study found significantly higher rates over age 50 (P = .02) and another over age 60 in both CT and MRI (P = .001). Contributing factors: fragile veins, inability to communicate pain quickly, and dislodgement of an initial IV in surprised or confused patients.",
+          "quote": "These include 276 extravasations in 194,306 male patient injections (0.14%) compared with 354 extravasations in 186,636 female patient injections (0.19%) (Table 4). Table 4Five papers reported the rates of extravasation of iodinated contrast media (mostly nonionic) for male versus female patients. Although neither Jacobs et al[27] nor Birnbaum et al[3] found any gender effect, Wienbeck et al showed a predominance of women in the extravasation group (P = .05).[30] This finding was confirmed by 2 more recent studies: Niv et al found the extravasation rate to be nearly twice as high in females (0.64%) compared with male patients (0.33%) (P = .005)[34] and Shaqdan et al also demonstrated that females were more prone to extravasations (0.15%) than male patients (0.11%) (P = .0023).[21] This difference could be related to smaller size and deeper positioning of subcutaneous veins within thicker subcutaneous fat in female patients.[37,38] 3.3.Age Niv et al reported a difference between mean age of all patients being injected for contrast enhanced CT = 53.5 years (range 1-94) compared with the mean age of patients with extravasation = 61.2 years (range 24-93) (P < .0001).[34] Wienbeck et al[30] demonstrated significantly higher extravasation rates for patients older than 50 years (P = .02). Shaqdan et al showed that extravasations increased in patients more than 60 years of age in both CT and MRI (P = .001). This finding is possibly explained by fragile veins in older patients.[38,39] Another possible factor is that elderly patients might not be able to communicate quickly regarding pain at the injection site.[21,35] Uncooperative, confused elderly patients may dislodge an initially functioning IV especially if they are surprised when the injection begins.",
+          "src": "EN-06",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Non-modifiable patient risk factors",
+          "v": "Several non-modifiable factors increase extravasation risk, including female sex, age over 60 years, and patients in general wards or intensive care units. The multi-site American College of Radiology quality improvement initiative aimed to reduce extravasation frequency but did not succeed across participating sites despite identifying risk factors and implementing proactive mitigation measures.",
+          "quote": "Several non-modifiable factors increase the risk of CM extravasation, including female sex, age over 60 years, and patients in general wards or intensive care units (ICUs) (15-17).",
+          "src": "EN-09",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Female gender signal but unresolved",
+          "v": "Numerous papers list female gender as a risk for acquiring contrast hypersensitivity, and women are more commonly affected by delayed reactions. Possible explanations: females suffer more often from allergic diseases; a recent study found the contrast agent volume is regularly overdosed in women (even where weight-based dosing is used), and the increased CM dose alone or with other factors could raise risk; women also consult a doctor more often. However, other studies did not confirm females at risk, so the role of gender is yet unclear.",
+          "quote": "Ultimately, the role of gender in contrast-HSR is yet unclear.",
+          "src": "EN-12",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Individual dose adjustment in women proposed",
+          "v": "The authors propose that individual dose adjustment could reduce the incidence of hypersensitivity reactions in women as well as healthcare costs, the carbon footprint for drugs, and contamination of drinking water with contrast agents.",
+          "quote": "Thus, an individual dose adjustment should reduce the incidence of HSR in women as well as healthcare costs, the carbon footprint for drugs, and the contamination of drinking water with contrast agents [126-129].",
+          "src": "EN-12",
+          "cat": "超敏反应"
+        }
+      ]
+    },
+    {
+      "id": "RF_InpatientStatus",
+      "graph": "topic-01",
+      "type": "RiskFactor",
+      "name": "住院及重症患者",
+      "tags": [
+        "危险因素"
+      ],
+      "aliases": [
+        "住院及重症患者"
+      ],
+      "summary": "住院患者与重症监护病房患者对比剂外渗风险相对更高，与血管条件更差、既往置管时间更长及转运环节多有关。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "系统评价",
+          "author": "Heshmatzadeh Behzadi A, Farooq Z, Newhouse JH, Prince MR",
+          "title": "MRI and CT contrast media extravasation: A systematic review",
+          "journal": "Medicine (Baltimore)",
+          "year": 2018,
+          "cite": "Heshmatzadeh Behzadi A, Farooq Z, Newhouse JH, Prince MR / MRI and CT contrast media extravasation: A systematic review / Medicine (Baltimore) / 2018",
+          "grade": "汇总证据",
+          "ref": "EN-06"
+        },
+        {
+          "type": "队列研究",
+          "author": "Wang L, Chen Q, Liu H, Wang X, Qian Q, Xu M, Ma L, Wang X",
+          "title": "Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study",
+          "journal": "Quantitative Imaging in Medicine and Surgery",
+          "year": 2025,
+          "cite": "Wang L, Chen Q, Liu H, Wang X, Qian Q, Xu M, Ma L, Wang X / Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study / Quantitative Imaging in Medicine and Surgery / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-09"
+        }
+      ],
+      "details": [
+        {
+          "k": "Non-modifiable patient risk factors",
+          "v": "Several non-modifiable factors increase extravasation risk, including female sex, age over 60 years, and patients in general wards or intensive care units. The multi-site American College of Radiology quality improvement initiative aimed to reduce extravasation frequency but did not succeed across participating sites despite identifying risk factors and implementing proactive mitigation measures.",
+          "quote": "Several non-modifiable factors increase the risk of CM extravasation, including female sex, age over 60 years, and patients in general wards or intensive care units (ICUs) (15-17).",
+          "src": "EN-09",
+          "cat": "风险因素"
+        }
+      ]
+    },
+    {
+      "id": "RF_LargeVolumeExtravasation",
+      "graph": "topic-01",
+      "type": "RiskFactor",
+      "name": "外渗量大",
+      "tags": [
+        "危险因素"
+      ],
+      "aliases": [
+        "外渗量大"
+      ],
+      "summary": "外渗药液量大是外渗损伤达到中重度的独立危险因素，也与组织张力升高、压迫性缺血及骨筋膜室综合征的发生相关。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "队列研究",
+          "author": "Liu W, Wang P, Zhu H, Tang H, Guan H, Wang X, Wang C, Qiu Y, He L",
+          "title": "Contrast media extravasation injury: a prospective observational cohort study",
+          "journal": "European Journal of Medical Research",
+          "year": 2023,
+          "cite": "Liu W, Wang P, Zhu H, Tang H, Guan H, Wang X, Wang C, Qiu Y, He L / Contrast media extravasation injury: a prospective observational cohort study / European Journal of Medical Research / 2023",
+          "grade": "汇总证据",
+          "ref": "EN-05"
+        },
+        {
+          "type": "队列研究",
+          "author": "Wang L, Chen Q, Liu H, Wang X, Qian Q, Xu M, Ma L, Wang X",
+          "title": "Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study",
+          "journal": "Quantitative Imaging in Medicine and Surgery",
+          "year": 2025,
+          "cite": "Wang L, Chen Q, Liu H, Wang X, Qian Q, Xu M, Ma L, Wang X / Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study / Quantitative Imaging in Medicine and Surgery / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-09"
+        },
+        {
+          "type": "综述",
+          "author": "Thomas R, Vermaak L, Price G",
+          "title": "Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison",
+          "journal": "Eplasty",
+          "year": 2022,
+          "cite": "Thomas R, Vermaak L, Price G / Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison / Eplasty / 2022",
+          "grade": "汇总证据",
+          "ref": "EN-08"
+        }
+      ],
+      "details": [
+        {
+          "k": "Moderate injury risk factors",
+          "v": "Risk factors for moderate extravasation injury identified in univariate analysis: age ≥ 70 years, malignant tumors, large-volume (> 50 mL) extravasation, insertion on the left side, and injection site (back of the hand) were important variables in the univariate analysis.",
+          "quote": "Age ≥ 70 years, malignant tumors, large-volume (> 50 mL) extravasation, insertion on the left side, and injection site (back of the hand) were important variables in the univariate analysis.",
+          "src": "EN-05",
+          "cat": "风险因素"
+        },
+        {
+          "k": "Distribution pattern and large-volume definition",
+          "v": "Contrast media extravasation injuries are relatively benign versus cytotoxic drug extravasation but can cause pressure necrosis, blistering and compartment syndrome. Volume, rate of infusion and osmolality all influence the distribution pattern of the injectate. 'Large-volume' extravasations have been described in the literature as ranging from over 20 mL to over 100 mL.",
+          "quote": "Volume, rate of infusion, and osmolality all influence the distribution pattern of the injectate. \"Large-volume\" extravasations have been described in the literature as being from > 20 mL to > 100 mL.",
+          "src": "EN-08",
+          "cat": "识别分级"
+        },
+        {
+          "k": "Serious injury risk factors quantified",
+          "v": "586,812 contrast injections over 11 years: 709 extravasations (0.12%). Severity: 672 (94.8%) mild, 32 (4.5%) moderate, 5 (0.7%) severe; only 5 patients received dermatology or burn specialist consultation and none required surgery. Multivariate analysis: diabetes mellitus (OR 8.04, P<0.01), injection in the dorsum of the hand (OR 4.86, P<0.01), injection without a saline test (OR 2.58, P=0.02), and large-volume extravasation (OR 5.49, P<0.01) were independent risk factors for moderate or severe injury.",
+          "quote": "Results CM extravasation occurred in 0.12% (709/586,812) of cases. Of the 709 extravasation injuries, 672 (94.8%) were mild, 32 (4.5%) were moderate, and 5 (0.7%) were severe. Only 5 patients received consultations from dermatologists or burn specialists, and none required surgery. Multivariate analysis underscored the presence of diabetes mellitus [DM, odds ratio (OR) =8.04; P<0.01], injections in the dorsum of the hand (OR =4.86; P<0.01), without saline test (OR =2.58; P=0.02), and large-volume extravasation (OR =5.49; P<0.01) as potential risk factors of moderate or severe CM extravasation injury. Conclusions Most CM extravasation injuries are mild and without serious consequences. Multiple modifiable risk factors for serious CM extravasation injury have been identified that could mitigate the severity of the injury. Keywords: Contrast media (CM), extravasation of diagnostic and therapeutic materials, injection site reactions, computed tomography (CT) statusreleaseddisplay-pdfyesis-olfnois-manuscriptnois-preprintnois-journal-matternois-scannednois-retractednoReceived 2024 Oct 24; Accepted 2025 Apr 29; Issue date 2025 Aug 1. Introduction Contrast media (CM) is widely used in contrast-enhanced computed tomography (CECT) scans to improve the visualization of abnormal structures in various parts of the body (1). With the increasing availability of computed tomography (CT) equipment in healthcare, there were approximately 91.4 million CT scans conducted in the US in 2019; 48% of these recipients required the intravenous administration of CM (2). Characterized by its distinct physicochemical properties, including high concentration, osmotic pressure, and viscosity, CM typically requires intravenous injection into the human body at a rapid rate. Multiple complications can occur after CM injection, of which extravasation is well-recognized, with an occurrence rate of 0.1-1.2% (3-8). Extravasation refers to the inadvertent administration of vesicant solutions or drugs into adjacent tissues (9,10). CM is categorized as a high-risk vesicant, with tissue toxicity primarily driven by its hyperosmolarity (11).",
+          "src": "EN-09",
+          "cat": "风险因素"
+        }
+      ]
+    },
+    {
+      "id": "RF_ImpairedSymptomPerception",
+      "graph": "topic-01",
+      "type": "RiskFactor",
+      "name": "症状感知受限",
+      "tags": [
+        "危险因素"
+      ],
+      "aliases": [
+        "症状感知受限"
+      ],
+      "summary": "视力或听力障碍、神经系统与精神疾病、认知障碍或使用中枢活性药物者对超敏反应症状的感知能力下降，需更主动地监测。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F",
+          "title": "Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee",
+          "journal": "European Radiology",
+          "year": 2025,
+          "cite": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F / Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee / European Radiology / 2025",
+          "grade": "指南与共识",
+          "ref": "EN-03"
+        }
+      ],
+      "details": [
+        {
+          "k": "During examination monitoring rules",
+          "v": "Monitor the patient closely and judge for progression of the reaction; observe closely for mucosal edema of the nose, mouth, throat or larynx; in case of symptoms check heart rate, arterial blood pressure and consciousness; if marked bradycardia is present consider treatment of a vasovagal reaction (atropine); be aware that patients with impaired vision or hearing, neurological disease, psychiatric illness, cognitive disorders or CNS-active medications may have diminished awareness of hypersensitivity symptoms.",
+          "quote": "Be aware that a patient with impaired vision or hearing, neurological disease, psychiatric illness, cognitive disorders or under CNS-active medications might have diminished awareness of hypersensitivity symptoms.",
+          "src": "EN-03",
+          "cat": "超敏反应"
+        }
+      ]
+    },
+    {
+      "id": "MP_EmergencyPreparedness",
+      "graph": "topic-01",
+      "type": "ManagementPrinciple",
+      "name": "检查室急救准备",
+      "tags": [
+        "处置原则"
+      ],
+      "aliases": [
+        "检查室急救准备"
+      ],
+      "summary": "检查室急救准备要求：备齐一线急救设备与药品、维持可快速取用的抢救车、张贴复苏团队联系方式，并明确各岗位分工与处置预案。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F",
+          "title": "Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee",
+          "journal": "European Radiology",
+          "year": 2025,
+          "cite": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F / Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee / European Radiology / 2025",
+          "grade": "指南与共识",
+          "ref": "EN-03"
+        },
+        {
+          "type": "调查",
+          "author": "Abuanzeh HE, Al-Qaaneh AM",
+          "title": "Preparedness of CT technicians and radiographers for severe contrast media reactions: knowledge gaps and training needs",
+          "journal": "Frontiers in Radiology",
+          "year": 2026,
+          "cite": "Abuanzeh HE, Al-Qaaneh AM / Preparedness of CT technicians and radiographers for severe contrast media reactions: knowledge gaps and training needs / Frontiers in Radiology / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-13"
+        },
+        {
+          "type": "综述",
+          "author": "Zhong X, Zhao L",
+          "title": "Hypersensitivity reactions to iodinated contrast media: potential mechanisms and clinical management",
+          "journal": "Frontiers in Medicine",
+          "year": 2025,
+          "cite": "Zhong X, Zhao L / Hypersensitivity reactions to iodinated contrast media: potential mechanisms and clinical management / Frontiers in Medicine / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-15"
+        },
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        }
+      ],
+      "details": [
+        {
+          "k": "Examination room emergency kit contents",
+          "v": "The examination room must hold first-line emergency equipment and medications: oxygen; IV fluids - normal saline or Ringer lactate (stock at least 2L); sphygmomanometer; one-way mouth rebreather apparatus; adrenaline 1 mg/mL (1:1000); injectable H1-antihistamine; atropine; short-acting beta2-agonist metered dose inhaler or nebulizer; anti-convulsive drugs (midazolam). Emergency numbers for the hospital resuscitation team should be in the examination room and a regularly maintained resuscitation trolley should be available.",
+          "quote": "• The following first-line emergency equipment and medications should be available in the examination room: Oxygen IV fluids: normal saline or Ringer lactate (stock at least 2L) Sphygmomanometer One-way mouth rebreather apparatus Adrenaline 1 mg/mL (1:1000) H1-Antihistamine suitable for injection Atropine Short-acting β2-agonist metered dose inhaler or nebulizer Anti-convulsive drugs (midazolam) • Emergency numbers for the hospital resuscitation team should be in the examination room.",
+          "src": "EN-03",
+          "cat": "对比剂安全"
+        },
+        {
+          "k": "Assign a task to each team member during a reaction",
+          "v": "Because reactions are infrequent they create stress and confusion for staff. During treatment the stability or progression of the reaction should be constantly assessed, assigning a specific task to each team member; detailed documentation and correct severity classification support future risk management. Pre-arranged response planning with trained personnel, equipment and medications is best accomplished before approving and performing the examination.",
+          "quote": "During treatment, the stability or progression of the reaction should be constantly assessed, assigning a specific task to each team member.",
+          "src": "EN-03",
+          "cat": "运营"
+        },
+        {
+          "k": "Guidelines diverge on radiographer autonomy",
+          "v": "Variations exist among ACR, RCR, ESUR and RANZCR guidelines regarding premedication protocols, the level of autonomy granted to radiographers in managing contrast reactions, and the distribution of responsibilities during emergencies. RANZCR provides more explicit competency requirements for radiographers in administering emergency medications under supervision, whereas ACR and ESUR emphasise availability of resuscitation equipment and active patient monitoring by radiographers.",
+          "quote": "However, variations exist among these guidelines regarding premedication protocols, the level of autonomy granted to radiographers in managing contrast reactions, and the distribution of responsibilities during emergency situations (8, 9).",
+          "src": "EN-13",
+          "cat": "对比剂安全"
+        },
+        {
+          "k": "Emergency equipment and protocol variability audited",
+          "v": "Protocols for managing hypersensitivity reactions vary significantly across institutions due to differences in local practices, resources and guideline adherence. A survey of Korean referral hospitals highlighted disparities: while most appropriately performed informed consent and risk factor evaluation, there was notable variability in assessing renal function and using emergency equipment. Only 38.6% of Korean hospitals had a bronchodilator, compared to 100% of hospitals abroad. 62.3% of Korean hospitals premedicated patients with a history of HSR using antihistamines and corticosteroids, and 52.8% changed the culprit contrast medium.",
+          "quote": "For example, only 38.6% of Korean hospitals had a bronchodilator, compared to 100% of hospitals abroad. Moreover, 62.3% of Korean hospitals pre-medicated patients with a history of HSRs to ICM using antihistamines and corticosteroids, and 52.8% changed the culprit ICM (86).",
+          "src": "EN-15",
+          "cat": "对比剂安全"
+        }
+      ]
+    },
+    {
+      "id": "MP_SimulationTraining",
+      "graph": "topic-01",
+      "type": "ManagementPrinciple",
+      "name": "模拟演练式急救培训",
+      "tags": [
+        "处置原则"
+      ],
+      "aliases": [
+        "模拟演练式急救培训"
+      ],
+      "summary": "影像科人员对比剂反应与急救能力的培训原则：以能力本位、周期复训、风险识别与反应处置为核心，高仿真模拟演练优于单纯讲授。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F",
+          "title": "Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee",
+          "journal": "European Radiology",
+          "year": 2025,
+          "cite": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F / Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee / European Radiology / 2025",
+          "grade": "指南与共识",
+          "ref": "EN-03"
+        },
+        {
+          "type": "调查",
+          "author": "Abuanzeh HE, Al-Qaaneh AM",
+          "title": "Preparedness of CT technicians and radiographers for severe contrast media reactions: knowledge gaps and training needs",
+          "journal": "Frontiers in Radiology",
+          "year": 2026,
+          "cite": "Abuanzeh HE, Al-Qaaneh AM / Preparedness of CT technicians and radiographers for severe contrast media reactions: knowledge gaps and training needs / Frontiers in Radiology / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-13"
+        },
+        {
+          "type": "综述",
+          "author": "Romanczuk D, Lange S, Medrzycka-Dabrowska W, Cichowlas G",
+          "title": "Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography",
+          "journal": "Journal of Clinical Medicine",
+          "year": 2026,
+          "cite": "Romanczuk D, Lange S, Medrzycka-Dabrowska W, Cichowlas G / Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography / Journal of Clinical Medicine / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-22"
+        }
+      ],
+      "details": [
+        {
+          "k": "Simulation training beats lecture for staff",
+          "v": "Personnel who work in departments where CM is administered need regular training in management of hypersensitivity reactions and other emergencies. High-fidelity hands-on simulation training programmes are more effective than didactic lectures or computer-based e-learning. Staff should have access to clear treatment guidelines and cards/flowcharts and a rapidly available resuscitation trolley. Adrenaline and salbutamol are frequently underused or incorrectly dosed.",
+          "quote": "Therefore, personnel who work in departments where CM is administered to patients need to be regularly trained in the management of HR and other emergency situations, whereby high-fidelity hands-on simulation training programs are more effective than didactic lectures or computer-based e-learning [75-77].",
+          "src": "EN-03",
+          "cat": "护理能力与记录"
+        },
+        {
+          "k": "Assign a task to each team member during a reaction",
+          "v": "Because reactions are infrequent they create stress and confusion for staff. During treatment the stability or progression of the reaction should be constantly assessed, assigning a specific task to each team member; detailed documentation and correct severity classification support future risk management. Pre-arranged response planning with trained personnel, equipment and medications is best accomplished before approving and performing the examination.",
+          "quote": "During treatment, the stability or progression of the reaction should be constantly assessed, assigning a specific task to each team member.",
+          "src": "EN-03",
+          "cat": "运营"
+        },
+        {
+          "k": "Frontline radiographer role in contrast reactions",
+          "v": "Although radiologists generally assume primary responsibility for clinical decision-making during severe reactions, CT radiographers and technicians play a crucial frontline role in patient monitoring, early recognition of adverse reactions, and initiation of emergency response protocols. Common guideline recommendations across ACR, RCR, ESUR and RANZCR include ensuring emergency preparedness, continuous patient monitoring after contrast administration, and identifying individuals at increased risk (previous contrast reaction, asthma, renal impairment).",
+          "quote": "Although radiologists generally assume primary responsibility for clinical decision-making during severe reactions, CT radiographers and technicians play a crucial frontline role in patient monitoring, early recognition of adverse reactions, and initiation of emergency response protocols.",
+          "src": "EN-13",
+          "cat": "护理能力与记录"
+        },
+        {
+          "k": "Competency-based recurrent training needed",
+          "v": "Structured, recurrent, competency-based training programmes focusing on risk assessment, reaction recognition, emergency management and simulation-based practice are needed to strengthen preparedness and patient safety during contrast-enhanced CT. A major limitation of current training models is that they primarily focus on radiologists and other physicians, with comparatively limited attention given to radiographers; the absence of standardised radiographer-specific training contributes to variability in preparedness, and in some institutions formal protocols for managing severe contrast media reactions may be insufficient or absent altogether.",
+          "quote": "Structured, recurrent, competency-based training programs focusing on risk assessment, reaction recognition, emergency management, and simulation-based practice are needed to strengthen preparedness and patient safety during contrast-enhanced CT. computed tomographycontrast media reactionspatient safetyradiographersradiologic technologistsThe author(s) declared that financial support was not received for this work and/or its publication.pmc-status-qastatus0pmc-status-liveyespmc-status-embargonopmc-status-releasedyespmc-prop-open-accessyespmc-prop-olfnopmc-prop-manuscriptnopmc-prop-legally-suppressednopmc-prop-has-pdfyespmc-prop-has-supplementnopmc-prop-pdf-onlynopmc-prop-suppress-copyrightnopmc-prop-is-real-versionnopmc-prop-is-scanned-articlenopmc-prop-preprintnopmc-prop-in-epmcyespmc-license-refCC BYsection-at-acceptanceInterventional RadiologyIntroduction Intravenous contrast media (IVCM) have significantly enhanced the diagnostic capability of computed tomography (CT), enabling the generation of highly detailed and accurate images that improve clinical decision-making and patient care (1).",
+          "src": "EN-13",
+          "cat": "护理能力与记录"
+        },
+        {
+          "k": "Measured knowledge gap in risk factors",
+          "v": "In 314 participants, median total knowledge score was 76.3% (IQR 55.3-84.2). General knowledge scored highest (median 100%, IQR 80-100) while risk factor knowledge was the lowest-performing domain (65%, IQR 50-80). Radiographers scored higher than technicians (78.9% vs 71.0%, p = 0.002). Total knowledge was independently associated with gender, age group, master's-level education, professional role, experience over 25 years, and self-reported confidence.",
+          "quote": "Results The analysis included 314 participants. The median total knowledge score was 76.3% (IQR: 55.3-84.2). General knowledge showed the highest median score (100%, IQR: 80-100), whereas risk factor knowledge was the lowest-performing domain (65%, IQR: 50-80). Radiographers achieved higher total knowledge scores than technicians (78.9% vs. 71.0%, p = 0.002). Total knowledge also differed significantly across educational levels (p = 0.043). In multivariable regression, total knowledge was independently associated with gender, age group, master's-level education, professional role, experience >25 years, and self-reported confidence.",
+          "src": "EN-13",
+          "cat": "护理能力与记录"
+        },
+        {
+          "k": "Guidelines diverge on radiographer autonomy",
+          "v": "Variations exist among ACR, RCR, ESUR and RANZCR guidelines regarding premedication protocols, the level of autonomy granted to radiographers in managing contrast reactions, and the distribution of responsibilities during emergencies. RANZCR provides more explicit competency requirements for radiographers in administering emergency medications under supervision, whereas ACR and ESUR emphasise availability of resuscitation equipment and active patient monitoring by radiographers.",
+          "quote": "However, variations exist among these guidelines regarding premedication protocols, the level of autonomy granted to radiographers in managing contrast reactions, and the distribution of responsibilities during emergency situations (8, 9).",
+          "src": "EN-13",
+          "cat": "对比剂安全"
+        },
+        {
+          "k": "Ward nurses need power-injection cannulation training",
+          "v": "Because complication rates correlate with where vascular access was established (hospital ward versus radiology department), interdisciplinary training programmes are recommended. Ward nurses responsible for peripheral venous cannulation in patients referred for CT should undergo periodic training on the specific requirements of power injections: optimal insertion site selection - prioritising the forearm and, as a second choice, the antecubital fossa - and proper securing of the cannula to prevent dislodgement.",
+          "quote": "Ward nurses responsible for peripheral venous cannulation in patients referred for CT scans should undergo periodic training regarding the specific requirements of power injections.",
+          "src": "EN-22",
+          "cat": "护理能力与记录"
+        }
+      ]
+    },
+    {
+      "id": "MP_RiskAssessmentFramework",
+      "graph": "topic-01",
+      "type": "ManagementPrinciple",
+      "name": "对比剂反应危险因素评估框架",
+      "tags": [
+        "处置原则"
+      ],
+      "aliases": [
+        "对比剂反应危险因素评估框架"
+      ],
+      "summary": "把对比剂反应危险因素按患者相关、对比剂相关与操作及差错相关三组归类评估，重点识别既往同类反应与其它过敏史等高危线索。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "系统评价",
+          "author": "Beiner L, Boehm I",
+          "title": "Risk factor analysis of iodinated contrast medium-related hypersensitivity reactions",
+          "journal": "Insights into Imaging",
+          "year": 2025,
+          "cite": "Beiner L, Boehm I / Risk factor analysis of iodinated contrast medium-related hypersensitivity reactions / Insights into Imaging / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-12"
+        },
+        {
+          "type": "调查",
+          "author": "Abuanzeh HE, Al-Qaaneh AM",
+          "title": "Preparedness of CT technicians and radiographers for severe contrast media reactions: knowledge gaps and training needs",
+          "journal": "Frontiers in Radiology",
+          "year": 2026,
+          "cite": "Abuanzeh HE, Al-Qaaneh AM / Preparedness of CT technicians and radiographers for severe contrast media reactions: knowledge gaps and training needs / Frontiers in Radiology / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-13"
+        },
+        {
+          "type": "综述",
+          "author": "Zhong X, Zhao L",
+          "title": "Hypersensitivity reactions to iodinated contrast media: potential mechanisms and clinical management",
+          "journal": "Frontiers in Medicine",
+          "year": 2025,
+          "cite": "Zhong X, Zhao L / Hypersensitivity reactions to iodinated contrast media: potential mechanisms and clinical management / Frontiers in Medicine / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-15"
+        },
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "调查",
+          "author": "杨秋月, 汪晖, 李琴, 李震",
+          "title": "CT增强碘对比剂急性不良反应发生现况及影响因素",
+          "journal": "护理研究",
+          "year": 2023,
+          "cite": "杨秋月, 汪晖, 李琴, 李震 / CT增强碘对比剂急性不良反应发生现况及影响因素 / 护理研究 / 2023",
+          "grade": "汇总证据",
+          "ref": "CN-27"
+        }
+      ],
+      "details": [
+        {
+          "k": "独立危险因素",
+          "v": "年龄、体质指数、基础疾病、过敏史、就医方式、碘对比剂种类为CT增强碘对比剂急性不良反应的独立影响因素(P＜0.05)",
+          "quote": "Logistic回归分析结果显示,年龄、体质指数、基础疾病、过敏史、就医方式、碘对比剂种类为CT增强碘对比剂急性不良反应的独立影响因素(P＜0.05).",
+          "src": "CN-27",
+          "cat": "过敏护理"
+        },
+        {
+          "k": "危险因素与监测",
+          "v": "原患高血压、既往药物过敏史、尿素水平与钠离子水平为碘造影剂出现不良反应的危险因素(P值<0.05)；给药后须严密监测尿素与钠离子水平",
+          "quote": "患者原患高危组高血压、既往有药物过敏史、尿素水平、钠离子水平是碘造影剂出现不良反应的危险因素(P值<0.05).",
+          "src": "CN-28",
+          "cat": "过敏护理"
+        },
+        {
+          "k": "Pre-procedure screening risk factors for reactions",
+          "v": "Allergic-like reactions to modern iodinated contrast are uncommon (iodinated 0.6% aggregate, 0.04% severe; gadolinium-based 0.01-0.22% aggregate, 0.008% severe). Prior allergic-like or unknown-type reaction to the same class of contrast is the greatest risk factor (approximately 5-fold increased risk). Shellfish and povidone-iodine allergies are NOT a risk factor for iodinated contrast. Asthma increases likelihood; unrelated allergy gives 2- to 3-fold increase. Beta-blocker users do not need to discontinue medication.",
+          "quote": "Risk Factors for Adverse Reactions to Intravenous Contrast Media Primary Considerations Allergic-like reactions to modern iodinated and gadolinium-based contrast medium are uncommon (iodinated: 0.6% aggregate [1], 0.04% severe [2]; gadolinium-based: 0.01-0.22% aggregate [2], 0.008% severe) [3]. Risk factors exist that increase the risk of a contrast reaction. These generally increase the likelihood of a reaction by less than one order of magnitude, effectively increasing the risk that an uncommon event will occur, but not guaranteeing a reaction will take place. The following are some examples: Allergy: Patients who have had a prior allergic-like reaction or unknown-type reaction (i.e., a reaction of unknown manifestation) to contrast medium have an approximately 5-fold increased risk of developing a future allergic-like reaction if exposed to the same class of contrast medium again [2].",
+          "src": "R01",
+          "cat": "对比剂安全"
+        },
+        {
+          "k": "Pre-examination preparation and scheduling",
+          "v": "Before the examination: know the risks and potential reactions and participate regularly in continuing medical education; know the patient and evaluate risk/benefit, considering imaging alternatives; identify the specific agent that elicited a previous reaction and choose an alternative contrast agent if injection is mandatory; schedule the patient during daytime hours when most personnel are present, preferably in a hospital-based CT or MRI facility; keep a venous access in place if there is increased risk of an adverse reaction.",
+          "quote": "Schedule the patient during daytime hours, when most personnel are present, preferably in a hospital-based CT or MRI facility.",
+          "src": "EN-03",
+          "cat": "对比剂安全"
+        },
+        {
+          "k": "43 risk factors identified across three groups",
+          "v": "From 732 papers screened, 125 were analysed and 43 risk factors identified. The most prominent risk in the literature is a history of hypersensitivity/allergy to iodinated contrast medium and a history of another allergy, followed by female gender. Risks were grouped into patient-related, contrast-media-related, and procedure/management-related risks, with risks due to error presented for the first time. Potential risks vary greatly from paper to paper, so there is no uniform group of potential risks.",
+          "quote": "Results and practical recommendations Study overview We found 732 papers, excluded 607 of them, and analyzed risk factors in 125 papers (Fig. 1). We identified 43 risk factors (Table 1). The most prominent risk in the literature is a history of hypersensitivity/allergy to ICM and a history of another allergy, followed by female gender. Potential risks vary greatly from paper to paper.",
+          "src": "EN-12",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Frontline radiographer role in contrast reactions",
+          "v": "Although radiologists generally assume primary responsibility for clinical decision-making during severe reactions, CT radiographers and technicians play a crucial frontline role in patient monitoring, early recognition of adverse reactions, and initiation of emergency response protocols. Common guideline recommendations across ACR, RCR, ESUR and RANZCR include ensuring emergency preparedness, continuous patient monitoring after contrast administration, and identifying individuals at increased risk (previous contrast reaction, asthma, renal impairment).",
+          "quote": "Although radiologists generally assume primary responsibility for clinical decision-making during severe reactions, CT radiographers and technicians play a crucial frontline role in patient monitoring, early recognition of adverse reactions, and initiation of emergency response protocols.",
+          "src": "EN-13",
+          "cat": "护理能力与记录"
+        },
+        {
+          "k": "Measured knowledge gap in risk factors",
+          "v": "In 314 participants, median total knowledge score was 76.3% (IQR 55.3-84.2). General knowledge scored highest (median 100%, IQR 80-100) while risk factor knowledge was the lowest-performing domain (65%, IQR 50-80). Radiographers scored higher than technicians (78.9% vs 71.0%, p = 0.002). Total knowledge was independently associated with gender, age group, master's-level education, professional role, experience over 25 years, and self-reported confidence.",
+          "quote": "Results The analysis included 314 participants. The median total knowledge score was 76.3% (IQR: 55.3-84.2). General knowledge showed the highest median score (100%, IQR: 80-100), whereas risk factor knowledge was the lowest-performing domain (65%, IQR: 50-80). Radiographers achieved higher total knowledge scores than technicians (78.9% vs. 71.0%, p = 0.002). Total knowledge also differed significantly across educational levels (p = 0.043). In multivariable regression, total knowledge was independently associated with gender, age group, master's-level education, professional role, experience >25 years, and self-reported confidence.",
+          "src": "EN-13",
+          "cat": "护理能力与记录"
+        },
+        {
+          "k": "Mechanistic and prevention evidence gaps",
+          "v": "Current studies disproportionately emphasise epidemiological patterns or clinical management algorithms, leaving mechanistic insights, risk assessment and interdisciplinary syntheses underdeveloped. The review's stated focus for future research is refining preventive, diagnostic and therapeutic strategies, particularly for high-risk populations with prior reactions or comorbidities.",
+          "quote": "Similarly, premedication protocols, such as corticosteroids and antihistamines, also lack standardized guidelines, particularly for high-risk populations with prior reactions or comorbidities (15, 16).",
+          "src": "EN-15",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Structured prevention instead of contrast avoidance",
+          "v": "An oncology-specific prevention framework translates risk into practical measures: baseline renal function assessment, identification of high-risk patients using risk scores, intravenous saline hydration, and preferential use of low-osmolar or iso-osmolar contrast media in selected vulnerable individuals. Rather than supporting reflexive contrast avoidance, this advocates structured prevention protocols tailored to the patient's renal and oncologic risk profile.",
+          "quote": "Their review is clinically useful because it translates the oncology-specific risk framework into practical measures, including baseline renal function assessment, identification of high-risk patients using recently proposed risk scores, intravenous saline hydration, and preferential use of low-osmolar or iso-osmolar contrast media in selected vulnerable individuals.",
+          "src": "EN-20",
+          "cat": "特殊人群"
+        }
+      ]
+    },
+    {
+      "id": "MP_SurgicalReferralCriteria",
+      "graph": "topic-01",
+      "type": "ManagementPrinciple",
+      "name": "外科会诊转诊标准",
+      "tags": [
+        "处置原则"
+      ],
+      "aliases": [
+        "外科会诊转诊标准"
+      ],
+      "summary": "外渗后是否请外科会诊应以临床红旗征象判断而非单纯依据外渗量；出现进行性疼痛加重、感觉改变、活动受限或皮肤破溃即应尽早会诊。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "EN-01"
+        },
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "病例报告",
+          "author": "Diop B, Soh GT, Nde AFT, Sarr N, Ndoye AY, Sane JC",
+          "title": "Hand compartment syndrome secondary to contrast media extravasation: A case report",
+          "journal": "International Journal of Surgery Case Reports",
+          "year": 2022,
+          "cite": "Diop B, Soh GT, Nde AFT, Sarr N, Ndoye AY, Sane JC / Hand compartment syndrome secondary to contrast media extravasation: A case report / International Journal of Surgery Case Reports / 2022",
+          "grade": "汇总证据",
+          "ref": "EN-16"
+        },
+        {
+          "type": "病例报告",
+          "author": "Hu J, Ge T, Du Y, Wang J, Zhou Y",
+          "title": "Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention",
+          "journal": "BMC Surgery",
+          "year": 2025,
+          "cite": "Hu J, Ge T, Du Y, Wang J, Zhou Y / Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention / BMC Surgery / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-17"
+        }
+      ],
+      "details": [
+        {
+          "k": "综合干预处置组合",
+          "v": "回抽药液、抬高患肢、药物局部外用、止痛、心理干预等综合干预；严重者需外科手术干预",
+          "quote": "造影剂外渗后的处理方法包括回抽药液、抬高患肢、药物局部外用、止痛、心理干预等综合干预,严重者需要外科手术干预治疗.",
+          "src": "CN-16",
+          "cat": "局部处理"
+        },
+        {
+          "k": "Surgical referral is clinical not volume based",
+          "v": "Surgical opinion is recommended for extravasate over 150 ml, but the overall decision should be clinical - based on red flag signs and symptoms rather than an arbitrary CMEX volume. Fasciotomy should be performed within 2 hours to avoid muscle necrosis and nerve damage; surgery performed within 90 to 300 min has been reported to conserve all extremities. Red flags: painful active flexion, passive extension, neurosensory disturbance, increasing swelling; highest-risk locations are the volar forearm and the hand.",
+          "quote": "Whilst a radiologist can attend to mild cases, in more severe cases, a surgeon should be urgently consulted, and fasciotomy should be performed within 2 h to avoid muscle necrosis and nerve damage. Surgery performed within 90 to 300 min has been reported to conserve all extremities with favourable prognosis [54]. Sbitany et al. in a study of 102 cases of CMEX used a threshold of 30 ml extravasate as a referral prompt [55] and none required surgery, even in the 10% with > 100 ml CMEX volume. Wang et al. reported similar findings where even extravasate volumes of up to 150 ml of non-ionic IBCM were conservatively managed, suggesting no discrete threshold extravasate volume should be set [56]. Dykes et al. suggest that larger extravasated volumes correlate with moderate-to-severe injuries, but the data does not support using a volume threshold to determine surgical referral or more aggressive management [23]. Nevertheless, in unusual cases with very large volumes of extravasate (> 150 ml), the consensus remains that surgical consult is appropriate. Overall, the decision to refer for surgical intervention should be a clinical one-i.e. based on red flag signs and symptoms, rather than arbitrary CMEX volumes. Conclusion This review highlights the key up-to-date evidence pertaining to CMEX summarising the important risk factors and a systematic approach to management.",
+          "src": "EN-01",
+          "cat": "处置"
+        },
+        {
+          "k": "Surgical referral by signs not volume",
+          "v": "Recommendation 1: surgical consultation should not be routinely requested based on volume alone (strength of evidence Strong 3). Obtain surgical consultation whenever there is concern for severe extravasation injury: severe pain, progressive swelling or pain, decreased capillary refill, change in sensation, worsening passive or active range of motion, or skin ulceration or blistering.",
+          "quote": "Recommendation 1: Surgical consultation should not be routinely requested based on volume alone. Strength of evidence: Strong 3 Reference # Original SQ Reassessed SQ Final SQ 11 4 3 3 13 4 4 4 18 1 - 1 14 2 - 2 EXTRAVASATION OF CONTRAST MEDIA 19 Recommendation 2: Surgical consultation should be requested whenever there is concern for a severe extravasation injury; this can be suspected if the patient develops severe pain, progressive swelling or pain, decreased capillary refill, change in sensation, worsening active or passive range of motion in the elbow, wrist, or fingers, or skin ulceration or blistering.",
+          "src": "R01",
+          "cat": "处置"
+        }
+      ]
+    },
+    {
+      "id": "MP_ExtravasationEscalation",
+      "graph": "topic-01",
+      "type": "ManagementPrinciple",
+      "name": "外渗处置阶梯升级策略",
+      "tags": [
+        "处置原则"
+      ],
+      "aliases": [
+        "外渗处置阶梯升级策略"
+      ],
+      "summary": "外渗处置的阶梯升级路径：保守处置为一线，出现进行性坏死、血肿或保守治疗无效时及时升级为微创抽吸冲洗，筋膜切开留作重症难治使用。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "病例报告",
+          "author": "Hu J, Ge T, Du Y, Wang J, Zhou Y",
+          "title": "Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention",
+          "journal": "BMC Surgery",
+          "year": 2025,
+          "cite": "Hu J, Ge T, Du Y, Wang J, Zhou Y / Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention / BMC Surgery / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-17"
+        },
+        {
+          "type": "队列研究",
+          "author": "Liu W, Wang P, Zhu H, Tang H, Guan H, Wang X, Wang C, Qiu Y, He L",
+          "title": "Contrast media extravasation injury: a prospective observational cohort study",
+          "journal": "European Journal of Medical Research",
+          "year": 2023,
+          "cite": "Liu W, Wang P, Zhu H, Tang H, Guan H, Wang X, Wang C, Qiu Y, He L / Contrast media extravasation injury: a prospective observational cohort study / European Journal of Medical Research / 2023",
+          "grade": "汇总证据",
+          "ref": "EN-05"
+        },
+        {
+          "type": "病例报告",
+          "author": "Diop B, Soh GT, Nde AFT, Sarr N, Ndoye AY, Sane JC",
+          "title": "Hand compartment syndrome secondary to contrast media extravasation: A case report",
+          "journal": "International Journal of Surgery Case Reports",
+          "year": 2022,
+          "cite": "Diop B, Soh GT, Nde AFT, Sarr N, Ndoye AY, Sane JC / Hand compartment syndrome secondary to contrast media extravasation: A case report / International Journal of Surgery Case Reports / 2022",
+          "grade": "汇总证据",
+          "ref": "EN-16"
+        },
+        {
+          "type": "病例系列",
+          "author": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC",
+          "title": "Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions",
+          "journal": "International Wound Journal",
+          "year": 2017,
+          "cite": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC / Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions / International Wound Journal / 2017",
+          "grade": "汇总证据",
+          "ref": "EN-07"
+        }
+      ],
+      "details": [
+        {
+          "k": "Escalation to wound centre after 3 days",
+          "v": "If symptoms of severe injury persisted for more than 3 days and could not be relieved completely or tended to deteriorate into acute compartment syndrome and necrosis of the overlying skin, the patient was transferred to the wound center or surgical ward. All patients in this cohort received conservative treatment only: raising the venipuncture point and cold compress, plus local application of dexamethasone and compound aescin gel; only three cases of skin pigmentation occurred, with no other sequelae.",
+          "quote": "If the symptoms of severe injury persisted for more than 3 days and could not be relieved completely or had a tendency to deteriorate into acute compartment syndrome and necrosis of the overlying skin [19-21], the patient was transferred to the wound center or surgical ward.",
+          "src": "EN-05",
+          "cat": "护理能力与记录"
+        },
+        {
+          "k": "Nurse-first assessment and escalation pathway",
+          "v": "Hospital guideline at Ajou University Hospital: if potential extravasation is believed to have occurred during CT, the first assessment is made by a nurse who documents the event and alerts the ward or emergency room doctor to contact the plastic surgery (PS) department. The nurse then sends the patient back to the ward or emergency room; outpatients are sent to the PS outpatient department and the event is documented. The PS doctor examines the patient and chooses the treatment option.",
+          "quote": "Briefly, if potential CM extravasation is believed to have occurred during CT scanning, the first assessment is made by a nurse who documents the event and alerts the ward or the emergency room doctor to contact the PS department.",
+          "src": "EN-07",
+          "cat": "护理能力与记录"
+        },
+        {
+          "k": "Adverse event reporting system cut skin necrosis",
+          "v": "In 2011 the hospital initiated an adverse event reporting system requiring immediate consultation with the plastic surgery department after a suspected case of contrast media extravasation from CT scanning. Prior work reported that introducing hospital guidelines for early referral to a specialist service significantly increases the number of patients treated early and results in a major reduction in the incidence of skin necrosis and in surgical intervention needed.",
+          "quote": "In 2011, our hospital initiated an adverse event reporting system for consulting with the PS department immediately after a suspected case of CM extravasation from CT scanning.",
+          "src": "EN-07",
+          "cat": "护理能力与记录"
+        },
+        {
+          "k": "Conservative management before surgery",
+          "v": "Wang et al observed 442 extravasations of low-osmolality solutions between 3 and 150 mL over 5 years; all but one patient was managed conservatively, and blistering, edema and pain resolved within weeks without surgical intervention. These data support a convincing argument for nonoperative management until signs of compartment syndrome develop.",
+          "quote": "Wang et al performed the largest study, observing 442 CMEIs of low-osmolar solutions between 3 and 150 mL over a 5-year period-it is telling that all but one of these patients were managed conservatively and the blistering, edema, and pain that were features in some cases all resolved within weeks without surgical intervention.",
+          "src": "EN-08",
+          "cat": "处置"
+        },
+        {
+          "k": "Deterioration can follow a mild initial injury",
+          "v": "A 47-year-old woman with pulmonary embolism history was diagnosed with compartment syndrome of the left hand after contrast injection during CT; her first diagnosis had been mild contrast extravasation injury 24 hours before the compartment syndrome. Standard radiography showed accumulated contrast medium in the left hand. She underwent fasciotomy and secondary healing, with good radiographic, clinical and hand function at 2 months. Hand compartment syndrome secondary to extravasation is exceptional and, because its incidence is unknown, treatment is not codified.",
+          "quote": "Case presentation We present a 47-year-old woman with a history of pulmonary embolism who was diagnosed of compartment syndrome of the left hand after injection of contrast medium during a CT scan. Whose first diagnosis was mild contrast medium extravasation injury 24 h before the compartment syndrome. Standard radiography showed an accumulation of contrast medium in the left hand. The patient underwent a fasciotomy and secondary healing. Follow-up showed good radiographic, clinical, and hand function after 2 months. Discussion The occurrence of hand compartment syndrome secondary to contrast media extravasation is rare. Most of the time, they are initially diagnosed as medium extravasation before the worsening of symptoms. Because of its unknown incidence, treatment is not codified. The goal of treatment is to save the limb and restore function.",
+          "src": "EN-16",
+          "cat": "识别分级"
+        },
+        {
+          "k": "Goal of surgery is limb and function salvage",
+          "v": "The goal of treatment is to save the limb and restore function. This can be achieved rapidly with early surgery because of the unpredictable course. The authors advise always fearing a compartmental syndrome in cases of extravasation of contrast medium, since contrast media injection is not a harmless gesture.",
+          "quote": "The goal of treatment is to save the limb and restore function. This can be achieved rapidly with early surgery because of the unpredictable course.",
+          "src": "EN-16",
+          "cat": "处置"
+        },
+        {
+          "k": "Tiered escalation when conservative care fails",
+          "v": "Case of a patient who developed skin ulcers, necrosis and hematoma despite conservative management. Conservative therapy remains first-line, but invasive interventions should be promptly considered in cases of progressive necrosis, hematoma or failure of conservative management. A stepwise surgical approach is recommended: minimally invasive aspiration/irrigation or liposuction-like techniques first, reserving fasciotomy for severe or refractory cases.",
+          "quote": "Maintain a low threshold for invasive interventions when conservative therapy fails or when tissue necrosis or hematoma develops, even in the absence of compartment syndrome.",
+          "src": "EN-17",
+          "cat": "处置"
+        }
+      ]
+    },
+    {
+      "id": "MP_EvidenceBasedPractice",
+      "graph": "topic-01",
+      "type": "ManagementPrinciple",
+      "name": "循证实践转化",
+      "tags": [
+        "处置原则"
+      ],
+      "aliases": [
+        "循证实践转化"
+      ],
+      "summary": "把指南与证据总结转化为科室可执行的做法：组建循证实践团队、把推荐意见转成可审查指标、分析实施障碍并持续复评执行情况与结局。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "最佳证据",
+          "author": "白文辉, 易银萍, 张红梅, 赵文利, 蒋秋焕",
+          "title": "含碘非离子对比剂输注前预防静脉外渗策略的证据总结",
+          "journal": "护理研究",
+          "year": 2020,
+          "cite": "白文辉, 易银萍, 张红梅, 赵文利, 蒋秋焕 / 含碘非离子对比剂输注前预防静脉外渗策略的证据总结 / 护理研究 / 2020",
+          "grade": "汇总证据",
+          "ref": "CN-12"
+        },
+        {
+          "type": "最佳证据",
+          "author": "史苏霞, 毛燕君, 程洁, 来小彬",
+          "title": "放射科碘对比剂外渗管理的证据总结",
+          "journal": "护理研究",
+          "year": 2020,
+          "cite": "史苏霞, 毛燕君, 程洁, 来小彬 / 放射科碘对比剂外渗管理的证据总结 / 护理研究 / 2020",
+          "grade": "汇总证据",
+          "ref": "CN-24"
+        },
+        {
+          "type": "最佳证据",
+          "author": "程培霞, 宋秀艳, 闫素华, 陈士巧",
+          "title": "冠状动脉介入患者围手术期水化预防对比剂急性肾损伤的最佳证据总结",
+          "journal": "中华现代护理杂志",
+          "year": 2021,
+          "cite": "程培霞, 宋秀艳, 闫素华, 陈士巧 / 冠状动脉介入患者围手术期水化预防对比剂急性肾损伤的最佳证据总结 / 中华现代护理杂志 / 2021",
+          "grade": "汇总证据",
+          "ref": "CN-29"
+        },
+        {
+          "type": "最佳证据",
+          "author": "操帅, 张小红, 何红, 殷倩, 夏红霞",
+          "title": "含碘对比剂静脉外渗护理管理实践指南的循证实践研究",
+          "journal": "护理学杂志",
+          "year": 2024,
+          "cite": "操帅, 张小红, 何红, 殷倩, 夏红霞 / 含碘对比剂静脉外渗护理管理实践指南的循证实践研究 / 护理学杂志 / 2024",
+          "grade": "汇总证据",
+          "ref": "CN-31"
+        }
+      ],
+      "details": [
+        {
+          "k": "证据来源与评价工具",
+          "v": "纳入15篇文献（7篇指南、4篇专家共识、2篇系统评价、2篇Meta分析）；采用AGREEⅡ及澳大利亚JBI循证卫生保健中心文献质量评价工具分别评价，证据按JBI证据分级与证据推荐系统(2014版)分级",
+          "quote": "并采用AGREEⅡ及澳大利亚JBI循证卫生保健中心文献质量评价工具分别对纳入的指南、专家共识、系统评价及Meta分析进行文献质量评价,采用JBI证据分级与证据推荐系统(2014版)对所提取的证据进行评价.[结果]最终纳入文献15篇,包括7篇指南、4篇专家共识以及2篇系统评价和2篇Meta分析.",
+          "src": "CN-12",
+          "cat": "预防"
+        },
+        {
+          "k": "临床应用需个体化",
+          "v": "应用证据时须综合考虑证据级别、临床情境及病人意愿，以降低含碘非离子对比剂静脉外渗发生风险",
+          "quote": "含碘非离子对比剂输注前静脉外渗预防策略的证据总结可为临床工作人员提供循证依据,临床医护人员在应用证据时应综合考虑证据级别、临床情境及病人意愿等规范临床实践行为,降低含碘非离子对比剂静脉外渗的发生风险.",
+          "src": "CN-12",
+          "cat": "预防"
+        },
+        {
+          "k": "证据等级均为B级",
+          "v": "共纳入7篇文献(6篇临床实践指南、1篇证据总结)，所有证据等级均为B级，缺A级强推荐",
+          "quote": "共纳入7篇文献,包括6篇临床实践指南,1篇证据总结.",
+          "src": "CN-24",
+          "cat": "局部处理"
+        },
+        {
+          "k": "证据纳入范围",
+          "v": "纳入证据9篇：1篇证据总结、3篇指南、3篇专家共识、2篇系统评价；检索时间为建库至2019年2月",
+          "quote": "检索时间为建库至2019年2月.由2名研究者对纳入的文献质量进行评价,并对符合质量标准的文献进行证据提取.结果 共纳入证据9篇,包括1篇证据总结、3篇指南、3篇专家共识、2篇系统评价.",
+          "src": "CN-29",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "审查条目执行率提升",
+          "v": "循证实践后护士对审查条目的执行率及相关知识评分显著高于实践前(均P＜0.05)",
+          "quote": "循证实践后护士对审查条目的执行率及相关知识评分显著高于实践前（均P＜0.05）。",
+          "src": "CN-31",
+          "cat": "记录上报"
+        },
+        {
+          "k": "外渗发生率下降",
+          "v": "循证实践后碘对比剂外渗发生率为0.16%，显著低于循证实践前的0.51%(P＜0.05)",
+          "quote": "循证实践后碘对比剂外渗发生率为0.16%，显著低于循证实践前的0.51%（P＜0.05）；",
+          "src": "CN-31",
+          "cat": "记录上报"
+        },
+        {
+          "k": "循证实践实施路径",
+          "v": "成立循证实践团队，对指南推荐意见进行临床适用性评价后构建审查指标，分析临床实施障碍因素，制订并实施循证实践方案",
+          "quote": "成立循证实践团队，对指南推荐意见进行临床适用性评价后构建审查指标，分析指南临床实施的障碍因素，制定并实施循证实践方案。",
+          "src": "CN-31",
+          "cat": "记录上报"
+        },
+        {
+          "k": "System-level safety and incident learning",
+          "v": "41 evidence-based recommendations were identified across four domains: preventive approaches, early detection and surveillance, intervention strategies, and system-level management and enhancement. Quality of evidence spans JBI levels 1 to 5, with most recommendations at level A (strong consensus). The framework encompasses risk evaluation, standardised cannulation procedures, continuous monitoring, prompt emergency protocols, and organisational learning through incident analysis and systemic refinement.",
+          "quote": "Yes 3.2.5Summary of evidence As presented in Table 7, a total of 41 key evidence-based recommendations were identified in this study, categorized into four domains: preventive approaches, early detection and surveillance, intervention strategies, and system-level management and enhancement. The quality of evidence spans JBI levels 1 to 5, with most recommendations classified as level A, indicating strong consensus.",
+          "src": "EN-10",
+          "cat": "护理能力与记录"
+        }
+      ]
+    },
+    {
+      "id": "MP_NursingQualityManagement",
+      "graph": "topic-01",
+      "type": "ManagementPrinciple",
+      "name": "护理质量管理与敏感指标监测",
+      "tags": [
+        "处置原则"
+      ],
+      "aliases": [
+        "护理质量管理与敏感指标监测"
+      ],
+      "summary": "以外渗发生率等敏感指标为核心的质量管理手段，含前馈控制、风险管理、风险评估体系、信息化闭环与高风险环节的过程管控。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "综述",
+          "author": "任自然, 方远, 陈金秀",
+          "title": "护理质量管理在预防婴幼儿输液外渗中的应用研究进展",
+          "journal": "当代护士",
+          "year": 2025,
+          "cite": "任自然, 方远, 陈金秀 / 护理质量管理在预防婴幼儿输液外渗中的应用研究进展 / 当代护士 / 2025",
+          "grade": "汇总证据",
+          "ref": "CN-15"
+        },
+        {
+          "type": "调查",
+          "author": "白姗, 高伟, 王蕾, 耿敬芝, 李亚南, 宋圆圆, 贾晓辉, 杨巧芳, 李春燕",
+          "title": "全国三级医院静脉治疗护理技术应用现状的调查研究",
+          "journal": "护理研究",
+          "year": 2025,
+          "cite": "白姗, 高伟, 王蕾, 耿敬芝, 李亚南, 宋圆圆, 贾晓辉, 杨巧芳, 李春燕 / 全国三级医院静脉治疗护理技术应用现状的调查研究 / 护理研究 / 2025",
+          "grade": "汇总证据",
+          "ref": "CN-26"
+        },
+        {
+          "type": "调查",
+          "author": "宋圆圆, 王宇, 蒿若楠, 董方方, 黄霖霖, 杨巧芳, 贾晓辉, 白姗",
+          "title": "河南省含碘对比剂外渗管理现状及护士认知水平的调查研究",
+          "journal": "中华护理杂志",
+          "year": 2025,
+          "cite": "宋圆圆, 王宇, 蒿若楠, 董方方, 黄霖霖, 杨巧芳, 贾晓辉, 白姗 / 河南省含碘对比剂外渗管理现状及护士认知水平的调查研究 / 中华护理杂志 / 2025",
+          "grade": "汇总证据",
+          "ref": "CN-30"
+        },
+        {
+          "type": "最佳证据",
+          "author": "操帅, 张小红, 何红, 殷倩, 夏红霞",
+          "title": "含碘对比剂静脉外渗护理管理实践指南的循证实践研究",
+          "journal": "护理学杂志",
+          "year": 2024,
+          "cite": "操帅, 张小红, 何红, 殷倩, 夏红霞 / 含碘对比剂静脉外渗护理管理实践指南的循证实践研究 / 护理学杂志 / 2024",
+          "grade": "汇总证据",
+          "ref": "CN-31"
+        },
+        {
+          "type": "临床审计",
+          "author": "Sunny A, Chandran A, Kareem H",
+          "title": "Clinical Audit of the Incidence and Documentation Quality of Contrast-Induced Nephropathy (CIN) in a Tertiary Cardiology Unit",
+          "journal": "Cureus",
+          "year": 2026,
+          "cite": "Sunny A, Chandran A, Kareem H / Clinical Audit of the Incidence and Documentation Quality of Contrast-Induced Nephropathy (CIN) in a Tertiary Cardiology Unit / Cureus / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-18"
+        },
+        {
+          "type": "最佳证据",
+          "author": "Liu H, Zeng Q, Zeng X, Lu X, Xiao B, Cheng Y, Liu Y, Yang C, Yang C",
+          "title": "Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation",
+          "journal": "Frontiers in Medicine",
+          "year": 2026,
+          "cite": "Liu H, Zeng Q, Zeng X, Lu X, Xiao B, Cheng Y, Liu Y, Yang C, Yang C / Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation / Frontiers in Medicine / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-10"
+        }
+      ],
+      "details": [
+        {
+          "k": "护理质量管理五类抓手",
+          "v": "包括护理质量前馈控制、护理风险管理、构建外渗风险评估和管理体系、实现闭环管理信息化、监测护理敏感指标",
+          "quote": "护理质量管理在预防婴幼儿输液外渗方面的应用包括护理质量前馈控制、护理风险管理、构建外渗风险评估和管理体系、实现闭环管理信息化、监测护理敏感指标等.",
+          "src": "CN-15",
+          "cat": "记录上报"
+        },
+        {
+          "k": "高风险药物过程控制",
+          "v": "加强对高风险药物输注过程的护理质量控制，对预防婴幼儿输液外渗具有积极意义",
+          "quote": "加强对高风险药物输注过程的护理质量控制,对预防婴幼儿发生输液外渗具有积极意义.",
+          "src": "CN-15",
+          "cat": "记录上报"
+        },
+        {
+          "k": "框架缺口",
+          "v": "目前还未建立统一的护理质量管理框架，后续仍需进一步探讨",
+          "quote": "然而,目前还未建立统一的护理质量管理框架,今后仍需要进一步探讨.",
+          "src": "CN-15",
+          "cat": "记录上报"
+        },
+        {
+          "k": "团队建设与通路使用率",
+          "v": "1 140所(95.1%)医院建立了静脉治疗护理团队/小组；外周静脉留置针、经外周静脉置入中心静脉导管(PICC)、中心静脉导管(CVC)的使用率均在 90%以上",
+          "quote": "1 140所(95.1%)医院建立了静脉治疗护理团队/小组;外周静脉留置针、经外周静脉置入中心静脉导管(PICC)、中心静脉导管(CVC)的使用率均在 90%以上;",
+          "src": "CN-26",
+          "cat": "通路维护"
+        },
+        {
+          "k": "耐高压型中心静脉通路使用率",
+          "v": "耐高压型中心静脉通路的使用率偏低（5.45%），原因可能与此类导管的留置与维护较复杂、费用较高、患者及护士对ICM外渗的风险认知不足有关",
+          "quote": "然而，本研究结果显示，耐高压型中心静脉通路的使用率偏低（5.45%），可能与此类导管的留置与维护较复杂、费用较高、患者及护士对ICM外渗的风险认知不足有关。",
+          "src": "CN-30",
+          "cat": "预防"
+        },
+        {
+          "k": "血管可视化技术使用率",
+          "v": "仅32.73%的放射科使用了血管可视化技术，提示护理管理者尚未重视血管可视化技术的应用",
+          "quote": "然而，本研究结果显示，仅32.73%的放射科使用了血管可视化技术，提示护理管理者尚未重视血管可视化技术的应用。",
+          "src": "CN-30",
+          "cat": "预防"
+        },
+        {
+          "k": "组织灌注情况关注率",
+          "v": "仅58.18%的放射科关注组织灌注情况",
+          "quote": "然而，本研究中，仅58.18%的放射科关注组织灌注情况。",
+          "src": "CN-30",
+          "cat": "分级"
+        },
+        {
+          "k": "观察区与留观落实率",
+          "v": "仅56.36%的放射科设有专用观察区或观察室，9.09%的放射科在ICM外渗后观察2~4 h",
+          "quote": "但本研究中，仅56.36%的放射科设有专用观察区或观察室，9.09%的放射科在ICM外渗后观察2~4 h。",
+          "src": "CN-30",
+          "cat": "局部处理"
+        },
+        {
+          "k": "外渗率列入国家质控指标",
+          "v": "ICM外渗率已被纳入国家放射影像专业质量控制指标",
+          "quote": "ICM外渗率已被纳入国家放射影像专业质量控制指标 [ 12 ] ，凸显了ICM外渗管理的重要性。",
+          "src": "CN-30",
+          "cat": "记录上报"
+        },
+        {
+          "k": "管理制度与不良事件上报",
+          "v": "89.09%的放射科已制订ICM使用管理制度或规范，且放射科在ICM相关知识培训、不良事件上报等方面的管理较规范",
+          "quote": "本研究结果显示，89.09%的放射科已制订ICM使用管理制度或规范，与董方方等 [ 13 ] 关于静脉治疗质量管理的调查研究结果（88.61%）相近，且放射科在ICM相关知识培训、不良事件上报等方面的管理较规范。",
+          "src": "CN-30",
+          "cat": "记录上报"
+        },
+        {
+          "k": "信息系统记录外渗事件",
+          "v": "有50.91%的放射科建立了ICM使用信息系统，但仅有36.36%采用信息系统记录ICM外渗事件",
+          "quote": "本研究中，有50.91%的放射科建立了ICM使用信息系统，但仅有36.36%采用信息系统记录ICM外渗事件，说明放射科信息化建设及管理水平有待改善。",
+          "src": "CN-30",
+          "cat": "记录上报"
+        },
+        {
+          "k": "审查条目执行率提升",
+          "v": "循证实践后护士对审查条目的执行率及相关知识评分显著高于实践前(均P＜0.05)",
+          "quote": "循证实践后护士对审查条目的执行率及相关知识评分显著高于实践前（均P＜0.05）。",
+          "src": "CN-31",
+          "cat": "记录上报"
+        },
+        {
+          "k": "外渗发生率下降",
+          "v": "循证实践后碘对比剂外渗发生率为0.16%，显著低于循证实践前的0.51%(P＜0.05)",
+          "quote": "循证实践后碘对比剂外渗发生率为0.16%，显著低于循证实践前的0.51%（P＜0.05）；",
+          "src": "CN-31",
+          "cat": "记录上报"
+        },
+        {
+          "k": "System-level safety and incident learning",
+          "v": "41 evidence-based recommendations were identified across four domains: preventive approaches, early detection and surveillance, intervention strategies, and system-level management and enhancement. Quality of evidence spans JBI levels 1 to 5, with most recommendations at level A (strong consensus). The framework encompasses risk evaluation, standardised cannulation procedures, continuous monitoring, prompt emergency protocols, and organisational learning through incident analysis and systemic refinement.",
+          "quote": "Yes 3.2.5Summary of evidence As presented in Table 7, a total of 41 key evidence-based recommendations were identified in this study, categorized into four domains: preventive approaches, early detection and surveillance, intervention strategies, and system-level management and enhancement. The quality of evidence spans JBI levels 1 to 5, with most recommendations classified as level A, indicating strong consensus.",
+          "src": "EN-10",
+          "cat": "护理能力与记录"
+        },
+        {
+          "k": "Clinical audit cycle drives documentation compliance",
+          "v": "A two-cycle clinical audit over 8 months (Jan-Aug 2025), 172 patients, 86 per cycle. Cycle 1 was baseline with no interventions; after analysis, internal process reinforcement was communicated to cardiology fellows, nursing staff and laboratory personnel about documenting both pre- and post-procedure creatinine. Cycle 2 evaluated whether informal reminders improved documentation. Cycle 2 achieved 100% compliance with creatinine documentation versus 39 patients (22.7%) with at least one missing measurement in Cycle 1.",
+          "quote": "Patients were divided equally into Cycle 1 (January-April 2025, n=86) and Cycle 2 (May-August 2025, n=86). Cycle 1 included patients with both complete and incomplete creatinine documentation, while Cycle 2 comprised exclusively fully documented patients. CIN was defined per the European Society of Urogenital Radiology (ESUR) criteria as an absolute rise in serum creatinine of ≥0.5 mg/dL or a relative rise of ≥25% from baseline within 48-72 hours, or per the Kidney Disease: Improving Global Outcomes (KDIGO) criteria as ≥0.3 mg/dL or ≥50% rise. Results: Among the 172 patients, 39 (22.7%) had at least one missing creatinine measurement. Specifically, 4 patients (2.3%) lacked pre-procedure values, 37 (21.5%) lacked post-procedure values, and 2 (1.1%) lacked both (accounted for in both categories). The two patients missing both measurements are included in both the pre- and post-procedure missing categories. All 39 patients with missing documentation belonged to Cycle 1. Cycle 2 demonstrated 100% compliance with creatinine documentation. Due to missing post-procedure data, CIN incidence could not be fully assessed in Cycle 1. No CIN cases were identified in Cycle 2 among patients with complete data. Conclusion: The audit revealed that missing post-procedure creatinine documentation was the primary barrier to accurate CIN detection. Targeted interventions, including mandatory creatinine order sets, electronic medical record (EMR) prompts, and checklist integration, are recommended. Documentation improved in Cycle 2, supporting the benefit of workflow reinforcement. A re-audit is planned following the implementation of corrective measures. Keywords: acute kidney injury, clinical audit, contrast-induced nephropathy (cin), contrast-media, renal function documentation, serum creatinine monitoring statusreleaseddisplay-pdfyesis-olfnois-manuscriptnois-preprintnois-journal-matternois-scannednois-retractednoAccepted 2026 Jul 8; Collection date 2026 Jul.",
+          "src": "EN-18",
+          "cat": "护理能力与记录"
+        }
+      ]
+    },
+    {
+      "id": "MP_MultiStakeholderSafety",
+      "graph": "topic-01",
+      "type": "ManagementPrinciple",
+      "name": "多主体协同的输液安全管理",
+      "tags": [
+        "处置原则"
+      ],
+      "aliases": [
+        "多主体协同的输液安全管理"
+      ],
+      "summary": "输液安全需要患儿与家属、护士与医院管理者共同参与：家属参与早期异常识别，护士负责过程控制，管理者负责制度与资源保障。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "综述",
+          "author": "蒋名丽, 赵磊, 时富枝, 石彩晓, 李丹凤",
+          "title": "小儿外周静脉留置针输液外渗的研究进展",
+          "journal": "全科护理",
+          "year": 2019,
+          "cite": "蒋名丽, 赵磊, 时富枝, 石彩晓, 李丹凤 / 小儿外周静脉留置针输液外渗的研究进展 / 全科护理 / 2019",
+          "grade": "汇总证据",
+          "ref": "CN-14"
+        },
+        {
+          "type": "综述",
+          "author": "任自然, 方远, 陈金秀",
+          "title": "护理质量管理在预防婴幼儿输液外渗中的应用研究进展",
+          "journal": "当代护士",
+          "year": 2025,
+          "cite": "任自然, 方远, 陈金秀 / 护理质量管理在预防婴幼儿输液外渗中的应用研究进展 / 当代护士 / 2025",
+          "grade": "汇总证据",
+          "ref": "CN-15"
+        }
+      ],
+      "details": [
+        {
+          "k": "多主体共同参与输液安全",
+          "v": "从患儿、患儿家长、护士、医院管理者等多角度出发，促使其积极参与患儿输液安全，降低外渗发生率",
+          "quote": "提出可从患儿、患儿家长、护士、医院管理者等多角度出发, 促使其积极参与患儿输液安全中, 降低输液外渗发生率.",
+          "src": "CN-14",
+          "cat": "居家护理"
+        }
+      ]
+    },
+    {
+      "id": "MP_VascularAccessMaintenance",
+      "graph": "topic-01",
+      "type": "ManagementPrinciple",
+      "name": "静脉通路维护与并发症防控",
+      "tags": [
+        "处置原则"
+      ],
+      "aliases": [
+        "静脉通路维护与并发症防控"
+      ],
+      "summary": "静脉通路的维护规范与并发症防控：维护频次、皮肤消毒剂与消毒范围、敷料固定，以及静脉炎、导管滑脱回缩与穿刺点感染的预防。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "对照研究",
+          "author": "陈丹妮, 姜海燕, 李心慧",
+          "title": "菜单式健康教育配合置管专项护理在肿瘤PICC患者中的应用",
+          "journal": "齐鲁护理杂志",
+          "year": 2022,
+          "cite": "陈丹妮, 姜海燕, 李心慧 / 菜单式健康教育配合置管专项护理在肿瘤PICC患者中的应用 / 齐鲁护理杂志 / 2022",
+          "grade": "汇总证据",
+          "ref": "CN-23"
+        },
+        {
+          "type": "调查",
+          "author": "聂圣肖, 王蕾, 孙红, 钱莉",
+          "title": "全国部分医院静脉导管维护现状调查",
+          "journal": "中华现代护理杂志",
+          "year": 2022,
+          "cite": "聂圣肖, 王蕾, 孙红, 钱莉 / 全国部分医院静脉导管维护现状调查 / 中华现代护理杂志 / 2022",
+          "grade": "汇总证据",
+          "ref": "CN-25"
+        },
+        {
+          "type": "调查",
+          "author": "白姗, 高伟, 王蕾, 耿敬芝, 李亚南, 宋圆圆, 贾晓辉, 杨巧芳, 李春燕",
+          "title": "全国三级医院静脉治疗护理技术应用现状的调查研究",
+          "journal": "护理研究",
+          "year": 2025,
+          "cite": "白姗, 高伟, 王蕾, 耿敬芝, 李亚南, 宋圆圆, 贾晓辉, 杨巧芳, 李春燕 / 全国三级医院静脉治疗护理技术应用现状的调查研究 / 护理研究 / 2025",
+          "grade": "汇总证据",
+          "ref": "CN-26"
+        },
+        {
+          "type": "综述",
+          "author": "Romanczuk D, Lange S, Medrzycka-Dabrowska W, Cichowlas G",
+          "title": "Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography",
+          "journal": "Journal of Clinical Medicine",
+          "year": 2026,
+          "cite": "Romanczuk D, Lange S, Medrzycka-Dabrowska W, Cichowlas G / Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography / Journal of Clinical Medicine / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-22"
+        }
+      ],
+      "details": [
+        {
+          "k": "菜单式健康教育干预",
+          "v": "120例PICC患者随机分为对照组55例与观察组65例；观察组给予菜单式健康教育配合置管专项护理，对照组给予PICC后常规护理",
+          "quote": "选取2019年3月1日～2021年1月31日收治的120例PICC患者作为研究对象,随机分为对照组55例和观察组65例,对照组给予PICC后常规护理,观察组给予菜单式健康教育配合置管专项护理;",
+          "src": "CN-23",
+          "cat": "居家护理"
+        },
+        {
+          "k": "并发症与拔管率下降",
+          "v": "观察组拔管总发生率低于对照组(P<0.05)，导管滑脱、静脉炎、导管回缩、穿刺点感染发生率亦低于对照组(P<0.05)",
+          "quote": "结果:观察组拔管总发生率低于对照组(P<0.05),导管滑脱、静脉炎、导管回缩、穿刺点感染并发症发生率低于对照组(P<0.05);",
+          "src": "CN-23",
+          "cat": "通路维护"
+        },
+        {
+          "k": "睡眠与生活质量改善",
+          "v": "干预后观察组PSQI中睡眠时间、入睡时间、睡眠障碍、睡眠质量评分低于对照组(P<0.01)，QOL评分高于对照组(P<0.05)",
+          "quote": "干预后,观察组PSQI中睡眠时间、入睡时间、睡眠障碍、睡眠质量评分低于对照组(P<0.01);干预后,观察组QOL评分高于对照组(P<0.05).",
+          "src": "CN-23",
+          "cat": "居家护理"
+        },
+        {
+          "k": "PICC与留置针维护频次",
+          "v": "740家医院中，583家医院（93.9%）PICC在治疗间歇期常规1周维护1次、351家医院（94.1%）PORT治疗间歇期常规4周维护1次、476家医院（64.6%）静脉留置针72~96 h更换1次",
+          "quote": "740家医院中，分别有737家（99.6%）、621家（83.9%）、634家（85.7%）、373家（50.4%）、245家（33.1%）医院开展了静脉留置针、经外周静脉置入中心静脉导管（PICC）、中心静脉导管（CVC）、输液港（PORT）、中长导管（MC）维护技术，三级医院开展PICC、CVC、PORT、MC维护技术的比例高于二级医院，差异有统计学意义（P<0.05）。583家医院（93.9%，583/621）PICC在治疗间歇期常规1周维护1次，351家医院（94.1%，351/373）PORT治疗间歇期常规4周维护1次，476家医院（64.6%，476/737）静脉留置针72~96 h更换1次",
+          "src": "CN-25",
+          "cat": "通路维护"
+        },
+        {
+          "k": "皮肤消毒剂选择",
+          "v": "多用2%葡萄糖酸氯已定乙醇溶液、0.5%以上有效碘浓度碘伏、75%乙醇；仍有18.4%~52.6%医院用未推荐的安尔碘或仅75%乙醇",
+          "quote": "多数医院进行外周、中心静脉维护时使用2%葡萄糖酸氯已定乙醇溶液、0.5%以上有效碘浓度的碘伏、75%乙醇溶液和碘伏，但仍有18.4%~52.6%的医院使用未被推荐的安尔碘或仅75%乙醇溶液。",
+          "src": "CN-25",
+          "cat": "通路维护"
+        },
+        {
+          "k": "外渗与静脉炎时敷料选择",
+          "v": "发生静脉炎时525家(70.9%)用水胶体敷料；发生渗出或外渗时414家(55.9%)用水胶体敷料、332家(44.9%)用纱布敷料",
+          "quote": "患者发生静脉炎时，525家医院（70.9%，525/740）使用水胶体敷料；患者发生渗出或外渗时，分别有414家（55.9%，414/740）和332家（44.9%，332/740）医院使用水胶体敷料和纱布敷料。",
+          "src": "CN-25",
+          "cat": "局部处理"
+        },
+        {
+          "k": "团队建设与通路使用率",
+          "v": "1 140所(95.1%)医院建立了静脉治疗护理团队/小组；外周静脉留置针、经外周静脉置入中心静脉导管(PICC)、中心静脉导管(CVC)的使用率均在 90%以上",
+          "quote": "1 140所(95.1%)医院建立了静脉治疗护理团队/小组;外周静脉留置针、经外周静脉置入中心静脉导管(PICC)、中心静脉导管(CVC)的使用率均在 90%以上;",
+          "src": "CN-26",
+          "cat": "通路维护"
+        },
+        {
+          "k": "中心静脉通路技术开展率",
+          "v": "1 090所(90.9%)医院开展了中心静脉通路建立技术，1 117所(93.1%)医院开展了PICC技术",
+          "quote": "1 090所(90.9%)医院开展了中心静脉通路建立技术,1 117所(93.1%)医院开展了PICC技术.",
+          "src": "CN-26",
+          "cat": "通路维护"
+        },
+        {
+          "k": "穿刺消毒范围",
+          "v": "904所(75.4%)医院一次性输液钢针穿刺处皮肤选择>5 cm，957所(79.8%)医院外周静脉留置针穿刺消毒范围选择>8 cm",
+          "quote": "904所(75.4%)医院一次性输液钢针穿刺处皮肤选择>5 cm,957所(79.8%)医院外周静脉留置针穿刺消毒范围选择>8 cm.",
+          "src": "CN-26",
+          "cat": "预防"
+        },
+        {
+          "k": "皮肤消毒剂选择",
+          "v": "三级医院皮肤消毒剂的主要选择是0.5%以上有效碘浓度的碘伏和75%乙醇",
+          "quote": "三级医院皮肤消毒剂的主要选择是0.5%以上有效碘浓度的碘伏和75%乙醇;",
+          "src": "CN-26",
+          "cat": "通路维护"
+        }
+      ]
+    },
+    {
+      "id": "MP_VascularAccessDeviceSelection",
+      "graph": "topic-01",
+      "type": "ManagementPrinciple",
+      "name": "血管通路器材选择与验证",
+      "tags": [
+        "处置原则"
+      ],
+      "aliases": [
+        "血管通路器材选择与验证"
+      ],
+      "summary": "血管通路器材的选择与验证原则：按流速性能、承压上限与厂商规格核对器材，高压注射须由影像团队逐项确认而非默认可用。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "综述",
+          "author": "Romanczuk D, Lange S, Medrzycka-Dabrowska W, Cichowlas G",
+          "title": "Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography",
+          "journal": "Journal of Clinical Medicine",
+          "year": 2026,
+          "cite": "Romanczuk D, Lange S, Medrzycka-Dabrowska W, Cichowlas G / Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography / Journal of Clinical Medicine / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-22"
+        },
+        {
+          "type": "队列研究",
+          "author": "Liu W, Wang P, Zhu H, Tang H, Guan H, Wang X, Wang C, Qiu Y, He L",
+          "title": "Contrast media extravasation injury: a prospective observational cohort study",
+          "journal": "European Journal of Medical Research",
+          "year": 2023,
+          "cite": "Liu W, Wang P, Zhu H, Tang H, Guan H, Wang X, Wang C, Qiu Y, He L / Contrast media extravasation injury: a prospective observational cohort study / European Journal of Medical Research / 2023",
+          "grade": "汇总证据",
+          "ref": "EN-05"
+        },
+        {
+          "type": "队列研究",
+          "author": "Wang L, Chen Q, Liu H, Wang X, Qian Q, Xu M, Ma L, Wang X",
+          "title": "Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study",
+          "journal": "Quantitative Imaging in Medicine and Surgery",
+          "year": 2025,
+          "cite": "Wang L, Chen Q, Liu H, Wang X, Qian Q, Xu M, Ma L, Wang X / Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study / Quantitative Imaging in Medicine and Surgery / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-09"
+        },
+        {
+          "type": "调查",
+          "author": "宋圆圆, 王宇, 蒿若楠, 董方方, 黄霖霖, 杨巧芳, 贾晓辉, 白姗",
+          "title": "河南省含碘对比剂外渗管理现状及护士认知水平的调查研究",
+          "journal": "中华护理杂志",
+          "year": 2025,
+          "cite": "宋圆圆, 王宇, 蒿若楠, 董方方, 黄霖霖, 杨巧芳, 贾晓辉, 白姗 / 河南省含碘对比剂外渗管理现状及护士认知水平的调查研究 / 中华护理杂志 / 2025",
+          "grade": "汇总证据",
+          "ref": "CN-30"
+        }
+      ],
+      "details": [
+        {
+          "k": "耐高压型中心静脉通路使用率",
+          "v": "耐高压型中心静脉通路的使用率偏低（5.45%），原因可能与此类导管的留置与维护较复杂、费用较高、患者及护士对ICM外渗的风险认知不足有关",
+          "quote": "然而，本研究结果显示，耐高压型中心静脉通路的使用率偏低（5.45%），可能与此类导管的留置与维护较复杂、费用较高、患者及护士对ICM外渗的风险认知不足有关。",
+          "src": "CN-30",
+          "cat": "预防"
+        },
+        {
+          "k": "Review scope: access device safety and flow performance",
+          "v": "Narrative synthesis evaluating the efficacy and safety of contrast media infusion depending on the vascular access used: flow performance of peripheral cannulas, safety of central lines during automated injection, and critical risk factors and protective measures associated with contrast extravasation. Practical safety of power injection through central catheters is high when institutional protocols are employed.",
+          "quote": "The analysis specifically focuses on evaluating the flow performance of peripheral cannulas, assessing the safety of central lines during automated injection, and identifying critical risk factors and protective measures associated with contrast extravasation.",
+          "src": "EN-22",
+          "cat": "对比剂安全"
+        },
+        {
+          "k": "Power injection through ports needs verification",
+          "v": "Use of totally implantable venous access ports (TIVAPs) and central venous catheters for automated power injections requires strict implementation of rigorous verification protocols by the imaging team, because central-line extravasation can cause significant morbidity such as mediastinal extravasation, haematoma and cardiac arrhythmias. Manufacturer specifications, catheter type and flow-rate limits must be followed rather than assumed.",
+          "quote": "Standardization of Vascular Port and Central Venous Catheter Management -The use of totally implantable venous access ports (TIVAPs) and central venous catheters (CVCs) for automated power injections necessitates the strict implementation of rigorous verification protocols. The imaging team must:",
+          "src": "EN-22",
+          "cat": "对比剂安全"
+        }
+      ]
+    },
+    {
+      "id": "MP_NurseLedRiskStratification",
+      "graph": "topic-01",
+      "type": "ManagementPrinciple",
+      "name": "护士主导的风险分层与通路规划",
+      "tags": [
+        "处置原则"
+      ],
+      "aliases": [
+        "护士主导的风险分层与通路规划"
+      ],
+      "summary": "由护士主导的外渗风险分层与穿刺通路规划：整合临床因素、注射压力与身体成分信息，在注射前完成个体化通路选择与固定方案。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "队列研究",
+          "author": "Zhou Y, Lin S, Qian Q, Shi J, Chen Q",
+          "title": "Integrating CT-Derived Body Composition and Real-Time Injection Pressure Monitoring for Predicting Contrast Media Extravasation: A Retrospective Cohort Study with Implications for Nurse-Led Risk Stratification",
+          "journal": "Healthcare (Basel)",
+          "year": 2026,
+          "cite": "Zhou Y, Lin S, Qian Q, Shi J, Chen Q / Integrating CT-Derived Body Composition and Real-Time Injection Pressure Monitoring for Predicting Contrast Media Extravasation: A Retrospective Cohort Study with Implications for Nurse-Led Risk Stratification / Healthcare (Basel) / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-21"
+        },
+        {
+          "type": "队列研究",
+          "author": "Wang L, Chen Q, Liu H, Wang X, Qian Q, Xu M, Ma L, Wang X",
+          "title": "Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study",
+          "journal": "Quantitative Imaging in Medicine and Surgery",
+          "year": 2025,
+          "cite": "Wang L, Chen Q, Liu H, Wang X, Qian Q, Xu M, Ma L, Wang X / Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study / Quantitative Imaging in Medicine and Surgery / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-09"
+        }
+      ],
+      "details": [
+        {
+          "k": "Nursing role in early recognition",
+          "v": "The authors state that the identified risk factors may assist radiology nurses in the early recognition and timely prevention of patients adversely affected by contrast media extravasation injury. Existing serious-injury literature predominantly consists of case reports, and many cohort studies lack severity grading criteria or follow-up evaluation, so nurse-led risk stratification is a plausible improvement target.",
+          "quote": "The findings may assist radiology nurses in the early recognition and timely prevention of patients adversely affected by CM extravasation injury.",
+          "src": "EN-09",
+          "cat": "护理能力与记录"
+        },
+        {
+          "k": "Nurse-led model-informed access planning",
+          "v": "The combined clinical-pressure-body composition model showed higher discrimination than single-domain models after correction of a ROC-labeling error. Opportunistic body composition assessment may refine pre-injection risk stratification without additional scanning or radiation exposure. The results provide a basis for future nurse-led, model-informed vascular access planning, but prospective external validation is required before routine deployment.",
+          "quote": "The results provide a basis for future nurse-led, model-informed vascular access planning, but prospective external validation is required before routine deployment.",
+          "src": "EN-21",
+          "cat": "护理能力与记录"
+        }
+      ]
+    },
+    {
+      "id": "MP_OncologyContrastRisk",
+      "graph": "topic-01",
+      "type": "ManagementPrinciple",
+      "name": "肿瘤患者对比剂风险管理",
+      "tags": [
+        "处置原则"
+      ],
+      "aliases": [
+        "肿瘤患者对比剂风险管理"
+      ],
+      "summary": "肿瘤人群的对比剂风险解读受合并用药干扰，须按肾功能与肿瘤风险分层做结构化预防，包括基线肾功能评估与个体化水化，而非回避使用。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "综述",
+          "author": "Vasii SO, Crisan FG, Lazar SM, Ionica C, Iliescu D, Ionica I, Malita DC, Voicu M, Voicu A, Udrescu L",
+          "title": "Iodinated Contrast Media in Oncologic CT: A Narrative Review of Safety, Risk Stratification, and Practical Considerations",
+          "journal": "Diagnostics (Basel)",
+          "year": 2026,
+          "cite": "Vasii SO, Crisan FG, Lazar SM, Ionica C, Iliescu D, Ionica I, Malita DC, Voicu M, Voicu A, Udrescu L / Iodinated Contrast Media in Oncologic CT: A Narrative Review of Safety, Risk Stratification, and Practical Considerations / Diagnostics (Basel) / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-20"
+        }
+      ],
+      "details": [
+        {
+          "k": "Oncology contrast risk is not a single toxicity model",
+          "v": "The safety of iodinated contrast media in oncology cannot be reduced to a single toxicity model. Modern nonionic agents improve diagnostic performance yet administration may still be associated with acute kidney injury, hypersensitivity reactions and, in selected contexts, clinically relevant thyroid effects. In oncology the interpretation of risk is further complicated by concomitant medication use: patients frequently receive combinations of cytotoxic chemotherapy, targeted agents, corticosteroids, anti-infective drugs and supportive treatments, which may alter renal risk or complicate attribution of post-imaging adverse events.",
+          "quote": "In oncology, the interpretation of contrast-related risk is further complicated by concomitant medication use.",
+          "src": "EN-20",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "Structured prevention instead of contrast avoidance",
+          "v": "An oncology-specific prevention framework translates risk into practical measures: baseline renal function assessment, identification of high-risk patients using risk scores, intravenous saline hydration, and preferential use of low-osmolar or iso-osmolar contrast media in selected vulnerable individuals. Rather than supporting reflexive contrast avoidance, this advocates structured prevention protocols tailored to the patient's renal and oncologic risk profile.",
+          "quote": "Their review is clinically useful because it translates the oncology-specific risk framework into practical measures, including baseline renal function assessment, identification of high-risk patients using recently proposed risk scores, intravenous saline hydration, and preferential use of low-osmolar or iso-osmolar contrast media in selected vulnerable individuals.",
+          "src": "EN-20",
+          "cat": "特殊人群"
+        }
+      ]
+    },
+    {
+      "id": "MP_AllergySpecialistReferral",
+      "graph": "topic-01",
+      "type": "ManagementPrinciple",
+      "name": "药物过敏专科转诊与登记",
+      "tags": [
+        "处置原则"
+      ],
+      "aliases": [
+        "药物过敏专科转诊与登记"
+      ],
+      "summary": "既往对比剂超敏反应者的专科转诊与过敏登记要求：转诊药物过敏专科评估、在电子病历中优化登记，重发或严重迟发反应者必须转诊。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F",
+          "title": "Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee",
+          "journal": "European Radiology",
+          "year": 2025,
+          "cite": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F / Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee / European Radiology / 2025",
+          "grade": "指南与共识",
+          "ref": "EN-03"
+        },
+        {
+          "type": "指南",
+          "author": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F",
+          "title": "Hypersensitivity reactions to contrast media: Part 2. Prevention of recurrent hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee",
+          "journal": "European Radiology",
+          "year": 2025,
+          "cite": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F / Hypersensitivity reactions to contrast media: Part 2. Prevention of recurrent hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee / European Radiology / 2025",
+          "grade": "指南与共识",
+          "ref": "EN-04"
+        },
+        {
+          "type": "队列研究",
+          "author": "Beiner L, Jeong J, Kang DY, Lombardo P, Kang HR, Boehm I",
+          "title": "Immediate hypersensitivity reactions to iodinated contrast media despite drug prophylaxis - a comparative retrospective cohort study of breakthrough reactions in Bern (Switzerland) and Seoul (South Korea)",
+          "journal": "Quantitative Imaging in Medicine and Surgery",
+          "year": 2024,
+          "cite": "Beiner L, Jeong J, Kang DY, Lombardo P, Kang HR, Boehm I / Immediate hypersensitivity reactions to iodinated contrast media despite drug prophylaxis - a comparative retrospective cohort study of breakthrough reactions in Bern (Switzerland) and Seoul (South Korea) / Quantitative Imaging in Medicine and Surgery / 2024",
+          "grade": "汇总证据",
+          "ref": "EN-19"
+        }
+      ],
+      "details": [
+        {
+          "k": "Severe delayed reaction forbids the whole class",
+          "v": "For a history of severe non-immediate hypersensitivity reaction with danger signs (SCAR): refer the patient immediately to a drug allergy specialist, choose an alternative imaging modality, and optimise allergy registration in the electronic health record. Do not give the group of contrast media to which the severe skin reaction occurred, and avoid all iodine-based contrast media after a severe non-immediate reaction to an iodine-based contrast medium.",
+          "quote": "Avoid all iodine-based contrast media after a severe non-immediate hypersensitivity reaction to an iodine-based contrast medium • Avoid all gadolinium-based contrast agents after a severe non-immediate hypersensitivity reaction to a gadolinium-based contrast agent • Individualize the approach following multidisciplinary consultation after a severe reaction to an unknown CM See also Fig.",
+          "src": "EN-04",
+          "cat": "超敏反应"
+        }
+      ]
+    },
+    {
+      "id": "MP_PediatricContrastSafety",
+      "graph": "topic-01",
+      "type": "ManagementPrinciple",
+      "name": "儿童对比剂安全要点",
+      "tags": [
+        "处置原则"
+      ],
+      "aliases": [
+        "儿童对比剂安全要点"
+      ],
+      "summary": "儿童使用对比剂的安全要点：处置原则与成人一致但按体重调整剂量、尽量避免肠外激素，反应类型与发生率随年龄变化且既往反应者复发风险更高。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F",
+          "title": "Hypersensitivity reactions to contrast media: Part 2. Prevention of recurrent hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee",
+          "journal": "European Radiology",
+          "year": 2025,
+          "cite": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F / Hypersensitivity reactions to contrast media: Part 2. Prevention of recurrent hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee / European Radiology / 2025",
+          "grade": "指南与共识",
+          "ref": "EN-04"
+        },
+        {
+          "type": "队列研究",
+          "author": "Seong Y, Kim PH, Suh CH, Park KJ, Park HJ, Lee CW, Jung AY, Cho YA, Lee JS, Yoon HM",
+          "title": "Acute Adverse Reactions to Nonionic Low-Osmolar Iodinated Contrast Media in Children: A Retrospective Study of 23,429 Injections Over 6 Years",
+          "journal": "Korean Journal of Radiology",
+          "year": 2025,
+          "cite": "Seong Y, Kim PH, Suh CH, Park KJ, Park HJ, Lee CW, Jung AY, Cho YA, Lee JS, Yoon HM / Acute Adverse Reactions to Nonionic Low-Osmolar Iodinated Contrast Media in Children: A Retrospective Study of 23,429 Injections Over 6 Years / Korean Journal of Radiology / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-14"
+        },
+        {
+          "type": "综述",
+          "author": "蒋名丽, 赵磊, 时富枝, 石彩晓, 李丹凤",
+          "title": "小儿外周静脉留置针输液外渗的研究进展",
+          "journal": "全科护理",
+          "year": 2019,
+          "cite": "蒋名丽, 赵磊, 时富枝, 石彩晓, 李丹凤 / 小儿外周静脉留置针输液外渗的研究进展 / 全科护理 / 2019",
+          "grade": "汇总证据",
+          "ref": "CN-14"
+        }
+      ],
+      "details": [
+        {
+          "k": "小儿留置针外渗内容范围",
+          "v": "综述小儿外周静脉留置针输液外渗现状、影响因素，并梳理相关预防及处理措施",
+          "quote": "介绍小儿外周静脉留置针输液外渗的现状, 探讨其影响因素, 综述相关的预防及处理措施",
+          "src": "CN-14",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "Paediatric decisions mirror adult principles",
+          "v": "Studies with pediatric populations (under 18 years) were excluded because information is very limited and existing data do not differ significantly from adults. Decisions for children are therefore generally based on the same principles as for adults, with weight-based dose adjustments and a recommendation to avoid parenteral corticosteroids whenever possible; for certain indications higher CM doses per kg body weight and higher injection rates may be used.",
+          "quote": "Studies with pediatric populations (< 18 years) were excluded since there is very limited information available for this group, and the existing data do not differ significantly from those obtained in adults. For this reason, decisions for children are generally based on the same principles as those for adults, with weight-based dose adjustments and a recommendation to avoid the use of parenteral corticosteroids whenever possible, but for certain indications, higher CM doses per kg body weight and higher injection rates may be used.",
+          "src": "EN-04",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "Paediatric acute reaction incidence breakdown",
+          "v": "Across 23,429 injections in pediatric patients, acute physiologic reaction incidence was 0.55% (128/23,429): mild 0.50% (118), moderate 0.04% (9), severe 0.01% (1). By agent: iomeprol 0.62% (74/11,910), iopamidol 0.32% (20/6,217), iohexol 0.64% (27/4,221), ioversol 0.61% (6/989), iobitridol 1.18% (1/85), iopromide 0/7.",
+          "quote": "The incidence of acute physiologic reactions among all LOCM injections was 0.55% (128 of 23,429), with the majority being mild (0.50% of all injections, 118 of 23,429), followed by moderate (0.04%, 9 of 23,429), and severe (0.01%, 1 of 23,429). Acute physiologic reactions occurred in 0.62% of iomeprol injections (74 of 11,910), 0.32% of iopamidol injections (20 of 6,217), 0.64% of iohexol injections (27 of 4,221), 0.61% of ioversol injections (6 of 989), and 1.18% of iobitridol injections (1 of 85). No acute physiologic reactions were observed with iopromide (0 of 7).",
+          "src": "EN-14",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "Paediatric reaction rates rise with age",
+          "v": "Acute physiologic reactions occurred slightly more frequently in older patients (adjusted RR 1.04 per one-year increase, 95% CI 1.01-1.07, P = 0.008). Stratified by age the incidence was 0.08% (4/5,038) under 2 years, 0.60% (51/8,439) aged 2-12 years, and 0.73% (73/9,952) over 12 years. Reactions were more frequent in patients with a prior history of such reactions (adjusted RR 7.44, 95% CI 2.55-21.70, P < 0.001).",
+          "quote": "Multivariable Poisson regression analyses (Table 4) showed that acute physiologic reactions occurred slightly more frequently in older patients (adjusted RR = 1.04 per 1-year increase [95% CI: 1.01, 1.07], P = 0.008). When stratified by age group, the incidence of physiologic reactions was 0.08% (4 of 5,038) in patients <2 years old, 0.60% (51 of 8,439) in those aged 2-12 years, and 0.73% (73 of 9,952) in those >12 years old (Supplementary Table 2). Additionally, acute physiologic reactions were more frequent in patients with a prior history of such reactions (adjusted RR = 7.44 [95% CI: 2.55, 21.70], P < 0.001).",
+          "src": "EN-14",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "Paediatric reaction types by CT protocol",
+          "v": "Heart CT examinations showed a lower incidence of acute physiologic reactions than abdomen and pelvis CT examinations (adjusted RR 0.22, 95% CI 0.09-0.56, P = 0.002), although the association was not statistically significant when stratified by age. Multivariable Poisson regression with generalized estimating equations was used to explore risk factors for each reaction type across the pediatric cohort.",
+          "quote": "Heart CT examinations showed a lower incidence of acute physiologic reactions than abdomen and pelvis CT examinations (adjusted RR = 0.22 [95% CI: 0.09, 0.56], P = 0.002)",
+          "src": "EN-14",
+          "cat": "特殊人群"
+        }
+      ]
+    },
+    {
+      "id": "S_Blistering",
+      "graph": "topic-01",
+      "type": "SymptomSign",
+      "name": "皮肤水疱",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "皮肤水疱"
+      ],
+      "summary": "外渗后皮肤出现水疱是组织损伤加重的表现，需按创面处理并观察是否合并感染；是否伴神经血管受损决定后续处置强度。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "病例报告",
+          "author": "张媛媛, 龙秀红, 吕婵, 李鲜, 王艺, 黄兰英, 涂惠琼, 覃惠娟",
+          "title": "1例药液外渗致慢性难愈性创面形成患者的中西医结合护理",
+          "journal": "中华护理杂志",
+          "year": 2024,
+          "cite": "张媛媛, 龙秀红, 吕婵, 李鲜, 王艺, 黄兰英, 涂惠琼, 覃惠娟 / 1例药液外渗致慢性难愈性创面形成患者的中西医结合护理 / 中华护理杂志 / 2024",
+          "grade": "汇总证据",
+          "ref": "CN-19"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "EN-01"
+        },
+        {
+          "type": "病例系列",
+          "author": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC",
+          "title": "Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions",
+          "journal": "International Wound Journal",
+          "year": 2017,
+          "cite": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC / Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions / International Wound Journal / 2017",
+          "grade": "汇总证据",
+          "ref": "EN-07"
+        },
+        {
+          "type": "综述",
+          "author": "Thomas R, Vermaak L, Price G",
+          "title": "Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison",
+          "journal": "Eplasty",
+          "year": 2022,
+          "cite": "Thomas R, Vermaak L, Price G / Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison / Eplasty / 2022",
+          "grade": "汇总证据",
+          "ref": "EN-08"
+        },
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        }
+      ],
+      "details": [
+        {
+          "k": "外渗致淤紫与水疱",
+          "v": "在输注10%葡萄糖酸钙注射液50 ml、50%葡萄糖注射液50 ml+中性胰岛素4 U时出现药液外渗，左手背穿刺口周围出现8.0 cm × 4.5 cm淤紫及大小不等水疱，触及皮肤温度高",
+          "quote": "在输注10%葡萄糖酸钙注射液50 ml、50%葡萄糖注射液50 ml+中性胰岛素4 U时，出现药液外渗，左手背穿刺口周围出现8.0 cm × 4.5 cm淤紫及大小不等水疱，触及皮肤温度高。",
+          "src": "CN-19",
+          "cat": "并发症"
+        },
+        {
+          "k": "急性期封闭与水疱处理",
+          "v": "立即停输液、回抽残余药液、拔针；2%利多卡因2 ml+地塞米松5 mg+生理盐水5 ml局部环形封闭，抽吸水疱渗液，淤紫处外涂多磺酸粘多糖乳膏，抬高患肢高于心脏水平并避免局部受压",
+          "quote": "立即停止输液，回抽残余药液后拔除留置针，予2%利多卡因2 ml+地塞米松5 mg+生理盐水5 ml局部环形封闭，同时抽吸水疱内渗液，淤紫处外涂多磺酸粘多糖乳膏，抬高患肢，高于心脏水平，避免局部受压。",
+          "src": "CN-19",
+          "cat": "局部处理"
+        },
+        {
+          "k": "Topical agents and fasciotomy trigger",
+          "v": "Topical application of silver sulfadiazine and Intrasyte gel to the affected area is recommended whenever skin blistering is observed. Prompt fasciotomy is required if compartment syndrome is suspected., five minor complications (bullae formation and epidermolysis) resolved spontaneously.",
+          "quote": "Prompt fasciotomy is required if compartment syndrome is suspected.",
+          "src": "EN-07",
+          "cat": "处置"
+        },
+        {
+          "k": "Distribution pattern and large-volume definition",
+          "v": "Contrast media extravasation injuries are relatively benign versus cytotoxic drug extravasation but can cause pressure necrosis, blistering and compartment syndrome. Volume, rate of infusion and osmolality all influence the distribution pattern of the injectate. 'Large-volume' extravasations have been described in the literature as ranging from over 20 mL to over 100 mL.",
+          "quote": "Volume, rate of infusion, and osmolality all influence the distribution pattern of the injectate. \"Large-volume\" extravasations have been described in the literature as being from > 20 mL to > 100 mL.",
+          "src": "EN-08",
+          "cat": "识别分级"
+        }
+      ]
+    },
+    {
+      "id": "S_ChronicNonHealingWound",
+      "graph": "topic-01",
+      "type": "SymptomSign",
+      "name": "慢性难愈性创面",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "慢性难愈性创面"
+      ],
+      "summary": "外渗后创面迁延不愈进入慢性难愈状态，需多学科评估并转为创面专科门诊持续治疗，处理目标转向促进愈合与保留肢体功能。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "病例报告",
+          "author": "张媛媛, 龙秀红, 吕婵, 李鲜, 王艺, 黄兰英, 涂惠琼, 覃惠娟",
+          "title": "1例药液外渗致慢性难愈性创面形成患者的中西医结合护理",
+          "journal": "中华护理杂志",
+          "year": 2024,
+          "cite": "张媛媛, 龙秀红, 吕婵, 李鲜, 王艺, 黄兰英, 涂惠琼, 覃惠娟 / 1例药液外渗致慢性难愈性创面形成患者的中西医结合护理 / 中华护理杂志 / 2024",
+          "grade": "汇总证据",
+          "ref": "CN-19"
+        }
+      ],
+      "details": [
+        {
+          "k": "外渗发展为慢性难愈性创面",
+          "v": "患者左手背伤口发展为CRW，经多学科团队讨论，拟订后续治疗护理方案",
+          "quote": "患者左手背伤口发展为CRW，经多学科团队讨论，拟订后续治疗护理方案。",
+          "src": "CN-19",
+          "cat": "并发症"
+        }
+      ]
+    },
+    {
+      "id": "S_RedFlagSigns",
+      "graph": "topic-01",
+      "type": "SymptomSign",
+      "name": "外渗恶化警示征象",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "外渗恶化警示征象"
+      ],
+      "summary": "提示外渗正在恶化的临床征象：疼痛持续加重、肿胀进行性扩大、感觉改变、毛细血管再充盈延迟、主动被动活动受限与皮肤破溃或水疱。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "EN-01"
+        },
+        {
+          "type": "病例报告",
+          "author": "Diop B, Soh GT, Nde AFT, Sarr N, Ndoye AY, Sane JC",
+          "title": "Hand compartment syndrome secondary to contrast media extravasation: A case report",
+          "journal": "International Journal of Surgery Case Reports",
+          "year": 2022,
+          "cite": "Diop B, Soh GT, Nde AFT, Sarr N, Ndoye AY, Sane JC / Hand compartment syndrome secondary to contrast media extravasation: A case report / International Journal of Surgery Case Reports / 2022",
+          "grade": "汇总证据",
+          "ref": "EN-16"
+        },
+        {
+          "type": "病例报告",
+          "author": "Hu J, Ge T, Du Y, Wang J, Zhou Y",
+          "title": "Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention",
+          "journal": "BMC Surgery",
+          "year": 2025,
+          "cite": "Hu J, Ge T, Du Y, Wang J, Zhou Y / Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention / BMC Surgery / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-17"
+        }
+      ],
+      "details": [
+        {
+          "k": "Surgical referral is clinical not volume based",
+          "v": "Surgical opinion is recommended for extravasate over 150 ml, but the overall decision should be clinical - based on red flag signs and symptoms rather than an arbitrary CMEX volume. Fasciotomy should be performed within 2 hours to avoid muscle necrosis and nerve damage; surgery performed within 90 to 300 min has been reported to conserve all extremities. Red flags: painful active flexion, passive extension, neurosensory disturbance, increasing swelling; highest-risk locations are the volar forearm and the hand.",
+          "quote": "Whilst a radiologist can attend to mild cases, in more severe cases, a surgeon should be urgently consulted, and fasciotomy should be performed within 2 h to avoid muscle necrosis and nerve damage. Surgery performed within 90 to 300 min has been reported to conserve all extremities with favourable prognosis [54]. Sbitany et al. in a study of 102 cases of CMEX used a threshold of 30 ml extravasate as a referral prompt [55] and none required surgery, even in the 10% with > 100 ml CMEX volume. Wang et al. reported similar findings where even extravasate volumes of up to 150 ml of non-ionic IBCM were conservatively managed, suggesting no discrete threshold extravasate volume should be set [56]. Dykes et al. suggest that larger extravasated volumes correlate with moderate-to-severe injuries, but the data does not support using a volume threshold to determine surgical referral or more aggressive management [23]. Nevertheless, in unusual cases with very large volumes of extravasate (> 150 ml), the consensus remains that surgical consult is appropriate. Overall, the decision to refer for surgical intervention should be a clinical one-i.e. based on red flag signs and symptoms, rather than arbitrary CMEX volumes. Conclusion This review highlights the key up-to-date evidence pertaining to CMEX summarising the important risk factors and a systematic approach to management.",
+          "src": "EN-01",
+          "cat": "处置"
+        },
+        {
+          "k": "Surgical referral by signs not volume",
+          "v": "Recommendation 1: surgical consultation should not be routinely requested based on volume alone (strength of evidence Strong 3). Obtain surgical consultation whenever there is concern for severe extravasation injury: severe pain, progressive swelling or pain, decreased capillary refill, change in sensation, worsening passive or active range of motion, or skin ulceration or blistering.",
+          "quote": "Recommendation 1: Surgical consultation should not be routinely requested based on volume alone. Strength of evidence: Strong 3 Reference # Original SQ Reassessed SQ Final SQ 11 4 3 3 13 4 4 4 18 1 - 1 14 2 - 2 EXTRAVASATION OF CONTRAST MEDIA 19 Recommendation 2: Surgical consultation should be requested whenever there is concern for a severe extravasation injury; this can be suspected if the patient develops severe pain, progressive swelling or pain, decreased capillary refill, change in sensation, worsening active or passive range of motion in the elbow, wrist, or fingers, or skin ulceration or blistering.",
+          "src": "R01",
+          "cat": "处置"
+        }
+      ]
+    },
+    {
+      "id": "SC_ReactionOnsetWindow",
+      "graph": "topic-01",
+      "type": "SymptomCategory",
+      "name": "对比剂不良反应发生时间窗",
+      "tags": [
+        "症状分类"
+      ],
+      "aliases": [
+        "对比剂不良反应发生时间窗"
+      ],
+      "summary": "对比剂不良反应按发生时间分层：绝大多数为即刻反应，迟发皮肤反应可迟至一周内，危及生命的反应几乎都发生在给药后极短时间内。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "综述",
+          "author": "Chiu TM, Chu SY",
+          "title": "Hypersensitivity Reactions to Iodinated Contrast Media",
+          "journal": "Biomedicines",
+          "year": 2022,
+          "cite": "Chiu TM, Chu SY / Hypersensitivity Reactions to Iodinated Contrast Media / Biomedicines / 2022",
+          "grade": "汇总证据",
+          "ref": "EN-11"
+        },
+        {
+          "type": "综述",
+          "author": "Zhong X, Zhao L",
+          "title": "Hypersensitivity reactions to iodinated contrast media: potential mechanisms and clinical management",
+          "journal": "Frontiers in Medicine",
+          "year": 2025,
+          "cite": "Zhong X, Zhao L / Hypersensitivity reactions to iodinated contrast media: potential mechanisms and clinical management / Frontiers in Medicine / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-15"
+        },
+        {
+          "type": "调查",
+          "author": "杨秋月, 汪晖, 李琴, 李震",
+          "title": "CT增强碘对比剂急性不良反应发生现况及影响因素",
+          "journal": "护理研究",
+          "year": 2023,
+          "cite": "杨秋月, 汪晖, 李琴, 李震 / CT增强碘对比剂急性不良反应发生现况及影响因素 / 护理研究 / 2023",
+          "grade": "汇总证据",
+          "ref": "CN-27"
+        }
+      ],
+      "details": [
+        {
+          "k": "高发时段与严重度",
+          "v": "98.75%的病人表现为轻度急性不良反应；82.50%的急性不良反应发生在碘对比剂开始注射后的前5 min",
+          "quote": "98.75％的病人表现为轻度急性不良反应,82.50％的急性不良反应发生在碘对比剂开始注射后的前5 min.",
+          "src": "CN-27",
+          "cat": "过敏护理"
+        },
+        {
+          "k": "Timing: most immediate, 70% within 5 minutes",
+          "v": "Most adverse drug reactions to iodinated contrast are immediate (acute) with onset within 1 hour and commonly within 30 minutes after intravenous administration; about 70% occur within 5 minutes. Non-immediate (delayed) cutaneous reactions usually have a latency of hours to one week. Nearly all life-threatening adverse reactions occur within 20 minutes after intravascular administration.",
+          "quote": "Most ADRs of ICM are immediate (acute) with onset within 1 h and commonly within 30 min after intravenous administration of ICM [2,13]. About 70% of them occur within 5 min [14]. Non-immediate (delayed) cutaneous reaction usually has a latency of hours to one week after receiving the ICM [2]. Nearly all life-threatening ADRs occur within 20 min after intravascular administration of ICM. Chemo-toxic reactions to ICM are frequently dependent on the dose and concentration, while hypersensitivity is likely independent of them [2].",
+          "src": "EN-11",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Delayed T-cell reaction latency in days",
+          "v": "Latency of T cell-mediated delayed-type hypersensitivity to iodinated contrast ranges from hours to days after administration. Drug reaction with eosinophilia and systemic symptoms (DRESS) usually develops 2 to 4 weeks after exposure to the culprit drug, but if induced by contrast the latency is shorter, usually within the week following administration.",
+          "quote": "The latency of T cell-mediated delayed-type hypersensitivity to ICM ranges from hours to days after administration of the ICM. Usually, drug reactions with eosinophilia and systemic symptoms develop after exposure to the culprit drug for 2 to 4 weeks, but if induced by ICM, the latency is shorter (usually within the week following ICM administration) [39].",
+          "src": "EN-11",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Immediate versus non-immediate timing",
+          "v": "Hypersensitivity reactions are temporally stratified into immediate and non-immediate subtypes. Immediate reactions typically occur within an hour following contrast administration, while non-immediate reactions occur hours to days after exposure. Intradermal skin testing has emerged as a tool to identify cross-reactive contrast media and guide alternative agent selection, though its predictive value remains debated, and premedication protocols also lack standardised guidelines particularly for high-risk populations.",
+          "quote": "Immediate reactions typically occur within an hour following ICM administration, while non-immediate reactions occur hours to days after ICM exposure.",
+          "src": "EN-15",
+          "cat": "超敏反应"
+        }
+      ]
+    },
+    {
+      "id": "SC_ReactionMechanismType",
+      "graph": "topic-01",
+      "type": "SymptomCategory",
+      "name": "对比剂反应机制分型",
+      "tags": [
+        "症状分类"
+      ],
+      "aliases": [
+        "对比剂反应机制分型"
+      ],
+      "summary": "对比剂不良反应按机制分为化学毒性与过敏样两类：前者与剂量及浓度相关，后者多与剂量无关，分型决定处理与是否需要预处理。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "综述",
+          "author": "Chiu TM, Chu SY",
+          "title": "Hypersensitivity Reactions to Iodinated Contrast Media",
+          "journal": "Biomedicines",
+          "year": 2022,
+          "cite": "Chiu TM, Chu SY / Hypersensitivity Reactions to Iodinated Contrast Media / Biomedicines / 2022",
+          "grade": "汇总证据",
+          "ref": "EN-11"
+        }
+      ],
+      "details": [
+        {
+          "k": "Chemo-toxic versus hypersensitivity events",
+          "v": "Adverse drug reactions to intravascular iodinated contrast divide into hypersensitivity (allergic-like) events and chemo-toxic events. Chemo-toxic reactions are frequently dependent on the dose and concentration, while hypersensitivity is likely independent of them. Nausea, vomiting or flushing are occasionally difficult to classify as hypersensitivity or chemo-toxic events.",
+          "quote": "Chemo-toxic reactions to ICM are frequently dependent on the dose and concentration, while hypersensitivity is likely independent of them [2].",
+          "src": "EN-11",
+          "cat": "超敏反应"
+        }
+      ]
+    },
+    {
+      "id": "SC_BreakthroughReaction",
+      "graph": "topic-01",
+      "type": "SymptomCategory",
+      "name": "突破性过敏反应",
+      "tags": [
+        "症状分类"
+      ],
+      "aliases": [
+        "突破性过敏反应"
+      ],
+      "summary": "已按预处理方案用药后仍发生的对比剂过敏反应，其严重度多与首次反应相当，提示预处理不能彻底消除再次反应的风险。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "队列研究",
+          "author": "Beiner L, Jeong J, Kang DY, Lombardo P, Kang HR, Boehm I",
+          "title": "Immediate hypersensitivity reactions to iodinated contrast media despite drug prophylaxis - a comparative retrospective cohort study of breakthrough reactions in Bern (Switzerland) and Seoul (South Korea)",
+          "journal": "Quantitative Imaging in Medicine and Surgery",
+          "year": 2024,
+          "cite": "Beiner L, Jeong J, Kang DY, Lombardo P, Kang HR, Boehm I / Immediate hypersensitivity reactions to iodinated contrast media despite drug prophylaxis - a comparative retrospective cohort study of breakthrough reactions in Bern (Switzerland) and Seoul (South Korea) / Quantitative Imaging in Medicine and Surgery / 2024",
+          "grade": "汇总证据",
+          "ref": "EN-19"
+        },
+        {
+          "type": "队列研究",
+          "author": "Seong Y, Kim PH, Suh CH, Park KJ, Park HJ, Lee CW, Jung AY, Cho YA, Lee JS, Yoon HM",
+          "title": "Acute Adverse Reactions to Nonionic Low-Osmolar Iodinated Contrast Media in Children: A Retrospective Study of 23,429 Injections Over 6 Years",
+          "journal": "Korean Journal of Radiology",
+          "year": 2025,
+          "cite": "Seong Y, Kim PH, Suh CH, Park KJ, Park HJ, Lee CW, Jung AY, Cho YA, Lee JS, Yoon HM / Acute Adverse Reactions to Nonionic Low-Osmolar Iodinated Contrast Media in Children: A Retrospective Study of 23,429 Injections Over 6 Years / Korean Journal of Radiology / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-14"
+        }
+      ],
+      "details": [
+        {
+          "k": "Premedication does not abolish paediatric recurrence",
+          "v": "Of 23,429 examinations, 226 were indicated for premedication because of prior allergic-like reactions to low-osmolality contrast; 172 were performed after premedication. Acute allergic-like reactions occurred in 6.40% (11/172) of examinations performed with premedication versus 3.70% (2/54) where premedication was indicated but not given, and 0.84% (195/23,203) in those without such history (P < 0.001). Premedication therefore does not remove the risk of recurrence in children.",
+          "quote": "LOCM = low-osmolar iodinated contrast media, RR = relative risk, eGFR = estimated glomerular filtration rate, ICM = iodinated contrast media Among the 23,429 examinations, 226 were indicated for premedication owing to a prior history of allergic-like reactions associated with LOCM. Of these, 172 examinations were performed after premedication. Acute allergic-like reactions occurred in 6.40% (11 of 172) of examinations performed with premedication and in 3.70% (2 of 54) of examinations for which premedication was indicated but not administered. The incidence of acute allergic-like reactions remained significantly higher in patients with a history of such reactions, even with premedication (6.40%), compared to that of those without such a history (0.84%, 195 of 23,203) (P < 0.001). ICM-Associated Acute Physiologic Reactions The incidences of acute physiologic reactions according to the type of LOCM used are described in Table 2 and Figure 3. The incidence of acute physiologic reactions among all LOCM injections was 0.55% (128 of 23,429), with the majority being mild (0.50% of all injections, 118 of 23,429), followed by moderate (0.04%, 9 of 23,429), and severe (0.01%, 1 of 23,429).",
+          "src": "EN-14",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Breakthrough reaction counts and severity",
+          "v": "445 breakthrough-reaction patients (91.5% from Seoul) with 691 breakthrough reactions (94.5% from Seoul). Most reactions were mild, 11% moderate and 3.9% severe. Fatal reactions or deaths did not occur.",
+          "quote": "We identified 445 BTR-patients (91.5% from Seoul) with 691 BTRs (94.5% from Seoul). Most reactions were mild, 11% moderate and 3.9% severe. In Seoul, we found patients with up to 10 BTRs, and in Bern, there were only patients with one BTR. Fatal reactions or deaths did not occur.",
+          "src": "EN-19",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "Breakthrough reaction definition and limits of prophylaxis",
+          "v": "Current premedication protocols have several limitations: lack of standardisation, risk of causing adverse reactions, and inability to suppress the immediate contrast hypersensitivity reaction. A breakthrough reaction (BTR) is an adverse reaction following contrast injection despite the application of a premedication.",
+          "quote": "Unfortunately, currently used premedication protocols have several limitations, such lack of standardization, risk of causing adverse reactions, and inability to suppress the immediate ICM-hypersensitivity reaction (3,4). The latter phenomenon, called breakthrough reaction (BTR), is an adverse reaction following CM-injection despite the application of a premedication (5-7).",
+          "src": "EN-19",
+          "cat": "超敏反应"
+        },
+        {
+          "k": "BTR severity mirrors index reaction severity",
+          "v": "In most cases the severity of the breakthrough reaction and of the index reaction were identical (80.8%). Mild index reactions remained constant in 90.6%. In severe index reactions, 55.6% of breakthrough reactions were severe again and 44.4% had decreased severity. In 158 breakthrough reactions (22.9%) the culprit contrast medium of the index reaction induced the breakthrough; in the other 482 (69.8%) the culprit agent was changed to another non-culprit agent.",
+          "quote": "In most cases, the severity of the BTRs and of the index reactions were identical (80.8%). Mild index reactions remained constant in 90.6%. In contrast, in moderate index reactions the severity decreased/remained identically in 86.8% and increased in 13.2%. In severe index reactions, 55.6% of BTR reactions were severe again, in 44.4% the severity decreased. In 158 BTRs (22.9%) the culprit iodinated contrast medium (ICM) of the index reaction induced the BTR. In the other 482 BTRs (69.8%) the culprit ICM was changed to another non-culprit ICM.",
+          "src": "EN-19",
+          "cat": "超敏反应"
+        }
+      ]
+    },
+    {
+      "id": "DE_MenuBasedHealthEducation",
+      "graph": "topic-01",
+      "type": "DiseaseEducation",
+      "name": "菜单式健康教育",
+      "tags": [
+        "疾病教育"
+      ],
+      "aliases": [
+        "菜单式健康教育"
+      ],
+      "summary": "以菜单形式把健康教育条目呈现给患者并配合专项护理的做法：条目化、易查找、可按患者需求逐项落实，提高知晓度与自我管理能力。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "对照研究",
+          "author": "陈丹妮, 姜海燕, 李心慧",
+          "title": "菜单式健康教育配合置管专项护理在肿瘤PICC患者中的应用",
+          "journal": "齐鲁护理杂志",
+          "year": 2022,
+          "cite": "陈丹妮, 姜海燕, 李心慧 / 菜单式健康教育配合置管专项护理在肿瘤PICC患者中的应用 / 齐鲁护理杂志 / 2022",
+          "grade": "汇总证据",
+          "ref": "CN-23"
+        }
+      ],
+      "details": [
+        {
+          "k": "菜单式健康教育干预",
+          "v": "120例PICC患者随机分为对照组55例与观察组65例；观察组给予菜单式健康教育配合置管专项护理，对照组给予PICC后常规护理",
+          "quote": "选取2019年3月1日～2021年1月31日收治的120例PICC患者作为研究对象,随机分为对照组55例和观察组65例,对照组给予PICC后常规护理,观察组给予菜单式健康教育配合置管专项护理;",
+          "src": "CN-23",
+          "cat": "居家护理"
+        },
+        {
+          "k": "睡眠与生活质量改善",
+          "v": "干预后观察组PSQI中睡眠时间、入睡时间、睡眠障碍、睡眠质量评分低于对照组(P<0.01)，QOL评分高于对照组(P<0.05)",
+          "quote": "干预后,观察组PSQI中睡眠时间、入睡时间、睡眠障碍、睡眠质量评分低于对照组(P<0.01);干预后,观察组QOL评分高于对照组(P<0.05).",
+          "src": "CN-23",
+          "cat": "居家护理"
+        }
+      ]
+    },
+    {
+      "id": "DE_ExtravasationRedFlags",
+      "graph": "topic-01",
+      "type": "DiseaseEducation",
+      "name": "外渗恶化警示信号宣教",
+      "tags": [
+        "疾病教育"
+      ],
+      "aliases": [
+        "外渗恶化警示信号宣教"
+      ],
+      "summary": "出院前向患者及家属交代外渗后必须立即就医的警示信号与求助方式，并用符合机构常用语言的患者手册说明居家观察要点。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "EN-01"
+        },
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "指南",
+          "author": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F",
+          "title": "Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee",
+          "journal": "European Radiology",
+          "year": 2025,
+          "cite": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F / Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee / European Radiology / 2025",
+          "grade": "指南与共识",
+          "ref": "EN-03"
+        }
+      ],
+      "details": [
+        {
+          "k": "Patient information leaflet and red flags",
+          "v": "Give clear instructions on when to seek additional medical care if symptoms worsen, using a patient information leaflet in the languages appropriate for the institution. Red flag signs and symptoms to warn about: increased swelling or pain; increased redness; change in sensation in the affected limb; skin ulceration or blistering.",
+          "quote": "A patient information leaflet is recommended, available in the languages appropriate for the institution.",
+          "src": "EN-01",
+          "cat": "患者宣教"
+        },
+        {
+          "k": "Outpatient discharge instructions after extravasation",
+          "v": "Outpatients should be released only after an initial observation period with improvement of signs/symptoms and no new symptoms. Give clear instructions to seek additional medical care for severe pain, progressive pain, numbness or tingling, diminished range of motion (active or passive), skin ulceration, or other neurologic or circulatory symptoms, because initial symptoms of a serious compartment syndrome may be absent or mild.",
+          "quote": "Since severe extravasation injuries can develop slowly (up to hours after an extravasation), all discharged outpatients should be given clear instructions concerning where and when to seek additional medical care (including for worsening pain, development of paresthesia, diminished range of motion, and new skin ulceration or blistering) [22].",
+          "src": "R01",
+          "cat": "患者宣教"
         }
       ]
     }
@@ -13805,6 +21311,996 @@ window.KG_GRAPH = {
       "label": "出处"
     },
     {
+      "source": "NPM_ContrastWarming",
+      "target": "EN-05",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_ContrastWarming",
+      "target": "EN-06",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_ContrastWarming",
+      "target": "CN-30",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_PunctureSiteSelection",
+      "target": "EN-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_PunctureSiteSelection",
+      "target": "EN-10",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_PunctureSiteSelection",
+      "target": "EN-22",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_PunctureSiteSelection",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_PunctureSiteSelection",
+      "target": "CN-13",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_PunctureSiteSelection",
+      "target": "CN-30",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_CannulaSecurement",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_CannulaSecurement",
+      "target": "EN-10",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_CannulaSecurement",
+      "target": "EN-22",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_InjectionRateMatching",
+      "target": "CN-24",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_InjectionRateMatching",
+      "target": "CN-30",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_InjectionRateMatching",
+      "target": "EN-05",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_InjectionRateMatching",
+      "target": "EN-07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_InjectionRateMatching",
+      "target": "EN-22",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_WarmCompress",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_WarmCompress",
+      "target": "EN-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_WarmCompress",
+      "target": "EN-10",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_WarmCompress",
+      "target": "CN-18",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_StabIncisionSqueezing",
+      "target": "EN-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_StabIncisionSqueezing",
+      "target": "EN-07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_StabIncisionSqueezing",
+      "target": "EN-08",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_ResidualFluidAspiration",
+      "target": "EN-08",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_ResidualFluidAspiration",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_ResidualFluidAspiration",
+      "target": "CN-16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_ResidualFluidAspiration",
+      "target": "CN-19",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_Fasciotomy",
+      "target": "EN-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_Fasciotomy",
+      "target": "EN-07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_Fasciotomy",
+      "target": "EN-16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_Fasciotomy",
+      "target": "EN-17",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_LightCompressionSplint",
+      "target": "EN-07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_LightCompressionSplint",
+      "target": "EN-08",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_WoundDressingManagement",
+      "target": "CN-17",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_WoundDressingManagement",
+      "target": "CN-19",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_WoundDressingManagement",
+      "target": "CN-25",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_CrystalloidBolus",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_ExtravasationObservation",
+      "target": "CN-30",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_ExtravasationObservation",
+      "target": "EN-05",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_ExtravasationObservation",
+      "target": "EN-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_ExtravasationObservation",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_PainControl",
+      "target": "CN-16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_PainControl",
+      "target": "EN-07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_PainControl",
+      "target": "EN-16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_PainControl",
+      "target": "CN-18",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_PainControl",
+      "target": "CN-19",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_PostReactionObservation",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "PM_Beta2Agonist",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "PM_Beta2Agonist",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "PM_WeightBasedDosing",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "PM_WeightBasedDosing",
+      "target": "EN-04",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "PM_WeightBasedDosing",
+      "target": "EN-12",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "PM_DrugSpecificAntidotes",
+      "target": "EN-10",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_ExtravSeverityGrading",
+      "target": "EN-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_ExtravSeverityGrading",
+      "target": "EN-10",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_ExtravSeverityGrading",
+      "target": "CN-21",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_ExtravSeverityGrading",
+      "target": "EN-07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_ExtravasationPhysicalExam",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_ExtravasationPhysicalExam",
+      "target": "EN-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_ExtravasationPhysicalExam",
+      "target": "EN-16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_ExtravasationPhysicalExam",
+      "target": "EN-07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_TissuePerfusionAssessment",
+      "target": "CN-30",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_TissuePerfusionAssessment",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_TissuePerfusionAssessment",
+      "target": "EN-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_ReactionDocumentation",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_ReactionDocumentation",
+      "target": "CN-28",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_ExtravasationImaging",
+      "target": "EN-17",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_ExistingIVReuse",
+      "target": "EN-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_ExistingIVReuse",
+      "target": "EN-06",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_ExistingIVReuse",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_SmallBoreCannula",
+      "target": "EN-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_SmallBoreCannula",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_SmallBoreCannula",
+      "target": "EN-06",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_SmallBoreCannula",
+      "target": "EN-07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_SmallBoreCannula",
+      "target": "EN-22",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_HandDorsalSite",
+      "target": "EN-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_HandDorsalSite",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_HandDorsalSite",
+      "target": "EN-06",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_HandDorsalSite",
+      "target": "EN-09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_HandDorsalSite",
+      "target": "EN-05",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_HandDorsalSite",
+      "target": "EN-22",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_DiabetesMellitus",
+      "target": "EN-09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_DiabetesMellitus",
+      "target": "EN-21",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_MalignancyChemotherapy",
+      "target": "EN-05",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_MalignancyChemotherapy",
+      "target": "EN-21",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_Sarcopenia",
+      "target": "EN-21",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_FemaleGender",
+      "target": "EN-06",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_FemaleGender",
+      "target": "EN-09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_FemaleGender",
+      "target": "EN-12",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_InpatientStatus",
+      "target": "EN-06",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_InpatientStatus",
+      "target": "EN-09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_LargeVolumeExtravasation",
+      "target": "EN-05",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_LargeVolumeExtravasation",
+      "target": "EN-09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_LargeVolumeExtravasation",
+      "target": "EN-08",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_ImpairedSymptomPerception",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_EmergencyPreparedness",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_EmergencyPreparedness",
+      "target": "EN-13",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_EmergencyPreparedness",
+      "target": "EN-15",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_EmergencyPreparedness",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_SimulationTraining",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_SimulationTraining",
+      "target": "EN-13",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_SimulationTraining",
+      "target": "EN-22",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_RiskAssessmentFramework",
+      "target": "EN-12",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_RiskAssessmentFramework",
+      "target": "EN-13",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_RiskAssessmentFramework",
+      "target": "EN-15",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_RiskAssessmentFramework",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_RiskAssessmentFramework",
+      "target": "CN-27",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_SurgicalReferralCriteria",
+      "target": "EN-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_SurgicalReferralCriteria",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_SurgicalReferralCriteria",
+      "target": "EN-16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_SurgicalReferralCriteria",
+      "target": "EN-17",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_ExtravasationEscalation",
+      "target": "EN-17",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_ExtravasationEscalation",
+      "target": "EN-05",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_ExtravasationEscalation",
+      "target": "EN-16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_ExtravasationEscalation",
+      "target": "EN-07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_EvidenceBasedPractice",
+      "target": "CN-12",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_EvidenceBasedPractice",
+      "target": "CN-24",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_EvidenceBasedPractice",
+      "target": "CN-29",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_EvidenceBasedPractice",
+      "target": "CN-31",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_NursingQualityManagement",
+      "target": "CN-15",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_NursingQualityManagement",
+      "target": "CN-26",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_NursingQualityManagement",
+      "target": "CN-30",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_NursingQualityManagement",
+      "target": "CN-31",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_NursingQualityManagement",
+      "target": "EN-18",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_NursingQualityManagement",
+      "target": "EN-10",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_MultiStakeholderSafety",
+      "target": "CN-14",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_MultiStakeholderSafety",
+      "target": "CN-15",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_VascularAccessMaintenance",
+      "target": "CN-23",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_VascularAccessMaintenance",
+      "target": "CN-25",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_VascularAccessMaintenance",
+      "target": "CN-26",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_VascularAccessMaintenance",
+      "target": "EN-22",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_VascularAccessDeviceSelection",
+      "target": "EN-22",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_VascularAccessDeviceSelection",
+      "target": "EN-05",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_VascularAccessDeviceSelection",
+      "target": "EN-09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_VascularAccessDeviceSelection",
+      "target": "CN-30",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_NurseLedRiskStratification",
+      "target": "EN-21",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_NurseLedRiskStratification",
+      "target": "EN-09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_OncologyContrastRisk",
+      "target": "EN-20",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_AllergySpecialistReferral",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_AllergySpecialistReferral",
+      "target": "EN-04",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_AllergySpecialistReferral",
+      "target": "EN-19",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_PediatricContrastSafety",
+      "target": "EN-04",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_PediatricContrastSafety",
+      "target": "EN-14",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_PediatricContrastSafety",
+      "target": "CN-14",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_Blistering",
+      "target": "CN-19",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_Blistering",
+      "target": "EN-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_Blistering",
+      "target": "EN-07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_Blistering",
+      "target": "EN-08",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_Blistering",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_ChronicNonHealingWound",
+      "target": "CN-19",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_RedFlagSigns",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_RedFlagSigns",
+      "target": "EN-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_RedFlagSigns",
+      "target": "EN-16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_RedFlagSigns",
+      "target": "EN-17",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "SC_ReactionOnsetWindow",
+      "target": "EN-11",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "SC_ReactionOnsetWindow",
+      "target": "EN-15",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "SC_ReactionOnsetWindow",
+      "target": "CN-27",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "SC_ReactionMechanismType",
+      "target": "EN-11",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "SC_BreakthroughReaction",
+      "target": "EN-19",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "SC_BreakthroughReaction",
+      "target": "EN-14",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "DE_MenuBasedHealthEducation",
+      "target": "CN-23",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "DE_ExtravasationRedFlags",
+      "target": "EN-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "DE_ExtravasationRedFlags",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "DE_ExtravasationRedFlags",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
       "source": "NPM_ContrastPreparation",
       "target": "R01",
       "type": "SUPPORTED_BY",
@@ -14465,8 +22961,1250 @@ window.KG_GRAPH = {
       "label": "出处"
     },
     {
+      "source": "MP_NursingPrevention",
+      "target": "CN-12",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_VascularAssessment",
+      "target": "CN-12",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_PowerInjectorSafeCatheter",
+      "target": "CN-12",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_CannulaSecurement",
+      "target": "CN-12",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_HandDorsalSite",
+      "target": "CN-13",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_CloseObservation",
+      "target": "CN-13",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_NursingPrevention",
+      "target": "CN-13",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_ExtravasationAssessment",
+      "target": "CN-14",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NT_SelfCareTheory",
+      "target": "CN-14",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_ExtravasationReporting",
+      "target": "CN-15",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_CompartmentSyndrome",
+      "target": "CN-16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_LimbElevation",
+      "target": "CN-16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_PsychologicalSupport",
+      "target": "CN-16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_SurgicalReferralCriteria",
+      "target": "CN-16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "PM_MagnesiumSulfate",
+      "target": "CN-16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "PM_DexamethasoneWetCompress",
+      "target": "CN-16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_TcmExternalApply",
+      "target": "CN-16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "PM_MagnesiumSulfate",
+      "target": "CN-17",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_Phlebitis",
+      "target": "CN-17",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FS_LimbFunction",
+      "target": "CN-17",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_ExtravasationSwelling",
+      "target": "CN-17",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_ExtravasationPain",
+      "target": "CN-17",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_TcmExternalApply",
+      "target": "CN-18",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "SC_ExtravDamageStage",
+      "target": "CN-18",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "PM_MagnesiumSulfate",
+      "target": "CN-18",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_ColdCompress",
+      "target": "CN-18",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_ExtravasationSwelling",
+      "target": "CN-18",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_SwellingMeasurement",
+      "target": "CN-18",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_ExtravasationPain",
+      "target": "CN-18",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_ExtravasationRedness",
+      "target": "CN-19",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_SkinIntegrity",
+      "target": "CN-19",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FS_LimbFunction",
+      "target": "CN-19",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_ExtravasationReporting",
+      "target": "CN-19",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_StopInjection",
+      "target": "CN-19",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_LimbElevation",
+      "target": "CN-19",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_TcmExternalApply",
+      "target": "CN-19",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_TcmExternalApply",
+      "target": "CN-20",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "PM_MagnesiumSulfate",
+      "target": "CN-20",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_ExtravasationSwelling",
+      "target": "CN-20",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_ExtravasationPain",
+      "target": "CN-20",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_TcmExternalApply",
+      "target": "CN-21",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_LimbElevation",
+      "target": "CN-21",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "PM_MagnesiumSulfate",
+      "target": "CN-21",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_ColdCompress",
+      "target": "CN-21",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "SC_ExtravDamageStage",
+      "target": "CN-21",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_TcmExternalApply",
+      "target": "CN-22",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_ColdCompress",
+      "target": "CN-22",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_Phlebitis",
+      "target": "CN-22",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_ExtravasationSwelling",
+      "target": "CN-22",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_ExtravasationPain",
+      "target": "CN-22",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_Phlebitis",
+      "target": "CN-23",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_VascularAssessment",
+      "target": "CN-24",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_CloseObservation",
+      "target": "CN-24",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_ExtravasationPrinciple",
+      "target": "CN-24",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_ExtravSeverityGrading",
+      "target": "CN-24",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "CN-27",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "SC_AdverseSpectrum",
+      "target": "CN-27",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "SC_CMHSRMild",
+      "target": "CN-27",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_AgeExtremes",
+      "target": "CN-27",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_ContrastAllergyHistory",
+      "target": "CN-27",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "CN-27",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_Rash",
+      "target": "CN-28",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_Pruritus",
+      "target": "CN-28",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_ContrastNausea",
+      "target": "CN-28",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "CN-28",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_ContrastAllergyHistory",
+      "target": "CN-28",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_RiskAssessmentFramework",
+      "target": "CN-28",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_PowerInjectorSafeCatheter",
+      "target": "CN-30",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_AllergyHistory",
+      "target": "CN-30",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_VascularAssessment",
+      "target": "CN-30",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_ExtravasationDetection",
+      "target": "CN-30",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_VascularVisualization",
+      "target": "CN-30",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_SalineFlushCheck",
+      "target": "CN-30",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "SC_ExtravDamageStage",
+      "target": "CN-30",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_ExtravasationReporting",
+      "target": "CN-30",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_VascularVisualization",
+      "target": "EN-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_ColdCompress",
+      "target": "EN-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_LimbElevation",
+      "target": "EN-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "PM_Hyaluronidase",
+      "target": "EN-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "DE_ExtravasationHomeCare",
+      "target": "EN-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_ExtravasationReporting",
+      "target": "EN-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_ExtravasationDetection",
+      "target": "EN-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_PowerInjectorSafeCatheter",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_SalineFlushCheck",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_VascularVisualization",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_ColdCompress",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_StabIncisionSqueezing",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "PM_Hyaluronidase",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_ExtravasationPrinciple",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "DE_ExtravasationHomeCare",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_ObservationThenRemove",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_ExtravasationReporting",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
       "source": "RF_ContrastAllergyHistory",
       "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_UncontrolledAsthma",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "PM_AdrenalineIM",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "PM_EpiAutoInjector",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_Bronchospasm",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "PM_Atropine",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_VasovagalReaction",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "PM_AdrenalineIM",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "PM_Antihistamine",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "PM_Corticosteroid",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_SerumTryptase",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_CloseObservation",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_KeepCatheter",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "DE_EmergencyKnowledge",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "DE_PreExamNotice",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_SwitchContrastAgent",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_AllergyHistory",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_RiskAssessmentFramework",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_VasovagalReaction",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "PM_Atropine",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "DE_AfterExamCare",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "DE_AllergyDisclosure",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_ContrastPreparation",
+      "target": "EN-04",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "PM_Corticosteroid",
+      "target": "EN-04",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "PM_Antihistamine",
+      "target": "EN-04",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_ObservationThenRemove",
+      "target": "EN-04",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_KeepCatheter",
+      "target": "EN-04",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "DE_AfterExamCare",
+      "target": "EN-04",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_SwitchContrastAgent",
+      "target": "EN-04",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "DE_AllergyDisclosure",
+      "target": "EN-04",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_PowerInjectorSafeCatheter",
+      "target": "EN-05",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_SalineFlushCheck",
+      "target": "EN-05",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_VascularAssessment",
+      "target": "EN-05",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_AgeExtremes",
+      "target": "EN-05",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_ExtravasationReporting",
+      "target": "EN-05",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_LimbElevation",
+      "target": "EN-05",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_ColdCompress",
+      "target": "EN-05",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "PM_DexamethasoneWetCompress",
+      "target": "EN-05",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "EN-06",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "EN-06",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_AgeExtremes",
+      "target": "EN-06",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_PunctureSiteSelection",
+      "target": "EN-06",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_CompartmentSyndrome",
+      "target": "EN-06",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_SkinIntegrity",
+      "target": "EN-06",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_ExtravasationSwelling",
+      "target": "EN-06",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_ExtravasationPain",
+      "target": "EN-06",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_ExtravasationReporting",
+      "target": "EN-07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "PM_Hyaluronidase",
+      "target": "EN-07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_ExtravasationPrinciple",
+      "target": "EN-07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_WoundDressingManagement",
+      "target": "EN-07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_HandDorsalSite",
+      "target": "EN-07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_CompartmentSyndrome",
+      "target": "EN-08",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_StopInjection",
+      "target": "EN-08",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_LimbElevation",
+      "target": "EN-08",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_ColdCompress",
+      "target": "EN-08",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_ExtravasationSwelling",
+      "target": "EN-08",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_SkinIntegrity",
+      "target": "EN-08",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_ExtravasationEscalation",
+      "target": "EN-08",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_ExtravasationPrinciple",
+      "target": "EN-08",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_NoSalineFlush",
+      "target": "EN-09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_PowerInjectorSafeCatheter",
+      "target": "EN-09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_SalineFlushCheck",
+      "target": "EN-09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_PunctureSiteSelection",
+      "target": "EN-09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_VascularAssessment",
+      "target": "EN-09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_AgeExtremes",
+      "target": "EN-09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NT_EarlyWarning",
+      "target": "EN-09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_ExtravasationAssessment",
+      "target": "EN-09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_SwellingMeasurement",
+      "target": "EN-10",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_ExtravasationDetection",
+      "target": "EN-10",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_SalineFlushCheck",
+      "target": "EN-10",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_ColdCompress",
+      "target": "EN-10",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_WoundDressingManagement",
+      "target": "EN-10",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "PM_Hyaluronidase",
+      "target": "EN-10",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_EvidenceBasedPractice",
+      "target": "EN-10",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_ExtravasationReporting",
+      "target": "EN-10",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "SC_CMHSRMild",
+      "target": "EN-11",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "SC_CMHSRModerate",
+      "target": "EN-11",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "SC_CMHSRSevere",
+      "target": "EN-11",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "EN-11",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_Rash",
+      "target": "EN-11",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_UncontrolledAsthma",
+      "target": "EN-12",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_ContrastAllergyHistory",
+      "target": "EN-12",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_CloseObservation",
+      "target": "EN-13",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "EN-14",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_ContrastAllergyHistory",
+      "target": "EN-14",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_AgeExtremes",
+      "target": "EN-14",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_ContrastPreparation",
+      "target": "EN-14",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "E_CTEnhancedScan",
+      "target": "EN-14",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_CMAllergyTest",
+      "target": "EN-15",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_ContrastPreparation",
+      "target": "EN-15",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_SwitchContrastAgent",
+      "target": "EN-15",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_CompartmentSyndrome",
+      "target": "EN-16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NT_EarlyWarning",
+      "target": "EN-16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_ExtravasationSwelling",
+      "target": "EN-16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_ExtravasationRedness",
+      "target": "EN-16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_ColdCompress",
+      "target": "EN-16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "PM_Corticosteroid",
+      "target": "EN-16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FS_LimbFunction",
+      "target": "EN-16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_WoundDressingManagement",
+      "target": "EN-17",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_SkinIntegrity",
+      "target": "EN-17",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_ExtravasationReporting",
+      "target": "EN-17",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "DE_ExtravasationHomeCare",
+      "target": "EN-17",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "SC_CMHSRMild",
+      "target": "EN-19",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "SC_CMHSRSevere",
+      "target": "EN-19",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_ContrastPreparation",
+      "target": "EN-19",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "PM_Antihistamine",
+      "target": "EN-19",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "PM_Corticosteroid",
+      "target": "EN-19",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "EN-20",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "MP_RiskAssessmentFramework",
+      "target": "EN-20",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_HighPressureInjection",
+      "target": "EN-21",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_ExtravasationDetection",
+      "target": "EN-21",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "AT_ExtravasationAssessment",
+      "target": "EN-21",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "RF_AgeExtremes",
+      "target": "EN-21",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_PunctureSiteSelection",
+      "target": "EN-21",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_PowerInjectorSafeCatheter",
+      "target": "EN-22",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "EN-22",
       "type": "SUPPORTED_BY",
       "label": "出处"
     },
@@ -14526,18 +24264,6 @@ window.KG_GRAPH = {
     },
     {
       "source": "S_Rash",
-      "target": "R01",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "MP_ExtravasationReporting",
-      "target": "R01",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "DE_ExtravasationHomeCare",
       "target": "R01",
       "type": "SUPPORTED_BY",
       "label": "出处"
@@ -15339,6 +25065,720 @@ window.KG_GRAPH = {
       "target": "FW_PharmacologicalManagement",
       "type": "BELONGS_TO",
       "label": "属于"
+    },
+    {
+      "source": "NPM_ContrastWarming",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "NPM_PunctureSiteSelection",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "NPM_CannulaSecurement",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "NPM_InjectionRateMatching",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "NPM_WarmCompress",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "NPM_StabIncisionSqueezing",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "NPM_ResidualFluidAspiration",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "NPM_Fasciotomy",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "NPM_LightCompressionSplint",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "NPM_WoundDressingManagement",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "NPM_CrystalloidBolus",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "NPM_ExtravasationObservation",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "NPM_PainControl",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "NPM_PostReactionObservation",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "PM_Beta2Agonist",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "PM_WeightBasedDosing",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "PM_DrugSpecificAntidotes",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "AT_ExtravSeverityGrading",
+      "target": "FW_AssessmentTool",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "AT_ExtravasationPhysicalExam",
+      "target": "FW_AssessmentTool",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "AT_TissuePerfusionAssessment",
+      "target": "FW_AssessmentTool",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "AT_ReactionDocumentation",
+      "target": "FW_AssessmentTool",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "AT_ExtravasationImaging",
+      "target": "FW_AssessmentTool",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "RF_ExistingIVReuse",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "RF_SmallBoreCannula",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "RF_HandDorsalSite",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "RF_DiabetesMellitus",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "RF_MalignancyChemotherapy",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "RF_Sarcopenia",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "RF_FemaleGender",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "RF_InpatientStatus",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "RF_LargeVolumeExtravasation",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "RF_ImpairedSymptomPerception",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "MP_EmergencyPreparedness",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "MP_SimulationTraining",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "MP_RiskAssessmentFramework",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "MP_SurgicalReferralCriteria",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "MP_ExtravasationEscalation",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "MP_EvidenceBasedPractice",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "MP_NursingQualityManagement",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "MP_MultiStakeholderSafety",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "MP_VascularAccessMaintenance",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "MP_VascularAccessDeviceSelection",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "MP_NurseLedRiskStratification",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "MP_OncologyContrastRisk",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "MP_AllergySpecialistReferral",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "MP_PediatricContrastSafety",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_Blistering",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_ChronicNonHealingWound",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_RedFlagSigns",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "SC_ReactionOnsetWindow",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "SC_ReactionMechanismType",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "SC_BreakthroughReaction",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "DE_MenuBasedHealthEducation",
+      "target": "FW_DiseaseEducation",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "DE_ExtravasationRedFlags",
+      "target": "FW_DiseaseEducation",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "AT_ExtravSeverityGrading",
+      "type": "DETECTED_BY",
+      "label": "检查"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "AT_ExtravasationPhysicalExam",
+      "type": "ASSESSED_BY",
+      "label": "评估"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "AT_TissuePerfusionAssessment",
+      "type": "ASSESSED_BY",
+      "label": "评估"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "AT_ExtravasationImaging",
+      "type": "DETECTED_BY",
+      "label": "检查"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "NPM_ResidualFluidAspiration",
+      "type": "TREATED_BY",
+      "label": "管理"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "NPM_StabIncisionSqueezing",
+      "type": "TREATED_BY",
+      "label": "管理"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "NPM_LightCompressionSplint",
+      "type": "TREATED_BY",
+      "label": "管理"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "NPM_WarmCompress",
+      "type": "TREATED_BY",
+      "label": "管理"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "NPM_WoundDressingManagement",
+      "type": "TREATED_BY",
+      "label": "管理"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "NPM_PainControl",
+      "type": "TREATED_BY",
+      "label": "管理"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "NPM_ExtravasationObservation",
+      "type": "TREATED_BY",
+      "label": "管理"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "S_Blistering",
+      "type": "HAS_SYMPTOM",
+      "label": "表现为"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "S_ChronicNonHealingWound",
+      "type": "HAS_SYMPTOM",
+      "label": "表现为"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "S_RedFlagSigns",
+      "type": "HAS_SYMPTOM",
+      "label": "表现为"
+    },
+    {
+      "source": "S_CompartmentSyndrome",
+      "target": "NPM_Fasciotomy",
+      "type": "TREATED_BY",
+      "label": "管理"
+    },
+    {
+      "source": "S_CompartmentSyndrome",
+      "target": "MP_SurgicalReferralCriteria",
+      "type": "MANAGED_BY",
+      "label": "处置"
+    },
+    {
+      "source": "S_CompartmentSyndrome",
+      "target": "S_RedFlagSigns",
+      "type": "HAS_SYMPTOM",
+      "label": "表现为"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "MP_ExtravasationEscalation",
+      "type": "MANAGED_BY",
+      "label": "处置"
+    },
+    {
+      "source": "MP_ExtravasationEscalation",
+      "target": "FS_LimbFunction",
+      "type": "EFFECT_ON",
+      "label": "效果"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "RF_ExistingIVReuse",
+      "type": "AT_RISK_BY",
+      "label": "高危因素"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "RF_SmallBoreCannula",
+      "type": "AT_RISK_BY",
+      "label": "高危因素"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "RF_HandDorsalSite",
+      "type": "AT_RISK_BY",
+      "label": "高危因素"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "RF_DiabetesMellitus",
+      "type": "AT_RISK_BY",
+      "label": "高危因素"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "RF_MalignancyChemotherapy",
+      "type": "AT_RISK_BY",
+      "label": "高危因素"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "RF_Sarcopenia",
+      "type": "AT_RISK_BY",
+      "label": "高危因素"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "RF_FemaleGender",
+      "type": "AT_RISK_BY",
+      "label": "高危因素"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "RF_InpatientStatus",
+      "type": "AT_RISK_BY",
+      "label": "高危因素"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "RF_LargeVolumeExtravasation",
+      "type": "AT_RISK_BY",
+      "label": "高危因素"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "RF_ImpairedSymptomPerception",
+      "type": "AT_RISK_BY",
+      "label": "高危因素"
+    },
+    {
+      "source": "NPM_ContrastWarming",
+      "target": "S_Extravasation",
+      "type": "EFFECT_ON",
+      "label": "效果"
+    },
+    {
+      "source": "NPM_PunctureSiteSelection",
+      "target": "S_Extravasation",
+      "type": "EFFECT_ON",
+      "label": "效果"
+    },
+    {
+      "source": "NPM_CannulaSecurement",
+      "target": "S_Extravasation",
+      "type": "EFFECT_ON",
+      "label": "效果"
+    },
+    {
+      "source": "NPM_InjectionRateMatching",
+      "target": "S_Extravasation",
+      "type": "EFFECT_ON",
+      "label": "效果"
+    },
+    {
+      "source": "NPM_SalineFlushCheck",
+      "target": "S_Extravasation",
+      "type": "EFFECT_ON",
+      "label": "效果"
+    },
+    {
+      "source": "NPM_PowerInjectorSafeCatheter",
+      "target": "S_Extravasation",
+      "type": "EFFECT_ON",
+      "label": "效果"
+    },
+    {
+      "source": "NPM_VascularVisualization",
+      "target": "S_Extravasation",
+      "type": "EFFECT_ON",
+      "label": "效果"
+    },
+    {
+      "source": "MP_VascularAccessDeviceSelection",
+      "target": "S_Extravasation",
+      "type": "EFFECT_ON",
+      "label": "效果"
+    },
+    {
+      "source": "MP_NurseLedRiskStratification",
+      "target": "S_Extravasation",
+      "type": "EFFECT_ON",
+      "label": "效果"
+    },
+    {
+      "source": "MP_MultiStakeholderSafety",
+      "target": "S_Extravasation",
+      "type": "EFFECT_ON",
+      "label": "效果"
+    },
+    {
+      "source": "MP_NursingQualityManagement",
+      "target": "S_Extravasation",
+      "type": "EFFECT_ON",
+      "label": "效果"
+    },
+    {
+      "source": "MP_VascularAccessMaintenance",
+      "target": "S_Phlebitis",
+      "type": "EFFECT_ON",
+      "label": "效果"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "AT_ReactionDocumentation",
+      "type": "ASSESSED_BY",
+      "label": "评估"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "MP_AllergySpecialistReferral",
+      "type": "MANAGED_BY",
+      "label": "处置"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "MP_RiskAssessmentFramework",
+      "type": "ASSESSED_BY",
+      "label": "评估"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "MP_EmergencyPreparedness",
+      "type": "MANAGED_BY",
+      "label": "处置"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "NPM_PostReactionObservation",
+      "type": "MANAGED_BY",
+      "label": "处置"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "NPM_ContrastPreparation",
+      "type": "MANAGED_BY",
+      "label": "处置"
+    },
+    {
+      "source": "S_Bronchospasm",
+      "target": "PM_Beta2Agonist",
+      "type": "TREATED_BY",
+      "label": "管理"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "NPM_CrystalloidBolus",
+      "type": "TREATED_BY",
+      "label": "管理"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "MP_OncologyContrastRisk",
+      "type": "MANAGED_BY",
+      "label": "处置"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "MP_PediatricContrastSafety",
+      "type": "MANAGED_BY",
+      "label": "处置"
+    },
+    {
+      "source": "MP_PediatricContrastSafety",
+      "target": "PM_WeightBasedDosing",
+      "type": "MANAGED_BY",
+      "label": "处置"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "PM_DrugSpecificAntidotes",
+      "type": "TREATED_BY",
+      "label": "管理"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "DE_ExtravasationRedFlags",
+      "type": "EDUCATED_BY",
+      "label": "科普"
+    },
+    {
+      "source": "S_Phlebitis",
+      "target": "DE_MenuBasedHealthEducation",
+      "type": "EDUCATED_BY",
+      "label": "科普"
+    },
+    {
+      "source": "S_Blistering",
+      "target": "SC_ExtravDamageStage",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_ChronicNonHealingWound",
+      "target": "SC_ExtravasationSpectrum",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_RedFlagSigns",
+      "target": "SC_ExtravasationSpectrum",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "SC_ReactionOnsetWindow",
+      "target": "SC_AdverseSpectrum",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "SC_ReactionMechanismType",
+      "target": "SC_AdverseSpectrum",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "SC_BreakthroughReaction",
+      "target": "SC_Hypersensitivity",
+      "type": "BELONGS_TO",
+      "label": "属于"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "AT_CMAllergyTest",
+      "type": "ASSESSED_BY",
+      "label": "评估"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "RF_BetaBlockerACEI",
+      "type": "AT_RISK_BY",
+      "label": "高危因素"
+    },
+    {
+      "source": "MP_EmergencyPreparedness",
+      "target": "MP_SimulationTraining",
+      "type": "MANAGED_BY",
+      "label": "处置"
+    },
+    {
+      "source": "MP_EvidenceBasedPractice",
+      "target": "MP_NursingPrevention",
+      "type": "EFFECT_ON",
+      "label": "效果"
     }
   ]
 }

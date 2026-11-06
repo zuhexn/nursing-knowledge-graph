@@ -500,6 +500,171 @@ NPM_TcmExternalApply,NonPharmacologicalManagement,中药外敷法（外渗）,SU
 NPM_TcmExternalApply,NonPharmacologicalManagement,中药外敷法（外渗）,SUPPORTED_BY,出处,CN-11,Reference,五黄油治疗肠造口粪水性皮炎的临床疗效研究
 NPM_TcmExternalApply,NonPharmacologicalManagement,中药外敷法（外渗）,SUPPORTED_BY,出处,DRUG-02,Reference,新癀片说明书（国药准字 Z35020063）
 PM_DexamethasoneOral,PharmacologicalManagement,口服地塞米松（严重外渗）,SUPPORTED_BY,出处,R07,Reference,影像科碘对比剂输注安全专家共识
+NPM_ContrastWarming,NonPharmacologicalManagement,对比剂加温,SUPPORTED_BY,出处,EN-05,Reference,Contrast media extravasation injury: a prospective observational cohort study
+NPM_ContrastWarming,NonPharmacologicalManagement,对比剂加温,SUPPORTED_BY,出处,EN-06,Reference,MRI and CT contrast media extravasation: A systematic review
+NPM_ContrastWarming,NonPharmacologicalManagement,对比剂加温,SUPPORTED_BY,出处,CN-30,Reference,河南省含碘对比剂外渗管理现状及护士认知水平的调查研究
+NPM_PunctureSiteSelection,NonPharmacologicalManagement,穿刺部位选择,SUPPORTED_BY,出处,EN-01,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+NPM_PunctureSiteSelection,NonPharmacologicalManagement,穿刺部位选择,SUPPORTED_BY,出处,EN-10,Reference,Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation
+NPM_PunctureSiteSelection,NonPharmacologicalManagement,穿刺部位选择,SUPPORTED_BY,出处,EN-22,Reference,Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography
+NPM_PunctureSiteSelection,NonPharmacologicalManagement,穿刺部位选择,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+NPM_PunctureSiteSelection,NonPharmacologicalManagement,穿刺部位选择,SUPPORTED_BY,出处,CN-13,Reference,不同穿刺部位静脉留置针渗出外渗的发生现状及结局差异分析
+NPM_PunctureSiteSelection,NonPharmacologicalManagement,穿刺部位选择,SUPPORTED_BY,出处,CN-30,Reference,河南省含碘对比剂外渗管理现状及护士认知水平的调查研究
+NPM_CannulaSecurement,NonPharmacologicalManagement,留置针固定与敷料维护,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+NPM_CannulaSecurement,NonPharmacologicalManagement,留置针固定与敷料维护,SUPPORTED_BY,出处,EN-10,Reference,Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation
+NPM_CannulaSecurement,NonPharmacologicalManagement,留置针固定与敷料维护,SUPPORTED_BY,出处,EN-22,Reference,Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography
+NPM_InjectionRateMatching,NonPharmacologicalManagement,注射速度与通路匹配,SUPPORTED_BY,出处,CN-24,Reference,放射科碘对比剂外渗管理的证据总结
+NPM_InjectionRateMatching,NonPharmacologicalManagement,注射速度与通路匹配,SUPPORTED_BY,出处,CN-30,Reference,河南省含碘对比剂外渗管理现状及护士认知水平的调查研究
+NPM_InjectionRateMatching,NonPharmacologicalManagement,注射速度与通路匹配,SUPPORTED_BY,出处,EN-05,Reference,Contrast media extravasation injury: a prospective observational cohort study
+NPM_InjectionRateMatching,NonPharmacologicalManagement,注射速度与通路匹配,SUPPORTED_BY,出处,EN-07,Reference,Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions
+NPM_InjectionRateMatching,NonPharmacologicalManagement,注射速度与通路匹配,SUPPORTED_BY,出处,EN-22,Reference,Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography
+NPM_WarmCompress,NonPharmacologicalManagement,局部热敷,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+NPM_WarmCompress,NonPharmacologicalManagement,局部热敷,SUPPORTED_BY,出处,EN-01,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+NPM_WarmCompress,NonPharmacologicalManagement,局部热敷,SUPPORTED_BY,出处,EN-10,Reference,Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation
+NPM_WarmCompress,NonPharmacologicalManagement,局部热敷,SUPPORTED_BY,出处,CN-18,Reference,应用改良痈疽油剂干预含碘对比剂中重度静脉外渗的临床疗效评价
+NPM_StabIncisionSqueezing,NonPharmacologicalManagement,针刺切开挤压排液,SUPPORTED_BY,出处,EN-01,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+NPM_StabIncisionSqueezing,NonPharmacologicalManagement,针刺切开挤压排液,SUPPORTED_BY,出处,EN-07,Reference,Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions
+NPM_StabIncisionSqueezing,NonPharmacologicalManagement,针刺切开挤压排液,SUPPORTED_BY,出处,EN-08,Reference,Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison
+NPM_ResidualFluidAspiration,NonPharmacologicalManagement,回抽残留药液,SUPPORTED_BY,出处,EN-08,Reference,Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison
+NPM_ResidualFluidAspiration,NonPharmacologicalManagement,回抽残留药液,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+NPM_ResidualFluidAspiration,NonPharmacologicalManagement,回抽残留药液,SUPPORTED_BY,出处,CN-16,Reference,造影剂血管外渗的处置方法研究进展
+NPM_ResidualFluidAspiration,NonPharmacologicalManagement,回抽残留药液,SUPPORTED_BY,出处,CN-19,Reference,1例药液外渗致慢性难愈性创面形成患者的中西医结合护理
+NPM_Fasciotomy,NonPharmacologicalManagement,筋膜切开减压,SUPPORTED_BY,出处,EN-01,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+NPM_Fasciotomy,NonPharmacologicalManagement,筋膜切开减压,SUPPORTED_BY,出处,EN-07,Reference,Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions
+NPM_Fasciotomy,NonPharmacologicalManagement,筋膜切开减压,SUPPORTED_BY,出处,EN-16,Reference,Hand compartment syndrome secondary to contrast media extravasation: A case report
+NPM_Fasciotomy,NonPharmacologicalManagement,筋膜切开减压,SUPPORTED_BY,出处,EN-17,Reference,Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention
+NPM_LightCompressionSplint,NonPharmacologicalManagement,局部加压与制动,SUPPORTED_BY,出处,EN-07,Reference,Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions
+NPM_LightCompressionSplint,NonPharmacologicalManagement,局部加压与制动,SUPPORTED_BY,出处,EN-08,Reference,Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison
+NPM_WoundDressingManagement,NonPharmacologicalManagement,外渗创面敷料与湿性愈合护理,SUPPORTED_BY,出处,CN-17,Reference,康惠尔透明贴与50％硫酸镁溶液冷湿敷治疗碘对比剂外渗效果比较
+NPM_WoundDressingManagement,NonPharmacologicalManagement,外渗创面敷料与湿性愈合护理,SUPPORTED_BY,出处,CN-19,Reference,1例药液外渗致慢性难愈性创面形成患者的中西医结合护理
+NPM_WoundDressingManagement,NonPharmacologicalManagement,外渗创面敷料与湿性愈合护理,SUPPORTED_BY,出处,CN-25,Reference,全国部分医院静脉导管维护现状调查
+NPM_CrystalloidBolus,NonPharmacologicalManagement,晶体液快速扩容,SUPPORTED_BY,出处,EN-03,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+NPM_ExtravasationObservation,NonPharmacologicalManagement,外渗后分级留观,SUPPORTED_BY,出处,CN-30,Reference,河南省含碘对比剂外渗管理现状及护士认知水平的调查研究
+NPM_ExtravasationObservation,NonPharmacologicalManagement,外渗后分级留观,SUPPORTED_BY,出处,EN-05,Reference,Contrast media extravasation injury: a prospective observational cohort study
+NPM_ExtravasationObservation,NonPharmacologicalManagement,外渗后分级留观,SUPPORTED_BY,出处,EN-01,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+NPM_ExtravasationObservation,NonPharmacologicalManagement,外渗后分级留观,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+NPM_PainControl,NonPharmacologicalManagement,外渗疼痛评估与镇痛,SUPPORTED_BY,出处,CN-16,Reference,造影剂血管外渗的处置方法研究进展
+NPM_PainControl,NonPharmacologicalManagement,外渗疼痛评估与镇痛,SUPPORTED_BY,出处,EN-07,Reference,Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions
+NPM_PainControl,NonPharmacologicalManagement,外渗疼痛评估与镇痛,SUPPORTED_BY,出处,EN-16,Reference,Hand compartment syndrome secondary to contrast media extravasation: A case report
+NPM_PainControl,NonPharmacologicalManagement,外渗疼痛评估与镇痛,SUPPORTED_BY,出处,CN-18,Reference,应用改良痈疽油剂干预含碘对比剂中重度静脉外渗的临床疗效评价
+NPM_PainControl,NonPharmacologicalManagement,外渗疼痛评估与镇痛,SUPPORTED_BY,出处,CN-19,Reference,1例药液外渗致慢性难愈性创面形成患者的中西医结合护理
+NPM_PostReactionObservation,NonPharmacologicalManagement,过敏反应后分级观察,SUPPORTED_BY,出处,EN-03,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+PM_Beta2Agonist,PharmacologicalManagement,短效选择性β受体激动剂,SUPPORTED_BY,出处,EN-03,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+PM_Beta2Agonist,PharmacologicalManagement,短效选择性β受体激动剂,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+PM_WeightBasedDosing,PharmacologicalManagement,按体重调整用药剂量,SUPPORTED_BY,出处,EN-03,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+PM_WeightBasedDosing,PharmacologicalManagement,按体重调整用药剂量,SUPPORTED_BY,出处,EN-04,Reference,Hypersensitivity reactions to contrast media: Part 2. Prevention of recurrent hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+PM_WeightBasedDosing,PharmacologicalManagement,按体重调整用药剂量,SUPPORTED_BY,出处,EN-12,Reference,Risk factor analysis of iodinated contrast medium-related hypersensitivity reactions
+PM_DrugSpecificAntidotes,PharmacologicalManagement,药物特异性外渗解毒剂,SUPPORTED_BY,出处,EN-10,Reference,Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation
+AT_ExtravSeverityGrading,AssessmentTool,外渗严重程度分级,SUPPORTED_BY,出处,EN-01,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+AT_ExtravSeverityGrading,AssessmentTool,外渗严重程度分级,SUPPORTED_BY,出处,EN-10,Reference,Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation
+AT_ExtravSeverityGrading,AssessmentTool,外渗严重程度分级,SUPPORTED_BY,出处,CN-21,Reference,推拿法在含碘对比剂外渗中的应用
+AT_ExtravSeverityGrading,AssessmentTool,外渗严重程度分级,SUPPORTED_BY,出处,EN-07,Reference,Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions
+AT_ExtravasationPhysicalExam,AssessmentTool,外渗后肢体检查,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+AT_ExtravasationPhysicalExam,AssessmentTool,外渗后肢体检查,SUPPORTED_BY,出处,EN-01,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+AT_ExtravasationPhysicalExam,AssessmentTool,外渗后肢体检查,SUPPORTED_BY,出处,EN-16,Reference,Hand compartment syndrome secondary to contrast media extravasation: A case report
+AT_ExtravasationPhysicalExam,AssessmentTool,外渗后肢体检查,SUPPORTED_BY,出处,EN-07,Reference,Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions
+AT_TissuePerfusionAssessment,AssessmentTool,组织灌注评估,SUPPORTED_BY,出处,CN-30,Reference,河南省含碘对比剂外渗管理现状及护士认知水平的调查研究
+AT_TissuePerfusionAssessment,AssessmentTool,组织灌注评估,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+AT_TissuePerfusionAssessment,AssessmentTool,组织灌注评估,SUPPORTED_BY,出处,EN-01,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+AT_ReactionDocumentation,AssessmentTool,超敏反应评估与记录,SUPPORTED_BY,出处,EN-03,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+AT_ReactionDocumentation,AssessmentTool,超敏反应评估与记录,SUPPORTED_BY,出处,CN-28,Reference,某院碘对比剂相关药品不良反应研究与合理用药
+AT_ExtravasationImaging,AssessmentTool,外渗范围影像学评估,SUPPORTED_BY,出处,EN-17,Reference,Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention
+RF_ExistingIVReuse,RiskFactor,沿用既有静脉通路,SUPPORTED_BY,出处,EN-01,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+RF_ExistingIVReuse,RiskFactor,沿用既有静脉通路,SUPPORTED_BY,出处,EN-06,Reference,MRI and CT contrast media extravasation: A systematic review
+RF_ExistingIVReuse,RiskFactor,沿用既有静脉通路,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+RF_SmallBoreCannula,RiskFactor,小口径留置针,SUPPORTED_BY,出处,EN-01,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+RF_SmallBoreCannula,RiskFactor,小口径留置针,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+RF_SmallBoreCannula,RiskFactor,小口径留置针,SUPPORTED_BY,出处,EN-06,Reference,MRI and CT contrast media extravasation: A systematic review
+RF_SmallBoreCannula,RiskFactor,小口径留置针,SUPPORTED_BY,出处,EN-07,Reference,Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions
+RF_SmallBoreCannula,RiskFactor,小口径留置针,SUPPORTED_BY,出处,EN-22,Reference,Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography
+RF_HandDorsalSite,RiskFactor,手背等外周静脉穿刺,SUPPORTED_BY,出处,EN-01,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+RF_HandDorsalSite,RiskFactor,手背等外周静脉穿刺,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+RF_HandDorsalSite,RiskFactor,手背等外周静脉穿刺,SUPPORTED_BY,出处,EN-06,Reference,MRI and CT contrast media extravasation: A systematic review
+RF_HandDorsalSite,RiskFactor,手背等外周静脉穿刺,SUPPORTED_BY,出处,EN-09,Reference,"Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study"
+RF_HandDorsalSite,RiskFactor,手背等外周静脉穿刺,SUPPORTED_BY,出处,EN-05,Reference,Contrast media extravasation injury: a prospective observational cohort study
+RF_HandDorsalSite,RiskFactor,手背等外周静脉穿刺,SUPPORTED_BY,出处,EN-22,Reference,Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography
+RF_DiabetesMellitus,RiskFactor,糖尿病,SUPPORTED_BY,出处,EN-09,Reference,"Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study"
+RF_DiabetesMellitus,RiskFactor,糖尿病,SUPPORTED_BY,出处,EN-21,Reference,Integrating CT-Derived Body Composition and Real-Time Injection Pressure Monitoring for Predicting Contrast Media Extravasation: A Retrospective Cohort Study with Implications for Nurse-Led Risk Stratification
+RF_MalignancyChemotherapy,RiskFactor,恶性肿瘤与既往化疗,SUPPORTED_BY,出处,EN-05,Reference,Contrast media extravasation injury: a prospective observational cohort study
+RF_MalignancyChemotherapy,RiskFactor,恶性肿瘤与既往化疗,SUPPORTED_BY,出处,EN-21,Reference,Integrating CT-Derived Body Composition and Real-Time Injection Pressure Monitoring for Predicting Contrast Media Extravasation: A Retrospective Cohort Study with Implications for Nurse-Led Risk Stratification
+RF_Sarcopenia,RiskFactor,肌少症与低肌量,SUPPORTED_BY,出处,EN-21,Reference,Integrating CT-Derived Body Composition and Real-Time Injection Pressure Monitoring for Predicting Contrast Media Extravasation: A Retrospective Cohort Study with Implications for Nurse-Led Risk Stratification
+RF_FemaleGender,RiskFactor,女性性别,SUPPORTED_BY,出处,EN-06,Reference,MRI and CT contrast media extravasation: A systematic review
+RF_FemaleGender,RiskFactor,女性性别,SUPPORTED_BY,出处,EN-09,Reference,"Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study"
+RF_FemaleGender,RiskFactor,女性性别,SUPPORTED_BY,出处,EN-12,Reference,Risk factor analysis of iodinated contrast medium-related hypersensitivity reactions
+RF_InpatientStatus,RiskFactor,住院及重症患者,SUPPORTED_BY,出处,EN-06,Reference,MRI and CT contrast media extravasation: A systematic review
+RF_InpatientStatus,RiskFactor,住院及重症患者,SUPPORTED_BY,出处,EN-09,Reference,"Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study"
+RF_LargeVolumeExtravasation,RiskFactor,外渗量大,SUPPORTED_BY,出处,EN-05,Reference,Contrast media extravasation injury: a prospective observational cohort study
+RF_LargeVolumeExtravasation,RiskFactor,外渗量大,SUPPORTED_BY,出处,EN-09,Reference,"Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study"
+RF_LargeVolumeExtravasation,RiskFactor,外渗量大,SUPPORTED_BY,出处,EN-08,Reference,Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison
+RF_ImpairedSymptomPerception,RiskFactor,症状感知受限,SUPPORTED_BY,出处,EN-03,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+MP_EmergencyPreparedness,ManagementPrinciple,检查室急救准备,SUPPORTED_BY,出处,EN-03,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+MP_EmergencyPreparedness,ManagementPrinciple,检查室急救准备,SUPPORTED_BY,出处,EN-13,Reference,Preparedness of CT technicians and radiographers for severe contrast media reactions: knowledge gaps and training needs
+MP_EmergencyPreparedness,ManagementPrinciple,检查室急救准备,SUPPORTED_BY,出处,EN-15,Reference,Hypersensitivity reactions to iodinated contrast media: potential mechanisms and clinical management
+MP_EmergencyPreparedness,ManagementPrinciple,检查室急救准备,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+MP_SimulationTraining,ManagementPrinciple,模拟演练式急救培训,SUPPORTED_BY,出处,EN-03,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+MP_SimulationTraining,ManagementPrinciple,模拟演练式急救培训,SUPPORTED_BY,出处,EN-13,Reference,Preparedness of CT technicians and radiographers for severe contrast media reactions: knowledge gaps and training needs
+MP_SimulationTraining,ManagementPrinciple,模拟演练式急救培训,SUPPORTED_BY,出处,EN-22,Reference,Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography
+MP_RiskAssessmentFramework,ManagementPrinciple,对比剂反应危险因素评估框架,SUPPORTED_BY,出处,EN-12,Reference,Risk factor analysis of iodinated contrast medium-related hypersensitivity reactions
+MP_RiskAssessmentFramework,ManagementPrinciple,对比剂反应危险因素评估框架,SUPPORTED_BY,出处,EN-13,Reference,Preparedness of CT technicians and radiographers for severe contrast media reactions: knowledge gaps and training needs
+MP_RiskAssessmentFramework,ManagementPrinciple,对比剂反应危险因素评估框架,SUPPORTED_BY,出处,EN-15,Reference,Hypersensitivity reactions to iodinated contrast media: potential mechanisms and clinical management
+MP_RiskAssessmentFramework,ManagementPrinciple,对比剂反应危险因素评估框架,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+MP_RiskAssessmentFramework,ManagementPrinciple,对比剂反应危险因素评估框架,SUPPORTED_BY,出处,CN-27,Reference,CT增强碘对比剂急性不良反应发生现况及影响因素
+MP_SurgicalReferralCriteria,ManagementPrinciple,外科会诊转诊标准,SUPPORTED_BY,出处,EN-01,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+MP_SurgicalReferralCriteria,ManagementPrinciple,外科会诊转诊标准,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+MP_SurgicalReferralCriteria,ManagementPrinciple,外科会诊转诊标准,SUPPORTED_BY,出处,EN-16,Reference,Hand compartment syndrome secondary to contrast media extravasation: A case report
+MP_SurgicalReferralCriteria,ManagementPrinciple,外科会诊转诊标准,SUPPORTED_BY,出处,EN-17,Reference,Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention
+MP_ExtravasationEscalation,ManagementPrinciple,外渗处置阶梯升级策略,SUPPORTED_BY,出处,EN-17,Reference,Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention
+MP_ExtravasationEscalation,ManagementPrinciple,外渗处置阶梯升级策略,SUPPORTED_BY,出处,EN-05,Reference,Contrast media extravasation injury: a prospective observational cohort study
+MP_ExtravasationEscalation,ManagementPrinciple,外渗处置阶梯升级策略,SUPPORTED_BY,出处,EN-16,Reference,Hand compartment syndrome secondary to contrast media extravasation: A case report
+MP_ExtravasationEscalation,ManagementPrinciple,外渗处置阶梯升级策略,SUPPORTED_BY,出处,EN-07,Reference,Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions
+MP_EvidenceBasedPractice,ManagementPrinciple,循证实践转化,SUPPORTED_BY,出处,CN-12,Reference,含碘非离子对比剂输注前预防静脉外渗策略的证据总结
+MP_EvidenceBasedPractice,ManagementPrinciple,循证实践转化,SUPPORTED_BY,出处,CN-24,Reference,放射科碘对比剂外渗管理的证据总结
+MP_EvidenceBasedPractice,ManagementPrinciple,循证实践转化,SUPPORTED_BY,出处,CN-29,Reference,冠状动脉介入患者围手术期水化预防对比剂急性肾损伤的最佳证据总结
+MP_EvidenceBasedPractice,ManagementPrinciple,循证实践转化,SUPPORTED_BY,出处,CN-31,Reference,含碘对比剂静脉外渗护理管理实践指南的循证实践研究
+MP_NursingQualityManagement,ManagementPrinciple,护理质量管理与敏感指标监测,SUPPORTED_BY,出处,CN-15,Reference,护理质量管理在预防婴幼儿输液外渗中的应用研究进展
+MP_NursingQualityManagement,ManagementPrinciple,护理质量管理与敏感指标监测,SUPPORTED_BY,出处,CN-26,Reference,全国三级医院静脉治疗护理技术应用现状的调查研究
+MP_NursingQualityManagement,ManagementPrinciple,护理质量管理与敏感指标监测,SUPPORTED_BY,出处,CN-30,Reference,河南省含碘对比剂外渗管理现状及护士认知水平的调查研究
+MP_NursingQualityManagement,ManagementPrinciple,护理质量管理与敏感指标监测,SUPPORTED_BY,出处,CN-31,Reference,含碘对比剂静脉外渗护理管理实践指南的循证实践研究
+MP_NursingQualityManagement,ManagementPrinciple,护理质量管理与敏感指标监测,SUPPORTED_BY,出处,EN-18,Reference,Clinical Audit of the Incidence and Documentation Quality of Contrast-Induced Nephropathy (CIN) in a Tertiary Cardiology Unit
+MP_NursingQualityManagement,ManagementPrinciple,护理质量管理与敏感指标监测,SUPPORTED_BY,出处,EN-10,Reference,Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation
+MP_MultiStakeholderSafety,ManagementPrinciple,多主体协同的输液安全管理,SUPPORTED_BY,出处,CN-14,Reference,小儿外周静脉留置针输液外渗的研究进展
+MP_MultiStakeholderSafety,ManagementPrinciple,多主体协同的输液安全管理,SUPPORTED_BY,出处,CN-15,Reference,护理质量管理在预防婴幼儿输液外渗中的应用研究进展
+MP_VascularAccessMaintenance,ManagementPrinciple,静脉通路维护与并发症防控,SUPPORTED_BY,出处,CN-23,Reference,菜单式健康教育配合置管专项护理在肿瘤PICC患者中的应用
+MP_VascularAccessMaintenance,ManagementPrinciple,静脉通路维护与并发症防控,SUPPORTED_BY,出处,CN-25,Reference,全国部分医院静脉导管维护现状调查
+MP_VascularAccessMaintenance,ManagementPrinciple,静脉通路维护与并发症防控,SUPPORTED_BY,出处,CN-26,Reference,全国三级医院静脉治疗护理技术应用现状的调查研究
+MP_VascularAccessMaintenance,ManagementPrinciple,静脉通路维护与并发症防控,SUPPORTED_BY,出处,EN-22,Reference,Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography
+MP_VascularAccessDeviceSelection,ManagementPrinciple,血管通路器材选择与验证,SUPPORTED_BY,出处,EN-22,Reference,Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography
+MP_VascularAccessDeviceSelection,ManagementPrinciple,血管通路器材选择与验证,SUPPORTED_BY,出处,EN-05,Reference,Contrast media extravasation injury: a prospective observational cohort study
+MP_VascularAccessDeviceSelection,ManagementPrinciple,血管通路器材选择与验证,SUPPORTED_BY,出处,EN-09,Reference,"Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study"
+MP_VascularAccessDeviceSelection,ManagementPrinciple,血管通路器材选择与验证,SUPPORTED_BY,出处,CN-30,Reference,河南省含碘对比剂外渗管理现状及护士认知水平的调查研究
+MP_NurseLedRiskStratification,ManagementPrinciple,护士主导的风险分层与通路规划,SUPPORTED_BY,出处,EN-21,Reference,Integrating CT-Derived Body Composition and Real-Time Injection Pressure Monitoring for Predicting Contrast Media Extravasation: A Retrospective Cohort Study with Implications for Nurse-Led Risk Stratification
+MP_NurseLedRiskStratification,ManagementPrinciple,护士主导的风险分层与通路规划,SUPPORTED_BY,出处,EN-09,Reference,"Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study"
+MP_OncologyContrastRisk,ManagementPrinciple,肿瘤患者对比剂风险管理,SUPPORTED_BY,出处,EN-20,Reference,"Iodinated Contrast Media in Oncologic CT: A Narrative Review of Safety, Risk Stratification, and Practical Considerations"
+MP_AllergySpecialistReferral,ManagementPrinciple,药物过敏专科转诊与登记,SUPPORTED_BY,出处,EN-03,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+MP_AllergySpecialistReferral,ManagementPrinciple,药物过敏专科转诊与登记,SUPPORTED_BY,出处,EN-04,Reference,Hypersensitivity reactions to contrast media: Part 2. Prevention of recurrent hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+MP_AllergySpecialistReferral,ManagementPrinciple,药物过敏专科转诊与登记,SUPPORTED_BY,出处,EN-19,Reference,Immediate hypersensitivity reactions to iodinated contrast media despite drug prophylaxis - a comparative retrospective cohort study of breakthrough reactions in Bern (Switzerland) and Seoul (South Korea)
+MP_PediatricContrastSafety,ManagementPrinciple,儿童对比剂安全要点,SUPPORTED_BY,出处,EN-04,Reference,Hypersensitivity reactions to contrast media: Part 2. Prevention of recurrent hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+MP_PediatricContrastSafety,ManagementPrinciple,儿童对比剂安全要点,SUPPORTED_BY,出处,EN-14,Reference,"Acute Adverse Reactions to Nonionic Low-Osmolar Iodinated Contrast Media in Children: A Retrospective Study of 23,429 Injections Over 6 Years"
+MP_PediatricContrastSafety,ManagementPrinciple,儿童对比剂安全要点,SUPPORTED_BY,出处,CN-14,Reference,小儿外周静脉留置针输液外渗的研究进展
+S_Blistering,SymptomSign,皮肤水疱,SUPPORTED_BY,出处,CN-19,Reference,1例药液外渗致慢性难愈性创面形成患者的中西医结合护理
+S_Blistering,SymptomSign,皮肤水疱,SUPPORTED_BY,出处,EN-01,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+S_Blistering,SymptomSign,皮肤水疱,SUPPORTED_BY,出处,EN-07,Reference,Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions
+S_Blistering,SymptomSign,皮肤水疱,SUPPORTED_BY,出处,EN-08,Reference,Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison
+S_Blistering,SymptomSign,皮肤水疱,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+S_ChronicNonHealingWound,SymptomSign,慢性难愈性创面,SUPPORTED_BY,出处,CN-19,Reference,1例药液外渗致慢性难愈性创面形成患者的中西医结合护理
+S_RedFlagSigns,SymptomSign,外渗恶化警示征象,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+S_RedFlagSigns,SymptomSign,外渗恶化警示征象,SUPPORTED_BY,出处,EN-01,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+S_RedFlagSigns,SymptomSign,外渗恶化警示征象,SUPPORTED_BY,出处,EN-16,Reference,Hand compartment syndrome secondary to contrast media extravasation: A case report
+S_RedFlagSigns,SymptomSign,外渗恶化警示征象,SUPPORTED_BY,出处,EN-17,Reference,Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention
+SC_ReactionOnsetWindow,SymptomCategory,对比剂不良反应发生时间窗,SUPPORTED_BY,出处,EN-11,Reference,Hypersensitivity Reactions to Iodinated Contrast Media
+SC_ReactionOnsetWindow,SymptomCategory,对比剂不良反应发生时间窗,SUPPORTED_BY,出处,EN-15,Reference,Hypersensitivity reactions to iodinated contrast media: potential mechanisms and clinical management
+SC_ReactionOnsetWindow,SymptomCategory,对比剂不良反应发生时间窗,SUPPORTED_BY,出处,CN-27,Reference,CT增强碘对比剂急性不良反应发生现况及影响因素
+SC_ReactionMechanismType,SymptomCategory,对比剂反应机制分型,SUPPORTED_BY,出处,EN-11,Reference,Hypersensitivity Reactions to Iodinated Contrast Media
+SC_BreakthroughReaction,SymptomCategory,突破性过敏反应,SUPPORTED_BY,出处,EN-19,Reference,Immediate hypersensitivity reactions to iodinated contrast media despite drug prophylaxis - a comparative retrospective cohort study of breakthrough reactions in Bern (Switzerland) and Seoul (South Korea)
+SC_BreakthroughReaction,SymptomCategory,突破性过敏反应,SUPPORTED_BY,出处,EN-14,Reference,"Acute Adverse Reactions to Nonionic Low-Osmolar Iodinated Contrast Media in Children: A Retrospective Study of 23,429 Injections Over 6 Years"
+DE_MenuBasedHealthEducation,DiseaseEducation,菜单式健康教育,SUPPORTED_BY,出处,CN-23,Reference,菜单式健康教育配合置管专项护理在肿瘤PICC患者中的应用
+DE_ExtravasationRedFlags,DiseaseEducation,外渗恶化警示信号宣教,SUPPORTED_BY,出处,EN-01,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+DE_ExtravasationRedFlags,DiseaseEducation,外渗恶化警示信号宣教,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+DE_ExtravasationRedFlags,DiseaseEducation,外渗恶化警示信号宣教,SUPPORTED_BY,出处,EN-03,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
 NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
 NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理,SUPPORTED_BY,出处,R01-2026,Reference,ACR Manual on Contrast Media（2026 版 · 对比剂加温章节）
 NT_EarlyWarning,NursingTheory,早期预警,SUPPORTED_BY,出处,R12,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
@@ -610,7 +775,214 @@ AT_CMAllergyTest,AssessmentTool,碘对比剂过敏试验,SUPPORTED_BY,出处,CG-
 DE_PreExamNotice,DiseaseEducation,检查前注意事项科普,SUPPORTED_BY,出处,CG-07,Reference,心血管介入碘对比剂使用管理护理专家共识
 NPM_ObservationThenRemove,NonPharmacologicalManagement,留观后拔针,SUPPORTED_BY,出处,CG-07,Reference,心血管介入碘对比剂使用管理护理专家共识
 S_AllergicReaction,SymptomSign,过敏反应,SUPPORTED_BY,出处,CG-07,Reference,心血管介入碘对比剂使用管理护理专家共识
+MP_NursingPrevention,ManagementPrinciple,护理预防,SUPPORTED_BY,出处,CN-12,Reference,含碘非离子对比剂输注前预防静脉外渗策略的证据总结
+AT_VascularAssessment,AssessmentTool,血管条件评估,SUPPORTED_BY,出处,CN-12,Reference,含碘非离子对比剂输注前预防静脉外渗策略的证据总结
+NPM_PowerInjectorSafeCatheter,NonPharmacologicalManagement,耐高压型静脉留置针,SUPPORTED_BY,出处,CN-12,Reference,含碘非离子对比剂输注前预防静脉外渗策略的证据总结
+NPM_CannulaSecurement,NonPharmacologicalManagement,留置针固定与敷料维护,SUPPORTED_BY,出处,CN-12,Reference,含碘非离子对比剂输注前预防静脉外渗策略的证据总结
+RF_HandDorsalSite,RiskFactor,手背等外周静脉穿刺,SUPPORTED_BY,出处,CN-13,Reference,不同穿刺部位静脉留置针渗出外渗的发生现状及结局差异分析
+NPM_CloseObservation,NonPharmacologicalManagement,密切观察,SUPPORTED_BY,出处,CN-13,Reference,不同穿刺部位静脉留置针渗出外渗的发生现状及结局差异分析
+MP_NursingPrevention,ManagementPrinciple,护理预防,SUPPORTED_BY,出处,CN-13,Reference,不同穿刺部位静脉留置针渗出外渗的发生现状及结局差异分析
+AT_ExtravasationAssessment,AssessmentTool,外渗风险评估,SUPPORTED_BY,出处,CN-14,Reference,小儿外周静脉留置针输液外渗的研究进展
+NT_SelfCareTheory,NursingTheory,自护理论,SUPPORTED_BY,出处,CN-14,Reference,小儿外周静脉留置针输液外渗的研究进展
+MP_ExtravasationReporting,ManagementPrinciple,外渗上报与回访,SUPPORTED_BY,出处,CN-15,Reference,护理质量管理在预防婴幼儿输液外渗中的应用研究进展
+S_CompartmentSyndrome,SymptomSign,骨筋膜室综合征,SUPPORTED_BY,出处,CN-16,Reference,造影剂血管外渗的处置方法研究进展
+NPM_LimbElevation,NonPharmacologicalManagement,患肢抬高,SUPPORTED_BY,出处,CN-16,Reference,造影剂血管外渗的处置方法研究进展
+NPM_PsychologicalSupport,NonPharmacologicalManagement,心理疏导,SUPPORTED_BY,出处,CN-16,Reference,造影剂血管外渗的处置方法研究进展
+MP_SurgicalReferralCriteria,ManagementPrinciple,外科会诊转诊标准,SUPPORTED_BY,出处,CN-16,Reference,造影剂血管外渗的处置方法研究进展
+PM_MagnesiumSulfate,PharmacologicalManagement,50%硫酸镁湿敷,SUPPORTED_BY,出处,CN-16,Reference,造影剂血管外渗的处置方法研究进展
+PM_DexamethasoneWetCompress,PharmacologicalManagement,0.05%地塞米松湿敷,SUPPORTED_BY,出处,CN-16,Reference,造影剂血管外渗的处置方法研究进展
+NPM_TcmExternalApply,NonPharmacologicalManagement,中药外敷法（外渗）,SUPPORTED_BY,出处,CN-16,Reference,造影剂血管外渗的处置方法研究进展
+PM_MagnesiumSulfate,PharmacologicalManagement,50%硫酸镁湿敷,SUPPORTED_BY,出处,CN-17,Reference,康惠尔透明贴与50％硫酸镁溶液冷湿敷治疗碘对比剂外渗效果比较
+S_Phlebitis,SymptomSign,导管相关静脉炎,SUPPORTED_BY,出处,CN-17,Reference,康惠尔透明贴与50％硫酸镁溶液冷湿敷治疗碘对比剂外渗效果比较
+FS_LimbFunction,FunctionalStatus,患肢功能状态,SUPPORTED_BY,出处,CN-17,Reference,康惠尔透明贴与50％硫酸镁溶液冷湿敷治疗碘对比剂外渗效果比较
+S_ExtravasationSwelling,SymptomSign,局部肿胀,SUPPORTED_BY,出处,CN-17,Reference,康惠尔透明贴与50％硫酸镁溶液冷湿敷治疗碘对比剂外渗效果比较
+S_ExtravasationPain,SymptomSign,局部疼痛,SUPPORTED_BY,出处,CN-17,Reference,康惠尔透明贴与50％硫酸镁溶液冷湿敷治疗碘对比剂外渗效果比较
+NPM_TcmExternalApply,NonPharmacologicalManagement,中药外敷法（外渗）,SUPPORTED_BY,出处,CN-18,Reference,应用改良痈疽油剂干预含碘对比剂中重度静脉外渗的临床疗效评价
+SC_ExtravDamageStage,SymptomCategory,药物外渗性损伤分期,SUPPORTED_BY,出处,CN-18,Reference,应用改良痈疽油剂干预含碘对比剂中重度静脉外渗的临床疗效评价
+PM_MagnesiumSulfate,PharmacologicalManagement,50%硫酸镁湿敷,SUPPORTED_BY,出处,CN-18,Reference,应用改良痈疽油剂干预含碘对比剂中重度静脉外渗的临床疗效评价
+NPM_ColdCompress,NonPharmacologicalManagement,局部冷敷,SUPPORTED_BY,出处,CN-18,Reference,应用改良痈疽油剂干预含碘对比剂中重度静脉外渗的临床疗效评价
+S_ExtravasationSwelling,SymptomSign,局部肿胀,SUPPORTED_BY,出处,CN-18,Reference,应用改良痈疽油剂干预含碘对比剂中重度静脉外渗的临床疗效评价
+AT_SwellingMeasurement,AssessmentTool,肿胀测量与皮肤标记,SUPPORTED_BY,出处,CN-18,Reference,应用改良痈疽油剂干预含碘对比剂中重度静脉外渗的临床疗效评价
+S_ExtravasationPain,SymptomSign,局部疼痛,SUPPORTED_BY,出处,CN-18,Reference,应用改良痈疽油剂干预含碘对比剂中重度静脉外渗的临床疗效评价
+S_ExtravasationRedness,SymptomSign,局部发红,SUPPORTED_BY,出处,CN-19,Reference,1例药液外渗致慢性难愈性创面形成患者的中西医结合护理
+MP_SkinIntegrity,ManagementPrinciple,外渗后皮肤完整性,SUPPORTED_BY,出处,CN-19,Reference,1例药液外渗致慢性难愈性创面形成患者的中西医结合护理
+FS_LimbFunction,FunctionalStatus,患肢功能状态,SUPPORTED_BY,出处,CN-19,Reference,1例药液外渗致慢性难愈性创面形成患者的中西医结合护理
+MP_ExtravasationReporting,ManagementPrinciple,外渗上报与回访,SUPPORTED_BY,出处,CN-19,Reference,1例药液外渗致慢性难愈性创面形成患者的中西医结合护理
+NPM_StopInjection,NonPharmacologicalManagement,立即停止注射,SUPPORTED_BY,出处,CN-19,Reference,1例药液外渗致慢性难愈性创面形成患者的中西医结合护理
+NPM_LimbElevation,NonPharmacologicalManagement,患肢抬高,SUPPORTED_BY,出处,CN-19,Reference,1例药液外渗致慢性难愈性创面形成患者的中西医结合护理
+NPM_TcmExternalApply,NonPharmacologicalManagement,中药外敷法（外渗）,SUPPORTED_BY,出处,CN-19,Reference,1例药液外渗致慢性难愈性创面形成患者的中西医结合护理
+NPM_TcmExternalApply,NonPharmacologicalManagement,中药外敷法（外渗）,SUPPORTED_BY,出处,CN-20,Reference,乌蔹莓外敷干预碘对比剂外渗的临床疗效观察
+PM_MagnesiumSulfate,PharmacologicalManagement,50%硫酸镁湿敷,SUPPORTED_BY,出处,CN-20,Reference,乌蔹莓外敷干预碘对比剂外渗的临床疗效观察
+S_ExtravasationSwelling,SymptomSign,局部肿胀,SUPPORTED_BY,出处,CN-20,Reference,乌蔹莓外敷干预碘对比剂外渗的临床疗效观察
+S_ExtravasationPain,SymptomSign,局部疼痛,SUPPORTED_BY,出处,CN-20,Reference,乌蔹莓外敷干预碘对比剂外渗的临床疗效观察
+NPM_TcmExternalApply,NonPharmacologicalManagement,中药外敷法（外渗）,SUPPORTED_BY,出处,CN-21,Reference,推拿法在含碘对比剂外渗中的应用
+NPM_LimbElevation,NonPharmacologicalManagement,患肢抬高,SUPPORTED_BY,出处,CN-21,Reference,推拿法在含碘对比剂外渗中的应用
+PM_MagnesiumSulfate,PharmacologicalManagement,50%硫酸镁湿敷,SUPPORTED_BY,出处,CN-21,Reference,推拿法在含碘对比剂外渗中的应用
+NPM_ColdCompress,NonPharmacologicalManagement,局部冷敷,SUPPORTED_BY,出处,CN-21,Reference,推拿法在含碘对比剂外渗中的应用
+SC_ExtravDamageStage,SymptomCategory,药物外渗性损伤分期,SUPPORTED_BY,出处,CN-21,Reference,推拿法在含碘对比剂外渗中的应用
+NPM_TcmExternalApply,NonPharmacologicalManagement,中药外敷法（外渗）,SUPPORTED_BY,出处,CN-22,Reference,中医适宜技术联合TDP治疗仪在碘对比剂静脉外渗患者的应用研究
+NPM_ColdCompress,NonPharmacologicalManagement,局部冷敷,SUPPORTED_BY,出处,CN-22,Reference,中医适宜技术联合TDP治疗仪在碘对比剂静脉外渗患者的应用研究
+S_Phlebitis,SymptomSign,导管相关静脉炎,SUPPORTED_BY,出处,CN-22,Reference,中医适宜技术联合TDP治疗仪在碘对比剂静脉外渗患者的应用研究
+S_ExtravasationSwelling,SymptomSign,局部肿胀,SUPPORTED_BY,出处,CN-22,Reference,中医适宜技术联合TDP治疗仪在碘对比剂静脉外渗患者的应用研究
+S_ExtravasationPain,SymptomSign,局部疼痛,SUPPORTED_BY,出处,CN-22,Reference,中医适宜技术联合TDP治疗仪在碘对比剂静脉外渗患者的应用研究
+S_Phlebitis,SymptomSign,导管相关静脉炎,SUPPORTED_BY,出处,CN-23,Reference,菜单式健康教育配合置管专项护理在肿瘤PICC患者中的应用
+AT_VascularAssessment,AssessmentTool,血管条件评估,SUPPORTED_BY,出处,CN-24,Reference,放射科碘对比剂外渗管理的证据总结
+NPM_CloseObservation,NonPharmacologicalManagement,密切观察,SUPPORTED_BY,出处,CN-24,Reference,放射科碘对比剂外渗管理的证据总结
+MP_ExtravasationPrinciple,ManagementPrinciple,外渗处置原则,SUPPORTED_BY,出处,CN-24,Reference,放射科碘对比剂外渗管理的证据总结
+AT_ExtravSeverityGrading,AssessmentTool,外渗严重程度分级,SUPPORTED_BY,出处,CN-24,Reference,放射科碘对比剂外渗管理的证据总结
+S_AdverseReaction,SymptomSign,不良反应,SUPPORTED_BY,出处,CN-27,Reference,CT增强碘对比剂急性不良反应发生现况及影响因素
+SC_AdverseSpectrum,SymptomCategory,碘对比剂不良反应谱,SUPPORTED_BY,出处,CN-27,Reference,CT增强碘对比剂急性不良反应发生现况及影响因素
+SC_CMHSRMild,SymptomCategory,轻度过敏反应,SUPPORTED_BY,出处,CN-27,Reference,CT增强碘对比剂急性不良反应发生现况及影响因素
+RF_AgeExtremes,RiskFactor,高龄或低龄,SUPPORTED_BY,出处,CN-27,Reference,CT增强碘对比剂急性不良反应发生现况及影响因素
+RF_ContrastAllergyHistory,RiskFactor,既往碘对比剂过敏史,SUPPORTED_BY,出处,CN-27,Reference,CT增强碘对比剂急性不良反应发生现况及影响因素
+E_ContrastInjection,Exam,碘对比剂,SUPPORTED_BY,出处,CN-27,Reference,CT增强碘对比剂急性不良反应发生现况及影响因素
+S_Rash,SymptomSign,皮疹,SUPPORTED_BY,出处,CN-28,Reference,某院碘对比剂相关药品不良反应研究与合理用药
+S_Pruritus,SymptomSign,瘙痒,SUPPORTED_BY,出处,CN-28,Reference,某院碘对比剂相关药品不良反应研究与合理用药
+S_ContrastNausea,SymptomSign,恶心,SUPPORTED_BY,出处,CN-28,Reference,某院碘对比剂相关药品不良反应研究与合理用药
+E_ContrastInjection,Exam,碘对比剂,SUPPORTED_BY,出处,CN-28,Reference,某院碘对比剂相关药品不良反应研究与合理用药
+RF_ContrastAllergyHistory,RiskFactor,既往碘对比剂过敏史,SUPPORTED_BY,出处,CN-28,Reference,某院碘对比剂相关药品不良反应研究与合理用药
+MP_RiskAssessmentFramework,ManagementPrinciple,对比剂反应危险因素评估框架,SUPPORTED_BY,出处,CN-28,Reference,某院碘对比剂相关药品不良反应研究与合理用药
+NPM_PowerInjectorSafeCatheter,NonPharmacologicalManagement,耐高压型静脉留置针,SUPPORTED_BY,出处,CN-30,Reference,河南省含碘对比剂外渗管理现状及护士认知水平的调查研究
+AT_AllergyHistory,AssessmentTool,过敏史询问,SUPPORTED_BY,出处,CN-30,Reference,河南省含碘对比剂外渗管理现状及护士认知水平的调查研究
+AT_VascularAssessment,AssessmentTool,血管条件评估,SUPPORTED_BY,出处,CN-30,Reference,河南省含碘对比剂外渗管理现状及护士认知水平的调查研究
+AT_ExtravasationDetection,AssessmentTool,外渗探测与压力监测,SUPPORTED_BY,出处,CN-30,Reference,河南省含碘对比剂外渗管理现状及护士认知水平的调查研究
+NPM_VascularVisualization,NonPharmacologicalManagement,血管可视化,SUPPORTED_BY,出处,CN-30,Reference,河南省含碘对比剂外渗管理现状及护士认知水平的调查研究
+NPM_SalineFlushCheck,NonPharmacologicalManagement,等速生理盐水试推,SUPPORTED_BY,出处,CN-30,Reference,河南省含碘对比剂外渗管理现状及护士认知水平的调查研究
+SC_ExtravDamageStage,SymptomCategory,药物外渗性损伤分期,SUPPORTED_BY,出处,CN-30,Reference,河南省含碘对比剂外渗管理现状及护士认知水平的调查研究
+MP_ExtravasationReporting,ManagementPrinciple,外渗上报与回访,SUPPORTED_BY,出处,CN-30,Reference,河南省含碘对比剂外渗管理现状及护士认知水平的调查研究
+NPM_VascularVisualization,NonPharmacologicalManagement,血管可视化,SUPPORTED_BY,出处,EN-01,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+NPM_ColdCompress,NonPharmacologicalManagement,局部冷敷,SUPPORTED_BY,出处,EN-01,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+NPM_LimbElevation,NonPharmacologicalManagement,患肢抬高,SUPPORTED_BY,出处,EN-01,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+PM_Hyaluronidase,PharmacologicalManagement,透明质酸酶,SUPPORTED_BY,出处,EN-01,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+DE_ExtravasationHomeCare,DiseaseEducation,外渗居家护理科普,SUPPORTED_BY,出处,EN-01,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+MP_ExtravasationReporting,ManagementPrinciple,外渗上报与回访,SUPPORTED_BY,出处,EN-01,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+AT_ExtravasationDetection,AssessmentTool,外渗探测与压力监测,SUPPORTED_BY,出处,EN-01,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+NPM_PowerInjectorSafeCatheter,NonPharmacologicalManagement,耐高压型静脉留置针,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+NPM_SalineFlushCheck,NonPharmacologicalManagement,等速生理盐水试推,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+NPM_VascularVisualization,NonPharmacologicalManagement,血管可视化,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+NPM_ColdCompress,NonPharmacologicalManagement,局部冷敷,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+NPM_StabIncisionSqueezing,NonPharmacologicalManagement,针刺切开挤压排液,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+PM_Hyaluronidase,PharmacologicalManagement,透明质酸酶,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+MP_ExtravasationPrinciple,ManagementPrinciple,外渗处置原则,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+DE_ExtravasationHomeCare,DiseaseEducation,外渗居家护理科普,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+NPM_ObservationThenRemove,NonPharmacologicalManagement,留观后拔针,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+MP_ExtravasationReporting,ManagementPrinciple,外渗上报与回访,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
 RF_ContrastAllergyHistory,RiskFactor,既往碘对比剂过敏史,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+RF_UncontrolledAsthma,RiskFactor,未控制的哮喘,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+PM_AdrenalineIM,PharmacologicalManagement,肌内注射肾上腺素,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+PM_EpiAutoInjector,PharmacologicalManagement,肾上腺素自动注射笔,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+S_Bronchospasm,SymptomSign,支气管痉挛,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+PM_Atropine,PharmacologicalManagement,阿托品,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+S_VasovagalReaction,SymptomSign,血管迷走反应,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
+PM_AdrenalineIM,PharmacologicalManagement,肌内注射肾上腺素,SUPPORTED_BY,出处,EN-03,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+PM_Antihistamine,PharmacologicalManagement,抗组胺药,SUPPORTED_BY,出处,EN-03,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+PM_Corticosteroid,PharmacologicalManagement,糖皮质激素,SUPPORTED_BY,出处,EN-03,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+AT_SerumTryptase,AssessmentTool,血清胰蛋白酶,SUPPORTED_BY,出处,EN-03,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+NPM_CloseObservation,NonPharmacologicalManagement,密切观察,SUPPORTED_BY,出处,EN-03,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+NPM_KeepCatheter,NonPharmacologicalManagement,保留静脉留置针,SUPPORTED_BY,出处,EN-03,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+DE_EmergencyKnowledge,DiseaseEducation,急救知识科普,SUPPORTED_BY,出处,EN-03,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+DE_PreExamNotice,DiseaseEducation,检查前注意事项科普,SUPPORTED_BY,出处,EN-03,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+NPM_SwitchContrastAgent,NonPharmacologicalManagement,换用对比剂,SUPPORTED_BY,出处,EN-03,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+AT_AllergyHistory,AssessmentTool,过敏史询问,SUPPORTED_BY,出处,EN-03,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+MP_RiskAssessmentFramework,ManagementPrinciple,对比剂反应危险因素评估框架,SUPPORTED_BY,出处,EN-03,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+S_VasovagalReaction,SymptomSign,血管迷走反应,SUPPORTED_BY,出处,EN-03,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+PM_Atropine,PharmacologicalManagement,阿托品,SUPPORTED_BY,出处,EN-03,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+DE_AfterExamCare,DiseaseEducation,检查后观察与护理科普,SUPPORTED_BY,出处,EN-03,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+DE_AllergyDisclosure,DiseaseEducation,过敏史告知科普,SUPPORTED_BY,出处,EN-03,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理,SUPPORTED_BY,出处,EN-04,Reference,Hypersensitivity reactions to contrast media: Part 2. Prevention of recurrent hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+PM_Corticosteroid,PharmacologicalManagement,糖皮质激素,SUPPORTED_BY,出处,EN-04,Reference,Hypersensitivity reactions to contrast media: Part 2. Prevention of recurrent hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+PM_Antihistamine,PharmacologicalManagement,抗组胺药,SUPPORTED_BY,出处,EN-04,Reference,Hypersensitivity reactions to contrast media: Part 2. Prevention of recurrent hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+NPM_ObservationThenRemove,NonPharmacologicalManagement,留观后拔针,SUPPORTED_BY,出处,EN-04,Reference,Hypersensitivity reactions to contrast media: Part 2. Prevention of recurrent hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+NPM_KeepCatheter,NonPharmacologicalManagement,保留静脉留置针,SUPPORTED_BY,出处,EN-04,Reference,Hypersensitivity reactions to contrast media: Part 2. Prevention of recurrent hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+DE_AfterExamCare,DiseaseEducation,检查后观察与护理科普,SUPPORTED_BY,出处,EN-04,Reference,Hypersensitivity reactions to contrast media: Part 2. Prevention of recurrent hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+NPM_SwitchContrastAgent,NonPharmacologicalManagement,换用对比剂,SUPPORTED_BY,出处,EN-04,Reference,Hypersensitivity reactions to contrast media: Part 2. Prevention of recurrent hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+DE_AllergyDisclosure,DiseaseEducation,过敏史告知科普,SUPPORTED_BY,出处,EN-04,Reference,Hypersensitivity reactions to contrast media: Part 2. Prevention of recurrent hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+NPM_PowerInjectorSafeCatheter,NonPharmacologicalManagement,耐高压型静脉留置针,SUPPORTED_BY,出处,EN-05,Reference,Contrast media extravasation injury: a prospective observational cohort study
+NPM_SalineFlushCheck,NonPharmacologicalManagement,等速生理盐水试推,SUPPORTED_BY,出处,EN-05,Reference,Contrast media extravasation injury: a prospective observational cohort study
+AT_VascularAssessment,AssessmentTool,血管条件评估,SUPPORTED_BY,出处,EN-05,Reference,Contrast media extravasation injury: a prospective observational cohort study
+RF_AgeExtremes,RiskFactor,高龄或低龄,SUPPORTED_BY,出处,EN-05,Reference,Contrast media extravasation injury: a prospective observational cohort study
+MP_ExtravasationReporting,ManagementPrinciple,外渗上报与回访,SUPPORTED_BY,出处,EN-05,Reference,Contrast media extravasation injury: a prospective observational cohort study
+NPM_LimbElevation,NonPharmacologicalManagement,患肢抬高,SUPPORTED_BY,出处,EN-05,Reference,Contrast media extravasation injury: a prospective observational cohort study
+NPM_ColdCompress,NonPharmacologicalManagement,局部冷敷,SUPPORTED_BY,出处,EN-05,Reference,Contrast media extravasation injury: a prospective observational cohort study
+PM_DexamethasoneWetCompress,PharmacologicalManagement,0.05%地塞米松湿敷,SUPPORTED_BY,出处,EN-05,Reference,Contrast media extravasation injury: a prospective observational cohort study
+S_Extravasation,SymptomSign,碘对比剂外渗,SUPPORTED_BY,出处,EN-06,Reference,MRI and CT contrast media extravasation: A systematic review
+E_ContrastInjection,Exam,碘对比剂,SUPPORTED_BY,出处,EN-06,Reference,MRI and CT contrast media extravasation: A systematic review
+RF_AgeExtremes,RiskFactor,高龄或低龄,SUPPORTED_BY,出处,EN-06,Reference,MRI and CT contrast media extravasation: A systematic review
+NPM_PunctureSiteSelection,NonPharmacologicalManagement,穿刺部位选择,SUPPORTED_BY,出处,EN-06,Reference,MRI and CT contrast media extravasation: A systematic review
+S_CompartmentSyndrome,SymptomSign,骨筋膜室综合征,SUPPORTED_BY,出处,EN-06,Reference,MRI and CT contrast media extravasation: A systematic review
+MP_SkinIntegrity,ManagementPrinciple,外渗后皮肤完整性,SUPPORTED_BY,出处,EN-06,Reference,MRI and CT contrast media extravasation: A systematic review
+S_ExtravasationSwelling,SymptomSign,局部肿胀,SUPPORTED_BY,出处,EN-06,Reference,MRI and CT contrast media extravasation: A systematic review
+S_ExtravasationPain,SymptomSign,局部疼痛,SUPPORTED_BY,出处,EN-06,Reference,MRI and CT contrast media extravasation: A systematic review
+MP_ExtravasationReporting,ManagementPrinciple,外渗上报与回访,SUPPORTED_BY,出处,EN-07,Reference,Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions
+PM_Hyaluronidase,PharmacologicalManagement,透明质酸酶,SUPPORTED_BY,出处,EN-07,Reference,Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions
+MP_ExtravasationPrinciple,ManagementPrinciple,外渗处置原则,SUPPORTED_BY,出处,EN-07,Reference,Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions
+NPM_WoundDressingManagement,NonPharmacologicalManagement,外渗创面敷料与湿性愈合护理,SUPPORTED_BY,出处,EN-07,Reference,Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions
+RF_HandDorsalSite,RiskFactor,手背等外周静脉穿刺,SUPPORTED_BY,出处,EN-07,Reference,Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions
+S_CompartmentSyndrome,SymptomSign,骨筋膜室综合征,SUPPORTED_BY,出处,EN-08,Reference,Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison
+NPM_StopInjection,NonPharmacologicalManagement,立即停止注射,SUPPORTED_BY,出处,EN-08,Reference,Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison
+NPM_LimbElevation,NonPharmacologicalManagement,患肢抬高,SUPPORTED_BY,出处,EN-08,Reference,Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison
+NPM_ColdCompress,NonPharmacologicalManagement,局部冷敷,SUPPORTED_BY,出处,EN-08,Reference,Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison
+S_ExtravasationSwelling,SymptomSign,局部肿胀,SUPPORTED_BY,出处,EN-08,Reference,Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison
+MP_SkinIntegrity,ManagementPrinciple,外渗后皮肤完整性,SUPPORTED_BY,出处,EN-08,Reference,Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison
+MP_ExtravasationEscalation,ManagementPrinciple,外渗处置阶梯升级策略,SUPPORTED_BY,出处,EN-08,Reference,Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison
+MP_ExtravasationPrinciple,ManagementPrinciple,外渗处置原则,SUPPORTED_BY,出处,EN-08,Reference,Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison
+RF_NoSalineFlush,RiskFactor,未做生理盐水试推,SUPPORTED_BY,出处,EN-09,Reference,"Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study"
+NPM_PowerInjectorSafeCatheter,NonPharmacologicalManagement,耐高压型静脉留置针,SUPPORTED_BY,出处,EN-09,Reference,"Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study"
+NPM_SalineFlushCheck,NonPharmacologicalManagement,等速生理盐水试推,SUPPORTED_BY,出处,EN-09,Reference,"Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study"
+NPM_PunctureSiteSelection,NonPharmacologicalManagement,穿刺部位选择,SUPPORTED_BY,出处,EN-09,Reference,"Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study"
+AT_VascularAssessment,AssessmentTool,血管条件评估,SUPPORTED_BY,出处,EN-09,Reference,"Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study"
+RF_AgeExtremes,RiskFactor,高龄或低龄,SUPPORTED_BY,出处,EN-09,Reference,"Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study"
+NT_EarlyWarning,NursingTheory,早期预警,SUPPORTED_BY,出处,EN-09,Reference,"Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study"
+AT_ExtravasationAssessment,AssessmentTool,外渗风险评估,SUPPORTED_BY,出处,EN-09,Reference,"Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study"
+AT_SwellingMeasurement,AssessmentTool,肿胀测量与皮肤标记,SUPPORTED_BY,出处,EN-10,Reference,Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation
+AT_ExtravasationDetection,AssessmentTool,外渗探测与压力监测,SUPPORTED_BY,出处,EN-10,Reference,Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation
+NPM_SalineFlushCheck,NonPharmacologicalManagement,等速生理盐水试推,SUPPORTED_BY,出处,EN-10,Reference,Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation
+NPM_ColdCompress,NonPharmacologicalManagement,局部冷敷,SUPPORTED_BY,出处,EN-10,Reference,Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation
+NPM_WoundDressingManagement,NonPharmacologicalManagement,外渗创面敷料与湿性愈合护理,SUPPORTED_BY,出处,EN-10,Reference,Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation
+PM_Hyaluronidase,PharmacologicalManagement,透明质酸酶,SUPPORTED_BY,出处,EN-10,Reference,Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation
+MP_EvidenceBasedPractice,ManagementPrinciple,循证实践转化,SUPPORTED_BY,出处,EN-10,Reference,Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation
+MP_ExtravasationReporting,ManagementPrinciple,外渗上报与回访,SUPPORTED_BY,出处,EN-10,Reference,Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation
+SC_CMHSRMild,SymptomCategory,轻度过敏反应,SUPPORTED_BY,出处,EN-11,Reference,Hypersensitivity Reactions to Iodinated Contrast Media
+SC_CMHSRModerate,SymptomCategory,中度过敏反应,SUPPORTED_BY,出处,EN-11,Reference,Hypersensitivity Reactions to Iodinated Contrast Media
+SC_CMHSRSevere,SymptomCategory,重度过敏反应,SUPPORTED_BY,出处,EN-11,Reference,Hypersensitivity Reactions to Iodinated Contrast Media
+S_AdverseReaction,SymptomSign,不良反应,SUPPORTED_BY,出处,EN-11,Reference,Hypersensitivity Reactions to Iodinated Contrast Media
+S_Rash,SymptomSign,皮疹,SUPPORTED_BY,出处,EN-11,Reference,Hypersensitivity Reactions to Iodinated Contrast Media
+RF_UncontrolledAsthma,RiskFactor,未控制的哮喘,SUPPORTED_BY,出处,EN-12,Reference,Risk factor analysis of iodinated contrast medium-related hypersensitivity reactions
+RF_ContrastAllergyHistory,RiskFactor,既往碘对比剂过敏史,SUPPORTED_BY,出处,EN-12,Reference,Risk factor analysis of iodinated contrast medium-related hypersensitivity reactions
+NPM_CloseObservation,NonPharmacologicalManagement,密切观察,SUPPORTED_BY,出处,EN-13,Reference,Preparedness of CT technicians and radiographers for severe contrast media reactions: knowledge gaps and training needs
+S_AdverseReaction,SymptomSign,不良反应,SUPPORTED_BY,出处,EN-14,Reference,"Acute Adverse Reactions to Nonionic Low-Osmolar Iodinated Contrast Media in Children: A Retrospective Study of 23,429 Injections Over 6 Years"
+RF_ContrastAllergyHistory,RiskFactor,既往碘对比剂过敏史,SUPPORTED_BY,出处,EN-14,Reference,"Acute Adverse Reactions to Nonionic Low-Osmolar Iodinated Contrast Media in Children: A Retrospective Study of 23,429 Injections Over 6 Years"
+RF_AgeExtremes,RiskFactor,高龄或低龄,SUPPORTED_BY,出处,EN-14,Reference,"Acute Adverse Reactions to Nonionic Low-Osmolar Iodinated Contrast Media in Children: A Retrospective Study of 23,429 Injections Over 6 Years"
+NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理,SUPPORTED_BY,出处,EN-14,Reference,"Acute Adverse Reactions to Nonionic Low-Osmolar Iodinated Contrast Media in Children: A Retrospective Study of 23,429 Injections Over 6 Years"
+E_CTEnhancedScan,Exam,CT增强扫描,SUPPORTED_BY,出处,EN-14,Reference,"Acute Adverse Reactions to Nonionic Low-Osmolar Iodinated Contrast Media in Children: A Retrospective Study of 23,429 Injections Over 6 Years"
+AT_CMAllergyTest,AssessmentTool,碘对比剂过敏试验,SUPPORTED_BY,出处,EN-15,Reference,Hypersensitivity reactions to iodinated contrast media: potential mechanisms and clinical management
+NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理,SUPPORTED_BY,出处,EN-15,Reference,Hypersensitivity reactions to iodinated contrast media: potential mechanisms and clinical management
+NPM_SwitchContrastAgent,NonPharmacologicalManagement,换用对比剂,SUPPORTED_BY,出处,EN-15,Reference,Hypersensitivity reactions to iodinated contrast media: potential mechanisms and clinical management
+S_CompartmentSyndrome,SymptomSign,骨筋膜室综合征,SUPPORTED_BY,出处,EN-16,Reference,Hand compartment syndrome secondary to contrast media extravasation: A case report
+NT_EarlyWarning,NursingTheory,早期预警,SUPPORTED_BY,出处,EN-16,Reference,Hand compartment syndrome secondary to contrast media extravasation: A case report
+S_ExtravasationSwelling,SymptomSign,局部肿胀,SUPPORTED_BY,出处,EN-16,Reference,Hand compartment syndrome secondary to contrast media extravasation: A case report
+S_ExtravasationRedness,SymptomSign,局部发红,SUPPORTED_BY,出处,EN-16,Reference,Hand compartment syndrome secondary to contrast media extravasation: A case report
+NPM_ColdCompress,NonPharmacologicalManagement,局部冷敷,SUPPORTED_BY,出处,EN-16,Reference,Hand compartment syndrome secondary to contrast media extravasation: A case report
+PM_Corticosteroid,PharmacologicalManagement,糖皮质激素,SUPPORTED_BY,出处,EN-16,Reference,Hand compartment syndrome secondary to contrast media extravasation: A case report
+FS_LimbFunction,FunctionalStatus,患肢功能状态,SUPPORTED_BY,出处,EN-16,Reference,Hand compartment syndrome secondary to contrast media extravasation: A case report
+NPM_WoundDressingManagement,NonPharmacologicalManagement,外渗创面敷料与湿性愈合护理,SUPPORTED_BY,出处,EN-17,Reference,Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention
+MP_SkinIntegrity,ManagementPrinciple,外渗后皮肤完整性,SUPPORTED_BY,出处,EN-17,Reference,Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention
+MP_ExtravasationReporting,ManagementPrinciple,外渗上报与回访,SUPPORTED_BY,出处,EN-17,Reference,Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention
+DE_ExtravasationHomeCare,DiseaseEducation,外渗居家护理科普,SUPPORTED_BY,出处,EN-17,Reference,Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention
+SC_CMHSRMild,SymptomCategory,轻度过敏反应,SUPPORTED_BY,出处,EN-19,Reference,Immediate hypersensitivity reactions to iodinated contrast media despite drug prophylaxis - a comparative retrospective cohort study of breakthrough reactions in Bern (Switzerland) and Seoul (South Korea)
+SC_CMHSRSevere,SymptomCategory,重度过敏反应,SUPPORTED_BY,出处,EN-19,Reference,Immediate hypersensitivity reactions to iodinated contrast media despite drug prophylaxis - a comparative retrospective cohort study of breakthrough reactions in Bern (Switzerland) and Seoul (South Korea)
+NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理,SUPPORTED_BY,出处,EN-19,Reference,Immediate hypersensitivity reactions to iodinated contrast media despite drug prophylaxis - a comparative retrospective cohort study of breakthrough reactions in Bern (Switzerland) and Seoul (South Korea)
+PM_Antihistamine,PharmacologicalManagement,抗组胺药,SUPPORTED_BY,出处,EN-19,Reference,Immediate hypersensitivity reactions to iodinated contrast media despite drug prophylaxis - a comparative retrospective cohort study of breakthrough reactions in Bern (Switzerland) and Seoul (South Korea)
+PM_Corticosteroid,PharmacologicalManagement,糖皮质激素,SUPPORTED_BY,出处,EN-19,Reference,Immediate hypersensitivity reactions to iodinated contrast media despite drug prophylaxis - a comparative retrospective cohort study of breakthrough reactions in Bern (Switzerland) and Seoul (South Korea)
+E_ContrastInjection,Exam,碘对比剂,SUPPORTED_BY,出处,EN-20,Reference,"Iodinated Contrast Media in Oncologic CT: A Narrative Review of Safety, Risk Stratification, and Practical Considerations"
+MP_RiskAssessmentFramework,ManagementPrinciple,对比剂反应危险因素评估框架,SUPPORTED_BY,出处,EN-20,Reference,"Iodinated Contrast Media in Oncologic CT: A Narrative Review of Safety, Risk Stratification, and Practical Considerations"
+RF_HighPressureInjection,RiskFactor,高压注射,SUPPORTED_BY,出处,EN-21,Reference,Integrating CT-Derived Body Composition and Real-Time Injection Pressure Monitoring for Predicting Contrast Media Extravasation: A Retrospective Cohort Study with Implications for Nurse-Led Risk Stratification
+AT_ExtravasationDetection,AssessmentTool,外渗探测与压力监测,SUPPORTED_BY,出处,EN-21,Reference,Integrating CT-Derived Body Composition and Real-Time Injection Pressure Monitoring for Predicting Contrast Media Extravasation: A Retrospective Cohort Study with Implications for Nurse-Led Risk Stratification
+AT_ExtravasationAssessment,AssessmentTool,外渗风险评估,SUPPORTED_BY,出处,EN-21,Reference,Integrating CT-Derived Body Composition and Real-Time Injection Pressure Monitoring for Predicting Contrast Media Extravasation: A Retrospective Cohort Study with Implications for Nurse-Led Risk Stratification
+RF_AgeExtremes,RiskFactor,高龄或低龄,SUPPORTED_BY,出处,EN-21,Reference,Integrating CT-Derived Body Composition and Real-Time Injection Pressure Monitoring for Predicting Contrast Media Extravasation: A Retrospective Cohort Study with Implications for Nurse-Led Risk Stratification
+NPM_PunctureSiteSelection,NonPharmacologicalManagement,穿刺部位选择,SUPPORTED_BY,出处,EN-21,Reference,Integrating CT-Derived Body Composition and Real-Time Injection Pressure Monitoring for Predicting Contrast Media Extravasation: A Retrospective Cohort Study with Implications for Nurse-Led Risk Stratification
+NPM_PowerInjectorSafeCatheter,NonPharmacologicalManagement,耐高压型静脉留置针,SUPPORTED_BY,出处,EN-22,Reference,Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography
+S_Extravasation,SymptomSign,碘对比剂外渗,SUPPORTED_BY,出处,EN-22,Reference,Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography
 AT_AllergyHistory,AssessmentTool,过敏史询问,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
 DE_PreExamNotice,DiseaseEducation,检查前注意事项科普,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
 AT_VascularAssessment,AssessmentTool,血管条件评估,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
@@ -621,8 +993,6 @@ S_ExtravasationSwelling,SymptomSign,局部肿胀,SUPPORTED_BY,出处,R01,Referen
 SS_MildResolved,SymptomStatus,轻度反应已缓解,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
 S_Pruritus,SymptomSign,瘙痒,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
 S_Rash,SymptomSign,皮疹,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
-MP_ExtravasationReporting,ManagementPrinciple,外渗上报与回访,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
-DE_ExtravasationHomeCare,DiseaseEducation,外渗居家护理科普,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
 AT_AllergyHistory,AssessmentTool,过敏史询问,SUPPORTED_BY,出处,R07,Reference,影像科碘对比剂输注安全专家共识
 RF_ContrastAllergyHistory,RiskFactor,既往碘对比剂过敏史,SUPPORTED_BY,出处,R07,Reference,影像科碘对比剂输注安全专家共识
 DE_PreExamNotice,DiseaseEducation,检查前注意事项科普,SUPPORTED_BY,出处,R07,Reference,影像科碘对比剂输注安全专家共识
@@ -756,3 +1126,122 @@ S_Extravasation,SymptomSign,碘对比剂外渗,TREATED_BY,管理,NPM_TcmExternal
 NPM_TcmCombinedApply,NonPharmacologicalManagement,新磺片加五黄油联合外敷,BELONGS_TO,属于,NPM_TcmExternalApply,NonPharmacologicalManagement,中药外敷法（外渗）
 S_Extravasation,SymptomSign,碘对比剂外渗,TREATED_BY,管理,NPM_TcmCombinedApply,NonPharmacologicalManagement,新磺片加五黄油联合外敷
 PM_DexamethasoneOral,PharmacologicalManagement,口服地塞米松（严重外渗）,BELONGS_TO,属于,FW_PharmacologicalManagement,PharmacologicalManagement,药物管理
+NPM_ContrastWarming,NonPharmacologicalManagement,对比剂加温,BELONGS_TO,属于,FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理
+NPM_PunctureSiteSelection,NonPharmacologicalManagement,穿刺部位选择,BELONGS_TO,属于,FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理
+NPM_CannulaSecurement,NonPharmacologicalManagement,留置针固定与敷料维护,BELONGS_TO,属于,FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理
+NPM_InjectionRateMatching,NonPharmacologicalManagement,注射速度与通路匹配,BELONGS_TO,属于,FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理
+NPM_WarmCompress,NonPharmacologicalManagement,局部热敷,BELONGS_TO,属于,FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理
+NPM_StabIncisionSqueezing,NonPharmacologicalManagement,针刺切开挤压排液,BELONGS_TO,属于,FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理
+NPM_ResidualFluidAspiration,NonPharmacologicalManagement,回抽残留药液,BELONGS_TO,属于,FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理
+NPM_Fasciotomy,NonPharmacologicalManagement,筋膜切开减压,BELONGS_TO,属于,FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理
+NPM_LightCompressionSplint,NonPharmacologicalManagement,局部加压与制动,BELONGS_TO,属于,FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理
+NPM_WoundDressingManagement,NonPharmacologicalManagement,外渗创面敷料与湿性愈合护理,BELONGS_TO,属于,FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理
+NPM_CrystalloidBolus,NonPharmacologicalManagement,晶体液快速扩容,BELONGS_TO,属于,FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理
+NPM_ExtravasationObservation,NonPharmacologicalManagement,外渗后分级留观,BELONGS_TO,属于,FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理
+NPM_PainControl,NonPharmacologicalManagement,外渗疼痛评估与镇痛,BELONGS_TO,属于,FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理
+NPM_PostReactionObservation,NonPharmacologicalManagement,过敏反应后分级观察,BELONGS_TO,属于,FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理
+PM_Beta2Agonist,PharmacologicalManagement,短效选择性β受体激动剂,BELONGS_TO,属于,FW_PharmacologicalManagement,PharmacologicalManagement,药物管理
+PM_WeightBasedDosing,PharmacologicalManagement,按体重调整用药剂量,BELONGS_TO,属于,FW_PharmacologicalManagement,PharmacologicalManagement,药物管理
+PM_DrugSpecificAntidotes,PharmacologicalManagement,药物特异性外渗解毒剂,BELONGS_TO,属于,FW_PharmacologicalManagement,PharmacologicalManagement,药物管理
+AT_ExtravSeverityGrading,AssessmentTool,外渗严重程度分级,BELONGS_TO,属于,FW_AssessmentTool,AssessmentTool,评估工具
+AT_ExtravasationPhysicalExam,AssessmentTool,外渗后肢体检查,BELONGS_TO,属于,FW_AssessmentTool,AssessmentTool,评估工具
+AT_TissuePerfusionAssessment,AssessmentTool,组织灌注评估,BELONGS_TO,属于,FW_AssessmentTool,AssessmentTool,评估工具
+AT_ReactionDocumentation,AssessmentTool,超敏反应评估与记录,BELONGS_TO,属于,FW_AssessmentTool,AssessmentTool,评估工具
+AT_ExtravasationImaging,AssessmentTool,外渗范围影像学评估,BELONGS_TO,属于,FW_AssessmentTool,AssessmentTool,评估工具
+RF_ExistingIVReuse,RiskFactor,沿用既有静脉通路,BELONGS_TO,属于,FW_RiskFactor,RiskFactor,高危因素识别
+RF_SmallBoreCannula,RiskFactor,小口径留置针,BELONGS_TO,属于,FW_RiskFactor,RiskFactor,高危因素识别
+RF_HandDorsalSite,RiskFactor,手背等外周静脉穿刺,BELONGS_TO,属于,FW_RiskFactor,RiskFactor,高危因素识别
+RF_DiabetesMellitus,RiskFactor,糖尿病,BELONGS_TO,属于,FW_RiskFactor,RiskFactor,高危因素识别
+RF_MalignancyChemotherapy,RiskFactor,恶性肿瘤与既往化疗,BELONGS_TO,属于,FW_RiskFactor,RiskFactor,高危因素识别
+RF_Sarcopenia,RiskFactor,肌少症与低肌量,BELONGS_TO,属于,FW_RiskFactor,RiskFactor,高危因素识别
+RF_FemaleGender,RiskFactor,女性性别,BELONGS_TO,属于,FW_RiskFactor,RiskFactor,高危因素识别
+RF_InpatientStatus,RiskFactor,住院及重症患者,BELONGS_TO,属于,FW_RiskFactor,RiskFactor,高危因素识别
+RF_LargeVolumeExtravasation,RiskFactor,外渗量大,BELONGS_TO,属于,FW_RiskFactor,RiskFactor,高危因素识别
+RF_ImpairedSymptomPerception,RiskFactor,症状感知受限,BELONGS_TO,属于,FW_RiskFactor,RiskFactor,高危因素识别
+MP_EmergencyPreparedness,ManagementPrinciple,检查室急救准备,BELONGS_TO,属于,FW_ManagementPrinciple,ManagementPrinciple,处置原则
+MP_SimulationTraining,ManagementPrinciple,模拟演练式急救培训,BELONGS_TO,属于,FW_ManagementPrinciple,ManagementPrinciple,处置原则
+MP_RiskAssessmentFramework,ManagementPrinciple,对比剂反应危险因素评估框架,BELONGS_TO,属于,FW_ManagementPrinciple,ManagementPrinciple,处置原则
+MP_SurgicalReferralCriteria,ManagementPrinciple,外科会诊转诊标准,BELONGS_TO,属于,FW_ManagementPrinciple,ManagementPrinciple,处置原则
+MP_ExtravasationEscalation,ManagementPrinciple,外渗处置阶梯升级策略,BELONGS_TO,属于,FW_ManagementPrinciple,ManagementPrinciple,处置原则
+MP_EvidenceBasedPractice,ManagementPrinciple,循证实践转化,BELONGS_TO,属于,FW_ManagementPrinciple,ManagementPrinciple,处置原则
+MP_NursingQualityManagement,ManagementPrinciple,护理质量管理与敏感指标监测,BELONGS_TO,属于,FW_ManagementPrinciple,ManagementPrinciple,处置原则
+MP_MultiStakeholderSafety,ManagementPrinciple,多主体协同的输液安全管理,BELONGS_TO,属于,FW_ManagementPrinciple,ManagementPrinciple,处置原则
+MP_VascularAccessMaintenance,ManagementPrinciple,静脉通路维护与并发症防控,BELONGS_TO,属于,FW_ManagementPrinciple,ManagementPrinciple,处置原则
+MP_VascularAccessDeviceSelection,ManagementPrinciple,血管通路器材选择与验证,BELONGS_TO,属于,FW_ManagementPrinciple,ManagementPrinciple,处置原则
+MP_NurseLedRiskStratification,ManagementPrinciple,护士主导的风险分层与通路规划,BELONGS_TO,属于,FW_ManagementPrinciple,ManagementPrinciple,处置原则
+MP_OncologyContrastRisk,ManagementPrinciple,肿瘤患者对比剂风险管理,BELONGS_TO,属于,FW_ManagementPrinciple,ManagementPrinciple,处置原则
+MP_AllergySpecialistReferral,ManagementPrinciple,药物过敏专科转诊与登记,BELONGS_TO,属于,FW_ManagementPrinciple,ManagementPrinciple,处置原则
+MP_PediatricContrastSafety,ManagementPrinciple,儿童对比剂安全要点,BELONGS_TO,属于,FW_ManagementPrinciple,ManagementPrinciple,处置原则
+S_Blistering,SymptomSign,皮肤水疱,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
+S_ChronicNonHealingWound,SymptomSign,慢性难愈性创面,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
+S_RedFlagSigns,SymptomSign,外渗恶化警示征象,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
+SC_ReactionOnsetWindow,SymptomCategory,对比剂不良反应发生时间窗,BELONGS_TO,属于,FW_SymptomCategory,SymptomCategory,症状分类
+SC_ReactionMechanismType,SymptomCategory,对比剂反应机制分型,BELONGS_TO,属于,FW_SymptomCategory,SymptomCategory,症状分类
+SC_BreakthroughReaction,SymptomCategory,突破性过敏反应,BELONGS_TO,属于,FW_SymptomCategory,SymptomCategory,症状分类
+DE_MenuBasedHealthEducation,DiseaseEducation,菜单式健康教育,BELONGS_TO,属于,FW_DiseaseEducation,DiseaseEducation,疾病科普
+DE_ExtravasationRedFlags,DiseaseEducation,外渗恶化警示信号宣教,BELONGS_TO,属于,FW_DiseaseEducation,DiseaseEducation,疾病科普
+S_Extravasation,SymptomSign,碘对比剂外渗,DETECTED_BY,检查,AT_ExtravSeverityGrading,AssessmentTool,外渗严重程度分级
+S_Extravasation,SymptomSign,碘对比剂外渗,ASSESSED_BY,评估,AT_ExtravasationPhysicalExam,AssessmentTool,外渗后肢体检查
+S_Extravasation,SymptomSign,碘对比剂外渗,ASSESSED_BY,评估,AT_TissuePerfusionAssessment,AssessmentTool,组织灌注评估
+S_Extravasation,SymptomSign,碘对比剂外渗,DETECTED_BY,检查,AT_ExtravasationImaging,AssessmentTool,外渗范围影像学评估
+S_Extravasation,SymptomSign,碘对比剂外渗,TREATED_BY,管理,NPM_ResidualFluidAspiration,NonPharmacologicalManagement,回抽残留药液
+S_Extravasation,SymptomSign,碘对比剂外渗,TREATED_BY,管理,NPM_StabIncisionSqueezing,NonPharmacologicalManagement,针刺切开挤压排液
+S_Extravasation,SymptomSign,碘对比剂外渗,TREATED_BY,管理,NPM_LightCompressionSplint,NonPharmacologicalManagement,局部加压与制动
+S_Extravasation,SymptomSign,碘对比剂外渗,TREATED_BY,管理,NPM_WarmCompress,NonPharmacologicalManagement,局部热敷
+S_Extravasation,SymptomSign,碘对比剂外渗,TREATED_BY,管理,NPM_WoundDressingManagement,NonPharmacologicalManagement,外渗创面敷料与湿性愈合护理
+S_Extravasation,SymptomSign,碘对比剂外渗,TREATED_BY,管理,NPM_PainControl,NonPharmacologicalManagement,外渗疼痛评估与镇痛
+S_Extravasation,SymptomSign,碘对比剂外渗,TREATED_BY,管理,NPM_ExtravasationObservation,NonPharmacologicalManagement,外渗后分级留观
+S_Extravasation,SymptomSign,碘对比剂外渗,HAS_SYMPTOM,表现为,S_Blistering,SymptomSign,皮肤水疱
+S_Extravasation,SymptomSign,碘对比剂外渗,HAS_SYMPTOM,表现为,S_ChronicNonHealingWound,SymptomSign,慢性难愈性创面
+S_Extravasation,SymptomSign,碘对比剂外渗,HAS_SYMPTOM,表现为,S_RedFlagSigns,SymptomSign,外渗恶化警示征象
+S_CompartmentSyndrome,SymptomSign,骨筋膜室综合征,TREATED_BY,管理,NPM_Fasciotomy,NonPharmacologicalManagement,筋膜切开减压
+S_CompartmentSyndrome,SymptomSign,骨筋膜室综合征,MANAGED_BY,处置,MP_SurgicalReferralCriteria,ManagementPrinciple,外科会诊转诊标准
+S_CompartmentSyndrome,SymptomSign,骨筋膜室综合征,HAS_SYMPTOM,表现为,S_RedFlagSigns,SymptomSign,外渗恶化警示征象
+S_Extravasation,SymptomSign,碘对比剂外渗,MANAGED_BY,处置,MP_ExtravasationEscalation,ManagementPrinciple,外渗处置阶梯升级策略
+MP_ExtravasationEscalation,ManagementPrinciple,外渗处置阶梯升级策略,EFFECT_ON,效果,FS_LimbFunction,FunctionalStatus,患肢功能状态
+S_Extravasation,SymptomSign,碘对比剂外渗,AT_RISK_BY,高危因素,RF_ExistingIVReuse,RiskFactor,沿用既有静脉通路
+S_Extravasation,SymptomSign,碘对比剂外渗,AT_RISK_BY,高危因素,RF_SmallBoreCannula,RiskFactor,小口径留置针
+S_Extravasation,SymptomSign,碘对比剂外渗,AT_RISK_BY,高危因素,RF_HandDorsalSite,RiskFactor,手背等外周静脉穿刺
+S_Extravasation,SymptomSign,碘对比剂外渗,AT_RISK_BY,高危因素,RF_DiabetesMellitus,RiskFactor,糖尿病
+S_Extravasation,SymptomSign,碘对比剂外渗,AT_RISK_BY,高危因素,RF_MalignancyChemotherapy,RiskFactor,恶性肿瘤与既往化疗
+S_Extravasation,SymptomSign,碘对比剂外渗,AT_RISK_BY,高危因素,RF_Sarcopenia,RiskFactor,肌少症与低肌量
+S_Extravasation,SymptomSign,碘对比剂外渗,AT_RISK_BY,高危因素,RF_FemaleGender,RiskFactor,女性性别
+S_Extravasation,SymptomSign,碘对比剂外渗,AT_RISK_BY,高危因素,RF_InpatientStatus,RiskFactor,住院及重症患者
+S_Extravasation,SymptomSign,碘对比剂外渗,AT_RISK_BY,高危因素,RF_LargeVolumeExtravasation,RiskFactor,外渗量大
+S_AdverseReaction,SymptomSign,不良反应,AT_RISK_BY,高危因素,RF_ImpairedSymptomPerception,RiskFactor,症状感知受限
+NPM_ContrastWarming,NonPharmacologicalManagement,对比剂加温,EFFECT_ON,效果,S_Extravasation,SymptomSign,碘对比剂外渗
+NPM_PunctureSiteSelection,NonPharmacologicalManagement,穿刺部位选择,EFFECT_ON,效果,S_Extravasation,SymptomSign,碘对比剂外渗
+NPM_CannulaSecurement,NonPharmacologicalManagement,留置针固定与敷料维护,EFFECT_ON,效果,S_Extravasation,SymptomSign,碘对比剂外渗
+NPM_InjectionRateMatching,NonPharmacologicalManagement,注射速度与通路匹配,EFFECT_ON,效果,S_Extravasation,SymptomSign,碘对比剂外渗
+NPM_SalineFlushCheck,NonPharmacologicalManagement,等速生理盐水试推,EFFECT_ON,效果,S_Extravasation,SymptomSign,碘对比剂外渗
+NPM_PowerInjectorSafeCatheter,NonPharmacologicalManagement,耐高压型静脉留置针,EFFECT_ON,效果,S_Extravasation,SymptomSign,碘对比剂外渗
+NPM_VascularVisualization,NonPharmacologicalManagement,血管可视化,EFFECT_ON,效果,S_Extravasation,SymptomSign,碘对比剂外渗
+MP_VascularAccessDeviceSelection,ManagementPrinciple,血管通路器材选择与验证,EFFECT_ON,效果,S_Extravasation,SymptomSign,碘对比剂外渗
+MP_NurseLedRiskStratification,ManagementPrinciple,护士主导的风险分层与通路规划,EFFECT_ON,效果,S_Extravasation,SymptomSign,碘对比剂外渗
+MP_MultiStakeholderSafety,ManagementPrinciple,多主体协同的输液安全管理,EFFECT_ON,效果,S_Extravasation,SymptomSign,碘对比剂外渗
+MP_NursingQualityManagement,ManagementPrinciple,护理质量管理与敏感指标监测,EFFECT_ON,效果,S_Extravasation,SymptomSign,碘对比剂外渗
+MP_VascularAccessMaintenance,ManagementPrinciple,静脉通路维护与并发症防控,EFFECT_ON,效果,S_Phlebitis,SymptomSign,导管相关静脉炎
+S_AdverseReaction,SymptomSign,不良反应,ASSESSED_BY,评估,AT_ReactionDocumentation,AssessmentTool,超敏反应评估与记录
+S_AllergicReaction,SymptomSign,过敏反应,MANAGED_BY,处置,MP_AllergySpecialistReferral,ManagementPrinciple,药物过敏专科转诊与登记
+S_AdverseReaction,SymptomSign,不良反应,ASSESSED_BY,评估,MP_RiskAssessmentFramework,ManagementPrinciple,对比剂反应危险因素评估框架
+S_AdverseReaction,SymptomSign,不良反应,MANAGED_BY,处置,MP_EmergencyPreparedness,ManagementPrinciple,检查室急救准备
+S_AdverseReaction,SymptomSign,不良反应,MANAGED_BY,处置,NPM_PostReactionObservation,NonPharmacologicalManagement,过敏反应后分级观察
+S_AdverseReaction,SymptomSign,不良反应,MANAGED_BY,处置,NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理
+S_Bronchospasm,SymptomSign,支气管痉挛,TREATED_BY,管理,PM_Beta2Agonist,PharmacologicalManagement,短效选择性β受体激动剂
+S_AnaphylacticShock,SymptomSign,过敏性休克,TREATED_BY,管理,NPM_CrystalloidBolus,NonPharmacologicalManagement,晶体液快速扩容
+E_ContrastInjection,Exam,碘对比剂,MANAGED_BY,处置,MP_OncologyContrastRisk,ManagementPrinciple,肿瘤患者对比剂风险管理
+E_ContrastInjection,Exam,碘对比剂,MANAGED_BY,处置,MP_PediatricContrastSafety,ManagementPrinciple,儿童对比剂安全要点
+MP_PediatricContrastSafety,ManagementPrinciple,儿童对比剂安全要点,MANAGED_BY,处置,PM_WeightBasedDosing,PharmacologicalManagement,按体重调整用药剂量
+S_Extravasation,SymptomSign,碘对比剂外渗,TREATED_BY,管理,PM_DrugSpecificAntidotes,PharmacologicalManagement,药物特异性外渗解毒剂
+S_Extravasation,SymptomSign,碘对比剂外渗,EDUCATED_BY,科普,DE_ExtravasationRedFlags,DiseaseEducation,外渗恶化警示信号宣教
+S_Phlebitis,SymptomSign,导管相关静脉炎,EDUCATED_BY,科普,DE_MenuBasedHealthEducation,DiseaseEducation,菜单式健康教育
+S_Blistering,SymptomSign,皮肤水疱,BELONGS_TO,属于,SC_ExtravDamageStage,SymptomCategory,药物外渗性损伤分期
+S_ChronicNonHealingWound,SymptomSign,慢性难愈性创面,BELONGS_TO,属于,SC_ExtravasationSpectrum,SymptomCategory,静脉外渗反应谱
+S_RedFlagSigns,SymptomSign,外渗恶化警示征象,BELONGS_TO,属于,SC_ExtravasationSpectrum,SymptomCategory,静脉外渗反应谱
+SC_ReactionOnsetWindow,SymptomCategory,对比剂不良反应发生时间窗,BELONGS_TO,属于,SC_AdverseSpectrum,SymptomCategory,碘对比剂不良反应谱
+SC_ReactionMechanismType,SymptomCategory,对比剂反应机制分型,BELONGS_TO,属于,SC_AdverseSpectrum,SymptomCategory,碘对比剂不良反应谱
+SC_BreakthroughReaction,SymptomCategory,突破性过敏反应,BELONGS_TO,属于,SC_Hypersensitivity,SymptomCategory,过敏反应谱
+S_AllergicReaction,SymptomSign,过敏反应,ASSESSED_BY,评估,AT_CMAllergyTest,AssessmentTool,碘对比剂过敏试验
+S_AdverseReaction,SymptomSign,不良反应,AT_RISK_BY,高危因素,RF_BetaBlockerACEI,RiskFactor,β 阻滞剂与 ACEI 用药
+MP_EmergencyPreparedness,ManagementPrinciple,检查室急救准备,MANAGED_BY,处置,MP_SimulationTraining,ManagementPrinciple,模拟演练式急救培训
+MP_EvidenceBasedPractice,ManagementPrinciple,循证实践转化,EFFECT_ON,效果,MP_NursingPrevention,ManagementPrinciple,护理预防
