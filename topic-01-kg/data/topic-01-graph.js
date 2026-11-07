@@ -1789,6 +1789,111 @@ window.KG_GRAPH = {
           "cat": "水化方案"
         },
         {
+          "k": "CKD 沿用 KDIGO 诊断标准",
+          "v": "共识明确 AKI 相关术语；CKD 采用 KDIGO 标准——eGFR 持续 3 个月 <60 ml/min·1.73㎡，或肾功能结构损害（病理/标志物/影像异常）超过 3 个月",
+          "quote": "无论是否伴有估算的肾小球滤过率（eGFR）降低，肾功能结构损害超过3个月，包括病理异常、肾损害的标志物异常（如血液或尿液成分异常、影像检查异常等）；\n无论是否有肾功能结构损害，eGFR持续3个月<60\nml/min·1.73㎡\n。",
+          "src": "R05",
+          "cat": "定义与时间窗"
+        },
+        {
+          "k": "按 eGFR 分档决定是否预防",
+          "v": "CKD 患者增强前测血肌酐；eGFR<30 且未行维持性透析者，慎评心功能后行静脉水化；eGFR 稳定且 ≥30 者一般无需预防；eGFR 30~44 且有多个危险因素可酌情预防",
+          "quote": "8、推荐CKD患者CT增强检查前测量肌酐水平以评估肾功能。\n9、针对eGFR<30 ml/min/1.73㎡且未行维持性透析的患者，临床需慎重评估心功能等因素，再进行静脉水化预防。\n10、对于eGFR稳定且≥30 ml/min/1.73㎡的患者，一般无需采取预防措施。\n11、若患者有多个危险因素，当eGFR范围为30~44 ml/min/1.73㎡时，可根据临床判断适当采取预防措施。",
+          "src": "R05",
+          "cat": "预防指征"
+        },
+        {
+          "k": "生理盐水水化的时机与剂量",
+          "v": "首选生理盐水静脉水化：检查前 1~4 h 开始、检查后持续 3~12 h；固定量前后各 500 ml，或按体重 1~3 ml/kg·h；约 12 h 长方案风险更低但门诊难执行",
+          "quote": "12、生理盐水水化是目前广泛推荐的预防对比剂相关急性肾损伤的方法。\n较常用的水化方案是检查开始前静脉输入生理盐水1~4 h，检查后持续3~12 h，常用的输液量是碘对比剂使用前后固定输液500 ml，或基于体重调整的输液方案（每小时1~3 ml/kg）。\n输液时长较长的方案（约12h）比较短的方案更能降低对比剂相关急性肾损伤的风险，但较长的水化方案在门诊患者较难执行。",
+          "src": "R05",
+          "cat": "水化方案"
+        },
+        {
+          "k": "肾毒性药与二甲双胍停用时机",
+          "v": "eGFR<30：检查前 1~2 天及检查后 2 天停肾毒性药；注射时起停二甲双胍，48 h 内重算 eGFR，肾功能无显著变化可复用；eGFR 30~59 者二甲双胍用量保持在安全范围",
+          "quote": "6、对eGFR<30 ml/min·1.73㎡的患者，建议在检查前1~2天及检查后2天内停止使用肾毒性药物。若停止某种肾毒性药物给患者带来的潜在风险比对比剂相关急性肾损伤更大，应根据患者治疗情况进行个性化调整，可保留必要药物的使用，且可放宽水化预防eGFR阈值。\n7、如患者eGFR<30 ml/min·1.73㎡，应从碘对比剂注射时开始停止使用二甲双胍，注射后48 h内计算eGFR，如果肾功能无显著变化可重新使用二甲双胍。若eGFR为30~59 ml/min·1.73㎡，二甲双胍使用量应保持在安全范围内。",
+          "src": "R05",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "透析患者的碘对比剂使用",
+          "v": "已行维持性透析且无容量负荷过重者可使用碘对比剂检查；不推荐常规透析治疗 CI-AKI，仅在病情严重危及生命、有透析指征时考虑；碘对比剂可与预定血透/血滤同步",
+          "quote": "14、对进行透析的无肾功能的患者可以使用静脉碘对比剂，不建议进行紧急透析，但碘对比剂的使用可以与预定的血液透析或血液滤过同步。",
+          "src": "R05",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "PC-AKI / CI-AKI 的定义",
+          "v": "使用碘对比剂后 72 h 内血肌酐升高超过 26.5 μmol/L 或大于基线值的 1.5 倍，即定义为 PC-AKI；若明确因果关系则称 CI-AKI",
+          "quote": "PC-AKI或CI-AKI定义为使用碘对比剂后72 h内血肌酐升高超过26.5 μmol/L或大于基线值的1.5倍。",
+          "src": "R06",
+          "cat": "定义与时间窗"
+        },
+        {
+          "k": "eGFR 分层的 CI-AKI 风险",
+          "v": "CI-AKI 风险随 CKD 分期递增：eGFR ≥60 约 5%、45~59 约 10%、30~44 约 15%、<30 约 30%；ESUR 按给药途径定阈值——动脉注射 eGFR<45、静脉注射 eGFR<30",
+          "quote": "eGFR≥60 ml·min-1·(1.73 m2)-1时，CI-AKI的发生率约为5%；eGFR在45~59 ml·min-1·(1.73 m2)-1之间时约为10%；eGFR在30~44 ml·min-1·(1.73 m2)-1时约为15%；eGFR<30 ml·min-1·(1.73 m2)-1时约为30%。然而各指南中推荐的CI-AKI的eGFR阈值存在差异，日本循环学会（JCS）2018年指南和SSUR指南分别推荐将eGFR<60 ml·min-1·(1.73 m2)-1和eGFR<45 ml·min-1·(1.73 m2)-1作为CI-AKI的危险因素，特别是在合并多种非肾脏危险因素的情况下；2018年ESUR指南进一步根据碘对比剂的给药途径，提出动脉注射碘对比剂时eGFR<45 ml·min-1·(1.73 m2)-1或静脉注射碘对比剂时eGFR<30 ml·min-1·(1.73 m2)-1为CI-AKI的独立危险因素。",
+          "src": "R06",
+          "cat": "风险分层"
+        },
+        {
+          "k": "水化晶体与有效性比较",
+          "v": "静脉水化晶体用生理盐水（0.9% NaCl）或碳酸氢钠（1.4%或154 mmol/L NaHCO3）；PRESERVE 试验示二者对预防死亡、透析及 90 d 肾功能下降无明显获益差异",
+          "quote": "生理盐水（0.9% NaCl）和碳酸氢钠溶液（1.4%或154 mmol/L NaHCO3）是目前研究最多的静脉水化溶液。但是生理盐水和碳酸氢钠溶液在预防CI-AKI有效性的差异方面并未有统一定论：最初的研究倾向于使用碳酸氢盐，碳酸氢盐可以碱化尿液并减少活性氧的形成，许多RCT研究和荟萃分析均表明静脉注射碳酸氢钠预防CI-AKI比氯化钠更有效；但在后续的一些RCT研究和荟萃分析中并没有得到相同的结论；最近的PRESERVE试验研究表明在接受血管造影的高风险患者中，静脉注射碳酸氢钠与静脉注射氯化钠对预防死亡、需要透析或90 d肾功能持续下降或CI-AKI没有明显获益。因此，静脉注射碳酸氢盐水化与生理盐水水化具有相似的有效性，但在临床应用时需考虑碳酸氢盐溶液成本较高、可能导致碱中毒等，为患者选择合适的水化晶体。",
+          "src": "R06",
+          "cat": "水化方案"
+        },
+        {
+          "k": "检查前后肾功能检测节点",
+          "v": "非紧急者检查前 7 d 内检测肾功能；CI-AKI 高危者检查后 48 h 内复查，48 h 内确诊者尽早干预，并随访监测肾功能至少 30 d",
+          "quote": "10．非紧急情况下，建议在行碘对比剂检查前7 d内进行肾功能检测；紧急情况下，若能推迟碘对比剂检查，建议先行肾功能检测；在不立即行碘对比剂检查就会对患者造成危害的情况下，仍建议先行肾功能检测，但可在没有肾功能检测结果的情况下紧急行碘对比剂检查。（Ⅱa，C）\n\n11．对于CI-AKI高危的患者，接受碘对比剂检查后48 h内应复查肾功能，若48 h内诊断为CI-AKI，需尽早采取干预措施，并随访监测患者肾功能至少30 d。（Ⅱa，C）",
+          "src": "R06",
+          "cat": "随访监测"
+        },
+        {
+          "k": "ACEI/ARB 与二甲双胍处理",
+          "v": "ACEI/ARB 无证据需在造影期间停药，只需监测肾功能（2 个月内肌酐上升超过 30% 才考虑停药）；二甲双胍与碘对比剂合用有乳酸酸中毒风险，停用与重启方案在说明书与各指南间存在差异",
+          "quote": "长期使用血管紧张素转换酶抑制剂（ACEI）或血管紧张素Ⅱ受体阻断剂（ARB）由于对肾小球出球小动脉的扩张作用强于对入球小动脉的作用，可能会引起血肌酐水平的升高，但是目前并没有循证证据或指南推荐应在造影期间停药，只需要检测肾功能，如果2个月内肌酐上升超过30%才考虑停药。\n\n二甲双胍为临床一线降糖药物，与碘对比剂合并使用具有潜在的乳酸酸中毒风险，但在使用碘对比剂前后是否需要停用二甲双胍、如何停用以及停用之后如何重启在说明书及不同的指南推荐方案中存在差异，见。",
+          "src": "R06",
+          "cat": "特殊人群"
+        },
+        {
+          "k": "CIAKI 的严格定义口径",
+          "v": "严格定义：血肌酐较基线相对升高 ≥25%，或绝对升高 ≥0.5 mg/dL（≥44 μmol/L），且发生在造影后 48–72 h 内",
+          "quote": "In studies that defined CIAKI as a ≥25% relative, or ≥0.5 mg/dL or ≥44 μmol/L absolute, increase in serum creatinine from baseline within 48–72 hours after contrast exposure",
+          "src": "R18",
+          "cat": "定义与时间窗"
+        },
+        {
+          "k": "按基线 eGFR 分层分析",
+          "v": "按基线 eGFR 分层：30–59 mL/min per 1.73 m2 = 中度 CKD，<30 mL/min per 1.73 m2 = 重度 CKD（依 KDOQI CKD 分期）",
+          "quote": "we stratified studies according to baseline estimated glomerular filtration rate (eGFR), as either 30–59 mL/min per 1.73 m2 (moderate chronic kidney disease [CKD]), or <30 mL/min per 1.73 m2 (severe CKD) according to KDOQI stages of CKD",
+          "src": "R18",
+          "cat": "风险分层"
+        },
+        {
+          "k": "指南基线的防 CI-AKI 策略",
+          "v": "ESC 指南：预防 CI-AKI 需充分水化 + 限制对比剂用量 + 使用等渗或低渗对比剂",
+          "quote": "European Society of Cardiology guidelines recommend hydration to prevent CIAKI in addition to limited contrast volume and to the use of iso- or low- osmolar contrast agents",
+          "src": "R18",
+          "cat": "水化方案"
+        },
+        {
+          "k": "强化水化降低死亡与透析",
+          "v": "LVEDP 指导水化降低死亡（OR 0.09，CrI 0.01–0.59）；器械匹配水化降低透析需求（OR 0.05，CrI 0.01–0.58）；甲基黄嘌呤类亦降低死亡（OR 0.12，CrI 0.01–0.94）",
+          "quote": "Compared with saline, methylxanthines (0.12, 0.01–0.94) and LVEDP-guided hydration (0.09, 0.01–0.59) were associated with lower odds of death in the overall analysis (Fig 4, Table G in S1 Appendix). Data on the need for dialysis were derived from 43 studies (involving 14,985 patients). There were significantly lower odds of need for dialysis with device-guided matched hydration (0.05, 0.01–0.58).",
+          "src": "R18",
+          "cat": "随访监测"
+        },
+        {
+          "k": "重度 CKD 亚组的替代治疗",
+          "v": "重度 CKD 亚组 9 项研究、1,205 例：肾脏替代治疗与盐水加 N-乙酰半胱氨酸较单纯盐水降低 CI-AKI 风险；肾脏替代治疗还降低死亡（OR 0.21，CrI 0.09–0.46）",
+          "quote": "Nine studies (involving 1,205 patients) contributed to the analysis of CIAKI in patients with severe CKD: in these patients, renal replacement therapy and saline plus N-acetylcysteine were associated with lower odds of CIAKI when compared to saline (Fig F in S1 Appendix). Renal replacement therapy was associated with lower odds of death among severe CKD patients (0.21, 0.09–0.46) compared to saline (Fig 4).",
+          "src": "R18",
+          "cat": "特殊人群"
+        },
+        {
           "k": "PC-AKI 的定义与时间窗",
           "v": "PC-AKI 与 CI-AKI 定义为**对比剂给药后 48–72 h 内**血肌酐升高 ≥ 0.3 mg/dL，或达到基线的 **1.5–1.9 倍**（KDIGO 的 AKI 定义）",
           "quote": "PC-AKI and CI-AKI should be defined as an increase in sCr of ≥ 0.3mg/dl, or of ≥ 1.5–1.9 times baseline (KDIGO definition of AKI) in the 48–72 h following CM administration.",
