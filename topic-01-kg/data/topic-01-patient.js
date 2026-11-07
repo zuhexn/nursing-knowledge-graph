@@ -2,39 +2,6 @@ window.KG_PATIENT = {
   "topicKey": "topic-01",
   "intro": "CT 增强扫描后可能出现的碘对比剂过敏反应与碘对比剂外渗，护理要点按「做完检查后请做什么 → 有哪些症状要马上说」排列。",
   "disclaimer": "本页内容整理自公开文献，用于护理与健康科普，不能替代医生的诊断和治疗。身体不适请及时就医。",
-  "urgentTitle": "如果您有以下症状",
-  "urgent": [
-    {
-      "nodeId": "S_AnaphylacticShock",
-      "plain": "过敏反应很重，会危及生命",
-      "action": "立刻告诉医护人员并呼救，需要马上抢救"
-    },
-    {
-      "nodeId": "S_ThroatDiscomfort",
-      "plain": "嗓子发紧、像有东西卡住",
-      "action": "立刻告诉医护人员，别等它自己过去"
-    },
-    {
-      "nodeId": "S_FacialEdema",
-      "plain": "面部和眼睑肿起来，提示反应正在加重",
-      "action": "立刻告诉医护人员，说明是打完造影剂以后出现的"
-    },
-    {
-      "nodeId": "S_ChestTightness",
-      "plain": "胸口发闷、觉得透不过气",
-      "action": "立刻告诉医护人员"
-    },
-    {
-      "nodeId": "S_Urticaria",
-      "plain": "身上成片出现的红色风团",
-      "action": "立刻告诉医护人员"
-    },
-    {
-      "nodeId": "S_Extravasation",
-      "plain": "造影剂没进血管、漏到皮下，轻则肿痛，重则组织坏死",
-      "action": "立刻告诉打针的护士；不要揉搓注射部位"
-    }
-  ],
   "aftercareTitle": "做完增强检查后，请这样做",
   "aftercare": [
     {
@@ -54,6 +21,39 @@ window.KG_PATIENT = {
       "nodeId": "S_ContrastNausea",
       "plain": "如果你有恶心呕吐，请不要紧张，先喝水缓解一下，如果症状加重，立刻告诉医护人员。",
       "action": "恶心、呕吐多属**生理性反应**（与过敏反应不同），一般无需特殊处理；留观期间多喝水（每小时不少于 100 mL）也有助于对比剂排出。"
+    }
+  ],
+  "urgentTitle": "如果您有以下症状",
+  "urgent": [
+    {
+      "nodeId": "S_ChestTightness",
+      "plain": "胸口发闷、觉得透不过气",
+      "action": "立刻告诉医护人员"
+    },
+    {
+      "nodeId": "S_Urticaria",
+      "plain": "身上成片出现的红色风团",
+      "action": "立刻告诉医护人员"
+    },
+    {
+      "nodeId": "S_ThroatDiscomfort",
+      "plain": "嗓子发紧、像有东西卡住",
+      "action": "立刻告诉医护人员，别等它自己过去"
+    },
+    {
+      "nodeId": "S_FacialEdema",
+      "plain": "面部和眼睑肿起来，提示反应正在加重",
+      "action": "立刻告诉医护人员，说明是打完造影剂以后出现的"
+    },
+    {
+      "nodeId": "S_AnaphylacticShock",
+      "plain": "过敏反应很重，会危及生命",
+      "action": "立刻告诉医护人员并呼救，需要马上抢救"
+    },
+    {
+      "nodeId": "S_Extravasation",
+      "plain": "造影剂没进血管、漏到皮下，轻则肿痛，重则组织坏死",
+      "action": "立刻告诉打针的护士；不要揉搓注射部位"
     }
   ]
 };

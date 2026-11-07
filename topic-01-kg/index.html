@@ -517,12 +517,36 @@
   /* 须知是**正常流程**，不是急症 ⇒ 不用红色的「!」 */
   .lg-urgent.aftercare .lg-uh{color:#1d6b46;}
   .lg-urgent.aftercare .lg-uh::before{content:"✓";background:#2f7a5b;}
-  /* 第二个板块：恶心呕吐的安抚（2026-11-06 客户要求）——
-     蓝色 = 安抚/提示，与绿色（正常流程）、红色（危险告警）三者区分开。
-     图标用 ●（区别于绿卡的 ✓ 与红卡的 !）。 */
-  .lg-urgent.advice{border-color:#9dbfe0;background:rgba(29,95,176,.07);}
-  .lg-urgent.advice .lg-uh{color:#12457f;}
-  .lg-urgent.advice .lg-uh::before{content:"CF";background:#1d5fb0;}
+  /* 第二个板块：恶心呕吐的安抚（2026-11-06 客户要求）
+     样式**与另外两块一致**（客户原话：「而且样式和他俩一致」）——
+     ⇒ 用**绿卡（须知）那一套**：它属于「照着做 / 别担心」类内容，不是危险告警。
+        页面上于是只有两种卡片：绿 = 须知与安抚，红 = 危险告警（颜色只有一个含义，
+        病人一眼能分清「哪张要照做，哪张要马上叫人」）。
+  /* 第二个板块：恶心呕吐的安抚（2026-11-06 客户要求）
+     样式**与另外两块一致**（客户原话：「而且样式和他俩一致」）——
+     ⇒ 用**绿卡（须知）那一套**：它属于「照着做 / 别担心」类内容，不是危险告警。
+        页面上于是只有两种卡片：绿 = 须知与安抚，红 = 危险告警（颜色只有一个含义，
+        病人一眼能分清「哪张要照做，哪张要马上叫人」）。
+  /* 第二个板块：恶心呕吐的安抚（2026-11-06 客户要求）
+     样式**与另外两块一致**（客户原话：「而且样式和他俩一致」）——
+     ⇒ 用**绿卡（须知）那一套**：它属于「照着做 / 别担心」类内容，不是危险告警。
+        页面上于是只有两种卡片：绿 = 须知与安抚，红 = 危险告警（颜色只有一个含义，
+        病人一眼能分清「哪张要照做，哪张要马上叫人」）。
+  /* 第二个板块：恶心呕吐的安抚（2026-11-06 客户要求）
+     样式**与另外两块一致**（客户原话：「而且样式和他俩一致」）——
+     ⇒ 用**绿卡（须知）那一套**：它属于「照着做 / 别担心」类内容，不是危险告警。
+        页面上于是只有两种卡片：绿 = 须知与安抚，红 = 危险告警（颜色只有一个含义，
+        病人一眼能分清「哪张要照做，哪张要马上叫人」）。
+  /* 第二个板块：恶心呕吐的安抚（2026-11-06 客户要求）
+     样式**与另外两块一致**（客户原话：「而且样式和他俩一致」）——
+     ⇒ 用**绿卡（须知）那一套**：它属于「照着做 / 别担心」类内容，不是危险告警。
+        页面上于是只有两种卡片：绿 = 须知与安抚，红 = 危险告警（颜色只有一个含义，
+        病人一眼能分清「哪张要照做，哪张要马上叫人」）。
+  /* 第二个板块：恶心呕吐的安抚（2026-11-06 客户要求）
+     样式**与另外两块一致**（客户原话：「而且样式和他俩一致」）——
+     ⇒ 用**绿卡（须知）那一套**：它属于「照着做 / 别担心」类内容，不是危险告警。
+        页面上于是只有两种卡片：绿 = 须知与安抚，红 = 危险告警（颜色只有一个含义，
+        病人一眼能分清「哪张要照做，哪张要马上叫人」）。
   .ac-list{display:flex;flex-direction:column;gap:9px;}
   .ac-item{
     border:1px solid var(--line);border-radius:11px;background:var(--panel);
@@ -1189,7 +1213,7 @@
     return '<button type="button" class="' + cls + '" data-id="' + esc(n.id) + '">' +
       '<span class="row-top"><span class="row-name">' + esc(n.name) + '</span>' +
       '<span class="row-tp" style="color:' + t.color + '">' + esc(t.label) + '</span></span>' +
-      '<span class="row-sum">' + esc(n.summary || "") + '</span></button>';
+      '<span class="row-sum">' + mdBold(n.summary || "") + '</span></button>';
   }
 
   /* ============ 框架树渲染 ============
@@ -1231,7 +1255,7 @@
       '<button type="button" class="cat-head" data-frame="' + esc(fid) + '">' +
         '<span class="cat-dot" style="background:' + t.color + '"></span>' +
         '<span class="cat-txt"><span class="cat-label">' + esc(f.name) + '</span>' +
-        '<span class="cat-desc">' + esc(f.summary || "") + '</span></span>' +
+        '<span class="cat-desc">' + mdBold(f.summary || "") + '</span></span>' +
         '<span class="cat-n">' + frameCount(fid) + '</span>' +
         '<span class="cat-arrow">›</span>' +
       '</button>';
@@ -1369,8 +1393,8 @@
         '<div class="ac-list">' + after.map(function (a) {
           var n = NODE[a.nodeId];
           return '<div class="ac-item">' +
-            '<div class="ac-plain">' + esc(a.plain) + '</div>' +
-            (a.action ? '<div class="ac-act">' + esc(a.action) + '</div>' : '') +
+            '<div class="ac-plain">' + mdBold(a.plain) + '</div>' +
+            (a.action ? '<div class="ac-act">' + mdBold(a.action) + '</div>' : '') +
             (n ? '<span class="u-link" data-open="' + esc(n.id) + '">相关知识：' + esc(n.name) + ' ›</span>' : '') +
             '</div>';
         }).join("") + '</div></div>';
@@ -1381,13 +1405,14 @@
     var advice = (PG && PG.advice) || [];
     if (advice.length) {
       htmlU +=
-        '<div class="lg-urgent advice"><h3 class="lg-uh">' +
+        /* class 与绿卡相同（aftercare）—— 客户要求「样式和他俩一致」⇒ 用同一套样式 */
+        '<div class="lg-urgent aftercare"><h3 class="lg-uh">' +
         esc((PG && PG.adviceTitle) || "如果您有恶心、呕吐") + '</h3>' +
         '<div class="ac-list">' + advice.map(function (a) {
           var n = NODE[a.nodeId];
           return '<div class="ac-item">' +
-            '<div class="ac-plain">' + esc(a.plain) + '</div>' +
-            (a.action ? '<div class="ac-act">' + esc(a.action) + '</div>' : '') +
+            '<div class="ac-plain">' + mdBold(a.plain) + '</div>' +
+            (a.action ? '<div class="ac-act">' + mdBold(a.action) + '</div>' : '') +
             (n ? '<span class="u-link" data-open="' + esc(n.id) + '">相关知识：' + esc(n.name) + ' ›</span>' : '') +
             '</div>';
         }).join("") + '</div></div>';
@@ -1406,8 +1431,8 @@
           return '<button type="button" class="u-item' + (state.triageSel[u.nodeId] ? " sel" : "") + '" data-id="' + esc(u.nodeId) + '">' +
             '<span class="u-check"></span>' +
             '<span class="u-body">' +
-            '<span class="u-plain"><span class="u-num">' + num + '</span>' + esc(u.plain) + '</span>' +
-            '<span class="u-act">' + esc(u.action) + '</span>' +
+            '<span class="u-plain"><span class="u-num">' + num + '</span>' + mdBold(u.plain) + '</span>' +
+            '<span class="u-act">' + mdBold(u.action) + '</span>' +
             (n ? '<span class="u-link" data-open="' + esc(n.id) + '">相关知识：' + esc(n.name) + ' ›</span>' : '') +
             '</span></button>';
         }).join("") +
@@ -2364,6 +2389,14 @@
       return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c];
     });
   }
+  /* 数据里的要点/摘要用 **…** 标关键限定（例：**仅中、重度外渗适用**）。
+     ⚠️ 只用 esc() 的话星号会**原样显示在页面上**（实测 12 个节点摘要 + 33 条要点正文
+     受影响）⇒ 这里做一层极小的加粗渲染：**先转义再替换**，只认 `**` 这一种，
+     不引第三方 markdown 库（⛔ 交付物必须零外链）。
+     顺序必须是 esc → 替换：反过来会被 `&` 里的内容误伤。 */
+  function mdBold(s) {
+    return esc(s).replace(/\*\*([^*]*)\*\*/g, "<b>$1</b>");
+  }
   function other(e, n) { return e.source === n.id ? e.target : e.source; }
   function relText(e, n) {
     return (e.source === n.id) ? (e.label + " →") : ("← " + e.label);
@@ -2452,7 +2485,9 @@
       litChip +
       (n.tags || []).map(function (g) { return '<span class="chip tag">' + esc(g) + '</span>'; }).join("") +
       (n.aliases || []).map(function (a) { return '<span class="chip alias">' + esc(a) + '</span>'; }).join("");
-    document.getElementById("p-summary").textContent = n.summary || "";
+    /* 摘要里也有 **加粗** 标记（例：「**仅中、重度外渗适用**」）⇒ 用 mdBold 渲染，
+       否则星号原样显示。mdBold 内部先 esc ⇒ 不存在 XSS。 */
+    document.getElementById("p-summary").innerHTML = mdBold(n.summary || "");
 
     var body = document.getElementById("panel-body");
     var html = "";
@@ -2486,7 +2521,7 @@
           }
           return '<div class="pt">' +
             '<div class="pt-k">' + esc(d.k || "") + '</div>' +
-            '<div class="pt-v">' + esc(d.v || "") + '</div>' +
+            '<div class="pt-v">' + mdBold(d.v || "") + '</div>' +
             quote + srcBtn + '</div>';
         }).join("") + '</div>';
     }
