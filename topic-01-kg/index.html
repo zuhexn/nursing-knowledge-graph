@@ -517,6 +517,12 @@
   /* 须知是**正常流程**，不是急症 ⇒ 不用红色的「!」 */
   .lg-urgent.aftercare .lg-uh{color:#1d6b46;}
   .lg-urgent.aftercare .lg-uh::before{content:"✓";background:#2f7a5b;}
+  /* 第二个板块：恶心呕吐的安抚（2026-11-06 客户要求）——
+     蓝色 = 安抚/提示，与绿色（正常流程）、红色（危险告警）三者区分开。
+     图标用 ●（区别于绿卡的 ✓ 与红卡的 !）。 */
+  .lg-urgent.advice{border-color:#9dbfe0;background:rgba(29,95,176,.07);}
+  .lg-urgent.advice .lg-uh{color:#12457f;}
+  .lg-urgent.advice .lg-uh::before{content:"CF";background:#1d5fb0;}
   .ac-list{display:flex;flex-direction:column;gap:9px;}
   .ac-item{
     border:1px solid var(--line);border-radius:11px;background:var(--panel);
@@ -542,6 +548,10 @@
                   mask-image:linear-gradient(180deg,#000 62%,transparent 100%);}
   .pt .quoteToggle{display:inline-block;margin-top:4px;font-size:13.5px;
                    color:var(--accent-2);cursor:pointer;user-select:none;}
+  /* 症状清单的圈码编号（2026-11-06 客户在页面上标注 ①~⑤ ⇒ 让编号可见） */
+  .u-plain .u-num{
+    display:inline-block;margin-right:7px;font-weight:700;color:var(--accent-2);
+  }
   .pt .src{display:inline-block;margin-top:5px;font-size:14px;color:var(--accent-2);cursor:pointer;}
   /* 客户实践要点的出处：**不可点**（没有文献节点可跳）⇒ 用琥珀色 + 无手型 */
   .pt .src.client{color:#7a4a02;background:rgba(168,100,4,.10);padding:2px 8px;border-radius:9px;cursor:default;}
@@ -1365,18 +1375,38 @@
             '</div>';
         }).join("") + '</div></div>';
     }
+    /* 第二个板块（2026-11-06 客户要求）：恶心呕吐的安抚 ——
+       位置在「做完增强检查后，请这样做」与「如果您有以下症状」之间。
+       键名 advice / adviceTitle 来自患者层数据文件（数据自带，不是代码写死的）。 */
+    var advice = (PG && PG.advice) || [];
+    if (advice.length) {
+      htmlU +=
+        '<div class="lg-urgent advice"><h3 class="lg-uh">' +
+        esc((PG && PG.adviceTitle) || "如果您有恶心、呕吐") + '</h3>' +
+        '<div class="ac-list">' + advice.map(function (a) {
+          var n = NODE[a.nodeId];
+          return '<div class="ac-item">' +
+            '<div class="ac-plain">' + esc(a.plain) + '</div>' +
+            (a.action ? '<div class="ac-act">' + esc(a.action) + '</div>' : '') +
+            (n ? '<span class="u-link" data-open="' + esc(n.id) + '">相关知识：' + esc(n.name) + ' ›</span>' : '') +
+            '</div>';
+        }).join("") + '</div></div>';
+    }
     if (urgent.length) {
       htmlU +=
         '<div class="lg-urgent triage"><h3 class="lg-uh">' +
         esc((PG && PG.urgentTitle) || "出现这些情况，请及时就医") + '</h3>' +
         '<p class="triage-hint">逐条点选符合你现在的情况；如果都没有，点下面的「这些都没有」。</p>' +
         '<div class="triage-result" id="triageResult"></div>' +
-        urgent.map(function (u) {
+        urgent.map(function (u, ui) {
           var n = NODE[u.nodeId];
+          /* 编号（2026-11-06 客户在页面上用红笔标了 ①~⑤）—— 病人可以指着说
+             「我是第 3 个」；护士照着编号看，一秒对上。用圈码字符，与客户标注一致。 */
+          var num = NUM_CIRCLED[ui] || (ui + 1);
           return '<button type="button" class="u-item' + (state.triageSel[u.nodeId] ? " sel" : "") + '" data-id="' + esc(u.nodeId) + '">' +
             '<span class="u-check"></span>' +
             '<span class="u-body">' +
-            '<span class="u-plain">' + esc(u.plain) + '</span>' +
+            '<span class="u-plain"><span class="u-num">' + num + '</span>' + esc(u.plain) + '</span>' +
             '<span class="u-act">' + esc(u.action) + '</span>' +
             (n ? '<span class="u-link" data-open="' + esc(n.id) + '">相关知识：' + esc(n.name) + ' ›</span>' : '') +
             '</span></button>';
@@ -1831,6 +1861,10 @@
      ⚠️ 必须定义在**任何用到它的地方之前** —— `var` 提升只保证变量存在，
         不保证值已赋值（用在前面会拿到 undefined）。 */
   var CLIENT_SRC = "__CLI" + "ENT__";
+
+  /* 症状清单的圈码编号（①-⑳）—— 纯排版字符，与题目无关 */
+  var NUM_CIRCLED = ["①","②","③","④","⑤","⑥","⑦","⑧","⑨","⑩",
+                     "⑪","⑫","⑬","⑭","⑮","⑯","⑰","⑱","⑲","⑳"];
 
   /* 这个节点被几篇文献支撑（= 它的要点出处去重计数）——
      客户 2026-11-06 问「你有多少文献支撑这个」⇒ 画布上也让**证据密度**可见：
