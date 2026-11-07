@@ -1692,6 +1692,98 @@
       ]
     },
     {
+      "id": "S_ContrastAKI",
+      "name": "对比剂相关急性肾损伤",
+      "type": "SymptomSign",
+      "tags": [
+        "症状体征"
+      ],
+      "aliases": [
+        "contrast induced acute kidney injury",
+        "对比剂相关性急性肾损伤",
+        "造影剂肾病",
+        "CI-AKI"
+      ],
+      "summary": "打完造影剂后短时间内出现的肾脏功能损伤。",
+      "attrs": [],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
+          "title": "肾病患者静脉注射碘对比剂应用专家共识",
+          "journal": "中华放射学杂志",
+          "year": 2021,
+          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
+          "grade": "指南与共识",
+          "ref": "R05"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会",
+          "title": "碘对比剂诱导的急性肾损伤防治的专家共识",
+          "journal": "中华肾脏病杂志",
+          "year": 2022,
+          "cite": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会 / 碘对比剂诱导的急性肾损伤防治的专家共识 / 中华肾脏病杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R06"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Navarese EP, Gurbel PA, Andreotti F, et al.",
+          "title": "心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析",
+          "journal": "公共科学图书馆·综合",
+          "year": 2017,
+          "cite": "Navarese EP, Gurbel PA, Andreotti F, et al. / 心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析 / 公共科学图书馆·综合 / 2017",
+          "grade": "汇总证据",
+          "ref": "R18"
+        },
+        {
+          "type": "声明",
+          "author": "Davenport MS, Perazella MA, Yee J, et al.",
+          "title": "碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明",
+          "journal": "放射学",
+          "year": 2020,
+          "cite": "Davenport MS, Perazella MA, Yee J, et al. / 碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明 / 放射学 / 2020",
+          "grade": "学会声明",
+          "ref": "R11"
+        },
+        {
+          "type": "推荐",
+          "author": "de Laforcade L, Bobot M, Bellin MF, et al.",
+          "title": "欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评",
+          "journal": "肾脏病与治疗",
+          "year": 2021,
+          "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / 欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评 / 肾脏病与治疗 / 2021",
+          "grade": "推荐意见",
+          "ref": "R15"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "PC-AKI 的定义与时间窗",
+          "v": "PC-AKI 与 CI-AKI 定义为**对比剂给药后 48–72 h 内**血肌酐升高 ≥ 0.3 mg/dL，或达到基线的 **1.5–1.9 倍**（KDIGO 的 AKI 定义）",
+          "quote": "PC-AKI and CI-AKI should be defined as an increase in sCr of ≥ 0.3mg/dl, or of ≥ 1.5–1.9 times baseline (KDIGO definition of AKI) in the 48–72 h following CM administration.",
+          "src": "EN-23",
+          "cat": "定义与时间窗"
+        },
+        {
+          "k": "PC-AKI 与 CI-AKI 的用词差别",
+          "v": "没有对照人群时用 **PC-AKI**（造影剂后急性肾损伤）；只有存在对照、能证明造影剂是病因时才用 **CI-AKI**（造影剂诱导）",
+          "quote": "The term Contrast-Induced Acute Kidney Injury (CI-AKI) should be used only when comparison with a control allows CM to be shown to be the cause of the acute kidney injury.",
+          "src": "EN-23",
+          "cat": "定义与时间窗"
+        },
+        {
+          "k": "诊断依据是化验值而非病人结局",
+          "v": "PC-AKI 的诊断通常依据**血肌酐绝对或相对变化的替代指标**，而不是病人结局（肾衰竭、需肾脏替代治疗、死亡等）",
+          "quote": "The diagnosis of PC-AKI is usually based on surrogate measures of absolute or relative change in serum creatinine (sCr), rather than patient outcomes, such as renal failure, need for RRT or mortality.",
+          "src": "EN-23",
+          "cat": "临床表现"
+        }
+      ]
+    },
+    {
       "id": "SC_AdverseSpectrum",
       "name": "碘对比剂不良反应谱",
       "type": "SymptomCategory",
@@ -6236,6 +6328,100 @@
       "graph": "topic-01"
     },
     {
+      "id": "R05",
+      "name": "肾病患者静脉注射碘对比剂应用专家共识",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "共识"
+      ],
+      "aliases": [
+        "肾病患者静脉注射碘对比剂应用专家共识",
+        "肾病与碘对比剂共识",
+        "共识",
+        "consensus"
+      ],
+      "summary": "专门给肾功能不好的人定规矩：哪些指标要看、哪些药要停、怎么补液。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "共识"
+        },
+        {
+          "k": "年份",
+          "v": "2021"
+        },
+        {
+          "k": "核验标识",
+          "v": "rs.yiigle.com/cmaid/1323652 · 2021;55(6):580-590"
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
+          "title": "肾病患者静脉注射碘对比剂应用专家共识",
+          "journal": "中华放射学杂志",
+          "year": 2021,
+          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
+          "grade": "指南与共识",
+          "ref": "R05"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R06",
+      "name": "碘对比剂诱导的急性肾损伤防治的专家共识",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "共识"
+      ],
+      "aliases": [
+        "碘对比剂诱导的急性肾损伤防治的专家共识",
+        "CI-AKI 防治专家共识",
+        "共识",
+        "consensus"
+      ],
+      "summary": "从用药角度讲清楚造影后肾损伤怎么定义、怎么防、怎么治。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "共识"
+        },
+        {
+          "k": "年份",
+          "v": "2022"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.3760/cma.j.cn441217-20210909-00041 · 2022;38(3):265-288"
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "共识",
+          "author": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会",
+          "title": "碘对比剂诱导的急性肾损伤防治的专家共识",
+          "journal": "中华肾脏病杂志",
+          "year": 2022,
+          "cite": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会 / 碘对比剂诱导的急性肾损伤防治的专家共识 / 中华肾脏病杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R06"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
       "id": "R07",
       "name": "影像科碘对比剂输注安全专家共识",
       "type": "Reference",
@@ -6420,6 +6606,53 @@
           "cite": "广西壮族自治区市场监督管理局 / DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范 / 广西壮族自治区市场监督管理局（地方标准） / 2024",
           "grade": "标准与规范",
           "ref": "R10"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R11",
+      "name": "碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "声明"
+      ],
+      "aliases": [
+        "ACR 与 NKF 肾脏病患者使用碘对比剂声明",
+        "ACR-NKF consensus statement",
+        "声明",
+        "statement"
+      ],
+      "summary": "美国放射学会和肾脏病基金会的联合声明，给肾功能不好的人定了用药底线。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "声明"
+        },
+        {
+          "k": "年份",
+          "v": "2020"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.1148/radiol.2019192094 · PMID 31961246 · 2020;294(3):660-668"
+        },
+        {
+          "k": "证据等级",
+          "v": "学会声明"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Davenport MS, Perazella MA, Yee J, et al.",
+          "title": "碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明",
+          "journal": "放射学",
+          "year": 2020,
+          "cite": "Davenport MS, Perazella MA, Yee J, et al. / 碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明 / 放射学 / 2020",
+          "grade": "学会声明",
+          "ref": "R11"
         }
       ],
       "graph": "topic-01"
@@ -6703,6 +6936,53 @@
           "cite": "姚金秀、杨丽娜、梅申聪、董芳辉 / 放射科碘对比剂外渗影响因素的系统评价 / 上海护理 / 2023",
           "grade": "汇总证据",
           "ref": "R17"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "R18",
+      "name": "心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析",
+      "type": "Reference",
+      "tags": [
+        "文献",
+        "Meta分析"
+      ],
+      "aliases": [
+        "对比剂急性肾损伤预防网络 Meta 分析",
+        "CI-AKI prevention network meta-analysis",
+        "Meta分析",
+        "meta analysis"
+      ],
+      "summary": "比较各种防造影肾损伤办法的网络 Meta 分析，补液方案排序的证据来源。",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "Meta分析"
+        },
+        {
+          "k": "年份",
+          "v": "2017"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.1371/journal.pone.0168726 · PMID 28151965 · 2017;12(2):e0168726"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "Meta分析",
+          "author": "Navarese EP, Gurbel PA, Andreotti F, et al.",
+          "title": "心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析",
+          "journal": "公共科学图书馆·综合",
+          "year": 2017,
+          "cite": "Navarese EP, Gurbel PA, Andreotti F, et al. / 心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析 / 公共科学图书馆·综合 / 2017",
+          "grade": "汇总证据",
+          "ref": "R18"
         }
       ],
       "graph": "topic-01"
@@ -7930,6 +8210,56 @@
           "journal": "JBI 系统评价与实施报告",
           "year": 2018,
           "cite": "Ding S, Meystre NR, Campeanu C, Gullo G / CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析 / JBI 系统评价与实施报告 / 2018 · DOI 10.11124/JBISRIR-2017-003348 · PMID 29324560"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
+          "title": "肾病患者静脉注射碘对比剂应用专家共识",
+          "journal": "中华放射学杂志",
+          "year": 2021,
+          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
+          "grade": "指南与共识",
+          "ref": "R05"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会",
+          "title": "碘对比剂诱导的急性肾损伤防治的专家共识",
+          "journal": "中华肾脏病杂志",
+          "year": 2022,
+          "cite": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会 / 碘对比剂诱导的急性肾损伤防治的专家共识 / 中华肾脏病杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R06"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Navarese EP, Gurbel PA, Andreotti F, et al.",
+          "title": "心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析",
+          "journal": "公共科学图书馆·综合",
+          "year": 2017,
+          "cite": "Navarese EP, Gurbel PA, Andreotti F, et al. / 心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析 / 公共科学图书馆·综合 / 2017",
+          "grade": "汇总证据",
+          "ref": "R18"
+        },
+        {
+          "type": "声明",
+          "author": "Davenport MS, Perazella MA, Yee J, et al.",
+          "title": "碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明",
+          "journal": "放射学",
+          "year": 2020,
+          "cite": "Davenport MS, Perazella MA, Yee J, et al. / 碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明 / 放射学 / 2020",
+          "grade": "学会声明",
+          "ref": "R11"
+        },
+        {
+          "type": "推荐",
+          "author": "de Laforcade L, Bobot M, Bellin MF, et al.",
+          "title": "欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评",
+          "journal": "肾脏病与治疗",
+          "year": 2021,
+          "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / 欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评 / 肾脏病与治疗 / 2021",
+          "grade": "推荐意见",
+          "ref": "R15"
         }
       ],
       "graph": "topic-01"
@@ -10977,6 +11307,50 @@
           "cite": "Romanczuk D, Lange S, Medrzycka-Dabrowska W, Cichowlas G / Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography / Journal of Clinical Medicine / 2026",
           "grade": "汇总证据",
           "ref": "EN-22"
+        }
+      ]
+    },
+    {
+      "id": "EN-23",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "Post-contrast acute kidney injury - Part 1: Definition, clinical features, incidence, role of contrast medium and risk factors（ESUR Contrast Media Safety Committee 更新指南）",
+      "tags": [
+        "文献",
+        "指南"
+      ],
+      "aliases": [
+        "Post-contrast acute kidney injury - Part 1: Definition, clinical features, incidence, role of contrast medium and risk factors（ESUR Contrast Media Safety Committee 更新指南）"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "指南"
+        },
+        {
+          "k": "年份",
+          "v": "2018"
+        },
+        {
+          "k": "核验标识",
+          "v": "28(11):2845-2855 · DOI 10.1007/s00330-018-5847-8 · PMID 29426991 · PMC5986826（开放获取）"
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "van der Molen AJ, Reimer P, Dekkers IA, et al.",
+          "title": "Post-contrast acute kidney injury - Part 1: Definition, clinical features, incidence, role of contrast medium and risk factors（ESUR Contrast Media Safety Committee 更新指南）",
+          "journal": "European Radiology",
+          "year": 2018,
+          "cite": "van der Molen AJ, Reimer P, Dekkers IA, et al. / Post-contrast acute kidney injury - Part 1: Definition, clinical features, incidence, role of contrast medium and risk factors（ESUR Contrast Media Safety Committee 更新指南） / European Radiology / 2018",
+          "grade": "指南与共识",
+          "ref": "EN-23"
         }
       ]
     },
@@ -18743,6 +19117,12 @@
       "label": "表现为"
     },
     {
+      "source": "DC_CTEnhancedRisk",
+      "target": "S_ContrastAKI",
+      "type": "HAS_SYMPTOM",
+      "label": "表现为"
+    },
+    {
       "source": "E_CTEnhancedScan",
       "target": "S_AdverseReaction",
       "type": "EFFECT_ON",
@@ -18753,6 +19133,12 @@
       "target": "S_Extravasation",
       "type": "EFFECT_ON",
       "label": "效果"
+    },
+    {
+      "source": "E_CTEnhancedScan",
+      "target": "S_ContrastAKI",
+      "type": "HAS_SYMPTOM",
+      "label": "表现为"
     },
     {
       "source": "E_ContrastInjection",
@@ -19080,6 +19466,12 @@
       "label": "高危因素"
     },
     {
+      "source": "S_ContrastAKI",
+      "target": "RF_AgeExtremes",
+      "type": "AT_RISK_BY",
+      "label": "高危因素"
+    },
+    {
       "source": "S_AdverseReaction",
       "target": "RF_ContrastAllergyHistory",
       "type": "AT_RISK_BY",
@@ -19229,6 +19621,19 @@
       "target": "NPM_CloseObservation",
       "type": "TREATED_BY",
       "label": "管理"
+    },
+    {
+      "source": "S_ContrastAKI",
+      "target": "NPM_CloseObservation",
+      "type": "TREATED_BY",
+      "label": "管理"
+    },
+    {
+      "source": "S_ContrastAKI",
+      "target": "NPM_OralHydration",
+      "type": "TREATED_BY",
+      "label": "管理",
+      "note": "肾功能正常者口服补液即可"
     },
     {
       "source": "E_CTEnhancedScan",
@@ -19510,6 +19915,36 @@
     {
       "source": "S_Extravasation",
       "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_ContrastAKI",
+      "target": "R05",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_ContrastAKI",
+      "target": "R06",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_ContrastAKI",
+      "target": "R18",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_ContrastAKI",
+      "target": "R11",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_ContrastAKI",
+      "target": "R15",
       "type": "SUPPORTED_BY",
       "label": "出处"
     },
@@ -20414,6 +20849,13 @@
       "role": "framework"
     },
     {
+      "source": "S_ContrastAKI",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
       "source": "S_ContrastNausea",
       "target": "FW_SymptomSign",
       "type": "BELONGS_TO",
@@ -20873,6 +21315,36 @@
     {
       "source": "FW_SymptomSign",
       "target": "R22",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R05",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R06",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R18",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R11",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R15",
       "type": "SUPPORTED_BY",
       "label": "出处"
     },
@@ -25289,6 +25761,12 @@
     {
       "source": "RF_ContrastAllergyHistory",
       "target": "R23",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "S_ContrastAKI",
+      "target": "EN-23",
       "type": "SUPPORTED_BY",
       "label": "出处"
     },

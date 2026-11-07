@@ -18,8 +18,10 @@ ManagementPrinciple,不良反应分级处置原则,属于,ManagementPrinciple,�
 DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗,表现为,SymptomSign,不良反应
 DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗,表现为,SymptomSign,过敏反应
 DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗,表现为,SymptomSign,碘对比剂外渗
+DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗,表现为,SymptomSign,对比剂相关急性肾损伤
 Exam,CT增强扫描,效果,SymptomSign,不良反应
 Exam,CT增强扫描,效果,SymptomSign,碘对比剂外渗
+Exam,CT增强扫描,表现为,SymptomSign,对比剂相关急性肾损伤
 Exam,碘对比剂,效果,SymptomSign,过敏反应
 Exam,碘对比剂,效果,SymptomSign,碘对比剂外渗
 Exam,碘对比剂,效果,SymptomSign,不良反应
@@ -74,6 +76,7 @@ SymptomSign,碘对比剂外渗,高危因素,RiskFactor,静脉条件差
 SymptomSign,碘对比剂外渗,高危因素,RiskFactor,高压注射
 SymptomSign,碘对比剂外渗,高危因素,RiskFactor,未做生理盐水试推
 SymptomSign,碘对比剂外渗,高危因素,RiskFactor,高龄或低龄
+SymptomSign,对比剂相关急性肾损伤,高危因素,RiskFactor,高龄或低龄
 SymptomSign,不良反应,高危因素,RiskFactor,既往碘对比剂过敏史
 SymptomSign,皮疹,高危因素,RiskFactor,既往碘对比剂过敏史
 SymptomSign,荨麻疹,高危因素,RiskFactor,既往碘对比剂过敏史
@@ -98,6 +101,8 @@ SymptomSign,碘对比剂外渗,管理,NonPharmacologicalManagement,血管可视�
 SymptomSign,不良反应,管理,NonPharmacologicalManagement,密切观察
 SymptomSign,过敏性休克,管理,NonPharmacologicalManagement,密切观察
 SymptomSign,过敏反应,管理,NonPharmacologicalManagement,密切观察
+SymptomSign,对比剂相关急性肾损伤,管理,NonPharmacologicalManagement,密切观察
+SymptomSign,对比剂相关急性肾损伤,管理,NonPharmacologicalManagement,口服补液
 Exam,CT增强扫描,管理,NonPharmacologicalManagement,对比剂预处理
 Exam,碘对比剂,管理,NonPharmacologicalManagement,对比剂预处理
 SymptomSign,不良反应,管理,NonPharmacologicalManagement,心理疏导
@@ -145,6 +150,11 @@ SymptomSign,碘对比剂外渗,出处,Reference,静脉对比剂外渗：系统�
 SymptomSign,碘对比剂外渗,出处,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
 SymptomSign,碘对比剂外渗,出处,Reference,放射科碘对比剂外渗影响因素的系统评价
 SymptomSign,碘对比剂外渗,出处,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
+SymptomSign,对比剂相关急性肾损伤,出处,Reference,肾病患者静脉注射碘对比剂应用专家共识
+SymptomSign,对比剂相关急性肾损伤,出处,Reference,碘对比剂诱导的急性肾损伤防治的专家共识
+SymptomSign,对比剂相关急性肾损伤,出处,Reference,心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析
+SymptomSign,对比剂相关急性肾损伤,出处,Reference,碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明
+SymptomSign,对比剂相关急性肾损伤,出处,Reference,欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评
 SymptomCategory,碘对比剂不良反应谱,出处,Reference,美国放射学会对比剂手册
 SymptomCategory,过敏反应谱,出处,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
 SymptomCategory,静脉外渗反应谱,出处,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
@@ -292,6 +302,7 @@ SymptomSign,胸闷,属于,SymptomSign,症状体征
 SymptomSign,全身无力,属于,SymptomSign,症状体征
 SymptomSign,过敏性休克,属于,SymptomSign,症状体征
 SymptomSign,碘对比剂外渗,属于,SymptomSign,症状体征
+SymptomSign,对比剂相关急性肾损伤,属于,SymptomSign,症状体征
 SymptomSign,恶心,属于,SymptomSign,症状体征
 SymptomSign,呕吐,属于,SymptomSign,症状体征
 SymptomSign,局部肿胀,属于,SymptomSign,症状体征
@@ -360,6 +371,11 @@ SymptomSign,症状体征,出处,Reference,放射科碘对比剂外渗影响因�
 SymptomSign,症状体征,出处,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
 SymptomSign,症状体征,出处,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
 SymptomSign,症状体征,出处,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
+SymptomSign,症状体征,出处,Reference,肾病患者静脉注射碘对比剂应用专家共识
+SymptomSign,症状体征,出处,Reference,碘对比剂诱导的急性肾损伤防治的专家共识
+SymptomSign,症状体征,出处,Reference,心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析
+SymptomSign,症状体征,出处,Reference,碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明
+SymptomSign,症状体征,出处,Reference,欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评
 Exam,辅助检查,出处,Reference,美国放射学会对比剂手册
 Exam,辅助检查,出处,Reference,碘对比剂使用指南（第2版）
 Exam,辅助检查,出处,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
@@ -1096,6 +1112,7 @@ AssessmentTool,外渗探测与压力监测,出处,Reference,CT 扫描患者对�
 ManagementPrinciple,外渗处置原则,出处,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
 AssessmentTool,过敏史询问,出处,Reference,对比剂即刻超敏反应危险因素的系统评价与 Meta 分析
 RiskFactor,既往碘对比剂过敏史,出处,Reference,对比剂即刻超敏反应危险因素的系统评价与 Meta 分析
+SymptomSign,对比剂相关急性肾损伤,出处,Reference,"Post-contrast acute kidney injury - Part 1: Definition, clinical features, incidence, role of contrast medium and risk factors（ESUR Contrast Media Safety Committee 更新指南）"
 ManagementPrinciple,外渗处置原则,出处,Reference,中药如意金黄散早期湿敷在药物外渗性皮肤损伤中的效果分析
 NonPharmacologicalManagement,中药外敷法（外渗）,出处,Reference,总局关于修订跌打万花油等 32 种非处方药说明书的公告（2017 年第 175 号）附件 10《如意金黄散非处方药说明书范本》
 SymptomSign,血管迷走反应,属于,SymptomCategory,碘对比剂不良反应谱

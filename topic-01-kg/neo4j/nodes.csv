@@ -13,6 +13,7 @@ S_ChestTightness,SymptomSign,胸闷,胸口发闷、觉得透不过气的主诉�
 S_GeneralizedWeakness,SymptomSign,全身无力,浑身没劲、站不稳的感觉。,症状体征,2
 S_AnaphylacticShock,SymptomSign,过敏性休克,最重的一类过敏反应，会危及生命，必须马上抢救。,症状体征,3
 S_Extravasation,SymptomSign,碘对比剂外渗,造影剂没进血管、漏到皮下，轻则肿痛，重则组织坏死。,症状体征,7
+S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,打完造影剂后短时间内出现的肾脏功能损伤。,症状体征,5
 SC_AdverseSpectrum,SymptomCategory,碘对比剂不良反应谱,把打造影剂之后可能出的各类反应归到一起的分类。,症状分类,1
 SC_Hypersensitivity,SymptomCategory,过敏反应谱,过敏这一类反应从轻到重的分层。,症状分类,1
 SC_ExtravasationSpectrum,SymptomCategory,静脉外渗反应谱,外渗发生后从轻到重的表现分层：局部肿胀、疼痛、发红、皮肤发凉与发白发紧；疼痛加重、感觉改变、活动受限、出现水疱或组织坏死，都是需要立即升级处理的信号。,症状分类,1
@@ -57,16 +58,20 @@ R01,Reference,美国放射学会对比剂手册,美国放射学会每年更新�
 R02,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新,欧洲泌尿放射学会对比剂安全委员会关于静脉外渗的系统评价与处理指南。,文献 指南,1
 R03,Reference,碘对比剂使用指南（第2版）,我国放射学界关于碘对比剂怎么选、怎么用、怎么防反应的基础文件。,文献 指南,1
 R04,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）,中华护理学会最新一版外渗护理实践指南，是外渗预防与处理的操作蓝本。,文献 指南,1
+R05,Reference,肾病患者静脉注射碘对比剂应用专家共识,专门给肾功能不好的人定规矩：哪些指标要看、哪些药要停、怎么补液。,文献 共识,1
+R06,Reference,碘对比剂诱导的急性肾损伤防治的专家共识,从用药角度讲清楚造影后肾损伤怎么定义、怎么防、怎么治。,文献 共识,1
 R07,Reference,影像科碘对比剂输注安全专家共识,讲输药前后每一步怎么做、出了事怎么处理的第一份护理共识。,文献 共识,1
 R08,Reference,WS/T 433—2023 静脉治疗护理技术操作标准,全国静脉治疗的操作标准：怎么选管、怎么穿刺、怎么管并发症。,文献 标准,1
 R09,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范,把外渗预防与护理写成地方标准的地方文件，步骤写得很细。,文献 规范,1
 R10,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范,专门针对 CT 增强场景的外渗预防与护理地方规范。,文献 规范,1
+R11,Reference,碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明,美国放射学会和肾脏病基金会的联合声明，给肾功能不好的人定了用药底线。,文献 声明,1
 R12,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明,两个学会联合发布的过敏反应防治声明，是国际上最新的对比剂过敏处理口径。,文献 声明,1
 R13,Reference,放射性对比剂超敏反应处理流程（2024 年更新）,把对比剂过敏反应分成轻中重、并给出逐级处理路径的算法文件。,文献 建议,1
 R14,Reference,对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）,加拿大放射学会与变态反应学会给出的对比剂过敏实践指导。,文献 建议,1
 R15,Reference,欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评,欧洲泌尿放射学会对比剂使用推荐意见，护理侧的用药建议多出自此。,文献 推荐,1
 R16,Reference,过敏反应：2023 年实践参数更新,国际公认的过敏性休克抢救实践参数，肾上腺素怎么打写得很清楚。,文献 推荐实践,1
 R17,Reference,放射科碘对比剂外渗影响因素的系统评价,汇总 19 项研究、2063 例外渗案例，归纳出外渗的常见危险因素。,文献 系统评价,1
+R18,Reference,心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析,比较各种防造影肾损伤办法的网络 Meta 分析，补液方案排序的证据来源。,文献 Meta分析,1
 R20,Reference,影像护理学,系统讲影像科护理的教材，护理常规与患者宣教的通识来源。,文献 书籍,1
 R21,Reference,"碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析","汇总 5 项研究、307,329 次注射：高黏度对比剂加温到 37℃ 可减少过敏反应；但未证实能减少外渗。",文献 Meta分析,1
 R22,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析,汇总 CT 增强扫描外渗的危险因素与干预证据：女性、住院患者等风险较高；干预证据仍有限。,文献 Meta分析,1
@@ -80,7 +85,7 @@ S_ExtravasationCoolSkin,SymptomSign,皮肤发凉,外渗部位皮肤温度低于�
 S_ExtravasationPallor,SymptomSign,皮肤发白发紧,外渗部位皮肤发白、发紧，是皮下积液张力高的表现。,外渗表现 症状体征,2
 NT_SelfCareTheory,NursingTheory,自护理论,自护理论（Orem，1971）认为人天生具备自我护理的能力，护理的任务是在患者自护能力不足时提供补偿与支持。落到本主题：指导患者与家属参与打针前的准备、检查后的观察，以及居家自我照护与早期求助。,护理理论 自护理论,1
 R24,Reference,Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析,系统评价与剂量反应 Meta 分析，纳入 46 项研究：以自护理论为基础的照护方案可改善慢病成人的生活质量、自我照护能力与自我效能，并降低焦虑与抑郁；但研究间异质性高、证据质量不理想，仍需设计良好的试验。,文献 系统评价,1
-FW_SymptomSign,SymptomSign,症状体征,论文「疾病知识图」一级框架之一。收录碘对比剂使用后可能出现的症状与体征 —— 不良反应、过敏反应、碘对比剂外渗；过敏反应下的下一级表现（皮疹、荨麻疹、瘙痒、颜面部水肿、咽喉部不适、胸闷、全身无力、过敏性休克），以及碘对比剂外渗下的局部表现（局部肿胀、局部疼痛、局部发红、皮肤发凉、皮肤发白发紧）。,知识框架 一级框架,13
+FW_SymptomSign,SymptomSign,症状体征,论文「疾病知识图」一级框架之一。收录碘对比剂使用后可能出现的症状与体征 —— 不良反应、过敏反应、碘对比剂外渗；过敏反应下的下一级表现（皮疹、荨麻疹、瘙痒、颜面部水肿、咽喉部不适、胸闷、全身无力、过敏性休克），以及碘对比剂外渗下的局部表现（局部肿胀、局部疼痛、局部发红、皮肤发凉、皮肤发白发紧）。,知识框架 一级框架,18
 FW_Exam,Exam,辅助检查,论文「疾病知识图」一级框架之一。收录与本主题相关的检查项目 —— CT 增强扫描、碘对比剂。,知识框架 一级框架,5
 FW_ManagementPrinciple,ManagementPrinciple,处置原则,论文「疾病知识图」一级框架之一。收录护理处置原则 —— 护理措施、护理预防、护理干预，以及其下的外渗处置原则与不良反应分级处置原则。,知识框架 一级框架,8
 FW_NursingTheory,NursingTheory,护理理论,论文「疾病知识图」一级框架之一。收录指导护理实践的理论 —— 自护理论（Orem）：人天生具备自我护理的能力，护理的任务是在患者自护能力不足时提供补偿与支持；对应到本主题，是指导患者与家属参与预防、早期识别与居家自我照护。以及早期预警：在情况变坏之前先看出苗头、及时升级处理。,知识框架 一级框架,3
@@ -142,6 +147,7 @@ EN-19,Reference,Immediate hypersensitivity reactions to iodinated contrast media
 EN-20,Reference,"Iodinated Contrast Media in Oncologic CT: A Narrative Review of Safety, Risk Stratification, and Practical Considerations",,文献 综述,1
 EN-21,Reference,Integrating CT-Derived Body Composition and Real-Time Injection Pressure Monitoring for Predicting Contrast Media Extravasation: A Retrospective Cohort Study with Implications for Nurse-Led Risk Stratification,,文献 队列研究,1
 EN-22,Reference,Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography,,文献 综述,1
+EN-23,Reference,"Post-contrast acute kidney injury - Part 1: Definition, clinical features, incidence, role of contrast medium and risk factors（ESUR Contrast Media Safety Committee 更新指南）",,文献 指南,1
 CN-03,Reference,中医护理技术在碘对比剂外渗处理中应用的范围综述,,文献 系统评价,1
 CN-04,Reference,如意金黄双散糊剂外敷在治疗碘造影剂外渗中的应用,,文献 对照研究,1
 CN-05,Reference,中药如意金黄散早期湿敷在药物外渗性皮肤损伤中的效果分析,,文献 病例系列,1

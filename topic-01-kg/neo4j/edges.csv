@@ -18,8 +18,10 @@ MP_AdverseReactionTriage,ManagementPrinciple,不良反应分级处置原则,BELO
 DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗,HAS_SYMPTOM,表现为,S_AdverseReaction,SymptomSign,不良反应
 DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗,HAS_SYMPTOM,表现为,S_AllergicReaction,SymptomSign,过敏反应
 DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗,HAS_SYMPTOM,表现为,S_Extravasation,SymptomSign,碘对比剂外渗
+DC_CTEnhancedRisk,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗,HAS_SYMPTOM,表现为,S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤
 E_CTEnhancedScan,Exam,CT增强扫描,EFFECT_ON,效果,S_AdverseReaction,SymptomSign,不良反应
 E_CTEnhancedScan,Exam,CT增强扫描,EFFECT_ON,效果,S_Extravasation,SymptomSign,碘对比剂外渗
+E_CTEnhancedScan,Exam,CT增强扫描,HAS_SYMPTOM,表现为,S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤
 E_ContrastInjection,Exam,碘对比剂,EFFECT_ON,效果,S_AllergicReaction,SymptomSign,过敏反应
 E_ContrastInjection,Exam,碘对比剂,EFFECT_ON,效果,S_Extravasation,SymptomSign,碘对比剂外渗
 E_ContrastInjection,Exam,碘对比剂,EFFECT_ON,效果,S_AdverseReaction,SymptomSign,不良反应
@@ -74,6 +76,7 @@ S_Extravasation,SymptomSign,碘对比剂外渗,AT_RISK_BY,高危因素,RF_Fragil
 S_Extravasation,SymptomSign,碘对比剂外渗,AT_RISK_BY,高危因素,RF_HighPressureInjection,RiskFactor,高压注射
 S_Extravasation,SymptomSign,碘对比剂外渗,AT_RISK_BY,高危因素,RF_NoSalineFlush,RiskFactor,未做生理盐水试推
 S_Extravasation,SymptomSign,碘对比剂外渗,AT_RISK_BY,高危因素,RF_AgeExtremes,RiskFactor,高龄或低龄
+S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,AT_RISK_BY,高危因素,RF_AgeExtremes,RiskFactor,高龄或低龄
 S_AdverseReaction,SymptomSign,不良反应,AT_RISK_BY,高危因素,RF_ContrastAllergyHistory,RiskFactor,既往碘对比剂过敏史
 S_Rash,SymptomSign,皮疹,AT_RISK_BY,高危因素,RF_ContrastAllergyHistory,RiskFactor,既往碘对比剂过敏史
 S_Urticaria,SymptomSign,荨麻疹,AT_RISK_BY,高危因素,RF_ContrastAllergyHistory,RiskFactor,既往碘对比剂过敏史
@@ -98,6 +101,8 @@ S_Extravasation,SymptomSign,碘对比剂外渗,TREATED_BY,管理,NPM_VascularVis
 S_AdverseReaction,SymptomSign,不良反应,TREATED_BY,管理,NPM_CloseObservation,NonPharmacologicalManagement,密切观察
 S_AnaphylacticShock,SymptomSign,过敏性休克,TREATED_BY,管理,NPM_CloseObservation,NonPharmacologicalManagement,密切观察
 S_AllergicReaction,SymptomSign,过敏反应,TREATED_BY,管理,NPM_CloseObservation,NonPharmacologicalManagement,密切观察
+S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,TREATED_BY,管理,NPM_CloseObservation,NonPharmacologicalManagement,密切观察
+S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,TREATED_BY,管理,NPM_OralHydration,NonPharmacologicalManagement,口服补液
 E_CTEnhancedScan,Exam,CT增强扫描,TREATED_BY,管理,NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理
 E_ContrastInjection,Exam,碘对比剂,TREATED_BY,管理,NPM_ContrastPreparation,NonPharmacologicalManagement,对比剂预处理
 S_AdverseReaction,SymptomSign,不良反应,TREATED_BY,管理,NPM_PsychologicalSupport,NonPharmacologicalManagement,心理疏导
@@ -145,6 +150,11 @@ S_Extravasation,SymptomSign,碘对比剂外渗,SUPPORTED_BY,出处,R02,Reference
 S_Extravasation,SymptomSign,碘对比剂外渗,SUPPORTED_BY,出处,R04,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
 S_Extravasation,SymptomSign,碘对比剂外渗,SUPPORTED_BY,出处,R17,Reference,放射科碘对比剂外渗影响因素的系统评价
 S_Extravasation,SymptomSign,碘对比剂外渗,SUPPORTED_BY,出处,R09,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
+S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,SUPPORTED_BY,出处,R05,Reference,肾病患者静脉注射碘对比剂应用专家共识
+S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,SUPPORTED_BY,出处,R06,Reference,碘对比剂诱导的急性肾损伤防治的专家共识
+S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,SUPPORTED_BY,出处,R18,Reference,心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析
+S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,SUPPORTED_BY,出处,R11,Reference,碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明
+S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,SUPPORTED_BY,出处,R15,Reference,欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评
 SC_AdverseSpectrum,SymptomCategory,碘对比剂不良反应谱,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
 SC_Hypersensitivity,SymptomCategory,过敏反应谱,SUPPORTED_BY,出处,R12,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
 SC_ExtravasationSpectrum,SymptomCategory,静脉外渗反应谱,SUPPORTED_BY,出处,R02,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
@@ -292,6 +302,7 @@ S_ChestTightness,SymptomSign,胸闷,BELONGS_TO,属于,FW_SymptomSign,SymptomSign
 S_GeneralizedWeakness,SymptomSign,全身无力,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
 S_AnaphylacticShock,SymptomSign,过敏性休克,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
 S_Extravasation,SymptomSign,碘对比剂外渗,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
+S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
 S_ContrastNausea,SymptomSign,恶心,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
 S_ContrastVomiting,SymptomSign,呕吐,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
 S_ExtravasationSwelling,SymptomSign,局部肿胀,BELONGS_TO,属于,FW_SymptomSign,SymptomSign,症状体征
@@ -360,6 +371,11 @@ FW_SymptomSign,SymptomSign,症状体征,SUPPORTED_BY,出处,R17,Reference,放射
 FW_SymptomSign,SymptomSign,症状体征,SUPPORTED_BY,出处,R09,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
 FW_SymptomSign,SymptomSign,症状体征,SUPPORTED_BY,出处,R10,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
 FW_SymptomSign,SymptomSign,症状体征,SUPPORTED_BY,出处,R22,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
+FW_SymptomSign,SymptomSign,症状体征,SUPPORTED_BY,出处,R05,Reference,肾病患者静脉注射碘对比剂应用专家共识
+FW_SymptomSign,SymptomSign,症状体征,SUPPORTED_BY,出处,R06,Reference,碘对比剂诱导的急性肾损伤防治的专家共识
+FW_SymptomSign,SymptomSign,症状体征,SUPPORTED_BY,出处,R18,Reference,心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析
+FW_SymptomSign,SymptomSign,症状体征,SUPPORTED_BY,出处,R11,Reference,碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明
+FW_SymptomSign,SymptomSign,症状体征,SUPPORTED_BY,出处,R15,Reference,欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评
 FW_Exam,Exam,辅助检查,SUPPORTED_BY,出处,R01,Reference,美国放射学会对比剂手册
 FW_Exam,Exam,辅助检查,SUPPORTED_BY,出处,R03,Reference,碘对比剂使用指南（第2版）
 FW_Exam,Exam,辅助检查,SUPPORTED_BY,出处,R10,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
@@ -1096,6 +1112,7 @@ AT_ExtravasationDetection,AssessmentTool,外渗探测与压力监测,SUPPORTED_B
 MP_ExtravasationPrinciple,ManagementPrinciple,外渗处置原则,SUPPORTED_BY,出处,R22,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
 AT_AllergyHistory,AssessmentTool,过敏史询问,SUPPORTED_BY,出处,R23,Reference,对比剂即刻超敏反应危险因素的系统评价与 Meta 分析
 RF_ContrastAllergyHistory,RiskFactor,既往碘对比剂过敏史,SUPPORTED_BY,出处,R23,Reference,对比剂即刻超敏反应危险因素的系统评价与 Meta 分析
+S_ContrastAKI,SymptomSign,对比剂相关急性肾损伤,SUPPORTED_BY,出处,EN-23,Reference,"Post-contrast acute kidney injury - Part 1: Definition, clinical features, incidence, role of contrast medium and risk factors（ESUR Contrast Media Safety Committee 更新指南）"
 MP_ExtravasationPrinciple,ManagementPrinciple,外渗处置原则,SUPPORTED_BY,出处,CN-05,Reference,中药如意金黄散早期湿敷在药物外渗性皮肤损伤中的效果分析
 NPM_TcmExternalApply,NonPharmacologicalManagement,中药外敷法（外渗）,SUPPORTED_BY,出处,DRUG-01,Reference,总局关于修订跌打万花油等 32 种非处方药说明书的公告（2017 年第 175 号）附件 10《如意金黄散非处方药说明书范本》
 S_VasovagalReaction,SymptomSign,血管迷走反应,BELONGS_TO,属于,SC_AdverseSpectrum,SymptomCategory,碘对比剂不良反应谱
