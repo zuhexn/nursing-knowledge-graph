@@ -1761,6 +1761,34 @@
       "graph": "topic-01",
       "details": [
         {
+          "k": "按 eGFR 分层的 CA-AKI 风险",
+          "v": "按 KDIGO 肌酐标准，造影剂**合并**的急性肾损伤（CA-AKI）风险随 CKD 分期逐级升高：eGFR ≥ 60 约 **5%**、45–59 约 **10%**、30–44 约 **15%**、< 30 约 **30%**",
+          "quote": "Using stage I KDIGO serum creatinine criteria, the risk of CA-AKI is approximately 5% at eGFR greater than or equal to 60, 10% at eGFR of 45–59, 15% at eGFR of 30–44, and 30% at eGFR less than 30 mL/min/1.73 m 2 .",
+          "src": "R11",
+          "cat": "风险分层"
+        },
+        {
+          "k": "谁需要静脉水化预防",
+          "v": "已有 AKI 或 eGFR **< 30 mL/min/1.73 m²** 且未接受维持性透析者，**指征用静脉生理盐水预防**；eGFR 30–44 的高危个体可由开单医生斟酌考虑",
+          "quote": "prophylaxis with intravenous normal saline is indicated for patients who have AKI or an estimated glomerular filtration rate less than 30 mL/min/1.73 m 2 who are not undergoing maintenance dialysis. In individual high-risk circumstances, prophylaxis may be considered in patients with an estimated glomerular filtration rate of 30–44 mL/min/1.73 m 2 at the discretion of the ordering clinician.",
+          "src": "R11",
+          "cat": "预防指征"
+        },
+        {
+          "k": "哪些人不需要预防",
+          "v": "**eGFR ≥ 30 且稳定**的普通人群、接受慢性透析者、以及心衰风险者**不需要**预防性水化；⛔ 该 eGFR 阈值**不因合并糖尿病而调整**",
+          "quote": "Prophylaxis is not indicated for the general population of patients with stable eGFR greater than or equal to 30 mL/min/1.73 m 2 , for patients undergoing chronic dialysis, or for patients at risk for heart failure. This eGFR threshold should not be adjusted solely based on concomitant diabetes mellitus.",
+          "src": "R11",
+          "cat": "预防指征"
+        },
+        {
+          "k": "水化的首选方式与时间窗",
+          "v": "预防指征成立时**首选等渗生理盐水**扩容；理想时机/容量/速度尚不确定，**常规做法是从给药前 1 小时开始、持续到给药后 3–12 小时**（如前后各 500 mL，或按体重计算）",
+          "quote": "When prophylaxis is indicated, isotonic volume expansion with normal saline is the preferred method. The ideal timing, volume, and rate of volume expansion is uncertain. Typical volume expansion regimens begin 1 hour before and continue 3–12 hours after contrast media administration, with typical doses ranging from fixed (eg, 500 mL before and after) to weight-based vo",
+          "src": "R11",
+          "cat": "水化方案"
+        },
+        {
           "k": "PC-AKI 的定义与时间窗",
           "v": "PC-AKI 与 CI-AKI 定义为**对比剂给药后 48–72 h 内**血肌酐升高 ≥ 0.3 mg/dL，或达到基线的 **1.5–1.9 倍**（KDIGO 的 AKI 定义）",
           "quote": "PC-AKI and CI-AKI should be defined as an increase in sCr of ≥ 0.3mg/dl, or of ≥ 1.5–1.9 times baseline (KDIGO definition of AKI) in the 48–72 h following CM administration.",

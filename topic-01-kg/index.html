@@ -344,6 +344,9 @@
   .lg-lit .lg-count{flex-shrink:0;font-size:13.5px;}
   .lg-lit.client{background:rgba(168,100,4,.08);border-color:#e0c79a;}
   .lg-lit.client .lg-count{color:#7a4a02;}
+  /* 只作出处引用（自身没有知识点）的文献 —— 淡显，让「有支撑的」一眼可辨 */
+  .lg-lit.only-cite{background:transparent;border-style:dashed;}
+  .lg-lit.only-cite .lg-lit-name{color:var(--text-dim);}
 
   /* ---------- 首屏遮罩 ---------- */
   #loading{
@@ -2134,7 +2137,33 @@
      ⇒ 一个节点的文献支撑数 = 它的要点里引用到的**不同文献**数。
      统计口径：每篇文献 ⇒ 支撑了多少个节点、贡献了多少条要点。 */
   function renderLiteratureLedger() {
-    var byRef = {};      /* ref -> {name, nodes:Set, points:n} */
+    var byRef = {};      /* ref -> {name, nodes:{}, points:n} */
+    var allRefs = [];    /* 图里**所有**文献节点（含只作出处的）*/
+    /* ⛔ **不按节点类型 key 判断「哪些是文献」**（判据 #4：前端不许写死类型 key，
+       换一道题时文献节点的类型可能不同）⇒ 改用**数据自身的信号**：
+       节点出现在别的节点的 `details[].src` 里 ⇒ 它就是被引用的出处节点；
+       再加上「被 SUPPORTED_BY 边指向」的节点（文献节点自己也会带 SUPPORTED_BY 边）。
+       两种信号合起来 = 图里全部文献节点。 */
+    var citedAsSrc = {};
+    (G.nodes || []).forEach(function (n) {
+      ((n && n.details) || []).forEach(function (d) {
+        if (d.src && d.src !== CLIENT_SRC) citedAsSrc[d.src] = 1;
+      });
+    });
+    var isRefNode = {};
+    (G.edges || []).forEach(function (e) {
+      var lbl = String(e.label || "");
+      if (lbl.indexOf("文献") >= 0 || lbl.indexOf("出处") >= 0) {
+        isRefNode[e.target] = 1;
+      }
+    });
+    (G.nodes || []).forEach(function (n) {
+      if (!citedAsSrc[n.id] && !isRefNode[n.id]) return;
+      allRefs.push(n.id);
+      if (!byRef[n.id]) {
+        byRef[n.id] = {name: n.name || n.id, nodes: {}, points: 0};
+      }
+    });
     (G.nodes || []).forEach(function (n) {
       ((n && n.details) || []).forEach(function (d) {
         if (!d.src || d.src === CLIENT_SRC) return;
@@ -2153,11 +2182,17 @@
       var d = Object.keys(byRef[b].nodes).length - Object.keys(byRef[a].nodes).length;
       return d !== 0 ? d : byRef[b].points - byRef[a].points;
     });
+    /* ⚠️ **纯出处的文献也要列出来**（2026-11-06）：只列「有支撑的」会让客户数出来的
+       篇数与图里的文献节点数对不上（R11/R05/R06/R18 这类只作 evidence 出处的，
+       自身没有知识点）⇒ 标「仅作出处」单列，篇数才对得上。 */
     var rows = refs.map(function (r) {
       var it = byRef[r];
       var nn = Object.keys(it.nodes).length;
-      return '<div class="lg-lit"><span class="lg-lit-name">' + esc(it.name) + '</span>' +
-        '<span class="lg-count">支撑 ' + nn + ' 个节点 · ' + it.points + ' 条要点</span></div>';
+      var tail = nn ? ('支撑 ' + nn + ' 个节点 · ' + it.points + ' 条要点')
+                    : '仅作出处引用';
+      return '<div class="lg-lit' + (nn ? "" : " only-cite") + '">' +
+        '<span class="lg-lit-name">' + esc(it.name) + '</span>' +
+        '<span class="lg-count">' + tail + '</span></div>';
     }).join("");
     var clientN = 0;
     (G.nodes || []).forEach(function (n) {
@@ -2166,7 +2201,7 @@
       });
     });
     return '<div class="legend-head" style="margin:18px 0 8px;">' +
-      '<h4>文献支撑</h4><span class="lg-count">' + refs.length + ' 篇</span></div>' +
+      '<h4>文献支撑</h4><span class="lg-count">' + allRefs.length + ' 篇</span></div>' +
       '<div class="sec-hint">每篇文献支撑了多少个知识实体、多少条要点 —— 点图上节点可见同一口径</div>' +
       '<div class="lg-lit-list">' + rows + '</div>' +
       (clientN ? '<div class="lg-lit client"><span class="lg-lit-name">客户提供的临床做法</span>' +
