@@ -19,7 +19,8 @@
     --accent-2:#1d5fb0;    /* 亮蓝强调（浅底压深） */
     --sat:env(safe-area-inset-top,0px);
     --sab:env(safe-area-inset-bottom,0px);
-    --bar-h:calc(58px + var(--sab));
+    /* 工具条两行（40*2 + 6 间距 + 14 内边距 = 100）⇒ 画布要避开它 */
+    --bar-h:calc(100px + var(--sab));
   }
   *{box-sizing:border-box;}
   html,body{height:100%;margin:0;}
@@ -75,16 +76,37 @@
   .sg-type{font-size:14.5px;color:var(--text-dim);flex-shrink:0;}
   .sg-empty{padding:16px;text-align:center;color:var(--text-dim);font-size:15.5px;}
 
-  /* ---------- 工具条（手机 = 固定底部条） ---------- */
+  /* ---------- 工具条（手机 = 固定底部条 · **两行网格**） ----------
+     为什么两行（客户 2026-11-06 报障：「有五个，字体显示不出来了，只有全部两个字」）：
+       5 个按钮平分 390px ⇒ 每个只剩 68px，而 4 个汉字在 15.5px 下要 72px
+       ⇒ 每个差 4px，四个按钮全被截成「适应…/全部…/全部…/重置…」。
+     为什么把「重置视图」单独做成右侧贯通两行的大按钮：
+       它是这一排里唯一**会撤销用户已展开内容**的操作（其余四个都是「看更多」），
+       隔开 ⇒ 降低误触；同时它是「回到起点」而非「继续看」，语义上也该独立。
+     ⇒ 左侧 2×2：图例 / 适应画布 / 全部展开 / 全部标签（每个 ~135px，文字完整且更大）
+       右侧贯通：重置视图
+     ⚠️ 工具条**只在全景图视图出现**（列表视图 display:none）⇒ 加高不影响手机默认阅读。 */
   #tools{
     position:fixed;left:0;right:0;bottom:0;z-index:25;
-    display:flex;gap:8px;align-items:stretch;
+    display:grid;grid-template-columns:1fr 1fr 92px;grid-template-rows:40px 40px;
+    gap:6px;align-items:stretch;
     padding:7px 10px calc(var(--sab) + 7px);
     background:#f7fbff;   /* ⛔ 实色，同上 */
     border-top:1px solid var(--line);
   }
+  /* 各按钮的网格位（DOM 顺序 = 视觉顺序 ⇒ 键盘 Tab 顺序不跳） */
+  #btnLegend{grid-column:1;grid-row:1;}
+  #btnFit{grid-column:2;grid-row:1;}
+  #btnAll{grid-column:1;grid-row:2;}
+  #btnLabels{grid-column:2;grid-row:2;}
+  /* ⚠️ 贯通两行 ⇒ 必须**清掉 .btn 的固定 height**（44px 的固定高会压过网格拉伸，
+     实测「重置视图」只长到 44px、没贯通）。height:auto + align-self:stretch 才由
+     网格行决定高度。 */
+  #btnReset{grid-column:3;grid-row:1 / span 2;height:auto;align-self:stretch;}
   .btn{
     flex:1 1 0;min-width:0;height:44px;padding:0 4px;border-radius:11px;border:1px solid var(--line);
+    /* 网格里由行高决定高度（重置按钮贯通两行） */
+    align-self:stretch;
     background:var(--panel-2);color:var(--text);font-size:16px;font-family:inherit;cursor:pointer;
     white-space:nowrap;overflow:hidden;text-overflow:ellipsis;transition:.15s;
     -webkit-tap-highlight-color:transparent;
