@@ -8457,7 +8457,7 @@
       "name": "Nelson-Piercy C, Dean C, Shehmar M, Gadsby R, O’Hara M, Hodson K, Nana M. The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69). BJOG: An International Journal of Obstetrics & Gynaecology. 2024;131(7):e1-e30. DOI: 10.1111/1471-0528.17739 (PMID 38311315).",
       "tags": [
         "文献",
-        "指南与共识"
+        "指南"
       ],
       "aliases": [
         "Nelson-Piercy C, Dean C, Shehmar M, Gadsby R, O’Hara M, Hodson K, Nana M. The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69). BJOG: An International Journal of Obstetrics & Gynaecology. 2024;131(7):e1-e30. DOI: 10.1111/1471-0528.17739 (PMID 38311315)."
@@ -8466,7 +8466,7 @@
       "attrs": [
         {
           "k": "文献类型",
-          "v": "指南与共识"
+          "v": "指南"
         },
         {
           "k": "年份",
@@ -8474,22 +8474,22 @@
         },
         {
           "k": "核验标识",
-          "v": "Nelson-Piercy C, Dean C, Shehmar M, Gadsby R, O’Hara M, Hodson K, Nana M. The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69). BJOG: An International Journal of Obstetrics & Gynaecology. 2024;131(7):e1-e30. DOI: 10.1111/1471-0528.17739 (PMID 38311315)."
+          "v": "PMID 38311315 · DOI 10.1111/1471-0528.17739"
         },
         {
           "k": "证据等级",
-          "v": "指南与共识"
+          "v": "指南（最新版本·绿皮书第 69 号）"
         }
       ],
       "evidence": [
         {
-          "type": "指南与共识",
+          "type": "指南",
           "author": "Nelson-Piercy C, Dean C, Shehmar M, Gadsby R, O’Hara M, Hodson K, Nana M",
           "title": "Nelson-Piercy C, Dean C, Shehmar M, Gadsby R, O’Hara M, Hodson K, Nana M. The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69). BJOG: An International Journal of Obstetrics & Gynaecology. 2024;131(7):e1-e30. DOI: 10.1111/1471-0528.17739 (PMID 38311315).",
-          "journal": "BJOG: An International Journal of Obstetrics & Gynaecology",
+          "journal": "BJOG: An International Journal of Obstetrics & Gynaecology（国际妇产科杂志）",
           "year": 2024,
-          "cite": "Nelson-Piercy C, Dean C, Shehmar M, Gadsby R, O’Hara M, Hodson K, Nana M / Nelson-Piercy C, Dean C, Shehmar M, Gadsby R, O’Hara M, Hodson K, Nana M. The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69). BJOG: An International Journal of Obstetrics & Gynaecology. 2024;131(7):e1-e30. DOI: 10.1111/1471-0528.17739 (PMID 38311315). / BJOG: An International Journal of Obstetrics & Gynaecology / 2024",
-          "grade": "指南与共识",
+          "cite": "Nelson-Piercy C, Dean C, Shehmar M, Gadsby R, O’Hara M, Hodson K, Nana M / Nelson-Piercy C, Dean C, Shehmar M, Gadsby R, O’Hara M, Hodson K, Nana M. The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69). BJOG: An International Journal of Obstetrics & Gynaecology. 2024;131(7):e1-e30. DOI: 10.1111/1471-0528.17739 (PMID 38311315). / BJOG: An International Journal of Obstetrics & Gynaecology（国际妇产科杂志） / 2024",
+          "grade": "指南（最新版本·绿皮书第 69 号）",
           "ref": "CINV-01"
         }
       ]
@@ -8501,7 +8501,7 @@
       "name": "Gan TJ, Jin Z, Ayad S, et al. Fifth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting: Executive Summary. Anesthesia & Analgesia. 2025. DOI: 10.1213/ANE.0000000000007816 (PMID 41237407).",
       "tags": [
         "文献",
-        "指南与共识"
+        "共识"
       ],
       "aliases": [
         "Gan TJ, Jin Z, Ayad S, et al. Fifth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting: Executive Summary. Anesthesia & Analgesia. 2025. DOI: 10.1213/ANE.0000000000007816 (PMID 41237407)."
@@ -8510,7 +8510,7 @@
       "attrs": [
         {
           "k": "文献类型",
-          "v": "指南与共识"
+          "v": "共识"
         },
         {
           "k": "年份",
@@ -8518,22 +8518,22 @@
         },
         {
           "k": "核验标识",
-          "v": "Gan TJ, Jin Z, Ayad S, et al. Fifth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting: Executive Summary. Anesthesia & Analgesia. 2025. DOI: 10.1213/ANE.0000000000007816 (PMID 41237407)."
+          "v": "PMID 41237407 · DOI 10.1213/ANE.0000000000007816"
         },
         {
           "k": "证据等级",
-          "v": "指南与共识"
+          "v": "专家共识（第五版执行摘要）"
         }
       ],
       "evidence": [
         {
-          "type": "指南与共识",
+          "type": "共识",
           "author": "Gan TJ, Jin Z, Ayad S, et al",
           "title": "Gan TJ, Jin Z, Ayad S, et al. Fifth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting: Executive Summary. Anesthesia & Analgesia. 2025. DOI: 10.1213/ANE.0000000000007816 (PMID 41237407).",
-          "journal": "Anesthesia & Analgesia",
+          "journal": "Anesthesia & Analgesia（麻醉与镇痛）",
           "year": 2025,
-          "cite": "Gan TJ, Jin Z, Ayad S, et al / Gan TJ, Jin Z, Ayad S, et al. Fifth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting: Executive Summary. Anesthesia & Analgesia. 2025. DOI: 10.1213/ANE.0000000000007816 (PMID 41237407). / Anesthesia & Analgesia / 2025",
-          "grade": "指南与共识",
+          "cite": "Gan TJ, Jin Z, Ayad S, et al / Gan TJ, Jin Z, Ayad S, et al. Fifth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting: Executive Summary. Anesthesia & Analgesia. 2025. DOI: 10.1213/ANE.0000000000007816 (PMID 41237407). / Anesthesia & Analgesia（麻醉与镇痛） / 2025",
+          "grade": "专家共识（第五版执行摘要）",
           "ref": "CINV-02"
         }
       ]
@@ -8545,7 +8545,7 @@
       "name": "中国抗癌协会肿瘤临床化疗专业委员会, 中国抗癌协会肿瘤支持治疗专业委员会. 中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）. 中华医学杂志. 2022;102(39):3080-3094. DOI: 10.3760/cma.j.cn112137-20220810-01724.",
       "tags": [
         "文献",
-        "指南与共识"
+        "共识"
       ],
       "aliases": [
         "中国抗癌协会肿瘤临床化疗专业委员会, 中国抗癌协会肿瘤支持治疗专业委员会. 中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）. 中华医学杂志. 2022;102(39):3080-3094. DOI: 10.3760/cma.j.cn112137-20220810-01724."
@@ -8554,7 +8554,7 @@
       "attrs": [
         {
           "k": "文献类型",
-          "v": "指南与共识"
+          "v": "共识"
         },
         {
           "k": "年份",
@@ -8562,22 +8562,22 @@
         },
         {
           "k": "核验标识",
-          "v": "中国抗癌协会肿瘤临床化疗专业委员会, 中国抗癌协会肿瘤支持治疗专业委员会. 中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）. 中华医学杂志. 2022;102(39):3080-3094. DOI: 10.3760/cma.j.cn112137-20220810-01724."
+          "v": "DOI 10.3760/cma.j.cn112137-20220810-01724"
         },
         {
           "k": "证据等级",
-          "v": "指南与共识"
+          "v": "专家共识"
         }
       ],
       "evidence": [
         {
-          "type": "指南与共识",
+          "type": "共识",
           "author": "中国抗癌协会肿瘤临床化疗专业委员会, 中国抗癌协会肿瘤支持治疗专业委员会",
           "title": "中国抗癌协会肿瘤临床化疗专业委员会, 中国抗癌协会肿瘤支持治疗专业委员会. 中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）. 中华医学杂志. 2022;102(39):3080-3094. DOI: 10.3760/cma.j.cn112137-20220810-01724.",
           "journal": "中华医学杂志",
           "year": 2022,
           "cite": "中国抗癌协会肿瘤临床化疗专业委员会, 中国抗癌协会肿瘤支持治疗专业委员会 / 中国抗癌协会肿瘤临床化疗专业委员会, 中国抗癌协会肿瘤支持治疗专业委员会. 中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）. 中华医学杂志. 2022;102(39):3080-3094. DOI: 10.3760/cma.j.cn112137-20220810-01724. / 中华医学杂志 / 2022",
-          "grade": "指南与共识",
+          "grade": "专家共识",
           "ref": "CINV-03"
         }
       ]
@@ -8589,7 +8589,7 @@
       "name": "《四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识》编写专家组. 四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版. 中国循证医学杂志. 2024;24(10):1129-1136. DOI: 10.7507/1672-2531.202407066.",
       "tags": [
         "文献",
-        "指南与共识"
+        "共识"
       ],
       "aliases": [
         "《四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识》编写专家组. 四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版. 中国循证医学杂志. 2024;24(10):1129-1136. DOI: 10.7507/1672-2531.202407066."
@@ -8598,7 +8598,7 @@
       "attrs": [
         {
           "k": "文献类型",
-          "v": "指南与共识"
+          "v": "共识"
         },
         {
           "k": "年份",
@@ -8606,22 +8606,22 @@
         },
         {
           "k": "核验标识",
-          "v": "《四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识》编写专家组. 四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版. 中国循证医学杂志. 2024;24(10):1129-1136. DOI: 10.7507/1672-2531.202407066."
+          "v": "DOI 10.7507/1672-2531.202407066"
         },
         {
           "k": "证据等级",
-          "v": "指南与共识"
+          "v": "专家共识"
         }
       ],
       "evidence": [
         {
-          "type": "指南与共识",
+          "type": "共识",
           "author": "《四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识》编写专家组",
           "title": "《四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识》编写专家组. 四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版. 中国循证医学杂志. 2024;24(10):1129-1136. DOI: 10.7507/1672-2531.202407066.",
           "journal": "中国循证医学杂志",
           "year": 2024,
           "cite": "《四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识》编写专家组 / 《四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识》编写专家组. 四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版. 中国循证医学杂志. 2024;24(10):1129-1136. DOI: 10.7507/1672-2531.202407066. / 中国循证医学杂志 / 2024",
-          "grade": "指南与共识",
+          "grade": "专家共识",
           "ref": "CINV-04"
         }
       ]
@@ -8633,7 +8633,7 @@
       "name": "World Health Organization. WHO recommendations on antenatal care for a positive pregnancy experience. Geneva: WHO; 2016. ISBN 9789241549912（推荐条目 D.1：妊娠早期恶心呕吐）.",
       "tags": [
         "文献",
-        "指南与共识"
+        "建议"
       ],
       "aliases": [
         "World Health Organization. WHO recommendations on antenatal care for a positive pregnancy experience. Geneva: WHO; 2016. ISBN 9789241549912（推荐条目 D.1：妊娠早期恶心呕吐）."
@@ -8642,7 +8642,7 @@
       "attrs": [
         {
           "k": "文献类型",
-          "v": "指南与共识"
+          "v": "建议"
         },
         {
           "k": "年份",
@@ -8650,22 +8650,22 @@
         },
         {
           "k": "核验标识",
-          "v": "World Health Organization. WHO recommendations on antenatal care for a positive pregnancy experience. Geneva: WHO; 2016. ISBN 9789241549912（推荐条目 D.1：妊娠早期恶心呕吐）."
+          "v": "ISBN 9789241549912 · 推荐条目 D.1"
         },
         {
           "k": "证据等级",
-          "v": "指南与共识"
+          "v": "指南推荐条目（D.1 生姜）"
         }
       ],
       "evidence": [
         {
-          "type": "指南与共识",
+          "type": "建议",
           "author": "World Health Organization",
           "title": "World Health Organization. WHO recommendations on antenatal care for a positive pregnancy experience. Geneva: WHO; 2016. ISBN 9789241549912（推荐条目 D.1：妊娠早期恶心呕吐）.",
-          "journal": "WHO",
+          "journal": "世界卫生组织（WHO）",
           "year": 2016,
-          "cite": "World Health Organization / World Health Organization. WHO recommendations on antenatal care for a positive pregnancy experience. Geneva: WHO; 2016. ISBN 9789241549912（推荐条目 D.1：妊娠早期恶心呕吐）. / WHO / 2016",
-          "grade": "指南与共识",
+          "cite": "World Health Organization / World Health Organization. WHO recommendations on antenatal care for a positive pregnancy experience. Geneva: WHO; 2016. ISBN 9789241549912（推荐条目 D.1：妊娠早期恶心呕吐）. / 世界卫生组织（WHO） / 2016",
+          "grade": "指南推荐条目（D.1 生姜）",
           "ref": "CINV-05"
         }
       ]
@@ -8677,7 +8677,7 @@
       "name": "Vidall C, Dielenseger P, Farrell C, et al. Evidence-based management of chemotherapy-induced nausea and vomiting: a position statement from a European cancer nursing forum. Ecancermedicalscience. 2011;5:211. DOI: 10.3332/ecancer.2011.211 (PMID 22276054).",
       "tags": [
         "文献",
-        "指南与共识"
+        "立场声明"
       ],
       "aliases": [
         "Vidall C, Dielenseger P, Farrell C, et al. Evidence-based management of chemotherapy-induced nausea and vomiting: a position statement from a European cancer nursing forum. Ecancermedicalscience. 2011;5:211. DOI: 10.3332/ecancer.2011.211 (PMID 22276054)."
@@ -8686,7 +8686,7 @@
       "attrs": [
         {
           "k": "文献类型",
-          "v": "指南与共识"
+          "v": "立场声明"
         },
         {
           "k": "年份",
@@ -8694,22 +8694,22 @@
         },
         {
           "k": "核验标识",
-          "v": "Vidall C, Dielenseger P, Farrell C, et al. Evidence-based management of chemotherapy-induced nausea and vomiting: a position statement from a European cancer nursing forum. Ecancermedicalscience. 2011;5:211. DOI: 10.3332/ecancer.2011.211 (PMID 22276054)."
+          "v": "PMID 22276054 · DOI 10.3332/ecancer.2011.211"
         },
         {
           "k": "证据等级",
-          "v": "指南与共识"
+          "v": "学会立场声明"
         }
       ],
       "evidence": [
         {
-          "type": "指南与共识",
+          "type": "立场声明",
           "author": "Vidall C, Dielenseger P, Farrell C, et al",
           "title": "Vidall C, Dielenseger P, Farrell C, et al. Evidence-based management of chemotherapy-induced nausea and vomiting: a position statement from a European cancer nursing forum. Ecancermedicalscience. 2011;5:211. DOI: 10.3332/ecancer.2011.211 (PMID 22276054).",
-          "journal": "Ecancermedicalscience",
+          "journal": "Ecancermedicalscience（欧洲癌症医学科学）",
           "year": 2011,
-          "cite": "Vidall C, Dielenseger P, Farrell C, et al / Vidall C, Dielenseger P, Farrell C, et al. Evidence-based management of chemotherapy-induced nausea and vomiting: a position statement from a European cancer nursing forum. Ecancermedicalscience. 2011;5:211. DOI: 10.3332/ecancer.2011.211 (PMID 22276054). / Ecancermedicalscience / 2011",
-          "grade": "指南与共识",
+          "cite": "Vidall C, Dielenseger P, Farrell C, et al / Vidall C, Dielenseger P, Farrell C, et al. Evidence-based management of chemotherapy-induced nausea and vomiting: a position statement from a European cancer nursing forum. Ecancermedicalscience. 2011;5:211. DOI: 10.3332/ecancer.2011.211 (PMID 22276054). / Ecancermedicalscience（欧洲癌症医学科学） / 2011",
+          "grade": "学会立场声明",
           "ref": "CINV-06"
         }
       ]
@@ -8718,19 +8718,19 @@
       "id": "CINV-07",
       "graph": "topic-01",
       "type": "Reference",
-      "name": "李小寒, 尚少梅. 基础护理学（第7版）. 北京: 人民卫生出版社; 2022. ISBN 9787117333511.",
+      "name": "李小寒, 尚少梅. 基础护理学（第7版）. 北京: 人民卫生出版社; 2022. ISBN 978-7-117-33351-1.",
       "tags": [
         "文献",
-        "指南与共识"
+        "书籍"
       ],
       "aliases": [
-        "李小寒, 尚少梅. 基础护理学（第7版）. 北京: 人民卫生出版社; 2022. ISBN 9787117333511."
+        "李小寒, 尚少梅. 基础护理学（第7版）. 北京: 人民卫生出版社; 2022. ISBN 978-7-117-33351-1."
       ],
       "summary": "",
       "attrs": [
         {
           "k": "文献类型",
-          "v": "指南与共识"
+          "v": "书籍"
         },
         {
           "k": "年份",
@@ -8738,22 +8738,22 @@
         },
         {
           "k": "核验标识",
-          "v": "李小寒, 尚少梅. 基础护理学（第7版）. 北京: 人民卫生出版社; 2022. ISBN 9787117333511."
+          "v": "ISBN 978-7-117-33351-1"
         },
         {
           "k": "证据等级",
-          "v": "指南与共识"
+          "v": "本科规划教材"
         }
       ],
       "evidence": [
         {
-          "type": "指南与共识",
+          "type": "书籍",
           "author": "李小寒, 尚少梅",
-          "title": "李小寒, 尚少梅. 基础护理学（第7版）. 北京: 人民卫生出版社; 2022. ISBN 9787117333511.",
+          "title": "李小寒, 尚少梅. 基础护理学（第7版）. 北京: 人民卫生出版社; 2022. ISBN 978-7-117-33351-1.",
           "journal": "人民卫生出版社",
           "year": 2022,
-          "cite": "李小寒, 尚少梅 / 李小寒, 尚少梅. 基础护理学（第7版）. 北京: 人民卫生出版社; 2022. ISBN 9787117333511. / 人民卫生出版社 / 2022",
-          "grade": "指南与共识",
+          "cite": "李小寒, 尚少梅 / 李小寒, 尚少梅. 基础护理学（第7版）. 北京: 人民卫生出版社; 2022. ISBN 978-7-117-33351-1. / 人民卫生出版社 / 2022",
+          "grade": "本科规划教材",
           "ref": "CINV-07"
         }
       ]
@@ -8765,7 +8765,7 @@
       "name": "Han J, Xu Q, Wang W, Zhou Y. Nurse-led non-pharmacological interventions for prevention and management of postoperative nausea and vomiting in adults undergoing laparoscopic surgery: an evidence summary. BMC Nursing. 2026. DOI: 10.1186/s12912-026-05029-5 (PMID 42458443).",
       "tags": [
         "文献",
-        "指南与共识"
+        "推荐实践（证据总结）"
       ],
       "aliases": [
         "Han J, Xu Q, Wang W, Zhou Y. Nurse-led non-pharmacological interventions for prevention and management of postoperative nausea and vomiting in adults undergoing laparoscopic surgery: an evidence summary. BMC Nursing. 2026. DOI: 10.1186/s12912-026-05029-5 (PMID 42458443)."
@@ -8774,7 +8774,7 @@
       "attrs": [
         {
           "k": "文献类型",
-          "v": "指南与共识"
+          "v": "推荐实践（证据总结）"
         },
         {
           "k": "年份",
@@ -8782,22 +8782,22 @@
         },
         {
           "k": "核验标识",
-          "v": "Han J, Xu Q, Wang W, Zhou Y. Nurse-led non-pharmacological interventions for prevention and management of postoperative nausea and vomiting in adults undergoing laparoscopic surgery: an evidence summary. BMC Nursing. 2026. DOI: 10.1186/s12912-026-05029-5 (PMID 42458443)."
+          "v": "DOI 10.1186/s12912-026-05029-5 · PMID 42458443"
         },
         {
           "k": "证据等级",
-          "v": "指南与共识"
+          "v": "证据总结"
         }
       ],
       "evidence": [
         {
-          "type": "指南与共识",
+          "type": "推荐实践（证据总结）",
           "author": "Han J, Xu Q, Wang W, Zhou Y",
           "title": "Han J, Xu Q, Wang W, Zhou Y. Nurse-led non-pharmacological interventions for prevention and management of postoperative nausea and vomiting in adults undergoing laparoscopic surgery: an evidence summary. BMC Nursing. 2026. DOI: 10.1186/s12912-026-05029-5 (PMID 42458443).",
-          "journal": "BMC Nursing",
+          "journal": "BMC Nursing（BMC 护理）",
           "year": 2026,
-          "cite": "Han J, Xu Q, Wang W, Zhou Y / Han J, Xu Q, Wang W, Zhou Y. Nurse-led non-pharmacological interventions for prevention and management of postoperative nausea and vomiting in adults undergoing laparoscopic surgery: an evidence summary. BMC Nursing. 2026. DOI: 10.1186/s12912-026-05029-5 (PMID 42458443). / BMC Nursing / 2026",
-          "grade": "指南与共识",
+          "cite": "Han J, Xu Q, Wang W, Zhou Y / Han J, Xu Q, Wang W, Zhou Y. Nurse-led non-pharmacological interventions for prevention and management of postoperative nausea and vomiting in adults undergoing laparoscopic surgery: an evidence summary. BMC Nursing. 2026. DOI: 10.1186/s12912-026-05029-5 (PMID 42458443). / BMC Nursing（BMC 护理） / 2026",
+          "grade": "证据总结",
           "ref": "CINV-08"
         }
       ]
@@ -8809,7 +8809,7 @@
       "name": "Matthews A, Haas DM, O’Mathúna DP, Dowswell T, Doyle M. Interventions for nausea and vomiting in early pregnancy. Cochrane Database of Systematic Reviews. 2015;2015(4):CD007575. DOI: 10.1002/14651858.CD007575.pub4 (PMID 26348534).",
       "tags": [
         "文献",
-        "指南与共识"
+        "系统评价"
       ],
       "aliases": [
         "Matthews A, Haas DM, O’Mathúna DP, Dowswell T, Doyle M. Interventions for nausea and vomiting in early pregnancy. Cochrane Database of Systematic Reviews. 2015;2015(4):CD007575. DOI: 10.1002/14651858.CD007575.pub4 (PMID 26348534)."
@@ -8818,7 +8818,7 @@
       "attrs": [
         {
           "k": "文献类型",
-          "v": "指南与共识"
+          "v": "系统评价"
         },
         {
           "k": "年份",
@@ -8826,22 +8826,22 @@
         },
         {
           "k": "核验标识",
-          "v": "Matthews A, Haas DM, O’Mathúna DP, Dowswell T, Doyle M. Interventions for nausea and vomiting in early pregnancy. Cochrane Database of Systematic Reviews. 2015;2015(4):CD007575. DOI: 10.1002/14651858.CD007575.pub4 (PMID 26348534)."
+          "v": "DOI 10.1002/14651858.CD007575.pub4 · PMID 26348534"
         },
         {
           "k": "证据等级",
-          "v": "指南与共识"
+          "v": "系统评价"
         }
       ],
       "evidence": [
         {
-          "type": "指南与共识",
+          "type": "系统评价",
           "author": "Matthews A, Haas DM, O’Mathúna DP, Dowswell T, Doyle M",
           "title": "Matthews A, Haas DM, O’Mathúna DP, Dowswell T, Doyle M. Interventions for nausea and vomiting in early pregnancy. Cochrane Database of Systematic Reviews. 2015;2015(4):CD007575. DOI: 10.1002/14651858.CD007575.pub4 (PMID 26348534).",
-          "journal": "Cochrane Database of Systematic Reviews",
+          "journal": "Cochrane Database of Systematic Reviews（考克兰系统评价数据库）",
           "year": 2015,
-          "cite": "Matthews A, Haas DM, O’Mathúna DP, Dowswell T, Doyle M / Matthews A, Haas DM, O’Mathúna DP, Dowswell T, Doyle M. Interventions for nausea and vomiting in early pregnancy. Cochrane Database of Systematic Reviews. 2015;2015(4):CD007575. DOI: 10.1002/14651858.CD007575.pub4 (PMID 26348534). / Cochrane Database of Systematic Reviews / 2015",
-          "grade": "指南与共识",
+          "cite": "Matthews A, Haas DM, O’Mathúna DP, Dowswell T, Doyle M / Matthews A, Haas DM, O’Mathúna DP, Dowswell T, Doyle M. Interventions for nausea and vomiting in early pregnancy. Cochrane Database of Systematic Reviews. 2015;2015(4):CD007575. DOI: 10.1002/14651858.CD007575.pub4 (PMID 26348534). / Cochrane Database of Systematic Reviews（考克兰系统评价数据库） / 2015",
+          "grade": "系统评价",
           "ref": "CINV-09"
         }
       ]
@@ -8853,7 +8853,7 @@
       "name": "Xiao C, Qin M, Xia H, Xing Q, Wang D, Qian W. Effects of PC6 acupressure on acute and delayed nausea and vomiting induced by chemotherapy in patients with malignant neoplasm: a meta-analysis. Supportive Care in Cancer. 2023;31:510. DOI: 10.1007/s00520-023-07976-0 (PMID 37548707).",
       "tags": [
         "文献",
-        "指南与共识"
+        "Meta 分析"
       ],
       "aliases": [
         "Xiao C, Qin M, Xia H, Xing Q, Wang D, Qian W. Effects of PC6 acupressure on acute and delayed nausea and vomiting induced by chemotherapy in patients with malignant neoplasm: a meta-analysis. Supportive Care in Cancer. 2023;31:510. DOI: 10.1007/s00520-023-07976-0 (PMID 37548707)."
@@ -8862,7 +8862,7 @@
       "attrs": [
         {
           "k": "文献类型",
-          "v": "指南与共识"
+          "v": "Meta 分析"
         },
         {
           "k": "年份",
@@ -8870,22 +8870,22 @@
         },
         {
           "k": "核验标识",
-          "v": "Xiao C, Qin M, Xia H, Xing Q, Wang D, Qian W. Effects of PC6 acupressure on acute and delayed nausea and vomiting induced by chemotherapy in patients with malignant neoplasm: a meta-analysis. Supportive Care in Cancer. 2023;31:510. DOI: 10.1007/s00520-023-07976-0 (PMID 37548707)."
+          "v": "PMID 37548707 · DOI 10.1007/s00520-023-07976-0"
         },
         {
           "k": "证据等级",
-          "v": "指南与共识"
+          "v": "Meta 分析"
         }
       ],
       "evidence": [
         {
-          "type": "指南与共识",
+          "type": "Meta 分析",
           "author": "Xiao C, Qin M, Xia H, Xing Q, Wang D, Qian W",
           "title": "Xiao C, Qin M, Xia H, Xing Q, Wang D, Qian W. Effects of PC6 acupressure on acute and delayed nausea and vomiting induced by chemotherapy in patients with malignant neoplasm: a meta-analysis. Supportive Care in Cancer. 2023;31:510. DOI: 10.1007/s00520-023-07976-0 (PMID 37548707).",
-          "journal": "Supportive Care in Cancer",
+          "journal": "Supportive Care in Cancer（癌症支持治疗）",
           "year": 2023,
-          "cite": "Xiao C, Qin M, Xia H, Xing Q, Wang D, Qian W / Xiao C, Qin M, Xia H, Xing Q, Wang D, Qian W. Effects of PC6 acupressure on acute and delayed nausea and vomiting induced by chemotherapy in patients with malignant neoplasm: a meta-analysis. Supportive Care in Cancer. 2023;31:510. DOI: 10.1007/s00520-023-07976-0 (PMID 37548707). / Supportive Care in Cancer / 2023",
-          "grade": "指南与共识",
+          "cite": "Xiao C, Qin M, Xia H, Xing Q, Wang D, Qian W / Xiao C, Qin M, Xia H, Xing Q, Wang D, Qian W. Effects of PC6 acupressure on acute and delayed nausea and vomiting induced by chemotherapy in patients with malignant neoplasm: a meta-analysis. Supportive Care in Cancer. 2023;31:510. DOI: 10.1007/s00520-023-07976-0 (PMID 37548707). / Supportive Care in Cancer（癌症支持治疗） / 2023",
+          "grade": "Meta 分析",
           "ref": "CINV-10"
         }
       ]
@@ -8897,7 +8897,7 @@
       "name": "Gergő D, Garmaa G, Tóth-Mészáros A, et al. Inhaling Peppermint Essential Oil as a Promising Complementary Therapy in the Treatment of Nausea and Vomiting. Journal of Clinical Medicine. 2025;14(14):5069. DOI: 10.3390/jcm14145069 (PMID 40725767).",
       "tags": [
         "文献",
-        "指南与共识"
+        "Meta 分析"
       ],
       "aliases": [
         "Gergő D, Garmaa G, Tóth-Mészáros A, et al. Inhaling Peppermint Essential Oil as a Promising Complementary Therapy in the Treatment of Nausea and Vomiting. Journal of Clinical Medicine. 2025;14(14):5069. DOI: 10.3390/jcm14145069 (PMID 40725767)."
@@ -8906,7 +8906,7 @@
       "attrs": [
         {
           "k": "文献类型",
-          "v": "指南与共识"
+          "v": "Meta 分析"
         },
         {
           "k": "年份",
@@ -8914,22 +8914,22 @@
         },
         {
           "k": "核验标识",
-          "v": "Gergő D, Garmaa G, Tóth-Mészáros A, et al. Inhaling Peppermint Essential Oil as a Promising Complementary Therapy in the Treatment of Nausea and Vomiting. Journal of Clinical Medicine. 2025;14(14):5069. DOI: 10.3390/jcm14145069 (PMID 40725767)."
+          "v": "PMID 40725767 · DOI 10.3390/jcm14145069"
         },
         {
           "k": "证据等级",
-          "v": "指南与共识"
+          "v": "Meta 分析"
         }
       ],
       "evidence": [
         {
-          "type": "指南与共识",
+          "type": "Meta 分析",
           "author": "Gergő D, Garmaa G, Tóth-Mészáros A, et al",
           "title": "Gergő D, Garmaa G, Tóth-Mészáros A, et al. Inhaling Peppermint Essential Oil as a Promising Complementary Therapy in the Treatment of Nausea and Vomiting. Journal of Clinical Medicine. 2025;14(14):5069. DOI: 10.3390/jcm14145069 (PMID 40725767).",
-          "journal": "Journal of Clinical Medicine",
+          "journal": "Journal of Clinical Medicine（临床医学杂志）",
           "year": 2025,
-          "cite": "Gergő D, Garmaa G, Tóth-Mészáros A, et al / Gergő D, Garmaa G, Tóth-Mészáros A, et al. Inhaling Peppermint Essential Oil as a Promising Complementary Therapy in the Treatment of Nausea and Vomiting. Journal of Clinical Medicine. 2025;14(14):5069. DOI: 10.3390/jcm14145069 (PMID 40725767). / Journal of Clinical Medicine / 2025",
-          "grade": "指南与共识",
+          "cite": "Gergő D, Garmaa G, Tóth-Mészáros A, et al / Gergő D, Garmaa G, Tóth-Mészáros A, et al. Inhaling Peppermint Essential Oil as a Promising Complementary Therapy in the Treatment of Nausea and Vomiting. Journal of Clinical Medicine. 2025;14(14):5069. DOI: 10.3390/jcm14145069 (PMID 40725767). / Journal of Clinical Medicine（临床医学杂志） / 2025",
+          "grade": "Meta 分析",
           "ref": "CINV-11"
         }
       ]
@@ -8941,7 +8941,7 @@
       "name": "张英英, 乔欣, 赵丽丽, 汤媛媛, 刘芳. 非药物干预对癌症化疗致恶心呕吐影响的网状Meta分析. 循证护理. 2024;10(10):1711-1720. DOI: 10.12102/j.issn.2095-8668.2024.10.001.",
       "tags": [
         "文献",
-        "指南与共识"
+        "Meta 分析（网状）"
       ],
       "aliases": [
         "张英英, 乔欣, 赵丽丽, 汤媛媛, 刘芳. 非药物干预对癌症化疗致恶心呕吐影响的网状Meta分析. 循证护理. 2024;10(10):1711-1720. DOI: 10.12102/j.issn.2095-8668.2024.10.001."
@@ -8950,7 +8950,7 @@
       "attrs": [
         {
           "k": "文献类型",
-          "v": "指南与共识"
+          "v": "Meta 分析（网状）"
         },
         {
           "k": "年份",
@@ -8958,22 +8958,22 @@
         },
         {
           "k": "核验标识",
-          "v": "张英英, 乔欣, 赵丽丽, 汤媛媛, 刘芳. 非药物干预对癌症化疗致恶心呕吐影响的网状Meta分析. 循证护理. 2024;10(10):1711-1720. DOI: 10.12102/j.issn.2095-8668.2024.10.001."
+          "v": "DOI 10.12102/j.issn.2095-8668.2024.10.001"
         },
         {
           "k": "证据等级",
-          "v": "指南与共识"
+          "v": "网状 Meta 分析"
         }
       ],
       "evidence": [
         {
-          "type": "指南与共识",
+          "type": "Meta 分析（网状）",
           "author": "张英英, 乔欣, 赵丽丽, 汤媛媛, 刘芳",
           "title": "张英英, 乔欣, 赵丽丽, 汤媛媛, 刘芳. 非药物干预对癌症化疗致恶心呕吐影响的网状Meta分析. 循证护理. 2024;10(10):1711-1720. DOI: 10.12102/j.issn.2095-8668.2024.10.001.",
           "journal": "循证护理",
           "year": 2024,
           "cite": "张英英, 乔欣, 赵丽丽, 汤媛媛, 刘芳 / 张英英, 乔欣, 赵丽丽, 汤媛媛, 刘芳. 非药物干预对癌症化疗致恶心呕吐影响的网状Meta分析. 循证护理. 2024;10(10):1711-1720. DOI: 10.12102/j.issn.2095-8668.2024.10.001. / 循证护理 / 2024",
-          "grade": "指南与共识",
+          "grade": "网状 Meta 分析",
           "ref": "CINV-12"
         }
       ]
@@ -18964,6 +18964,13 @@
           "cat": "健康教育"
         },
         {
+          "k": "症状持续1周以上须再评估",
+          "v": "肿瘤患者疼痛管理场景（阿片类药物不良反应）：恶心呕吐症状持续 1 周以上应再次评估，排除放化疗、脑转移、肠梗阻等其他因素后，由医生减少阿片类剂量、更换药物或改变用药途径。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "e.症状持续1周以上，应再次评估，排除放化疗、脑转移、肠梗阻等其他因素导致的恶心呕吐，遵医嘱减少阿片类药物剂量、更换药物或改变用药途径",
+          "src": "CINV-07",
+          "cat": "评估与分级"
+        },
+        {
           "k": "宣教形式与内容范围",
           "v": "腹腔镜术后 PONV 场景：宣教形式应含口头、书面、多媒体、移动应用及一对一或团体咨询；内容覆盖术前、术中、术后护理计划的全部信息（level 1）。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
           "quote": "Educational formats should include oral, written, multimedia, mobile applications, and one-on-one or group counseling. Educational guidance should cover all information related to preoperative, intraoperative, and postoperative care plans (level 1) [53].",
@@ -19037,6 +19044,27 @@
           "cat": "起居护理"
         },
         {
+          "k": "进食中恶心：深呼吸并暂停进食",
+          "v": "一般恶心呕吐护理场景（患者进食过程中）：出现恶心时可鼓励做深呼吸并暂时停止进食。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "（1）恶心：\n\n 若患者在进食过程中出现恶心，可鼓励其做深呼吸并暂时停止进食。",
+          "src": "CINV-07",
+          "cat": "起居护理"
+        },
+        {
+          "k": "呕吐的即时处理与舒适措施",
+          "v": "一般恶心呕吐护理场景（患者进食过程中）：呕吐时协助——头偏向一侧防呕吐物进入气管、给盛装容器、清除呕吐物并更换污染被服、开窗通风去异味、漱口或口腔护理除口腔异味，并记录呕吐物性质颜色量与气味。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "（2）呕吐：\n\n 若患者发生呕吐，应及时给予帮助。将患者头偏向一侧，防止呕吐物进入气管内；给患者提供盛装呕吐物的容器；尽快清除呕吐物并及时更换被污染的被服等；开窗通风，去除室内不良气味；帮助患者漱口或给予口腔护理，以去除口腔异味；询问患者是否愿意继续进食，对不愿意继续进食者，可帮助其保存好剩下的食物待其愿意进食时给予；观察呕吐物的性质、颜色、量和气味等并做好记录。",
+          "src": "CINV-07",
+          "cat": "起居护理"
+        },
+        {
+          "k": "休息前先减轻恶心呕吐等不适",
+          "v": "一般恶心呕吐护理场景（协助患者休息）：休息前先评估并减轻疼痛、恶心、呕吐、姿势与体位等不适，护士帮助患者调整姿势体位以获得有效休息。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "及时评估并减轻身体的不适，包括疼痛、恶心、呕吐、咳嗽、饥饿、口渴、姿势与体位、个人卫生等方面，是保证患者休息的基础。",
+          "src": "CINV-07",
+          "cat": "起居护理"
+        },
+        {
           "k": "头抬高位与咀嚼口香糖",
           "v": "腹腔镜术后 PONV 场景：术后头抬高体位可降低 PONV 发生率（Level 1）；咀嚼口香糖可降低 POV（Level 1）；落实 ERAS 亦可降低 PONV（Level 1）。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
           "quote": "Body position: maintaining a head-elevated position postoperatively reduces the incidence of PONV (Level 1) [8, 42].\n19. Chewing gum: chewing gum after surgery reduces the incidence of POV (Level 1) [8, 15, 17].\n20. ERAS: adherence to specific ERAS protocols reduces the incidence of PONV in laparoscopic surgery patients (Level 1) [47, 48, 51, 54, 62].",
@@ -19072,6 +19100,13 @@
           "v": "妊娠剧吐场景：所有因呕吐或进食严重减少入院者均应补硫胺素——口服 100 mg tds 或静脉维生素 B 复方，须在给葡萄糖或肠外营养之前使用（[Grade D]）。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
           "quote": "Thiamine supplementation (either oral 100 mg tds or intravenous as part of vitamin B complex (Pabrinex®)) should be given to all women admitted with vomiting, or severely reduced dietary intake, especially before administration of dextrose or parenteral nutrition. [Grade D]",
           "src": "CINV-01",
+          "cat": "液体疗法"
+        },
+        {
+          "k": "呕吐后口腔舒适用水与内环境稳定",
+          "v": "肿瘤患者疼痛管理场景（阿片类药物不良反应）：观察恶心呕吐引起的水电解质紊乱并及时纠正、维持内环境稳定；呕吐后做好口腔清洁，按患者喜好用清水、茶叶水、柠檬水、甘草水维持口腔舒适感。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "c.应观察有无恶心呕吐引起的水电解质紊乱，遵医嘱及时纠正并维持内环境稳定\n\n d.应做好口腔清洁，呕吐后可根据患者的喜好应用清水、茶叶水、柠檬水、甘草水等维持口腔的舒适感",
+          "src": "CINV-07",
           "cat": "液体疗法"
         }
       ]
@@ -25253,6 +25288,24 @@
     {
       "source": "DE_NauseaHealthEducation",
       "target": "CINV-06",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_LifestyleCare",
+      "target": "CINV-07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_FluidTherapy",
+      "target": "CINV-07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "DE_NauseaHealthEducation",
+      "target": "CINV-07",
       "type": "SUPPORTED_BY",
       "label": "出处"
     },

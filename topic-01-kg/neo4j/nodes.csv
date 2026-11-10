@@ -92,18 +92,18 @@ CG-04,Reference,经动脉心血管介入诊治中含碘对比剂相关不良反�
 CG-05,Reference,影像科碘对比剂临床应用与不良反应处置规范培训及管理专家共识,,文献 共识,1
 CG-06,Reference,碘对比剂临床应用的风险评估管理专家共识,,文献 共识,1
 CG-07,Reference,心血管介入碘对比剂使用管理护理专家共识,,文献 共识,1
-CINV-01,Reference,"Nelson-Piercy C, Dean C, Shehmar M, Gadsby R, O’Hara M, Hodson K, Nana M. The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69). BJOG: An International Journal of Obstetrics & Gynaecology. 2024;131(7):e1-e30. DOI: 10.1111/1471-0528.17739 (PMID 38311315).",,文献 指南与共识,1
-CINV-02,Reference,"Gan TJ, Jin Z, Ayad S, et al. Fifth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting: Executive Summary. Anesthesia & Analgesia. 2025. DOI: 10.1213/ANE.0000000000007816 (PMID 41237407).",,文献 指南与共识,1
-CINV-03,Reference,"中国抗癌协会肿瘤临床化疗专业委员会, 中国抗癌协会肿瘤支持治疗专业委员会. 中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）. 中华医学杂志. 2022;102(39):3080-3094. DOI: 10.3760/cma.j.cn112137-20220810-01724.",,文献 指南与共识,1
-CINV-04,Reference,《四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识》编写专家组. 四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版. 中国循证医学杂志. 2024;24(10):1129-1136. DOI: 10.7507/1672-2531.202407066.,,文献 指南与共识,1
-CINV-05,Reference,World Health Organization. WHO recommendations on antenatal care for a positive pregnancy experience. Geneva: WHO; 2016. ISBN 9789241549912（推荐条目 D.1：妊娠早期恶心呕吐）.,,文献 指南与共识,1
-CINV-06,Reference,"Vidall C, Dielenseger P, Farrell C, et al. Evidence-based management of chemotherapy-induced nausea and vomiting: a position statement from a European cancer nursing forum. Ecancermedicalscience. 2011;5:211. DOI: 10.3332/ecancer.2011.211 (PMID 22276054).",,文献 指南与共识,1
-CINV-07,Reference,"李小寒, 尚少梅. 基础护理学（第7版）. 北京: 人民卫生出版社; 2022. ISBN 9787117333511.",,文献 指南与共识,1
-CINV-08,Reference,"Han J, Xu Q, Wang W, Zhou Y. Nurse-led non-pharmacological interventions for prevention and management of postoperative nausea and vomiting in adults undergoing laparoscopic surgery: an evidence summary. BMC Nursing. 2026. DOI: 10.1186/s12912-026-05029-5 (PMID 42458443).",,文献 指南与共识,1
-CINV-09,Reference,"Matthews A, Haas DM, O’Mathúna DP, Dowswell T, Doyle M. Interventions for nausea and vomiting in early pregnancy. Cochrane Database of Systematic Reviews. 2015;2015(4):CD007575. DOI: 10.1002/14651858.CD007575.pub4 (PMID 26348534).",,文献 指南与共识,1
-CINV-10,Reference,"Xiao C, Qin M, Xia H, Xing Q, Wang D, Qian W. Effects of PC6 acupressure on acute and delayed nausea and vomiting induced by chemotherapy in patients with malignant neoplasm: a meta-analysis. Supportive Care in Cancer. 2023;31:510. DOI: 10.1007/s00520-023-07976-0 (PMID 37548707).",,文献 指南与共识,1
-CINV-11,Reference,"Gergő D, Garmaa G, Tóth-Mészáros A, et al. Inhaling Peppermint Essential Oil as a Promising Complementary Therapy in the Treatment of Nausea and Vomiting. Journal of Clinical Medicine. 2025;14(14):5069. DOI: 10.3390/jcm14145069 (PMID 40725767).",,文献 指南与共识,1
-CINV-12,Reference,"张英英, 乔欣, 赵丽丽, 汤媛媛, 刘芳. 非药物干预对癌症化疗致恶心呕吐影响的网状Meta分析. 循证护理. 2024;10(10):1711-1720. DOI: 10.12102/j.issn.2095-8668.2024.10.001.",,文献 指南与共识,1
+CINV-01,Reference,"Nelson-Piercy C, Dean C, Shehmar M, Gadsby R, O’Hara M, Hodson K, Nana M. The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69). BJOG: An International Journal of Obstetrics & Gynaecology. 2024;131(7):e1-e30. DOI: 10.1111/1471-0528.17739 (PMID 38311315).",,文献 指南,1
+CINV-02,Reference,"Gan TJ, Jin Z, Ayad S, et al. Fifth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting: Executive Summary. Anesthesia & Analgesia. 2025. DOI: 10.1213/ANE.0000000000007816 (PMID 41237407).",,文献 共识,1
+CINV-03,Reference,"中国抗癌协会肿瘤临床化疗专业委员会, 中国抗癌协会肿瘤支持治疗专业委员会. 中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）. 中华医学杂志. 2022;102(39):3080-3094. DOI: 10.3760/cma.j.cn112137-20220810-01724.",,文献 共识,1
+CINV-04,Reference,《四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识》编写专家组. 四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版. 中国循证医学杂志. 2024;24(10):1129-1136. DOI: 10.7507/1672-2531.202407066.,,文献 共识,1
+CINV-05,Reference,World Health Organization. WHO recommendations on antenatal care for a positive pregnancy experience. Geneva: WHO; 2016. ISBN 9789241549912（推荐条目 D.1：妊娠早期恶心呕吐）.,,文献 建议,1
+CINV-06,Reference,"Vidall C, Dielenseger P, Farrell C, et al. Evidence-based management of chemotherapy-induced nausea and vomiting: a position statement from a European cancer nursing forum. Ecancermedicalscience. 2011;5:211. DOI: 10.3332/ecancer.2011.211 (PMID 22276054).",,文献 立场声明,1
+CINV-07,Reference,"李小寒, 尚少梅. 基础护理学（第7版）. 北京: 人民卫生出版社; 2022. ISBN 978-7-117-33351-1.",,文献 书籍,1
+CINV-08,Reference,"Han J, Xu Q, Wang W, Zhou Y. Nurse-led non-pharmacological interventions for prevention and management of postoperative nausea and vomiting in adults undergoing laparoscopic surgery: an evidence summary. BMC Nursing. 2026. DOI: 10.1186/s12912-026-05029-5 (PMID 42458443).",,文献 推荐实践（证据总结）,1
+CINV-09,Reference,"Matthews A, Haas DM, O’Mathúna DP, Dowswell T, Doyle M. Interventions for nausea and vomiting in early pregnancy. Cochrane Database of Systematic Reviews. 2015;2015(4):CD007575. DOI: 10.1002/14651858.CD007575.pub4 (PMID 26348534).",,文献 系统评价,1
+CINV-10,Reference,"Xiao C, Qin M, Xia H, Xing Q, Wang D, Qian W. Effects of PC6 acupressure on acute and delayed nausea and vomiting induced by chemotherapy in patients with malignant neoplasm: a meta-analysis. Supportive Care in Cancer. 2023;31:510. DOI: 10.1007/s00520-023-07976-0 (PMID 37548707).",,文献 Meta 分析,1
+CINV-11,Reference,"Gergő D, Garmaa G, Tóth-Mészáros A, et al. Inhaling Peppermint Essential Oil as a Promising Complementary Therapy in the Treatment of Nausea and Vomiting. Journal of Clinical Medicine. 2025;14(14):5069. DOI: 10.3390/jcm14145069 (PMID 40725767).",,文献 Meta 分析,1
+CINV-12,Reference,"张英英, 乔欣, 赵丽丽, 汤媛媛, 刘芳. 非药物干预对癌症化疗致恶心呕吐影响的网状Meta分析. 循证护理. 2024;10(10):1711-1720. DOI: 10.12102/j.issn.2095-8668.2024.10.001.",,文献 Meta 分析（网状）,1
 CN-12,Reference,含碘非离子对比剂输注前预防静脉外渗策略的证据总结,,文献 最佳证据,1
 CN-13,Reference,不同穿刺部位静脉留置针渗出外渗的发生现状及结局差异分析,,文献 调查,1
 CN-14,Reference,小儿外周静脉留置针输液外渗的研究进展,,文献 综述,1
