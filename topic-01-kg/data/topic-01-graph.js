@@ -8055,1195 +8055,6 @@ window.KG_GRAPH = {
       ]
     },
     {
-      "id": "NT_SelfCareTheory",
-      "name": "自护理论",
-      "type": "NursingTheory",
-      "tags": [
-        "护理理论",
-        "自护理论"
-      ],
-      "aliases": [
-        "Orem 自护理论",
-        "自我护理理论",
-        "Orem's Self-Care Deficit Nursing Theory",
-        "SCDNT"
-      ],
-      "summary": "自护理论（Orem，1971）认为人天生具备自我护理的能力，护理的任务是在患者自护能力不足时提供补偿与支持。落到本主题：指导患者与家属参与打针前的准备、检查后的观察，以及居家自我照护与早期求助。",
-      "attrs": [
-        {
-          "k": "理论提出者",
-          "v": "Dorothea E. Orem"
-        },
-        {
-          "k": "提出年份",
-          "v": "1971"
-        },
-        {
-          "k": "理论依据",
-          "v": "系统评价与剂量反应 Meta 分析（Nasiri 等 2023）—— 纳入 46 项研究"
-        }
-      ],
-      "evidence": [
-        {
-          "type": "系统评价",
-          "author": "Nasiri M, Jafari Z, Rakhshan M, Yarahmadi F, et al.",
-          "title": "Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析",
-          "journal": "国际护理评论",
-          "year": 2023,
-          "cite": "Nasiri M, Jafari Z, Rakhshan M, Yarahmadi F, et al. / Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析 / 国际护理评论 / 2023",
-          "grade": "汇总证据",
-          "ref": "R24"
-        }
-      ],
-      "graph": "topic-01",
-      "details": [
-        {
-          "k": "多主体共同参与输液安全",
-          "v": "从患儿、患儿家长、护士、医院管理者等多角度出发，促使其积极参与患儿输液安全，降低外渗发生率",
-          "quote": "提出可从患儿、患儿家长、护士、医院管理者等多角度出发, 促使其积极参与患儿输液安全中, 降低输液外渗发生率.",
-          "src": "CN-14",
-          "cat": "居家护理"
-        },
-        {
-          "k": "研究目的",
-          "v": "评价按 Orem 自护缺陷护理理论设计的照护方案，对 18–70 岁慢性病患者的生活质量与自我照护（主要结局）及自我效能、焦虑、抑郁、压力（次要结局）的价值",
-          "quote": "This study aimed to clarify the value of caring programs developed according to Orem's Self-Care Deficit Nursing Theory regarding quality of life and self-care as the primary outcomes",
-          "src": "R24",
-          "cat": "护理理论"
-        },
-        {
-          "k": "纳入研究量",
-          "v": "检索 8 个信息源 + 国际临床试验注册库，截至 2022-03-30；共 46 项研究 + 11 条研究注册记录入选",
-          "quote": "A total of 46 studies and 11 study register entries were eligible.",
-          "src": "R24",
-          "cat": "护理理论"
-        },
-        {
-          "k": "主要效果",
-          "v": "自护理论干预显著改善生活质量、**自我照护能力**与自我效能，并显著降低焦虑与抑郁",
-          "quote": "Orem's theory-based interventions significantly improved the quality of life, self-care, and self-efficacy as well as significantly reduced anxiety and depression.",
-          "src": "R24",
-          "cat": "护理理论"
-        },
-        {
-          "k": "不确定的部分",
-          "v": "对**压力**的效果不确定 —— 无法做 Meta 分析",
-          "quote": "the value of the interventions on stress was uncertain, as performing the meta-analysis was not possible",
-          "src": "R24",
-          "cat": "护理理论"
-        },
-        {
-          "k": "证据强度偏低",
-          "v": "⚠️ 摘要自述：证据质量不理想、研究间异质性高，仍需设计良好的试验才能得出循证结论",
-          "quote": "Considering the undesirable evidence quality and the high between-study heterogeneity, further well-designed trials are required to draw an evidence-based conclusion.",
-          "src": "R24",
-          "cat": "护理理论"
-        },
-        {
-          "k": "对护理实践的意义",
-          "v": "Orem 理论可帮助护士动态评估患者的自我照护能力、实施针对其需求与问题的护理措施",
-          "quote": "Orem's Nursing Theory can help nurses in different fields to dynamically and carefully evaluate patients' self-care ability and implement appropriate nursing measures tailored to their needs, interests, and problems.",
-          "src": "R24",
-          "cat": "护理理论"
-        },
-        {
-          "k": "理论定位",
-          "v": "Orem 护理理论是最知名、可为患者自我照护活动提供结构的理论；慢性病患者需要恰当的自我照护训练、辅导与支持",
-          "quote": "Orem's Nursing Theory is the most well-known theory that provides a structure to involve patients in their self-care activities.",
-          "src": "R24",
-          "cat": "护理理论"
-        }
-      ]
-    },
-    {
-      "id": "R24",
-      "name": "Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析",
-      "type": "Reference",
-      "tags": [
-        "文献",
-        "系统评价"
-      ],
-      "aliases": [
-        "Application of Orem's theory-based caring programs among chronically ill adults",
-        "Orem 自护理论系统评价",
-        "Nasiri 2023 系统评价"
-      ],
-      "summary": "系统评价与剂量反应 Meta 分析，纳入 46 项研究：以自护理论为基础的照护方案可改善慢病成人的生活质量、自我照护能力与自我效能，并降低焦虑与抑郁；但研究间异质性高、证据质量不理想，仍需设计良好的试验。",
-      "attrs": [
-        {
-          "k": "文献类型",
-          "v": "系统评价"
-        },
-        {
-          "k": "年份",
-          "v": "2023"
-        },
-        {
-          "k": "核验标识",
-          "v": "DOI 10.1111/inr.12808 · PROSPERO CRD42020152789 · Int Nurs Rev 70(1):59-77"
-        },
-        {
-          "k": "证据等级",
-          "v": "汇总证据"
-        }
-      ],
-      "evidence": [
-        {
-          "type": "系统评价",
-          "author": "Nasiri M, Jafari Z, Rakhshan M, Yarahmadi F, et al.",
-          "title": "Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析",
-          "journal": "国际护理评论",
-          "year": 2023,
-          "cite": "Nasiri M, Jafari Z, Rakhshan M, Yarahmadi F, et al. / Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析 / 国际护理评论 / 2023",
-          "grade": "汇总证据",
-          "ref": "R24"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
-      "id": "FW_SymptomSign",
-      "name": "症状体征",
-      "type": "SymptomSign",
-      "tags": [
-        "知识框架",
-        "一级框架"
-      ],
-      "aliases": [
-        "症状体征"
-      ],
-      "summary": "论文「疾病知识图」一级框架之一。收录碘对比剂使用后可能出现的症状与体征 —— 不良反应、过敏反应、碘对比剂外渗；过敏反应下的下一级表现（皮疹、荨麻疹、瘙痒、颜面部水肿、咽喉部不适、胸闷、全身无力、过敏性休克），以及碘对比剂外渗下的局部表现（局部肿胀、局部疼痛、局部发红、皮肤发凉、皮肤发白发紧）。",
-      "attrs": [
-        {
-          "k": "框架层级",
-          "v": "一级框架"
-        }
-      ],
-      "evidence": [
-        {
-          "type": "指南",
-          "author": "美国放射学会药物与对比剂委员会",
-          "title": "美国放射学会对比剂手册",
-          "journal": "美国放射学会",
-          "year": 2024,
-          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
-          "grade": "指南与共识",
-          "ref": "R01"
-        },
-        {
-          "type": "声明",
-          "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
-          "journal": "放射学",
-          "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
-          "grade": "学会声明",
-          "ref": "R12"
-        },
-        {
-          "type": "建议",
-          "author": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al.",
-          "title": "对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）",
-          "journal": "加拿大放射医师协会杂志",
-          "year": 2025,
-          "cite": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al. / 对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会） / 加拿大放射医师协会杂志 / 2025",
-          "grade": "推荐意见",
-          "ref": "R14"
-        },
-        {
-          "type": "建议",
-          "author": "Brockow K",
-          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
-          "journal": "变态反应",
-          "year": 2024,
-          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
-          "grade": "推荐意见",
-          "ref": "R13"
-        },
-        {
-          "type": "Meta分析",
-          "author": "Nawras M, Alyousif Z, Beran A, Elsamaloty H",
-          "title": "碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析",
-          "journal": "临床影像学",
-          "year": 2023,
-          "cite": "Nawras M, Alyousif Z, Beran A, Elsamaloty H / 碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析 / 临床影像学 / 2023 · DOI 10.1016/j.clinimag.2023.05.006 · PMID 37216743"
-        },
-        {
-          "type": "Meta分析",
-          "author": "Huang W, He C, Chen Y, Xu H, Yao J, Zhao L",
-          "title": "对比剂即刻超敏反应危险因素的系统评价与 Meta 分析",
-          "journal": "欧洲放射学杂志",
-          "year": 2026,
-          "cite": "Huang W, He C, Chen Y, Xu H, Yao J, Zhao L / 对比剂即刻超敏反应危险因素的系统评价与 Meta 分析 / 欧洲放射学杂志 / 2026 · DOI 10.1016/j.ejrad.2025.112472 · PMID 41175815"
-        },
-        {
-          "type": "推荐实践",
-          "author": "Golden DBK, Wang J, Waserman S, et al.",
-          "title": "过敏反应：2023 年实践参数更新",
-          "journal": "变态反应、哮喘与免疫学年鉴",
-          "year": 2024,
-          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
-          "grade": "推荐意见",
-          "ref": "R16"
-        },
-        {
-          "type": "指南",
-          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
-          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
-          "journal": "欧洲放射学杂志",
-          "year": 2022,
-          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
-          "grade": "指南与共识",
-          "ref": "R02"
-        },
-        {
-          "type": "指南",
-          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
-          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
-          "journal": "中华护理杂志",
-          "year": 2026,
-          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
-          "grade": "指南与共识",
-          "ref": "R04"
-        },
-        {
-          "type": "系统评价",
-          "author": "姚金秀、杨丽娜、梅申聪、董芳辉",
-          "title": "放射科碘对比剂外渗影响因素的系统评价",
-          "journal": "上海护理",
-          "year": 2023,
-          "cite": "姚金秀、杨丽娜、梅申聪、董芳辉 / 放射科碘对比剂外渗影响因素的系统评价 / 上海护理 / 2023",
-          "grade": "汇总证据",
-          "ref": "R17"
-        },
-        {
-          "type": "规范",
-          "author": "江西省市场监督管理局",
-          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
-          "journal": "江西省市场监督管理局（地方标准）",
-          "year": 2026,
-          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
-          "grade": "标准与规范",
-          "ref": "R09"
-        },
-        {
-          "type": "规范",
-          "author": "广西壮族自治区市场监督管理局",
-          "title": "DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范",
-          "journal": "广西壮族自治区市场监督管理局（地方标准）",
-          "year": 2024,
-          "cite": "广西壮族自治区市场监督管理局 / DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范 / 广西壮族自治区市场监督管理局（地方标准） / 2024",
-          "grade": "标准与规范",
-          "ref": "R10"
-        },
-        {
-          "type": "Meta分析",
-          "author": "Ding S, Meystre NR, Campeanu C, Gullo G",
-          "title": "CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析",
-          "journal": "JBI 系统评价与实施报告",
-          "year": 2018,
-          "cite": "Ding S, Meystre NR, Campeanu C, Gullo G / CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析 / JBI 系统评价与实施报告 / 2018 · DOI 10.11124/JBISRIR-2017-003348 · PMID 29324560"
-        },
-        {
-          "type": "共识",
-          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
-          "title": "肾病患者静脉注射碘对比剂应用专家共识",
-          "journal": "中华放射学杂志",
-          "year": 2021,
-          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
-          "grade": "指南与共识",
-          "ref": "R05"
-        },
-        {
-          "type": "共识",
-          "author": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会",
-          "title": "碘对比剂诱导的急性肾损伤防治的专家共识",
-          "journal": "中华肾脏病杂志",
-          "year": 2022,
-          "cite": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会 / 碘对比剂诱导的急性肾损伤防治的专家共识 / 中华肾脏病杂志 / 2022",
-          "grade": "指南与共识",
-          "ref": "R06"
-        },
-        {
-          "type": "Meta分析",
-          "author": "Navarese EP, Gurbel PA, Andreotti F, et al.",
-          "title": "心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析",
-          "journal": "公共科学图书馆·综合",
-          "year": 2017,
-          "cite": "Navarese EP, Gurbel PA, Andreotti F, et al. / 心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析 / 公共科学图书馆·综合 / 2017",
-          "grade": "汇总证据",
-          "ref": "R18"
-        },
-        {
-          "type": "声明",
-          "author": "Davenport MS, Perazella MA, Yee J, et al.",
-          "title": "碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明",
-          "journal": "放射学",
-          "year": 2020,
-          "cite": "Davenport MS, Perazella MA, Yee J, et al. / 碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明 / 放射学 / 2020",
-          "grade": "学会声明",
-          "ref": "R11"
-        },
-        {
-          "type": "推荐",
-          "author": "de Laforcade L, Bobot M, Bellin MF, et al.",
-          "title": "欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评",
-          "journal": "肾脏病与治疗",
-          "year": 2021,
-          "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / 欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评 / 肾脏病与治疗 / 2021",
-          "grade": "推荐意见",
-          "ref": "R15"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
-      "id": "FW_Exam",
-      "name": "辅助检查",
-      "type": "Exam",
-      "tags": [
-        "知识框架",
-        "一级框架"
-      ],
-      "aliases": [
-        "辅助检查"
-      ],
-      "summary": "论文「疾病知识图」一级框架之一。收录与本主题相关的检查项目 —— CT 增强扫描、碘对比剂。",
-      "attrs": [
-        {
-          "k": "框架层级",
-          "v": "一级框架"
-        }
-      ],
-      "evidence": [
-        {
-          "type": "指南",
-          "author": "美国放射学会药物与对比剂委员会",
-          "title": "美国放射学会对比剂手册",
-          "journal": "美国放射学会",
-          "year": 2024,
-          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
-          "grade": "指南与共识",
-          "ref": "R01"
-        },
-        {
-          "type": "指南",
-          "author": "中华医学会放射学分会对比剂安全使用工作组",
-          "title": "碘对比剂使用指南（第2版）",
-          "journal": "中华放射学杂志",
-          "year": 2013,
-          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
-          "grade": "指南与共识",
-          "ref": "R03"
-        },
-        {
-          "type": "规范",
-          "author": "广西壮族自治区市场监督管理局",
-          "title": "DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范",
-          "journal": "广西壮族自治区市场监督管理局（地方标准）",
-          "year": 2024,
-          "cite": "广西壮族自治区市场监督管理局 / DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范 / 广西壮族自治区市场监督管理局（地方标准） / 2024",
-          "grade": "标准与规范",
-          "ref": "R10"
-        },
-        {
-          "type": "共识",
-          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
-          "title": "影像科碘对比剂输注安全专家共识",
-          "journal": "介入放射学杂志",
-          "year": 2018,
-          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
-          "grade": "指南与共识",
-          "ref": "R07"
-        },
-        {
-          "type": "推荐",
-          "author": "de Laforcade L, Bobot M, Bellin MF, et al.",
-          "title": "欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评",
-          "journal": "肾脏病与治疗",
-          "year": 2021,
-          "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / 欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评 / 肾脏病与治疗 / 2021",
-          "grade": "推荐意见",
-          "ref": "R15"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
-      "id": "FW_ManagementPrinciple",
-      "name": "处置原则",
-      "type": "ManagementPrinciple",
-      "tags": [
-        "知识框架",
-        "一级框架"
-      ],
-      "aliases": [
-        "处置原则"
-      ],
-      "summary": "论文「疾病知识图」一级框架之一。收录护理处置原则 —— 护理措施、护理预防、护理干预，以及其下的外渗处置原则与不良反应分级处置原则。",
-      "attrs": [
-        {
-          "k": "框架层级",
-          "v": "一级框架"
-        }
-      ],
-      "evidence": [
-        {
-          "type": "指南",
-          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
-          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
-          "journal": "中华护理杂志",
-          "year": 2026,
-          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
-          "grade": "指南与共识",
-          "ref": "R04"
-        },
-        {
-          "type": "共识",
-          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
-          "title": "影像科碘对比剂输注安全专家共识",
-          "journal": "介入放射学杂志",
-          "year": 2018,
-          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
-          "grade": "指南与共识",
-          "ref": "R07"
-        },
-        {
-          "type": "指南",
-          "author": "美国放射学会药物与对比剂委员会",
-          "title": "美国放射学会对比剂手册",
-          "journal": "美国放射学会",
-          "year": 2024,
-          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
-          "grade": "指南与共识",
-          "ref": "R01"
-        },
-        {
-          "type": "规范",
-          "author": "江西省市场监督管理局",
-          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
-          "journal": "江西省市场监督管理局（地方标准）",
-          "year": 2026,
-          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
-          "grade": "标准与规范",
-          "ref": "R09"
-        },
-        {
-          "type": "指南",
-          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
-          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
-          "journal": "欧洲放射学杂志",
-          "year": 2022,
-          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
-          "grade": "指南与共识",
-          "ref": "R02"
-        },
-        {
-          "type": "推荐实践",
-          "author": "Golden DBK, Wang J, Waserman S, et al.",
-          "title": "过敏反应：2023 年实践参数更新",
-          "journal": "变态反应、哮喘与免疫学年鉴",
-          "year": 2024,
-          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
-          "grade": "推荐意见",
-          "ref": "R16"
-        },
-        {
-          "type": "声明",
-          "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
-          "journal": "放射学",
-          "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
-          "grade": "学会声明",
-          "ref": "R12"
-        },
-        {
-          "type": "建议",
-          "author": "Brockow K",
-          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
-          "journal": "变态反应",
-          "year": 2024,
-          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
-          "grade": "推荐意见",
-          "ref": "R13"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
-      "id": "FW_NursingTheory",
-      "name": "护理理论",
-      "type": "NursingTheory",
-      "tags": [
-        "知识框架",
-        "一级框架"
-      ],
-      "aliases": [
-        "护理理论"
-      ],
-      "summary": "论文「疾病知识图」一级框架之一。收录指导护理实践的理论 —— 自护理论（Orem）：人天生具备自我护理的能力，护理的任务是在患者自护能力不足时提供补偿与支持；对应到本主题，是指导患者与家属参与预防、早期识别与居家自我照护。以及早期预警：在情况变坏之前先看出苗头、及时升级处理。",
-      "attrs": [
-        {
-          "k": "框架层级",
-          "v": "一级框架"
-        }
-      ],
-      "evidence": [
-        {
-          "type": "建议",
-          "author": "Brockow K",
-          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
-          "journal": "变态反应",
-          "year": 2024,
-          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
-          "grade": "推荐意见",
-          "ref": "R13"
-        },
-        {
-          "type": "推荐实践",
-          "author": "Golden DBK, Wang J, Waserman S, et al.",
-          "title": "过敏反应：2023 年实践参数更新",
-          "journal": "变态反应、哮喘与免疫学年鉴",
-          "year": 2024,
-          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
-          "grade": "推荐意见",
-          "ref": "R16"
-        },
-        {
-          "type": "系统评价",
-          "author": "Nasiri M, Jafari Z, Rakhshan M, Yarahmadi F, et al.",
-          "title": "Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析",
-          "journal": "国际护理评论",
-          "year": 2023,
-          "cite": "Nasiri M, Jafari Z, Rakhshan M, Yarahmadi F, et al. / Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析 / 国际护理评论 / 2023",
-          "grade": "汇总证据",
-          "ref": "R24"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
-      "id": "FW_DiseaseEducation",
-      "name": "疾病科普",
-      "type": "DiseaseEducation",
-      "tags": [
-        "知识框架",
-        "一级框架"
-      ],
-      "aliases": [
-        "疾病科普"
-      ],
-      "summary": "论文「疾病知识图」一级框架之一。论文 §3.2 指出「疾病知识图中科普模块的内容可面向公众开放，便于公众了解疾病的早期症状及常见误区」。收录检查前注意事项、检查后观察与护理、过敏史告知、外渗居家护理、急救知识五篇科普。",
-      "attrs": [
-        {
-          "k": "框架层级",
-          "v": "一级框架"
-        }
-      ],
-      "evidence": [
-        {
-          "type": "指南",
-          "author": "中华医学会放射学分会对比剂安全使用工作组",
-          "title": "碘对比剂使用指南（第2版）",
-          "journal": "中华放射学杂志",
-          "year": 2013,
-          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
-          "grade": "指南与共识",
-          "ref": "R03"
-        },
-        {
-          "type": "书籍",
-          "author": "秦月兰、郑淑梅、刘雪莲",
-          "title": "影像护理学",
-          "journal": "人民卫生出版社",
-          "year": 2020,
-          "cite": "秦月兰、郑淑梅、刘雪莲 / 影像护理学 / 人民卫生出版社 / 2020",
-          "grade": "教材",
-          "ref": "R20"
-        },
-        {
-          "type": "指南",
-          "author": "美国放射学会药物与对比剂委员会",
-          "title": "美国放射学会对比剂手册",
-          "journal": "美国放射学会",
-          "year": 2024,
-          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
-          "grade": "指南与共识",
-          "ref": "R01"
-        },
-        {
-          "type": "共识",
-          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
-          "title": "影像科碘对比剂输注安全专家共识",
-          "journal": "介入放射学杂志",
-          "year": 2018,
-          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
-          "grade": "指南与共识",
-          "ref": "R07"
-        },
-        {
-          "type": "声明",
-          "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
-          "journal": "放射学",
-          "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
-          "grade": "学会声明",
-          "ref": "R12"
-        },
-        {
-          "type": "指南",
-          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
-          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
-          "journal": "中华护理杂志",
-          "year": 2026,
-          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
-          "grade": "指南与共识",
-          "ref": "R04"
-        },
-        {
-          "type": "指南",
-          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
-          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
-          "journal": "欧洲放射学杂志",
-          "year": 2022,
-          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
-          "grade": "指南与共识",
-          "ref": "R02"
-        },
-        {
-          "type": "推荐实践",
-          "author": "Golden DBK, Wang J, Waserman S, et al.",
-          "title": "过敏反应：2023 年实践参数更新",
-          "journal": "变态反应、哮喘与免疫学年鉴",
-          "year": 2024,
-          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
-          "grade": "推荐意见",
-          "ref": "R16"
-        },
-        {
-          "type": "建议",
-          "author": "Brockow K",
-          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
-          "journal": "变态反应",
-          "year": 2024,
-          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
-          "grade": "推荐意见",
-          "ref": "R13"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
-      "id": "FW_SymptomCategory",
-      "name": "症状分类",
-      "type": "SymptomCategory",
-      "tags": [
-        "知识框架",
-        "二级框架"
-      ],
-      "aliases": [
-        "症状分类"
-      ],
-      "summary": "论文表 1「症状分类」二级框架。把症状按谱归类 —— 碘对比剂不良反应谱，其下有过敏反应谱、静脉外渗反应谱。",
-      "attrs": [
-        {
-          "k": "框架层级",
-          "v": "二级框架"
-        }
-      ],
-      "evidence": [
-        {
-          "type": "指南",
-          "author": "美国放射学会药物与对比剂委员会",
-          "title": "美国放射学会对比剂手册",
-          "journal": "美国放射学会",
-          "year": 2024,
-          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
-          "grade": "指南与共识",
-          "ref": "R01"
-        },
-        {
-          "type": "声明",
-          "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
-          "journal": "放射学",
-          "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
-          "grade": "学会声明",
-          "ref": "R12"
-        },
-        {
-          "type": "指南",
-          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
-          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
-          "journal": "欧洲放射学杂志",
-          "year": 2022,
-          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
-          "grade": "指南与共识",
-          "ref": "R02"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
-      "id": "FW_AssessmentTool",
-      "name": "评估工具",
-      "type": "AssessmentTool",
-      "tags": [
-        "知识框架",
-        "二级框架"
-      ],
-      "aliases": [
-        "评估工具"
-      ],
-      "summary": "论文表 1「评估工具」二级框架。收录评估工具 —— 过敏史询问、外渗风险评估、血管条件评估。",
-      "attrs": [
-        {
-          "k": "框架层级",
-          "v": "二级框架"
-        }
-      ],
-      "evidence": [
-        {
-          "type": "指南",
-          "author": "中华医学会放射学分会对比剂安全使用工作组",
-          "title": "碘对比剂使用指南（第2版）",
-          "journal": "中华放射学杂志",
-          "year": 2013,
-          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
-          "grade": "指南与共识",
-          "ref": "R03"
-        },
-        {
-          "type": "声明",
-          "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
-          "journal": "放射学",
-          "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
-          "grade": "学会声明",
-          "ref": "R12"
-        },
-        {
-          "type": "指南",
-          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
-          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
-          "journal": "中华护理杂志",
-          "year": 2026,
-          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
-          "grade": "指南与共识",
-          "ref": "R04"
-        },
-        {
-          "type": "系统评价",
-          "author": "姚金秀、杨丽娜、梅申聪、董芳辉",
-          "title": "放射科碘对比剂外渗影响因素的系统评价",
-          "journal": "上海护理",
-          "year": 2023,
-          "cite": "姚金秀、杨丽娜、梅申聪、董芳辉 / 放射科碘对比剂外渗影响因素的系统评价 / 上海护理 / 2023",
-          "grade": "汇总证据",
-          "ref": "R17"
-        },
-        {
-          "type": "Meta分析",
-          "author": "Ding S, Meystre NR, Campeanu C, Gullo G",
-          "title": "CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析",
-          "journal": "JBI 系统评价与实施报告",
-          "year": 2018,
-          "cite": "Ding S, Meystre NR, Campeanu C, Gullo G / CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析 / JBI 系统评价与实施报告 / 2018 · DOI 10.11124/JBISRIR-2017-003348 · PMID 29324560"
-        },
-        {
-          "type": "标准",
-          "author": "国家卫生健康委员会",
-          "title": "WS/T 433—2023 静脉治疗护理技术操作标准",
-          "journal": "国家卫生健康委员会（卫生行业标准）",
-          "year": 2023,
-          "cite": "国家卫生健康委员会 / WS/T 433—2023 静脉治疗护理技术操作标准 / 国家卫生健康委员会（卫生行业标准） / 2023",
-          "grade": "标准与规范",
-          "ref": "R08"
-        },
-        {
-          "type": "规范",
-          "author": "江西省市场监督管理局",
-          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
-          "journal": "江西省市场监督管理局（地方标准）",
-          "year": 2026,
-          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
-          "grade": "标准与规范",
-          "ref": "R09"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
-      "id": "FW_RiskFactor",
-      "name": "高危因素识别",
-      "type": "RiskFactor",
-      "tags": [
-        "知识框架",
-        "二级框架"
-      ],
-      "aliases": [
-        "高危因素识别"
-      ],
-      "summary": "论文表 1「高危因素识别」二级框架。收录高危因素 —— 既往碘对比剂过敏史、未控制的哮喘、高龄或低龄、静脉条件差、高压注射、未做生理盐水试推。",
-      "attrs": [
-        {
-          "k": "框架层级",
-          "v": "二级框架"
-        }
-      ],
-      "evidence": [
-        {
-          "type": "声明",
-          "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
-          "journal": "放射学",
-          "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
-          "grade": "学会声明",
-          "ref": "R12"
-        },
-        {
-          "type": "建议",
-          "author": "Brockow K",
-          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
-          "journal": "变态反应",
-          "year": 2024,
-          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
-          "grade": "推荐意见",
-          "ref": "R13"
-        },
-        {
-          "type": "Meta分析",
-          "author": "Huang W, He C, Chen Y, Xu H, Yao J, Zhao L",
-          "title": "对比剂即刻超敏反应危险因素的系统评价与 Meta 分析",
-          "journal": "欧洲放射学杂志",
-          "year": 2026,
-          "cite": "Huang W, He C, Chen Y, Xu H, Yao J, Zhao L / 对比剂即刻超敏反应危险因素的系统评价与 Meta 分析 / 欧洲放射学杂志 / 2026 · DOI 10.1016/j.ejrad.2025.112472 · PMID 41175815"
-        },
-        {
-          "type": "指南",
-          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
-          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
-          "journal": "中华护理杂志",
-          "year": 2026,
-          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
-          "grade": "指南与共识",
-          "ref": "R04"
-        },
-        {
-          "type": "系统评价",
-          "author": "姚金秀、杨丽娜、梅申聪、董芳辉",
-          "title": "放射科碘对比剂外渗影响因素的系统评价",
-          "journal": "上海护理",
-          "year": 2023,
-          "cite": "姚金秀、杨丽娜、梅申聪、董芳辉 / 放射科碘对比剂外渗影响因素的系统评价 / 上海护理 / 2023",
-          "grade": "汇总证据",
-          "ref": "R17"
-        },
-        {
-          "type": "指南",
-          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
-          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
-          "journal": "欧洲放射学杂志",
-          "year": 2022,
-          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
-          "grade": "指南与共识",
-          "ref": "R02"
-        },
-        {
-          "type": "规范",
-          "author": "江西省市场监督管理局",
-          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
-          "journal": "江西省市场监督管理局（地方标准）",
-          "year": 2026,
-          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
-          "grade": "标准与规范",
-          "ref": "R09"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
-      "id": "FW_PharmacologicalManagement",
-      "name": "药物管理",
-      "type": "PharmacologicalManagement",
-      "tags": [
-        "知识框架",
-        "二级框架"
-      ],
-      "aliases": [
-        "药物管理"
-      ],
-      "summary": "论文表 1「药物管理」二级框架。收录药物处置 —— 肌内注射肾上腺素、糖皮质激素、抗组胺药、50% 硫酸镁湿敷、0.05% 地塞米松湿敷。",
-      "attrs": [
-        {
-          "k": "框架层级",
-          "v": "二级框架"
-        }
-      ],
-      "evidence": [
-        {
-          "type": "推荐实践",
-          "author": "Golden DBK, Wang J, Waserman S, et al.",
-          "title": "过敏反应：2023 年实践参数更新",
-          "journal": "变态反应、哮喘与免疫学年鉴",
-          "year": 2024,
-          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
-          "grade": "推荐意见",
-          "ref": "R16"
-        },
-        {
-          "type": "声明",
-          "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
-          "journal": "放射学",
-          "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
-          "grade": "学会声明",
-          "ref": "R12"
-        },
-        {
-          "type": "建议",
-          "author": "Brockow K",
-          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
-          "journal": "变态反应",
-          "year": 2024,
-          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
-          "grade": "推荐意见",
-          "ref": "R13"
-        },
-        {
-          "type": "共识",
-          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
-          "title": "影像科碘对比剂输注安全专家共识",
-          "journal": "介入放射学杂志",
-          "year": 2018,
-          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
-          "grade": "指南与共识",
-          "ref": "R07"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
-      "id": "FW_NonPharmacologicalManagement",
-      "name": "非药物管理",
-      "type": "NonPharmacologicalManagement",
-      "tags": [
-        "知识框架",
-        "二级框架"
-      ],
-      "aliases": [
-        "非药物管理"
-      ],
-      "summary": "论文表 1「非药物管理」二级框架。论文第 20 页写明：点击「非药物管理」实体节点，Web 端返回其关联实体节点。收录非药物处置 —— 立即停止注射、保留静脉留置针、患肢抬高、局部冷敷、密切观察、对比剂预处理、血管可视化、心理疏导。",
-      "attrs": [
-        {
-          "k": "框架层级",
-          "v": "二级框架"
-        }
-      ],
-      "evidence": [
-        {
-          "type": "指南",
-          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
-          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
-          "journal": "欧洲放射学杂志",
-          "year": 2022,
-          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
-          "grade": "指南与共识",
-          "ref": "R02"
-        },
-        {
-          "type": "指南",
-          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
-          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
-          "journal": "中华护理杂志",
-          "year": 2026,
-          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
-          "grade": "指南与共识",
-          "ref": "R04"
-        },
-        {
-          "type": "共识",
-          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
-          "title": "影像科碘对比剂输注安全专家共识",
-          "journal": "介入放射学杂志",
-          "year": 2018,
-          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
-          "grade": "指南与共识",
-          "ref": "R07"
-        },
-        {
-          "type": "指南",
-          "author": "美国放射学会药物与对比剂委员会",
-          "title": "美国放射学会对比剂手册",
-          "journal": "美国放射学会",
-          "year": 2024,
-          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
-          "grade": "指南与共识",
-          "ref": "R01"
-        },
-        {
-          "type": "指南",
-          "author": "中华医学会放射学分会对比剂安全使用工作组",
-          "title": "碘对比剂使用指南（第2版）",
-          "journal": "中华放射学杂志",
-          "year": 2013,
-          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
-          "grade": "指南与共识",
-          "ref": "R03"
-        },
-        {
-          "type": "规范",
-          "author": "江西省市场监督管理局",
-          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
-          "journal": "江西省市场监督管理局（地方标准）",
-          "year": 2026,
-          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
-          "grade": "标准与规范",
-          "ref": "R09"
-        },
-        {
-          "type": "Meta分析",
-          "author": "Nawras M, Alyousif Z, Beran A, Elsamaloty H",
-          "title": "碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析",
-          "journal": "临床影像学",
-          "year": 2023,
-          "cite": "Nawras M, Alyousif Z, Beran A, Elsamaloty H / 碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析 / 临床影像学 / 2023 · DOI 10.1016/j.clinimag.2023.05.006 · PMID 37216743"
-        },
-        {
-          "type": "标准",
-          "author": "国家卫生健康委员会",
-          "title": "WS/T 433—2023 静脉治疗护理技术操作标准",
-          "journal": "国家卫生健康委员会（卫生行业标准）",
-          "year": 2023,
-          "cite": "国家卫生健康委员会 / WS/T 433—2023 静脉治疗护理技术操作标准 / 国家卫生健康委员会（卫生行业标准） / 2023",
-          "grade": "标准与规范",
-          "ref": "R08"
-        },
-        {
-          "type": "书籍",
-          "author": "秦月兰、郑淑梅、刘雪莲",
-          "title": "影像护理学",
-          "journal": "人民卫生出版社",
-          "year": 2020,
-          "cite": "秦月兰、郑淑梅、刘雪莲 / 影像护理学 / 人民卫生出版社 / 2020",
-          "grade": "教材",
-          "ref": "R20"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
-      "id": "FW_SymptomStatus",
-      "name": "症状现状",
-      "type": "SymptomStatus",
-      "tags": [
-        "知识框架",
-        "二级框架"
-      ],
-      "aliases": [
-        "症状现状"
-      ],
-      "summary": "论文表 1「症状现状」二级框架。收录症状现状 —— 轻度反应已缓解、重度反应已恢复。（在本题数据里，这两个节点是护理措施 / 护理干预 / 外渗处置原则的「影响」目标，故归在处置原则之下。）",
-      "attrs": [
-        {
-          "k": "框架层级",
-          "v": "二级框架"
-        }
-      ],
-      "evidence": [
-        {
-          "type": "声明",
-          "author": "Wang C, Ramsey A, Lang D, et al.",
-          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
-          "journal": "放射学",
-          "year": 2025,
-          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
-          "grade": "学会声明",
-          "ref": "R12"
-        },
-        {
-          "type": "共识",
-          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
-          "title": "影像科碘对比剂输注安全专家共识",
-          "journal": "介入放射学杂志",
-          "year": 2018,
-          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
-          "grade": "指南与共识",
-          "ref": "R07"
-        },
-        {
-          "type": "推荐实践",
-          "author": "Golden DBK, Wang J, Waserman S, et al.",
-          "title": "过敏反应：2023 年实践参数更新",
-          "journal": "变态反应、哮喘与免疫学年鉴",
-          "year": 2024,
-          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
-          "grade": "推荐意见",
-          "ref": "R16"
-        },
-        {
-          "type": "建议",
-          "author": "Brockow K",
-          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
-          "journal": "变态反应",
-          "year": 2024,
-          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
-          "grade": "推荐意见",
-          "ref": "R13"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
-      "id": "FW_FunctionalStatus",
-      "name": "功能状况",
-      "type": "FunctionalStatus",
-      "tags": [
-        "知识框架",
-        "二级框架"
-      ],
-      "aliases": [
-        "功能状况"
-      ],
-      "summary": "论文表 1「功能状况」二级框架。收录功能状况 —— 患肢功能状态。（在本题数据里，该节点是护理干预的「影响」目标，故归在处置原则之下。）",
-      "attrs": [
-        {
-          "k": "框架层级",
-          "v": "二级框架"
-        }
-      ],
-      "evidence": [
-        {
-          "type": "指南",
-          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
-          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
-          "journal": "中华护理杂志",
-          "year": 2026,
-          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
-          "grade": "指南与共识",
-          "ref": "R04"
-        },
-        {
-          "type": "指南",
-          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
-          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
-          "journal": "欧洲放射学杂志",
-          "year": 2022,
-          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
-          "grade": "指南与共识",
-          "ref": "R02"
-        }
-      ],
-      "graph": "topic-01"
-    },
-    {
       "id": "R01-2026",
       "graph": "topic-01",
       "type": "Reference",
@@ -11440,6 +10251,50 @@ window.KG_GRAPH = {
           "cite": "Romanczuk D, Lange S, Medrzycka-Dabrowska W, Cichowlas G / Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography / Journal of Clinical Medicine / 2026",
           "grade": "汇总证据",
           "ref": "EN-22"
+        }
+      ]
+    },
+    {
+      "id": "R24",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析",
+      "tags": [
+        "文献",
+        "系统评价"
+      ],
+      "aliases": [
+        "Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析"
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "系统评价"
+        },
+        {
+          "k": "年份",
+          "v": "2023"
+        },
+        {
+          "k": "核验标识",
+          "v": "DOI 10.1111/inr.12808 · PMID 36418147 · PROSPERO CRD42020152789 · 70(1):59-77"
+        },
+        {
+          "k": "证据等级",
+          "v": "汇总证据"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "系统评价",
+          "author": "Nasiri M, Jafari Z, Rakhshan M, Yarahmadi F, et al.",
+          "title": "Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析",
+          "journal": "International Nursing Review",
+          "year": 2023,
+          "cite": "Nasiri M, Jafari Z, Rakhshan M, Yarahmadi F, et al. / Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析 / International Nursing Review / 2023",
+          "grade": "汇总证据",
+          "ref": "R24"
         }
       ]
     },
@@ -19132,6 +17987,2401 @@ window.KG_GRAPH = {
           "cat": "护理流程"
         }
       ]
+    },
+    {
+      "id": "NPM_AcupointStimulation",
+      "graph": "topic-01",
+      "type": "NonPharmacologicalManagement",
+      "name": "穴位刺激",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "穴位刺激"
+      ],
+      "summary": "在特定穴位（最常用内关/PC6、耳穴）施加按压、贴敷或电刺激以减轻恶心呕吐的护理技术，可作为药物预防的辅助手段。 ⚠️ **证据场景**：下列文献的证据场景多为**化疗 / 妊娠 / 术后**恶心呕吐；用于**造影剂相关**恶心呕吐（生理性反应）属**跨场景外推**，只能作辅助措施，**不替代**规范处理。",
+      "attrs": [],
+      "evidence": []
+    },
+    {
+      "id": "NPM_Aromatherapy",
+      "graph": "topic-01",
+      "type": "NonPharmacologicalManagement",
+      "name": "芳香疗法（精油疗法）",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "芳香疗法（精油疗法）"
+      ],
+      "summary": "经鼻吸入薄荷、柠檬等精油以缓解恶心的非药物方法，可作为药物预防的辅助措施，不替代规范止吐方案。 ⚠️ **证据场景**：下列文献的证据场景多为**化疗 / 妊娠 / 术后**恶心呕吐；用于**造影剂相关**恶心呕吐（生理性反应）属**跨场景外推**，只能作辅助措施，**不替代**规范处理。",
+      "attrs": [],
+      "evidence": []
+    },
+    {
+      "id": "NPM_GingerTherapy",
+      "graph": "topic-01",
+      "type": "NonPharmacologicalManagement",
+      "name": "生姜疗法",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "生姜疗法"
+      ],
+      "summary": "口服生姜或生姜粉缓解恶心，世界卫生组织产前保健建议 D.1 明确推荐生姜用于孕早期恶心缓解；系统评价显示对恶心的改善证据为低至中等确定性。 ⚠️ **证据场景**：下列文献的证据场景多为**化疗 / 妊娠 / 术后**恶心呕吐；用于**造影剂相关**恶心呕吐（生理性反应）属**跨场景外推**，只能作辅助措施，**不替代**规范处理。",
+      "attrs": [],
+      "evidence": []
+    },
+    {
+      "id": "DE_NauseaHealthEducation",
+      "graph": "topic-01",
+      "type": "DiseaseEducation",
+      "name": "恶心呕吐健康教育",
+      "tags": [
+        "疾病教育"
+      ],
+      "aliases": [
+        "恶心呕吐健康教育"
+      ],
+      "summary": "面向患者和家属的宣教与自我照护指导：讲清恶心呕吐的原因、预防方案、用药要点、饮食起居调整、什么时候必须求助，以及如何记录症状日记（何时、多久、吃了什么药、程度几分）。这是患者扫码后最直接看到的内容。 ⚠️ **证据场景**：下列文献的证据场景多为**化疗 / 妊娠 / 术后**恶心呕吐；用于**造影剂相关**恶心呕吐（生理性反应）属**跨场景外推**，只能作辅助措施，**不替代**规范处理。",
+      "attrs": [],
+      "evidence": []
+    },
+    {
+      "id": "NPM_LifestyleCare",
+      "graph": "topic-01",
+      "type": "NonPharmacologicalManagement",
+      "name": "起居护理",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "起居护理"
+      ],
+      "summary": "通过调整生活起居与饮食环境减轻恶心：保持空气流通、无强烈气味、少量多餐、清淡饮食，进食后取半卧位休息，避免过冷过热与油腻食物。 ⚠️ **证据场景**：下列文献的证据场景多为**化疗 / 妊娠 / 术后**恶心呕吐；用于**造影剂相关**恶心呕吐（生理性反应）属**跨场景外推**，只能作辅助措施，**不替代**规范处理。",
+      "attrs": [],
+      "evidence": []
+    },
+    {
+      "id": "NPM_FluidTherapy",
+      "graph": "topic-01",
+      "type": "NonPharmacologicalManagement",
+      "name": "液体疗法",
+      "tags": [
+        "非药物管理"
+      ],
+      "aliases": [
+        "液体疗法"
+      ],
+      "summary": "呕吐导致摄入不足时按医嘱补充水分与电解质，维持水电解质平衡。轻症以口服补液为先；重症（如妊娠剧吐伴脱水）需静脉补液并补充硫胺素。 ⚠️ **证据场景**：下列文献的证据场景多为**化疗 / 妊娠 / 术后**恶心呕吐；用于**造影剂相关**恶心呕吐（生理性反应）属**跨场景外推**，只能作辅助措施，**不替代**规范处理。",
+      "attrs": [],
+      "evidence": []
+    },
+    {
+      "id": "NT_SelfCareTheory",
+      "name": "自护理论",
+      "type": "NursingTheory",
+      "tags": [
+        "护理理论",
+        "自护理论"
+      ],
+      "aliases": [
+        "Orem 自护理论",
+        "自我护理理论",
+        "Orem's Self-Care Deficit Nursing Theory",
+        "SCDNT"
+      ],
+      "summary": "自护理论（Orem，1971）认为人天生具备自我护理的能力，护理的任务是在患者自护能力不足时提供补偿与支持。落到本主题：指导患者与家属参与打针前的准备、检查后的观察，以及居家自我照护与早期求助。",
+      "attrs": [
+        {
+          "k": "理论提出者",
+          "v": "Dorothea E. Orem"
+        },
+        {
+          "k": "提出年份",
+          "v": "1971"
+        },
+        {
+          "k": "理论依据",
+          "v": "系统评价与剂量反应 Meta 分析（Nasiri 等 2023）—— 纳入 46 项研究"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "系统评价",
+          "author": "Nasiri M, Jafari Z, Rakhshan M, Yarahmadi F, et al.",
+          "title": "Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析",
+          "journal": "国际护理评论",
+          "year": 2023,
+          "cite": "Nasiri M, Jafari Z, Rakhshan M, Yarahmadi F, et al. / Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析 / 国际护理评论 / 2023",
+          "grade": "汇总证据",
+          "ref": "R24"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "FW_SymptomSign",
+      "name": "症状体征",
+      "type": "SymptomSign",
+      "tags": [
+        "知识框架",
+        "一级框架"
+      ],
+      "aliases": [
+        "症状体征"
+      ],
+      "summary": "论文「疾病知识图」一级框架之一。收录碘对比剂使用后可能出现的症状与体征 —— 不良反应、过敏反应、碘对比剂外渗；过敏反应下的下一级表现（皮疹、荨麻疹、瘙痒、颜面部水肿、咽喉部不适、胸闷、全身无力、过敏性休克），以及碘对比剂外渗下的局部表现（局部肿胀、局部疼痛、局部发红、皮肤发凉、皮肤发白发紧）。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "一级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al.",
+          "title": "对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）",
+          "journal": "加拿大放射医师协会杂志",
+          "year": 2025,
+          "cite": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al. / 对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会） / 加拿大放射医师协会杂志 / 2025",
+          "grade": "推荐意见",
+          "ref": "R14"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Nawras M, Alyousif Z, Beran A, Elsamaloty H",
+          "title": "碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析",
+          "journal": "临床影像学",
+          "year": 2023,
+          "cite": "Nawras M, Alyousif Z, Beran A, Elsamaloty H / 碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析 / 临床影像学 / 2023 · DOI 10.1016/j.clinimag.2023.05.006 · PMID 37216743"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Huang W, He C, Chen Y, Xu H, Yao J, Zhao L",
+          "title": "对比剂即刻超敏反应危险因素的系统评价与 Meta 分析",
+          "journal": "欧洲放射学杂志",
+          "year": 2026,
+          "cite": "Huang W, He C, Chen Y, Xu H, Yao J, Zhao L / 对比剂即刻超敏反应危险因素的系统评价与 Meta 分析 / 欧洲放射学杂志 / 2026 · DOI 10.1016/j.ejrad.2025.112472 · PMID 41175815"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "系统评价",
+          "author": "姚金秀、杨丽娜、梅申聪、董芳辉",
+          "title": "放射科碘对比剂外渗影响因素的系统评价",
+          "journal": "上海护理",
+          "year": 2023,
+          "cite": "姚金秀、杨丽娜、梅申聪、董芳辉 / 放射科碘对比剂外渗影响因素的系统评价 / 上海护理 / 2023",
+          "grade": "汇总证据",
+          "ref": "R17"
+        },
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        },
+        {
+          "type": "规范",
+          "author": "广西壮族自治区市场监督管理局",
+          "title": "DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范",
+          "journal": "广西壮族自治区市场监督管理局（地方标准）",
+          "year": 2024,
+          "cite": "广西壮族自治区市场监督管理局 / DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范 / 广西壮族自治区市场监督管理局（地方标准） / 2024",
+          "grade": "标准与规范",
+          "ref": "R10"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Ding S, Meystre NR, Campeanu C, Gullo G",
+          "title": "CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析",
+          "journal": "JBI 系统评价与实施报告",
+          "year": 2018,
+          "cite": "Ding S, Meystre NR, Campeanu C, Gullo G / CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析 / JBI 系统评价与实施报告 / 2018 · DOI 10.11124/JBISRIR-2017-003348 · PMID 29324560"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会质量控制与安全管理专业委员会",
+          "title": "肾病患者静脉注射碘对比剂应用专家共识",
+          "journal": "中华放射学杂志",
+          "year": 2021,
+          "cite": "中华医学会放射学分会质量控制与安全管理专业委员会 / 肾病患者静脉注射碘对比剂应用专家共识 / 中华放射学杂志 / 2021",
+          "grade": "指南与共识",
+          "ref": "R05"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会",
+          "title": "碘对比剂诱导的急性肾损伤防治的专家共识",
+          "journal": "中华肾脏病杂志",
+          "year": 2022,
+          "cite": "中华医学会临床药学分会、中国药学会医院药学专业委员会、中华医学会肾脏病学分会 / 碘对比剂诱导的急性肾损伤防治的专家共识 / 中华肾脏病杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R06"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Navarese EP, Gurbel PA, Andreotti F, et al.",
+          "title": "心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析",
+          "journal": "公共科学图书馆·综合",
+          "year": 2017,
+          "cite": "Navarese EP, Gurbel PA, Andreotti F, et al. / 心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析 / 公共科学图书馆·综合 / 2017",
+          "grade": "汇总证据",
+          "ref": "R18"
+        },
+        {
+          "type": "声明",
+          "author": "Davenport MS, Perazella MA, Yee J, et al.",
+          "title": "碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明",
+          "journal": "放射学",
+          "year": 2020,
+          "cite": "Davenport MS, Perazella MA, Yee J, et al. / 碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明 / 放射学 / 2020",
+          "grade": "学会声明",
+          "ref": "R11"
+        },
+        {
+          "type": "推荐",
+          "author": "de Laforcade L, Bobot M, Bellin MF, et al.",
+          "title": "欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评",
+          "journal": "肾脏病与治疗",
+          "year": 2021,
+          "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / 欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评 / 肾脏病与治疗 / 2021",
+          "grade": "推荐意见",
+          "ref": "R15"
+        },
+        {
+          "type": "标准",
+          "author": "国家卫生健康委员会",
+          "title": "WS/T 433—2023 静脉治疗护理技术操作标准",
+          "journal": "国家卫生健康委员会（卫生行业标准）",
+          "year": 2023,
+          "cite": "国家卫生健康委员会 / WS/T 433—2023 静脉治疗护理技术操作标准 / 国家卫生健康委员会（卫生行业标准） / 2023",
+          "grade": "标准与规范",
+          "ref": "R08"
+        },
+        {
+          "type": "共识",
+          "author": "中国医药教育协会临床合理用药专业委员会·广东省药学会用药评价与临床科研专家委员会",
+          "title": "碘对比剂全程化药学服务共识",
+          "journal": "中国药房",
+          "year": 2024,
+          "cite": "中国医药教育协会临床合理用药专业委员会·广东省药学会用药评价与临床科研专家委员会 / 碘对比剂全程化药学服务共识 / 中国药房 / 2024",
+          "grade": "指南与共识",
+          "ref": "CG-03"
+        },
+        {
+          "type": "共识",
+          "author": "中国抗癌协会肿瘤影像专业委员会",
+          "title": "恶性肿瘤患者CT增强扫描对比剂安全管理专家共识（2022）",
+          "journal": "中华放射学杂志",
+          "year": 2022,
+          "cite": "中国抗癌协会肿瘤影像专业委员会 / 恶性肿瘤患者CT增强扫描对比剂安全管理专家共识（2022） / 中华放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "CG-09"
+        },
+        {
+          "type": "病例报告",
+          "author": "张媛媛, 龙秀红, 吕婵, 李鲜, 王艺, 黄兰英, 涂惠琼, 覃惠娟",
+          "title": "1例药液外渗致慢性难愈性创面形成患者的中西医结合护理",
+          "journal": "中华护理杂志",
+          "year": 2024,
+          "cite": "张媛媛, 龙秀红, 吕婵, 李鲜, 王艺, 黄兰英, 涂惠琼, 覃惠娟 / 1例药液外渗致慢性难愈性创面形成患者的中西医结合护理 / 中华护理杂志 / 2024",
+          "grade": "汇总证据",
+          "ref": "CN-19"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "EN-01"
+        },
+        {
+          "type": "病例系列",
+          "author": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC",
+          "title": "Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions",
+          "journal": "International Wound Journal",
+          "year": 2017,
+          "cite": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC / Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions / International Wound Journal / 2017",
+          "grade": "汇总证据",
+          "ref": "EN-07"
+        },
+        {
+          "type": "综述",
+          "author": "Thomas R, Vermaak L, Price G",
+          "title": "Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison",
+          "journal": "Eplasty",
+          "year": 2022,
+          "cite": "Thomas R, Vermaak L, Price G / Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison / Eplasty / 2022",
+          "grade": "汇总证据",
+          "ref": "EN-08"
+        },
+        {
+          "type": "病例报告",
+          "author": "Diop B, Soh GT, Nde AFT, Sarr N, Ndoye AY, Sane JC",
+          "title": "Hand compartment syndrome secondary to contrast media extravasation: A case report",
+          "journal": "International Journal of Surgery Case Reports",
+          "year": 2022,
+          "cite": "Diop B, Soh GT, Nde AFT, Sarr N, Ndoye AY, Sane JC / Hand compartment syndrome secondary to contrast media extravasation: A case report / International Journal of Surgery Case Reports / 2022",
+          "grade": "汇总证据",
+          "ref": "EN-16"
+        },
+        {
+          "type": "病例报告",
+          "author": "Hu J, Ge T, Du Y, Wang J, Zhou Y",
+          "title": "Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention",
+          "journal": "BMC Surgery",
+          "year": 2025,
+          "cite": "Hu J, Ge T, Du Y, Wang J, Zhou Y / Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention / BMC Surgery / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-17"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "FW_Exam",
+      "name": "辅助检查",
+      "type": "Exam",
+      "tags": [
+        "知识框架",
+        "一级框架"
+      ],
+      "aliases": [
+        "辅助检查"
+      ],
+      "summary": "论文「疾病知识图」一级框架之一。收录与本主题相关的检查项目 —— CT 增强扫描、碘对比剂。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "一级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        },
+        {
+          "type": "规范",
+          "author": "广西壮族自治区市场监督管理局",
+          "title": "DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范",
+          "journal": "广西壮族自治区市场监督管理局（地方标准）",
+          "year": 2024,
+          "cite": "广西壮族自治区市场监督管理局 / DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范 / 广西壮族自治区市场监督管理局（地方标准） / 2024",
+          "grade": "标准与规范",
+          "ref": "R10"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        },
+        {
+          "type": "推荐",
+          "author": "de Laforcade L, Bobot M, Bellin MF, et al.",
+          "title": "欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评",
+          "journal": "肾脏病与治疗",
+          "year": 2021,
+          "cite": "de Laforcade L, Bobot M, Bellin MF, et al. / 欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评 / 肾脏病与治疗 / 2021",
+          "grade": "推荐意见",
+          "ref": "R15"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "FW_ManagementPrinciple",
+      "name": "处置原则",
+      "type": "ManagementPrinciple",
+      "tags": [
+        "知识框架",
+        "一级框架"
+      ],
+      "aliases": [
+        "处置原则"
+      ],
+      "summary": "论文「疾病知识图」一级框架之一。收录护理处置原则 —— 护理措施、护理预防、护理干预，以及其下的外渗处置原则与不良反应分级处置原则。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "一级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        },
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        },
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        },
+        {
+          "type": "规范",
+          "author": "广西壮族自治区市场监督管理局",
+          "title": "DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范",
+          "journal": "广西壮族自治区市场监督管理局（地方标准）",
+          "year": 2024,
+          "cite": "广西壮族自治区市场监督管理局 / DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范 / 广西壮族自治区市场监督管理局（地方标准） / 2024",
+          "grade": "标准与规范",
+          "ref": "R10"
+        },
+        {
+          "type": "系统评价",
+          "author": "承德医学院护理学院（秦雨轩、王树艳、丁艺华等）",
+          "title": "中医护理技术在碘对比剂外渗处理中应用的范围综述",
+          "journal": "老年医学研究",
+          "year": 2026,
+          "cite": "承德医学院护理学院（秦雨轩、王树艳、丁艺华等） / 中医护理技术在碘对比剂外渗处理中应用的范围综述 / 老年医学研究 / 2026",
+          "grade": "汇总证据",
+          "ref": "CN-03"
+        },
+        {
+          "type": "病例系列",
+          "author": "连云港市第一人民医院伤口造口门诊（李来娟、蒋琪霞等）",
+          "title": "中药如意金黄散早期湿敷在药物外渗性皮肤损伤中的效果分析",
+          "journal": "中华现代护理杂志",
+          "year": 2020,
+          "cite": "连云港市第一人民医院伤口造口门诊（李来娟、蒋琪霞等） / 中药如意金黄散早期湿敷在药物外渗性皮肤损伤中的效果分析 / 中华现代护理杂志 / 2020",
+          "grade": "汇总证据",
+          "ref": "CN-05"
+        },
+        {
+          "type": "药品说明书",
+          "author": "国家药品监督管理局",
+          "title": "总局关于修订跌打万花油等 32 种非处方药说明书的公告（2017 年第 175 号）附件 10《如意金黄散非处方药说明书范本》",
+          "journal": "国家药监局公告",
+          "year": 2017,
+          "cite": "国家药品监督管理局 / 总局关于修订跌打万花油等 32 种非处方药说明书的公告（2017 年第 175 号）附件 10《如意金黄散非处方药说明书范本》 / 国家药监局公告 / 2017",
+          "grade": "说明书",
+          "ref": "DRUG-01"
+        },
+        {
+          "type": "指南",
+          "author": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F",
+          "title": "Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee",
+          "journal": "European Radiology",
+          "year": 2025,
+          "cite": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F / Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee / European Radiology / 2025",
+          "grade": "指南与共识",
+          "ref": "EN-03"
+        },
+        {
+          "type": "调查",
+          "author": "Abuanzeh HE, Al-Qaaneh AM",
+          "title": "Preparedness of CT technicians and radiographers for severe contrast media reactions: knowledge gaps and training needs",
+          "journal": "Frontiers in Radiology",
+          "year": 2026,
+          "cite": "Abuanzeh HE, Al-Qaaneh AM / Preparedness of CT technicians and radiographers for severe contrast media reactions: knowledge gaps and training needs / Frontiers in Radiology / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-13"
+        },
+        {
+          "type": "综述",
+          "author": "Zhong X, Zhao L",
+          "title": "Hypersensitivity reactions to iodinated contrast media: potential mechanisms and clinical management",
+          "journal": "Frontiers in Medicine",
+          "year": 2025,
+          "cite": "Zhong X, Zhao L / Hypersensitivity reactions to iodinated contrast media: potential mechanisms and clinical management / Frontiers in Medicine / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-15"
+        },
+        {
+          "type": "综述",
+          "author": "Romanczuk D, Lange S, Medrzycka-Dabrowska W, Cichowlas G",
+          "title": "Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography",
+          "journal": "Journal of Clinical Medicine",
+          "year": 2026,
+          "cite": "Romanczuk D, Lange S, Medrzycka-Dabrowska W, Cichowlas G / Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography / Journal of Clinical Medicine / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-22"
+        },
+        {
+          "type": "系统评价",
+          "author": "Beiner L, Boehm I",
+          "title": "Risk factor analysis of iodinated contrast medium-related hypersensitivity reactions",
+          "journal": "Insights into Imaging",
+          "year": 2025,
+          "cite": "Beiner L, Boehm I / Risk factor analysis of iodinated contrast medium-related hypersensitivity reactions / Insights into Imaging / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-12"
+        },
+        {
+          "type": "调查",
+          "author": "杨秋月, 汪晖, 李琴, 李震",
+          "title": "CT增强碘对比剂急性不良反应发生现况及影响因素",
+          "journal": "护理研究",
+          "year": 2023,
+          "cite": "杨秋月, 汪晖, 李琴, 李震 / CT增强碘对比剂急性不良反应发生现况及影响因素 / 护理研究 / 2023",
+          "grade": "汇总证据",
+          "ref": "CN-27"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "EN-01"
+        },
+        {
+          "type": "病例报告",
+          "author": "Diop B, Soh GT, Nde AFT, Sarr N, Ndoye AY, Sane JC",
+          "title": "Hand compartment syndrome secondary to contrast media extravasation: A case report",
+          "journal": "International Journal of Surgery Case Reports",
+          "year": 2022,
+          "cite": "Diop B, Soh GT, Nde AFT, Sarr N, Ndoye AY, Sane JC / Hand compartment syndrome secondary to contrast media extravasation: A case report / International Journal of Surgery Case Reports / 2022",
+          "grade": "汇总证据",
+          "ref": "EN-16"
+        },
+        {
+          "type": "病例报告",
+          "author": "Hu J, Ge T, Du Y, Wang J, Zhou Y",
+          "title": "Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention",
+          "journal": "BMC Surgery",
+          "year": 2025,
+          "cite": "Hu J, Ge T, Du Y, Wang J, Zhou Y / Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention / BMC Surgery / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-17"
+        },
+        {
+          "type": "队列研究",
+          "author": "Liu W, Wang P, Zhu H, Tang H, Guan H, Wang X, Wang C, Qiu Y, He L",
+          "title": "Contrast media extravasation injury: a prospective observational cohort study",
+          "journal": "European Journal of Medical Research",
+          "year": 2023,
+          "cite": "Liu W, Wang P, Zhu H, Tang H, Guan H, Wang X, Wang C, Qiu Y, He L / Contrast media extravasation injury: a prospective observational cohort study / European Journal of Medical Research / 2023",
+          "grade": "汇总证据",
+          "ref": "EN-05"
+        },
+        {
+          "type": "病例系列",
+          "author": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC",
+          "title": "Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions",
+          "journal": "International Wound Journal",
+          "year": 2017,
+          "cite": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC / Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions / International Wound Journal / 2017",
+          "grade": "汇总证据",
+          "ref": "EN-07"
+        },
+        {
+          "type": "最佳证据",
+          "author": "白文辉, 易银萍, 张红梅, 赵文利, 蒋秋焕",
+          "title": "含碘非离子对比剂输注前预防静脉外渗策略的证据总结",
+          "journal": "护理研究",
+          "year": 2020,
+          "cite": "白文辉, 易银萍, 张红梅, 赵文利, 蒋秋焕 / 含碘非离子对比剂输注前预防静脉外渗策略的证据总结 / 护理研究 / 2020",
+          "grade": "汇总证据",
+          "ref": "CN-12"
+        },
+        {
+          "type": "最佳证据",
+          "author": "史苏霞, 毛燕君, 程洁, 来小彬",
+          "title": "放射科碘对比剂外渗管理的证据总结",
+          "journal": "护理研究",
+          "year": 2020,
+          "cite": "史苏霞, 毛燕君, 程洁, 来小彬 / 放射科碘对比剂外渗管理的证据总结 / 护理研究 / 2020",
+          "grade": "汇总证据",
+          "ref": "CN-24"
+        },
+        {
+          "type": "最佳证据",
+          "author": "程培霞, 宋秀艳, 闫素华, 陈士巧",
+          "title": "冠状动脉介入患者围手术期水化预防对比剂急性肾损伤的最佳证据总结",
+          "journal": "中华现代护理杂志",
+          "year": 2021,
+          "cite": "程培霞, 宋秀艳, 闫素华, 陈士巧 / 冠状动脉介入患者围手术期水化预防对比剂急性肾损伤的最佳证据总结 / 中华现代护理杂志 / 2021",
+          "grade": "汇总证据",
+          "ref": "CN-29"
+        },
+        {
+          "type": "最佳证据",
+          "author": "操帅, 张小红, 何红, 殷倩, 夏红霞",
+          "title": "含碘对比剂静脉外渗护理管理实践指南的循证实践研究",
+          "journal": "护理学杂志",
+          "year": 2024,
+          "cite": "操帅, 张小红, 何红, 殷倩, 夏红霞 / 含碘对比剂静脉外渗护理管理实践指南的循证实践研究 / 护理学杂志 / 2024",
+          "grade": "汇总证据",
+          "ref": "CN-31"
+        },
+        {
+          "type": "综述",
+          "author": "任自然, 方远, 陈金秀",
+          "title": "护理质量管理在预防婴幼儿输液外渗中的应用研究进展",
+          "journal": "当代护士",
+          "year": 2025,
+          "cite": "任自然, 方远, 陈金秀 / 护理质量管理在预防婴幼儿输液外渗中的应用研究进展 / 当代护士 / 2025",
+          "grade": "汇总证据",
+          "ref": "CN-15"
+        },
+        {
+          "type": "调查",
+          "author": "白姗, 高伟, 王蕾, 耿敬芝, 李亚南, 宋圆圆, 贾晓辉, 杨巧芳, 李春燕",
+          "title": "全国三级医院静脉治疗护理技术应用现状的调查研究",
+          "journal": "护理研究",
+          "year": 2025,
+          "cite": "白姗, 高伟, 王蕾, 耿敬芝, 李亚南, 宋圆圆, 贾晓辉, 杨巧芳, 李春燕 / 全国三级医院静脉治疗护理技术应用现状的调查研究 / 护理研究 / 2025",
+          "grade": "汇总证据",
+          "ref": "CN-26"
+        },
+        {
+          "type": "调查",
+          "author": "宋圆圆, 王宇, 蒿若楠, 董方方, 黄霖霖, 杨巧芳, 贾晓辉, 白姗",
+          "title": "河南省含碘对比剂外渗管理现状及护士认知水平的调查研究",
+          "journal": "中华护理杂志",
+          "year": 2025,
+          "cite": "宋圆圆, 王宇, 蒿若楠, 董方方, 黄霖霖, 杨巧芳, 贾晓辉, 白姗 / 河南省含碘对比剂外渗管理现状及护士认知水平的调查研究 / 中华护理杂志 / 2025",
+          "grade": "汇总证据",
+          "ref": "CN-30"
+        },
+        {
+          "type": "临床审计",
+          "author": "Sunny A, Chandran A, Kareem H",
+          "title": "Clinical Audit of the Incidence and Documentation Quality of Contrast-Induced Nephropathy (CIN) in a Tertiary Cardiology Unit",
+          "journal": "Cureus",
+          "year": 2026,
+          "cite": "Sunny A, Chandran A, Kareem H / Clinical Audit of the Incidence and Documentation Quality of Contrast-Induced Nephropathy (CIN) in a Tertiary Cardiology Unit / Cureus / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-18"
+        },
+        {
+          "type": "最佳证据",
+          "author": "Liu H, Zeng Q, Zeng X, Lu X, Xiao B, Cheng Y, Liu Y, Yang C, Yang C",
+          "title": "Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation",
+          "journal": "Frontiers in Medicine",
+          "year": 2026,
+          "cite": "Liu H, Zeng Q, Zeng X, Lu X, Xiao B, Cheng Y, Liu Y, Yang C, Yang C / Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation / Frontiers in Medicine / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-10"
+        },
+        {
+          "type": "综述",
+          "author": "蒋名丽, 赵磊, 时富枝, 石彩晓, 李丹凤",
+          "title": "小儿外周静脉留置针输液外渗的研究进展",
+          "journal": "全科护理",
+          "year": 2019,
+          "cite": "蒋名丽, 赵磊, 时富枝, 石彩晓, 李丹凤 / 小儿外周静脉留置针输液外渗的研究进展 / 全科护理 / 2019",
+          "grade": "汇总证据",
+          "ref": "CN-14"
+        },
+        {
+          "type": "对照研究",
+          "author": "陈丹妮, 姜海燕, 李心慧",
+          "title": "菜单式健康教育配合置管专项护理在肿瘤PICC患者中的应用",
+          "journal": "齐鲁护理杂志",
+          "year": 2022,
+          "cite": "陈丹妮, 姜海燕, 李心慧 / 菜单式健康教育配合置管专项护理在肿瘤PICC患者中的应用 / 齐鲁护理杂志 / 2022",
+          "grade": "汇总证据",
+          "ref": "CN-23"
+        },
+        {
+          "type": "调查",
+          "author": "聂圣肖, 王蕾, 孙红, 钱莉",
+          "title": "全国部分医院静脉导管维护现状调查",
+          "journal": "中华现代护理杂志",
+          "year": 2022,
+          "cite": "聂圣肖, 王蕾, 孙红, 钱莉 / 全国部分医院静脉导管维护现状调查 / 中华现代护理杂志 / 2022",
+          "grade": "汇总证据",
+          "ref": "CN-25"
+        },
+        {
+          "type": "队列研究",
+          "author": "Wang L, Chen Q, Liu H, Wang X, Qian Q, Xu M, Ma L, Wang X",
+          "title": "Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study",
+          "journal": "Quantitative Imaging in Medicine and Surgery",
+          "year": 2025,
+          "cite": "Wang L, Chen Q, Liu H, Wang X, Qian Q, Xu M, Ma L, Wang X / Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study / Quantitative Imaging in Medicine and Surgery / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-09"
+        },
+        {
+          "type": "队列研究",
+          "author": "Zhou Y, Lin S, Qian Q, Shi J, Chen Q",
+          "title": "Integrating CT-Derived Body Composition and Real-Time Injection Pressure Monitoring for Predicting Contrast Media Extravasation: A Retrospective Cohort Study with Implications for Nurse-Led Risk Stratification",
+          "journal": "Healthcare (Basel)",
+          "year": 2026,
+          "cite": "Zhou Y, Lin S, Qian Q, Shi J, Chen Q / Integrating CT-Derived Body Composition and Real-Time Injection Pressure Monitoring for Predicting Contrast Media Extravasation: A Retrospective Cohort Study with Implications for Nurse-Led Risk Stratification / Healthcare (Basel) / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-21"
+        },
+        {
+          "type": "综述",
+          "author": "Vasii SO, Crisan FG, Lazar SM, Ionica C, Iliescu D, Ionica I, Malita DC, Voicu M, Voicu A, Udrescu L",
+          "title": "Iodinated Contrast Media in Oncologic CT: A Narrative Review of Safety, Risk Stratification, and Practical Considerations",
+          "journal": "Diagnostics (Basel)",
+          "year": 2026,
+          "cite": "Vasii SO, Crisan FG, Lazar SM, Ionica C, Iliescu D, Ionica I, Malita DC, Voicu M, Voicu A, Udrescu L / Iodinated Contrast Media in Oncologic CT: A Narrative Review of Safety, Risk Stratification, and Practical Considerations / Diagnostics (Basel) / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-20"
+        },
+        {
+          "type": "指南",
+          "author": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F",
+          "title": "Hypersensitivity reactions to contrast media: Part 2. Prevention of recurrent hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee",
+          "journal": "European Radiology",
+          "year": 2025,
+          "cite": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F / Hypersensitivity reactions to contrast media: Part 2. Prevention of recurrent hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee / European Radiology / 2025",
+          "grade": "指南与共识",
+          "ref": "EN-04"
+        },
+        {
+          "type": "队列研究",
+          "author": "Beiner L, Jeong J, Kang DY, Lombardo P, Kang HR, Boehm I",
+          "title": "Immediate hypersensitivity reactions to iodinated contrast media despite drug prophylaxis - a comparative retrospective cohort study of breakthrough reactions in Bern (Switzerland) and Seoul (South Korea)",
+          "journal": "Quantitative Imaging in Medicine and Surgery",
+          "year": 2024,
+          "cite": "Beiner L, Jeong J, Kang DY, Lombardo P, Kang HR, Boehm I / Immediate hypersensitivity reactions to iodinated contrast media despite drug prophylaxis - a comparative retrospective cohort study of breakthrough reactions in Bern (Switzerland) and Seoul (South Korea) / Quantitative Imaging in Medicine and Surgery / 2024",
+          "grade": "汇总证据",
+          "ref": "EN-19"
+        },
+        {
+          "type": "队列研究",
+          "author": "Seong Y, Kim PH, Suh CH, Park KJ, Park HJ, Lee CW, Jung AY, Cho YA, Lee JS, Yoon HM",
+          "title": "Acute Adverse Reactions to Nonionic Low-Osmolar Iodinated Contrast Media in Children: A Retrospective Study of 23,429 Injections Over 6 Years",
+          "journal": "Korean Journal of Radiology",
+          "year": 2025,
+          "cite": "Seong Y, Kim PH, Suh CH, Park KJ, Park HJ, Lee CW, Jung AY, Cho YA, Lee JS, Yoon HM / Acute Adverse Reactions to Nonionic Low-Osmolar Iodinated Contrast Media in Children: A Retrospective Study of 23,429 Injections Over 6 Years / Korean Journal of Radiology / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-14"
+        },
+        {
+          "type": "书籍",
+          "author": "秦月兰、郑淑梅、刘雪莲",
+          "title": "影像护理学",
+          "journal": "人民卫生出版社",
+          "year": 2020,
+          "cite": "秦月兰、郑淑梅、刘雪莲 / 影像护理学 / 人民卫生出版社 / 2020",
+          "grade": "教材",
+          "ref": "R20"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "FW_NursingTheory",
+      "name": "护理理论",
+      "type": "NursingTheory",
+      "tags": [
+        "知识框架",
+        "一级框架"
+      ],
+      "aliases": [
+        "护理理论"
+      ],
+      "summary": "论文「疾病知识图」一级框架之一。收录指导护理实践的理论 —— 自护理论（Orem）：人天生具备自我护理的能力，护理的任务是在患者自护能力不足时提供补偿与支持；对应到本主题，是指导患者与家属参与预防、早期识别与居家自我照护。以及早期预警：在情况变坏之前先看出苗头、及时升级处理。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "一级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        },
+        {
+          "type": "系统评价",
+          "author": "Nasiri M, Jafari Z, Rakhshan M, Yarahmadi F, et al.",
+          "title": "Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析",
+          "journal": "国际护理评论",
+          "year": 2023,
+          "cite": "Nasiri M, Jafari Z, Rakhshan M, Yarahmadi F, et al. / Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析 / 国际护理评论 / 2023",
+          "grade": "汇总证据",
+          "ref": "R24"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "FW_DiseaseEducation",
+      "name": "疾病科普",
+      "type": "DiseaseEducation",
+      "tags": [
+        "知识框架",
+        "一级框架"
+      ],
+      "aliases": [
+        "疾病科普"
+      ],
+      "summary": "论文「疾病知识图」一级框架之一。论文 §3.2 指出「疾病知识图中科普模块的内容可面向公众开放，便于公众了解疾病的早期症状及常见误区」。收录检查前注意事项、检查后观察与护理、过敏史告知、外渗居家护理、急救知识五篇科普。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "一级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        },
+        {
+          "type": "书籍",
+          "author": "秦月兰、郑淑梅、刘雪莲",
+          "title": "影像护理学",
+          "journal": "人民卫生出版社",
+          "year": 2020,
+          "cite": "秦月兰、郑淑梅、刘雪莲 / 影像护理学 / 人民卫生出版社 / 2020",
+          "grade": "教材",
+          "ref": "R20"
+        },
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        },
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        },
+        {
+          "type": "对照研究",
+          "author": "陈丹妮, 姜海燕, 李心慧",
+          "title": "菜单式健康教育配合置管专项护理在肿瘤PICC患者中的应用",
+          "journal": "齐鲁护理杂志",
+          "year": 2022,
+          "cite": "陈丹妮, 姜海燕, 李心慧 / 菜单式健康教育配合置管专项护理在肿瘤PICC患者中的应用 / 齐鲁护理杂志 / 2022",
+          "grade": "汇总证据",
+          "ref": "CN-23"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "EN-01"
+        },
+        {
+          "type": "指南",
+          "author": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F",
+          "title": "Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee",
+          "journal": "European Radiology",
+          "year": 2025,
+          "cite": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F / Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee / European Radiology / 2025",
+          "grade": "指南与共识",
+          "ref": "EN-03"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "FW_SymptomCategory",
+      "name": "症状分类",
+      "type": "SymptomCategory",
+      "tags": [
+        "知识框架",
+        "二级框架"
+      ],
+      "aliases": [
+        "症状分类"
+      ],
+      "summary": "论文表 1「症状分类」二级框架。把症状按谱归类 —— 碘对比剂不良反应谱，其下有过敏反应谱、静脉外渗反应谱。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "二级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "规范",
+          "author": "广西壮族自治区市场监督管理局",
+          "title": "DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范",
+          "journal": "广西壮族自治区市场监督管理局（地方标准）",
+          "year": 2024,
+          "cite": "广西壮族自治区市场监督管理局 / DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范 / 广西壮族自治区市场监督管理局（地方标准） / 2024",
+          "grade": "标准与规范",
+          "ref": "R10"
+        },
+        {
+          "type": "建议",
+          "author": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al.",
+          "title": "对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）",
+          "journal": "加拿大放射医师协会杂志",
+          "year": 2025,
+          "cite": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al. / 对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会） / 加拿大放射医师协会杂志 / 2025",
+          "grade": "推荐意见",
+          "ref": "R14"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        },
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "综述",
+          "author": "Chiu TM, Chu SY",
+          "title": "Hypersensitivity Reactions to Iodinated Contrast Media",
+          "journal": "Biomedicines",
+          "year": 2022,
+          "cite": "Chiu TM, Chu SY / Hypersensitivity Reactions to Iodinated Contrast Media / Biomedicines / 2022",
+          "grade": "汇总证据",
+          "ref": "EN-11"
+        },
+        {
+          "type": "综述",
+          "author": "Zhong X, Zhao L",
+          "title": "Hypersensitivity reactions to iodinated contrast media: potential mechanisms and clinical management",
+          "journal": "Frontiers in Medicine",
+          "year": 2025,
+          "cite": "Zhong X, Zhao L / Hypersensitivity reactions to iodinated contrast media: potential mechanisms and clinical management / Frontiers in Medicine / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-15"
+        },
+        {
+          "type": "调查",
+          "author": "杨秋月, 汪晖, 李琴, 李震",
+          "title": "CT增强碘对比剂急性不良反应发生现况及影响因素",
+          "journal": "护理研究",
+          "year": 2023,
+          "cite": "杨秋月, 汪晖, 李琴, 李震 / CT增强碘对比剂急性不良反应发生现况及影响因素 / 护理研究 / 2023",
+          "grade": "汇总证据",
+          "ref": "CN-27"
+        },
+        {
+          "type": "队列研究",
+          "author": "Beiner L, Jeong J, Kang DY, Lombardo P, Kang HR, Boehm I",
+          "title": "Immediate hypersensitivity reactions to iodinated contrast media despite drug prophylaxis - a comparative retrospective cohort study of breakthrough reactions in Bern (Switzerland) and Seoul (South Korea)",
+          "journal": "Quantitative Imaging in Medicine and Surgery",
+          "year": 2024,
+          "cite": "Beiner L, Jeong J, Kang DY, Lombardo P, Kang HR, Boehm I / Immediate hypersensitivity reactions to iodinated contrast media despite drug prophylaxis - a comparative retrospective cohort study of breakthrough reactions in Bern (Switzerland) and Seoul (South Korea) / Quantitative Imaging in Medicine and Surgery / 2024",
+          "grade": "汇总证据",
+          "ref": "EN-19"
+        },
+        {
+          "type": "队列研究",
+          "author": "Seong Y, Kim PH, Suh CH, Park KJ, Park HJ, Lee CW, Jung AY, Cho YA, Lee JS, Yoon HM",
+          "title": "Acute Adverse Reactions to Nonionic Low-Osmolar Iodinated Contrast Media in Children: A Retrospective Study of 23,429 Injections Over 6 Years",
+          "journal": "Korean Journal of Radiology",
+          "year": 2025,
+          "cite": "Seong Y, Kim PH, Suh CH, Park KJ, Park HJ, Lee CW, Jung AY, Cho YA, Lee JS, Yoon HM / Acute Adverse Reactions to Nonionic Low-Osmolar Iodinated Contrast Media in Children: A Retrospective Study of 23,429 Injections Over 6 Years / Korean Journal of Radiology / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-14"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "FW_AssessmentTool",
+      "name": "评估工具",
+      "type": "AssessmentTool",
+      "tags": [
+        "知识框架",
+        "二级框架"
+      ],
+      "aliases": [
+        "评估工具"
+      ],
+      "summary": "论文表 1「评估工具」二级框架。收录评估工具 —— 过敏史询问、外渗风险评估、血管条件评估。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "二级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        },
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "系统评价",
+          "author": "姚金秀、杨丽娜、梅申聪、董芳辉",
+          "title": "放射科碘对比剂外渗影响因素的系统评价",
+          "journal": "上海护理",
+          "year": 2023,
+          "cite": "姚金秀、杨丽娜、梅申聪、董芳辉 / 放射科碘对比剂外渗影响因素的系统评价 / 上海护理 / 2023",
+          "grade": "汇总证据",
+          "ref": "R17"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Ding S, Meystre NR, Campeanu C, Gullo G",
+          "title": "CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析",
+          "journal": "JBI 系统评价与实施报告",
+          "year": 2018,
+          "cite": "Ding S, Meystre NR, Campeanu C, Gullo G / CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析 / JBI 系统评价与实施报告 / 2018 · DOI 10.11124/JBISRIR-2017-003348 · PMID 29324560"
+        },
+        {
+          "type": "标准",
+          "author": "国家卫生健康委员会",
+          "title": "WS/T 433—2023 静脉治疗护理技术操作标准",
+          "journal": "国家卫生健康委员会（卫生行业标准）",
+          "year": 2023,
+          "cite": "国家卫生健康委员会 / WS/T 433—2023 静脉治疗护理技术操作标准 / 国家卫生健康委员会（卫生行业标准） / 2023",
+          "grade": "标准与规范",
+          "ref": "R08"
+        },
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        },
+        {
+          "type": "建议",
+          "author": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al.",
+          "title": "对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）",
+          "journal": "加拿大放射医师协会杂志",
+          "year": 2025,
+          "cite": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al. / 对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会） / 加拿大放射医师协会杂志 / 2025",
+          "grade": "推荐意见",
+          "ref": "R14"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        },
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        },
+        {
+          "type": "规范",
+          "author": "广西壮族自治区市场监督管理局",
+          "title": "DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范",
+          "journal": "广西壮族自治区市场监督管理局（地方标准）",
+          "year": 2024,
+          "cite": "广西壮族自治区市场监督管理局 / DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范 / 广西壮族自治区市场监督管理局（地方标准） / 2024",
+          "grade": "标准与规范",
+          "ref": "R10"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "EN-01"
+        },
+        {
+          "type": "最佳证据",
+          "author": "Liu H, Zeng Q, Zeng X, Lu X, Xiao B, Cheng Y, Liu Y, Yang C, Yang C",
+          "title": "Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation",
+          "journal": "Frontiers in Medicine",
+          "year": 2026,
+          "cite": "Liu H, Zeng Q, Zeng X, Lu X, Xiao B, Cheng Y, Liu Y, Yang C, Yang C / Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation / Frontiers in Medicine / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-10"
+        },
+        {
+          "type": "对照研究",
+          "author": "佘国凤, 邱冬花, 彭一君, 刘晨曦, 唐金花, 林海英, 汪小柳",
+          "title": "推拿法在含碘对比剂外渗中的应用",
+          "journal": "广东医学",
+          "year": 2018,
+          "cite": "佘国凤, 邱冬花, 彭一君, 刘晨曦, 唐金花, 林海英, 汪小柳 / 推拿法在含碘对比剂外渗中的应用 / 广东医学 / 2018",
+          "grade": "汇总证据",
+          "ref": "CN-21"
+        },
+        {
+          "type": "病例系列",
+          "author": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC",
+          "title": "Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions",
+          "journal": "International Wound Journal",
+          "year": 2017,
+          "cite": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC / Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions / International Wound Journal / 2017",
+          "grade": "汇总证据",
+          "ref": "EN-07"
+        },
+        {
+          "type": "病例报告",
+          "author": "Diop B, Soh GT, Nde AFT, Sarr N, Ndoye AY, Sane JC",
+          "title": "Hand compartment syndrome secondary to contrast media extravasation: A case report",
+          "journal": "International Journal of Surgery Case Reports",
+          "year": 2022,
+          "cite": "Diop B, Soh GT, Nde AFT, Sarr N, Ndoye AY, Sane JC / Hand compartment syndrome secondary to contrast media extravasation: A case report / International Journal of Surgery Case Reports / 2022",
+          "grade": "汇总证据",
+          "ref": "EN-16"
+        },
+        {
+          "type": "调查",
+          "author": "宋圆圆, 王宇, 蒿若楠, 董方方, 黄霖霖, 杨巧芳, 贾晓辉, 白姗",
+          "title": "河南省含碘对比剂外渗管理现状及护士认知水平的调查研究",
+          "journal": "中华护理杂志",
+          "year": 2025,
+          "cite": "宋圆圆, 王宇, 蒿若楠, 董方方, 黄霖霖, 杨巧芳, 贾晓辉, 白姗 / 河南省含碘对比剂外渗管理现状及护士认知水平的调查研究 / 中华护理杂志 / 2025",
+          "grade": "汇总证据",
+          "ref": "CN-30"
+        },
+        {
+          "type": "指南",
+          "author": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F",
+          "title": "Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee",
+          "journal": "European Radiology",
+          "year": 2025,
+          "cite": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F / Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee / European Radiology / 2025",
+          "grade": "指南与共识",
+          "ref": "EN-03"
+        },
+        {
+          "type": "病例系列",
+          "author": "熊代琴, 李东锋, 王捷",
+          "title": "某院碘对比剂相关药品不良反应研究与合理用药",
+          "journal": "新疆医学",
+          "year": 2018,
+          "cite": "熊代琴, 李东锋, 王捷 / 某院碘对比剂相关药品不良反应研究与合理用药 / 新疆医学 / 2018",
+          "grade": "汇总证据",
+          "ref": "CN-28"
+        },
+        {
+          "type": "病例报告",
+          "author": "Hu J, Ge T, Du Y, Wang J, Zhou Y",
+          "title": "Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention",
+          "journal": "BMC Surgery",
+          "year": 2025,
+          "cite": "Hu J, Ge T, Du Y, Wang J, Zhou Y / Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention / BMC Surgery / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-17"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "FW_RiskFactor",
+      "name": "高危因素识别",
+      "type": "RiskFactor",
+      "tags": [
+        "知识框架",
+        "二级框架"
+      ],
+      "aliases": [
+        "高危因素识别"
+      ],
+      "summary": "论文表 1「高危因素识别」二级框架。收录高危因素 —— 既往碘对比剂过敏史、未控制的哮喘、高龄或低龄、静脉条件差、高压注射、未做生理盐水试推。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "二级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Huang W, He C, Chen Y, Xu H, Yao J, Zhao L",
+          "title": "对比剂即刻超敏反应危险因素的系统评价与 Meta 分析",
+          "journal": "欧洲放射学杂志",
+          "year": 2026,
+          "cite": "Huang W, He C, Chen Y, Xu H, Yao J, Zhao L / 对比剂即刻超敏反应危险因素的系统评价与 Meta 分析 / 欧洲放射学杂志 / 2026 · DOI 10.1016/j.ejrad.2025.112472 · PMID 41175815"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "系统评价",
+          "author": "姚金秀、杨丽娜、梅申聪、董芳辉",
+          "title": "放射科碘对比剂外渗影响因素的系统评价",
+          "journal": "上海护理",
+          "year": 2023,
+          "cite": "姚金秀、杨丽娜、梅申聪、董芳辉 / 放射科碘对比剂外渗影响因素的系统评价 / 上海护理 / 2023",
+          "grade": "汇总证据",
+          "ref": "R17"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "EN-01"
+        },
+        {
+          "type": "系统评价",
+          "author": "Heshmatzadeh Behzadi A, Farooq Z, Newhouse JH, Prince MR",
+          "title": "MRI and CT contrast media extravasation: A systematic review",
+          "journal": "Medicine (Baltimore)",
+          "year": 2018,
+          "cite": "Heshmatzadeh Behzadi A, Farooq Z, Newhouse JH, Prince MR / MRI and CT contrast media extravasation: A systematic review / Medicine (Baltimore) / 2018",
+          "grade": "汇总证据",
+          "ref": "EN-06"
+        },
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "病例系列",
+          "author": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC",
+          "title": "Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions",
+          "journal": "International Wound Journal",
+          "year": 2017,
+          "cite": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC / Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions / International Wound Journal / 2017",
+          "grade": "汇总证据",
+          "ref": "EN-07"
+        },
+        {
+          "type": "综述",
+          "author": "Romanczuk D, Lange S, Medrzycka-Dabrowska W, Cichowlas G",
+          "title": "Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography",
+          "journal": "Journal of Clinical Medicine",
+          "year": 2026,
+          "cite": "Romanczuk D, Lange S, Medrzycka-Dabrowska W, Cichowlas G / Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography / Journal of Clinical Medicine / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-22"
+        },
+        {
+          "type": "队列研究",
+          "author": "Wang L, Chen Q, Liu H, Wang X, Qian Q, Xu M, Ma L, Wang X",
+          "title": "Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study",
+          "journal": "Quantitative Imaging in Medicine and Surgery",
+          "year": 2025,
+          "cite": "Wang L, Chen Q, Liu H, Wang X, Qian Q, Xu M, Ma L, Wang X / Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study / Quantitative Imaging in Medicine and Surgery / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-09"
+        },
+        {
+          "type": "队列研究",
+          "author": "Liu W, Wang P, Zhu H, Tang H, Guan H, Wang X, Wang C, Qiu Y, He L",
+          "title": "Contrast media extravasation injury: a prospective observational cohort study",
+          "journal": "European Journal of Medical Research",
+          "year": 2023,
+          "cite": "Liu W, Wang P, Zhu H, Tang H, Guan H, Wang X, Wang C, Qiu Y, He L / Contrast media extravasation injury: a prospective observational cohort study / European Journal of Medical Research / 2023",
+          "grade": "汇总证据",
+          "ref": "EN-05"
+        },
+        {
+          "type": "队列研究",
+          "author": "Zhou Y, Lin S, Qian Q, Shi J, Chen Q",
+          "title": "Integrating CT-Derived Body Composition and Real-Time Injection Pressure Monitoring for Predicting Contrast Media Extravasation: A Retrospective Cohort Study with Implications for Nurse-Led Risk Stratification",
+          "journal": "Healthcare (Basel)",
+          "year": 2026,
+          "cite": "Zhou Y, Lin S, Qian Q, Shi J, Chen Q / Integrating CT-Derived Body Composition and Real-Time Injection Pressure Monitoring for Predicting Contrast Media Extravasation: A Retrospective Cohort Study with Implications for Nurse-Led Risk Stratification / Healthcare (Basel) / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-21"
+        },
+        {
+          "type": "系统评价",
+          "author": "Beiner L, Boehm I",
+          "title": "Risk factor analysis of iodinated contrast medium-related hypersensitivity reactions",
+          "journal": "Insights into Imaging",
+          "year": 2025,
+          "cite": "Beiner L, Boehm I / Risk factor analysis of iodinated contrast medium-related hypersensitivity reactions / Insights into Imaging / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-12"
+        },
+        {
+          "type": "综述",
+          "author": "Thomas R, Vermaak L, Price G",
+          "title": "Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison",
+          "journal": "Eplasty",
+          "year": 2022,
+          "cite": "Thomas R, Vermaak L, Price G / Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison / Eplasty / 2022",
+          "grade": "汇总证据",
+          "ref": "EN-08"
+        },
+        {
+          "type": "指南",
+          "author": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F",
+          "title": "Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee",
+          "journal": "European Radiology",
+          "year": 2025,
+          "cite": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F / Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee / European Radiology / 2025",
+          "grade": "指南与共识",
+          "ref": "EN-03"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "FW_PharmacologicalManagement",
+      "name": "药物管理",
+      "type": "PharmacologicalManagement",
+      "tags": [
+        "知识框架",
+        "二级框架"
+      ],
+      "aliases": [
+        "药物管理"
+      ],
+      "summary": "论文表 1「药物管理」二级框架。收录药物处置 —— 肌内注射肾上腺素、糖皮质激素、抗组胺药、50% 硫酸镁湿敷、0.05% 地塞米松湿敷。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "二级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        },
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        },
+        {
+          "type": "指南",
+          "author": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F",
+          "title": "Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee",
+          "journal": "European Radiology",
+          "year": 2025,
+          "cite": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F / Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee / European Radiology / 2025",
+          "grade": "指南与共识",
+          "ref": "EN-03"
+        },
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "指南",
+          "author": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F",
+          "title": "Hypersensitivity reactions to contrast media: Part 2. Prevention of recurrent hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee",
+          "journal": "European Radiology",
+          "year": 2025,
+          "cite": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F / Hypersensitivity reactions to contrast media: Part 2. Prevention of recurrent hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee / European Radiology / 2025",
+          "grade": "指南与共识",
+          "ref": "EN-04"
+        },
+        {
+          "type": "系统评价",
+          "author": "Beiner L, Boehm I",
+          "title": "Risk factor analysis of iodinated contrast medium-related hypersensitivity reactions",
+          "journal": "Insights into Imaging",
+          "year": 2025,
+          "cite": "Beiner L, Boehm I / Risk factor analysis of iodinated contrast medium-related hypersensitivity reactions / Insights into Imaging / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-12"
+        },
+        {
+          "type": "最佳证据",
+          "author": "Liu H, Zeng Q, Zeng X, Lu X, Xiao B, Cheng Y, Liu Y, Yang C, Yang C",
+          "title": "Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation",
+          "journal": "Frontiers in Medicine",
+          "year": 2026,
+          "cite": "Liu H, Zeng Q, Zeng X, Lu X, Xiao B, Cheng Y, Liu Y, Yang C, Yang C / Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation / Frontiers in Medicine / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-10"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "FW_NonPharmacologicalManagement",
+      "name": "非药物管理",
+      "type": "NonPharmacologicalManagement",
+      "tags": [
+        "知识框架",
+        "二级框架"
+      ],
+      "aliases": [
+        "非药物管理"
+      ],
+      "summary": "论文表 1「非药物管理」二级框架。论文第 20 页写明：点击「非药物管理」实体节点，Web 端返回其关联实体节点。收录非药物处置 —— 立即停止注射、保留静脉留置针、患肢抬高、局部冷敷、密切观察、对比剂预处理、血管可视化、心理疏导。",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "二级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        },
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        },
+        {
+          "type": "指南",
+          "author": "美国放射学会药物与对比剂委员会",
+          "title": "美国放射学会对比剂手册",
+          "journal": "美国放射学会",
+          "year": 2024,
+          "cite": "美国放射学会药物与对比剂委员会 / 美国放射学会对比剂手册 / 美国放射学会 / 2024",
+          "grade": "指南与共识",
+          "ref": "R01"
+        },
+        {
+          "type": "指南",
+          "author": "中华医学会放射学分会对比剂安全使用工作组",
+          "title": "碘对比剂使用指南（第2版）",
+          "journal": "中华放射学杂志",
+          "year": 2013,
+          "cite": "中华医学会放射学分会对比剂安全使用工作组 / 碘对比剂使用指南（第2版） / 中华放射学杂志 / 2013",
+          "grade": "指南与共识",
+          "ref": "R03"
+        },
+        {
+          "type": "规范",
+          "author": "江西省市场监督管理局",
+          "title": "DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范",
+          "journal": "江西省市场监督管理局（地方标准）",
+          "year": 2026,
+          "cite": "江西省市场监督管理局 / DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范 / 江西省市场监督管理局（地方标准） / 2026",
+          "grade": "标准与规范",
+          "ref": "R09"
+        },
+        {
+          "type": "Meta分析",
+          "author": "Nawras M, Alyousif Z, Beran A, Elsamaloty H",
+          "title": "碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析",
+          "journal": "临床影像学",
+          "year": 2023,
+          "cite": "Nawras M, Alyousif Z, Beran A, Elsamaloty H / 碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析 / 临床影像学 / 2023 · DOI 10.1016/j.clinimag.2023.05.006 · PMID 37216743"
+        },
+        {
+          "type": "标准",
+          "author": "国家卫生健康委员会",
+          "title": "WS/T 433—2023 静脉治疗护理技术操作标准",
+          "journal": "国家卫生健康委员会（卫生行业标准）",
+          "year": 2023,
+          "cite": "国家卫生健康委员会 / WS/T 433—2023 静脉治疗护理技术操作标准 / 国家卫生健康委员会（卫生行业标准） / 2023",
+          "grade": "标准与规范",
+          "ref": "R08"
+        },
+        {
+          "type": "书籍",
+          "author": "秦月兰、郑淑梅、刘雪莲",
+          "title": "影像护理学",
+          "journal": "人民卫生出版社",
+          "year": 2020,
+          "cite": "秦月兰、郑淑梅、刘雪莲 / 影像护理学 / 人民卫生出版社 / 2020",
+          "grade": "教材",
+          "ref": "R20"
+        },
+        {
+          "type": "规范",
+          "author": "广西壮族自治区市场监督管理局",
+          "title": "DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范",
+          "journal": "广西壮族自治区市场监督管理局（地方标准）",
+          "year": 2024,
+          "cite": "广西壮族自治区市场监督管理局 / DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范 / 广西壮族自治区市场监督管理局（地方标准） / 2024",
+          "grade": "标准与规范",
+          "ref": "R10"
+        },
+        {
+          "type": "建议",
+          "author": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al.",
+          "title": "对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）",
+          "journal": "加拿大放射医师协会杂志",
+          "year": 2025,
+          "cite": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al. / 对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会） / 加拿大放射医师协会杂志 / 2025",
+          "grade": "推荐意见",
+          "ref": "R14"
+        },
+        {
+          "type": "共识",
+          "author": "中国抗癌协会肿瘤影像专业委员会",
+          "title": "恶性肿瘤患者CT增强扫描对比剂安全管理专家共识（2022）",
+          "journal": "中华放射学杂志",
+          "year": 2022,
+          "cite": "中国抗癌协会肿瘤影像专业委员会 / 恶性肿瘤患者CT增强扫描对比剂安全管理专家共识（2022） / 中华放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "CG-09"
+        },
+        {
+          "type": "系统评价",
+          "author": "承德医学院护理学院（秦雨轩、王树艳、丁艺华等）",
+          "title": "中医护理技术在碘对比剂外渗处理中应用的范围综述",
+          "journal": "老年医学研究",
+          "year": 2026,
+          "cite": "承德医学院护理学院（秦雨轩、王树艳、丁艺华等） / 中医护理技术在碘对比剂外渗处理中应用的范围综述 / 老年医学研究 / 2026",
+          "grade": "汇总证据",
+          "ref": "CN-03"
+        },
+        {
+          "type": "对照研究",
+          "author": "哈尔滨医科大学附属第四医院普外一科（孙海霞、李红霞）",
+          "title": "如意金黄双散糊剂外敷在治疗碘造影剂外渗中的应用",
+          "journal": "中华现代护理杂志",
+          "year": 2015,
+          "cite": "哈尔滨医科大学附属第四医院普外一科（孙海霞、李红霞） / 如意金黄双散糊剂外敷在治疗碘造影剂外渗中的应用 / 中华现代护理杂志 / 2015",
+          "grade": "汇总证据",
+          "ref": "CN-04"
+        },
+        {
+          "type": "病例系列",
+          "author": "连云港市第一人民医院伤口造口门诊（李来娟、蒋琪霞等）",
+          "title": "中药如意金黄散早期湿敷在药物外渗性皮肤损伤中的效果分析",
+          "journal": "中华现代护理杂志",
+          "year": 2020,
+          "cite": "连云港市第一人民医院伤口造口门诊（李来娟、蒋琪霞等） / 中药如意金黄散早期湿敷在药物外渗性皮肤损伤中的效果分析 / 中华现代护理杂志 / 2020",
+          "grade": "汇总证据",
+          "ref": "CN-05"
+        },
+        {
+          "type": "对照研究",
+          "author": "中国十五冶金建设集团有限公司职工医院（陈佳兰、王声勇）",
+          "title": "新磺片糊剂湿敷治疗静脉炎",
+          "journal": "医学信息",
+          "year": 2016,
+          "cite": "中国十五冶金建设集团有限公司职工医院（陈佳兰、王声勇） / 新磺片糊剂湿敷治疗静脉炎 / 医学信息 / 2016",
+          "grade": "汇总证据",
+          "ref": "CN-06"
+        },
+        {
+          "type": "病例系列",
+          "author": "江西省赣州市人民医院肿瘤外科（徐瑶）",
+          "title": "新鲜马铃薯与新磺片交替外敷治疗深静脉所致静脉炎的临床疗效",
+          "journal": "实用心脑肺血管病杂志",
+          "year": 2010,
+          "cite": "江西省赣州市人民医院肿瘤外科（徐瑶） / 新鲜马铃薯与新磺片交替外敷治疗深静脉所致静脉炎的临床疗效 / 实用心脑肺血管病杂志 / 2010",
+          "grade": "汇总证据",
+          "ref": "CN-07"
+        },
+        {
+          "type": "对照研究",
+          "author": "中山大学附属第一医院中医科（许璧瑜）",
+          "title": "新癀片外敷治疗静脉输液渗漏临床疗效观察",
+          "journal": "东方药膳",
+          "year": 2019,
+          "cite": "中山大学附属第一医院中医科（许璧瑜） / 新癀片外敷治疗静脉输液渗漏临床疗效观察 / 东方药膳 / 2019",
+          "grade": "汇总证据",
+          "ref": "CN-08"
+        },
+        {
+          "type": "对照研究",
+          "author": "南昌大学第一附属医院",
+          "title": "五黄油外敷治疗化疗所致静脉炎效果观察",
+          "journal": "中国医药指南",
+          "year": 2010,
+          "cite": "南昌大学第一附属医院 / 五黄油外敷治疗化疗所致静脉炎效果观察 / 中国医药指南 / 2010",
+          "grade": "汇总证据",
+          "ref": "CN-09"
+        },
+        {
+          "type": "对照研究",
+          "author": "南昌大学第二附属医院（黄丹、黄小梅、王曾庚）",
+          "title": "五黄油对顺铂所致静脉炎的疗效观察",
+          "journal": "实用临床医学",
+          "year": 2010,
+          "cite": "南昌大学第二附属医院（黄丹、黄小梅、王曾庚） / 五黄油对顺铂所致静脉炎的疗效观察 / 实用临床医学 / 2010",
+          "grade": "汇总证据",
+          "ref": "CN-10"
+        },
+        {
+          "type": "对照研究",
+          "author": "南昌大学第一附属医院（魏明珠、吴姝玲、陈景华等）",
+          "title": "五黄油治疗肠造口粪水性皮炎的临床疗效研究",
+          "journal": "首都食品与医药",
+          "year": 2025,
+          "cite": "南昌大学第一附属医院（魏明珠、吴姝玲、陈景华等） / 五黄油治疗肠造口粪水性皮炎的临床疗效研究 / 首都食品与医药 / 2025",
+          "grade": "汇总证据",
+          "ref": "CN-11"
+        },
+        {
+          "type": "药品说明书",
+          "author": "厦门中药厂有限公司",
+          "title": "新癀片说明书（国药准字 Z35020063）",
+          "journal": "药品说明书（执行标准：中国药典 2015 年版一部）",
+          "year": 2015,
+          "cite": "厦门中药厂有限公司 / 新癀片说明书（国药准字 Z35020063） / 药品说明书（执行标准：中国药典 2015 年版一部） / 2015",
+          "grade": "说明书",
+          "ref": "DRUG-02"
+        },
+        {
+          "type": "队列研究",
+          "author": "Liu W, Wang P, Zhu H, Tang H, Guan H, Wang X, Wang C, Qiu Y, He L",
+          "title": "Contrast media extravasation injury: a prospective observational cohort study",
+          "journal": "European Journal of Medical Research",
+          "year": 2023,
+          "cite": "Liu W, Wang P, Zhu H, Tang H, Guan H, Wang X, Wang C, Qiu Y, He L / Contrast media extravasation injury: a prospective observational cohort study / European Journal of Medical Research / 2023",
+          "grade": "汇总证据",
+          "ref": "EN-05"
+        },
+        {
+          "type": "系统评价",
+          "author": "Heshmatzadeh Behzadi A, Farooq Z, Newhouse JH, Prince MR",
+          "title": "MRI and CT contrast media extravasation: A systematic review",
+          "journal": "Medicine (Baltimore)",
+          "year": 2018,
+          "cite": "Heshmatzadeh Behzadi A, Farooq Z, Newhouse JH, Prince MR / MRI and CT contrast media extravasation: A systematic review / Medicine (Baltimore) / 2018",
+          "grade": "汇总证据",
+          "ref": "EN-06"
+        },
+        {
+          "type": "调查",
+          "author": "宋圆圆, 王宇, 蒿若楠, 董方方, 黄霖霖, 杨巧芳, 贾晓辉, 白姗",
+          "title": "河南省含碘对比剂外渗管理现状及护士认知水平的调查研究",
+          "journal": "中华护理杂志",
+          "year": 2025,
+          "cite": "宋圆圆, 王宇, 蒿若楠, 董方方, 黄霖霖, 杨巧芳, 贾晓辉, 白姗 / 河南省含碘对比剂外渗管理现状及护士认知水平的调查研究 / 中华护理杂志 / 2025",
+          "grade": "汇总证据",
+          "ref": "CN-30"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O",
+          "title": "Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines",
+          "journal": "European Radiology",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, Bellin MF, Bertolotto M, Brismar T, Correas JM, Dekkers IA, Geenen RWF, Heinz-Peer G, Mahnken AH, Quattrocchi CC, Radbruch A, Reimer P, Romanini L, Stacul F, Thomsen HS, Clement O / Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines / European Radiology / 2022",
+          "grade": "指南与共识",
+          "ref": "EN-01"
+        },
+        {
+          "type": "最佳证据",
+          "author": "Liu H, Zeng Q, Zeng X, Lu X, Xiao B, Cheng Y, Liu Y, Yang C, Yang C",
+          "title": "Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation",
+          "journal": "Frontiers in Medicine",
+          "year": 2026,
+          "cite": "Liu H, Zeng Q, Zeng X, Lu X, Xiao B, Cheng Y, Liu Y, Yang C, Yang C / Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation / Frontiers in Medicine / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-10"
+        },
+        {
+          "type": "综述",
+          "author": "Romanczuk D, Lange S, Medrzycka-Dabrowska W, Cichowlas G",
+          "title": "Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography",
+          "journal": "Journal of Clinical Medicine",
+          "year": 2026,
+          "cite": "Romanczuk D, Lange S, Medrzycka-Dabrowska W, Cichowlas G / Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography / Journal of Clinical Medicine / 2026",
+          "grade": "汇总证据",
+          "ref": "EN-22"
+        },
+        {
+          "type": "调查",
+          "author": "杨巧芳, 张灵芳, 张新, 白珊, 董方方",
+          "title": "不同穿刺部位静脉留置针渗出外渗的发生现状及结局差异分析",
+          "journal": "中华现代护理杂志",
+          "year": 2020,
+          "cite": "杨巧芳, 张灵芳, 张新, 白珊, 董方方 / 不同穿刺部位静脉留置针渗出外渗的发生现状及结局差异分析 / 中华现代护理杂志 / 2020",
+          "grade": "汇总证据",
+          "ref": "CN-13"
+        },
+        {
+          "type": "最佳证据",
+          "author": "史苏霞, 毛燕君, 程洁, 来小彬",
+          "title": "放射科碘对比剂外渗管理的证据总结",
+          "journal": "护理研究",
+          "year": 2020,
+          "cite": "史苏霞, 毛燕君, 程洁, 来小彬 / 放射科碘对比剂外渗管理的证据总结 / 护理研究 / 2020",
+          "grade": "汇总证据",
+          "ref": "CN-24"
+        },
+        {
+          "type": "病例系列",
+          "author": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC",
+          "title": "Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions",
+          "journal": "International Wound Journal",
+          "year": 2017,
+          "cite": "Kim SM, Cook KH, Lee IJ, Park DH, Park MC / Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions / International Wound Journal / 2017",
+          "grade": "汇总证据",
+          "ref": "EN-07"
+        },
+        {
+          "type": "对照研究",
+          "author": "李小平, 杨媚月, 宋敏, 谢金婵, 蒲兴春",
+          "title": "应用改良痈疽油剂干预含碘对比剂中重度静脉外渗的临床疗效评价",
+          "journal": "中医外治杂志",
+          "year": 2023,
+          "cite": "李小平, 杨媚月, 宋敏, 谢金婵, 蒲兴春 / 应用改良痈疽油剂干预含碘对比剂中重度静脉外渗的临床疗效评价 / 中医外治杂志 / 2023",
+          "grade": "汇总证据",
+          "ref": "CN-18"
+        },
+        {
+          "type": "综述",
+          "author": "Thomas R, Vermaak L, Price G",
+          "title": "Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison",
+          "journal": "Eplasty",
+          "year": 2022,
+          "cite": "Thomas R, Vermaak L, Price G / Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison / Eplasty / 2022",
+          "grade": "汇总证据",
+          "ref": "EN-08"
+        },
+        {
+          "type": "综述",
+          "author": "宋朝晖",
+          "title": "造影剂血管外渗的处置方法研究进展",
+          "journal": "全科护理",
+          "year": 2018,
+          "cite": "宋朝晖 / 造影剂血管外渗的处置方法研究进展 / 全科护理 / 2018",
+          "grade": "汇总证据",
+          "ref": "CN-16"
+        },
+        {
+          "type": "病例报告",
+          "author": "张媛媛, 龙秀红, 吕婵, 李鲜, 王艺, 黄兰英, 涂惠琼, 覃惠娟",
+          "title": "1例药液外渗致慢性难愈性创面形成患者的中西医结合护理",
+          "journal": "中华护理杂志",
+          "year": 2024,
+          "cite": "张媛媛, 龙秀红, 吕婵, 李鲜, 王艺, 黄兰英, 涂惠琼, 覃惠娟 / 1例药液外渗致慢性难愈性创面形成患者的中西医结合护理 / 中华护理杂志 / 2024",
+          "grade": "汇总证据",
+          "ref": "CN-19"
+        },
+        {
+          "type": "病例报告",
+          "author": "Diop B, Soh GT, Nde AFT, Sarr N, Ndoye AY, Sane JC",
+          "title": "Hand compartment syndrome secondary to contrast media extravasation: A case report",
+          "journal": "International Journal of Surgery Case Reports",
+          "year": 2022,
+          "cite": "Diop B, Soh GT, Nde AFT, Sarr N, Ndoye AY, Sane JC / Hand compartment syndrome secondary to contrast media extravasation: A case report / International Journal of Surgery Case Reports / 2022",
+          "grade": "汇总证据",
+          "ref": "EN-16"
+        },
+        {
+          "type": "病例报告",
+          "author": "Hu J, Ge T, Du Y, Wang J, Zhou Y",
+          "title": "Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention",
+          "journal": "BMC Surgery",
+          "year": 2025,
+          "cite": "Hu J, Ge T, Du Y, Wang J, Zhou Y / Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention / BMC Surgery / 2025",
+          "grade": "汇总证据",
+          "ref": "EN-17"
+        },
+        {
+          "type": "对照研究",
+          "author": "申敏, 李淑英, 明蕾",
+          "title": "康惠尔透明贴与50％硫酸镁溶液冷湿敷治疗碘对比剂外渗效果比较",
+          "journal": "齐鲁护理杂志",
+          "year": 2022,
+          "cite": "申敏, 李淑英, 明蕾 / 康惠尔透明贴与50％硫酸镁溶液冷湿敷治疗碘对比剂外渗效果比较 / 齐鲁护理杂志 / 2022",
+          "grade": "汇总证据",
+          "ref": "CN-17"
+        },
+        {
+          "type": "调查",
+          "author": "聂圣肖, 王蕾, 孙红, 钱莉",
+          "title": "全国部分医院静脉导管维护现状调查",
+          "journal": "中华现代护理杂志",
+          "year": 2022,
+          "cite": "聂圣肖, 王蕾, 孙红, 钱莉 / 全国部分医院静脉导管维护现状调查 / 中华现代护理杂志 / 2022",
+          "grade": "汇总证据",
+          "ref": "CN-25"
+        },
+        {
+          "type": "指南",
+          "author": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F",
+          "title": "Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee",
+          "journal": "European Radiology",
+          "year": 2025,
+          "cite": "van der Molen AJ, van de Ven AAJM, Vega F, Dekkers IA, Geenen RWF, Bellin MF, Bertolotto M, Brismar TB, Clement O, Correas JM, Deike K, Heinz G, Mahnken AH, Mallio CA, Quattrocchi CC, Radbruch A, Reimer P, Roditi G, Romanini L, Sebastia C, Stacul F / Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee / European Radiology / 2025",
+          "grade": "指南与共识",
+          "ref": "EN-03"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "FW_SymptomStatus",
+      "name": "症状现状",
+      "type": "SymptomStatus",
+      "tags": [
+        "知识框架",
+        "二级框架"
+      ],
+      "aliases": [
+        "症状现状"
+      ],
+      "summary": "论文表 1「症状现状」二级框架。收录症状现状 —— 轻度反应已缓解、重度反应已恢复。（在本题数据里，这两个节点是护理措施 / 护理干预 / 外渗处置原则的「影响」目标，故归在处置原则之下。）",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "二级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "声明",
+          "author": "Wang C, Ramsey A, Lang D, et al.",
+          "title": "放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明",
+          "journal": "放射学",
+          "year": 2025,
+          "cite": "Wang C, Ramsey A, Lang D, et al. / 放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明 / 放射学 / 2025",
+          "grade": "学会声明",
+          "ref": "R12"
+        },
+        {
+          "type": "共识",
+          "author": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香）",
+          "title": "影像科碘对比剂输注安全专家共识",
+          "journal": "介入放射学杂志",
+          "year": 2018,
+          "cite": "中华医学会放射学分会放射护理专业委员会放射诊断护理学组（执笔：李雪、郑淑梅、屈梅香） / 影像科碘对比剂输注安全专家共识 / 介入放射学杂志 / 2018",
+          "grade": "指南与共识",
+          "ref": "R07"
+        },
+        {
+          "type": "推荐实践",
+          "author": "Golden DBK, Wang J, Waserman S, et al.",
+          "title": "过敏反应：2023 年实践参数更新",
+          "journal": "变态反应、哮喘与免疫学年鉴",
+          "year": 2024,
+          "cite": "Golden DBK, Wang J, Waserman S, et al. / 过敏反应：2023 年实践参数更新 / 变态反应、哮喘与免疫学年鉴 / 2024",
+          "grade": "推荐意见",
+          "ref": "R16"
+        },
+        {
+          "type": "建议",
+          "author": "Brockow K",
+          "title": "放射性对比剂超敏反应处理流程（2024 年更新）",
+          "journal": "变态反应",
+          "year": 2024,
+          "cite": "Brockow K / 放射性对比剂超敏反应处理流程（2024 年更新） / 变态反应 / 2024",
+          "grade": "推荐意见",
+          "ref": "R13"
+        }
+      ],
+      "graph": "topic-01"
+    },
+    {
+      "id": "FW_FunctionalStatus",
+      "name": "功能状况",
+      "type": "FunctionalStatus",
+      "tags": [
+        "知识框架",
+        "二级框架"
+      ],
+      "aliases": [
+        "功能状况"
+      ],
+      "summary": "论文表 1「功能状况」二级框架。收录功能状况 —— 患肢功能状态。（在本题数据里，该节点是护理干预的「影响」目标，故归在处置原则之下。）",
+      "attrs": [
+        {
+          "k": "框架层级",
+          "v": "二级框架"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南",
+          "author": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇）",
+          "title": "含碘对比剂静脉外渗护理管理实践指南（2026年更新版）",
+          "journal": "中华护理杂志",
+          "year": 2026,
+          "cite": "中华护理学会放射介入护理专业委员会（执笔：张红梅、张素、刘宇） / 含碘对比剂静脉外渗护理管理实践指南（2026年更新版） / 中华护理杂志 / 2026",
+          "grade": "指南与共识",
+          "ref": "R04"
+        },
+        {
+          "type": "指南",
+          "author": "Roditi G, Khan N, van der Molen AJ, et al.",
+          "title": "静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新",
+          "journal": "欧洲放射学杂志",
+          "year": 2022,
+          "cite": "Roditi G, Khan N, van der Molen AJ, et al. / 静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新 / 欧洲放射学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "R02"
+        }
+      ],
+      "graph": "topic-01"
     }
   ],
   "edges": [
@@ -20854,1010 +22104,6 @@ window.KG_GRAPH = {
       "target": "S_AllergicReaction",
       "type": "EFFECT_ON",
       "label": "效果"
-    },
-    {
-      "source": "FW_SymptomCategory",
-      "target": "FW_SymptomSign",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_AssessmentTool",
-      "target": "FW_SymptomSign",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_RiskFactor",
-      "target": "FW_ManagementPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_PharmacologicalManagement",
-      "target": "FW_ManagementPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_NonPharmacologicalManagement",
-      "target": "FW_ManagementPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_SymptomStatus",
-      "target": "FW_ManagementPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_FunctionalStatus",
-      "target": "FW_ManagementPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "S_AdverseReaction",
-      "target": "FW_SymptomSign",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "S_Rash",
-      "target": "FW_SymptomSign",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "S_AllergicReaction",
-      "target": "FW_SymptomSign",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "S_Urticaria",
-      "target": "FW_SymptomSign",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "S_Pruritus",
-      "target": "FW_SymptomSign",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "S_FacialEdema",
-      "target": "FW_SymptomSign",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "S_ThroatDiscomfort",
-      "target": "FW_SymptomSign",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "S_ChestTightness",
-      "target": "FW_SymptomSign",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "S_GeneralizedWeakness",
-      "target": "FW_SymptomSign",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "S_AnaphylacticShock",
-      "target": "FW_SymptomSign",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "S_Extravasation",
-      "target": "FW_SymptomSign",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "S_ContrastAKI",
-      "target": "FW_SymptomSign",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "S_ContrastNausea",
-      "target": "FW_SymptomSign",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "S_ContrastVomiting",
-      "target": "FW_SymptomSign",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "S_ExtravasationSwelling",
-      "target": "FW_SymptomSign",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "S_ExtravasationPain",
-      "target": "FW_SymptomSign",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "S_ExtravasationRedness",
-      "target": "FW_SymptomSign",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "S_ExtravasationCoolSkin",
-      "target": "FW_SymptomSign",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "S_ExtravasationPallor",
-      "target": "FW_SymptomSign",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "E_CTEnhancedScan",
-      "target": "FW_Exam",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "E_ContrastInjection",
-      "target": "FW_Exam",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "MP_NursingMeasures",
-      "target": "FW_ManagementPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "MP_NursingPrevention",
-      "target": "FW_ManagementPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "MP_NursingIntervention",
-      "target": "FW_ManagementPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "MP_ExtravasationPrinciple",
-      "target": "FW_ManagementPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "MP_AdverseReactionTriage",
-      "target": "FW_ManagementPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "NT_EarlyWarning",
-      "target": "FW_NursingTheory",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "NT_SelfCareTheory",
-      "target": "FW_NursingTheory",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "DE_PreExamNotice",
-      "target": "FW_DiseaseEducation",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "DE_AfterExamCare",
-      "target": "FW_DiseaseEducation",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "DE_AllergyDisclosure",
-      "target": "FW_DiseaseEducation",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "DE_ExtravasationHomeCare",
-      "target": "FW_DiseaseEducation",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "DE_EmergencyKnowledge",
-      "target": "FW_DiseaseEducation",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "SC_AdverseSpectrum",
-      "target": "FW_SymptomCategory",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "SC_Hypersensitivity",
-      "target": "FW_SymptomCategory",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "SC_ExtravasationSpectrum",
-      "target": "FW_SymptomCategory",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "AT_AllergyHistory",
-      "target": "FW_AssessmentTool",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "AT_ExtravasationAssessment",
-      "target": "FW_AssessmentTool",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "AT_VascularAssessment",
-      "target": "FW_AssessmentTool",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "RF_ContrastAllergyHistory",
-      "target": "FW_RiskFactor",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "RF_UncontrolledAsthma",
-      "target": "FW_RiskFactor",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "RF_AgeExtremes",
-      "target": "FW_RiskFactor",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "RF_FragileVein",
-      "target": "FW_RiskFactor",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "RF_HighPressureInjection",
-      "target": "FW_RiskFactor",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "RF_NoSalineFlush",
-      "target": "FW_RiskFactor",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "PM_AdrenalineIM",
-      "target": "FW_PharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "PM_Corticosteroid",
-      "target": "FW_PharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "PM_Antihistamine",
-      "target": "FW_PharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "PM_MagnesiumSulfate",
-      "target": "FW_PharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "PM_DexamethasoneWetCompress",
-      "target": "FW_PharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "NPM_StopInjection",
-      "target": "FW_NonPharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "NPM_KeepCatheter",
-      "target": "FW_NonPharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "NPM_LimbElevation",
-      "target": "FW_NonPharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "NPM_ColdCompress",
-      "target": "FW_NonPharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "NPM_CloseObservation",
-      "target": "FW_NonPharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "NPM_OralHydration",
-      "target": "FW_NonPharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "NPM_ContrastPreparation",
-      "target": "FW_NonPharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "NPM_VascularVisualization",
-      "target": "FW_NonPharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "NPM_PsychologicalSupport",
-      "target": "FW_NonPharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "SS_MildResolved",
-      "target": "FW_SymptomStatus",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "SS_SevereRecovered",
-      "target": "FW_SymptomStatus",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FS_LimbFunction",
-      "target": "FW_FunctionalStatus",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "DC_CTEnhancedRisk",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_Exam",
-      "target": "DC_CTEnhancedRisk",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_ManagementPrinciple",
-      "target": "DC_CTEnhancedRisk",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_NursingTheory",
-      "target": "DC_CTEnhancedRisk",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_DiseaseEducation",
-      "target": "DC_CTEnhancedRisk",
-      "type": "BELONGS_TO",
-      "label": "属于",
-      "role": "framework"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "R01",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "R12",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "R14",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "R13",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "R21",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "R23",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "R16",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "R02",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "R04",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "R17",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "R09",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "R10",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "R22",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "R05",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "R06",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "R18",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "R11",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_SymptomSign",
-      "target": "R15",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_Exam",
-      "target": "R01",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_Exam",
-      "target": "R03",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_Exam",
-      "target": "R10",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_Exam",
-      "target": "R07",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_Exam",
-      "target": "R15",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_ManagementPrinciple",
-      "target": "R04",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_ManagementPrinciple",
-      "target": "R07",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_ManagementPrinciple",
-      "target": "R01",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_ManagementPrinciple",
-      "target": "R09",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_ManagementPrinciple",
-      "target": "R02",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_ManagementPrinciple",
-      "target": "R16",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_ManagementPrinciple",
-      "target": "R12",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_ManagementPrinciple",
-      "target": "R13",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_NursingTheory",
-      "target": "R13",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_NursingTheory",
-      "target": "R16",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_NursingTheory",
-      "target": "R24",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_DiseaseEducation",
-      "target": "R03",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_DiseaseEducation",
-      "target": "R20",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_DiseaseEducation",
-      "target": "R01",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_DiseaseEducation",
-      "target": "R07",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_DiseaseEducation",
-      "target": "R12",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_DiseaseEducation",
-      "target": "R04",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_DiseaseEducation",
-      "target": "R02",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_DiseaseEducation",
-      "target": "R16",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_DiseaseEducation",
-      "target": "R13",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_SymptomCategory",
-      "target": "R01",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_SymptomCategory",
-      "target": "R12",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_SymptomCategory",
-      "target": "R02",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_AssessmentTool",
-      "target": "R03",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_AssessmentTool",
-      "target": "R12",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_AssessmentTool",
-      "target": "R04",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_AssessmentTool",
-      "target": "R17",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_AssessmentTool",
-      "target": "R22",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_AssessmentTool",
-      "target": "R08",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_AssessmentTool",
-      "target": "R09",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_RiskFactor",
-      "target": "R12",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_RiskFactor",
-      "target": "R13",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_RiskFactor",
-      "target": "R23",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_RiskFactor",
-      "target": "R04",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_RiskFactor",
-      "target": "R17",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_RiskFactor",
-      "target": "R02",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_RiskFactor",
-      "target": "R09",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_PharmacologicalManagement",
-      "target": "R16",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_PharmacologicalManagement",
-      "target": "R12",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_PharmacologicalManagement",
-      "target": "R13",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_PharmacologicalManagement",
-      "target": "R07",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_NonPharmacologicalManagement",
-      "target": "R02",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_NonPharmacologicalManagement",
-      "target": "R04",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_NonPharmacologicalManagement",
-      "target": "R07",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_NonPharmacologicalManagement",
-      "target": "R01",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_NonPharmacologicalManagement",
-      "target": "R03",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_NonPharmacologicalManagement",
-      "target": "R09",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_NonPharmacologicalManagement",
-      "target": "R21",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_NonPharmacologicalManagement",
-      "target": "R08",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_NonPharmacologicalManagement",
-      "target": "R20",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_SymptomStatus",
-      "target": "R12",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_SymptomStatus",
-      "target": "R07",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_SymptomStatus",
-      "target": "R16",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_SymptomStatus",
-      "target": "R13",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_FunctionalStatus",
-      "target": "R04",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "FW_FunctionalStatus",
-      "target": "R02",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "NT_SelfCareTheory",
-      "target": "R24",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "R24",
-      "target": "R24",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
     },
     {
       "source": "S_VasovagalReaction",
@@ -24038,12 +24284,6 @@ window.KG_GRAPH = {
       "label": "出处"
     },
     {
-      "source": "NT_SelfCareTheory",
-      "target": "CN-14",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
       "source": "MP_ExtravasationReporting",
       "target": "CN-15",
       "type": "SUPPORTED_BY",
@@ -26204,336 +26444,6 @@ window.KG_GRAPH = {
       "label": "管理"
     },
     {
-      "source": "PM_DexamethasoneOral",
-      "target": "FW_PharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "NPM_ContrastWarming",
-      "target": "FW_NonPharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "NPM_PunctureSiteSelection",
-      "target": "FW_NonPharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "NPM_CannulaSecurement",
-      "target": "FW_NonPharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "NPM_InjectionRateMatching",
-      "target": "FW_NonPharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "NPM_WarmCompress",
-      "target": "FW_NonPharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "NPM_StabIncisionSqueezing",
-      "target": "FW_NonPharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "NPM_ResidualFluidAspiration",
-      "target": "FW_NonPharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "NPM_Fasciotomy",
-      "target": "FW_NonPharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "NPM_LightCompressionSplint",
-      "target": "FW_NonPharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "NPM_WoundDressingManagement",
-      "target": "FW_NonPharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "NPM_CrystalloidBolus",
-      "target": "FW_NonPharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "NPM_ExtravasationObservation",
-      "target": "FW_NonPharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "NPM_PainControl",
-      "target": "FW_NonPharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "NPM_PostReactionObservation",
-      "target": "FW_NonPharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "PM_Beta2Agonist",
-      "target": "FW_PharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "PM_WeightBasedDosing",
-      "target": "FW_PharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "PM_DrugSpecificAntidotes",
-      "target": "FW_PharmacologicalManagement",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "AT_ExtravSeverityGrading",
-      "target": "FW_AssessmentTool",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "AT_ExtravasationPhysicalExam",
-      "target": "FW_AssessmentTool",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "AT_TissuePerfusionAssessment",
-      "target": "FW_AssessmentTool",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "AT_ReactionDocumentation",
-      "target": "FW_AssessmentTool",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "AT_ExtravasationImaging",
-      "target": "FW_AssessmentTool",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "RF_ExistingIVReuse",
-      "target": "FW_RiskFactor",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "RF_SmallBoreCannula",
-      "target": "FW_RiskFactor",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "RF_HandDorsalSite",
-      "target": "FW_RiskFactor",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "RF_DiabetesMellitus",
-      "target": "FW_RiskFactor",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "RF_MalignancyChemotherapy",
-      "target": "FW_RiskFactor",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "RF_Sarcopenia",
-      "target": "FW_RiskFactor",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "RF_FemaleGender",
-      "target": "FW_RiskFactor",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "RF_InpatientStatus",
-      "target": "FW_RiskFactor",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "RF_LargeVolumeExtravasation",
-      "target": "FW_RiskFactor",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "RF_ImpairedSymptomPerception",
-      "target": "FW_RiskFactor",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "MP_EmergencyPreparedness",
-      "target": "FW_ManagementPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "MP_SimulationTraining",
-      "target": "FW_ManagementPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "MP_RiskAssessmentFramework",
-      "target": "FW_ManagementPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "MP_SurgicalReferralCriteria",
-      "target": "FW_ManagementPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "MP_ExtravasationEscalation",
-      "target": "FW_ManagementPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "MP_EvidenceBasedPractice",
-      "target": "FW_ManagementPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "MP_NursingQualityManagement",
-      "target": "FW_ManagementPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "MP_MultiStakeholderSafety",
-      "target": "FW_ManagementPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "MP_VascularAccessMaintenance",
-      "target": "FW_ManagementPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "MP_VascularAccessDeviceSelection",
-      "target": "FW_ManagementPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "MP_NurseLedRiskStratification",
-      "target": "FW_ManagementPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "MP_OncologyContrastRisk",
-      "target": "FW_ManagementPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "MP_AllergySpecialistReferral",
-      "target": "FW_ManagementPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "MP_PediatricContrastSafety",
-      "target": "FW_ManagementPrinciple",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "S_Blistering",
-      "target": "FW_SymptomSign",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "S_ChronicNonHealingWound",
-      "target": "FW_SymptomSign",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "S_RedFlagSigns",
-      "target": "FW_SymptomSign",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "SC_ReactionOnsetWindow",
-      "target": "FW_SymptomCategory",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "SC_ReactionMechanismType",
-      "target": "FW_SymptomCategory",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "SC_BreakthroughReaction",
-      "target": "FW_SymptomCategory",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "DE_MenuBasedHealthEducation",
-      "target": "FW_DiseaseEducation",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
-      "source": "DE_ExtravasationRedFlags",
-      "target": "FW_DiseaseEducation",
-      "type": "BELONGS_TO",
-      "label": "属于"
-    },
-    {
       "source": "S_Extravasation",
       "target": "AT_ExtravSeverityGrading",
       "type": "DETECTED_BY",
@@ -26936,10 +26846,2464 @@ window.KG_GRAPH = {
       "label": "表现为"
     },
     {
+      "source": "S_ContrastNausea",
+      "target": "NPM_AcupointStimulation",
+      "type": "TREATED_BY",
+      "label": "管理"
+    },
+    {
+      "source": "S_ContrastVomiting",
+      "target": "NPM_AcupointStimulation",
+      "type": "TREATED_BY",
+      "label": "管理"
+    },
+    {
+      "source": "S_ContrastNausea",
+      "target": "NPM_Aromatherapy",
+      "type": "TREATED_BY",
+      "label": "管理"
+    },
+    {
+      "source": "S_ContrastVomiting",
+      "target": "NPM_Aromatherapy",
+      "type": "TREATED_BY",
+      "label": "管理"
+    },
+    {
+      "source": "S_ContrastNausea",
+      "target": "NPM_GingerTherapy",
+      "type": "TREATED_BY",
+      "label": "管理"
+    },
+    {
+      "source": "S_ContrastVomiting",
+      "target": "NPM_GingerTherapy",
+      "type": "TREATED_BY",
+      "label": "管理"
+    },
+    {
+      "source": "S_ContrastNausea",
+      "target": "DE_NauseaHealthEducation",
+      "type": "TREATED_BY",
+      "label": "管理"
+    },
+    {
+      "source": "S_ContrastVomiting",
+      "target": "DE_NauseaHealthEducation",
+      "type": "TREATED_BY",
+      "label": "管理"
+    },
+    {
+      "source": "S_ContrastNausea",
+      "target": "NPM_LifestyleCare",
+      "type": "TREATED_BY",
+      "label": "管理"
+    },
+    {
+      "source": "S_ContrastVomiting",
+      "target": "NPM_LifestyleCare",
+      "type": "TREATED_BY",
+      "label": "管理"
+    },
+    {
+      "source": "S_ContrastNausea",
+      "target": "NPM_FluidTherapy",
+      "type": "TREATED_BY",
+      "label": "管理"
+    },
+    {
+      "source": "S_ContrastVomiting",
+      "target": "NPM_FluidTherapy",
+      "type": "TREATED_BY",
+      "label": "管理"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomStatus",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_FunctionalStatus",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_AdverseReaction",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_Rash",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_AllergicReaction",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_Urticaria",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_Pruritus",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_FacialEdema",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_ThroatDiscomfort",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_ChestTightness",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_GeneralizedWeakness",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_AnaphylacticShock",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_Extravasation",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_ContrastAKI",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_ContrastNausea",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_ContrastVomiting",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_ExtravasationSwelling",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_ExtravasationPain",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_ExtravasationRedness",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_ExtravasationCoolSkin",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_ExtravasationPallor",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_VasovagalReaction",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_BiphasicAnaphylaxis",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_CompartmentSyndrome",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_Phlebitis",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_Bronchospasm",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_PulmonaryEdema",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_Blistering",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_ChronicNonHealingWound",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "S_RedFlagSigns",
+      "target": "FW_SymptomSign",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "E_CTEnhancedScan",
+      "target": "FW_Exam",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "E_ContrastInjection",
+      "target": "FW_Exam",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_NursingMeasures",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_NursingPrevention",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_NursingIntervention",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_ExtravasationPrinciple",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_AdverseReactionTriage",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_ExtravasationReporting",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_SkinIntegrity",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_EmergencyPreparedness",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_SimulationTraining",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_RiskAssessmentFramework",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_SurgicalReferralCriteria",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_ExtravasationEscalation",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_EvidenceBasedPractice",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_NursingQualityManagement",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_MultiStakeholderSafety",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_VascularAccessMaintenance",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_VascularAccessDeviceSelection",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_NurseLedRiskStratification",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_OncologyContrastRisk",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_AllergySpecialistReferral",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_PediatricContrastSafety",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_ImagingNursingEssentials",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "MP_ImagingDeptNursingMgmt",
+      "target": "FW_ManagementPrinciple",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NT_EarlyWarning",
+      "target": "FW_NursingTheory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NT_SelfCareTheory",
+      "target": "FW_NursingTheory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "DE_PreExamNotice",
+      "target": "FW_DiseaseEducation",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "DE_AfterExamCare",
+      "target": "FW_DiseaseEducation",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "DE_AllergyDisclosure",
+      "target": "FW_DiseaseEducation",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "DE_ExtravasationHomeCare",
+      "target": "FW_DiseaseEducation",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "DE_EmergencyKnowledge",
+      "target": "FW_DiseaseEducation",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "DE_MenuBasedHealthEducation",
+      "target": "FW_DiseaseEducation",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "DE_ExtravasationRedFlags",
+      "target": "FW_DiseaseEducation",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "DE_NauseaHealthEducation",
+      "target": "FW_DiseaseEducation",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "SC_AdverseSpectrum",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "SC_Hypersensitivity",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "SC_ExtravasationSpectrum",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "SC_ExtravDamageStage",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "SC_CMHSRMild",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "SC_CMHSRModerate",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "SC_CMHSRSevere",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "SC_ExtravL1",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "SC_ExtravL2",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "SC_ExtravL3",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "SC_ExtravL4",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "SC_ReactionOnsetWindow",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "SC_ReactionMechanismType",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "SC_BreakthroughReaction",
+      "target": "FW_SymptomCategory",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
       "source": "N_SpeedReactions",
       "target": "FW_SymptomCategory",
       "type": "BELONGS_TO",
-      "label": "属于"
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "AT_AllergyHistory",
+      "target": "FW_AssessmentTool",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "AT_ExtravasationAssessment",
+      "target": "FW_AssessmentTool",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "AT_VascularAssessment",
+      "target": "FW_AssessmentTool",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "AT_SerumTryptase",
+      "target": "FW_AssessmentTool",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "AT_CMAllergyTest",
+      "target": "FW_AssessmentTool",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "AT_SwellingMeasurement",
+      "target": "FW_AssessmentTool",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "AT_ExtravasationDetection",
+      "target": "FW_AssessmentTool",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "AT_ExtravSeverityGrading",
+      "target": "FW_AssessmentTool",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "AT_ExtravasationPhysicalExam",
+      "target": "FW_AssessmentTool",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "AT_TissuePerfusionAssessment",
+      "target": "FW_AssessmentTool",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "AT_ReactionDocumentation",
+      "target": "FW_AssessmentTool",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "AT_ExtravasationImaging",
+      "target": "FW_AssessmentTool",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "RF_ContrastAllergyHistory",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "RF_UncontrolledAsthma",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "RF_AgeExtremes",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "RF_FragileVein",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "RF_HighPressureInjection",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "RF_NoSalineFlush",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "RF_BetaBlockerACEI",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "RF_ExistingIVReuse",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "RF_SmallBoreCannula",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "RF_HandDorsalSite",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "RF_DiabetesMellitus",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "RF_MalignancyChemotherapy",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "RF_Sarcopenia",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "RF_FemaleGender",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "RF_InpatientStatus",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "RF_LargeVolumeExtravasation",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "RF_ImpairedSymptomPerception",
+      "target": "FW_RiskFactor",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "PM_AdrenalineIM",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "PM_Corticosteroid",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "PM_Antihistamine",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "PM_MagnesiumSulfate",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "PM_DexamethasoneWetCompress",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "PM_EpiAutoInjector",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "PM_Hyaluronidase",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "PM_Atropine",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "PM_DexamethasoneOral",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "PM_Beta2Agonist",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "PM_WeightBasedDosing",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "PM_DrugSpecificAntidotes",
+      "target": "FW_PharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_StopInjection",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_KeepCatheter",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_LimbElevation",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_ColdCompress",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_CloseObservation",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_OralHydration",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_ContrastPreparation",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_VascularVisualization",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_PsychologicalSupport",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_PowerInjectorSafeCatheter",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_SalineFlushCheck",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_ObservationThenRemove",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_SwitchContrastAgent",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_TcmExternalApply",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_TcmCombinedApply",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_ContrastWarming",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_PunctureSiteSelection",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_CannulaSecurement",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_InjectionRateMatching",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_WarmCompress",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_StabIncisionSqueezing",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_ResidualFluidAspiration",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_Fasciotomy",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_LightCompressionSplint",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_WoundDressingManagement",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_CrystalloidBolus",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_ExtravasationObservation",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_PainControl",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_PostReactionObservation",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_AcupointStimulation",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_Aromatherapy",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_GingerTherapy",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_LifestyleCare",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "NPM_FluidTherapy",
+      "target": "FW_NonPharmacologicalManagement",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "SS_MildResolved",
+      "target": "FW_SymptomStatus",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "SS_SevereRecovered",
+      "target": "FW_SymptomStatus",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FS_LimbFunction",
+      "target": "FW_FunctionalStatus",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "DC_CTEnhancedRisk",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_Exam",
+      "target": "DC_CTEnhancedRisk",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "DC_CTEnhancedRisk",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_NursingTheory",
+      "target": "DC_CTEnhancedRisk",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "DC_CTEnhancedRisk",
+      "type": "BELONGS_TO",
+      "label": "属于",
+      "role": "framework"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R14",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R21",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R23",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R17",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R22",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R05",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R06",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R18",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R11",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R15",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "CG-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "CG-09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "CN-19",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "EN-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "EN-07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "EN-08",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "EN-16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomSign",
+      "target": "EN-17",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_Exam",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_Exam",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_Exam",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_Exam",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_Exam",
+      "target": "R15",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "CN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "CN-05",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "DRUG-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "EN-13",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "EN-15",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "EN-22",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "EN-12",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "CN-27",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "EN-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "EN-16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "EN-17",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "EN-05",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "EN-07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "CN-12",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "CN-24",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "CN-29",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "CN-31",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "CN-15",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "CN-26",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "CN-30",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "EN-18",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "EN-10",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "CN-14",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "CN-23",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "CN-25",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "EN-09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "EN-21",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "EN-20",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "EN-04",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "EN-19",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "EN-14",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_ManagementPrinciple",
+      "target": "R20",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NursingTheory",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NursingTheory",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NursingTheory",
+      "target": "R24",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "R20",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "CN-23",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "EN-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_DiseaseEducation",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "R14",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "EN-11",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "EN-15",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "CN-27",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "EN-19",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "EN-14",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomCategory",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "R17",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "R22",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "R14",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "EN-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "EN-10",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "CN-21",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "EN-07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "EN-16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "CN-30",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "CN-28",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_AssessmentTool",
+      "target": "EN-17",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "R23",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "R17",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "EN-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "EN-06",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "EN-07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "EN-22",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "EN-09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "EN-05",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "EN-21",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "EN-12",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "EN-08",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_RiskFactor",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "EN-04",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "EN-12",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_PharmacologicalManagement",
+      "target": "EN-10",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "R01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "R03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "R09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "R21",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "R08",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "R20",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "R10",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "R14",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "CG-09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "CN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "CN-04",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "CN-05",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "CN-06",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "CN-07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "CN-08",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "CN-09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "CN-10",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "CN-11",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "DRUG-02",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "EN-05",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "EN-06",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "CN-30",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "EN-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "EN-10",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "EN-22",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "CN-13",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "CN-24",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "EN-07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "CN-18",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "EN-08",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "CN-16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "CN-19",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "EN-16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "EN-17",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "CN-17",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "CN-25",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_NonPharmacologicalManagement",
+      "target": "EN-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomStatus",
+      "target": "R12",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomStatus",
+      "target": "R07",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomStatus",
+      "target": "R16",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_SymptomStatus",
+      "target": "R13",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_FunctionalStatus",
+      "target": "R04",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "FW_FunctionalStatus",
+      "target": "R02",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NT_SelfCareTheory",
+      "target": "R24",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
     }
   ]
 }

@@ -83,20 +83,6 @@ S_ExtravasationPain,SymptomSign,局部疼痛,推药时局部刺痛或灼痛，�
 S_ExtravasationRedness,SymptomSign,局部发红,外渗部位皮肤发红。,外渗表现 症状体征,2
 S_ExtravasationCoolSkin,SymptomSign,皮肤发凉,外渗部位皮肤温度低于周围，提示局部循环受到影响。,外渗表现 症状体征,2
 S_ExtravasationPallor,SymptomSign,皮肤发白发紧,外渗部位皮肤发白、发紧，是皮下积液张力高的表现。,外渗表现 症状体征,2
-NT_SelfCareTheory,NursingTheory,自护理论,自护理论（Orem，1971）认为人天生具备自我护理的能力，护理的任务是在患者自护能力不足时提供补偿与支持。落到本主题：指导患者与家属参与打针前的准备、检查后的观察，以及居家自我照护与早期求助。,护理理论 自护理论,1
-R24,Reference,Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析,系统评价与剂量反应 Meta 分析，纳入 46 项研究：以自护理论为基础的照护方案可改善慢病成人的生活质量、自我照护能力与自我效能，并降低焦虑与抑郁；但研究间异质性高、证据质量不理想，仍需设计良好的试验。,文献 系统评价,1
-FW_SymptomSign,SymptomSign,症状体征,论文「疾病知识图」一级框架之一。收录碘对比剂使用后可能出现的症状与体征 —— 不良反应、过敏反应、碘对比剂外渗；过敏反应下的下一级表现（皮疹、荨麻疹、瘙痒、颜面部水肿、咽喉部不适、胸闷、全身无力、过敏性休克），以及碘对比剂外渗下的局部表现（局部肿胀、局部疼痛、局部发红、皮肤发凉、皮肤发白发紧）。,知识框架 一级框架,18
-FW_Exam,Exam,辅助检查,论文「疾病知识图」一级框架之一。收录与本主题相关的检查项目 —— CT 增强扫描、碘对比剂。,知识框架 一级框架,5
-FW_ManagementPrinciple,ManagementPrinciple,处置原则,论文「疾病知识图」一级框架之一。收录护理处置原则 —— 护理措施、护理预防、护理干预，以及其下的外渗处置原则与不良反应分级处置原则。,知识框架 一级框架,8
-FW_NursingTheory,NursingTheory,护理理论,论文「疾病知识图」一级框架之一。收录指导护理实践的理论 —— 自护理论（Orem）：人天生具备自我护理的能力，护理的任务是在患者自护能力不足时提供补偿与支持；对应到本主题，是指导患者与家属参与预防、早期识别与居家自我照护。以及早期预警：在情况变坏之前先看出苗头、及时升级处理。,知识框架 一级框架,3
-FW_DiseaseEducation,DiseaseEducation,疾病科普,论文「疾病知识图」一级框架之一。论文 §3.2 指出「疾病知识图中科普模块的内容可面向公众开放，便于公众了解疾病的早期症状及常见误区」。收录检查前注意事项、检查后观察与护理、过敏史告知、外渗居家护理、急救知识五篇科普。,知识框架 一级框架,9
-FW_SymptomCategory,SymptomCategory,症状分类,论文表 1「症状分类」二级框架。把症状按谱归类 —— 碘对比剂不良反应谱，其下有过敏反应谱、静脉外渗反应谱。,知识框架 二级框架,3
-FW_AssessmentTool,AssessmentTool,评估工具,论文表 1「评估工具」二级框架。收录评估工具 —— 过敏史询问、外渗风险评估、血管条件评估。,知识框架 二级框架,7
-FW_RiskFactor,RiskFactor,高危因素识别,论文表 1「高危因素识别」二级框架。收录高危因素 —— 既往碘对比剂过敏史、未控制的哮喘、高龄或低龄、静脉条件差、高压注射、未做生理盐水试推。,知识框架 二级框架,7
-FW_PharmacologicalManagement,PharmacologicalManagement,药物管理,论文表 1「药物管理」二级框架。收录药物处置 —— 肌内注射肾上腺素、糖皮质激素、抗组胺药、50% 硫酸镁湿敷、0.05% 地塞米松湿敷。,知识框架 二级框架,4
-FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理,论文表 1「非药物管理」二级框架。论文第 20 页写明：点击「非药物管理」实体节点，Web 端返回其关联实体节点。收录非药物处置 —— 立即停止注射、保留静脉留置针、患肢抬高、局部冷敷、密切观察、对比剂预处理、血管可视化、心理疏导。,知识框架 二级框架,9
-FW_SymptomStatus,SymptomStatus,症状现状,论文表 1「症状现状」二级框架。收录症状现状 —— 轻度反应已缓解、重度反应已恢复。（在本题数据里，这两个节点是护理措施 / 护理干预 / 外渗处置原则的「影响」目标，故归在处置原则之下。）,知识框架 二级框架,4
-FW_FunctionalStatus,FunctionalStatus,功能状况,论文表 1「功能状况」二级框架。收录功能状况 —— 患肢功能状态。（在本题数据里，该节点是护理干预的「影响」目标，故归在处置原则之下。）,知识框架 二级框架,2
 R01-2026,Reference,ACR Manual on Contrast Media（2026 版 · 对比剂加温章节）,,文献 指南,1
 CG-01,Reference,碘对比剂超敏反应临床诊疗及长期管理专家共识（2026版）,,文献 共识,1
 CG-03,Reference,碘对比剂全程化药学服务共识,,文献 共识,1
@@ -147,6 +133,7 @@ EN-19,Reference,Immediate hypersensitivity reactions to iodinated contrast media
 EN-20,Reference,"Iodinated Contrast Media in Oncologic CT: A Narrative Review of Safety, Risk Stratification, and Practical Considerations",,文献 综述,1
 EN-21,Reference,Integrating CT-Derived Body Composition and Real-Time Injection Pressure Monitoring for Predicting Contrast Media Extravasation: A Retrospective Cohort Study with Implications for Nurse-Led Risk Stratification,,文献 队列研究,1
 EN-22,Reference,Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography,,文献 综述,1
+R24,Reference,Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析,,文献 系统评价,1
 EN-23,Reference,"Post-contrast acute kidney injury - Part 1: Definition, clinical features, incidence, role of contrast medium and risk factors（ESUR Contrast Media Safety Committee 更新指南）",,文献 指南,1
 CN-03,Reference,中医护理技术在碘对比剂外渗处理中应用的范围综述,,文献 系统评价,1
 CN-04,Reference,如意金黄双散糊剂外敷在治疗碘造影剂外渗中的应用,,文献 对照研究,1
@@ -247,3 +234,22 @@ DE_ExtravasationRedFlags,DiseaseEducation,外渗恶化警示信号宣教,出院�
 N_SpeedReactions,SymptomCategory,速发反应,按**发生时间**给对比剂不良反应分的型：注射后即刻（1 小时内）为速发型，1 小时后至 1 周内为迟发型；速发型多表现为荨麻疹、喉头水肿、支气管痉挛与休克。,症状分类,1
 MP_ImagingNursingEssentials,ManagementPrinciple,影像护理学要点,影像护理的通用框架：概述、影像技术基本知识、护理基本知识，以及各检查的基本流程、急救护理与抢救流程、职业防护规范 —— 是各项具体护理动作的上位知识底座。,处置原则,1
 MP_ImagingDeptNursingMgmt,ManagementPrinciple,检查室护理管理,影像护理的质量直接影响检查的速度、质量、安全、品质与效率；需按各影像诊疗科室的实际情况构建护理管理方案。,处置原则,1
+NPM_AcupointStimulation,NonPharmacologicalManagement,穴位刺激,在特定穴位（最常用内关/PC6、耳穴）施加按压、贴敷或电刺激以减轻恶心呕吐的护理技术，可作为药物预防的辅助手段。 ⚠️ **证据场景**：下列文献的证据场景多为**化疗 / 妊娠 / 术后**恶心呕吐；用于**造影剂相关**恶心呕吐（生理性反应）属**跨场景外推**，只能作辅助措施，**不替代**规范处理。,非药物管理,0
+NPM_Aromatherapy,NonPharmacologicalManagement,芳香疗法（精油疗法）,经鼻吸入薄荷、柠檬等精油以缓解恶心的非药物方法，可作为药物预防的辅助措施，不替代规范止吐方案。 ⚠️ **证据场景**：下列文献的证据场景多为**化疗 / 妊娠 / 术后**恶心呕吐；用于**造影剂相关**恶心呕吐（生理性反应）属**跨场景外推**，只能作辅助措施，**不替代**规范处理。,非药物管理,0
+NPM_GingerTherapy,NonPharmacologicalManagement,生姜疗法,口服生姜或生姜粉缓解恶心，世界卫生组织产前保健建议 D.1 明确推荐生姜用于孕早期恶心缓解；系统评价显示对恶心的改善证据为低至中等确定性。 ⚠️ **证据场景**：下列文献的证据场景多为**化疗 / 妊娠 / 术后**恶心呕吐；用于**造影剂相关**恶心呕吐（生理性反应）属**跨场景外推**，只能作辅助措施，**不替代**规范处理。,非药物管理,0
+DE_NauseaHealthEducation,DiseaseEducation,恶心呕吐健康教育,面向患者和家属的宣教与自我照护指导：讲清恶心呕吐的原因、预防方案、用药要点、饮食起居调整、什么时候必须求助，以及如何记录症状日记（何时、多久、吃了什么药、程度几分）。这是患者扫码后最直接看到的内容。 ⚠️ **证据场景**：下列文献的证据场景多为**化疗 / 妊娠 / 术后**恶心呕吐；用于**造影剂相关**恶心呕吐（生理性反应）属**跨场景外推**，只能作辅助措施，**不替代**规范处理。,疾病教育,0
+NPM_LifestyleCare,NonPharmacologicalManagement,起居护理,通过调整生活起居与饮食环境减轻恶心：保持空气流通、无强烈气味、少量多餐、清淡饮食，进食后取半卧位休息，避免过冷过热与油腻食物。 ⚠️ **证据场景**：下列文献的证据场景多为**化疗 / 妊娠 / 术后**恶心呕吐；用于**造影剂相关**恶心呕吐（生理性反应）属**跨场景外推**，只能作辅助措施，**不替代**规范处理。,非药物管理,0
+NPM_FluidTherapy,NonPharmacologicalManagement,液体疗法,呕吐导致摄入不足时按医嘱补充水分与电解质，维持水电解质平衡。轻症以口服补液为先；重症（如妊娠剧吐伴脱水）需静脉补液并补充硫胺素。 ⚠️ **证据场景**：下列文献的证据场景多为**化疗 / 妊娠 / 术后**恶心呕吐；用于**造影剂相关**恶心呕吐（生理性反应）属**跨场景外推**，只能作辅助措施，**不替代**规范处理。,非药物管理,0
+NT_SelfCareTheory,NursingTheory,自护理论,自护理论（Orem，1971）认为人天生具备自我护理的能力，护理的任务是在患者自护能力不足时提供补偿与支持。落到本主题：指导患者与家属参与打针前的准备、检查后的观察，以及居家自我照护与早期求助。,护理理论 自护理论,1
+FW_SymptomSign,SymptomSign,症状体征,论文「疾病知识图」一级框架之一。收录碘对比剂使用后可能出现的症状与体征 —— 不良反应、过敏反应、碘对比剂外渗；过敏反应下的下一级表现（皮疹、荨麻疹、瘙痒、颜面部水肿、咽喉部不适、胸闷、全身无力、过敏性休克），以及碘对比剂外渗下的局部表现（局部肿胀、局部疼痛、局部发红、皮肤发凉、皮肤发白发紧）。,知识框架 一级框架,27
+FW_Exam,Exam,辅助检查,论文「疾病知识图」一级框架之一。收录与本主题相关的检查项目 —— CT 增强扫描、碘对比剂。,知识框架 一级框架,5
+FW_ManagementPrinciple,ManagementPrinciple,处置原则,论文「疾病知识图」一级框架之一。收录护理处置原则 —— 护理措施、护理预防、护理干预，以及其下的外渗处置原则与不良反应分级处置原则。,知识框架 一级框架,42
+FW_NursingTheory,NursingTheory,护理理论,论文「疾病知识图」一级框架之一。收录指导护理实践的理论 —— 自护理论（Orem）：人天生具备自我护理的能力，护理的任务是在患者自护能力不足时提供补偿与支持；对应到本主题，是指导患者与家属参与预防、早期识别与居家自我照护。以及早期预警：在情况变坏之前先看出苗头、及时升级处理。,知识框架 一级框架,3
+FW_DiseaseEducation,DiseaseEducation,疾病科普,论文「疾病知识图」一级框架之一。论文 §3.2 指出「疾病知识图中科普模块的内容可面向公众开放，便于公众了解疾病的早期症状及常见误区」。收录检查前注意事项、检查后观察与护理、过敏史告知、外渗居家护理、急救知识五篇科普。,知识框架 一级框架,12
+FW_SymptomCategory,SymptomCategory,症状分类,论文表 1「症状分类」二级框架。把症状按谱归类 —— 碘对比剂不良反应谱，其下有过敏反应谱、静脉外渗反应谱。,知识框架 二级框架,14
+FW_AssessmentTool,AssessmentTool,评估工具,论文表 1「评估工具」二级框架。收录评估工具 —— 过敏史询问、外渗风险评估、血管条件评估。,知识框架 二级框架,22
+FW_RiskFactor,RiskFactor,高危因素识别,论文表 1「高危因素识别」二级框架。收录高危因素 —— 既往碘对比剂过敏史、未控制的哮喘、高龄或低龄、静脉条件差、高压注射、未做生理盐水试推。,知识框架 二级框架,19
+FW_PharmacologicalManagement,PharmacologicalManagement,药物管理,论文表 1「药物管理」二级框架。收录药物处置 —— 肌内注射肾上腺素、糖皮质激素、抗组胺药、50% 硫酸镁湿敷、0.05% 地塞米松湿敷。,知识框架 二级框架,11
+FW_NonPharmacologicalManagement,NonPharmacologicalManagement,非药物管理,论文表 1「非药物管理」二级框架。论文第 20 页写明：点击「非药物管理」实体节点，Web 端返回其关联实体节点。收录非药物处置 —— 立即停止注射、保留静脉留置针、患肢抬高、局部冷敷、密切观察、对比剂预处理、血管可视化、心理疏导。,知识框架 二级框架,40
+FW_SymptomStatus,SymptomStatus,症状现状,论文表 1「症状现状」二级框架。收录症状现状 —— 轻度反应已缓解、重度反应已恢复。（在本题数据里，这两个节点是护理措施 / 护理干预 / 外渗处置原则的「影响」目标，故归在处置原则之下。）,知识框架 二级框架,4
+FW_FunctionalStatus,FunctionalStatus,功能状况,论文表 1「功能状况」二级框架。收录功能状况 —— 患肢功能状态。（在本题数据里，该节点是护理干预的「影响」目标，故归在处置原则之下。）,知识框架 二级框架,2

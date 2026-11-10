@@ -284,161 +284,6 @@ SymptomSign,颜面部水肿,管理,PharmacologicalManagement,肌内注射肾上�
 SymptomSign,颜面部水肿,管理,PharmacologicalManagement,抗组胺药
 SymptomSign,咽喉部不适,管理,PharmacologicalManagement,抗组胺药
 Exam,CT增强扫描,效果,SymptomSign,过敏反应
-SymptomCategory,症状分类,属于,SymptomSign,症状体征
-AssessmentTool,评估工具,属于,SymptomSign,症状体征
-RiskFactor,高危因素识别,属于,ManagementPrinciple,处置原则
-PharmacologicalManagement,药物管理,属于,ManagementPrinciple,处置原则
-NonPharmacologicalManagement,非药物管理,属于,ManagementPrinciple,处置原则
-SymptomStatus,症状现状,属于,ManagementPrinciple,处置原则
-FunctionalStatus,功能状况,属于,ManagementPrinciple,处置原则
-SymptomSign,不良反应,属于,SymptomSign,症状体征
-SymptomSign,皮疹,属于,SymptomSign,症状体征
-SymptomSign,过敏反应,属于,SymptomSign,症状体征
-SymptomSign,荨麻疹,属于,SymptomSign,症状体征
-SymptomSign,瘙痒,属于,SymptomSign,症状体征
-SymptomSign,颜面部水肿,属于,SymptomSign,症状体征
-SymptomSign,咽喉部不适,属于,SymptomSign,症状体征
-SymptomSign,胸闷,属于,SymptomSign,症状体征
-SymptomSign,全身无力,属于,SymptomSign,症状体征
-SymptomSign,过敏性休克,属于,SymptomSign,症状体征
-SymptomSign,碘对比剂外渗,属于,SymptomSign,症状体征
-SymptomSign,对比剂相关急性肾损伤,属于,SymptomSign,症状体征
-SymptomSign,恶心,属于,SymptomSign,症状体征
-SymptomSign,呕吐,属于,SymptomSign,症状体征
-SymptomSign,局部肿胀,属于,SymptomSign,症状体征
-SymptomSign,局部疼痛,属于,SymptomSign,症状体征
-SymptomSign,局部发红,属于,SymptomSign,症状体征
-SymptomSign,皮肤发凉,属于,SymptomSign,症状体征
-SymptomSign,皮肤发白发紧,属于,SymptomSign,症状体征
-Exam,CT增强扫描,属于,Exam,辅助检查
-Exam,碘对比剂,属于,Exam,辅助检查
-ManagementPrinciple,护理措施,属于,ManagementPrinciple,处置原则
-ManagementPrinciple,护理预防,属于,ManagementPrinciple,处置原则
-ManagementPrinciple,护理干预,属于,ManagementPrinciple,处置原则
-ManagementPrinciple,外渗处置原则,属于,ManagementPrinciple,处置原则
-ManagementPrinciple,不良反应分级处置原则,属于,ManagementPrinciple,处置原则
-NursingTheory,早期预警,属于,NursingTheory,护理理论
-NursingTheory,自护理论,属于,NursingTheory,护理理论
-DiseaseEducation,检查前注意事项科普,属于,DiseaseEducation,疾病科普
-DiseaseEducation,检查后观察与护理科普,属于,DiseaseEducation,疾病科普
-DiseaseEducation,过敏史告知科普,属于,DiseaseEducation,疾病科普
-DiseaseEducation,外渗居家护理科普,属于,DiseaseEducation,疾病科普
-DiseaseEducation,急救知识科普,属于,DiseaseEducation,疾病科普
-SymptomCategory,碘对比剂不良反应谱,属于,SymptomCategory,症状分类
-SymptomCategory,过敏反应谱,属于,SymptomCategory,症状分类
-SymptomCategory,静脉外渗反应谱,属于,SymptomCategory,症状分类
-AssessmentTool,过敏史询问,属于,AssessmentTool,评估工具
-AssessmentTool,外渗风险评估,属于,AssessmentTool,评估工具
-AssessmentTool,血管条件评估,属于,AssessmentTool,评估工具
-RiskFactor,既往碘对比剂过敏史,属于,RiskFactor,高危因素识别
-RiskFactor,未控制的哮喘,属于,RiskFactor,高危因素识别
-RiskFactor,高龄或低龄,属于,RiskFactor,高危因素识别
-RiskFactor,静脉条件差,属于,RiskFactor,高危因素识别
-RiskFactor,高压注射,属于,RiskFactor,高危因素识别
-RiskFactor,未做生理盐水试推,属于,RiskFactor,高危因素识别
-PharmacologicalManagement,肌内注射肾上腺素,属于,PharmacologicalManagement,药物管理
-PharmacologicalManagement,糖皮质激素,属于,PharmacologicalManagement,药物管理
-PharmacologicalManagement,抗组胺药,属于,PharmacologicalManagement,药物管理
-PharmacologicalManagement,50%硫酸镁湿敷,属于,PharmacologicalManagement,药物管理
-PharmacologicalManagement,0.05%地塞米松湿敷,属于,PharmacologicalManagement,药物管理
-NonPharmacologicalManagement,立即停止注射,属于,NonPharmacologicalManagement,非药物管理
-NonPharmacologicalManagement,保留静脉留置针,属于,NonPharmacologicalManagement,非药物管理
-NonPharmacologicalManagement,患肢抬高,属于,NonPharmacologicalManagement,非药物管理
-NonPharmacologicalManagement,局部冷敷,属于,NonPharmacologicalManagement,非药物管理
-NonPharmacologicalManagement,密切观察,属于,NonPharmacologicalManagement,非药物管理
-NonPharmacologicalManagement,口服补液,属于,NonPharmacologicalManagement,非药物管理
-NonPharmacologicalManagement,对比剂预处理,属于,NonPharmacologicalManagement,非药物管理
-NonPharmacologicalManagement,血管可视化,属于,NonPharmacologicalManagement,非药物管理
-NonPharmacologicalManagement,心理疏导,属于,NonPharmacologicalManagement,非药物管理
-SymptomStatus,轻度反应已缓解,属于,SymptomStatus,症状现状
-SymptomStatus,重度反应已恢复,属于,SymptomStatus,症状现状
-FunctionalStatus,患肢功能状态,属于,FunctionalStatus,功能状况
-SymptomSign,症状体征,属于,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗
-Exam,辅助检查,属于,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗
-ManagementPrinciple,处置原则,属于,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗
-NursingTheory,护理理论,属于,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗
-DiseaseEducation,疾病科普,属于,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗
-SymptomSign,症状体征,出处,Reference,美国放射学会对比剂手册
-SymptomSign,症状体征,出处,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
-SymptomSign,症状体征,出处,Reference,对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）
-SymptomSign,症状体征,出处,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
-SymptomSign,症状体征,出处,Reference,"碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析"
-SymptomSign,症状体征,出处,Reference,对比剂即刻超敏反应危险因素的系统评价与 Meta 分析
-SymptomSign,症状体征,出处,Reference,过敏反应：2023 年实践参数更新
-SymptomSign,症状体征,出处,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
-SymptomSign,症状体征,出处,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
-SymptomSign,症状体征,出处,Reference,放射科碘对比剂外渗影响因素的系统评价
-SymptomSign,症状体征,出处,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
-SymptomSign,症状体征,出处,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
-SymptomSign,症状体征,出处,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
-SymptomSign,症状体征,出处,Reference,肾病患者静脉注射碘对比剂应用专家共识
-SymptomSign,症状体征,出处,Reference,碘对比剂诱导的急性肾损伤防治的专家共识
-SymptomSign,症状体征,出处,Reference,心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析
-SymptomSign,症状体征,出处,Reference,碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明
-SymptomSign,症状体征,出处,Reference,欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评
-Exam,辅助检查,出处,Reference,美国放射学会对比剂手册
-Exam,辅助检查,出处,Reference,碘对比剂使用指南（第2版）
-Exam,辅助检查,出处,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
-Exam,辅助检查,出处,Reference,影像科碘对比剂输注安全专家共识
-Exam,辅助检查,出处,Reference,欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评
-ManagementPrinciple,处置原则,出处,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
-ManagementPrinciple,处置原则,出处,Reference,影像科碘对比剂输注安全专家共识
-ManagementPrinciple,处置原则,出处,Reference,美国放射学会对比剂手册
-ManagementPrinciple,处置原则,出处,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
-ManagementPrinciple,处置原则,出处,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
-ManagementPrinciple,处置原则,出处,Reference,过敏反应：2023 年实践参数更新
-ManagementPrinciple,处置原则,出处,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
-ManagementPrinciple,处置原则,出处,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
-NursingTheory,护理理论,出处,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
-NursingTheory,护理理论,出处,Reference,过敏反应：2023 年实践参数更新
-NursingTheory,护理理论,出处,Reference,Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析
-DiseaseEducation,疾病科普,出处,Reference,碘对比剂使用指南（第2版）
-DiseaseEducation,疾病科普,出处,Reference,影像护理学
-DiseaseEducation,疾病科普,出处,Reference,美国放射学会对比剂手册
-DiseaseEducation,疾病科普,出处,Reference,影像科碘对比剂输注安全专家共识
-DiseaseEducation,疾病科普,出处,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
-DiseaseEducation,疾病科普,出处,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
-DiseaseEducation,疾病科普,出处,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
-DiseaseEducation,疾病科普,出处,Reference,过敏反应：2023 年实践参数更新
-DiseaseEducation,疾病科普,出处,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
-SymptomCategory,症状分类,出处,Reference,美国放射学会对比剂手册
-SymptomCategory,症状分类,出处,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
-SymptomCategory,症状分类,出处,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
-AssessmentTool,评估工具,出处,Reference,碘对比剂使用指南（第2版）
-AssessmentTool,评估工具,出处,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
-AssessmentTool,评估工具,出处,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
-AssessmentTool,评估工具,出处,Reference,放射科碘对比剂外渗影响因素的系统评价
-AssessmentTool,评估工具,出处,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
-AssessmentTool,评估工具,出处,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
-AssessmentTool,评估工具,出处,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
-RiskFactor,高危因素识别,出处,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
-RiskFactor,高危因素识别,出处,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
-RiskFactor,高危因素识别,出处,Reference,对比剂即刻超敏反应危险因素的系统评价与 Meta 分析
-RiskFactor,高危因素识别,出处,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
-RiskFactor,高危因素识别,出处,Reference,放射科碘对比剂外渗影响因素的系统评价
-RiskFactor,高危因素识别,出处,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
-RiskFactor,高危因素识别,出处,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
-PharmacologicalManagement,药物管理,出处,Reference,过敏反应：2023 年实践参数更新
-PharmacologicalManagement,药物管理,出处,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
-PharmacologicalManagement,药物管理,出处,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
-PharmacologicalManagement,药物管理,出处,Reference,影像科碘对比剂输注安全专家共识
-NonPharmacologicalManagement,非药物管理,出处,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
-NonPharmacologicalManagement,非药物管理,出处,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
-NonPharmacologicalManagement,非药物管理,出处,Reference,影像科碘对比剂输注安全专家共识
-NonPharmacologicalManagement,非药物管理,出处,Reference,美国放射学会对比剂手册
-NonPharmacologicalManagement,非药物管理,出处,Reference,碘对比剂使用指南（第2版）
-NonPharmacologicalManagement,非药物管理,出处,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
-NonPharmacologicalManagement,非药物管理,出处,Reference,"碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析"
-NonPharmacologicalManagement,非药物管理,出处,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
-NonPharmacologicalManagement,非药物管理,出处,Reference,影像护理学
-SymptomStatus,症状现状,出处,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
-SymptomStatus,症状现状,出处,Reference,影像科碘对比剂输注安全专家共识
-SymptomStatus,症状现状,出处,Reference,过敏反应：2023 年实践参数更新
-SymptomStatus,症状现状,出处,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
-FunctionalStatus,功能状况,出处,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
-FunctionalStatus,功能状况,出处,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
-NursingTheory,自护理论,出处,Reference,Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析
-Reference,Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析,出处,Reference,Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析
 SymptomSign,血管迷走反应,出处,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
 SymptomSign,血管迷走反应,出处,Reference,对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）
 PharmacologicalManagement,肾上腺素自动注射笔,出处,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
@@ -802,7 +647,6 @@ RiskFactor,手背等外周静脉穿刺,出处,Reference,不同穿刺部位静脉
 NonPharmacologicalManagement,密切观察,出处,Reference,不同穿刺部位静脉留置针渗出外渗的发生现状及结局差异分析
 ManagementPrinciple,护理预防,出处,Reference,不同穿刺部位静脉留置针渗出外渗的发生现状及结局差异分析
 AssessmentTool,外渗风险评估,出处,Reference,小儿外周静脉留置针输液外渗的研究进展
-NursingTheory,自护理论,出处,Reference,小儿外周静脉留置针输液外渗的研究进展
 ManagementPrinciple,外渗上报与回访,出处,Reference,护理质量管理在预防婴幼儿输液外渗中的应用研究进展
 SymptomSign,骨筋膜室综合征,出处,Reference,造影剂血管外渗的处置方法研究进展
 NonPharmacologicalManagement,患肢抬高,出处,Reference,造影剂血管外渗的处置方法研究进展
@@ -1163,61 +1007,6 @@ ManagementPrinciple,外渗后皮肤完整性,处置,NonPharmacologicalManagement
 SymptomSign,碘对比剂外渗,管理,NonPharmacologicalManagement,中药外敷法（外渗）
 NonPharmacologicalManagement,新磺片加五黄油联合外敷,属于,NonPharmacologicalManagement,中药外敷法（外渗）
 SymptomSign,碘对比剂外渗,管理,NonPharmacologicalManagement,新磺片加五黄油联合外敷
-PharmacologicalManagement,口服地塞米松（严重外渗）,属于,PharmacologicalManagement,药物管理
-NonPharmacologicalManagement,对比剂加温,属于,NonPharmacologicalManagement,非药物管理
-NonPharmacologicalManagement,穿刺部位选择,属于,NonPharmacologicalManagement,非药物管理
-NonPharmacologicalManagement,留置针固定与敷料维护,属于,NonPharmacologicalManagement,非药物管理
-NonPharmacologicalManagement,注射速度与通路匹配,属于,NonPharmacologicalManagement,非药物管理
-NonPharmacologicalManagement,局部热敷,属于,NonPharmacologicalManagement,非药物管理
-NonPharmacologicalManagement,针刺切开挤压排液,属于,NonPharmacologicalManagement,非药物管理
-NonPharmacologicalManagement,回抽残留药液,属于,NonPharmacologicalManagement,非药物管理
-NonPharmacologicalManagement,筋膜切开减压,属于,NonPharmacologicalManagement,非药物管理
-NonPharmacologicalManagement,局部加压与制动,属于,NonPharmacologicalManagement,非药物管理
-NonPharmacologicalManagement,外渗创面敷料与湿性愈合护理,属于,NonPharmacologicalManagement,非药物管理
-NonPharmacologicalManagement,晶体液快速扩容,属于,NonPharmacologicalManagement,非药物管理
-NonPharmacologicalManagement,外渗后分级留观,属于,NonPharmacologicalManagement,非药物管理
-NonPharmacologicalManagement,外渗疼痛评估与镇痛,属于,NonPharmacologicalManagement,非药物管理
-NonPharmacologicalManagement,过敏反应后分级观察,属于,NonPharmacologicalManagement,非药物管理
-PharmacologicalManagement,短效选择性β受体激动剂,属于,PharmacologicalManagement,药物管理
-PharmacologicalManagement,按体重调整用药剂量,属于,PharmacologicalManagement,药物管理
-PharmacologicalManagement,药物特异性外渗解毒剂,属于,PharmacologicalManagement,药物管理
-AssessmentTool,外渗严重程度分级,属于,AssessmentTool,评估工具
-AssessmentTool,外渗后肢体检查,属于,AssessmentTool,评估工具
-AssessmentTool,组织灌注评估,属于,AssessmentTool,评估工具
-AssessmentTool,超敏反应评估与记录,属于,AssessmentTool,评估工具
-AssessmentTool,外渗范围影像学评估,属于,AssessmentTool,评估工具
-RiskFactor,沿用既有静脉通路,属于,RiskFactor,高危因素识别
-RiskFactor,小口径留置针,属于,RiskFactor,高危因素识别
-RiskFactor,手背等外周静脉穿刺,属于,RiskFactor,高危因素识别
-RiskFactor,糖尿病,属于,RiskFactor,高危因素识别
-RiskFactor,恶性肿瘤与既往化疗,属于,RiskFactor,高危因素识别
-RiskFactor,肌少症与低肌量,属于,RiskFactor,高危因素识别
-RiskFactor,女性性别,属于,RiskFactor,高危因素识别
-RiskFactor,住院及重症患者,属于,RiskFactor,高危因素识别
-RiskFactor,外渗量大,属于,RiskFactor,高危因素识别
-RiskFactor,症状感知受限,属于,RiskFactor,高危因素识别
-ManagementPrinciple,检查室急救准备,属于,ManagementPrinciple,处置原则
-ManagementPrinciple,模拟演练式急救培训,属于,ManagementPrinciple,处置原则
-ManagementPrinciple,对比剂反应危险因素评估框架,属于,ManagementPrinciple,处置原则
-ManagementPrinciple,外科会诊转诊标准,属于,ManagementPrinciple,处置原则
-ManagementPrinciple,外渗处置阶梯升级策略,属于,ManagementPrinciple,处置原则
-ManagementPrinciple,循证实践转化,属于,ManagementPrinciple,处置原则
-ManagementPrinciple,护理质量管理与敏感指标监测,属于,ManagementPrinciple,处置原则
-ManagementPrinciple,多主体协同的输液安全管理,属于,ManagementPrinciple,处置原则
-ManagementPrinciple,静脉通路维护与并发症防控,属于,ManagementPrinciple,处置原则
-ManagementPrinciple,血管通路器材选择与验证,属于,ManagementPrinciple,处置原则
-ManagementPrinciple,护士主导的风险分层与通路规划,属于,ManagementPrinciple,处置原则
-ManagementPrinciple,肿瘤患者对比剂风险管理,属于,ManagementPrinciple,处置原则
-ManagementPrinciple,药物过敏专科转诊与登记,属于,ManagementPrinciple,处置原则
-ManagementPrinciple,儿童对比剂安全要点,属于,ManagementPrinciple,处置原则
-SymptomSign,皮肤水疱,属于,SymptomSign,症状体征
-SymptomSign,慢性难愈性创面,属于,SymptomSign,症状体征
-SymptomSign,外渗恶化警示征象,属于,SymptomSign,症状体征
-SymptomCategory,对比剂不良反应发生时间窗,属于,SymptomCategory,症状分类
-SymptomCategory,对比剂反应机制分型,属于,SymptomCategory,症状分类
-SymptomCategory,突破性过敏反应,属于,SymptomCategory,症状分类
-DiseaseEducation,菜单式健康教育,属于,DiseaseEducation,疾病科普
-DiseaseEducation,外渗恶化警示信号宣教,属于,DiseaseEducation,疾病科普
 SymptomSign,碘对比剂外渗,检查,AssessmentTool,外渗严重程度分级
 SymptomSign,碘对比剂外渗,评估,AssessmentTool,外渗后肢体检查
 SymptomSign,碘对比剂外渗,评估,AssessmentTool,组织灌注评估
@@ -1285,4 +1074,385 @@ ManagementPrinciple,检查室急救准备,处置,ManagementPrinciple,模拟演�
 ManagementPrinciple,循证实践转化,效果,ManagementPrinciple,护理预防
 SymptomCategory,速发反应,属于,SymptomCategory,碘对比剂不良反应谱
 SymptomSign,支气管痉挛,表现为,SymptomCategory,速发反应
+SymptomSign,恶心,管理,NonPharmacologicalManagement,穴位刺激
+SymptomSign,呕吐,管理,NonPharmacologicalManagement,穴位刺激
+SymptomSign,恶心,管理,NonPharmacologicalManagement,芳香疗法（精油疗法）
+SymptomSign,呕吐,管理,NonPharmacologicalManagement,芳香疗法（精油疗法）
+SymptomSign,恶心,管理,NonPharmacologicalManagement,生姜疗法
+SymptomSign,呕吐,管理,NonPharmacologicalManagement,生姜疗法
+SymptomSign,恶心,管理,DiseaseEducation,恶心呕吐健康教育
+SymptomSign,呕吐,管理,DiseaseEducation,恶心呕吐健康教育
+SymptomSign,恶心,管理,NonPharmacologicalManagement,起居护理
+SymptomSign,呕吐,管理,NonPharmacologicalManagement,起居护理
+SymptomSign,恶心,管理,NonPharmacologicalManagement,液体疗法
+SymptomSign,呕吐,管理,NonPharmacologicalManagement,液体疗法
+SymptomCategory,症状分类,属于,SymptomSign,症状体征
+AssessmentTool,评估工具,属于,SymptomSign,症状体征
+RiskFactor,高危因素识别,属于,ManagementPrinciple,处置原则
+PharmacologicalManagement,药物管理,属于,ManagementPrinciple,处置原则
+NonPharmacologicalManagement,非药物管理,属于,ManagementPrinciple,处置原则
+SymptomStatus,症状现状,属于,ManagementPrinciple,处置原则
+FunctionalStatus,功能状况,属于,ManagementPrinciple,处置原则
+SymptomSign,不良反应,属于,SymptomSign,症状体征
+SymptomSign,皮疹,属于,SymptomSign,症状体征
+SymptomSign,过敏反应,属于,SymptomSign,症状体征
+SymptomSign,荨麻疹,属于,SymptomSign,症状体征
+SymptomSign,瘙痒,属于,SymptomSign,症状体征
+SymptomSign,颜面部水肿,属于,SymptomSign,症状体征
+SymptomSign,咽喉部不适,属于,SymptomSign,症状体征
+SymptomSign,胸闷,属于,SymptomSign,症状体征
+SymptomSign,全身无力,属于,SymptomSign,症状体征
+SymptomSign,过敏性休克,属于,SymptomSign,症状体征
+SymptomSign,碘对比剂外渗,属于,SymptomSign,症状体征
+SymptomSign,对比剂相关急性肾损伤,属于,SymptomSign,症状体征
+SymptomSign,恶心,属于,SymptomSign,症状体征
+SymptomSign,呕吐,属于,SymptomSign,症状体征
+SymptomSign,局部肿胀,属于,SymptomSign,症状体征
+SymptomSign,局部疼痛,属于,SymptomSign,症状体征
+SymptomSign,局部发红,属于,SymptomSign,症状体征
+SymptomSign,皮肤发凉,属于,SymptomSign,症状体征
+SymptomSign,皮肤发白发紧,属于,SymptomSign,症状体征
+SymptomSign,血管迷走反应,属于,SymptomSign,症状体征
+SymptomSign,双相过敏反应,属于,SymptomSign,症状体征
+SymptomSign,骨筋膜室综合征,属于,SymptomSign,症状体征
+SymptomSign,导管相关静脉炎,属于,SymptomSign,症状体征
+SymptomSign,支气管痉挛,属于,SymptomSign,症状体征
+SymptomSign,肺水肿,属于,SymptomSign,症状体征
+SymptomSign,皮肤水疱,属于,SymptomSign,症状体征
+SymptomSign,慢性难愈性创面,属于,SymptomSign,症状体征
+SymptomSign,外渗恶化警示征象,属于,SymptomSign,症状体征
+Exam,CT增强扫描,属于,Exam,辅助检查
+Exam,碘对比剂,属于,Exam,辅助检查
+ManagementPrinciple,护理措施,属于,ManagementPrinciple,处置原则
+ManagementPrinciple,护理预防,属于,ManagementPrinciple,处置原则
+ManagementPrinciple,护理干预,属于,ManagementPrinciple,处置原则
+ManagementPrinciple,外渗处置原则,属于,ManagementPrinciple,处置原则
+ManagementPrinciple,不良反应分级处置原则,属于,ManagementPrinciple,处置原则
+ManagementPrinciple,外渗上报与回访,属于,ManagementPrinciple,处置原则
+ManagementPrinciple,外渗后皮肤完整性,属于,ManagementPrinciple,处置原则
+ManagementPrinciple,检查室急救准备,属于,ManagementPrinciple,处置原则
+ManagementPrinciple,模拟演练式急救培训,属于,ManagementPrinciple,处置原则
+ManagementPrinciple,对比剂反应危险因素评估框架,属于,ManagementPrinciple,处置原则
+ManagementPrinciple,外科会诊转诊标准,属于,ManagementPrinciple,处置原则
+ManagementPrinciple,外渗处置阶梯升级策略,属于,ManagementPrinciple,处置原则
+ManagementPrinciple,循证实践转化,属于,ManagementPrinciple,处置原则
+ManagementPrinciple,护理质量管理与敏感指标监测,属于,ManagementPrinciple,处置原则
+ManagementPrinciple,多主体协同的输液安全管理,属于,ManagementPrinciple,处置原则
+ManagementPrinciple,静脉通路维护与并发症防控,属于,ManagementPrinciple,处置原则
+ManagementPrinciple,血管通路器材选择与验证,属于,ManagementPrinciple,处置原则
+ManagementPrinciple,护士主导的风险分层与通路规划,属于,ManagementPrinciple,处置原则
+ManagementPrinciple,肿瘤患者对比剂风险管理,属于,ManagementPrinciple,处置原则
+ManagementPrinciple,药物过敏专科转诊与登记,属于,ManagementPrinciple,处置原则
+ManagementPrinciple,儿童对比剂安全要点,属于,ManagementPrinciple,处置原则
+ManagementPrinciple,影像护理学要点,属于,ManagementPrinciple,处置原则
+ManagementPrinciple,检查室护理管理,属于,ManagementPrinciple,处置原则
+NursingTheory,早期预警,属于,NursingTheory,护理理论
+NursingTheory,自护理论,属于,NursingTheory,护理理论
+DiseaseEducation,检查前注意事项科普,属于,DiseaseEducation,疾病科普
+DiseaseEducation,检查后观察与护理科普,属于,DiseaseEducation,疾病科普
+DiseaseEducation,过敏史告知科普,属于,DiseaseEducation,疾病科普
+DiseaseEducation,外渗居家护理科普,属于,DiseaseEducation,疾病科普
+DiseaseEducation,急救知识科普,属于,DiseaseEducation,疾病科普
+DiseaseEducation,菜单式健康教育,属于,DiseaseEducation,疾病科普
+DiseaseEducation,外渗恶化警示信号宣教,属于,DiseaseEducation,疾病科普
+DiseaseEducation,恶心呕吐健康教育,属于,DiseaseEducation,疾病科普
+SymptomCategory,碘对比剂不良反应谱,属于,SymptomCategory,症状分类
+SymptomCategory,过敏反应谱,属于,SymptomCategory,症状分类
+SymptomCategory,静脉外渗反应谱,属于,SymptomCategory,症状分类
+SymptomCategory,药物外渗性损伤分期,属于,SymptomCategory,症状分类
+SymptomCategory,轻度过敏反应,属于,SymptomCategory,症状分类
+SymptomCategory,中度过敏反应,属于,SymptomCategory,症状分类
+SymptomCategory,重度过敏反应,属于,SymptomCategory,症状分类
+SymptomCategory,对比剂外渗 1 级,属于,SymptomCategory,症状分类
+SymptomCategory,对比剂外渗 2 级,属于,SymptomCategory,症状分类
+SymptomCategory,对比剂外渗 3 级,属于,SymptomCategory,症状分类
+SymptomCategory,对比剂外渗 4 级,属于,SymptomCategory,症状分类
+SymptomCategory,对比剂不良反应发生时间窗,属于,SymptomCategory,症状分类
+SymptomCategory,对比剂反应机制分型,属于,SymptomCategory,症状分类
+SymptomCategory,突破性过敏反应,属于,SymptomCategory,症状分类
 SymptomCategory,速发反应,属于,SymptomCategory,症状分类
+AssessmentTool,过敏史询问,属于,AssessmentTool,评估工具
+AssessmentTool,外渗风险评估,属于,AssessmentTool,评估工具
+AssessmentTool,血管条件评估,属于,AssessmentTool,评估工具
+AssessmentTool,血清胰蛋白酶,属于,AssessmentTool,评估工具
+AssessmentTool,碘对比剂过敏试验,属于,AssessmentTool,评估工具
+AssessmentTool,肿胀测量与皮肤标记,属于,AssessmentTool,评估工具
+AssessmentTool,外渗探测与压力监测,属于,AssessmentTool,评估工具
+AssessmentTool,外渗严重程度分级,属于,AssessmentTool,评估工具
+AssessmentTool,外渗后肢体检查,属于,AssessmentTool,评估工具
+AssessmentTool,组织灌注评估,属于,AssessmentTool,评估工具
+AssessmentTool,超敏反应评估与记录,属于,AssessmentTool,评估工具
+AssessmentTool,外渗范围影像学评估,属于,AssessmentTool,评估工具
+RiskFactor,既往碘对比剂过敏史,属于,RiskFactor,高危因素识别
+RiskFactor,未控制的哮喘,属于,RiskFactor,高危因素识别
+RiskFactor,高龄或低龄,属于,RiskFactor,高危因素识别
+RiskFactor,静脉条件差,属于,RiskFactor,高危因素识别
+RiskFactor,高压注射,属于,RiskFactor,高危因素识别
+RiskFactor,未做生理盐水试推,属于,RiskFactor,高危因素识别
+RiskFactor,β 阻滞剂与 ACEI 用药,属于,RiskFactor,高危因素识别
+RiskFactor,沿用既有静脉通路,属于,RiskFactor,高危因素识别
+RiskFactor,小口径留置针,属于,RiskFactor,高危因素识别
+RiskFactor,手背等外周静脉穿刺,属于,RiskFactor,高危因素识别
+RiskFactor,糖尿病,属于,RiskFactor,高危因素识别
+RiskFactor,恶性肿瘤与既往化疗,属于,RiskFactor,高危因素识别
+RiskFactor,肌少症与低肌量,属于,RiskFactor,高危因素识别
+RiskFactor,女性性别,属于,RiskFactor,高危因素识别
+RiskFactor,住院及重症患者,属于,RiskFactor,高危因素识别
+RiskFactor,外渗量大,属于,RiskFactor,高危因素识别
+RiskFactor,症状感知受限,属于,RiskFactor,高危因素识别
+PharmacologicalManagement,肌内注射肾上腺素,属于,PharmacologicalManagement,药物管理
+PharmacologicalManagement,糖皮质激素,属于,PharmacologicalManagement,药物管理
+PharmacologicalManagement,抗组胺药,属于,PharmacologicalManagement,药物管理
+PharmacologicalManagement,50%硫酸镁湿敷,属于,PharmacologicalManagement,药物管理
+PharmacologicalManagement,0.05%地塞米松湿敷,属于,PharmacologicalManagement,药物管理
+PharmacologicalManagement,肾上腺素自动注射笔,属于,PharmacologicalManagement,药物管理
+PharmacologicalManagement,透明质酸酶,属于,PharmacologicalManagement,药物管理
+PharmacologicalManagement,阿托品,属于,PharmacologicalManagement,药物管理
+PharmacologicalManagement,口服地塞米松（严重外渗）,属于,PharmacologicalManagement,药物管理
+PharmacologicalManagement,短效选择性β受体激动剂,属于,PharmacologicalManagement,药物管理
+PharmacologicalManagement,按体重调整用药剂量,属于,PharmacologicalManagement,药物管理
+PharmacologicalManagement,药物特异性外渗解毒剂,属于,PharmacologicalManagement,药物管理
+NonPharmacologicalManagement,立即停止注射,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,保留静脉留置针,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,患肢抬高,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,局部冷敷,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,密切观察,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,口服补液,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,对比剂预处理,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,血管可视化,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,心理疏导,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,耐高压型静脉留置针,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,等速生理盐水试推,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,留观后拔针,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,换用对比剂,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,中药外敷法（外渗）,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,新磺片加五黄油联合外敷,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,对比剂加温,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,穿刺部位选择,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,留置针固定与敷料维护,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,注射速度与通路匹配,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,局部热敷,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,针刺切开挤压排液,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,回抽残留药液,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,筋膜切开减压,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,局部加压与制动,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,外渗创面敷料与湿性愈合护理,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,晶体液快速扩容,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,外渗后分级留观,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,外渗疼痛评估与镇痛,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,过敏反应后分级观察,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,穴位刺激,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,芳香疗法（精油疗法）,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,生姜疗法,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,起居护理,属于,NonPharmacologicalManagement,非药物管理
+NonPharmacologicalManagement,液体疗法,属于,NonPharmacologicalManagement,非药物管理
+SymptomStatus,轻度反应已缓解,属于,SymptomStatus,症状现状
+SymptomStatus,重度反应已恢复,属于,SymptomStatus,症状现状
+FunctionalStatus,患肢功能状态,属于,FunctionalStatus,功能状况
+SymptomSign,症状体征,属于,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗
+Exam,辅助检查,属于,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗
+ManagementPrinciple,处置原则,属于,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗
+NursingTheory,护理理论,属于,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗
+DiseaseEducation,疾病科普,属于,DiseaseCategory,CT增强扫描后碘对比剂过敏反应与外渗
+SymptomSign,症状体征,出处,Reference,美国放射学会对比剂手册
+SymptomSign,症状体征,出处,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
+SymptomSign,症状体征,出处,Reference,对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）
+SymptomSign,症状体征,出处,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
+SymptomSign,症状体征,出处,Reference,"碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析"
+SymptomSign,症状体征,出处,Reference,对比剂即刻超敏反应危险因素的系统评价与 Meta 分析
+SymptomSign,症状体征,出处,Reference,过敏反应：2023 年实践参数更新
+SymptomSign,症状体征,出处,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
+SymptomSign,症状体征,出处,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+SymptomSign,症状体征,出处,Reference,放射科碘对比剂外渗影响因素的系统评价
+SymptomSign,症状体征,出处,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
+SymptomSign,症状体征,出处,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
+SymptomSign,症状体征,出处,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
+SymptomSign,症状体征,出处,Reference,肾病患者静脉注射碘对比剂应用专家共识
+SymptomSign,症状体征,出处,Reference,碘对比剂诱导的急性肾损伤防治的专家共识
+SymptomSign,症状体征,出处,Reference,心血管介入患者对比剂相关急性肾损伤的预防：系统评价与网状荟萃分析
+SymptomSign,症状体征,出处,Reference,碘对比剂在肾脏疾病患者中的使用：美国放射学会与国家肾脏基金会共识声明
+SymptomSign,症状体征,出处,Reference,欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评
+SymptomSign,症状体征,出处,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
+SymptomSign,症状体征,出处,Reference,碘对比剂全程化药学服务共识
+SymptomSign,症状体征,出处,Reference,恶性肿瘤患者CT增强扫描对比剂安全管理专家共识（2022）
+SymptomSign,症状体征,出处,Reference,1例药液外渗致慢性难愈性创面形成患者的中西医结合护理
+SymptomSign,症状体征,出处,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+SymptomSign,症状体征,出处,Reference,Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions
+SymptomSign,症状体征,出处,Reference,Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison
+SymptomSign,症状体征,出处,Reference,Hand compartment syndrome secondary to contrast media extravasation: A case report
+SymptomSign,症状体征,出处,Reference,Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention
+Exam,辅助检查,出处,Reference,美国放射学会对比剂手册
+Exam,辅助检查,出处,Reference,碘对比剂使用指南（第2版）
+Exam,辅助检查,出处,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
+Exam,辅助检查,出处,Reference,影像科碘对比剂输注安全专家共识
+Exam,辅助检查,出处,Reference,欧洲泌尿生殖放射学会对比剂使用建议：法国肾脏病学会、法语放射学会与法语肾脏病医师学会的实践调查与述评
+ManagementPrinciple,处置原则,出处,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+ManagementPrinciple,处置原则,出处,Reference,影像科碘对比剂输注安全专家共识
+ManagementPrinciple,处置原则,出处,Reference,美国放射学会对比剂手册
+ManagementPrinciple,处置原则,出处,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
+ManagementPrinciple,处置原则,出处,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
+ManagementPrinciple,处置原则,出处,Reference,过敏反应：2023 年实践参数更新
+ManagementPrinciple,处置原则,出处,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
+ManagementPrinciple,处置原则,出处,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
+ManagementPrinciple,处置原则,出处,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
+ManagementPrinciple,处置原则,出处,Reference,中医护理技术在碘对比剂外渗处理中应用的范围综述
+ManagementPrinciple,处置原则,出处,Reference,中药如意金黄散早期湿敷在药物外渗性皮肤损伤中的效果分析
+ManagementPrinciple,处置原则,出处,Reference,总局关于修订跌打万花油等 32 种非处方药说明书的公告（2017 年第 175 号）附件 10《如意金黄散非处方药说明书范本》
+ManagementPrinciple,处置原则,出处,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+ManagementPrinciple,处置原则,出处,Reference,Preparedness of CT technicians and radiographers for severe contrast media reactions: knowledge gaps and training needs
+ManagementPrinciple,处置原则,出处,Reference,Hypersensitivity reactions to iodinated contrast media: potential mechanisms and clinical management
+ManagementPrinciple,处置原则,出处,Reference,Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography
+ManagementPrinciple,处置原则,出处,Reference,Risk factor analysis of iodinated contrast medium-related hypersensitivity reactions
+ManagementPrinciple,处置原则,出处,Reference,CT增强碘对比剂急性不良反应发生现况及影响因素
+ManagementPrinciple,处置原则,出处,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+ManagementPrinciple,处置原则,出处,Reference,Hand compartment syndrome secondary to contrast media extravasation: A case report
+ManagementPrinciple,处置原则,出处,Reference,Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention
+ManagementPrinciple,处置原则,出处,Reference,Contrast media extravasation injury: a prospective observational cohort study
+ManagementPrinciple,处置原则,出处,Reference,Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions
+ManagementPrinciple,处置原则,出处,Reference,含碘非离子对比剂输注前预防静脉外渗策略的证据总结
+ManagementPrinciple,处置原则,出处,Reference,放射科碘对比剂外渗管理的证据总结
+ManagementPrinciple,处置原则,出处,Reference,冠状动脉介入患者围手术期水化预防对比剂急性肾损伤的最佳证据总结
+ManagementPrinciple,处置原则,出处,Reference,含碘对比剂静脉外渗护理管理实践指南的循证实践研究
+ManagementPrinciple,处置原则,出处,Reference,护理质量管理在预防婴幼儿输液外渗中的应用研究进展
+ManagementPrinciple,处置原则,出处,Reference,全国三级医院静脉治疗护理技术应用现状的调查研究
+ManagementPrinciple,处置原则,出处,Reference,河南省含碘对比剂外渗管理现状及护士认知水平的调查研究
+ManagementPrinciple,处置原则,出处,Reference,Clinical Audit of the Incidence and Documentation Quality of Contrast-Induced Nephropathy (CIN) in a Tertiary Cardiology Unit
+ManagementPrinciple,处置原则,出处,Reference,Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation
+ManagementPrinciple,处置原则,出处,Reference,小儿外周静脉留置针输液外渗的研究进展
+ManagementPrinciple,处置原则,出处,Reference,菜单式健康教育配合置管专项护理在肿瘤PICC患者中的应用
+ManagementPrinciple,处置原则,出处,Reference,全国部分医院静脉导管维护现状调查
+ManagementPrinciple,处置原则,出处,Reference,"Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study"
+ManagementPrinciple,处置原则,出处,Reference,Integrating CT-Derived Body Composition and Real-Time Injection Pressure Monitoring for Predicting Contrast Media Extravasation: A Retrospective Cohort Study with Implications for Nurse-Led Risk Stratification
+ManagementPrinciple,处置原则,出处,Reference,"Iodinated Contrast Media in Oncologic CT: A Narrative Review of Safety, Risk Stratification, and Practical Considerations"
+ManagementPrinciple,处置原则,出处,Reference,Hypersensitivity reactions to contrast media: Part 2. Prevention of recurrent hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+ManagementPrinciple,处置原则,出处,Reference,Immediate hypersensitivity reactions to iodinated contrast media despite drug prophylaxis - a comparative retrospective cohort study of breakthrough reactions in Bern (Switzerland) and Seoul (South Korea)
+ManagementPrinciple,处置原则,出处,Reference,"Acute Adverse Reactions to Nonionic Low-Osmolar Iodinated Contrast Media in Children: A Retrospective Study of 23,429 Injections Over 6 Years"
+ManagementPrinciple,处置原则,出处,Reference,影像护理学
+NursingTheory,护理理论,出处,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
+NursingTheory,护理理论,出处,Reference,过敏反应：2023 年实践参数更新
+NursingTheory,护理理论,出处,Reference,Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析
+DiseaseEducation,疾病科普,出处,Reference,碘对比剂使用指南（第2版）
+DiseaseEducation,疾病科普,出处,Reference,影像护理学
+DiseaseEducation,疾病科普,出处,Reference,美国放射学会对比剂手册
+DiseaseEducation,疾病科普,出处,Reference,影像科碘对比剂输注安全专家共识
+DiseaseEducation,疾病科普,出处,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
+DiseaseEducation,疾病科普,出处,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+DiseaseEducation,疾病科普,出处,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
+DiseaseEducation,疾病科普,出处,Reference,过敏反应：2023 年实践参数更新
+DiseaseEducation,疾病科普,出处,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
+DiseaseEducation,疾病科普,出处,Reference,菜单式健康教育配合置管专项护理在肿瘤PICC患者中的应用
+DiseaseEducation,疾病科普,出处,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+DiseaseEducation,疾病科普,出处,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+SymptomCategory,症状分类,出处,Reference,美国放射学会对比剂手册
+SymptomCategory,症状分类,出处,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
+SymptomCategory,症状分类,出处,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
+SymptomCategory,症状分类,出处,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
+SymptomCategory,症状分类,出处,Reference,对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）
+SymptomCategory,症状分类,出处,Reference,过敏反应：2023 年实践参数更新
+SymptomCategory,症状分类,出处,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
+SymptomCategory,症状分类,出处,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+SymptomCategory,症状分类,出处,Reference,Hypersensitivity Reactions to Iodinated Contrast Media
+SymptomCategory,症状分类,出处,Reference,Hypersensitivity reactions to iodinated contrast media: potential mechanisms and clinical management
+SymptomCategory,症状分类,出处,Reference,CT增强碘对比剂急性不良反应发生现况及影响因素
+SymptomCategory,症状分类,出处,Reference,Immediate hypersensitivity reactions to iodinated contrast media despite drug prophylaxis - a comparative retrospective cohort study of breakthrough reactions in Bern (Switzerland) and Seoul (South Korea)
+SymptomCategory,症状分类,出处,Reference,"Acute Adverse Reactions to Nonionic Low-Osmolar Iodinated Contrast Media in Children: A Retrospective Study of 23,429 Injections Over 6 Years"
+SymptomCategory,症状分类,出处,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
+AssessmentTool,评估工具,出处,Reference,碘对比剂使用指南（第2版）
+AssessmentTool,评估工具,出处,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
+AssessmentTool,评估工具,出处,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+AssessmentTool,评估工具,出处,Reference,放射科碘对比剂外渗影响因素的系统评价
+AssessmentTool,评估工具,出处,Reference,CT 扫描患者对比剂外渗：危险因素与干预的系统评价和 Meta 分析
+AssessmentTool,评估工具,出处,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
+AssessmentTool,评估工具,出处,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
+AssessmentTool,评估工具,出处,Reference,对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）
+AssessmentTool,评估工具,出处,Reference,过敏反应：2023 年实践参数更新
+AssessmentTool,评估工具,出处,Reference,美国放射学会对比剂手册
+AssessmentTool,评估工具,出处,Reference,影像科碘对比剂输注安全专家共识
+AssessmentTool,评估工具,出处,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
+AssessmentTool,评估工具,出处,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
+AssessmentTool,评估工具,出处,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+AssessmentTool,评估工具,出处,Reference,Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation
+AssessmentTool,评估工具,出处,Reference,推拿法在含碘对比剂外渗中的应用
+AssessmentTool,评估工具,出处,Reference,Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions
+AssessmentTool,评估工具,出处,Reference,Hand compartment syndrome secondary to contrast media extravasation: A case report
+AssessmentTool,评估工具,出处,Reference,河南省含碘对比剂外渗管理现状及护士认知水平的调查研究
+AssessmentTool,评估工具,出处,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+AssessmentTool,评估工具,出处,Reference,某院碘对比剂相关药品不良反应研究与合理用药
+AssessmentTool,评估工具,出处,Reference,Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention
+RiskFactor,高危因素识别,出处,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
+RiskFactor,高危因素识别,出处,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
+RiskFactor,高危因素识别,出处,Reference,对比剂即刻超敏反应危险因素的系统评价与 Meta 分析
+RiskFactor,高危因素识别,出处,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+RiskFactor,高危因素识别,出处,Reference,放射科碘对比剂外渗影响因素的系统评价
+RiskFactor,高危因素识别,出处,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
+RiskFactor,高危因素识别,出处,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
+RiskFactor,高危因素识别,出处,Reference,过敏反应：2023 年实践参数更新
+RiskFactor,高危因素识别,出处,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+RiskFactor,高危因素识别,出处,Reference,MRI and CT contrast media extravasation: A systematic review
+RiskFactor,高危因素识别,出处,Reference,美国放射学会对比剂手册
+RiskFactor,高危因素识别,出处,Reference,Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions
+RiskFactor,高危因素识别,出处,Reference,Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography
+RiskFactor,高危因素识别,出处,Reference,"Incidence, outcome, and risk factors of contrast media extravasation injury during contrast-enhanced computed tomography scans: an observational cohort study"
+RiskFactor,高危因素识别,出处,Reference,Contrast media extravasation injury: a prospective observational cohort study
+RiskFactor,高危因素识别,出处,Reference,Integrating CT-Derived Body Composition and Real-Time Injection Pressure Monitoring for Predicting Contrast Media Extravasation: A Retrospective Cohort Study with Implications for Nurse-Led Risk Stratification
+RiskFactor,高危因素识别,出处,Reference,Risk factor analysis of iodinated contrast medium-related hypersensitivity reactions
+RiskFactor,高危因素识别,出处,Reference,Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison
+RiskFactor,高危因素识别,出处,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+PharmacologicalManagement,药物管理,出处,Reference,过敏反应：2023 年实践参数更新
+PharmacologicalManagement,药物管理,出处,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
+PharmacologicalManagement,药物管理,出处,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
+PharmacologicalManagement,药物管理,出处,Reference,影像科碘对比剂输注安全专家共识
+PharmacologicalManagement,药物管理,出处,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
+PharmacologicalManagement,药物管理,出处,Reference,碘对比剂使用指南（第2版）
+PharmacologicalManagement,药物管理,出处,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+PharmacologicalManagement,药物管理,出处,Reference,美国放射学会对比剂手册
+PharmacologicalManagement,药物管理,出处,Reference,Hypersensitivity reactions to contrast media: Part 2. Prevention of recurrent hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+PharmacologicalManagement,药物管理,出处,Reference,Risk factor analysis of iodinated contrast medium-related hypersensitivity reactions
+PharmacologicalManagement,药物管理,出处,Reference,Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation
+NonPharmacologicalManagement,非药物管理,出处,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
+NonPharmacologicalManagement,非药物管理,出处,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+NonPharmacologicalManagement,非药物管理,出处,Reference,影像科碘对比剂输注安全专家共识
+NonPharmacologicalManagement,非药物管理,出处,Reference,美国放射学会对比剂手册
+NonPharmacologicalManagement,非药物管理,出处,Reference,碘对比剂使用指南（第2版）
+NonPharmacologicalManagement,非药物管理,出处,Reference,DB36/T 2299—2026 含碘对比剂静脉外渗预防与护理规范
+NonPharmacologicalManagement,非药物管理,出处,Reference,"碘对比剂温度与不良反应的关系：307,329 次注射的 Meta 分析"
+NonPharmacologicalManagement,非药物管理,出处,Reference,WS/T 433—2023 静脉治疗护理技术操作标准
+NonPharmacologicalManagement,非药物管理,出处,Reference,影像护理学
+NonPharmacologicalManagement,非药物管理,出处,Reference,DB45/T 2935—2024 CT增强扫描碘对比剂外渗预防与护理规范
+NonPharmacologicalManagement,非药物管理,出处,Reference,对比剂超敏反应实践指南（加拿大放射医师协会与加拿大过敏与临床免疫学会）
+NonPharmacologicalManagement,非药物管理,出处,Reference,恶性肿瘤患者CT增强扫描对比剂安全管理专家共识（2022）
+NonPharmacologicalManagement,非药物管理,出处,Reference,中医护理技术在碘对比剂外渗处理中应用的范围综述
+NonPharmacologicalManagement,非药物管理,出处,Reference,如意金黄双散糊剂外敷在治疗碘造影剂外渗中的应用
+NonPharmacologicalManagement,非药物管理,出处,Reference,中药如意金黄散早期湿敷在药物外渗性皮肤损伤中的效果分析
+NonPharmacologicalManagement,非药物管理,出处,Reference,新磺片糊剂湿敷治疗静脉炎
+NonPharmacologicalManagement,非药物管理,出处,Reference,新鲜马铃薯与新磺片交替外敷治疗深静脉所致静脉炎的临床疗效
+NonPharmacologicalManagement,非药物管理,出处,Reference,新癀片外敷治疗静脉输液渗漏临床疗效观察
+NonPharmacologicalManagement,非药物管理,出处,Reference,五黄油外敷治疗化疗所致静脉炎效果观察
+NonPharmacologicalManagement,非药物管理,出处,Reference,五黄油对顺铂所致静脉炎的疗效观察
+NonPharmacologicalManagement,非药物管理,出处,Reference,五黄油治疗肠造口粪水性皮炎的临床疗效研究
+NonPharmacologicalManagement,非药物管理,出处,Reference,新癀片说明书（国药准字 Z35020063）
+NonPharmacologicalManagement,非药物管理,出处,Reference,Contrast media extravasation injury: a prospective observational cohort study
+NonPharmacologicalManagement,非药物管理,出处,Reference,MRI and CT contrast media extravasation: A systematic review
+NonPharmacologicalManagement,非药物管理,出处,Reference,河南省含碘对比剂外渗管理现状及护士认知水平的调查研究
+NonPharmacologicalManagement,非药物管理,出处,Reference,Intravenous contrast medium extravasation: systematic review and updated ESUR Contrast Media Safety Committee Guidelines
+NonPharmacologicalManagement,非药物管理,出处,Reference,Intraoperative peripheral intravenous complications in adults: a summary of evidence for prevention and management of infiltration/extravasation
+NonPharmacologicalManagement,非药物管理,出处,Reference,Safety and Efficacy of Contrast Media Administration via Selected Vascular Access Devices in Computed Tomography
+NonPharmacologicalManagement,非药物管理,出处,Reference,不同穿刺部位静脉留置针渗出外渗的发生现状及结局差异分析
+NonPharmacologicalManagement,非药物管理,出处,Reference,放射科碘对比剂外渗管理的证据总结
+NonPharmacologicalManagement,非药物管理,出处,Reference,Computed tomography contrast media extravasation: treatment algorithm and immediate treatment by squeezing with multiple slit incisions
+NonPharmacologicalManagement,非药物管理,出处,Reference,应用改良痈疽油剂干预含碘对比剂中重度静脉外渗的临床疗效评价
+NonPharmacologicalManagement,非药物管理,出处,Reference,Iodinated Contrast Media Extravasation Injuries: Should Osmolality and the Pattern of Distribution Affect Management? A Literature Review and Case Report Comparison
+NonPharmacologicalManagement,非药物管理,出处,Reference,造影剂血管外渗的处置方法研究进展
+NonPharmacologicalManagement,非药物管理,出处,Reference,1例药液外渗致慢性难愈性创面形成患者的中西医结合护理
+NonPharmacologicalManagement,非药物管理,出处,Reference,Hand compartment syndrome secondary to contrast media extravasation: A case report
+NonPharmacologicalManagement,非药物管理,出处,Reference,Managing severe iodinated contrast extravasation: a case report highlighting the role of invasive intervention
+NonPharmacologicalManagement,非药物管理,出处,Reference,康惠尔透明贴与50％硫酸镁溶液冷湿敷治疗碘对比剂外渗效果比较
+NonPharmacologicalManagement,非药物管理,出处,Reference,全国部分医院静脉导管维护现状调查
+NonPharmacologicalManagement,非药物管理,出处,Reference,Hypersensitivity reactions to contrast media: Part 1. Management of immediate and non-immediate hypersensitivity reactions in adults. Updated guidelines by the ESUR Contrast Media Safety Committee
+SymptomStatus,症状现状,出处,Reference,放射性对比剂超敏反应的管理与预防：美国放射学会与美国变态反应、哮喘与免疫学会共识声明
+SymptomStatus,症状现状,出处,Reference,影像科碘对比剂输注安全专家共识
+SymptomStatus,症状现状,出处,Reference,过敏反应：2023 年实践参数更新
+SymptomStatus,症状现状,出处,Reference,放射性对比剂超敏反应处理流程（2024 年更新）
+FunctionalStatus,功能状况,出处,Reference,含碘对比剂静脉外渗护理管理实践指南（2026年更新版）
+FunctionalStatus,功能状况,出处,Reference,静脉对比剂外渗：系统评价及欧洲泌尿生殖放射学会对比剂安全委员会指南更新
+NursingTheory,自护理论,出处,Reference,Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析
