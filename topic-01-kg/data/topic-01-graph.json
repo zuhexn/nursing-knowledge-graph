@@ -8451,6 +8451,534 @@
       ]
     },
     {
+      "id": "CINV-01",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "Nelson-Piercy C, Dean C, Shehmar M, Gadsby R, O’Hara M, Hodson K, Nana M. The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69). BJOG: An International Journal of Obstetrics & Gynaecology. 2024;131(7):e1-e30. DOI: 10.1111/1471-0528.17739 (PMID 38311315).",
+      "tags": [
+        "文献",
+        "指南与共识"
+      ],
+      "aliases": [
+        "Nelson-Piercy C, Dean C, Shehmar M, Gadsby R, O’Hara M, Hodson K, Nana M. The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69). BJOG: An International Journal of Obstetrics & Gynaecology. 2024;131(7):e1-e30. DOI: 10.1111/1471-0528.17739 (PMID 38311315)."
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "指南与共识"
+        },
+        {
+          "k": "年份",
+          "v": "2024"
+        },
+        {
+          "k": "核验标识",
+          "v": "Nelson-Piercy C, Dean C, Shehmar M, Gadsby R, O’Hara M, Hodson K, Nana M. The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69). BJOG: An International Journal of Obstetrics & Gynaecology. 2024;131(7):e1-e30. DOI: 10.1111/1471-0528.17739 (PMID 38311315)."
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南与共识",
+          "author": "Nelson-Piercy C, Dean C, Shehmar M, Gadsby R, O’Hara M, Hodson K, Nana M",
+          "title": "Nelson-Piercy C, Dean C, Shehmar M, Gadsby R, O’Hara M, Hodson K, Nana M. The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69). BJOG: An International Journal of Obstetrics & Gynaecology. 2024;131(7):e1-e30. DOI: 10.1111/1471-0528.17739 (PMID 38311315).",
+          "journal": "BJOG: An International Journal of Obstetrics & Gynaecology",
+          "year": 2024,
+          "cite": "Nelson-Piercy C, Dean C, Shehmar M, Gadsby R, O’Hara M, Hodson K, Nana M / Nelson-Piercy C, Dean C, Shehmar M, Gadsby R, O’Hara M, Hodson K, Nana M. The Management of Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum (Green-top Guideline No. 69). BJOG: An International Journal of Obstetrics & Gynaecology. 2024;131(7):e1-e30. DOI: 10.1111/1471-0528.17739 (PMID 38311315). / BJOG: An International Journal of Obstetrics & Gynaecology / 2024",
+          "grade": "指南与共识",
+          "ref": "CINV-01"
+        }
+      ]
+    },
+    {
+      "id": "CINV-02",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "Gan TJ, Jin Z, Ayad S, et al. Fifth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting: Executive Summary. Anesthesia & Analgesia. 2025. DOI: 10.1213/ANE.0000000000007816 (PMID 41237407).",
+      "tags": [
+        "文献",
+        "指南与共识"
+      ],
+      "aliases": [
+        "Gan TJ, Jin Z, Ayad S, et al. Fifth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting: Executive Summary. Anesthesia & Analgesia. 2025. DOI: 10.1213/ANE.0000000000007816 (PMID 41237407)."
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "指南与共识"
+        },
+        {
+          "k": "年份",
+          "v": "2025"
+        },
+        {
+          "k": "核验标识",
+          "v": "Gan TJ, Jin Z, Ayad S, et al. Fifth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting: Executive Summary. Anesthesia & Analgesia. 2025. DOI: 10.1213/ANE.0000000000007816 (PMID 41237407)."
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南与共识",
+          "author": "Gan TJ, Jin Z, Ayad S, et al",
+          "title": "Gan TJ, Jin Z, Ayad S, et al. Fifth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting: Executive Summary. Anesthesia & Analgesia. 2025. DOI: 10.1213/ANE.0000000000007816 (PMID 41237407).",
+          "journal": "Anesthesia & Analgesia",
+          "year": 2025,
+          "cite": "Gan TJ, Jin Z, Ayad S, et al / Gan TJ, Jin Z, Ayad S, et al. Fifth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting: Executive Summary. Anesthesia & Analgesia. 2025. DOI: 10.1213/ANE.0000000000007816 (PMID 41237407). / Anesthesia & Analgesia / 2025",
+          "grade": "指南与共识",
+          "ref": "CINV-02"
+        }
+      ]
+    },
+    {
+      "id": "CINV-03",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "中国抗癌协会肿瘤临床化疗专业委员会, 中国抗癌协会肿瘤支持治疗专业委员会. 中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）. 中华医学杂志. 2022;102(39):3080-3094. DOI: 10.3760/cma.j.cn112137-20220810-01724.",
+      "tags": [
+        "文献",
+        "指南与共识"
+      ],
+      "aliases": [
+        "中国抗癌协会肿瘤临床化疗专业委员会, 中国抗癌协会肿瘤支持治疗专业委员会. 中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）. 中华医学杂志. 2022;102(39):3080-3094. DOI: 10.3760/cma.j.cn112137-20220810-01724."
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "指南与共识"
+        },
+        {
+          "k": "年份",
+          "v": "2022"
+        },
+        {
+          "k": "核验标识",
+          "v": "中国抗癌协会肿瘤临床化疗专业委员会, 中国抗癌协会肿瘤支持治疗专业委员会. 中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）. 中华医学杂志. 2022;102(39):3080-3094. DOI: 10.3760/cma.j.cn112137-20220810-01724."
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南与共识",
+          "author": "中国抗癌协会肿瘤临床化疗专业委员会, 中国抗癌协会肿瘤支持治疗专业委员会",
+          "title": "中国抗癌协会肿瘤临床化疗专业委员会, 中国抗癌协会肿瘤支持治疗专业委员会. 中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）. 中华医学杂志. 2022;102(39):3080-3094. DOI: 10.3760/cma.j.cn112137-20220810-01724.",
+          "journal": "中华医学杂志",
+          "year": 2022,
+          "cite": "中国抗癌协会肿瘤临床化疗专业委员会, 中国抗癌协会肿瘤支持治疗专业委员会 / 中国抗癌协会肿瘤临床化疗专业委员会, 中国抗癌协会肿瘤支持治疗专业委员会. 中国肿瘤药物治疗相关恶心呕吐防治专家共识（2022年版）. 中华医学杂志. 2022;102(39):3080-3094. DOI: 10.3760/cma.j.cn112137-20220810-01724. / 中华医学杂志 / 2022",
+          "grade": "指南与共识",
+          "ref": "CINV-03"
+        }
+      ]
+    },
+    {
+      "id": "CINV-04",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "《四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识》编写专家组. 四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版. 中国循证医学杂志. 2024;24(10):1129-1136. DOI: 10.7507/1672-2531.202407066.",
+      "tags": [
+        "文献",
+        "指南与共识"
+      ],
+      "aliases": [
+        "《四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识》编写专家组. 四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版. 中国循证医学杂志. 2024;24(10):1129-1136. DOI: 10.7507/1672-2531.202407066."
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "指南与共识"
+        },
+        {
+          "k": "年份",
+          "v": "2024"
+        },
+        {
+          "k": "核验标识",
+          "v": "《四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识》编写专家组. 四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版. 中国循证医学杂志. 2024;24(10):1129-1136. DOI: 10.7507/1672-2531.202407066."
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南与共识",
+          "author": "《四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识》编写专家组",
+          "title": "《四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识》编写专家组. 四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版. 中国循证医学杂志. 2024;24(10):1129-1136. DOI: 10.7507/1672-2531.202407066.",
+          "journal": "中国循证医学杂志",
+          "year": 2024,
+          "cite": "《四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识》编写专家组 / 《四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识》编写专家组. 四川省防控抗肿瘤药物治疗相关恶心呕吐专家共识2024版. 中国循证医学杂志. 2024;24(10):1129-1136. DOI: 10.7507/1672-2531.202407066. / 中国循证医学杂志 / 2024",
+          "grade": "指南与共识",
+          "ref": "CINV-04"
+        }
+      ]
+    },
+    {
+      "id": "CINV-05",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "World Health Organization. WHO recommendations on antenatal care for a positive pregnancy experience. Geneva: WHO; 2016. ISBN 9789241549912（推荐条目 D.1：妊娠早期恶心呕吐）.",
+      "tags": [
+        "文献",
+        "指南与共识"
+      ],
+      "aliases": [
+        "World Health Organization. WHO recommendations on antenatal care for a positive pregnancy experience. Geneva: WHO; 2016. ISBN 9789241549912（推荐条目 D.1：妊娠早期恶心呕吐）."
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "指南与共识"
+        },
+        {
+          "k": "年份",
+          "v": "2016"
+        },
+        {
+          "k": "核验标识",
+          "v": "World Health Organization. WHO recommendations on antenatal care for a positive pregnancy experience. Geneva: WHO; 2016. ISBN 9789241549912（推荐条目 D.1：妊娠早期恶心呕吐）."
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南与共识",
+          "author": "World Health Organization",
+          "title": "World Health Organization. WHO recommendations on antenatal care for a positive pregnancy experience. Geneva: WHO; 2016. ISBN 9789241549912（推荐条目 D.1：妊娠早期恶心呕吐）.",
+          "journal": "WHO",
+          "year": 2016,
+          "cite": "World Health Organization / World Health Organization. WHO recommendations on antenatal care for a positive pregnancy experience. Geneva: WHO; 2016. ISBN 9789241549912（推荐条目 D.1：妊娠早期恶心呕吐）. / WHO / 2016",
+          "grade": "指南与共识",
+          "ref": "CINV-05"
+        }
+      ]
+    },
+    {
+      "id": "CINV-06",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "Vidall C, Dielenseger P, Farrell C, et al. Evidence-based management of chemotherapy-induced nausea and vomiting: a position statement from a European cancer nursing forum. Ecancermedicalscience. 2011;5:211. DOI: 10.3332/ecancer.2011.211 (PMID 22276054).",
+      "tags": [
+        "文献",
+        "指南与共识"
+      ],
+      "aliases": [
+        "Vidall C, Dielenseger P, Farrell C, et al. Evidence-based management of chemotherapy-induced nausea and vomiting: a position statement from a European cancer nursing forum. Ecancermedicalscience. 2011;5:211. DOI: 10.3332/ecancer.2011.211 (PMID 22276054)."
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "指南与共识"
+        },
+        {
+          "k": "年份",
+          "v": "2011"
+        },
+        {
+          "k": "核验标识",
+          "v": "Vidall C, Dielenseger P, Farrell C, et al. Evidence-based management of chemotherapy-induced nausea and vomiting: a position statement from a European cancer nursing forum. Ecancermedicalscience. 2011;5:211. DOI: 10.3332/ecancer.2011.211 (PMID 22276054)."
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南与共识",
+          "author": "Vidall C, Dielenseger P, Farrell C, et al",
+          "title": "Vidall C, Dielenseger P, Farrell C, et al. Evidence-based management of chemotherapy-induced nausea and vomiting: a position statement from a European cancer nursing forum. Ecancermedicalscience. 2011;5:211. DOI: 10.3332/ecancer.2011.211 (PMID 22276054).",
+          "journal": "Ecancermedicalscience",
+          "year": 2011,
+          "cite": "Vidall C, Dielenseger P, Farrell C, et al / Vidall C, Dielenseger P, Farrell C, et al. Evidence-based management of chemotherapy-induced nausea and vomiting: a position statement from a European cancer nursing forum. Ecancermedicalscience. 2011;5:211. DOI: 10.3332/ecancer.2011.211 (PMID 22276054). / Ecancermedicalscience / 2011",
+          "grade": "指南与共识",
+          "ref": "CINV-06"
+        }
+      ]
+    },
+    {
+      "id": "CINV-07",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "李小寒, 尚少梅. 基础护理学（第7版）. 北京: 人民卫生出版社; 2022. ISBN 9787117333511.",
+      "tags": [
+        "文献",
+        "指南与共识"
+      ],
+      "aliases": [
+        "李小寒, 尚少梅. 基础护理学（第7版）. 北京: 人民卫生出版社; 2022. ISBN 9787117333511."
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "指南与共识"
+        },
+        {
+          "k": "年份",
+          "v": "2022"
+        },
+        {
+          "k": "核验标识",
+          "v": "李小寒, 尚少梅. 基础护理学（第7版）. 北京: 人民卫生出版社; 2022. ISBN 9787117333511."
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南与共识",
+          "author": "李小寒, 尚少梅",
+          "title": "李小寒, 尚少梅. 基础护理学（第7版）. 北京: 人民卫生出版社; 2022. ISBN 9787117333511.",
+          "journal": "人民卫生出版社",
+          "year": 2022,
+          "cite": "李小寒, 尚少梅 / 李小寒, 尚少梅. 基础护理学（第7版）. 北京: 人民卫生出版社; 2022. ISBN 9787117333511. / 人民卫生出版社 / 2022",
+          "grade": "指南与共识",
+          "ref": "CINV-07"
+        }
+      ]
+    },
+    {
+      "id": "CINV-08",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "Han J, Xu Q, Wang W, Zhou Y. Nurse-led non-pharmacological interventions for prevention and management of postoperative nausea and vomiting in adults undergoing laparoscopic surgery: an evidence summary. BMC Nursing. 2026. DOI: 10.1186/s12912-026-05029-5 (PMID 42458443).",
+      "tags": [
+        "文献",
+        "指南与共识"
+      ],
+      "aliases": [
+        "Han J, Xu Q, Wang W, Zhou Y. Nurse-led non-pharmacological interventions for prevention and management of postoperative nausea and vomiting in adults undergoing laparoscopic surgery: an evidence summary. BMC Nursing. 2026. DOI: 10.1186/s12912-026-05029-5 (PMID 42458443)."
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "指南与共识"
+        },
+        {
+          "k": "年份",
+          "v": "2026"
+        },
+        {
+          "k": "核验标识",
+          "v": "Han J, Xu Q, Wang W, Zhou Y. Nurse-led non-pharmacological interventions for prevention and management of postoperative nausea and vomiting in adults undergoing laparoscopic surgery: an evidence summary. BMC Nursing. 2026. DOI: 10.1186/s12912-026-05029-5 (PMID 42458443)."
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南与共识",
+          "author": "Han J, Xu Q, Wang W, Zhou Y",
+          "title": "Han J, Xu Q, Wang W, Zhou Y. Nurse-led non-pharmacological interventions for prevention and management of postoperative nausea and vomiting in adults undergoing laparoscopic surgery: an evidence summary. BMC Nursing. 2026. DOI: 10.1186/s12912-026-05029-5 (PMID 42458443).",
+          "journal": "BMC Nursing",
+          "year": 2026,
+          "cite": "Han J, Xu Q, Wang W, Zhou Y / Han J, Xu Q, Wang W, Zhou Y. Nurse-led non-pharmacological interventions for prevention and management of postoperative nausea and vomiting in adults undergoing laparoscopic surgery: an evidence summary. BMC Nursing. 2026. DOI: 10.1186/s12912-026-05029-5 (PMID 42458443). / BMC Nursing / 2026",
+          "grade": "指南与共识",
+          "ref": "CINV-08"
+        }
+      ]
+    },
+    {
+      "id": "CINV-09",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "Matthews A, Haas DM, O’Mathúna DP, Dowswell T, Doyle M. Interventions for nausea and vomiting in early pregnancy. Cochrane Database of Systematic Reviews. 2015;2015(4):CD007575. DOI: 10.1002/14651858.CD007575.pub4 (PMID 26348534).",
+      "tags": [
+        "文献",
+        "指南与共识"
+      ],
+      "aliases": [
+        "Matthews A, Haas DM, O’Mathúna DP, Dowswell T, Doyle M. Interventions for nausea and vomiting in early pregnancy. Cochrane Database of Systematic Reviews. 2015;2015(4):CD007575. DOI: 10.1002/14651858.CD007575.pub4 (PMID 26348534)."
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "指南与共识"
+        },
+        {
+          "k": "年份",
+          "v": "2015"
+        },
+        {
+          "k": "核验标识",
+          "v": "Matthews A, Haas DM, O’Mathúna DP, Dowswell T, Doyle M. Interventions for nausea and vomiting in early pregnancy. Cochrane Database of Systematic Reviews. 2015;2015(4):CD007575. DOI: 10.1002/14651858.CD007575.pub4 (PMID 26348534)."
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南与共识",
+          "author": "Matthews A, Haas DM, O’Mathúna DP, Dowswell T, Doyle M",
+          "title": "Matthews A, Haas DM, O’Mathúna DP, Dowswell T, Doyle M. Interventions for nausea and vomiting in early pregnancy. Cochrane Database of Systematic Reviews. 2015;2015(4):CD007575. DOI: 10.1002/14651858.CD007575.pub4 (PMID 26348534).",
+          "journal": "Cochrane Database of Systematic Reviews",
+          "year": 2015,
+          "cite": "Matthews A, Haas DM, O’Mathúna DP, Dowswell T, Doyle M / Matthews A, Haas DM, O’Mathúna DP, Dowswell T, Doyle M. Interventions for nausea and vomiting in early pregnancy. Cochrane Database of Systematic Reviews. 2015;2015(4):CD007575. DOI: 10.1002/14651858.CD007575.pub4 (PMID 26348534). / Cochrane Database of Systematic Reviews / 2015",
+          "grade": "指南与共识",
+          "ref": "CINV-09"
+        }
+      ]
+    },
+    {
+      "id": "CINV-10",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "Xiao C, Qin M, Xia H, Xing Q, Wang D, Qian W. Effects of PC6 acupressure on acute and delayed nausea and vomiting induced by chemotherapy in patients with malignant neoplasm: a meta-analysis. Supportive Care in Cancer. 2023;31:510. DOI: 10.1007/s00520-023-07976-0 (PMID 37548707).",
+      "tags": [
+        "文献",
+        "指南与共识"
+      ],
+      "aliases": [
+        "Xiao C, Qin M, Xia H, Xing Q, Wang D, Qian W. Effects of PC6 acupressure on acute and delayed nausea and vomiting induced by chemotherapy in patients with malignant neoplasm: a meta-analysis. Supportive Care in Cancer. 2023;31:510. DOI: 10.1007/s00520-023-07976-0 (PMID 37548707)."
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "指南与共识"
+        },
+        {
+          "k": "年份",
+          "v": "2023"
+        },
+        {
+          "k": "核验标识",
+          "v": "Xiao C, Qin M, Xia H, Xing Q, Wang D, Qian W. Effects of PC6 acupressure on acute and delayed nausea and vomiting induced by chemotherapy in patients with malignant neoplasm: a meta-analysis. Supportive Care in Cancer. 2023;31:510. DOI: 10.1007/s00520-023-07976-0 (PMID 37548707)."
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南与共识",
+          "author": "Xiao C, Qin M, Xia H, Xing Q, Wang D, Qian W",
+          "title": "Xiao C, Qin M, Xia H, Xing Q, Wang D, Qian W. Effects of PC6 acupressure on acute and delayed nausea and vomiting induced by chemotherapy in patients with malignant neoplasm: a meta-analysis. Supportive Care in Cancer. 2023;31:510. DOI: 10.1007/s00520-023-07976-0 (PMID 37548707).",
+          "journal": "Supportive Care in Cancer",
+          "year": 2023,
+          "cite": "Xiao C, Qin M, Xia H, Xing Q, Wang D, Qian W / Xiao C, Qin M, Xia H, Xing Q, Wang D, Qian W. Effects of PC6 acupressure on acute and delayed nausea and vomiting induced by chemotherapy in patients with malignant neoplasm: a meta-analysis. Supportive Care in Cancer. 2023;31:510. DOI: 10.1007/s00520-023-07976-0 (PMID 37548707). / Supportive Care in Cancer / 2023",
+          "grade": "指南与共识",
+          "ref": "CINV-10"
+        }
+      ]
+    },
+    {
+      "id": "CINV-11",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "Gergő D, Garmaa G, Tóth-Mészáros A, et al. Inhaling Peppermint Essential Oil as a Promising Complementary Therapy in the Treatment of Nausea and Vomiting. Journal of Clinical Medicine. 2025;14(14):5069. DOI: 10.3390/jcm14145069 (PMID 40725767).",
+      "tags": [
+        "文献",
+        "指南与共识"
+      ],
+      "aliases": [
+        "Gergő D, Garmaa G, Tóth-Mészáros A, et al. Inhaling Peppermint Essential Oil as a Promising Complementary Therapy in the Treatment of Nausea and Vomiting. Journal of Clinical Medicine. 2025;14(14):5069. DOI: 10.3390/jcm14145069 (PMID 40725767)."
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "指南与共识"
+        },
+        {
+          "k": "年份",
+          "v": "2025"
+        },
+        {
+          "k": "核验标识",
+          "v": "Gergő D, Garmaa G, Tóth-Mészáros A, et al. Inhaling Peppermint Essential Oil as a Promising Complementary Therapy in the Treatment of Nausea and Vomiting. Journal of Clinical Medicine. 2025;14(14):5069. DOI: 10.3390/jcm14145069 (PMID 40725767)."
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南与共识",
+          "author": "Gergő D, Garmaa G, Tóth-Mészáros A, et al",
+          "title": "Gergő D, Garmaa G, Tóth-Mészáros A, et al. Inhaling Peppermint Essential Oil as a Promising Complementary Therapy in the Treatment of Nausea and Vomiting. Journal of Clinical Medicine. 2025;14(14):5069. DOI: 10.3390/jcm14145069 (PMID 40725767).",
+          "journal": "Journal of Clinical Medicine",
+          "year": 2025,
+          "cite": "Gergő D, Garmaa G, Tóth-Mészáros A, et al / Gergő D, Garmaa G, Tóth-Mészáros A, et al. Inhaling Peppermint Essential Oil as a Promising Complementary Therapy in the Treatment of Nausea and Vomiting. Journal of Clinical Medicine. 2025;14(14):5069. DOI: 10.3390/jcm14145069 (PMID 40725767). / Journal of Clinical Medicine / 2025",
+          "grade": "指南与共识",
+          "ref": "CINV-11"
+        }
+      ]
+    },
+    {
+      "id": "CINV-12",
+      "graph": "topic-01",
+      "type": "Reference",
+      "name": "张英英, 乔欣, 赵丽丽, 汤媛媛, 刘芳. 非药物干预对癌症化疗致恶心呕吐影响的网状Meta分析. 循证护理. 2024;10(10):1711-1720. DOI: 10.12102/j.issn.2095-8668.2024.10.001.",
+      "tags": [
+        "文献",
+        "指南与共识"
+      ],
+      "aliases": [
+        "张英英, 乔欣, 赵丽丽, 汤媛媛, 刘芳. 非药物干预对癌症化疗致恶心呕吐影响的网状Meta分析. 循证护理. 2024;10(10):1711-1720. DOI: 10.12102/j.issn.2095-8668.2024.10.001."
+      ],
+      "summary": "",
+      "attrs": [
+        {
+          "k": "文献类型",
+          "v": "指南与共识"
+        },
+        {
+          "k": "年份",
+          "v": "2024"
+        },
+        {
+          "k": "核验标识",
+          "v": "张英英, 乔欣, 赵丽丽, 汤媛媛, 刘芳. 非药物干预对癌症化疗致恶心呕吐影响的网状Meta分析. 循证护理. 2024;10(10):1711-1720. DOI: 10.12102/j.issn.2095-8668.2024.10.001."
+        },
+        {
+          "k": "证据等级",
+          "v": "指南与共识"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "指南与共识",
+          "author": "张英英, 乔欣, 赵丽丽, 汤媛媛, 刘芳",
+          "title": "张英英, 乔欣, 赵丽丽, 汤媛媛, 刘芳. 非药物干预对癌症化疗致恶心呕吐影响的网状Meta分析. 循证护理. 2024;10(10):1711-1720. DOI: 10.12102/j.issn.2095-8668.2024.10.001.",
+          "journal": "循证护理",
+          "year": 2024,
+          "cite": "张英英, 乔欣, 赵丽丽, 汤媛媛, 刘芳 / 张英英, 乔欣, 赵丽丽, 汤媛媛, 刘芳. 非药物干预对癌症化疗致恶心呕吐影响的网状Meta分析. 循证护理. 2024;10(10):1711-1720. DOI: 10.12102/j.issn.2095-8668.2024.10.001. / 循证护理 / 2024",
+          "grade": "指南与共识",
+          "ref": "CINV-12"
+        }
+      ]
+    },
+    {
       "id": "CN-12",
       "graph": "topic-01",
       "type": "Reference",
@@ -10823,6 +11351,107 @@
           "cite": "厦门中药厂有限公司 / 新癀片说明书（国药准字 Z35020063） / 药品说明书（执行标准：中国药典 2015 年版一部） / 2015",
           "grade": "说明书",
           "ref": "DRUG-02"
+        }
+      ]
+    },
+    {
+      "id": "NT_SelfCareTheory",
+      "name": "自护理论",
+      "type": "NursingTheory",
+      "tags": [
+        "护理理论",
+        "自护理论"
+      ],
+      "aliases": [
+        "Orem 自护理论",
+        "自我护理理论",
+        "Orem's Self-Care Deficit Nursing Theory",
+        "SCDNT"
+      ],
+      "summary": "自护理论（Orem，1971）认为人天生具备自我护理的能力，护理的任务是在患者自护能力不足时提供补偿与支持。落到本主题：指导患者与家属参与打针前的准备、检查后的观察，以及居家自我照护与早期求助。",
+      "attrs": [
+        {
+          "k": "理论提出者",
+          "v": "Dorothea E. Orem"
+        },
+        {
+          "k": "提出年份",
+          "v": "1971"
+        },
+        {
+          "k": "理论依据",
+          "v": "系统评价与剂量反应 Meta 分析（Nasiri 等 2023）—— 纳入 46 项研究"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "系统评价",
+          "author": "Nasiri M, Jafari Z, Rakhshan M, Yarahmadi F, et al.",
+          "title": "Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析",
+          "journal": "国际护理评论",
+          "year": 2023,
+          "cite": "Nasiri M, Jafari Z, Rakhshan M, Yarahmadi F, et al. / Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析 / 国际护理评论 / 2023",
+          "grade": "汇总证据",
+          "ref": "R24"
+        }
+      ],
+      "graph": "topic-01",
+      "details": [
+        {
+          "k": "多主体共同参与输液安全",
+          "v": "从患儿、患儿家长、护士、医院管理者等多角度出发，促使其积极参与患儿输液安全，降低外渗发生率",
+          "quote": "提出可从患儿、患儿家长、护士、医院管理者等多角度出发, 促使其积极参与患儿输液安全中, 降低输液外渗发生率.",
+          "src": "CN-14",
+          "cat": "居家护理"
+        },
+        {
+          "k": "研究目的",
+          "v": "评价按 Orem 自护缺陷护理理论设计的照护方案，对 18–70 岁慢性病患者的生活质量与自我照护（主要结局）及自我效能、焦虑、抑郁、压力（次要结局）的价值",
+          "quote": "This study aimed to clarify the value of caring programs developed according to Orem's Self-Care Deficit Nursing Theory regarding quality of life and self-care as the primary outcomes",
+          "src": "R24",
+          "cat": "护理理论"
+        },
+        {
+          "k": "纳入研究量",
+          "v": "检索 8 个信息源 + 国际临床试验注册库，截至 2022-03-30；共 46 项研究 + 11 条研究注册记录入选",
+          "quote": "A total of 46 studies and 11 study register entries were eligible.",
+          "src": "R24",
+          "cat": "护理理论"
+        },
+        {
+          "k": "主要效果",
+          "v": "自护理论干预显著改善生活质量、**自我照护能力**与自我效能，并显著降低焦虑与抑郁",
+          "quote": "Orem's theory-based interventions significantly improved the quality of life, self-care, and self-efficacy as well as significantly reduced anxiety and depression.",
+          "src": "R24",
+          "cat": "护理理论"
+        },
+        {
+          "k": "不确定的部分",
+          "v": "对**压力**的效果不确定 —— 无法做 Meta 分析",
+          "quote": "the value of the interventions on stress was uncertain, as performing the meta-analysis was not possible",
+          "src": "R24",
+          "cat": "护理理论"
+        },
+        {
+          "k": "证据强度偏低",
+          "v": "⚠️ 摘要自述：证据质量不理想、研究间异质性高，仍需设计良好的试验才能得出循证结论",
+          "quote": "Considering the undesirable evidence quality and the high between-study heterogeneity, further well-designed trials are required to draw an evidence-based conclusion.",
+          "src": "R24",
+          "cat": "护理理论"
+        },
+        {
+          "k": "对护理实践的意义",
+          "v": "Orem 理论可帮助护士动态评估患者的自我照护能力、实施针对其需求与问题的护理措施",
+          "quote": "Orem's Nursing Theory can help nurses in different fields to dynamically and carefully evaluate patients' self-care ability and implement appropriate nursing measures tailored to their needs, interests, and problems.",
+          "src": "R24",
+          "cat": "护理理论"
+        },
+        {
+          "k": "理论定位",
+          "v": "Orem 护理理论是最知名、可为患者自我照护活动提供结构的理论；慢性病患者需要恰当的自我照护训练、辅导与支持",
+          "quote": "Orem's Nursing Theory is the most well-known theory that provides a structure to involve patients in their self-care activities.",
+          "src": "R24",
+          "cat": "护理理论"
         }
       ]
     },
@@ -18001,7 +18630,72 @@
       ],
       "summary": "在特定穴位（最常用内关/PC6、耳穴）施加按压、贴敷或电刺激以减轻恶心呕吐的护理技术，可作为药物预防的辅助手段。 ⚠️ **证据场景**：下列文献的证据场景多为**化疗 / 妊娠 / 术后**恶心呕吐；用于**造影剂相关**恶心呕吐（生理性反应）属**跨场景外推**，只能作辅助措施，**不替代**规范处理。",
       "attrs": [],
-      "evidence": []
+      "evidence": [],
+      "details": [
+        {
+          "k": "P6指压低确定性证据",
+          "v": "妊娠早期恶心场景：五项研究（601 例）比较 P6（内关）指压与安慰剂；证据提示降低恶心评分（100 例，MD 低 1.7，95% CI 0.99–2.41）与呕吐次数（MD 低 0.9）。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "Five studies (601 participants) evaluated P6 (inner \nforearm) acupressure versus placebo, one Thai study \n(91 participants) evaluated auricular acupressure \n(round magnetic balls used as ear pellets) versus no \ntreatment, one study in the USA (230 participants) \nevaluated P6 acustimulation therapy (nerve \nstimulation at the P6 acupuncture point) versus \nplacebo, and a four-arm Australian study (593 \nwomen) evaluated traditional Chinese acupuncture or \nP6 acupuncture versus P6 placebo acupuncture or no \nintervention.\nLow-certainty evidence suggests that P6 acupressure \nmay reduce nausea symptom scores (100 women; \nMD: 1.7 lower, 95% CI: 0.99–2.41 lower) and reduce \nthe number of vomiting episodes (MD: 0.9 lower, \n95% CI: 0.74–1.06 lower).",
+          "src": "CINV-05",
+          "cat": "穴位刺激"
+        },
+        {
+          "k": "穴位按压优先内关与足三里",
+          "v": "腹腔镜术后 PONV 场景：穴位刺激分有创（针刺、电针）与无创（穴位按压、经皮电神经刺激），由护士主导实施无创方式；推荐优先选用足三里（ST36）与内关（PC6），并按术式灵活加选配穴。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "For acupoint stimulation, nurses can lead the implementation of non-invasive techniques such as acupoint pressure and transcutaneous electrical nerve stimulation [72]. Recommended acupoints like Zusanli (ST36) and Neiguan (PC6) should be prioritized [41], with additional auxiliary points selected flexibly based on surgical type [41]. Standardized procedures ensure consistent stimulation efficacy.",
+          "src": "CINV-08",
+          "cat": "穴位刺激"
+        },
+        {
+          "k": "穴位刺激时机与协同用药",
+          "v": "腹腔镜术后 PONV 场景：穴位刺激可显著降低 PONV 发生率并与药物协同实现多模式预防（Level 1）；时机不影响 PONV，一般在麻醉诱导前或诱导后开始（Level 1）。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "Acupoint stimulation can significantly reduce the incidence of PONV in laparoscopic patients, and it can synergistically enhance the effect with drug to achieve multimodal prevention (Level 1) [8, 16, 39, 44, 50, 57, 58].\n11. The timing of acupoint stimulation does not affect PONV; stimulation is generally initiated either before or after induction of anesthesia (Level 1) [37, 52].",
+          "src": "CINV-08",
+          "cat": "穴位刺激"
+        },
+        {
+          "k": "P6指压4天效应量",
+          "v": "妊娠早期恶心场景：P6（内关）指压的 100 例研究显示，恶心严重度（MD -1.70，95% CI -2.41 to -0.99）与呕吐次数（MD -0.90）优于安慰剂。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "P6 Acupressure versus placebo (five studies with 601 women)\n\nSix studies (Belluomini 1994; Khavandizadeh 2010; Norheim 2001; O'Brien 1996; Saberi 2014; Werntoft 2001) compared P6 acupressure to placebo, and we have included data from five of these in the data tables.\n\nPrimary outcomes\n\nSymptomatic relief\n\nOne study with 100 women showed evidence of a statistically significant effect for acupressure (Khavandizadeh 2010), on severity of nausea (mean difference (MD) ‐1.70, 95% confidence interval (CI) ‐2.41 to ‐0.99, Analysis 1.1) and vomiting (MD ‐0.90, 95% CI ‐1.06 to ‐0.74, Analysis 1.7) after four days of treatment.",
+          "src": "CINV-09",
+          "cat": "穴位刺激"
+        },
+        {
+          "k": "腕带指压的不良反应要提前告知",
+          "v": "妊娠早期恶心场景：使用腕带指压时，63% 指压组与 90% 安慰剂组参与者报告了问题（疼痛、麻木、酸痛、手部肿胀）——护理宣教应提前告知。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "Norheim 2001 reported that 63% of participants in the acupressure group and 90% in the placebo group reported problems (including pain, numbness, soreness and hand‐swelling) using the wristband.",
+          "src": "CINV-09",
+          "cat": "穴位刺激"
+        },
+        {
+          "k": "PC6按压降低急性与延迟性恶心",
+          "v": "化疗场景：PC6 按压降低急性恶心（SMD -0.39，P = 0.02）与延迟性恶心（SMD -0.51，P = 0.03）；延迟性呕吐（SMD -0.37，P = 0.07）未达显著。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "Meta-analysis showed that compared with the control group, PC6 acupressure reduced the occurrence number of acute (SMD = -0.39,95CI (-0.73, -0.05) P = 0.02), delayed (SMD = -0.51, 95% CI (-0.96, -0.05) P = 0.03) nausea and acute (SMD = -0.42,95% CI (-0.79, -0.06) P = 0.02), delayed (SMD = -0.37, 95% CI (-0.77, 0.03) P = 0.07) vomiting;",
+          "src": "CINV-10",
+          "cat": "穴位刺激"
+        },
+        {
+          "k": "PC6按压降低恶心呕吐严重度",
+          "v": "化疗场景：内关穴按压降低严重度——急性恶心 SMD -0.34、延迟性恶心 SMD -0.79（P = 0.004）；未缩短 CINV 持续时间。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "it reduced the severity of acute (SMD = -0.34, 95% CI (-0.57, -0.11) P = 0.004), delayed (SMD = -0.79, 95% CI (-1.33, -0.25) P = 0.004) nausea and acute (SMD = -0.51, 95% CI (-0.79, -0.23) P = 0.0004), delayed (SMD = -0.50, 95% CI (-0.84, -0.17) P = 0.003) vomiting, while it did not reduced the experience time on acute and delayed CINV.",
+          "src": "CINV-10",
+          "cat": "穴位刺激"
+        },
+        {
+          "k": "经皮穴位电刺激联合胃肠起搏排序最佳",
+          "v": "化疗所致恶心呕吐场景：缓解延迟性恶心严重程度——经皮穴位电刺激联合胃肠起搏与常规护理比较差异有统计学意义（P＜0.05），SUCRA 84.6%，效果最佳。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "经皮穴位电刺激联合胃肠起搏和绘画疗法与常规护理比较,差异有统计学意义(P＜0.05),经皮穴位电刺激联合胃肠起搏(SUCRA为84.6％)效果最佳;",
+          "src": "CINV-12",
+          "cat": "穴位刺激"
+        },
+        {
+          "k": "耳灸联合腕踝针排序最佳",
+          "v": "化疗所致恶心呕吐场景：缓解急性期呕吐发生率——耳灸联合腕踝针与常规护理比较差异有统计学意义（P＜0.05），SUCRA 84.6%，效果最佳。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "耳灸联合腕踝针与常规护理比较,差异有统计学意义(P＜0.05),耳灸联合腕踝针(SUCRA为84.6％)效果最佳;",
+          "src": "CINV-12",
+          "cat": "穴位刺激"
+        }
+      ]
     },
     {
       "id": "NPM_Aromatherapy",
@@ -18016,7 +18710,51 @@
       ],
       "summary": "经鼻吸入薄荷、柠檬等精油以缓解恶心的非药物方法，可作为药物预防的辅助措施，不替代规范止吐方案。 ⚠️ **证据场景**：下列文献的证据场景多为**化疗 / 妊娠 / 术后**恶心呕吐；用于**造影剂相关**恶心呕吐（生理性反应）属**跨场景外推**，只能作辅助措施，**不替代**规范处理。",
       "attrs": [],
-      "evidence": []
+      "evidence": [],
+      "details": [
+        {
+          "k": "芳香疗法随精油种类而异",
+          "v": "腹腔镜术后场景：芳香疗法随精油而异——薄荷预防 PONV 未优于安慰剂；柠檬与薰衣草可降低 PONV；生姜可降 PON 不降 POV 风险；吸入异丙醇短期有效（均 Level 1）。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "Aromatherapy: the efficacy of aromatherapy in preventing and treating PONV varies depending on the type of aromatic substance used. Peppermint has not been shown to be more effective than a placebo in preventing PONV (Level 1) [15, 17]; lemon and lavender essential oils could reduce PONV incidence (Level 1) [17, 30]; ginger could reduce PON risk but not POV risk (Level 1) [15, 17, 58, 63]; inhalation of isopropyl alcohol provides short-term efficacy for PONV and may serve as an immediate antiemetic measure when other antiemetic medications are not readily available (Level 1) [15, 17, 34, 63].",
+          "src": "CINV-08",
+          "cat": "芳香疗法"
+        },
+        {
+          "k": "薄荷精油吸入的具体做法",
+          "v": "化疗场景：冷湿毛巾滴精油——Mapp 2020：30 min 后 Baxter Retching Faces 优于对照；Lestari 2017：5 min 后 Rhodes 指数优于标准护理。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "A study by Mapp et al. (2020) evaluated the efficacy of a cool, damp washcloth with peppermint essential oil versus a washcloth alone in managing CINV [62]. After 30 min, the peppermint group reported significantly better improvement than the control group using the Baxter Retching Faces scale (p = 0.020) [75]. Lestari et al., 2017, compared peppermint oil to standard hospital care based on the Rhodes Index [61]. After 5 min, the peppermint aromatherapy reduced CINV symptoms more significantly than the standard care (p = 0.001 vs. p = 0.02).",
+          "src": "CINV-11",
+          "cat": "芳香疗法"
+        },
+        {
+          "k": "成分与作用机制",
+          "v": "化疗/术后/妊娠恶心呕吐场景：芳香疗法为吸入精油，属温和干预；薄荷精油可阻断胃肠道血清素受体抑制恶心呕吐反射，有效成分薄荷醇 35–45%、薄荷酮 10–30%，具解痉作用松弛胃肠平滑肌。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "One alternative tool may be aromatherapy, which involves inhaling essential oils (EOs) and is considered a mild therapeutic modality without severe side effects [24].\nThe inhalation of peppermint essential oil can help alleviate nausea and vomiting through several mechanisms. Peppermint oil has been shown to block serotonin receptors in the gastrointestinal tract that trigger the nausea and vomiting reflex [25]. The active compounds of peppermint oil are menthol (35–45%) and menthone (10–30%), which exhibit antispasmodic effects [26]. These compounds help relax the smooth muscles of the gastrointestinal tract [27].",
+          "src": "CINV-11",
+          "cat": "芳香疗法"
+        },
+        {
+          "k": "妊娠期属B2级相对安全",
+          "v": "妊娠期恶心呕吐场景：多篇报告指出吸入薄荷精油对孕妇无严重不良反应；按澳大利亚孕期药品分级属 category B2，B2 类药物无证据显示会增加出生缺陷或对发育中胚胎的有害作用。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "Several reports indicate that the inhalation of peppermint oil has no serious adverse effects on pregnant women [34]. According to the Australian Therapeutic Goods Administration Classification for Drugs in Pregnancy, peppermint oil is classified as category B2 for use in pregnancy. There is no evidence of an increase in birth defects or other harmful effects on the developing embryo for pharmaceuticals in category B2 [35].",
+          "src": "CINV-11",
+          "cat": "芳香疗法"
+        },
+        {
+          "k": "化疗场景48与72小时效应量",
+          "v": "化疗 CINV 场景：三项 CINV 研究中吸入薄荷精油在所有时点降低症状，48 h 最明显（MD: -2.23，p < 0.001），72 h 为（MD: -2.41，p = 0.010）。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "In three CINV studies, peppermint oil inhalation appeared to reduce symptoms at all time points, with the most notable reduction at 48 h (MD: −2.23, 95% CI: −3.13 to −1.34, p < 0.001) and 72 h (MD: −2.41, 95% CI: −3.96 to −0.86, p = 0.010).",
+          "src": "CINV-11",
+          "cat": "芳香疗法"
+        },
+        {
+          "k": "吸入性芳香疗法排序最佳",
+          "v": "化疗所致恶心呕吐场景：缓解延迟期呕吐发生率——吸入性芳香疗法等非药物干预与常规护理比较差异有统计学意义（P＜0.05），吸入性芳香疗法 SUCRA 83.5%，效果最佳。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "吸入性芳香疗法、耳灸联合腕踝针、肌肉放松训练、穴位敷贴联合穴位按摩与常规护理比较,差异有统计学意义(P＜0.05),吸入性芳香疗法(SUCRA为83.5％)效果最佳.",
+          "src": "CINV-12",
+          "cat": "芳香疗法"
+        }
+      ]
     },
     {
       "id": "NPM_GingerTherapy",
@@ -18031,7 +18769,44 @@
       ],
       "summary": "口服生姜或生姜粉缓解恶心，世界卫生组织产前保健建议 D.1 明确推荐生姜用于孕早期恶心缓解；系统评价显示对恶心的改善证据为低至中等确定性。 ⚠️ **证据场景**：下列文献的证据场景多为**化疗 / 妊娠 / 术后**恶心呕吐；用于**造影剂相关**恶心呕吐（生理性反应）属**跨场景外推**，只能作辅助措施，**不替代**规范处理。",
       "attrs": [],
-      "evidence": []
+      "evidence": [],
+      "details": [
+        {
+          "k": "D.1推荐生姜等非药物缓解孕吐",
+          "v": "妊娠早期恶心场景：WHO 产前保健建议 D.1 推荐生姜、洋甘菊、维生素 B6 和/或针灸缓解孕早期恶心，依据孕妇个人偏好与可获得性选择（推荐类型：Recommended）。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "RECOMMENDATION D.1: Ginger, chamomile, vitamin B6 and/or acupuncture are recommended \nfor the relief of nausea in early pregnancy, based on a woman’s preferences and available \noptions. (Recommended)",
+          "src": "CINV-05",
+          "cat": "生姜疗法"
+        },
+        {
+          "k": "生姜证据为低确定性",
+          "v": "妊娠早期恶心场景：生姜属低确定性证据——巴基斯坦 68 例第 3 天恶心 MD 低 1.38（95% CI 0.03–2.73）；伊朗 95 例第 7 天 MD 低 4.19。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "Ginger: Low-certainty evidence from several small \nindividual studies suggests that ginger may relieve \nsymptoms of nausea and vomiting. A study from \nPakistan found that ginger reduced nausea symptom \nscores (68 women; MD: 1.38 lower on day 3, 95% \nCI: 0.03–2.73 lower), and vomiting symptom scores \n(64 women; MD: 1.14 lower, 95% CI: 0.37–1.91 lower), \nand an Iranian study showed improvements in nausea \nand vomiting symptom scores on day 7 in women \ntaking ginger supplements compared with placebo \n(95 women; MD: 4.19 lower, 95% CI: 1.73–6.65 \nlower). Data from the studies in Thailand and the \nUSA showed a similar direction of effect on nausea \nsymptoms in favour of ginger.",
+          "src": "CINV-05",
+          "cat": "证据质量"
+        },
+        {
+          "k": "生姜剂量：每日1克分4次",
+          "v": "妊娠早期恶心场景：Cochrane 纳入试验的生姜口服方案为每日 1 g（250 mg 胶囊每日 4 次，3 次餐后、1 次睡前），疗程 1 周。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "Ginger 1 g daily orally (250 mg capsules 4 times per day, 3 after meals and 1 before bed); capsules prepared from ginger roots (preparation described).\nPlacebo ‐ identical capsules.\nTreatment was for 1 week.",
+          "src": "CINV-09",
+          "cat": "生姜疗法"
+        },
+        {
+          "k": "生姜效应量与证据不一致",
+          "v": "妊娠早期恶心场景：68 例研究中生姜的恶心评分（MD -1.38，95% CI -2.73 to -0.03）与呕吐评分（MD -1.14）优于安慰剂；综述总评证据有限。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "In a study with data for 68 women comparing ginger versus placebo (and metoclopramide, discussed below) (Mohammadbeigi 2011), ginger was favoured over placebo for mean nausea score (MD ‐1.38, 95% CI ‐2.73 to ‐0.03, Analysis 8.1) and mean vomiting score (MD ‐1.14, 95% CI ‐1.91 to ‐0.37, Analysis 8.11)",
+          "src": "CINV-09",
+          "cat": "生姜疗法"
+        },
+        {
+          "k": "生姜粉缓解急性期恶心排序最佳",
+          "v": "化疗所致恶心呕吐场景：网状 Meta 显示生姜粉缓解急性期恶心严重程度的 SUCRA 为 85.1%，在所比较的非药物干预中排序最佳。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "生姜粉(SUCRA为85.1％)效果最佳;",
+          "src": "CINV-12",
+          "cat": "生姜疗法"
+        }
+      ]
     },
     {
       "id": "DE_NauseaHealthEducation",
@@ -18046,7 +18821,191 @@
       ],
       "summary": "面向患者和家属的宣教与自我照护指导：讲清恶心呕吐的原因、预防方案、用药要点、饮食起居调整、什么时候必须求助，以及如何记录症状日记（何时、多久、吃了什么药、程度几分）。这是患者扫码后最直接看到的内容。 ⚠️ **证据场景**：下列文献的证据场景多为**化疗 / 妊娠 / 术后**恶心呕吐；用于**造影剂相关**恶心呕吐（生理性反应）属**跨场景外推**，只能作辅助措施，**不替代**规范处理。",
       "attrs": [],
-      "evidence": []
+      "evidence": [],
+      "details": [
+        {
+          "k": "PUQE与HELP工具评估严重度",
+          "v": "妊娠期恶心呕吐/妊娠剧吐场景：用 PUQE 与 HELP 工具评估 NVP/HG 严重度（[Grade C]）；酮体尿不能作为脱水或严重度指标（[Grade A]）。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "An objective and validated index of nausea and vomiting such as the Pregnancy-Unique Quantification of Emesis (PUQE) and HyperEmesis Level Prediction (HELP) tools can be used to classify the severity of NVP and HG. [Grade C] Ketonuria is not an indicator of dehydration and should not be used to assess severity. [Grade A]",
+          "src": "CINV-01",
+          "cat": "评估与分级"
+        },
+        {
+          "k": "必问既往止吐药不良反应",
+          "v": "妊娠期恶心呕吐场景：评估时必须询问既往止吐药不良反应史；一旦出现不良反应应立即停用相应药物（[GPP]）。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "Women should be asked about previous adverse reactions to antiemetic therapies. If adverse reactions occur, there should be prompt cessation of the medications. [GPP]",
+          "src": "CINV-01",
+          "cat": "评估与分级"
+        },
+        {
+          "k": "Apfel简化评分三层分级",
+          "v": "术后 PONV 场景：风险评估工具与风险分层流程可降低 PONV（B1）；用 Apfel 简化评分分层——无风险因素为低危、1 to 2 个因素为中危、≥3 个因素为高危；提醒系统可提高依从性。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "PONV risk assessment tools and risk stratification protocols are effective in reducing PONV (B1).1 PONV risk scores can be used to inform and guide therapy, reducing institutional level PONV rates, using the Apfel simplified score (Figure 1A) for risk stratification.1,2 Patients without any Apfel risk factors should be considered low risk; those with 1 to 2 risk factors as medium risk; patients with ≥3 as high risk of PONV.",
+          "src": "CINV-02",
+          "cat": "评估与分级"
+        },
+        {
+          "k": "Apfel分值对应PONV发生率",
+          "v": "术后 PONV 场景：Apfel 简化评分 0、1、2、3、4 个风险因素分别对应约 10%、20%、40%、60%、80% 的 PONV 发生率。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "Figure 1.: A, Simplified risk score from Apfel et al to predict the patient’s risk for PONV. 0, 1, 2, 3, and 4 risk factors correspond to PONV risks of approximately 10%, 20%, 40%, 60%, and 80%, respectively.",
+          "src": "CINV-02",
+          "cat": "评估与分级"
+        },
+        {
+          "k": "避免术中低血压与目标导向管理",
+          "v": "术后 PONV 场景：避免术中低血压（B1）与目标导向血流动力学管理（A1）可降低 PONV 风险——属麻醉期生理管理类措施。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "Avoiding intraoperative hypotension (B1)10 and goal directed hemodynamic management (A1)11 may reduce the risk of PONV.",
+          "src": "CINV-02",
+          "cat": "预防方案"
+        },
+        {
+          "k": "围术期止吐药安全性推动联合方案",
+          "v": "术后 PONV 场景：围术期剂量止吐药的安全性证据不断增加，可能推动向更宽松的联合止吐方案转变（与风险分层预防并存）。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "Increasing evidence supports the safety of antiemetics at perioperative dosages, this may shift the paradigm further towards liberal combination antiemetics.",
+          "src": "CINV-02",
+          "cat": "预防方案"
+        },
+        {
+          "k": "PDNV简化评分五要素",
+          "v": "术后 PDNV 场景：简化 PDNV 评分含 5 个因素（女性、年龄 <50 岁、既往 PONV、PACU 用阿片、PACU 恶心），0 to 5 个因素对应发生率约 10% 至 80%。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "PDNV presents a significant risk as patients no longer have access to fast-onset intravenous (IV) antiemetics or direct care. A simplified PDNV score included 5 risk factors: female gender, age <50 years, history of PONV, opioid use in the post-anesthesia care unit (PACU), and nausea in the PACU (Figure 1B),1 the incidence of PDNV with 0 to 5 risk factors to be about 10%, 20%, 30%, 50%, 60%, and 80%, respectively.",
+          "src": "CINV-02",
+          "cat": "评估与分级"
+        },
+        {
+          "k": "CINV按发生时间分五类",
+          "v": "化疗 CINV 场景：按发生时间分 5 类——急性（化疗后 24 h 内，5~6 h 达峰）、延迟性（24 h 后，48~72 h 达峰）、预期性（下一周期化疗前）、暴发性、难治性。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "2.恶心、呕吐分类：恶心、呕吐根据发生时间和治疗效果分为急性、延迟性、预期性、暴发性和难治性5类：（1）急性恶心呕吐发生在化疗后24 h内，通常在给药后5~6 h到达高峰；（2）延迟性恶心呕吐发生在化疗24 h之后，通常在给药后48~72 h到达高峰，可持续6~7 d；（3）预期性恶心呕吐发生在既往接受过化疗，但止吐疗效不佳的患者。由于对化疗产生恐惧心理和条件反射，在下一周期化疗前即产生恶心呕吐反应；（4）暴发性恶心呕吐是指在化疗前预防性使用了止吐药物后，仍出现的恶心呕吐和（或）需要进行解救性止吐治疗，可发生在化疗后的任何时段；（5）难治性恶心呕吐是指既往化疗中使用预防性和（或）解救性止吐治疗失败，在后续化疗中仍出现的恶心呕吐",
+          "src": "CINV-03",
+          "cat": "预防方案"
+        },
+        {
+          "k": "止吐药起始时机与覆盖风险期",
+          "v": "化疗相关恶心呕吐场景：止吐药应在每次抗肿瘤治疗前开始（静脉注射剂首剂前 30 min；口服制剂首剂前 60 min；格拉司琼透皮贴剂首剂前 24~48 h 贴于上臂/前胸），并覆盖整个风险期。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "1.预防用药是控制恶心呕吐的关键：止吐药物应在每次抗肿瘤治疗前开始使用（静脉注射剂在首剂治疗前30 min使用；口服制剂在首剂治疗前60 min使用；格拉司琼透皮贴剂在首剂治疗前24~48 h贴于上臂/前胸皮肤平坦处），并覆盖整个风险期。",
+          "src": "CINV-03",
+          "cat": "预防方案"
+        },
+        {
+          "k": "健康宣教的内容与形式",
+          "v": "化疗相关恶心呕吐场景：健康宣教是预防恶心呕吐的重要环节——使患者认识预防性止吐的重要性、配合规范用药、消除抵触畏难心理；形式含一对一与集体面对面指导、宣教栏、宣教视频、宣教手册、宣教处方。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "1.健康宣教：健康宣教是预防恶心呕吐的重要环节。既要使患者充分认识预防性止吐的重要性，配合药物的规范使用，也要使患者认识到恶心呕吐并非难以避免，消除患者对抗肿瘤治疗的抵触畏难心理。通过一对一和集体面对面指导、宣教栏、宣教视频、宣教手册、宣教处方等多种形式给予患者和家属教育指导。",
+          "src": "CINV-03",
+          "cat": "健康教育"
+        },
+        {
+          "k": "居家随访与自测量表",
+          "v": "化疗相关恶心呕吐场景：居家随访——延迟性 CINV 多发生于离院后，可用短信、电话、微信；建议给患者恶心呕吐自测量表（如 MASCC 止吐评价工具）自报，随访自治疗开始至每周期结束后第 5 天。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "5.居家随访：延迟性恶心呕吐相对急性恶心呕吐更为常见，常常发生于患者离院之后。居家环境中，患者的用药依从性难以得到保证，用药后不良反应难以及时控制。建立完善的随访制度是恶心呕吐防治的终末环节。随访可以采用短信、电话、微信和系统软件等多种形式，建议为患者提供简明清晰的恶心呕吐自测量表协助患者自我报告，例如癌症支持疗法多国学会（MASCC）止吐评价工具（https：//mascc.org/wp-content/uploads/2022/04/mat_chinese_tool.pdf）。随访的时间从治疗开始至每周期治疗结束后第5天；如有居家口服抗肿瘤药物治疗，随访时间应覆盖整个治疗周期。随访内容包括出院后恶心呕吐发生的时间、次数、呕吐物的量和内容物，止吐治疗情况，必要时指导患者及时就医。",
+          "src": "CINV-03",
+          "cat": "健康教育"
+        },
+        {
+          "k": "首次化疗前宣教内容",
+          "v": "化疗相关恶心呕吐场景：首次化疗前由医师与专科护士介绍 CINV 知识（常见副反应、不同类型恶心呕吐治疗原则、常用止吐药使用方法与注意事项），并强调从第一次化疗就接受规范预防以提升依从性。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "患者初次化疗前，医师和专科护士应对患者进行CINV相关知识的介绍，内容包括：抗肿瘤药物的常见副反应、抗肿瘤药物治疗所致不同类型恶心/呕吐的治疗原则、常用止吐药物的使用方法和注意事项等。应当告知患者从第一次化疗就接受规范的CINV预防的重要性，强调规范预防可以有效缓解化疗期间恶心呕吐，借以提升患者治疗依从性。",
+          "src": "CINV-04",
+          "cat": "健康教育"
+        },
+        {
+          "k": "用MAT量表让患者自评",
+          "v": "化疗相关恶心呕吐场景：恶心主观性强，应采用患者自陈式评估工具——含 VAS 的 MASCC 止吐评价工具（MAT）；量表 8 个问题，分别记录化疗后 24 小时内与 24 小时后的恶心呕吐。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "为减少医生护士对患者CINV的低估，应采用患者易于完成的自陈式CINV评估工具，如包含视觉模拟评分量表（visual analogue scale，VAS）的癌症支持性护理跨国协会（Multinational Association of Supportive Care in Cancer，MASCC）止吐评价工具（MASCC antiemesis tool，MAT）。MAT可以帮助患者进行症状自我管理，也增加了患者对治疗的参与度和满意度。量表包括8个问题，记录了化疗后24小时内（急性CINV）和24小时后（延迟性CINV）恶心和呕吐的情况。",
+          "src": "CINV-04",
+          "cat": "评估与分级"
+        },
+        {
+          "k": "非药物行为治疗疗效待验证",
+          "v": "化疗相关恶心呕吐场景：非药物行为治疗（系统性脱敏、意象引导、催眠、渐进性肌肉放松、音乐疗法、运动疗法）对 CINV 可能有效，但疗效仍需进一步验证——属证据有限、可作辅助的措施。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "非药物行为治疗对CINV可能有效。行为治疗主要包括系统性脱敏治疗、意象引导、催眠、渐进性肌肉放松、音乐疗法、运动疗法等。但以上行为治疗的疗效仍需进一步验证。",
+          "src": "CINV-04",
+          "cat": "证据质量"
+        },
+        {
+          "k": "出院宣教内容",
+          "v": "化疗相关恶心呕吐场景：出院宣教——指导患者离院期间遵医嘱使用止吐药，即使感觉良好也鼓励主动报告 CINV 反应并获得用药指导；同时鼓励在院外尝试非药物干预措施预防或缓解恶心呕吐并给予指导。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "指导患者离院期间应遵医嘱使用止吐药，即使患者感觉良好，也要鼓励患者利用多种途径主动报告CINV反应并获得相应用药指导。同时鼓励患者在院外尝试非药物干预措施来预防或缓解恶心呕吐，并给予指导。",
+          "src": "CINV-04",
+          "cat": "健康教育"
+        },
+        {
+          "k": "D.1备注：先非药物后药物",
+          "v": "妊娠早期恶心场景：WHO 备注——无更强证据时这些非药物选项对母婴不太可能有危害；应告知孕妇症状通常在妊娠后半程缓解；多西拉敏、甲氧氯普胺等药物只留给非药物无效者且需医生监督。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "In the absence of stronger evidence, the GDG agreed that these non-pharmacological options are unlikely \nto have harmful effects on mother and baby.\n•\t Women should be informed that symptoms of nausea and vomiting usually resolve in the second half of \npregnancy.\n•\t Pharmacological treatments for nausea and vomiting, such as doxylamine and metoclopramide, should \nbe reserved for those pregnant women experiencing distressing symptoms that are not relieved by non-\npharmacological options, under the supervision of a medical doctor.",
+          "src": "CINV-05",
+          "cat": "健康教育"
+        },
+        {
+          "k": "CINV按发生时间分类",
+          "v": "化疗 CINV 场景：急性 CINV 为给药后 24 小时内发生、一般在 5–6 小时达峰；延迟性 CINV 为给药 24 小时之后开始（顺铂方案 48–72 小时最强，可持续至一周）。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "Acute CINV describes nausea or vomiting that occurs during the 24 hours following a dose of chemotherapy; it generally reaches a peak of intensity after 5–6 hours [2]. Delayed CINV refers to nausea or vomiting that begins at least 24 hours following the dose of chemotherapy. For example, the intensity of CINV in patients receiving treatment with cisplatin-based chemotherapy (classified as HEC) may be at its highest 48–72 hours after treatment and can last for up to a week [2].",
+          "src": "CINV-06",
+          "cat": "评估与分级"
+        },
+        {
+          "k": "按致吐风险评估后预防",
+          "v": "化疗 CINV 场景：所有接受高度（HEC）或中度（MEC）致吐方案者须先做完整 CINV 风险评估（结合方案致吐性与患者因素），再按 2011 版 MASCC 或 NCCN 指南预防用药。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "All patients receiving HEC or MEC should undergo a full assessment of their risk of CINV, taking account of the emetogenicity of the planned chemotherapy regimen and patient factors such as sex, age and history of nausea and vomiting, and then the appropriate prophylactic treatment indicated in the 2011 MASCC or NCCN guidelines should be implemented [2,10].",
+          "src": "CINV-06",
+          "cat": "预防方案"
+        },
+        {
+          "k": "给患者营养与备餐实用建议",
+          "v": "化疗所致恶心呕吐场景：应以美观易读的形式向患者提供 CINV 及其管理信息，强调最佳处理并给出营养与备餐的实用建议以帮助对抗恶心。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "Patients should be offered information on CINV and its management in an attractive, reader-friendly form, emphasizing optimal management and offering practical tips on nutrition and meal preparation to help combat nausea.",
+          "src": "CINV-06",
+          "cat": "健康教育"
+        },
+        {
+          "k": "化疗毒性工具包含患者日记",
+          "v": "化疗所致恶心呕吐场景：建立化疗毒性工具包可改善多类副作用的支持照护，其组成应包括患者日记、便捷的电话支持，并随新化疗方案与支持治疗指南发布而定期更新。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "The development of a chemotherapy toxicity toolkit would improve the supportive care offered across a range of side effects; its features would include:\nPatient diaries\nReady access to telephone support\nRegular updates as new chemotherapy regimens and supportive care guidelines are introduced.",
+          "src": "CINV-06",
+          "cat": "健康教育"
+        },
+        {
+          "k": "宣教形式与内容范围",
+          "v": "腹腔镜术后 PONV 场景：宣教形式应含口头、书面、多媒体、移动应用及一对一或团体咨询；内容覆盖术前、术中、术后护理计划的全部信息（level 1）。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "Educational formats should include oral, written, multimedia, mobile applications, and one-on-one or group counseling. Educational guidance should cover all information related to preoperative, intraoperative, and postoperative care plans (level 1) [53].",
+          "src": "CINV-08",
+          "cat": "健康教育"
+        },
+        {
+          "k": "缺乏支持单一干预的高质量证据",
+          "v": "妊娠早期恶心场景：Cochrane 结论为缺乏支持任何单一干预的高质量证据——不等于无效，而是强证据不足；因人群、干预、对照与结局测量异质，多数结局无法合并。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "Given the high prevalence of nausea and vomiting in early pregnancy, women and health professionals need clear guidance about effective and safe interventions, based on systematically reviewed evidence. There is a lack of high‐quality evidence to support any particular intervention.",
+          "src": "CINV-09",
+          "cat": "证据质量"
+        },
+        {
+          "k": "10项RCT975例仅2项高质量",
+          "v": "化疗所致恶心呕吐场景：证据来自十项随机对照试验、975 例患者，其中仅两项评为高质量、八项为中等质量。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "Ten randomized controlled trials with 975 patients were included. Only two studies were assessed as high quality; eight studies were evaluated as moderate.",
+          "src": "CINV-10",
+          "cat": "证据质量"
+        },
+        {
+          "k": "结论与后续研究需求",
+          "v": "化疗所致恶心呕吐场景：作者结论为内关（PC6）按压在预防与治疗恶心呕吐上有效，但仍需大样本、高质量、设计良好的随机对照试验确定其确切效力。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "The meta-analysis shows the effectiveness of PC6 acupressure in preventing and treating nausea and vomiting. Large, high-quality, well-designed randomized controlled trials are needed in the future to determine the efficacy of PC6 acupressure on chemotherapy-induced nausea and vomiting.",
+          "src": "CINV-10",
+          "cat": "证据质量"
+        },
+        {
+          "k": "各结局证据确定性均为低",
+          "v": "化疗/术后/妊娠恶心呕吐场景：所有结局的证据确定性均评为低，主因难以盲法（薄荷气味独特）、测量工具不一致、小样本致不精确；各研究精油形式、剂量与吸入频次差异大。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "At all outcomes, the certainty of evidence was rated as low, primarily due to methodological concerns, such as the difficulty in blinding (given peppermint’s distinctive scent), inconsistency in measurement tools, and imprecision resulting from small sample sizes (Table 2). Nearly all the included trials had some risk of bias, with many being open-label or lacking adequate blinding. The considerable heterogeneity between the studies, such as differences in the form of peppermint (essential oil vs. spirit), dosage, and frequency of inhalation, further complicates the interpretation of the pooled results.",
+          "src": "CINV-11",
+          "cat": "证据质量"
+        },
+        {
+          "k": "纳入14项RCT急性期恶心无显著差异",
+          "v": "化疗所致恶心呕吐场景：共纳入 14 项随机对照试验、13 种非药物干预；网状 Meta 显示缓解急性期恶心严重程度时，各非药物干预与常规护理及干预之间比较差异均无统计学意义（P＞0.05）。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "最终共纳入14项随机对照试验,涉及13种非药物干预方法.网状Meta分析结果显示,在缓解急性期恶心严重程度方面,不同非药物干预措施与常规护理措施比较,以及不同非药物干预措施间比较,差异均无统计学意义(P＞0.05)",
+          "src": "CINV-12",
+          "cat": "证据质量"
+        }
+      ]
     },
     {
       "id": "NPM_LifestyleCare",
@@ -18061,7 +19020,30 @@
       ],
       "summary": "通过调整生活起居与饮食环境减轻恶心：保持空气流通、无强烈气味、少量多餐、清淡饮食，进食后取半卧位休息，避免过冷过热与油腻食物。 ⚠️ **证据场景**：下列文献的证据场景多为**化疗 / 妊娠 / 术后**恶心呕吐；用于**造影剂相关**恶心呕吐（生理性反应）属**跨场景外推**，只能作辅助措施，**不替代**规范处理。",
       "attrs": [],
-      "evidence": []
+      "evidence": [],
+      "details": [
+        {
+          "k": "饮食运动指导与心理护理",
+          "v": "化疗相关恶心呕吐场景：饮食与运动指导——选择易消化食物、少食多餐、避免辛辣刺激及生冷食物，必要时加强肠外营养支持；鼓励适度运动。心理护理可用音乐疗法、认知转移、肌肉放松协助减轻恶心呕吐。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "3.饮食和运动指导：合理膳食有助于减轻恶心呕吐，如选择易消化食物，少食多餐，避免辛辣刺激及生冷食物。对于鼻饲饮食、胃造瘘或进食困难的患者，适当加强肠外营养支持，必要时请营养科指导营养治疗。综合患者体力评分、疾病情况等，鼓励患者治疗期间进行适度运动，有助于增加食欲，促进消化，缓解恶心呕吐。\n\n\n4.心理护理：加强沟通，及时了解和掌握患者和家属的心理状态，为患者提供心理疏导，增强治疗信心。可以通过音乐疗法、认知转移、肌肉放松等协助患者减轻恶心呕吐。",
+          "src": "CINV-03",
+          "cat": "起居护理"
+        },
+        {
+          "k": "用餐环境与进食方式指导",
+          "v": "化疗相关恶心呕吐场景：营造适宜用餐环境、减少强烈气味与视觉刺激、适时通风、穿宽松衣服；少食多餐、小口喝水保证足够液体；避免过烫辛辣油腻油炸食物；呕吐后立即清水漱口，30～60 分钟后再进食。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "营造适宜的用餐环境，尽量减少强烈的气味及视觉刺激，适时通风，穿宽松的衣服。少食多餐，小口喝水，确保饮入足够的液体。避免食用过烫、辛辣、过甜、油腻或油炸食品。鼓励患者根据地区饮食习惯特色，在上述建议内合理选择适口的饮食。发生呕吐后应立即清水漱口，30～60分钟后先喝少许清水，再尝试食用面食及蛋白质丰富的食物，最后增加奶制品。",
+          "src": "CINV-04",
+          "cat": "起居护理"
+        },
+        {
+          "k": "头抬高位与咀嚼口香糖",
+          "v": "腹腔镜术后 PONV 场景：术后头抬高体位可降低 PONV 发生率（Level 1）；咀嚼口香糖可降低 POV（Level 1）；落实 ERAS 亦可降低 PONV（Level 1）。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "Body position: maintaining a head-elevated position postoperatively reduces the incidence of PONV (Level 1) [8, 42].\n19. Chewing gum: chewing gum after surgery reduces the incidence of POV (Level 1) [8, 15, 17].\n20. ERAS: adherence to specific ERAS protocols reduces the incidence of PONV in laparoscopic surgery patients (Level 1) [47, 48, 51, 54, 62].",
+          "src": "CINV-08",
+          "cat": "起居护理"
+        }
+      ]
     },
     {
       "id": "NPM_FluidTherapy",
@@ -18076,50 +19058,23 @@
       ],
       "summary": "呕吐导致摄入不足时按医嘱补充水分与电解质，维持水电解质平衡。轻症以口服补液为先；重症（如妊娠剧吐伴脱水）需静脉补液并补充硫胺素。 ⚠️ **证据场景**：下列文献的证据场景多为**化疗 / 妊娠 / 术后**恶心呕吐；用于**造影剂相关**恶心呕吐（生理性反应）属**跨场景外推**，只能作辅助措施，**不替代**规范处理。",
       "attrs": [],
-      "evidence": []
-    },
-    {
-      "id": "NT_SelfCareTheory",
-      "name": "自护理论",
-      "type": "NursingTheory",
-      "tags": [
-        "护理理论",
-        "自护理论"
-      ],
-      "aliases": [
-        "Orem 自护理论",
-        "自我护理理论",
-        "Orem's Self-Care Deficit Nursing Theory",
-        "SCDNT"
-      ],
-      "summary": "自护理论（Orem，1971）认为人天生具备自我护理的能力，护理的任务是在患者自护能力不足时提供补偿与支持。落到本主题：指导患者与家属参与打针前的准备、检查后的观察，以及居家自我照护与早期求助。",
-      "attrs": [
+      "evidence": [],
+      "details": [
         {
-          "k": "理论提出者",
-          "v": "Dorothea E. Orem"
+          "k": "静脉补液用生理盐水加钾",
+          "v": "妊娠剧吐场景：静脉补液首选生理盐水 0.9% 氯化钠并在每袋加氯化钾，依每日电解质监测调整（[Grade C]）。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "Normal saline (0.9% NaCl) with additional potassium chloride in each bag, with administration guided by daily monitoring of electrolytes, is the most appropriate intravenous hydration. [Grade C]",
+          "src": "CINV-01",
+          "cat": "液体疗法"
         },
         {
-          "k": "提出年份",
-          "v": "1971"
-        },
-        {
-          "k": "理论依据",
-          "v": "系统评价与剂量反应 Meta 分析（Nasiri 等 2023）—— 纳入 46 项研究"
+          "k": "呕吐者先补硫胺素再给葡萄糖",
+          "v": "妊娠剧吐场景：所有因呕吐或进食严重减少入院者均应补硫胺素——口服 100 mg tds 或静脉维生素 B 复方，须在给葡萄糖或肠外营养之前使用（[Grade D]）。用于造影剂相关恶心呕吐属跨场景外推，只作辅助。",
+          "quote": "Thiamine supplementation (either oral 100 mg tds or intravenous as part of vitamin B complex (Pabrinex®)) should be given to all women admitted with vomiting, or severely reduced dietary intake, especially before administration of dextrose or parenteral nutrition. [Grade D]",
+          "src": "CINV-01",
+          "cat": "液体疗法"
         }
-      ],
-      "evidence": [
-        {
-          "type": "系统评价",
-          "author": "Nasiri M, Jafari Z, Rakhshan M, Yarahmadi F, et al.",
-          "title": "Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析",
-          "journal": "国际护理评论",
-          "year": 2023,
-          "cite": "Nasiri M, Jafari Z, Rakhshan M, Yarahmadi F, et al. / Orem 自护理论照护方案在慢性病成人中的应用：系统评价与剂量反应 Meta 分析 / 国际护理评论 / 2023",
-          "grade": "汇总证据",
-          "ref": "R24"
-        }
-      ],
-      "graph": "topic-01"
+      ]
     },
     {
       "id": "FW_SymptomSign",
@@ -24236,6 +25191,162 @@
       "label": "出处"
     },
     {
+      "source": "DE_NauseaHealthEducation",
+      "target": "CINV-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_FluidTherapy",
+      "target": "CINV-01",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "DE_NauseaHealthEducation",
+      "target": "CINV-02",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "DE_NauseaHealthEducation",
+      "target": "CINV-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_LifestyleCare",
+      "target": "CINV-03",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_LifestyleCare",
+      "target": "CINV-04",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "DE_NauseaHealthEducation",
+      "target": "CINV-04",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_GingerTherapy",
+      "target": "CINV-05",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "DE_NauseaHealthEducation",
+      "target": "CINV-05",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_AcupointStimulation",
+      "target": "CINV-05",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "DE_NauseaHealthEducation",
+      "target": "CINV-06",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_AcupointStimulation",
+      "target": "CINV-08",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_Aromatherapy",
+      "target": "CINV-08",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "DE_NauseaHealthEducation",
+      "target": "CINV-08",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_LifestyleCare",
+      "target": "CINV-08",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_GingerTherapy",
+      "target": "CINV-09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_AcupointStimulation",
+      "target": "CINV-09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "DE_NauseaHealthEducation",
+      "target": "CINV-09",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_AcupointStimulation",
+      "target": "CINV-10",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "DE_NauseaHealthEducation",
+      "target": "CINV-10",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_Aromatherapy",
+      "target": "CINV-11",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "DE_NauseaHealthEducation",
+      "target": "CINV-11",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_GingerTherapy",
+      "target": "CINV-12",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_AcupointStimulation",
+      "target": "CINV-12",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NPM_Aromatherapy",
+      "target": "CINV-12",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "DE_NauseaHealthEducation",
+      "target": "CINV-12",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
       "source": "MP_NursingPrevention",
       "target": "CN-12",
       "type": "SUPPORTED_BY",
@@ -24279,6 +25390,12 @@
     },
     {
       "source": "AT_ExtravasationAssessment",
+      "target": "CN-14",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NT_SelfCareTheory",
       "target": "CN-14",
       "type": "SUPPORTED_BY",
       "label": "出处"
@@ -26134,6 +27251,12 @@
     {
       "source": "RF_ContrastAllergyHistory",
       "target": "R23",
+      "type": "SUPPORTED_BY",
+      "label": "出处"
+    },
+    {
+      "source": "NT_SelfCareTheory",
+      "target": "R24",
       "type": "SUPPORTED_BY",
       "label": "出处"
     },
@@ -29296,12 +30419,6 @@
     {
       "source": "FW_FunctionalStatus",
       "target": "R02",
-      "type": "SUPPORTED_BY",
-      "label": "出处"
-    },
-    {
-      "source": "NT_SelfCareTheory",
-      "target": "R24",
       "type": "SUPPORTED_BY",
       "label": "出处"
     }
