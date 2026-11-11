@@ -22,6 +22,8 @@
         data/<topicKey>-graph.json     图谱数据（自包含）
         data/<topicKey>-graph.js       同一份数据的 JS 副本（避免 file:// 跨域）
         data/<topicKey>-triples.csv    5 列表原件（输入形态）
+        data/<topicKey>-triples.js     5 列表的 JS 副本（三元组页直接读它）
+        triples.html                   三元组表页（可直接看 · 可搜索 · 可下 CSV）
         data/<topicKey>-patient.json   患者层数据（可选：导语 + 免责 + 就医警示）
         data/<topicKey>-patient.js     同一份数据的 JS 副本（页面直接读它）
         data/search-terms.json         检索词清单（校验规则第 5 条的对照夹具）
@@ -83,6 +85,7 @@ _fix_console_encoding()
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 TEMPLATE_INDEX = os.path.join(HERE, "template", "index.html")
+TEMPLATE_TRIPLES = os.path.join(HERE, "template", "triples.html")
 ECHARTS_SRC = os.path.join(HERE, "lib", "echarts.min.js")
 
 # --------------------------------------------------------------------------
@@ -922,6 +925,42 @@ def copy_if_different(src, dst):
     return True
 
 
+def read_triples_csv(csv_path):
+    """读 5 列表 → 行数组（每行 5 列，已去 BOM · 去空行）
+
+    ⛔ 表头行（sub_type / 类型 / src_type）不算数据行 —— 页面上的表头是另一套中文。
+    """
+    with open(csv_path, "r", encoding="utf-8-sig", newline="") as f:
+        rows = [r for r in csv.reader(f) if r and any(str(c).strip() for c in r)]
+    if rows and rows[0] and str(rows[0][0]).strip() in ("sub_type", "类型", "src_type"):
+        rows = rows[1:]
+    out = []
+    for r in rows:
+        cells = [str(c).strip() for c in r[:5]]
+        if len(cells) < 5:
+            continue
+        out.append(cells)
+    return out
+
+
+def write_triples_js(csv_path, dst_path, type_labels=None):
+    """把 5 列表写成 JS 副本 —— 三元组页（triples.html）直接读它
+
+    为什么要有 JS 副本：页面是 `file://` 双击直开的静态页，`fetch` CSV 会被浏览器的
+    跨域规则挡住（和图谱数据同一道坎）⇒ 数据随页面内联，不走 fetch。
+
+    type_labels —— 节点类型 key → 中文标签（来自数据文件的 nodeTypes）。
+    ⛔ CSV 里的类型列是**英文 key**（客户规范 §三 的输入形态）⇒ 页面上换成中文
+       标签才读得懂；英文 key 保留在单元格的 title 里（要核对原始形态时可看）。
+    """
+    rows = read_triples_csv(csv_path)
+    payload = {"rows": rows, "labels": type_labels or {}}
+    with open(dst_path, "w", encoding="utf-8", newline="\n") as f:
+        f.write("window.KG_TRIPLES = %s;\n"
+                % json.dumps(payload, ensure_ascii=False, separators=(",", ":")))
+    return len(rows)
+
+
 # --------------------------------------------------------------------------
 # 患者层（给患者看的那一层：一句导语 + 免责声明 + 就医警示）
 # --------------------------------------------------------------------------
@@ -1022,7 +1061,22 @@ def build_one(topic_key, data, src_path, out_root, rep, terms_source):
     # 3b · 5 列表（输入形态的原件：随包提供 → 客户可重跑对照，也可直接 --from-triples 重建）
     csv_src = os.path.join(os.path.dirname(os.path.abspath(src_path)),
                            os.path.basename(src_path).replace("-graph.json", "-triples.csv"))
-    copy_if_different(csv_src, os.path.join(data_dir, "%s-triples.csv" % topic_key))
+    csv_dst = os.path.join(data_dir, "%s-triples.csv" % topic_key)
+    copy_if_different(csv_src, csv_dst)
+
+    # 3b-2 · 5 列表的 JS 副本 —— 三元组页（triples.html）直接读它
+    #        （页面走 file:// 直开 ⇒ fetch CSV 会被跨域挡住 ⇒ 数据内联成 JS）
+    triples_rows = 0
+    if os.path.exists(csv_dst):
+        try:
+            type_labels = dict([(str(t.get("key")), str(t.get("label") or t.get("key")))
+                                for t in (data.get("nodeTypes") or [])
+                                if isinstance(t, dict)])
+            triples_rows = write_triples_js(
+                csv_dst, os.path.join(data_dir, "%s-triples.js" % topic_key),
+                type_labels=type_labels)
+        except Exception as e:
+            raise StructureGateError("5 列表转 JS 失败：%s（%s）" % (csv_dst, e))
 
     # 3c · 分题类型组对照表（随包提供 → 校验脚本在交付目录里也能跑完整套判据）
     groups_src = None
@@ -1094,6 +1148,28 @@ def build_one(topic_key, data, src_path, out_root, rep, terms_source):
     elif not os.path.exists(index_dst):
         raise RuntimeError("找不到页面模板，且目录里没有现成的 index.html：%s" % out_dir)
 
+    # 5-2 · 三元组表页（客户要「直接看到那张表」时打开的就是它）
+    #        ⛔ 页面里的数据来自 data/<key>-triples.js（上面 3b-2 生成的），
+    #           页面本身**不 fetch** —— file:// 双击直开也能用。
+    triples_dst = os.path.join(out_dir, "triples.html")
+    if os.path.exists(TEMPLATE_TRIPLES):
+        with open(TEMPLATE_TRIPLES, "r", encoding="utf-8") as f:
+            tpl_t = f.read()
+        page_t = tpl_t.replace("{{TOPIC_KEY}}", topic_key)
+        leftover_t = re.findall(r"\{\{[A-Z_]+\}\}", page_t)
+        if leftover_t:
+            raise StructureGateError(
+                "三元组页模板有未替换的占位符：%s —— **已中止，未写出 triples.html**"
+                % " · ".join(sorted(set(leftover_t))))
+        static_t = check_html_static(page_t, anchors=())
+        if static_t:
+            raise StructureGateError(
+                "三元组页静态结构不通过 —— **已中止，未写出 triples.html**\n"
+                "文件：%s\n%s"
+                % (triples_dst, "\n".join("   · " + x for x in static_t)))
+        with open(triples_dst, "w", encoding="utf-8", newline="\n") as f:
+            f.write(page_t)
+
     # 6 · 构建脚本（把自己带进交付目录，客户可自行重跑）
     copy_if_different(os.path.abspath(__file__), os.path.join(out_dir, "build.py"))
 
@@ -1109,7 +1185,7 @@ def build_one(topic_key, data, src_path, out_root, rep, terms_source):
     write_neo4j_pack(out_dir, data)
 
     rep.add("-", "产出目录（%s）" % tag_of(src_path), True, out_dir)
-    return out_dir
+    return out_dir, triples_rows
 
 
 def tag_of(path):
@@ -1313,11 +1389,16 @@ def split_raw_text_bodies(html):
     return p.items
 
 
-def check_html_static(html):
+def check_html_static(html, anchors=None):
     """静态结构检查（纯标准库）—— 返回问题清单（空 = 通过）。
 
     每条问题都带编号（S1/S2/…），便于回报时指名道姓地说清「哪一项不匹配」。
+
+    anchors —— 必备锚点（needle, 说明）序列；默认用图谱页那套。
+               传空元组 = 只查标签配平与裸标签字面量（副页面用）。
     """
+    if anchors is None:
+        anchors = REQUIRED_ANCHORS
     problems = []
     low = html.lower()
     # 计数前先剥掉 HTML 注释 —— 注释里写「<script>」是说明文字，不是标签
@@ -1353,17 +1434,19 @@ def check_html_static(html):
                     % (seq[tag], tag, probe, probe))
 
     # S4 · 必备锚点
-    for needle, human in REQUIRED_ANCHORS:
+    for needle, human in anchors:
         if needle not in html:
             problems.append("S4 缺少必备结构：%s（找的是 %s）" % (human, needle))
 
     # S5 · KG-CORE 标记成对（检索层自测按这两个标记抽代码块）
-    ns = html.count("KG-CORE-START")
-    ne = html.count("KG-CORE-END")
-    if ns != 1 or ne != 1:
-        problems.append(
-            "S5 KG-CORE 标记不成对：KG-CORE-START × %d / KG-CORE-END × %d"
-            "（检索层自测按这两个标记抽代码块）" % (ns, ne))
+    #     ⛔ 只对图谱页成立 —— 副页面（triples.html）没有检索核心，不查。
+    if anchors is REQUIRED_ANCHORS:
+        ns = html.count("KG-CORE-START")
+        ne = html.count("KG-CORE-END")
+        if ns != 1 or ne != 1:
+            problems.append(
+                "S5 KG-CORE 标记不成对：KG-CORE-START × %d / KG-CORE-END × %d"
+                "（检索层自测按这两个标记抽代码块）" % (ns, ne))
 
     return problems
 
@@ -1627,6 +1710,81 @@ def check_render_mobile(index_path, timeout_ms=RENDER_TIMEOUT_MS):
     return problems, ""
 
 
+def check_render_triples(triples_path, expect_rows=0, timeout_ms=RENDER_TIMEOUT_MS):
+    """三元组页渲染检查 —— 真跑一次浏览器
+
+    断言：页面无未捕获异常 · 数据已装载（window.KG_TRIPLES 非空）·
+          **表格里真的渲染出了行**（不是空表）· 行数与数据一致（截断上限内）。
+
+    为什么单列一层：这个页面是**客户直接打开看的表** —— 空表比不提供这个页面更糟
+    （客户会说「表是空的」）。闸门必须能抓到「数据没装上」和「渲染没跑」。
+    """
+    try:
+        from playwright.sync_api import sync_playwright
+    except Exception as e:
+        return [], "跳过（本机没有 playwright：%s）" % e
+
+    problems = []
+    errors = []
+    try:
+        with sync_playwright() as pw:
+            browser = pw.chromium.launch()
+            try:
+                page = browser.new_page(viewport={"width": 1440, "height": 900})
+                page.on("pageerror", lambda e: errors.append("未捕获异常：%s" % e))
+                page.on("console", lambda m: errors.append("console.error：%s" % m.text)
+                        if m.type == "error" else None)
+                page.goto(_file_uri(triples_path))
+                page.wait_for_timeout(900)
+                state = page.evaluate("""() => {
+                    const D = window.KG_TRIPLES || {rows: [], labels: {}};
+                    const rows = D.rows || [];
+                    const cell = document.querySelector('#tb tr td');
+                    return {
+                        dataRows: rows.length,
+                        firstRow: rows.length ? rows[0] : null,
+                        firstRowCols: rows.length ? rows[0].length : 0,
+                        domRows: document.querySelectorAll('#tb tr').length,
+                        meta: (document.getElementById('meta')||{}).textContent || '',
+                        csvHref: (document.getElementById('dl')||{}).getAttribute('href') || '',
+                        labelCount: Object.keys(D.labels || {}).length,
+                        firstTypeText: cell ? cell.textContent.trim() : '',
+                        firstTypeTitle: cell ? (cell.getAttribute('title') || '') : ''
+                    };
+                }""")
+            finally:
+                browser.close()
+    except Exception as e:
+        return [], "跳过（playwright 起不来：%s）" % e
+
+    for msg in errors:
+        problems.append("T1 页面报错：%s" % msg)
+
+    if state["dataRows"] <= 0:
+        problems.append("T2 三元组数据是空的（window.KG_TRIPLES = %d 行）"
+                        " —— 表页会显示成空表" % state["dataRows"])
+    if state["firstRowCols"] != 5:
+        problems.append("T3 三元组每行不是 5 列（实际 %d 列）" % state["firstRowCols"])
+    if state["domRows"] <= 0:
+        problems.append("T4 表格里一行都没渲染出来（#tb tr = %d）" % state["domRows"])
+    if state["domRows"] > 0 and state["dataRows"] > 0:
+        # 页面上限 5000 行；数据更多时只显示前 5000 行 ⇒ 只能对「不超过上限」的情况查等号
+        if state["dataRows"] <= 5000 and state["domRows"] != state["dataRows"]:
+            problems.append("T5 页面渲染 %d 行，但数据有 %d 行 —— 对不上"
+                            % (state["domRows"], state["dataRows"]))
+    if expect_rows and state["dataRows"] != expect_rows:
+        problems.append("T6 三元组行数 %d ≠ 5 列表行数 %d" % (state["dataRows"], expect_rows))
+    if "csv" not in (state["csvHref"] or "").lower():
+        problems.append("T7 下载 CSV 的链接没指向 CSV（href = %r）" % state["csvHref"])
+    # T8 · 类型列显示的应是**中文标签**，不是英文 key（英文 key 留在 title 里）
+    if state["labelCount"] <= 0:
+        problems.append("T8 类型中文标签表是空的 —— 类型列会显示成 SymptomSign 这类英文 key")
+    elif state["firstTypeText"] and state["firstTypeText"] == state["firstTypeTitle"]:
+        problems.append("T9 类型列显示的还是英文 key（%r）—— 客户端读不懂" % state["firstTypeText"])
+
+    return problems, ""
+
+
 def structure_gate(index_path, do_render=True, do_js=True):
     """对产出页面跑完整结构闸门。
 
@@ -1803,7 +1961,7 @@ def main(argv):
         if d is None:
             continue
         try:
-            out_dir = build_one(tk, d, p, out_root, rep, terms_source)
+            out_dir, triples_rows = build_one(tk, d, p, out_root, rep, terms_source)
         except StructureGateError as e:
             print("\n⛔ 结构闸门不通过 —— 已中止构建：\n%s" % e)
             return 1
@@ -1821,6 +1979,24 @@ def main(argv):
             for pb in probs:
                 print("        · %s" % pb)
             gate_problems.extend(probs)
+
+        # ---- 结构闸门：三元组表页（客户直接打开看的那张表）
+        triples_path = os.path.join(out_dir, "triples.html")
+        if os.path.exists(triples_path):
+            t_probs, t_skip = check_render_triples(triples_path, expect_rows=triples_rows)
+            print("   结构闸门（%s）" % triples_path)
+            print("      · %-42s %s" % (
+                "T · 三元组表页渲染（真跑一次）",
+                "通过" if not t_probs else ("不通过（%d 项）" % len(t_probs)
+                                           if not t_skip else t_skip)))
+            if t_probs:
+                for pb in t_probs:
+                    print("        · %s" % pb)
+                gate_problems.extend(t_probs)
+        else:
+            print("   结构闸门（%s）" % triples_path)
+            print("      · %-42s %s" % ("T · 三元组表页渲染（真跑一次）",
+                                        "跳过（目录里没有 triples.html）"))
     if gate_problems:
         print("\n⛔ 结构闸门未通过（%d 项）—— **本次产出不可交付**" % len(gate_problems))
         return 1

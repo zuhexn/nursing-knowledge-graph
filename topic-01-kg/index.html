@@ -620,6 +620,26 @@
   .tab.on{background:rgba(168,100,4,.12);color:var(--accent);font-weight:600;}
   .tab:hover{color:var(--accent-2);}
 
+  /* 三元组表入口（客户 2026-11-11：「这个表我看看是咋样的」⇒ 给一个直接能点开的入口）
+     ⛔ **窄屏不出现在顶栏** —— 顶栏在手机上只剩 ~115px 给标题（标题本来就要截断），
+        再塞一个 72px 的链接会把标题挤成「CT增强扫…」。窄屏改放在列表页导语下方。 */
+  #triplesLink{
+    flex:0 0 auto;font-family:inherit;font-size:13px;line-height:1.4;
+    color:var(--accent-2);text-decoration:none;white-space:nowrap;
+    padding:6px 9px;border-radius:9px;border:1px solid var(--line);background:var(--panel-2);
+  }
+  #triplesLink:hover{background:#e3eefb;border-color:var(--accent-2);}
+  @media (max-width:860px){ #triplesLink{display:none;} }
+
+  /* 列表页里的三元组表入口（窄屏用）*/
+  .lg-triples{
+    display:inline-flex;align-items:center;gap:6px;margin:2px 0 12px;
+    padding:8px 12px;border-radius:10px;border:1px solid var(--line);background:var(--panel-2);
+    color:var(--accent-2);font-size:14px;text-decoration:none;font-family:inherit;
+  }
+  .lg-triples:hover{border-color:var(--accent-2);}
+  @media (min-width:861px){ .lg-triples{display:none;} }
+
   /* 列表视图里不出现画布专属控件 */
   body[data-view="list"] #legend,body[data-view="list"] #suggest{display:none;}
 
@@ -694,6 +714,7 @@
         <button type="button" class="tab" id="tabList" data-view="list">知识浏览</button>
         <button type="button" class="tab" id="tabGraph" data-view="graph">全景图</button>
       </div>
+      <a id="triplesLink" href="./triples.html" title="三元组表：全部关联关系逐条列出（主体 · 关系 · 客体）">三元组表</a>
     </div>
 
     <div id="searchWrap">
@@ -1404,7 +1425,8 @@
     var disc  = (PG && PG.disclaimer) ? PG.disclaimer : DEFAULT_DISCLAIMER;
     lgIntro.innerHTML =
       (intro ? '<p class="lg-lead">' + esc(intro) + '</p>' : '') +
-      '<p class="lg-disc">' + esc(disc) + '</p>';
+      '<p class="lg-disc">' + esc(disc) + '</p>' +
+      '<a class="lg-triples" href="./triples.html">查看三元组表 →</a>';
 
     /* 就医警示 —— 患者第一屏走「分诊」：逐条点选 → 直接给行动。
        静态列表只回答「有哪些危险」，分诊回答「我现在该怎么」。 */
