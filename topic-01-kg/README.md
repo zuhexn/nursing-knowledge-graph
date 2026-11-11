@@ -8,6 +8,7 @@
 | 方式 | 做法 |
 |---|---|
 | 本地看 | 双击 `index.html`（数据走 `data/*.js` 副本，浏览器本地打开不受跨域限制）|
+| 看三元组表 | 双击 `triples.html` —— 每条关联关系一行（主体 · 关系 · 客体），可搜索、可下 CSV |
 | 上线 | 整个目录原样丢进任意静态托管（对象存储 / CDN / 静态站点），无需服务端配置 |
 
 ⛔ 页面**不请求任何后端接口**，也**不连数据库**——数据随目录发布，检索在浏览器里算。
@@ -17,10 +18,12 @@
 ```
 topic-01-kg/
 ├── index.html                     单页图谱（卡片流 + 全景图 + 检索 + 节点详情）
+├── triples.html                   三元组表页（每条关联关系一行 · 可搜索 · 可下 CSV）
 ├── lib/echarts.min.js             图形库（本地内置 · 断网也能打开）
 ├── data/topic-01-graph.json     图谱数据（自包含：类型定义 + 节点 + 边 + 文献出处）
 ├── data/topic-01-graph.js       同一份数据的 JS 副本（页面直接读它）
 ├── data/topic-01-triples.csv    5 列表原件（输入形态 · 可直接重新生成图谱数据）
+├── data/topic-01-triples.js     5 列表的 JS 副本（三元组页直接读它）
 ├── data/topic-01-patient.json   患者层数据（可选：一句导语 + 免责声明 + 就医警示）
 ├── data/topic-01-patient.js     同一份数据的 JS 副本（页面直接读它）
 ├── data/search-terms.json         检索词清单（校验规则第 5 条的对照夹具）
@@ -101,4 +104,4 @@ python build.py --from-triples 三元组.csv --out-graph 图谱数据.json
 在 Browser 里执行 `import.cypher`。它是**可选件**，页面本身不需要数据库。
 
 ---
-生成于 2026-11-11 15:28
+生成于 2026-11-11 15:35

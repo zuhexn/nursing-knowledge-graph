@@ -818,6 +818,7 @@ README_TMPL = """# {topic_name} · 知识图谱（静态交付包）
 | 方式 | 做法 |
 |---|---|
 | 本地看 | 双击 `index.html`（数据走 `data/*.js` 副本，浏览器本地打开不受跨域限制）|
+| 看三元组表 | 双击 `triples.html` —— 每条关联关系一行（主体 · 关系 · 客体），可搜索、可下 CSV |
 | 上线 | 整个目录原样丢进任意静态托管（对象存储 / CDN / 静态站点），无需服务端配置 |
 
 ⛔ 页面**不请求任何后端接口**，也**不连数据库**——数据随目录发布，检索在浏览器里算。
@@ -827,10 +828,12 @@ README_TMPL = """# {topic_name} · 知识图谱（静态交付包）
 ```
 {topic_key}-kg/
 ├── index.html                     单页图谱（卡片流 + 全景图 + 检索 + 节点详情）
+├── triples.html                   三元组表页（每条关联关系一行 · 可搜索 · 可下 CSV）
 ├── lib/echarts.min.js             图形库（本地内置 · 断网也能打开）
 ├── data/{topic_key}-graph.json     图谱数据（自包含：类型定义 + 节点 + 边 + 文献出处）
 ├── data/{topic_key}-graph.js       同一份数据的 JS 副本（页面直接读它）
 ├── data/{topic_key}-triples.csv    5 列表原件（输入形态 · 可直接重新生成图谱数据）
+├── data/{topic_key}-triples.js     5 列表的 JS 副本（三元组页直接读它）
 ├── data/{topic_key}-patient.json   患者层数据（可选：一句导语 + 免责声明 + 就医警示）
 ├── data/{topic_key}-patient.js     同一份数据的 JS 副本（页面直接读它）
 ├── data/search-terms.json         检索词清单（校验规则第 5 条的对照夹具）
@@ -1448,6 +1451,16 @@ def check_html_static(html, anchors=None):
                 "S5 KG-CORE 标记不成对：KG-CORE-START × %d / KG-CORE-END × %d"
                 "（检索层自测按这两个标记抽代码块）" % (ns, ne))
 
+    # S6 · 页面正文里不得有 NUL 字节
+    #     真踩过：模板里一个本该是空格的字符写成了 NUL ⇒ 浏览器照样跑得通
+    #     （NUL 是合法 JS 字符串字符）⇒ **没有任何运行时症状**，
+    #     但 git 会因此把整个 HTML 判成二进制 ⇒ diff 全废、合并冲突看不懂、
+    #     交付包里的文件带着不可见垃圾。静态结构层抓它最省事。
+    if "\x00" in html:
+        problems.append(
+            "S6 页面里有 NUL 字节（%d 处）—— 浏览器可能照样跑，但 git 会把文件判成"
+            "二进制（diff 全废），交付包里也带着不可见垃圾" % html.count("\x00"))
+
     return problems
 
 
@@ -1785,6 +1798,34 @@ def check_render_triples(triples_path, expect_rows=0, timeout_ms=RENDER_TIMEOUT_
     return problems, ""
 
 
+def check_text_files_clean(out_dir, topic_key):
+    """产出目录里的**文本文件**不得含 NUL 字节 —— 返回问题清单（空 = 通过）
+
+    为什么单独查数据文件：`check_html_static` 只查页面；`data/*.js` / `*.json` / `*.csv`
+    是同一类脏字节的落点（模板里的一个坏字符会被原样写进产物）。
+    判据 = 文件前 64 KiB 里出现 NUL ⇒ 报出来（NUL 出现得再晚也报）。
+    """
+    problems = []
+    text_ext = (".html", ".js", ".json", ".csv", ".md", ".txt", ".py", ".cypher")
+    for root, dirs, files in os.walk(out_dir):
+        dirs.sort()
+        for fn in sorted(files):
+            if not fn.lower().endswith(text_ext):
+                continue
+            p = os.path.join(root, fn)
+            try:
+                with open(p, "rb") as f:
+                    blob = f.read()
+            except Exception as e:
+                problems.append("读不了 %s：%s" % (os.path.relpath(p, out_dir), e))
+                continue
+            n = blob.count(b"\x00")
+            if n:
+                problems.append("%s 里有 %d 个 NUL 字节 —— git 会把它判成二进制"
+                                % (os.path.relpath(p, out_dir).replace("\\", "/"), n))
+    return problems
+
+
 def structure_gate(index_path, do_render=True, do_js=True):
     """对产出页面跑完整结构闸门。
 
@@ -1997,6 +2038,15 @@ def main(argv):
             print("   结构闸门（%s）" % triples_path)
             print("      · %-42s %s" % ("T · 三元组表页渲染（真跑一次）",
                                         "跳过（目录里没有 triples.html）"))
+
+        # ---- 结构闸门：产出目录里的文本文件不得含 NUL 字节
+        nul_problems = check_text_files_clean(out_dir, tk)
+        print("      · %-42s %s" % (
+            "N · 文本文件无 NUL 字节（git 不判二进制）",
+            "通过" if not nul_problems else "不通过（%d 项）" % len(nul_problems)))
+        for pb in nul_problems:
+            print("        · %s" % pb)
+        gate_problems.extend(nul_problems)
     if gate_problems:
         print("\n⛔ 结构闸门未通过（%d 项）—— **本次产出不可交付**" % len(gate_problems))
         return 1
