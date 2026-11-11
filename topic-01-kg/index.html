@@ -347,6 +347,20 @@
   /* 只作出处引用（自身没有知识点）的文献 —— 淡显，让「有支撑的」一眼可辨 */
   .lg-lit.only-cite{background:transparent;border-style:dashed;}
   .lg-lit.only-cite .lg-lit-name{color:var(--text-dim);}
+  /* 文献类型标签（客户 2026-11-11 问「都是什么文献」）*/
+  .lg-lit-type{
+    flex:0 0 auto;font-size:12px;line-height:1.6;color:var(--text-dim);
+    background:var(--panel-2);border:1px solid var(--line);border-radius:5px;padding:1px 6px;
+    white-space:nowrap;
+  }
+  /* 文献构成（按证据层级）*/
+  .lg-lit-levels{
+    display:flex;flex-direction:column;gap:4px;margin:0 0 10px;
+    padding:11px 13px;border-radius:10px;background:var(--panel-2);border:1px solid var(--line);
+  }
+  .lg-lit-levels .row{display:flex;align-items:baseline;gap:8px;font-size:13.5px;line-height:1.8;}
+  .lg-lit-levels .row b{color:var(--accent-2);font-size:15px;}
+  .lg-lit-levels .row span{color:var(--text-dim);}
 
   /* ---------- 首屏遮罩 ---------- */
   #loading{
@@ -631,14 +645,15 @@
   #triplesLink:hover{background:#e3eefb;border-color:var(--accent-2);}
   @media (max-width:860px){ #triplesLink{display:none;} }
 
-  /* 列表页里的三元组表入口（窄屏用）*/
-  .lg-triples{
-    display:inline-flex;align-items:center;gap:6px;margin:2px 0 12px;
-    padding:8px 12px;border-radius:10px;border:1px solid var(--line);background:var(--panel-2);
-    color:var(--accent-2);font-size:14px;text-decoration:none;font-family:inherit;
+  /* 列表页末尾的三元组表入口（**次要入口** · 安静样式）
+     —— 客户 2026-11-11：「放在最后面吧，不然他们会点击」
+        患者层须知才是这一页的主内容，入口不能跟它抢注意力。 */
+  .lg-foot-link{
+    display:inline-block;margin:26px 0 8px;padding:7px 11px;border-radius:8px;
+    border:1px solid var(--line);background:transparent;color:var(--text-dim);
+    font-size:13px;text-decoration:none;font-family:inherit;
   }
-  .lg-triples:hover{border-color:var(--accent-2);}
-  @media (min-width:861px){ .lg-triples{display:none;} }
+  .lg-foot-link:hover{border-color:var(--accent-2);color:var(--accent-2);}
 
   /* 列表视图里不出现画布专属控件 */
   body[data-view="list"] #legend,body[data-view="list"] #suggest{display:none;}
@@ -744,6 +759,8 @@
         <div id="lgUrgent"></div>
         <div id="lgResults"></div>
         <div id="lgCats"></div>
+        <div id="lgLit"></div>
+        <div id="lgFoot"></div>
       </div>
     </div>
 
@@ -789,6 +806,7 @@
 
 <script src="./lib/echarts.min.js"></script>
 <script src="./data/topic-01-graph.js"></script>
+<script src="./data/topic-01-literature.js"></script>
 <script src="./data/topic-01-patient.js"></script>
 <script>
 /* =====================================================================
@@ -1425,8 +1443,17 @@
     var disc  = (PG && PG.disclaimer) ? PG.disclaimer : DEFAULT_DISCLAIMER;
     lgIntro.innerHTML =
       (intro ? '<p class="lg-lead">' + esc(intro) + '</p>' : '') +
-      '<p class="lg-disc">' + esc(disc) + '</p>' +
-      '<a class="lg-triples" href="./triples.html">查看三元组表 →</a>';
+      '<p class="lg-disc">' + esc(disc) + '</p>';
+    renderLitSummary();
+    /* 三元组表入口放在**最后面**（2026-11-11 客户反馈：「放在最后面吧，
+       不然他们会点击」）——
+       这一页的主受众是患者 / 护士（患者层须知），三元组表是给专业作者的；
+       摆在免责声明下面会跟患者须知抢注意力 ⇒ 挪到列表末尾，做成安静的次要入口。 */
+    var foot = document.getElementById("lgFoot");
+    if (foot) {
+      foot.innerHTML = '<a class="lg-foot-link" href="./triples.html">'
+        + '查看三元组表（全部关联关系逐条列出）→</a>';
+    }
 
     /* 就医警示 —— 患者第一屏走「分诊」：逐条点选 → 直接给行动。
        静态列表只回答「有哪些危险」，分诊回答「我现在该怎么」。 */
@@ -2247,15 +2274,40 @@
     /* ⚠️ **纯出处的文献也要列出来**（2026-11-06）：只列「有支撑的」会让客户数出来的
        篇数与图里的文献节点数对不上（R11/R05/R06/R18 这类只作 evidence 出处的，
        自身没有知识点）⇒ 标「仅作出处」单列，篇数才对得上。 */
+    /* 文献类型（客户 2026-11-11 问「都是什么文献」）——
+       ⛔ 从**节点自身的数据**取（evidence[].type），不按类型 key 判断、不写死词表 ⇒
+          换一道题换了文献类型词，标签自己跟着变。 */
+    function litType(r) {
+      var n = NODE[r];
+      if (!n) return "";
+      var t = "";
+      ((n.evidence) || []).some(function (ev) {
+        if (ev && String(ev.type || "").trim()) { t = String(ev.type).trim(); return true; }
+        return false;
+      });
+      return t;
+    }
     var rows = refs.map(function (r) {
       var it = byRef[r];
       var nn = Object.keys(it.nodes).length;
       var tail = nn ? ('支撑 ' + nn + ' 个节点 · ' + it.points + ' 条要点')
                     : '仅作出处引用';
+      var ty = litType(r);
       return '<div class="lg-lit' + (nn ? "" : " only-cite") + '">' +
         '<span class="lg-lit-name">' + esc(it.name) + '</span>' +
+        (ty ? '<span class="lg-lit-type">' + esc(ty) + '</span>' : '') +
         '<span class="lg-count">' + tail + '</span></div>';
     }).join("");
+    /* 文献构成（按证据层级）—— **数字随页面数据走**（构建时从图谱数据现算，
+       写在 data/<key>-literature.js 里）⇒ 前端不写死任何分类口径。 */
+    var LIT = window.KG_LIT || null;
+    var levelsHtml = "";
+    if (LIT && LIT.byLevel && LIT.byLevel.length) {
+      levelsHtml = '<div class="lg-lit-levels">' +
+        LIT.byLevel.map(function (x) {
+          return '<div class="row"><b>' + x.count + ' 篇</b><span>' + esc(x.label) + '</span></div>';
+        }).join("") + '</div>';
+    }
     var clientN = 0;
     (G.nodes || []).forEach(function (n) {
       ((n && n.details) || []).forEach(function (d) {
@@ -2265,9 +2317,30 @@
     return '<div class="legend-head" style="margin:18px 0 8px;">' +
       '<h4>文献支撑</h4><span class="lg-count">' + allRefs.length + ' 篇</span></div>' +
       '<div class="sec-hint">每篇文献支撑了多少个知识实体、多少条要点 —— 点图上节点可见同一口径</div>' +
+      levelsHtml +
       '<div class="lg-lit-list">' + rows + '</div>' +
       (clientN ? '<div class="lg-lit client"><span class="lg-lit-name">客户提供的临床做法</span>' +
         '<span class="lg-count">' + clientN + ' 条 · 文献待核</span></div>' : "");
+  }
+
+  /* 文献构成（列表视图末尾的卡片）——
+     ⛔ **手机上看不到图例抽屉**（工具条只在全景图视图出现）⇒ 客户在手机上问
+        「97 篇都是什么文献」时没地方看 ⇒ 这张卡放进列表视图末尾。 */
+  function renderLitSummary() {
+    var el = document.getElementById("lgLit");
+    if (!el) return;
+    var LIT = window.KG_LIT || null;
+    if (!LIT || !LIT.byLevel || !LIT.byLevel.length) { el.innerHTML = ""; return; }
+    var rows = LIT.byLevel.map(function (x) {
+      return '<div class="row"><b>' + x.count + ' 篇</b><span>' + esc(x.label) + '</span></div>';
+    }).join("");
+    el.innerHTML =
+      '<div class="lg-lit-levels" style="margin-top:22px;">' +
+      '<div class="row" style="margin-bottom:4px;"><b>' + LIT.total + ' 篇</b>' +
+      '<span>全部文献的证据层级构成</span></div>' + rows +
+      '<div class="row" style="margin-top:6px;font-size:12.5px;">' +
+      '<span>每篇文献支撑了多少个知识实体、多少条要点，可在「全景图 → 图例」里逐篇查看</span>' +
+      '</div></div>';
   }
 
   function renderLegend() {

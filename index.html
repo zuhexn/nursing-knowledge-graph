@@ -39,6 +39,13 @@
   .link:hover{border-color:var(--accent);background:var(--accent-soft);}
   .link b{display:block;font-size:14.5px;color:var(--text);}
   .link span{font-size:12.5px;color:var(--text-dim);}
+  /* 次要入口（三元组表）—— 客户 2026-11-11：「放在最后面吧，不然他们会点击」
+     患者扫码先进落地页，入口跟主入口并排会被误点 ⇒ 压到最后、样式做轻。*/
+  .link.sub{background:transparent;border-style:dashed;padding:10px 14px;}
+  .link.sub b{font-size:13px;font-weight:600;color:var(--text-dim);}
+  .link.sub span{font-size:12px;}
+  .link.sub:hover{border-color:var(--accent);}
+  .link.sub:hover b{color:var(--accent);}
   .note{
     background:var(--card);border:1px solid var(--line);border-radius:12px;
     padding:16px 18px;margin-top:24px;font-size:13.5px;color:var(--text-dim);
@@ -58,7 +65,7 @@
       <p class="stats"><b>97</b> 篇文献 · <b>169</b> 个知识实体（其中 <b>45</b> 个症状类）· <b>1095</b> 条文献要点 · <b>156</b> 个实体带要点 · <b>1487</b> 条关联关系 · 共 <b>266</b> 个节点</p>
       <div class="links">
         <a class="link" href="./topic-01-kg/index.html"><b>图谱页面</b><span>交互式知识图谱 · 知识框架逐层展开 + 关系图 + 检索 + 节点详情</span></a>
-        <a class="link" href="./topic-01-kg/triples.html"><b>三元组表</b><span>全部关联关系逐条列出（主体 · 关系 · 客体）· 可搜索 · 可下载 CSV</span></a>
+        <a class="link sub" href="./topic-01-kg/triples.html"><b>三元组表</b><span>全部关联关系逐条列出（主体 · 关系 · 客体）· 可搜索 · 可下载 CSV</span></a>
       </div>
     </div>
   </div>

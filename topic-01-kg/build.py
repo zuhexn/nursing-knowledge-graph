@@ -921,6 +921,75 @@ python build.py --from-triples 三元组.csv --out-graph 图谱数据.json
 # 症状类节点的类型组 —— **口径只在数据侧定义一次**（前端不许写死类型 key · 判据 #4）
 SYMPTOM_TYPE_KEYS = ("SymptomSign", "SymptomCategory")
 
+# 文献类型 → 证据层级（客户 2026-11-11 问「指南、文献、书籍都是多少」）
+# ⛔ 这张表住在**构建侧**（不在前端）—— 前端只读现算好的结果，
+#    换一道题换了类型词，页面自己跟着变，不用改代码。
+LIT_LEVELS = (
+    ("指导性文件（指南 / 共识 / 规范 / 标准 / 建议 / 推荐 / 立场声明 / 最佳证据）",
+     ("指南", "规范", "标准", "共识", "建议", "推荐", "推荐实践",
+      "推荐实践（证据总结）", "立场声明", "声明", "最佳证据")),
+    ("证据汇总（系统评价 / Meta 分析）",
+     ("系统评价", "Meta分析", "Meta 分析", "Meta 分析（网状）")),
+    ("综述", ("综述",)),
+    ("原始研究（对照研究 / 队列 / 病例 / 调查 / 临床审计）",
+     ("对照研究", "队列研究", "病例系列", "病例报告", "调查", "临床审计")),
+    ("书籍 / 药品说明书", ("书籍", "药品说明书")),
+)
+
+
+def compute_literature_stats(data):
+    """文献构成统计 —— **从图谱数据现算**：按证据类型 + 按证据层级
+
+    客户 2026-11-11 问「97 篇都是什么文献，指南、文献、书籍都是多少」——
+    ⇒ 页面上要能直接看到，不用他再问一轮。
+
+    口径：每篇文献节点取它的**文献类型**（evidence[].type，或 attrs 里的
+    「文献类型 / 类型 / evidenceType」）—— 一篇只取第一个（实测 97 篇都是单一类型）。
+    """
+    from collections import Counter
+    by_type = Counter()
+    refs = 0
+    for n in (data.get("nodes") or []):
+        if n.get("type") != "Reference":
+            continue
+        refs += 1
+        t = ""
+        for ev in (n.get("evidence") or []):
+            if isinstance(ev, dict) and str(ev.get("type") or "").strip():
+                t = str(ev["type"]).strip()
+                break
+        if not t:
+            for a in (n.get("attrs") or []):
+                if isinstance(a, dict) and a.get("k") in ("文献类型", "类型", "evidenceType"):
+                    t = str(a.get("v") or "").strip()
+                    if t:
+                        break
+        if t:
+            by_type[t] += 1
+    by_level = []
+    used = set()
+    for label, keys in LIT_LEVELS:
+        n = sum([by_type.get(k, 0) for k in keys])
+        used.update(keys)
+        if n:
+            by_level.append({"label": label, "count": n})
+    other = sum([v for k, v in by_type.items() if k not in used])
+    if other:
+        by_level.append({"label": "其他类型", "count": other})
+    return {
+        "total": refs,
+        "byType": [{"type": k, "count": v} for k, v in by_type.most_common()],
+        "byLevel": by_level,
+    }
+
+
+def write_literature_js(stats, dst_path):
+    """文献构成 —— 单独一个 JS 副本（页面直接读它；数据随页内联，不走 fetch）"""
+    with open(dst_path, "w", encoding="utf-8", newline="\n") as f:
+        f.write("window.KG_LIT = %s;\n"
+                % json.dumps(stats, ensure_ascii=False, separators=(",", ":")))
+    return True
+
 
 def compute_scale_stats(data):
     """规模数字 —— **从图谱数据现算**，返回给页面直接显示
@@ -1129,6 +1198,19 @@ def build_one(topic_key, data, src_path, out_root, rep, terms_source):
             break
     if groups_src:
         copy_if_different(groups_src, os.path.join(data_dir, "type-groups.json"))
+
+    # 3b-4 · 文献构成统计（客户 2026-11-11 问「指南、文献、书籍都是多少」）
+    #        ⇒ 页面上的「文献支撑」总账要能直接看到类型与层级，别让他再问一轮。
+    lit_stats = compute_literature_stats(data)
+    try:
+        write_literature_js(lit_stats,
+                             os.path.join(data_dir, "%s-literature.js" % topic_key))
+        rep.add("附U", "文献构成统计已产出", True,
+                "%d 篇 · %d 类类型 · %d 个层级"
+                % (lit_stats["total"], len(lit_stats["byType"]),
+                   len(lit_stats["byLevel"])))
+    except Exception as e:
+        raise StructureGateError("文献构成统计产出失败：%s" % e)
 
     # 3d · 患者层（可选件：图谱 JSON 旁边的 <topicKey>-patient.json）
     #       —— 有就校验 + 随包带上；没有就这一层不出现（页面自动退回通用免责口径）
