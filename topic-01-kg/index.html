@@ -1325,19 +1325,30 @@
   }
 
   /* 分诊卡：点卡片 = 勾选 / 取消；点「相关知识」= 打开详情（不勾选）。
-     用事件委托绑在容器上 —— renderList 会重画整块，逐项绑会丢。 */
-  function renderTriageResult() {
-    var box = document.getElementById("triageResult");
+     用事件委托绑在容器上 —— renderList 会重画整块，逐项绑会丢。
+     ⚠️ 现在有**两个**症状框（红框「如果您有以下症状」= 过敏 ①-⑤；
+        新框「造影剂外渗的处理」= 外渗+肾损伤，编号重新从 1 开始）
+        ⇒ 勾选状态、结果框、「这些都没有」按钮**各按框独立**：
+          过敏框的「这些都没有」只清过敏框的勾选，不动外渗框。 */
+  function triageSelOf(list) {
+    var sel = {};
+    (list || []).forEach(function (u) { if (state.triageSel[u.nodeId]) sel[u.nodeId] = 1; });
+    return sel;
+  }
+  function renderTriageBox(list, resultId) {
+    var box = document.getElementById(resultId);
     if (!box) return;
-    var urgent = (PG && PG.urgent) || [];
-    var sel = urgent.filter(function (u) { return state.triageSel[u.nodeId]; });
+    var sel = Object.keys(triageSelOf(list));
     if (!state.triageAnswered) {
       box.className = "triage-result";
       box.innerHTML = "";
       return;
     }
     if (sel.length) {
-      var actions = sel.map(function (u) { return u.action; }).join("；");
+      var actions = sel.map(function (id) {
+        var u = (list || []).filter(function (x) { return x.nodeId === id; })[0];
+        return u ? u.action : "";
+      }).join("；");
       box.className = "triage-result red";
       box.innerHTML = "<b>你选中的情况需要马上处理</b><br>" + esc(actions) +
         "<br><span style=\"color:#a33527\">把这一屏指给护士看，方便他们快速判断。</span>";
@@ -1351,6 +1362,12 @@
       if (box.scrollIntoView) box.scrollIntoView({block: "nearest", inline: "nearest"});
     } catch (e) { /* 老浏览器忽略 */ }
   }
+  function renderTriageResult() {
+    renderTriageBox((PG && PG.urgent) || [], "triageResult");
+  }
+  function renderExtravResult() {
+    renderTriageBox((PG && PG.extrav) || [], "extravResult");
+  }
   lgUrgent.addEventListener("click", function (ev) {
     var open = ev.target.closest("[data-open]");
     if (open) {
@@ -1358,11 +1375,17 @@
       pick(open.dataset.open);
       return;
     }
-    if (ev.target.closest("#triageNone")) {
-      state.triageSel = {};
+    /* 「这些都没有」：按**按钮所属的框**清勾选（两个框互不影响） */
+    var noneBtn = ev.target.closest("[data-none]");
+    if (noneBtn) {
+      var which = noneBtn.dataset.none;
+      var list = (which === "extravNone") ? ((PG && PG.extrav) || []) : ((PG && PG.urgent) || []);
+      list.forEach(function (u) { delete state.triageSel[u.nodeId]; });
       state.triageAnswered = true;
-      lgUrgent.querySelectorAll(".u-item").forEach(function (el) { el.classList.remove("sel"); });
-      renderTriageResult();
+      lgUrgent.querySelectorAll(".u-item").forEach(function (el) {
+        if (list.some(function (u) { return u.nodeId === el.dataset.id; })) el.classList.remove("sel");
+      });
+      if (which === "extravNone") renderExtravResult(); else renderTriageResult();
       return;
     }
     var item = ev.target.closest(".u-item");
@@ -1371,7 +1394,9 @@
     state.triageSel[id] = !state.triageSel[id];
     state.triageAnswered = true;
     item.classList.toggle("sel", !!state.triageSel[id]);
-    renderTriageResult();
+    /* 只刷新**所属那个框**的结果 */
+    var isExtrav = ((PG && PG.extrav) || []).some(function (u) { return u.nodeId === id; });
+    if (isExtrav) renderExtravResult(); else renderTriageResult();
   });
   function renderList() {
     var countMap = countByType();
@@ -1420,16 +1445,21 @@
             '</div>';
         }).join("") + '</div></div>';
     }
-    if (urgent.length) {
-      htmlU +=
-        '<div class="lg-urgent triage"><h3 class="lg-uh">' +
-        esc((PG && PG.urgentTitle) || "出现这些情况，请及时就医") + '</h3>' +
-        '<p class="triage-hint">逐条点选符合你现在的情况；如果都没有，点下面的「这些都没有」。</p>' +
-        '<div class="triage-result" id="triageResult"></div>' +
-        urgent.map(function (u, ui) {
+    /* 症状清单框（红框「如果您有以下症状」/ 新框「造影剂外渗的处理」共用）
+       —— 两个框各有**独立的编号**（都从 ① 开始），各有自己的「这些都没有」按钮。
+       ⚠️ 客户 2026-11-11：「就单独在拎一个框出来，把 6、7 变成 1、2。放在 5 点后面」
+       ⇒ 过敏症状留在红框（①-⑤），外渗 + 肾损伤单独成框，编号重新从 1 开始。 */
+    function triageBox(list, title, hint, resultId, noneId, boxClass) {
+      if (!list || !list.length) return "";
+      return '<div class="lg-urgent ' + (boxClass || "triage") + '"><h3 class="lg-uh">' +
+        esc(title) + '</h3>' +
+        (hint ? '<p class="triage-hint">' + esc(hint) + '</p>' : '') +
+        '<div class="triage-result" id="' + resultId + '"></div>' +
+        list.map(function (u, ui) {
           var n = NODE[u.nodeId];
           /* 编号（2026-11-06 客户在页面上用红笔标了 ①~⑤）—— 病人可以指着说
-             「我是第 3 个」；护士照着编号看，一秒对上。用圈码字符，与客户标注一致。 */
+             「我是第 3 个」；护士照着编号看，一秒对上。用圈码字符，与客户标注一致。
+             ⚠️ 每个框**各自**从 ① 开始（外渗框是 ①②，不是接着红框的 ⑥⑦）。 */
           var num = NUM_CIRCLED[ui] || (ui + 1);
           return '<button type="button" class="u-item' + (state.triageSel[u.nodeId] ? " sel" : "") + '" data-id="' + esc(u.nodeId) + '">' +
             '<span class="u-check"></span>' +
@@ -1439,11 +1469,21 @@
             (n ? '<span class="u-link" data-open="' + esc(n.id) + '">相关知识：' + esc(n.name) + ' ›</span>' : '') +
             '</span></button>';
         }).join("") +
-        '<div class="triage-actions"><button type="button" class="triage-btn" id="triageNone">这些都没有</button></div>' +
+        '<div class="triage-actions"><button type="button" class="triage-btn" data-none="' + noneId + '">这些都没有</button></div>' +
         '</div>';
+    }
+    var extrav = (PG && PG.extrav) || [];
+    htmlU += triageBox(urgent, (PG && PG.urgentTitle) || "出现这些情况，请及时就医",
+                        "逐条点选符合你现在的情况；如果都没有，点下面的「这些都没有」。",
+                        "triageResult", "triageNone", "triage");
+    if (extrav.length) {
+      htmlU += triageBox(extrav, (PG && PG.extravTitle) || "造影剂外渗的处理",
+                          "逐条点选符合你现在的情况；如果都没有，点下面的「这些都没有」。",
+                          "extravResult", "extravNone", "triage extrav");
     }
     lgUrgent.innerHTML = htmlU;
     if (urgent.length) renderTriageResult();
+    if (extrav.length) renderExtravResult();
 
     /* 知识框架树 —— 论文的骨架：一级框架 → 二级框架 → 条目。
        框架节点与归属关系都来自数据（见 buildFrameTree），前端不写死任何框架名。

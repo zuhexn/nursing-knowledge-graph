@@ -49,7 +49,10 @@
       "nodeId": "S_AnaphylacticShock",
       "plain": "过敏反应很重，会危及生命",
       "action": "立刻告诉医护人员并呼救，需要马上抢救"
-    },
+    }
+  ],
+  "extravTitle": "造影剂外渗的处理",
+  "extrav": [
     {
       "nodeId": "S_Extravasation",
       "plain": "造影剂没进血管、漏到皮下，轻则肿痛，重则组织坏死",
