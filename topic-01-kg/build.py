@@ -918,6 +918,40 @@ python build.py --from-triples 三元组.csv --out-graph 图谱数据.json
 """
 
 
+# 症状类节点的类型组 —— **口径只在数据侧定义一次**（前端不许写死类型 key · 判据 #4）
+SYMPTOM_TYPE_KEYS = ("SymptomSign", "SymptomCategory")
+
+
+def compute_scale_stats(data):
+    """规模数字 —— **从图谱数据现算**，返回给页面直接显示
+
+    ⛔ 为什么要有这一层（2026-11-11 客户当场抓到的口径不一致）：
+       页面上写「266 个实体」，而聊天里报的是「内容实体 157 + 症状实体 43」——
+       后两个是**互相包含**的数，客户按「只要总数」把两个一加 = 200 ⇒ 与 266 对不上，
+       客户以为数据有问题。**根因是同一件事给了两个口径、且没说是包含关系。**
+       ⇒ 这里把口径**固定成互不重叠、可相加**的一组：
+           节点总数 = 知识实体 + 文献节点
+           知识实体 = 节点总数 − 文献节点（**含框架节点** —— 框架节点也是真节点）
+           症状类节点 = 知识实体里类型属于症状组的那些（**是子集，单列**）
+       页面与对外口径都用这一组 ⇒ 客户再遇到数，只会自己加出 266。
+    """
+    nodes = data.get("nodes") or []
+    refs = [n for n in nodes if n.get("type") == "Reference"]
+    knowledge = [n for n in nodes if n.get("type") != "Reference"]
+    symptoms = [n for n in knowledge if n.get("type") in SYMPTOM_TYPE_KEYS]
+    rels = set()
+    for e in (data.get("edges") or []):
+        rels.add(str(e.get("label") or e.get("type") or ""))
+    return {
+        "nodes": len(nodes),
+        "references": len(refs),
+        "knowledge": len(knowledge),
+        "symptoms": len(symptoms),
+        "relations": len([r for r in rels if r]),
+        "edges": len(data.get("edges") or []),
+    }
+
+
 def copy_if_different(src, dst):
     """拷贝 —— 源与目标是同一个文件时跳过（就地重建会撞上）"""
     if not os.path.exists(src):
@@ -946,7 +980,7 @@ def read_triples_csv(csv_path):
     return out
 
 
-def write_triples_js(csv_path, dst_path, type_labels=None):
+def write_triples_js(csv_path, dst_path, type_labels=None, stats=None):
     """把 5 列表写成 JS 副本 —— 三元组页（triples.html）直接读它
 
     为什么要有 JS 副本：页面是 `file://` 双击直开的静态页，`fetch` CSV 会被浏览器的
@@ -955,9 +989,12 @@ def write_triples_js(csv_path, dst_path, type_labels=None):
     type_labels —— 节点类型 key → 中文标签（来自数据文件的 nodeTypes）。
     ⛔ CSV 里的类型列是**英文 key**（客户规范 §三 的输入形态）⇒ 页面上换成中文
        标签才读得懂；英文 key 保留在单元格的 title 里（要核对原始形态时可看）。
+
+    stats —— 规模数字（节点 / 知识实体 / 文献 / 症状类）。**由构建时从图谱数据现算**，
+    ⛔ 不写死在页面上 —— 也不在前端写死类型 key（判据 #4）⇒ 口径只在数据侧定义一次。
     """
     rows = read_triples_csv(csv_path)
-    payload = {"rows": rows, "labels": type_labels or {}}
+    payload = {"rows": rows, "labels": type_labels or {}, "stats": stats or {}}
     with open(dst_path, "w", encoding="utf-8", newline="\n") as f:
         f.write("window.KG_TRIPLES = %s;\n"
                 % json.dumps(payload, ensure_ascii=False, separators=(",", ":")))
@@ -1077,7 +1114,8 @@ def build_one(topic_key, data, src_path, out_root, rep, terms_source):
                                 if isinstance(t, dict)])
             triples_rows = write_triples_js(
                 csv_dst, os.path.join(data_dir, "%s-triples.js" % topic_key),
-                type_labels=type_labels)
+                type_labels=type_labels,
+                stats=compute_scale_stats(data))
         except Exception as e:
             raise StructureGateError("5 列表转 JS 失败：%s（%s）" % (csv_dst, e))
 

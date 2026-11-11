@@ -128,9 +128,10 @@
 <script src="./data/topic-01-triples.js"></script>
 <script>
 (function () {
-  var DATA = window.KG_TRIPLES || { rows: [], labels: {} };
+  var DATA = window.KG_TRIPLES || { rows: [], labels: {}, stats: {} };
   var ROWS = DATA.rows || [];
   var LABELS = DATA.labels || {};
+  var ST = DATA.stats || {};
 
   /* 规模数字从数据现算 —— 不写死在页面上（数据变了数字跟着变）*/
   var ENTITIES = (function () {
@@ -200,8 +201,13 @@
     tb.innerHTML = html;
     empty.textContent = rows.length ? "" : "没有匹配的行";
     empty.style.display = rows.length ? "none" : "block";
-    meta.textContent = "共 " + ROWS.length + " 行 · " + ENTITIES + " 个实体 · "
-      + RELS.length + " 种关系类型" +
+    /* 规模数字 —— **口径固定成互不重叠、可相加**的一组（构建时从数据现算）：
+       节点总数 = 知识实体 + 文献节点；症状类是知识实体的**子集**（单列，不相加）。
+       ⚠️ 别再把两个互相包含的数一起报给客户 —— 客户会自己加起来。 */
+    meta.textContent = "共 " + ROWS.length + " 行 · " +
+      (ST.nodes || ENTITIES) + " 个节点（" + (ST.knowledge || 0) + " 个知识实体 + "
+      + (ST.references || 0) + " 篇文献）· " + RELS.length + " 种关系类型" +
+      (ST.symptoms ? " · 其中 " + ST.symptoms + " 个是症状类节点" : "") +
       (rel ? "，关系「" + rel + "」" + rows.length + " 行" : "") +
       (kw ? "，匹配 " + rows.length + " 行" : "") +
       (rows.length > LIMIT ? "（页面先显示前 " + LIMIT + " 行，完整表请下载 CSV）" : "");
