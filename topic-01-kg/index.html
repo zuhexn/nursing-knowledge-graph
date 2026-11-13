@@ -759,7 +759,6 @@
         <div id="lgUrgent"></div>
         <div id="lgResults"></div>
         <div id="lgCats"></div>
-        <div id="lgLit"></div>
         <div id="lgFoot"></div>
       </div>
     </div>
@@ -1444,7 +1443,6 @@
     lgIntro.innerHTML =
       (intro ? '<p class="lg-lead">' + esc(intro) + '</p>' : '') +
       '<p class="lg-disc">' + esc(disc) + '</p>';
-    renderLitSummary();
     /* 三元组表入口放在**最后面**（2026-11-11 客户反馈：「放在最后面吧，
        不然他们会点击」）——
        这一页的主受众是患者 / 护士（患者层须知），三元组表是给专业作者的；
@@ -2321,26 +2319,6 @@
       '<div class="lg-lit-list">' + rows + '</div>' +
       (clientN ? '<div class="lg-lit client"><span class="lg-lit-name">客户提供的临床做法</span>' +
         '<span class="lg-count">' + clientN + ' 条 · 文献待核</span></div>' : "");
-  }
-
-  /* 文献构成（列表视图末尾的卡片）——
-     ⛔ **手机上看不到图例抽屉**（工具条只在全景图视图出现）⇒ 客户在手机上问
-        「97 篇都是什么文献」时没地方看 ⇒ 这张卡放进列表视图末尾。 */
-  function renderLitSummary() {
-    var el = document.getElementById("lgLit");
-    if (!el) return;
-    var LIT = window.KG_LIT || null;
-    if (!LIT || !LIT.byLevel || !LIT.byLevel.length) { el.innerHTML = ""; return; }
-    var rows = LIT.byLevel.map(function (x) {
-      return '<div class="row"><b>' + x.count + ' 篇</b><span>' + esc(x.label) + '</span></div>';
-    }).join("");
-    el.innerHTML =
-      '<div class="lg-lit-levels" style="margin-top:22px;">' +
-      '<div class="row" style="margin-bottom:4px;"><b>' + LIT.total + ' 篇</b>' +
-      '<span>全部文献的证据层级构成</span></div>' + rows +
-      '<div class="row" style="margin-top:6px;font-size:12.5px;">' +
-      '<span>每篇文献支撑了多少个知识实体、多少条要点，可在「全景图 → 图例」里逐篇查看</span>' +
-      '</div></div>';
   }
 
   function renderLegend() {
