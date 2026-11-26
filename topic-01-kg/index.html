@@ -571,6 +571,22 @@
   }
   .ac-plain{font-size:16px;line-height:1.6;}
   .ac-act{font-size:15px;color:var(--text-dim);line-height:1.6;}
+  /* 患者层插图（科普图文）—— 数据里带 imgs 才出现；点图看大图。
+     ⚠️ 只用主题变量，不写死色值（--theme mono 的主题闸门会拦未登记的色值）。 */
+  .ac-imgs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:4px;}
+  @media (max-width:520px){.ac-imgs{grid-template-columns:1fr;}}
+  .ac-img{display:block;border:1px solid var(--line);border-radius:10px;
+          overflow:hidden;background:var(--panel);text-decoration:none;color:inherit;}
+  .ac-img img{display:block;width:100%;height:auto;}
+  .ac-img-cap{display:block;font-size:13.5px;line-height:1.5;color:var(--text-dim);padding:7px 9px;}
+  .ac-img-note{font-size:13.5px;line-height:1.5;color:var(--text-dim);margin-top:2px;}
+  /* 患者层视频（科普动画）—— 数据里带 videos 才出现。
+     ⚠️ 只用主题变量，不写死色值（--theme mono 的主题闸门会拦未登记的色值）。 */
+  .ac-videos{display:grid;gap:10px;margin-top:4px;}
+  .ac-video{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--panel);}
+  .ac-video video{display:block;width:100%;height:auto;background:var(--panel);}
+  .ac-video-cap{display:block;font-size:13.5px;line-height:1.5;color:var(--text-dim);padding:7px 9px;}
+  .ac-video-note{font-size:13.5px;line-height:1.5;color:var(--text-dim);margin-top:2px;}
   .triage-lead{font-size:16px;color:var(--text);line-height:1.6;margin:0 0 8px;}
 
   /* ---------- 节点「要点」（来自文献原文的逐条提取） ---------- */
@@ -1197,6 +1213,48 @@
   var DEFAULT_DISCLAIMER =
     "本页内容整理自公开文献，用于护理与健康科普，不能替代医生的诊断和治疗。身体不适请及时就医。";
 
+  /* 患者层插图（科普图文）—— 卡片数据自带 imgs 才出现。
+     ⛔ 图片不是「文献证据」：图注写明来源，具体检查安排以医生意见为准。
+     点图打开原图；数据里给了 href 时优先用 href（例如原文科普图文链接）。 */
+  function imgGallery(a) {
+    var imgs = (a && a.imgs) || [];
+    if (!imgs.length) return "";
+    var html = "";
+    if (a.imgNote) html += '<div class="ac-img-note">' + esc(a.imgNote) + '</div>';
+    html += '<div class="ac-imgs">' + imgs.map(function (im) {
+      if (!im || !im.src) return "";
+      var src = String(im.src), href = String(im.href || im.src);
+      return '<a class="ac-img" href="' + esc(href) + '" target="_blank" rel="noopener">' +
+        '<img src="' + esc(src) + '" alt="' + esc(im.alt || "") + '" loading="lazy">' +
+        (im.caption ? '<span class="ac-img-cap">' + esc(im.caption) + '</span>' : '') +
+        '</a>';
+    }).join("") + '</div>';
+    return html;
+  }
+
+  /* 患者层视频（科普动画）—— 卡片数据自带 videos 才出现。
+     ⛔ 视频不是「文献证据」：说明写明来源，具体检查安排以医生意见为准。
+     只认 assets/ 下的相对文件（build.py 的 P7 闸门拦外链与路径逃逸）。 */
+  function videoGallery(a) {
+    var vids = (a && a.videos) || [];
+    if (!vids.length) return "";
+    var html = "";
+    if (a.videoNote) html += '<div class="ac-video-note">' + esc(a.videoNote) + '</div>';
+    html += '<div class="ac-videos">' + vids.map(function (v) {
+      if (!v || !v.src) return "";
+      return '<div class="ac-video">' +
+        '<video controls playsinline preload="metadata"' +
+        (v.poster ? ' poster="' + esc(v.poster) + '"' : '') +
+        ' aria-label="' + esc(v.alt || v.caption || "科普视频") + '">' +
+        '<source src="' + esc(v.src) + '" type="video/mp4">' +
+        '您的浏览器不支持视频播放。' +
+        '</video>' +
+        (v.caption ? '<span class="ac-video-cap">' + esc(v.caption) + '</span>' : '') +
+        '</div>';
+    }).join("") + '</div>';
+    return html;
+  }
+
   /* ============ 列表视图（卡片流为主 · 画布降级为可选的一层） ============ */
   var lgIntro   = document.getElementById("lgIntro");
   var lgUrgent  = document.getElementById("lgUrgent");
@@ -1470,6 +1528,8 @@
           return '<div class="ac-item">' +
             '<div class="ac-plain">' + mdBold(a.plain) + '</div>' +
             (a.action ? '<div class="ac-act">' + mdBold(a.action) + '</div>' : '') +
+            videoGallery(a) +
+            imgGallery(a) +
             (n ? '<span class="u-link" data-open="' + esc(n.id) + '">相关知识：' + esc(n.name) + ' ›</span>' : '') +
             '</div>';
         }).join("") + '</div></div>';
@@ -1488,6 +1548,8 @@
           return '<div class="ac-item">' +
             '<div class="ac-plain">' + mdBold(a.plain) + '</div>' +
             (a.action ? '<div class="ac-act">' + mdBold(a.action) + '</div>' : '') +
+            videoGallery(a) +
+            imgGallery(a) +
             (n ? '<span class="u-link" data-open="' + esc(n.id) + '">相关知识：' + esc(n.name) + ' ›</span>' : '') +
             '</div>';
         }).join("") + '</div></div>';

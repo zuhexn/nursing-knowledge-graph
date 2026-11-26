@@ -97,20 +97,9 @@ TYPES_REQUIRING_EVIDENCE = {
     "SymptomSign", "ManagementPrinciple", "ManagementStrategy", "ManagementOutcome",
 }
 
-# §三 节点类型词汇表（两题共用；每份数据只许用自己那一组）
-NODE_TYPE_DOMAIN = {
-    "DiseaseCategory", "SymptomSign", "Exam", "ManagementPrinciple", "NursingTheory",
-    "DiseaseEducation", "SymptomExperience", "ManagementStrategy", "ManagementOutcome",
-    "SymptomCategory", "AssessmentTool", "RiskFactor", "PharmacologicalManagement",
-    "NonPharmacologicalManagement", "SymptomStatus", "FunctionalStatus",
-    "Reference", "CaseReport",
-}
-# §四 关系类型词汇表
-RELATION_TYPE_DOMAIN = {
-    "BELONGS_TO", "HAS_SYMPTOM", "DETECTED_BY", "MANAGED_BY", "EDUCATED_BY",
-    "EXPERIENCED_AS", "ASSESSED_BY", "AT_RISK_BY", "TREATED_BY", "EFFECT_ON",
-    "PART_OF_CASE", "SUPPORTED_BY",
-}
+# ⛔ **节点/关系类型的取值域不写死在这里** —— 题目 = 参数 ⇒ 词表也来自数据
+#    （每份图的 nodeTypes / relationTypes 声明 + data/type-groups.json 的分题类型组）。
+#    ⛔ 写死某一题的词表 = 把题目写进代码 —— 第二道题就整片飘红（2026-11-16 实测）。
 
 # 分题允许的类型组 —— **从数据文件读**（data/type-groups.json）——
 # ⛔ 代码里不写任何题目标识：题目 = 参数 ⇒ 类型组也是参数。
@@ -248,16 +237,26 @@ def check_terms_coverage(nodes, doc, topic_key):
             uncovered.append("%s → 期望类型 %s" % (t["term"], "/".join(sorted(exp_types))))
 
     en_to_zh = (doc.get("evidenceTypeDomain") or {}).get("enToZh") or {}
+    # 「本图谱确实没有这一类文献」—— **显式声明 + 写明理由** ⇒ 报为缺口，不判失败。
+    # ⛔ 这不是放宽判据：没声明的类型词仍然判失败；声明了就要在产物里看得见（且理由随行）。
+    declared_absent = (doc.get("无此类文献") or {})
+    gaps = []
     for t in evidence_terms(doc):
         zh = t["term"]
         if t.get("lang") == "en":
             zh = en_to_zh.get(t["term"], t["term"])
-        if not any(norm(zh) == norm(x) for x in ev_types):
+        if any(norm(zh) == norm(x) for x in ev_types):
+            continue
+        if zh in declared_absent:
+            gaps.append("%s（本图谱无此类文献：%s）" % (zh, declared_absent[zh]))
+        else:
             uncovered.append("%s → evidence.type 缺「%s」" % (t["term"], zh))
 
     detail = ("未覆盖 %d 条：%s" % (len(uncovered), "; ".join(uncovered[:12]))) if uncovered else \
              ("本主题 %d 条主题词 + %d 类证据类型全部有落点"
               % (len(topic_terms(doc, topic_key)), len(evidence_terms(doc))))
+    if gaps:
+        detail += "；⚠ 已声明的缺口 %d 类：%s" % (len(gaps), "；".join(gaps))
     return uncovered, (not uncovered), detail
 
 
@@ -352,7 +351,10 @@ def check_file(path, topic_key, rep, doc, terms_source):
             else "%d 条 evidence 全部含作者/标题/期刊/年份" % ev_total)
 
     # ---- 附加：类型取值域 / 声明覆盖 / 主题一致
-    bad_types = sorted(set([str(n.get("type")) for n in nodes]) - NODE_TYPE_DOMAIN)
+    # ⛔ 词表从**本题数据**读（nodeTypes / relationTypes 的声明）——
+    #    写死某一题的词汇表 = 把题目写进了代码（第二道题就崩）。
+    node_vocab = set([t.get("key") for t in node_types if isinstance(t, dict)])
+    bad_types = sorted(set([str(n.get("type")) for n in nodes]) - node_vocab)
     rep.add("附A", "节点类型取值域合法（%s）" % tag, not bad_types,
             ("越界类型：%s" % ", ".join(bad_types)) if bad_types else "全部在类型词汇表内")
 
@@ -365,7 +367,8 @@ def check_file(path, topic_key, rep, doc, terms_source):
         rep.add("附B", "只用本主题允许的类型组（%s）" % tag, not off_topic,
                 ("跨主题类型：%s" % ", ".join(off_topic)) if off_topic else "类型组与主题一致")
 
-    bad_rel = sorted(set([str(e.get("type")) for e in edges]) - RELATION_TYPE_DOMAIN)
+    rel_vocab = set([t.get("key") for t in rel_types if isinstance(t, dict)])
+    bad_rel = sorted(set([str(e.get("type")) for e in edges]) - rel_vocab)
     rep.add("附C", "关系类型取值域合法（%s）" % tag, not bad_rel,
             ("越界关系类型：%s" % ", ".join(bad_rel)) if bad_rel else "全部在关系类型词汇表内")
 
@@ -1027,6 +1030,9 @@ def copy_if_different(src, dst):
         return False
     if os.path.abspath(src) == os.path.abspath(dst):
         return False
+    parent = os.path.dirname(dst)
+    if parent and not os.path.isdir(parent):
+        os.makedirs(parent)
     shutil.copyfile(src, dst)
     return True
 
@@ -1081,9 +1087,109 @@ def write_triples_js(csv_path, dst_path, type_labels=None, stats=None):
 #    —— 这一条从机制上保证「患者层不会出现没有出处的医学断言」。
 
 PATIENT_REQUIRED_FIELDS = ("intro", "disclaimer")
+PATIENT_VIDEO_EXTS = (".mp4", ".webm", ".ogv", ".m4v")
 
 
-def check_patient_data(pdata, data, topic_key):
+def _check_patient_images(pdata, assets_dir):
+    """校验患者层插图（可选件 imgs）—— 返回问题清单（空 = 通过）
+
+    判据 P6：每张插图必须有 src，且文件真实存在于图谱 JSON 旁边的 assets/ 下。
+    ⛔ 只认 assets/ 内的相对路径 —— 患者层是公开站，不许引外链或逃出目录。
+    """
+    problems = []
+    for sec in ("aftercare", "advice", "urgent", "extrav"):
+        entries = pdata.get(sec) or []
+        if not isinstance(entries, list):
+            continue
+        for i, u in enumerate(entries, 1):
+            if not isinstance(u, dict):
+                continue
+            imgs = u.get("imgs") or []
+            if not isinstance(imgs, list):
+                problems.append("P6 %s 第 %d 条的 imgs 不是数组" % (sec, i))
+                continue
+            for j, im in enumerate(imgs, 1):
+                if not isinstance(im, dict):
+                    problems.append("P6 %s 第 %d 条插图 %d 不是一个对象" % (sec, i, j))
+                    continue
+                src = str(im.get("src") or "").strip()
+                if not src:
+                    problems.append("P6 %s 第 %d 条插图 %d 缺 src" % (sec, i, j))
+                    continue
+                norm = src.replace("\\", "/")
+                parts = norm.split("/")
+                if norm.startswith("/") or ".." in parts or ":" in parts[0]:
+                    problems.append("P6 %s 第 %d 条插图 %d 的 src 必须是 assets/ 下的相对路径：%r"
+                                    % (sec, i, j, src))
+                    continue
+                if parts[0] != "assets" or len(parts) < 2:
+                    problems.append("P6 %s 第 %d 条插图 %d 的 src 必须以 assets/ 开头：%r"
+                                    % (sec, i, j, src))
+                    continue
+                if not assets_dir:
+                    problems.append("P6 %s 第 %d 条插图 %d 找不到 assets 目录（应在图谱 JSON 旁边）：%r"
+                                    % (sec, i, j, src))
+                    continue
+                if not os.path.isfile(os.path.join(assets_dir, *parts[1:])):
+                    problems.append("P6 %s 第 %d 条插图 %d 的文件不存在：%r"
+                                    % (sec, i, j, src))
+    return problems
+
+
+def _check_patient_videos(pdata, assets_dir):
+    """校验患者层视频（可选件 videos）—— 返回问题清单（空 = 通过）
+
+    判据 P7：每个视频必须有 src，可选 poster；两者都必须是 assets/ 下的
+    相对路径且文件真实存在。⛔ 患者层是公开站：不许引外链或逃出目录。
+    ⛔ src 必须是网页可直接播放的格式（mp4/webm/ogv/m4v），否则线上打不开。
+    """
+    problems = []
+    for sec in ("aftercare", "advice", "urgent", "extrav"):
+        entries = pdata.get(sec) or []
+        if not isinstance(entries, list):
+            continue
+        for i, u in enumerate(entries, 1):
+            if not isinstance(u, dict):
+                continue
+            vids = u.get("videos") or []
+            if not isinstance(vids, list):
+                problems.append("P7 %s 第 %d 条的 videos 不是数组" % (sec, i))
+                continue
+            for j, v in enumerate(vids, 1):
+                if not isinstance(v, dict):
+                    problems.append("P7 %s 第 %d 条视频 %d 不是一个对象" % (sec, i, j))
+                    continue
+                for field, required in (("src", True), ("poster", False)):
+                    val = str(v.get(field) or "").strip()
+                    if not val:
+                        if required:
+                            problems.append("P7 %s 第 %d 条视频 %d 缺 src" % (sec, i, j))
+                        continue
+                    norm = val.replace("\\", "/")
+                    parts = norm.split("/")
+                    if norm.startswith("/") or ".." in parts or ":" in parts[0]:
+                        problems.append("P7 %s 第 %d 条视频 %d 的 %s 必须是 assets/ 下的相对路径：%r"
+                                        % (sec, i, j, field, val))
+                        continue
+                    if parts[0] != "assets" or len(parts) < 2:
+                        problems.append("P7 %s 第 %d 条视频 %d 的 %s 必须以 assets/ 开头：%r"
+                                        % (sec, i, j, field, val))
+                        continue
+                    if not assets_dir:
+                        problems.append("P7 %s 第 %d 条视频 %d 找不到 assets 目录（应在图谱 JSON 旁边）：%r"
+                                        % (sec, i, j, val))
+                        continue
+                    if not os.path.isfile(os.path.join(assets_dir, *parts[1:])):
+                        problems.append("P7 %s 第 %d 条视频 %d 的 %s 文件不存在：%r"
+                                        % (sec, i, j, field, val))
+                        continue
+                    if field == "src" and not norm.lower().endswith(PATIENT_VIDEO_EXTS):
+                        problems.append("P7 %s 第 %d 条视频 %d 的 src 不是网页可播格式（mp4/webm/ogv/m4v）：%r"
+                                        % (sec, i, j, val))
+    return problems
+
+
+def check_patient_data(pdata, data, topic_key, assets_dir=None):
     """校验患者层数据 —— 返回问题清单（空 = 通过）"""
     problems = []
     if not isinstance(pdata, dict):
@@ -1122,6 +1228,8 @@ def check_patient_data(pdata, data, topic_key):
         if not (nodes[nid].get("evidence") or []):
             problems.append("P4 urgent 第 %d 条（%s）对应的节点没有文献出处 —— "
                             "没有出处的医学断言不许出现在患者层" % (i, nid))
+    problems.extend(_check_patient_images(pdata, assets_dir))
+    problems.extend(_check_patient_videos(pdata, assets_dir))
     return problems
 
 
@@ -1136,7 +1244,54 @@ def find_patient_source(src_path, topic_key):
     return cand if os.path.exists(cand) else None
 
 
-def build_one(topic_key, data, src_path, out_root, rep, terms_source):
+def apply_theme(html, theme_path):
+    """按主题表改页面配色 —— **一次扫描，每个色值只映射一次，不链式**。
+
+    为什么是「映射表」而不是「CSS 变量重构」：
+        模板里配色散在 :root 变量 + 约 110 处硬编码 + ECharts 的 JS 配色里。
+        把它们全改成变量是一次大改造（动的是已上线的图谱页）；而**主题表**是
+        一次性、可复核、可重跑的替换 —— 与「换主题必查两类漏网」的经验配套。
+
+    ⛔ **对不上就中止**：页面里出现既不在 map 也不在 keep 的色值 ⇒ 说明模板改了色
+       而主题表没跟上 ⇒ **不许让它悄悄留在页面里**（那正是「深底残留在浅底上」那类
+       漏网的成因）。
+    """
+    try:
+        with open(theme_path, "r", encoding="utf-8") as f:
+            spec = json.load(f)
+    except Exception as e:
+        raise StructureGateError("主题表读不出来：%s（%s）" % (theme_path, e))
+    mapping = spec.get("map") or {}
+    keep = set(spec.get("keep") or [])
+    if not mapping:
+        raise StructureGateError("主题表是空的：%s" % theme_path)
+
+    # 单次正则扫描：每个色值 token 只当作整体匹配（避免 #fff 误伤 #ffffff）
+    pat = re.compile(r"#[0-9a-fA-F]{3,6}\b|rgba?\([^)]*\)")
+    unknown = {}
+    out = []
+    pos = 0
+    for m in pat.finditer(html):
+        tok = m.group(0)
+        if tok in mapping:
+            out.append(html[pos:m.start()])
+            out.append(mapping[tok])
+            pos = m.end()
+        elif tok in keep:
+            continue          # 语义色 / 纯白纯黑 —— 原样保留
+        else:
+            unknown[tok] = unknown.get(tok, 0) + 1
+    out.append(html[pos:])
+    if unknown:
+        raise StructureGateError(
+            "主题表与模板对不上 —— 页面里有未登记的色值：\n"
+            "   %s\n"
+            "（模板改了色而主题表没跟上 ⇒ 中止构建，不许它悄悄留在页面上）"
+            % " · ".join("%s×%d" % (k, v) for k, v in sorted(unknown.items())))
+    return "".join(out)
+
+
+def build_one(topic_key, data, src_path, out_root, rep, terms_source, theme=None):
     """产出 <out_root>/<topic_key>-kg/
 
     ⛔ 若 out_root 本身就是该题目的交付目录（就地重建），**直接写在里面** ——
@@ -1222,7 +1377,9 @@ def build_one(topic_key, data, src_path, out_root, rep, terms_source):
                 pdata = json.load(f)
         except Exception as e:
             raise StructureGateError("患者层文件解析失败：%s（%s）" % (patient_src, e))
-        pproblems = check_patient_data(pdata, data, topic_key)
+        pproblems = check_patient_data(
+            pdata, data, topic_key,
+            assets_dir=os.path.join(os.path.dirname(os.path.abspath(src_path)), "assets"))
         if pproblems:
             raise StructureGateError(
                 "患者层校验不通过 —— **已中止构建**\n"
@@ -1241,6 +1398,19 @@ def build_one(topic_key, data, src_path, out_root, rep, terms_source):
         rep.add("附P", "患者层校验（就医警示挂在有出处的节点上）", True,
                 "本题目没有 <topicKey>-patient.json —— 患者层不出现（页面用通用免责口径）")
 
+    # 3d-2 · 患者层插图（可选件）：图谱 JSON 旁边的 assets/ 随包带走
+    #        —— 患者层 imgs[].src 是相对页面根的路径（assets/...）；
+    #           不复制的话交付包（以及 file:// 直开）全是裂图。
+    #        ⛔ 每次重建先清空再复制：源里删掉的图不能在交付里留残。
+    assets_src = os.path.join(os.path.dirname(os.path.abspath(src_path)), "assets")
+    if os.path.isdir(assets_src):
+        assets_dst = os.path.join(out_dir, "assets")
+        if os.path.isdir(assets_dst):
+            shutil.rmtree(assets_dst)
+        shutil.copytree(assets_src, assets_dst)
+        n_assets = sum(len(fs) for _, _, fs in os.walk(assets_dst))
+        rep.add("附V", "患者层插图随包", True, "%d 个文件 → assets/" % n_assets)
+
     # 4 · 图形库
     copy_if_different(ECHARTS_SRC, os.path.join(lib_dir, "echarts.min.js"))
 
@@ -1252,6 +1422,10 @@ def build_one(topic_key, data, src_path, out_root, rep, terms_source):
         page_html = (tpl
                      .replace("{{TOPIC_KEY}}", topic_key)
                      .replace("{{PATIENT_SCRIPT}}", patient_script))
+        # 5-0 · 主题（**题目之外的第二个参数**）—— 同一套代码出不同配色的页面
+        #        ⛔ 主题表与模板对不上 ⇒ 中止构建（模板改色而表没跟上 ⇒ 不能静默逃出主题）
+        if theme:
+            page_html = apply_theme(page_html, theme)
         # 5a · 占位符必须全部替换掉 —— 漏一个 {{XXX}} 就会以字面量出现在页面上
         leftover = re.findall(r"\{\{[A-Z_]+\}\}", page_html)
         if leftover:
@@ -1295,6 +1469,10 @@ def build_one(topic_key, data, src_path, out_root, rep, terms_source):
 
     # 6 · 构建脚本（把自己带进交付目录，客户可自行重跑）
     copy_if_different(os.path.abspath(__file__), os.path.join(out_dir, "build.py"))
+    # 主题表随包走（交付包自举：客户要改配色也得能改 —— 主题表不在包里就没法重出同款页面）
+    if theme:
+        copy_if_different(theme, os.path.join(out_dir, "themes",
+                                              os.path.basename(theme)))
 
     # 7 · 说明
     meta = data.get("meta") or {}
@@ -2012,6 +2190,9 @@ def main(argv):
     ap.add_argument("--json", action="store_true", help="以 JSON 输出逐条判定（供交叉验证）")
     ap.add_argument("--no-render-check", action="store_true",
                     help="关掉首屏渲染检查（默认跑；关掉会打印说明）")
+    ap.add_argument("--theme", default=None,
+                    help="主题名（themes/<name>.json · 与题目无关的第二个参数）；"
+                         "不给 = 模板原样（护理那张的浅蓝）")
     ap.add_argument("--no-js-check", action="store_true",
                     help="关掉内联脚本的 JS 语法检查（默认跑；关掉会打印说明）")
     args = ap.parse_args(argv[1:])
@@ -2115,6 +2296,19 @@ def main(argv):
     out_root = os.path.abspath(args.out)
     if not os.path.isdir(out_root):
         os.makedirs(out_root)
+    # 主题表（在 scripts/ 同级的 themes/ 下）—— 不给 = 模板原样
+    theme_path = None
+    if args.theme:
+        themes_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "themes")
+        theme_path = os.path.join(themes_dir, "%s.json" % args.theme)
+        if not os.path.exists(theme_path):
+            have = []
+            if os.path.isdir(themes_dir):
+                have = sorted(os.path.splitext(x)[0] for x in os.listdir(themes_dir)
+                              if x.endswith(".json"))
+            raise SystemExit("⛔ 找不到主题表：%s%s"
+                             % (theme_path,
+                                ("（themes/ 下有：%s）" % "、".join(have)) if have else "（themes/ 目录不存在）"))
     print("\n产出：")
     gate_problems = []
     for tk, p in topic_of.items():
@@ -2122,7 +2316,7 @@ def main(argv):
         if d is None:
             continue
         try:
-            out_dir, triples_rows = build_one(tk, d, p, out_root, rep, terms_source)
+            out_dir, triples_rows = build_one(tk, d, p, out_root, rep, terms_source, theme=theme_path)
         except StructureGateError as e:
             print("\n⛔ 结构闸门不通过 —— 已中止构建：\n%s" % e)
             return 1
