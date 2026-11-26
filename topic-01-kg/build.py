@@ -560,7 +560,7 @@ def check_file(path, topic_key, rep, doc, terms_source):
             else "%d 条要点全部指到图内文献节点（其中 %d 条为客户临床实践，已标证据状态）"
                  % (det_total, det_client))
 
-    # ---- 附加：患者层的「检查后须知」每条都要挂在有出处的节点上 ----
+    # ---- 附加：患者层须知（检查中配合 / 检查后须知）每条都要挂在有出处的节点上 ----
     # （与 P3 / P4 同一道闸：患者层是站内唯一直接对患者说话的内容）
     pdata = None
     try:
@@ -572,19 +572,23 @@ def check_file(path, topic_key, rep, doc, terms_source):
         pdata = None
     if pdata:
         ac_bad = []
-        ac = pdata.get("aftercare") or []
-        for a in ac:
-            nid = a.get("nodeId")
-            if nid not in idset:
-                ac_bad.append("须知条目引用了图里没有的节点 %s" % nid)
-                continue
-            tgt = by_id0 = None
-            for x in nodes:
-                if x.get("id") == nid:
-                    tgt = x; break
-            if tgt is not None and not (tgt.get("evidence") or []):
-                ac_bad.append("须知条目 %s 挂着的节点没有文献出处" % (a.get("plain") or nid))
-        rep.add("附R", "患者层「检查后须知」每条都挂在有出处的节点上（%s）" % tag, not ac_bad,
+        ac = []
+        for sec, sec_label in (("prep", "检查中配合"), ("aftercare", "检查后须知")):
+            for a in (pdata.get(sec) or []):
+                ac.append(a)
+                nid = a.get("nodeId")
+                if nid not in idset:
+                    ac_bad.append("%s条目引用了图里没有的节点 %s" % (sec_label, nid))
+                    continue
+                tgt = None
+                for x in nodes:
+                    if x.get("id") == nid:
+                        tgt = x; break
+                if tgt is not None and not (tgt.get("evidence") or []):
+                    ac_bad.append("%s条目 %s 挂着的节点没有文献出处"
+                                  % (sec_label, a.get("plain") or nid))
+        rep.add("附R", "患者层须知（检查中配合 / 检查后）每条都挂在有出处的节点上（%s）" % tag,
+                not ac_bad,
                 ("；".join(ac_bad[:6])) if ac_bad else "%d 条须知全部有出处" % len(ac))
 
     # ---- 附加：节点宣称的「覆盖范围」必须在图里真有着落 ----
@@ -1097,7 +1101,7 @@ def _check_patient_images(pdata, assets_dir):
     ⛔ 只认 assets/ 内的相对路径 —— 患者层是公开站，不许引外链或逃出目录。
     """
     problems = []
-    for sec in ("aftercare", "advice", "urgent", "extrav"):
+    for sec in ("prep", "aftercare", "advice", "urgent", "extrav"):
         entries = pdata.get(sec) or []
         if not isinstance(entries, list):
             continue
@@ -1144,7 +1148,7 @@ def _check_patient_videos(pdata, assets_dir):
     ⛔ src 必须是网页可直接播放的格式（mp4/webm/ogv/m4v），否则线上打不开。
     """
     problems = []
-    for sec in ("aftercare", "advice", "urgent", "extrav"):
+    for sec in ("prep", "aftercare", "advice", "urgent", "extrav"):
         entries = pdata.get(sec) or []
         if not isinstance(entries, list):
             continue

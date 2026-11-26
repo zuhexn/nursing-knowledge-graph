@@ -1514,11 +1514,30 @@
     /* 就医警示 —— 患者第一屏走「分诊」：逐条点选 → 直接给行动。
        静态列表只回答「有哪些危险」，分诊回答「我现在该怎么」。 */
     var urgent = (PG && PG.urgent) || [];
+    /* 检查中的配合（可选板块）：吸气、屏气等检查过程中的配合要点。
+       键名 prep / prepTitle 来自患者层数据文件（数据自带，不是代码写死的），
+       排在检查后须知之前 —— 患者实际经历的顺序就是「检查中 → 检查后」。 */
+    var prep = (PG && PG.prep) || [];
+    var htmlU = "";
+    if (prep.length) {
+      htmlU +=
+        '<div class="lg-urgent aftercare"><h3 class="lg-uh">' +
+        esc((PG && PG.prepTitle) || "做检查时，请这样配合") + '</h3>' +
+        '<div class="ac-list">' + prep.map(function (a) {
+          var n = NODE[a.nodeId];
+          return '<div class="ac-item">' +
+            '<div class="ac-plain">' + mdBold(a.plain) + '</div>' +
+            (a.action ? '<div class="ac-act">' + mdBold(a.action) + '</div>' : '') +
+            videoGallery(a) +
+            imgGallery(a) +
+            (n ? '<span class="u-link" data-open="' + esc(n.id) + '">相关知识：' + esc(n.name) + ' ›</span>' : '') +
+            '</div>';
+        }).join("") + '</div></div>';
+    }
     /* 检查后须知（正常流程）—— 客户口径的三段式：
        ① 做完检查后该怎样（留观多久、什么时候拔针）→ ② 留观期间可以做的（多喝水）
        → ③ 出现这些症状怎么办（分诊）。这是患者扫码后真正要照着做的事。 */
     var after = (PG && PG.aftercare) || [];
-    var htmlU = "";
     if (after.length) {
       htmlU +=
         '<div class="lg-urgent aftercare"><h3 class="lg-uh">' +
