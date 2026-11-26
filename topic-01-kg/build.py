@@ -1193,6 +1193,75 @@ def _check_patient_videos(pdata, assets_dir):
     return problems
 
 
+def _check_patient_guides(pdata):
+    """校验「按情况查看」入口（可选件 guides）—— 返回问题清单（空 = 通过）
+
+    判据 P8：guides 是入口，不是第二份正文。它只允许声明 id / title，
+    知识正文仍挂在 prep / aftercare / advice / urgent / extrav 的原条目上；
+    每个条目的 guide 必须指向一个存在的入口，每个入口至少要有一条知识。
+    ⛔ 这样「同一事实只维护一处」：改知识只改原条目，入口不会出现旧说法。
+    """
+    problems = []
+    guides = pdata.get("guides")
+    if guides is None:
+        guides = []
+    if not isinstance(guides, list):
+        return ["P8 guides 不是一个数组"]
+    ids = {}
+    for i, g in enumerate(guides, 1):
+        if not isinstance(g, dict):
+            problems.append("P8 guides 第 %d 条不是一个对象" % i)
+            continue
+        gid = str(g.get("id") or "").strip()
+        title = str(g.get("title") or "").strip()
+        if not gid:
+            problems.append("P8 guides 第 %d 条缺 id" % i)
+            continue
+        if gid in ids:
+            problems.append("P8 guides 的 id %r 重复" % gid)
+        ids[gid] = 1
+        if not title:
+            problems.append("P8 guides 第 %d 条（%s）缺 title" % (i, gid))
+
+    for sec in ("prep", "aftercare", "advice", "urgent", "extrav"):
+        items = pdata.get(sec)
+        if not isinstance(items, list):
+            continue
+        for i, u in enumerate(items, 1):
+            if not isinstance(u, dict):
+                continue
+            gid = u.get("guide")
+            if gid is None:
+                continue
+            gid = str(gid).strip()
+            if not gid:
+                problems.append("P8 %s 第 %d 条的 guide 为空" % (sec, i))
+            elif guides and gid not in ids:
+                problems.append("P8 %s 第 %d 条的 guide %r 没有对应的 guides 条目"
+                                % (sec, i, gid))
+            elif not guides:
+                problems.append("P8 %s 第 %d 条引用了 guide %r，但文件里没有 guides"
+                                % (sec, i, gid))
+
+    for g in guides:
+        if not isinstance(g, dict):
+            continue
+        gid = str(g.get("id") or "").strip()
+        if not gid:
+            continue
+        used = 0
+        for sec in ("prep", "aftercare", "advice", "urgent", "extrav"):
+            items = pdata.get(sec)
+            if not isinstance(items, list):
+                continue
+            for u in items:
+                if isinstance(u, dict) and str(u.get("guide") or "").strip() == gid:
+                    used += 1
+        if not used:
+            problems.append("P8 guide %r 没有任何知识条目（advice / urgent 等）" % gid)
+    return problems
+
+
 def check_patient_data(pdata, data, topic_key, assets_dir=None):
     """校验患者层数据 —— 返回问题清单（空 = 通过）"""
     problems = []
@@ -1234,6 +1303,7 @@ def check_patient_data(pdata, data, topic_key, assets_dir=None):
                             "没有出处的医学断言不许出现在患者层" % (i, nid))
     problems.extend(_check_patient_images(pdata, assets_dir))
     problems.extend(_check_patient_videos(pdata, assets_dir))
+    problems.extend(_check_patient_guides(pdata))
     return problems
 
 
